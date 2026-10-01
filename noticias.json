@@ -1,19 +1,18 @@
 {
-  "actualizado": "2026-10-01T08:23:39.165162+00:00",
+  "actualizado": "2026-10-01T08:31:14.401161+00:00",
   "fuente": "Expansión",
   "total": 150,
   "categorias": {
-    "mexico": 3,
-    "politica": 3,
-    "mundo": 27,
-    "dinero": 61,
-    "deportes": 20,
-    "entretenimiento": 4,
-    "tecnologia": 23,
-    "tendencias": 6,
-    "tramites": 3
+    "mexico": 1,
+    "politica": 0,
+    "mundo": 28,
+    "dinero": 67,
+    "deportes": 0,
+    "entretenimiento": 0,
+    "tecnologia": 22,
+    "tendencias": 31,
+    "tramites": 1
   },
-  "futbol": 5,
   "noticias": [
     {
       "titulo": "México lleva al G20 dos frentes de tensión: presión sobre el acero y coerción en alimentos",
@@ -41,7 +40,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/30/la-nueva-mazda-cx-90-phev-llega-a-mexico-con-tecnologia-hibrida-enchufable",
       "fecha": "Wed, 30 Sep 2026 22:50:35 GMT",
       "fuente": "Expansión",
-      "categoria": "tecnologia",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/f980a8e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F46%2F5e%2F49f3d7c0420dab88c5b12ca8ab32%2Fmazda-cx90-camioneta-phev-interiores-piel-negra-desktop-v1-06.jpg",
       "rss": "general"
     },
@@ -111,7 +110,7 @@
       "enlace": "https://expansion.mx/economia/2026/09/30/comparecencia-shcp-edgar-amador-zamora",
       "fecha": "Wed, 30 Sep 2026 19:35:04 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "dinero",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/1867295/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fdb%2F9f%2Fb478c43b4cd2a884be036c132a2c%2F1-edgar-amador-1101297-comparecencia-edgar-amador-diputados-impreso.jpeg",
       "rss": "general"
     },
@@ -131,7 +130,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/30/el-nuevo-cla-2027-de-mercedes-benz-llega-con-versiones-hibrida-y-electrica",
       "fecha": "Wed, 30 Sep 2026 19:12:11 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/7761a6b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc1%2F5c%2Fe83f2b9149a68626ed0645554b10%2Fmercedes-benz-cla-2027.jpg",
       "rss": "general"
     },
@@ -291,7 +290,7 @@
       "enlace": "https://expansion.mx/tecnologia/2026/09/23/sin-iphone-18-qualcomm-plan",
       "fecha": "Wed, 23 Sep 2026 22:00:31 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tecnologia",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/6caea2c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F85%2Faf%2F30ade16541cf96f6b395d1a089f3%2Fqualcomm-plan-sin-apple-iphone-18-hawai.jpeg",
       "rss": "tecnologia"
     },
@@ -311,7 +310,7 @@
       "enlace": "https://expansion.mx/economia/2026/09/23/guajardo-aranceles-primero-renovacion-tmec-despues",
       "fecha": "Wed, 23 Sep 2026 21:24:29 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "dinero",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/dca9c6c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fbc%2Fa1%2Fcf4f844e4a46b05e9ff44cd0b32a%2Fildefonso-guajardo-tmec-aranceles-fotoarte-v3.jpg",
       "rss": "dinero"
     },
@@ -331,7 +330,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/23/parking-freno-mano-primero-error-estacionar-carro-automatico",
       "fecha": "Wed, 23 Sep 2026 20:43:10 GMT",
       "fuente": "Expansión",
-      "categoria": "politica",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/81b5186/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F57%2F10%2F1f59883448a9b4e7f1afecbdeffd%2Ffreno-de-mano-carro-automatico.jpeg",
       "rss": "tendencias"
     },
@@ -391,7 +390,7 @@
       "enlace": "https://expansion.mx/economia/2026/09/23/ocde-mejora-crecimiento-mexico-inflacion-bolsillo-2026",
       "fecha": "Wed, 23 Sep 2026 14:16:04 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "dinero",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/75fa77c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb2%2Fc3%2Fbf8afa6248efad215eeadf954b10%2Focde-mexico-crecimiento-inflacion-2026.jpg",
       "rss": "dinero"
     },
@@ -501,7 +500,7 @@
       "enlace": "https://expansion.mx/mundo/2026/08/19/trump-pierde-margen-de-maniobra-en-la-guerra-entre-eu-e-iran",
       "fecha": "Wed, 19 Aug 2026 11:55:28 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "mundo",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/a8947d8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F09%2Fa5%2F701cef634f389e17a19962f9280e%2Fguerra-iran-estrecho-ormuz.jpeg",
       "rss": "mundo"
     },
@@ -521,7 +520,7 @@
       "enlace": "https://expansion.mx/mundo/2026/09/16/empresas-eu-petroleo-oro-venezuela-trump",
       "fecha": "Wed, 16 Sep 2026 20:04:09 GMT",
       "fuente": "Expansión",
-      "categoria": "mundo",
+      "categoria": "dinero",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/ca2ec77/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F77%2Fa7%2Fa249fe98488f9b87714cdbc53ea1%2Fcontinental-resources-pdvsa-petroleo-venezuela.jpg",
       "rss": "mundo"
     },
@@ -531,7 +530,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/16/nfl-semana-2-partidos-no-te-puedes-perder",
       "fecha": "Wed, 16 Sep 2026 16:41:03 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/7ca32e8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fmedia%2F2014%2F01%2F19%2Fseattle-nfl-2-reuters.jpg",
       "rss": "tendencias"
     },
@@ -541,7 +540,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/15/robert-kraft-polemica-salida-macklemore-gira-ed-sheeran",
       "fecha": "Wed, 16 Sep 2026 00:17:02 GMT",
       "fuente": "Expansión",
-      "categoria": "entretenimiento",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/56ead33/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4e%2F14%2Fe1c673b84f0c8b23baa1db6ccaae%2Frobert-kraft-ed-sheeran-macklemore-palestina.jpg",
       "rss": "tendencias"
     },
@@ -601,7 +600,7 @@
       "enlace": "https://expansion.mx/mercados/2026/09/29/peso-mexicano-borra-ganancia-2026-cotiza-cerca-18-14-dolar",
       "fecha": "Tue, 29 Sep 2026 21:16:13 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "dinero",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/b9994de/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F75%2F4f%2F265aef9e4705909bd924d41c6647%2Fpeso-mexicano-bonos-estados-unidos-dolar-18.png",
       "rss": "general"
     },
@@ -611,7 +610,7 @@
       "enlace": "https://expansion.mx/empresas/2026/09/29/emilio-azcarraga-queria-comprar-chivas",
       "fecha": "Tue, 29 Sep 2026 21:09:59 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "dinero",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/5a37462/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3a%2F84%2F778d72ab4b59a2ac98ef0ef35c10%2Femilio-azcarraga-jorge-vergara.png",
       "rss": "general"
     },
@@ -631,7 +630,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/29/efemerides-octubre-mexico-conmemora-este-mes-2026",
       "fecha": "Tue, 29 Sep 2026 18:43:21 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/bc12aaf/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F69%2F0a%2Fc508797e48c481e9835403df4368%2Fefemerides-octubre-2026-1.jpg",
       "rss": "general"
     },
@@ -661,7 +660,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/29/mexico-vs-peru-donde-ver-en-vivo",
       "fecha": "Tue, 29 Sep 2026 17:41:12 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/c77408b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F48%2Fbe%2F20493b6643fa85f2daf0d52b944c%2F1089594-goles-mexico-vs-ecuador-web.jpg",
       "rss": "general"
     },
@@ -801,7 +800,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/22/coliseo-gnp-seguros-historia-estadio-foro-conciertos",
       "fecha": "Tue, 22 Sep 2026 18:39:54 GMT",
       "fuente": "Expansión",
-      "categoria": "entretenimiento",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/7b2b70f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F15%2Fbe%2F38bacb2b4c5385a8756e3e7a5750%2Fcoliseo-gnp-seguros-historia-estadio-mundialista-1.jpeg",
       "rss": "tendencias"
     },
@@ -881,7 +880,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/15/arena-mexico-historia-catedral-lucha-libre-simbolo-nacional",
       "fecha": "Tue, 15 Sep 2026 21:44:14 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/e05fab5/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F40%2F06%2F37ed7e3147c29fccf2e7410f315c%2Fhistoria-arena-mexico-catedral-2.jpeg",
       "rss": "tendencias"
     },
@@ -891,7 +890,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/15/el-hardware-de-asus-business-es-un-aliado-en-ciberseguridad",
       "fecha": "Tue, 15 Sep 2026 20:34:16 GMT",
       "fuente": "Expansión",
-      "categoria": "tramites",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/dddd9c3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1f%2F5f%2F3691fb17414e9dde96377a9484ae%2Fasus-expertbook-ultra.jpg",
       "rss": "tendencias"
     },
@@ -921,7 +920,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/08/primer-presupuesto-mexico-historia-detras-paquete-economico",
       "fecha": "Tue, 08 Sep 2026 17:51:33 GMT",
       "fuente": "Expansión",
-      "categoria": "tramites",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/74117ef/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ffd%2F13%2F798f3ad84d95b3509957226fb620%2Fpaquete-economico-historia.jpg",
       "rss": "tendencias"
     },
@@ -941,7 +940,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/07/prompt-chatgpt-foto-anos-80-paso-a-paso-retro",
       "fecha": "Tue, 08 Sep 2026 00:02:22 GMT",
       "fuente": "Expansión",
-      "categoria": "tecnologia",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/dc4fb9c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F37%2Ffe%2F9805b9404a4aad71d81db02336b1%2F4-chatgpt-y-acusaciones-apple.jpeg",
       "rss": "tendencias"
     },
@@ -961,7 +960,7 @@
       "enlace": "https://expansion.mx/mundo/2026/09/01/frontera-entre-china-y-nepal-desastre-deja-mas-1-000-muertos",
       "fecha": "Tue, 01 Sep 2026 22:08:48 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "mundo",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/692a354/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F6a%2Fe4cf089444c780e196135dcd6ee8%2Ffrontera-entre-china-y-nepal-desastre-deja-mas-1-000-muertos.jpg",
       "rss": "mundo"
     },
@@ -971,7 +970,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/08/27/club-america-bomberg-lanzan-reloj-solo-400-podran-tenerlo",
       "fecha": "Thu, 27 Aug 2026 22:34:31 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/4a0d9d9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fee%2F22%2F60f3990f42bba517ff4c4d6823d5%2Freloj-bomberg-club-america.png",
       "rss": "tendencias"
     },
@@ -981,7 +980,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/08/27/subastas-louis-vuitton-yayoi-kusama-convirtio-puntos-negocio",
       "fecha": "Thu, 27 Aug 2026 21:12:58 GMT",
       "fuente": "Expansión",
-      "categoria": "entretenimiento",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/fb9efba/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe2%2F1c%2Fd5fcdbb34454b66b4d526c6d11b1%2Fyayoi-kusama-artista-japonea-muere.jpg",
       "rss": "tendencias"
     },
@@ -1111,7 +1110,7 @@
       "enlace": "https://expansion.mx/economia/2026/09/24/banxico-tasa-de-interes-de-referencia-6-5-septiembre",
       "fecha": "Thu, 24 Sep 2026 19:19:08 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "dinero",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/f637a3a/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F82%2F42%2Fd346d83841e6815bf50ee7115802%2F1-banxico-gettyimages-1519815110-2.jpeg",
       "rss": "dinero"
     },
@@ -1121,7 +1120,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/24/semana-3-nfl-horarios-transmision-partidos-jornada",
       "fecha": "Thu, 24 Sep 2026 19:06:36 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/b72ee57/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F34%2F8c%2F7cb4b74d4639a7740df5bdd146a1%2Fdonde-ver-partidos-nfl-semana-3-1.jpeg",
       "rss": "tendencias"
     },
@@ -1141,7 +1140,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/24/nations-league-donde-ver-holanda-vs-alemania-y-partidos",
       "fecha": "Thu, 24 Sep 2026 17:27:48 GMT",
       "fuente": "Expansión",
-      "categoria": "politica",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/460bf0b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fd3%2F90%2F10d96a50418dafcf79c757302189%2Fpaises-bajos-vs-alemania-nations-league-hoy.jpeg",
       "rss": "tendencias"
     },
@@ -1201,7 +1200,7 @@
       "enlace": "https://expansion.mx/economia/2026/09/24/inflacion-mexico-septiembre-2026-supera-expectativas",
       "fecha": "Thu, 24 Sep 2026 13:16:11 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "dinero",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/8583958/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3d%2F32%2Fc6708134430990e1fa4da065e246%2Finflacion-colegiaturas-regreso-clases-septiembre-2026.jpg",
       "rss": "dinero"
     },
@@ -1261,7 +1260,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/23/arena-coliseo-historia-templo-lucha-libre-cdmx",
       "fecha": "Thu, 24 Sep 2026 00:31:45 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/6af0cfd/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F56%2Fa5%2Ffefb75f145b39f074d908e12e19b%2Farena-coliseo-historia-lucha-libre-1.jpeg",
       "rss": "tendencias"
     },
@@ -1331,7 +1330,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/17/mascotas-perros-gatos-corren-riesgo-mantenerlos-salvo",
       "fecha": "Thu, 17 Sep 2026 19:11:26 GMT",
       "fuente": "Expansión",
-      "categoria": "dinero",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/0092299/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F66%2F06%2Fd9d9027b4b108f4b42ee4868ca64%2Fque-hacer-sismo-mascota-2.jpg",
       "rss": "tendencias"
     },
@@ -1341,7 +1340,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/17/09/soluciones-financieras-para-el-viajero-actual",
       "fecha": "Thu, 17 Sep 2026 17:10:32 GMT",
       "fuente": "Expansión",
-      "categoria": "dinero",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/a894f9a/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6b%2F6f%2F14363e7f46e6937d28cda096c40e%2Fbeneficios-tarjetas-aeromexico-inbursa.jpg",
       "rss": "tendencias"
     },
@@ -1351,7 +1350,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/17/inflar-mas-las-llantas-ahorrar-gasolina-consecuencia",
       "fecha": "Thu, 17 Sep 2026 15:06:05 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/3446ff7/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fdb%2F82%2F7034e49d4186b6e151e0452e8f41%2Finflando-llanta-carro.jpeg",
       "rss": "tendencias"
     },
@@ -1371,7 +1370,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/10/ingredientes-pozole-15-septiembre-barato-caro",
       "fecha": "Thu, 10 Sep 2026 21:55:50 GMT",
       "fuente": "Expansión",
-      "categoria": "politica",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/2977569/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F47%2F37%2F599198824000821d02cdbe196b1a%2Fprecio-pozole-15-septiembre.jpg",
       "rss": "tendencias"
     },
@@ -1381,7 +1380,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/10/nfl-calendario-partidos-semana-1-donde-verlos-en-vivo",
       "fecha": "Thu, 10 Sep 2026 18:47:57 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/305795d/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F52%2F58%2Ff21633ca49bab04071cec4005694%2Fdonde-ver-nfl-semana-1-2.jpeg",
       "rss": "tendencias"
     },
@@ -1391,7 +1390,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/10/de-que-murio-oscar-mario-beteta",
       "fecha": "Thu, 10 Sep 2026 13:58:19 GMT",
       "fuente": "Expansión",
-      "categoria": "entretenimiento",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/7145451/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb1%2F5c%2F5617a1084c278135eaa19188ac78%2Foscar-mario-beteta.jpeg",
       "rss": "tendencias"
     },
@@ -1481,7 +1480,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/13/nfl-ciudad-de-mexico-boletos-precios-experiencias-vip",
       "fecha": "Sun, 13 Sep 2026 20:35:02 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/b0a23d7/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fmedia%2F2014%2F11%2F16%2Fsan-francisco-49ers-nfl.jpg",
       "rss": "tendencias"
     },
@@ -1491,7 +1490,7 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/06/donde-que-hora-nfl-2026-partidos-tv-abierta-mexico",
       "fecha": "Sun, 06 Sep 2026 22:47:10 GMT",
       "fuente": "Expansión",
-      "categoria": "deportes",
+      "categoria": "tendencias",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/674d056/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fmedia%2F2010%2F09%2F14%2Fnfl.jpg",
       "rss": "tendencias"
     },
