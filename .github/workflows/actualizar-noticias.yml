@@ -35,6 +35,7 @@ jobs:
           import time
           import hashlib
           import html
+          import base64
           import unicodedata
           from datetime import datetime, timezone, timedelta
           from urllib.parse import quote_plus, urlparse, urljoin
@@ -59,12 +60,13 @@ jobs:
           USER_AGENT = (
               "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
               "AppleWebKit/537.36 (KHTML, like Gecko) "
-              "Chrome/120.0.0.0 Safari/537.36"
+              "Chrome/124.0.0.0 Safari/537.36"
           )
 
           HEADERS = {
               "User-Agent": USER_AGENT,
-              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+              "Accept-Language": "es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7"
           }
 
           AHORA = datetime.now(timezone.utc)
@@ -209,7 +211,7 @@ jobs:
 
 
           # ============================================================
-          # FUNCIONES
+          # FUNCIONES BASE
           # ============================================================
 
           def normalizar(texto):
@@ -294,69 +296,112 @@ jobs:
 
 
           # ============================================================
-          # CORRECCIÓN Y FILTRADO DE IMÁGENES
+          # EXTRAER Y RESOLVER IMÁGENES REALES
           # ============================================================
 
-          def es_imagen_google(url):
-              """ Filtra logos y placeholder propios de Google News. """
+          def desocultar_url_google_news(url):
+              """ Decodifica la URL redirigida de Google News para obtener la página original """
+              if "news.google.com" not in url:
+                  return url
+
+              try:
+                  parsed = urlparse(url)
+                  parts = parsed.path.split("/")
+                  if "articles" in parts:
+                      art_idx = parts.index("articles")
+                      if art_idx + 1 < len(parts):
+                          encoded_str = parts[art_idx + 1]
+                          pad = len(encoded_str) % 4
+                          if pad:
+                              encoded_str += "=" * (4 - pad)
+                          
+                          decoded = base64.b64decode(encoded_str).decode('latin1', errors='ignore')
+                          urls_encontradas = re.findall(r'https?://[^\s<">]+', decoded)
+                          for u in urls_encontradas:
+                              if "google.com" not in u and url_valida(u):
+                                  return u
+              except Exception:
+                  pass
+
+              try:
+                  resp = requests.get(url, headers=HEADERS, timeout=6, allow_redirects=True)
+                  if resp.status_code == 200 and "google.com" not in resp.url:
+                      return resp.url
+              except Exception:
+                  pass
+
+              return url
+
+
+          def es_imagen_invalid_google(url):
               if not url:
                   return True
-
-              patrones_google = [
+              
+              patrones = [
                   "googleusercontent.com",
                   "news.google.com",
                   "gstatic.com",
                   "lh3.google",
                   "lh4.google",
                   "lh5.google",
-                  "lh6.google",
-                  "logo_google",
-                  "google_news"
+                  "logo_google"
               ]
-
-              url_low = url.lower()
-              return any(patron in url_low for patron in patrones_google)
+              return any(p in url.lower() for p in patrones)
 
 
           def comprobar_imagen(url):
-              """ Comprueba que la URL realmente entregue una imagen válida y no de Google. """
-              if not url or es_imagen_google(url):
+              if not url or es_imagen_invalid_google(url):
                   return ""
 
               try:
                   url = html.unescape(str(url).strip())
-
                   if url.startswith("//"):
                       url = "https:" + url
 
                   if not url_valida(url):
                       return ""
 
-                  respuesta = requests.head(
-                      url,
-                      headers=HEADERS,
-                      timeout=5,
-                      allow_redirects=True
-                  )
+                  resp = requests.head(url, headers=HEADERS, timeout=5, allow_redirects=True)
+                  if resp.status_code != 200:
+                      resp = requests.get(url, headers=HEADERS, timeout=5, stream=True, allow_redirects=True)
 
-                  if respuesta.status_code != 200:
-                      respuesta = requests.get(
-                          url,
-                          headers=HEADERS,
-                          timeout=5,
-                          stream=True,
-                          allow_redirects=True
-                      )
+                  if resp.status_code == 200:
+                      tipo = resp.headers.get("Content-Type", "").lower()
+                      if tipo.startswith("image/") and not es_imagen_invalid_google(resp.url):
+                          return resp.url
+              except Exception:
+                  pass
 
-                  if respuesta.status_code != 200:
+              return ""
+
+
+          def obtener_imagen_pagina(url_noticia):
+              url_real = desocultar_url_google_news(url_noticia)
+              if not url_valida(url_real):
+                  return ""
+
+              try:
+                  resp = requests.get(url_real, headers=HEADERS, timeout=8, allow_redirects=True)
+                  if resp.status_code != 200:
                       return ""
 
-                  tipo = respuesta.headers.get("Content-Type", "").lower()
-                  url_final = respuesta.url
+                  soup = BeautifulSoup(resp.text, "html.parser")
+                  candidatos = []
 
-                  if tipo.startswith("image/") and not es_imagen_google(url_final):
-                      return url_final
+                  for meta in soup.find_all("meta"):
+                      prop = meta.get("property", "").lower()
+                      name = meta.get("name", "").lower()
+                      content = meta.get("content", "")
 
+                      if prop in ["og:image", "twitter:image"] or name in ["og:image", "twitter:image"]:
+                          if content:
+                              candidatos.append(content)
+
+                  for cand in candidatos:
+                      cand_abs = urljoin(resp.url, cand.strip())
+                      img_valida = comprobar_imagen(cand_abs)
+                      if img_valida:
+                          return img_valida
               except Exception:
                   pass
 
@@ -364,87 +409,23 @@ jobs:
 
 
           def obtener_imagen_entry(entry):
-              """ Obtiene imágenes directas desde las etiquetas del RSS. """
               candidatos = []
 
-              try:
-                  for media in entry.get("media_content", []):
-                      if isinstance(media, dict) and media.get("url"):
-                          candidatos.append(media.get("url"))
-              except Exception:
-                  pass
+              for key in ["media_content", "media_thumbnail"]:
+                  for item in entry.get(key, []):
+                      if isinstance(item, dict) and item.get("url"):
+                          candidatos.append(item.get("url"))
 
-              try:
-                  for media in entry.get("media_thumbnail", []):
-                      if isinstance(media, dict) and media.get("url"):
-                          candidatos.append(media.get("url"))
-              except Exception:
-                  pass
+              for enclosure in entry.get("enclosures", []):
+                  if isinstance(enclosure, dict):
+                      u = enclosure.get("href") or enclosure.get("url")
+                      if u:
+                          candidatos.append(u)
 
-              try:
-                  for enclosure in entry.get("enclosures", []):
-                      if isinstance(enclosure, dict):
-                          url = enclosure.get("href") or enclosure.get("url")
-                          tipo = (enclosure.get("type") or "").lower()
-                          if url and (tipo.startswith("image/") or url.lower().endswith((".jpg", ".jpeg", ".png", ".webp", ".gif"))):
-                              candidatos.append(url)
-              except Exception:
-                  pass
-
-              for url in candidatos:
-                  imagen = comprobar_imagen(url)
-                  if imagen:
-                      return imagen
-
-              return ""
-
-
-          def obtener_imagen_pagina(url):
-              """ Sigue la redirección de la noticia y busca la imagen en la fuente original. """
-              if not url_valida(url):
-                  return ""
-
-              try:
-                  # Obtener la página siguiendo redirecciones
-                  respuesta = requests.get(
-                      url,
-                      headers=HEADERS,
-                      timeout=8,
-                      allow_redirects=True
-                  )
-
-                  if respuesta.status_code != 200:
-                      return ""
-
-                  pagina_url = respuesta.url
-                  soup = BeautifulSoup(respuesta.text, "html.parser")
-
-                  candidatos = []
-
-                  # Meta tags principales
-                  meta_tags = [
-                      ("meta", {"property": "og:image"}),
-                      ("meta", {"name": "twitter:image"}),
-                      ("meta", {"property": "twitter:image"}),
-                      ("link", {"rel": "image_src"})
-                  ]
-
-                  for tag, attrs in meta_tags:
-                      for elemento in soup.find_all(tag, attrs=attrs):
-                          img_src = elemento.get("content") or elemento.get("href")
-                          if img_src:
-                              candidatos.append(img_src)
-
-                  for img in candidatos:
-                      img_clean = html.unescape(str(img).strip())
-                      img_abs = urljoin(pagina_url, img_clean)
-
-                      imagen_real = comprobar_imagen(img_abs)
-                      if imagen_real:
-                          return imagen_real
-
-              except Exception:
-                  pass
+              for cand in candidatos:
+                  img = comprobar_imagen(cand)
+                  if img:
+                      return img
 
               return ""
 
@@ -567,14 +548,10 @@ jobs:
               ):
                   return None
 
-              # Extraer imagen directamente del feed si existe
               imagen = obtener_imagen_entry(entry)
 
-              # Si es de Google News o no se encontró en el feed, buscar en la página de destino original
-              if not imagen or "news.google.com" in url:
-                  imagen_pagina = obtener_imagen_pagina(url)
-                  if imagen_pagina:
-                      imagen = imagen_pagina
+              if not imagen or es_imagen_invalid_google(imagen):
+                  imagen = obtener_imagen_pagina(url)
 
               if subcategoria:
                   categoria_final = "Deportes"
@@ -697,7 +674,7 @@ jobs:
 
 
           # ============================================================
-          # CARGAR NOTICIAS EXISTENTES
+          # CARGAR NOTICIAS EXISTENTES Y CORREGIR IMÁGENES DEFECTUOSAS
           # ============================================================
 
           datos = cargar_json()
@@ -715,15 +692,12 @@ jobs:
               if not titulo or not url:
                   continue
 
-              noticia_id = noticia.get("id")
+              noticia_id = noticia.get("id") or hash_noticia(titulo, url)
+              noticia["id"] = noticia_id
 
-              if not noticia_id:
-                  noticia_id = hash_noticia(
-                      titulo,
-                      url
-                  )
-
-                  noticia["id"] = noticia_id
+              img_actual = noticia.get("imagen", "")
+              if not img_actual or es_imagen_invalid_google(img_actual):
+                  noticia["imagen"] = obtener_imagen_pagina(url)
 
               mapa[noticia_id] = noticia
 
@@ -1336,6 +1310,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No hay cambios nuevos."
           else
-            git commit -m "Actualizar noticias y tendencias"
+            git commit -m "Reconstruir noticias.json con imagenes reales"
             git push
           fi
