@@ -1263,7 +1263,304 @@
     );
 
 
-</script>
+<script>
+let noticiasActuales = [];
+let categoriaActual = "todos";
 
-</body>
-</html>
+async function cargarNoticias() {
+  const grid = document.getElementById("newsGrid");
+  const status = document.querySelector(".status-box span:last-child");
+
+  try {
+    const respuesta = await fetch("noticias.json?v=" + Date.now());
+
+    if (!respuesta.ok) {
+      throw new Error("No se pudo cargar noticias.json");
+    }
+
+    const datos = await respuesta.json();
+
+    noticiasActuales = Array.isArray(datos.noticias)
+      ? datos.noticias
+      : [];
+
+    if (!noticiasActuales.length) {
+      throw new Error("No hay noticias disponibles");
+    }
+
+    if (status) {
+      status.innerHTML =
+        "<strong>Noticias:</strong> información actualizada automáticamente.";
+    }
+
+    mostrarNoticias();
+
+  } catch (error) {
+
+    console.error(error);
+
+    if (status) {
+      status.innerHTML =
+        "<strong>Noticias:</strong> no se pudo cargar la información.";
+    }
+  }
+}
+
+function obtenerCategoria(noticia) {
+
+  const texto = (
+    (noticia.titulo || "") + " " +
+    (noticia.descripcion || "") + " " +
+    (noticia.enlace || "")
+  ).toLowerCase();
+
+  if (
+    texto.includes("fútbol") ||
+    texto.includes("futbol") ||
+    texto.includes("liga") ||
+    texto.includes("partido") ||
+    texto.includes("deporte") ||
+    texto.includes("selección")
+  ) {
+    return "deportes";
+  }
+
+  if (
+    texto.includes("tecnología") ||
+    texto.includes("tecnologia") ||
+    texto.includes("apple") ||
+    texto.includes("iphone") ||
+    texto.includes("inteligencia artificial") ||
+    texto.includes("ia ") ||
+    texto.includes("google") ||
+    texto.includes("whatsapp") ||
+    texto.includes("nvidia")
+  ) {
+    return "tecnologia";
+  }
+
+  if (
+    texto.includes("cine") ||
+    texto.includes("música") ||
+    texto.includes("musica") ||
+    texto.includes("artista") ||
+    texto.includes("televisión") ||
+    texto.includes("television") ||
+    texto.includes("entretenimiento")
+  ) {
+    return "entretenimiento";
+  }
+
+  if (
+    texto.includes("economía") ||
+    texto.includes("economia") ||
+    texto.includes("dinero") ||
+    texto.includes("peso") ||
+    texto.includes("inflación") ||
+    texto.includes("inflacion") ||
+    texto.includes("impuestos") ||
+    texto.includes("banco") ||
+    texto.includes("finanzas") ||
+    texto.includes("mercado")
+  ) {
+    return "economia";
+  }
+
+  if (
+    texto.includes("méxico") ||
+    texto.includes("mexico") ||
+    texto.includes("pemex") ||
+    texto.includes("sat") ||
+    texto.includes("senado") ||
+    texto.includes("gobierno") ||
+    texto.includes("hacienda")
+  ) {
+    return "mexico";
+  }
+
+  return "mundo";
+}
+
+function obtenerIcono(categoria) {
+
+  const iconos = {
+    mexico: "🇲🇽",
+    mundo: "🌎",
+    economia: "💰",
+    deportes: "⚽",
+    entretenimiento: "🎬",
+    tecnologia: "📱"
+  };
+
+  return iconos[categoria] || "📰";
+}
+
+function escaparHTML(texto) {
+
+  const div = document.createElement("div");
+  div.textContent = texto || "";
+
+  return div.innerHTML;
+}
+
+function mostrarNoticias() {
+
+  const grid = document.getElementById("newsGrid");
+  const empty = document.getElementById("emptyMessage");
+  const busqueda =
+    document
+      .getElementById("searchInput")
+      .value
+      .toLowerCase()
+      .trim();
+
+  const filtradas = noticiasActuales.filter(noticia => {
+
+    const categoria = obtenerCategoria(noticia);
+
+    const coincideCategoria =
+      categoriaActual === "todos" ||
+      categoria === categoriaActual;
+
+    const texto = (
+      (noticia.titulo || "") + " " +
+      (noticia.descripcion || "") + " " +
+      (noticia.fuente || "")
+    ).toLowerCase();
+
+    const coincideBusqueda =
+      !busqueda ||
+      texto.includes(busqueda);
+
+    return coincideCategoria && coincideBusqueda;
+  });
+
+  grid.innerHTML = "";
+
+  filtradas.forEach(noticia => {
+
+    const categoria = obtenerCategoria(noticia);
+    const icono = obtenerIcono(categoria);
+
+    const tarjeta = document.createElement("article");
+
+    tarjeta.className = "news-card";
+
+    tarjeta.style.display = "flex";
+    tarjeta.style.flexDirection = "column";
+
+    tarjeta.innerHTML = `
+      <div class="news-image">
+        ${icono}
+      </div>
+
+      <div class="news-content">
+
+        <span class="tag">
+          ${escaparHTML(
+            categoria.charAt(0).toUpperCase() +
+            categoria.slice(1)
+          )}
+        </span>
+
+        <h3>
+          ${escaparHTML(noticia.titulo)}
+        </h3>
+
+        <p>
+          ${escaparHTML(noticia.descripcion)}
+        </p>
+
+        <div class="news-meta">
+
+          <span>
+            ${escaparHTML(noticia.fuente || "Noticias")}
+          </span>
+
+          <span>
+            ${formatearFecha(noticia.fecha)}
+          </span>
+
+        </div>
+
+        <a
+          href="${escaparHTML(noticia.enlace)}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="read-news"
+        >
+          Leer noticia →
+        </a>
+
+      </div>
+    `;
+
+    grid.appendChild(tarjeta);
+  });
+
+  if (empty) {
+    empty.style.display =
+      filtradas.length === 0
+        ? "block"
+        : "none";
+  }
+}
+
+function formatearFecha(fecha) {
+
+  if (!fecha) return "";
+
+  try {
+
+    const fechaReal = new Date(fecha);
+
+    return fechaReal.toLocaleDateString(
+      "es-MX",
+      {
+        day: "2-digit",
+        month: "short",
+        year: "numeric"
+      }
+    );
+
+  } catch {
+    return "";
+  }
+}
+
+function filtrarNoticias(categoria, boton) {
+
+  categoriaActual = categoria;
+
+  document
+    .querySelectorAll(".category-btn")
+    .forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+  if (boton) {
+    boton.classList.add("active");
+  }
+
+  mostrarNoticias();
+}
+
+function buscarNoticias() {
+  mostrarNoticias();
+}
+
+document
+  .getElementById("searchInput")
+  .addEventListener(
+    "keydown",
+    function(event) {
+
+      if (event.key === "Enter") {
+        buscarNoticias();
+      }
+
+    }
+  );
+
+cargarNoticias();
+</script>
