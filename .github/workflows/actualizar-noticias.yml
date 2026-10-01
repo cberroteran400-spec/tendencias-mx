@@ -34,10 +34,9 @@ jobs:
 
           import json
           import re
-          import hashlib
           from datetime import datetime, timezone
           from concurrent.futures import ThreadPoolExecutor, as_completed
-          from urllib.parse import urlparse, parse_qs, unquote
+          from urllib.parse import urlparse, parse_qs, unquote, urljoin
 
           import feedparser
           import requests
@@ -50,7 +49,10 @@ jobs:
           # ============================================================
 
           MAX_NOTICIAS = 5000
-          MAX_BUSQUEDAS_IMAGEN = 1500
+
+          # Cuántas páginas se pueden visitar buscando imágenes
+          MAX_BUSQUEDAS_IMAGEN = 2500
+
           TIMEOUT = 15
 
           HEADERS = {
@@ -123,63 +125,98 @@ jobs:
               (
                   "Fútbol",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+futbol"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(futbol+OR+fútbol+OR+soccer)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               ),
 
               (
                   "Liga MX",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+%22Liga+MX%22"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(%22Liga+MX%22+OR+LigaMX)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               ),
 
               (
                   "NFL",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+NFL"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(NFL+OR+%22Super+Bowl%22+OR+%22futbol+americano%22)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               ),
 
               (
                   "Fórmula 1",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+%22Formula+1%22"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(%22Formula+1%22+OR+%22Fórmula+1%22+OR+F1+OR+"
+                  "%22Gran+Premio%22+OR+%22Checo+Perez%22)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               ),
 
               (
                   "Boxeo",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+boxeo"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(boxeo+OR+boxeador+OR+pelea+OR+%22peso+completo%22)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               ),
 
               (
                   "Tenis",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+tenis"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(tenis+OR+ATP+OR+WTA+OR+Wimbledon+OR+%22US+Open%22+"
+                  "OR+%22Roland+Garros%22)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               ),
+
+              # ========================================================
+              # BÁSQUETBOL AMPLIADO
+              # ========================================================
 
               (
                   "Básquetbol",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+basquetbol"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(NBA+OR+WNBA+OR+basquetbol+OR+básquetbol+OR+"
+                  "baloncesto+OR+FIBA+OR+EuroLeague+OR+%22NBA+Mexico%22)"
+                  "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
+              ),
+
+              (
+                  "Básquetbol NBA",
+                  "https://news.google.com/rss/search?"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(NBA+OR+%22Los+Angeles+Lakers%22+OR+%22Golden+State+Warriors%22+"
+                  "OR+%22Boston+Celtics%22+OR+%22New+York+Knicks%22+"
+                  "OR+%22Dallas+Mavericks%22)"
+                  "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
+              ),
+
+              (
+                  "Básquetbol México",
+                  "https://news.google.com/rss/search?"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(%22basquetbol+mexicano%22+OR+%22básquetbol+mexicano%22+"
+                  "OR+%22selección+mexicana%22+basquetbol+OR+%22NBA+Mexico%22)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               ),
 
               (
                   "Béisbol",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+beisbol"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(beisbol+OR+béisbol+OR+MLB+OR+%22World+Series%22)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               ),
 
               (
                   "Motor",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+automovilismo"
+                  "q=site%3Alifeandstyle.expansion.mx%2Fdeportes+"
+                  "(automovilismo+OR+MotoGP+OR+NASCAR+OR+motociclismo)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               )
           ]
@@ -208,21 +245,23 @@ jobs:
               (
                   "Series",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx+series+Netflix"
+                  "q=site%3Alifeandstyle.expansion.mx+"
+                  "(series+OR+Netflix+OR+Disney+OR+HBO)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               ),
 
               (
                   "Música",
                   "https://news.google.com/rss/search?"
-                  "q=site%3Alifeandstyle.expansion.mx+musica"
+                  "q=site%3Alifeandstyle.expansion.mx+"
+                  "(musica+OR+música+OR+concierto+OR+cantante)"
                   "&hl=es-419&gl=MX&ceid=MX%3Aes-419"
               )
           ]
 
 
           # ============================================================
-          # HTTP
+          # SESIÓN HTTP
           # ============================================================
 
           session = requests.Session()
@@ -230,7 +269,7 @@ jobs:
 
 
           # ============================================================
-          # LIMPIAR TEXTO
+          # LIMPIAR HTML
           # ============================================================
 
           def limpiar_html(texto):
@@ -243,9 +282,7 @@ jobs:
                   "html.parser"
               )
 
-              for tag in soup(
-                  ["script", "style"]
-              ):
+              for tag in soup(["script", "style"]):
                   tag.decompose()
 
               texto = soup.get_text(
@@ -263,7 +300,7 @@ jobs:
 
 
           # ============================================================
-          # URL ORIGINAL
+          # URL ORIGINAL DE GOOGLE NEWS
           # ============================================================
 
           def obtener_url_original(url):
@@ -279,6 +316,7 @@ jobs:
               try:
 
                   parsed = urlparse(url)
+
                   qs = parse_qs(
                       parsed.query
                   )
@@ -290,8 +328,8 @@ jobs:
                   ]:
 
                       if (
-                          clave in qs and
-                          qs[clave]
+                          clave in qs
+                          and qs[clave]
                       ):
 
                           posible = unquote(
@@ -310,10 +348,78 @@ jobs:
 
 
           # ============================================================
-          # IMAGEN DEL RSS
+          # VALIDAR IMAGEN
           # ============================================================
 
-          def imagen_desde_feed(entry):
+          def validar_imagen(url):
+
+              if not url:
+                  return False
+
+              url = str(url).strip()
+
+              if not url.startswith(
+                  ("http://", "https://")
+              ):
+                  return False
+
+              texto = url.lower()
+
+              prohibidas = [
+                  "favicon",
+                  "logo",
+                  "icon",
+                  "avatar",
+                  "sprite",
+                  "tracking",
+                  "pixel",
+                  "advert",
+                  "adsystem"
+              ]
+
+              if any(
+                  palabra in texto
+                  for palabra in prohibidas
+              ):
+                  return False
+
+              extensiones = [
+                  ".jpg",
+                  ".jpeg",
+                  ".png",
+                  ".webp",
+                  ".avif",
+                  ".gif"
+              ]
+
+              if any(
+                  ext in texto
+                  for ext in extensiones
+              ):
+                  return True
+
+              dominios = [
+                  "image",
+                  "images",
+                  "img",
+                  "media",
+                  "cdn",
+                  "cloudfront",
+                  "cloudinary",
+                  "akamaized"
+              ]
+
+              return any(
+                  x in texto
+                  for x in dominios
+              )
+
+
+          # ============================================================
+          # IMÁGENES DEL RSS
+          # ============================================================
+
+          def imagenes_desde_feed(entry):
 
               candidatos = []
 
@@ -412,6 +518,7 @@ jobs:
                   ""
               )
 
+
               if html:
 
                   soup = BeautifulSoup(
@@ -423,102 +530,69 @@ jobs:
                       "img"
                   ):
 
-                      valor = (
-                          img.get("src")
-                          or
-                          img.get("data-src")
-                          or
-                          img.get("data-original")
-                      )
+                      for atributo in [
+                          "src",
+                          "data-src",
+                          "data-original",
+                          "data-lazy-src"
+                      ]:
 
-                      if valor:
-                          candidatos.append(
-                              valor
+                          valor = img.get(
+                              atributo
                           )
+
+                          if valor:
+                              candidatos.append(
+                                  valor
+                              )
+
+
+              resultado = []
 
 
               for imagen in candidatos:
 
-                  if validar_imagen(imagen):
-                      return imagen.strip()
+                  if not imagen:
+                      continue
 
-              return ""
+                  imagen = str(
+                      imagen
+                  ).strip()
+
+
+                  if imagen.startswith(
+                      "//"
+                  ):
+                      imagen = (
+                          "https:" +
+                          imagen
+                      )
+
+
+                  if validar_imagen(
+                      imagen
+                  ):
+
+                      if imagen not in resultado:
+                          resultado.append(
+                              imagen
+                          )
+
+
+              return resultado
 
 
           # ============================================================
-          # VALIDAR IMAGEN
+          # OBTENER TODAS LAS IMÁGENES DE LA PÁGINA
           # ============================================================
 
-          def validar_imagen(url):
+          def obtener_imagenes_pagina(url):
+
+              resultado = []
 
               if not url:
-                  return False
+                  return resultado
 
-              url = str(url).strip()
-
-              if not url.startswith(
-                  ("http://", "https://")
-              ):
-                  return False
-
-              texto = url.lower()
-
-              prohibidas = [
-                  "favicon",
-                  "logo",
-                  "icon",
-                  "avatar",
-                  "sprite",
-                  "tracking",
-                  "pixel",
-                  "advert"
-              ]
-
-              if any(
-                  palabra in texto
-                  for palabra in prohibidas
-              ):
-                  return False
-
-              extensiones = [
-                  ".jpg",
-                  ".jpeg",
-                  ".png",
-                  ".webp",
-                  ".avif",
-                  ".gif"
-              ]
-
-              if any(
-                  ext in texto
-                  for ext in extensiones
-              ):
-                  return True
-
-              dominios = [
-                  "image",
-                  "images",
-                  "img",
-                  "media",
-                  "cdn",
-                  "cloudfront",
-                  "cloudinary"
-              ]
-
-              return any(
-                  x in texto
-                  for x in dominios
-              )
-
-
-          # ============================================================
-          # IMAGEN REAL DE LA PÁGINA
-          # ============================================================
-
-          def obtener_imagen_real(url):
-
-              if not url:
-                  return ""
 
               try:
 
@@ -528,8 +602,10 @@ jobs:
                       allow_redirects=True
                   )
 
+
                   if respuesta.status_code != 200:
-                      return ""
+                      return resultado
+
 
                   soup = BeautifulSoup(
                       respuesta.text,
@@ -538,7 +614,7 @@ jobs:
 
 
                   # ----------------------------------------------------
-                  # 1. OG IMAGE
+                  # OG IMAGE
                   # ----------------------------------------------------
 
                   metas = [
@@ -589,40 +665,24 @@ jobs:
                       if not imagen:
                           continue
 
-                      imagen = imagen.strip()
-
-
-                      if imagen.startswith(
-                          "//"
-                      ):
-                          imagen = (
-                              "https:" +
-                              imagen
-                          )
-
-                      elif imagen.startswith(
-                          "/"
-                      ):
-
-                          base = (
-                              f"{urlparse(respuesta.url).scheme}://"
-                              f"{urlparse(respuesta.url).netloc}"
-                          )
-
-                          imagen = (
-                              base +
-                              imagen
-                          )
+                      imagen = urljoin(
+                          respuesta.url,
+                          imagen.strip()
+                      )
 
 
                       if validar_imagen(
                           imagen
                       ):
-                          return imagen
+
+                          if imagen not in resultado:
+                              resultado.append(
+                                  imagen
+                              )
 
 
                   # ----------------------------------------------------
-                  # 2. JSON-LD
+                  # JSON-LD
                   # ----------------------------------------------------
 
                   for script in soup.find_all(
@@ -632,12 +692,19 @@ jobs:
 
                       try:
 
-                          datos = json.loads(
-                              script.string or
+                          texto = (
+                              script.string
+                              or
                               script.get_text()
                           )
 
+                          datos = json.loads(
+                              texto
+                          )
+
+
                           objetos = []
+
 
                           if isinstance(
                               datos,
@@ -662,6 +729,7 @@ jobs:
                               ):
                                   continue
 
+
                               imagen = obj.get(
                                   "image"
                               )
@@ -672,13 +740,23 @@ jobs:
                                   str
                               ):
 
+                                  imagen = urljoin(
+                                      respuesta.url,
+                                      imagen
+                                  )
+
+
                                   if validar_imagen(
                                       imagen
                                   ):
-                                      return imagen
+
+                                      if imagen not in resultado:
+                                          resultado.append(
+                                              imagen
+                                          )
 
 
-                              if isinstance(
+                              elif isinstance(
                                   imagen,
                                   list
                               ):
@@ -688,104 +766,108 @@ jobs:
                                       if isinstance(
                                           item,
                                           str
-                                      ) and validar_imagen(
-                                          item
                                       ):
-                                          return item
+
+                                          item = urljoin(
+                                              respuesta.url,
+                                              item
+                                          )
+
+
+                                          if validar_imagen(
+                                              item
+                                          ):
+
+                                              if item not in resultado:
+                                                  resultado.append(
+                                                      item
+                                                  )
+
 
                       except:
                           pass
 
 
                   # ----------------------------------------------------
-                  # 3. IMAGEN GRANDE DEL ARTÍCULO
+                  # IMG DEL ARTÍCULO
                   # ----------------------------------------------------
-
-                  candidatos = []
 
                   for img in soup.find_all(
                       "img"
                   ):
 
-                      src = (
-                          img.get("src")
-                          or
-                          img.get("data-src")
-                          or
-                          img.get("data-lazy-src")
-                          or
-                          img.get("data-original")
-                      )
-
-                      if not src:
-                          continue
-
-                      src = src.strip()
+                      atributos = [
+                          "src",
+                          "data-src",
+                          "data-original",
+                          "data-lazy-src"
+                      ]
 
 
-                      if src.startswith(
-                          "//"
-                      ):
-                          src = (
-                              "https:" +
+                      for atributo in atributos:
+
+                          src = img.get(
+                              atributo
+                          )
+
+                          if not src:
+                              continue
+
+
+                          src = urljoin(
+                              respuesta.url,
+                              src.strip()
+                          )
+
+
+                          if not validar_imagen(
                               src
-                          )
-
-                      elif src.startswith(
-                          "/"
-                      ):
-
-                          base = (
-                              f"{urlparse(respuesta.url).scheme}://"
-                              f"{urlparse(respuesta.url).netloc}"
-                          )
-
-                          src = (
-                              base +
-                              src
-                          )
+                          ):
+                              continue
 
 
-                      if not validar_imagen(
-                          src
-                      ):
-                          continue
+                          try:
 
-
-                      # Ignorar imágenes pequeñas
-                      try:
-
-                          width = int(
-                              img.get(
-                                  "width",
-                                  0
+                              width = int(
+                                  img.get(
+                                      "width",
+                                      0
+                                  )
                               )
-                          )
 
-                      except:
-                          width = 0
+                          except:
 
-
-                      if width >= 500:
-                          return src
+                              width = 0
 
 
-                      candidatos.append(src)
+                          # Preferimos imágenes grandes
+                          if width >= 500:
+
+                              if src not in resultado:
+                                  resultado.append(
+                                      src
+                                  )
+
+                          elif len(resultado) < 10:
+
+                              if src not in resultado:
+                                  resultado.append(
+                                      src
+                                  )
 
 
-                  if candidatos:
-                      return candidatos[0]
+                          break
 
 
               except Exception as error:
 
                   print(
-                      "Error imagen:",
+                      "Error obteniendo imágenes:",
                       error
                   )
 
 
-              return ""
+              return resultado
 
 
           # ============================================================
@@ -812,13 +894,16 @@ jobs:
                               valor
                           )
 
+
                           if fecha.tzinfo is None:
 
                               fecha = fecha.replace(
                                   tzinfo=timezone.utc
                               )
 
+
                           return fecha.isoformat()
+
 
                       except:
                           pass
@@ -830,7 +915,7 @@ jobs:
 
 
           # ============================================================
-          # RSS EXPANSIÓN
+          # LEER FUENTE EXPANSIÓN
           # ============================================================
 
           def leer_fuente(
@@ -846,11 +931,13 @@ jobs:
                   nombre
               )
 
+
               try:
 
                   feed = feedparser.parse(
                       url
                   )
+
 
                   for entry in feed.entries:
 
@@ -861,6 +948,7 @@ jobs:
                           )
                       )
 
+
                       link = obtener_url_original(
                           entry.get(
                               "link",
@@ -868,8 +956,10 @@ jobs:
                           )
                       )
 
+
                       if not titulo or not link:
                           continue
+
 
                       descripcion = limpiar_html(
                           entry.get(
@@ -883,31 +973,44 @@ jobs:
                           )
                       )
 
-                      imagen = imagen_desde_feed(
+
+                      imagenes = imagenes_desde_feed(
                           entry
                       )
 
+
                       resultado.append({
 
-                          "titulo": titulo,
+                          "titulo":
+                              titulo,
 
                           "descripcion":
                               descripcion[:700],
 
-                          "url": link,
+                          "url":
+                              link,
 
-                          "imagen": imagen,
+                          "imagen":
+                              imagenes[0]
+                              if imagenes
+                              else "",
+
+                          "imagenesAlternativas":
+                              imagenes[1:],
 
                           "categoria":
                               categoria,
 
-                          "subcategoria": "",
+                          "subcategoria":
+                              "",
 
-                          "fuente": nombre,
+                          "fuente":
+                              nombre,
 
                           "fecha":
-                              obtener_fecha(entry)
-
+                              obtener_fecha(
+                                  entry
+                              )
                       })
 
 
@@ -923,7 +1026,7 @@ jobs:
 
 
           # ============================================================
-          # DEPORTES
+          # LEER DEPORTES
           # ============================================================
 
           def leer_deportes(
@@ -938,11 +1041,13 @@ jobs:
                   subcategoria
               )
 
+
               try:
 
                   feed = feedparser.parse(
                       url
                   )
+
 
                   for entry in feed.entries:
 
@@ -953,12 +1058,14 @@ jobs:
                           )
                       )
 
+
                       link = obtener_url_original(
                           entry.get(
                               "link",
                               ""
                           )
                       )
+
 
                       if not titulo or not link:
                           continue
@@ -986,36 +1093,126 @@ jobs:
                       ).lower()
 
 
-                      # Solo aceptar artículos
-                      # claramente deportivos.
+                      # =================================================
+                      # VALIDACIÓN ESPECÍFICA POR DEPORTE
+                      # =================================================
 
-                      palabras = [
+                      palabras_por_deporte = {
 
-                          "futbol",
-                          "fútbol",
-                          "liga mx",
-                          "nfl",
-                          "super bowl",
-                          "formula 1",
-                          "fórmula 1",
-                          "gran premio",
-                          "checo perez",
-                          "checo pérez",
-                          "boxeo",
-                          "boxeador",
-                          "tenis",
-                          "nba",
-                          "basquetbol",
-                          "básquetbol",
-                          "beisbol",
-                          "béisbol",
-                          "mlb",
-                          "automovilismo",
-                          "motogp",
-                          "premier league",
-                          "champions league",
-                          "uefa"
-                      ]
+                          "Fútbol": [
+                              "futbol",
+                              "fútbol",
+                              "soccer",
+                              "champions",
+                              "premier league"
+                          ],
+
+                          "Liga MX": [
+                              "liga mx",
+                              "ligamx",
+                              "club américa",
+                              "américa",
+                              "chivas",
+                              "cruz azul",
+                              "pumas",
+                              "tigres",
+                              "monterrey"
+                          ],
+
+                          "NFL": [
+                              "nfl",
+                              "super bowl",
+                              "touchdown",
+                              "quarterback",
+                              "futbol americano"
+                          ],
+
+                          "Fórmula 1": [
+                              "formula 1",
+                              "fórmula 1",
+                              "f1",
+                              "gran premio",
+                              "checo perez",
+                              "checo pérez",
+                              "aston martin",
+                              "ferrari",
+                              "mercedes"
+                          ],
+
+                          "Boxeo": [
+                              "boxeo",
+                              "boxeador",
+                              "peleador",
+                              "peso completo"
+                          ],
+
+                          "Tenis": [
+                              "tenis",
+                              "atp",
+                              "wta",
+                              "wimbledon",
+                              "roland garros",
+                              "us open"
+                          ],
+
+                          "Básquetbol": [
+                              "nba",
+                              "wnba",
+                              "basquetbol",
+                              "básquetbol",
+                              "baloncesto",
+                              "fiba",
+                              "euroleague",
+                              "basketball",
+                              "nba mexico",
+                              "nba méxico"
+                          ],
+
+                          "Básquetbol NBA": [
+                              "nba",
+                              "lakers",
+                              "warriors",
+                              "celtics",
+                              "knicks",
+                              "mavericks",
+                              "bulls",
+                              "heat",
+                              "spurs",
+                              "suns",
+                              "nuggets",
+                              "bucks"
+                          ],
+
+                          "Básquetbol México": [
+                              "basquetbol mexicano",
+                              "básquetbol mexicano",
+                              "nba mexico",
+                              "nba méxico",
+                              "selección mexicana",
+                              "baloncesto mexicano"
+                          ],
+
+                          "Béisbol": [
+                              "beisbol",
+                              "béisbol",
+                              "mlb",
+                              "world series",
+                              "home run"
+                          ],
+
+                          "Motor": [
+                              "automovilismo",
+                              "motogp",
+                              "nascar",
+                              "motociclismo"
+                          ]
+                      }
+
+
+                      palabras = palabras_por_deporte.get(
+                          subcategoria,
+                          []
+                      )
 
 
                       if not any(
@@ -1025,21 +1222,29 @@ jobs:
                           continue
 
 
-                      imagen = imagen_desde_feed(
+                      imagenes = imagenes_desde_feed(
                           entry
                       )
 
 
                       resultado.append({
 
-                          "titulo": titulo,
+                          "titulo":
+                              titulo,
 
                           "descripcion":
                               descripcion[:700],
 
-                          "url": link,
+                          "url":
+                              link,
 
-                          "imagen": imagen,
+                          "imagen":
+                              imagenes[0]
+                              if imagenes
+                              else "",
+
+                          "imagenesAlternativas":
+                              imagenes[1:],
 
                           "categoria":
                               "Deportes",
@@ -1051,8 +1256,9 @@ jobs:
                               "Expansión - Deportes",
 
                           "fecha":
-                              obtener_fecha(entry)
-
+                              obtener_fecha(
+                                  entry
+                              )
                       })
 
 
@@ -1084,6 +1290,7 @@ jobs:
                       url
                   )
 
+
                   for entry in feed.entries:
 
                       titulo = limpiar_html(
@@ -1093,12 +1300,14 @@ jobs:
                           )
                       )
 
+
                       link = obtener_url_original(
                           entry.get(
                               "link",
                               ""
                           )
                       )
+
 
                       if not titulo or not link:
                           continue
@@ -1117,21 +1326,29 @@ jobs:
                       )
 
 
-                      imagen = imagen_desde_feed(
+                      imagenes = imagenes_desde_feed(
                           entry
                       )
 
 
                       resultado.append({
 
-                          "titulo": titulo,
+                          "titulo":
+                              titulo,
 
                           "descripcion":
                               descripcion[:700],
 
-                          "url": link,
+                          "url":
+                              link,
 
-                          "imagen": imagen,
+                          "imagen":
+                              imagenes[0]
+                              if imagenes
+                              else "",
+
+                          "imagenesAlternativas":
+                              imagenes[1:],
 
                           "categoria":
                               "Entretenimiento",
@@ -1143,8 +1360,9 @@ jobs:
                               "Expansión - Life & Style",
 
                           "fecha":
-                              obtener_fecha(entry)
-
+                              obtener_fecha(
+                                  entry
+                              )
                       })
 
 
@@ -1166,6 +1384,8 @@ jobs:
           noticias = []
 
 
+          # Fuentes generales
+
           for nombre, url, categoria in FUENTES:
 
               noticias.extend(
@@ -1177,6 +1397,8 @@ jobs:
               )
 
 
+          # Deportes
+
           for subcategoria, url in DEPORTES:
 
               noticias.extend(
@@ -1186,6 +1408,8 @@ jobs:
                   )
               )
 
+
+          # Entretenimiento
 
           for subcategoria, url in ENTRETENIMIENTO:
 
@@ -1215,24 +1439,41 @@ jobs:
 
           for noticia in noticias:
 
-              url = noticia["url"].strip()
+              url = noticia.get(
+                  "url",
+                  ""
+              ).strip()
+
 
               titulo = (
-                  noticia["titulo"]
+                  noticia.get(
+                      "titulo",
+                      ""
+                  )
                   .strip()
                   .lower()
               )
 
 
+              if not url:
+                  continue
+
+
               if url in vistas_urls:
                   continue
+
 
               if titulo in vistas_titulos:
                   continue
 
 
-              vistas_urls.add(url)
-              vistas_titulos.add(titulo)
+              vistas_urls.add(
+                  url
+              )
+
+              vistas_titulos.add(
+                  titulo
+              )
 
               limpias.append(
                   noticia
@@ -1243,7 +1484,7 @@ jobs:
 
 
           # ============================================================
-          # BUSCAR IMÁGENES REALES
+          # BUSCAR IMÁGENES
           # ============================================================
 
           pendientes = [
@@ -1267,20 +1508,20 @@ jobs:
 
 
           print(
-              "Buscando imágenes reales:",
+              "Páginas a revisar para imágenes:",
               len(pendientes)
           )
 
 
           def buscar_imagen(noticia):
 
-              imagen = obtener_imagen_real(
+              imagenes = obtener_imagenes_pagina(
                   noticia["url"]
               )
 
               return (
                   noticia["url"],
-                  imagen
+                  imagenes
               )
 
 
@@ -1306,32 +1547,42 @@ jobs:
 
                   try:
 
-                      url, imagen = (
+                      url, imagenes = (
                           futuro.result()
                       )
 
-                      if imagen:
 
-                          for noticia in noticias:
+                      for noticia in noticias:
 
-                              if (
-                                  noticia["url"]
-                                  ==
-                                  url
-                              ):
+                          if (
+                              noticia["url"]
+                              ==
+                              url
+                          ):
+
+                              if imagenes:
 
                                   noticia[
                                       "imagen"
-                                  ] = imagen
+                                  ] = imagenes[0]
 
-                                  break
+                                  noticia[
+                                      "imagenesAlternativas"
+                                  ] = imagenes[1:]
 
-                  except:
-                      pass
+                              break
+
+
+                  except Exception as error:
+
+                      print(
+                          "Error:",
+                          error
+                      )
 
 
           # ============================================================
-          # ELIMINAR IMÁGENES DUPLICADAS
+          # ELIMINAR IMÁGENES REPETIDAS
           # ============================================================
 
           imagenes_usadas = set()
@@ -1349,35 +1600,86 @@ jobs:
               ).strip()
 
 
-              if not imagen:
-                  continue
+              alternativas = noticia.get(
+                  "imagenesAlternativas",
+                  []
+              )
 
 
-              # Quitamos parámetros para
-              # detectar la misma imagen.
-
-              base = imagen.split("?")[0].lower()
+              candidatos = []
 
 
-              if base in imagenes_usadas:
+              if imagen:
+                  candidatos.append(
+                      imagen
+                  )
 
-                  # IMPORTANTE:
-                  # no ponemos otra fotografía.
-                  # Dejamos vacío para que
-                  # deportes.html genere
-                  # un visual único.
 
-                  noticia["imagen"] = ""
+              if isinstance(
+                  alternativas,
+                  list
+              ):
 
-              else:
+                  candidatos.extend(
+                      alternativas
+                  )
+
+
+              imagen_final = ""
+
+
+              for candidato in candidatos:
+
+                  if not candidato:
+                      continue
+
+
+                  candidato = str(
+                      candidato
+                  ).strip()
+
+
+                  base = candidato.split(
+                      "?",
+                      1
+                  )[0].lower()
+
+
+                  if not validar_imagen(
+                      candidato
+                  ):
+                      continue
+
+
+                  if base in imagenes_usadas:
+                      continue
+
+
+                  imagen_final = candidato
 
                   imagenes_usadas.add(
                       base
                   )
 
+                  break
+
+
+              noticia["imagen"] = (
+                  imagen_final
+              )
+
+
+              # Ya no necesitamos mandar
+              # las alternativas al navegador.
+
+              noticia.pop(
+                  "imagenesAlternativas",
+                  None
+              )
+
 
           # ============================================================
-          # ORDENAR
+          # ORDENAR POR FECHA
           # ============================================================
 
           def fecha_segura(noticia):
@@ -1414,8 +1716,8 @@ jobs:
           # ============================================================
 
           categorias = {}
-
           fuentes = {}
+          deportes = {}
 
           con_imagen = 0
           sin_imagen = 0
@@ -1427,6 +1729,7 @@ jobs:
                   "categoria",
                   "Noticias"
               )
+
 
               fuente = noticia.get(
                   "fuente",
@@ -1450,12 +1753,30 @@ jobs:
               )
 
 
+              if categoria == "Deportes":
+
+                  deporte = noticia.get(
+                      "subcategoria",
+                      "Otros"
+                  )
+
+
+                  deportes[deporte] = (
+                      deportes.get(
+                          deporte,
+                          0
+                      ) + 1
+                  )
+
+
               if noticia.get(
                   "imagen"
               ):
+
                   con_imagen += 1
 
               else:
+
                   sin_imagen += 1
 
 
@@ -1488,6 +1809,9 @@ jobs:
               "categorias":
                   categorias,
 
+              "deportes":
+                  deportes,
+
               "fuentes":
                   fuentes,
 
@@ -1510,27 +1834,41 @@ jobs:
               )
 
 
+          # ============================================================
+          # RESULTADO
+          # ============================================================
+
           print("")
-          print("==============================")
-          print("ACTUALIZACIÓN TERMINADA")
-          print("==============================")
+          print("======================================")
+          print(" ACTUALIZACIÓN TERMINADA")
+          print("======================================")
+
           print(
               "Noticias:",
               len(noticias)
           )
+
           print(
               "Con imagen:",
               con_imagen
           )
+
           print(
               "Sin imagen:",
               sin_imagen
           )
+
           print(
               "Categorías:",
               categorias
           )
-          print("==============================")
+
+          print(
+              "Deportes:",
+              deportes
+          )
+
+          print("======================================")
 
 
           PY
@@ -1544,23 +1882,45 @@ jobs:
       - name: Mostrar resultado
         run: |
           python - <<'PY'
+
           import json
 
           with open(
               "noticias.json",
               encoding="utf-8"
           ) as f:
+
               data = json.load(f)
 
-          print("TOTAL:", data["total"])
+
+          print("")
+          print("========== RESULTADO ==========")
+
+          print(
+              "TOTAL:",
+              data["total"]
+          )
+
           print(
               "IMÁGENES:",
               data["imagenes"]
           )
+
           print(
               "CATEGORÍAS:",
               data["categorias"]
           )
+
+          print(
+              "DEPORTES:",
+              data.get(
+                  "deportes",
+                  {}
+              )
+          )
+
+          print("===============================")
+
           PY
 
 
@@ -1581,7 +1941,7 @@ jobs:
           else
 
             git commit \
-              -m "Actualizar noticias e imagenes"
+              -m "Actualizar noticias deportes e imagenes"
 
             git push
 
