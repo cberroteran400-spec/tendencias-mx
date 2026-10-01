@@ -91,7 +91,7 @@ jobs:
 
 
           # ============================================================
-          # FUENTES DEPORTIVAS DIRECTAS
+          # FUENTES DEPORTIVAS
           # ============================================================
 
           FUENTES_DEPORTIVAS = {
@@ -296,12 +296,8 @@ jobs:
 
 
           # ============================================================
-          # EXTRAER Y RESOLVER IMÁGENES REALES
+          # IMÁGENES REALES
           # ============================================================
-
-          # CAMBIO EXCLUSIVO DE IMÁGENES:
-          # Se mantiene un registro de imágenes utilizadas para evitar
-          # que varias noticias terminen mostrando exactamente la misma.
 
           IMAGENES_USADAS = set()
 
@@ -327,13 +323,12 @@ jobs:
                       + partes.netloc.lower()
                       + partes.path
                   ).rstrip("/")
+
               except Exception:
                   return ""
 
 
           def desocultar_url_google_news(url):
-              """Decodifica la URL redirigida de Google News."""
-
               if "news.google.com" not in url:
                   return url
 
@@ -378,7 +373,7 @@ jobs:
                   resp = requests.get(
                       url,
                       headers=HEADERS,
-                      timeout=6,
+                      timeout=2,
                       allow_redirects=True
                   )
 
@@ -445,7 +440,7 @@ jobs:
                   resp = requests.head(
                       url,
                       headers=HEADERS,
-                      timeout=5,
+                      timeout=2,
                       allow_redirects=True
                   )
 
@@ -453,7 +448,7 @@ jobs:
                       resp = requests.get(
                           url,
                           headers=HEADERS,
-                          timeout=5,
+                          timeout=2,
                           stream=True,
                           allow_redirects=True
                       )
@@ -500,9 +495,7 @@ jobs:
               return ""
 
 
-          def obtener_candidatos_imagen_pagina(
-              url_noticia
-          ):
+          def obtener_candidatos_imagen_pagina(url_noticia):
 
               url_real = desocultar_url_google_news(
                   url_noticia
@@ -515,7 +508,7 @@ jobs:
                   resp = requests.get(
                       url_real,
                       headers=HEADERS,
-                      timeout=8,
+                      timeout=3,
                       allow_redirects=True
                   )
 
@@ -528,10 +521,6 @@ jobs:
                   )
 
                   candidatos = []
-
-                  # --------------------------------------------
-                  # OG IMAGE / TWITTER IMAGE
-                  # --------------------------------------------
 
                   for meta in soup.find_all("meta"):
 
@@ -572,10 +561,6 @@ jobs:
                                   )
                               )
 
-                  # --------------------------------------------
-                  # LINK IMAGE
-                  # --------------------------------------------
-
                   for link in soup.find_all("link"):
 
                       rel = link.get(
@@ -603,10 +588,6 @@ jobs:
                                   href
                               )
                           )
-
-                  # --------------------------------------------
-                  # IMÁGENES DE LA PÁGINA
-                  # --------------------------------------------
 
                   for img in soup.find_all("img"):
 
@@ -651,10 +632,6 @@ jobs:
                                       )
                                   )
 
-                  # --------------------------------------------
-                  # LIMPIAR DUPLICADOS
-                  # --------------------------------------------
-
                   salida = []
                   vistos = set()
 
@@ -684,9 +661,7 @@ jobs:
                   return []
 
 
-          def obtener_imagen_pagina(
-              url_noticia
-          ):
+          def obtener_imagen_pagina(url_noticia):
 
               candidatos = (
                   obtener_candidatos_imagen_pagina(
@@ -694,7 +669,6 @@ jobs:
                   )
               )
 
-              # Primero buscar una imagen que NO se haya usado.
               for candidato in candidatos:
 
                   img_valida = comprobar_imagen(
@@ -705,9 +679,6 @@ jobs:
                   if img_valida:
                       return img_valida
 
-              # Si todas las imágenes de esa página ya fueron usadas,
-              # no forzamos una repetición. Buscamos una imagen nueva
-              # en una segunda pasada con las mismas candidatas.
               for candidato in candidatos:
 
                   if es_imagen_invalid_google(
@@ -786,7 +757,6 @@ jobs:
                       if u:
                           candidatos.append(u)
 
-              # Intentar primero imágenes no utilizadas.
               for cand in candidatos:
 
                   img = comprobar_imagen(
@@ -826,33 +796,6 @@ jobs:
 
               except Exception:
                   pass
-
-              titulo_feed = getattr(
-                  entry,
-                  "source",
-                  None
-              )
-
-              if titulo_feed:
-
-                  try:
-
-                      if isinstance(
-                          titulo_feed,
-                          dict
-                      ):
-
-                          nombre = titulo_feed.get(
-                              "title"
-                          )
-
-                          if nombre:
-                              return limpiar_html(
-                                  nombre
-                              )
-
-                  except Exception:
-                      pass
 
               return fuente_default
 
@@ -981,29 +924,21 @@ jobs:
               )
 
               if not imagen:
-
                   imagen = obtener_imagen_pagina(
                       url
                   )
 
-              if (
-                  subcategoria
-              ):
+              if subcategoria:
 
                   categoria_final = "Deportes"
-                  subcategoria_final = (
-                      subcategoria
-                  )
+                  subcategoria_final = subcategoria
 
               else:
 
                   categoria_final = categoria
                   subcategoria_final = ""
 
-              if (
-                  categoria_final
-                  == "Deportes"
-              ):
+              if categoria_final == "Deportes":
 
                   detectada = clasificar_deporte(
                       titulo,
@@ -1012,40 +947,24 @@ jobs:
                   )
 
                   if detectada:
-                      subcategoria_final = (
-                          detectada
-                      )
+                      subcategoria_final = detectada
 
-              noticia = {
-
+              return {
                   "id": hash_noticia(
                       titulo,
                       url
                   ),
-
                   "titulo": titulo,
-
                   "descripcion": descripcion,
-
                   "url": url,
-
                   "imagen": imagen,
-
                   "fecha": fecha_iso(
                       fecha
                   ),
-
                   "fuente": fuente,
-
                   "categoria": categoria_final,
-
-                  "subcategoria": (
-                      subcategoria_final
-                  )
-
+                  "subcategoria": subcategoria_final
               }
-
-              return noticia
 
 
           def descargar_feed(url):
@@ -1082,9 +1001,7 @@ jobs:
                   return None
 
 
-          def construir_google_news_url(
-              busqueda
-          ):
+          def construir_google_news_url(busqueda):
 
               return (
                   "https://news.google.com/rss/search?"
@@ -1163,7 +1080,7 @@ jobs:
 
 
           # ============================================================
-          # CARGAR NOTICIAS EXISTENTES Y CORREGIR IMÁGENES DEFECTUOSAS
+          # CARGAR NOTICIAS EXISTENTES
           # ============================================================
 
           datos = cargar_json()
@@ -1175,9 +1092,8 @@ jobs:
 
           mapa = {}
 
-          # Registrar primero todas las imágenes que ya existen.
-          # Así las noticias nuevas intentarán utilizar imágenes
-          # diferentes.
+          # Registrar las imágenes existentes.
+          # NO se vuelven a descargar las imágenes antiguas.
 
           for noticia in noticias_existentes:
 
@@ -1203,13 +1119,30 @@ jobs:
                   )
 
 
-          # NO volver a descargar imágenes de noticias antiguas.
-# Las imágenes existentes se conservan tal como están.
+          imagenes_revisadas = set()
 
-if img_normalizada:
-    imagenes_revisadas.add(
-        img_normalizada
-    )
+          for noticia in noticias_existentes:
+
+              titulo = noticia.get(
+                  "titulo",
+                  ""
+              )
+
+              url = noticia.get(
+                  "url",
+                  ""
+              )
+
+              if not titulo or not url:
+                  continue
+
+              noticia_id = (
+                  noticia.get("id")
+                  or hash_noticia(
+                      titulo,
+                      url
+                  )
+              )
 
               noticia["id"] = noticia_id
 
@@ -1224,34 +1157,13 @@ if img_normalizada:
                   )
               )
 
-              # Si no tiene imagen o la imagen es inválida,
-              # buscar una nueva.
+              # NO volver a descargar imágenes de noticias antiguas.
+              # Las imágenes existentes se conservan tal como están.
 
-              if (
-                  not img_actual
-                  or es_imagen_invalid_google(
-                      img_actual
+              if img_normalizada:
+                  imagenes_revisadas.add(
+                      img_normalizada
                   )
-              ):
-
-                  nueva_imagen = (
-                      obtener_imagen_pagina(
-                          url
-                      )
-                  )
-
-                  if nueva_imagen:
-                      noticia["imagen"] = (
-                          nueva_imagen
-                      )
-
-              else:
-
-                  # Conservar imágenes existentes válidas.
-                  if img_normalizada:
-                      imagenes_revisadas.add(
-                          img_normalizada
-                      )
 
               mapa[noticia_id] = noticia
 
@@ -1303,10 +1215,7 @@ if img_normalizada:
                       if not noticia:
                           continue
 
-                      if (
-                          noticia["id"]
-                          not in mapa
-                      ):
+                      if noticia["id"] not in mapa:
 
                           mapa[
                               noticia["id"]
@@ -1406,15 +1315,11 @@ if img_normalizada:
 
                           if (
                               detectada
-                              and detectada
-                              != deporte
+                              and detectada != deporte
                           ):
                               continue
 
-                      if (
-                          noticia["id"]
-                          not in mapa
-                      ):
+                      if noticia["id"] not in mapa:
 
                           mapa[
                               noticia["id"]
@@ -1486,9 +1391,7 @@ if img_normalizada:
                   "trámites México"
               ]
 
-              tendencias = (
-                  tendencias_respaldo
-              )
+              tendencias = tendencias_respaldo
 
           vistas = set()
           tendencias_limpias = []
@@ -1580,8 +1483,7 @@ if img_normalizada:
 
                   coincidencias = sum(
                       1
-                      for palabra
-                      in palabras_tendencia
+                      for palabra in palabras_tendencia
                       if palabra in texto
                   )
 
@@ -1598,13 +1500,8 @@ if img_normalizada:
 
                   if deporte:
 
-                      categoria = (
-                          "Deportes"
-                      )
-
-                      subcategoria = (
-                          deporte
-                      )
+                      categoria = "Deportes"
+                      subcategoria = deporte
 
                   else:
 
@@ -1624,9 +1521,7 @@ if img_normalizada:
                           ]
                       ):
 
-                          categoria = (
-                              "Dinero"
-                          )
+                          categoria = "Dinero"
 
                       elif any(
                           palabra in texto
@@ -1643,9 +1538,7 @@ if img_normalizada:
                           ]
                       ):
 
-                          categoria = (
-                              "Tecnologia"
-                          )
+                          categoria = "Tecnologia"
 
                       elif any(
                           palabra in texto
@@ -1665,9 +1558,7 @@ if img_normalizada:
                           ]
                       ):
 
-                          categoria = (
-                              "Tendencias"
-                          )
+                          categoria = "Tendencias"
 
                       elif any(
                           palabra in texto
@@ -1684,15 +1575,11 @@ if img_normalizada:
                           ]
                       ):
 
-                          categoria = (
-                              "Politica"
-                          )
+                          categoria = "Politica"
 
                       else:
 
-                          categoria = (
-                              "Noticias"
-                          )
+                          categoria = "Noticias"
 
                       subcategoria = ""
 
@@ -1711,10 +1598,7 @@ if img_normalizada:
                   if not noticia:
                       continue
 
-                  if (
-                      noticia["id"]
-                      not in mapa
-                  ):
+                  if noticia["id"] not in mapa:
 
                       mapa[
                           noticia["id"]
@@ -1776,8 +1660,7 @@ if img_normalizada:
 
               palabras = [
                   p
-                  for p
-                  in titulo_normalizado.split()
+                  for p in titulo_normalizado.split()
                   if len(p) >= 4
               ]
 
@@ -1787,22 +1670,13 @@ if img_normalizada:
                   )
               )
 
-              if (
-                  url_normalizada
-                  in urls_vistas
-              ):
+              if url_normalizada in urls_vistas:
                   continue
 
-              if (
-                  titulo_normalizado
-                  in titulos_vistos
-              ):
+              if titulo_normalizado in titulos_vistos:
                   continue
 
-              if (
-                  clave_titulo
-                  in claves_titulo
-              ):
+              if clave_titulo in claves_titulo:
                   continue
 
               urls_vistas.add(
@@ -1937,9 +1811,7 @@ if img_normalizada:
               "imagenes": {
                   "con_imagen": con_imagen,
                   "sin_imagen": sin_imagen,
-                  "imagenes_unicas": (
-                      imagenes_unicas
-                  )
+                  "imagenes_unicas": imagenes_unicas
               },
               "noticias": resultado_final
           }
