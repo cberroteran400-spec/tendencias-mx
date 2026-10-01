@@ -7,7 +7,7 @@
 <title>Trámites | TendenciasMX</title>
 
 <meta name="description" content="Encuentra información organizada sobre trámites, documentos y servicios de utilidad para ciudadanos en México.">
-<meta name="keywords" content="trámites México, CURP, RFC, INE, pasaporte, acta de nacimiento, licencia de conducir, empleo, documentos">
+<meta name="keywords" content="trámites México, CURP, RFC, INE, pasaporte, acta de nacimiento, licencia de conducir, SAT">
 
 <style>
 *{
@@ -98,7 +98,7 @@ main{
 }
 
 .hero p{
-    max-width:700px;
+    max-width:720px;
     margin:auto;
     color:#6b7280;
     font-size:16px;
@@ -197,7 +197,7 @@ main{
     background:white;
     border:1px solid #e5e7eb;
     border-radius:16px;
-    padding:22px;
+    overflow:hidden;
     box-shadow:0 4px 15px rgba(0,0,0,.07);
     transition:.25s;
     display:flex;
@@ -209,28 +209,24 @@ main{
     box-shadow:0 9px 25px rgba(0,0,0,.12);
 }
 
-.icono{
-    width:58px;
-    height:58px;
-    border-radius:14px;
-    background:#ecfdf5;
+.card-imagen{
+    height:175px;
+    width:100%;
+    background:#111827;
+    overflow:hidden;
+}
+
+.card-imagen img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.card-contenido{
+    padding:20px;
     display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:30px;
-    margin-bottom:16px;
-}
-
-.card h3{
-    font-size:20px;
-    margin-bottom:9px;
-}
-
-.card p{
-    color:#6b7280;
-    font-size:14px;
-    line-height:1.55;
-    margin-bottom:14px;
+    flex-direction:column;
     flex:1;
 }
 
@@ -243,7 +239,21 @@ main{
     font-weight:bold;
     padding:5px 9px;
     border-radius:999px;
-    margin-bottom:15px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    font-size:20px;
+    margin-bottom:9px;
+    color:#111827;
+}
+
+.card p{
+    color:#6b7280;
+    font-size:14px;
+    line-height:1.55;
+    margin-bottom:18px;
+    flex:1;
 }
 
 .btn-tramite{
@@ -263,33 +273,54 @@ main{
     background:#22c55e;
 }
 
-.info{
-    margin-top:40px;
-    background:#fff7ed;
-    border:1px solid #fed7aa;
-    border-radius:14px;
-    padding:20px;
-}
-
-.info h2{
-    font-size:18px;
-    margin-bottom:8px;
-    color:#9a3412;
-}
-
-.info p{
-    color:#7c2d12;
-    line-height:1.6;
-    font-size:14px;
-}
-
 .vacio{
     grid-column:1/-1;
     background:white;
     border-radius:15px;
-    padding:40px;
+    padding:45px 20px;
     text-align:center;
     color:#6b7280;
+}
+
+.aviso{
+    margin-top:42px;
+    background:white;
+    border:1px solid #dbe4ea;
+    border-left:5px solid #22c55e;
+    border-radius:14px;
+    padding:22px 24px;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+
+.aviso-titulo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:18px;
+    font-weight:bold;
+    color:#111827;
+    margin-bottom:9px;
+}
+
+.aviso-icono{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#dcfce7;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+}
+
+.aviso p{
+    color:#6b7280;
+    line-height:1.6;
+    font-size:14px;
+}
+
+.aviso strong{
+    color:#374151;
 }
 
 footer{
@@ -340,6 +371,14 @@ footer strong{
 
     .grid{
         grid-template-columns:1fr;
+    }
+
+    .card-imagen{
+        height:200px;
+    }
+
+    .aviso{
+        padding:19px;
     }
 }
 </style>
@@ -462,16 +501,24 @@ footer strong{
     </section>
 
 
-    <section class="info">
+    <section class="aviso">
 
-        <h2>⚠️ Información importante</h2>
+        <div class="aviso-titulo">
+
+            <div class="aviso-icono">
+                ℹ️
+            </div>
+
+            Información importante
+
+        </div>
 
         <p>
-            Esta sección funciona como una guía informativa.
-            Los requisitos, costos, horarios, documentos y
-            procedimientos pueden cambiar. Antes de realizar
-            un trámite, verifica siempre la información
-            directamente con la institución oficial correspondiente.
+            <strong>TendenciasMX funciona como una guía informativa.</strong>
+            Los requisitos, costos, horarios, documentos y procedimientos
+            pueden cambiar. Antes de realizar cualquier trámite, consulta
+            siempre la información más reciente directamente con la
+            institución oficial correspondiente.
         </p>
 
     </section>
@@ -492,7 +539,7 @@ const tramites = [
         nombre:"CURP",
         categoria:"identificacion",
         categoriaNombre:"Identificación",
-        icono:"🪪",
+        imagen:"https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=85",
         descripcion:"Información general sobre la Clave Única de Registro de Población y cómo consultar tus datos.",
         url:"https://www.gob.mx/curp/"
     },
@@ -501,7 +548,7 @@ const tramites = [
         nombre:"RFC",
         categoria:"impuestos",
         categoriaNombre:"Impuestos",
-        icono:"💰",
+        imagen:"https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=85",
         descripcion:"Información general relacionada con el Registro Federal de Contribuyentes y obligaciones fiscales.",
         url:"https://wwwmatnp.sat.gob.mx/personas/tramites-del-rfc"
     },
@@ -510,7 +557,7 @@ const tramites = [
         nombre:"Credencial para votar",
         categoria:"identificacion",
         categoriaNombre:"Identificación",
-        icono:"🗳️",
+        imagen:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1000&q=85",
         descripcion:"Información general sobre la identificación oficial emitida por el INE y sus principales trámites.",
         url:"https://www.ine.mx/credencial/"
     },
@@ -519,7 +566,7 @@ const tramites = [
         nombre:"Pasaporte",
         categoria:"viajes",
         categoriaNombre:"Viajes",
-        icono:"🛂",
+        imagen:"https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=85",
         descripcion:"Información general sobre el documento necesario para realizar viajes internacionales y cómo consultar requisitos.",
         url:"https://www.gob.mx/pasaporte/"
     },
@@ -528,7 +575,7 @@ const tramites = [
         nombre:"Licencia de conducir",
         categoria:"transporte",
         categoriaNombre:"Transporte",
-        icono:"🚗",
+        imagen:"https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1000&q=85",
         descripcion:"Información general sobre licencias de conducir y trámites relacionados con vehículos.",
         url:"https://www.gob.mx/tramites"
     },
@@ -537,7 +584,7 @@ const tramites = [
         nombre:"Trámites relacionados con empleo",
         categoria:"empleo",
         categoriaNombre:"Empleo",
-        icono:"💼",
+        imagen:"https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85",
         descripcion:"Información general sobre documentos y procesos que pueden solicitarse en situaciones laborales.",
         url:"https://www.gob.mx/tramites"
     },
@@ -546,7 +593,7 @@ const tramites = [
         nombre:"Acta de nacimiento",
         categoria:"documentos",
         categoriaNombre:"Documentos",
-        icono:"📄",
+        imagen:"https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=85",
         descripcion:"Información general sobre la consulta y obtención de copias certificadas del acta de nacimiento.",
         url:"https://www.gob.mx/ActaNacimiento/"
     },
@@ -555,7 +602,7 @@ const tramites = [
         nombre:"Comprobantes y documentos",
         categoria:"documentos",
         categoriaNombre:"Documentos",
-        icono:"🏠",
+        imagen:"https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1000&q=85",
         descripcion:"Información general sobre documentos que pueden ser solicitados para diferentes trámites.",
         url:"https://www.gob.mx/tramites"
     },
@@ -564,7 +611,7 @@ const tramites = [
         nombre:"Viajes internacionales",
         categoria:"viajes",
         categoriaNombre:"Viajes",
-        icono:"✈️",
+        imagen:"https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=85",
         descripcion:"Información general sobre documentación y requisitos que pueden aplicar al viajar.",
         url:"https://www.gob.mx/sre"
     }
@@ -589,6 +636,30 @@ function escapar(texto){
 }
 
 
+function imagenFallback(img){
+
+    img.style.display="none";
+
+    const padre=img.parentElement;
+
+    padre.style.display="flex";
+    padre.style.alignItems="center";
+    padre.style.justifyContent="center";
+    padre.style.background="#111827";
+
+    padre.innerHTML=`
+        <div style="
+            color:#22c55e;
+            font-size:45px;
+            font-weight:bold;
+        ">
+            MX
+        </div>
+    `;
+
+}
+
+
 function renderizar(lista){
 
     contador.textContent =
@@ -598,7 +669,7 @@ function renderizar(lista){
 
     if(lista.length === 0){
 
-        contenedor.innerHTML = `
+        contenedor.innerHTML=`
             <div class="vacio">
                 <h3>No encontramos ese trámite</h3>
                 <p>
@@ -612,34 +683,45 @@ function renderizar(lista){
     }
 
 
-    contenedor.innerHTML = lista.map(tramite => `
+    contenedor.innerHTML=lista.map(tramite=>`
 
         <article class="card">
 
-            <div class="icono">
-                ${escapar(tramite.icono)}
+            <div class="card-imagen">
+
+                <img
+                    src="${escapar(tramite.imagen)}"
+                    alt="${escapar(tramite.nombre)}"
+                    loading="lazy"
+                    onerror="imagenFallback(this)"
+                >
+
             </div>
 
-            <span class="categoria">
-                ${escapar(tramite.categoriaNombre)}
-            </span>
+            <div class="card-contenido">
 
-            <h3>
-                ${escapar(tramite.nombre)}
-            </h3>
+                <span class="categoria">
+                    ${escapar(tramite.categoriaNombre)}
+                </span>
 
-            <p>
-                ${escapar(tramite.descripcion)}
-            </p>
+                <h3>
+                    ${escapar(tramite.nombre)}
+                </h3>
 
-            <a
-                class="btn-tramite"
-                href="${escapar(tramite.url)}"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Consultar información oficial →
-            </a>
+                <p>
+                    ${escapar(tramite.descripcion)}
+                </p>
+
+                <a
+                    class="btn-tramite"
+                    href="${escapar(tramite.url)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar información oficial →
+                </a>
+
+            </div>
 
         </article>
 
@@ -648,27 +730,28 @@ function renderizar(lista){
 }
 
 
-function filtrar(categoria, boton){
+function filtrar(categoria,boton){
 
     document
         .querySelectorAll(".filtros button")
-        .forEach(btn => btn.classList.remove("activo"));
+        .forEach(btn=>btn.classList.remove("activo"));
 
     boton.classList.add("activo");
 
-    buscador.value = "";
+    buscador.value="";
 
-    if(categoria === "todos"){
+
+    if(categoria==="todos"){
 
         renderizar(tramites);
 
     }else{
 
-        const resultado = tramites.filter(
-            tramite => tramite.categoria === categoria
+        renderizar(
+            tramites.filter(
+                tramite=>tramite.categoria===categoria
+            )
         );
-
-        renderizar(resultado);
 
     }
 
@@ -677,22 +760,24 @@ function filtrar(categoria, boton){
 
 function buscarTramite(){
 
-    const texto =
+    const texto=
         buscador.value
         .trim()
         .toLowerCase();
+
 
     if(!texto){
 
         renderizar(tramites);
 
         return;
+
     }
 
 
-    const resultado = tramites.filter(tramite => {
+    const resultado=tramites.filter(tramite=>{
 
-        return (
+        return(
             tramite.nombre.toLowerCase().includes(texto) ||
             tramite.descripcion.toLowerCase().includes(texto) ||
             tramite.categoriaNombre.toLowerCase().includes(texto)
@@ -703,14 +788,18 @@ function buscarTramite(){
 
     document
         .querySelectorAll(".filtros button")
-        .forEach(btn => btn.classList.remove("activo"));
+        .forEach(btn=>btn.classList.remove("activo"));
+
 
     renderizar(resultado);
 
 }
 
 
-buscador.addEventListener("input", buscarTramite);
+buscador.addEventListener(
+    "input",
+    buscarTramite
+);
 
 
 renderizar(tramites);
