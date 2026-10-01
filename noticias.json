@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-01T10:21:15.480650+00:00",
+  "actualizado": "2026-10-01T11:00:34.037131+00:00",
   "fuente": "Expansión + Life & Style",
-  "total": 231,
+  "total": 233,
   "imagenes": {
-    "con_imagen": 231,
+    "con_imagen": 233,
     "sin_imagen": 0,
-    "imagenes_unicas": 230
+    "imagenes_unicas": 232
   },
   "categorias": {
-    "Noticias": 40,
+    "Noticias": 42,
     "Dinero": 69,
     "Tecnología": 26,
     "Mundo": 50,
@@ -16,7 +16,7 @@
   },
   "subcategorias": {},
   "fuentes": {
-    "Expansión - Portada": 40,
+    "Expansión - Portada": 42,
     "Expansión - Empresas": 33,
     "Expansión - Tecnología": 26,
     "Expansión - Economía": 36,
@@ -425,6 +425,16 @@
       "fecha": "2026-09-29T11:55:38+00:00"
     },
     {
+      "titulo": "BMV será sede en 2027 de la reunión de bolsas iberoamericanas",
+      "descripcion": "La BMV será sede en 2027 de la reunión anual de la FIAB, que dará continuidad a la agenda regional para integrar mercados, facilitar inversiones transfronterizas e impulsar la innovación bursátil.",
+      "url": "https://expansion.mx/mercados/2026/09/28/bmv-sera-sede-reunion-anual-fiab-2027",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/f41ad5c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fa4%2Ff9%2Ffe0c642f4cc49fdfece805f9a20e%2Fopa-pantera-holdings-traxion-bmv.jpg",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fuente": "Expansión - Portada",
+      "fecha": "2026-09-29T01:59:25+00:00"
+    },
+    {
       "titulo": "El nuevo plan corporativo de Starbucks prioriza las licencias",
       "descripcion": "Cerca de 90% del portafolio internacional de Starbucks opera bajo esquemas de licencia, una estructura que la compañía describe como de menor requerimiento de capital y que permite apoyarse en socios locales.",
       "url": "https://expansion.mx/empresas/2026/09/28/el-nuevo-plan-corporativo-de-starbucks-prioriza-licencias",
@@ -443,6 +453,16 @@
       "subcategoria": "",
       "fuente": "Expansión - Tecnología",
       "fecha": "2026-09-28T23:15:34+00:00"
+    },
+    {
+      "titulo": "El tipo de cambio llega a 18 pesos por dólar, tras estancamiento de negociaciones en Medio Oriente",
+      "descripcion": "Las negociaciones frustradas entre Estados Unidos e Irán impulsaron los bonos del Tesoro y fortalecieron al dólar.",
+      "url": "https://expansion.mx/mercados/2026/09/28/peso-mexicano-dolar-18-pesos-hoy-28-septiembre-cierre",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/fd60842/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F40%2F71%2F03011b9d48eb9e1c8c887dcbaf14%2Fpeso-mexicano-dolar-18-iran-petroleo-mercados.jpg%2028%20septiembre%202026.png",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fuente": "Expansión - Portada",
+      "fecha": "2026-09-28T22:58:45+00:00"
     },
     {
       "titulo": "Luego de 35 años, Carl’s Jr. hizo de México uno de sus mercados clave; así construyó su negocio",
