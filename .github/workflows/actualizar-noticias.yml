@@ -29,20 +29,41 @@ jobs:
       - name: Actualizar noticias
         run: |
           cat > actualizar.py <<'PY'
-          import os, re, json, hashlib, html, unicodedata
+          import os
+          import re
+          import json
+          import hashlib
+          import html
+          import unicodedata
           from datetime import datetime, timezone, timedelta
-          from urllib.parse import quote_plus, urlparse
+          from urllib.parse import quote_plus, urlparse, urljoin
+
           import feedparser
           import requests
           from bs4 import BeautifulSoup
 
           ARCHIVO = "noticias.json"
+
           MAX_TOTAL = 1200
           MAX_POR_FEED = 30
-          USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-          HEADERS = {"User-Agent": USER_AGENT}
+
+          USER_AGENT = (
+              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+              "AppleWebKit/537.36 (KHTML, like Gecko) "
+              "Chrome/140.0 Safari/537.36"
+          )
+
+          HEADERS = {
+              "User-Agent": USER_AGENT,
+              "Accept-Language": "es-MX,es;q=0.9,en;q=0.8"
+          }
+
           AHORA = datetime.now(timezone.utc)
           LIMITE_DIAS = 14
+
+          # =========================================================
+          # FUENTES GENERALES
+          # =========================================================
 
           FUENTES_GENERALES = {
               "Expansión": [
@@ -56,34 +77,46 @@ jobs:
               ]
           }
 
+          # =========================================================
+          # FUENTES DEPORTIVAS
+          # Todo sigue entrando al mismo noticias.json
+          # =========================================================
+
           FUENTES_DEPORTIVAS = {
               "futbol": [
                   ("ESPN", "https://www.espn.com/espn/rss/soccer/news"),
                   ("Google News", "fútbol México Liga MX Selección Mexicana"),
                   ("Google News", "Champions League fútbol")
               ],
+
               "tenis": [
                   ("ESPN", "https://www.espn.com/espn/rss/tennis/news"),
                   ("Google News", "tenis ATP WTA")
               ],
+
               "beisbol": [
                   ("ESPN", "https://www.espn.com/espn/rss/mlb/news"),
                   ("Google News", "MLB béisbol")
               ],
+
               "nfl": [
                   ("ESPN", "https://www.espn.com/espn/rss/nfl/news")
               ],
+
               "basquetbol": [
                   ("ESPN", "https://www.espn.com/espn/rss/nba/news")
               ],
+
               "boxeo": [
                   ("ESPN", "https://www.espn.com/espn/rss/boxing/news"),
                   ("Google News", "Canelo boxeo")
               ],
+
               "formula1": [
                   ("ESPN", "https://www.espn.com/espn/rss/rpm/news"),
                   ("Google News", "Fórmula 1 F1 Checo Pérez")
               ],
+
               "otros": [
                   ("ESPN", "https://www.espn.com/espn/rss/golf/news")
               ]
@@ -91,29 +124,66 @@ jobs:
 
           PALABRAS_DEPORTIVAS = {
               "futbol": [
-                  "fútbol", "futbol", "liga mx",
-                  "selección mexicana", "champions"
+                  "fútbol",
+                  "futbol",
+                  "liga mx",
+                  "selección mexicana",
+                  "champions",
+                  "premier league",
+                  "la liga",
+                  "liga española",
+                  "mundial de clubes"
               ],
+
               "tenis": [
-                  "tenis", "atp", "wta"
+                  "tenis",
+                  "atp",
+                  "wta",
+                  "roland garros",
+                  "wimbledon",
+                  "us open",
+                  "australian open"
               ],
+
               "beisbol": [
-                  "béisbol", "beisbol", "mlb"
+                  "béisbol",
+                  "beisbol",
+                  "mlb",
+                  "grand slam",
+                  "home run",
+                  "jonrón"
               ],
+
               "nfl": [
-                  "nfl"
+                  "nfl",
+                  "super bowl"
               ],
+
               "basquetbol": [
-                  "nba"
+                  "nba",
+                  "basquetbol",
+                  "baloncesto"
               ],
+
               "boxeo": [
-                  "boxeo", "canelo"
+                  "boxeo",
+                  "canelo",
+                  "peleador",
+                  "pelea de boxeo"
               ],
+
               "formula1": [
-                  "fórmula 1", "formula 1", "f1",
-                  "checo pérez"
+                  "fórmula 1",
+                  "formula 1",
+                  "f1",
+                  "checo pérez",
+                  "gran premio"
               ]
           }
+
+          # =========================================================
+          # TEXTO
+          # =========================================================
 
           def normalizar(t):
               if not t:
@@ -121,13 +191,20 @@ jobs:
 
               t = html.unescape(str(t))
               t = unicodedata.normalize("NFKD", t)
+
               t = "".join(
                   c for c in t
                   if not unicodedata.combining(c)
               )
+
               t = t.lower()
 
-              return re.sub(r"\s+", " ", t).strip()
+              return re.sub(
+                  r"\s+",
+                  " ",
+                  t
+              ).strip()
+
 
           def limpiar_html(t):
               if not t:
@@ -142,9 +219,13 @@ jobs:
                   r"\s+",
                   " ",
                   html.unescape(
-                      soup.get_text(" ", strip=True)
+                      soup.get_text(
+                          " ",
+                          strip=True
+                      )
                   )
               ).strip()
+
 
           def fecha_entry(e):
               try:
@@ -161,15 +242,32 @@ jobs:
                           ),
                           timezone.utc
                       )
-              except:
+
+                  if getattr(
+                      e,
+                      "updated_parsed",
+                      None
+                  ):
+                      import calendar
+
+                      return datetime.fromtimestamp(
+                          calendar.timegm(
+                              e.updated_parsed
+                          ),
+                          timezone.utc
+                      )
+
+              except Exception:
                   pass
 
               return AHORA
+
 
           def fecha_iso(f):
               return f.astimezone(
                   timezone.utc
               ).isoformat()
+
 
           def hash_noticia(t, u):
               return hashlib.sha256(
@@ -177,18 +275,22 @@ jobs:
                       normalizar(t)[:500]
                       + "|"
                       + normalizar(u)
-                  ).encode()
+                  ).encode(
+                      "utf-8"
+                  )
               ).hexdigest()
+
 
           def url_valida(u):
               try:
-                  p = urlparse(u)
+                  p = urlparse(str(u))
 
                   return (
                       p.scheme in ("http", "https")
                       and bool(p.netloc)
                   )
-              except:
+
+              except Exception:
                   return False
 
           # =========================================================
@@ -201,15 +303,23 @@ jobs:
 
               l = str(u).lower()
 
+              bloqueadas = [
+                  "gstatic.com/images/branding/googlelogo",
+                  "news.google.com/rss",
+                  "favicon",
+                  "1x1.gif",
+                  "spacer.gif",
+                  "pixel.gif",
+                  "transparent.gif",
+                  "data:image",
+                  "googleusercontent.com/img/b"
+              ]
+
               return any(
                   x in l
-                  for x in [
-                      "gstatic.com/images/branding/googlelogo",
-                      "news.google.com/rss",
-                      "favicon",
-                      "1x1.gif"
-                  ]
+                  for x in bloqueadas
               )
+
 
           def normalizar_imagen(u):
               if not u:
@@ -233,66 +343,314 @@ jobs:
                       + p.path.rstrip("/")
                   )
 
-              except:
-                  return u.lower().strip()
+              except Exception:
+                  return ""
 
-          def obtener_imagen_entry(entry):
+
+          def agregar_candidato(lista, url, base_url=""):
+              if not url:
+                  return
+
+              url = str(url).strip()
+
+              if url.startswith("//"):
+                  url = "https:" + url
+
+              if base_url:
+                  url = urljoin(
+                      base_url,
+                      url
+                  )
+
+              if not url_valida(url):
+                  return
+
+              if es_imagen_invalid(url):
+                  return
+
+              normalizada = normalizar_imagen(
+                  url
+              )
+
+              if not normalizada:
+                  return
+
+              existentes = {
+                  normalizar_imagen(x)
+                  for x in lista
+              }
+
+              if normalizada not in existentes:
+                  lista.append(url)
+
+
+          def obtener_imagenes_entry(entry):
+              candidatos = []
+
+              # -----------------------------------------------------
+              # summary / description
+              # -----------------------------------------------------
+
               for campo in [
                   "summary",
-                  "description"
+                  "description",
+                  "content"
               ]:
-                  html_text = entry.get(
+
+                  contenido = entry.get(
                       campo,
                       ""
                   )
 
-                  if (
-                      html_text
-                      and "<img" in html_text
+                  if isinstance(
+                      contenido,
+                      list
                   ):
+                      for item in contenido:
+                          if isinstance(
+                              item,
+                              dict
+                          ):
+                              contenido_html = (
+                                  item.get(
+                                      "value",
+                                      ""
+                                  )
+                              )
+                          else:
+                              contenido_html = str(
+                                  item
+                              )
+
+                          soup = BeautifulSoup(
+                              contenido_html,
+                              "html.parser"
+                          )
+
+                          for img in soup.find_all(
+                              "img"
+                          ):
+                              agregar_candidato(
+                                  candidatos,
+                                  img.get("src"),
+                                  ""
+                              )
+
+                  else:
                       soup = BeautifulSoup(
-                          str(html_text),
+                          str(contenido),
                           "html.parser"
                       )
 
-                      for img in soup.find_all("img"):
-                          src = img.get("src")
+                      for img in soup.find_all(
+                          "img"
+                      ):
+                          agregar_candidato(
+                              candidatos,
+                              img.get("src"),
+                              ""
+                          )
 
-                          if not src:
-                              continue
-
-                          if src.startswith("//"):
-                              src = "https:" + src
-
-                          if (
-                              url_valida(src)
-                              and not es_imagen_invalid(src)
-                          ):
-                              return src
+              # -----------------------------------------------------
+              # media_content
+              # -----------------------------------------------------
 
               for key in [
                   "media_content",
                   "media_thumbnail"
               ]:
+
                   for item in entry.get(
                       key,
                       []
                   ):
-                      if (
-                          isinstance(item, dict)
-                          and item.get("url")
+
+                      if not isinstance(
+                          item,
+                          dict
                       ):
-                          u = item.get("url")
+                          continue
 
-                          if (
-                              url_valida(u)
-                              and not es_imagen_invalid(u)
-                          ):
-                              return u
+                      for campo in [
+                          "url",
+                          "href"
+                      ]:
 
-              return ""
+                          agregar_candidato(
+                              candidatos,
+                              item.get(
+                                  campo,
+                                  ""
+                              )
+                          )
 
-          def resolver_url_real(url_google):
+              # -----------------------------------------------------
+              # enclosure
+              # -----------------------------------------------------
+
+              for item in entry.get(
+                  "enclosures",
+                  []
+              ):
+
+                  if not isinstance(
+                      item,
+                      dict
+                  ):
+                      continue
+
+                  agregar_candidato(
+                      candidatos,
+                      item.get(
+                          "href",
+                          ""
+                      )
+                  )
+
+                  agregar_candidato(
+                      candidatos,
+                      item.get(
+                          "url",
+                          ""
+                      )
+                  )
+
+              return candidatos
+
+
+          def obtener_imagenes_pagina(
+              url_noticia
+          ):
+              candidatos = []
+
+              url_a_scrapear = url_noticia
+
+              if (
+                  "news.google.com"
+                  in url_noticia
+              ):
+
+                  url_a_scrapear = resolver_url_real(
+                      url_noticia
+                  )
+
+                  if (
+                      "news.google.com"
+                      in url_a_scrapear
+                  ):
+                      return candidatos
+
+              try:
+                  resp = requests.get(
+                      url_a_scrapear,
+                      headers=HEADERS,
+                      timeout=8,
+                      allow_redirects=True
+                  )
+
+                  if resp.status_code != 200:
+                      return candidatos
+
+                  soup = BeautifulSoup(
+                      resp.text,
+                      "lxml"
+                  )
+
+                  # -------------------------------------------------
+                  # Open Graph / Twitter
+                  # -------------------------------------------------
+
+                  for meta in soup.find_all(
+                      "meta"
+                  ):
+
+                      prop = str(
+                          meta.get(
+                              "property",
+                              ""
+                          )
+                      ).lower()
+
+                      name = str(
+                          meta.get(
+                              "name",
+                              ""
+                          )
+                      ).lower()
+
+                      if (
+                          prop in [
+                              "og:image",
+                              "og:image:url",
+                              "og:image:secure_url"
+                          ]
+                          or name in [
+                              "twitter:image",
+                              "twitter:image:src"
+                          ]
+                      ):
+
+                          agregar_candidato(
+                              candidatos,
+                              meta.get(
+                                  "content"
+                              ),
+                              url_a_scrapear
+                          )
+
+                  # -------------------------------------------------
+                  # Imágenes del HTML
+                  # -------------------------------------------------
+
+                  for img in soup.find_all(
+                      "img"
+                  ):
+
+                      for atributo in [
+                          "src",
+                          "data-src",
+                          "data-original",
+                          "data-lazy-src",
+                          "data-image",
+                          "data-url"
+                      ]:
+
+                          agregar_candidato(
+                              candidatos,
+                              img.get(
+                                  atributo
+                              ),
+                              url_a_scrapear
+                          )
+
+                      srcset = img.get(
+                          "srcset"
+                      )
+
+                      if srcset:
+                          partes = srcset.split(",")
+
+                          for parte in partes:
+                              url_img = (
+                                  parte.strip()
+                                  .split(" ")[0]
+                              )
+
+                              agregar_candidato(
+                                  candidatos,
+                                  url_img,
+                                  url_a_scrapear
+                              )
+
+              except Exception:
+                  return candidatos
+
+              return candidatos
+
+
+          def resolver_url_real(
+              url_google
+          ):
               try:
                   r = requests.get(
                       url_google,
@@ -304,116 +662,85 @@ jobs:
                   final = r.url
 
                   if (
-                      "news.google.com" not in final
+                      "news.google.com"
+                      not in final
                       and url_valida(final)
                   ):
                       return final
 
-              except:
+              except Exception:
                   pass
 
               return url_google
 
-          def obtener_imagen_pagina(url_noticia):
-              url_a_scrapear = url_noticia
-
-              if "news.google.com" in url_noticia:
-                  url_a_scrapear = resolver_url_real(
-                      url_noticia
-                  )
-
-                  if "news.google.com" in url_a_scrapear:
-                      return ""
-
-              try:
-                  resp = requests.get(
-                      url_a_scrapear,
-                      headers=HEADERS,
-                      timeout=7
-                  )
-
-                  if resp.status_code != 200:
-                      return ""
-
-                  soup = BeautifulSoup(
-                      resp.text,
-                      "lxml"
-                  )
-
-                  for meta in soup.find_all("meta"):
-                      prop = str(
-                          meta.get(
-                              "property",
-                              ""
-                          )
-                      ).lower()
-
-                      if prop in [
-                          "og:image",
-                          "og:image:url",
-                          "twitter:image",
-                          "twitter:image:src"
-                      ]:
-                          imagen = meta.get(
-                              "content"
-                          )
-
-                          if (
-                              imagen
-                              and url_valida(imagen)
-                              and not es_imagen_invalid(imagen)
-                          ):
-                              return imagen
-
-              except:
-                  return ""
-
-              return ""
-
-          # =========================================================
-          # NUEVO:
-          # SOLO LAS NOTICIAS NUEVAS BUSCAN IMAGEN.
-          # NUNCA SE MODIFICAN LAS IMÁGENES DE NOTICIAS EXISTENTES.
-          # =========================================================
-
-          def obtener_imagen_nueva(entry, url):
-              imagen = obtener_imagen_entry(entry)
-
-              if imagen:
-                  return imagen
-
-              return obtener_imagen_pagina(url)
 
           def obtener_imagen_unica(
               entry,
               url,
               imagenes_usadas
           ):
-              imagen = obtener_imagen_nueva(
-                  entry,
-                  url
+
+              # =====================================================
+              # AQUÍ ESTÁ LA CORRECCIÓN PRINCIPAL
+              #
+              # Antes:
+              #   primera imagen repetida -> imagen=""
+              #
+              # Ahora:
+              #   primera imagen repetida -> busca otra
+              #   segunda repetida -> busca otra
+              #   tercera válida -> la utiliza
+              # =====================================================
+
+              candidatos = []
+
+              # Primero imágenes entregadas por el RSS.
+              candidatos.extend(
+                  obtener_imagenes_entry(
+                      entry
+                  )
               )
 
-              if not imagen:
-                  return ""
+              # Después imágenes de la página.
+              if url:
+                  candidatos.extend(
+                      obtener_imagenes_pagina(
+                          url
+                      )
+                  )
 
-              normalizada = normalizar_imagen(
-                  imagen
-              )
+              revisadas = set()
 
-              if not normalizada:
-                  return ""
+              for imagen in candidatos:
 
-              # Si la imagen ya pertenece a otra noticia,
-              # no se reutiliza.
-              if normalizada in imagenes_usadas:
-                  return ""
+                  normalizada = normalizar_imagen(
+                      imagen
+                  )
 
-              imagenes_usadas.add(
-                  normalizada
-              )
+                  if not normalizada:
+                      continue
 
-              return imagen
+                  if normalizada in revisadas:
+                      continue
+
+                  revisadas.add(
+                      normalizada
+                  )
+
+                  # Imagen ya utilizada:
+                  # probar la siguiente.
+                  if normalizada in imagenes_usadas:
+                      continue
+
+                  imagenes_usadas.add(
+                      normalizada
+                  )
+
+                  return imagen
+
+              # No hubo ninguna imagen disponible
+              # y única.
+              return ""
 
           # =========================================================
           # NOTICIAS
@@ -424,39 +751,55 @@ jobs:
               default
           ):
               try:
-                  s = entry.get("source")
+                  s = entry.get(
+                      "source"
+                  )
 
                   if (
-                      isinstance(s, dict)
+                      isinstance(
+                          s,
+                          dict
+                      )
                       and s.get("title")
                   ):
+
                       return limpiar_html(
-                          s.get("title")
+                          s.get(
+                              "title"
+                          )
                       )
 
-              except:
+              except Exception:
                   pass
 
               return default
+
 
           def clasificar_deporte(
               t,
               d="",
               c=""
           ):
+
               tx = normalizar(
                   f"{t} {d} {c}"
               )
 
               for dep, pals in PALABRAS_DEPORTIVAS.items():
+
                   for p in pals:
+
                       if normalizar(p) in tx:
                           return dep
 
               return None
 
+
           def limpiar_titulo(t):
-              t = limpiar_html(t)
+
+              t = limpiar_html(
+                  t
+              )
 
               t = re.sub(
                   r"\s+\|\s+[^|]{2,60}$",
@@ -466,19 +809,28 @@ jobs:
 
               return t.strip()
 
+
           def construir_noticia(
               entry,
               fuente,
               categoria,
               subcat=None
           ):
+
               titulo = limpiar_titulo(
-                  entry.get("title", "")
+                  entry.get(
+                      "title",
+                      ""
+                  )
               )
 
               url = (
-                  entry.get("link")
-                  or entry.get("id")
+                  entry.get(
+                      "link"
+                  )
+                  or entry.get(
+                      "id"
+                  )
                   or ""
               )
 
@@ -489,26 +841,39 @@ jobs:
                   return None
 
               desc = limpiar_html(
-                  entry.get("summary")
-                  or entry.get("description")
+                  entry.get(
+                      "summary"
+                  )
+                  or entry.get(
+                      "description"
+                  )
                   or ""
               )[:500]
 
-              fecha = fecha_entry(entry)
+              fecha = fecha_entry(
+                  entry
+              )
 
-              if AHORA - fecha > timedelta(
-                  days=LIMITE_DIAS
+              if (
+                  AHORA - fecha
+                  > timedelta(
+                      days=LIMITE_DIAS
+                  )
               ):
                   return None
 
               if subcat:
+
                   cat_final = "Deportes"
                   sub_final = subcat
+
               else:
+
                   cat_final = categoria
                   sub_final = ""
 
               if cat_final == "Deportes":
+
                   det = clasificar_deporte(
                       titulo,
                       desc,
@@ -518,28 +883,38 @@ jobs:
                   if det:
                       sub_final = det
 
-              # IMPORTANTE:
-              # Aquí NO se busca imagen.
-              # La imagen solamente se obtiene después
-              # de comprobar que la noticia es nueva.
-
               return {
                   "id": hash_noticia(
                       titulo,
                       url
                   ),
+
                   "titulo": titulo,
+
                   "descripcion": desc,
+
                   "url": url,
+
                   "imagen": "",
-                  "fecha": fecha_iso(fecha),
+
+                  "fecha": fecha_iso(
+                      fecha
+                  ),
+
                   "fuente": fuente,
+
                   "categoria": cat_final,
+
                   "subcategoria": sub_final
               }
 
-          def descargar_feed(url):
+
+          def descargar_feed(
+              url
+          ):
+
               try:
+
                   r = requests.get(
                       url,
                       headers=HEADERS,
@@ -547,27 +922,53 @@ jobs:
                   )
 
                   if r.status_code != 200:
+                      print(
+                          "Feed HTTP",
+                          r.status_code,
+                          url
+                      )
+
                       return None
 
                   return feedparser.parse(
                       r.content
                   )
 
-              except:
+              except Exception as e:
+
+                  print(
+                      "Error feed:",
+                      url,
+                      e
+                  )
+
                   return None
 
-          def construir_google_news_url(q):
+
+          def construir_google_news_url(
+              q
+          ):
+
               return (
                   "https://news.google.com/rss/search?"
                   + "q="
                   + quote_plus(q)
-                  + "&hl=es-419&gl=MX&ceid=MX:es-419"
+                  + "&hl=es-419"
+                  + "&gl=MX"
+                  + "&ceid=MX:es-419"
               )
 
+
+          # =========================================================
+          # CARGAR JSON EXISTENTE
+          # =========================================================
+
           def cargar_json():
+
               if not os.path.exists(
                   ARCHIVO
               ):
+
                   return {
                       "actualizado": "",
                       "total": 0,
@@ -576,14 +977,22 @@ jobs:
                   }
 
               try:
+
                   with open(
                       ARCHIVO,
                       "r",
                       encoding="utf-8"
                   ) as f:
-                      d = json.load(f)
 
-                  if isinstance(d, list):
+                      d = json.load(
+                          f
+                      )
+
+                  if isinstance(
+                      d,
+                      list
+                  ):
+
                       return {
                           "actualizado": "",
                           "total": len(d),
@@ -592,14 +1001,30 @@ jobs:
                       }
 
                   if not isinstance(
-                      d.get("noticias"),
+                      d,
+                      dict
+                  ):
+
+                      return {
+                          "actualizado": "",
+                          "total": 0,
+                          "imagenes": {},
+                          "noticias": []
+                      }
+
+                  if not isinstance(
+                      d.get(
+                          "noticias"
+                      ),
                       list
                   ):
+
                       d["noticias"] = []
 
                   return d
 
-              except:
+              except Exception:
+
                   return {
                       "actualizado": "",
                       "total": 0,
@@ -607,28 +1032,41 @@ jobs:
                       "noticias": []
                   }
 
-          # =========================================================
-          # CARGAR NOTICIAS EXISTENTES
-          # =========================================================
 
           datos = cargar_json()
+
           mapa = {}
 
-          # Imágenes que YA existen.
-          # Se registran solamente para impedir que una noticia
-          # nueva reutilice una imagen antigua.
-
           imagenes_usadas = set()
+
+          # =========================================================
+          # CONSERVAR TODO LO EXISTENTE
+          # =========================================================
 
           for n in datos.get(
               "noticias",
               []
           ):
+
+              if not isinstance(
+                  n,
+                  dict
+              ):
+                  continue
+
               nid = (
-                  n.get("id")
+                  n.get(
+                      "id"
+                  )
                   or hash_noticia(
-                      n.get("titulo", ""),
-                      n.get("url", "")
+                      n.get(
+                          "titulo",
+                          ""
+                      ),
+                      n.get(
+                          "url",
+                          ""
+                      )
                   )
               )
 
@@ -637,27 +1075,49 @@ jobs:
               mapa[nid] = n
 
               imagen_existente = normalizar_imagen(
-                  n.get("imagen", "")
+                  n.get(
+                      "imagen",
+                      ""
+                  )
               )
 
               if (
                   imagen_existente
                   and not es_imagen_invalid(
-                      n.get("imagen", "")
+                      n.get(
+                          "imagen",
+                          ""
+                      )
                   )
               ):
+
                   imagenes_usadas.add(
                       imagen_existente
                   )
 
-          def ya_existe(entry):
+
+          # =========================================================
+          # COMPROBAR SI LA NOTICIA YA EXISTE
+          # =========================================================
+
+          def ya_existe(
+              entry
+          ):
+
               t = limpiar_titulo(
-                  entry.get("title", "")
+                  entry.get(
+                      "title",
+                      ""
+                  )
               )
 
               u = (
-                  entry.get("link")
-                  or entry.get("id")
+                  entry.get(
+                      "link"
+                  )
+                  or entry.get(
+                      "id"
+                  )
                   or ""
               )
 
@@ -665,12 +1125,17 @@ jobs:
                   not t
                   or not url_valida(u)
               ):
+
                   return True
 
               return (
-                  hash_noticia(t, u)
+                  hash_noticia(
+                      t,
+                      u
+                  )
                   in mapa
               )
+
 
           nuevas = 0
 
@@ -682,7 +1147,9 @@ jobs:
 
               for cat, url in feeds:
 
-                  feed = descargar_feed(url)
+                  feed = descargar_feed(
+                      url
+                  )
 
                   if not feed:
                       continue
@@ -691,9 +1158,14 @@ jobs:
                       :MAX_POR_FEED
                   ]:
 
-                      # PRIMERO:
-                      # Si ya existe, se salta inmediatamente.
-                      if ya_existe(entry):
+                      # ------------------------------------------------
+                      # MUY IMPORTANTE:
+                      # primero comprobar si ya existe.
+                      # ------------------------------------------------
+
+                      if ya_existe(
+                          entry
+                      ):
                           continue
 
                       notic = construir_noticia(
@@ -705,8 +1177,9 @@ jobs:
                       if not notic:
                           continue
 
-                      # AHORA SÍ ES NUEVA.
-                      # Solo ahora buscamos su imagen.
+                      # ------------------------------------------------
+                      # Solamente una noticia NUEVA busca imagen.
+                      # ------------------------------------------------
 
                       notic["imagen"] = (
                           obtener_imagen_unica(
@@ -730,13 +1203,19 @@ jobs:
 
               for fuente, ref in feeds:
 
-                  url = (
-                      construir_google_news_url(ref)
-                      if fuente == "Google News"
-                      else ref
-                  )
+                  if fuente == "Google News":
 
-                  feed = descargar_feed(url)
+                      url = construir_google_news_url(
+                          ref
+                      )
+
+                  else:
+
+                      url = ref
+
+                  feed = descargar_feed(
+                      url
+                  )
 
                   if not feed:
                       continue
@@ -745,10 +1224,13 @@ jobs:
                       :MAX_POR_FEED
                   ]:
 
-                      # Las noticias existentes se descartan
-                      # ANTES de cualquier búsqueda de imagen.
+                      # ------------------------------------------------
+                      # No tocar noticias existentes.
+                      # ------------------------------------------------
 
-                      if ya_existe(entry):
+                      if ya_existe(
+                          entry
+                      ):
                           continue
 
                       notic = construir_noticia(
@@ -764,7 +1246,10 @@ jobs:
                       if not notic:
                           continue
 
-                      # Solo noticia NUEVA:
+                      # ------------------------------------------------
+                      # Buscar imagen solamente para noticias nuevas.
+                      # ------------------------------------------------
+
                       notic["imagen"] = (
                           obtener_imagen_unica(
                               entry,
@@ -780,7 +1265,7 @@ jobs:
                       nuevas += 1
 
           # =========================================================
-          # ORDENAR Y LIMPIAR DUPLICADOS DE URL
+          # ORDENAR
           # =========================================================
 
           noticias = list(
@@ -795,43 +1280,102 @@ jobs:
               reverse=True
           )
 
+          # =========================================================
+          # ELIMINAR DUPLICADOS POR URL
+          # =========================================================
+
           vistos = set()
+
           resultado = []
 
           for n in noticias:
 
-              u = n.get(
-                  "url",
-                  ""
-              ).split("#")[0].lower()
+              u = str(
+                  n.get(
+                      "url",
+                      ""
+                  )
+              ).split(
+                  "#"
+              )[0].strip().lower()
+
+              if not u:
+                  continue
 
               if u in vistos:
                   continue
 
-              vistos.add(u)
-              resultado.append(n)
+              vistos.add(
+                  u
+              )
+
+              resultado.append(
+                  n
+              )
+
+          # =========================================================
+          # MÁXIMO DE NOTICIAS
+          # =========================================================
 
           resultado = resultado[
               :MAX_TOTAL
           ]
 
+          # =========================================================
+          # ESTADÍSTICAS
+          # =========================================================
+
           con = sum(
               1
               for n in resultado
-              if n.get("imagen")
+              if n.get(
+                  "imagen"
+              )
           )
+
+          sin = (
+              len(resultado)
+              - con
+          )
+
+          # Contar imágenes únicas
+          imagenes_finales = set()
+
+          for n in resultado:
+
+              img = normalizar_imagen(
+                  n.get(
+                      "imagen",
+                      ""
+                  )
+              )
+
+              if img:
+                  imagenes_finales.add(
+                      img
+                  )
+
+          # =========================================================
+          # SALIDA FINAL
+          # =========================================================
 
           salida = {
               "actualizado": datetime.now(
                   timezone.utc
               ).isoformat(),
-              "total": len(resultado),
+
+              "total": len(
+                  resultado
+              ),
+
               "imagenes": {
                   "con_imagen": con,
-                  "sin_imagen": (
-                      len(resultado) - con
+                  "sin_imagen": sin,
+                  "imagenes_unicas": len(
+                      imagenes_finales
                   )
               },
+
               "noticias": resultado
           }
 
@@ -840,6 +1384,7 @@ jobs:
               "w",
               encoding="utf-8"
           ) as f:
+
               json.dump(
                   salida,
                   f,
@@ -848,9 +1393,32 @@ jobs:
               )
 
           print(
-              f"Nuevas:{nuevas} "
-              f"Final:{len(resultado)} "
-              f"ConImagen:{con}"
+              "========================================"
+          )
+
+          print(
+              f"Nuevas: {nuevas}"
+          )
+
+          print(
+              f"Final: {len(resultado)}"
+          )
+
+          print(
+              f"Con imagen: {con}"
+          )
+
+          print(
+              f"Sin imagen: {sin}"
+          )
+
+          print(
+              f"Imagenes únicas: {len(imagenes_finales)}"
+          )
+
+          print(
+              "========================================"
+
           )
 
           PY
@@ -860,11 +1428,13 @@ jobs:
       - name: Guardar cambios
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+users.noreply.github.com"
+
           git add noticias.json
+
           if git diff --cached --quiet; then
             echo "No hay cambios nuevos."
           else
-            git commit -m "Actualizar noticias e imagenes sin duplicados"
+            git commit -m "Actualizar noticias e imagenes"
             git push
           fi
