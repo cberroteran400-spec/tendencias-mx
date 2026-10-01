@@ -11,7 +11,6 @@ permissions:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -24,22 +23,19 @@ jobs:
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests beautifulsoup4
+          pip install feedparser requests beautifulsoup4 lxml
 
       - name: Actualizar noticias
         run: |
           cat > actualizar.py <<'PY'
-          import os, re, json, hashlib, html, base64, unicodedata
+          import os, re, json, hashlib, html, unicodedata
           from datetime import datetime, timezone, timedelta
-          from urllib.parse import quote_plus, urlparse, urljoin
+          from urllib.parse import quote_plus, urlparse
           import feedparser, requests
           from bs4 import BeautifulSoup
 
           ARCHIVO = "noticias.json"
           MAX_TOTAL = 1200
-          MAX_POR_GRUPO = 120
-          MAX_TENDENCIAS = 25
-          MAX_NOTICIAS_POR_TENDENCIA = 5
           MAX_POR_FEED = 30
           USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
           HEADERS = {"User-Agent": USER_AGENT}
@@ -47,8 +43,8 @@ jobs:
           LIMITE_DIAS = 14
 
           FUENTES_GENERALES = {"Expansión": [("Noticias", "https://expansion.mx/rss"),("Mundo", "https://expansion.mx/rss/internacional"),("Dinero", "https://expansion.mx/rss/economia"),("Tecnologia", "https://expansion.mx/rss/tecnologia"),("Tendencias", "https://expansion.mx/rss/tendencias"),("Empresas", "https://expansion.mx/rss/empresas"),("Politica", "https://expansion.mx/rss/politica")]}
-          FUENTES_DEPORTIVAS = {"futbol": [("ESPN", "https://www.espn.com/espn/rss/soccer/news"),("Google News", "fútbol México Liga MX Selección Mexicana"),("Google News", "Champions League fútbol")],"tenis": [("ESPN", "https://www.espn.com/espn/rss/tennis/news"),("Google News", "tenis ATP WTA"),("Google News", "tenis México")],"beisbol": [("ESPN", "https://www.espn.com/espn/rss/mlb/news"),("Google News", "MLB béisbol"),("Google News", "béisbol México")],"nfl": [("ESPN", "https://www.espn.com/espn/rss/nfl/news"),("Google News", "NFL México")],"basquetbol": [("ESPN", "https://www.espn.com/espn/rss/nba/news"),("Google News", "NBA")],"boxeo": [("ESPN", "https://www.espn.com/espn/rss/boxing/news"),("Google News", "boxeo México"),("Google News", "Canelo boxeo")],"formula1": [("ESPN", "https://www.espn.com/espn/rss/rpm/news"),("Google News", "Fórmula 1 F1"),("Google News", "Checo Pérez Fórmula 1")],"otros": [("ESPN", "https://www.espn.com/espn/rss/golf/news"),("Google News", "golf"),("Google News", "atletismo")]}
-          PALABRAS_DEPORTIVAS = {"futbol": ["fútbol","futbol","liga mx","selección mexicana","champions"],"tenis": ["tenis","atp","wta","grand slam","alcaraz","djokovic"],"beisbol": ["béisbol","beisbol","mlb"],"nfl": ["nfl","super bowl"],"basquetbol": ["nba","basquetbol"],"boxeo": ["boxeo","canelo","ufc","mma"],"formula1": ["fórmula 1","formula 1","f1","gran premio","checo pérez"]}
+          FUENTES_DEPORTIVAS = {"futbol": [("ESPN", "https://www.espn.com/espn/rss/soccer/news"),("Google News", "fútbol México Liga MX Selección Mexicana"),("Google News", "Champions League fútbol")],"tenis": [("ESPN", "https://www.espn.com/espn/rss/tennis/news"),("Google News", "tenis ATP WTA")],"beisbol": [("ESPN", "https://www.espn.com/espn/rss/mlb/news"),("Google News", "MLB béisbol")],"nfl": [("ESPN", "https://www.espn.com/espn/rss/nfl/news")],"basquetbol": [("ESPN", "https://www.espn.com/espn/rss/nba/news")],"boxeo": [("ESPN", "https://www.espn.com/espn/rss/boxing/news"),("Google News", "Canelo boxeo")],"formula1": [("ESPN", "https://www.espn.com/espn/rss/rpm/news"),("Google News", "Fórmula 1 F1 Checo Pérez")],"otros": [("ESPN", "https://www.espn.com/espn/rss/golf/news")] }
+          PALABRAS_DEPORTIVAS = {"futbol": ["fútbol","futbol","liga mx","selección mexicana","champions"],"tenis": ["tenis","atp","wta"],"beisbol": ["béisbol","beisbol","mlb"],"nfl": ["nfl"],"basquetbol": ["nba"],"boxeo": ["boxeo","canelo"],"formula1": ["fórmula 1","formula 1","f1","checo pérez"]}
 
           def normalizar(t):
               if not t: return ""
@@ -68,73 +64,57 @@ jobs:
               try: p=urlparse(u); return p.scheme in ("http","https") and bool(p.netloc)
               except: return False
 
-          # --- FIX IMAGENES V4: SIN REQUESTS, ACEPTA googleusercontent ---
           def es_imagen_invalid(u):
               if not u: return True
               l=u.lower()
-              return any(x in l for x in ["news.google.com/rss","gstatic.com/images/branding","logo_google","favicon","1x1"])
-
-          def normalizar_imagen(u):
-              if not u: return ""
-              try:
-                  u=html.unescape(str(u).strip())
-                  if u.startswith("//"): u="https:"+u
-                  if u.startswith("data:"): return ""
-                  p=urlparse(u)
-                  return (p.scheme.lower()+"://"+p.netloc.lower()+p.path).rstrip("/").lower()
-              except: return ""
+              # SOLO bloquea el logo de Google, PERMITE googleusercontent que es la foto real
+              return any(x in l for x in ["gstatic.com/images/branding/googlelogo","news.google.com/rss","favicon","1x1.gif"])
 
           def obtener_imagen_entry(entry):
-              # 1) Busca <img> dentro de summary/description (Google News trae la foto ahi)
               for campo in ["summary","description"]:
                   html_text = entry.get(campo,"")
                   if html_text and "<img" in html_text:
                       soup=BeautifulSoup(str(html_text),"html.parser")
-                      img=soup.find("img")
-                      if img and img.get("src"):
+                      for img in soup.find_all("img"):
                           src=img.get("src")
-                          if src.startswith("//"): src="https:"+src
-                          if url_valida(src) and not es_imagen_invalid(src):
-                              return src
-              # 2) media_content / enclosures
+                          if src:
+                              if src.startswith("//"): src="https:"+src
+                              if url_valida(src) and not es_imagen_invalid(src):
+                                  return src
               for key in ["media_content","media_thumbnail"]:
                   for item in entry.get(key,[]):
                       if isinstance(item,dict) and item.get("url"):
                           u=item.get("url")
                           if url_valida(u) and not es_imagen_invalid(u):
                               return u
-              for enc in entry.get("enclosures",[]):
-                  if isinstance(enc,dict):
-                      u=enc.get("href") or enc.get("url")
-                      if u and url_valida(u) and not es_imagen_invalid(u):
-                          return u
               return ""
 
-          def obtener_candidatos_imagen_pagina(url_noticia):
-              if "news.google.com" in url_noticia:
-                  return [] # Evitar entrar a google news, ya tenemos imagen del RSS
+          def resolver_url_real(url_google):
+              # FIX CLAVE: Si es link de Google News, sigue el redirect hasta el periódico real
               try:
-                  resp=requests.get(url_noticia,headers=HEADERS,timeout=6)
-                  if resp.status_code!=200: return []
-                  soup=BeautifulSoup(resp.text,"html.parser")
-                  cands=[]
+                  r=requests.get(url_google, headers=HEADERS, timeout=8, allow_redirects=True)
+                  final=r.url
+                  if "news.google.com" not in final and url_valida(final):
+                      return final
+              except: pass
+              return url_google
+
+          def obtener_imagen_pagina(url_noticia):
+              url_a_scrapear=url_noticia
+              if "news.google.com" in url_noticia:
+                  url_a_scrapear=resolver_url_real(url_noticia)
+                  if "news.google.com" in url_a_scrapear:
+                      return "" # si no pudo resolver, no insistas
+              try:
+                  resp=requests.get(url_a_scrapear,headers=HEADERS,timeout=7)
+                  if resp.status_code!=200: return ""
+                  soup=BeautifulSoup(resp.text,"lxml")
                   for meta in soup.find_all("meta"):
                       prop=str(meta.get("property","")).lower()
-                      if prop in ["og:image","og:image:url","twitter:image"]:
-                          if meta.get("content"): cands.append(meta.get("content"))
-                  for img in soup.find_all("img"):
-                      s=img.get("src") or img.get("data-src")
-                      if s and s.startswith("http"): cands.append(s)
-                  out=[]
-                  for c in cands:
-                      if url_valida(c) and not es_imagen_invalid(c) and c not in out:
-                          out.append(c)
-                  return out[:3]
-              except: return []
-
-          def obtener_imagen_pagina(url):
-              for c in obtener_candidatos_imagen_pagina(url):
-                  if url_valida(c): return c
+                      if prop in ["og:image","og:image:url","twitter:image","twitter:image:src"]:
+                          if meta.get("content") and url_valida(meta.get("content")) and not es_imagen_invalid(meta.get("content")):
+                              return meta.get("content")
+              except: return ""
               return ""
 
           def obtener_fuente_entry(entry, default):
@@ -157,7 +137,8 @@ jobs:
               fecha=fecha_entry(entry)
               if AHORA-fecha>timedelta(days=LIMITE_DIAS): return None
               imagen=obtener_imagen_entry(entry)
-              if not imagen: imagen=obtener_imagen_pagina(url)
+              if not imagen:
+                  imagen=obtener_imagen_pagina(url)
               if subcat: cat_final="Deportes"; sub_final=subcat
               else: cat_final=categoria; sub_final=""
               if cat_final=="Deportes":
@@ -211,7 +192,6 @@ jobs:
                       mapa[notic["id"]]=notic; nuevas+=1
 
           noticias=list(mapa.values()); noticias.sort(key=lambda n:n.get("fecha",""),reverse=True)
-          # Deduplicacion simple por URL
           vistos=set(); resultado=[]
           for n in noticias:
               u=n.get("url","").split("#")[0].lower()
@@ -219,11 +199,9 @@ jobs:
               vistos.add(u); resultado.append(n)
           resultado=resultado[:MAX_TOTAL]
           con=sum(1 for n in resultado if n.get("imagen"))
-          sin=len(resultado)-con
-          uniq=len(set(normalizar_imagen(n.get("imagen")) for n in resultado if n.get("imagen")))
-          salida={"actualizado":datetime.now(timezone.utc).isoformat(),"total":len(resultado),"imagenes":{"con_imagen":con,"sin_imagen":sin,"imagenes_unicas":uniq},"noticias":resultado}
+          salida={"actualizado":datetime.now(timezone.utc).isoformat(),"total":len(resultado),"imagenes":{"con_imagen":con,"sin_imagen":len(resultado)-con},"noticias":resultado}
           with open(ARCHIVO,"w",encoding="utf-8") as f: json.dump(salida,f,ensure_ascii=False,indent=2)
-          print(f"Nuevas:{nuevas} Final:{len(resultado)} ConImagen:{con} Sin:{sin} Unicas:{uniq}")
+          print(f"Nuevas:{nuevas} Final:{len(resultado)} ConImagen:{con}")
           PY
           python actualizar.py
 
@@ -235,6 +213,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No hay cambios nuevos."
           else
-            git commit -m "Fix imagenes reales - v4 sin validacion"
+            git commit -m "Fix imagenes reales - V5 resolver Google News"
             git push
           fi
