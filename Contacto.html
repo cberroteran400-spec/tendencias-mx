@@ -1,8 +1,7 @@
 <!DOCTYPE html><html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contacto | TendenciasMX</title><meta name="description" content="Contacta con TendenciasMX para enviar preguntas, sugerencias, comentarios o propuestas.">
-<meta name="keywords" content="contacto TendenciasMX, contacto, sugerencias, noticias, comentarios"><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contacto | TendenciasMX</title><meta name="description" content="Contacta con TendenciasMX para enviar preguntas, sugerencias, comentarios y propuestas."><style>
 *{
     box-sizing:border-box;
     margin:0;
@@ -14,6 +13,8 @@ body{
     background:#f4f6f8;
     color:#111827;
 }
+
+/* HEADER */
 
 header{
     background:#111827;
@@ -68,6 +69,8 @@ nav a.active{
     color:#052e16;
 }
 
+/* MAIN */
+
 main{
     max-width:1000px;
     margin:auto;
@@ -83,7 +86,7 @@ main{
 }
 
 .hero h1{
-    font-size:34px;
+    font-size:36px;
     margin-bottom:10px;
 }
 
@@ -92,11 +95,15 @@ main{
     line-height:1.6;
 }
 
+/* CONTACT GRID */
+
 .contact-grid{
     display:grid;
     grid-template-columns:1fr 1.4fr;
     gap:22px;
 }
+
+/* CARDS */
 
 .info-card,
 .form-card{
@@ -118,7 +125,7 @@ main{
 }
 
 .info-item{
-    padding:15px 0;
+    padding:16px 0;
     border-bottom:1px solid #e5e7eb;
 }
 
@@ -128,14 +135,17 @@ main{
 
 .info-item strong{
     display:block;
-    margin-bottom:5px;
+    margin-bottom:6px;
     color:#111827;
 }
 
 .info-item span{
     color:#6b7280;
     font-size:14px;
+    line-height:1.5;
 }
+
+/* FORM */
 
 .form-group{
     margin-bottom:16px;
@@ -186,6 +196,8 @@ main{
     color:white;
 }
 
+/* NOTICE */
+
 .notice{
     display:none;
     margin-top:18px;
@@ -196,6 +208,8 @@ main{
     color:#166534;
     line-height:1.5;
 }
+
+/* HELP */
 
 .help{
     background:#ecfdf5;
@@ -213,6 +227,8 @@ main{
     text-decoration:none;
 }
 
+/* FOOTER */
+
 footer{
     background:#111827;
     color:#9ca3af;
@@ -220,7 +236,10 @@ footer{
     padding:25px 20px;
 }
 
+/* MOBILE */
+
 @media(max-width:750px){
+
     .contact-grid{
         grid-template-columns:1fr;
     }
@@ -232,6 +251,12 @@ footer{
     main{
         padding:25px 15px 45px;
     }
+
+    .info-card,
+    .form-card{
+        padding:20px;
+    }
+
 }
 </style></head><body><header><div class="header-inner">
 
@@ -291,21 +316,26 @@ footer{
 
     <p>
         ¿Tienes una pregunta, sugerencia, comentario o quieres
-        comunicarte con TendenciasMX? Escríbenos.
+        comunicarte con TendenciasMX? Envíanos un mensaje.
     </p>
 
 </section>
 
+
 <section class="contact-grid">
+
+
+    <!-- INFORMACIÓN -->
 
     <div class="info-card">
 
         <h2>Hablemos</h2>
 
         <p>
-            Tu opinión nos ayuda a mejorar TendenciasMX y ofrecer
+            Tu opinión nos ayuda a mejorar TendenciasMX y a ofrecer
             contenido más útil para nuestros lectores.
         </p>
+
 
         <div class="info-item">
 
@@ -316,6 +346,7 @@ footer{
             </span>
 
         </div>
+
 
         <div class="info-item">
 
@@ -328,24 +359,42 @@ footer{
 
         </div>
 
+
         <div class="info-item">
 
             <strong>💡 Comentarios</strong>
 
             <span>
                 También puedes compartir recomendaciones para
-                mejorar la página.
+                mejorar TendenciasMX.
+            </span>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>🌐 TendenciasMX</strong>
+
+            <span>
+                Información, actualidad y contenido para nuestros
+                lectores.
             </span>
 
         </div>
 
     </div>
 
+
+    <!-- FORMULARIO -->
+
     <div class="form-card">
 
         <h2>Envíanos un mensaje</h2>
 
+
         <form id="contactForm">
+
 
             <div class="form-group">
 
@@ -363,6 +412,7 @@ footer{
 
             </div>
 
+
             <div class="form-group">
 
                 <label for="correo">
@@ -378,6 +428,7 @@ footer{
                 >
 
             </div>
+
 
             <div class="form-group">
 
@@ -395,6 +446,7 @@ footer{
 
             </div>
 
+
             <div class="form-group">
 
                 <label for="mensaje">
@@ -410,6 +462,7 @@ footer{
 
             </div>
 
+
             <button
                 type="submit"
                 class="btn"
@@ -417,19 +470,22 @@ footer{
                 Enviar mensaje
             </button>
 
+
         </form>
+
 
         <div
             class="notice"
             id="notice"
         >
-            ¡Mensaje preparado correctamente! Gracias por
-            comunicarte con TendenciasMX.
+            ✅ Gracias por comunicarte con TendenciasMX.
+            Tu mensaje fue preparado correctamente.
         </div>
 
     </div>
 
 </section>
+
 
 <div class="help">
 
