@@ -1,13 +1,11 @@
 <!DOCTYPE html><html lang="es-MX">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Entretenimiento | Cine, series, música, famosos y tendencias</title>
-  <meta name="description" content="Las últimas noticias de entretenimiento: cine, series, televisión, música, famosos, videojuegos y tendencias. Noticias reales y actualizadas.">
-  <meta name="keywords" content="entretenimiento, noticias de entretenimiento, cine, películas, series, televisión, música, famosos, videojuegos, tendencias">
-  <meta name="robots" content="index, follow">  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/entretenimiento.html">  <meta property="og:title" content="Entretenimiento | TendenciasMX">
-  <meta property="og:description" content="Noticias de cine, series, música, famosos, videojuegos y tendencias.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Entretenimiento | Cine, TV, Música, Famosos y Videojuegos | TendenciasMX</title>  <meta name="description" content="Noticias de entretenimiento: cine, televisión, música, famosos, videojuegos y tendencias. Información actualizada de entretenimiento en México y el mundo.">  <meta name="keywords" content="entretenimiento, cine, películas, series, televisión, música, cantantes, famosos, celebridades, videojuegos, tendencias">  <meta name="robots" content="index, follow">  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/entretenimiento.html">  <meta property="og:title" content="Entretenimiento | TendenciasMX">
+  <meta property="og:description" content="Cine, televisión, música, famosos, videojuegos y tendencias.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cberroteran400-spec.github.io/tendencias-mx/entretenimiento.html">  <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -16,24 +14,23 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
+      background: #f4f5f7;
       color: #17202a;
-      line-height: 1.5;
     }
 
     header {
-      background: linear-gradient(135deg, #111827, #202938);
+      background: #111827;
       color: white;
-      padding: 16px;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 3px 12px rgba(0,0,0,.18);
+      box-shadow: 0 3px 15px rgba(0,0,0,.18);
     }
 
     .header-inner {
       max-width: 1200px;
       margin: auto;
+      padding: 14px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -41,10 +38,10 @@
     }
 
     .logo {
+      color: white;
+      text-decoration: none;
       font-size: 24px;
       font-weight: 900;
-      color: #fff;
-      text-decoration: none;
       white-space: nowrap;
     }
 
@@ -64,13 +61,13 @@
     }
 
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
       padding: 8px 11px;
       border-radius: 20px;
+      background: rgba(255,255,255,.08);
       font-size: 13px;
       white-space: nowrap;
-      background: rgba(255,255,255,.08);
     }
 
     nav a:hover,
@@ -81,10 +78,10 @@
 
     .hero {
       background:
-        radial-gradient(circle at top right, rgba(255,255,255,.12), transparent 35%),
-        linear-gradient(135deg, #6d28d9, #db2777 55%, #f97316);
+        radial-gradient(circle at top right, rgba(255,255,255,.18), transparent 35%),
+        linear-gradient(135deg,#6d28d9,#db2777,#f97316);
       color: white;
-      padding: 45px 18px;
+      padding: 48px 16px;
     }
 
     .hero-content {
@@ -92,35 +89,35 @@
       margin: auto;
     }
 
-    .hero-badge {
+    .badge {
       display: inline-block;
-      background: rgba(255,255,255,.18);
-      border: 1px solid rgba(255,255,255,.3);
-      padding: 7px 12px;
+      padding: 7px 13px;
       border-radius: 20px;
+      background: rgba(255,255,255,.17);
+      margin-bottom: 14px;
       font-size: 13px;
-      margin-bottom: 13px;
     }
 
     .hero h1 {
-      font-size: clamp(30px, 7vw, 52px);
+      font-size: clamp(32px,7vw,54px);
       line-height: 1.05;
       margin-bottom: 14px;
     }
 
     .hero p {
-      max-width: 760px;
+      max-width: 750px;
       font-size: 17px;
-      color: rgba(255,255,255,.92);
+      line-height: 1.6;
+      color: rgba(255,255,255,.94);
     }
 
     .categories {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: auto;
       padding: 20px 16px 5px;
     }
 
-    .category-scroll {
+    .category-list {
       display: flex;
       gap: 9px;
       overflow-x: auto;
@@ -128,21 +125,21 @@
       scrollbar-width: none;
     }
 
-    .category-scroll::-webkit-scrollbar {
+    .category-list::-webkit-scrollbar {
       display: none;
     }
 
     .category-btn {
-      border: 0;
+      border: none;
       background: white;
+      color: #303846;
       border-radius: 25px;
-      padding: 11px 15px;
+      padding: 11px 16px;
       font-size: 14px;
-      cursor: pointer;
-      white-space: nowrap;
-      box-shadow: 0 2px 8px rgba(0,0,0,.08);
-      color: #293241;
       font-weight: 700;
+      white-space: nowrap;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
     }
 
     .category-btn.active {
@@ -153,174 +150,165 @@
     main {
       max-width: 1200px;
       margin: auto;
-      padding: 20px 16px 50px;
+      padding: 20px 16px 55px;
     }
 
-    .toolbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
-
-    .toolbar h2 {
-      font-size: 23px;
-    }
-
-    .counter {
-      color: #687385;
-      font-size: 14px;
-    }
-
-    .search-box {
-      width: 100%;
+    .search {
       margin-bottom: 22px;
     }
 
-    .search-box input {
+    .search input {
       width: 100%;
-      padding: 14px 17px;
-      border: 1px solid #d7dce2;
+      border: 1px solid #d5dae1;
       border-radius: 13px;
+      padding: 14px 17px;
       font-size: 15px;
       outline: none;
       background: white;
     }
 
-    .search-box input:focus {
+    .search input:focus {
       border-color: #6d28d9;
       box-shadow: 0 0 0 3px rgba(109,40,217,.1);
     }
 
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .heading h2 {
+      font-size: 24px;
+    }
+
+    .counter {
+      color: #667085;
+      font-size: 14px;
+    }
+
     .news-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 20px;
     }
 
-    .news-card {
+    .card {
       background: white;
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 4px 14px rgba(0,0,0,.08);
-      transition: transform .2s ease, box-shadow .2s ease;
       display: flex;
       flex-direction: column;
+      transition: .2s;
     }
 
-    .news-card:hover {
+    .card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 8px 22px rgba(0,0,0,.12);
+      box-shadow: 0 9px 24px rgba(0,0,0,.13);
     }
 
-    .image-container {
-      position: relative;
+    .image {
       width: 100%;
-      height: 205px;
-      background: #e8ebef;
+      height: 210px;
+      background: #e9eaf0;
       overflow: hidden;
+      position: relative;
     }
 
-    .news-image {
+    .image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
 
-    .image-placeholder {
+    .placeholder {
       width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      color: #8a94a3;
-      font-size: 42px;
-      background: linear-gradient(135deg,#e9d5ff,#fce7f3);
+      font-size: 48px;
+      background: linear-gradient(135deg,#ede9fe,#fce7f3);
     }
 
-    .image-placeholder span {
-      font-size: 12px;
-      margin-top: 5px;
-    }
-
-    .news-category {
+    .tag {
       position: absolute;
       left: 12px;
       top: 12px;
-      background: rgba(109,40,217,.92);
+      background: rgba(109,40,217,.94);
       color: white;
-      padding: 5px 9px;
-      border-radius: 15px;
+      border-radius: 18px;
+      padding: 5px 10px;
       font-size: 11px;
       font-weight: bold;
     }
 
-    .news-content {
+    .content {
       padding: 17px;
       display: flex;
       flex-direction: column;
       flex: 1;
     }
 
-    .news-title {
+    .title {
       font-size: 18px;
-      line-height: 1.25;
+      line-height: 1.3;
       margin-bottom: 9px;
-      color: #18212f;
     }
 
-    .news-description {
-      font-size: 14px;
+    .description {
       color: #667085;
-      margin-bottom: 13px;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 12px;
     }
 
-    .news-meta {
-      font-size: 12px;
+    .date {
       color: #8a94a3;
+      font-size: 12px;
       margin-top: auto;
-      padding-top: 8px;
     }
 
-    .read-btn {
-      display: inline-block;
+    .read {
+      display: block;
+      text-align: center;
       margin-top: 13px;
       background: #6d28d9;
       color: white;
       text-decoration: none;
-      text-align: center;
-      padding: 11px 14px;
+      padding: 11px;
       border-radius: 10px;
-      font-size: 14px;
       font-weight: bold;
+      font-size: 14px;
     }
 
-    .read-btn:hover {
+    .read:hover {
       background: #5521aa;
     }
 
-    .status {
+    .loading,
+    .empty,
+    .error {
+      grid-column: 1/-1;
       background: white;
-      border-radius: 14px;
-      padding: 25px;
+      padding: 45px 20px;
       text-align: center;
+      border-radius: 15px;
       color: #667085;
-      box-shadow: 0 3px 12px rgba(0,0,0,.06);
-      margin-bottom: 20px;
     }
 
-    .loader {
+    .spinner {
       width: 38px;
       height: 38px;
+      margin: 0 auto 12px;
       border: 4px solid #e5e7eb;
       border-top-color: #6d28d9;
       border-radius: 50%;
       animation: spin 1s linear infinite;
-      margin: 0 auto 12px;
     }
 
     @keyframes spin {
@@ -329,27 +317,11 @@
       }
     }
 
-    .empty {
-      grid-column: 1 / -1;
-      background: white;
-      padding: 45px 20px;
-      text-align: center;
-      border-radius: 15px;
-      color: #687385;
-    }
-
-    .empty strong {
-      display: block;
-      color: #222;
-      font-size: 18px;
-      margin-bottom: 7px;
-    }
-
     footer {
       background: #111827;
       color: #aeb7c4;
-      padding: 35px 16px;
       text-align: center;
+      padding: 35px 16px;
       font-size: 13px;
     }
 
@@ -357,13 +329,14 @@
       color: white;
     }
 
-    @media (max-width: 900px) {
+    @media(max-width:900px) {
       .news-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
       }
     }
 
-    @media (max-width: 620px) {
+    @media(max-width:620px) {
+
       .header-inner {
         display: block;
       }
@@ -373,12 +346,8 @@
         margin-bottom: 12px;
       }
 
-      nav {
-        width: 100%;
-      }
-
       .hero {
-        padding: 35px 17px;
+        padding: 38px 16px;
       }
 
       .hero p {
@@ -389,16 +358,13 @@
         grid-template-columns: 1fr;
       }
 
-      .image-container {
-        height: 220px;
+      .image {
+        height: 225px;
       }
 
-      .news-title {
-        font-size: 19px;
-      }
     }
-  </style></head><body><header>
-  <div class="header-inner"><a class="logo" href="index.html">
+
+  </style></head><body><header>  <div class="header-inner"><a href="index.html" class="logo">
   Tendencias<span>MX</span>
 </a>
 
@@ -411,28 +377,25 @@
   <a href="dinero.html">Dinero</a>
 </nav>
 
-  </div>
-</header><section class="hero">
-  <div class="hero-content"><div class="hero-badge">🎬 Entretenimiento</div>
+  </div></header><section class="hero">  <div class="hero-content"><div class="badge">
+  🎬 Entretenimiento
+</div>
 
-<h1>Todo el mundo del entretenimiento</h1>
+<h1>
+  Todo el mundo del entretenimiento
+</h1>
 
 <p>
-  Noticias de cine, series, televisión, música, famosos,
-  videojuegos y las tendencias que están dando de qué hablar.
+  Noticias de cine, televisión, música, famosos,
+  videojuegos y tendencias que están dando de qué hablar.
 </p>
 
-  </div>
-</section><section class="categories">  <div class="category-scroll"><button class="category-btn active" data-category="todos">
+  </div></section><section class="categories">  <div class="category-list"><button class="category-btn active" data-category="todos">
   🔥 Todos
 </button>
 
-<button class="category-btn" data-category="cine">
-  🎬 Cine
-</button>
-
-<button class="category-btn" data-category="series">
-  📺 Series y TV
+<button class="category-btn" data-category="cine_tv">
+  🎬 Cine y TV
 </button>
 
 <button class="category-btn" data-category="musica">
@@ -451,396 +414,105 @@
   🔥 Tendencias
 </button>
 
-  </div></section><main>  <div class="search-box">
-    <input
-      type="search"
-      id="searchInput"
-      placeholder="🔎 Buscar películas, artistas, series, videojuegos..."
-      autocomplete="off"
-    >
-  </div>  <div class="toolbar"><h2>Últimas noticias</h2>
+  </div></section><main>  <div class="search"><input
+  id="searchInput"
+  type="search"
+  placeholder="🔎 Buscar películas, artistas, series, videojuegos..."
+  autocomplete="off"
+>
 
-<div class="counter" id="counter">
-  Cargando noticias...
+  </div>  <div class="heading"><h2 id="sectionTitle">
+  Últimas noticias
+</h2>
+
+<div id="counter" class="counter">
+  Cargando...
 </div>
 
-  </div>  <div id="status" class="status"><div class="loader"></div>
+  </div>  <div id="newsGrid" class="news-grid"><div class="loading">
 
-<div>
-  Cargando noticias de entretenimiento...
+  <div class="spinner"></div>
+
+  Cargando entretenimiento...
+
 </div>
 
-  </div>  <div id="newsGrid" class="news-grid"></div></main><footer>  <p>
+  </div></main><footer>  <p>
     <strong>TendenciasMX</strong>
-  </p>  <p style="margin-top:7px;">
-    Noticias de entretenimiento, cine, series, música y tendencias.
+  </p>  <p style="margin-top:8px;">
+    Noticias de cine, televisión, música, famosos,
+    videojuegos y tendencias.
   </p>  <p style="margin-top:12px;">
     Las noticias pertenecen a sus respectivas fuentes originales.
   </p></footer><script>
 
-  let todasLasNoticias = [];
-  let categoriaActual = "todos";
-
   const grid = document.getElementById("newsGrid");
-  const status = document.getElementById("status");
   const counter = document.getElementById("counter");
   const searchInput = document.getElementById("searchInput");
+  const sectionTitle = document.getElementById("sectionTitle");
 
-  /*
-    Palabras utilizadas únicamente para identificar
-    noticias relacionadas con entretenimiento.
-
-    La clasificación NO depende solamente de que
-    la noticia haya aparecido en una búsqueda.
-  */
-
-  const reglas = {
-
-    cine: [
-      "cine",
-      "película",
-      "pelicula",
-      "películas",
-      "peliculas",
-      "filme",
-      "film",
-      "actor",
-      "actriz",
-      "director",
-      "oscar",
-      "premios oscar",
-      "taquilla",
-      "estreno",
-      "hollywood",
-      "netflix",
-      "disney",
-      "marvel",
-      "dc",
-      "pixar",
-      "paramount",
-      "warner"
-    ],
-
-    series: [
-      "serie",
-      "series",
-      "televisión",
-      "television",
-      "tv",
-      "streaming",
-      "temporada",
-      "episodio",
-      "capítulo",
-      "capitulo",
-      "netflix",
-      "prime video",
-      "max",
-      "disney+",
-      "hbo"
-    ],
-
-    musica: [
-      "música",
-      "musica",
-      "cantante",
-      "canción",
-      "cancion",
-      "álbum",
-      "album",
-      "concierto",
-      "artista",
-      "banda",
-      "tour",
-      "gira",
-      "festival musical",
-      "grammy",
-      "spotify"
-    ],
-
-    famosos: [
-      "famoso",
-      "famosa",
-      "celebridad",
-      "celebridades",
-      "actor",
-      "actriz",
-      "cantante",
-      "artista",
-      "influencer",
-      "celebrity",
-      "espectáculo",
-      "espectaculos",
-      "espectáculos"
-    ],
-
-    videojuegos: [
-      "videojuego",
-      "videojuegos",
-      "gaming",
-      "gamer",
-      "playstation",
-      "xbox",
-      "nintendo",
-      "steam",
-      "fortnite",
-      "minecraft",
-      "fifa",
-      "ea sports",
-      "call of duty",
-      "playstation 5",
-      "xbox series"
-    ],
-
-    tendencias: [
-      "viral",
-      "virales",
-      "tendencia",
-      "tendencias",
-      "redes sociales",
-      "tiktok",
-      "instagram",
-      "youtube",
-      "meme",
-      "memes",
-      "internet"
-    ]
-
-  };
+  let noticias = [];
+  let categoriaActual = "todos";
 
 
-  function normalizar(texto) {
+  function escapar(texto) {
 
     return String(texto || "")
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
+      .replace(/&/g,"&amp;")
+      .replace(/</g,"&lt;")
+      .replace(/>/g,"&gt;")
+      .replace(/"/g,"&quot;")
+      .replace(/'/g,"&#039;");
 
   }
 
 
-  function detectarSubcategoria(noticia) {
+  function fechaBonita(fecha) {
 
-    const texto = normalizar(
-      (noticia.titulo || "") + " " +
-      (noticia.descripcion || "") + " " +
-      (noticia.resumen || "") + " " +
-      (noticia.url || "") + " " +
-      (noticia.subcategoria || "")
-    );
-
-    /*
-      Primero respetamos una subcategoría válida
-      que venga desde noticias.json.
-    */
-
-    const existente = normalizar(
-      noticia.subcategoria || ""
-    );
-
-    const permitidas = [
-      "cine",
-      "series",
-      "series y tv",
-      "musica",
-      "famosos",
-      "videojuegos",
-      "tendencias"
-    ];
-
-    if (permitidas.includes(existente)) {
-
-      if (existente === "series y tv") {
-        return "series";
-      }
-
-      return existente;
-
-    }
-
-
-    /*
-      Después hacemos detección por contenido.
-    */
-
-    for (const categoria of Object.keys(reglas)) {
-
-      for (const palabra of reglas[categoria]) {
-
-        if (texto.includes(normalizar(palabra))) {
-          return categoria;
-        }
-
-      }
-
-    }
-
-    return "tendencias";
-
-  }
-
-
-  function esEntretenimiento(noticia) {
-
-    const categoria = normalizar(noticia.categoria);
-
-    const subcategoria = normalizar(noticia.subcategoria);
-
-    const titulo = normalizar(noticia.titulo);
-
-    const descripcion = normalizar(
-      noticia.descripcion || noticia.resumen || ""
-    );
-
-    const url = normalizar(noticia.url);
-
-    /*
-      Si el JSON ya trae una categoría de entretenimiento,
-      la aceptamos.
-    */
-
-    if (
-      categoria === "entretenimiento" ||
-      categoria === "espectaculos" ||
-      categoria === "espectáculos"
-    ) {
-      return true;
-    }
-
-
-    /*
-      Detectamos contenido por palabras.
-    */
-
-    const texto =
-      titulo + " " +
-      descripcion + " " +
-      url + " " +
-      subcategoria;
-
-    for (const grupo of Object.values(reglas)) {
-
-      for (const palabra of grupo) {
-
-        if (texto.includes(normalizar(palabra))) {
-          return true;
-        }
-
-      }
-
-    }
-
-    /*
-      También aceptamos rutas típicas de
-      entretenimiento de Expansión.
-    */
-
-    if (
-      url.includes("/entretenimiento/") ||
-      url.includes("/vida/") ||
-      url.includes("/life-and-style/")
-    ) {
-      return true;
-    }
-
-    return false;
-
-  }
-
-
-  function obtenerTitulo(noticia) {
-
-    return (
-      noticia.titulo ||
-      noticia.title ||
-      "Noticia de entretenimiento"
-    );
-
-  }
-
-
-  function obtenerDescripcion(noticia) {
-
-    return (
-      noticia.descripcion ||
-      noticia.resumen ||
-      noticia.description ||
-      ""
-    );
-
-  }
-
-
-  function obtenerUrl(noticia) {
-
-    return (
-      noticia.url ||
-      noticia.link ||
-      "#"
-    );
-
-  }
-
-
-  function obtenerImagen(noticia) {
-
-    return (
-      noticia.imagen ||
-      noticia.image ||
-      noticia.imagen_url ||
-      noticia.image_url ||
-      noticia.enclosure ||
-      ""
-    );
-
-  }
-
-
-  function obtenerFecha(noticia) {
-
-    return (
-      noticia.fecha ||
-      noticia.date ||
-      noticia.publicado ||
-      noticia.published ||
-      noticia.pubDate ||
-      ""
-    );
-
-  }
-
-
-  function formatearFecha(fecha) {
-
-    if (!fecha) {
-      return "";
-    }
+    if (!fecha) return "";
 
     const d = new Date(fecha);
 
     if (isNaN(d.getTime())) {
-      return String(fecha);
+      return fecha;
     }
 
     return d.toLocaleDateString(
       "es-MX",
       {
-        day: "2-digit",
-        month: "short",
-        year: "numeric"
+        day:"2-digit",
+        month:"short",
+        year:"numeric"
       }
     );
 
   }
 
 
-  function crearImagen(url, titulo) {
+  function iconoCategoria(categoria) {
 
-    if (!url) {
+    const iconos = {
+
+      cine_tv: "🎬 Cine y TV",
+      musica: "🎵 Música",
+      famosos: "⭐ Famosos",
+      videojuegos: "🎮 Videojuegos",
+      tendencias: "🔥 Tendencias"
+
+    };
+
+    return iconos[categoria] || "🎬 Entretenimiento";
+
+  }
+
+
+  function imagenHTML(noticia) {
+
+    if (!noticia.imagen) {
 
       return `
-        <div class="image-placeholder">
+        <div class="placeholder">
           🎬
-          <span>Imagen no disponible</span>
         </div>
       `;
 
@@ -848,107 +520,64 @@
 
     return `
       <img
-        class="news-image"
-        src="${escapeHtml(url)}"
-        alt="${escapeHtml(titulo)}"
+        src="${escapar(noticia.imagen)}"
+        alt="${escapar(noticia.titulo)}"
         loading="lazy"
         referrerpolicy="no-referrer"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        onerror="
+          this.style.display='none';
+          this.parentElement.querySelector('.fallback').style.display='flex';
+        "
       >
 
-      <div class="image-placeholder" style="display:none;">
+      <div
+        class="placeholder fallback"
+        style="display:none;"
+      >
         🎬
-        <span>Imagen no disponible</span>
       </div>
     `;
 
   }
 
 
-  function escapeHtml(texto) {
-
-    return String(texto || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-
-  }
-
-
   function crearTarjeta(noticia) {
 
-    const titulo = obtenerTitulo(noticia);
-
-    const descripcion = obtenerDescripcion(noticia);
-
-    const url = obtenerUrl(noticia);
-
-    const imagen = obtenerImagen(noticia);
-
-    const fecha = obtenerFecha(noticia);
-
-    const subcategoria = detectarSubcategoria(noticia);
-
-    const nombres = {
-      cine: "🎬 Cine",
-      series: "📺 Series y TV",
-      musica: "🎵 Música",
-      famosos: "⭐ Famosos",
-      videojuegos: "🎮 Videojuegos",
-      tendencias: "🔥 Tendencias"
-    };
-
-    const nombreCategoria =
-      nombres[subcategoria] || "🎬 Entretenimiento";
-
-
     return `
-      <article class="news-card">
+      <article class="card">
 
-        <div class="image-container">
+        <div class="image">
 
-          ${crearImagen(imagen, titulo)}
+          ${imagenHTML(noticia)}
 
-          <div class="news-category">
-            ${nombreCategoria}
+          <div class="tag">
+            ${iconoCategoria(noticia.subcategoria)}
           </div>
 
         </div>
 
-        <div class="news-content">
+        <div class="content">
 
-          <h3 class="news-title">
-            ${escapeHtml(titulo)}
+          <h3 class="title">
+            ${escapar(noticia.titulo)}
           </h3>
 
-          ${
-            descripcion
-              ? `<p class="news-description">
-                  ${escapeHtml(descripcion).substring(0, 220)}
-                </p>`
-              : ""
-          }
+          <p class="description">
+            ${escapar(noticia.descripcion || "")}
+          </p>
 
-          <div class="news-meta">
-            ${fecha ? "📅 " + escapeHtml(formatearFecha(fecha)) : ""}
+          <div class="date">
+            📅 ${escapar(fechaBonita(noticia.fecha))}
           </div>
 
-          ${
-            url && url !== "#"
-              ? `
-                <a
-                  class="read-btn"
-                  href="${escapeHtml(url)}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Leer noticia completa →
-                </a>
-              `
-              : ""
-          }
+          <a
+            href="${escapar(noticia.url)}"
+            class="read"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Leer noticia completa →
+          </a>
 
         </div>
 
@@ -960,30 +589,34 @@
 
   function renderizar() {
 
-    const textoBusqueda =
-      normalizar(searchInput.value.trim());
+    const busqueda =
+      searchInput.value
+        .trim()
+        .toLowerCase();
 
 
-    let filtradas =
-      todasLasNoticias.filter(noticia => {
+    let resultado =
+      noticias.filter(noticia => {
 
         if (
           categoriaActual !== "todos" &&
-          detectarSubcategoria(noticia) !== categoriaActual
+          noticia.subcategoria !== categoriaActual
         ) {
           return false;
         }
 
-        if (textoBusqueda) {
+
+        if (busqueda) {
 
           const texto =
-            normalizar(
-              obtenerTitulo(noticia) +
+            (
+              noticia.titulo +
               " " +
-              obtenerDescripcion(noticia)
-            );
+              (noticia.descripcion || "")
+            )
+            .toLowerCase();
 
-          if (!texto.includes(textoBusqueda)) {
+          if (!texto.includes(busqueda)) {
             return false;
           }
 
@@ -995,21 +628,22 @@
 
 
     counter.textContent =
-      `${filtradas.length} ${
-        filtradas.length === 1
-          ? "noticia"
-          : "noticias"
-      }`;
+      resultado.length +
+      (
+        resultado.length === 1
+          ? " noticia"
+          : " noticias"
+      );
 
 
-    if (!filtradas.length) {
+    if (!resultado.length) {
 
       grid.innerHTML = `
         <div class="empty">
 
-          <strong>🔎 No encontramos noticias</strong>
+          <strong>No hay noticias en esta sección todavía.</strong>
 
-          Prueba con otra búsqueda o selecciona otra categoría.
+          Estamos esperando nuevas publicaciones de esta categoría.
 
         </div>
       `;
@@ -1020,92 +654,102 @@
 
 
     grid.innerHTML =
-      filtradas
+      resultado
         .map(crearTarjeta)
         .join("");
 
   }
 
 
-  async function cargarNoticias() {
+  async function cargarEntretenimiento() {
 
     try {
 
       const respuesta =
         await fetch(
-          "noticias.json?v=" +
+          "entretenimiento.json?v=" +
           Date.now()
         );
 
+
       if (!respuesta.ok) {
+
         throw new Error(
-          "No se pudo cargar noticias.json"
+          "No existe entretenimiento.json"
         );
+
       }
+
 
       const datos =
         await respuesta.json();
 
 
-      const noticias =
-        Array.isArray(datos)
-          ? datos
-          : (
-              Array.isArray(datos.noticias)
-                ? datos.noticias
-                : []
-            );
-
-
       /*
-        IMPORTANTE:
+        AQUÍ ESTÁ LA DIFERENCIA IMPORTANTE:
 
-        Esta página no modifica noticias.json.
+        Esta página SOLO lee entretenimiento.json.
 
-        Solo selecciona las noticias que realmente
-        parecen pertenecer a entretenimiento.
+        NO lee noticias.json.
+        NO lee deportes.json.
+        NO clasifica noticias.
+        NO intenta adivinar categorías.
       */
 
-      todasLasNoticias =
-        noticias
-          .filter(esEntretenimiento)
-          .sort((a, b) => {
-
-            const fechaA =
-              new Date(
-                obtenerFecha(a)
-              ).getTime() || 0;
-
-            const fechaB =
-              new Date(
-                obtenerFecha(b)
-              ).getTime() || 0;
-
-            return fechaB - fechaA;
-
-          });
+      noticias =
+        Array.isArray(datos.noticias)
+          ? datos.noticias
+          : [];
 
 
-      status.style.display = "none";
+      noticias =
+        noticias.filter(noticia =>
+          [
+            "cine_tv",
+            "musica",
+            "famosos",
+            "videojuegos",
+            "tendencias"
+          ].includes(noticia.subcategoria)
+        );
+
+
+      noticias.sort((a,b) => {
+
+        const fechaA =
+          new Date(a.fecha).getTime() || 0;
+
+        const fechaB =
+          new Date(b.fecha).getTime() || 0;
+
+        return fechaB - fechaA;
+
+      });
+
 
       renderizar();
 
-    } catch (error) {
+
+    } catch(error) {
 
       console.error(error);
 
-      status.innerHTML = `
-        <strong style="display:block;color:#b42318;margin-bottom:8px;">
-          No se pudieron cargar las noticias.
-        </strong>
+      counter.textContent = "Error";
 
-        <span>
-          Verifica que <b>noticias.json</b> esté en la raíz
-          del repositorio.
-        </span>
+      grid.innerHTML = `
+        <div class="error">
+
+          <strong>
+            No se pudo cargar entretenimiento.json
+          </strong>
+
+          <p style="margin-top:8px;">
+            El archivo todavía no existe o GitHub Pages
+            todavía no ha actualizado la página.
+          </p>
+
+        </div>
       `;
-
-      counter.textContent = "Error al cargar";
 
     }
 
@@ -1114,27 +758,43 @@
 
   document
     .querySelectorAll(".category-btn")
-    .forEach(boton => {
+    .forEach(button => {
 
-      boton.addEventListener(
-        "click",
-        () => {
+      button.addEventListener("click", () => {
 
-          document
-            .querySelectorAll(".category-btn")
-            .forEach(btn =>
-              btn.classList.remove("active")
-            );
+        document
+          .querySelectorAll(".category-btn")
+          .forEach(btn =>
+            btn.classList.remove("active")
+          );
 
-          boton.classList.add("active");
 
-          categoriaActual =
-            boton.dataset.category;
+        button.classList.add("active");
 
-          renderizar();
 
-        }
-      );
+        categoriaActual =
+          button.dataset.category;
+
+
+        const nombres = {
+
+          todos: "Últimas noticias",
+          cine_tv: "Cine y TV",
+          musica: "Música",
+          famosos: "Famosos",
+          videojuegos: "Videojuegos",
+          tendencias: "Tendencias"
+
+        };
+
+
+        sectionTitle.textContent =
+          nombres[categoriaActual];
+
+
+        renderizar();
+
+      });
 
     });
 
@@ -1145,7 +805,7 @@
   );
 
 
-  cargarNoticias();
+  cargarEntretenimiento();
 
 </script></body>
 </html>
