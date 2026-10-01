@@ -57,13 +57,14 @@ jobs:
           MAX_POR_FEED = 30
 
           USER_AGENT = (
-              "Mozilla/5.0 (compatible; TendenciasMXBot/1.0; "
-              "+https://cberroteran400-spec.github.io/tendencias-mx/)"
+              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+              "AppleWebKit/537.36 (KHTML, like Gecko) "
+              "Chrome/120.0.0.0 Safari/537.36"
           )
 
           HEADERS = {
               "User-Agent": USER_AGENT,
-              "Accept": "application/rss+xml, application/xml, text/xml, */*"
+              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
           }
 
           AHORA = datetime.now(timezone.utc)
@@ -293,23 +294,37 @@ jobs:
 
 
           # ============================================================
-          # IMÁGENES
-          # ÚNICA PARTE MODIFICADA
+          # CORRECCIÓN Y FILTRADO DE IMÁGENES
           # ============================================================
 
-          def comprobar_imagen(url):
-              """
-              Comprueba que la URL realmente entregue una imagen.
-              No acepta carpetas, páginas HTML ni URLs de texto.
-              """
-
+          def es_imagen_google(url):
+              """ Filtra logos y placeholder propios de Google News. """
               if not url:
+                  return True
+
+              patrones_google = [
+                  "googleusercontent.com",
+                  "news.google.com",
+                  "gstatic.com",
+                  "lh3.google",
+                  "lh4.google",
+                  "lh5.google",
+                  "lh6.google",
+                  "logo_google",
+                  "google_news"
+              ]
+
+              url_low = url.lower()
+              return any(patron in url_low for patron in patrones_google)
+
+
+          def comprobar_imagen(url):
+              """ Comprueba que la URL realmente entregue una imagen válida y no de Google. """
+              if not url or es_imagen_google(url):
                   return ""
 
               try:
-                  url = html.unescape(
-                      str(url).strip()
-                  )
+                  url = html.unescape(str(url).strip())
 
                   if url.startswith("//"):
                       url = "https:" + url
@@ -317,29 +332,29 @@ jobs:
                   if not url_valida(url):
                       return ""
 
-                  respuesta = requests.get(
+                  respuesta = requests.head(
                       url,
                       headers=HEADERS,
-                      timeout=12,
-                      stream=True,
+                      timeout=5,
                       allow_redirects=True
                   )
 
                   if respuesta.status_code != 200:
-                      respuesta.close()
+                      respuesta = requests.get(
+                          url,
+                          headers=HEADERS,
+                          timeout=5,
+                          stream=True,
+                          allow_redirects=True
+                      )
+
+                  if respuesta.status_code != 200:
                       return ""
 
-                  tipo = (
-                      respuesta.headers
-                      .get("Content-Type", "")
-                      .lower()
-                  )
-
+                  tipo = respuesta.headers.get("Content-Type", "").lower()
                   url_final = respuesta.url
 
-                  respuesta.close()
-
-                  if tipo.startswith("image/"):
+                  if tipo.startswith("image/") and not es_imagen_google(url_final):
                       return url_final
 
               except Exception:
@@ -349,136 +364,35 @@ jobs:
 
 
           def obtener_imagen_entry(entry):
-              """
-              Obtiene solamente imágenes reales desde el RSS.
-              """
-
+              """ Obtiene imágenes directas desde las etiquetas del RSS. """
               candidatos = []
 
-              # media:content
               try:
-                  for media in entry.get(
-                      "media_content",
-                      []
-                  ):
-                      if isinstance(media, dict):
-                          url = media.get("url")
-
-                          if url:
-                              candidatos.append(url)
+                  for media in entry.get("media_content", []):
+                      if isinstance(media, dict) and media.get("url"):
+                          candidatos.append(media.get("url"))
               except Exception:
                   pass
 
-              # media:thumbnail
               try:
-                  for media in entry.get(
-                      "media_thumbnail",
-                      []
-                  ):
-                      if isinstance(media, dict):
-                          url = media.get("url")
-
-                          if url:
-                              candidatos.append(url)
+                  for media in entry.get("media_thumbnail", []):
+                      if isinstance(media, dict) and media.get("url"):
+                          candidatos.append(media.get("url"))
               except Exception:
                   pass
 
-              # enclosure
               try:
-                  for enclosure in entry.get(
-                      "enclosures",
-                      []
-                  ):
+                  for enclosure in entry.get("enclosures", []):
                       if isinstance(enclosure, dict):
-
-                          url = (
-                              enclosure.get("href")
-                              or enclosure.get("url")
-                          )
-
-                          tipo = (
-                              enclosure.get("type")
-                              or ""
-                          ).lower()
-
-                          if url and (
-                              tipo.startswith("image/")
-                              or url.lower().endswith(
-                                  (
-                                      ".jpg",
-                                      ".jpeg",
-                                      ".png",
-                                      ".webp",
-                                      ".gif"
-                                  )
-                              )
-                          ):
+                          url = enclosure.get("href") or enclosure.get("url")
+                          tipo = (enclosure.get("type") or "").lower()
+                          if url and (tipo.startswith("image/") or url.lower().endswith((".jpg", ".jpeg", ".png", ".webp", ".gif"))):
                               candidatos.append(url)
-
               except Exception:
                   pass
 
-              # HTML contenido dentro del RSS
-              contenido = ""
-
-              try:
-                  contenido += str(
-                      entry.get(
-                          "summary",
-                          ""
-                      )
-                  )
-
-                  contenido += " " + str(
-                      entry.get(
-                          "description",
-                          ""
-                      )
-                  )
-
-                  for item in entry.get(
-                      "content",
-                      []
-                  ):
-                      if isinstance(item, dict):
-                          contenido += " " + str(
-                              item.get(
-                                  "value",
-                                  ""
-                              )
-                          )
-
-              except Exception:
-                  pass
-
-              try:
-                  soup = BeautifulSoup(
-                      contenido,
-                      "html.parser"
-                  )
-
-                  for img in soup.find_all("img"):
-
-                      url = (
-                          img.get("src")
-                          or img.get("data-src")
-                          or img.get("data-original")
-                          or img.get("data-lazy-src")
-                      )
-
-                      if url:
-                          candidatos.append(url)
-
-              except Exception:
-                  pass
-
-              # Comprobar hasta encontrar una imagen REAL
               for url in candidatos:
-
-                  imagen = comprobar_imagen(
-                      url
-                  )
-
+                  imagen = comprobar_imagen(url)
                   if imagen:
                       return imagen
 
@@ -486,19 +400,16 @@ jobs:
 
 
           def obtener_imagen_pagina(url):
-              """
-              Busca la imagen principal directamente
-              en la página de la noticia.
-              """
-
+              """ Sigue la redirección de la noticia y busca la imagen en la fuente original. """
               if not url_valida(url):
                   return ""
 
               try:
+                  # Obtener la página siguiendo redirecciones
                   respuesta = requests.get(
                       url,
                       headers=HEADERS,
-                      timeout=15,
+                      timeout=8,
                       allow_redirects=True
                   )
 
@@ -506,86 +417,29 @@ jobs:
                       return ""
 
                   pagina_url = respuesta.url
-
-                  soup = BeautifulSoup(
-                      respuesta.text,
-                      "html.parser"
-                  )
+                  soup = BeautifulSoup(respuesta.text, "html.parser")
 
                   candidatos = []
 
-                  # Open Graph
-                  for meta in soup.find_all(
-                      "meta",
-                      attrs={
-                          "property": "og:image"
-                      }
-                  ):
-                      imagen = meta.get("content")
+                  # Meta tags principales
+                  meta_tags = [
+                      ("meta", {"property": "og:image"}),
+                      ("meta", {"name": "twitter:image"}),
+                      ("meta", {"property": "twitter:image"}),
+                      ("link", {"rel": "image_src"})
+                  ]
 
-                      if imagen:
-                          candidatos.append(
-                              imagen
-                          )
+                  for tag, attrs in meta_tags:
+                      for elemento in soup.find_all(tag, attrs=attrs):
+                          img_src = elemento.get("content") or elemento.get("href")
+                          if img_src:
+                              candidatos.append(img_src)
 
-                  # Twitter Card
-                  for meta in soup.find_all(
-                      "meta",
-                      attrs={
-                          "name": "twitter:image"
-                      }
-                  ):
-                      imagen = meta.get("content")
+                  for img in candidatos:
+                      img_clean = html.unescape(str(img).strip())
+                      img_abs = urljoin(pagina_url, img_clean)
 
-                      if imagen:
-                          candidatos.append(
-                              imagen
-                          )
-
-                  # Twitter usando property
-                  for meta in soup.find_all(
-                      "meta",
-                      attrs={
-                          "property": "twitter:image"
-                      }
-                  ):
-                      imagen = meta.get("content")
-
-                      if imagen:
-                          candidatos.append(
-                              imagen
-                          )
-
-                  # Imagen principal del artículo
-                  for img in soup.find_all("img"):
-
-                      src = (
-                          img.get("src")
-                          or img.get("data-src")
-                          or img.get("data-original")
-                          or img.get("data-lazy-src")
-                      )
-
-                      if src:
-                          candidatos.append(
-                              src
-                          )
-
-                  for imagen in candidatos:
-
-                      imagen = html.unescape(
-                          str(imagen).strip()
-                      )
-
-                      imagen = urljoin(
-                          pagina_url,
-                          imagen
-                      )
-
-                      imagen_real = comprobar_imagen(
-                          imagen
-                      )
-
+                      imagen_real = comprobar_imagen(img_abs)
                       if imagen_real:
                           return imagen_real
 
@@ -713,18 +567,14 @@ jobs:
               ):
                   return None
 
-              # Primero intenta obtener imagen directamente
-              # del RSS.
-              imagen = obtener_imagen_entry(
-                  entry
-              )
+              # Extraer imagen directamente del feed si existe
+              imagen = obtener_imagen_entry(entry)
 
-              # Si el RSS no trae una imagen real,
-              # busca la imagen principal de la página.
-              if not imagen:
-                  imagen = obtener_imagen_pagina(
-                      url
-                  )
+              # Si es de Google News o no se encontró en el feed, buscar en la página de destino original
+              if not imagen or "news.google.com" in url:
+                  imagen_pagina = obtener_imagen_pagina(url)
+                  if imagen_pagina:
+                      imagen = imagen_pagina
 
               if subcategoria:
                   categoria_final = "Deportes"
