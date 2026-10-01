@@ -29,92 +29,612 @@ jobs:
           import xml.etree.ElementTree as ET
           import json
           import re
+          import html
           from datetime import datetime, timezone
+          from urllib.parse import urljoin
 
           RSS_URL = "https://expansion.mx/rss"
 
-          try:
-              req = urllib.request.Request(
-                  RSS_URL,
-                  headers={
-                      "User-Agent": "Mozilla/5.0"
-                  }
+          MAX_NOTICIAS = 100
+
+
+          # ============================================================
+          # DESCARGAR RSS
+          # ============================================================
+
+          req = urllib.request.Request(
+              RSS_URL,
+              headers={
+                  "User-Agent": "Mozilla/5.0"
+              }
+          )
+
+          with urllib.request.urlopen(
+              req,
+              timeout=30
+          ) as response:
+
+              data = response.read()
+
+
+          root = ET.fromstring(data)
+
+          noticias = []
+
+
+          # ============================================================
+          # FUNCIONES
+          # ============================================================
+
+          def limpiar_html(texto):
+
+              if not texto:
+                  return ""
+
+              texto = html.unescape(texto)
+
+              texto = re.sub(
+                  r"<script[^>]*>.*?</script>",
+                  "",
+                  texto,
+                  flags=re.I | re.S
               )
 
-              with urllib.request.urlopen(req, timeout=30) as response:
-                  data = response.read()
+              texto = re.sub(
+                  r"<style[^>]*>.*?</style>",
+                  "",
+                  texto,
+                  flags=re.I | re.S
+              )
 
-              root = ET.fromstring(data)
+              texto = re.sub(
+                  r"<[^>]+>",
+                  "",
+                  texto
+              )
 
-              noticias = []
+              texto = re.sub(
+                  r"\s+",
+                  " ",
+                  texto
+              )
 
-              for item in root.findall(".//item"):
+              return texto.strip()
 
-                  titulo = item.findtext("title", "").strip()
-                  enlace = item.findtext("link", "").strip()
-                  descripcion = item.findtext("description", "").strip()
-                  fecha = item.findtext("pubDate", "").strip()
 
-                  if not titulo or not enlace:
-                      continue
+          def obtener_tag(item, nombre):
 
-                  descripcion = re.sub(
-                      r"<[^>]+>",
-                      "",
-                      descripcion
-                  )
+              for elemento in item.iter():
 
-                  descripcion = re.sub(
-                      r"\s+",
-                      " ",
-                      descripcion
-                  ).strip()
+                  tag = elemento.tag
 
-                  noticias.append({
-                      "titulo": titulo,
-                      "descripcion": descripcion[:300],
-                      "enlace": enlace,
-                      "fecha": fecha,
-                      "fuente": "Expansión",
-                      "categoria": "mexico"
-                  })
+                  if "}" in tag:
+                      tag = tag.split("}", 1)[1]
 
-              resultado = {
-                  "actualizado": datetime.now(
-                      timezone.utc
-                  ).isoformat(),
+                  if tag.lower() == nombre.lower():
+
+                      if elemento.text:
+                          return elemento.text.strip()
+
+              return ""
+
+
+          # ============================================================
+          # BUSCAR IMAGEN
+          # ============================================================
+
+          def obtener_imagen(item):
+
+              # --------------------------------------------------------
+              # 1. media:content
+              # 2. media:thumbnail
+              # 3. enclosure
+              # 4. image
+              # --------------------------------------------------------
+
+              for elemento in item.iter():
+
+                  tag = elemento.tag
+
+                  if "}" in tag:
+                      tag = tag.split("}", 1)[1]
+
+                  tag = tag.lower()
+
+                  if tag in [
+                      "content",
+                      "thumbnail",
+                      "enclosure",
+                      "image"
+                  ]:
+
+                      for atributo in [
+                          "url",
+                          "href",
+                          "src"
+                      ]:
+
+                          url = elemento.attrib.get(
+                              atributo,
+                              ""
+                          ).strip()
+
+                          if url:
+
+                              if url.startswith("//"):
+                                  url = "https:" + url
+
+                              return urljoin(
+                                  RSS_URL,
+                                  url
+                              )
+
+
+              # --------------------------------------------------------
+              # Buscar imagen dentro de description
+              # --------------------------------------------------------
+
+              for elemento in item.iter():
+
+                  tag = elemento.tag
+
+                  if "}" in tag:
+                      tag = tag.split("}", 1)[1]
+
+                  tag = tag.lower()
+
+                  if tag in [
+                      "description",
+                      "encoded",
+                      "content"
+                  ]:
+
+                      contenido = elemento.text or ""
+
+                      # src
+                      resultado = re.search(
+                          r'<img[^>]+src=["\']([^"\']+)["\']',
+                          contenido,
+                          re.I
+                      )
+
+                      if resultado:
+
+                          url = html.unescape(
+                              resultado.group(1)
+                          ).strip()
+
+                          if url.startswith("//"):
+                              url = "https:" + url
+
+                          return urljoin(
+                              RSS_URL,
+                              url
+                          )
+
+
+                      # data-src
+                      resultado = re.search(
+                          r'<img[^>]+data-src=["\']([^"\']+)["\']',
+                          contenido,
+                          re.I
+                      )
+
+                      if resultado:
+
+                          url = html.unescape(
+                              resultado.group(1)
+                          ).strip()
+
+                          if url.startswith("//"):
+                              url = "https:" + url
+
+                          return urljoin(
+                              RSS_URL,
+                              url
+                          )
+
+
+              return ""
+
+
+          # ============================================================
+          # DETERMINAR CATEGORÍA
+          # ============================================================
+
+          def obtener_categoria(titulo, enlace, categoria_rss):
+
+              titulo = (titulo or "").lower()
+              enlace = (enlace or "").lower()
+              categoria_rss = (categoria_rss or "").lower()
+
+
+              texto = (
+                  titulo +
+                  " " +
+                  enlace +
+                  " " +
+                  categoria_rss
+              )
+
+
+              # --------------------------------------------------------
+              # MUNDO
+              # --------------------------------------------------------
+
+              if (
+                  "/mundo/" in enlace
+                  or "mundo" in categoria_rss
+                  or "internacional" in categoria_rss
+              ):
+
+                  return "mundo"
+
+
+              # --------------------------------------------------------
+              # TECNOLOGÍA
+              # --------------------------------------------------------
+
+              if (
+                  "/tecnologia/" in enlace
+                  or "tecnologia" in categoria_rss
+                  or "tecnología" in categoria_rss
+              ):
+
+                  return "tecnologia"
+
+
+              # --------------------------------------------------------
+              # ECONOMÍA
+              # --------------------------------------------------------
+
+              if (
+                  "/economia/" in enlace
+                  or "/mercados/" in enlace
+                  or "/finanzas-personales/" in enlace
+                  or "economia" in categoria_rss
+                  or "economía" in categoria_rss
+                  or "mercados" in categoria_rss
+              ):
+
+                  return "economia"
+
+
+              # --------------------------------------------------------
+              # DEPORTES
+              # --------------------------------------------------------
+
+              palabras_deportes = [
+                  "/deportes/",
+                  "deportes",
+                  "futbol",
+                  "fútbol",
+                  "liga mx",
+                  "nba",
+                  "nfl",
+                  "mlb",
+                  "tenis",
+                  "boxeo",
+                  "béisbol",
+                  "beisbol",
+                  "mundial de futbol",
+                  "mundial de fútbol"
+              ]
+
+              if any(
+                  palabra in texto
+                  for palabra in palabras_deportes
+              ):
+
+                  return "deportes"
+
+
+              # --------------------------------------------------------
+              # ENTRETENIMIENTO
+              # --------------------------------------------------------
+
+              palabras_entretenimiento = [
+                  "/entretenimiento/",
+                  "/espectaculos/",
+                  "/espectáculos/",
+                  "/cine/",
+                  "/musica/",
+                  "/música/",
+                  "entretenimiento",
+                  "espectaculos",
+                  "espectáculos",
+                  "celebridad",
+                  "famosos",
+                  "cine",
+                  "television",
+                  "televisión"
+              ]
+
+              if any(
+                  palabra in texto
+                  for palabra in palabras_entretenimiento
+              ):
+
+                  return "entretenimiento"
+
+
+              # --------------------------------------------------------
+              # MÉXICO
+              # --------------------------------------------------------
+
+              palabras_mexico = [
+                  "/mexico/",
+                  "/méxico/",
+                  "mexico",
+                  "méxico",
+                  "nacional",
+                  "cdmx",
+                  "estado de mexico",
+                  "estado de méxico",
+                  "ciudad de mexico",
+                  "ciudad de méxico",
+                  "presidencia",
+                  "senado",
+                  "diputados",
+                  "gobierno federal",
+                  "gobierno de mexico",
+                  "gobierno de méxico"
+              ]
+
+              if any(
+                  palabra in texto
+                  for palabra in palabras_mexico
+              ):
+
+                  return "mexico"
+
+
+              # --------------------------------------------------------
+              # POR DEFECTO
+              #
+              # Las noticias de portada de Expansión que no tienen
+              # una sección internacional se consideran México.
+              # --------------------------------------------------------
+
+              return "mexico"
+
+
+          # ============================================================
+          # LEER TODAS LAS NOTICIAS
+          # ============================================================
+
+          for item in root.findall(".//item"):
+
+              titulo = obtener_tag(
+                  item,
+                  "title"
+              )
+
+              enlace = obtener_tag(
+                  item,
+                  "link"
+              )
+
+              descripcion = obtener_tag(
+                  item,
+                  "description"
+              )
+
+              fecha = obtener_tag(
+                  item,
+                  "pubDate"
+              )
+
+              categoria_rss = obtener_tag(
+                  item,
+                  "category"
+              )
+
+
+              if not titulo or not enlace:
+                  continue
+
+
+              descripcion_limpia = limpiar_html(
+                  descripcion
+              )
+
+
+              imagen = obtener_imagen(
+                  item
+              )
+
+
+              categoria = obtener_categoria(
+                  titulo,
+                  enlace,
+                  categoria_rss
+              )
+
+
+              noticia = {
+
+                  "titulo": titulo,
+
+                  "descripcion":
+                      descripcion_limpia[:500],
+
+                  "enlace": enlace,
+
+                  "fecha": fecha,
 
                   "fuente": "Expansión",
 
-                  "noticias": noticias[:30]
+                  "categoria": categoria,
+
+                  "imagen": imagen
               }
 
-              with open(
-                  "noticias.json",
-                  "w",
-                  encoding="utf-8"
-              ) as archivo:
 
-                  json.dump(
-                      resultado,
-                      archivo,
-                      ensure_ascii=False,
-                      indent=2
-                  )
-
-              print(
-                  f"Noticias encontradas: {len(noticias)}"
+              noticias.append(
+                  noticia
               )
 
-          except Exception as error:
 
-              print(
-                  "Error al obtener RSS:",
-                  error
+          # ============================================================
+          # ELIMINAR DUPLICADOS
+          # ============================================================
+
+          noticias_unicas = {}
+
+          for noticia in noticias:
+
+              enlace = noticia["enlace"]
+
+              if enlace not in noticias_unicas:
+
+                  noticias_unicas[enlace] = noticia
+
+
+          noticias = list(
+              noticias_unicas.values()
+          )
+
+
+          # ============================================================
+          # ORDENAR POR FECHA
+          # ============================================================
+
+          def fecha_orden(noticia):
+
+              return noticia.get(
+                  "fecha",
+                  ""
               )
 
-              raise
+
+          noticias.sort(
+              key=fecha_orden,
+              reverse=True
+          )
+
+
+          # ============================================================
+          # LIMITAR
+          # ============================================================
+
+          noticias = noticias[
+              :MAX_NOTICIAS
+          ]
+
+
+          # ============================================================
+          # ESTADÍSTICAS
+          # ============================================================
+
+          conteo = {
+              "mexico": 0,
+              "mundo": 0,
+              "economia": 0,
+              "deportes": 0,
+              "entretenimiento": 0,
+              "tecnologia": 0
+          }
+
+          imagenes = 0
+
+
+          for noticia in noticias:
+
+              categoria = noticia.get(
+                  "categoria"
+              )
+
+              if categoria in conteo:
+
+                  conteo[categoria] += 1
+
+              if noticia.get(
+                  "imagen"
+              ):
+
+                  imagenes += 1
+
+
+          print("")
+          print("====================================")
+          print("TENDENCIAS MX - RSS")
+          print("====================================")
+          print(
+              "Total:",
+              len(noticias)
+          )
+          print(
+              "México:",
+              conteo["mexico"]
+          )
+          print(
+              "Mundo:",
+              conteo["mundo"]
+          )
+          print(
+              "Economía:",
+              conteo["economia"]
+          )
+          print(
+              "Deportes:",
+              conteo["deportes"]
+          )
+          print(
+              "Entretenimiento:",
+              conteo["entretenimiento"]
+          )
+          print(
+              "Tecnología:",
+              conteo["tecnologia"]
+          )
+          print(
+              "Con imagen:",
+              imagenes
+          )
+          print("====================================")
+          print("")
+
+
+          # ============================================================
+          # CREAR NOTICIAS.JSON
+          # ============================================================
+
+          resultado = {
+
+              "actualizado":
+                  datetime.now(
+                      timezone.utc
+                  ).isoformat(),
+
+              "fuente":
+                  "Expansión",
+
+              "noticias":
+                  noticias
+          }
+
+
+          with open(
+              "noticias.json",
+              "w",
+              encoding="utf-8"
+          ) as archivo:
+
+              json.dump(
+                  resultado,
+                  archivo,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+
+          print(
+              "noticias.json actualizado correctamente."
+          )
+
           PY
+
 
       - name: Guardar noticias actualizadas
         run: |
