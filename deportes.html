@@ -36,12 +36,30 @@ boxeo:["https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=800","https:
 formula1:["https://images.unsplash.com/photo-1511910849309-0dffb8785146?w=800","https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=800"],
 otros:["https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800","https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800"]
 };
-function esImagenBasura(url){if(!url) return true; const u=url.toLowerCase(); if(u.length<25) return true; if(u.includes('gstatic')||u.includes('googlelogo')||u.includes('branding')) return true; return false;}
-function obtenerImagenReal(noticia){let img=noticia.imagen||""; if(img&&!esImagenBasura(img)) return img; const cat=obtenerCategoriaDeportiva(noticia); const lista=fallbackImagenesPorCategoria[cat]||fallbackImagenesPorCategoria.otros; let hash=0; const titulo=noticia.titulo||""; for(let i=0;i<titulo.length;i++) hash=(hash*31+titulo.charCodeAt(i))%1000; return lista[hash%lista.length];}
+// FIX: solo bloquea logo G, PERMITE lh3.googleusercontent.com que es foto real
+function esImagenBasura(url){
+  if(!url) return true;
+  const u=url.toLowerCase().trim();
+  if(u.startsWith('data:')) return true;
+  if(u.includes('gstatic.com/images/branding') || u.includes('googlelogo') || u.includes('branding/googlelogo')) return true;
+  if(u.includes('favicon')) return true;
+  return false;
+}
+function obtenerImagenReal(noticia){
+  let img=(noticia.imagen||"").trim();
+  if(img.startsWith('//')) img='https:'+img;
+  if(img &&!esImagenBasura(img)) return img;
+  const cat=obtenerCategoriaDeportiva(noticia);
+  const lista=fallbackImagenesPorCategoria[cat]||fallbackImagenesPorCategoria.otros;
+  let hash=0;
+  const titulo=noticia.titulo||"";
+  for(let i=0;i<titulo.length;i++) hash=(hash*31+titulo.charCodeAt(i))%1000;
+  return lista[hash%lista.length];
+}
 async function cargarNoticias(){try{const r=await fetch(ARCHIVO_DATOS+"?"+Date.now(),{cache:"no-store"}); const datos=await r.json(); todasLasNoticias=Array.isArray(datos)?datos:datos.noticias; mostrarNoticias(); document.getElementById("estado").textContent=todasLasNoticias.length+" noticias";}catch(e){document.getElementById("estado").textContent="Error cargando noticias";}}
 function normalizar(t){return String(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();}
 function obtenerCategoriaDeportiva(n){const t=normalizar((n.categoria||"")+" "+(n.subcategoria||"")+" "+(n.titulo||"")); if(t.includes("futbol")||t.includes("liga mx")) return "futbol"; if(t.includes("tenis")) return "tenis"; if(t.includes("beisbol")) return "beisbol"; if(t.includes("nfl")) return "nfl"; if(t.includes("nba")||t.includes("basquetbol")) return "basquetbol"; if(t.includes("boxeo")||t.includes("ufc")) return "boxeo"; if(t.includes("formula 1")||t.includes("f1")) return "formula1"; return "otros";}
-function mostrarNoticias(){const cont=document.getElementById("noticias"); const texto=normalizar(busquedaActual); const res=todasLasNoticias.filter(n=>{const c=categoriaActual==="todos"||obtenerCategoriaDeportiva(n)===categoriaActual; const txt=normalizar((n.titulo||"")+(n.descripcion||"")); return c&&(!texto||txt.includes(texto));}); cont.innerHTML=res.map(n=>{const img=obtenerImagenReal(n); const cat=obtenerCategoriaDeportiva(n); return `<article class="news-card"><a href="${n.url}" target="_blank"><img class="news-image" src="${img}" alt="" loading="lazy" onerror="this.src='${fallbackImagenesPorCategoria[cat][0]}'"></a><div class="news-content"><div class="news-meta"><span class="news-category">${cat}</span></div><h3 class="news-title">${n.titulo||""}</h3><p class="news-description">${(n.descripcion||"").substring(0,120)}...</p><a class="read-more" href="${n.url}" target="_blank">Leer →</a></div></article>`}).join(""); if(res.length) mostrarDestacada(res[0]);}
+function mostrarNoticias(){const cont=document.getElementById("noticias"); const texto=normalizar(busquedaActual); const res=todasLasNoticias.filter(n=>{const c=categoriaActual==="todos"||obtenerCategoriaDeportiva(n)===categoriaActual; const txt=normalizar((n.titulo||"")+(n.descripcion||"")); return c&&(!texto||txt.includes(texto));}); cont.innerHTML=res.map(n=>{const img=obtenerImagenReal(n); const cat=obtenerCategoriaDeportiva(n); const fallbackVariado=fallbackImagenesPorCategoria[cat]||fallbackImagenesPorCategoria.otros; let h=0; for(let i=0;i<n.titulo.length;i++) h=(h*31+n.titulo.charCodeAt(i))%1000; const segundo=fallbackVariado[(h+1)%fallbackVariado.length]; return `<article class="news-card"><a href="${n.url}" target="_blank"><img class="news-image" src="${img}" alt="" loading="lazy" onerror="this.onerror=null; this.src='${segundo}'"></a><div class="news-content"><div class="news-meta"><span class="news-category">${cat}</span></div><h3 class="news-title">${n.titulo||""}</h3><p class="news-description">${(n.descripcion||"").substring(0,120)}...</p><a class="read-more" href="${n.url}" target="_blank">Leer →</a></div></article>`}).join(""); if(res.length) mostrarDestacada(res[0]);}
 function mostrarDestacada(n){const c=document.getElementById("destacada"); const img=obtenerImagenReal(n); c.innerHTML=`<a class="featured-card" href="${n.url}" target="_blank"><img src="${img}" alt=""><div class="featured-overlay" style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:25px;background:linear-gradient(transparent,rgba(0,0,0,.88))"><h2 style="margin:0">${n.titulo}</h2></div></a>`;}
 document.getElementById("buscador").addEventListener("input",e=>{busquedaActual=e.target.value; mostrarNoticias();});
 document.querySelectorAll(".category-btn").forEach(b=>{b.addEventListener("click",()=>{document.querySelectorAll(".category-btn").forEach(x=>x.classList.remove("active")); b.classList.add("active"); categoriaActual=b.dataset.categoria; mostrarNoticias();});});
