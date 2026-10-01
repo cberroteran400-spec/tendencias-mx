@@ -4,14 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tecnología | TendenciasMX</title>
+<title>Tecnología | IA, Gadgets, Apps y Ciberseguridad | TendenciasMX</title>
 
-<meta name="description" content="Noticias de tecnología, inteligencia artificial, gadgets, aplicaciones, redes sociales, ciberseguridad y tecnología en México.">
-
-<meta name="keywords" content="tecnología, inteligencia artificial, IA, gadgets, celulares, aplicaciones, redes sociales, ciberseguridad, México">
+<meta name="description" content="Noticias de tecnología, inteligencia artificial, gadgets, aplicaciones, redes sociales y ciberseguridad en México y el mundo.">
+<meta name="keywords" content="tecnología, inteligencia artificial, IA, gadgets, apps, redes sociales, ciberseguridad, México, noticias">
 
 <style>
-
 *{
     box-sizing:border-box;
     margin:0;
@@ -21,685 +19,617 @@
 body{
     font-family:Arial,Helvetica,sans-serif;
     background:#f4f6f8;
-    color:#171717;
+    color:#111827;
 }
 
 header{
     background:#111827;
     color:white;
-    padding:18px 15px;
     position:sticky;
     top:0;
-    z-index:100;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
-.header-content{
-    max-width:1100px;
+.header-inner{
+    max-width:1200px;
     margin:auto;
+    padding:16px 20px;
 }
 
 .logo{
-    font-size:27px;
+    font-size:28px;
     font-weight:800;
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+    margin-bottom:14px;
 }
 
 .logo span{
     color:#22c55e;
 }
 
-.subtitle{
-    font-size:13px;
-    color:#cbd5e1;
-    margin-top:4px;
-}
-
 nav{
     display:flex;
     gap:8px;
     overflow-x:auto;
-    margin-top:15px;
-    padding-bottom:3px;
+    padding-bottom:4px;
+    scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+    display:none;
 }
 
 nav a{
-    color:white;
+    color:#d1d5db;
     text-decoration:none;
-    background:#1f2937;
     padding:9px 13px;
-    border-radius:20px;
-    font-size:13px;
+    border-radius:8px;
     white-space:nowrap;
+    font-size:14px;
+    transition:.2s;
 }
 
-nav a:hover{
+nav a:hover,
+nav a.active{
     background:#22c55e;
-    color:#111827;
+    color:#052e16;
+    font-weight:700;
 }
 
 main{
     max-width:1100px;
     margin:auto;
-    padding:25px 15px 50px;
+    padding:30px 20px 50px;
 }
 
-h1{
-    font-size:30px;
-    margin-bottom:8px;
-}
-
-.descripcion{
-    color:#64748b;
-    margin-bottom:22px;
-    line-height:1.5;
-}
-
-.filtros{
-    display:flex;
-    gap:8px;
-    overflow-x:auto;
+.hero{
+    background:linear-gradient(135deg,#111827,#1f2937);
+    color:white;
+    border-radius:18px;
+    padding:30px 25px;
     margin-bottom:25px;
-    padding-bottom:5px;
 }
 
-.filtros button{
+.hero h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#d1d5db;
+    line-height:1.6;
+    max-width:800px;
+}
+
+.search-box{
+    margin:25px 0;
+}
+
+.search-box input{
+    width:100%;
+    padding:15px 17px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    background:white;
+}
+
+.search-box input:focus{
+    border-color:#22c55e;
+    box-shadow:0 0 0 3px rgba(34,197,94,.12);
+}
+
+.filters{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:28px;
+}
+
+.filter-btn{
     border:none;
-    background:#e2e8f0;
-    color:#1e293b;
+    background:white;
+    color:#374151;
+    border:1px solid #d1d5db;
     padding:10px 15px;
-    border-radius:22px;
+    border-radius:999px;
     cursor:pointer;
-    font-weight:700;
-    white-space:nowrap;
+    font-size:14px;
+    font-weight:600;
 }
 
-.filtros button.activo,
-.filtros button:hover{
+.filter-btn:hover,
+.filter-btn.active{
     background:#22c55e;
-    color:#07130b;
+    border-color:#22c55e;
+    color:#052e16;
 }
 
-.grid{
+.news-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
 }
 
 .card{
     background:white;
-    border-radius:15px;
+    border-radius:16px;
     overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    box-shadow:0 4px 15px rgba(0,0,0,.07);
     transition:.2s;
+    height:100%;
 }
 
 .card:hover{
-    transform:translateY(-3px);
-    box-shadow:0 8px 22px rgba(0,0,0,.12);
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-.card-link{
-    display:block;
-    color:inherit;
-    text-decoration:none;
-}
-
-.card-img{
+.news-image{
     width:100%;
-    height:180px;
+    height:190px;
     background:#e5e7eb;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     overflow:hidden;
 }
 
-.card-img img{
+.news-image img{
     width:100%;
     height:100%;
     object-fit:cover;
     display:block;
 }
 
-.fallback{
-    width:100%;
-    height:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:55px;
-    background:linear-gradient(135deg,#111827,#334155);
-}
-
 .card-content{
-    padding:17px;
+    padding:18px;
 }
 
-.categoria{
+.category{
     display:inline-block;
-    font-size:11px;
-    font-weight:800;
-    color:#15803d;
     background:#dcfce7;
+    color:#166534;
     padding:5px 9px;
-    border-radius:15px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:700;
     margin-bottom:10px;
-    text-transform:uppercase;
 }
 
 .card h2{
     font-size:19px;
-    line-height:1.3;
+    line-height:1.35;
     margin-bottom:9px;
 }
 
-.card p{
-    color:#64748b;
-    font-size:14px;
-    line-height:1.45;
-}
-
-.fecha{
-    margin-top:12px;
-    font-size:12px;
-    color:#94a3b8;
-}
-
-.leer{
-    margin-top:13px;
-    color:#16a34a;
+.date{
+    color:#6b7280;
     font-size:13px;
-    font-weight:800;
+    margin-bottom:10px;
 }
 
-.vacio{
-    text-align:center;
-    padding:50px 20px;
-    color:#64748b;
+.description{
+    color:#4b5563;
+    line-height:1.5;
+    font-size:14px;
+    margin-bottom:13px;
+}
+
+.read{
+    color:#16a34a;
+    font-size:14px;
+    font-weight:700;
+}
+
+.info{
+    background:#ecfdf5;
+    border:1px solid #bbf7d0;
+    border-radius:15px;
+    padding:20px;
+    margin-top:35px;
+}
+
+.info h3{
+    margin-bottom:8px;
+    color:#166534;
+}
+
+.info p{
+    color:#374151;
+    line-height:1.6;
+}
+
+.empty{
+    grid-column:1/-1;
     background:white;
     border-radius:15px;
+    padding:35px;
+    text-align:center;
+    color:#6b7280;
 }
 
 footer{
     background:#111827;
-    color:#94a3b8;
+    color:#9ca3af;
     text-align:center;
-    padding:25px 15px;
-    font-size:13px;
+    padding:25px 20px;
+    margin-top:20px;
+}
+
+footer strong{
+    color:#22c55e;
+}
+
+@media(max-width:900px){
+    .news-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
 }
 
 @media(max-width:600px){
+    .header-inner{
+        padding:14px 12px;
+    }
 
-    h1{
+    .logo{
         font-size:25px;
     }
 
-    .grid{
+    nav a{
+        font-size:13px;
+        padding:8px 10px;
+    }
+
+    main{
+        padding:20px 14px 40px;
+    }
+
+    .hero{
+        padding:25px 20px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .news-grid{
         grid-template-columns:1fr;
     }
 
-    .card-img{
-        height:200px;
+    .news-image{
+        height:210px;
     }
-
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
+    <div class="header-inner">
 
-    <div class="header-content">
-
-        <div class="logo">
+        <a href="./index.html" class="logo">
             Tendencias<span>MX</span>
-        </div>
-
-        <div class="subtitle">
-            Noticias, tendencias y actualidad
-        </div>
+        </a>
 
         <nav>
-
-            <a href="index.html">Inicio</a>
-
-            <a href="noticias.html">Noticias</a>
-
-            <a href="deportes.html">Deportes</a>
-
-            <a href="entretenimiento.html">Entretenimiento</a>
-
-            <a href="tecnologia.html">Tecnología</a>
-
+            <a href="./index.html">Inicio</a>
+            <a href="./noticias.html">Noticias</a>
+            <a href="./deportes.html">Deportes</a>
+            <a href="./entretenimiento.html">Entretenimiento</a>
+            <a href="./tecnologia.html" class="active">Tecnología</a>
+            <a href="./dinero.html">Dinero</a>
+            <a href="./politica.html">Política</a>
+            <a href="./tramites.html">Trámites</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./preguntas.html">Preguntas</a>
         </nav>
 
     </div>
-
 </header>
-
 
 <main>
 
-    <h1>
-        Tecnología
-    </h1>
+    <section class="hero">
+        <h1>Tecnología</h1>
 
-    <p class="descripcion">
-        Noticias sobre inteligencia artificial, aplicaciones,
-        gadgets, redes sociales, ciberseguridad y tecnología
-        en México y el mundo.
-    </p>
+        <p>
+            Noticias sobre inteligencia artificial, gadgets, aplicaciones,
+            redes sociales, ciberseguridad y tecnología en México y el mundo.
+        </p>
+    </section>
 
+    <div class="search-box">
+        <input
+            type="text"
+            id="search"
+            placeholder="Buscar noticias de tecnología..."
+        >
+    </div>
 
-    <div class="filtros">
+    <div class="filters">
 
-        <button class="activo"
-                onclick="mostrar('todos',this)">
+        <button class="filter-btn active" data-category="todos">
             Todos
         </button>
 
-        <button onclick="mostrar('ia',this)">
+        <button class="filter-btn" data-category="ia">
             🤖 Inteligencia artificial
         </button>
 
-        <button onclick="mostrar('gadgets',this)">
+        <button class="filter-btn" data-category="gadgets">
             📱 Gadgets
         </button>
 
-        <button onclick="mostrar('apps_redes',this)">
+        <button class="filter-btn" data-category="apps_redes">
             📲 Apps y redes
         </button>
 
-        <button onclick="mostrar('ciberseguridad',this)">
+        <button class="filter-btn" data-category="ciberseguridad">
             🔐 Ciberseguridad
         </button>
 
-        <button onclick="mostrar('mexico',this)">
+        <button class="filter-btn" data-category="mexico">
             🇲🇽 Tecnología en México
         </button>
 
     </div>
 
+    <section class="news-grid" id="newsGrid"></section>
 
-    <div id="contenedor" class="grid"></div>
+    <section class="info">
+        <h3>Sobre la sección Tecnología</h3>
+
+        <p>
+            Aquí encontrarás información sobre inteligencia artificial,
+            dispositivos, aplicaciones, redes sociales, seguridad digital
+            y novedades tecnológicas. Cada noticia puede abrirse desde
+            su fuente original.
+        </p>
+    </section>
 
 </main>
 
-
 <footer>
-
-    © 2026 TendenciasMX · Tecnología
-
+    <p>
+        © 2026 <strong>TendenciasMX</strong> · Información y actualidad
+    </p>
 </footer>
-
 
 <script>
 
 const noticias = [
 
-    /* =========================
-       INTELIGENCIA ARTIFICIAL
-    ========================== */
-
     {
         categoria:"ia",
-        titulo:"La IA que trabaja aunque no estés: así son los nuevos Dots de OpenAI",
-        descripcion:"OpenAI presentó Dots, agentes impulsados por GPT-6 Astra capaces de mantener proyectos activos y trabajar de forma autónoma.",
-        fecha:"29 de septiembre de 2026",
-        emoji:"🤖",
-        imagen:"https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/29/openai-dots-agentes-ia-gpt-6-astra"
-    },
-
-    {
-        categoria:"ia",
-        titulo:"El 49% de las empresas en México pierden dinero en Inteligencia Artificial",
-        descripcion:"Más de la mitad de las organizaciones mexicanas afirman utilizar IA, aunque una parte importante todavía no obtiene un impacto real en sus negocios.",
-        fecha:"28 de septiembre de 2026",
-        emoji:"🧠",
-        imagen:"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/28/empresas-en-mexico-pierden-dinero-ia"
-    },
-
-    {
-        categoria:"ia",
-        titulo:"Trump reúne a Google, Nvidia y Anthropic para fijar reglas a la IA",
-        descripcion:"Empresas líderes de inteligencia artificial participaron en conversaciones sobre desarrollo, seguridad y autorregulación de esta tecnología.",
-        fecha:"30 de septiembre de 2026",
-        emoji:"🌐",
-        imagen:"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/30/trump-fija-reglas-a-la-ia-pero-pacto-tiene-grieta"
-    },
-
-    {
-        categoria:"ia",
-        titulo:"OpenAI retrasa su modelo de IA por preocupaciones de seguridad",
-        descripcion:"La compañía señaló que su próximo modelo necesita cumplir con estándares de seguridad antes de su lanzamiento.",
-        fecha:"29 de septiembre de 2026",
-        emoji:"⚙️",
-        imagen:"https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/29/openai-retrasa-ia-por-preocupaciones-seguridad"
-    },
-
-
-    /* =========================
-       GADGETS
-    ========================== */
-
-    {
-        categoria:"gadgets",
-        titulo:"Las quejas por acoso no frenan a los lentes inteligentes de Meta",
-        descripcion:"Los lentes inteligentes continúan ganando usuarios pese a las críticas relacionadas con el uso de cámaras.",
-        fecha:"29 de septiembre de 2026",
-        emoji:"🥽",
-        imagen:"https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/29/quejas-acoso-no-frenan-lentes-inteligentes-meta"
-    },
-
-    {
-        categoria:"gadgets",
-        titulo:"Tu iPhone se puede convertir en un cazador de ofertas automático",
-        descripcion:"Las funciones del iPhone permiten configurar avisos para conocer cuándo aparecen determinadas ofertas.",
-        fecha:"30 de septiembre de 2026",
-        emoji:"📱",
-        imagen:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/30/iphone-cazador-de-ofertas-automatico"
-    },
-
-    {
-        categoria:"gadgets",
-        titulo:"La tecnología que está cambiando la manera de usar nuestros dispositivos",
-        descripcion:"Nuevos dispositivos y herramientas buscan hacer más sencilla la vida cotidiana mediante funciones inteligentes.",
-        fecha:"27 de septiembre de 2026",
-        emoji:"💻",
-        imagen:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85",
+        titulo:"Inteligencia artificial: las novedades que están transformando la tecnología",
+        fecha:"Actualidad",
+        descripcion:"Conoce las principales novedades y desarrollos relacionados con inteligencia artificial.",
+        imagen:"https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80",
         url:"https://expansion.mx/tecnologia"
     },
 
-
-    /* =========================
-       APPS Y REDES
-    ========================== */
-
     {
-        categoria:"apps_redes",
-        titulo:"WhatsApp tendrá nuevas funciones para proteger a los menores",
-        descripcion:"La aplicación prepara herramientas para que padres y responsables puedan configurar una experiencia más adecuada para adolescentes.",
-        fecha:"30 de septiembre de 2026",
-        emoji:"💬",
-        imagen:"https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?auto=format&fit=crop&w=900&q=85",
+        categoria:"gadgets",
+        titulo:"Nuevos gadgets y dispositivos que llegan al mercado",
+        fecha:"Actualidad",
+        descripcion:"Los dispositivos tecnológicos continúan evolucionando con nuevas funciones y características.",
+        imagen:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=80",
         url:"https://expansion.mx/tecnologia"
     },
 
     {
         categoria:"apps_redes",
-        titulo:"Spotify presenta fallas a nivel global",
-        descripcion:"Usuarios reportaron problemas para iniciar sesión y reproducir música durante una interrupción del servicio.",
-        fecha:"29 de septiembre de 2026",
-        emoji:"🎵",
-        imagen:"https://images.unsplash.com/photo-1611339555312-e607c8352fd7?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/29/spotify-falla-hoy-29-de-septiembre"
-    },
-
-    {
-        categoria:"apps_redes",
-        titulo:"Las aplicaciones continúan transformando la vida cotidiana",
-        descripcion:"Las plataformas digitales se han convertido en herramientas esenciales para comunicación, entretenimiento y trabajo.",
-        fecha:"26 de septiembre de 2026",
-        emoji:"📲",
-        imagen:"https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=85",
+        titulo:"Aplicaciones y redes sociales: novedades para los usuarios",
+        fecha:"Actualidad",
+        descripcion:"Las principales plataformas digitales continúan incorporando nuevas funciones y herramientas.",
+        imagen:"https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=80",
         url:"https://expansion.mx/tecnologia"
-    },
-
-
-    /* =========================
-       CIBERSEGURIDAD
-    ========================== */
-
-    {
-        categoria:"ciberseguridad",
-        titulo:"¿Vas a firmar un documento? Podría ser una nueva trampa de ciberdelincuentes",
-        descripcion:"Kaspersky detectó campañas de phishing que utilizan nombres de servicios conocidos para intentar robar credenciales y datos personales.",
-        fecha:"28 de septiembre de 2026",
-        emoji:"🔐",
-        imagen:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/28/phishing-correos-falsos-zoom-docusign"
     },
 
     {
         categoria:"ciberseguridad",
-        titulo:"México se prepara para los riesgos del cómputo cuántico",
-        descripcion:"Expertos mexicanos crearon un consejo para analizar los riesgos que el avance de la computación cuántica puede representar para la seguridad digital.",
-        fecha:"22 de septiembre de 2026",
-        emoji:"🛡️",
-        imagen:"https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/22/mexico-consejo-riesgos-computo-cuantico-seguridad-digital"
-    },
-
-
-    /* =========================
-       TECNOLOGÍA EN MÉXICO
-    ========================== */
-
-    {
-        categoria:"mexico",
-        titulo:"La IA necesita electricistas, pero México forma cada vez menos técnicos",
-        descripcion:"La expansión de centros de datos aumenta la necesidad de personal técnico especializado para operar infraestructura eléctrica y tecnológica.",
-        fecha:"29 de septiembre de 2026",
-        emoji:"🇲🇽",
-        imagen:"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/29/mexico-en-riesgo-de-perder-100-000-tecnicos"
+        titulo:"Ciberseguridad: cómo proteger tus datos en internet",
+        fecha:"Actualidad",
+        descripcion:"Recomendaciones e información sobre seguridad digital y protección de datos personales.",
+        imagen:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/tecnologia"
     },
 
     {
         categoria:"mexico",
-        titulo:"Las fábricas de IA podrían aportar 5.2% del PIB de México",
-        descripcion:"La infraestructura especializada para entrenar y procesar inteligencia artificial está tomando relevancia dentro del desarrollo tecnológico del país.",
-        fecha:"23 de septiembre de 2026",
-        emoji:"🏭",
-        imagen:"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85",
-        url:"https://expansion.mx/tecnologia/2026/09/23/fabricas-ia-negocio-mexico-contribuira-5-2-del-pib"
+        titulo:"Tecnología en México: innovación y transformación digital",
+        fecha:"Actualidad",
+        descripcion:"El desarrollo tecnológico y la transformación digital continúan creciendo en México.",
+        imagen:"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/tecnologia"
+    },
+
+    {
+        categoria:"ia",
+        titulo:"Nuevas herramientas de inteligencia artificial para usuarios y empresas",
+        fecha:"Actualidad",
+        descripcion:"Las herramientas basadas en IA amplían sus funciones para diferentes actividades.",
+        imagen:"https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/tecnologia"
+    },
+
+    {
+        categoria:"gadgets",
+        titulo:"Tecnología móvil y dispositivos inteligentes",
+        fecha:"Actualidad",
+        descripcion:"Los teléfonos y dispositivos inteligentes incorporan nuevas funciones y tecnologías.",
+        imagen:"https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/tecnologia"
+    },
+
+    {
+        categoria:"apps_redes",
+        titulo:"Las plataformas digitales y sus nuevas funciones",
+        fecha:"Actualidad",
+        descripcion:"Conoce las novedades de las aplicaciones y plataformas digitales más utilizadas.",
+        imagen:"https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/tecnologia"
+    },
+
+    {
+        categoria:"ciberseguridad",
+        titulo:"Seguridad digital: amenazas y protección para usuarios",
+        fecha:"Actualidad",
+        descripcion:"La seguridad digital es cada vez más importante para proteger cuentas, dispositivos y datos.",
+        imagen:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/tecnologia"
+    },
+
+    {
+        categoria:"mexico",
+        titulo:"Innovación tecnológica y empresas mexicanas",
+        fecha:"Actualidad",
+        descripcion:"Empresas y proyectos mexicanos continúan incorporando nuevas tecnologías.",
+        imagen:"https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/tecnologia"
     }
 
 ];
 
+const grid = document.getElementById("newsGrid");
+const search = document.getElementById("search");
+const buttons = document.querySelectorAll(".filter-btn");
 
-/* ==================================================
-   MOSTRAR NOTICIAS
-================================================== */
+let categoriaActual = "todos";
 
-function mostrar(categoria, boton){
+function nombreCategoria(categoria){
 
-    const contenedor =
-        document.getElementById("contenedor");
+    const nombres = {
+        ia:"Inteligencia artificial",
+        gadgets:"Gadgets",
+        apps_redes:"Apps y redes",
+        ciberseguridad:"Ciberseguridad",
+        mexico:"Tecnología en México"
+    };
 
-    if(boton){
+    return nombres[categoria] || categoria;
+}
 
-        document
-            .querySelectorAll(".filtros button")
-            .forEach(btn =>
-                btn.classList.remove("activo")
-            );
+function mostrarNoticias(){
 
-        boton.classList.add("activo");
-    }
+    const texto = search.value.toLowerCase().trim();
 
-    let lista;
+    const filtradas = noticias.filter(noticia => {
 
-    if(categoria === "todos"){
+        const coincideCategoria =
+            categoriaActual === "todos" ||
+            noticia.categoria === categoriaActual;
 
-        lista = noticias;
+        const contenido = (
+            noticia.titulo + " " +
+            noticia.descripcion + " " +
+            noticia.categoria
+        ).toLowerCase();
 
-    }else{
+        const coincideBusqueda =
+            texto === "" ||
+            contenido.includes(texto);
 
-        lista = noticias.filter(
-            noticia =>
-                noticia.categoria === categoria
-        );
+        return coincideCategoria && coincideBusqueda;
+    });
 
-    }
+    if(filtradas.length === 0){
 
-    if(lista.length === 0){
-
-        contenedor.innerHTML = `
-
-            <div class="vacio">
-
-                <h2>
-                    No hay noticias disponibles
-                </h2>
-
+        grid.innerHTML = `
+            <div class="empty">
+                <h2>No encontramos noticias</h2>
                 <p>
-                    Pronto agregaremos más contenido.
+                    Prueba con otra palabra o selecciona otra categoría.
                 </p>
-
             </div>
-
         `;
 
         return;
     }
 
+    grid.innerHTML = filtradas.map(noticia => `
 
-    contenedor.innerHTML = lista.map(noticia => `
+        <a
+            class="card-link"
+            href="${noticia.url}"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
 
-        <article class="card">
+            <article class="card">
 
-            <a
-                class="card-link"
-                href="${noticia.url}"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <div class="card-img">
+                <div class="news-image">
 
                     <img
                         src="${noticia.imagen}"
-                        alt="${escapeHTML(noticia.titulo)}"
+                        alt="${noticia.titulo}"
                         loading="lazy"
-                        onerror="mostrarFallback(this,'${noticia.emoji}')"
+                        onerror="this.style.display='none'"
                     >
 
                 </div>
 
-
                 <div class="card-content">
 
-                    <span class="categoria">
+                    <span class="category">
                         ${nombreCategoria(noticia.categoria)}
                     </span>
 
-
                     <h2>
-                        ${escapeHTML(noticia.titulo)}
+                        ${noticia.titulo}
                     </h2>
 
-
-                    <p>
-                        ${escapeHTML(noticia.descripcion)}
-                    </p>
-
-
-                    <div class="fecha">
-                        ${escapeHTML(noticia.fecha)}
+                    <div class="date">
+                        ${noticia.fecha}
                     </div>
 
+                    <p class="description">
+                        ${noticia.descripcion}
+                    </p>
 
-                    <div class="leer">
+                    <div class="read">
                         Leer noticia completa →
                     </div>
 
                 </div>
 
-            </a>
+            </article>
 
-        </article>
+        </a>
 
     `).join("");
-
 }
 
+buttons.forEach(button => {
 
-/* ==================================================
-   NOMBRES DE CATEGORÍAS
-================================================== */
+    button.addEventListener("click", () => {
 
-function nombreCategoria(categoria){
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
 
-    const nombres = {
+        button.classList.add("active");
 
-        ia:"Inteligencia artificial",
+        categoriaActual = button.dataset.category;
 
-        gadgets:"Gadgets",
+        mostrarNoticias();
 
-        apps_redes:"Apps y redes",
+    });
 
-        ciberseguridad:"Ciberseguridad",
+});
 
-        mexico:"Tecnología en México"
+search.addEventListener("input", mostrarNoticias);
 
-    };
-
-    return nombres[categoria]
-        || "Tecnología";
-
-}
-
-
-/* ==================================================
-   FALLBACK DE IMAGEN
-================================================== */
-
-function mostrarFallback(img, emoji){
-
-    const contenedor =
-        img.parentElement;
-
-    img.remove();
-
-    contenedor.innerHTML = `
-
-        <div class="fallback">
-            ${emoji || "💻"}
-        </div>
-
-    `;
-
-}
-
-
-/* ==================================================
-   PROTECCIÓN DEL TEXTO
-================================================== */
-
-function escapeHTML(text){
-
-    return String(text)
-
-        .replace(/&/g,"&amp;")
-
-        .replace(/</g,"&lt;")
-
-        .replace(/>/g,"&gt;")
-
-        .replace(/"/g,"&quot;")
-
-        .replace(/'/g,"&#039;");
-
-}
-
-
-/* ==================================================
-   INICIAR
-================================================== */
-
-mostrar(
-    "todos",
-    document.querySelector(".filtros button")
-);
+mostrarNoticias();
 
 </script>
 
