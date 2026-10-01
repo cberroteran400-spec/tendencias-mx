@@ -1203,33 +1203,13 @@ jobs:
                   )
 
 
-          # Si una noticia existente tiene una imagen repetida,
-          # se intenta sustituir únicamente esa imagen.
+          # NO volver a descargar imágenes de noticias antiguas.
+# Las imágenes existentes se conservan tal como están.
 
-          imagenes_revisadas = set()
-
-          for noticia in noticias_existentes:
-
-              titulo = noticia.get(
-                  "titulo",
-                  ""
-              )
-
-              url = noticia.get(
-                  "url",
-                  ""
-              )
-
-              if not titulo or not url:
-                  continue
-
-              noticia_id = (
-                  noticia.get("id")
-                  or hash_noticia(
-                      titulo,
-                      url
-                  )
-              )
+if img_normalizada:
+    imagenes_revisadas.add(
+        img_normalizada
+    )
 
               noticia["id"] = noticia_id
 
