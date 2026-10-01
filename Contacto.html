@@ -6,8 +6,15 @@
 
   <title>Contacto | TendenciasMX</title>
 
-  <meta name="description" content="Contacta con TendenciasMX para enviar preguntas, comentarios, sugerencias o información.">
-  <meta name="keywords" content="contacto TendenciasMX, noticias México, sugerencias, comentarios">
+  <meta
+    name="description"
+    content="Contacta con TendenciasMX. Envíanos preguntas, comentarios, sugerencias o información."
+  >
+
+  <meta
+    name="keywords"
+    content="Contacto TendenciasMX, noticias México, sugerencias, comentarios"
+  >
 
   <meta name="theme-color" content="#111827">
 
@@ -16,6 +23,10 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -31,21 +42,22 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,.15);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
     }
 
     .header-container {
+      width: 100%;
       max-width: 1200px;
       margin: auto;
       padding: 18px 20px;
     }
 
     .logo {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
       font-size: 28px;
       font-weight: 800;
-      text-decoration: none;
-      color: white;
-      display: inline-block;
       margin-bottom: 14px;
     }
 
@@ -79,22 +91,24 @@
     }
 
     main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 45px 20px 60px;
+      width: 100%;
+      max-width: 1050px;
+      margin: auto;
+      padding: 40px 20px 60px;
     }
 
     .hero {
       background: linear-gradient(135deg, #111827, #1f2937);
       color: white;
       border-radius: 20px;
-      padding: 45px 25px;
+      padding: 50px 25px;
       text-align: center;
       margin-bottom: 30px;
     }
 
     .hero h1 {
-      font-size: 38px;
+      font-size: 40px;
+      line-height: 1.2;
       margin-bottom: 12px;
     }
 
@@ -103,7 +117,7 @@
     }
 
     .hero p {
-      max-width: 650px;
+      max-width: 680px;
       margin: auto;
       color: #d1d5db;
       font-size: 17px;
@@ -119,24 +133,24 @@
       background: white;
       border-radius: 18px;
       padding: 28px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.07);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, .07);
     }
 
     .card h2 {
-      margin-bottom: 18px;
       font-size: 23px;
+      margin-bottom: 20px;
     }
 
     .info-item {
-      margin-bottom: 20px;
       padding-bottom: 20px;
+      margin-bottom: 20px;
       border-bottom: 1px solid #e5e7eb;
     }
 
     .info-item:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
       padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
     }
 
     .info-item strong {
@@ -152,34 +166,36 @@
     label {
       display: block;
       font-weight: 700;
-      margin-bottom: 7px;
       margin-top: 16px;
+      margin-bottom: 7px;
     }
 
-    label:first-child {
+    label:first-of-type {
       margin-top: 0;
     }
 
     input,
     textarea {
       width: 100%;
-      padding: 13px 14px;
       border: 1px solid #d1d5db;
       border-radius: 10px;
+      padding: 13px 14px;
       font-family: inherit;
       font-size: 15px;
       outline: none;
+      background: white;
+      color: #111827;
       transition: .2s;
     }
 
     input:focus,
     textarea:focus {
       border-color: #22c55e;
-      box-shadow: 0 0 0 3px rgba(34,197,94,.12);
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, .12);
     }
 
     textarea {
-      min-height: 150px;
+      min-height: 160px;
       resize: vertical;
     }
 
@@ -209,16 +225,17 @@
       border-radius: 10px;
       background: #dcfce7;
       color: #166534;
-      font-weight: 600;
+      font-weight: 700;
+      text-align: center;
     }
 
     .help {
       margin-top: 25px;
-      text-align: center;
       background: #ecfdf5;
       border: 1px solid #bbf7d0;
-      padding: 20px;
       border-radius: 15px;
+      padding: 20px;
+      text-align: center;
     }
 
     .help a {
@@ -227,37 +244,66 @@
       text-decoration: none;
     }
 
+    .help a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       background: #111827;
       color: #9ca3af;
       text-align: center;
-      padding: 25px 20px;
-      margin-top: 30px;
+      padding: 30px 20px;
     }
 
     footer strong {
       color: white;
     }
 
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 15px;
+    }
+
+    .footer-links a {
+      color: #d1d5db;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #22c55e;
+    }
+
     @media (max-width: 750px) {
-      .hero h1 {
-        font-size: 30px;
-      }
-
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      main {
-        padding-top: 25px;
-      }
-
       .header-container {
         padding: 15px;
       }
 
       .logo {
         font-size: 25px;
+      }
+
+      main {
+        padding: 25px 15px 45px;
+      }
+
+      .hero {
+        padding: 40px 18px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -266,92 +312,187 @@
 <body>
 
 <header>
+
   <div class="header-container">
 
-    <a class="logo" href="./index.html">
+    <a class="logo" href="index.html">
       Tendencias<span>MX</span>
     </a>
 
     <nav>
-      <a href="./index.html">Inicio</a>
-      <a href="./noticias.html">Noticias</a>
-      <a href="./deportes.html">Deportes</a>
-      <a href="./entretenimiento.html">Entretenimiento</a>
-      <a href="./tecnologia.html">Tecnología</a>
-      <a href="./dinero.html">Dinero</a>
-      <a href="./politica.html">Política</a>
-      <a href="./tramites.html">Trámites</a>
-      <a href="./contacto.html" class="active">Contacto</a>
-      <a href="./preguntas.html">Preguntas</a>
+
+      <a href="index.html">
+        Inicio
+      </a>
+
+      <a href="noticias.html">
+        Noticias
+      </a>
+
+      <a href="deportes.html">
+        Deportes
+      </a>
+
+      <a href="entretenimiento.html">
+        Entretenimiento
+      </a>
+
+      <a href="tecnologia.html">
+        Tecnología
+      </a>
+
+      <a href="dinero.html">
+        Dinero
+      </a>
+
+      <a href="politica.html">
+        Política
+      </a>
+
+      <a href="tramites.html">
+        Trámites
+      </a>
+
+      <a href="contacto.html" class="active">
+        Contacto
+      </a>
+
+      <a href="preguntas.html">
+        Preguntas
+      </a>
+
     </nav>
 
   </div>
+
 </header>
+
 
 <main>
 
   <section class="hero">
-    <h1>Contáctanos en <span>TendenciasMX</span></h1>
+
+    <h1>
+      Contáctanos en
+      <span>TendenciasMX</span>
+    </h1>
+
     <p>
       Envíanos tus preguntas, comentarios, sugerencias o información.
       Queremos conocer tu opinión.
     </p>
+
   </section>
+
 
   <div class="contact-grid">
 
+
     <section class="card">
 
-      <h2>Información de contacto</h2>
+      <h2>
+        Información de contacto
+      </h2>
+
 
       <div class="info-item">
-        <strong>📰 TendenciasMX</strong>
-        <p>Noticias, tendencias e información de interés para México.</p>
+
+        <strong>
+          📰 TendenciasMX
+        </strong>
+
+        <p>
+          Noticias, tendencias e información de interés para México.
+        </p>
+
       </div>
 
-      <div class="info-item">
-        <strong>💬 Comentarios</strong>
-        <p>
-          Puedes utilizar el formulario para enviarnos tus comentarios
-          y sugerencias sobre el sitio.
-        </p>
-      </div>
 
       <div class="info-item">
-        <strong>💡 Sugerencias</strong>
+
+        <strong>
+          💬 Comentarios
+        </strong>
+
         <p>
-          Si quieres que agreguemos una sección o tema,
-          puedes escribirnos.
+          Puedes enviarnos comentarios y sugerencias
+          sobre nuestro sitio.
         </p>
+
+      </div>
+
+
+      <div class="info-item">
+
+        <strong>
+          💡 Sugerencias
+        </strong>
+
+        <p>
+          Si quieres que agreguemos una sección,
+          tema o contenido, puedes escribirnos.
+        </p>
+
+      </div>
+
+
+      <div class="info-item">
+
+        <strong>
+          📢 Información
+        </strong>
+
+        <p>
+          También puedes utilizar este espacio para
+          compartir información relacionada con nuestras secciones.
+        </p>
+
       </div>
 
     </section>
 
+
     <section class="card">
 
-      <h2>Envíanos un mensaje</h2>
+      <h2>
+        Envíanos un mensaje
+      </h2>
+
 
       <form id="contactForm">
 
-        <label for="nombre">Nombre</label>
+        <label for="nombre">
+          Nombre
+        </label>
+
         <input
           type="text"
           id="nombre"
           name="nombre"
           placeholder="Tu nombre"
+          autocomplete="name"
           required
         >
 
-        <label for="correo">Correo electrónico</label>
+
+        <label for="correo">
+          Correo electrónico
+        </label>
+
         <input
           type="email"
           id="correo"
           name="correo"
           placeholder="tucorreo@ejemplo.com"
+          autocomplete="email"
           required
         >
 
-        <label for="asunto">Asunto</label>
+
+        <label for="asunto">
+          Asunto
+        </label>
+
         <input
           type="text"
           id="asunto"
@@ -360,7 +501,11 @@
           required
         >
 
-        <label for="mensaje">Mensaje</label>
+
+        <label for="mensaje">
+          Mensaje
+        </label>
+
         <textarea
           id="mensaje"
           name="mensaje"
@@ -368,11 +513,17 @@
           required
         ></textarea>
 
+
         <button type="submit">
           Enviar mensaje
         </button>
 
-        <div class="success" id="successMessage">
+
+        <div
+          class="success"
+          id="successMessage"
+          role="status"
+        >
           ✅ Mensaje preparado correctamente.
           Gracias por contactar con TendenciasMX.
         </div>
@@ -383,28 +534,87 @@
 
   </div>
 
+
   <div class="help">
+
     ¿Tienes alguna pregunta sobre el sitio?
-    <a href="./preguntas.html">Consulta nuestras preguntas frecuentes →</a>
+
+    <a href="preguntas.html">
+      Consulta nuestras preguntas frecuentes →
+    </a>
+
   </div>
 
 </main>
 
+
 <footer>
+
   <p>
-    © 2026 <strong>TendenciasMX</strong>.
+    © 2026
+    <strong>TendenciasMX</strong>.
     Todos los derechos reservados.
   </p>
+
+
+  <div class="footer-links">
+
+    <a href="index.html">Inicio</a>
+
+    <a href="noticias.html">Noticias</a>
+
+    <a href="deportes.html">Deportes</a>
+
+    <a href="entretenimiento.html">
+      Entretenimiento
+    </a>
+
+    <a href="tecnologia.html">
+      Tecnología
+    </a>
+
+    <a href="dinero.html">
+      Dinero
+    </a>
+
+    <a href="politica.html">
+      Política
+    </a>
+
+    <a href="tramites.html">
+      Trámites
+    </a>
+
+    <a href="contacto.html">
+      Contacto
+    </a>
+
+    <a href="preguntas.html">
+      Preguntas
+    </a>
+
+  </div>
+
 </footer>
 
+
 <script>
-  document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+  const formulario = document.getElementById("contactForm");
+
+  const mensajeExito = document.getElementById("successMessage");
+
+
+  formulario.addEventListener("submit", function(event) {
+
     event.preventDefault();
 
-    document.getElementById("successMessage").style.display = "block";
+    mensajeExito.style.display = "block";
 
-    this.reset();
+    formulario.reset();
+
   });
+
 </script>
 
 </body>
