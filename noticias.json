@@ -1,25 +1,35 @@
 {
-  "actualizado": "2026-10-01T07:11:21.580581+00:00",
+  "actualizado": "2026-10-01T07:17:13.854818+00:00",
   "fuente": "Expansión",
   "total": 100,
   "categorias": {
-    "mexico": 24,
-    "mundo": 18,
-    "economia": 30,
-    "deportes": 6,
-    "entretenimiento": 6,
-    "tecnologia": 16
+    "mexico": 21,
+    "mundo": 14,
+    "economia": 33,
+    "deportes": 9,
+    "entretenimiento": 5,
+    "tecnologia": 18
   },
   "noticias": [
+    {
+      "titulo": "México lleva al G20 dos frentes de tensión: presión sobre el acero y coerción en alimentos",
+      "descripcion": "Marcelo Ebrard puso sobre la mesa la sobrecapacidad, los subsidios y las diferencias entre productores de acero, además del riesgo de que los alimentos sean utilizados como instrumento de presión.",
+      "enlace": "https://expansion.mx/economia/2026/09/30/mexico-g20-tension-acero-alimentos-ebrard",
+      "fecha": "Wed, 30 Sep 2026 23:47:18 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/a0050a4/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc3%2Fe1%2F158440ec4c5e9472f130f63ba917%2Fmexico-g20-acero-alimentos-ebrard.jpg",
+      "rss": "general"
+    },
     {
       "titulo": "¿Cansado del clutch? Estos hatchback, sedanes y SUV automáticos son los más accesibles en México",
       "descripcion": "Dejar atrás el clutch no necesariamente obliga a brincar a las versiones más caras. Entre los modelos de entrada hay diferencias importantes en precio, transmisión, seguridad y equipamiento.",
       "enlace": "https://expansion.mx/empresas/2026/09/30/hatchback-sedanes-y-suv-automaticos-mas-accesibles-de-mexico",
       "fecha": "Wed, 30 Sep 2026 23:09:57 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
+      "categoria": "economia",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/e27e7f1/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F80%2F8c%2F882ade7941789cca39147c31bc47%2Fpalanca-carro-automatico.png",
-      "rss": "mexico"
+      "rss": "general"
     },
     {
       "titulo": "La nueva Mazda CX-90 PHEV llega a México con tecnología híbrida enchufable",
@@ -27,9 +37,29 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/30/la-nueva-mazda-cx-90-phev-llega-a-mexico-con-tecnologia-hibrida-enchufable",
       "fecha": "Wed, 30 Sep 2026 22:50:35 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
+      "categoria": "tecnologia",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/f980a8e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F46%2F5e%2F49f3d7c0420dab88c5b12ca8ab32%2Fmazda-cx90-camioneta-phev-interiores-piel-negra-desktop-v1-06.jpg",
-      "rss": "tendencias"
+      "rss": "general"
+    },
+    {
+      "titulo": "México tiene DiMo y CoDi; Perú apuesta por Bim y un modelo que podría cambiar los pagos digitales",
+      "descripcion": "Compartamos Banco llevó Bim a sus operaciones de crédito y ahora participa en un piloto que podría permitir pagar desde una billetera digital aunque el dinero esté en otro banco.",
+      "enlace": "https://expansion.mx/economia/2026/09/30/mexico-tiene-codi-peru-compartamos-banco-apuesta-bim",
+      "fecha": "Wed, 30 Sep 2026 22:12:07 GMT",
+      "fuente": "Expansión",
+      "categoria": "deportes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/1b7ff98/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6a%2F51%2F2455104d41918a1d1d2633c3d78d%2Fimage-20260930-165229-solo-cambia-su-expresin-a-algo-menos-feliz-un-poco-sin-las-banderas-de-per.jpg",
+      "rss": "general"
+    },
+    {
+      "titulo": "DeepSeek y Huawei unen fuerzas para reducir la dependencia de Nvidia en chips de IA",
+      "descripcion": "DeepSeek liberó herramientas de código abierto adaptadas a los chips Ascend de Huawei, en un intento por facilitar el desarrollo de inteligencia artificial sobre hardware chino.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/30/deepseek-huawei-unen-fuerzas-reducir-dependencia-nvidia",
+      "fecha": "Wed, 30 Sep 2026 21:37:14 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/83a0b81/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F8b%2F6ade715346528d2f0848b6ce801d%2Fhuawei-vs-nvidia.jpg",
+      "rss": "general"
     },
     {
       "titulo": "Cancelación de vuelos de Aeroméxico y Volaris al Aeropuerto de Tulum recrudece crisis turística en el destino",
@@ -37,9 +67,9 @@
       "enlace": "https://expansion.mx/empresas/2026/09/30/tulum-aeromexico-volaris-suspenden-vuelos",
       "fecha": "Wed, 30 Sep 2026 21:32:02 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
+      "categoria": "economia",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/8351cde/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F08%2F32%2F074131a54aaf81416778ccbefabf%2Faeromexico-volaris-tulum-clean-v2.png",
-      "rss": "mexico"
+      "rss": "general"
     },
     {
       "titulo": "Murió su hermano y Alberto Baillères cambió sus planes: terminó repartiendo cerveza en un camión",
@@ -47,9 +77,9 @@
       "enlace": "https://expansion.mx/empresas/2026/09/30/alberto-bailleres-vendedor-cerveza-cerveceria-moctezuma",
       "fecha": "Wed, 30 Sep 2026 21:24:25 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
+      "categoria": "economia",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/68817c8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F08%2F13%2F12c1eee84a85b359b5dd099efbc7%2Falberto-bailleres-venta-cerveza.jpg",
-      "rss": "mexico"
+      "rss": "general"
     },
     {
       "titulo": "El Valor de Educar: de programa de becas a trampolín profesional para 8,500 jóvenes mexicanos",
@@ -57,9 +87,19 @@
       "enlace": "https://expansion.mx/empresas/2026/09/30/el-valor-de-educar-de-programa-de-becas-a-trampolin-profesional-para-8-500-jovenes-mexicanos",
       "fecha": "Wed, 30 Sep 2026 20:52:46 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
+      "categoria": "economia",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/a83c944/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F13%2F25%2Fd384e66e442abccc985b0f93f103%2F82a9694.jpg",
-      "rss": "mexico"
+      "rss": "general"
+    },
+    {
+      "titulo": "El Valor de Educar: Constellation Brands hace entrega de 1,500 becas en Sonora, Coahuila y Veracruz",
+      "descripcion": "Constellation Brands celebró en Ciudad Obregón, Piedras Negras y Veracruz la generación 2026-2027 de su programa de excelencia El Valor de Educar, que ya acumula 8,500 jóvenes becados en el país.",
+      "enlace": "https://expansion.mx/carrera/2026/09/30/el-valor-de-educar-constellation-brands-hace-entrega-de-1-500-becas-en-sonora-coahuila-y-veracruz",
+      "fecha": "Wed, 30 Sep 2026 20:34:04 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5212a0a/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F7c%2Fdb%2Fa41aac774277a5b9a7baa6bdca26%2F82a0221.jpg",
+      "rss": "general"
     },
     {
       "titulo": "La inflación superaría 4% sin apoyos fiscales a gasolinas y diésel, asegura el secretario de Hacienda",
@@ -432,6 +472,16 @@
       "rss": "mexico"
     },
     {
+      "titulo": "Bait, el operador telefónico de Walmart, tiene más accesos a internet móvil que líneas activas",
+      "descripcion": "Al cierre de 2025, Bait registró 10.9 millones de líneas activas, frente a 12.7 millones de accesos a internet móvil, una diferencia que se debe al cambio de metodología regulatoria para contabilizar números activos.",
+      "enlace": "https://expansion.mx/empresas/2026/09/22/bait-walmart-acceso-a-internet-movil-lineas-activas",
+      "fecha": "Wed, 23 Sep 2026 00:17:14 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/06c3136/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe5%2F57%2F59ae479d43ddad3da826bd19be13%2F10.jpeg",
+      "rss": "mexico"
+    },
+    {
       "titulo": "Israel admite que disparó contra el auto donde iba Hind Rajab, una niña palestina",
       "descripcion": "El cuerpo de la infante de cinco años fue recuperado acribillado días después de que fuera captada en una llamada a la Media Luna Roja Palestina.",
       "enlace": "https://expansion.mx/mundo/2026/08/19/israel-admite-que-disparo-contra-hind-rajab",
@@ -662,24 +712,14 @@
       "rss": "general"
     },
     {
-      "titulo": "BMV será sede en 2027 de la reunión de bolsas iberoamericanas",
-      "descripcion": "La BMV será sede en 2027 de la reunión anual de la FIAB, que dará continuidad a la agenda regional para integrar mercados, facilitar inversiones transfronterizas e impulsar la innovación bursátil.",
-      "enlace": "https://expansion.mx/mercados/2026/09/28/bmv-sera-sede-reunion-anual-fiab-2027",
-      "fecha": "Tue, 29 Sep 2026 01:59:25 GMT",
-      "fuente": "Expansión",
-      "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/f41ad5c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fa4%2Ff9%2Ffe0c642f4cc49fdfece805f9a20e%2Fopa-pantera-holdings-traxion-bmv.jpg",
-      "rss": "general"
-    },
-    {
       "titulo": "El nuevo plan corporativo de Starbucks prioriza las licencias",
       "descripcion": "Cerca de 90% del portafolio internacional de Starbucks opera bajo esquemas de licencia, una estructura que la compañía describe como de menor requerimiento de capital y que permite apoyarse en socios locales.",
       "enlace": "https://expansion.mx/empresas/2026/09/28/el-nuevo-plan-corporativo-de-starbucks-prioriza-licencias",
       "fecha": "Tue, 29 Sep 2026 01:25:20 GMT",
       "fuente": "Expansión",
-      "categoria": "economia",
+      "categoria": "mexico",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/ab73b33/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fa0%2Fcc%2F58d02a214345b38bd63e55e637c5%2F5-starbucks-gettyimages-2247644531.jpeg",
-      "rss": "general"
+      "rss": "mexico"
     },
     {
       "titulo": "México todavía guarda municiones para elevar aranceles a importaciones asiáticas",
@@ -772,6 +812,26 @@
       "rss": "tendencias"
     },
     {
+      "titulo": "Primark vs. Suburbia: la llegada del nuevo aliado de Liverpool pone en riesgo a la empresa mexicana",
+      "descripcion": "Primark puede disputar clientes a Suburbia, mientras Liverpool aprovecharía sus centros comerciales, tiendas y canales digitales para impulsar la marca sin descuidar otros segmentos.",
+      "enlace": "https://expansion.mx/empresas/2026/09/22/primark-suburbia-liverpool-centros-comerciales-mexico",
+      "fecha": "Tue, 22 Sep 2026 18:00:06 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/2be0666/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F45%2F5a%2F08ca1ecb4ef3bc9f5a1e2c953c80%2Ffachada-tienda-primark.jpeg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "Jorge Vergara se arriesgó con Chivas USA; compró barato, multiplicó 14 veces su precio y lo vendió a la MLS por 70 mdd",
+      "descripcion": "La filial rojiblanca en Los Ángeles pasó de promesa internacional a convertirse en uno de los negocios más singulares de Vergara.",
+      "enlace": "https://expansion.mx/empresas/2026/09/22/jorge-vergara-arriesgo-se-arriego-con-chivas-usa",
+      "fecha": "Tue, 22 Sep 2026 17:42:34 GMT",
+      "fuente": "Expansión",
+      "categoria": "deportes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/f527aa7/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3c%2Feb%2Fc099a9514c95a521fc03161b9ffe%2Fjorge-vergara.jpeg",
+      "rss": "mexico"
+    },
+    {
       "titulo": "BBVA recorta media hora la atención en sucursales a partir del 5 de octubre",
       "descripcion": "El banco cambiará el horario de sus más de 1,500 sucursales en México y abrirá más tarde entre semana.",
       "enlace": "https://expansion.mx/economia/2026/09/22/bbva-cambia-horario-sucursales",
@@ -780,6 +840,26 @@
       "categoria": "economia",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/f7ac7e8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0f%2F74%2F1e82a022495f89596f8cbefbfd77%2Fbbva-nuevo-horario-sucursales-mexico-octubre-2026.jpg",
       "rss": "economia"
+    },
+    {
+      "titulo": "Megacable, el jugador que dejó de ser local y está a punto de desplazar a Izzy y Sky en el mercado fijo de internet",
+      "descripcion": "La empresa está a unas décimas de rebasar a Televisa y convertirse en el segundo competidor en internet fijo, impulsada por la expansión de su red de fibra óptica y una estrategia de crecimiento.",
+      "enlace": "https://expansion.mx/empresas/2026/09/22/megacable-va-televisa-esta-desplazar-izzi-sky-internet-fijo",
+      "fecha": "Tue, 22 Sep 2026 16:17:38 GMT",
+      "fuente": "Expansión",
+      "categoria": "deportes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/a7a93c8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1e%2F76%2F502701924c84bdbec79db430d106%2Fmegacable-vs-izzi-sky.jpg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "Aeroméxico estrena rutas sin escalas desde CDMX al Caribe y estos son los destinos; ¿cuándo comienzan?",
+      "descripcion": "La expansión reforzará la oferta internacional de Aeroméxico en una temporada clave para los viajes de ocio desde la capital mexicana.",
+      "enlace": "https://expansion.mx/empresas/2026/09/22/aeromexico-conectara-cdmx-con-el-caribe",
+      "fecha": "Tue, 22 Sep 2026 13:55:36 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/642c414/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Feb%2F57%2Ff98970904f09a0560c60ecf9ba1b%2Faeromexico-vuelos.jpeg",
+      "rss": "mexico"
     },
     {
       "titulo": "El pago de intereses de la deuda de México alcanzará en 2027 su mayor nivel desde 1990",
@@ -802,6 +882,16 @@
       "rss": "tecnologia"
     },
     {
+      "titulo": "Aeroméxico adjudica exposición de datos de clientes por Telegram a un ciberataque",
+      "descripcion": "Los datos expuestos hasta ahora involucran nombres, fechas de nacimiento, correos electrónicos y números telefónicos.",
+      "enlace": "https://expansion.mx/empresas/2026/09/21/aeromexico-adjudica-exposicion-datos-clientes-a-ciberataque",
+      "fecha": "Tue, 22 Sep 2026 02:40:14 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/154dc0a/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F06%2Fc1%2F849ac486404fb4cb0a01dbd6a7ad%2Fistock-2285611131.jpg",
+      "rss": "mexico"
+    },
+    {
       "titulo": "Millones de pymes quieren exportar, pero aún carecen de financiamiento y acceso a cadenas de valor",
       "descripcion": "El COMCE advierte que el desconocimiento de los tratados comerciales, la falta de asesoría y las dificultades para encontrar compradores mantienen a pequeños negocios fuera del mercado internacional.",
       "enlace": "https://expansion.mx/economia/2026/09/21/pymes-exportar-carecen-financiamiento-cadenas-valor",
@@ -810,6 +900,16 @@
       "categoria": "economia",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/5e1b55f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc5%2F28%2F97e96a1d47a3bb5522da582de004%2Fpymes-mexicanas-barreras-para-exportar.jpg",
       "rss": "economia"
+    },
+    {
+      "titulo": "GWM lanza P300, evolución de Poer, para crecer 50% en pickups; la PHEV será su vitrina tecnológica",
+      "descripcion": "La automotriz reorganiza su gama, red y ventas a flotillas para convertir una pickup de trabajo en un negocio también de uso cotidiano.",
+      "enlace": "https://expansion.mx/empresas/2026/09/21/gwm-lanza-p300-evolucion-de-poer",
+      "fecha": "Tue, 22 Sep 2026 00:21:10 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c13eba4/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F9b%2Fda%2Fe191014f4dcea172668e2a3b8f6b%2Fp300-gwm.jpeg",
+      "rss": "mexico"
     },
     {
       "titulo": "Quién es Natalie Harp, la funcionaria cercana a Trump que saltó al ojo público",
@@ -910,106 +1010,6 @@
       "categoria": "mexico",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/735f22d/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb9%2Fb0%2Ff5b9fd1146589750397d571b8232%2Fvaca-blanca-1200x668.png",
       "rss": "tendencias"
-    },
-    {
-      "titulo": "El prompt para pedirle a ChatGPT que haga tu foto como de los años 80: paso a paso para tener tu foto retro",
-      "descripcion": "Si quieres sumarte a esta nueva tendencia, puedes seguir estas instrucciones y así obtener tu propia foto ochentera.",
-      "enlace": "https://expansion.mx/tendencias/2026/09/07/prompt-chatgpt-foto-anos-80-paso-a-paso-retro",
-      "fecha": "Tue, 08 Sep 2026 00:02:22 GMT",
-      "fuente": "Expansión",
-      "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/dc4fb9c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F37%2Ffe%2F9805b9404a4aad71d81db02336b1%2F4-chatgpt-y-acusaciones-apple.jpeg",
-      "rss": "tendencias"
-    },
-    {
-      "titulo": "A partir de esta fecha, Tailandia solicitará visa a turistas mexicanos: requisitos, precio y cómo tramitarla",
-      "descripcion": "Si tienes pensado visitar el país asiático en los próximos meses, sigue las instrucciones de autoridades.",
-      "enlace": "https://expansion.mx/mundo/2026/09/01/fecha-tailandia-visa-turistas-mexicanos-requisitos-tramitar",
-      "fecha": "Tue, 01 Sep 2026 23:52:25 GMT",
-      "fuente": "Expansión",
-      "categoria": "mundo",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/c9b26dd/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F56%2F2c%2Fa469082448d8998ffa23e5d6a853%2Fvisa-tailandia-visitantes-mexicanos.jpeg",
-      "rss": "mundo"
-    },
-    {
-      "titulo": "Frontera entre China y Nepal: el desastre ya deja más de 1,000 muertos",
-      "descripcion": "El alud provocado por un colapso glaciar golpeó a Nepal y China, dejó miles de desaparecidos y mantiene activa la búsqueda de sobrevivientes.",
-      "enlace": "https://expansion.mx/mundo/2026/09/01/frontera-entre-china-y-nepal-desastre-deja-mas-1-000-muertos",
-      "fecha": "Tue, 01 Sep 2026 22:08:48 GMT",
-      "fuente": "Expansión",
-      "categoria": "mundo",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/692a354/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F6a%2Fe4cf089444c780e196135dcd6ee8%2Ffrontera-entre-china-y-nepal-desastre-deja-mas-1-000-muertos.jpg",
-      "rss": "mundo"
-    },
-    {
-      "titulo": "Club América y Bomberg lanzan reloj por 110 años: solo 400 personas podrán tenerlo",
-      "descripcion": "Detalles del club, fibra de carbono y un precio de 23,900 pesos distinguen al nuevo reloj de Bomberg.",
-      "enlace": "https://expansion.mx/tendencias/2026/08/27/club-america-bomberg-lanzan-reloj-solo-400-podran-tenerlo",
-      "fecha": "Thu, 27 Aug 2026 22:34:31 GMT",
-      "fuente": "Expansión",
-      "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/4a0d9d9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fee%2F22%2F60f3990f42bba517ff4c4d6823d5%2Freloj-bomberg-club-america.png",
-      "rss": "tendencias"
-    },
-    {
-      "titulo": "De las subastas a Louis Vuitton: cómo Yayoi Kusama convirtió sus puntos en un negocio global",
-      "descripcion": "La artista se autoproclamó \"Gran Sacerdotisa de los Lunares\". Algunas de sus obras alcanzaron niveles récords de venta, además de colaborar con marcas internacionales.",
-      "enlace": "https://expansion.mx/tendencias/2026/08/27/subastas-louis-vuitton-yayoi-kusama-convirtio-puntos-negocio",
-      "fecha": "Thu, 27 Aug 2026 21:12:58 GMT",
-      "fuente": "Expansión",
-      "categoria": "entretenimiento",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/fb9efba/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe2%2F1c%2Fd5fcdbb34454b66b4d526c6d11b1%2Fyayoi-kusama-artista-japonea-muere.jpg",
-      "rss": "tendencias"
-    },
-    {
-      "titulo": "El Doctor Mau promueve la divulgación médica ética y accesible",
-      "descripcion": "El médico Mauricio González, mejor conocido como Doctor Mau, afirmó que la información veraz es el único camino para erradicar la desinformación en salud, por ejemplo, en temas de nutrición.",
-      "enlace": "https://expansion.mx/tendencias/2026/08/27/el-doctor-mau-promueve-la-divulgacion-medica-etica-y-accesible",
-      "fecha": "Thu, 27 Aug 2026 18:57:31 GMT",
-      "fuente": "Expansión",
-      "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/c2f0b40/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc0%2F28%2Fed1bd72546628511f5aa71522852%2Flala-dr-mau-1.jpg",
-      "rss": "tendencias"
-    },
-    {
-      "titulo": "Nepal enfrenta una combinación de desastres naturales que provocaron el deslave",
-      "descripcion": "Entre los extranjeros desaparecidos hay decenas de peregrinos hindúes que se dirigían al monte Kailash, la montaña sagrada y nevada del Tíbet.",
-      "enlace": "https://expansion.mx/mundo/2026/08/27/nepal-combinacion-desastres-naturales-provocaron-deslave",
-      "fecha": "Thu, 27 Aug 2026 17:45:24 GMT",
-      "fuente": "Expansión",
-      "categoria": "mundo",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/7caa437/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F72%2Fc8%2F2f039a6a43b6bc72d610beba73ee%2Finundaciones-nepal-afectacones.jpg",
-      "rss": "mundo"
-    },
-    {
-      "titulo": "Uganda vence al ébola tras 42 días sin contagios pero el brote continúa en República Democrática del Congo",
-      "descripcion": "Desde que se declaró el brote el 15 de mayo, se registraron más de 2,700 fallecimientos en la República Democrática del Congo, lo que puso en alerta a las autoridades sanitarias.",
-      "enlace": "https://expansion.mx/mundo/2026/08/27/oms-declara-uganda-libre-ebola-42-dias-declararse-casos",
-      "fecha": "Thu, 27 Aug 2026 14:01:01 GMT",
-      "fuente": "Expansión",
-      "categoria": "mundo",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/d03e101/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6c%2Fb4%2F572094634eba9698cc0f5e2a134c%2Febola-uganda.jpg",
-      "rss": "mundo"
-    },
-    {
-      "titulo": "¿Quiénes fueron Salinas y Rocha? La historia de la tienda que marcó a varias generaciones de mexicanos",
-      "descripcion": "El negocio comenzó su historia en 1906 y es recordado por sentar las bases de uno de los grupos empresariales más importantes de la actualidad.",
-      "enlace": "https://expansion.mx/empresas/2026/09/24/quienes-fueron-salinas-rocha-historia-detras-tienda",
-      "fecha": "Thu, 24 Sep 2026 23:49:02 GMT",
-      "fuente": "Expansión",
-      "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/5e0419c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F06%2F43%2Fd38a974c4cd6af6539f3de3cc0b8%2Fsalinas-y-rocha-historia-tienda-grupo-salinas-1.jpeg",
-      "rss": "mexico"
-    },
-    {
-      "titulo": "De Santa Fe a Iztapalapa, estos son todos los terrenos de Televisa en CDMX; no todo es San Ángel y Chapultepec",
-      "descripcion": "Detrás de sus estudios y oficinas hay un patrimonio inmobiliario millonario. Televisa conserva propiedades estratégicas y renta parte de ellas a otras empresas.",
-      "enlace": "https://expansion.mx/empresas/2026/09/24/terrenos-televisa-en-cdmx-san-angel-santa-fe-iztapalapa",
-      "fecha": "Thu, 24 Sep 2026 23:35:15 GMT",
-      "fuente": "Expansión",
-      "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/95d9901/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F5d%2F57b692fc405bba016dbd2b2d75d6%2Ftelevisa-instalaciones.jpeg",
-      "rss": "mexico"
     }
   ]
 }
