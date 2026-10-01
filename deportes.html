@@ -6,7 +6,7 @@
 
 <title>Deportes | TendenciasMX</title>
 
-<meta name="description" content="Noticias deportivas reales de México y el mundo: fútbol, Liga MX, NFL, Fórmula 1, béisbol, tenis, básquetbol y boxeo.">
+<meta name="description" content="Noticias deportivas reales de México y el mundo: fútbol, Liga MX, NFL, Fórmula 1, béisbol, tenis, básquetbol, boxeo y motor.">
 
 <style>
 *{
@@ -29,48 +29,49 @@ header{
   align-items:center;
   position:sticky;
   top:0;
-  z-index:50;
-  border-bottom:1px solid #143324;
+  z-index:100;
+  border-bottom:1px solid #173827;
 }
 
 .logo{
-  font-weight:900;
   color:#2cff8e;
   font-size:17px;
+  font-weight:900;
 }
 
 nav{
   display:flex;
-  gap:7px;
+  gap:5px;
 }
 
 nav a{
-  color:#7aa192;
+  color:#8aa99a;
   text-decoration:none;
   font-size:11px;
-  padding:6px 9px;
+  padding:7px 9px;
   border-radius:20px;
 }
 
 nav a.active{
-  color:#000;
   background:#2cff8e;
+  color:#000;
+  font-weight:800;
 }
 
 .hero{
-  padding:22px 16px 12px;
+  padding:23px 16px 12px;
 }
 
 .hero h1{
-  font-size:27px;
+  font-size:28px;
   font-weight:900;
 }
 
 .hero p{
-  margin-top:6px;
+  margin-top:7px;
+  color:#8ba799;
   font-size:12px;
   line-height:1.5;
-  color:#8eaa9b;
 }
 
 .tabs{
@@ -80,9 +81,9 @@ nav a.active{
   overflow-x:auto;
   position:sticky;
   top:51px;
+  z-index:90;
   background:#07140e;
-  z-index:40;
-  border-bottom:1px solid #10271b;
+  border-bottom:1px solid #10281b;
 }
 
 .tabs::-webkit-scrollbar{
@@ -90,16 +91,15 @@ nav a.active{
 }
 
 .tab{
-  background:#122a1e;
-  border:1px solid #1d3d2a;
-  color:#8fbba3;
+  border:1px solid #21402f;
+  background:#11291d;
+  color:#8eb5a0;
   padding:9px 14px;
   border-radius:999px;
   font-size:12px;
   font-weight:800;
-  cursor:pointer;
   white-space:nowrap;
-  flex-shrink:0;
+  cursor:pointer;
 }
 
 .tab.active{
@@ -117,16 +117,16 @@ nav a.active{
 
 .destacada{
   margin:12px 16px 18px;
-  border-radius:18px;
-  min-height:280px;
-  background:#0b1e14;
+  min-height:285px;
+  border-radius:19px;
+  overflow:hidden;
+  position:relative;
+  background:#0d2117;
   background-size:cover;
   background-position:center;
-  position:relative;
+  border:1px solid #1c3928;
   display:flex;
   align-items:flex-end;
-  overflow:hidden;
-  border:1px solid #1e3a28;
 }
 
 .destacada::after{
@@ -135,57 +135,53 @@ nav a.active{
   inset:0;
   background:linear-gradient(
     0deg,
-    rgba(0,0,0,.92) 0%,
-    rgba(0,0,0,.5) 50%,
-    rgba(0,0,0,.05) 100%
+    rgba(0,0,0,.94),
+    rgba(0,0,0,.12)
   );
-}
-
-.destacada.sin-imagen{
-  background-image:none !important;
 }
 
 .destacada-info{
   position:relative;
   z-index:2;
-  padding:18px;
   width:100%;
+  padding:19px;
 }
 
 .badge{
   display:inline-block;
+  padding:4px 8px;
+  border-radius:6px;
   background:#2cff8e;
   color:#000;
   font-size:9px;
-  padding:4px 8px;
-  border-radius:6px;
   font-weight:900;
+  text-transform:uppercase;
 }
 
 .destacada h2{
-  font-size:19px;
+  margin-top:9px;
+  font-size:20px;
   line-height:1.25;
-  margin-top:8px;
 }
 
 .destacada p{
+  margin-top:8px;
+  color:#d0ded6;
   font-size:11px;
-  color:#cde;
-  margin-top:7px;
-  line-height:1.4;
+  line-height:1.45;
 }
 
 .leer{
   display:inline-block;
   margin-top:10px;
   color:#2cff8e;
-  text-decoration:none;
   font-size:11px;
   font-weight:900;
+  text-decoration:none;
 }
 
 .secciones{
-  padding:0 16px 15px;
+  padding:0 16px 18px;
 }
 
 .secciones h2{
@@ -200,30 +196,29 @@ nav a.active{
 }
 
 .seccion{
-  background:#0f241a;
-  border:1px solid #1a3326;
-  border-radius:13px;
   padding:13px;
+  border-radius:13px;
+  background:#0e2418;
+  border:1px solid #193526;
   cursor:pointer;
 }
 
 .seccion strong{
-  display:block;
   font-size:12px;
 }
 
 .seccion span{
   display:block;
-  margin-top:4px;
-  color:#718f80;
+  margin-top:5px;
+  color:#719080;
   font-size:10px;
 }
 
 .grid{
-  padding:0 16px 80px;
+  padding:0 16px 60px;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:10px;
+  gap:11px;
 }
 
 @media(min-width:800px){
@@ -238,102 +233,107 @@ nav a.active{
 
 .card{
   background:#0f241a;
-  border-radius:14px;
+  border:1px solid #193526;
+  border-radius:15px;
   overflow:hidden;
-  border:1px solid #1a3326;
-  display:flex;
-  flex-direction:column;
 }
 
-.card-link{
-  color:inherit;
-  text-decoration:none;
+.card a{
   display:flex;
   flex-direction:column;
   height:100%;
+  color:inherit;
+  text-decoration:none;
 }
 
 .card-img{
   width:100%;
-  height:125px;
+  height:130px;
   object-fit:cover;
   display:block;
-  background:#0a1a12;
+  background:#091a11;
 }
 
 .sin-foto{
-  height:125px;
+  height:130px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   background:
     linear-gradient(
       135deg,
       #0d2418,
-      #132e20
+      #163b27
     );
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#527563;
-  font-size:11px;
+  color:#678576;
+  font-size:10px;
   font-weight:700;
 }
 
 .card-body{
   padding:9px;
-  flex:1;
   display:flex;
   flex-direction:column;
+  flex:1;
 }
 
 .card-body h3{
+  margin-top:7px;
   font-size:12px;
   line-height:1.35;
-  margin-top:7px;
 }
 
 .card-body p{
-  font-size:9px;
-  color:#718f80;
   margin-top:7px;
-  line-height:1.35;
+  color:#769283;
+  font-size:9px;
+  line-height:1.4;
 }
 
 .fecha{
-  font-size:9px;
-  color:#4f7060;
   margin-top:auto;
-  padding-top:8px;
-}
-
-.mas{
-  text-align:center;
-  padding:20px 16px 50px;
-}
-
-.mas button{
-  background:#2cff8e;
-  color:#000;
-  border:none;
-  padding:11px 20px;
-  border-radius:999px;
-  font-weight:900;
-  cursor:pointer;
+  padding-top:9px;
+  color:#527263;
+  font-size:9px;
 }
 
 .vacio{
   grid-column:1/-1;
-  padding:35px 15px;
+  padding:35px 20px;
   text-align:center;
-  background:#0d2017;
-  border:1px solid #183526;
   border-radius:15px;
-  color:#789485;
+  background:#0d2117;
+  border:1px solid #183527;
+  color:#779285;
+}
+
+.vacio strong{
+  display:block;
+  color:#fff;
+  margin-bottom:8px;
+  font-size:16px;
+}
+
+.mas{
+  text-align:center;
+  padding:0 16px 60px;
+}
+
+.mas button{
+  padding:11px 23px;
+  border:0;
+  border-radius:999px;
+  background:#2cff8e;
+  color:#000;
+  font-weight:900;
+  cursor:pointer;
 }
 
 footer{
   padding:25px 16px;
   text-align:center;
-  border-top:1px solid #143324;
-  color:#638071;
+  border-top:1px solid #163526;
+  color:#648072;
   font-size:11px;
 }
 </style>
@@ -343,7 +343,9 @@ footer{
 
 <header>
 
-  <div class="logo">TendenciasMX</div>
+  <div class="logo">
+    TendenciasMX
+  </div>
 
   <nav>
     <a href="index.html">Inicio</a>
@@ -367,9 +369,9 @@ footer{
 </section>
 
 
-<div class="tabs" id="tabs">
+<div class="tabs">
 
-  <button class="tab active" data-cat="todos">
+  <button class="tab active" data-cat="TODOS">
     🏆 Todos
   </button>
 
@@ -417,16 +419,16 @@ footer{
 </div>
 
 
-<section id="destacada" class="destacada sin-imagen">
+<section id="destacada" class="destacada">
 
   <div class="destacada-info">
 
-    <span class="badge" id="d-badge">
-      DESTACADA
+    <span id="d-badge" class="badge">
+      DEPORTES
     </span>
 
     <h2 id="d-t">
-      Cargando...
+      Cargando noticias...
     </h2>
 
     <p id="d-desc"></p>
@@ -514,9 +516,13 @@ footer{
 
 <footer>
 
-  Tendencias MX<br><br>
-  Noticias, tendencias, entretenimiento y deportes en un solo lugar.
+  Tendencias MX
   <br><br>
+
+  Noticias, tendencias, entretenimiento y deportes en un solo lugar.
+
+  <br><br>
+
   © 2026 Tendencias MX · Todos los derechos reservados.
 
 </footer>
@@ -537,232 +543,299 @@ const POR_PAGINA = 40;
    VARIABLES
 ========================================================= */
 
-let todasLasNoticias = [];
+let todas = [];
 
-let noticiasDeportes = [];
+let deportes = [];
 
-let noticiasFiltradas = [];
+let filtradas = [];
 
-let mostrando = 0;
+let posicion = 0;
 
-let categoriaActual = "todos";
+let categoriaActual = "TODOS";
 
 
 /* =========================================================
    ELEMENTOS
 ========================================================= */
 
-const grid = document.getElementById("grid");
+const grid =
+  document.getElementById("grid");
 
-const estado = document.getElementById("estado");
+const estado =
+  document.getElementById("estado");
 
-const btnMore = document.getElementById("btnMore");
+const btnMore =
+  document.getElementById("btnMore");
 
-const destacada = document.getElementById("destacada");
+const destacada =
+  document.getElementById("destacada");
 
-const dTitulo = document.getElementById("d-t");
+const dTitulo =
+  document.getElementById("d-t");
 
-const dDesc = document.getElementById("d-desc");
+const dDesc =
+  document.getElementById("d-desc");
 
-const dBadge = document.getElementById("d-badge");
+const dBadge =
+  document.getElementById("d-badge");
 
-const dLink = document.getElementById("d-link");
+const dLink =
+  document.getElementById("d-link");
 
 
 /* =========================================================
-   NORMALIZAR TEXTO
+   NORMALIZAR
 ========================================================= */
 
 function normalizar(texto){
 
   return String(texto || "")
+    .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g,"")
-    .trim()
-    .toLowerCase();
+    .trim();
 
 }
 
 
 /* =========================================================
-   NORMALIZAR CATEGORÍA
-========================================================= */
-
-function normalizarCategoria(cat){
-
-  const c = normalizar(cat);
-
-  if(c === "futbol")
-    return "Fútbol";
-
-  if(c === "liga mx")
-    return "Liga MX";
-
-  if(c === "nfl")
-    return "NFL";
-
-  if(
-    c === "formula 1" ||
-    c === "f1"
-  )
-    return "Fórmula 1";
-
-  if(c === "beisbol")
-    return "Béisbol";
-
-  if(c === "tenis")
-    return "Tenis";
-
-  if(
-    c === "basquetbol" ||
-    c === "basketbol" ||
-    c === "nba"
-  )
-    return "Básquetbol";
-
-  if(c === "boxeo")
-    return "Boxeo";
-
-  if(c === "motor")
-    return "Motor";
-
-  return cat || "Deportes";
-
-}
-
-
-/* =========================================================
-   DETECTAR DEPORTE CUANDO EL RSS NO LO PUSO BIEN
+   DETECTAR DEPORTE
 ========================================================= */
 
 function detectarDeporte(n){
 
-  const sub = normalizar(n.subcategoria);
+  const categoria =
+    normalizar(n.categoria);
 
-  const texto = normalizar(
-    (n.titulo || "") + " " +
-    (n.descripcion || "")
-  );
+  const subcategoria =
+    normalizar(n.subcategoria);
 
-
-  if(sub.includes("liga mx"))
-    return "Liga MX";
-
-  if(sub.includes("futbol"))
-    return "Fútbol";
-
-  if(sub.includes("nfl"))
-    return "NFL";
-
-  if(
-    sub.includes("formula") ||
-    sub === "f1"
-  )
-    return "Fórmula 1";
-
-  if(sub.includes("beisbol"))
-    return "Béisbol";
-
-  if(sub.includes("tenis"))
-    return "Tenis";
-
-  if(
-    sub.includes("basquet") ||
-    sub.includes("nba")
-  )
-    return "Básquetbol";
-
-  if(sub.includes("boxeo"))
-    return "Boxeo";
-
-  if(sub.includes("motor"))
-    return "Motor";
+  const texto =
+    normalizar(
+      (n.titulo || "") +
+      " " +
+      (n.descripcion || "") +
+      " " +
+      (n.categoria || "") +
+      " " +
+      (n.subcategoria || "")
+    );
 
 
   /*
-     Si la subcategoría viene vacía,
-     intentamos clasificar por el texto.
+     PRIMERO respetamos la subcategoría
+     si el workflow ya la clasificó.
   */
 
   if(
-    /\bliga mx\b/.test(texto) ||
-    /\bamérica\b/.test(texto) ||
-    /\bchivas\b/.test(texto) ||
-    /\bpumas\b/.test(texto) ||
-    /\btigres\b/.test(texto) ||
-    /\brayados\b/.test(texto)
-  )
+    subcategoria.includes("liga mx")
+  ){
     return "Liga MX";
+  }
 
 
   if(
-    /\bnfl\b/.test(texto) ||
-    /\bsuper bowl\b/.test(texto)
-  )
-    return "NFL";
-
-
-  if(
-    /\bnba\b/.test(texto) ||
-    /\bbasquetbol\b/.test(texto) ||
-    /\bbásquetbol\b/.test(texto) ||
-    /\bcurry\b/.test(texto) ||
-    /\blebron\b/.test(texto)
-  )
-    return "Básquetbol";
-
-
-  if(
-    /\bbeisbol\b/.test(texto) ||
-    /\bbéisbol\b/.test(texto) ||
-    /\bmlb\b/.test(texto) ||
-    /\byankees\b/.test(texto) ||
-    /\bdodgers\b/.test(texto)
-  )
-    return "Béisbol";
-
-
-  if(
-    /\btenis\b/.test(texto) ||
-    /\balcaraz\b/.test(texto) ||
-    /\bsinner\b/.test(texto) ||
-    /\bdjokovic\b/.test(texto)
-  )
-    return "Tenis";
-
-
-  if(
-    /\bboxeo\b/.test(texto) ||
-    /\bcanelo\b/.test(texto)
-  )
-    return "Boxeo";
-
-
-  if(
-    /\bfórmula 1\b/.test(texto) ||
-    /\bformula 1\b/.test(texto) ||
-    /\bf1\b/.test(texto) ||
-    /\bverstappen\b/.test(texto) ||
-    /\bcheco pérez\b/.test(texto) ||
-    /\bcheco perez\b/.test(texto)
-  )
-    return "Fórmula 1";
-
-
-  if(
-    /\bautomovilismo\b/.test(texto) ||
-    /\bmotogp\b/.test(texto)
-  )
-    return "Motor";
-
-
-  if(
-    /\bfútbol\b/.test(texto) ||
-    /\bfutbol\b/.test(texto) ||
-    /\bchampions\b/.test(texto) ||
-    /\bpremier league\b/.test(texto)
-  )
+    subcategoria.includes("futbol")
+  ){
     return "Fútbol";
+  }
+
+
+  if(
+    subcategoria.includes("nfl")
+  ){
+    return "NFL";
+  }
+
+
+  if(
+    subcategoria.includes("formula") ||
+    subcategoria === "f1"
+  ){
+    return "Fórmula 1";
+  }
+
+
+  if(
+    subcategoria.includes("beisbol")
+  ){
+    return "Béisbol";
+  }
+
+
+  if(
+    subcategoria.includes("tenis")
+  ){
+    return "Tenis";
+  }
+
+
+  if(
+    subcategoria.includes("basquet") ||
+    subcategoria.includes("basket") ||
+    subcategoria.includes("nba")
+  ){
+    return "Básquetbol";
+  }
+
+
+  if(
+    subcategoria.includes("boxeo")
+  ){
+    return "Boxeo";
+  }
+
+
+  if(
+    subcategoria.includes("motor")
+  ){
+    return "Motor";
+  }
+
+
+  /*
+     SI NO HAY SUBCATEGORÍA,
+     buscamos señales fuertes.
+  */
+
+  if(
+    texto.includes("liga mx") ||
+    texto.includes("apertura 2026") ||
+    texto.includes("clausura 2026") ||
+    texto.includes("chivas") ||
+    texto.includes("america") ||
+    texto.includes("américa") ||
+    texto.includes("cruz azul") ||
+    texto.includes("pumas") ||
+    texto.includes("tigres") ||
+    texto.includes("rayados")
+  ){
+    return "Liga MX";
+  }
+
+
+  if(
+    texto.includes("nfl") ||
+    texto.includes("super bowl") ||
+    texto.includes("quarterback") ||
+    texto.includes("touchdown")
+  ){
+    return "NFL";
+  }
+
+
+  if(
+    texto.includes("formula 1") ||
+    texto.includes("fórmula 1") ||
+    texto.includes("gran premio") ||
+    texto.includes("verstappen") ||
+    texto.includes("checo perez") ||
+    texto.includes("checo pérez") ||
+    texto.includes("mclaren") ||
+    texto.includes("ferrari")
+  ){
+    return "Fórmula 1";
+  }
+
+
+  if(
+    texto.includes("beisbol") ||
+    texto.includes("béisbol") ||
+    texto.includes("mlb") ||
+    texto.includes("yankees") ||
+    texto.includes("dodgers") ||
+    texto.includes("jonron") ||
+    texto.includes("jonrón")
+  ){
+    return "Béisbol";
+  }
+
+
+  if(
+    texto.includes("tenis") ||
+    texto.includes("alcaraz") ||
+    texto.includes("sinner") ||
+    texto.includes("djokovic") ||
+    texto.includes("wimbledon") ||
+    texto.includes("roland garros") ||
+    texto.includes("us open")
+  ){
+    return "Tenis";
+  }
+
+
+  if(
+    texto.includes("nba") ||
+    texto.includes("basquetbol") ||
+    texto.includes("básquetbol") ||
+    texto.includes("basketball") ||
+    texto.includes("lebron") ||
+    texto.includes("curry") ||
+    texto.includes("wembanyama") ||
+    texto.includes("lakers") ||
+    texto.includes("warriors") ||
+    texto.includes("celtics")
+  ){
+    return "Básquetbol";
+  }
+
+
+  if(
+    texto.includes("boxeo") ||
+    texto.includes("canelo") ||
+    texto.includes("boxeador") ||
+    texto.includes("peso welter") ||
+    texto.includes("peso pesado")
+  ){
+    return "Boxeo";
+  }
+
+
+  if(
+    texto.includes("motogp") ||
+    texto.includes("automovilismo") ||
+    texto.includes("motociclismo")
+  ){
+    return "Motor";
+  }
+
+
+  /*
+     FÚTBOL GENERAL.
+  */
+
+  if(
+    texto.includes("futbol") ||
+    texto.includes("fútbol") ||
+    texto.includes("soccer") ||
+    texto.includes("champions league") ||
+    texto.includes("premier league") ||
+    texto.includes("europa league") ||
+    texto.includes("uefa") ||
+    texto.includes("mundial de clubes")
+  ){
+    return "Fútbol";
+  }
+
+
+  /*
+     Si el workflow marcó Deportes,
+     pero no pudimos detectar una disciplina,
+     lo dejamos como Fútbol solo cuando
+     realmente hay señales de fútbol.
+  */
+
+  if(
+    categoria.includes("deporte") &&
+    (
+      texto.includes("equipo") ||
+      texto.includes("partido") ||
+      texto.includes("jugador") ||
+      texto.includes("liga")
+    )
+  ){
+    return "Fútbol";
+  }
 
 
   return "Otros";
@@ -771,29 +844,7 @@ function detectarDeporte(n){
 
 
 /* =========================================================
-   IMAGEN
-========================================================= */
-
-function imagenValida(url){
-
-  if(!url)
-    return false;
-
-  const u = String(url).trim();
-
-  if(
-    !u.startsWith("http://") &&
-    !u.startsWith("https://")
-  )
-    return false;
-
-  return true;
-
-}
-
-
-/* =========================================================
-   FORMATEAR FECHA
+   FECHA
 ========================================================= */
 
 function fechaBonita(fecha){
@@ -801,10 +852,16 @@ function fechaBonita(fecha){
   if(!fecha)
     return "";
 
-  const d = new Date(fecha);
+  const d =
+    new Date(fecha);
 
-  if(isNaN(d.getTime()))
+  if(
+    Number.isNaN(
+      d.getTime()
+    )
+  ){
     return "";
+  }
 
   return d.toLocaleDateString(
     "es-MX",
@@ -819,7 +876,7 @@ function fechaBonita(fecha){
 
 
 /* =========================================================
-   ESCAPAR HTML
+   ESCAPAR
 ========================================================= */
 
 function escapar(texto){
@@ -835,7 +892,39 @@ function escapar(texto){
 
 
 /* =========================================================
-   CARGAR JSON
+   URL VÁLIDA
+========================================================= */
+
+function urlValida(url){
+
+  return (
+    typeof url === "string" &&
+    /^https?:\/\//i.test(
+      url.trim()
+    )
+  );
+
+}
+
+
+/* =========================================================
+   IMAGEN VÁLIDA
+========================================================= */
+
+function imagenValida(url){
+
+  return (
+    typeof url === "string" &&
+    /^https?:\/\//i.test(
+      url.trim()
+    )
+  );
+
+}
+
+
+/* =========================================================
+   CARGAR NOTICIAS
 ========================================================= */
 
 async function cargarNoticias(){
@@ -843,42 +932,56 @@ async function cargarNoticias(){
   try{
 
     estado.textContent =
-      "Cargando noticias deportivas...";
+      "Cargando noticias reales...";
 
 
-    const respuesta = await fetch(
-      ARCHIVO_JSON + "?v=" + Date.now()
-    );
+    const respuesta =
+      await fetch(
+        ARCHIVO_JSON +
+        "?v=" +
+        Date.now(),
+        {
+          cache:"no-store"
+        }
+      );
 
 
     if(!respuesta.ok){
 
       throw new Error(
-        "No se pudo cargar noticias.json"
+        "HTTP " +
+        respuesta.status
       );
 
     }
 
 
-    const datos = await respuesta.json();
+    const datos =
+      await respuesta.json();
 
 
     /*
-       noticias.json puede tener:
-       { noticias:[...] }
+       Acepta cualquiera de estas dos formas:
 
-       o directamente:
-       [...]
+       { "noticias": [...] }
+
+       o
+
+       [ ... ]
     */
 
-    if(Array.isArray(datos)){
+    if(
+      Array.isArray(datos)
+    ){
 
-      todasLasNoticias = datos;
+      todas = datos;
 
     }else{
 
-      todasLasNoticias =
-        Array.isArray(datos.noticias)
+      todas =
+        Array.isArray(
+          datos.noticias
+        )
         ? datos.noticias
         : [];
 
@@ -886,57 +989,184 @@ async function cargarNoticias(){
 
 
     /*
-       SOLO deportes.
-       No mezclamos noticias de economía,
-       política, tecnología, etc.
+       FILTRAR DEPORTES.
+
+       Aceptamos:
+       Deportes
+       Deporte
+       categorías deportivas
+       subcategorías deportivas
+       señales deportivas fuertes.
     */
 
-    noticiasDeportes =
-      todasLasNoticias
-        .filter(n => {
+    deportes =
+      todas
+      .filter(n => {
 
-          const categoria =
-            normalizar(n.categoria);
-
-          return (
-            categoria === "deportes" ||
-            categoria === "deporte"
+        const categoria =
+          normalizar(
+            n.categoria
           );
 
-        })
-        .map(n => {
+        const subcategoria =
+          normalizar(
+            n.subcategoria
+          );
 
-          const copia = {
-            ...n
-          };
+        const texto =
+          normalizar(
+            (n.titulo || "") +
+            " " +
+            (n.descripcion || "") +
+            " " +
+            (n.subcategoria || "")
+          );
 
-          copia.subcategoria =
-            detectarDeporte(copia);
 
-          return copia;
+        const categoriaDeportiva =
+          categoria.includes(
+            "deporte"
+          );
 
-        });
+
+        const subDeportiva =
+          subcategoria.includes("futbol") ||
+          subcategoria.includes("liga mx") ||
+          subcategoria.includes("nfl") ||
+          subcategoria.includes("formula") ||
+          subcategoria === "f1" ||
+          subcategoria.includes("beisbol") ||
+          subcategoria.includes("tenis") ||
+          subcategoria.includes("basquet") ||
+          subcategoria.includes("basket") ||
+          subcategoria.includes("nba") ||
+          subcategoria.includes("boxeo") ||
+          subcategoria.includes("motor");
+
+
+        const textoDeportivo =
+          texto.includes("liga mx") ||
+          texto.includes("futbol") ||
+          texto.includes("fútbol") ||
+          texto.includes("nfl") ||
+          texto.includes("super bowl") ||
+          texto.includes("formula 1") ||
+          texto.includes("fórmula 1") ||
+          texto.includes("gran premio") ||
+          texto.includes("beisbol") ||
+          texto.includes("béisbol") ||
+          texto.includes("mlb") ||
+          texto.includes("tenis") ||
+          texto.includes("nba") ||
+          texto.includes("basquetbol") ||
+          texto.includes("básquetbol") ||
+          texto.includes("boxeo") ||
+          texto.includes("canelo") ||
+          texto.includes("motogp") ||
+          texto.includes("automovilismo");
+
+
+        return (
+          categoriaDeportiva ||
+          subDeportiva ||
+          textoDeportivo
+        );
+
+      })
+      .map(n => {
+
+        return {
+          ...n,
+
+          deporte:
+            detectarDeporte(n)
+
+        };
+
+      });
 
 
     /*
-       Eliminar duplicados por URL.
+       ELIMINAR DUPLICADOS.
+
+       Primero por URL.
+       Después por título.
     */
 
-    const urls = new Set();
+    const urls =
+      new Set();
 
-    noticiasDeportes =
-      noticiasDeportes.filter(n => {
+    const titulos =
+      new Set();
+
+
+    deportes =
+      deportes.filter(n => {
 
         const url =
-          String(n.url || "").trim();
+          String(
+            n.url ||
+            n.enlace ||
+            n.link ||
+            ""
+          ).trim();
 
-        if(!url)
-          return false;
 
-        if(urls.has(url))
+        const titulo =
+          normalizar(
+            n.titulo ||
+            n.title ||
+            ""
+          );
+
+
+        /*
+           Si no tiene URL,
+           no podemos abrir la noticia.
+        */
+
+        if(!urlValida(url)){
           return false;
+        }
+
+
+        /*
+           No repetir URL.
+        */
+
+        if(
+          urls.has(url)
+        ){
+          return false;
+        }
+
+
+        /*
+           No repetir título.
+        */
+
+        if(
+          titulo &&
+          titulos.has(titulo)
+        ){
+          return false;
+        }
+
 
         urls.add(url);
+
+
+        if(titulo){
+          titulos.add(titulo);
+        }
+
+
+        /*
+           Guardamos la URL normalizada.
+        */
+
+        n.url = url;
+
 
         return true;
 
@@ -944,17 +1174,27 @@ async function cargarNoticias(){
 
 
     /*
-       Ordenar por fecha más reciente.
+       ORDENAR POR FECHA.
     */
 
-    noticiasDeportes.sort(
+    deportes.sort(
       (a,b) => {
 
         const da =
-          new Date(a.fecha || 0).getTime();
+          new Date(
+            a.fecha ||
+            a.pubDate ||
+            0
+          ).getTime();
+
 
         const db =
-          new Date(b.fecha || 0).getTime();
+          new Date(
+            b.fecha ||
+            b.pubDate ||
+            0
+          ).getTime();
+
 
         return db - da;
 
@@ -964,25 +1204,42 @@ async function cargarNoticias(){
 
     actualizarContadores();
 
-    seleccionarCategoria("todos");
+    seleccionarCategoria(
+      "TODOS"
+    );
+
 
   }catch(error){
 
-    console.error(error);
+    console.error(
+      "ERROR NOTICIAS:",
+      error
+    );
+
 
     estado.textContent =
-      "No se pudieron cargar las noticias.";
+      "Error cargando noticias";
+
 
     grid.innerHTML = `
       <div class="vacio">
-        <strong>No se pudieron cargar las noticias.</strong>
-        <br><br>
-        Verifica que <b>noticias.json</b>
-        esté en la misma carpeta que deportes.html.
+
+        <strong>
+          No se pudo cargar noticias.json
+        </strong>
+
+        <br>
+
+        Revisa que el archivo
+        <b>noticias.json</b>
+        esté publicado junto con esta página.
+
       </div>
     `;
 
-    btnMore.style.display = "none";
+
+    btnMore.style.display =
+      "none";
 
   }
 
@@ -993,100 +1250,119 @@ async function cargarNoticias(){
    CONTADORES
 ========================================================= */
 
+function cantidad(categoria){
+
+  return deportes.filter(
+    n =>
+      n.deporte === categoria
+  ).length;
+
+}
+
+
 function actualizarContadores(){
 
-  const contar = categoria => {
-
-    return noticiasDeportes.filter(
-      n =>
-        normalizarCategoria(
-          n.subcategoria
-        ) === categoria
-    ).length;
-
-  };
+  document.getElementById(
+    "num-futbol"
+  ).textContent =
+    cantidad("Fútbol") +
+    " noticias";
 
 
-  document.getElementById("num-futbol")
-    .textContent =
-      contar("Fútbol") + " noticias";
+  document.getElementById(
+    "num-liga"
+  ).textContent =
+    cantidad("Liga MX") +
+    " noticias";
 
 
-  document.getElementById("num-liga")
-    .textContent =
-      contar("Liga MX") + " noticias";
+  document.getElementById(
+    "num-nfl"
+  ).textContent =
+    cantidad("NFL") +
+    " noticias";
 
 
-  document.getElementById("num-nfl")
-    .textContent =
-      contar("NFL") + " noticias";
+  document.getElementById(
+    "num-f1"
+  ).textContent =
+    cantidad("Fórmula 1") +
+    " noticias";
 
 
-  document.getElementById("num-f1")
-    .textContent =
-      contar("Fórmula 1") + " noticias";
+  document.getElementById(
+    "num-beisbol"
+  ).textContent =
+    cantidad("Béisbol") +
+    " noticias";
 
 
-  document.getElementById("num-beisbol")
-    .textContent =
-      contar("Béisbol") + " noticias";
+  document.getElementById(
+    "num-tenis"
+  ).textContent =
+    cantidad("Tenis") +
+    " noticias";
 
 
-  document.getElementById("num-tenis")
-    .textContent =
-      contar("Tenis") + " noticias";
+  document.getElementById(
+    "num-basquet"
+  ).textContent =
+    cantidad("Básquetbol") +
+    " noticias";
 
 
-  document.getElementById("num-basquet")
-    .textContent =
-      contar("Básquetbol") + " noticias";
+  document.getElementById(
+    "num-boxeo"
+  ).textContent =
+    cantidad("Boxeo") +
+    " noticias";
 
 
-  document.getElementById("num-boxeo")
-    .textContent =
-      contar("Boxeo") + " noticias";
-
-
-  document.getElementById("num-motor")
-    .textContent =
-      contar("Motor") + " noticias";
+  document.getElementById(
+    "num-motor"
+  ).textContent =
+    cantidad("Motor") +
+    " noticias";
 
 }
 
 
 /* =========================================================
-   SELECCIONAR CATEGORÍA
+   FILTRAR
 ========================================================= */
 
-function seleccionarCategoria(cat){
+function seleccionarCategoria(categoria){
 
-  categoriaActual = cat;
+  categoriaActual =
+    categoria;
 
-  if(cat === "todos"){
 
-    noticiasFiltradas =
-      [...noticiasDeportes];
+  if(
+    categoria === "TODOS"
+  ){
+
+    filtradas =
+      [...deportes];
 
   }else{
 
-    noticiasFiltradas =
-      noticiasDeportes.filter(
+    filtradas =
+      deportes.filter(
         n =>
-          normalizarCategoria(
-            n.subcategoria
-          ) === cat
+          n.deporte ===
+          categoria
       );
 
   }
 
 
-  mostrando = 0;
+  posicion = 0;
 
   grid.innerHTML = "";
 
   pintarDestacada();
 
-  pintar();
+  pintarNoticias();
 
 }
 
@@ -1097,81 +1373,81 @@ function seleccionarCategoria(cat){
 
 function pintarDestacada(){
 
-  if(!noticiasFiltradas.length){
+  if(
+    filtradas.length === 0
+  ){
 
-    destacada.classList.add(
-      "sin-imagen"
-    );
+    destacada.style.backgroundImage =
+      "none";
+
+
+    dBadge.textContent =
+      categoriaActual === "TODOS"
+      ? "DEPORTES"
+      : categoriaActual.toUpperCase();
+
 
     dTitulo.textContent =
       "No hay noticias disponibles";
 
+
     dDesc.textContent =
       "No encontramos noticias reales para esta categoría.";
 
-    dBadge.textContent =
-      categoriaActual === "todos"
-      ? "DEPORTES"
-      : categoriaActual.toUpperCase();
 
-    dLink.style.display = "none";
+    dLink.style.display =
+      "none";
+
 
     return;
 
   }
 
 
-  const noticia =
-    noticiasFiltradas[0];
-
-
-  dTitulo.textContent =
-    noticia.titulo || "Sin título";
-
-
-  dDesc.textContent =
-    noticia.descripcion || "";
+  const n =
+    filtradas[0];
 
 
   dBadge.textContent =
-    noticia.subcategoria ||
+    n.deporte ||
     "Deportes";
+
+
+  dTitulo.textContent =
+    n.titulo ||
+    "Sin título";
+
+
+  dDesc.textContent =
+    n.descripcion ||
+    "";
 
 
   if(
     imagenValida(
-      noticia.imagen
+      n.imagen
     )
   ){
 
-    destacada.classList.remove(
-      "sin-imagen"
-    );
-
     destacada.style.backgroundImage =
-      "url('" +
-      noticia.imagen.replace(
-        /'/g,
-        "%27"
-      ) +
-      "')";
+      `url("${n.imagen}")`;
 
   }else{
 
-    destacada.classList.add(
-      "sin-imagen"
-    );
-
     destacada.style.backgroundImage =
-      "none";
+      "linear-gradient(135deg,#0d2418,#163b27)";
 
   }
 
 
-  if(noticia.url){
+  if(
+    urlValida(
+      n.url
+    )
+  ){
 
     dLink.href =
-      noticia.url;
+      n.url;
 
     dLink.style.display =
       "inline-block";
@@ -1187,37 +1463,48 @@ function pintarDestacada(){
 
 
 /* =========================================================
-   PINTAR NOTICIAS
+   PINTAR TARJETAS
 ========================================================= */
 
-function pintar(){
+function pintarNoticias(){
 
   const inicio =
-    mostrando;
+    posicion;
+
 
   const fin =
     Math.min(
-      inicio + POR_PAGINA,
-      noticiasFiltradas.length
+      posicion +
+      POR_PAGINA,
+      filtradas.length
     );
 
 
   if(
-    noticiasFiltradas.length === 0
+    filtradas.length === 0
   ){
 
     grid.innerHTML = `
       <div class="vacio">
-        No encontramos noticias reales
-        para esta categoría.
+
+        <strong>
+          No encontramos noticias reales
+        </strong>
+
+        Esta categoría no tiene noticias
+        disponibles en el archivo actual.
+
       </div>
     `;
+
 
     btnMore.style.display =
       "none";
 
+
     estado.textContent =
       "0 noticias";
+
 
     return;
 
@@ -1228,50 +1515,44 @@ function pintar(){
 
 
   for(
-    let i = inicio;
-    i < fin;
+    let i=inicio;
+    i<fin;
     i++
   ){
 
     const n =
-      noticiasFiltradas[i];
+      filtradas[i];
 
 
     const titulo =
-      escapar(
-        n.titulo ||
-        "Sin título"
-      );
+      n.titulo ||
+      n.title ||
+      "Sin título";
 
 
     const descripcion =
-      escapar(
-        n.descripcion ||
-        ""
-      );
+      n.descripcion ||
+      n.description ||
+      "";
 
 
-    const categoria =
-      escapar(
-        n.subcategoria ||
-        "Deportes"
-      );
+    const deporte =
+      n.deporte ||
+      "Deportes";
 
 
     const fecha =
-      escapar(
-        fechaBonita(
-          n.fecha
-        )
+      fechaBonita(
+        n.fecha ||
+        n.pubDate
       );
 
 
     const url =
-      n.url ||
-      "#";
+      n.url;
 
 
-    let imagenHTML = "";
+    let imagen = "";
 
 
     if(
@@ -1280,22 +1561,27 @@ function pintar(){
       )
     ){
 
-      imagenHTML = `
+      imagen = `
+
         <img
           class="card-img"
           src="${escapar(n.imagen)}"
-          alt="${titulo}"
+          alt="${escapar(titulo)}"
           loading="lazy"
+          referrerpolicy="no-referrer"
           onerror="this.outerHTML='<div class=&quot;sin-foto&quot;>Imagen no disponible</div>'"
         >
+
       `;
 
     }else{
 
-      imagenHTML = `
+      imagen = `
+
         <div class="sin-foto">
           Imagen no disponible
         </div>
+
       `;
 
     }
@@ -1306,30 +1592,35 @@ function pintar(){
       <article class="card">
 
         <a
-          class="card-link"
           href="${escapar(url)}"
           target="_blank"
           rel="noopener noreferrer"
         >
 
-          ${imagenHTML}
+          ${imagen}
 
           <div class="card-body">
 
             <span class="badge">
-              ${categoria}
+              ${escapar(deporte)}
             </span>
 
             <h3>
-              ${titulo}
+              ${escapar(titulo)}
             </h3>
 
             <p>
-              ${descripcion}
+              ${escapar(
+                descripcion
+              ).slice(0,180)}
             </p>
 
             <div class="fecha">
-              ${fecha}
+
+              ${escapar(fecha)}
+
+              · Expansión
+
             </div>
 
           </div>
@@ -1349,16 +1640,17 @@ function pintar(){
   );
 
 
-  mostrando = fin;
+  posicion =
+    fin;
 
 
   estado.textContent =
-    `${noticiasFiltradas.length} noticias · mostrando ${mostrando}`;
+    `${filtradas.length} noticias · mostrando ${posicion}`;
 
 
   if(
-    mostrando >=
-    noticiasFiltradas.length
+    posicion >=
+    filtradas.length
   ){
 
     btnMore.style.display =
@@ -1380,88 +1672,93 @@ function pintar(){
 
 btnMore.addEventListener(
   "click",
-  () => {
+  function(){
 
-    pintar();
+    pintarNoticias();
 
   }
 );
 
 
 /* =========================================================
-   TABS
+   BOTONES SUPERIORES
 ========================================================= */
 
 document
   .querySelectorAll(".tab")
-  .forEach(btn => {
+  .forEach(
+    boton => {
 
-    btn.addEventListener(
-      "click",
-      () => {
+      boton.addEventListener(
+        "click",
+        function(){
 
-        document
-          .querySelectorAll(".tab")
-          .forEach(b =>
-            b.classList.remove(
-              "active"
-            )
+          document
+            .querySelectorAll(".tab")
+            .forEach(
+              b =>
+                b.classList.remove(
+                  "active"
+                )
+            );
+
+
+          this.classList.add(
+            "active"
           );
 
 
-        btn.classList.add(
-          "active"
-        );
+          seleccionarCategoria(
+            this.dataset.cat
+          );
 
 
-        seleccionarCategoria(
-          btn.dataset.cat
-        );
+          window.scrollTo({
+            top:0,
+            behavior:"smooth"
+          });
 
+        }
+      );
 
-        window.scrollTo({
-          top:0,
-          behavior:"smooth"
-        });
-
-      }
-    );
-
-  });
+    }
+  );
 
 
 /* =========================================================
-   TARJETAS DE CATEGORÍAS
+   RECUADROS DE DEPORTE
 ========================================================= */
 
 document
   .querySelectorAll(".seccion")
-  .forEach(box => {
+  .forEach(
+    caja => {
 
-    box.addEventListener(
-      "click",
-      () => {
+      caja.addEventListener(
+        "click",
+        function(){
 
-        const categoria =
-          box.dataset.cat;
-
-
-        const boton =
-          document.querySelector(
-            `.tab[data-cat="${CSS.escape(categoria)}"]`
-          );
+          const categoria =
+            this.dataset.cat;
 
 
-        if(boton){
+          const boton =
+            document.querySelector(
+              `.tab[data-cat="${CSS.escape(categoria)}"]`
+            );
 
-          boton.click();
+
+          if(boton){
+
+            boton.click();
+
+          }
 
         }
+      );
 
-      }
-    );
-
-  });
+    }
+  );
 
 
 /* =========================================================
