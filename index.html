@@ -1,10 +1,581 @@
-<a href="./index.html">Inicio</a>
-<a href="./noticias.html">Noticias</a>
-<a href="./deportes.html">Deportes</a>
-<a href="./entretenimiento.html">Entretenimiento</a>
-<a href="./tecnologia.html">Tecnología</a>
-<a href="./dinero.html">Dinero</a>
-<a href="./politica.html">Política</a>
-<a href="./tramites.html">Trámites</a>
-<a href="./contacto.html">Contacto</a>
-<a href="./preguntas.html">Preguntas</a>
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TendenciasMX | Noticias, Tecnología, Deportes y Más</title><meta name="description" content="TendenciasMX: noticias de actualidad, deportes, entretenimiento, tecnología, dinero, política y trámites en México.">
+<meta name="keywords" content="noticias México, tendencias, actualidad, deportes, tecnología, entretenimiento, dinero, política, trámites"><style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f6f8;
+    color:#111827;
+}
+
+header{
+    background:#111827;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.header-inner{
+    max-width:1100px;
+    margin:auto;
+    padding:16px 20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:12px;
+}
+
+.logo span{
+    color:#22c55e;
+}
+
+nav{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding-bottom:4px;
+    scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+    display:none;
+}
+
+nav a{
+    color:#d1d5db;
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:8px;
+    white-space:nowrap;
+    font-size:14px;
+    transition:.2s;
+}
+
+nav a:hover,
+nav a.active{
+    background:#22c55e;
+    color:#052e16;
+}
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px 55px;
+}
+
+.hero{
+    background:linear-gradient(135deg,#111827,#1f2937);
+    color:white;
+    border-radius:20px;
+    padding:45px 30px;
+    margin-bottom:28px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.hero h1 span{
+    color:#22c55e;
+}
+
+.hero p{
+    color:#d1d5db;
+    font-size:17px;
+    line-height:1.7;
+    max-width:800px;
+}
+
+.hero-button{
+    display:inline-block;
+    margin-top:22px;
+    background:#22c55e;
+    color:#052e16;
+    text-decoration:none;
+    font-weight:800;
+    padding:13px 20px;
+    border-radius:9px;
+}
+
+.hero-button:hover{
+    background:#16a34a;
+    color:white;
+}
+
+.section-title{
+    font-size:26px;
+    margin:25px 0 15px;
+}
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+}
+
+.category-card{
+    background:white;
+    border-radius:15px;
+    padding:22px;
+    text-decoration:none;
+    color:#111827;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.2s;
+}
+
+.category-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 22px rgba(0,0,0,.13);
+}
+
+.icon{
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.category-card h2{
+    font-size:18px;
+    margin-bottom:7px;
+}
+
+.category-card p{
+    color:#6b7280;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.quick{
+    margin-top:30px;
+    background:white;
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.quick h2{
+    margin-bottom:10px;
+}
+
+.quick p{
+    color:#6b7280;
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+.quick-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.quick-links a{
+    text-decoration:none;
+    background:#ecfdf5;
+    color:#166534;
+    padding:10px 14px;
+    border-radius:9px;
+    font-weight:700;
+    font-size:14px;
+}
+
+.quick-links a:hover{
+    background:#22c55e;
+    color:#052e16;
+}
+
+.info{
+    margin-top:25px;
+    background:#ecfdf5;
+    border-left:5px solid #22c55e;
+    border-radius:10px;
+    padding:18px;
+    color:#166534;
+    line-height:1.6;
+}
+
+footer{
+    background:#111827;
+    color:#9ca3af;
+    text-align:center;
+    padding:28px 20px;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:12px;
+}
+
+.footer-links a{
+    color:#d1d5db;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.footer-links a:hover{
+    color:#22c55e;
+}
+
+@media(max-width:850px){
+
+    .categories{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    main{
+        padding:22px 15px 45px;
+    }
+
+    .hero{
+        padding:32px 22px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .categories{
+        grid-template-columns:1fr;
+    }
+
+}
+</style></head><body><header><div class="header-inner">
+
+    <div class="logo">
+        Tendencias<span>MX</span>
+    </div>
+
+    <nav>
+
+        <a href="./index.html" class="active">
+            Inicio
+        </a>
+
+        <a href="./noticias.html">
+            Noticias
+        </a>
+
+        <a href="./deportes.html">
+            Deportes
+        </a>
+
+        <a href="./entretenimiento.html">
+            Entretenimiento
+        </a>
+
+        <a href="./tecnologia.html">
+            Tecnología
+        </a>
+
+        <a href="./dinero.html">
+            Dinero
+        </a>
+
+        <a href="./politica.html">
+            Política
+        </a>
+
+        <a href="./tramites.html">
+            Trámites
+        </a>
+
+        <a href="./contacto.html">
+            Contacto
+        </a>
+
+        <a href="./preguntas.html">
+            Preguntas
+        </a>
+
+    </nav>
+
+</div>
+
+</header><main><section class="hero">
+
+    <h1>
+        Bienvenido a <span>TendenciasMX</span>
+    </h1>
+
+    <p>
+        Noticias, información y contenido de actualidad en un solo lugar.
+        Explora las principales categorías de TendenciasMX y encuentra
+        rápidamente los temas que te interesan.
+    </p>
+
+    <a
+        href="./noticias.html"
+        class="hero-button"
+    >
+        Ver noticias →
+    </a>
+
+</section>
+
+
+<h2 class="section-title">
+    Explora nuestras secciones
+</h2>
+
+
+<section class="categories">
+
+
+    <a
+        href="./noticias.html"
+        class="category-card"
+    >
+
+        <div class="icon">📰</div>
+
+        <h2>Noticias</h2>
+
+        <p>
+            Información y actualidad nacional e internacional.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./deportes.html"
+        class="category-card"
+    >
+
+        <div class="icon">⚽</div>
+
+        <h2>Deportes</h2>
+
+        <p>
+            Fútbol, NFL, béisbol, boxeo y otros deportes.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./entretenimiento.html"
+        class="category-card"
+    >
+
+        <div class="icon">🎬</div>
+
+        <h2>Entretenimiento</h2>
+
+        <p>
+            Cine, televisión, música, famosos y videojuegos.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./tecnologia.html"
+        class="category-card"
+    >
+
+        <div class="icon">💻</div>
+
+        <h2>Tecnología</h2>
+
+        <p>
+            IA, gadgets, aplicaciones, redes y ciberseguridad.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./dinero.html"
+        class="category-card"
+    >
+
+        <div class="icon">💰</div>
+
+        <h2>Dinero</h2>
+
+        <p>
+            Economía, bancos, empresas, dólar y finanzas personales.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./politica.html"
+        class="category-card"
+    >
+
+        <div class="icon">🏛️</div>
+
+        <h2>Política</h2>
+
+        <p>
+            Información sobre asuntos públicos y política nacional.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./tramites.html"
+        class="category-card"
+    >
+
+        <div class="icon">📄</div>
+
+        <h2>Trámites</h2>
+
+        <p>
+            Guías y accesos para consultar diferentes trámites.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./preguntas.html"
+        class="category-card"
+    >
+
+        <div class="icon">❓</div>
+
+        <h2>Preguntas frecuentes</h2>
+
+        <p>
+            Encuentra respuestas sobre TendenciasMX y sus secciones.
+        </p>
+
+    </a>
+
+</section>
+
+
+<section class="quick">
+
+    <h2>Accesos rápidos</h2>
+
+    <p>
+        También puedes entrar directamente a las principales áreas
+        del sitio.
+    </p>
+
+    <div class="quick-links">
+
+        <a href="./noticias.html">
+            Noticias
+        </a>
+
+        <a href="./deportes.html">
+            Deportes
+        </a>
+
+        <a href="./entretenimiento.html">
+            Entretenimiento
+        </a>
+
+        <a href="./tecnologia.html">
+            Tecnología
+        </a>
+
+        <a href="./dinero.html">
+            Dinero
+        </a>
+
+        <a href="./politica.html">
+            Política
+        </a>
+
+        <a href="./tramites.html">
+            Trámites
+        </a>
+
+        <a href="./contacto.html">
+            Contacto
+        </a>
+
+    </div>
+
+</section>
+
+
+<div class="info">
+
+    <strong>TendenciasMX</strong><br>
+
+    Explora nuestras diferentes secciones desde un mismo lugar.
+    El menú superior permanece disponible para navegar por todo
+    el sitio.
+
+</div>
+
+</main><footer><div class="footer-links">
+
+    <a href="./index.html">
+        Inicio
+    </a>
+
+    <a href="./noticias.html">
+        Noticias
+    </a>
+
+    <a href="./deportes.html">
+        Deportes
+    </a>
+
+    <a href="./entretenimiento.html">
+        Entretenimiento
+    </a>
+
+    <a href="./tecnologia.html">
+        Tecnología
+    </a>
+
+    <a href="./dinero.html">
+        Dinero
+    </a>
+
+    <a href="./politica.html">
+        Política
+    </a>
+
+    <a href="./tramites.html">
+        Trámites
+    </a>
+
+    <a href="./contacto.html">
+        Contacto
+    </a>
+
+    <a href="./preguntas.html">
+        Preguntas
+    </a>
+
+</div>
+
+© 2026 TendenciasMX · Información y actualidad
+
+</footer></body>
+</html>
