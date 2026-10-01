@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
+
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <title>Noticias de México y del mundo | Tendencias MX</title>
+  <title>
+    Noticias de México y del mundo | Tendencias MX
+  </title>
 
   <meta
     name="description"
@@ -17,7 +24,10 @@
     content="noticias México, noticias de hoy, noticias México hoy, actualidad México, noticias nacionales, noticias internacionales, economía, deportes, entretenimiento, tecnología, Tendencias MX"
   >
 
-  <meta name="robots" content="index, follow">
+  <meta
+    name="robots"
+    content="index, follow"
+  >
 
   <link
     rel="canonical"
@@ -34,7 +44,11 @@
     content="Consulta las noticias y temas de actualidad en Tendencias MX."
   >
 
-  <meta property="og:type" content="website">
+  <meta
+    property="og:type"
+    content="website"
+  >
+
 
   <style>
 
@@ -59,6 +73,7 @@
       text-decoration: none;
       color: inherit;
     }
+
 
     /* HEADER */
 
@@ -108,6 +123,7 @@
       color: #20c997;
     }
 
+
     /* HERO */
 
     .hero {
@@ -117,7 +133,11 @@
           rgba(32,201,151,.18),
           transparent 35%
         ),
-        linear-gradient(135deg, #101827, #1d3557);
+        linear-gradient(
+          135deg,
+          #101827,
+          #1d3557
+        );
 
       color: white;
       padding: 52px 20px;
@@ -150,6 +170,7 @@
     }
 
     @keyframes pulse {
+
       0%,100% {
         opacity: 1;
       }
@@ -157,6 +178,7 @@
       50% {
         opacity: .35;
       }
+
     }
 
     .hero h1 {
@@ -170,6 +192,7 @@
       max-width: 700px;
       font-size: 17px;
     }
+
 
     /* SEARCH */
 
@@ -207,6 +230,7 @@
       filter: brightness(.95);
     }
 
+
     /* MAIN */
 
     main {
@@ -227,6 +251,7 @@
     .section-heading p {
       color: #68737e;
     }
+
 
     /* STATUS */
 
@@ -250,6 +275,7 @@
       border-radius: 50%;
       flex: 0 0 auto;
     }
+
 
     /* CATEGORIES */
 
@@ -279,6 +305,7 @@
       border-color: #20c997;
       color: #062219;
     }
+
 
     /* NEWS GRID */
 
@@ -374,6 +401,7 @@
       text-decoration: underline;
     }
 
+
     /* FEATURED */
 
     .featured {
@@ -444,6 +472,7 @@
       font-size: 14px;
     }
 
+
     /* EMPTY */
 
     .empty {
@@ -454,6 +483,7 @@
       border-radius: 18px;
       padding: 40px 20px;
       color: #68737e;
+      margin-top: 20px;
     }
 
     .empty strong {
@@ -462,6 +492,27 @@
       font-size: 20px;
       margin-bottom: 7px;
     }
+
+
+    /* LOADING */
+
+    .loading {
+      grid-column: 1 / -1;
+      background: white;
+      border: 1px solid #e1e6eb;
+      border-radius: 18px;
+      padding: 45px 20px;
+      text-align: center;
+      color: #68737e;
+    }
+
+    .loading strong {
+      display: block;
+      color: #17202a;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
 
     /* INFO */
 
@@ -478,6 +529,7 @@
       max-width: 850px;
     }
 
+
     /* FOOTER */
 
     footer {
@@ -491,6 +543,7 @@
     footer strong {
       color: white;
     }
+
 
     /* MOBILE */
 
@@ -509,6 +562,7 @@
       }
 
     }
+
 
     @media (max-width: 560px) {
 
@@ -548,23 +602,46 @@
     }
 
   </style>
+
 </head>
 
+
 <body>
+
 
 <header>
 
   <div class="header-inner">
 
-    <a href="index.html" class="logo">
+    <a
+      href="index.html"
+      class="logo"
+    >
       Tendencias<span>MX</span>
     </a>
 
+
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="tendencias.html">Tendencias</a>
-      <a href="noticias.html" class="active">Noticias</a>
-      <a href="entretenimiento.html">Entretenimiento</a>
+
+      <a href="index.html">
+        Inicio
+      </a>
+
+      <a href="tendencias.html">
+        Tendencias
+      </a>
+
+      <a
+        href="noticias.html"
+        class="active"
+      >
+        Noticias
+      </a>
+
+      <a href="entretenimiento.html">
+        Entretenimiento
+      </a>
+
     </nav>
 
   </div>
@@ -572,24 +649,31 @@
 </header>
 
 
+
 <section class="hero">
 
   <div class="hero-content">
 
     <div class="live">
+
       <span class="live-dot"></span>
+
       ACTUALIDAD
+
     </div>
+
 
     <h1>
       Noticias de México y del mundo
     </h1>
+
 
     <p>
       Explora información de actualidad, temas nacionales,
       economía, deportes, entretenimiento y tecnología
       en Tendencias MX.
     </p>
+
 
     <div class="search">
 
@@ -599,6 +683,7 @@
         placeholder="Buscar noticias..."
         aria-label="Buscar noticias"
       >
+
 
       <button
         type="button"
@@ -614,23 +699,29 @@
 </section>
 
 
+
 <main>
+
 
   <div class="status-box">
 
     <span class="status-dot"></span>
 
-    <span>
+    <span id="statusText">
+
       <strong>Noticias:</strong>
-      sistema preparado para recibir información actualizada de fuentes RSS.
+      cargando información actualizada...
+
     </span>
 
   </div>
 
 
+
   <!-- DESTACADA -->
 
   <section class="featured">
+
 
     <article class="featured-main">
 
@@ -638,19 +729,23 @@
         Tendencias MX
       </span>
 
+
       <h2>
         Las noticias y temas que están generando conversación en México
       </h2>
 
+
       <p>
-        Aquí destacaremos las historias más importantes
-        conforme conectemos las fuentes de información.
+        Información actualizada automáticamente
+        mediante fuentes RSS.
       </p>
 
     </article>
 
 
+
     <div class="featured-side">
+
 
       <article class="mini-news">
 
@@ -658,15 +753,18 @@
           México
         </span>
 
+
         <h3>
           Información nacional y acontecimientos relevantes
         </h3>
 
+
         <p>
-          Noticias nacionales seleccionadas para Tendencias MX.
+          Noticias nacionales actualizadas automáticamente.
         </p>
 
       </article>
+
 
 
       <article class="mini-news">
@@ -675,12 +773,14 @@
           Actualidad
         </span>
 
+
         <h3>
           Los temas que están generando interés
         </h3>
 
+
         <p>
-          Información actualizada organizada por categorías.
+          Información organizada por categorías.
         </p>
 
       </article>
@@ -690,15 +790,18 @@
   </section>
 
 
+
   <!-- CATEGORÍAS -->
 
   <section>
+
 
     <div class="section-heading">
 
       <h2>
         📰 Últimas noticias
       </h2>
+
 
       <p>
         Explora las noticias por categoría.
@@ -707,7 +810,9 @@
     </div>
 
 
+
     <div class="categories">
+
 
       <button
         type="button"
@@ -717,6 +822,7 @@
         Todas
       </button>
 
+
       <button
         type="button"
         class="category-btn"
@@ -724,6 +830,7 @@
       >
         🇲🇽 México
       </button>
+
 
       <button
         type="button"
@@ -733,6 +840,7 @@
         🌎 Mundo
       </button>
 
+
       <button
         type="button"
         class="category-btn"
@@ -740,6 +848,7 @@
       >
         💰 Economía
       </button>
+
 
       <button
         type="button"
@@ -749,6 +858,7 @@
         ⚽ Deportes
       </button>
 
+
       <button
         type="button"
         class="category-btn"
@@ -756,6 +866,7 @@
       >
         🎬 Entretenimiento
       </button>
+
 
       <button
         type="button"
@@ -768,277 +879,28 @@
     </div>
 
 
+
+    <!-- AQUÍ SE INSERTAN LAS NOTICIAS -->
+
     <div
       class="news-grid"
       id="newsGrid"
     >
 
+      <div class="loading">
 
-      <!-- NOTICIA 1 -->
+        <strong>
+          📰 Cargando noticias...
+        </strong>
 
-      <article
-        class="news-card"
-        data-category="mexico"
-        data-title="actualidad mexico noticias nacionales"
-      >
+        <span>
+          Estamos obteniendo las últimas noticias.
+        </span>
 
-        <div class="news-image">
-          🇲🇽
-        </div>
-
-        <div class="news-content">
-
-          <span class="tag">
-            México
-          </span>
-
-          <h3>
-            Actualidad nacional y noticias de México
-          </h3>
-
-          <p>
-            Información sobre acontecimientos y temas
-            de interés nacional.
-          </p>
-
-          <div class="news-meta">
-            <span>🇲🇽 Nacional</span>
-            <span>Actualidad</span>
-          </div>
-
-          <a
-            href="México.html"
-            class="read-news"
-          >
-            Ver sección →
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- NOTICIA 2 -->
-
-      <article
-        class="news-card"
-        data-category="mundo"
-        data-title="mundo noticias internacionales actualidad"
-      >
-
-        <div class="news-image">
-          🌎
-        </div>
-
-        <div class="news-content">
-
-          <span class="tag">
-            Mundo
-          </span>
-
-          <h3>
-            Noticias internacionales y actualidad mundial
-          </h3>
-
-          <p>
-            Información relevante de otros países
-            y regiones del mundo.
-          </p>
-
-          <div class="news-meta">
-            <span>🌎 Internacional</span>
-            <span>Actualidad</span>
-          </div>
-
-          <a
-            href="noticias.html"
-            class="read-news"
-          >
-            Ver noticias →
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- NOTICIA 3 -->
-
-      <article
-        class="news-card"
-        data-category="economia"
-        data-title="economia dinero finanzas negocios mexico"
-      >
-
-        <div class="news-image">
-          💰
-        </div>
-
-        <div class="news-content">
-
-          <span class="tag">
-            Economía
-          </span>
-
-          <h3>
-            Economía, negocios y finanzas
-          </h3>
-
-          <p>
-            Información relacionada con economía,
-            empresas, dinero y negocios.
-          </p>
-
-          <div class="news-meta">
-            <span>💰 Economía</span>
-            <span>Actualidad</span>
-          </div>
-
-          <a
-            href="dinero.html"
-            class="read-news"
-          >
-            Ver dinero y economía →
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- NOTICIA 4 -->
-
-      <article
-        class="news-card"
-        data-category="deportes"
-        data-title="deportes futbol partidos mexico"
-      >
-
-        <div class="news-image">
-          ⚽
-        </div>
-
-        <div class="news-content">
-
-          <span class="tag">
-            Deportes
-          </span>
-
-          <h3>
-            Noticias deportivas
-          </h3>
-
-          <p>
-            Información y actualidad del mundo deportivo,
-            incluyendo fútbol y otros deportes.
-          </p>
-
-          <div class="news-meta">
-            <span>⚽ Deportes</span>
-            <span>Actualidad</span>
-          </div>
-
-          <a
-            href="deportes.html"
-            class="read-news"
-          >
-            Ver deportes →
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- NOTICIA 5 -->
-
-      <article
-        class="news-card"
-        data-category="entretenimiento"
-        data-title="entretenimiento musica cine television artistas"
-      >
-
-        <div class="news-image">
-          🎬
-        </div>
-
-        <div class="news-content">
-
-          <span class="tag">
-            Entretenimiento
-          </span>
-
-          <h3>
-            Música, cine y entretenimiento
-          </h3>
-
-          <p>
-            Temas relacionados con artistas,
-            música, películas y televisión.
-          </p>
-
-          <div class="news-meta">
-            <span>🎬 Entretenimiento</span>
-            <span>Actualidad</span>
-          </div>
-
-          <a
-            href="entretenimiento.html"
-            class="read-news"
-          >
-            Ver entretenimiento →
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- NOTICIA 6 -->
-
-      <article
-        class="news-card"
-        data-category="tecnologia"
-        data-title="tecnologia inteligencia artificial internet aplicaciones"
-      >
-
-        <div class="news-image">
-          📱
-        </div>
-
-        <div class="news-content">
-
-          <span class="tag">
-            Tecnología
-          </span>
-
-          <h3>
-            Tecnología e inteligencia artificial
-          </h3>
-
-          <p>
-            Aplicaciones, inteligencia artificial,
-            internet y novedades tecnológicas.
-          </p>
-
-          <div class="news-meta">
-            <span>📱 Tecnología</span>
-            <span>Actualidad</span>
-          </div>
-
-          <a
-            href="tecnologia.html"
-            class="read-news"
-          >
-            Ver tecnología →
-          </a>
-
-        </div>
-
-      </article>
-
+      </div>
 
     </div>
+
 
 
     <div
@@ -1056,7 +918,9 @@
 
     </div>
 
+
   </section>
+
 
 
   <!-- INFORMACIÓN SEO -->
@@ -1066,6 +930,7 @@
     <h2 style="margin-bottom:10px;">
       Tendencias MX: noticias y actualidad
     </h2>
+
 
     <p>
       Tendencias MX reúne información y temas de actualidad
@@ -1077,15 +942,23 @@
 
   </section>
 
+
 </main>
+
 
 
 <footer>
 
   <p>
-    <strong>Tendencias MX</strong>
+
+    <strong>
+      Tendencias MX
+    </strong>
+
     · Noticias y tendencias de México.
+
   </p>
+
 
   <p>
     © 2026 Tendencias MX
@@ -1094,264 +967,265 @@
 </footer>
 
 
+
 <script>
 
-  let categoriaActual = "todos";
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+let noticiasActuales = [];
+
+let categoriaActual = "todos";
 
 
-  function filtrarNoticias(categoria, boton) {
+/* ==========================================
+   CARGAR NOTICIAS.JSON
+========================================== */
 
-    categoriaActual = categoria;
+async function cargarNoticias() {
 
-    const tarjetas =
-      document.querySelectorAll(".news-card");
+  const grid =
+    document.getElementById("newsGrid");
 
-    const botones =
-      document.querySelectorAll(".category-btn");
-
-    botones.forEach(btn => {
-      btn.classList.remove("active");
-    });
-
-    boton.classList.add("active");
-
-    const busqueda =
-      document
-        .getElementById("searchInput")
-        .value
-        .toLowerCase()
-        .trim();
-
-    let visibles = 0;
+  const status =
+    document.getElementById("statusText");
 
 
-    tarjetas.forEach(tarjeta => {
+  try {
 
-      const categoriaTarjeta =
-        tarjeta.dataset.category;
+    /*
+      El ./ hace que busque noticias.json
+      en la misma carpeta que noticias.html.
+    */
 
-      const texto =
-        (
-          tarjeta.dataset.title +
-          " " +
-          tarjeta.innerText
-        ).toLowerCase();
-
-
-      const coincideCategoria =
-        categoria === "todos" ||
-        categoriaTarjeta === categoria;
+    const respuesta =
+      await fetch(
+        "./noticias.json?v=" + Date.now(),
+        {
+          cache: "no-store"
+        }
+      );
 
 
-      const coincideBusqueda =
-        !busqueda ||
-        texto.includes(busqueda);
+    if (!respuesta.ok) {
+
+      throw new Error(
+        "HTTP " + respuesta.status
+      );
+
+    }
 
 
-      if (
-        coincideCategoria &&
-        coincideBusqueda
-      ) {
+    const datos =
+      await respuesta.json();
 
-        tarjeta.style.display = "flex";
 
-        visibles++;
+    /*
+      Aceptamos dos formatos:
 
-      } else {
-
-        tarjeta.style.display = "none";
-
+      1.
+      {
+        "noticias": [...]
       }
 
-    });
+      2.
+      [...]
+    */
 
+    if (
+      Array.isArray(datos)
+    ) {
 
-    mostrarMensajeVacio(visibles);
+      noticiasActuales =
+        datos;
 
-  }
+    } else if (
+      Array.isArray(datos.noticias)
+    ) {
 
-
-  function buscarNoticias() {
-
-    const input =
-      document
-        .getElementById("searchInput")
-        .value
-        .toLowerCase()
-        .trim();
-
-    const tarjetas =
-      document.querySelectorAll(".news-card");
-
-    let visibles = 0;
-
-
-    tarjetas.forEach(tarjeta => {
-
-      const texto =
-        (
-          tarjeta.dataset.title +
-          " " +
-          tarjeta.innerText
-        ).toLowerCase();
-
-
-      const coincideCategoria =
-        categoriaActual === "todos" ||
-        tarjeta.dataset.category === categoriaActual;
-
-
-      const coincideBusqueda =
-        !input ||
-        texto.includes(input);
-
-
-      if (
-        coincideCategoria &&
-        coincideBusqueda
-      ) {
-
-        tarjeta.style.display = "flex";
-
-        visibles++;
-
-      } else {
-
-        tarjeta.style.display = "none";
-
-      }
-
-    });
-
-
-    mostrarMensajeVacio(visibles);
-
-  }
-
-
-  function mostrarMensajeVacio(cantidad) {
-
-    const mensaje =
-      document.getElementById("emptyMessage");
-
-    if (cantidad === 0) {
-
-      mensaje.style.display = "block";
+      noticiasActuales =
+        datos.noticias;
 
     } else {
 
-      mensaje.style.display = "none";
+      noticiasActuales = [];
 
     }
 
-  }
 
+    if (
+      noticiasActuales.length === 0
+    ) {
 
-  document
-    .getElementById("searchInput")
-    .addEventListener(
-      "keydown",
-      function(event) {
+      throw new Error(
+        "noticias.json no contiene noticias"
+      );
 
-        if (event.key === "Enter") {
-
-          buscarNoticias();
-
-        }
-
-      }
-    );
-
-
-<script>
-let noticiasActuales = [];
-let categoriaActual = "todos";
-
-async function cargarNoticias() {
-  const grid = document.getElementById("newsGrid");
-  const status = document.querySelector(".status-box span:last-child");
-
-  try {
-    const respuesta = await fetch("noticias.json?v=" + Date.now());
-
-    if (!respuesta.ok) {
-      throw new Error("No se pudo cargar noticias.json");
     }
 
-    const datos = await respuesta.json();
-
-    noticiasActuales = Array.isArray(datos.noticias)
-      ? datos.noticias
-      : [];
-
-    if (!noticiasActuales.length) {
-      throw new Error("No hay noticias disponibles");
-    }
 
     if (status) {
+
       status.innerHTML =
-        "<strong>Noticias:</strong> información actualizada automáticamente.";
+        "<strong>Noticias:</strong> " +
+        noticiasActuales.length +
+        " noticias actualizadas automáticamente.";
+
     }
+
 
     mostrarNoticias();
 
+
   } catch (error) {
 
-    console.error(error);
+    console.error(
+      "Error cargando noticias.json:",
+      error
+    );
+
 
     if (status) {
+
       status.innerHTML =
-        "<strong>Noticias:</strong> no se pudo cargar la información.";
+        "<strong>Noticias:</strong> " +
+        "No se pudo cargar la información.";
+
     }
+
+
+    if (grid) {
+
+      grid.innerHTML = `
+
+        <div class="loading">
+
+          <strong>
+            ⚠️ No se pudieron cargar las noticias
+          </strong>
+
+          <span>
+            Verifica que <b>noticias.json</b>
+            esté en la misma carpeta que
+            <b>noticias.html</b>.
+          </span>
+
+        </div>
+
+      `;
+
+    }
+
   }
+
 }
+
+
+/* ==========================================
+   OBTENER CATEGORÍA
+========================================== */
 
 function obtenerCategoria(noticia) {
 
   const texto = (
-    (noticia.titulo || "") + " " +
-    (noticia.descripcion || "") + " " +
-    (noticia.enlace || "")
+
+    (noticia.titulo || "") +
+    " " +
+    (noticia.title || "") +
+    " " +
+    (noticia.descripcion || "") +
+    " " +
+    (noticia.description || "") +
+    " " +
+    (noticia.fuente || "") +
+    " " +
+    (noticia.source || "") +
+    " " +
+    (noticia.enlace || "") +
+    " " +
+    (noticia.link || "")
+
   ).toLowerCase();
 
+
+  /* DEPORTES */
+
   if (
+
     texto.includes("fútbol") ||
     texto.includes("futbol") ||
     texto.includes("liga") ||
     texto.includes("partido") ||
     texto.includes("deporte") ||
-    texto.includes("selección")
+    texto.includes("deportes") ||
+    texto.includes("selección") ||
+    texto.includes("seleccion") ||
+    texto.includes("mundial") ||
+    texto.includes("gol") ||
+    texto.includes("nba") ||
+    texto.includes("nfl")
+
   ) {
+
     return "deportes";
+
   }
 
+
+  /* TECNOLOGÍA */
+
   if (
+
     texto.includes("tecnología") ||
     texto.includes("tecnologia") ||
     texto.includes("apple") ||
     texto.includes("iphone") ||
+    texto.includes("android") ||
     texto.includes("inteligencia artificial") ||
     texto.includes("ia ") ||
     texto.includes("google") ||
     texto.includes("whatsapp") ||
-    texto.includes("nvidia")
+    texto.includes("nvidia") ||
+    texto.includes("internet") ||
+    texto.includes("software")
+
   ) {
+
     return "tecnologia";
+
   }
 
+
+  /* ENTRETENIMIENTO */
+
   if (
+
     texto.includes("cine") ||
     texto.includes("música") ||
     texto.includes("musica") ||
     texto.includes("artista") ||
     texto.includes("televisión") ||
     texto.includes("television") ||
-    texto.includes("entretenimiento")
+    texto.includes("entretenimiento") ||
+    texto.includes("actor") ||
+    texto.includes("actriz") ||
+    texto.includes("película") ||
+    texto.includes("pelicula") ||
+    texto.includes("serie")
+
   ) {
+
     return "entretenimiento";
+
   }
 
+
+  /* ECONOMÍA */
+
   if (
+
     texto.includes("economía") ||
     texto.includes("economia") ||
     texto.includes("dinero") ||
@@ -1361,206 +1235,521 @@ function obtenerCategoria(noticia) {
     texto.includes("impuestos") ||
     texto.includes("banco") ||
     texto.includes("finanzas") ||
-    texto.includes("mercado")
+    texto.includes("financiero") ||
+    texto.includes("mercado") ||
+    texto.includes("negocios") ||
+    texto.includes("empresa")
+
   ) {
+
     return "economia";
+
   }
 
+
+  /* MÉXICO */
+
   if (
+
     texto.includes("méxico") ||
     texto.includes("mexico") ||
     texto.includes("pemex") ||
     texto.includes("sat") ||
     texto.includes("senado") ||
     texto.includes("gobierno") ||
-    texto.includes("hacienda")
+    texto.includes("hacienda") ||
+    texto.includes("presidente") ||
+    texto.includes("diputado") ||
+    texto.includes("estado de méxico") ||
+    texto.includes("ciudad de méxico")
+
   ) {
+
     return "mexico";
+
   }
 
+
   return "mundo";
+
 }
+
+
+/* ==========================================
+   ICONO
+========================================== */
 
 function obtenerIcono(categoria) {
 
   const iconos = {
+
     mexico: "🇲🇽",
+
     mundo: "🌎",
+
     economia: "💰",
+
     deportes: "⚽",
+
     entretenimiento: "🎬",
+
     tecnologia: "📱"
+
   };
 
-  return iconos[categoria] || "📰";
+
+  return (
+    iconos[categoria] ||
+    "📰"
+  );
+
 }
+
+
+/* ==========================================
+   SEGURIDAD HTML
+========================================== */
 
 function escaparHTML(texto) {
 
-  const div = document.createElement("div");
-  div.textContent = texto || "";
+  const div =
+    document.createElement("div");
+
+
+  div.textContent =
+    texto == null
+      ? ""
+      : String(texto);
+
 
   return div.innerHTML;
+
 }
+
+
+/* ==========================================
+   OBTENER DATOS
+========================================== */
+
+function obtenerTitulo(noticia) {
+
+  return (
+    noticia.titulo ||
+    noticia.title ||
+    noticia.nombre ||
+    "Noticia"
+  );
+
+}
+
+
+function obtenerDescripcion(noticia) {
+
+  return (
+    noticia.descripcion ||
+    noticia.description ||
+    noticia.resumen ||
+    noticia.summary ||
+    "Consulta la información completa."
+  );
+
+}
+
+
+function obtenerEnlace(noticia) {
+
+  return (
+    noticia.enlace ||
+    noticia.link ||
+    noticia.url ||
+    "#"
+  );
+
+}
+
+
+function obtenerFuente(noticia) {
+
+  return (
+    noticia.fuente ||
+    noticia.source ||
+    noticia.autor ||
+    "Noticias"
+  );
+
+}
+
+
+function obtenerFecha(noticia) {
+
+  return (
+    noticia.fecha ||
+    noticia.date ||
+    noticia.pubDate ||
+    noticia.publicado ||
+    ""
+  );
+
+}
+
+
+/* ==========================================
+   FORMATEAR FECHA
+========================================== */
+
+function formatearFecha(fecha) {
+
+  if (!fecha) {
+    return "";
+  }
+
+
+  const fechaReal =
+    new Date(fecha);
+
+
+  if (
+    isNaN(
+      fechaReal.getTime()
+    )
+  ) {
+
+    return "";
+
+  }
+
+
+  return fechaReal.toLocaleDateString(
+    "es-MX",
+    {
+      day: "2-digit",
+      month: "short",
+      year: "numeric"
+    }
+  );
+
+}
+
+
+/* ==========================================
+   MOSTRAR NOTICIAS
+========================================== */
 
 function mostrarNoticias() {
 
-  const grid = document.getElementById("newsGrid");
-  const empty = document.getElementById("emptyMessage");
+  const grid =
+    document.getElementById(
+      "newsGrid"
+    );
+
+
+  const empty =
+    document.getElementById(
+      "emptyMessage"
+    );
+
+
+  const input =
+    document.getElementById(
+      "searchInput"
+    );
+
+
+  if (!grid) {
+    return;
+  }
+
+
   const busqueda =
-    document
-      .getElementById("searchInput")
-      .value
-      .toLowerCase()
-      .trim();
+    input
+      ? input.value
+          .toLowerCase()
+          .trim()
+      : "";
 
-  const filtradas = noticiasActuales.filter(noticia => {
 
-    const categoria = obtenerCategoria(noticia);
+  const filtradas =
+    noticiasActuales.filter(
+      noticia => {
 
-    const coincideCategoria =
-      categoriaActual === "todos" ||
-      categoria === categoriaActual;
+        const categoria =
+          obtenerCategoria(
+            noticia
+          );
 
-    const texto = (
-      (noticia.titulo || "") + " " +
-      (noticia.descripcion || "") + " " +
-      (noticia.fuente || "")
-    ).toLowerCase();
 
-    const coincideBusqueda =
-      !busqueda ||
-      texto.includes(busqueda);
+        const coincideCategoria =
+          categoriaActual === "todos" ||
+          categoria === categoriaActual;
 
-    return coincideCategoria && coincideBusqueda;
-  });
+
+        const texto = (
+
+          obtenerTitulo(noticia) +
+          " " +
+          obtenerDescripcion(noticia) +
+          " " +
+          obtenerFuente(noticia)
+
+        ).toLowerCase();
+
+
+        const coincideBusqueda =
+          !busqueda ||
+          texto.includes(busqueda);
+
+
+        return (
+          coincideCategoria &&
+          coincideBusqueda
+        );
+
+      }
+    );
+
 
   grid.innerHTML = "";
 
-  filtradas.forEach(noticia => {
 
-    const categoria = obtenerCategoria(noticia);
-    const icono = obtenerIcono(categoria);
+  filtradas.forEach(
+    noticia => {
 
-    const tarjeta = document.createElement("article");
 
-    tarjeta.className = "news-card";
+      const categoria =
+        obtenerCategoria(
+          noticia
+        );
 
-    tarjeta.style.display = "flex";
-    tarjeta.style.flexDirection = "column";
 
-    tarjeta.innerHTML = `
-      <div class="news-image">
-        ${icono}
-      </div>
+      const icono =
+        obtenerIcono(
+          categoria
+        );
 
-      <div class="news-content">
 
-        <span class="tag">
-          ${escaparHTML(
-            categoria.charAt(0).toUpperCase() +
-            categoria.slice(1)
-          )}
-        </span>
+      const titulo =
+        escaparHTML(
+          obtenerTitulo(
+            noticia
+          )
+        );
 
-        <h3>
-          ${escaparHTML(noticia.titulo)}
-        </h3>
 
-        <p>
-          ${escaparHTML(noticia.descripcion)}
-        </p>
+      const descripcion =
+        escaparHTML(
+          obtenerDescripcion(
+            noticia
+          )
+        );
 
-        <div class="news-meta">
 
-          <span>
-            ${escaparHTML(noticia.fuente || "Noticias")}
+      const fuente =
+        escaparHTML(
+          obtenerFuente(
+            noticia
+          )
+        );
+
+
+      const enlace =
+        escaparHTML(
+          obtenerEnlace(
+            noticia
+          )
+        );
+
+
+      const fecha =
+        formatearFecha(
+          obtenerFecha(
+            noticia
+          )
+        );
+
+
+      const tarjeta =
+        document.createElement(
+          "article"
+        );
+
+
+      tarjeta.className =
+        "news-card";
+
+
+      tarjeta.innerHTML = `
+
+        <div class="news-image">
+          ${icono}
+        </div>
+
+
+        <div class="news-content">
+
+
+          <span class="tag">
+
+            ${escaparHTML(
+              categoria
+                .charAt(0)
+                .toUpperCase() +
+              categoria.slice(1)
+            )}
+
           </span>
 
-          <span>
-            ${formatearFecha(noticia.fecha)}
-          </span>
+
+          <h3>
+            ${titulo}
+          </h3>
+
+
+          <p>
+            ${descripcion}
+          </p>
+
+
+          <div class="news-meta">
+
+            <span>
+              ${fuente}
+            </span>
+
+            <span>
+              ${fecha}
+            </span>
+
+          </div>
+
+
+          <a
+            href="${enlace}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="read-news"
+          >
+            Leer noticia →
+          </a>
+
 
         </div>
 
-        <a
-          href="${escaparHTML(noticia.enlace)}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="read-news"
-        >
-          Leer noticia →
-        </a>
+      `;
 
-      </div>
-    `;
 
-    grid.appendChild(tarjeta);
-  });
+      grid.appendChild(
+        tarjeta
+      );
+
+    }
+  );
+
 
   if (empty) {
+
     empty.style.display =
       filtradas.length === 0
         ? "block"
         : "none";
+
   }
+
 }
 
-function formatearFecha(fecha) {
 
-  if (!fecha) return "";
+/* ==========================================
+   FILTRAR
+========================================== */
 
-  try {
+function filtrarNoticias(
+  categoria,
+  boton
+) {
 
-    const fechaReal = new Date(fecha);
+  categoriaActual =
+    categoria;
 
-    return fechaReal.toLocaleDateString(
-      "es-MX",
-      {
-        day: "2-digit",
-        month: "short",
-        year: "numeric"
+
+  document
+    .querySelectorAll(
+      ".category-btn"
+    )
+    .forEach(
+      btn => {
+
+        btn.classList.remove(
+          "active"
+        );
+
       }
     );
 
-  } catch {
-    return "";
-  }
-}
-
-function filtrarNoticias(categoria, boton) {
-
-  categoriaActual = categoria;
-
-  document
-    .querySelectorAll(".category-btn")
-    .forEach(btn => {
-      btn.classList.remove("active");
-    });
 
   if (boton) {
-    boton.classList.add("active");
+
+    boton.classList.add(
+      "active"
+    );
+
   }
 
+
   mostrarNoticias();
+
 }
+
+
+/* ==========================================
+   BUSCAR
+========================================== */
 
 function buscarNoticias() {
+
   mostrarNoticias();
+
 }
 
-document
-  .getElementById("searchInput")
-  .addEventListener(
+
+/* ==========================================
+   ENTER EN BUSCADOR
+========================================== */
+
+const searchInput =
+  document.getElementById(
+    "searchInput"
+  );
+
+
+if (searchInput) {
+
+  searchInput.addEventListener(
     "keydown",
     function(event) {
 
-      if (event.key === "Enter") {
+      if (
+        event.key === "Enter"
+      ) {
+
         buscarNoticias();
+
       }
 
     }
   );
 
+}
+
+
+/* ==========================================
+   INICIAR
+========================================== */
+
 cargarNoticias();
+
+
 </script>
+
+
+</body>
+
+</html>
