@@ -1,1093 +1,721 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Trámites y Servicios de México | Tendencias MX</title>
+<title>Trámites | TendenciasMX</title>
 
-  <meta name="description" content="Guía de trámites y servicios de México: documentos, identificación, impuestos, transporte, vivienda, empleo y servicios públicos.">
+<meta name="description" content="Encuentra información organizada sobre trámites, documentos y servicios de utilidad para ciudadanos en México.">
+<meta name="keywords" content="trámites México, CURP, RFC, INE, pasaporte, acta de nacimiento, licencia de conducir, empleo, documentos">
 
-  <meta name="keywords" content="trámites México, servicios México, CURP, RFC, INE, pasaporte, licencia, SAT, gobierno, documentos">
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
 
-  <meta name="author" content="Tendencias MX">
-  <meta name="robots" content="index, follow">
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f6f8;
+    color:#111827;
+}
 
-  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/tramites.html">
+header{
+    background:#111827;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+}
 
-  <meta property="og:title" content="Trámites y Servicios de México | Tendencias MX">
-  <meta property="og:description" content="Encuentra información sobre trámites y servicios de México.">
-  <meta property="og:type" content="website">
+.header-inner{
+    max-width:1100px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
 
-  <style>
+.logo{
+    font-size:25px;
+    font-weight:800;
+    white-space:nowrap;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+.logo span{
+    color:#22c55e;
+}
+
+nav{
+    display:flex;
+    gap:7px;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+    display:none;
+}
+
+nav a{
+    color:#d1d5db;
+    text-decoration:none;
+    padding:9px 11px;
+    border-radius:8px;
+    font-size:14px;
+    white-space:nowrap;
+    transition:.2s;
+}
+
+nav a:hover{
+    background:#1f2937;
+    color:#22c55e;
+}
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:35px 20px 55px;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.hero h1 span{
+    color:#22c55e;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#6b7280;
+    font-size:16px;
+    line-height:1.6;
+}
+
+.busqueda{
+    max-width:750px;
+    margin:25px auto 35px;
+    display:flex;
+    gap:10px;
+}
+
+.busqueda input{
+    flex:1;
+    border:1px solid #d1d5db;
+    background:white;
+    border-radius:10px;
+    padding:14px 16px;
+    font-size:15px;
+    outline:none;
+}
+
+.busqueda input:focus{
+    border-color:#22c55e;
+    box-shadow:0 0 0 3px rgba(34,197,94,.12);
+}
+
+.busqueda button{
+    border:0;
+    background:#22c55e;
+    color:white;
+    font-weight:bold;
+    padding:0 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.busqueda button:hover{
+    background:#16a34a;
+}
+
+.seccion-titulo{
+    margin-bottom:15px;
+}
+
+.seccion-titulo h2{
+    font-size:22px;
+}
+
+.contador{
+    color:#6b7280;
+    font-size:14px;
+    margin-top:5px;
+}
+
+.filtros{
+    display:flex;
+    gap:9px;
+    overflow-x:auto;
+    padding:5px 0 25px;
+    scrollbar-width:none;
+}
+
+.filtros::-webkit-scrollbar{
+    display:none;
+}
+
+.filtros button{
+    border:1px solid #d1d5db;
+    background:white;
+    color:#374151;
+    padding:10px 15px;
+    border-radius:999px;
+    cursor:pointer;
+    white-space:nowrap;
+    font-size:14px;
+    transition:.2s;
+}
+
+.filtros button:hover,
+.filtros button.activo{
+    background:#22c55e;
+    color:white;
+    border-color:#22c55e;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+    padding:22px;
+    box-shadow:0 4px 15px rgba(0,0,0,.07);
+    transition:.25s;
+    display:flex;
+    flex-direction:column;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 9px 25px rgba(0,0,0,.12);
+}
+
+.icono{
+    width:58px;
+    height:58px;
+    border-radius:14px;
+    background:#ecfdf5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    margin-bottom:16px;
+}
+
+.card h3{
+    font-size:20px;
+    margin-bottom:9px;
+}
+
+.card p{
+    color:#6b7280;
+    font-size:14px;
+    line-height:1.55;
+    margin-bottom:14px;
+    flex:1;
+}
+
+.categoria{
+    display:inline-block;
+    width:max-content;
+    background:#dcfce7;
+    color:#15803d;
+    font-size:12px;
+    font-weight:bold;
+    padding:5px 9px;
+    border-radius:999px;
+    margin-bottom:15px;
+}
+
+.btn-tramite{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    background:#111827;
+    color:white;
+    padding:11px 14px;
+    border-radius:9px;
+    font-size:14px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.btn-tramite:hover{
+    background:#22c55e;
+}
+
+.info{
+    margin-top:40px;
+    background:#fff7ed;
+    border:1px solid #fed7aa;
+    border-radius:14px;
+    padding:20px;
+}
+
+.info h2{
+    font-size:18px;
+    margin-bottom:8px;
+    color:#9a3412;
+}
+
+.info p{
+    color:#7c2d12;
+    line-height:1.6;
+    font-size:14px;
+}
+
+.vacio{
+    grid-column:1/-1;
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    color:#6b7280;
+}
+
+footer{
+    background:#111827;
+    color:#9ca3af;
+    text-align:center;
+    padding:25px 20px;
+    font-size:13px;
+}
+
+footer strong{
+    color:#22c55e;
+}
+
+@media(max-width:850px){
+
+    .grid{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    html {
-      scroll-behavior: smooth;
+    .header-inner{
+        flex-direction:column;
+        align-items:flex-start;
     }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #07111f;
-      color: #ffffff;
-      min-height: 100vh;
+    nav{
+        width:100%;
+    }
+}
+
+@media(max-width:600px){
+
+    main{
+        padding:28px 14px 45px;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
+    .hero h1{
+        font-size:30px;
     }
 
-    button,
-    input {
-      font-family: inherit;
+    .busqueda{
+        flex-direction:column;
     }
 
-    /* HEADER */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(5, 12, 24, 0.96);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      backdrop-filter: blur(12px);
+    .busqueda button{
+        height:48px;
     }
 
-    .header-container {
-      max-width: 1200px;
-      min-height: 70px;
-      margin: auto;
-      padding: 0 20px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+    .grid{
+        grid-template-columns:1fr;
     }
-
-    .logo {
-      font-size: 25px;
-      font-weight: 900;
-      letter-spacing: -1px;
-      white-space: nowrap;
-    }
-
-    .logo span {
-      color: #35e875;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      padding: 10px 13px;
-      border-radius: 9px;
-      color: #dce5ef;
-      font-size: 14px;
-      font-weight: 700;
-      transition: 0.2s;
-    }
-
-    nav a:hover,
-    nav a.active {
-      background: #35e875;
-      color: #06111d;
-    }
-
-    /* HERO */
-
-    .hero {
-      max-width: 1200px;
-      margin: auto;
-      padding: 60px 20px 35px;
-    }
-
-    .hero-box {
-      position: relative;
-      overflow: hidden;
-
-      padding: 50px 30px;
-
-      border-radius: 24px;
-      border: 1px solid rgba(255,255,255,0.08);
-
-      background:
-        radial-gradient(
-          circle at 85% 20%,
-          rgba(53,232,117,0.20),
-          transparent 30%
-        ),
-        linear-gradient(
-          135deg,
-          #10243a,
-          #08111f
-        );
-    }
-
-    .hero-label {
-      color: #35e875;
-      font-size: 14px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      margin-bottom: 15px;
-    }
-
-    .hero h1 {
-      max-width: 850px;
-      font-size: clamp(40px, 8vw, 72px);
-      line-height: 0.98;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 span {
-      color: #35e875;
-    }
-
-    .hero p {
-      max-width: 760px;
-      color: #b9c6d5;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    /* CONTENT */
-
-    .content {
-      max-width: 1200px;
-      margin: auto;
-      padding: 10px 20px 70px;
-    }
-
-    .search-box {
-      display: flex;
-      gap: 10px;
-      padding: 9px;
-
-      background: #0c1a2b;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 12px;
-      margin-bottom: 28px;
-    }
-
-    .search-box input {
-      flex: 1;
-      min-width: 0;
-
-      padding: 13px;
-
-      background: transparent;
-      color: #ffffff;
-      border: none;
-      outline: none;
-
-      font-size: 16px;
-    }
-
-    .search-box input::placeholder {
-      color: #8493a5;
-    }
-
-    .search-button {
-      padding: 0 20px;
-
-      border: none;
-      border-radius: 8px;
-
-      background: #35e875;
-      color: #06111d;
-
-      font-weight: 900;
-      cursor: pointer;
-    }
-
-    .section-title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 15px;
-      margin: 30px 0 20px;
-    }
-
-    .section-title h2 {
-      font-size: 28px;
-    }
-
-    .section-title span {
-      color: #35e875;
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    /* CATEGORIES */
-
-    .categories {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding-bottom: 10px;
-      scrollbar-width: none;
-    }
-
-    .categories::-webkit-scrollbar {
-      display: none;
-    }
-
-    .category {
-      padding: 10px 16px;
-
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 30px;
-
-      background: #0c1a2b;
-      color: #dce5ef;
-
-      cursor: pointer;
-      white-space: nowrap;
-
-      font-weight: 700;
-      transition: 0.2s;
-    }
-
-    .category:hover,
-    .category.active {
-      background: #35e875;
-      color: #06111d;
-      border-color: #35e875;
-    }
-
-    /* CARDS */
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .card {
-      padding: 24px;
-
-      background: #0c1a2b;
-
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 18px;
-
-      transition: 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(53,232,117,0.45);
-    }
-
-    .card-icon {
-      width: 54px;
-      height: 54px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 15px;
-
-      background: rgba(53,232,117,0.10);
-
-      font-size: 27px;
-
-      margin-bottom: 18px;
-    }
-
-    .card h3 {
-      font-size: 20px;
-      line-height: 1.3;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #9eacbc;
-      font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 18px;
-    }
-
-    .card-tag {
-      display: inline-block;
-
-      padding: 6px 9px;
-
-      border-radius: 7px;
-
-      background: rgba(53,232,117,0.10);
-
-      color: #35e875;
-
-      font-size: 11px;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-
-    /* INFORMATION BOX */
-
-    .info-box {
-      margin-top: 45px;
-
-      padding: 28px;
-
-      border-radius: 20px;
-
-      background:
-        linear-gradient(
-          135deg,
-          rgba(53,232,117,0.12),
-          rgba(53,232,117,0.03)
-        );
-
-      border: 1px solid rgba(53,232,117,0.20);
-    }
-
-    .info-box h2 {
-      margin-bottom: 10px;
-    }
-
-    .info-box p {
-      color: #b9c6d5;
-      line-height: 1.7;
-    }
-
-    .info-box strong {
-      color: #35e875;
-    }
-
-    /* NO RESULTS */
-
-    .no-results {
-      display: none;
-
-      padding: 45px 20px;
-
-      text-align: center;
-
-      color: #9eacbc;
-
-      background: #0c1a2b;
-
-      border: 1px solid rgba(255,255,255,0.08);
-
-      border-radius: 15px;
-    }
-
-    /* FOOTER */
-
-    footer {
-      padding: 35px 20px;
-
-      text-align: center;
-
-      background: #050c17;
-
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-
-    footer strong {
-      color: #35e875;
-    }
-
-    footer p {
-      color: #7f8c9c;
-      margin-top: 8px;
-      font-size: 14px;
-    }
-
-    /* RESPONSIVE */
-
-    @media (max-width: 900px) {
-
-      .header-container {
-        flex-direction: column;
-        padding-top: 15px;
-        padding-bottom: 15px;
-      }
-
-      nav {
-        justify-content: center;
-      }
-
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-    }
-
-    @media (max-width: 600px) {
-
-      .hero {
-        padding-top: 30px;
-      }
-
-      .hero-box {
-        padding: 35px 22px;
-      }
-
-      .hero p {
-        font-size: 15px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      nav a {
-        padding: 8px 9px;
-        font-size: 12px;
-      }
-
-      .search-box {
-        padding: 7px;
-      }
-
-      .search-button {
-        padding: 0 14px;
-      }
-
-    }
-
-  </style>
+}
+</style>
 </head>
-
 
 <body>
 
+<header>
 
-  <!-- HEADER -->
+    <div class="header-inner">
 
-  <header>
+        <div class="logo">
+            Tendencias<span>MX</span>
+        </div>
 
-    <div class="header-container">
-
-      <a
-        href="index.html"
-        class="logo"
-      >
-        Tendencias<span>MX</span>
-      </a>
-
-
-      <nav>
-
-        <a href="index.html">
-          Inicio
-        </a>
-
-        <a href="tendencias.html">
-          Tendencias
-        </a>
-
-        <a href="noticias.html">
-          Noticias
-        </a>
-
-        <a href="entretenimiento.html">
-          Entretenimiento
-        </a>
-
-        <a href="deportes.html">
-          Deportes
-        </a>
-
-        <a href="tecnologia.html">
-          Tecnología
-        </a>
-
-        <a href="mexico.html">
-          México
-        </a>
-
-        <a href="dinero.html">
-          Dinero
-        </a>
-
-        <a href="tramites.html" class="active">
-          Trámites
-        </a>
-
-        <a href="contacto.html">
-          Contacto
-        </a>
-
-      </nav>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="deportes.html">Deportes</a>
+            <a href="entretenimiento.html">Entretenimiento</a>
+            <a href="tecnologia.html">Tecnología</a>
+            <a href="dinero.html">Dinero</a>
+            <a href="politica.html">Política</a>
+            <a href="tramites.html">Trámites</a>
+        </nav>
 
     </div>
 
-  </header>
+</header>
 
+<main>
 
-  <!-- HERO -->
+    <section class="hero">
 
-  <section class="hero">
-
-    <div class="hero-box">
-
-      <div class="hero-label">
-        🇲🇽 GUÍA DE TRÁMITES
-      </div>
-
-      <h1>
-        Tus trámites,
-        <span>más fáciles de encontrar</span>
-      </h1>
-
-      <p>
-        Encuentra información organizada sobre trámites,
-        documentos y servicios que pueden ser de utilidad
-        para ciudadanos en México.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTENT -->
-
-  <main class="content">
-
-
-    <!-- SEARCH -->
-
-    <div class="search-box">
-
-      <input
-        type="search"
-        id="searchInput"
-        placeholder="Buscar un trámite..."
-      >
-
-      <button
-        class="search-button"
-        onclick="buscar()"
-      >
-        Buscar
-      </button>
-
-    </div>
-
-
-    <!-- CATEGORIES -->
-
-    <div class="section-title">
-
-      <h2>
-        Categorías
-      </h2>
-
-      <span id="contador">
-        9 trámites
-      </span>
-
-    </div>
-
-
-    <div class="categories">
-
-      <button
-        class="category active"
-        data-category="todos"
-      >
-        Todos
-      </button>
-
-      <button
-        class="category"
-        data-category="documentos"
-      >
-        📄 Documentos
-      </button>
-
-      <button
-        class="category"
-        data-category="identificacion"
-      >
-        🪪 Identificación
-      </button>
-
-      <button
-        class="category"
-        data-category="impuestos"
-      >
-        💰 Impuestos
-      </button>
-
-      <button
-        class="category"
-        data-category="transporte"
-      >
-        🚗 Transporte
-      </button>
-
-      <button
-        class="category"
-        data-category="viajes"
-      >
-        ✈️ Viajes
-      </button>
-
-      <button
-        class="category"
-        data-category="empleo"
-      >
-        💼 Empleo
-      </button>
-
-    </div>
-
-
-    <!-- CARDS -->
-
-    <div class="section-title">
-
-      <h2>
-        Trámites populares
-      </h2>
-
-      <span>
-        INFORMACIÓN
-      </span>
-
-    </div>
-
-
-    <div
-      class="cards"
-      id="cards"
-    >
-
-
-      <article
-        class="card"
-        data-category="identificacion documentos"
-      >
-
-        <div class="card-icon">
-          🪪
-        </div>
-
-        <h3>
-          CURP
-        </h3>
+        <h1>
+            Tus trámites, <span>más fáciles de encontrar</span>
+        </h1>
 
         <p>
-          Información general sobre la Clave Única de
-          Registro de Población y cómo consultar tus datos.
+            Encuentra información organizada sobre trámites,
+            documentos y servicios que pueden ser de utilidad
+            para ciudadanos en México.
         </p>
-
-        <span class="card-tag">
-          Identificación
-        </span>
-
-      </article>
-
-
-      <article
-        class="card"
-        data-category="impuestos"
-      >
-
-        <div class="card-icon">
-          💰
-        </div>
-
-        <h3>
-          RFC
-        </h3>
-
-        <p>
-          Información general relacionada con el Registro
-          Federal de Contribuyentes y obligaciones fiscales.
-        </p>
-
-        <span class="card-tag">
-          Impuestos
-        </span>
-
-      </article>
-
-
-      <article
-        class="card"
-        data-category="identificacion"
-      >
-
-        <div class="card-icon">
-          🗳️
-        </div>
-
-        <h3>
-          Credencial para votar
-        </h3>
-
-        <p>
-          Información general sobre la identificación
-          oficial emitida por el INE.
-        </p>
-
-        <span class="card-tag">
-          Identificación
-        </span>
-
-      </article>
-
-
-      <article
-        class="card"
-        data-category="viajes documentos"
-      >
-
-        <div class="card-icon">
-          🛂
-        </div>
-
-        <h3>
-          Pasaporte
-        </h3>
-
-        <p>
-          Información general sobre el documento necesario
-          para realizar viajes internacionales.
-        </p>
-
-        <span class="card-tag">
-          Viajes
-        </span>
-
-      </article>
-
-
-      <article
-        class="card"
-        data-category="transporte"
-      >
-
-        <div class="card-icon">
-          🚗
-        </div>
-
-        <h3>
-          Licencia de conducir
-        </h3>
-
-        <p>
-          Información general sobre licencias de conducir
-          y trámites relacionados con vehículos.
-        </p>
-
-        <span class="card-tag">
-          Transporte
-        </span>
-
-      </article>
-
-
-      <article
-        class="card"
-        data-category="empleo"
-      >
-
-        <div class="card-icon">
-          💼
-        </div>
-
-        <h3>
-          Trámites relacionados con empleo
-        </h3>
-
-        <p>
-          Información general sobre documentos y procesos
-          que pueden solicitarse en situaciones laborales.
-        </p>
-
-        <span class="card-tag">
-          Empleo
-        </span>
-
-      </article>
-
-
-      <article
-        class="card"
-        data-category="documentos"
-      >
-
-        <div class="card-icon">
-          📄
-        </div>
-
-        <h3>
-          Acta de nacimiento
-        </h3>
-
-        <p>
-          Información general sobre la consulta y obtención
-          de copias certificadas.
-        </p>
-
-        <span class="card-tag">
-          Documentos
-        </span>
-
-      </article>
-
-
-      <article
-        class="card"
-        data-category="documentos"
-      >
-
-        <div class="card-icon">
-          🏠
-        </div>
-
-        <h3>
-          Comprobantes y documentos
-        </h3>
-
-        <p>
-          Información general sobre documentos que pueden
-          ser solicitados para diferentes trámites.
-        </p>
-
-        <span class="card-tag">
-          Documentos
-        </span>
-
-      </article>
-
-
-      <article
-        class="card"
-        data-category="viajes"
-      >
-
-        <div class="card-icon">
-          ✈️
-        </div>
-
-        <h3>
-          Viajes internacionales
-        </h3>
-
-        <p>
-          Información general sobre documentación y
-          requisitos que pueden aplicar al viajar.
-        </p>
-
-        <span class="card-tag">
-          Viajes
-        </span>
-
-      </article>
-
-
-    </div>
-
-
-    <div
-      class="no-results"
-      id="noResults"
-    >
-
-      <h3>
-        No encontramos ese trámite
-      </h3>
-
-      <p>
-        Prueba con otra palabra o selecciona otra categoría.
-      </p>
-
-    </div>
-
-
-    <!-- INFORMATION -->
-
-    <section class="info-box">
-
-      <h2>
-        ⚠️ Información importante
-      </h2>
-
-      <p>
-        Esta sección funciona como una guía informativa.
-        Los requisitos, costos, horarios, documentos y
-        procedimientos pueden cambiar. Antes de realizar
-        un trámite, <strong>verifica siempre la información
-        directamente con la institución oficial correspondiente.</strong>
-      </p>
 
     </section>
 
 
-  </main>
+    <div class="busqueda">
+
+        <input
+            type="search"
+            id="buscador"
+            placeholder="Buscar un trámite..."
+            autocomplete="off"
+        >
+
+        <button onclick="buscarTramite()">
+            Buscar
+        </button>
+
+    </div>
 
 
-  <!-- FOOTER -->
+    <section>
 
-  <footer>
+        <div class="seccion-titulo">
 
-    <strong>
-      Tendencias MX
-    </strong>
+            <h2>Categorías</h2>
 
-    <p>
-      Noticias, tendencias, entretenimiento, deportes,
-      tecnología, México, dinero y trámites.
-    </p>
+            <div class="contador" id="contador">
+                9 trámites
+            </div>
 
-    <p>
-      © 2026 Tendencias MX · Todos los derechos reservados.
-    </p>
-
-  </footer>
+        </div>
 
 
-  <script>
+        <div class="filtros">
 
-    const categories =
-      document.querySelectorAll(".category");
+            <button class="activo" onclick="filtrar('todos',this)">
+                Todos
+            </button>
 
-    const cards =
-      document.querySelectorAll(".card");
+            <button onclick="filtrar('documentos',this)">
+                📄 Documentos
+            </button>
 
-    const searchInput =
-      document.getElementById("searchInput");
+            <button onclick="filtrar('identificacion',this)">
+                🪪 Identificación
+            </button>
 
-    const contador =
-      document.getElementById("contador");
+            <button onclick="filtrar('impuestos',this)">
+                💰 Impuestos
+            </button>
 
-    const noResults =
-      document.getElementById("noResults");
+            <button onclick="filtrar('transporte',this)">
+                🚗 Transporte
+            </button>
+
+            <button onclick="filtrar('viajes',this)">
+                ✈️ Viajes
+            </button>
+
+            <button onclick="filtrar('empleo',this)">
+                💼 Empleo
+            </button>
+
+        </div>
+
+    </section>
 
 
-    let categoriaActual = "todos";
+    <section>
+
+        <div class="seccion-titulo">
+            <h2>Trámites populares</h2>
+        </div>
+
+        <div id="contenedor" class="grid"></div>
+
+    </section>
 
 
-    categories.forEach(button => {
+    <section class="info">
 
-      button.addEventListener(
-        "click",
-        function() {
+        <h2>⚠️ Información importante</h2>
 
-          categories.forEach(btn => {
-            btn.classList.remove("active");
-          });
+        <p>
+            Esta sección funciona como una guía informativa.
+            Los requisitos, costos, horarios, documentos y
+            procedimientos pueden cambiar. Antes de realizar
+            un trámite, verifica siempre la información
+            directamente con la institución oficial correspondiente.
+        </p>
 
-          this.classList.add("active");
+    </section>
 
-          categoriaActual =
-            this.dataset.category;
+</main>
 
-          filtrar();
 
-        }
-      );
+<footer>
+    <strong>TendenciasMX</strong> · Información y servicios para México
+</footer>
+
+
+<script>
+
+const tramites = [
+
+    {
+        nombre:"CURP",
+        categoria:"identificacion",
+        categoriaNombre:"Identificación",
+        icono:"🪪",
+        descripcion:"Información general sobre la Clave Única de Registro de Población y cómo consultar tus datos.",
+        url:"https://www.gob.mx/curp/"
+    },
+
+    {
+        nombre:"RFC",
+        categoria:"impuestos",
+        categoriaNombre:"Impuestos",
+        icono:"💰",
+        descripcion:"Información general relacionada con el Registro Federal de Contribuyentes y obligaciones fiscales.",
+        url:"https://wwwmatnp.sat.gob.mx/personas/tramites-del-rfc"
+    },
+
+    {
+        nombre:"Credencial para votar",
+        categoria:"identificacion",
+        categoriaNombre:"Identificación",
+        icono:"🗳️",
+        descripcion:"Información general sobre la identificación oficial emitida por el INE y sus principales trámites.",
+        url:"https://www.ine.mx/credencial/"
+    },
+
+    {
+        nombre:"Pasaporte",
+        categoria:"viajes",
+        categoriaNombre:"Viajes",
+        icono:"🛂",
+        descripcion:"Información general sobre el documento necesario para realizar viajes internacionales y cómo consultar requisitos.",
+        url:"https://www.gob.mx/pasaporte/"
+    },
+
+    {
+        nombre:"Licencia de conducir",
+        categoria:"transporte",
+        categoriaNombre:"Transporte",
+        icono:"🚗",
+        descripcion:"Información general sobre licencias de conducir y trámites relacionados con vehículos.",
+        url:"https://www.gob.mx/tramites"
+    },
+
+    {
+        nombre:"Trámites relacionados con empleo",
+        categoria:"empleo",
+        categoriaNombre:"Empleo",
+        icono:"💼",
+        descripcion:"Información general sobre documentos y procesos que pueden solicitarse en situaciones laborales.",
+        url:"https://www.gob.mx/tramites"
+    },
+
+    {
+        nombre:"Acta de nacimiento",
+        categoria:"documentos",
+        categoriaNombre:"Documentos",
+        icono:"📄",
+        descripcion:"Información general sobre la consulta y obtención de copias certificadas del acta de nacimiento.",
+        url:"https://www.gob.mx/ActaNacimiento/"
+    },
+
+    {
+        nombre:"Comprobantes y documentos",
+        categoria:"documentos",
+        categoriaNombre:"Documentos",
+        icono:"🏠",
+        descripcion:"Información general sobre documentos que pueden ser solicitados para diferentes trámites.",
+        url:"https://www.gob.mx/tramites"
+    },
+
+    {
+        nombre:"Viajes internacionales",
+        categoria:"viajes",
+        categoriaNombre:"Viajes",
+        icono:"✈️",
+        descripcion:"Información general sobre documentación y requisitos que pueden aplicar al viajar.",
+        url:"https://www.gob.mx/sre"
+    }
+
+];
+
+
+const contenedor = document.getElementById("contenedor");
+const contador = document.getElementById("contador");
+const buscador = document.getElementById("buscador");
+
+
+function escapar(texto){
+
+    return String(texto)
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
+}
+
+
+function renderizar(lista){
+
+    contador.textContent =
+        lista.length +
+        (lista.length === 1 ? " trámite" : " trámites");
+
+
+    if(lista.length === 0){
+
+        contenedor.innerHTML = `
+            <div class="vacio">
+                <h3>No encontramos ese trámite</h3>
+                <p>
+                    Prueba con otra palabra o selecciona
+                    una categoría.
+                </p>
+            </div>
+        `;
+
+        return;
+    }
+
+
+    contenedor.innerHTML = lista.map(tramite => `
+
+        <article class="card">
+
+            <div class="icono">
+                ${escapar(tramite.icono)}
+            </div>
+
+            <span class="categoria">
+                ${escapar(tramite.categoriaNombre)}
+            </span>
+
+            <h3>
+                ${escapar(tramite.nombre)}
+            </h3>
+
+            <p>
+                ${escapar(tramite.descripcion)}
+            </p>
+
+            <a
+                class="btn-tramite"
+                href="${escapar(tramite.url)}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Consultar información oficial →
+            </a>
+
+        </article>
+
+    `).join("");
+
+}
+
+
+function filtrar(categoria, boton){
+
+    document
+        .querySelectorAll(".filtros button")
+        .forEach(btn => btn.classList.remove("activo"));
+
+    boton.classList.add("activo");
+
+    buscador.value = "";
+
+    if(categoria === "todos"){
+
+        renderizar(tramites);
+
+    }else{
+
+        const resultado = tramites.filter(
+            tramite => tramite.categoria === categoria
+        );
+
+        renderizar(resultado);
+
+    }
+
+}
+
+
+function buscarTramite(){
+
+    const texto =
+        buscador.value
+        .trim()
+        .toLowerCase();
+
+    if(!texto){
+
+        renderizar(tramites);
+
+        return;
+    }
+
+
+    const resultado = tramites.filter(tramite => {
+
+        return (
+            tramite.nombre.toLowerCase().includes(texto) ||
+            tramite.descripcion.toLowerCase().includes(texto) ||
+            tramite.categoriaNombre.toLowerCase().includes(texto)
+        );
 
     });
 
 
-    searchInput.addEventListener(
-      "input",
-      filtrar
-    );
+    document
+        .querySelectorAll(".filtros button")
+        .forEach(btn => btn.classList.remove("activo"));
+
+    renderizar(resultado);
+
+}
 
 
-    function buscar() {
-
-      filtrar();
-
-      document
-        .getElementById("cards")
-        .scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-
-    }
+buscador.addEventListener("input", buscarTramite);
 
 
-    function filtrar() {
+renderizar(tramites);
 
-      const texto =
-        searchInput.value
-          .toLowerCase()
-          .trim();
-
-      let visibles = 0;
-
-
-      cards.forEach(card => {
-
-        const categoria =
-          card.dataset.category.toLowerCase();
-
-        const contenido =
-          card.textContent.toLowerCase();
-
-
-        const coincideCategoria =
-          categoriaActual === "todos" ||
-          categoria.includes(categoriaActual);
-
-
-        const coincideTexto =
-          texto === "" ||
-          contenido.includes(texto);
-
-
-        if (
-          coincideCategoria &&
-          coincideTexto
-        ) {
-
-          card.style.display = "";
-
-          visibles++;
-
-        } else {
-
-          card.style.display = "none";
-
-        }
-
-      });
-
-
-      contador.textContent =
-        visibles +
-        (
-          visibles === 1
-            ? " trámite"
-            : " trámites"
-        );
-
-
-      noResults.style.display =
-        visibles === 0
-          ? "block"
-          : "none";
-
-    }
-
-  </script>
-
+</script>
 
 </body>
 </html>
