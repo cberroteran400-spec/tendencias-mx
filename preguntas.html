@@ -106,7 +106,6 @@ main{
 .search-box{
     max-width:650px;
     margin:30px auto 40px;
-    position:relative;
 }
 
 .search-box input{
@@ -165,6 +164,7 @@ main{
     font-weight:bold;
     min-width:25px;
     text-align:center;
+    transition:.2s;
 }
 
 .faq-answer{
@@ -222,6 +222,12 @@ main{
     color:#6b7280;
 }
 
+.info a{
+    color:#16a34a;
+    font-weight:700;
+    text-decoration:none;
+}
+
 footer{
     background:#111827;
     color:#9ca3af;
@@ -235,6 +241,7 @@ footer strong{
 }
 
 @media(max-width:850px){
+
     .header-inner{
         flex-direction:column;
         align-items:center;
@@ -250,6 +257,7 @@ footer strong{
 }
 
 @media(max-width:600px){
+
     main{
         padding:35px 15px 50px;
     }
@@ -282,6 +290,7 @@ footer strong{
 <body>
 
 <header>
+
     <div class="header-inner">
 
         <a href="index.html" class="logo">
@@ -289,79 +298,129 @@ footer strong{
         </a>
 
         <nav>
+
             <a href="index.html">Inicio</a>
+
             <a href="noticias.html">Noticias</a>
+
             <a href="deportes.html">Deportes</a>
+
             <a href="entretenimiento.html">Entretenimiento</a>
+
             <a href="tecnologia.html">Tecnología</a>
+
             <a href="dinero.html">Dinero</a>
+
             <a href="politica.html">Política</a>
+
             <a href="tramites.html">Trámites</a>
-            <a href="contacto.html">Contacto</a>
+
+            <!-- ENLACE CORREGIDO -->
+            <a href="./contacto.html">Contacto</a>
+
             <a href="preguntas.html">Preguntas</a>
+
         </nav>
 
     </div>
+
 </header>
+
 
 <main>
 
     <section class="hero">
-        <h1>Preguntas <span>frecuentes</span></h1>
+
+        <h1>
+            Preguntas <span>frecuentes</span>
+        </h1>
+
         <p>
             Encuentra respuestas rápidas sobre TendenciasMX,
             nuestras secciones, noticias, trámites y funcionamiento del sitio.
         </p>
+
     </section>
 
+
     <div class="search-box">
+
         <input
             type="text"
             id="buscador"
             placeholder="🔎 Buscar una pregunta..."
             oninput="buscarPreguntas()"
         >
+
     </div>
+
 
     <div class="category">
         <h2>Sobre TendenciasMX</h2>
     </div>
 
+
     <section class="faq-list">
 
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Qué es TendenciasMX?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 TendenciasMX es un sitio de información organizado por diferentes
                 categorías como noticias, deportes, entretenimiento, tecnología,
                 dinero, política y trámites.
+
             </div>
+
         </div>
 
+
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Qué tipo de información puedo encontrar?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 Puedes encontrar información y contenidos relacionados con
                 actualidad, deportes, entretenimiento, tecnología, economía,
                 empresas, política y trámites de interés para México.
+
             </div>
+
         </div>
 
+
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿TendenciasMX tiene diferentes secciones?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 Sí. Cada sección está organizada de manera independiente para
                 facilitar que encuentres el contenido que buscas.
+
             </div>
+
         </div>
 
     </section>
@@ -371,42 +430,69 @@ footer strong{
         <h2>Noticias y contenido</h2>
     </div>
 
+
     <section class="faq-list">
 
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿De dónde provienen las noticias?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 TendenciasMX puede enlazar y presentar información procedente
                 de diferentes fuentes de información. Cuando corresponde,
                 puedes utilizar el enlace de la noticia para consultar la
                 publicación original.
+
             </div>
+
         </div>
 
+
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Puedo leer la noticia original?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 Sí. En las publicaciones que cuentan con un enlace a la fuente
                 original puedes acceder directamente al sitio donde fue publicada.
+
             </div>
+
         </div>
 
+
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Las noticias se actualizan?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 El contenido del sitio puede actualizarse periódicamente.
                 La disponibilidad y frecuencia de actualización puede variar
                 dependiendo de cada sección y de sus fuentes.
+
             </div>
+
         </div>
 
     </section>
@@ -416,43 +502,70 @@ footer strong{
         <h2>Trámites</h2>
     </div>
 
+
     <section class="faq-list">
 
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Puedo realizar un trámite directamente en TendenciasMX?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 TendenciasMX funciona como un sitio informativo. Para realizar
                 un trámite debes seguir las indicaciones y, cuando corresponda,
                 utilizar el sitio oficial de la institución responsable.
+
             </div>
+
         </div>
 
+
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Dónde encuentro información sobre CURP, RFC o pasaporte?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 Puedes consultar nuestra sección de Trámites, donde encontrarás
                 información organizada sobre documentos, identificación,
                 impuestos, transporte, viajes y otros procedimientos.
+
             </div>
+
         </div>
 
+
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Los enlaces de trámites son oficiales?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 Siempre que sea posible, los enlaces deben dirigir hacia las
                 páginas oficiales de las instituciones correspondientes.
                 Antes de proporcionar datos personales o realizar un pago,
                 verifica que estés en el sitio oficial.
+
             </div>
+
         </div>
 
     </section>
@@ -462,58 +575,96 @@ footer strong{
         <h2>Contacto y sugerencias</h2>
     </div>
 
+
     <section class="faq-list">
 
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Cómo puedo contactar a TendenciasMX?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 Puedes utilizar nuestra sección de Contacto para enviar una
                 consulta, sugerencia o comentario.
+
             </div>
+
         </div>
 
+
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Puedo sugerir una noticia?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 Sí. Las sugerencias pueden enviarse desde la sección de Contacto.
                 La recepción y publicación de una sugerencia dependerá de su
                 contenido y de las fuentes disponibles.
+
             </div>
+
         </div>
 
+
         <div class="faq">
+
             <button class="faq-question" onclick="toggleFaq(this)">
+
                 ¿Puedo reportar un error?
+
                 <span class="icon">+</span>
+
             </button>
+
             <div class="faq-answer">
+
                 Sí. Si encuentras un enlace incorrecto, información que necesita
                 actualización o algún problema del sitio, puedes comunicarlo
                 desde la sección de Contacto.
+
             </div>
+
         </div>
 
     </section>
 
 
     <div class="info">
+
         <h3>¿No encontraste lo que buscabas?</h3>
+
         <p>
+
             Si tienes una pregunta que no aparece aquí, visita la sección
-            <strong>Contacto</strong> para enviar tu consulta o sugerencia.
+
+            <a href="./contacto.html">Contacto</a>
+
+            para enviar tu consulta o sugerencia.
+
         </p>
+
     </div>
 
 </main>
 
+
 <footer>
+
     © 2026 <strong>TendenciasMX</strong> · Información y actualidad
+
 </footer>
 
 
@@ -547,6 +698,7 @@ function buscarPreguntas(){
         if(contenido.includes(texto)){
 
             faq.style.display = "block";
+
             encontrados++;
 
         }else{
@@ -557,23 +709,33 @@ function buscarPreguntas(){
 
     });
 
+
     let mensaje = document.getElementById("sinResultados");
+
 
     if(!mensaje){
 
         mensaje = document.createElement("div");
+
         mensaje.id = "sinResultados";
+
         mensaje.className = "no-results";
+
         mensaje.innerHTML = `
             <h3>No encontramos esa pregunta</h3>
-            <p>Prueba con otra palabra como noticias, trámites, contacto o TendenciasMX.</p>
+            <p>
+                Prueba con otra palabra como noticias,
+                trámites, contacto o TendenciasMX.
+            </p>
         `;
 
         document.querySelector("main").appendChild(mensaje);
 
     }
 
-    mensaje.style.display = encontrados === 0 ? "block" : "none";
+
+    mensaje.style.display =
+        encontrados === 0 ? "block" : "none";
 
 }
 
