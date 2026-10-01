@@ -37,7 +37,7 @@ jobs:
           import time
           import hashlib
           from datetime import datetime, timezone, timedelta
-          from urllib.parse import urlparse
+          from urllib.parse import urlparse, urljoin
 
           import feedparser
           import requests
@@ -118,6 +118,17 @@ jobs:
                   return ""
               return re.sub(r"\s+", " ", str(texto)).strip()
 
+          def limpiar_url(url):
+              if not url:
+                  return ""
+
+              url = str(url).strip()
+
+              if url.startswith("//"):
+                  return "https:" + url
+
+              return url
+
           def imagen_rechazada(url):
               if not url:
                   return True
@@ -129,8 +140,9 @@ jobs:
 
               u = url.lower()
 
-              host = urlparse(u).netloc
-              ruta = urlparse(u).path
+              partes = urlparse(u)
+              host = partes.netloc
+              ruta = partes.path
 
               hosts_google = [
                   "google.com",
@@ -210,11 +222,6 @@ jobs:
               return False
 
           def comprobar_imagen_real(url):
-              """
-              Comprueba que la URL realmente entregue una imagen
-              y que no sea una imagen diminuta, favicon o placeholder.
-              """
-
               if imagen_rechazada(url):
                   return False
 
@@ -273,17 +280,6 @@ jobs:
                   and not imagen_rechazada(url)
               )
 
-          def limpiar_url(url):
-              if not url:
-                  return ""
-
-              url = str(url).strip()
-
-              if url.startswith("//"):
-                  url = "https:" + url
-
-              return url
-
           def resolver_google_news(url):
               if not url:
                   return ""
@@ -337,12 +333,7 @@ jobs:
               return ""
 
           def candidato_es_logo(candidato, elemento=None):
-              """
-              Rechaza imágenes cuyo propio HTML indique
-              que son logos, iconos, avatares o imágenes genéricas.
-              """
-
-              texto = candidato.lower()
+              texto = str(candidato or "").lower()
 
               palabras = [
                   "google",
@@ -383,11 +374,6 @@ jobs:
               return False
 
           def imagen_hash(url):
-              """
-              Obtiene un hash del archivo para evitar que
-              el mismo logo genérico aparezca repetido.
-              """
-
               try:
                   respuesta = SESION.get(
                       url,
@@ -408,6 +394,336 @@ jobs:
 
               except Exception:
                   return ""
+
+          # =================================================
+          # NUEVO:
+          # EXTRAER IMAGEN DIRECTAMENTE DEL RSS
+          # =================================================
+
+          def extraer_imagen_desde_rss(entry):
+              """
+              Busca primero imágenes que el propio RSS ya proporciona.
+              No toca la página del artículo.
+              """
+
+              if entry is None:
+                  return ""
+
+              candidatos = []
+
+              def agregar(valor):
+                  if not valor:
+                      return
+
+                  if isinstance(valor, bytes):
+                      try:
+                          valor = valor.decode("utf-8", "ignore")
+                      except Exception:
+                          return
+
+                  valor = str(valor).strip()
+
+                  if not valor:
+                      return
+
+                  candidatos.append(valor)
+
+              # ---------------------------------------------
+              # 1. media_content
+              # ---------------------------------------------
+
+              media_content = entry.get(
+                  "media_content",
+                  []
+              )
+
+              if isinstance(media_content, dict):
+                  media_content = [
+                      media_content
+                  ]
+
+              if isinstance(media_content, list):
+
+                  for media in media_content:
+
+                      if not isinstance(
+                          media,
+                          dict
+                      ):
+                          continue
+
+                      for clave in (
+                          "url",
+                          "href",
+                          "src"
+                      ):
+                          agregar(
+                              media.get(clave)
+                          )
+
+              # ---------------------------------------------
+              # 2. media_thumbnail
+              # ---------------------------------------------
+
+              media_thumbnail = entry.get(
+                  "media_thumbnail",
+                  []
+              )
+
+              if isinstance(
+                  media_thumbnail,
+                  dict
+              ):
+                  media_thumbnail = [
+                      media_thumbnail
+                  ]
+
+              if isinstance(
+                  media_thumbnail,
+                  list
+              ):
+
+                  for media in media_thumbnail:
+
+                      if not isinstance(
+                          media,
+                          dict
+                      ):
+                          continue
+
+                      for clave in (
+                          "url",
+                          "href",
+                          "src"
+                      ):
+                          agregar(
+                              media.get(clave)
+                          )
+
+              # ---------------------------------------------
+              # 3. enclosures
+              # ---------------------------------------------
+
+              enclosures = entry.get(
+                  "enclosures",
+                  []
+              )
+
+              if isinstance(
+                  enclosures,
+                  dict
+              ):
+                  enclosures = [
+                      enclosures
+                  ]
+
+              if isinstance(
+                  enclosures,
+                  list
+              ):
+
+                  for enclosure in enclosures:
+
+                      if not isinstance(
+                          enclosure,
+                          dict
+                      ):
+                          continue
+
+                      tipo = str(
+                          enclosure.get(
+                              "type",
+                              ""
+                          )
+                      ).lower()
+
+                      href = (
+                          enclosure.get("href")
+                          or enclosure.get("url")
+                          or enclosure.get("src")
+                      )
+
+                      if (
+                          href
+                          and (
+                              "image/" in tipo
+                              or not tipo
+                          )
+                      ):
+                          agregar(href)
+
+              # ---------------------------------------------
+              # 4. campos comunes personalizados del RSS
+              # ---------------------------------------------
+
+              for clave in (
+                  "image",
+                  "image_url",
+                  "imageUrl",
+                  "thumbnail",
+                  "thumbnail_url",
+                  "thumbnailUrl",
+                  "featured_image",
+                  "featuredImage",
+              ):
+
+                  valor = entry.get(
+                      clave
+                  )
+
+                  if isinstance(
+                      valor,
+                      dict
+                  ):
+
+                      for subclave in (
+                          "url",
+                          "href",
+                          "src"
+                      ):
+                          agregar(
+                              valor.get(
+                                  subclave
+                              )
+                          )
+
+                  elif isinstance(
+                      valor,
+                      list
+                  ):
+
+                      for elemento in valor:
+
+                          if isinstance(
+                              elemento,
+                              dict
+                          ):
+
+                              for subclave in (
+                                  "url",
+                                  "href",
+                                  "src"
+                              ):
+                                  agregar(
+                                      elemento.get(
+                                          subclave
+                                      )
+                                  )
+
+                          else:
+                              agregar(
+                                  elemento
+                              )
+
+                  else:
+                      agregar(valor)
+
+              # ---------------------------------------------
+              # 5. media:content / media:thumbnail
+              #    como namespaces de feedparser
+              # ---------------------------------------------
+
+              try:
+                  for clave, valor in entry.items():
+
+                      clave_lower = str(
+                          clave
+                      ).lower()
+
+                      if (
+                          "media_content" in clave_lower
+                          or "media_thumbnail" in clave_lower
+                      ):
+
+                          if isinstance(
+                              valor,
+                              list
+                          ):
+
+                              for elemento in valor:
+
+                                  if isinstance(
+                                      elemento,
+                                      dict
+                                  ):
+
+                                      for subclave in (
+                                          "url",
+                                          "href",
+                                          "src"
+                                      ):
+                                          agregar(
+                                              elemento.get(
+                                                  subclave
+                                              )
+                                          )
+
+                                  else:
+                                      agregar(
+                                          elemento
+                                      )
+
+                          elif isinstance(
+                              valor,
+                              dict
+                          ):
+
+                              for subclave in (
+                                  "url",
+                                  "href",
+                                  "src"
+                              ):
+                                  agregar(
+                                      valor.get(
+                                          subclave
+                                      )
+                                  )
+
+              except Exception:
+                  pass
+
+              # ---------------------------------------------
+              # PROBAR CANDIDATOS RSS
+              # ---------------------------------------------
+
+              vistos = set()
+
+              for candidato in candidatos:
+
+                  candidato = limpiar_url(
+                      candidato
+                  )
+
+                  if not candidato:
+                      continue
+
+                  if candidato in vistos:
+                      continue
+
+                  vistos.add(candidato)
+
+                  if imagen_rechazada(
+                      candidato
+                  ):
+                      continue
+
+                  if candidato_es_logo(
+                      candidato
+                  ):
+                      continue
+
+                  if comprobar_imagen_real(
+                      candidato
+                  ):
+
+                      print(
+                          "Imagen REAL encontrada directamente en RSS:",
+                          candidato
+                      )
+
+                      return candidato
+
+              return ""
 
           def extraer_imagen(url_articulo):
               if not url_articulo:
@@ -441,7 +757,7 @@ jobs:
                   candidatos = []
 
                   # -----------------------------------------
-                  # 1. OPEN GRAPH
+                  # OPEN GRAPH
                   # -----------------------------------------
 
                   for meta in soup.find_all("meta"):
@@ -470,7 +786,7 @@ jobs:
                           )
 
                   # -----------------------------------------
-                  # 2. TWITTER
+                  # TWITTER
                   # -----------------------------------------
 
                   for meta in soup.find_all("meta"):
@@ -495,7 +811,7 @@ jobs:
                           )
 
                   # -----------------------------------------
-                  # 3. JSON-LD
+                  # JSON-LD
                   # -----------------------------------------
 
                   for script in soup.find_all(
@@ -524,12 +840,11 @@ jobs:
                           )
 
                   # -----------------------------------------
-                  # 4. IMAGENES DEL ARTICULO
+                  # IMAGENES
                   # -----------------------------------------
 
                   for img in soup.find_all("img"):
 
-                      # Revisar primero el contexto HTML
                       if candidato_es_logo(
                           "",
                           img
@@ -576,23 +891,10 @@ jobs:
 
                       vistos.add(candidato)
 
-                      if candidato.startswith("/"):
-                          dominio = (
-                              urlparse(base).scheme
-                              + "://"
-                              + urlparse(base).netloc
-                          )
-
-                          candidato = (
-                              dominio
-                              + candidato
-                          )
-
-                      if candidato.startswith("//"):
-                          candidato = (
-                              "https:"
-                              + candidato
-                          )
+                      candidato = urljoin(
+                          base,
+                          candidato
+                      )
 
                       if candidato_es_logo(
                           candidato,
@@ -604,10 +906,6 @@ jobs:
                           candidato
                       ):
                           continue
-
-                      # -------------------------------------
-                      # COMPROBACION REAL
-                      # -------------------------------------
 
                       if not comprobar_imagen_real(
                           candidato
@@ -767,7 +1065,6 @@ jobs:
           # =================================================
 
           imagenes_usadas = set()
-          hashes_imagenes = set()
 
           for noticia in mapa.values():
 
@@ -777,7 +1074,6 @@ jobs:
               )
 
               if imagen_valida(imagen):
-
                   imagenes_usadas.add(
                       imagen
                   )
@@ -790,111 +1086,12 @@ jobs:
           cambios = False
 
           # =================================================
-          # REPARAR IMAGENES EXISTENTES
+          # DESCARGAR RSS
           # =================================================
 
           print("")
           print(
-              "REVISION DE IMAGENES EXISTENTES"
-          )
-          print(
-              "==================================="
-          )
-
-          for url, noticia in list(
-              mapa.items()
-          ):
-
-              imagen_actual = noticia.get(
-                  "imagen",
-                  ""
-              )
-
-              # ---------------------------------------------
-              # MUY IMPORTANTE:
-              # Si la imagen existente es sospechosa,
-              # TAMBIEN se repara.
-              # ---------------------------------------------
-
-              necesita_reparacion = (
-                  not imagen_valida(
-                      imagen_actual
-                  )
-              )
-
-              if not necesita_reparacion:
-
-                  # Comprobar también que la imagen
-                  # realmente siga siendo una imagen.
-                  if not comprobar_imagen_real(
-                      imagen_actual
-                  ):
-                      necesita_reparacion = True
-
-              if not necesita_reparacion:
-                  continue
-
-              print("")
-              print(
-                  "REPARANDO:",
-                  noticia.get(
-                      "titulo",
-                      ""
-                  )
-              )
-
-              imagen_nueva = extraer_imagen(
-                  url
-              )
-
-              if (
-                  imagen_nueva
-                  and imagen_nueva
-                  not in imagenes_usadas
-              ):
-
-                  noticia["imagen"] = (
-                      imagen_nueva
-                  )
-
-                  imagenes_usadas.add(
-                      imagen_nueva
-                  )
-
-                  cambios = True
-
-                  print(
-                      "NUEVA IMAGEN:",
-                      imagen_nueva
-                  )
-
-              else:
-
-                  # Si no encontramos una imagen real,
-                  # dejamos el campo vacío.
-                  # NO ponemos logo de Google.
-                  if noticia.get(
-                      "imagen",
-                      ""
-                  ) != "":
-
-                      noticia["imagen"] = ""
-
-                      cambios = True
-
-                  print(
-                      "No se encontro imagen real."
-                  )
-
-              time.sleep(0.3)
-
-          # =================================================
-          # NUEVAS NOTICIAS RSS
-          # =================================================
-
-          print("")
-          print(
-              "DESCARGANDO NUEVAS NOTICIAS"
+              "DESCARGANDO RSS PARA RECUPERAR IMAGENES"
           )
           print(
               "==================================="
@@ -906,6 +1103,8 @@ jobs:
                   days=LIMITE_DIAS
               )
           )
+
+          entradas_rss = {}
 
           for categoria_fuente, feed_url in FUENTES:
 
@@ -961,8 +1160,214 @@ jobs:
                   if fecha < limite_fecha:
                       continue
 
-                  if url in mapa:
+                  entradas_rss[url] = (
+                      entry,
+                      categoria_fuente
+                  )
 
+                  contador += 1
+
+          print("")
+          print(
+              "Entradas RSS disponibles:",
+              len(entradas_rss)
+          )
+
+          # =================================================
+          # REPARAR SOLAMENTE NOTICIAS SIN IMAGEN
+          # =================================================
+
+          print("")
+          print(
+              "RECUPERANDO IMAGENES FALTANTES"
+          )
+          print(
+              "==================================="
+          )
+
+          for url, noticia in list(
+              mapa.items()
+          ):
+
+              imagen_actual = noticia.get(
+                  "imagen",
+                  ""
+              )
+
+              # =================================================
+              # IMPORTANTE:
+              # SI YA TIENE UNA IMAGEN NO SE TOCA.
+              # =================================================
+
+              if imagen_valida(
+                  imagen_actual
+              ):
+                  continue
+
+              print("")
+              print(
+                  "SIN IMAGEN:",
+                  noticia.get(
+                      "titulo",
+                      ""
+                  )
+              )
+
+              imagen_nueva = ""
+
+              # =================================================
+              # 1. PRIMERO RSS
+              # =================================================
+
+              if url in entradas_rss:
+
+                  entry, categoria_fuente = (
+                      entradas_rss[url]
+                  )
+
+                  imagen_nueva = (
+                      extraer_imagen_desde_rss(
+                          entry
+                      )
+                  )
+
+                  if imagen_nueva:
+
+                      print(
+                          "RECUPERADA DESDE RSS:",
+                          imagen_nueva
+                      )
+
+              # =================================================
+              # 2. SI RSS NO TIENE, USAR PAGINA
+              # =================================================
+
+              if (
+                  not imagen_nueva
+                  and url
+              ):
+
+                  print(
+                      "RSS sin imagen válida. "
+                      "Intentando página..."
+                  )
+
+                  imagen_nueva = (
+                      extraer_imagen(
+                          url
+                      )
+                  )
+
+              # =================================================
+              # GUARDAR SOLO SI ES REAL
+              # =================================================
+
+              if (
+                  imagen_nueva
+                  and imagen_nueva
+                  not in imagenes_usadas
+              ):
+
+                  noticia["imagen"] = (
+                      imagen_nueva
+                  )
+
+                  imagenes_usadas.add(
+                      imagen_nueva
+                  )
+
+                  cambios = True
+
+                  print(
+                      "NUEVA IMAGEN:",
+                      imagen_nueva
+                  )
+
+              else:
+
+                  if noticia.get(
+                      "imagen",
+                      ""
+                  ) != "":
+
+                      noticia["imagen"] = ""
+
+                      cambios = True
+
+                  print(
+                      "No se encontro imagen real."
+                  )
+
+              time.sleep(0.2)
+
+          # =================================================
+          # NUEVAS NOTICIAS
+          # =================================================
+
+          print("")
+          print(
+              "PROCESANDO NUEVAS NOTICIAS"
+          )
+          print(
+              "==================================="
+          )
+
+          for categoria_fuente, feed_url in FUENTES:
+
+              print("")
+              print(
+                  "PROCESANDO RSS:",
+                  feed_url
+              )
+
+              try:
+
+                  feed = feedparser.parse(
+                      feed_url
+                  )
+
+              except Exception as e:
+
+                  print(
+                      "Error RSS:",
+                      e
+                  )
+
+                  continue
+
+              contador = 0
+
+              for entry in feed.entries:
+
+                  if contador >= MAX_POR_FEED:
+                      break
+
+                  titulo = normalizar_texto(
+                      entry.get(
+                          "title",
+                          ""
+                      )
+                  )
+
+                  url = normalizar_texto(
+                      entry.get(
+                          "link",
+                          ""
+                      )
+                  )
+
+                  if not titulo or not url:
+                      continue
+
+                  fecha = fecha_item(
+                      entry
+                  )
+
+                  if fecha < limite_fecha:
+                      continue
+
+                  # Si ya existe, NO modificar nada.
+                  if url in mapa:
                       contador += 1
                       continue
 
@@ -977,9 +1382,27 @@ jobs:
                       )
                   )
 
-                  imagen = extraer_imagen(
-                      url
+                  # =================================================
+                  # PRIMERO RSS
+                  # =================================================
+
+                  imagen = (
+                      extraer_imagen_desde_rss(
+                          entry
+                      )
                   )
+
+                  # =================================================
+                  # DESPUES PAGINA
+                  # =================================================
+
+                  if not imagen:
+
+                      imagen = (
+                          extraer_imagen(
+                              url
+                          )
+                      )
 
                   noticia = {
                       "titulo": titulo,
@@ -1021,7 +1444,7 @@ jobs:
                   )
 
           # =================================================
-          # ORDENAR NOTICIAS
+          # ORDENAR
           # =================================================
 
           noticias_finales = list(
@@ -1167,6 +1590,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No hay cambios para guardar."
           else
-            git commit -m "Reparar imagenes de noticias"
+            git commit -m "Recuperar imagenes desde RSS"
             git push
           fi
