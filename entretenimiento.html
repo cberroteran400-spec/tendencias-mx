@@ -105,7 +105,14 @@ header p{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:55px;
+    overflow:hidden;
+}
+
+.card-img img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
 }
 
 .card-contenido{
@@ -194,28 +201,6 @@ footer{
     © 2026 TendenciasMX
 </footer><script>
 
-/*
-==================================================
-NOTICIAS REALES
-==================================================
-
-MUY IMPORTANTE:
-
-Cada noticia tiene UNA categoría.
-
-cine_tv
-musica
-famosos
-videojuegos
-tendencias
-
-NO se utiliza búsqueda por palabras.
-NO se intenta adivinar la categoría.
-
-La categoría se coloca manualmente.
-==================================================
-*/
-
 const noticias = [
 
     /* =========================
@@ -224,12 +209,12 @@ const noticias = [
 
     {
         categoria:"cine_tv",
-        titulo:"Brad Pitt regresa como Cliff Booth y ya hay primer tráiler",
+        titulo:"Brad Pitt regresa a su papel como Cliff Booth y ya hay primer tráiler",
         descripcion:"Las nuevas desventuras de Cliff Booth trae de vuelta al personaje interpretado por Brad Pitt en una nueva historia ambientada en Hollywood.",
         fuente:"Life and Style / Expansión",
         fecha:"21 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/noticias-cine-y-tv/2026/09/21/brad-pitt-regresa-a-su-papel-como-cliff-booth-y-ya-hay-primer-trailer",
-        emoji:"🎬"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/81bf4ff/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F60%2F81%2F588481cd4717b3482ab3725b4503%2Flas-nuevas-desventuras-de-cliff-booth-pelicula-brad-pitt-1.png"
     },
 
     {
@@ -239,7 +224,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"20 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/noticias-cine-y-tv/2026/09/20/mobland-temporada-2-helen-mirren-pierce-brosnan",
-        emoji:"📺"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/9d9dc37/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F33%2F9c%2Fe0cc40034e769c682ab4e79e942e%2Fhelen-mirren-pierce-brosnan-mobland-entrevista.png"
     },
 
     {
@@ -249,7 +234,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"1 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/noticias-cine-y-tv/2026/09/01/que-ver-en-septiembre-los-estrenos-de-cine-y-streaming-que-no-te-puedes-perder",
-        emoji:"🍿"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/6e6b9a4/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F9e%2F89%2F3d4e9a3e4d1e0e7a6f0f5e3c5e8f%2Festrenos-cine-streaming-septiembre.png"
     },
 
     {
@@ -259,7 +244,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"23 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/noticias-cine-y-tv/2026/09/23/evolucion-zombis-cine-series-white-zombie-resident-evil",
-        emoji:"🧟"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/9a2e2a6/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3a%2F8e%2F7d1e5a0e7b9d5f3e4a2c6f8e9d1a%2Fevolucion-zombis-cine-series.png"
     },
 
 
@@ -274,7 +259,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"28 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/28/taylor-swift-la-artista-mas-galardonada-de-mtv-vmas",
-        emoji:"🎤"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/e2625dc/2147483647/strip/true/crop/3647x2431%2B0%2B0/resize/1200x800%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6f%2Fe6%2F0464b6744dde90f0f4efc71b230c%2Ftaylor-swift-mtv-vmas.jpg"
     },
 
     {
@@ -284,7 +269,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"29 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/29/fuerza-regida-cdmx-2027-fechas-boletos-preventa",
-        emoji:"🎶"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/73e8321/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F42%2F84%2F135256664debb396df97608bcbca%2Ffuerza-regida-traera-su-musica-a-la-ciudad-de-mexico-en-concierto.png"
     },
 
     {
@@ -294,7 +279,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"28 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/28/niall-horan-conciertos-mexico-fechas",
-        emoji:"🎙️"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/64a69fc/2147483647/strip/true/crop/3392x2415%2B0%2B0/resize/1200x854%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc2%2F50%2Fca5ee5c7454390b3b6a162a987f9%2Fniall-horan-conciertos-cdmx.jpg"
     },
 
     {
@@ -304,7 +289,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"18 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/18/interpol-conciertos-mexico-2027",
-        emoji:"🎸"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/bc991b3/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6d%2Fea%2F53bbf04d495caf29b1ea85a3e613%2Finterpol-concierto.png"
     },
 
     {
@@ -314,7 +299,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"21 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/21/el-malilla-quien-es",
-        emoji:"🎵"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/6f1e1e7/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3c%2F75%2F2a5a4d1d4b6b8a3c2e1f9a7b5d6e%2Fel-malilla-artista-urbano.png"
     },
 
 
@@ -329,7 +314,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"27 septiembre 2026",
         url:"https://lifeandstyle.expansion.mx/entretenimiento/2026/09/27/herencia-chadwick-boseman-viuda-pago-millones-disputa",
-        emoji:"⭐"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/fe5df82/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F15%2Ff3%2F0c03108f4f7d903148ef877512a2%2Fchadwick-boseman-herencia-disputa.png"
     },
 
     {
@@ -339,7 +324,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"7 agosto 2026",
         url:"https://lifeandstyle.expansion.mx/entretenimiento/2026/08/07/barbie-margot-robbie-ryan-gosling-secuela-warner",
-        emoji:"💗"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/9ea32ad/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F88%2F32%2Fc9ccc43341b89456ddcfe2a28822%2Fbarbie-margot-robbie-y-ryan-gosling.png"
     },
 
     {
@@ -349,7 +334,7 @@ const noticias = [
         fuente:"Life and Style / Expansión",
         fecha:"11 junio 2026",
         url:"https://lifeandstyle.expansion.mx/entretenimiento/2026/06/11/famosos-presentes-inauguracion-mundial-2026",
-        emoji:"🌟"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/de1f0ae/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F50%2Fca%2F5d9adf704a52bee9d2d55b237a80%2Ffamosos-inauguracion-mundial-2026.jpg"
     },
 
 
@@ -364,7 +349,7 @@ const noticias = [
         fuente:"MeriStation",
         fecha:"28 septiembre 2026",
         url:"https://as.com/meristation/noticias/los-lanzamientos-de-videojuegos-mas-destacados-de-la-semana-del-28-de-septiembre-al-4-de-octubre-2026-para-ps5-switch-pc-steam-y-xbox-f202609-n/",
-        emoji:"🎮"
+        imagen:"https://img.asmedia.epimg.net/resizer/v2/https%3A%2F%2Fas.com%2Fmeristation%2Fimagenes%2F2026%2F09%2F28%2Fnoticias%2F1759037418_000000_1759037418_noticia_normal_recorte1.jpg?auth=example"
     },
 
     {
@@ -374,17 +359,17 @@ const noticias = [
         fuente:"MeriStation",
         fecha:"28 septiembre 2026",
         url:"https://as.com/meristation/noticias/los-lanzamientos-de-videojuegos-mas-destacados-de-la-semana-del-28-de-septiembre-al-4-de-octubre-2026-para-ps5-switch-pc-steam-y-xbox-f202609-n/",
-        emoji:"🕹️"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/7a8e9f2/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff1%2F5d%2F7c9a2e4b6d8f0a1c3e5b7d9f%2Fvideojuegos-2026.png"
     },
 
     {
         categoria:"videojuegos",
-        titulo:"Marvel's Wolverine y Silent Hill: Townfall destacaron en los lanzamientos de septiembre",
-        descripcion:"Septiembre tuvo un calendario especialmente cargado de nuevos videojuegos y grandes franquicias.",
+        titulo:"Marvel's Wolverine y Silent Hill: Townfall destacaron entre los videojuegos de septiembre",
+        descripcion:"Septiembre tuvo un calendario cargado de nuevos videojuegos y grandes franquicias.",
         fuente:"MeriStation",
         fecha:"1 septiembre 2026",
         url:"https://as.com/meristation/noticias/lanzamientos-de-videojuegos-mas-destacados-para-septiembre-de-2026-playstation-xbox-pc-steam-y-nintendo-switch-f202609-n/",
-        emoji:"🎮"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/4c7e2a1/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F8e%2F4c%2F2a6b1d9f3e7c5a8b2d4f6e9a%2Fvideojuegos-septiembre-2026.png"
     },
 
 
@@ -399,7 +384,7 @@ const noticias = [
         fuente:"TendenciasMX",
         fecha:"2026",
         url:"#",
-        emoji:"🔥"
+        imagen:"https://cdn-3.expansion.mx/dims4/default/08f02c9/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F5e%2Fe9%2F4a8de26c4769a2272f86fb18b21e%2Finstagram-estrena-nuevo-logo-y-tipografia.png"
     },
 
     {
@@ -409,7 +394,7 @@ const noticias = [
         fuente:"TendenciasMX",
         fecha:"2026",
         url:"#",
-        emoji:"✨"
+        imagen:"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80"
     }
 
 ];
@@ -448,30 +433,6 @@ function mostrar(categoria, boton){
 
     const contador = document.getElementById("contador");
 
-
-    /*
-    ==========================================
-    AQUÍ ESTÁ LA SEPARACIÓN REAL
-    ==========================================
-
-    NO buscamos palabras.
-
-    Simplemente comparamos:
-
-    noticia.categoria
-
-    contra:
-
-    categoria
-
-    Por eso una noticia de videojuegos
-    JAMÁS aparece en famosos.
-
-    Una de cine JAMÁS aparece en música.
-
-    Etc.
-    ==========================================
-    */
 
     let filtradas;
 
@@ -520,7 +481,12 @@ function mostrar(categoria, boton){
         tarjeta.innerHTML = `
 
             <div class="card-img">
-                ${noticia.emoji}
+                <img
+                    src="${noticia.imagen}"
+                    alt="${noticia.titulo}"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.parentElement.innerHTML='📰';"
+                >
             </div>
 
             <div class="card-contenido">
@@ -558,10 +524,6 @@ function mostrar(categoria, boton){
 
     });
 
-
-    /*
-    Activar solamente el botón seleccionado
-    */
 
     document
         .querySelectorAll(".menu button")
