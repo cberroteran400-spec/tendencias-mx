@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-10-01T06:50:38.992480+00:00",
+  "actualizado": "2026-10-01T07:11:21.580581+00:00",
   "fuente": "Expansión",
+  "total": 100,
+  "categorias": {
+    "mexico": 24,
+    "mundo": 18,
+    "economia": 30,
+    "deportes": 6,
+    "entretenimiento": 6,
+    "tecnologia": 16
+  },
   "noticias": [
-    {
-      "titulo": "México lleva al G20 dos frentes de tensión: presión sobre el acero y coerción en alimentos",
-      "descripcion": "Marcelo Ebrard puso sobre la mesa la sobrecapacidad, los subsidios y las diferencias entre productores de acero, además del riesgo de que los alimentos sean utilizados como instrumento de presión.",
-      "enlace": "https://expansion.mx/economia/2026/09/30/mexico-g20-tension-acero-alimentos-ebrard",
-      "fecha": "Wed, 30 Sep 2026 23:47:18 GMT",
-      "fuente": "Expansión",
-      "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/a0050a4/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc3%2Fe1%2F158440ec4c5e9472f130f63ba917%2Fmexico-g20-acero-alimentos-ebrard.jpg"
-    },
     {
       "titulo": "¿Cansado del clutch? Estos hatchback, sedanes y SUV automáticos son los más accesibles en México",
       "descripcion": "Dejar atrás el clutch no necesariamente obliga a brincar a las versiones más caras. Entre los modelos de entrada hay diferencias importantes en precio, transmisión, seguridad y equipamiento.",
@@ -18,7 +18,8 @@
       "fecha": "Wed, 30 Sep 2026 23:09:57 GMT",
       "fuente": "Expansión",
       "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/e27e7f1/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F80%2F8c%2F882ade7941789cca39147c31bc47%2Fpalanca-carro-automatico.png"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/e27e7f1/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F80%2F8c%2F882ade7941789cca39147c31bc47%2Fpalanca-carro-automatico.png",
+      "rss": "mexico"
     },
     {
       "titulo": "La nueva Mazda CX-90 PHEV llega a México con tecnología híbrida enchufable",
@@ -27,25 +28,8 @@
       "fecha": "Wed, 30 Sep 2026 22:50:35 GMT",
       "fuente": "Expansión",
       "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/f980a8e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F46%2F5e%2F49f3d7c0420dab88c5b12ca8ab32%2Fmazda-cx90-camioneta-phev-interiores-piel-negra-desktop-v1-06.jpg"
-    },
-    {
-      "titulo": "México tiene DiMo y CoDi; Perú apuesta por Bim y un modelo que podría cambiar los pagos digitales",
-      "descripcion": "Compartamos Banco llevó Bim a sus operaciones de crédito y ahora participa en un piloto que podría permitir pagar desde una billetera digital aunque el dinero esté en otro banco.",
-      "enlace": "https://expansion.mx/economia/2026/09/30/mexico-tiene-codi-peru-compartamos-banco-apuesta-bim",
-      "fecha": "Wed, 30 Sep 2026 22:12:07 GMT",
-      "fuente": "Expansión",
-      "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/1b7ff98/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6a%2F51%2F2455104d41918a1d1d2633c3d78d%2Fimage-20260930-165229-solo-cambia-su-expresin-a-algo-menos-feliz-un-poco-sin-las-banderas-de-per.jpg"
-    },
-    {
-      "titulo": "DeepSeek y Huawei unen fuerzas para reducir la dependencia de Nvidia en chips de IA",
-      "descripcion": "DeepSeek liberó herramientas de código abierto adaptadas a los chips Ascend de Huawei, en un intento por facilitar el desarrollo de inteligencia artificial sobre hardware chino.",
-      "enlace": "https://expansion.mx/tecnologia/2026/09/30/deepseek-huawei-unen-fuerzas-reducir-dependencia-nvidia",
-      "fecha": "Wed, 30 Sep 2026 21:37:14 GMT",
-      "fuente": "Expansión",
-      "categoria": "tecnologia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/83a0b81/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F8b%2F6ade715346528d2f0848b6ce801d%2Fhuawei-vs-nvidia.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/f980a8e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F46%2F5e%2F49f3d7c0420dab88c5b12ca8ab32%2Fmazda-cx90-camioneta-phev-interiores-piel-negra-desktop-v1-06.jpg",
+      "rss": "tendencias"
     },
     {
       "titulo": "Cancelación de vuelos de Aeroméxico y Volaris al Aeropuerto de Tulum recrudece crisis turística en el destino",
@@ -54,7 +38,8 @@
       "fecha": "Wed, 30 Sep 2026 21:32:02 GMT",
       "fuente": "Expansión",
       "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/8351cde/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F08%2F32%2F074131a54aaf81416778ccbefabf%2Faeromexico-volaris-tulum-clean-v2.png"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/8351cde/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F08%2F32%2F074131a54aaf81416778ccbefabf%2Faeromexico-volaris-tulum-clean-v2.png",
+      "rss": "mexico"
     },
     {
       "titulo": "Murió su hermano y Alberto Baillères cambió sus planes: terminó repartiendo cerveza en un camión",
@@ -63,7 +48,8 @@
       "fecha": "Wed, 30 Sep 2026 21:24:25 GMT",
       "fuente": "Expansión",
       "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/68817c8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F08%2F13%2F12c1eee84a85b359b5dd099efbc7%2Falberto-bailleres-venta-cerveza.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/68817c8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F08%2F13%2F12c1eee84a85b359b5dd099efbc7%2Falberto-bailleres-venta-cerveza.jpg",
+      "rss": "mexico"
     },
     {
       "titulo": "El Valor de Educar: de programa de becas a trampolín profesional para 8,500 jóvenes mexicanos",
@@ -72,16 +58,8 @@
       "fecha": "Wed, 30 Sep 2026 20:52:46 GMT",
       "fuente": "Expansión",
       "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/a83c944/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F13%2F25%2Fd384e66e442abccc985b0f93f103%2F82a9694.jpg"
-    },
-    {
-      "titulo": "El Valor de Educar: Constellation Brands hace entrega de 1,500 becas en Sonora, Coahuila y Veracruz",
-      "descripcion": "Constellation Brands celebró en Ciudad Obregón, Piedras Negras y Veracruz la generación 2026-2027 de su programa de excelencia El Valor de Educar, que ya acumula 8,500 jóvenes becados en el país.",
-      "enlace": "https://expansion.mx/carrera/2026/09/30/el-valor-de-educar-constellation-brands-hace-entrega-de-1-500-becas-en-sonora-coahuila-y-veracruz",
-      "fecha": "Wed, 30 Sep 2026 20:34:04 GMT",
-      "fuente": "Expansión",
-      "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/5212a0a/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F7c%2Fdb%2Fa41aac774277a5b9a7baa6bdca26%2F82a0221.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/a83c944/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F13%2F25%2Fd384e66e442abccc985b0f93f103%2F82a9694.jpg",
+      "rss": "mexico"
     },
     {
       "titulo": "La inflación superaría 4% sin apoyos fiscales a gasolinas y diésel, asegura el secretario de Hacienda",
@@ -89,8 +67,9 @@
       "enlace": "https://expansion.mx/economia/2026/09/30/comparecencia-shcp-edgar-amador-zamora",
       "fecha": "Wed, 30 Sep 2026 19:35:04 GMT",
       "fuente": "Expansión",
-      "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/1867295/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fdb%2F9f%2Fb478c43b4cd2a884be036c132a2c%2F1-edgar-amador-1101297-comparecencia-edgar-amador-diputados-impreso.jpeg"
+      "categoria": "deportes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/1867295/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fdb%2F9f%2Fb478c43b4cd2a884be036c132a2c%2F1-edgar-amador-1101297-comparecencia-edgar-amador-diputados-impreso.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "México vive un boom exportador, pero no todos los estados son ganadores",
@@ -99,7 +78,8 @@
       "fecha": "Wed, 30 Sep 2026 19:14:41 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/27d45fa/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F7f%2F03%2Fc0ec96d043c1bd3d599d21e9b533%2Fboom-exportador-mexico-estados-electronica-2026.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/27d45fa/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F7f%2F03%2Fc0ec96d043c1bd3d599d21e9b533%2Fboom-exportador-mexico-estados-electronica-2026.jpg",
+      "rss": "general"
     },
     {
       "titulo": "El nuevo CLA 2027 de Mercedes-Benz llega con versiones híbrida y eléctrica",
@@ -108,7 +88,8 @@
       "fecha": "Wed, 30 Sep 2026 19:12:11 GMT",
       "fuente": "Expansión",
       "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/7761a6b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc1%2F5c%2Fe83f2b9149a68626ed0645554b10%2Fmercedes-benz-cla-2027.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/7761a6b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc1%2F5c%2Fe83f2b9149a68626ed0645554b10%2Fmercedes-benz-cla-2027.jpg",
+      "rss": "general"
     },
     {
       "titulo": "Tu iPhone se puede convertir en cazador de ofertas automático, así activas la configuración de Apple",
@@ -117,7 +98,8 @@
       "fecha": "Wed, 30 Sep 2026 18:42:41 GMT",
       "fuente": "Expansión",
       "categoria": "tecnologia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/0224d8f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F28%2Fcb%2Fadb9b5b14c0bbe856dbca1da6742%2Fiphone-oferta-en-pantalla.png"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/0224d8f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F28%2Fcb%2Fadb9b5b14c0bbe856dbca1da6742%2Fiphone-oferta-en-pantalla.png",
+      "rss": "general"
     },
     {
       "titulo": "¿De qué era empresario Jorge Kahwagi? De medios de comunicación hasta negocios de salud y verificentros",
@@ -125,8 +107,9 @@
       "enlace": "https://expansion.mx/empresas/2026/09/30/jorge-kahwagi-empresas-cargos-carrera-empresarial",
       "fecha": "Wed, 30 Sep 2026 18:16:32 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/20b3e11/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1d%2Fa1%2F7953a0f84bf2bc1abc9c087c86f1%2Fjorge-kahwagi-empresario.jpeg"
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/20b3e11/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1d%2Fa1%2F7953a0f84bf2bc1abc9c087c86f1%2Fjorge-kahwagi-empresario.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "John Ternus prepara una revolución en la estrategia de Apple y este es su plan",
@@ -135,7 +118,8 @@
       "fecha": "Wed, 30 Sep 2026 16:30:39 GMT",
       "fuente": "Expansión",
       "categoria": "tecnologia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/a55db35/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fdc%2F0e%2Fe7aac1cc4c21ba801f616a8a0007%2Fjohn-ternus-cambios-apple.jpeg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/a55db35/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fdc%2F0e%2Fe7aac1cc4c21ba801f616a8a0007%2Fjohn-ternus-cambios-apple.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "Trump reúne a Google, Nvidia y Anthropic para fijar reglas a la IA, pero el pacto tiene una grieta",
@@ -144,7 +128,8 @@
       "fecha": "Wed, 30 Sep 2026 14:27:34 GMT",
       "fuente": "Expansión",
       "categoria": "tecnologia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/0a4254e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F9c%2F60%2Fdf47ca8647429cc23a8d8351fe5d%2Fdonald-trump.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/0a4254e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F9c%2F60%2Fdf47ca8647429cc23a8d8351fe5d%2Fdonald-trump.jpg",
+      "rss": "general"
     },
     {
       "titulo": "¿Cómo cuidar a tus hijos en WhatsApp? La app tendrá nuevas funciones para protegerlos",
@@ -153,7 +138,8 @@
       "fecha": "Wed, 30 Sep 2026 13:01:13 GMT",
       "fuente": "Expansión",
       "categoria": "tecnologia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/6928e0f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F88%2F6e%2F2f2da17a4285b08d4b3424081738%2Fwhatsapp-cuentas-menores.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/6928e0f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F88%2F6e%2F2f2da17a4285b08d4b3424081738%2Fwhatsapp-cuentas-menores.jpg",
+      "rss": "general"
     },
     {
       "titulo": "Más 'dientes' para las aduanas, pero con presupuesto recortado y fallas operativas",
@@ -162,7 +148,8 @@
       "fecha": "Wed, 30 Sep 2026 11:55:00 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/dc162e0/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F40%2F83%2F1f10854a486dbe25f149e7b545fd%2Freforma-aduanera-2027-fallas-operativas-presupuesto-anam.jpeg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/dc162e0/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F40%2F83%2F1f10854a486dbe25f149e7b545fd%2Freforma-aduanera-2027-fallas-operativas-presupuesto-anam.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "Clientes llevan un año sin sus joyas por la huelga del Monte de Piedad y reclaman: “No quiero perderlas”",
@@ -171,7 +158,8 @@
       "fecha": "Wed, 30 Sep 2026 00:55:10 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/149343b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc6%2F80%2Fc9e3e3084bbea1b04e7faadb52b5%2F2-monte-piedad-huelga-1063552-continua-huelga-nacional-monte-de-piedad-web.jpeg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/149343b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc6%2F80%2Fc9e3e3084bbea1b04e7faadb52b5%2F2-monte-piedad-huelga-1063552-continua-huelga-nacional-monte-de-piedad-web.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "Reforma a la inversión extranjera llega al pleno del Senado entre críticas por sus filtros",
@@ -180,7 +168,348 @@
       "fecha": "Wed, 30 Sep 2026 00:02:21 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/7ed6b2c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4e%2F32%2F4bbdba7b43eab551494fbfcdb8e7%2Fyeidckol-reforma-inversion-extranjera-senado.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/7ed6b2c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4e%2F32%2F4bbdba7b43eab551494fbfcdb8e7%2Fyeidckol-reforma-inversion-extranjera-senado.jpg",
+      "rss": "general"
+    },
+    {
+      "titulo": "¿Cuándo es el Día del Abuelo 2026 en México?",
+      "descripcion": "El Día del Abuelo se celebra cada año durante el mes de agosto, conoce aquí los detalles sobre la celebración.",
+      "enlace": "https://expansion.mx/tendencias/2026/08/26/cuando-es-el-dia-del-abuelo-2026-en-mexico",
+      "fecha": "Wed, 26 Aug 2026 23:37:25 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/83162a7/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F36%2F76%2F5908d1a34cbd8c387e1bdef39248%2Fistock-1887400939.jpeg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "¿Qué pasó en Nepal? Una riada deja más de 384 desaparecidos y 95 muertos: video",
+      "descripcion": "Una posible avalancha de hielo figura entre las hipótesis sobre el origen de la crecida que arrasó comunidades enteras.",
+      "enlace": "https://expansion.mx/mundo/2026/08/26/que-paso-en-nepal-riada-video",
+      "fecha": "Wed, 26 Aug 2026 15:46:43 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/284dbcf/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb4%2F34%2Fad8c10ed4586a933d807754cd7be%2Fnepal-riada.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Al estilo Trump, Abelardo de la Espriella ordena deportación de migrantes irregulares",
+      "descripcion": "El mandatario colombiano comenzó con jornadas de redadas para localizar y deportar a personas que no cuenten con una situación migratoria regular.",
+      "enlace": "https://expansion.mx/mundo/2026/08/25/abelardo-espriella-ordena-deportacion-migrantes-irregulares",
+      "fecha": "Wed, 26 Aug 2026 00:42:58 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/d60c946/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F27%2F07%2F44ffd8534740b15cbd320942aa4f%2Fde-la-espriella-migrantes-irregulares-1.jpeg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Trump recibe a Xi Jinping con honores máximos mientras chocan por inteligencia artificial, Irán y comercio",
+      "descripcion": "Xi Jinping es recibido con honores extraordinarios por Trump en Washington, en una visita que busca mantener el diálogo pese a las tensiones entre ambas potencias.",
+      "enlace": "https://expansion.mx/mundo/2026/09/23/trump-recibe-a-xi-jinping-en-washington-visita-estado",
+      "fecha": "Wed, 23 Sep 2026 23:19:02 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/acd1d2e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F88%2F33%2Fbc5f71f343f2ae4314cd909720b2%2Ftrump-xi-jinping-3.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Tu iPhone puede clonar tu voz y hablar por ti: así puedes activar esta función de Apple",
+      "descripcion": "Una herramienta permite convertir lo que escribes en voz durante conversaciones, llamadas telefónicas y FaceTime.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/23/tu-iphone-puede-clonar-tu-voz-y-usarla-para-hablar-por-ti",
+      "fecha": "Wed, 23 Sep 2026 23:15:51 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/b8c51b6/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ffa%2F1d%2Fd92ab26d4236a6f83cc4091cff3f%2Fiphone.jpeg",
+      "rss": "tecnologia"
+    },
+    {
+      "titulo": "Silicon Valley crea su propia escuela para formar al talento tecnológico del futuro",
+      "descripcion": "La nueva academia tendrá como profesores y conferencistas a líderes de Nvidia, Microsoft y Uber, y busca formar talento con proyectos y experiencia laboral en lugar de una carrera universitaria tradicional.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/23/silicon-valley-crea-escuela-talento-tecnologico",
+      "fecha": "Wed, 23 Sep 2026 23:00:02 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/7259e2b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fce%2F86%2F0613e2974437a31e42dcb64ec56c%2Fsilicon-valley-horowitz-andreessen-academy.png",
+      "rss": "tecnologia"
+    },
+    {
+      "titulo": "Casetas y gasolineras están listas para cobros digitales, asevera Peña Merino",
+      "descripcion": "Las casetas de cobro en carreteras ya tienen infraestructura para leer tags, mientras más del 95% de las gasolineras ya cuentan con terminales punto de venta, explicó el titular de la Agencia de Transformación Digital.",
+      "enlace": "https://expansion.mx/economia/2026/09/23/casetas-gasolineras-listas-pagos-digitales-pena-merino",
+      "fecha": "Wed, 23 Sep 2026 22:05:13 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/3ec5a03/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F95%2F88%2Fab4827184625a960374b5339ca63%2F6-ieps-gasolina-586855-gasolinera-impreso.jpeg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Sin iPhone 18, Qualcomm acelera su plan para sobrevivir a su salida de Apple",
+      "descripcion": "Aunque los iPhone ya no utilizarán los chips de conectividad de Qualcomm, la empresa continúa buscando alianzas con firmas como Google o Xiaomi para asumir el golpe financiero que dejó Apple.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/23/sin-iphone-18-qualcomm-plan",
+      "fecha": "Wed, 23 Sep 2026 22:00:31 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/6caea2c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F85%2Faf%2F30ade16541cf96f6b395d1a089f3%2Fqualcomm-plan-sin-apple-iphone-18-hawai.jpeg",
+      "rss": "tecnologia"
+    },
+    {
+      "titulo": "El negocio de minimis se enfría para Estafeta, pero crece el de refacciones para autos chinos",
+      "descripcion": "El aumento arancelario a este tipo de paquetes de bajo valor, principalmente chinos, también causó estragos en la adquisición de Esteta por parte de la norteamericana UPS.",
+      "enlace": "https://expansion.mx/empresas/2026/09/23/minimis-no-son-negocio-estafeta-oportunidad-autos-chinos",
+      "fecha": "Wed, 23 Sep 2026 21:53:12 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/3969876/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fff%2F12%2F7b530ba84561882e9a6fd18efaf8%2Festafeta.jpeg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "Primero detener la hemorragia arancelaria; después, negociar el futuro del T-MEC: Ildefonso Guajardo",
+      "descripcion": "El exsecretario de Economía y exjefe negociador del T-MEC considera que la relación entre Sheinbaum y Trump será decisiva en una negociación donde comercio y otros asuntos de la agenda bilateral se mezclan.",
+      "enlace": "https://expansion.mx/economia/2026/09/23/guajardo-aranceles-primero-renovacion-tmec-despues",
+      "fecha": "Wed, 23 Sep 2026 21:24:29 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/dca9c6c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fbc%2Fa1%2Fcf4f844e4a46b05e9ff44cd0b32a%2Fildefonso-guajardo-tmec-aranceles-fotoarte-v3.jpg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Era hijo del fundador de La Costeña, creó su empresa con 20 empleados y hoy Jumex mueve 25,116 millones",
+      "descripcion": "Eugenio López Rodea convirtió una apuesta empresarial iniciada en 1961 en una de las principales compañías de bebidas de México, con presencia dentro y fuera del país.",
+      "enlace": "https://expansion.mx/empresas/2026/09/23/hijo-dueno-la-costena-fundo-jumex",
+      "fecha": "Wed, 23 Sep 2026 21:06:59 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/8286bf6/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1a%2Fba%2Ff4db1902441cba42a23ddbf14c3a%2Fla-costena-jumex.jpg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "¿Parking o freno de mano primero? El error al estacionar un carro automático que sí puede dañar la caja",
+      "descripcion": "Estacionar un auto automático parece sencillo, pero una duda sigue dividiendo a muchos conductores: qué hacer primero antes de apagarlo.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/23/parking-freno-mano-primero-error-estacionar-carro-automatico",
+      "fecha": "Wed, 23 Sep 2026 20:43:10 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/81b5186/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F57%2F10%2F1f59883448a9b4e7f1afecbdeffd%2Ffreno-de-mano-carro-automatico.jpeg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "Mientras BBVA reduce sus horarios en sucursales, estos bancos cierran después de las 4",
+      "descripcion": "Si necesitas atención en la tarde, estos bancos pueden ser una opción para realizar trámites y consultar movimientos.",
+      "enlace": "https://expansion.mx/economia/2026/09/23/bbva-reduce-horarios-sucursales-bancos-cierran-despues-4",
+      "fecha": "Wed, 23 Sep 2026 20:15:55 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/fdec8bf/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F8e%2F53%2F2068e9f545208063c6305a028f9c%2Fhorarios-banco-despues-4-2.jpeg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "La Ley de Economía Digital permitirá abrir cuentas bancarias con la CURP biométrica",
+      "descripcion": "La Ley de Economía Digital busca abrir rápido y sencillo cuentas bancarias, mientras otorga facultades a Banxico para garantizar que nuevas cuentas no sean utilizadas para recursos ilícitos.",
+      "enlace": "https://expansion.mx/economia/2026/09/23/curp-digital-abrir-cuentas-bancarias-ley-economia-digital",
+      "fecha": "Wed, 23 Sep 2026 19:35:14 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5d963b2/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F2d%2Ffd%2F1e73fa7e484db80b7da05f5e7ec9%2Fistock-2189457604.jpg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Producción de Nissan cae 25.1%: resiente cierre de plantas en Aguascalientes y Morelos",
+      "descripcion": "El cese de operaciones de COMPAS en el Bajío y CIVAC en el centro del país llevaron a que la firma disminuyera en una cuarta parte sus volúmenes de fabricación en México.",
+      "enlace": "https://expansion.mx/empresas/2026/09/23/nissan-deja-producir-uno-cada-cuatro-autos-mexico",
+      "fecha": "Wed, 23 Sep 2026 18:10:38 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/354e91f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fab%2Fa3%2F48e0051d4a91ae5835eca37d8b1e%2Ffoto-2-3.jpg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "YouTube evoluciona: ahora puedes hablarle para encontrar tus videos favoritos",
+      "descripcion": "Durante Made on YouTube 2026, la plataforma presentó nuevas herramientas de IA que van desde descubrir nuevos contenidos con prompts y comandos de voz, hasta doblaje automático en transmisiones en vivo y más.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/23/youtube-inteligencia-artificial-herramientas-ia-videos",
+      "fecha": "Wed, 23 Sep 2026 17:13:03 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/702c897/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fae%2F24%2F43680dd342b19c7e5f71d88a429d%2Fnuevas-funciones-youtube.jpeg",
+      "rss": "tecnologia"
+    },
+    {
+      "titulo": "El detector de IA que usa tu maestro para cancelar tareas podría estar fallando: esta es la razón",
+      "descripcion": "Aunque algunas herramientas presumen más de 99% de precisión, los expertos advierten que un resultado no basta para probar que un texto fue hecho con IA.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/23/tarea-hecha-con-ia-aunque-hayas-escrito-problema-detectores",
+      "fecha": "Wed, 23 Sep 2026 14:43:30 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/9717da3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4c%2F85%2F00493955469e89f03e700d323d30%2Fdetector-ia-tareas.jpeg",
+      "rss": "tecnologia"
+    },
+    {
+      "titulo": "OCDE mejora pronóstico para México, pero advierte inflación persistente y crédito caro",
+      "descripcion": "La OCDE elevó a 1.5% su previsión de crecimiento para México en 2026, aunque advirtió que la persistencia de la inflación energética y las tasas altas seguirán limitando a la economía.",
+      "enlace": "https://expansion.mx/economia/2026/09/23/ocde-mejora-crecimiento-mexico-inflacion-bolsillo-2026",
+      "fecha": "Wed, 23 Sep 2026 14:16:04 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/75fa77c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb2%2Fc3%2Fbf8afa6248efad215eeadf954b10%2Focde-mexico-crecimiento-inflacion-2026.jpg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Reforma a Ley Aduanera representa atrasos y sobrecostos para importadores y exportadores",
+      "descripcion": "La propuesta busca eliminar la subvaluación de mercancías, pero debe aplicarse sobre operaciones que representen riesgos, y no en general, refieren industriales, agentes aduanales y académicos.",
+      "enlace": "https://expansion.mx/economia/2026/09/23/reforma-ley-aduanera-atrasos-costos-importadores",
+      "fecha": "Wed, 23 Sep 2026 13:05:55 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/2a6a3b9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F76%2F6e%2Fbe9d99024e149f5765ed62db4b97%2F10-aduanas.jpeg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Las cámaras empresariales alertan que limitar deducciones pegará a la inversión y el empleo",
+      "descripcion": "CCE, Coparmex y COMCE respaldan el combate a la evasión, pero señalan que la medida prevista para el próximo año elevará la carga fiscal y presionará la liquidez empresarial.",
+      "enlace": "https://expansion.mx/economia/2026/09/23/limite-deducciones-amenaza-inversion-empleo-formal-ip",
+      "fecha": "Wed, 23 Sep 2026 11:55:26 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/f0acb14/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1a%2Fd7%2F315f21404df3a18538a88266de49%2Fsat-limite-deducciones-empresas-2027.jpg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Pemex destina recursos a 229 campos petroleros, pero 37 concentran el 85% de la producción",
+      "descripcion": "De los 229 campos, 100 son considerados de baja rentabilidad y otros 92 tienen valor nulo o negativo. Un escenario que, según la consultora Welligence, resta eficiencia al negocio de exploración y producción de Pemex.",
+      "enlace": "https://expansion.mx/empresas/2026/09/23/pemex-depende-37-campos-produccion-barriles-92-no-rentables",
+      "fecha": "Wed, 23 Sep 2026 11:55:11 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/146ae0e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F30%2F1b%2F1a05740d4fedab7b7065d9a0449a%2Fpemex-produccion-37-campos.jpeg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "Plan México necesita algo más que inversión para funcionar, advierte Mariana Mazzucato",
+      "descripcion": "México ya tiene varias de las herramientas; el reto, según la economista y profesora del University College London, es dejar de utilizarlas por separado y ponerlas al servicio de objetivos comunes.",
+      "enlace": "https://expansion.mx/economia/2026/09/22/plan-mexico-claves-exito-mariana-mazzucato",
+      "fecha": "Wed, 23 Sep 2026 02:01:20 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/f35693c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F05%2F9e%2F79e362f54e3d82fd11ad9460bdab%2Fplan-mexico-sheinbaum-mazzucato-1200x680.jpg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Emilio Azcárraga quiere ascenso y descenso, pero explica por qué hoy no es viable económicamente en México",
+      "descripcion": "El mandamás del América expuso las razones que por ahora, considera, imposibilitan el regreso del mérito deportivo.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/22/emilio-azcarraga-ascenso-descenso-hoy-no-viable-mexico",
+      "fecha": "Wed, 23 Sep 2026 01:20:19 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/b5e27d8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4e%2Fdc%2F9273d4884979b911a8dbd1902e64%2Femilio-azcarraga-ascenso-descenso-futbol-mexicano-1.jpeg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "La china Changan va por el trono de Toyota: su nuevo plan para entregar refacciones en tiempo récord",
+      "descripcion": "Tras anunciar su alianza con Estafeta, la automotriz busca competir con automotrices japonesas que llevan décadas operando en México.",
+      "enlace": "https://expansion.mx/empresas/2026/09/22/changan-vs-toyota-nuevo-plan-entrega-refacciones-estafeta",
+      "fecha": "Wed, 23 Sep 2026 01:08:32 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5cdb818/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F9e%2F64%2Fbb6904ef47a8b4db924a8ac88a89%2Fwhatsapp-image-2026-09-22-at-6.45.48%20PM.jpeg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "Soriana acelera inversión con más de 961 mdp para abrir y remodelar tiendas en el país",
+      "descripcion": "La inyección de capital permitirá a la empresa abrir y remodelar 26 tiendas, crear 1,000 empleos en Nuevo León y Veracruz y ayudará a fortalecer el crecimiento de su negocio omnincanal.",
+      "enlace": "https://expansion.mx/empresas/2026/09/22/soriana-inversion-961-mdp-tiendas-remodelaciones-2026",
+      "fecha": "Wed, 23 Sep 2026 00:46:16 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/0a995dc/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fef%2Fb5%2Fcb7ac19e454d9e908f5fa5fa7f50%2Fsoriana-facebook.jpeg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "El Nokia 1100 también se fabricó en México: la planta que estuvo detrás del celular más vendido en la historia",
+      "descripcion": "México se encargó de fabricar al teléfono más vendido de la historia, así como otros modelos de Nokia.",
+      "enlace": "https://expansion.mx/empresas/2026/09/22/nokia-1100-mexico-planta-celular-mas-vendido-historia",
+      "fecha": "Wed, 23 Sep 2026 00:17:56 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/be741ec/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F32%2F50%2Fa1eeb5fe44e6b48571fafa1a6d58%2Fnokia-1100-fabrica-mexico-1.jpg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "Israel admite que disparó contra el auto donde iba Hind Rajab, una niña palestina",
+      "descripcion": "El cuerpo de la infante de cinco años fue recuperado acribillado días después de que fuera captada en una llamada a la Media Luna Roja Palestina.",
+      "enlace": "https://expansion.mx/mundo/2026/08/19/israel-admite-que-disparo-contra-hind-rajab",
+      "fecha": "Wed, 19 Aug 2026 23:39:15 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/d91c6b9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe0%2F6a%2F9f3b1023481a9dd2ff1a188b50e6%2Fhind-rajab-que-paso.jpeg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Brote de ébola deja más de 2,000 muertos: \"La epidemia no está bajo control”",
+      "descripcion": "La epidemia ha causado más decesos que el brote de 2018-2020, considerada la más mortífera en la historia de República Democrática del Congo.",
+      "enlace": "https://expansion.mx/mundo/2026/08/19/oms-brote-de-ebola-deja-mas-2-000-muertos",
+      "fecha": "Wed, 19 Aug 2026 18:34:48 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/cf9c0c9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F43%2F21%2Fbf6bbd474496a7d19211c35a8bfd%2Fmuertes-brote-ebola-republica-democratica-del-congo.jpeg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Trump pierde margen de maniobra en la guerra entre EU e Irán",
+      "descripcion": "El fracaso de las negociaciones deja a Washington con menos opciones para contener el conflicto, mientras Teherán gana poder de presión e Israel complica cualquier salida diplomática.",
+      "enlace": "https://expansion.mx/mundo/2026/08/19/trump-pierde-margen-de-maniobra-en-la-guerra-entre-eu-e-iran",
+      "fecha": "Wed, 19 Aug 2026 11:55:28 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/a8947d8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F09%2Fa5%2F701cef634f389e17a19962f9280e%2Fguerra-iran-estrecho-ormuz.jpeg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "La UE propone prohibir las redes sociales a menores de 13 años y multar a las plataformas",
+      "descripcion": "El plan permitiría cuentas supervisadas entre los 13 y 14 años y también alcanzaría a plataformas de video, chatbots de IA y juegos en línea.",
+      "enlace": "https://expansion.mx/mundo/2026/09/16/ue-prohibe-redes-sociales-menores-13",
+      "fecha": "Wed, 16 Sep 2026 21:54:31 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/b946682/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0a%2F1b%2F0b45bc174a7ab21bedb3f874c47f%2Funion-europea-redes-sociales-menores-ursula-von-der-leyen.jpg%20.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Empresas de EU pactan proyectos de petróleo y oro en Venezuela con apoyo de Donald Trump",
+      "descripcion": "Continental Resources negocia operar un bloque con 30,000 millones de barriles, mientras Heeney Capital obtiene derechos sobre una mina de oro.",
+      "enlace": "https://expansion.mx/mundo/2026/09/16/empresas-eu-petroleo-oro-venezuela-trump",
+      "fecha": "Wed, 16 Sep 2026 20:04:09 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/ca2ec77/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F77%2Fa7%2Fa249fe98488f9b87714cdbc53ea1%2Fcontinental-resources-pdvsa-petroleo-venezuela.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "NFL Semana 2: estos son los 3 partidos que no te puedes perder y los lugares dónde van a pasar",
+      "descripcion": "La Semana 2 de la NFL arranca este jueves y tendrá partidos hasta el lunes. Consulta los horarios de los 16 juegos y dónde seguir los encuentros con transmisión confirmada.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/16/nfl-semana-2-partidos-no-te-puedes-perder",
+      "fecha": "Wed, 16 Sep 2026 16:41:03 GMT",
+      "fuente": "Expansión",
+      "categoria": "deportes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/7ca32e8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fmedia%2F2014%2F01%2F19%2Fseattle-nfl-2-reuters.jpg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "¿Qué tiene que ver Robert Kraft ante la polémica salida de Macklemore de la gira de Ed Sheeran?",
+      "descripcion": "La gira del cantante británico por Estados Unidos se ha visto envuelta en polémica por la supuesta conducta \"antisemita\" de uno de sus teloneros.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/15/robert-kraft-polemica-salida-macklemore-gira-ed-sheeran",
+      "fecha": "Wed, 16 Sep 2026 00:17:02 GMT",
+      "fuente": "Expansión",
+      "categoria": "entretenimiento",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/56ead33/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4e%2F14%2Fe1c673b84f0c8b23baa1db6ccaae%2Frobert-kraft-ed-sheeran-macklemore-palestina.jpg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "Cancelan más de 2,000 vuelos por falla técnica en Reino Unido; estos son los aeropuertos afectados",
+      "descripcion": "Una falla similar ocurrió en 2023 y dejó a unos 700,000 pasajeros afectados por retrasos y cancelaciones durante un fin de semana largo.",
+      "enlace": "https://expansion.mx/mundo/2026/09/09/cancelan-mas-2-000-vuelos-falla-tecnica-reino-unido",
+      "fecha": "Wed, 09 Sep 2026 13:46:34 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c99261b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3c%2Fad%2F61aa2d1640a39e3bf07b76650e59%2Faeropuerto-reino-unido.jpg",
+      "rss": "mundo"
     },
     {
       "titulo": "México quiere emular a Brasil y masificar en un año los pagos digitales",
@@ -189,7 +518,8 @@
       "fecha": "Tue, 29 Sep 2026 23:07:32 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/323151f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fff%2F9c%2F877898034320b7c9dc88b0f42efa%2Fpix-pagos-brasil.jpeg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/323151f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fff%2F9c%2F877898034320b7c9dc88b0f42efa%2Fpix-pagos-brasil.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "¿Pagarás impuestos al SAT por pagos digitales? Esto es lo que debes saber de la iniciativa de Ley",
@@ -198,7 +528,8 @@
       "fecha": "Tue, 29 Sep 2026 22:21:48 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/09e2e08/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F44%2F8c%2F78f76fcf4048b42fd63e094a1000%2F7-pago-electronico-264251-cajeros-cobros-impreso-1.jpeg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/09e2e08/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F44%2F8c%2F78f76fcf4048b42fd63e094a1000%2F7-pago-electronico-264251-cajeros-cobros-impreso-1.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "Nu México nombra a Estephany Paulette Ley como CEO",
@@ -207,7 +538,8 @@
       "fecha": "Tue, 29 Sep 2026 22:15:09 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/97fe094/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc5%2Fc9%2F23acbee0406593e6b09ba7d84dfb%2Festephany-paulette-ley-ceo-nu-mexico.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/97fe094/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc5%2Fc9%2F23acbee0406593e6b09ba7d84dfb%2Festephany-paulette-ley-ceo-nu-mexico.jpg",
+      "rss": "general"
     },
     {
       "titulo": "Trump toma el control de la IA y firma acuerdo “moralmente vinculante” para no ralentizar su desarrollo",
@@ -216,7 +548,8 @@
       "fecha": "Tue, 29 Sep 2026 22:11:04 GMT",
       "fuente": "Expansión",
       "categoria": "tecnologia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/24a9dd0/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F44%2F7e%2Fb1329c6544179fe42486443f59e0%2Ftrump-lideres-ia-casa-blanca.jpeg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/24a9dd0/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F44%2F7e%2Fb1329c6544179fe42486443f59e0%2Ftrump-lideres-ia-casa-blanca.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "Peso borra ganancias de 2026; tipo de cambio rompe barrera de 18 unidades por dólar",
@@ -224,8 +557,9 @@
       "enlace": "https://expansion.mx/mercados/2026/09/29/peso-mexicano-borra-ganancia-2026-cotiza-cerca-18-14-dolar",
       "fecha": "Tue, 29 Sep 2026 21:16:13 GMT",
       "fuente": "Expansión",
-      "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/b9994de/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F75%2F4f%2F265aef9e4705909bd924d41c6647%2Fpeso-mexicano-bonos-estados-unidos-dolar-18.png"
+      "categoria": "deportes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/b9994de/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F75%2F4f%2F265aef9e4705909bd924d41c6647%2Fpeso-mexicano-bonos-estados-unidos-dolar-18.png",
+      "rss": "general"
     },
     {
       "titulo": "Emilio Azcárraga quería comprar Chivas, pero Jorge Vergara irrumpió cuando el club estaba en crisis",
@@ -233,8 +567,9 @@
       "enlace": "https://expansion.mx/empresas/2026/09/29/emilio-azcarraga-queria-comprar-chivas",
       "fecha": "Tue, 29 Sep 2026 21:09:59 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/5a37462/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3a%2F84%2F778d72ab4b59a2ac98ef0ef35c10%2Femilio-azcarraga-jorge-vergara.png"
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5a37462/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3a%2F84%2F778d72ab4b59a2ac98ef0ef35c10%2Femilio-azcarraga-jorge-vergara.png",
+      "rss": "general"
     },
     {
       "titulo": "Carlos Slim no le perdona la renta ni a sus propias marcas: ¿por qué Sanborns, Sears y DAX pagan mensualmente?",
@@ -242,8 +577,9 @@
       "enlace": "https://expansion.mx/empresas/2026/09/29/carlos-slim-renta-sus-marcas-sanborns-sears-dax",
       "fecha": "Tue, 29 Sep 2026 21:08:31 GMT",
       "fuente": "Expansión",
-      "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/9024266/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fba%2F0f%2Fb08305334da782e62f185b042415%2Fcarso.jpeg"
+      "categoria": "entretenimiento",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/9024266/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fba%2F0f%2Fb08305334da782e62f185b042415%2Fcarso.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "De Tlatelolco a Halloween: estas son las efemérides de octubre que México conmemora este mes",
@@ -252,7 +588,8 @@
       "fecha": "Tue, 29 Sep 2026 18:43:21 GMT",
       "fuente": "Expansión",
       "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/bc12aaf/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F69%2F0a%2Fc508797e48c481e9835403df4368%2Fefemerides-octubre-2026-1.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/bc12aaf/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F69%2F0a%2Fc508797e48c481e9835403df4368%2Fefemerides-octubre-2026-1.jpg",
+      "rss": "general"
     },
     {
       "titulo": "La IA que trabaja aunque no estés: así son los nuevos Dots de OpenAI",
@@ -261,7 +598,8 @@
       "fecha": "Tue, 29 Sep 2026 18:33:28 GMT",
       "fuente": "Expansión",
       "categoria": "tecnologia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/dff82be/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1e%2Fdd%2Fb13d9bcb4e44b2f1a18bc8227caa%2Fdots-hero-image.png"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/dff82be/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1e%2Fdd%2Fb13d9bcb4e44b2f1a18bc8227caa%2Fdots-hero-image.png",
+      "rss": "general"
     },
     {
       "titulo": "Mercado Libre emite deuda en BIVA ante riesgos de fondeo señalados por Moody’s",
@@ -270,7 +608,8 @@
       "fecha": "Tue, 29 Sep 2026 18:07:30 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/5a6e444/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F15%2Fa2%2F4df12d13408ba83fde142d4dd387%2Fmercado-pago-mercado-libre-deuda-biva-moodys.png"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5a6e444/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F15%2Fa2%2F4df12d13408ba83fde142d4dd387%2Fmercado-pago-mercado-libre-deuda-biva-moodys.png",
+      "rss": "general"
     },
     {
       "titulo": "México vs. Perú: ¿a qué hora es y dónde ver en vivo la transmisión por televisión abierta?",
@@ -278,8 +617,9 @@
       "enlace": "https://expansion.mx/tendencias/2026/09/29/mexico-vs-peru-donde-ver-en-vivo",
       "fecha": "Tue, 29 Sep 2026 17:41:12 GMT",
       "fuente": "Expansión",
-      "categoria": "entretenimiento",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/c77408b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F48%2Fbe%2F20493b6643fa85f2daf0d52b944c%2F1089594-goles-mexico-vs-ecuador-web.jpg"
+      "categoria": "deportes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c77408b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F48%2Fbe%2F20493b6643fa85f2daf0d52b944c%2F1089594-goles-mexico-vs-ecuador-web.jpg",
+      "rss": "general"
     },
     {
       "titulo": "Spotify presenta fallas a nivel global este 29 de septiembre; usuarios no pueden iniciar sesión ni reproducir música",
@@ -287,8 +627,9 @@
       "enlace": "https://expansion.mx/tecnologia/2026/09/29/spotify-falla-hoy-29-de-septiembre",
       "fecha": "Tue, 29 Sep 2026 17:38:55 GMT",
       "fuente": "Expansión",
-      "categoria": "tecnologia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/e9bdcd3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ffc%2Fad%2Fbbac0f5547aa8a26340bf16604bb%2Fspotify-falla-global.jpeg"
+      "categoria": "entretenimiento",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/e9bdcd3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ffc%2Fad%2Fbbac0f5547aa8a26340bf16604bb%2Fspotify-falla-global.jpeg",
+      "rss": "general"
     },
     {
       "titulo": "“Queremos asegurarnos de que sea seguro”: OpenAI retrasa su modelo de IA por preocupaciones internas",
@@ -297,7 +638,8 @@
       "fecha": "Tue, 29 Sep 2026 16:11:17 GMT",
       "fuente": "Expansión",
       "categoria": "tecnologia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/17e460f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fbb%2F94%2F543ad9ba4d6981983bd34106d4e8%2Fopenai-retrasa-modelo-ia.jpg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/17e460f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fbb%2F94%2F543ad9ba4d6981983bd34106d4e8%2Fopenai-retrasa-modelo-ia.jpg",
+      "rss": "general"
     },
     {
       "titulo": "Tipo de cambio cercano a 18 pesos por dólar y Wall Street titubea ante petróleo, tasas y datos de empleo",
@@ -306,7 +648,8 @@
       "fecha": "Tue, 29 Sep 2026 14:49:50 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/6f87b20/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F53%2F39%2Fe42521a54c45a2ea270bb9f811fd%2Fpeso-mexicano-dolar-superpeso-tipo-cambio-septiembre.png"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/6f87b20/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F53%2F39%2Fe42521a54c45a2ea270bb9f811fd%2Fpeso-mexicano-dolar-superpeso-tipo-cambio-septiembre.png",
+      "rss": "general"
     },
     {
       "titulo": "La Ley de Economía Digital contribuirá a la fiscalización del SAT y lucha anti lavado",
@@ -315,52 +658,358 @@
       "fecha": "Tue, 29 Sep 2026 11:55:38 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/3fae7e5/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F11%2Fd3%2F0f18dd1d481c807ac4df21e678ed%2F4-pago-electronico-gettyimages-480662250.jpeg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/3fae7e5/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F11%2Fd3%2F0f18dd1d481c807ac4df21e678ed%2F4-pago-electronico-gettyimages-480662250.jpeg",
+      "rss": "general"
     },
     {
-      "titulo": "Sofipos quieren el mercado de pagos que todavía domina el efectivo",
-      "descripcion": "Las nuevas reglas por venir abren una oportunidad para que Sofipos amplíen su participación en las transacciones digitales y lleguen a pequeños comercios y usuarios que todavía dependen del efectivo.",
-      "enlace": "https://expansion.mx/economia/2026/09/30/sofipos-van-mercado-pagos-todavia-domina-efectivo",
-      "fecha": "Thu, 01 Oct 2026 02:48:43 GMT",
+      "titulo": "BMV será sede en 2027 de la reunión de bolsas iberoamericanas",
+      "descripcion": "La BMV será sede en 2027 de la reunión anual de la FIAB, que dará continuidad a la agenda regional para integrar mercados, facilitar inversiones transfronterizas e impulsar la innovación bursátil.",
+      "enlace": "https://expansion.mx/mercados/2026/09/28/bmv-sera-sede-reunion-anual-fiab-2027",
+      "fecha": "Tue, 29 Sep 2026 01:59:25 GMT",
       "fuente": "Expansión",
       "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/fa842cb/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F75%2F97%2F2502c642404684f452e72a5008c3%2Fsofipos-pagos-digitales-efectivo-mexico.jpg.jpeg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/f41ad5c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fa4%2Ff9%2Ffe0c642f4cc49fdfece805f9a20e%2Fopa-pantera-holdings-traxion-bmv.jpg",
+      "rss": "general"
     },
     {
-      "titulo": "Producción petrolera de Pemex se desploma a su mes más bajo desde que se tiene registro",
-      "descripcion": "La producción de petróleo crudo en el mes de agosto se redujo en un 2.7%, comparado con el mismo periodo del 2025, la menor cifra registrada en la base de datos de Pemex.",
-      "enlace": "https://expansion.mx/empresas/2026/09/30/produccion-petrolera-pemex-mas-baja-desde-que-hay-registro",
-      "fecha": "Thu, 01 Oct 2026 02:24:07 GMT",
+      "titulo": "El nuevo plan corporativo de Starbucks prioriza las licencias",
+      "descripcion": "Cerca de 90% del portafolio internacional de Starbucks opera bajo esquemas de licencia, una estructura que la compañía describe como de menor requerimiento de capital y que permite apoyarse en socios locales.",
+      "enlace": "https://expansion.mx/empresas/2026/09/28/el-nuevo-plan-corporativo-de-starbucks-prioriza-licencias",
+      "fecha": "Tue, 29 Sep 2026 01:25:20 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/ab73b33/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fa0%2Fcc%2F58d02a214345b38bd63e55e637c5%2F5-starbucks-gettyimages-2247644531.jpeg",
+      "rss": "general"
+    },
+    {
+      "titulo": "México todavía guarda municiones para elevar aranceles a importaciones asiáticas",
+      "descripcion": "México ya elevó aranceles a más de 1,400 productos, pero aún conserva margen ante la OMC para endurecer su política frente a países sin tratado.",
+      "enlace": "https://expansion.mx/economia/2026/09/22/mexico-municiones-aranceles-productos-asiaticos",
+      "fecha": "Tue, 22 Sep 2026 23:17:18 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/9b4167d/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fd4%2Fa6%2Fefc8e63f48c28de6c826a78c93fc%2Fimportaciones-china-aranceles-mexico-omc.jpg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Volverse viral en TikTok se ha convertido en un peligro para tiendas y negocios: vender productos que ya no tienen",
+      "descripcion": "Los pedidos de TikTok Shop procesados por Melonn casi se duplicaron en un año, pero un video viral puede dejar a las marcas sin inventario ni capacidad para preparar y entregar las compras a tiempo.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/22/hacerse-viral-tiktok-peligro-tiendas-mexicanas",
+      "fecha": "Tue, 22 Sep 2026 23:00:07 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/2658581/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F88%2Fdf%2F3dc3dcd6418295d266af20cd4ad1%2Fvideo-viral-tiktok-shop-deja-tienda-sin-inventario.jpeg",
+      "rss": "tecnologia"
+    },
+    {
+      "titulo": "NU dice adiós al retiro de efectivo gratis: ya cobrará comisión a partir de esta fecha",
+      "descripcion": "Los usuarios de Nu todavía podrán aprovechar la bonificación hasta las 23:59 horas del 30 de septiembre; después deberán considerar las comisiones de cajeros y establecimientos.",
+      "enlace": "https://expansion.mx/economia/2026/09/22/nu-dice-adios-retiro-efectivo-gratis-cobrara-comision-fecha",
+      "fecha": "Tue, 22 Sep 2026 22:52:19 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/948f446/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fcc%2F04%2Fd0a097674590b3a0b7dcdae694a2%2Fdiseno-sin-titulo-1.png",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Internet, agua y más bienes durables: así cambiaron los hogares mexicanos en cinco años",
+      "descripcion": "Entre 2020 y 2025 aumentó el acceso a internet, agua dentro de la vivienda y bienes como lavadoras, refrigeradores y vehículos.",
+      "enlace": "https://expansion.mx/economia/2026/09/22/inegi-vivienda-mexicana-2025-mas-internet-agua-equipamiento",
+      "fecha": "Tue, 22 Sep 2026 21:44:19 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/bde92ec/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F9f%2Ff1%2Fc803660d435a87b1d8111e3f2076%2Finegi-vivienda-mexicana-2025-mas-internet-agua-equipamiento.jpg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "¿El smartphone morirá frente a la IA? Qualcomm tiene claro su futuro",
+      "descripcion": "Cristiano Amon, CEO de Qualcomm, definió que el futuro de los smartphones es ser el núcleo de contexto que se conecta con otros dispositivos, como gafas inteligentes, computadoras, relojes o incluso coches.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/22/qualcomm-smartphones-no-desapareceran-ia-cristiano-amon",
+      "fecha": "Tue, 22 Sep 2026 21:30:53 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/69fc4b3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fcf%2F09%2F60386cfb4e329358b50b38e00fb8%2Fsmartphones-no-desaparecen-qualcomm.jpg",
+      "rss": "tecnologia"
+    },
+    {
+      "titulo": "México se adelanta a la era cuántica y crea consejo para blindar su seguridad digital",
+      "descripcion": "El Consejo Consultivo Quantum Safe México reunirá a expertos técnicos y normativos para anticipar los riesgos del cómputo cuántico sobre la seguridad de datos, servicios digitales y sistemas criptográficos.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/22/mexico-consejo-riesgos-computo-cuantico-seguridad-digital",
+      "fecha": "Tue, 22 Sep 2026 20:31:48 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/efba0f8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F63%2F52%2F489a649146a784ee34a113f50927%2Fmexico-computo-cuantico-seguridad-digital.png",
+      "rss": "tecnologia"
+    },
+    {
+      "titulo": "Prórroga de Manifestación de Valor Electrónica vence el 30 de septiembre, hay facilidades temporales",
+      "descripcion": "El mayor tiempo para el cumplimiento se otorgó para que las distintas industrias terminen de preparar todos los documentos que respaldarán el valor de las mercancías en aduanas.",
+      "enlace": "https://expansion.mx/economia/2026/09/22/hacienda-prorroga-manifestacion-de-valor-electronica",
+      "fecha": "Tue, 22 Sep 2026 19:32:22 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/6134c6c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3d%2F23%2F7f49ccb84509b292ae6cc1e1fe92%2F11-aduanas.jpeg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Fitch mejora a 1.4% el crecimiento de México para 2026 por el impulso de EU y la IA",
+      "descripcion": "La calificadora elevó en 0.4 puntos porcentuales su pronóstico, aunque advirtió que la incertidumbre por el T-MEC y las reformas internas puede limitar la inversión.",
+      "enlace": "https://expansion.mx/economia/2026/09/22/fitch-mejora-crecimiento-mexico-2026-ia-eu-exportaciones",
+      "fecha": "Tue, 22 Sep 2026 18:51:04 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/638858d/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fd1%2F81%2F51e0763d42d283f1443155f6efc0%2Fla-economia-mexicana-dio-senales-de-recuperacion-pero-los-analistas-no-estan-convencidos.jpeg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Coliseo GNP Seguros: la historia del estadio mundialista que ahora se convierte en foro de conciertos en México",
+      "descripcion": "Anteriormente conocido como Estadio 3 de Marzo, el inmueble comienza a escribir una nueva historia con la presentación de Michael Bublé.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/22/coliseo-gnp-seguros-historia-estadio-foro-conciertos",
+      "fecha": "Tue, 22 Sep 2026 18:39:54 GMT",
+      "fuente": "Expansión",
+      "categoria": "deportes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/7b2b70f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F15%2Fbe%2F38bacb2b4c5385a8756e3e7a5750%2Fcoliseo-gnp-seguros-historia-estadio-mundialista-1.jpeg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "BBVA recorta media hora la atención en sucursales a partir del 5 de octubre",
+      "descripcion": "El banco cambiará el horario de sus más de 1,500 sucursales en México y abrirá más tarde entre semana.",
+      "enlace": "https://expansion.mx/economia/2026/09/22/bbva-cambia-horario-sucursales",
+      "fecha": "Tue, 22 Sep 2026 17:10:46 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/f7ac7e8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0f%2F74%2F1e82a022495f89596f8cbefbfd77%2Fbbva-nuevo-horario-sucursales-mexico-octubre-2026.jpg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "El pago de intereses de la deuda de México alcanzará en 2027 su mayor nivel desde 1990",
+      "descripcion": "Con más de 1.6 billones de pesos, el costo financiero de la deuda será mayor que los propios ingresos que lleguen por deuda al erario público. Será más del doble que el gasto programable para Pemex.",
+      "enlace": "https://expansion.mx/economia/2026/09/22/deuda-publica-mexico-nivel-historico-desde-1990",
+      "fecha": "Tue, 22 Sep 2026 11:55:25 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/33f9095/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc5%2Fd5%2F7ec4e379455b9e3b10d1363846b0%2F7-paquete-1098281-entrega-paquete-economico-diputados-web.jpeg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "El anti-Tinder que gana millones enseñándole a la gente a desinstalar su app",
+      "descripcion": "En México, 38.7 millones de internautas descargaron alguna vez una app de citas. Hinge, que propone un modelo donde el éxito consiste en que el usuario se vaya, crece 22% en ingresos.",
+      "enlace": "https://expansion.mx/tecnologia/2026/09/22/hinge-app-citas-disenada-para-ser-eliminada-crece",
+      "fecha": "Tue, 22 Sep 2026 11:55:24 GMT",
+      "fuente": "Expansión",
+      "categoria": "tecnologia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/12c5b98/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F60%2Fff%2Fc64c0e0f40d4850dc0b7e0d2ba97%2Fhinge-app.jpeg",
+      "rss": "tecnologia"
+    },
+    {
+      "titulo": "Millones de pymes quieren exportar, pero aún carecen de financiamiento y acceso a cadenas de valor",
+      "descripcion": "El COMCE advierte que el desconocimiento de los tratados comerciales, la falta de asesoría y las dificultades para encontrar compradores mantienen a pequeños negocios fuera del mercado internacional.",
+      "enlace": "https://expansion.mx/economia/2026/09/21/pymes-exportar-carecen-financiamiento-cadenas-valor",
+      "fecha": "Tue, 22 Sep 2026 00:28:18 GMT",
+      "fuente": "Expansión",
+      "categoria": "economia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5e1b55f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc5%2F28%2F97e96a1d47a3bb5522da582de004%2Fpymes-mexicanas-barreras-para-exportar.jpg",
+      "rss": "economia"
+    },
+    {
+      "titulo": "Quién es Natalie Harp, la funcionaria cercana a Trump que saltó al ojo público",
+      "descripcion": "La asistente está en el centro de la polémica porque fue una de las pocas personas presentes en el cambio secreto de aviones Air Force One en un vuelo en julio.",
+      "enlace": "https://expansion.mx/mundo/2026/08/18/quien-es-natalie-harp-cercana-a-trump",
+      "fecha": "Tue, 18 Aug 2026 23:56:25 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/22cb12f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc5%2F2b%2Fb34889d24bdea1c71dcf68f78610%2Fquien-es-natalie-harp.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "El terremoto de Colombia provoca daños por 9,570 millones de dólares",
+      "descripcion": "El sismo de la semana pasada destrozó miles de casas, torres de edificios, escuelas y hospitales en el Eje Cafetero y regiones del Pacífico.",
+      "enlace": "https://expansion.mx/mundo/2026/08/18/terremoto-en-colombia-danos-9570-millones-dolares",
+      "fecha": "Tue, 18 Aug 2026 22:18:52 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/e3ed8eb/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Faf%2Ff8%2Fa88239c742ea9c8a67abce2f0e43%2Fsismo-reciente-colombia-danos-materiales-costo.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Estados Unidos sanciona a la presidenta de la Corte Penal Internacional, Tomoko Akane",
+      "descripcion": "El gobierno de Donald Trump lanza un nuevo ataque contra la institución con sede en La Haya, a la que acusa de estar politizada por sus investigaciones contra Israel.",
+      "enlace": "https://expansion.mx/mundo/2026/08/18/estados-unidos-sanciona-tomoko-akane-cpi",
+      "fecha": "Tue, 18 Aug 2026 21:23:48 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/8e48a9e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F22%2F8c%2F02b468744147b91b647694cac43d%2Ftrump-sanciona-tomoko-akane-corte-penal-internacional.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Los terremotos no son más frecuentes, pero sí más costosos de enfrentar",
+      "descripcion": "Venezuela, Colombia e Indonesia exhiben el precio de una infraestructura vulnerable, desde viviendas inhabitables hasta edificios colapsados y servicios afectados.",
+      "enlace": "https://expansion.mx/mundo/2026/08/18/no-hay-mas-terremotos-pero-si-mas-danos",
+      "fecha": "Tue, 18 Aug 2026 17:02:09 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c257952/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fa8%2F74%2F7575dd6c4b9195d6836d38963dc5%2Fsismos-mayor-frrecuencia-prevencion.jpeg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Arena México: la historia de la “Catedral” que convirtió a la lucha libre en un símbolo nacional",
+      "descripcion": "La Arena México se ha consolidado en uno de los recintos deportivos más importantes del país, siendo referente de la lucha libre.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/15/arena-mexico-historia-catedral-lucha-libre-simbolo-nacional",
+      "fecha": "Tue, 15 Sep 2026 21:44:14 GMT",
+      "fuente": "Expansión",
+      "categoria": "deportes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/e05fab5/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F40%2F06%2F37ed7e3147c29fccf2e7410f315c%2Fhistoria-arena-mexico-catedral-2.jpeg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "El hardware de ASUS Business se convierte en un aliado para la ciberseguridad",
+      "descripcion": "El blindaje de datos es una prioridad estratégica de ciberseguridad para las empresas en México y el uso de equipos especializados, como las ASUS Expert Series, contribuye a evitar filtraciones.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/15/el-hardware-de-asus-business-es-un-aliado-en-ciberseguridad",
+      "fecha": "Tue, 15 Sep 2026 20:34:16 GMT",
+      "fuente": "Expansión",
+      "categoria": "entretenimiento",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/dddd9c3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1f%2F5f%2F3691fb17414e9dde96377a9484ae%2Fasus-expertbook-ultra.jpg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "Retoman vuelos en Indonesia tras erupción del volcán Krakatoa",
+      "descripcion": "Más de 340,000 personas resultaron varadas, lo que convierte a esta en una de las mayores interrupciones del tráfico aéreo en el país asiático en los últimos años.",
+      "enlace": "https://expansion.mx/mundo/2026/09/08/volcan-krakatau-retoman-vuelos-indonesia-tras-erupcion",
+      "fecha": "Tue, 08 Sep 2026 21:12:29 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/8602789/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4d%2F48%2Fe437480c4d28be5ecf927f276ba4%2Fvarados-aeropuerto-indonesia.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "¿Quién es el dueño del Estadio Centenario 27 de Febrero, casa de los Olmecas de Tabasco?",
+      "descripcion": "El parque de Villahermosa, Tabasco, será uno de los inmuebles que recibirán la Serie del Rey 2026 de la LMB.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/08/dueno-estadio-centenario-27-de-febrero-olmecas-tabasco",
+      "fecha": "Tue, 08 Sep 2026 20:21:10 GMT",
+      "fuente": "Expansión",
+      "categoria": "entretenimiento",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/0af52e2/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe8%2F77%2F5b91d271426b9f367b2b36e9d6ed%2Fdueno-estadio-centenario-27-febrero-1.jpeg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "¿Cuál fue el primer presupuesto de México y qué presidente lo presentó? La historia detrás del Paquete Económico",
+      "descripcion": "Este 8 de septiembre se prevé la entrega del Paquete Económico 2027 por parte del secretario de Hacienda al Congreso de la Unión.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/08/primer-presupuesto-mexico-historia-detras-paquete-economico",
+      "fecha": "Tue, 08 Sep 2026 17:51:33 GMT",
       "fuente": "Expansión",
       "categoria": "mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/b27659d/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fdb%2F22%2F8837bf5c4a2f9a1c12fb9d6d0dab%2F2.jpeg"
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/74117ef/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ffd%2F13%2F798f3ad84d95b3509957226fb620%2Fpaquete-economico-historia.jpg",
+      "rss": "tendencias"
     },
     {
-      "titulo": "La ley de catastro mejorará finanzas de municipios y respetará su autonomía, asegura Hacienda",
-      "descripcion": "De aprobarse e implementarse esta iniciativa, todos los ingresos resultantes van a terminar en las tesorerías de los municipios, destacó el titular de la SHCP, Édgar Amador Zamora.",
-      "enlace": "https://expansion.mx/economia/2026/09/30/hacienda-ley-catastro-predial-mejorara-finanzas-municipios",
-      "fecha": "Thu, 01 Oct 2026 01:28:58 GMT",
+      "titulo": "Las leches saborizada Vaca Blanca de Tiendas 3B tienen este problema, según Profeco",
+      "descripcion": "El estudio de calidad de Profeco también señaló productos Great Value y Nesquik por distintos incumplimientos relacionados con su composición y etiquetado.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/07/leche-saborizada-vaca-blanca-tiendas-3b-problemas-profeco",
+      "fecha": "Tue, 08 Sep 2026 00:05:53 GMT",
       "fuente": "Expansión",
-      "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/e268e38/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fd0%2F92%2F6d3164124038bfb73f89bc2bb882%2F6-edgar-amador-1101316-comparecencia-edgar-amador-diputados-impreso.jpeg"
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/735f22d/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb9%2Fb0%2Ff5b9fd1146589750397d571b8232%2Fvaca-blanca-1200x668.png",
+      "rss": "tendencias"
     },
     {
-      "titulo": "Termina la huelga en el Monte de Piedad, ¿cuándo abre y qué pasará con los empeños de los clientes?",
-      "descripcion": "La huelga de Nacional Monte de Piedad terminó este 30 de septiembre, después de meses de negociaciones entre la institución y el sindicato.",
-      "enlace": "https://expansion.mx/economia/2026/09/30/termina-huelga-monte-piedad-cuando-abre-empenos",
-      "fecha": "Thu, 01 Oct 2026 01:25:45 GMT",
+      "titulo": "El prompt para pedirle a ChatGPT que haga tu foto como de los años 80: paso a paso para tener tu foto retro",
+      "descripcion": "Si quieres sumarte a esta nueva tendencia, puedes seguir estas instrucciones y así obtener tu propia foto ochentera.",
+      "enlace": "https://expansion.mx/tendencias/2026/09/07/prompt-chatgpt-foto-anos-80-paso-a-paso-retro",
+      "fecha": "Tue, 08 Sep 2026 00:02:22 GMT",
       "fuente": "Expansión",
-      "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/dbea817/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fee%2Fa5%2Fda35f8294a90b504b4b4e95752d6%2F2-monte-piedad-huelga-1063552-continua-huelga-nacional-monte-de-piedad-web.jpeg"
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/dc4fb9c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F37%2Ffe%2F9805b9404a4aad71d81db02336b1%2F4-chatgpt-y-acusaciones-apple.jpeg",
+      "rss": "tendencias"
     },
     {
-      "titulo": "La aportación del ISR a los ingresos del gobierno disminuye por tercera vez y reporta su menor nivel desde 2021",
-      "descripcion": "De acuerdo con especialistas, la menor recaudación federal está reflejando el bajo crecimiento de la economía además de menores recursos por actos de fiscalización.",
-      "enlace": "https://expansion.mx/economia/2026/09/30/isr-cae-tercera-vez-reporta-menor-nivel-desde-2021",
-      "fecha": "Thu, 01 Oct 2026 00:07:58 GMT",
+      "titulo": "A partir de esta fecha, Tailandia solicitará visa a turistas mexicanos: requisitos, precio y cómo tramitarla",
+      "descripcion": "Si tienes pensado visitar el país asiático en los próximos meses, sigue las instrucciones de autoridades.",
+      "enlace": "https://expansion.mx/mundo/2026/09/01/fecha-tailandia-visa-turistas-mexicanos-requisitos-tramitar",
+      "fecha": "Tue, 01 Sep 2026 23:52:25 GMT",
       "fuente": "Expansión",
-      "categoria": "economia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/6d3095c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F91%2F13%2F87c264b243d7a4db6a29f4d5e5b5%2Fistock-2258902491.jpeg"
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c9b26dd/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F56%2F2c%2Fa469082448d8998ffa23e5d6a853%2Fvisa-tailandia-visitantes-mexicanos.jpeg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Frontera entre China y Nepal: el desastre ya deja más de 1,000 muertos",
+      "descripcion": "El alud provocado por un colapso glaciar golpeó a Nepal y China, dejó miles de desaparecidos y mantiene activa la búsqueda de sobrevivientes.",
+      "enlace": "https://expansion.mx/mundo/2026/09/01/frontera-entre-china-y-nepal-desastre-deja-mas-1-000-muertos",
+      "fecha": "Tue, 01 Sep 2026 22:08:48 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/692a354/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F6a%2Fe4cf089444c780e196135dcd6ee8%2Ffrontera-entre-china-y-nepal-desastre-deja-mas-1-000-muertos.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Club América y Bomberg lanzan reloj por 110 años: solo 400 personas podrán tenerlo",
+      "descripcion": "Detalles del club, fibra de carbono y un precio de 23,900 pesos distinguen al nuevo reloj de Bomberg.",
+      "enlace": "https://expansion.mx/tendencias/2026/08/27/club-america-bomberg-lanzan-reloj-solo-400-podran-tenerlo",
+      "fecha": "Thu, 27 Aug 2026 22:34:31 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/4a0d9d9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fee%2F22%2F60f3990f42bba517ff4c4d6823d5%2Freloj-bomberg-club-america.png",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "De las subastas a Louis Vuitton: cómo Yayoi Kusama convirtió sus puntos en un negocio global",
+      "descripcion": "La artista se autoproclamó \"Gran Sacerdotisa de los Lunares\". Algunas de sus obras alcanzaron niveles récords de venta, además de colaborar con marcas internacionales.",
+      "enlace": "https://expansion.mx/tendencias/2026/08/27/subastas-louis-vuitton-yayoi-kusama-convirtio-puntos-negocio",
+      "fecha": "Thu, 27 Aug 2026 21:12:58 GMT",
+      "fuente": "Expansión",
+      "categoria": "entretenimiento",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/fb9efba/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe2%2F1c%2Fd5fcdbb34454b66b4d526c6d11b1%2Fyayoi-kusama-artista-japonea-muere.jpg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "El Doctor Mau promueve la divulgación médica ética y accesible",
+      "descripcion": "El médico Mauricio González, mejor conocido como Doctor Mau, afirmó que la información veraz es el único camino para erradicar la desinformación en salud, por ejemplo, en temas de nutrición.",
+      "enlace": "https://expansion.mx/tendencias/2026/08/27/el-doctor-mau-promueve-la-divulgacion-medica-etica-y-accesible",
+      "fecha": "Thu, 27 Aug 2026 18:57:31 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c2f0b40/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc0%2F28%2Fed1bd72546628511f5aa71522852%2Flala-dr-mau-1.jpg",
+      "rss": "tendencias"
+    },
+    {
+      "titulo": "Nepal enfrenta una combinación de desastres naturales que provocaron el deslave",
+      "descripcion": "Entre los extranjeros desaparecidos hay decenas de peregrinos hindúes que se dirigían al monte Kailash, la montaña sagrada y nevada del Tíbet.",
+      "enlace": "https://expansion.mx/mundo/2026/08/27/nepal-combinacion-desastres-naturales-provocaron-deslave",
+      "fecha": "Thu, 27 Aug 2026 17:45:24 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/7caa437/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F72%2Fc8%2F2f039a6a43b6bc72d610beba73ee%2Finundaciones-nepal-afectacones.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "Uganda vence al ébola tras 42 días sin contagios pero el brote continúa en República Democrática del Congo",
+      "descripcion": "Desde que se declaró el brote el 15 de mayo, se registraron más de 2,700 fallecimientos en la República Democrática del Congo, lo que puso en alerta a las autoridades sanitarias.",
+      "enlace": "https://expansion.mx/mundo/2026/08/27/oms-declara-uganda-libre-ebola-42-dias-declararse-casos",
+      "fecha": "Thu, 27 Aug 2026 14:01:01 GMT",
+      "fuente": "Expansión",
+      "categoria": "mundo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/d03e101/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6c%2Fb4%2F572094634eba9698cc0f5e2a134c%2Febola-uganda.jpg",
+      "rss": "mundo"
+    },
+    {
+      "titulo": "¿Quiénes fueron Salinas y Rocha? La historia de la tienda que marcó a varias generaciones de mexicanos",
+      "descripcion": "El negocio comenzó su historia en 1906 y es recordado por sentar las bases de uno de los grupos empresariales más importantes de la actualidad.",
+      "enlace": "https://expansion.mx/empresas/2026/09/24/quienes-fueron-salinas-rocha-historia-detras-tienda",
+      "fecha": "Thu, 24 Sep 2026 23:49:02 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5e0419c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F06%2F43%2Fd38a974c4cd6af6539f3de3cc0b8%2Fsalinas-y-rocha-historia-tienda-grupo-salinas-1.jpeg",
+      "rss": "mexico"
+    },
+    {
+      "titulo": "De Santa Fe a Iztapalapa, estos son todos los terrenos de Televisa en CDMX; no todo es San Ángel y Chapultepec",
+      "descripcion": "Detrás de sus estudios y oficinas hay un patrimonio inmobiliario millonario. Televisa conserva propiedades estratégicas y renta parte de ellas a otras empresas.",
+      "enlace": "https://expansion.mx/empresas/2026/09/24/terrenos-televisa-en-cdmx-san-angel-santa-fe-iztapalapa",
+      "fecha": "Thu, 24 Sep 2026 23:35:15 GMT",
+      "fuente": "Expansión",
+      "categoria": "mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/95d9901/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F5d%2F57b692fc405bba016dbd2b2d75d6%2Ftelevisa-instalaciones.jpeg",
+      "rss": "mexico"
     }
   ]
 }
