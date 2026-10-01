@@ -1,824 +1,1974 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Deportes | Fútbol, NFL, MLB y más | TendenciasMX</title>
+  <meta charset="UTF-8">
 
-<meta name="description" content="Noticias deportivas de México y el mundo: fútbol, Liga MX, NFL, MLB, boxeo, automovilismo y más en TendenciasMX.">
-<meta name="keywords" content="deportes, fútbol, Liga MX, NFL, MLB, béisbol, boxeo, automovilismo, México">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-<style>
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+  <title>
+    Noticias deportivas de México y el mundo | TendenciasMX
+  </title>
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f6f8;
-    color:#111827;
-}
+  <meta
+    name="description"
+    content="Noticias deportivas de México y el mundo en TendenciasMX. Consulta fútbol, tenis, béisbol, NFL, básquetbol, boxeo, Fórmula 1, automovilismo y más."
+  >
 
-header{
-    background:#111827;
-    color:white;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.15);
-}
+  <meta
+    name="keywords"
+    content="deportes México, noticias deportivas, fútbol, Liga MX, tenis, béisbol, NFL, básquetbol, boxeo, Fórmula 1, automovilismo"
+  >
 
-.header-inner{
-    max-width:1200px;
-    margin:auto;
-    padding:16px 20px;
-}
+  <meta
+    name="robots"
+    content="index, follow"
+  >
 
-.logo{
-    font-size:28px;
-    font-weight:800;
-    color:white;
-    text-decoration:none;
-    display:inline-block;
-    margin-bottom:14px;
-}
+  <meta
+    name="theme-color"
+    content="#111827"
+  >
 
-.logo span{
-    color:#22c55e;
-}
+  <style>
 
-nav{
-    display:flex;
-    gap:8px;
-    overflow-x:auto;
-    padding-bottom:4px;
-    scrollbar-width:none;
-}
-
-nav::-webkit-scrollbar{
-    display:none;
-}
-
-nav a{
-    color:#d1d5db;
-    text-decoration:none;
-    padding:9px 13px;
-    border-radius:8px;
-    white-space:nowrap;
-    font-size:14px;
-    transition:.2s;
-}
-
-nav a:hover,
-nav a.active{
-    background:#22c55e;
-    color:#052e16;
-    font-weight:700;
-}
-
-main{
-    max-width:1100px;
-    margin:auto;
-    padding:30px 20px 50px;
-}
-
-.hero{
-    background:linear-gradient(135deg,#111827,#1f2937);
-    color:white;
-    border-radius:18px;
-    padding:30px 25px;
-    margin-bottom:25px;
-}
-
-.hero h1{
-    font-size:34px;
-    margin-bottom:10px;
-}
-
-.hero p{
-    color:#d1d5db;
-    line-height:1.6;
-    max-width:800px;
-}
-
-.search-box{
-    margin:25px 0;
-}
-
-.search-box input{
-    width:100%;
-    padding:15px 17px;
-    border:1px solid #d1d5db;
-    border-radius:12px;
-    font-size:16px;
-    outline:none;
-    background:white;
-}
-
-.search-box input:focus{
-    border-color:#22c55e;
-    box-shadow:0 0 0 3px rgba(34,197,94,.12);
-}
-
-.filters{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-bottom:28px;
-}
-
-.filter-btn{
-    border:none;
-    background:white;
-    color:#374151;
-    border:1px solid #d1d5db;
-    padding:10px 15px;
-    border-radius:999px;
-    cursor:pointer;
-    font-size:14px;
-    font-weight:600;
-}
-
-.filter-btn:hover,
-.filter-btn.active{
-    background:#22c55e;
-    border-color:#22c55e;
-    color:#052e16;
-}
-
-.news-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-}
-
-.card-link{
-    text-decoration:none;
-    color:inherit;
-    display:block;
-}
-
-.card{
-    background:white;
-    border-radius:16px;
-    overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,.07);
-    transition:.2s;
-    height:100%;
-}
-
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-}
-
-.news-image{
-    width:100%;
-    height:190px;
-    background:#e5e7eb;
-    overflow:hidden;
-}
-
-.news-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-}
-
-.card-content{
-    padding:18px;
-}
-
-.category{
-    display:inline-block;
-    background:#dcfce7;
-    color:#166534;
-    padding:5px 9px;
-    border-radius:999px;
-    font-size:12px;
-    font-weight:700;
-    margin-bottom:10px;
-}
-
-.card h2{
-    font-size:19px;
-    line-height:1.35;
-    margin-bottom:9px;
-}
-
-.date{
-    color:#6b7280;
-    font-size:13px;
-    margin-bottom:10px;
-}
-
-.description{
-    color:#4b5563;
-    line-height:1.5;
-    font-size:14px;
-    margin-bottom:13px;
-}
-
-.read{
-    color:#16a34a;
-    font-size:14px;
-    font-weight:700;
-}
-
-.empty{
-    grid-column:1/-1;
-    background:white;
-    border-radius:15px;
-    padding:35px;
-    text-align:center;
-    color:#6b7280;
-}
-
-.info{
-    background:#ecfdf5;
-    border:1px solid #bbf7d0;
-    border-radius:15px;
-    padding:20px;
-    margin-top:35px;
-}
-
-.info h3{
-    margin-bottom:8px;
-    color:#166534;
-}
-
-.info p{
-    color:#374151;
-    line-height:1.6;
-}
-
-footer{
-    background:#111827;
-    color:#9ca3af;
-    text-align:center;
-    padding:25px 20px;
-    margin-top:20px;
-}
-
-footer strong{
-    color:#22c55e;
-}
-
-@media(max-width:900px){
-    .news-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media(max-width:600px){
-
-    .header-inner{
-        padding:14px 12px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    .logo{
-        font-size:25px;
+    html {
+      scroll-behavior: smooth;
     }
 
-    nav a{
-        font-size:13px;
-        padding:8px 10px;
+    body {
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background: #f4f6f8;
+      color: #111827;
+      line-height: 1.6;
     }
 
-    main{
-        padding:20px 14px 40px;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
-    .hero{
-        padding:25px 20px;
+
+    /* HEADER */
+
+    header {
+      background: #111827;
+      color: white;
+
+      position: sticky;
+      top: 0;
+
+      z-index: 1000;
+
+      box-shadow:
+        0 2px 10px rgba(0,0,0,.15);
     }
 
-    .hero h1{
-        font-size:28px;
+    .header-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 17px 20px;
     }
 
-    .news-grid{
-        grid-template-columns:1fr;
+    .logo {
+      display: inline-block;
+
+      color: white;
+
+      font-size: 28px;
+      font-weight: 800;
+
+      margin-bottom: 14px;
     }
 
-    .news-image{
-        height:210px;
+    .logo span {
+      color: #22c55e;
     }
-}
-</style>
+
+    nav {
+      display: flex;
+
+      gap: 8px;
+
+      overflow-x: auto;
+
+      padding-bottom: 4px;
+
+      scrollbar-width: thin;
+    }
+
+    nav a {
+      color: #d1d5db;
+
+      padding: 8px 12px;
+
+      border-radius: 8px;
+
+      white-space: nowrap;
+
+      font-size: 14px;
+
+      transition: .2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #22c55e;
+      color: #052e16;
+      font-weight: 700;
+    }
+
+
+    /* HERO */
+
+    .hero {
+      background:
+        linear-gradient(
+          135deg,
+          #111827,
+          #1f2937
+        );
+
+      color: white;
+
+      padding: 45px 20px;
+
+      margin-bottom: 30px;
+    }
+
+    .hero-container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .live {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      background:
+        rgba(255,255,255,.08);
+
+      border:
+        1px solid
+        rgba(255,255,255,.15);
+
+      padding: 7px 12px;
+
+      border-radius: 999px;
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      margin-bottom: 15px;
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: #22c55e;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 55px);
+
+      line-height: 1.1;
+
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: #22c55e;
+    }
+
+    .hero p {
+      max-width: 750px;
+
+      color: #d1d5db;
+
+      font-size: 17px;
+    }
+
+
+    /* SEARCH */
+
+    .search-container {
+      max-width: 1150px;
+
+      margin:
+        -50px
+        auto
+        30px;
+
+      padding:
+        0
+        20px;
+
+      position: relative;
+
+      z-index: 10;
+    }
+
+    .search-box {
+      background: white;
+
+      border-radius: 14px;
+
+      padding: 7px;
+
+      display: flex;
+
+      box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.15);
+    }
+
+    .search-box input {
+      flex: 1;
+
+      border: none;
+
+      outline: none;
+
+      padding: 14px;
+
+      font-size: 16px;
+
+      min-width: 0;
+    }
+
+    .search-box button {
+      border: none;
+
+      background: #22c55e;
+
+      color: #052e16;
+
+      font-weight: 800;
+
+      padding:
+        0 22px;
+
+      border-radius: 10px;
+
+      cursor: pointer;
+    }
+
+
+    /* MAIN */
+
+    main {
+      max-width: 1150px;
+
+      margin: auto;
+
+      padding:
+        20px
+        20px
+        60px;
+    }
+
+
+    /* STATUS */
+
+    .status {
+      background: white;
+
+      border:
+        1px solid
+        #e5e7eb;
+
+      border-radius: 12px;
+
+      padding: 14px 17px;
+
+      margin-bottom: 25px;
+
+      color: #4b5563;
+
+      font-size: 14px;
+    }
+
+    .status strong {
+      color: #111827;
+    }
+
+
+    /* SECTION TITLE */
+
+    .section-title {
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      font-size: 28px;
+
+      margin-bottom: 5px;
+    }
+
+    .section-title h2 span {
+      color: #22c55e;
+    }
+
+    .section-title p {
+      color: #6b7280;
+    }
+
+
+    /* CATEGORIES */
+
+    .categories {
+      display: flex;
+
+      gap: 10px;
+
+      overflow-x: auto;
+
+      padding-bottom: 12px;
+
+      margin-bottom: 30px;
+
+      scrollbar-width: thin;
+    }
+
+    .category-button {
+      flex:
+        0 0 auto;
+
+      border:
+        1px solid
+        #d1d5db;
+
+      background: white;
+
+      color: #374151;
+
+      padding:
+        10px
+        16px;
+
+      border-radius: 999px;
+
+      font-weight: 800;
+
+      cursor: pointer;
+
+      transition: .2s;
+    }
+
+    .category-button:hover,
+    .category-button.active {
+      background: #22c55e;
+
+      border-color: #22c55e;
+
+      color: #052e16;
+    }
+
+
+    /* FEATURED */
+
+    .featured {
+      display: grid;
+
+      grid-template-columns:
+        1.5fr
+        1fr;
+
+      gap: 20px;
+
+      margin-bottom: 40px;
+    }
+
+    .featured-main {
+      min-height: 330px;
+
+      border-radius: 20px;
+
+      padding: 30px;
+
+      color: white;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: flex-end;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          #111827,
+          #164e63
+        );
+    }
+
+    .featured-main .tag {
+      width: fit-content;
+
+      background:
+        rgba(34,197,94,.18);
+
+      color: #86efac;
+
+      padding:
+        6px
+        10px;
+
+      border-radius: 999px;
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      margin-bottom: 10px;
+    }
+
+    .featured-main h2 {
+      font-size:
+        clamp(
+          27px,
+          4vw,
+          40px
+        );
+
+      line-height: 1.1;
+
+      margin-bottom: 10px;
+    }
+
+    .featured-main p {
+      color: #d1d5db;
+    }
+
+    .featured-side {
+      display: grid;
+
+      gap: 20px;
+    }
+
+    .mini-card {
+      background: white;
+
+      border-radius: 18px;
+
+      padding: 22px;
+
+      border:
+        1px solid
+        #e5e7eb;
+
+      box-shadow:
+        0 5px 18px
+        rgba(0,0,0,.06);
+    }
+
+    .mini-card .tag {
+      display: inline-block;
+
+      background: #dcfce7;
+
+      color: #166534;
+
+      padding:
+        5px
+        9px;
+
+      border-radius: 999px;
+
+      font-size: 11px;
+
+      font-weight: 800;
+    }
+
+    .mini-card h3 {
+      font-size: 19px;
+
+      line-height: 1.3;
+
+      margin:
+        10px
+        0;
+    }
+
+    .mini-card p {
+      color: #6b7280;
+
+      font-size: 14px;
+    }
+
+
+    /* NEWS GRID */
+
+    .news-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          3,
+          1fr
+        );
+
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+
+      border-radius: 17px;
+
+      overflow: hidden;
+
+      border:
+        1px solid
+        #e5e7eb;
+
+      box-shadow:
+        0 5px 18px
+        rgba(0,0,0,.06);
+
+      transition:
+        transform .2s,
+        box-shadow .2s;
+
+      height: 100%;
+    }
+
+    .card:hover {
+      transform:
+        translateY(-4px);
+
+      box-shadow:
+        0 12px 28px
+        rgba(0,0,0,.12);
+    }
+
+    .news-image {
+      width: 100%;
+
+      height: 190px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #e5e7eb,
+          #f3f4f6
+        );
+
+      overflow: hidden;
+    }
+
+    .news-image img {
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      display: block;
+    }
+
+    .news-image.sin-imagen {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+    }
+
+    .news-image.sin-imagen::after {
+      content: "🏆 Deportes";
+
+      color: #6b7280;
+
+      font-weight: 800;
+    }
+
+    .card-content {
+      padding: 19px;
+    }
+
+    .category {
+      display: inline-block;
+
+      background: #dcfce7;
+
+      color: #166534;
+
+      padding:
+        5px
+        9px;
+
+      border-radius: 999px;
+
+      font-size: 11px;
+
+      font-weight: 800;
+
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 19px;
+
+      line-height: 1.3;
+
+      margin-bottom: 9px;
+    }
+
+    .date {
+      color: #6b7280;
+
+      font-size: 12px;
+
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #4b5563;
+
+      font-size: 14px;
+
+      line-height: 1.5;
+    }
+
+    .read {
+      display: inline-block;
+
+      margin-top: 14px;
+
+      color: #15803d;
+
+      font-size: 14px;
+
+      font-weight: 800;
+    }
+
+
+    /* EMPTY / ERROR */
+
+    .empty {
+      grid-column:
+        1 / -1;
+
+      background: white;
+
+      border-radius: 16px;
+
+      padding: 40px 20px;
+
+      text-align: center;
+
+      color: #6b7280;
+
+      border:
+        1px solid
+        #e5e7eb;
+    }
+
+    .empty h2 {
+      color: #111827;
+
+      margin-bottom: 8px;
+    }
+
+
+    /* TRENDS */
+
+    .trends {
+      margin-top: 45px;
+    }
+
+    .trend-list {
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          2,
+          1fr
+        );
+
+      gap: 12px;
+    }
+
+    .trend {
+      background: white;
+
+      border:
+        1px solid
+        #e5e7eb;
+
+      border-radius: 12px;
+
+      padding: 15px;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      transition: .2s;
+    }
+
+    .trend:hover {
+      border-color: #22c55e;
+
+      transform:
+        translateY(-2px);
+    }
+
+    .trend-number {
+      width: 34px;
+      height: 34px;
+
+      border-radius: 50%;
+
+      background: #dcfce7;
+
+      color: #15803d;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      font-weight: 900;
+
+      flex-shrink: 0;
+    }
+
+    .trend strong {
+      display: block;
+
+      font-size: 15px;
+    }
+
+    .trend small {
+      color: #6b7280;
+
+      font-size: 12px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+      background: #111827;
+
+      color: #9ca3af;
+
+      text-align: center;
+
+      padding: 30px 20px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+
+    /* RESPONSIVE */
+
+    @media(max-width: 900px) {
+
+      .news-grid {
+        grid-template-columns:
+          repeat(
+            2,
+            1fr
+          );
+      }
+
+      .featured {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media(max-width: 600px) {
+
+      .header-container {
+        padding: 14px;
+      }
+
+      .logo {
+        font-size: 25px;
+      }
+
+      .hero {
+        padding: 38px 17px;
+      }
+
+      .search-container {
+        margin-top: -40px;
+      }
+
+      .search-box {
+        flex-direction: column;
+      }
+
+      .search-box button {
+        height: 46px;
+      }
+
+      main {
+        padding:
+          15px
+          15px
+          45px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trend-list {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
+
 <header>
 
-<div class="header-inner">
+  <div class="header-container">
 
-<a href="./index.html" class="logo">
-Tendencias<span>MX</span>
-</a>
+    <a
+      href="index.html"
+      class="logo"
+    >
+      Tendencias<span>MX</span>
+    </a>
 
-<nav>
 
-<a href="./index.html">
-Inicio
-</a>
+    <nav>
 
-<a href="./noticias.html">
-Noticias
-</a>
+      <a href="index.html">
+        Inicio
+      </a>
 
-<a href="./deportes.html" class="active">
-Deportes
-</a>
+      <a href="noticias.html">
+        Noticias
+      </a>
 
-<a href="./entretenimiento.html">
-Entretenimiento
-</a>
+      <a
+        href="deportes.html"
+        class="active"
+      >
+        Deportes
+      </a>
 
-<a href="./tecnologia.html">
-Tecnología
-</a>
+      <a href="entretenimiento.html">
+        Entretenimiento
+      </a>
 
-<a href="./dinero.html">
-Dinero
-</a>
+      <a href="tecnologia.html">
+        Tecnología
+      </a>
 
-<a href="./politica.html">
-Política
-</a>
+      <a href="dinero.html">
+        Dinero
+      </a>
 
-<a href="./tramites.html">
-Trámites
-</a>
+      <a href="politica.html">
+        Política
+      </a>
 
-<a href="./contacto.html">
-Contacto
-</a>
+      <a href="tramites.html">
+        Trámites
+      </a>
 
-<a href="./preguntas.html">
-Preguntas
-</a>
+      <a href="contacto.html">
+        Contacto
+      </a>
 
-</nav>
+      <a href="preguntas.html">
+        Preguntas
+      </a>
 
-</div>
+    </nav>
+
+  </div>
 
 </header>
 
-<main>
 
 <section class="hero">
 
-<h1>Deportes</h1>
+  <div class="hero-container">
 
-<p>
-Toda la actualidad deportiva: fútbol, Liga MX, NFL,
-MLB, boxeo, automovilismo y otros deportes de México
-y el mundo.
-</p>
+    <div class="live">
+      <span class="live-dot"></span>
+      DEPORTES
+    </div>
+
+    <h1>
+      Noticias de
+      <span>Deportes</span>
+    </h1>
+
+    <p>
+      Las noticias, resultados y temas deportivos
+      que están generando conversación en México
+      y el mundo.
+    </p>
+
+  </div>
 
 </section>
 
-<div class="search-box">
 
-<input
-type="text"
-id="search"
-placeholder="Buscar noticias deportivas..."
->
+<div class="search-container">
+
+  <div class="search-box">
+
+    <input
+      type="search"
+      id="search"
+      placeholder="🔎 Buscar noticias deportivas..."
+      autocomplete="off"
+    >
+
+    <button
+      type="button"
+      id="searchButton"
+    >
+      Buscar
+    </button>
+
+  </div>
 
 </div>
 
-<div class="filters">
 
-<button class="filter-btn active" data-category="todos">
-Todos
-</button>
+<main>
 
-<button class="filter-btn" data-category="futbol">
-⚽ Fútbol
-</button>
 
-<button class="filter-btn" data-category="nfl">
-🏈 NFL
-</button>
+  <div class="status">
 
-<button class="filter-btn" data-category="beisbol">
-⚾ Béisbol
-</button>
+    🟢
 
-<button class="filter-btn" data-category="boxeo">
-🥊 Boxeo
-</button>
+    <strong>
+      Noticias deportivas:
+    </strong>
 
-<button class="filter-btn" data-category="automovilismo">
-🏎️ Automovilismo
-</button>
+    <span id="statusText">
+      Cargando información...
+    </span>
 
-<button class="filter-btn" data-category="otros">
-🏅 Otros deportes
-</button>
+  </div>
 
-</div>
 
-<section
-class="news-grid"
-id="newsGrid"
-></section>
+  <!-- DESTACADAS -->
 
-<section class="info">
+  <section class="featured">
 
-<h3>
-Sobre la sección Deportes
-</h3>
+    <article class="featured-main">
 
-<p>
-Encuentra información deportiva organizada por categorías.
-Cada noticia puede abrirse desde su fuente original.
-</p>
+      <span class="tag">
+        TendenciasMX Deportes
+      </span>
 
-</section>
+      <h2 id="featuredTitle">
+        Cargando noticias...
+      </h2>
+
+      <p id="featuredDescription">
+        Estamos cargando las noticias deportivas más recientes.
+      </p>
+
+    </article>
+
+
+    <div class="featured-side">
+
+      <article class="mini-card">
+
+        <span class="tag">
+          Últimas
+        </span>
+
+        <h3 id="miniTitle1">
+          Cargando...
+        </h3>
+
+        <p id="miniDescription1">
+          Espera un momento.
+        </p>
+
+      </article>
+
+
+      <article class="mini-card">
+
+        <span class="tag">
+          Actualidad deportiva
+        </span>
+
+        <h3 id="miniTitle2">
+          Cargando...
+        </h3>
+
+        <p id="miniDescription2">
+          Espera un momento.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORÍAS -->
+
+  <section>
+
+    <div class="section-title">
+
+      <h2>
+        🏆 Deportes
+        <span>por categoría</span>
+      </h2>
+
+      <p>
+        Selecciona una categoría para ver únicamente
+        las noticias deportivas correspondientes.
+      </p>
+
+    </div>
+
+
+    <div class="categories">
+
+      <button
+        class="category-button active"
+        data-category="todos"
+      >
+        Todas
+      </button>
+
+      <button
+        class="category-button"
+        data-category="futbol"
+      >
+        ⚽ Fútbol
+      </button>
+
+      <button
+        class="category-button"
+        data-category="tenis"
+      >
+        🎾 Tenis
+      </button>
+
+      <button
+        class="category-button"
+        data-category="beisbol"
+      >
+        ⚾ Béisbol
+      </button>
+
+      <button
+        class="category-button"
+        data-category="nfl"
+      >
+        🏈 NFL
+      </button>
+
+      <button
+        class="category-button"
+        data-category="basquetbol"
+      >
+        🏀 Básquetbol
+      </button>
+
+      <button
+        class="category-button"
+        data-category="boxeo"
+      >
+        🥊 Boxeo
+      </button>
+
+      <button
+        class="category-button"
+        data-category="formula1"
+      >
+        🏎️ Fórmula 1
+      </button>
+
+      <button
+        class="category-button"
+        data-category="automovilismo"
+      >
+        🏁 Automovilismo
+      </button>
+
+      <button
+        class="category-button"
+        data-category="otros"
+      >
+        🏅 Otros
+      </button>
+
+    </div>
+
+
+    <div
+      class="news-grid"
+      id="newsGrid"
+    >
+
+      <div class="empty">
+
+        <h2>
+          Cargando noticias deportivas...
+        </h2>
+
+        <p>
+          Conectando con deportes.json
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TENDENCIAS -->
+
+  <section class="trends">
+
+    <div class="section-title">
+
+      <h2>
+        🔥 Tendencias
+        <span>deportivas</span>
+      </h2>
+
+      <p>
+        Temas deportivos recientes disponibles en TendenciasMX.
+      </p>
+
+    </div>
+
+
+    <div
+      class="trend-list"
+      id="trendList"
+    ></div>
+
+  </section>
+
 
 </main>
 
+
 <footer>
 
-<p>
-© 2026 <strong>TendenciasMX</strong> · Información y actualidad
-</p>
+  <p>
+    © 2026
+    <strong>TendenciasMX</strong>.
+    Información deportiva y actualidad.
+  </p>
 
 </footer>
 
+
 <script>
 
-const grid = document.getElementById("newsGrid");
 
-const search = document.getElementById("search");
+/* =========================================
+   VARIABLES
+========================================= */
 
-const buttons = document.querySelectorAll(".filter-btn");
+const grid =
+  document.getElementById("newsGrid");
+
+const search =
+  document.getElementById("search");
+
+const searchButton =
+  document.getElementById("searchButton");
+
+const statusText =
+  document.getElementById("statusText");
+
+const trendList =
+  document.getElementById("trendList");
+
+
+let todasLasNoticias = [];
 
 let categoriaActual = "todos";
 
 
-function nombreCategoria(categoria){
+/* =========================================
+   CARGAR JSON
+========================================= */
 
-    const nombres = {
+async function cargarNoticias() {
 
-        futbol:"Fútbol",
-        nfl:"NFL",
-        beisbol:"Béisbol",
-        boxeo:"Boxeo",
-        automovilismo:"Automovilismo",
-        otros:"Otros deportes"
+  try {
 
-    };
+    const respuesta =
+      await fetch(
+        "deportes.json?actualizacion=" +
+        Date.now(),
+        {
+          cache: "no-store"
+        }
+      );
 
-    return nombres[categoria] || "Deportes";
+
+    if (!respuesta.ok) {
+
+      throw new Error(
+        "No se pudo cargar deportes.json"
+      );
+
+    }
+
+
+    const datos =
+      await respuesta.json();
+
+
+    /*
+      Compatibilidad con dos formatos:
+
+      1. deportes.json como arreglo:
+
+      [
+        {...},
+        {...}
+      ]
+
+      2. deportes.json como objeto:
+
+      {
+        "actualizado": "...",
+        "total": 100,
+        "noticias": [...]
+      }
+    */
+
+    if (Array.isArray(datos)) {
+
+      todasLasNoticias = datos;
+
+    } else if (
+      datos &&
+      Array.isArray(datos.noticias)
+    ) {
+
+      todasLasNoticias =
+        datos.noticias;
+
+    } else if (
+      datos &&
+      Array.isArray(datos.deportes)
+    ) {
+
+      todasLasNoticias =
+        datos.deportes;
+
+    } else {
+
+      throw new Error(
+        "El formato de deportes.json no es válido"
+      );
+
+    }
+
+
+    /* ORDENAR POR FECHA */
+
+    todasLasNoticias.sort(
+      (a, b) => {
+
+        const fechaA =
+          new Date(
+            a.fecha ||
+            a.date ||
+            0
+          ).getTime();
+
+        const fechaB =
+          new Date(
+            b.fecha ||
+            b.date ||
+            0
+          ).getTime();
+
+        return fechaB - fechaA;
+
+      }
+    );
+
+
+    statusText.textContent =
+      todasLasNoticias.length +
+      " noticias deportivas disponibles";
+
+
+    actualizarDestacadas();
+
+    mostrarNoticias();
+
+    mostrarTendencias();
+
+
+  } catch (error) {
+
+    console.error(error);
+
+
+    statusText.textContent =
+      "No se pudo cargar la información";
+
+
+    grid.innerHTML = `
+
+      <div class="empty">
+
+        <h2>
+          No se pudieron cargar las noticias deportivas
+        </h2>
+
+        <p>
+          El archivo deportes.json no pudo ser leído.
+        </p>
+
+      </div>
+
+    `;
+
+  }
 
 }
 
 
-/*
-    IMPORTANTE:
+/* =========================================
+   DESTACADAS
+========================================= */
 
-    Aquí solamente entran noticias deportivas.
-    No se utilizan noticias de economía, dinero,
-    tecnología o política.
-*/
+function actualizarDestacadas() {
 
-const noticias = [
+  if (
+    !todasLasNoticias.length
+  ) {
 
-    {
-        categoria:"futbol",
+    return;
 
-        titulo:"La Liga MX continúa con su actividad en el Apertura 2026",
+  }
 
-        fecha:"Actualidad",
 
-        descripcion:
-        "Información, resultados y actualidad del fútbol mexicano.",
+  const primera =
+    todasLasNoticias[0];
 
-        imagen:
-        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1000&q=80",
+  const segunda =
+    todasLasNoticias[1] ||
+    primera;
 
-        url:
-        "https://www.fmf.mx/noticias"
+  const tercera =
+    todasLasNoticias[2] ||
+    primera;
 
-    },
 
-    {
-        categoria:"futbol",
+  document.getElementById(
+    "featuredTitle"
+  ).textContent =
+    primera.titulo ||
+    "Noticias deportivas";
 
-        titulo:"La Selección Mexicana continúa su preparación deportiva",
 
-        fecha:"Actualidad",
+  document.getElementById(
+    "featuredDescription"
+  ).textContent =
+    primera.descripcion ||
+    "Consulta las noticias deportivas más recientes.";
 
-        descripcion:
-        "Noticias y actualidad relacionadas con la Selección Mexicana.",
 
-        imagen:
-        "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1000&q=80",
+  document.getElementById(
+    "miniTitle1"
+  ).textContent =
+    segunda.titulo ||
+    "Últimas noticias deportivas";
 
-        url:
-        "https://www.fmf.mx/noticias"
 
-    },
+  document.getElementById(
+    "miniDescription1"
+  ).textContent =
+    segunda.descripcion ||
+    "";
 
-    {
-        categoria:"nfl",
 
-        titulo:"La NFL prepara su regreso a México",
+  document.getElementById(
+    "miniTitle2"
+  ).textContent =
+    tercera.titulo ||
+    "Actualidad deportiva";
 
-        fecha:"1 de octubre de 2026",
 
-        descripcion:
-        "La NFL volverá a México con un partido entre San Francisco 49ers y Minnesota Vikings el 22 de noviembre de 2026.",
+  document.getElementById(
+    "miniDescription2"
+  ).textContent =
+    tercera.descripcion ||
+    "";
 
-        imagen:
-        "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1000&q=80",
+}
 
-        url:
-        "https://efe.com/deportes/"
 
-    },
+/* =========================================
+   MOSTRAR NOTICIAS
+========================================= */
 
-    {
-        categoria:"nfl",
+function mostrarNoticias() {
 
-        titulo:"La temporada 2026 de la NFL continúa con nuevos encuentros",
 
-        fecha:"Actualidad",
+  let noticias =
+    [...todasLasNoticias];
 
-        descripcion:
-        "Resultados, calendario y noticias de la temporada de fútbol americano.",
 
-        imagen:
-        "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1000&q=80",
+  /* FILTRO DE CATEGORÍA */
 
-        url:
-        "https://mexico.as.com/noticias/futbol-americano/"
+  if (
+    categoriaActual !==
+    "todos"
+  ) {
 
-    },
+    noticias =
+      noticias.filter(
+        noticia => {
 
-    {
-        categoria:"beisbol",
+          const categoria =
+            String(
+              noticia.categoria ||
+              noticia.category ||
+              ""
+            );
 
-        titulo:"Los playoffs de MLB ya están definidos",
 
-        fecha:"28 de septiembre de 2026",
+          return (
+            categoria
+              .toLowerCase() ===
+            categoriaActual
+              .toLowerCase()
+          );
 
-        descripcion:
-        "La postemporada de las Grandes Ligas reúne a los equipos clasificados para competir por el campeonato.",
+        }
+      );
 
-        imagen:
-        "https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1000&q=80",
+  }
 
-        url:
-        "https://www.reporteindigo.com/deportes/juego-de-comodines-de-las-grandes-ligas-de-beisbol-mlb-playoff-bracket-20260928-0010.html"
 
-    },
+  /* FILTRO DE BÚSQUEDA */
 
-    {
-        categoria:"beisbol",
+  const texto =
+    search.value
+      .toLowerCase()
+      .trim();
 
-        titulo:"Béisbol mexicano y Grandes Ligas mantienen la actividad",
 
-        fecha:"Actualidad",
+  if (texto) {
 
-        descripcion:
-        "Noticias y resultados del béisbol nacional e internacional.",
+    noticias =
+      noticias.filter(
+        noticia => {
 
-        imagen:
-        "https://images.unsplash.com/photo-1512719994953-eabf50895df7?auto=format&fit=crop&w=1000&q=80",
+          const contenido = `
 
-        url:
-        "https://mexico.as.com/"
+            ${noticia.titulo || ""}
 
-    },
+            ${noticia.descripcion || ""}
 
-    {
-        categoria:"boxeo",
+            ${noticia.categoria || ""}
 
-        titulo:"El boxeo mexicano continúa con actividad internacional",
+            ${noticia.subcategoria || ""}
 
-        fecha:"Actualidad",
+            ${noticia.fuente || ""}
 
-        descripcion:
-        "Información sobre boxeadores mexicanos y las principales funciones internacionales.",
+          `.toLowerCase();
 
-        imagen:
-        "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1000&q=80",
 
-        url:
-        "https://mexico.as.com/"
+          return contenido.includes(
+            texto
+          );
 
-    },
+        }
+      );
 
-    {
-        categoria:"automovilismo",
+  }
 
-        titulo:"El automovilismo internacional mantiene su calendario",
 
-        fecha:"Actualidad",
+  /* SIN RESULTADOS */
 
-        descripcion:
-        "Noticias de Fórmula 1, NASCAR y otras categorías del automovilismo.",
+  if (!noticias.length) {
 
-        imagen:
-        "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1000&q=80",
+    grid.innerHTML = `
 
-        url:
-        "https://mexico.as.com/"
+      <div class="empty">
 
-    },
+        <h2>
+          No encontramos noticias deportivas
+        </h2>
 
-    {
-        categoria:"otros",
+        <p>
+          Prueba otra categoría o palabra de búsqueda.
+        </p>
 
-        titulo:"México y sus atletas continúan destacando en distintas disciplinas",
+      </div>
 
-        fecha:"Actualidad",
+    `;
 
-        descripcion:
-        "Información sobre atletismo, ciclismo, deportes olímpicos y otras disciplinas.",
+    return;
 
-        imagen:
-        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1000&q=80",
+  }
 
-        url:
-        "https://www.efe.com/deportes/"
 
-    }
+  /* CREAR TARJETAS */
 
-];
+  grid.innerHTML =
+    noticias
+      .map(
+        noticia =>
+          crearTarjeta(noticia)
+      )
+      .join("");
 
+}
 
-function mostrarNoticias(){
 
-    const texto =
-        search.value
-        .toLowerCase()
-        .trim();
+/* =========================================
+   TARJETA
+========================================= */
 
+function crearTarjeta(
+  noticia
+) {
 
-    const filtradas =
-        noticias.filter(noticia => {
 
-            const coincideCategoria =
-                categoriaActual === "todos" ||
-                noticia.categoria === categoriaActual;
+  const titulo =
+    escapar(
+      noticia.titulo ||
+      "Noticia deportiva"
+    );
 
 
-            const contenido = (
+  const descripcion =
+    escapar(
+      noticia.descripcion ||
+      ""
+    );
 
-                noticia.titulo +
-                " " +
-                noticia.descripcion +
-                " " +
-                noticia.categoria
 
-            ).toLowerCase();
+  const categoria =
+    escapar(
+      noticia.categoria ||
+      "Deportes"
+    );
 
 
-            const coincideBusqueda =
-                texto === "" ||
-                contenido.includes(texto);
+  const fuente =
+    escapar(
+      noticia.fuente ||
+      "Fuente"
+    );
 
 
-            return
-                coincideCategoria &&
-                coincideBusqueda;
+  const imagen =
+    noticia.imagen ||
+    noticia.image ||
+    "";
 
-        });
 
+  const url =
+    noticia.url ||
+    noticia.link ||
+    "#";
 
-    if(filtradas.length === 0){
 
-        grid.innerHTML = `
+  const fecha =
+    formatearFecha(
+      noticia.fecha ||
+      noticia.date
+    );
 
-            <div class="empty">
 
-                <h2>
-                    No encontramos noticias deportivas
-                </h2>
+  const imagenHTML =
+    imagen
+      ? `
 
-                <p>
-                    Prueba con otra palabra o categoría.
-                </p>
+        <img
+          src="${escaparAtributo(imagen)}"
+          alt="${escaparAtributo(titulo)}"
+          loading="lazy"
+          onerror="
+            this.style.display='none';
+            this.parentElement.classList.add('sin-imagen');
+          "
+        >
 
-            </div>
+      `
+      : "";
 
-        `;
 
-        return;
-    }
+  return `
 
+    <a
+      href="${escaparAtributo(url)}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
 
-    grid.innerHTML =
-        filtradas.map(noticia => `
+      <article class="card">
+
+        <div class="news-image">
+
+          ${imagenHTML}
+
+        </div>
+
+
+        <div class="card-content">
+
+          <span class="category">
+
+            ${categoria}
+
+          </span>
+
+
+          <h3>
+
+            ${titulo}
+
+          </h3>
+
+
+          <div class="date">
+
+            ${fecha}
+
+            ·
+
+            ${fuente}
+
+          </div>
+
+
+          <p class="description">
+
+            ${descripcion}
+
+          </p>
+
+
+          <span class="read">
+
+            Leer noticia completa →
+
+          </span>
+
+        </div>
+
+      </article>
+
+    </a>
+
+  `;
+
+}
+
+
+/* =========================================
+   TENDENCIAS
+========================================= */
+
+function mostrarTendencias() {
+
+
+  /*
+    Son temas deportivos recientes
+    disponibles en deportes.json.
+  */
+
+
+  const tendencias =
+    todasLasNoticias
+      .slice(0, 8);
+
+
+  trendList.innerHTML =
+    tendencias
+      .map(
+        (noticia, indice) => {
+
+          const titulo =
+            escapar(
+              noticia.titulo ||
+              "Tema deportivo"
+            );
+
+
+          const categoria =
+            escapar(
+              noticia.categoria ||
+              "Deportes"
+            );
+
+
+          return `
 
             <a
-                class="card-link"
-                href="${noticia.url}"
-                target="_blank"
-                rel="noopener noreferrer"
+              class="trend"
+              href="${
+                escaparAtributo(
+                  noticia.url ||
+                  "#"
+                )
+              }"
+              target="_blank"
+              rel="noopener noreferrer"
             >
 
-                <article class="card">
+              <div class="trend-number">
 
-                    <div class="news-image">
+                ${indice + 1}
 
-                        <img
-                            src="${noticia.imagen}"
-                            alt="${noticia.titulo}"
-                            loading="lazy"
-                            onerror="this.style.display='none'"
-                        >
-
-                    </div>
+              </div>
 
 
-                    <div class="card-content">
+              <div>
 
-                        <span class="category">
+                <strong>
 
-                            ${nombreCategoria(
-                                noticia.categoria
-                            )}
+                  ${titulo}
 
-                        </span>
+                </strong>
 
+                <small>
 
-                        <h2>
-                            ${noticia.titulo}
-                        </h2>
+                  ${categoria}
 
+                </small>
 
-                        <div class="date">
-                            ${noticia.fecha}
-                        </div>
-
-
-                        <p class="description">
-                            ${noticia.descripcion}
-                        </p>
-
-
-                        <div class="read">
-                            Leer noticia completa →
-                        </div>
-
-                    </div>
-
-                </article>
+              </div>
 
             </a>
 
-        `).join("");
+          `;
+
+        }
+      )
+      .join("");
 
 }
 
 
-buttons.forEach(button => {
+/* =========================================
+   BOTONES DE CATEGORÍA
+========================================= */
 
-    button.addEventListener(
+document
+  .querySelectorAll(
+    ".category-button"
+  )
+  .forEach(
+    boton => {
+
+      boton.addEventListener(
         "click",
-        () => {
-
-            buttons.forEach(btn => {
-                btn.classList.remove("active");
-            });
+        function() {
 
 
-            button.classList.add("active");
+          document
+            .querySelectorAll(
+              ".category-button"
+            )
+            .forEach(
+              b =>
+                b.classList.remove(
+                  "active"
+                )
+            );
 
 
-            categoriaActual =
-                button.dataset.category;
+          this.classList.add(
+            "active"
+          );
 
 
-            mostrarNoticias();
+          categoriaActual =
+            this.dataset.category;
+
+
+          mostrarNoticias();
 
         }
-    );
+      );
 
-});
+    }
+  );
 
+
+/* =========================================
+   BUSCADOR
+========================================= */
 
 search.addEventListener(
-    "input",
-    mostrarNoticias
+  "input",
+  mostrarNoticias
 );
 
 
-mostrarNoticias();
+searchButton.addEventListener(
+  "click",
+  mostrarNoticias
+);
+
+
+search.addEventListener(
+  "keydown",
+  function(event) {
+
+    if (
+      event.key ===
+      "Enter"
+    ) {
+
+      mostrarNoticias();
+
+    }
+
+  }
+);
+
+
+/* =========================================
+   FECHA
+========================================= */
+
+function formatearFecha(
+  fecha
+) {
+
+  if (!fecha) {
+
+    return "Actualidad";
+
+  }
+
+
+  const fechaObjeto =
+    new Date(fecha);
+
+
+  if (
+    Number.isNaN(
+      fechaObjeto.getTime()
+    )
+  ) {
+
+    return String(fecha);
+
+  }
+
+
+  return fechaObjeto.toLocaleDateString(
+    "es-MX",
+    {
+      day: "2-digit",
+      month: "short",
+      year: "numeric"
+    }
+  );
+
+}
+
+
+/* =========================================
+   SEGURIDAD HTML
+========================================= */
+
+function escapar(texto) {
+
+  return String(texto)
+    .replaceAll(
+      "&",
+      "&amp;"
+    )
+    .replaceAll(
+      "<",
+      "&lt;"
+    )
+    .replaceAll(
+      ">",
+      "&gt;"
+    )
+    .replaceAll(
+      '"',
+      "&quot;"
+    )
+    .replaceAll(
+      "'",
+      "&#039;"
+    );
+
+}
+
+
+function escaparAtributo(
+  texto
+) {
+
+  return escapar(texto);
+
+}
+
+
+/* =========================================
+   INICIAR
+========================================= */
+
+cargarNoticias();
 
 </script>
 
+
 </body>
+
 </html>
