@@ -1,11 +1,23 @@
 {
-  "actualizado": "2026-10-01T22:14:38.676588+00:00",
-  "total": 464,
+  "actualizado": "2026-10-01T22:23:54.266577+00:00",
+  "total": 470,
   "imagenes": {
-    "con_imagen": 122,
-    "sin_imagen": 342
+    "con_imagen": 125,
+    "sin_imagen": 345,
+    "imagenes_unicas": 125
   },
   "noticias": [
+    {
+      "id": "47af3448840edb45b9049ef4745f76610fd26bee7936f834172087a4b6eebf43",
+      "titulo": "Joe Montana - MLB.com",
+      "descripcion": "Joe Montana MLB.com",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBRQ3dRUC1vYkdPSkpncmcxWkdNRmZZbnBwV0toMUhmT0pIWjBRTnRnY0liLS15aDRVcFJPZ1dvZkpCY1lndHV6VFBSa0lfTTlUeXc?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T22:20:34+00:00",
+      "fuente": "MLB.com",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol"
+    },
     {
       "id": "c3baa0a344ee5c47fdbbbca69bc43ff352ee8256def6b74be09a837ed6d2c2a9",
       "titulo": "¿Una pelea en el Estadio Banorte?: el deseo del Canelo para su última pelea - La Crónica de Hoy",
@@ -1833,6 +1845,17 @@
       "subcategoria": "otros"
     },
     {
+      "id": "bfdca7068b799b11e1da5792a8114f19126bf85226e7e97961386900edf58f49",
+      "titulo": "Medias Blancas barren a Astros y ganan su 1ra serie de playoffs desde 2005 - MLB.com",
+      "descripcion": "Medias Blancas barren a Astros y ganan su 1ra serie de playoffs desde 2005 MLB.com",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZUpwMmYySWVFZVNyQmFZMzZuc3ZUODBrT3J1MFlnQnF4YlNWa1dJc1ByRV9aQm1MaTlpS0ZZQThJZDZyOUdTanlsSW5JeThPVGxTTkV0d0kwRk5OakQ2YVhGXzAxNzludmtaQnNpYzVob1dnNS1BSlhwYzROMVVmT3Jnc0NmZEowOE5qaQ?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T03:44:41+00:00",
+      "fuente": "MLB.com",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol"
+    },
+    {
       "id": "29cee43d5f5843dc6cb644f2fad51dd582fcb53826f1d18d3f0a3fd062e8ca6c",
       "titulo": "Intensa jornada en el segundo día de actividad del LII Torneo Anual de Golf del Campestre Torreón - El Sol de México",
       "descripcion": "Intensa jornada en el segundo día de actividad del LII Torneo Anual de Golf del Campestre Torreón El Sol de México",
@@ -2200,6 +2223,17 @@
       "titulo": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión - MARCA",
       "descripcion": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión MARCA",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUUJjbnpfY0FuUVVLY2hIS0wyVXZnYVg1YkJCeXFWbHJSamxtMER1WnNQRFF2clA5c1ZzWVgyTUNFOWxhUW1wRlBPaXNWSjU1TUZsZ2dlQ0JQWFg0b2lENHZXYTN3STA3T2ZsbWN6cXpqWlJKTTB0SEQxaHF4ZWlQYWdBRXJwZVZMYXVjUkc5WnZES2xOTERBdTZFNFoxUlpyX2lySnhmQ3F2SGtiUl9Wb2x6NmpjcHlZYWE40gG7AUFVX3lxTE0yb0ZwTUlwYW9QZmhkZ1AzaTVwTkQ2VWVXcDZkRjd0dHZxdVhoYkI1cFlXUmg0YjBVRkp4bDNQNUFKQlNDdDYyVFNQZ2ItOGswM3BxT2FPdmJpaUdHTjRRd3lzTUd3c3R0WHlNcVZJUFBqR2pjcXhJbkZEakJTZVQtVG5pdTA1bUZ0R3NMb0lacTdwbUVsTmVRRUVCUWdUMkk0R2dDajh4Mi1rRkdmaHpZSnVGYUhJX04xY0E?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-30T23:55:27+00:00",
+      "fuente": "MARCA",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo"
+    },
+    {
+      "id": "0d3c3e8992151be2d3568219243af9e08d002794fa3d0a8d56957b99bad4c4ca",
+      "titulo": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión - MARCA",
+      "descripcion": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión MARCA",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUUJjbnpfY0FuUVVLY2hIS0wyVXZnYVg1YkJCeXFWbHJSamxtMER1WnNQRFF2clA5c1ZzWVgyTUNFOWxhUW1wRlBPaXNWSjU1TUZsZ2dlQ0JQWFg0b2lENHZXYTN3STA3T2ZsbWN6cXpqWlJKTTB0SEQxaHF4ZWlQYWdBRXJwZVZMYXVjUkc5WnZES2xOTERBdTZFNFoxUlpyX2lySnhmQ3F2SGtiUl9Wb2x6NmpjcHlZYWE4?oc=5",
       "imagen": "",
       "fecha": "2026-09-30T23:55:27+00:00",
       "fuente": "MARCA",
@@ -4594,6 +4628,17 @@
       "subcategoria": ""
     },
     {
+      "id": "edaf796963bf180aee62429828a5da5ff47caaca8ff4eba769f9b4397090c360",
+      "titulo": "Valora gana terreno mientras FEMSA apuesta por tiendas rentables",
+      "descripcion": "FEMSA crece en Europa en moneda local mientras cierra tiendas de bajo rendimiento y concentra sus inversiones en formatos más productivos, alimentos frescos y tecnología.",
+      "url": "https://expansion.mx/empresas/2026/09/24/femsa-valora-europa-foodvenience-tiendas-productividad",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/e996de9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F99%2Ff3%2Fc5e60fd34ef0be0de31cb30c6e18%2F1.jpeg",
+      "fecha": "2026-09-24T22:06:30+00:00",
+      "fuente": "Expansión",
+      "categoria": "Empresas",
+      "subcategoria": ""
+    },
+    {
       "id": "8fa2d56a3941f4beb537a2666e5881804aecec689f6dfc982ae1591a9fce6589",
       "titulo": "Día del Novio 2026: ¿por qué se regalan Hot Wheels y flores azules en octubre?",
       "descripcion": "La celebración tomó fuerza con el hashtag #NationalBoyfriendDay y las redes sociales terminaron por definir algunos de los regalos que hoy se relacionan con la fecha.",
@@ -4933,6 +4978,28 @@
       "fuente": "El Financiero",
       "categoria": "Deportes",
       "subcategoria": "nfl"
+    },
+    {
+      "id": "a83f99b3357fe3c7a0e3ad06350ba713267337206705c1a1024ded1825e069e6",
+      "titulo": "TikTok influye en el 13% de la venta de libros en México y da un segundo aire a librerías independientes",
+      "descripcion": "Además de ser una herramienta para la diversificación de canales de difusión literaria, TikTok también está cambiando la manera en que opera el negocio editorial.",
+      "url": "https://expansion.mx/tecnologia/2026/09/21/tiktok-compra-libros-librerias-independientes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/d7d1196/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F33%2F53%2F996e633a4252a82d43b61f11ff75%2Fwhatsapp-image-2026-09-21-at-3.47.05%20PM.jpeg",
+      "fecha": "2026-09-21T22:30:54+00:00",
+      "fuente": "Expansión",
+      "categoria": "Tecnologia",
+      "subcategoria": ""
+    },
+    {
+      "id": "f25fcbe4b34b18cc70fe5adc04e905ef1589c114fc11189f0a5d36c07cfc6b30",
+      "titulo": "Amazon Prime sube de precio por primera vez en 10 años y deja atrás los 99 pesos, ¿cuánto pagarás?",
+      "descripcion": "Amazon Prime cambia de precio en México y los clientes actuales todavía tienen tiempo para decidir qué hacer antes de su próxima renovación.",
+      "url": "https://expansion.mx/tecnologia/2026/09/21/amazon-prime-aumenta-precio-en-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/3d1218f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4c%2F72%2F52f2cc534af9827bf31b52ef9ed8%2Fimage-20260921-152719.jpg",
+      "fecha": "2026-09-21T22:12:51+00:00",
+      "fuente": "Expansión",
+      "categoria": "Tecnologia",
+      "subcategoria": ""
     },
     {
       "id": "012ab1cb34c92a1768fda654498a6827958c7fadd11b8a062bb172dbcc105fe9",
