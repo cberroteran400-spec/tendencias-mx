@@ -24,7 +24,7 @@ jobs:
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests beautifulsoup4 lxml googlenewsdecoder
+          pip install feedparser requests beautifulsoup4 lxml googlenewsdecoder pillow
 
       - name: Actualizar noticias
         env:
@@ -35,12 +35,14 @@ jobs:
           import os
           import re
           import time
+          import hashlib
           from datetime import datetime, timezone, timedelta
           from urllib.parse import urlparse
 
           import feedparser
           import requests
           from bs4 import BeautifulSoup
+          from PIL import Image
 
           try:
               from googlenewsdecoder import gnewsdecoder
@@ -56,7 +58,9 @@ jobs:
           HEADERS = {
               "User-Agent": (
                   "Mozilla/5.0 (Linux; Android 10) "
-                  "AppleWebKit/537.36 Chrome/120 Safari/537.36"
+                  "AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) "
+                  "Chrome/120.0 Mobile Safari/537.36"
               )
           }
 
@@ -125,38 +129,149 @@ jobs:
 
               u = url.lower()
 
-              rechazadas = [
+              host = urlparse(u).netloc
+              ruta = urlparse(u).path
+
+              hosts_google = [
+                  "google.com",
+                  "www.google.com",
+                  "images.google.com",
                   "news.google.com",
                   "googleusercontent.com",
+                  "lh3.googleusercontent.com",
+                  "lh4.googleusercontent.com",
+                  "lh5.googleusercontent.com",
+                  "lh6.googleusercontent.com",
                   "gstatic.com",
                   "googleapis.com",
-                  "google.com",
-                  "favicon",
+                  "ggpht.com",
+              ]
+
+              for host_google in hosts_google:
+                  if host == host_google or host.endswith("." + host_google):
+                      return True
+
+              palabras_prohibidas = [
                   "googlelogo",
                   "logo-google",
+                  "google-logo",
+                  "google_logo",
+                  "google-news",
+                  "googlenews",
+                  "googleusercontent",
+                  "gstatic",
+                  "favicon",
+                  "fav-icon",
+                  "apple-touch-icon",
                   "placeholder",
                   "default-image",
                   "default_image",
+                  "defaultimage",
                   "no-image",
                   "no_image",
                   "noimage",
+                  "image-placeholder",
+                  "img-placeholder",
+                  "thumbnail-placeholder",
                   "spacer",
-                  "pixel",
-                  "blank",
+                  "pixel.gif",
+                  "blank.gif",
+                  "blank.png",
+                  "blank.jpg",
+                  "transparent.gif",
                   "avatar",
                   "generic",
-                  "thumbnail-placeholder",
-                  "data:image",
+                  "fallback",
+                  "sin-imagen",
+                  "sin_imagen",
+                  "not-found",
+                  "notfound",
               ]
 
-              for palabra in rechazadas:
+              for palabra in palabras_prohibidas:
                   if palabra in u:
+                      return True
+
+              nombre_archivo = os.path.basename(ruta)
+
+              palabras_logo = [
+                  "logo",
+                  "brand",
+                  "branding",
+                  "favicon",
+                  "icon",
+                  "sprite",
+              ]
+
+              for palabra in palabras_logo:
+                  if palabra in nombre_archivo:
                       return True
 
               return False
 
+          def comprobar_imagen_real(url):
+              """
+              Comprueba que la URL realmente entregue una imagen
+              y que no sea una imagen diminuta, favicon o placeholder.
+              """
+
+              if imagen_rechazada(url):
+                  return False
+
+              try:
+                  respuesta = SESION.get(
+                      url,
+                      timeout=12,
+                      stream=True,
+                      allow_redirects=True
+                  )
+
+                  if respuesta.status_code >= 400:
+                      return False
+
+                  tipo = (
+                      respuesta.headers.get(
+                          "Content-Type",
+                          ""
+                      ).lower()
+                  )
+
+                  if "image/" not in tipo:
+                      return False
+
+                  contenido = respuesta.content
+
+                  if len(contenido) < 5000:
+                      return False
+
+                  try:
+                      from io import BytesIO
+
+                      imagen = Image.open(
+                          BytesIO(contenido)
+                      )
+
+                      ancho, alto = imagen.size
+
+                      if ancho < 250 or alto < 150:
+                          return False
+
+                      if ancho * alto < 50000:
+                          return False
+
+                  except Exception:
+                      return False
+
+                  return True
+
+              except Exception:
+                  return False
+
           def imagen_valida(url):
-              return bool(url) and not imagen_rechazada(url)
+              return (
+                  bool(url)
+                  and not imagen_rechazada(url)
+              )
 
           def limpiar_url(url):
               if not url:
@@ -194,22 +309,113 @@ jobs:
                           "article_url"
                       ):
                           valor = resultado.get(clave)
+
                           if valor:
-                              return str(valor).strip()
+                              valor = str(valor).strip()
+
+                              if (
+                                  valor.startswith("http://")
+                                  or valor.startswith("https://")
+                              ):
+                                  return valor
 
                   if isinstance(resultado, str):
-                      return resultado.strip()
+                      resultado = resultado.strip()
+
+                      if (
+                          resultado.startswith("http://")
+                          or resultado.startswith("https://")
+                      ):
+                          return resultado
 
               except Exception as e:
-                  print("No se pudo resolver Google News:", e)
+                  print(
+                      "No se pudo resolver Google News:",
+                      e
+                  )
 
               return ""
+
+          def candidato_es_logo(candidato, elemento=None):
+              """
+              Rechaza imágenes cuyo propio HTML indique
+              que son logos, iconos, avatares o imágenes genéricas.
+              """
+
+              texto = candidato.lower()
+
+              palabras = [
+                  "google",
+                  "favicon",
+                  "logo",
+                  "branding",
+                  "brand-logo",
+                  "site-logo",
+                  "header-logo",
+                  "icon",
+                  "avatar",
+                  "placeholder",
+                  "no-image",
+                  "default-image",
+              ]
+
+              for palabra in palabras:
+                  if palabra in texto:
+                      return True
+
+              if elemento is not None:
+                  atributos = [
+                      elemento.get("alt", ""),
+                      elemento.get("title", ""),
+                      elemento.get("class", ""),
+                      elemento.get("id", ""),
+                  ]
+
+                  texto_html = " ".join(
+                      str(x)
+                      for x in atributos
+                  ).lower()
+
+                  for palabra in palabras:
+                      if palabra in texto_html:
+                          return True
+
+              return False
+
+          def imagen_hash(url):
+              """
+              Obtiene un hash del archivo para evitar que
+              el mismo logo genérico aparezca repetido.
+              """
+
+              try:
+                  respuesta = SESION.get(
+                      url,
+                      timeout=12
+                  )
+
+                  if respuesta.status_code >= 400:
+                      return ""
+
+                  contenido = respuesta.content
+
+                  if not contenido:
+                      return ""
+
+                  return hashlib.sha256(
+                      contenido
+                  ).hexdigest()
+
+              except Exception:
+                  return ""
 
           def extraer_imagen(url_articulo):
               if not url_articulo:
                   return ""
 
-              url_articulo = resolver_google_news(url_articulo)
+              url_articulo = resolver_google_news(
+                  url_articulo
+              )
 
               if not url_articulo:
                   return ""
@@ -234,7 +440,12 @@ jobs:
 
                   candidatos = []
 
+                  # -----------------------------------------
+                  # 1. OPEN GRAPH
+                  # -----------------------------------------
+
                   for meta in soup.find_all("meta"):
+
                       prop = (
                           meta.get("property")
                           or meta.get("name")
@@ -253,16 +464,50 @@ jobs:
                           "og:image",
                           "og:image:url",
                           "og:image:secure_url",
+                      ):
+                          candidatos.append(
+                              (content, meta)
+                          )
+
+                  # -----------------------------------------
+                  # 2. TWITTER
+                  # -----------------------------------------
+
+                  for meta in soup.find_all("meta"):
+
+                      prop = (
+                          meta.get("property")
+                          or meta.get("name")
+                          or ""
+                      ).lower()
+
+                      content = (
+                          meta.get("content")
+                          or ""
+                      ).strip()
+
+                      if prop in (
                           "twitter:image",
                           "twitter:image:src",
                       ):
-                          candidatos.append(content)
+                          candidatos.append(
+                              (content, meta)
+                          )
+
+                  # -----------------------------------------
+                  # 3. JSON-LD
+                  # -----------------------------------------
 
                   for script in soup.find_all(
                       "script",
                       type="application/ld+json"
                   ):
-                      texto = script.string or script.get_text()
+
+                      texto = (
+                          script.string
+                          or script.get_text()
+                          or ""
+                      )
 
                       if not texto:
                           continue
@@ -273,27 +518,63 @@ jobs:
                           flags=re.I
                       )
 
-                      candidatos.extend(encontrados)
+                      for encontrado in encontrados:
+                          candidatos.append(
+                              (encontrado, script)
+                          )
+
+                  # -----------------------------------------
+                  # 4. IMAGENES DEL ARTICULO
+                  # -----------------------------------------
 
                   for img in soup.find_all("img"):
+
+                      # Revisar primero el contexto HTML
+                      if candidato_es_logo(
+                          "",
+                          img
+                      ):
+                          continue
+
                       for atributo in (
                           "src",
                           "data-src",
                           "data-lazy-src",
                           "data-original",
+                          "data-image",
+                          "data-url",
                       ):
-                          valor = img.get(atributo)
+
+                          valor = img.get(
+                              atributo
+                          )
 
                           if valor:
-                              candidatos.append(valor)
+                              candidatos.append(
+                                  (valor, img)
+                              )
 
                   base = respuesta.url
 
-                  for candidato in candidatos:
-                      candidato = limpiar_url(candidato)
+                  # -----------------------------------------
+                  # PROBAR CANDIDATOS
+                  # -----------------------------------------
+
+                  vistos = set()
+
+                  for candidato, elemento in candidatos:
+
+                      candidato = limpiar_url(
+                          candidato
+                      )
 
                       if not candidato:
                           continue
+
+                      if candidato in vistos:
+                          continue
+
+                      vistos.add(candidato)
 
                       if candidato.startswith("/"):
                           dominio = (
@@ -301,39 +582,94 @@ jobs:
                               + "://"
                               + urlparse(base).netloc
                           )
-                          candidato = dominio + candidato
 
-                      if imagen_valida(candidato):
-                          return candidato
+                          candidato = (
+                              dominio
+                              + candidato
+                          )
+
+                      if candidato.startswith("//"):
+                          candidato = (
+                              "https:"
+                              + candidato
+                          )
+
+                      if candidato_es_logo(
+                          candidato,
+                          elemento
+                      ):
+                          continue
+
+                      if imagen_rechazada(
+                          candidato
+                      ):
+                          continue
+
+                      # -------------------------------------
+                      # COMPROBACION REAL
+                      # -------------------------------------
+
+                      if not comprobar_imagen_real(
+                          candidato
+                      ):
+                          continue
+
+                      print(
+                          "Imagen REAL encontrada:",
+                          candidato
+                      )
+
+                      return candidato
 
               except Exception as e:
-                  print("Error buscando imagen:", e)
+                  print(
+                      "Error buscando imagen:",
+                      e
+                  )
 
               return ""
 
           def fecha_item(entry):
+
               try:
-                  if getattr(entry, "published_parsed", None):
+                  if getattr(
+                      entry,
+                      "published_parsed",
+                      None
+                  ):
                       return datetime.fromtimestamp(
-                          time.mktime(entry.published_parsed),
+                          time.mktime(
+                              entry.published_parsed
+                          ),
                           tz=timezone.utc
                       )
+
               except Exception:
                   pass
 
               try:
-                  if getattr(entry, "updated_parsed", None):
+                  if getattr(
+                      entry,
+                      "updated_parsed",
+                      None
+                  ):
                       return datetime.fromtimestamp(
-                          time.mktime(entry.updated_parsed),
+                          time.mktime(
+                              entry.updated_parsed
+                          ),
                           tz=timezone.utc
                       )
+
               except Exception:
                   pass
 
               return ahora()
 
           def categoria_general(categoria):
-              categoria = normalizar_texto(categoria)
+
+              categoria = normalizar_texto(
+                  categoria
+              )
 
               mapa = {
                   "Noticias": "Noticias",
@@ -353,15 +689,24 @@ jobs:
                   "Otros": "Deportes",
               }
 
-              return mapa.get(categoria, categoria or "Noticias")
+              return mapa.get(
+                  categoria,
+                  categoria or "Noticias"
+              )
 
           def subcategoria(categoria):
+
               return SUBCATEGORIAS.get(
                   categoria,
                   ""
               )
 
+          # =================================================
+          # CARGAR NOTICIAS EXISTENTES
+          # =================================================
+
           if os.path.exists(ARCHIVO):
+
               try:
                   with open(
                       ARCHIVO,
@@ -369,16 +714,25 @@ jobs:
                       encoding="utf-8"
                   ) as f:
                       datos = json.load(f)
+
               except Exception:
                   datos = {}
+
           else:
               datos = {}
 
           if isinstance(datos, list):
+
               noticias = datos
               estructura_lista = True
+
           else:
-              noticias = datos.get("noticias", [])
+
+              noticias = datos.get(
+                  "noticias",
+                  []
+              )
+
               estructura_lista = False
 
           if not isinstance(noticias, list):
@@ -387,7 +741,11 @@ jobs:
           mapa = {}
 
           for noticia in noticias:
-              if not isinstance(noticia, dict):
+
+              if not isinstance(
+                  noticia,
+                  dict
+              ):
                   continue
 
               url = normalizar_texto(
@@ -399,64 +757,177 @@ jobs:
               if url:
                   mapa[url] = noticia
 
-          print("Noticias existentes:", len(mapa))
+          print(
+              "Noticias existentes:",
+              len(mapa)
+          )
+
+          # =================================================
+          # IMAGENES YA UTILIZADAS
+          # =================================================
 
           imagenes_usadas = set()
+          hashes_imagenes = set()
 
           for noticia in mapa.values():
-              imagen = noticia.get("imagen", "")
+
+              imagen = noticia.get(
+                  "imagen",
+                  ""
+              )
 
               if imagen_valida(imagen):
-                  imagenes_usadas.add(imagen)
+
+                  imagenes_usadas.add(
+                      imagen
+                  )
+
+          print(
+              "Imagenes existentes:",
+              len(imagenes_usadas)
+          )
 
           cambios = False
 
-          # -------------------------------------------------
+          # =================================================
           # REPARAR IMAGENES EXISTENTES
-          # -------------------------------------------------
+          # =================================================
 
-          print("Revisando imágenes existentes...")
+          print("")
+          print(
+              "REVISION DE IMAGENES EXISTENTES"
+          )
+          print(
+              "==================================="
+          )
 
-          for url, noticia in list(mapa.items()):
+          for url, noticia in list(
+              mapa.items()
+          ):
 
-              imagen_actual = noticia.get("imagen", "")
+              imagen_actual = noticia.get(
+                  "imagen",
+                  ""
+              )
 
-              if imagen_valida(imagen_actual):
+              # ---------------------------------------------
+              # MUY IMPORTANTE:
+              # Si la imagen existente es sospechosa,
+              # TAMBIEN se repara.
+              # ---------------------------------------------
+
+              necesita_reparacion = (
+                  not imagen_valida(
+                      imagen_actual
+                  )
+              )
+
+              if not necesita_reparacion:
+
+                  # Comprobar también que la imagen
+                  # realmente siga siendo una imagen.
+                  if not comprobar_imagen_real(
+                      imagen_actual
+                  ):
+                      necesita_reparacion = True
+
+              if not necesita_reparacion:
                   continue
 
-              print("Buscando imagen para:", noticia.get("titulo", ""))
+              print("")
+              print(
+                  "REPARANDO:",
+                  noticia.get(
+                      "titulo",
+                      ""
+                  )
+              )
 
-              imagen_nueva = extraer_imagen(url)
+              imagen_nueva = extraer_imagen(
+                  url
+              )
 
-              if imagen_nueva and imagen_nueva not in imagenes_usadas:
-                  noticia["imagen"] = imagen_nueva
-                  imagenes_usadas.add(imagen_nueva)
+              if (
+                  imagen_nueva
+                  and imagen_nueva
+                  not in imagenes_usadas
+              ):
+
+                  noticia["imagen"] = (
+                      imagen_nueva
+                  )
+
+                  imagenes_usadas.add(
+                      imagen_nueva
+                  )
+
                   cambios = True
 
-                  print("Imagen encontrada:", imagen_nueva)
+                  print(
+                      "NUEVA IMAGEN:",
+                      imagen_nueva
+                  )
 
               else:
-                  print("No se encontró imagen real.")
+
+                  # Si no encontramos una imagen real,
+                  # dejamos el campo vacío.
+                  # NO ponemos logo de Google.
+                  if noticia.get(
+                      "imagen",
+                      ""
+                  ) != "":
+
+                      noticia["imagen"] = ""
+
+                      cambios = True
+
+                  print(
+                      "No se encontro imagen real."
+                  )
 
               time.sleep(0.3)
 
-          # -------------------------------------------------
-          # DESCARGAR NUEVAS NOTICIAS
-          # -------------------------------------------------
+          # =================================================
+          # NUEVAS NOTICIAS RSS
+          # =================================================
 
-          limite_fecha = ahora() - timedelta(
-              days=LIMITE_DIAS
+          print("")
+          print(
+              "DESCARGANDO NUEVAS NOTICIAS"
+          )
+          print(
+              "==================================="
+          )
+
+          limite_fecha = (
+              ahora()
+              - timedelta(
+                  days=LIMITE_DIAS
+              )
           )
 
           for categoria_fuente, feed_url in FUENTES:
 
               print("")
-              print("RSS:", feed_url)
+              print(
+                  "RSS:",
+                  feed_url
+              )
 
               try:
-                  feed = feedparser.parse(feed_url)
+
+                  feed = feedparser.parse(
+                      feed_url
+                  )
+
               except Exception as e:
-                  print("Error RSS:", e)
+
+                  print(
+                      "Error RSS:",
+                      e
+                  )
+
                   continue
 
               contador = 0
@@ -467,31 +938,48 @@ jobs:
                       break
 
                   titulo = normalizar_texto(
-                      entry.get("title", "")
+                      entry.get(
+                          "title",
+                          ""
+                      )
                   )
 
                   url = normalizar_texto(
-                      entry.get("link", "")
+                      entry.get(
+                          "link",
+                          ""
+                      )
                   )
 
                   if not titulo or not url:
                       continue
 
-                  fecha = fecha_item(entry)
+                  fecha = fecha_item(
+                      entry
+                  )
 
                   if fecha < limite_fecha:
                       continue
 
                   if url in mapa:
+
                       contador += 1
                       continue
 
                   descripcion = normalizar_texto(
-                      entry.get("summary", "")
-                      or entry.get("description", "")
+                      entry.get(
+                          "summary",
+                          ""
+                      )
+                      or entry.get(
+                          "description",
+                          ""
+                      )
                   )
 
-                  imagen = extraer_imagen(url)
+                  imagen = extraer_imagen(
+                      url
+                  )
 
                   noticia = {
                       "titulo": titulo,
@@ -499,7 +987,10 @@ jobs:
                       "imagen": imagen,
                       "descripcion": descripcion,
                       "fuente": normalizar_texto(
-                          entry.get("author", "")
+                          entry.get(
+                              "author",
+                              ""
+                          )
                           or categoria_fuente
                       ),
                       "categoria": categoria_general(
@@ -513,28 +1004,48 @@ jobs:
 
                   mapa[url] = noticia
 
-                  if imagen_valida(imagen):
-                      imagenes_usadas.add(imagen)
+                  if imagen_valida(
+                      imagen
+                  ):
+
+                      imagenes_usadas.add(
+                          imagen
+                      )
 
                   cambios = True
                   contador += 1
 
-                  print("Nueva noticia:", titulo)
+                  print(
+                      "Nueva noticia:",
+                      titulo
+                  )
 
-          # -------------------------------------------------
-          # ORDENAR
-          # -------------------------------------------------
+          # =================================================
+          # ORDENAR NOTICIAS
+          # =================================================
 
-          noticias_finales = list(mapa.values())
+          noticias_finales = list(
+              mapa.values()
+          )
 
           def obtener_fecha(noticia):
-              valor = noticia.get("fecha", "")
+
+              valor = noticia.get(
+                  "fecha",
+                  ""
+              )
 
               try:
+
                   return datetime.fromisoformat(
-                      valor.replace("Z", "+00:00")
+                      valor.replace(
+                          "Z",
+                          "+00:00"
+                      )
                   )
+
               except Exception:
+
                   return datetime.min.replace(
                       tzinfo=timezone.utc
                   )
@@ -544,32 +1055,60 @@ jobs:
               reverse=True
           )
 
-          noticias_finales = noticias_finales[:MAX_TOTAL]
+          noticias_finales = (
+              noticias_finales[:MAX_TOTAL]
+          )
 
-          # -------------------------------------------------
-          # ACTUALIZAR INFORMACION
-          # -------------------------------------------------
+          # =================================================
+          # ESTADISTICAS
+          # =================================================
 
           con_imagen = sum(
               1
               for n in noticias_finales
               if imagen_valida(
-                  n.get("imagen", "")
+                  n.get(
+                      "imagen",
+                      ""
+                  )
               )
           )
 
-          sin_imagen = len(noticias_finales) - con_imagen
+          sin_imagen = (
+              len(noticias_finales)
+              - con_imagen
+          )
 
-          actualizado = ahora().isoformat()
+          actualizado = (
+              ahora().isoformat()
+          )
+
+          # =================================================
+          # GUARDAR
+          # =================================================
 
           if estructura_lista:
-              salida = noticias_finales
-          else:
-              salida = dict(datos)
 
-              salida["noticias"] = noticias_finales
-              salida["actualizado"] = actualizado
-              salida["total"] = len(noticias_finales)
+              salida = noticias_finales
+
+          else:
+
+              salida = dict(
+                  datos
+              )
+
+              salida["noticias"] = (
+                  noticias_finales
+              )
+
+              salida["actualizado"] = (
+                  actualizado
+              )
+
+              salida["total"] = (
+                  len(noticias_finales)
+              )
+
               salida["imagenes"] = {
                   "con_imagen": con_imagen,
                   "sin_imagen": sin_imagen
@@ -580,6 +1119,7 @@ jobs:
               "w",
               encoding="utf-8"
           ) as f:
+
               json.dump(
                   salida,
                   f,
@@ -588,13 +1128,31 @@ jobs:
               )
 
           print("")
-          print("===================================")
-          print("ACTUALIZACION TERMINADA")
-          print("Noticias:", len(noticias_finales))
-          print("Con imagen:", con_imagen)
-          print("Sin imagen:", sin_imagen)
-          print("Cambios:", cambios)
-          print("===================================")
+          print(
+              "==================================="
+          )
+          print(
+              "ACTUALIZACION TERMINADA"
+          )
+          print(
+              "Noticias:",
+              len(noticias_finales)
+          )
+          print(
+              "Con imagen:",
+              con_imagen
+          )
+          print(
+              "Sin imagen:",
+              sin_imagen
+          )
+          print(
+              "Cambios:",
+              cambios
+          )
+          print(
+              "==================================="
+          )
           PYTHON
 
           python actualizar.py
@@ -609,6 +1167,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No hay cambios para guardar."
           else
-            git commit -m "Actualizar noticias RSS e imagenes"
+            git commit -m "Reparar imagenes de noticias"
             git push
           fi
