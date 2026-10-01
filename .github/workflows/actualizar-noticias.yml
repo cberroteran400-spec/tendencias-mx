@@ -37,7 +37,7 @@ jobs:
           import html
           import unicodedata
           from datetime import datetime, timezone, timedelta
-          from urllib.parse import quote_plus, urlparse
+          from urllib.parse import quote_plus, urlparse, urljoin
 
           import feedparser
           import requests
@@ -89,8 +89,6 @@ jobs:
 
           # ============================================================
           # FUENTES DEPORTIVAS DIRECTAS
-          #
-          # ESPN mantiene RSS separados por deporte.
           # ============================================================
 
           FUENTES_DEPORTIVAS = {
@@ -294,116 +292,302 @@ jobs:
                   return False
 
 
+          # ============================================================
+          # IMÁGENES
+          # ÚNICA PARTE MODIFICADA
+          # ============================================================
+
+          def comprobar_imagen(url):
+              """
+              Comprueba que la URL realmente entregue una imagen.
+              No acepta carpetas, páginas HTML ni URLs de texto.
+              """
+
+              if not url:
+                  return ""
+
+              try:
+                  url = html.unescape(
+                      str(url).strip()
+                  )
+
+                  if url.startswith("//"):
+                      url = "https:" + url
+
+                  if not url_valida(url):
+                      return ""
+
+                  respuesta = requests.get(
+                      url,
+                      headers=HEADERS,
+                      timeout=12,
+                      stream=True,
+                      allow_redirects=True
+                  )
+
+                  if respuesta.status_code != 200:
+                      respuesta.close()
+                      return ""
+
+                  tipo = (
+                      respuesta.headers
+                      .get("Content-Type", "")
+                      .lower()
+                  )
+
+                  url_final = respuesta.url
+
+                  respuesta.close()
+
+                  if tipo.startswith("image/"):
+                      return url_final
+
+              except Exception:
+                  pass
+
+              return ""
+
+
           def obtener_imagen_entry(entry):
+              """
+              Obtiene solamente imágenes reales desde el RSS.
+              """
+
               candidatos = []
 
+              # media:content
               try:
-                  for media in entry.get("media_content", []):
+                  for media in entry.get(
+                      "media_content",
+                      []
+                  ):
                       if isinstance(media, dict):
                           url = media.get("url")
+
                           if url:
                               candidatos.append(url)
               except Exception:
                   pass
 
+              # media:thumbnail
               try:
-                  for media in entry.get("media_thumbnail", []):
+                  for media in entry.get(
+                      "media_thumbnail",
+                      []
+                  ):
                       if isinstance(media, dict):
                           url = media.get("url")
+
                           if url:
                               candidatos.append(url)
               except Exception:
                   pass
 
+              # enclosure
               try:
-                  for enclosure in entry.get("enclosures", []):
+                  for enclosure in entry.get(
+                      "enclosures",
+                      []
+                  ):
                       if isinstance(enclosure, dict):
-                          url = enclosure.get("href") or enclosure.get("url")
-                          tipo = enclosure.get("type", "")
+
+                          url = (
+                              enclosure.get("href")
+                              or enclosure.get("url")
+                          )
+
+                          tipo = (
+                              enclosure.get("type")
+                              or ""
+                          ).lower()
 
                           if url and (
-                              "image" in tipo
+                              tipo.startswith("image/")
                               or url.lower().endswith(
-                                  (".jpg", ".jpeg", ".png", ".webp")
+                                  (
+                                      ".jpg",
+                                      ".jpeg",
+                                      ".png",
+                                      ".webp",
+                                      ".gif"
+                                  )
                               )
                           ):
                               candidatos.append(url)
+
               except Exception:
                   pass
 
-              contenido = (
-                  entry.get("summary", "")
-                  + " "
-                  + entry.get("description", "")
-                  + " "
-                  + entry.get("content", [{}])[0].get("value", "")
-                  if entry.get("content")
-                  else
-                  entry.get("summary", "")
-                  + " "
-                  + entry.get("description", "")
-              )
+              # HTML contenido dentro del RSS
+              contenido = ""
+
+              try:
+                  contenido += str(
+                      entry.get(
+                          "summary",
+                          ""
+                      )
+                  )
+
+                  contenido += " " + str(
+                      entry.get(
+                          "description",
+                          ""
+                      )
+                  )
+
+                  for item in entry.get(
+                      "content",
+                      []
+                  ):
+                      if isinstance(item, dict):
+                          contenido += " " + str(
+                              item.get(
+                                  "value",
+                                  ""
+                              )
+                          )
+
+              except Exception:
+                  pass
 
               try:
                   soup = BeautifulSoup(
-                      str(contenido),
+                      contenido,
                       "html.parser"
                   )
 
                   for img in soup.find_all("img"):
-                      src = (
+
+                      url = (
                           img.get("src")
                           or img.get("data-src")
                           or img.get("data-original")
+                          or img.get("data-lazy-src")
                       )
 
-                      if src:
-                          candidatos.append(src)
+                      if url:
+                          candidatos.append(url)
+
               except Exception:
                   pass
 
+              # Comprobar hasta encontrar una imagen REAL
               for url in candidatos:
-                  if url_valida(url):
-                      return url
+
+                  imagen = comprobar_imagen(
+                      url
+                  )
+
+                  if imagen:
+                      return imagen
 
               return ""
 
 
           def obtener_imagen_pagina(url):
+              """
+              Busca la imagen principal directamente
+              en la página de la noticia.
+              """
+
               if not url_valida(url):
                   return ""
 
               try:
-                  r = requests.get(
+                  respuesta = requests.get(
                       url,
                       headers=HEADERS,
-                      timeout=12,
+                      timeout=15,
                       allow_redirects=True
                   )
 
-                  if r.status_code != 200:
+                  if respuesta.status_code != 200:
                       return ""
 
+                  pagina_url = respuesta.url
+
                   soup = BeautifulSoup(
-                      r.text,
+                      respuesta.text,
                       "html.parser"
                   )
 
-                  for atributo in [
-                      ("property", "og:image"),
-                      ("name", "twitter:image"),
-                      ("property", "twitter:image")
-                  ]:
-                      meta = soup.find(
-                          "meta",
-                          attrs={atributo[0]: atributo[1]}
+                  candidatos = []
+
+                  # Open Graph
+                  for meta in soup.find_all(
+                      "meta",
+                      attrs={
+                          "property": "og:image"
+                      }
+                  ):
+                      imagen = meta.get("content")
+
+                      if imagen:
+                          candidatos.append(
+                              imagen
+                          )
+
+                  # Twitter Card
+                  for meta in soup.find_all(
+                      "meta",
+                      attrs={
+                          "name": "twitter:image"
+                      }
+                  ):
+                      imagen = meta.get("content")
+
+                      if imagen:
+                          candidatos.append(
+                              imagen
+                          )
+
+                  # Twitter usando property
+                  for meta in soup.find_all(
+                      "meta",
+                      attrs={
+                          "property": "twitter:image"
+                      }
+                  ):
+                      imagen = meta.get("content")
+
+                      if imagen:
+                          candidatos.append(
+                              imagen
+                          )
+
+                  # Imagen principal del artículo
+                  for img in soup.find_all("img"):
+
+                      src = (
+                          img.get("src")
+                          or img.get("data-src")
+                          or img.get("data-original")
+                          or img.get("data-lazy-src")
                       )
 
-                      if meta and meta.get("content"):
-                          imagen = meta.get("content")
+                      if src:
+                          candidatos.append(
+                              src
+                          )
 
-                          if url_valida(imagen):
-                              return imagen
+                  for imagen in candidatos:
+
+                      imagen = html.unescape(
+                          str(imagen).strip()
+                      )
+
+                      imagen = urljoin(
+                          pagina_url,
+                          imagen
+                      )
+
+                      imagen_real = comprobar_imagen(
+                          imagen
+                      )
+
+                      if imagen_real:
+                          return imagen_real
 
               except Exception:
                   pass
@@ -524,16 +708,23 @@ jobs:
 
               fecha = fecha_entry(entry)
 
-              # No queremos meter noticias excesivamente antiguas.
               if AHORA - fecha > timedelta(
                   days=LIMITE_DIAS
               ):
                   return None
 
-              imagen = obtener_imagen_entry(entry)
+              # Primero intenta obtener imagen directamente
+              # del RSS.
+              imagen = obtener_imagen_entry(
+                  entry
+              )
 
+              # Si el RSS no trae una imagen real,
+              # busca la imagen principal de la página.
               if not imagen:
-                  imagen = obtener_imagen_pagina(url)
+                  imagen = obtener_imagen_pagina(
+                      url
+                  )
 
               if subcategoria:
                   categoria_final = "Deportes"
@@ -783,8 +974,6 @@ jobs:
                           or ""
                       )
 
-                      # Si es un feed deportivo específico,
-                      # la categoría viene determinada por el feed.
                       noticia = construir_noticia(
                           entry,
                           obtener_fuente_entry(
@@ -798,9 +987,6 @@ jobs:
                       if not noticia:
                           continue
 
-                      # Para Google News hacemos una comprobación
-                      # adicional para evitar que entren resultados
-                      # que no tengan relación real con el deporte.
                       if fuente == "Google News":
 
                           detectada = clasificar_deporte(
@@ -819,9 +1005,6 @@ jobs:
 
           # ============================================================
           # 3. GOOGLE TRENDS MÉXICO
-          #
-          # Las tendencias sirven como señal de demanda.
-          # Después buscamos noticias reales sobre esos términos.
           # ============================================================
 
           print("\n=== GOOGLE TRENDS MÉXICO ===")
@@ -854,9 +1037,6 @@ jobs:
                       titulo_tendencia
                   )
 
-          # Si el RSS de Trends no responde, usamos
-          # algunas señales de búsqueda de Google News
-          # como respaldo, sin inventar noticias.
           if not tendencias:
               print(
                   "No se pudo leer Trends RSS; "
@@ -882,7 +1062,6 @@ jobs:
 
               tendencias = tendencias_respaldo
 
-          # Eliminar tendencias repetidas.
           vistas = set()
           tendencias_limpias = []
 
@@ -904,10 +1083,6 @@ jobs:
               f"Tendencias detectadas: "
               f"{len(tendencias_limpias)}"
           )
-
-          # ============================================================
-          # Buscar noticias reales para cada tendencia
-          # ============================================================
 
           for tendencia in tendencias_limpias[
               :MAX_TENDENCIAS
@@ -950,8 +1125,6 @@ jobs:
                       + descripcion
                   )
 
-                  # Debe existir relación razonable entre
-                  # la tendencia y la noticia.
                   palabras_tendencia = [
                       p for p in normalizar(
                           tendencia
@@ -976,8 +1149,8 @@ jobs:
                   if deporte:
                       categoria = "Deportes"
                       subcategoria = deporte
+
                   else:
-                      # Clasificación general de tendencias.
                       if any(
                           palabra in texto
                           for palabra in [
@@ -1073,11 +1246,6 @@ jobs:
 
           # ============================================================
           # 4. DEDUPLICACIÓN AVANZADA
-          #
-          # Evita:
-          # - misma URL
-          # - mismo título
-          # - títulos casi idénticos
           # ============================================================
 
           print("\n=== DEDUPLICACIÓN ===")
@@ -1086,7 +1254,6 @@ jobs:
               mapa.values()
           )
 
-          # Ordenar primero por fecha.
           noticias.sort(
               key=lambda n: n.get(
                   "fecha",
@@ -1165,11 +1332,7 @@ jobs:
 
 
           # ============================================================
-          # 5. LIMITAR POR CATEGORÍA
-          #
-          # Conservamos suficiente contenido para que la web
-          # siga creciendo, pero evitamos que una sola fuente
-          # llene todo el JSON.
+          # 5. LIMITAR CONTENIDO
           # ============================================================
 
           print("\n=== LIMITANDO CONTENIDO ===")
@@ -1211,7 +1374,6 @@ jobs:
               )
 
 
-          # Orden final por fecha.
           resultado_final.sort(
               key=lambda n: n.get(
                   "fecha",
@@ -1220,7 +1382,6 @@ jobs:
               reverse=True
           )
 
-          # Máximo total.
           resultado_final = resultado_final[
               :MAX_TOTAL
           ]
