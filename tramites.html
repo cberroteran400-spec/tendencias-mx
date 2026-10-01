@@ -6,8 +6,8 @@
 
 <title>Trámites | TendenciasMX</title>
 
-<meta name="description" content="Encuentra información organizada sobre trámites, documentos y servicios de utilidad para ciudadanos en México.">
-<meta name="keywords" content="trámites México, CURP, RFC, INE, pasaporte, acta de nacimiento, licencia de conducir, SAT">
+<meta name="description" content="Encuentra información sobre CURP, RFC, INE, pasaporte, licencia de conducir, acta de nacimiento, empleo y otros trámites en México.">
+<meta name="keywords" content="trámites México, CURP, RFC, INE, pasaporte, licencia, acta de nacimiento, TendenciasMX">
 
 <style>
 *{
@@ -19,7 +19,8 @@
 body{
     font-family:Arial,Helvetica,sans-serif;
     background:#f4f6f8;
-    color:#111827;
+    color:#1f2937;
+    line-height:1.6;
 }
 
 header{
@@ -28,11 +29,11 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 3px 12px rgba(0,0,0,.15);
+    box-shadow:0 2px 12px rgba(0,0,0,.15);
 }
 
 .header-inner{
-    max-width:1100px;
+    max-width:1150px;
     margin:auto;
     padding:16px 20px;
     display:flex;
@@ -44,6 +45,8 @@ header{
 .logo{
     font-size:25px;
     font-weight:800;
+    text-decoration:none;
+    color:white;
     white-space:nowrap;
 }
 
@@ -53,26 +56,22 @@ header{
 
 nav{
     display:flex;
-    gap:7px;
-    overflow-x:auto;
-    scrollbar-width:none;
-}
-
-nav::-webkit-scrollbar{
-    display:none;
+    gap:6px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
 }
 
 nav a{
     color:#d1d5db;
     text-decoration:none;
-    padding:9px 11px;
+    font-size:13px;
+    padding:8px 9px;
     border-radius:8px;
-    font-size:14px;
-    white-space:nowrap;
     transition:.2s;
 }
 
-nav a:hover{
+nav a:hover,
+nav a.active{
     background:#1f2937;
     color:#22c55e;
 }
@@ -80,7 +79,7 @@ nav a:hover{
 main{
     max-width:1100px;
     margin:auto;
-    padding:35px 20px 55px;
+    padding:45px 20px 60px;
 }
 
 .hero{
@@ -89,8 +88,9 @@ main{
 }
 
 .hero h1{
-    font-size:38px;
-    margin-bottom:10px;
+    font-size:42px;
+    color:#111827;
+    margin-bottom:12px;
 }
 
 .hero h1 span{
@@ -101,226 +101,168 @@ main{
     max-width:720px;
     margin:auto;
     color:#6b7280;
-    font-size:16px;
-    line-height:1.6;
+    font-size:17px;
 }
 
-.busqueda{
-    max-width:750px;
-    margin:25px auto 35px;
-    display:flex;
-    gap:10px;
+.search-box{
+    max-width:650px;
+    margin:30px auto;
 }
 
-.busqueda input{
-    flex:1;
+.search-box input{
+    width:100%;
+    padding:16px 18px;
     border:1px solid #d1d5db;
+    border-radius:12px;
     background:white;
-    border-radius:10px;
-    padding:14px 16px;
-    font-size:15px;
+    font-size:16px;
     outline:none;
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
 }
 
-.busqueda input:focus{
+.search-box input:focus{
     border-color:#22c55e;
     box-shadow:0 0 0 3px rgba(34,197,94,.12);
 }
 
-.busqueda button{
-    border:0;
-    background:#22c55e;
-    color:white;
-    font-weight:bold;
-    padding:0 22px;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:15px;
-}
-
-.busqueda button:hover{
-    background:#16a34a;
-}
-
-.seccion-titulo{
-    margin-bottom:15px;
-}
-
-.seccion-titulo h2{
-    font-size:22px;
-}
-
-.contador{
-    color:#6b7280;
-    font-size:14px;
-    margin-top:5px;
-}
-
-.filtros{
+.categories{
     display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
     gap:9px;
-    overflow-x:auto;
-    padding:5px 0 25px;
-    scrollbar-width:none;
+    margin-bottom:30px;
 }
 
-.filtros::-webkit-scrollbar{
-    display:none;
-}
-
-.filtros button{
+.category-btn{
     border:1px solid #d1d5db;
     background:white;
     color:#374151;
-    padding:10px 15px;
+    padding:9px 14px;
     border-radius:999px;
     cursor:pointer;
-    white-space:nowrap;
+    font-weight:700;
     font-size:14px;
     transition:.2s;
 }
 
-.filtros button:hover,
-.filtros button.activo{
+.category-btn:hover,
+.category-btn.active{
     background:#22c55e;
-    color:white;
     border-color:#22c55e;
+    color:#052e16;
 }
 
-.grid{
+.tramites-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:20px;
 }
 
-.card{
+.tramite{
     background:white;
-    border:1px solid #e5e7eb;
     border-radius:16px;
     overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,.07);
-    transition:.25s;
+    border:1px solid #e5e7eb;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+    transition:.2s;
     display:flex;
     flex-direction:column;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 9px 25px rgba(0,0,0,.12);
+.tramite:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.11);
 }
 
-.card-imagen{
-    height:175px;
-    width:100%;
-    background:#111827;
+.tramite-image{
+    height:190px;
     overflow:hidden;
+    background:#111827;
 }
 
-.card-imagen img{
+.tramite-image img{
     width:100%;
     height:100%;
     object-fit:cover;
     display:block;
 }
 
-.card-contenido{
+.tramite-content{
     padding:20px;
     display:flex;
     flex-direction:column;
     flex:1;
 }
 
-.categoria{
+.badge{
     display:inline-block;
     width:max-content;
     background:#dcfce7;
-    color:#15803d;
-    font-size:12px;
-    font-weight:bold;
+    color:#166534;
     padding:5px 9px;
     border-radius:999px;
-    margin-bottom:12px;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:10px;
 }
 
-.card h3{
-    font-size:20px;
-    margin-bottom:9px;
+.tramite h2{
     color:#111827;
+    font-size:21px;
+    margin-bottom:8px;
 }
 
-.card p{
+.tramite p{
     color:#6b7280;
     font-size:14px;
-    line-height:1.55;
     margin-bottom:18px;
     flex:1;
 }
 
-.btn-tramite{
+.btn{
     display:block;
     text-align:center;
     text-decoration:none;
-    background:#111827;
-    color:white;
+    background:#22c55e;
+    color:#052e16;
     padding:11px 14px;
     border-radius:9px;
+    font-weight:800;
     font-size:14px;
-    font-weight:bold;
     transition:.2s;
 }
 
-.btn-tramite:hover{
-    background:#22c55e;
+.btn:hover{
+    background:#16a34a;
+    color:white;
 }
 
-.vacio{
-    grid-column:1/-1;
-    background:white;
-    border-radius:15px;
-    padding:45px 20px;
+.no-results{
+    display:none;
     text-align:center;
-    color:#6b7280;
-}
-
-.aviso{
-    margin-top:42px;
     background:white;
-    border:1px solid #dbe4ea;
-    border-left:5px solid #22c55e;
     border-radius:14px;
-    padding:22px 24px;
-    box-shadow:0 3px 12px rgba(0,0,0,.05);
-}
-
-.aviso-titulo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-size:18px;
-    font-weight:bold;
-    color:#111827;
-    margin-bottom:9px;
-}
-
-.aviso-icono{
-    width:34px;
-    height:34px;
-    border-radius:50%;
-    background:#dcfce7;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:18px;
-}
-
-.aviso p{
+    padding:35px;
     color:#6b7280;
-    line-height:1.6;
-    font-size:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
 }
 
-.aviso strong{
-    color:#374151;
+.info{
+    margin-top:40px;
+    background:white;
+    border-left:5px solid #22c55e;
+    border-radius:12px;
+    padding:22px;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+}
+
+.info h3{
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.info p{
+    color:#6b7280;
 }
 
 footer{
@@ -328,57 +270,53 @@ footer{
     color:#9ca3af;
     text-align:center;
     padding:25px 20px;
-    font-size:13px;
+    font-size:14px;
 }
 
 footer strong{
     color:#22c55e;
 }
 
-@media(max-width:850px){
-
-    .grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+@media(max-width:900px){
 
     .header-inner{
         flex-direction:column;
-        align-items:flex-start;
     }
 
     nav{
-        width:100%;
+        justify-content:center;
+    }
+
+    .tramites-grid{
+        grid-template-columns:repeat(2,1fr);
     }
 }
 
 @media(max-width:600px){
 
     main{
-        padding:28px 14px 45px;
+        padding:35px 15px 50px;
     }
 
     .hero h1{
         font-size:30px;
     }
 
-    .busqueda{
-        flex-direction:column;
+    .hero p{
+        font-size:15px;
     }
 
-    .busqueda button{
-        height:48px;
-    }
-
-    .grid{
+    .tramites-grid{
         grid-template-columns:1fr;
     }
 
-    .card-imagen{
+    .tramite-image{
         height:200px;
     }
 
-    .aviso{
-        padding:19px;
+    nav a{
+        font-size:12px;
+        padding:7px 7px;
     }
 }
 </style>
@@ -390,24 +328,38 @@ footer strong{
 
     <div class="header-inner">
 
-        <div class="logo">
+        <a href="./index.html" class="logo">
             Tendencias<span>MX</span>
-        </div>
+        </a>
 
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="deportes.html">Deportes</a>
-            <a href="entretenimiento.html">Entretenimiento</a>
-            <a href="tecnologia.html">Tecnología</a>
-            <a href="dinero.html">Dinero</a>
-            <a href="politica.html">Política</a>
-            <a href="tramites.html">Trámites</a>
+
+            <a href="./index.html">Inicio</a>
+
+            <a href="./noticias.html">Noticias</a>
+
+            <a href="./deportes.html">Deportes</a>
+
+            <a href="./entretenimiento.html">Entretenimiento</a>
+
+            <a href="./tecnologia.html">Tecnología</a>
+
+            <a href="./dinero.html">Dinero</a>
+
+            <a href="./politica.html">Política</a>
+
+            <a href="./tramites.html" class="active">Trámites</a>
+
+            <a href="./contacto.html">Contacto</a>
+
+            <a href="./preguntas.html">Preguntas</a>
+
         </nav>
 
     </div>
 
 </header>
+
 
 <main>
 
@@ -418,391 +370,526 @@ footer strong{
         </h1>
 
         <p>
-            Encuentra información organizada sobre trámites,
-            documentos y servicios que pueden ser de utilidad
-            para ciudadanos en México.
+            Encuentra información organizada sobre documentos,
+            identificación, impuestos, transporte, viajes y otros
+            trámites de interés en México.
         </p>
 
     </section>
 
 
-    <div class="busqueda">
+    <div class="search-box">
 
         <input
-            type="search"
+            type="text"
             id="buscador"
-            placeholder="Buscar un trámite..."
-            autocomplete="off"
+            placeholder="🔎 Buscar un trámite..."
+            oninput="filtrar()"
         >
 
-        <button onclick="buscarTramite()">
-            Buscar
+    </div>
+
+
+    <div class="categories">
+
+        <button
+            class="category-btn active"
+            onclick="categoria('todos',this)"
+        >
+            Todos
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="categoria('documentos',this)"
+        >
+            📄 Documentos
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="categoria('identificacion',this)"
+        >
+            🪪 Identificación
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="categoria('impuestos',this)"
+        >
+            💰 Impuestos
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="categoria('transporte',this)"
+        >
+            🚗 Transporte
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="categoria('viajes',this)"
+        >
+            ✈️ Viajes
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="categoria('empleo',this)"
+        >
+            💼 Empleo
         </button>
 
     </div>
 
 
-    <section>
+    <section class="tramites-grid" id="tramitesGrid">
 
-        <div class="seccion-titulo">
 
-            <h2>Categorías</h2>
+        <article class="tramite" data-categoria="documentos">
 
-            <div class="contador" id="contador">
-                9 trámites
-            </div>
-
-        </div>
-
-
-        <div class="filtros">
-
-            <button class="activo" onclick="filtrar('todos',this)">
-                Todos
-            </button>
-
-            <button onclick="filtrar('documentos',this)">
-                📄 Documentos
-            </button>
-
-            <button onclick="filtrar('identificacion',this)">
-                🪪 Identificación
-            </button>
-
-            <button onclick="filtrar('impuestos',this)">
-                💰 Impuestos
-            </button>
-
-            <button onclick="filtrar('transporte',this)">
-                🚗 Transporte
-            </button>
-
-            <button onclick="filtrar('viajes',this)">
-                ✈️ Viajes
-            </button>
-
-            <button onclick="filtrar('empleo',this)">
-                💼 Empleo
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <section>
-
-        <div class="seccion-titulo">
-            <h2>Trámites populares</h2>
-        </div>
-
-        <div id="contenedor" class="grid"></div>
-
-    </section>
-
-
-    <section class="aviso">
-
-        <div class="aviso-titulo">
-
-            <div class="aviso-icono">
-                ℹ️
-            </div>
-
-            Información importante
-
-        </div>
-
-        <p>
-            <strong>TendenciasMX funciona como una guía informativa.</strong>
-            Los requisitos, costos, horarios, documentos y procedimientos
-            pueden cambiar. Antes de realizar cualquier trámite, consulta
-            siempre la información más reciente directamente con la
-            institución oficial correspondiente.
-        </p>
-
-    </section>
-
-</main>
-
-
-<footer>
-    <strong>TendenciasMX</strong> · Información y servicios para México
-</footer>
-
-
-<script>
-
-const tramites = [
-
-    {
-        nombre:"CURP",
-        categoria:"identificacion",
-        categoriaNombre:"Identificación",
-        imagen:"https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=85",
-        descripcion:"Información general sobre la Clave Única de Registro de Población y cómo consultar tus datos.",
-        url:"https://www.gob.mx/curp/"
-    },
-
-    {
-        nombre:"RFC",
-        categoria:"impuestos",
-        categoriaNombre:"Impuestos",
-        imagen:"https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=85",
-        descripcion:"Información general relacionada con el Registro Federal de Contribuyentes y obligaciones fiscales.",
-        url:"https://wwwmatnp.sat.gob.mx/personas/tramites-del-rfc"
-    },
-
-    {
-        nombre:"Credencial para votar",
-        categoria:"identificacion",
-        categoriaNombre:"Identificación",
-        imagen:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1000&q=85",
-        descripcion:"Información general sobre la identificación oficial emitida por el INE y sus principales trámites.",
-        url:"https://www.ine.mx/credencial/"
-    },
-
-    {
-        nombre:"Pasaporte",
-        categoria:"viajes",
-        categoriaNombre:"Viajes",
-        imagen:"https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=85",
-        descripcion:"Información general sobre el documento necesario para realizar viajes internacionales y cómo consultar requisitos.",
-        url:"https://www.gob.mx/pasaporte/"
-    },
-
-    {
-        nombre:"Licencia de conducir",
-        categoria:"transporte",
-        categoriaNombre:"Transporte",
-        imagen:"https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1000&q=85",
-        descripcion:"Información general sobre licencias de conducir y trámites relacionados con vehículos.",
-        url:"https://www.gob.mx/tramites"
-    },
-
-    {
-        nombre:"Trámites relacionados con empleo",
-        categoria:"empleo",
-        categoriaNombre:"Empleo",
-        imagen:"https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85",
-        descripcion:"Información general sobre documentos y procesos que pueden solicitarse en situaciones laborales.",
-        url:"https://www.gob.mx/tramites"
-    },
-
-    {
-        nombre:"Acta de nacimiento",
-        categoria:"documentos",
-        categoriaNombre:"Documentos",
-        imagen:"https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=85",
-        descripcion:"Información general sobre la consulta y obtención de copias certificadas del acta de nacimiento.",
-        url:"https://www.gob.mx/ActaNacimiento/"
-    },
-
-    {
-        nombre:"Comprobantes y documentos",
-        categoria:"documentos",
-        categoriaNombre:"Documentos",
-        imagen:"https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1000&q=85",
-        descripcion:"Información general sobre documentos que pueden ser solicitados para diferentes trámites.",
-        url:"https://www.gob.mx/tramites"
-    },
-
-    {
-        nombre:"Viajes internacionales",
-        categoria:"viajes",
-        categoriaNombre:"Viajes",
-        imagen:"https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=85",
-        descripcion:"Información general sobre documentación y requisitos que pueden aplicar al viajar.",
-        url:"https://www.gob.mx/sre"
-    }
-
-];
-
-
-const contenedor = document.getElementById("contenedor");
-const contador = document.getElementById("contador");
-const buscador = document.getElementById("buscador");
-
-
-function escapar(texto){
-
-    return String(texto)
-        .replace(/&/g,"&amp;")
-        .replace(/</g,"&lt;")
-        .replace(/>/g,"&gt;")
-        .replace(/"/g,"&quot;")
-        .replace(/'/g,"&#039;");
-
-}
-
-
-function imagenFallback(img){
-
-    img.style.display="none";
-
-    const padre=img.parentElement;
-
-    padre.style.display="flex";
-    padre.style.alignItems="center";
-    padre.style.justifyContent="center";
-    padre.style.background="#111827";
-
-    padre.innerHTML=`
-        <div style="
-            color:#22c55e;
-            font-size:45px;
-            font-weight:bold;
-        ">
-            MX
-        </div>
-    `;
-
-}
-
-
-function renderizar(lista){
-
-    contador.textContent =
-        lista.length +
-        (lista.length === 1 ? " trámite" : " trámites");
-
-
-    if(lista.length === 0){
-
-        contenedor.innerHTML=`
-            <div class="vacio">
-                <h3>No encontramos ese trámite</h3>
-                <p>
-                    Prueba con otra palabra o selecciona
-                    una categoría.
-                </p>
-            </div>
-        `;
-
-        return;
-    }
-
-
-    contenedor.innerHTML=lista.map(tramite=>`
-
-        <article class="card">
-
-            <div class="card-imagen">
+            <div class="tramite-image">
 
                 <img
-                    src="${escapar(tramite.imagen)}"
-                    alt="${escapar(tramite.nombre)}"
+                    src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=80"
+                    alt="Documentos"
                     loading="lazy"
-                    onerror="imagenFallback(this)"
                 >
 
             </div>
 
-            <div class="card-contenido">
+            <div class="tramite-content">
 
-                <span class="categoria">
-                    ${escapar(tramite.categoriaNombre)}
-                </span>
+                <span class="badge">📄 Documentos</span>
 
-                <h3>
-                    ${escapar(tramite.nombre)}
-                </h3>
+                <h2>CURP</h2>
 
                 <p>
-                    ${escapar(tramite.descripcion)}
+                    Consulta información sobre la Clave Única
+                    de Registro de Población.
                 </p>
 
                 <a
-                    class="btn-tramite"
-                    href="${escapar(tramite.url)}"
+                    class="btn"
+                    href="https://www.gob.mx/curp/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Consultar información oficial →
+                    Consultar CURP
                 </a>
 
             </div>
 
         </article>
 
-    `).join("");
 
-}
+        <article class="tramite" data-categoria="impuestos">
+
+            <div class="tramite-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1000&q=80"
+                    alt="Impuestos"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="tramite-content">
+
+                <span class="badge">💰 Impuestos</span>
+
+                <h2>RFC</h2>
+
+                <p>
+                    Información para consultar y realizar
+                    trámites relacionados con el RFC.
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://www.sat.gob.mx/personas/tramites-del-rfc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar RFC
+                </a>
+
+            </div>
+
+        </article>
 
 
-function filtrar(categoria,boton){
+        <article class="tramite" data-categoria="identificacion">
+
+            <div class="tramite-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80"
+                    alt="Identificación"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="tramite-content">
+
+                <span class="badge">🪪 Identificación</span>
+
+                <h2>Credencial para votar</h2>
+
+                <p>
+                    Consulta información oficial relacionada
+                    con la credencial para votar.
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://www.ine.mx/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ir al INE
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="tramite" data-categoria="viajes">
+
+            <div class="tramite-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1000&q=80"
+                    alt="Pasaporte"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="tramite-content">
+
+                <span class="badge">✈️ Viajes</span>
+
+                <h2>Pasaporte</h2>
+
+                <p>
+                    Consulta información sobre requisitos
+                    y procedimientos para obtener el pasaporte.
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://www.gob.mx/sre/acciones-y-programas/pasaporte-mexicano"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar pasaporte
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="tramite" data-categoria="transporte">
+
+            <div class="tramite-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1000&q=80"
+                    alt="Transporte"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="tramite-content">
+
+                <span class="badge">🚗 Transporte</span>
+
+                <h2>Licencia de conducir</h2>
+
+                <p>
+                    Consulta la información y requisitos de
+                    la licencia de conducir según tu entidad.
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://www.gob.mx/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar información
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="tramite" data-categoria="empleo">
+
+            <div class="tramite-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1000&q=80"
+                    alt="Empleo"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="tramite-content">
+
+                <span class="badge">💼 Empleo</span>
+
+                <h2>Trámites relacionados con empleo</h2>
+
+                <p>
+                    Encuentra información sobre servicios
+                    y trámites relacionados con el empleo.
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://www.gob.mx/stps"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar STPS
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="tramite" data-categoria="documentos">
+
+            <div class="tramite-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=1000&q=80"
+                    alt="Acta de nacimiento"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="tramite-content">
+
+                <span class="badge">📄 Documentos</span>
+
+                <h2>Acta de nacimiento</h2>
+
+                <p>
+                    Consulta información para obtener una copia
+                    certificada del acta de nacimiento.
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://www.gob.mx/ActaNacimiento/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar acta
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="tramite" data-categoria="documentos">
+
+            <div class="tramite-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=80"
+                    alt="Comprobantes y documentos"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="tramite-content">
+
+                <span class="badge">📄 Documentos</span>
+
+                <h2>Comprobantes y documentos</h2>
+
+                <p>
+                    Consulta información sobre documentos
+                    y servicios disponibles en línea.
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://www.gob.mx/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ir a gob.mx
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="tramite" data-categoria="viajes">
+
+            <div class="tramite-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&w=1000&q=80"
+                    alt="Viajes internacionales"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="tramite-content">
+
+                <span class="badge">✈️ Viajes</span>
+
+                <h2>Viajes internacionales</h2>
+
+                <p>
+                    Consulta recomendaciones e información
+                    oficial para viajar al extranjero.
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://www.gob.mx/sre"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar SRE
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+
+    <div id="sinResultados" class="no-results">
+
+        <h3>No encontramos ese trámite</h3>
+
+        <p>
+            Prueba con otra palabra o selecciona otra categoría.
+        </p>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>⚠️ Información importante</h3>
+
+        <p>
+            TendenciasMX es un sitio informativo. Antes de proporcionar
+            datos personales, realizar pagos o iniciar un trámite,
+            verifica que estés utilizando el sitio oficial de la
+            institución correspondiente.
+        </p>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    © 2026 <strong>TendenciasMX</strong> · Información y actualidad
+
+</footer>
+
+
+<script>
+
+let categoriaActual = "todos";
+
+
+function categoria(categoriaSeleccionada, boton){
+
+    categoriaActual = categoriaSeleccionada;
 
     document
-        .querySelectorAll(".filtros button")
-        .forEach(btn=>btn.classList.remove("activo"));
+        .querySelectorAll(".category-btn")
+        .forEach(function(btn){
 
-    boton.classList.add("activo");
+            btn.classList.remove("active");
 
-    buscador.value="";
+        });
 
+    boton.classList.add("active");
 
-    if(categoria==="todos"){
-
-        renderizar(tramites);
-
-    }else{
-
-        renderizar(
-            tramites.filter(
-                tramite=>tramite.categoria===categoria
-            )
-        );
-
-    }
+    filtrar();
 
 }
 
 
-function buscarTramite(){
+function filtrar(){
 
-    const texto=
-        buscador.value
-        .trim()
-        .toLowerCase();
+    const texto = document
+        .getElementById("buscador")
+        .value
+        .toLowerCase()
+        .trim();
 
+    const tramites = document
+        .querySelectorAll(".tramite");
 
-    if(!texto){
-
-        renderizar(tramites);
-
-        return;
-
-    }
+    let encontrados = 0;
 
 
-    const resultado=tramites.filter(tramite=>{
+    tramites.forEach(function(tramite){
 
-        return(
-            tramite.nombre.toLowerCase().includes(texto) ||
-            tramite.descripcion.toLowerCase().includes(texto) ||
-            tramite.categoriaNombre.toLowerCase().includes(texto)
-        );
+        const contenido = tramite.innerText.toLowerCase();
+
+        const cat = tramite.dataset.categoria;
+
+        const coincideTexto =
+            contenido.includes(texto);
+
+        const coincideCategoria =
+            categoriaActual === "todos" ||
+            cat === categoriaActual;
+
+
+        if(coincideTexto && coincideCategoria){
+
+            tramite.style.display = "flex";
+
+            encontrados++;
+
+        }else{
+
+            tramite.style.display = "none";
+
+        }
 
     });
 
 
     document
-        .querySelectorAll(".filtros button")
-        .forEach(btn=>btn.classList.remove("activo"));
-
-
-    renderizar(resultado);
+        .getElementById("sinResultados")
+        .style.display =
+            encontrados === 0 ? "block" : "none";
 
 }
-
-
-buscador.addEventListener(
-    "input",
-    buscarTramite
-);
-
-
-renderizar(tramites);
 
 </script>
 
