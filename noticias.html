@@ -18,6 +18,7 @@
 <meta property="og:url" content="https://cberroteran400-spec.github.io/tendencias-mx/noticias.html">
 
 <style>
+
 *{
     box-sizing:border-box;
     margin:0;
@@ -278,6 +279,7 @@ footer{
 }
 
 @media(max-width:700px){
+
     .header-inner{
         flex-direction:column;
         align-items:flex-start;
@@ -298,15 +300,21 @@ footer{
     .search-box button{
         padding:14px;
     }
+
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
+
     <div class="header-inner">
-        <a href="index.html" class="logo">Tendencias MX</a>
+
+        <a href="index.html" class="logo">
+            Tendencias MX
+        </a>
 
         <nav>
             <a href="index.html">Inicio</a>
@@ -314,11 +322,17 @@ footer{
             <a href="noticias.html">Noticias</a>
             <a href="entretenimiento.html">Entretenimiento</a>
         </nav>
+
     </div>
+
 </header>
 
+
 <section class="hero">
-    <h1>Últimas <span>Noticias</span></h1>
+
+    <h1>
+        Últimas <span>Noticias</span>
+    </h1>
 
     <p>
         Mantente informado con noticias actualizadas de México,
@@ -326,6 +340,7 @@ footer{
     </p>
 
     <div class="search-box">
+
         <input
             type="search"
             id="buscador"
@@ -333,9 +348,14 @@ footer{
             autocomplete="off"
         >
 
-        <button onclick="buscarNoticias()">Buscar</button>
+        <button onclick="buscarNoticias()">
+            Buscar
+        </button>
+
     </div>
+
 </section>
+
 
 <div class="categories">
 
@@ -369,67 +389,101 @@ footer{
 
 </div>
 
+
 <div class="status" id="estado">
     Cargando noticias...
 </div>
 
+
 <main class="news-grid" id="newsGrid">
+
     <div class="loading">
         Cargando noticias...
     </div>
+
 </main>
 
+
 <footer>
-    <p>© 2026 Tendencias MX · Noticias actualizadas automáticamente</p>
+
+    <p>
+        © 2026 Tendencias MX · Noticias actualizadas automáticamente
+    </p>
+
 </footer>
+
 
 <script>
 
 let todasLasNoticias = [];
+
 let categoriaActual = "todas";
 
-/* ================================
+
+/* =====================================================
    LIMPIAR TEXTO
-================================ */
+===================================================== */
 
 function limpiarTexto(texto){
 
-    if(texto === null || texto === undefined){
+    if(
+        texto === null ||
+        texto === undefined
+    ){
         return "";
     }
 
     return String(texto)
+
+        .replace(/<script[^>]*>.*?<\/script>/gis,"")
+
+        .replace(/<style[^>]*>.*?<\/style>/gis,"")
+
         .replace(/<[^>]*>/g,"")
+
         .replace(/&nbsp;/gi," ")
+
         .replace(/&amp;/gi,"&")
+
         .replace(/&quot;/gi,'"')
+
         .replace(/&#39;/gi,"'")
+
         .replace(/&lt;/gi,"<")
+
         .replace(/&gt;/gi,">")
+
+        .replace(/\s+/g," ")
+
         .trim();
 }
 
 
-/* ================================
+/* =====================================================
    ESCAPAR HTML
-================================ */
+===================================================== */
 
 function escaparHTML(texto){
 
     return String(texto || "")
+
         .replace(/&/g,"&amp;")
+
         .replace(/</g,"&lt;")
+
         .replace(/>/g,"&gt;")
+
         .replace(/"/g,"&quot;")
+
         .replace(/'/g,"&#039;");
 }
 
 
-/* ================================
+/* =====================================================
    OBTENER VALOR
-================================ */
+===================================================== */
 
-function obtenerValor(obj, claves){
+function obtenerValor(obj,claves){
 
     for(const clave of claves){
 
@@ -439,48 +493,67 @@ function obtenerValor(obj, claves){
             obj[clave] !== null &&
             String(obj[clave]).trim() !== ""
         ){
+
             return obj[clave];
+
         }
+
     }
 
     return "";
 }
 
 
-/* ================================
+/* =====================================================
    OBTENER IMAGEN
-================================ */
+===================================================== */
 
 function obtenerImagen(noticia){
 
     const posibles = [
 
         noticia.imagen,
+
         noticia.image,
+
         noticia.imagen_url,
+
         noticia.image_url,
+
         noticia.thumbnail,
+
         noticia.miniatura,
+
         noticia.foto,
+
         noticia.fotografia,
+
         noticia.urlImagen,
+
         noticia.url_imagen,
 
         noticia.media,
+
         noticia.media_url,
+
         noticia.mediaContent,
+
         noticia.media_content,
 
         noticia.enclosure,
+
         noticia.og_image
 
     ];
 
+
     for(let imagen of posibles){
 
-        if(!imagen) continue;
+        if(!imagen){
+            continue;
+        }
 
-        /* Si viene como objeto */
+
         if(typeof imagen === "object"){
 
             imagen =
@@ -492,20 +565,32 @@ function obtenerImagen(noticia){
 
         }
 
-        if(typeof imagen !== "string") continue;
+
+        if(typeof imagen !== "string"){
+            continue;
+        }
+
 
         imagen = imagen.trim();
 
-        if(!imagen) continue;
 
-        /* Si viene dentro de HTML */
-        const match = imagen.match(/<img[^>]+src=["']([^"']+)["']/i);
-
-        if(match){
-            return match[1];
+        if(!imagen){
+            continue;
         }
 
-        /* Si parece una URL */
+
+        const match = imagen.match(
+            /<img[^>]+src=["']([^"']+)["']/i
+        );
+
+
+        if(match){
+
+            return match[1];
+
+        }
+
+
         if(
             imagen.startsWith("http://") ||
             imagen.startsWith("https://") ||
@@ -513,165 +598,259 @@ function obtenerImagen(noticia){
         ){
 
             if(imagen.startsWith("//")){
-                imagen = "https:" + imagen;
+
+                imagen =
+                    "https:" + imagen;
+
             }
 
             return imagen;
+
         }
+
     }
 
+
     return "";
+
 }
 
 
-/* ================================
-   CATEGORÍA
-================================ */
+/* =====================================================
+   NORMALIZAR CATEGORÍA
+===================================================== */
 
-function obtenerCategoria(noticia){
+function normalizarCategoria(categoria){
 
-    /* Primero intentamos utilizar la categoría
-       que venga directamente desde el RSS */
+    categoria =
+        limpiarTexto(categoria)
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g,"");
 
-    let categoria = obtenerValor(noticia,[
-        "categoria",
-        "categoría",
-        "category",
-        "seccion",
-        "sección",
-        "section",
-        "tipo"
-    ]);
 
-    categoria = limpiarTexto(categoria).toLowerCase();
+    if(
+        categoria.includes("mexic") ||
+        categoria.includes("nacional")
+    ){
 
-    if(categoria){
+        return "mexico";
 
-        if(
-            categoria.includes("mexic") ||
-            categoria.includes("nacional")
-        ){
-            return "mexico";
-        }
-
-        if(
-            categoria.includes("mundo") ||
-            categoria.includes("internacional")
-        ){
-            return "mundo";
-        }
-
-        if(
-            categoria.includes("econom") ||
-            categoria.includes("finanz") ||
-            categoria.includes("negocio") ||
-            categoria.includes("dinero")
-        ){
-            return "economia";
-        }
-
-        if(
-            categoria.includes("deport")
-        ){
-            return "deportes";
-        }
-
-        if(
-            categoria.includes("entreten") ||
-            categoria.includes("espectac") ||
-            categoria.includes("famos") ||
-            categoria.includes("cine") ||
-            categoria.includes("musica") ||
-            categoria.includes("música") ||
-            categoria.includes("television") ||
-            categoria.includes("televisión")
-        ){
-            return "entretenimiento";
-        }
-
-        if(
-            categoria.includes("tecnolog") ||
-            categoria.includes("tech") ||
-            categoria.includes("ciencia")
-        ){
-            return "tecnologia";
-        }
     }
 
 
-    /* ================================
-       CLASIFICACIÓN AUTOMÁTICA
-    ================================= */
+    if(
+        categoria.includes("mundo") ||
+        categoria.includes("internacional")
+    ){
 
-    const titulo = limpiarTexto(
-        obtenerValor(noticia,[
-            "titulo",
-            "title",
-            "nombre"
-        ])
-    ).toLowerCase();
+        return "mundo";
 
-    const descripcion = limpiarTexto(
-        obtenerValor(noticia,[
-            "descripcion",
-            "description",
-            "resumen",
-            "summary"
-        ])
-    ).toLowerCase();
+    }
 
-    const texto = titulo + " " + descripcion;
+
+    if(
+        categoria.includes("econom") ||
+        categoria.includes("finanz") ||
+        categoria.includes("negocio") ||
+        categoria.includes("dinero")
+    ){
+
+        return "economia";
+
+    }
+
+
+    if(
+        categoria.includes("deport")
+    ){
+
+        return "deportes";
+
+    }
+
+
+    if(
+        categoria.includes("entreten") ||
+        categoria.includes("espectac") ||
+        categoria.includes("famos") ||
+        categoria.includes("cine") ||
+        categoria.includes("musica") ||
+        categoria.includes("television")
+    ){
+
+        return "entretenimiento";
+
+    }
+
+
+    if(
+        categoria.includes("tecnolog") ||
+        categoria.includes("tech") ||
+        categoria.includes("ciencia")
+    ){
+
+        return "tecnologia";
+
+    }
+
+
+    return "";
+
+}
+
+
+/* =====================================================
+   CATEGORÍA DE NOTICIA
+===================================================== */
+
+function obtenerCategoria(noticia){
+
+    const categoriaRSS =
+        obtenerValor(
+            noticia,
+            [
+                "categoria",
+                "categoría",
+                "category",
+                "seccion",
+                "sección",
+                "section",
+                "tipo"
+            ]
+        );
+
+
+    const categoriaNormalizada =
+        normalizarCategoria(categoriaRSS);
+
+
+    /*
+       IMPORTANTE:
+
+       Si noticias.json ya trae categoría,
+       respetamos esa categoría.
+
+       Así los filtros coinciden exactamente
+       con lo que genera el RSS.
+    */
+
+    if(categoriaNormalizada){
+
+        return categoriaNormalizada;
+
+    }
+
+
+    /*
+       Si no existe categoría,
+       intentamos clasificar automáticamente.
+    */
+
+
+    const titulo =
+        limpiarTexto(
+            obtenerValor(
+                noticia,
+                [
+                    "titulo",
+                    "title",
+                    "nombre"
+                ]
+            )
+        )
+        .toLowerCase();
+
+
+    const descripcion =
+        limpiarTexto(
+            obtenerValor(
+                noticia,
+                [
+                    "descripcion",
+                    "description",
+                    "resumen",
+                    "summary"
+                ]
+            )
+        )
+        .toLowerCase();
+
+
+    const enlace =
+        limpiarTexto(
+            obtenerValor(
+                noticia,
+                [
+                    "enlace",
+                    "link",
+                    "url",
+                    "href"
+                ]
+            )
+        )
+        .toLowerCase();
+
+
+    const texto =
+        titulo +
+        " " +
+        descripcion +
+        " " +
+        enlace;
 
 
     /* TECNOLOGÍA */
 
     const tecnologia = [
-        "tecnología",
+
         "tecnologia",
-        "tecnológico",
-        "tecnologico",
+        "tecnología",
         "inteligencia artificial",
         "chatgpt",
         "openai",
-        "google",
-        "apple",
         "iphone",
         "android",
         "samsung",
         "microsoft",
-        "meta",
-        "facebook",
-        "instagram",
         "whatsapp",
         "tiktok",
-        "internet",
+        "instagram",
         "software",
-        "aplicación",
         "aplicacion",
-        "celular",
+        "aplicación",
         "smartphone",
         "computadora",
         "robot",
         "ciberseguridad",
         "videojuego"
+
     ];
 
-    if(tecnologia.some(p => texto.includes(p))){
+
+    if(
+        tecnologia.some(
+            palabra => texto.includes(palabra)
+        )
+    ){
+
         return "tecnologia";
+
     }
 
 
     /* DEPORTES */
 
     const deportes = [
+
         "fútbol",
         "futbol",
         "liga mx",
         "selección mexicana",
         "seleccion mexicana",
-        "liga",
         "champions",
-        "mundial",
+        "mundial de futbol",
+        "mundial de fútbol",
         "copa",
         "gol",
         "goles",
@@ -679,29 +858,34 @@ function obtenerCategoria(noticia){
         "jugador",
         "jugadores",
         "entrenador",
-        "club",
         "nba",
         "nfl",
         "mlb",
         "tenis",
         "boxeo",
-        "box",
         "beisbol",
         "béisbol",
         "basquetbol",
-        "baloncesto",
-        "olímpico",
-        "olimpico"
+        "baloncesto"
+
     ];
 
-    if(deportes.some(p => texto.includes(p))){
+
+    if(
+        deportes.some(
+            palabra => texto.includes(palabra)
+        )
+    ){
+
         return "deportes";
+
     }
 
 
     /* ENTRETENIMIENTO */
 
     const entretenimiento = [
+
         "actor",
         "actriz",
         "cantante",
@@ -712,8 +896,6 @@ function obtenerCategoria(noticia){
         "película",
         "pelicula",
         "serie",
-        "televisión",
-        "television",
         "reality",
         "concierto",
         "música",
@@ -725,29 +907,34 @@ function obtenerCategoria(noticia){
         "festival",
         "espectáculo",
         "espectaculo"
+
     ];
 
-    if(entretenimiento.some(p => texto.includes(p))){
+
+    if(
+        entretenimiento.some(
+            palabra => texto.includes(palabra)
+        )
+    ){
+
         return "entretenimiento";
+
     }
 
 
     /* ECONOMÍA */
 
     const economia = [
+
         "economía",
         "economia",
         "finanzas",
         "financiero",
         "financiera",
-        "peso",
-        "pesos",
         "dólar",
         "dolar",
         "inflación",
         "inflacion",
-        "banco",
-        "bancos",
         "banxico",
         "bolsa",
         "acciones",
@@ -755,7 +942,6 @@ function obtenerCategoria(noticia){
         "empleo",
         "desempleo",
         "salario",
-        "salarios",
         "impuesto",
         "impuestos",
         "negocio",
@@ -765,20 +951,27 @@ function obtenerCategoria(noticia){
         "petróleo",
         "petroleo",
         "gasolina",
-        "precio",
-        "precios",
         "inversión",
         "inversion"
+
     ];
 
-    if(economia.some(p => texto.includes(p))){
+
+    if(
+        economia.some(
+            palabra => texto.includes(palabra)
+        )
+    ){
+
         return "economia";
+
     }
 
 
     /* MÉXICO */
 
     const mexico = [
+
         "méxico",
         "mexico",
         "mexicano",
@@ -791,60 +984,32 @@ function obtenerCategoria(noticia){
         "edomex",
         "estado de méxico",
         "estado de mexico",
-        "tamaulipas",
-        "jalisco",
-        "nuevo león",
-        "nuevo leon",
-        "puebla",
-        "veracruz",
-        "guanajuato",
-        "oaxaca",
-        "chiapas",
-        "yucatán",
-        "yucatan",
-        "quintana roo",
-        "sonora",
-        "sinaloa",
-        "chihuahua",
-        "coahuila",
-        "tabasco",
-        "guerrero",
-        "michoacán",
-        "michoacan",
-        "querétaro",
-        "queretaro",
-        "san luis potosí",
-        "san luis potosi",
-        "aguascalientes",
-        "morelos",
-        "durango",
-        "zacatecas",
-        "nayarit",
-        "colima",
-        "tlaxcala",
-        "hidalgo",
-        "campeche",
-        "baja california",
-        "baja california sur",
-        "secretaría de gobernación",
         "presidencia",
         "senado",
         "diputados",
         "gobierno federal"
+
     ];
 
-    if(mexico.some(p => texto.includes(p))){
+
+    if(
+        mexico.some(
+            palabra => texto.includes(palabra)
+        )
+    ){
+
         return "mexico";
+
     }
 
 
     /* MUNDO */
 
     const mundo = [
+
         "estados unidos",
         "eeuu",
         "ee.uu",
-        "usa",
         "canadá",
         "canada",
         "españa",
@@ -852,13 +1017,11 @@ function obtenerCategoria(noticia){
         "alemania",
         "italia",
         "reino unido",
-        "inglaterra",
         "rusia",
         "ucrania",
         "china",
         "japón",
         "japon",
-        "corea del sur",
         "india",
         "brasil",
         "argentina",
@@ -870,66 +1033,88 @@ function obtenerCategoria(noticia){
         "ecuador",
         "bolivia",
         "internacional",
-        "internacionales",
         "onu",
         "otan",
         "guerra",
         "conflicto",
-        "presidente de estados unidos",
         "casa blanca"
+
     ];
 
-    if(mundo.some(p => texto.includes(p))){
+
+    if(
+        mundo.some(
+            palabra => texto.includes(palabra)
+        )
+    ){
+
         return "mundo";
+
     }
 
 
-    /* Si no se puede clasificar */
     return "mexico";
+
 }
 
 
-/* ================================
-   ICONO DE FALLBACK
-================================ */
+/* =====================================================
+   ICONOS
+===================================================== */
 
 function obtenerIcono(categoria){
 
     const iconos = {
+
         mexico:"🇲🇽",
+
         mundo:"🌎",
+
         economia:"💰",
+
         deportes:"⚽",
+
         entretenimiento:"🎬",
+
         tecnologia:"📱"
+
     };
 
     return iconos[categoria] || "📰";
+
 }
 
 
-/* ================================
-   NOMBRE DE CATEGORÍA
-================================ */
+/* =====================================================
+   NOMBRES
+===================================================== */
 
 function nombreCategoria(categoria){
 
     const nombres = {
+
         mexico:"México",
+
         mundo:"Mundo",
+
         economia:"Economía",
+
         deportes:"Deportes",
+
         entretenimiento:"Entretenimiento",
+
         tecnologia:"Tecnología"
+
     };
 
     return nombres[categoria] || "Noticias";
+
 }
 
 
-/* ================================
+/* =====================================================
    FECHA
-================================ */
+===================================================== */
 
 function formatearFecha(fecha){
 
@@ -937,393 +1122,797 @@ function formatearFecha(fecha){
         return "";
     }
 
+
     try{
 
-        const fechaObj = new Date(fecha);
+        const fechaObj =
+            new Date(fecha);
 
-        if(isNaN(fechaObj.getTime())){
+
+        if(
+            isNaN(
+                fechaObj.getTime()
+            )
+        ){
+
             return limpiarTexto(fecha);
+
         }
 
-        return fechaObj.toLocaleString("es-MX",{
-            day:"2-digit",
-            month:"short",
-            year:"numeric",
-            hour:"2-digit",
-            minute:"2-digit"
-        });
 
-    }catch(e){
+        return fechaObj.toLocaleString(
+            "es-MX",
+            {
+                day:"2-digit",
+                month:"short",
+                year:"numeric",
+                hour:"2-digit",
+                minute:"2-digit"
+            }
+        );
+
+
+    }catch(error){
 
         return limpiarTexto(fecha);
 
     }
+
 }
 
 
-/* ================================
+/* =====================================================
    CARGAR NOTICIAS
-================================ */
+===================================================== */
 
 async function cargarNoticias(){
 
-    const grid = document.getElementById("newsGrid");
-    const estado = document.getElementById("estado");
+    const grid =
+        document.getElementById("newsGrid");
+
+    const estado =
+        document.getElementById("estado");
+
 
     try{
 
-        estado.textContent = "Actualizando noticias...";
+        estado.textContent =
+            "Actualizando noticias...";
 
-        const respuesta = await fetch(
-            "./noticias.json?v=" + Date.now(),
-            {
-                cache:"no-store"
-            }
-        );
+
+        const respuesta =
+            await fetch(
+                "./noticias.json?v=" +
+                Date.now(),
+                {
+                    cache:"no-store"
+                }
+            );
+
 
         if(!respuesta.ok){
-            throw new Error("No se pudo cargar noticias.json");
+
+            throw new Error(
+                "No se pudo cargar noticias.json"
+            );
+
         }
 
-        const datos = await respuesta.json();
+
+        const datos =
+            await respuesta.json();
+
 
         let noticias = [];
 
+
         if(Array.isArray(datos)){
+
             noticias = datos;
+
         }
-        else if(Array.isArray(datos.noticias)){
+        else if(
+            Array.isArray(datos.noticias)
+        ){
+
             noticias = datos.noticias;
+
         }
-        else if(Array.isArray(datos.news)){
+        else if(
+            Array.isArray(datos.news)
+        ){
+
             noticias = datos.news;
+
         }
-        else if(Array.isArray(datos.items)){
+        else if(
+            Array.isArray(datos.items)
+        ){
+
             noticias = datos.items;
+
         }
-        else if(Array.isArray(datos.results)){
+        else if(
+            Array.isArray(datos.results)
+        ){
+
             noticias = datos.results;
+
         }
 
 
-        todasLasNoticias = noticias.map(noticia => {
+        /*
+           NORMALIZAR NOTICIAS
+        */
 
-            const titulo = limpiarTexto(
-                obtenerValor(noticia,[
-                    "titulo",
-                    "title",
-                    "nombre"
-                ])
+        const noticiasNormalizadas =
+            noticias.map(
+                noticia => {
+
+                    const titulo =
+                        limpiarTexto(
+                            obtenerValor(
+                                noticia,
+                                [
+                                    "titulo",
+                                    "title",
+                                    "nombre"
+                                ]
+                            )
+                        );
+
+
+                    const descripcion =
+                        limpiarTexto(
+                            obtenerValor(
+                                noticia,
+                                [
+                                    "descripcion",
+                                    "description",
+                                    "resumen",
+                                    "summary"
+                                ]
+                            )
+                        );
+
+
+                    const enlace =
+                        limpiarTexto(
+                            obtenerValor(
+                                noticia,
+                                [
+                                    "enlace",
+                                    "link",
+                                    "url",
+                                    "href"
+                                ]
+                            )
+                        );
+
+
+                    const fuente =
+                        limpiarTexto(
+                            obtenerValor(
+                                noticia,
+                                [
+                                    "fuente",
+                                    "source",
+                                    "medio",
+                                    "publisher"
+                                ]
+                            )
+                        );
+
+
+                    const fecha =
+                        obtenerValor(
+                            noticia,
+                            [
+                                "fecha",
+                                "date",
+                                "pubDate",
+                                "published",
+                                "publicado"
+                            ]
+                        );
+
+
+                    const categoria =
+                        obtenerCategoria(noticia);
+
+
+                    const imagen =
+                        obtenerImagen(noticia);
+
+
+                    return {
+
+                        titulo:
+                            titulo || "Noticia",
+
+                        descripcion:
+                            descripcion ||
+                            "Consulta la noticia completa para conocer todos los detalles.",
+
+                        enlace:
+                            enlace || "#",
+
+                        fuente:
+                            fuente || "Expansión",
+
+                        fecha:
+                            fecha,
+
+                        categoria:
+                            categoria,
+
+                        imagen:
+                            imagen
+
+                    };
+
+                }
+            )
+            .filter(
+                noticia =>
+                    noticia.titulo
             );
 
-            const descripcion = limpiarTexto(
-                obtenerValor(noticia,[
-                    "descripcion",
-                    "description",
-                    "resumen",
-                    "summary"
-                ])
+
+        /*
+           ELIMINAR DUPLICADOS
+
+           Usamos el enlace como identificador.
+        */
+
+        const enlacesUsados =
+            new Set();
+
+
+        todasLasNoticias =
+            noticiasNormalizadas.filter(
+                noticia => {
+
+                    if(
+                        !noticia.enlace ||
+                        noticia.enlace === "#"
+                    ){
+
+                        return true;
+
+                    }
+
+
+                    if(
+                        enlacesUsados.has(
+                            noticia.enlace
+                        )
+                    ){
+
+                        return false;
+
+                    }
+
+
+                    enlacesUsados.add(
+                        noticia.enlace
+                    );
+
+
+                    return true;
+
+                }
             );
 
-            const enlace = obtenerValor(
-                noticia,
-                [
-                    "enlace",
-                    "link",
-                    "url",
-                    "href"
-                ]
-            );
 
-            const fuente = limpiarTexto(
-                obtenerValor(
-                    noticia,
-                    [
-                        "fuente",
-                        "source",
-                        "autor",
-                        "medio",
-                        "publisher"
-                    ]
-                )
-            );
+        /*
+           ORDENAR POR FECHA
+        */
 
-            const fecha = obtenerValor(
-                noticia,
-                [
-                    "fecha",
-                    "date",
-                    "pubDate",
-                    "published",
-                    "publicado"
-                ]
-            );
+        todasLasNoticias.sort(
+            (a,b) => {
 
-            const categoria = obtenerCategoria(noticia);
-
-            const imagen = obtenerImagen(noticia);
-
-            return {
-                titulo:titulo || "Noticia",
-                descripcion:descripcion || "Consulta la noticia completa para conocer todos los detalles.",
-                enlace:enlace || "#",
-                fuente:fuente || "Tendencias MX",
-                fecha:fecha,
-                categoria:categoria,
-                imagen:imagen
-            };
-
-        }).filter(noticia => noticia.titulo);
+                const fechaA =
+                    new Date(
+                        a.fecha
+                    ).getTime();
 
 
-        /* Ordenar: noticias más nuevas primero */
+                const fechaB =
+                    new Date(
+                        b.fecha
+                    ).getTime();
 
-        todasLasNoticias.sort((a,b)=>{
 
-            const fechaA = new Date(a.fecha).getTime();
-            const fechaB = new Date(b.fecha).getTime();
+                if(
+                    isNaN(fechaA) &&
+                    isNaN(fechaB)
+                ){
 
-            if(isNaN(fechaA) && isNaN(fechaB)){
-                return 0;
+                    return 0;
+
+                }
+
+
+                if(isNaN(fechaA)){
+                    return 1;
+                }
+
+
+                if(isNaN(fechaB)){
+                    return -1;
+                }
+
+
+                return fechaB - fechaA;
+
             }
+        );
 
-            if(isNaN(fechaA)){
-                return 1;
+
+        /*
+           ESTADÍSTICAS
+        */
+
+        const conteo = {
+
+            mexico:0,
+
+            mundo:0,
+
+            economia:0,
+
+            deportes:0,
+
+            entretenimiento:0,
+
+            tecnologia:0
+
+        };
+
+
+        todasLasNoticias.forEach(
+            noticia => {
+
+                if(
+                    conteo[
+                        noticia.categoria
+                    ] !== undefined
+                ){
+
+                    conteo[
+                        noticia.categoria
+                    ]++;
+
+                }
+
             }
-
-            if(isNaN(fechaB)){
-                return -1;
-            }
-
-            return fechaB - fechaA;
-        });
+        );
 
 
-        estado.textContent =
+        /*
+           FECHA DE ACTUALIZACIÓN DEL JSON
+        */
+
+        let textoActualizacion =
+            "";
+
+
+        if(datos.actualizado){
+
+            try{
+
+                const fechaActualizacion =
+                    new Date(
+                        datos.actualizado
+                    );
+
+
+                if(
+                    !isNaN(
+                        fechaActualizacion.getTime()
+                    )
+                ){
+
+                    textoActualizacion =
+                        " · RSS actualizado " +
+                        fechaActualizacion.toLocaleString(
+                            "es-MX",
+                            {
+                                day:"2-digit",
+                                month:"short",
+                                hour:"2-digit",
+                                minute:"2-digit"
+                            }
+                        );
+
+                }
+
+            }catch(error){}
+
+        }
+
+
+        estado.innerHTML =
+
+            "<strong>" +
             todasLasNoticias.length +
-            " noticias disponibles · Actualización automática";
+            "</strong> noticias disponibles" +
+
+            textoActualizacion;
 
 
         mostrarNoticias();
+
 
     }catch(error){
 
         console.error(error);
 
-        estado.textContent = "No se pudieron cargar las noticias.";
+
+        estado.textContent =
+            "No se pudieron cargar las noticias.";
+
 
         grid.innerHTML = `
+
             <div class="empty">
-                <h2>No se pudieron cargar las noticias</h2>
+
+                <h2>
+                    No se pudieron cargar las noticias
+                </h2>
+
                 <p>
-                    Revisa que <strong>noticias.json</strong>
+                    Revisa que
+                    <strong>noticias.json</strong>
                     esté en la raíz del repositorio.
                 </p>
+
             </div>
+
         `;
+
     }
+
 }
 
 
-/* ================================
+/* =====================================================
    MOSTRAR NOTICIAS
-================================ */
+===================================================== */
 
 function mostrarNoticias(){
 
-    const grid = document.getElementById("newsGrid");
+    const grid =
+        document.getElementById("newsGrid");
+
+
+    const buscador =
+        document.getElementById("buscador");
+
 
     const busqueda =
-        document
-        .getElementById("buscador")
-        .value
+        buscador.value
         .trim()
         .toLowerCase();
 
 
-    let noticiasFiltradas = todasLasNoticias.filter(noticia => {
-
-        const coincideCategoria =
-            categoriaActual === "todas" ||
-            noticia.categoria === categoriaActual;
-
-        const textoBusqueda =
-            (
-                noticia.titulo +
-                " " +
-                noticia.descripcion +
-                " " +
-                noticia.fuente
-            ).toLowerCase();
-
-        const coincideBusqueda =
-            !busqueda ||
-            textoBusqueda.includes(busqueda);
-
-        return coincideCategoria && coincideBusqueda;
-
-    });
+    const noticiasFiltradas =
+        todasLasNoticias.filter(
+            noticia => {
 
 
-    if(noticiasFiltradas.length === 0){
+                const coincideCategoria =
+
+                    categoriaActual === "todas" ||
+
+                    noticia.categoria ===
+                    categoriaActual;
+
+
+                const textoBusqueda =
+
+                    (
+                        noticia.titulo +
+                        " " +
+                        noticia.descripcion +
+                        " " +
+                        noticia.fuente
+                    )
+                    .toLowerCase();
+
+
+                const coincideBusqueda =
+
+                    !busqueda ||
+
+                    textoBusqueda.includes(
+                        busqueda
+                    );
+
+
+                return (
+                    coincideCategoria &&
+                    coincideBusqueda
+                );
+
+            }
+        );
+
+
+    if(
+        noticiasFiltradas.length === 0
+    ){
 
         grid.innerHTML = `
+
             <div class="empty">
-                <h2>No hay noticias en esta categoría</h2>
+
+                <h2>
+                    No hay noticias
+                </h2>
+
                 <p>
-                    Prueba con otra categoría o realiza otra búsqueda.
+                    Prueba con otra categoría
+                    o realiza otra búsqueda.
                 </p>
+
             </div>
+
         `;
 
         return;
+
     }
 
 
-    grid.innerHTML = noticiasFiltradas.map(noticia => {
-
-        const imagen = noticia.imagen;
-
-        let imagenHTML = "";
-
-        if(imagen){
-
-            imagenHTML = `
-                <img
-                    src="${escaparHTML(imagen)}"
-                    alt="${escaparHTML(noticia.titulo)}"
-                    loading="lazy"
-                    onerror="this.parentElement.innerHTML='<div class=&quot;news-image-fallback&quot;>${obtenerIcono(noticia.categoria)}</div>'"
-                >
-            `;
-
-        }else{
-
-            imagenHTML = `
-                <div class="news-image-fallback">
-                    ${obtenerIcono(noticia.categoria)}
-                </div>
-            `;
-
-        }
+    grid.innerHTML =
+        noticiasFiltradas
+        .map(
+            noticia => {
 
 
-        const enlaceSeguro =
-            noticia.enlace &&
-            noticia.enlace !== "#"
-                ? escaparHTML(noticia.enlace)
-                : "#";
+                const imagen =
+                    noticia.imagen;
 
 
-        return `
-            <article class="news-card">
+                let imagenHTML = "";
 
-                <div class="news-image">
-                    ${imagenHTML}
-                </div>
 
-                <div class="news-content">
+                if(imagen){
 
-                    <div class="news-category">
-                        ${obtenerIcono(noticia.categoria)}
-                        ${nombreCategoria(noticia.categoria)}
-                    </div>
+                    imagenHTML = `
 
-                    <h2 class="news-title">
-                        ${escaparHTML(noticia.titulo)}
-                    </h2>
-
-                    <p class="news-description">
-                        ${escaparHTML(noticia.descripcion)}
-                    </p>
-
-                    <div class="news-meta">
-                        ${escaparHTML(noticia.fuente)}
-                        ${noticia.fecha ? " · " + escaparHTML(formatearFecha(noticia.fecha)) : ""}
-                    </div>
-
-                    ${
-                        enlaceSeguro !== "#"
-                        ?
-                        `
-                        <a
-                            class="news-link"
-                            href="${enlaceSeguro}"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <img
+                            src="${escaparHTML(imagen)}"
+                            alt="${escaparHTML(noticia.titulo)}"
+                            loading="lazy"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<div class=&quot;news-image-fallback&quot;>${obtenerIcono(noticia.categoria)}</div>'"
                         >
-                            Leer noticia →
-                        </a>
-                        `
-                        :
-                        ""
-                    }
 
-                </div>
+                    `;
 
-            </article>
-        `;
+                }
+                else{
 
-    }).join("");
+                    imagenHTML = `
+
+                        <div class="news-image-fallback">
+
+                            ${obtenerIcono(
+                                noticia.categoria
+                            )}
+
+                        </div>
+
+                    `;
+
+                }
+
+
+                const enlaceSeguro =
+
+                    noticia.enlace &&
+                    noticia.enlace !== "#"
+
+                    ?
+
+                    escaparHTML(
+                        noticia.enlace
+                    )
+
+                    :
+
+                    "#";
+
+
+                return `
+
+                    <article class="news-card">
+
+                        <div class="news-image">
+
+                            ${imagenHTML}
+
+                        </div>
+
+
+                        <div class="news-content">
+
+
+                            <div class="news-category">
+
+                                ${obtenerIcono(
+                                    noticia.categoria
+                                )}
+
+                                ${nombreCategoria(
+                                    noticia.categoria
+                                )}
+
+                            </div>
+
+
+                            <h2 class="news-title">
+
+                                ${escaparHTML(
+                                    noticia.titulo
+                                )}
+
+                            </h2>
+
+
+                            <p class="news-description">
+
+                                ${escaparHTML(
+                                    noticia.descripcion
+                                )}
+
+                            </p>
+
+
+                            <div class="news-meta">
+
+                                ${escaparHTML(
+                                    noticia.fuente
+                                )}
+
+                                ${
+                                    noticia.fecha
+                                    ?
+                                    " · " +
+                                    escaparHTML(
+                                        formatearFecha(
+                                            noticia.fecha
+                                        )
+                                    )
+                                    :
+                                    ""
+                                }
+
+                            </div>
+
+
+                            ${
+                                enlaceSeguro !== "#"
+
+                                ?
+
+                                `
+
+                                <a
+                                    class="news-link"
+                                    href="${enlaceSeguro}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+
+                                    Leer noticia →
+
+                                </a>
+
+                                `
+
+                                :
+
+                                ""
+
+                            }
+
+
+                        </div>
+
+                    </article>
+
+                `;
+
+            }
+        )
+        .join("");
+
 }
 
 
-/* ================================
+/* =====================================================
    BUSCAR
-================================ */
+===================================================== */
 
 function buscarNoticias(){
+
     mostrarNoticias();
+
 }
 
 
-/* ================================
+/* =====================================================
    FILTROS
-================================ */
-
-document.querySelectorAll(".category-btn").forEach(btn => {
-
-    btn.addEventListener("click",function(){
-
-        document
-            .querySelectorAll(".category-btn")
-            .forEach(b => b.classList.remove("active"));
-
-        this.classList.add("active");
-
-        categoriaActual =
-            this.dataset.category;
-
-        mostrarNoticias();
-
-    });
-
-});
-
-
-/* ================================
-   BUSCAR MIENTRAS ESCRIBE
-================================ */
+===================================================== */
 
 document
-    .getElementById("buscador")
-    .addEventListener("input",function(){
+.querySelectorAll(".category-btn")
+.forEach(
+    boton => {
+
+        boton.addEventListener(
+            "click",
+            function(){
+
+                document
+                .querySelectorAll(
+                    ".category-btn"
+                )
+                .forEach(
+                    b =>
+                        b.classList.remove(
+                            "active"
+                        )
+                );
+
+
+                this.classList.add(
+                    "active"
+                );
+
+
+                categoriaActual =
+                    this.dataset.category;
+
+
+                mostrarNoticias();
+
+            }
+        );
+
+    }
+);
+
+
+/* =====================================================
+   BUSCAR MIENTRAS ESCRIBE
+===================================================== */
+
+document
+.getElementById("buscador")
+.addEventListener(
+    "input",
+    function(){
 
         mostrarNoticias();
 
-    });
+    }
+);
 
 
-/* ================================
+/* =====================================================
    INICIAR
-================================ */
+===================================================== */
 
 cargarNoticias();
 
 
-/* ================================
-   ACTUALIZAR SIN RECARGAR
-================================ */
+/* =====================================================
+   ACTUALIZAR CADA 10 MINUTOS
+===================================================== */
 
 setInterval(
     cargarNoticias,
