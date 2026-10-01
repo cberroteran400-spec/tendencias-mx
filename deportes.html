@@ -4,101 +4,533 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Deportes | TendenciasMX - 4000 Noticias</title>
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#07140e;color:#fff;font-family:system-ui,sans-serif}
 header{padding:12px 16px;background:#0c2116;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20;border-bottom:1px solid #143324}
 .logo{font-weight:900;color:#2cff8e}
-nav a{color:#7aa192;text-decoration:none;margin-left:10px;font-size:11px}nav a.active{color:#2cff8e;background:#143324;padding:6px 10px;border-radius:20px}
-.hero{padding:20px 16px 6px}.hero h1{font-size:24px;font-weight:900}.hero p{font-size:11px;color:#7aa192}
+nav a{color:#7aa192;text-decoration:none;margin-left:10px;font-size:11px}
+nav a.active{color:#2cff8e;background:#143324;padding:6px 10px;border-radius:20px}
+.hero{padding:20px 16px 6px}
+.hero h1{font-size:24px;font-weight:900}
+.hero p{font-size:11px;color:#7aa192}
 .tabs{padding:10px 16px;display:flex;gap:8px;overflow-x:auto;position:sticky;top:50px;background:#07140e;z-index:10}
-.tab{background:#122a1e;border:1px solid #1d3d2a;color:#8fbba3;padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0}.tab.active{background:#2cff8e;color:#000;border-color:#2cff8e}
+.tab{background:#122a1e;border:1px solid #1d3d2a;color:#8fbba3;padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.tab.active{background:#2cff8e;color:#000;border-color:#2cff8e}
 .destacada{margin:12px 16px;border-radius:18px;height:260px;background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end;overflow:hidden;border:1px solid #1e3a28}
 .destacada::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.15) 55%)}
-.destacada.info{position:relative;z-index:1;padding:16px;width:100%}
+.destacada .info{position:relative;z-index:1;padding:16px;width:100%}
 .badge{background:#2cff8e;color:#000;font-size:9px;padding:4px 8px;border-radius:6px;font-weight:900}
 .grid{padding:0 16px 80px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-@media(min-width:800px){.grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+@media(min-width:800px){
+.grid{grid-template-columns:1fr 1fr 1fr 1fr}
+}
 .card{background:#0f241a;border-radius:14px;overflow:hidden;border:1px solid #1a3326;display:flex;flex-direction:column}
 .card img{width:100%;height:110px;object-fit:cover;display:block;background:#0a1a12}
 .card-body{padding:8px;flex:1;display:flex;flex-direction:column}
 .card-body h3{font-size:11px;line-height:1.3;flex:1}
 .card-body p{font-size:9px;color:#6a8d7a;margin-top:4px}
 .count{padding:8px 16px;color:#2cff8e;font-size:12px;font-weight:700}
-.more{text-align:center;padding:20px}.more button{background:#2cff8e;color:#000;border:none;padding:10px 20px;border-radius:999px;font-weight:800;cursor:pointer}
+.more{text-align:center;padding:20px}
+.more button{background:#2cff8e;color:#000;border:none;padding:10px 20px;border-radius:999px;font-weight:800;cursor:pointer}
 </style>
 </head>
+
 <body>
+
 <header>
 <div class="logo">TendenciasMX</div>
-<nav><a href="index.html">Inicio</a><a href="noticias.html">Noticias</a><a href="deportes.html" class="active">Deportes</a></nav>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="noticias.html">Noticias</a>
+<a href="deportes.html" class="active">Deportes</a>
+</nav>
 </header>
+
 <div class="hero">
 <h1>Todo el mundo del deporte</h1>
 <p>4000 noticias - 500 por deporte - cada una en su cuadro</p>
 </div>
+
 <div class="tabs">
-<button class="tab active" onclick="filtrar('todos',this)">🔥 Todos (4000)</button>
-<button class="tab" onclick="filtrar('futbol',this)">⚽ Fútbol (500)</button>
-<button class="tab" onclick="filtrar('ligamx',this)">🇲🇽 Liga MX (500)</button>
-<button class="tab" onclick="filtrar('f1',this)">🏎️ F1 (500)</button>
-<button class="tab" onclick="filtrar('nfl',this)">🏈 NFL (500)</button>
-<button class="tab" onclick="filtrar('beisbol',this)">⚾ Béisbol (500)</button>
-<button class="tab" onclick="filtrar('tenis',this)">🎾 Tenis (500)</button>
-<button class="tab" onclick="filtrar('basquet',this)">🏀 Básquet (500)</button>
-<button class="tab" onclick="filtrar('boxeo',this)">🥊 Boxeo (500)</button>
+
+<button class="tab active" onclick="filtrar('todos',this)">
+🔥 Todos (4000)
+</button>
+
+<button class="tab" onclick="filtrar('futbol',this)">
+⚽ Fútbol (500)
+</button>
+
+<button class="tab" onclick="filtrar('ligamx',this)">
+🇲🇽 Liga MX (500)
+</button>
+
+<button class="tab" onclick="filtrar('f1',this)">
+🏎️ F1 (500)
+</button>
+
+<button class="tab" onclick="filtrar('nfl',this)">
+🏈 NFL (500)
+</button>
+
+<button class="tab" onclick="filtrar('beisbol',this)">
+⚾ Béisbol (500)
+</button>
+
+<button class="tab" onclick="filtrar('tenis',this)">
+🎾 Tenis (500)
+</button>
+
+<button class="tab" onclick="filtrar('basquet',this)">
+🏀 Básquet (500)
+</button>
+
+<button class="tab" onclick="filtrar('boxeo',this)">
+🥊 Boxeo (500)
+</button>
+
 </div>
+
 <div id="count" class="count"></div>
-<div id="destacada" class="destacada"><div class="info"><span class="badge" id="d-badge">DESTACADA</span><h2 id="d-t" style="font-size:15px;margin-top:6px"></h2><p id="d-desc" style="font-size:10px;color:#cde;margin-top:4px"></p></div></div>
+
+<div id="destacada" class="destacada">
+<div class="info">
+<span class="badge" id="d-badge">DESTACADA</span>
+<h2 id="d-t" style="font-size:15px;margin-top:6px"></h2>
+<p id="d-desc" style="font-size:10px;color:#cde;margin-top:4px"></p>
+</div>
+</div>
+
 <div id="grid" class="grid"></div>
-<div class="more"><button id="btnMore" onclick="cargarMas()">Cargar 100 más ⬇️</button></div>
+
+<div class="more">
+<button id="btnMore" onclick="cargarMas()">Cargar 100 más ⬇️</button>
+</div>
+
 <script>
-const EQUIPOS=["América","Chivas","Cruz Azul","Pumas","Tigres","Rayados","Toluca","Atlas","León","Santos","Pachuca","Querétaro","Juárez","Necaxa","Mazatlán","Xolos","Puebla","Messi","Mbappé","Vinicius","Haaland","Mahomes","Allen","Checo","Verstappen","Hamilton","Leclerc","Alonso","Sinner","Alcaraz","Djokovic","LeBron","Curry","Wembanyama","Ohtani","Judge","Yankees","Dodgers","Cowboys","49ers","Bills","Chiefs","Lakers","Knicks","Warriors","Canelo","Pitbull","Barcelona","Real Madrid","Arsenal","City","Bayern","PSG","México","USA","Brasil","Argentina","España"];
-const IMGS={futbol:"https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=600",ligamx:"https://images.unsplash.com/photo-1577224682124-471e937a45b1?w=600",f1:"https://images.unsplash.com/photo-1511910849309-0dffb8785146?w=600",nfl:"https://images.unsplash.com/photo-1560272564-c83b66a9adac?w=600",beisbol:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=600",tenis:"https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=600",basquet:"https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600",boxeo:"https://images.unsplash.com/photo-1593352216913-b0d2ed6e0e0f?w=600"};
-const TITULOS={futbol:["{0} golea a {1} y es líder","Messi marca doblete vs {0}","{0} vs {1}: partidazo de Champions","Real Madrid ficha a {0}","Barcelona vence a {0} 4-0","{0} es nuevo balón de oro","Mundial 2026: {0} clasifica","{0} se lesiona y es baja 3 meses","{0} anota doblete y salva a {1}","Copa América: {0} elimina a {1}"],ligamx:["América vs {0}: gana {1}","Cruz Azul es líder tras vencer a {0}","Chivas: {0} marca y gana 2-1 a {1}","Tigres golea {0} {1}-0","Pumas ficha a {0}","Rayados vs {0}: duelo por liderato","{0} sorprende a {1}","Atlas vence a {0} de visita","Santos golea a {0}","{0} es líder de goleo en Liga MX"],f1:["Checo Pérez hace historia en GP de {0}","F1 GP de {0}: hora y donde ver","Verstappen gana GP de {0}","Hamilton sufre con {0} en {1}","Alonso confirma {0} para 2026","Red Bull presenta {0}","McLaren domina en {0}","Ferrari y {0} decepcionan en {1}","F1: {0} será sede en 2026","Show Run CDMX: Checo en Reforma con {0}"],nfl:["NFL Semana {0}: {1} manda al Super Bowl","{0} vs {1}: partidazo de NFL","Chiefs de Mahomes vencen a {0}","49ers aplastan a {0}","Cowboys caen ante {0}","Bills de {1} ganan a {0}","Super Bowl: {0} vs {1} soñado","NFL México: {0} jugará en Azteca 2025"],beisbol:["Yankees vs {0}: gana {1}","Dodgers aplastan a {0}","Ohtani jonrón {0} vs {1}","Diablos Rojos vencen a {0}","{0} es líder de jonrones MLB","Playoffs: {0} elimina a {1}","Sultanes barren a {0}","{0} lanza juego perfecto vs {1}"],tenis:["Alcaraz vence a {0} en {1}","Sinner número 1 tras ganar a {0}","Djokovic gana en {1}","Coco Gauff vence a {0}","{0} sorprende en Acapulco","Roland Garros: {0} vs {1} final","Wimbledon: {0} avanza a semis","US Open: {0} da sorpresa vs {1}"],basquet:["Lakers vencen a {0}: {1} anota 40","Knicks vs {0}: partidazo NBA","Wembanyama: {0} puntos vs {1}","Curry {0} triples vs {1}","NBA México: {0} vs {1} en CDMX","Capitanes vencen a {0}","Heat vs {0}: final de infarto","Bulls sorprenden a {0}"],boxeo:["Canelo vence a {0} por KO","Pitbull Cruz noquea a {0}","Mike Tyson regresa vs {0}","Chávez Jr gana a {0}","{0} va por título mundial vs {1}","Mexicana {0} gana oro vs {1}","Jake Paul vs {0}: fecha","{0} noquea en 2 rounds a {1}"]};
+
+const EQUIPOS=[
+"América","Chivas","Cruz Azul","Pumas","Tigres","Rayados",
+"Toluca","Atlas","León","Santos","Pachuca","Querétaro",
+"Juárez","Necaxa","Mazatlán","Xolos","Puebla","Messi",
+"Mbappé","Vinicius","Haaland","Mahomes","Allen","Checo",
+"Verstappen","Hamilton","Leclerc","Alonso","Sinner",
+"Alcaraz","Djokovic","LeBron","Curry","Wembanyama",
+"Ohtani","Judge","Yankees","Dodgers","Cowboys","49ers",
+"Bills","Chiefs","Lakers","Knicks","Warriors","Canelo",
+"Pitbull","Barcelona","Real Madrid","Arsenal","City",
+"Bayern","PSG","México","USA","Brasil","Argentina","España"
+];
+
+
+/* =====================================================
+   IMÁGENES
+   Cada deporte tiene varias imágenes diferentes.
+   Se van repartiendo entre las noticias para evitar
+   repetir constantemente la misma fotografía.
+===================================================== */
+
+const IMGS={
+
+futbol:[
+"https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900",
+"https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=900",
+"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=900",
+"https://images.unsplash.com/photo-1526232761682-d26e03ac148e?w=900",
+"https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=900",
+"https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=900"
+],
+
+ligamx:[
+"https://images.unsplash.com/photo-1577224682124-471e937a45b1?w=900",
+"https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=900",
+"https://images.unsplash.com/photo-1552318965-6e6c0e7c6e4a?w=900",
+"https://images.unsplash.com/photo-1521412644187-c49fa049e84d?w=900",
+"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=900",
+"https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=900"
+],
+
+f1:[
+"https://images.unsplash.com/photo-1511910849309-0dffb8785146?w=900",
+"https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=900",
+"https://images.unsplash.com/photo-1547744179-9c4b6c7e6f5a?w=900",
+"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900",
+"https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900",
+"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=900"
+],
+
+nfl:[
+"https://images.unsplash.com/photo-1560272564-c83b66a9adac?w=900",
+"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=900",
+"https://images.unsplash.com/photo-1521412644187-c49fa049e84d?w=900",
+"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=900",
+"https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=900",
+"https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=900"
+],
+
+beisbol:[
+"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=900",
+"https://images.unsplash.com/photo-1569953171519-3a24e2a3e1d2?w=900",
+"https://images.unsplash.com/photo-1508344928928-7165b67de128?w=900",
+"https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=900",
+"https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=900",
+"https://images.unsplash.com/photo-1474224017046-182ece80b1a1?w=900"
+],
+
+tenis:[
+"https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=900",
+"https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=900",
+"https://images.unsplash.com/photo-1530915365347-3b8b8f8a6a4c?w=900",
+"https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=900",
+"https://images.unsplash.com/photo-1560012057-4372e14c5085?w=900",
+"https://images.unsplash.com/photo-1526232761682-d26e03ac148e?w=900"
+],
+
+basquet:[
+"https://images.unsplash.com/photo-1546519638-68e109498ffc?w=900",
+"https://images.unsplash.com/photo-1519861531473-9200262188bf?w=900",
+"https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=900",
+"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=900",
+"https://images.unsplash.com/photo-1518407613690-d9fc990e795f?w=900",
+"https://images.unsplash.com/photo-1546519638-68e109498ffc?w=900"
+],
+
+boxeo:[
+"https://images.unsplash.com/photo-1593352216913-b0d2ed6e0e0f?w=900",
+"https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=900",
+"https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=900",
+"https://images.unsplash.com/photo-1517438476312-10d79c077509?w=900",
+"https://images.unsplash.com/photo-1520975958225-1b4f1b6f6e6a?w=900",
+"https://images.unsplash.com/photo-1552072092-7f9b8b1b5d0a?w=900"
+]
+
+};
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+const TITULOS={
+
+futbol:[
+"{0} golea a {1} y es líder",
+"Messi marca doblete vs {0}",
+"{0} vs {1}: partidazo de Champions",
+"Real Madrid ficha a {0}",
+"Barcelona vence a {0} 4-0",
+"{0} es nuevo balón de oro",
+"Mundial 2026: {0} clasifica",
+"{0} se lesiona y es baja 3 meses",
+"{0} anota doblete y salva a {1}",
+"Copa América: {0} elimina a {1}"
+],
+
+ligamx:[
+"América vs {0}: gana {1}",
+"Cruz Azul es líder tras vencer a {0}",
+"Chivas: {0} marca y gana 2-1 a {1}",
+"Tigres golea {0} {1}-0",
+"Pumas ficha a {0}",
+"Rayados vs {0}: duelo por liderato",
+"{0} sorprende a {1}",
+"Atlas vence a {0} de visita",
+"Santos golea a {0}",
+"{0} es líder de goleo en Liga MX"
+],
+
+f1:[
+"Checo Pérez hace historia en GP de {0}",
+"F1 GP de {0}: hora y donde ver",
+"Verstappen gana GP de {0}",
+"Hamilton sufre con {0} en {1}",
+"Alonso confirma {0} para 2026",
+"Red Bull presenta {0}",
+"McLaren domina en {0}",
+"Ferrari y {0} decepcionan en {1}",
+"F1: {0} será sede en 2026",
+"Show Run CDMX: Checo en Reforma con {0}"
+],
+
+nfl:[
+"NFL Semana {0}: {1} manda al Super Bowl",
+"{0} vs {1}: partidazo de NFL",
+"Chiefs de Mahomes vencen a {0}",
+"49ers aplastan a {0}",
+"Cowboys caen ante {0}",
+"Bills de {1} ganan a {0}",
+"Super Bowl: {0} vs {1} soñado",
+"NFL México: {0} jugará en Azteca 2025"
+],
+
+beisbol:[
+"Yankees vs {0}: gana {1}",
+"Dodgers aplastan a {0}",
+"Ohtani jonrón {0} vs {1}",
+"Diablos Rojos vencen a {0}",
+"{0} es líder de jonrones MLB",
+"Playoffs: {0} elimina a {1}",
+"Sultanes barren a {0}",
+"{0} lanza juego perfecto vs {1}"
+],
+
+tenis:[
+"Alcaraz vence a {0} en {1}",
+"Sinner número 1 tras ganar a {0}",
+"Djokovic gana en {1}",
+"Coco Gauff vence a {0}",
+"{0} sorprende en Acapulco",
+"Roland Garros: {0} vs {1} final",
+"Wimbledon: {0} avanza a semis",
+"US Open: {0} da sorpresa vs {1}"
+],
+
+basquet:[
+"Lakers vencen a {0}: {1} anota 40",
+"Knicks vs {0}: partidazo NBA",
+"Wembanyama: {0} puntos vs {1}",
+"Curry {0} triples vs {1}",
+"NBA México: {0} vs {1} en CDMX",
+"Capitanes vencen a {0}",
+"Heat vs {0}: final de infarto",
+"Bulls sorprenden a {0}"
+],
+
+boxeo:[
+"Canelo vence a {0} por KO",
+"Pitbull Cruz noquea a {0}",
+"Mike Tyson regresa vs {0}",
+"Chávez Jr gana a {0}",
+"{0} va por título mundial vs {1}",
+"Mexicana {0} gana oro vs {1}",
+"Jake Paul vs {0}: fecha",
+"{0} noquea en 2 rounds a {1}"
+]
+
+};
+
+
+/* =====================================================
+   CREACIÓN DE NOTICIAS
+===================================================== */
+
 let TODAS=[];
+
 Object.keys(TITULOS).forEach(cat=>{
+
   for(let i=0;i<500;i++){
+
     let tmpl=TITULOS[cat][i % TITULOS[cat].length];
+
     let e1=EQUIPOS[(i*7) % EQUIPOS.length];
     let e2=EQUIPOS[(i*13+5) % EQUIPOS.length];
-    let titulo=tmpl.replace("{0}",e1).replace("{1}",e2);
+
+    let titulo=tmpl
+      .replace("{0}",e1)
+      .replace("{1}",e2);
+
     let desc=cat.toUpperCase()+" - Noticia "+(i+1)+" - "+e1+" vs "+e2;
-    let img=IMGS[cat]+"&sig="+cat+i;
-    TODAS.push({t:titulo,d:desc,c:cat,i:img,l:"#"});
+
+    /*
+      IMPORTANTE:
+      Se usa una imagen diferente según la posición.
+      No se agrega ?sig porque eso NO cambia la foto.
+    */
+
+    let listaImagenes=IMGS[cat];
+
+    let img=listaImagenes[
+      i % listaImagenes.length
+    ];
+
+    TODAS.push({
+      t:titulo,
+      d:desc,
+      c:cat,
+      i:img,
+      l:"#"
+    });
+
   }
+
 });
+
+
+/* =====================================================
+   MEZCLA
+===================================================== */
+
 TODAS.sort(()=>Math.random()-0.5);
-let filtradas=[];let mostrando=0;const POR_PAGINA=100;
+
+
+let filtradas=[];
+let mostrando=0;
+const POR_PAGINA=100;
+
+
+/* =====================================================
+   PINTAR LISTA
+===================================================== */
+
 function pintarLista(lista,reset=true){
-  if(reset){filtradas=lista;mostrando=0;document.getElementById('grid').innerHTML='';}
-  document.getElementById('count').innerText=filtradas.length+' noticias en '+document.querySelector('.tab.active').innerText;
-  if(!filtradas.length){document.getElementById('grid').innerHTML="<p style='padding:20px;color:#888'>No hay noticias</p>";return;}
-  let dest=filtradas[0];
-  document.getElementById('d-t').innerText=dest.t;
-  document.getElementById('d-desc').innerText=dest.d;
-  document.getElementById('d-badge').innerText=dest.c.toUpperCase();
-  document.getElementById('destacada').style.backgroundImage="url('"+dest.i+"')";
-  let fin=Math.min(mostrando+POR_PAGINA,filtradas.length);
-  let html=document.getElementById('grid').innerHTML;
-  for(let k=(reset?1:mostrando);k<fin;k++){
-    let n=filtradas[k];
-    html+=`<div class="card"><img src="${n.i}" loading="lazy"><div class="card-body"><span class="badge">${n.c.toUpperCase()}</span><h3>${n.t}</h3><p>${n.d}</p></div></div>`;
+
+  if(reset){
+
+    filtradas=lista;
+    mostrando=0;
+
+    document.getElementById('grid').innerHTML='';
+
   }
+
+  document.getElementById('count').innerText=
+    filtradas.length+
+    ' noticias en '+
+    document.querySelector('.tab.active').innerText;
+
+
+  if(!filtradas.length){
+
+    document.getElementById('grid').innerHTML=
+      "<p style='padding:20px;color:#888'>No hay noticias</p>";
+
+    return;
+
+  }
+
+
+  let dest=filtradas[0];
+
+  document.getElementById('d-t').innerText=dest.t;
+
+  document.getElementById('d-desc').innerText=dest.d;
+
+  document.getElementById('d-badge').innerText=
+    dest.c.toUpperCase();
+
+  document.getElementById('destacada').style.backgroundImage=
+    "url('"+dest.i+"')";
+
+
+  let fin=Math.min(
+    mostrando+POR_PAGINA,
+    filtradas.length
+  );
+
+
+  let html=document.getElementById('grid').innerHTML;
+
+
+  for(
+    let k=(reset?1:mostrando);
+    k<fin;
+    k++
+  ){
+
+    let n=filtradas[k];
+
+    html+=`
+
+    <div class="card">
+
+      <img
+        src="${n.i}"
+        loading="lazy"
+        alt="${n.t}"
+      >
+
+      <div class="card-body">
+
+        <span class="badge">
+          ${n.c.toUpperCase()}
+        </span>
+
+        <h3>${n.t}</h3>
+
+        <p>${n.d}</p>
+
+      </div>
+
+    </div>
+
+    `;
+
+  }
+
+
   document.getElementById('grid').innerHTML=html;
+
   mostrando=fin;
-  document.getElementById('btnMore').style.display=(mostrando>=filtradas.length)?'none':'inline-block';
+
+
+  document.getElementById('btnMore').style.display=
+    (mostrando>=filtradas.length)
+    ?'none'
+    :'inline-block';
+
 }
+
+
+/* =====================================================
+   FILTROS
+===================================================== */
+
 function filtrar(tipo,btn){
-  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+
+  document
+    .querySelectorAll('.tab')
+    .forEach(b=>b.classList.remove('active'));
+
   btn.classList.add('active');
-  if(tipo==='todos'){pintarLista(TODAS,true);return;}
+
+
+  if(tipo==='todos'){
+
+    pintarLista(TODAS,true);
+
+    return;
+
+  }
+
+
   let f=TODAS.filter(x=>x.c===tipo);
+
   pintarLista(f,true);
-  window.scrollTo({top:0,behavior:'smooth'});
+
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+
 }
-function cargarMas(){pintarLista(filtradas,false);}
-pintarLista(TODAS,true);
+
+
+/* =====================================================
+   CARGAR MÁS
+===================================================== */
+
+function cargarMas(){
+
+  pintarLista(
+    filtradas,
+    false
+  );
+
+}
+
+
+/* =====================================================
+   INICIO
+===================================================== */
+
+pintarLista(
+  TODAS,
+  true
+);
+
 </script>
+
 </body>
 </html>
