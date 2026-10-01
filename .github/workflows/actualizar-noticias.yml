@@ -1,49 +1,1489 @@
-name: Actualizar con fotos reales
-on: workflow_dispatch
+name: Actualizar noticias RSS
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
-  build:
+  actualizar:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+
+      # ============================================================
+      # 1. DESCARGAR REPOSITORIO
+      # ============================================================
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
         with:
-          python-version: '3.11'
-      - run: pip install feedparser requests beautifulsoup4 lxml
-      - run: |
-          python3 << 'PY'
-          import feedparser, requests, json
+          fetch-depth: 0
+
+      # ============================================================
+      # 2. PREPARAR PYTHON
+      # ============================================================
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # ============================================================
+      # 3. INSTALAR LIBRERIAS
+      # ============================================================
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests feedparser beautifulsoup4 lxml
+
+      # ============================================================
+      # 4. CREAR / EJECUTAR ACTUALIZADOR
+      # ============================================================
+      - name: Actualizar noticias
+        run: |
+          cat > actualizar_noticias.py <<'PYTHON'
+          import os
+          import re
+          import json
+          import html
+          import time
+          import hashlib
+          import requests
+          import feedparser
+
           from bs4 import BeautifulSoup
           from datetime import datetime, timezone
+          from urllib.parse import urlparse, quote_plus
+          from concurrent.futures import ThreadPoolExecutor, as_completed
 
-          RSS = "https://lifeandstyle.expansion.mx/rss"
-          
-          def get_foto(link):
+
+          # ============================================================
+          # CONFIGURACIÓN
+          # ============================================================
+
+          ARCHIVO = "noticias.json"
+
+          MAX_NOTICIAS = 5000
+          MAX_FEED_ITEMS = 300
+          MAX_ARTICULOS_IMAGEN = 3000
+
+          TIMEOUT = 15
+
+          HEADERS = {
+              "User-Agent": (
+                  "Mozilla/5.0 (Linux; Android 10) "
+                  "AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) "
+                  "Chrome/140.0 Mobile Safari/537.36"
+              ),
+              "Accept-Language": "es-MX,es;q=0.9,en;q=0.8"
+          }
+
+
+          # ============================================================
+          # RSS OFICIALES DE EXPANSIÓN
+          #
+          # Estos canales están publicados por Expansión.
+          # ============================================================
+
+          RSS_EXPANSION = {
+
+              "Portada":
+                  "https://expansion.mx/rss",
+
+              "Empresas":
+                  "https://expansion.mx/rss/empresas",
+
+              "Economía":
+                  "https://expansion.mx/rss/economia",
+
+              "Política":
+                  "https://expansion.mx/rss/politica",
+
+              "Mundo":
+                  "https://expansion.mx/rss/internacional",
+
+              "Tecnología":
+                  "https://expansion.mx/rss/tecnologia",
+
+              "Tendencias":
+                  "https://expansion.mx/rss/tendencias",
+
+          }
+
+
+          # ============================================================
+          # BÚSQUEDAS DEPORTIVAS
+          #
+          # Deportes no aparece como canal RSS oficial de Expansión,
+          # por eso usamos Google News RSS filtrando el dominio de
+          # Life & Style / Expansión.
+          # ============================================================
+
+          GOOGLE_BASE = (
+              "https://news.google.com/rss/search?"
+              "hl=es-419&gl=MX&ceid=MX:es-419&q="
+          )
+
+
+          BUSQUEDAS_DEPORTES = {
+
+              "Fútbol": [
+                  'site:lifeandstyle.expansion.mx/deportes fútbol',
+                  'site:lifeandstyle.expansion.mx/deportes futbol',
+                  'site:lifeandstyle.expansion.mx/deportes soccer',
+                  'site:lifeandstyle.expansion.mx/deportes "Champions League"',
+                  'site:lifeandstyle.expansion.mx/deportes "Premier League"',
+                  'site:lifeandstyle.expansion.mx/deportes "LaLiga"',
+                  'site:lifeandstyle.expansion.mx/deportes UEFA',
+              ],
+
+              "Liga MX": [
+                  'site:lifeandstyle.expansion.mx/deportes "Liga MX"',
+                  'site:lifeandstyle.expansion.mx/deportes "Liga Mx"',
+                  'site:lifeandstyle.expansion.mx/deportes América',
+                  'site:lifeandstyle.expansion.mx/deportes Chivas',
+                  'site:lifeandstyle.expansion.mx/deportes Cruz Azul',
+                  'site:lifeandstyle.expansion.mx/deportes Pumas',
+                  'site:lifeandstyle.expansion.mx/deportes Tigres',
+                  'site:lifeandstyle.expansion.mx/deportes Monterrey',
+              ],
+
+              "F1": [
+                  'site:lifeandstyle.expansion.mx/deportes "Fórmula 1"',
+                  'site:lifeandstyle.expansion.mx/deportes "Formula 1"',
+                  'site:lifeandstyle.expansion.mx/deportes F1',
+                  'site:lifeandstyle.expansion.mx/deportes "Checo Pérez"',
+                  'site:lifeandstyle.expansion.mx/deportes "Fernando Alonso"',
+                  'site:lifeandstyle.expansion.mx/deportes "Lando Norris"',
+                  'site:lifeandstyle.expansion.mx/deportes "Max Verstappen"',
+                  'site:lifeandstyle.expansion.mx/deportes Ferrari',
+                  'site:lifeandstyle.expansion.mx/deportes McLaren',
+                  'site:lifeandstyle.expansion.mx/deportes Mercedes',
+              ],
+
+              "NFL": [
+                  'site:lifeandstyle.expansion.mx/deportes NFL',
+                  'site:lifeandstyle.expansion.mx/deportes "Super Bowl"',
+                  'site:lifeandstyle.expansion.mx/deportes Chiefs',
+                  'site:lifeandstyle.expansion.mx/deportes Cowboys',
+                  'site:lifeandstyle.expansion.mx/deportes Eagles',
+                  'site:lifeandstyle.expansion.mx/deportes Packers',
+                  'site:lifeandstyle.expansion.mx/deportes Patriots',
+                  'site:lifeandstyle.expansion.mx/deportes "Patrick Mahomes"',
+              ],
+
+              "Béisbol": [
+                  'site:lifeandstyle.expansion.mx/deportes béisbol',
+                  'site:lifeandstyle.expansion.mx/deportes beisbol',
+                  'site:lifeandstyle.expansion.mx/deportes MLB',
+                  'site:lifeandstyle.expansion.mx/deportes "Grandes Ligas"',
+                  'site:lifeandstyle.expansion.mx/deportes Yankees',
+                  'site:lifeandstyle.expansion.mx/deportes Dodgers',
+                  'site:lifeandstyle.expansion.mx/deportes "World Series"',
+              ],
+
+              "Tenis": [
+                  'site:lifeandstyle.expansion.mx/deportes tenis',
+                  'site:lifeandstyle.expansion.mx/deportes ATP',
+                  'site:lifeandstyle.expansion.mx/deportes WTA',
+                  'site:lifeandstyle.expansion.mx/deportes Wimbledon',
+                  'site:lifeandstyle.expansion.mx/deportes Roland Garros',
+                  'site:lifeandstyle.expansion.mx/deportes US Open',
+                  'site:lifeandstyle.expansion.mx/deportes "Carlos Alcaraz"',
+                  'site:lifeandstyle.expansion.mx/deportes "Novak Djokovic"',
+              ],
+
+              "Básquetbol": [
+                  'site:lifeandstyle.expansion.mx/deportes básquetbol',
+                  'site:lifeandstyle.expansion.mx/deportes basquetbol',
+                  'site:lifeandstyle.expansion.mx/deportes baloncesto',
+                  'site:lifeandstyle.expansion.mx/deportes NBA',
+                  'site:lifeandstyle.expansion.mx/deportes WNBA',
+                  'site:lifeandstyle.expansion.mx/deportes FIBA',
+                  'site:lifeandstyle.expansion.mx/deportes Lakers',
+                  'site:lifeandstyle.expansion.mx/deportes Warriors',
+                  'site:lifeandstyle.expansion.mx/deportes Celtics',
+                  'site:lifeandstyle.expansion.mx/deportes Knicks',
+                  'site:lifeandstyle.expansion.mx/deportes "NBA México"',
+              ],
+
+              "Boxeo": [
+                  'site:lifeandstyle.expansion.mx/deportes boxeo',
+                  'site:lifeandstyle.expansion.mx/deportes box',
+                  'site:lifeandstyle.expansion.mx/deportes Canelo',
+                  'site:lifeandstyle.expansion.mx/deportes "Saúl Álvarez"',
+                  'site:lifeandstyle.expansion.mx/deportes pelea',
+                  'site:lifeandstyle.expansion.mx/deportes "peso pesado"',
+              ],
+
+          }
+
+
+          # ============================================================
+          # SESIONES HTTP
+          # ============================================================
+
+          SESSION = requests.Session()
+          SESSION.headers.update(HEADERS)
+
+
+          # ============================================================
+          # FUNCIONES GENERALES
+          # ============================================================
+
+          def limpiar_texto(texto):
+              if not texto:
+                  return ""
+
+              texto = html.unescape(str(texto))
+
+              soup = BeautifulSoup(texto, "html.parser")
+              texto = soup.get_text(" ", strip=True)
+
+              texto = re.sub(r"\s+", " ", texto)
+
+              return texto.strip()
+
+
+          def normalizar_url(url):
+              if not url:
+                  return ""
+
+              url = html.unescape(str(url)).strip()
+
+              # Quitar fragmento
+              url = url.split("#")[0]
+
+              return url
+
+
+          def es_url_expansion(url):
+              if not url:
+                  return False
+
+              u = url.lower()
+
+              return (
+                  "expansion.mx/" in u
+                  or "lifeandstyle.expansion.mx/" in u
+              )
+
+
+          def crear_id(url, titulo):
+              base = (url or titulo).strip().lower()
+
+              return hashlib.sha1(
+                  base.encode("utf-8", errors="ignore")
+              ).hexdigest()[:20]
+
+
+          def fecha_iso(fecha):
+              if not fecha:
+                  return datetime.now(timezone.utc).isoformat()
+
               try:
-                  r = requests.get(link, timeout=10, headers={"User-Agent":"Mozilla/5.0"})
-                  s = BeautifulSoup(r.text, "lxml")
-                  og = s.find("meta", property="og:image")
-                  if og: return og.get("content")
-              except: pass
-              return f"https://picsum.photos/seed/{abs(hash(link))%100000}/600/400"
+                  return datetime.fromtimestamp(
+                      time.mktime(fecha),
+                      tz=timezone.utc
+                  ).isoformat()
+              except Exception:
+                  return datetime.now(timezone.utc).isoformat()
 
-          feed = feedparser.parse(RSS)
-          noticias=[]
-          for e in feed.entries[:50]:
-              link = e.link
-              noticias.append({
-                "titulo": e.title,
-                "descripcion": BeautifulSoup(e.description, "lxml").get_text()[:180],
-                "link": link,
-                "categoria": "deportes",
-                "imagen": get_foto(link)
-              })
-          json.dump({"actualizado": datetime.now(timezone.utc).isoformat(), "noticias": noticias}, open('noticias.json','w',encoding='utf-8'), ensure_ascii=False, indent=2)
-          PY
-      - run: |
-          git config user.name "bot"
-          git config user.email "bot@github.com"
+
+          # ============================================================
+          # CATEGORIZACIÓN
+          # ============================================================
+
+          def categoria_general(fuente, titulo, descripcion, url):
+              texto = (
+                  f"{fuente} "
+                  f"{titulo} "
+                  f"{descripcion} "
+                  f"{url}"
+              ).lower()
+
+              if fuente in [
+                  "Deportes",
+                  "Fútbol",
+                  "Liga MX",
+                  "F1",
+                  "NFL",
+                  "Béisbol",
+                  "Tenis",
+                  "Básquetbol",
+                  "Boxeo"
+              ]:
+                  return "Deportes"
+
+              if "tecnolog" in texto:
+                  return "Tecnología"
+
+              if any(x in texto for x in [
+                  "economía",
+                  "economia",
+                  "inflación",
+                  "inflacion",
+                  "peso mexicano",
+                  "dólar",
+                  "dolar",
+                  "banco",
+                  "finanzas",
+                  "mercado"
+              ]):
+                  return "Dinero"
+
+              if any(x in texto for x in [
+                  "política",
+                  "politica",
+                  "presidente",
+                  "senado",
+                  "diputado",
+                  "gobierno",
+                  "elecciones"
+              ]):
+                  return "Política"
+
+              if any(x in texto for x in [
+                  "farándula",
+                  "entretenimiento",
+                  "cine",
+                  "serie",
+                  "televisión",
+                  "television",
+                  "música",
+                  "musica",
+                  "actor",
+                  "actriz"
+              ]):
+                  return "Entretenimiento"
+
+              if any(x in texto for x in [
+                  "trámite",
+                  "tramite",
+                  "documento",
+                  "pasaporte",
+                  "visa",
+                  "curp",
+                  "sat",
+                  "infonavit"
+              ]):
+                  return "Trámites"
+
+              return fuente or "Noticias"
+
+
+          def clasificar_deporte(titulo, descripcion, url, fuente=""):
+              texto = (
+                  f"{titulo} "
+                  f"{descripcion} "
+                  f"{url} "
+                  f"{fuente}"
+              ).lower()
+
+              # ========================================================
+              # F1
+              # ========================================================
+              if any(x in texto for x in [
+                  "fórmula 1",
+                  "formula 1",
+                  "f1",
+                  "checo pérez",
+                  "checo perez",
+                  "fernando alonso",
+                  "max verstappen",
+                  "lando norris",
+                  "charles leclerc",
+                  "george russell",
+                  "carlos sainz",
+                  "mclaren",
+                  "ferrari f1",
+                  "red bull racing",
+                  "mercedes f1",
+                  "gran premio",
+                  "gp de "
+              ]):
+                  return "F1"
+
+              # ========================================================
+              # NFL
+              # ========================================================
+              if any(x in texto for x in [
+                  "nfl",
+                  "super bowl",
+                  "touchdown",
+                  "quarterback",
+                  "chiefs",
+                  "cowboys",
+                  "eagles",
+                  "packers",
+                  "patriots",
+                  "49ers",
+                  "ravens",
+                  "bills",
+                  "dolphins",
+                  "vikings",
+                  "broncos",
+                  "patrick mahomes"
+              ]):
+                  return "NFL"
+
+              # ========================================================
+              # BÁSQUETBOL
+              # ========================================================
+              if any(x in texto for x in [
+                  "básquetbol",
+                  "basquetbol",
+                  "baloncesto",
+                  "nba",
+                  "wnba",
+                  "fiba",
+                  "lakers",
+                  "warriors",
+                  "celtics",
+                  "knicks",
+                  "bulls",
+                  "heat",
+                  "spurs",
+                  "suns",
+                  "nuggets",
+                  "bucks",
+                  "mavericks",
+                  "clippers",
+                  "nba méxico",
+                  "nba mexico"
+              ]):
+                  return "Básquetbol"
+
+              # ========================================================
+              # TENIS
+              # ========================================================
+              if any(x in texto for x in [
+                  "tenis",
+                  "atp",
+                  "wta",
+                  "wimbledon",
+                  "roland garros",
+                  "us open",
+                  "australian open",
+                  "carlos alcaraz",
+                  "novak djokovic",
+                  "jannik sinner",
+                  "iga swiatek",
+                  "coco gauff",
+                  "naomi osaka"
+              ]):
+                  return "Tenis"
+
+              # ========================================================
+              # BÉISBOL
+              # ========================================================
+              if any(x in texto for x in [
+                  "béisbol",
+                  "beisbol",
+                  "mlb",
+                  "grandes ligas",
+                  "world series",
+                  "yankees",
+                  "dodgers",
+                  "red sox",
+                  "mets",
+                  "astros",
+                  "baseball"
+              ]):
+                  return "Béisbol"
+
+              # ========================================================
+              # BOXEO
+              # ========================================================
+              if any(x in texto for x in [
+                  "boxeo",
+                  "boxeador",
+                  "boxeadores",
+                  "canelo",
+                  "saúl álvarez",
+                  "saul alvarez",
+                  "peso pesado",
+                  "peso welter",
+                  "peso ligero",
+                  "nocaut",
+                  "knockout",
+                  "pelea de box"
+              ]):
+                  return "Boxeo"
+
+              # ========================================================
+              # LIGA MX
+              # ========================================================
+              if any(x in texto for x in [
+                  "liga mx",
+                  "liga m x",
+                  "américa",
+                  "america",
+                  "chivas",
+                  "cruz azul",
+                  "pumas",
+                  "tigres",
+                  "monterrey",
+                  "rayados",
+                  "toluca",
+                  "pachuca",
+                  "santos",
+                  "necaxa",
+                  "atlas",
+                  "mazatlán",
+                  "mazatlan",
+                  "querétaro",
+                  "queretaro",
+                  "león",
+                  "leon",
+                  "xolos"
+              ]):
+                  return "Liga MX"
+
+              # ========================================================
+              # FÚTBOL INTERNACIONAL / GENERAL
+              # ========================================================
+              if any(x in texto for x in [
+                  "fútbol",
+                  "futbol",
+                  "soccer",
+                  "champions league",
+                  "europa league",
+                  "conference league",
+                  "premier league",
+                  "la liga",
+                  "laliga",
+                  "serie a",
+                  "bundesliga",
+                  "ligue 1",
+                  "uefa",
+                  "fifa",
+                  "selección mexicana",
+                  "seleccion mexicana",
+                  "mundial",
+                  "real madrid",
+                  "barcelona",
+                  "manchester city",
+                  "manchester united",
+                  "liverpool",
+                  "arsenal",
+                  "chelsea",
+                  "bayern munich",
+                  "psg",
+                  "inter de milán",
+                  "inter de milan",
+                  "juventus"
+              ]):
+                  return "Fútbol"
+
+              return "Otros"
+
+
+          # ============================================================
+          # OBTENER IMAGEN REAL DE UN ARTÍCULO
+          # ============================================================
+
+          def imagenes_de_articulo(url):
+              candidatos = []
+
+              if not url:
+                  return candidatos
+
+              try:
+                  r = SESSION.get(
+                      url,
+                      timeout=TIMEOUT,
+                      allow_redirects=True
+                  )
+
+                  if r.status_code >= 400:
+                      return candidatos
+
+                  soup = BeautifulSoup(
+                      r.text,
+                      "html.parser"
+                  )
+
+                  # ----------------------------------------------------
+                  # OG IMAGE
+                  # ----------------------------------------------------
+                  for meta in soup.find_all(
+                      "meta",
+                      attrs={"property": "og:image"}
+                  ):
+                      content = meta.get("content")
+
+                      if content:
+                          candidatos.append(content)
+
+                  # ----------------------------------------------------
+                  # TWITTER IMAGE
+                  # ----------------------------------------------------
+                  for meta in soup.find_all(
+                      "meta",
+                      attrs={"name": "twitter:image"}
+                  ):
+                      content = meta.get("content")
+
+                      if content:
+                          candidatos.append(content)
+
+                  # ----------------------------------------------------
+                  # JSON-LD
+                  # ----------------------------------------------------
+                  for script in soup.find_all(
+                      "script",
+                      type="application/ld+json"
+                  ):
+                      try:
+                          data = json.loads(
+                              script.string or script.get_text()
+                          )
+
+                          bloques = (
+                              data
+                              if isinstance(data, list)
+                              else [data]
+                          )
+
+                          for bloque in bloques:
+
+                              if not isinstance(
+                                  bloque,
+                                  dict
+                              ):
+                                  continue
+
+                              imagen = bloque.get("image")
+
+                              if isinstance(
+                                  imagen,
+                                  str
+                              ):
+                                  candidatos.append(imagen)
+
+                              elif isinstance(
+                                  imagen,
+                                  list
+                              ):
+                                  candidatos.extend(imagen)
+
+                              elif isinstance(
+                                  imagen,
+                                  dict
+                              ):
+                                  url_img = imagen.get("url")
+
+                                  if url_img:
+                                      candidatos.append(url_img)
+
+                      except Exception:
+                          pass
+
+                  # ----------------------------------------------------
+                  # IMÁGENES DEL ARTÍCULO
+                  # ----------------------------------------------------
+                  for img in soup.find_all("img"):
+
+                      for atributo in [
+                          "src",
+                          "data-src",
+                          "data-original",
+                          "data-lazy-src"
+                      ]:
+
+                          valor = img.get(atributo)
+
+                          if valor:
+                              candidatos.append(valor)
+
+                  # ----------------------------------------------------
+                  # LIMPIAR Y NORMALIZAR
+                  # ----------------------------------------------------
+                  finales = []
+
+                  for img in candidatos:
+
+                      if not img:
+                          continue
+
+                      img = html.unescape(
+                          str(img)
+                      ).strip()
+
+                      if img.startswith("//"):
+                          img = "https:" + img
+
+                      elif img.startswith("/"):
+                          parsed = urlparse(url)
+
+                          img = (
+                              f"{parsed.scheme}://"
+                              f"{parsed.netloc}"
+                              f"{img}"
+                          )
+
+                      if not img.startswith("http"):
+                          continue
+
+                      if img not in finales:
+                          finales.append(img)
+
+                  return finales[:30]
+
+              except Exception:
+                  return []
+
+
+          # ============================================================
+          # PROCESAR RSS
+          # ============================================================
+
+          def leer_rss(url, fuente):
+
+              resultados = []
+
+              try:
+
+                  print(f"RSS: {fuente}")
+
+                  feed = feedparser.parse(url)
+
+                  for entry in feed.entries[:MAX_FEED_ITEMS]:
+
+                      titulo = limpiar_texto(
+                          entry.get("title", "")
+                      )
+
+                      descripcion = limpiar_texto(
+                          entry.get("summary", "")
+                      )
+
+                      link = normalizar_url(
+                          entry.get("link", "")
+                      )
+
+                      if not titulo or not link:
+                          continue
+
+                      resultados.append({
+
+                          "titulo": titulo,
+
+                          "descripcion": descripcion,
+
+                          "url": link,
+
+                          "fuente": fuente,
+
+                          "fecha": fecha_iso(
+                              entry.get("published_parsed")
+                              or entry.get("updated_parsed")
+                          ),
+
+                          "imagen": "",
+
+                          "imagenesAlternativas": []
+
+                      })
+
+              except Exception as e:
+
+                  print(
+                      f"ERROR RSS {fuente}: {e}"
+                  )
+
+              return resultados
+
+
+          # ============================================================
+          # GOOGLE NEWS RSS
+          # ============================================================
+
+          def google_news_url(busqueda):
+
+              consulta = (
+                  f"{busqueda} when:30d"
+              )
+
+              return (
+                  GOOGLE_BASE
+                  + quote_plus(consulta)
+              )
+
+
+          def leer_google_news(
+              busqueda,
+              categoria_deporte
+          ):
+
+              resultados = []
+
+              url = google_news_url(
+                  busqueda
+              )
+
+              try:
+
+                  feed = feedparser.parse(url)
+
+                  for entry in feed.entries:
+
+                      titulo = limpiar_texto(
+                          entry.get("title", "")
+                      )
+
+                      descripcion = limpiar_texto(
+                          entry.get("summary", "")
+                      )
+
+                      link = normalizar_url(
+                          entry.get("link", "")
+                      )
+
+                      if not titulo or not link:
+                          continue
+
+                      # Google News normalmente redirige
+                      # hacia el sitio original.
+                      #
+                      # Si no termina siendo Expansión,
+                      # descartamos el resultado.
+
+                      try:
+
+                          respuesta = SESSION.head(
+                              link,
+                              timeout=TIMEOUT,
+                              allow_redirects=True
+                          )
+
+                          final_url = normalizar_url(
+                              respuesta.url
+                          )
+
+                      except Exception:
+
+                          final_url = link
+
+                      if not es_url_expansion(
+                          final_url
+                      ):
+                          continue
+
+                      resultados.append({
+
+                          "titulo": titulo,
+
+                          "descripcion": descripcion,
+
+                          "url": final_url,
+
+                          "fuente": categoria_deporte,
+
+                          "fecha": fecha_iso(
+                              entry.get("published_parsed")
+                              or entry.get("updated_parsed")
+                          ),
+
+                          "imagen": "",
+
+                          "imagenesAlternativas": []
+
+                      })
+
+              except Exception as e:
+
+                  print(
+                      f"ERROR GOOGLE NEWS "
+                      f"{categoria_deporte}: {e}"
+                  )
+
+              return resultados
+
+
+          # ============================================================
+          # CARGAR JSON EXISTENTE
+          # ============================================================
+
+          def cargar_existentes():
+
+              if not os.path.exists(
+                  ARCHIVO
+              ):
+                  return []
+
+              try:
+
+                  with open(
+                      ARCHIVO,
+                      "r",
+                      encoding="utf-8"
+                  ) as f:
+
+                      data = json.load(f)
+
+                  if isinstance(data, list):
+                      return data
+
+                  if isinstance(data, dict):
+
+                      if isinstance(
+                          data.get("noticias"),
+                          list
+                      ):
+                          return data["noticias"]
+
+                      if isinstance(
+                          data.get("items"),
+                          list
+                      ):
+                          return data["items"]
+
+              except Exception as e:
+
+                  print(
+                      f"No se pudo leer "
+                      f"{ARCHIVO}: {e}"
+                  )
+
+              return []
+
+
+          # ============================================================
+          # LIMPIAR NOTICIA
+          # ============================================================
+
+          def limpiar_noticia(n):
+
+              titulo = limpiar_texto(
+                  n.get("titulo", "")
+              )
+
+              descripcion = limpiar_texto(
+                  n.get("descripcion", "")
+              )
+
+              url = normalizar_url(
+                  n.get("url", "")
+                  or n.get("link", "")
+              )
+
+              fuente = limpiar_texto(
+                  n.get("fuente", "")
+              )
+
+              fecha = n.get(
+                  "fecha",
+                  ""
+              )
+
+              imagen = normalizar_url(
+                  n.get("imagen", "")
+              )
+
+              alternativas = []
+
+              for img in (
+                  n.get(
+                      "imagenesAlternativas",
+                      []
+                  )
+                  or []
+              ):
+
+                  img = normalizar_url(img)
+
+                  if (
+                      img
+                      and img != imagen
+                      and img not in alternativas
+                  ):
+                      alternativas.append(img)
+
+              if not titulo or not url:
+                  return None
+
+              deporte = ""
+
+              if (
+                  fuente in BUSQUEDAS_DEPORTES
+                  or fuente in [
+                      "Deportes",
+                      "Fútbol",
+                      "Liga MX",
+                      "F1",
+                      "NFL",
+                      "Béisbol",
+                      "Tenis",
+                      "Básquetbol",
+                      "Boxeo"
+                  ]
+              ):
+
+                  deporte = clasificar_deporte(
+                      titulo,
+                      descripcion,
+                      url,
+                      fuente
+                  )
+
+              categoria = categoria_general(
+                  fuente,
+                  titulo,
+                  descripcion,
+                  url
+              )
+
+              return {
+
+                  "id": crear_id(
+                      url,
+                      titulo
+                  ),
+
+                  "titulo": titulo,
+
+                  "descripcion": descripcion,
+
+                  "categoria": categoria,
+
+                  "deporte": deporte,
+
+                  "fuente": (
+                      "Expansión"
+                      if es_url_expansion(url)
+                      else fuente
+                  ),
+
+                  "fecha": fecha,
+
+                  "url": url,
+
+                  "imagen": imagen,
+
+                  "imagenesAlternativas": alternativas
+
+              }
+
+
+          # ============================================================
+          # OBTENER IMÁGENES EN PARALELO
+          # ============================================================
+
+          def completar_imagen(noticia):
+
+              if noticia.get("imagen"):
+                  return noticia
+
+              url = noticia.get("url", "")
+
+              candidatos = imagenes_de_articulo(
+                  url
+              )
+
+              if candidatos:
+
+                  noticia["imagen"] = candidatos[0]
+
+                  noticia[
+                      "imagenesAlternativas"
+                  ] = candidatos[1:]
+
+              return noticia
+
+
+          # ============================================================
+          # MAIN
+          # ============================================================
+
+          def main():
+
+              print("")
+              print("=" * 70)
+              print("ACTUALIZADOR DE NOTICIAS")
+              print("=" * 70)
+              print("")
+
+              existentes = cargar_existentes()
+
+              print(
+                  f"Noticias existentes: "
+                  f"{len(existentes)}"
+              )
+
+              nuevas = []
+
+              # ========================================================
+              # RSS OFICIALES
+              # ========================================================
+
+              for fuente, rss in RSS_EXPANSION.items():
+
+                  nuevas.extend(
+                      leer_rss(
+                          rss,
+                          fuente
+                      )
+                  )
+
+              # ========================================================
+              # DEPORTES
+              # ========================================================
+
+              for deporte, busquedas in (
+                  BUSQUEDAS_DEPORTES.items()
+              ):
+
+                  print("")
+                  print(
+                      f"Buscando Deportes: "
+                      f"{deporte}"
+                  )
+
+                  for busqueda in busquedas:
+
+                      resultados = leer_google_news(
+                          busqueda,
+                          deporte
+                      )
+
+                      nuevas.extend(
+                          resultados
+                      )
+
+              print("")
+              print(
+                  f"Noticias recopiladas: "
+                  f"{len(nuevas)}"
+              )
+
+              # ========================================================
+              # UNIR VIEJAS + NUEVAS
+              # ========================================================
+
+              todas = existentes + nuevas
+
+              limpias = []
+
+              ids = set()
+
+              for n in todas:
+
+                  n = limpiar_noticia(n)
+
+                  if not n:
+                      continue
+
+                  ident = n["id"]
+
+                  if ident in ids:
+                      continue
+
+                  ids.add(ident)
+
+                  limpias.append(n)
+
+              print(
+                  f"Noticias únicas: "
+                  f"{len(limpias)}"
+              )
+
+              # ========================================================
+              # ORDENAR POR FECHA
+              # ========================================================
+
+              def clave_fecha(n):
+
+                  return n.get(
+                      "fecha",
+                      ""
+                  )
+
+              limpias.sort(
+                  key=clave_fecha,
+                  reverse=True
+              )
+
+              # ========================================================
+              # RECUPERAR IMÁGENES
+              #
+              # Primero las noticias nuevas sin imagen.
+              # También revisamos noticias anteriores que todavía
+              # no tengan imagen.
+              # ========================================================
+
+              pendientes = [
+
+                  n
+                  for n in limpias
+                  if not n.get("imagen")
+              ]
+
+              pendientes = pendientes[
+                  :MAX_ARTICULOS_IMAGEN
+              ]
+
+              print("")
+              print(
+                  f"Artículos a revisar para imagen: "
+                  f"{len(pendientes)}"
+              )
+
+              if pendientes:
+
+                  with ThreadPoolExecutor(
+                      max_workers=15
+                  ) as executor:
+
+                      futures = [
+                          executor.submit(
+                              completar_imagen,
+                              n
+                          )
+                          for n in pendientes
+                      ]
+
+                      terminadas = 0
+
+                      for future in as_completed(
+                          futures
+                      ):
+
+                          try:
+                              future.result()
+
+                          except Exception as e:
+
+                              print(
+                                  "Error obteniendo imagen:",
+                                  e
+                              )
+
+                          terminadas += 1
+
+                          if (
+                              terminadas % 50
+                              == 0
+                          ):
+
+                              print(
+                                  f"Imágenes: "
+                                  f"{terminadas}/"
+                                  f"{len(pendientes)}"
+                              )
+
+              # ========================================================
+              # EVITAR REPETICIONES DE IMAGEN
+              #
+              # Si dos noticias tienen exactamente la misma imagen,
+              # intentamos utilizar una alternativa de la segunda.
+              # ========================================================
+
+              imagen_usada = set()
+
+              for noticia in limpias:
+
+                  imagen = noticia.get(
+                      "imagen",
+                      ""
+                  )
+
+                  if not imagen:
+                      continue
+
+                  if imagen not in imagen_usada:
+
+                      imagen_usada.add(
+                          imagen
+                      )
+
+                      continue
+
+                  alternativas = noticia.get(
+                      "imagenesAlternativas",
+                      []
+                  ) or []
+
+                  nueva_imagen = ""
+
+                  for alternativa in alternativas:
+
+                      alternativa = normalizar_url(
+                          alternativa
+                      )
+
+                      if (
+                          alternativa
+                          and alternativa
+                          not in imagen_usada
+                      ):
+
+                          nueva_imagen = alternativa
+                          break
+
+                  if nueva_imagen:
+
+                      noticia["imagen"] = (
+                          nueva_imagen
+                      )
+
+                      imagen_usada.add(
+                          nueva_imagen
+                      )
+
+              # ========================================================
+              # LIMITAR TOTAL
+              # ========================================================
+
+              limpias = limpias[
+                  :MAX_NOTICIAS
+              ]
+
+              # ========================================================
+              # ESTADÍSTICAS
+              # ========================================================
+
+              categorias = {}
+
+              deportes = {}
+
+              con_imagen = 0
+              sin_imagen = 0
+
+              for n in limpias:
+
+                  cat = n.get(
+                      "categoria",
+                      "Sin categoría"
+                  )
+
+                  categorias[cat] = (
+                      categorias.get(cat, 0)
+                      + 1
+                  )
+
+                  dep = n.get(
+                      "deporte",
+                      ""
+                  )
+
+                  if dep:
+
+                      deportes[dep] = (
+                          deportes.get(dep, 0)
+                          + 1
+                      )
+
+                  if n.get("imagen"):
+                      con_imagen += 1
+                  else:
+                      sin_imagen += 1
+
+              # ========================================================
+              # GUARDAR
+              # ========================================================
+
+              with open(
+                  ARCHIVO,
+                  "w",
+                  encoding="utf-8"
+              ) as f:
+
+                  json.dump(
+                      limpias,
+                      f,
+                      ensure_ascii=False,
+                      indent=2
+                  )
+
+              # ========================================================
+              # RESULTADOS
+              # ========================================================
+
+              print("")
+              print("=" * 70)
+              print("ACTUALIZACIÓN TERMINADA")
+              print("=" * 70)
+
+              print("")
+              print(
+                  f"TOTAL: {len(limpias)}"
+              )
+
+              print("")
+              print(
+                  "IMÁGENES:"
+              )
+
+              print(
+                  f"  con_imagen: {con_imagen}"
+              )
+
+              print(
+                  f"  sin_imagen: {sin_imagen}"
+              )
+
+              print("")
+              print(
+                  "CATEGORÍAS:"
+              )
+
+              for k, v in sorted(
+                  categorias.items()
+              ):
+
+                  print(
+                      f"  {k}: {v}"
+                  )
+
+              print("")
+              print(
+                  "DEPORTES:"
+              )
+
+              for k, v in sorted(
+                  deportes.items()
+              ):
+
+                  print(
+                      f"  {k}: {v}"
+                  )
+
+              print("")
+              print(
+                  f"Imágenes únicas utilizadas: "
+                  f"{len(imagen_usada)}"
+              )
+
+              print("")
+              print("=" * 70)
+
+
+          if __name__ == "__main__":
+              main()
+
+          PYTHON
+
+          python actualizar_noticias.py
+
+      # ============================================================
+      # 5. GUARDAR CAMBIOS
+      # ============================================================
+      - name: Guardar noticias.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add noticias.json
-          git commit -m "fotos reales" || true
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No hubo cambios nuevos."
+          else
+            git commit -m "Actualizar noticias reales de Expansión"
+            git push
+          fi
