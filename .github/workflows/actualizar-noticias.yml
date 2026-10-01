@@ -9,28 +9,21 @@ permissions:
   contents: write
 
 jobs:
-
   actualizar:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Descargar repositorio
         uses: actions/checkout@v4
-
 
       - name: Preparar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-
       - name: Crear noticias.json desde múltiples RSS
         run: |
-
           python - <<'PY'
-
           import urllib.request
           import xml.etree.ElementTree as ET
           import json
@@ -39,71 +32,49 @@ jobs:
           from datetime import datetime, timezone
           from urllib.parse import urljoin
 
-
-          # ============================================================
-          # RSS OFICIALES DE EXPANSIÓN
-          # ============================================================
-
           FUENTES_RSS = [
-
               {
                   "url": "https://expansion.mx/rss",
                   "categoria": "general"
               },
-
               {
                   "url": "https://expansion.mx/rss/internacional",
                   "categoria": "mundo"
               },
-
               {
                   "url": "https://expansion.mx/rss/economia",
                   "categoria": "economia"
               },
-
               {
                   "url": "https://expansion.mx/rss/tecnologia",
                   "categoria": "tecnologia"
               },
-
               {
                   "url": "https://expansion.mx/rss/tendencias",
                   "categoria": "tendencias"
               },
-
               {
                   "url": "https://expansion.mx/rss/empresas",
                   "categoria": "mexico"
               },
-
               {
                   "url": "https://expansion.mx/rss/politica",
                   "categoria": "mexico"
               }
-
           ]
-
 
           MAX_NOTICIAS = 100
 
-
-          # ============================================================
-          # DESCARGAR RSS
-          # ============================================================
-
           def descargar_rss(url):
-
               print("")
               print("Descargando:")
               print(url)
 
               try:
-
                   req = urllib.request.Request(
                       url,
                       headers={
-                          "User-Agent":
-                          "Mozilla/5.0"
+                          "User-Agent": "Mozilla/5.0"
                       }
                   )
 
@@ -111,34 +82,17 @@ jobs:
                       req,
                       timeout=30
                   ) as response:
-
                       return response.read()
 
               except Exception as error:
-
-                  print(
-                      "ERROR RSS:",
-                      url,
-                      error
-                  )
-
+                  print("ERROR RSS:", url, error)
                   return None
 
-
-          # ============================================================
-          # LIMPIAR HTML
-          # ============================================================
-
           def limpiar_html(texto):
-
               if not texto:
                   return ""
 
-
-              texto = html.unescape(
-                  texto
-              )
-
+              texto = html.unescape(texto)
 
               texto = re.sub(
                   r"<script[^>]*>.*?</script>",
@@ -147,7 +101,6 @@ jobs:
                   flags=re.I | re.S
               )
 
-
               texto = re.sub(
                   r"<style[^>]*>.*?</style>",
                   "",
@@ -155,13 +108,11 @@ jobs:
                   flags=re.I | re.S
               )
 
-
               texto = re.sub(
                   r"<[^>]+>",
                   "",
                   texto
               )
-
 
               texto = re.sub(
                   r"\s+",
@@ -169,238 +120,127 @@ jobs:
                   texto
               )
 
-
               return texto.strip()
 
-
-          # ============================================================
-          # OBTENER TAG
-          # ============================================================
-
           def obtener_tag(item, nombre):
-
               for elemento in item.iter():
-
                   tag = elemento.tag
 
                   if "}" in tag:
-
-                      tag = tag.split(
-                          "}",
-                          1
-                      )[1]
-
+                      tag = tag.split("}", 1)[1]
 
                   if tag.lower() == nombre.lower():
-
                       if elemento.text:
-
                           return elemento.text.strip()
-
 
               return ""
 
-
-          # ============================================================
-          # OBTENER IMAGEN
-          # ============================================================
-
-          def obtener_imagen(
-              item,
-              rss_url
-          ):
-
-              # --------------------------------------------------------
-              # 1. CONTENT / MEDIA / THUMBNAIL / ENCLOSURE
-              # --------------------------------------------------------
-
+          def obtener_imagen(item, rss_url):
               for elemento in item.iter():
-
                   tag = elemento.tag
 
                   if "}" in tag:
-
-                      tag = tag.split(
-                          "}",
-                          1
-                      )[1]
-
+                      tag = tag.split("}", 1)[1]
 
                   tag = tag.lower()
 
-
                   if tag in [
-
                       "content",
                       "thumbnail",
                       "enclosure",
                       "image",
                       "media"
-
                   ]:
-
                       for atributo in [
-
                           "url",
                           "href",
                           "src"
-
                       ]:
-
                           url = elemento.attrib.get(
                               atributo,
                               ""
                           ).strip()
 
-
                           if url:
-
-                              if url.startswith(
-                                  "//"
-                              ):
-
-                                  url = (
-                                      "https:" +
-                                      url
-                                  )
-
+                              if url.startswith("//"):
+                                  url = "https:" + url
 
                               return urljoin(
                                   rss_url,
                                   url
                               )
 
-
-              # --------------------------------------------------------
-              # 2. BUSCAR IMG DENTRO DE DESCRIPTION
-              # --------------------------------------------------------
-
               for elemento in item.iter():
-
                   tag = elemento.tag
 
                   if "}" in tag:
-
-                      tag = tag.split(
-                          "}",
-                          1
-                      )[1]
-
+                      tag = tag.split("}", 1)[1]
 
                   tag = tag.lower()
 
-
                   if tag in [
-
                       "description",
                       "encoded",
                       "content"
-
                   ]:
-
-                      contenido =
-                          elemento.text or ""
-
+                      contenido = elemento.text or ""
 
                       resultado = re.search(
-
                           r'<img[^>]+src=["\']([^"\']+)["\']',
-
                           contenido,
-
                           re.I
-
                       )
 
-
                       if resultado:
-
                           url = html.unescape(
                               resultado.group(1)
                           ).strip()
 
-
-                          if url.startswith(
-                              "//"
-                          ):
-
-                              url = (
-                                  "https:" +
-                                  url
-                              )
-
+                          if url.startswith("//"):
+                              url = "https:" + url
 
                           return urljoin(
                               rss_url,
                               url
                           )
-
 
                       resultado = re.search(
-
                           r'<img[^>]+data-src=["\']([^"\']+)["\']',
-
                           contenido,
-
                           re.I
-
                       )
 
-
                       if resultado:
-
                           url = html.unescape(
                               resultado.group(1)
                           ).strip()
 
-
-                          if url.startswith(
-                              "//"
-                          ):
-
-                              url = (
-                                  "https:" +
-                                  url
-                              )
-
+                          if url.startswith("//"):
+                              url = "https:" + url
 
                           return urljoin(
                               rss_url,
                               url
                           )
-
 
               return ""
 
-
-          # ============================================================
-          # NORMALIZAR TEXTO
-          # ============================================================
-
           def normalizar(texto):
+              texto = (texto or "").lower()
 
-              texto = (
-                  texto or ""
-              ).lower()
+              reemplazos = {
+                  "á": "a",
+                  "é": "e",
+                  "í": "i",
+                  "ó": "o",
+                  "ú": "u",
+                  "ü": "u"
+              }
 
-
-              texto = (
-                  texto
-                  .replace("á", "a")
-                  .replace("é", "e")
-                  .replace("í", "i")
-                  .replace("ó", "o")
-                  .replace("ú", "u")
-                  .replace("ü", "u")
-              )
-
+              for viejo, nuevo in reemplazos.items():
+                  texto = texto.replace(viejo, nuevo)
 
               return texto
-
-
-          # ============================================================
-          # CLASIFICAR NOTICIA
-          # ============================================================
 
           def clasificar_noticia(
               titulo,
@@ -408,65 +248,32 @@ jobs:
               enlace,
               categoria_fuente
           ):
-
-              titulo_n =
-                  normalizar(titulo)
-
-
-              descripcion_n =
-                  normalizar(descripcion)
-
-
-              enlace_n =
-                  normalizar(enlace)
-
+              titulo_n = normalizar(titulo)
+              descripcion_n = normalizar(descripcion)
+              enlace_n = normalizar(enlace)
 
               texto = (
-                  titulo_n +
-                  " " +
-                  descripcion_n +
-                  " " +
-                  enlace_n
+                  titulo_n
+                  + " "
+                  + descripcion_n
+                  + " "
+                  + enlace_n
               )
 
-
-              # ========================================================
-              # FUENTES DIRECTAS
-              # ========================================================
-
               if categoria_fuente == "mundo":
-
                   return "mundo"
 
-
               if categoria_fuente == "economia":
-
                   return "economia"
 
-
               if categoria_fuente == "tecnologia":
-
                   return "tecnologia"
 
-
-              # ========================================================
-              # DEPORTES
-              #
-              # MUY IMPORTANTE:
-              # Esto se revisa ANTES de entretenimiento y mundo.
-              # Así "Mundial", "televisión", etc. no mandan una
-              # noticia deportiva a otra categoría.
-              # ========================================================
-
               deportes = [
-
                   "futbol",
-                  "fútbol",
                   "liga mx",
                   "seleccion mexicana",
-                  "selección mexicana",
                   "seleccion peruana",
-                  "selección peruana",
                   "partido",
                   "partidos",
                   "gol",
@@ -474,12 +281,10 @@ jobs:
                   "jugador",
                   "jugadores",
                   "entrenador",
-                  "club",
                   "champions",
                   "uefa",
                   "fifa",
                   "mundial de futbol",
-                  "mundial de fútbol",
                   "copa del mundo",
                   "nations league",
                   "premier league",
@@ -496,14 +301,12 @@ jobs:
                   "boxeo",
                   "box",
                   "beisbol",
-                  "béisbol",
                   "basquetbol",
                   "baloncesto",
                   "formula 1",
                   "formula1",
                   "f1",
                   "gran premio",
-                  "gp de ",
                   "piloto",
                   "pilotos",
                   "red bull",
@@ -512,10 +315,8 @@ jobs:
                   "aston martin",
                   "mclaren",
                   "checo perez",
-                  "checo pérez",
                   "super bowl",
                   "olimpico",
-                  "olímpico",
                   "medalla",
                   "atleta",
                   "atletismo",
@@ -529,24 +330,15 @@ jobs:
                   "horario del partido",
                   "donde ver",
                   "dónde ver en vivo"
-
               ]
-
 
               if any(
                   palabra in texto
                   for palabra in deportes
               ):
-
                   return "deportes"
 
-
-              # ========================================================
-              # ENTRETENIMIENTO
-              # ========================================================
-
               entretenimiento = [
-
                   "actor",
                   "actriz",
                   "actores",
@@ -561,9 +353,7 @@ jobs:
                   "artista",
                   "artistas",
                   "pelicula",
-                  "película",
                   "peliculas",
-                  "películas",
                   "serie",
                   "series",
                   "netflix",
@@ -571,71 +361,37 @@ jobs:
                   "cine",
                   "cine y tv",
                   "television",
-                  "televisión",
                   "musica",
-                  "música",
                   "album",
-                  "álbum",
                   "cancion",
-                  "canción",
                   "concierto",
                   "conciertos",
                   "festival",
                   "premios",
                   "espectaculo",
-                  "espectáculo",
                   "espectaculos",
-                  "espectáculos",
                   "entretenimiento",
                   "reality",
                   "mtv",
                   "grammy",
                   "oscar",
-                  "óscar",
-                  "emmy",
-                  "tiktok de famosos",
-                  "famosos de"
-
+                  "emmy"
               ]
-
 
               if any(
                   palabra in texto
                   for palabra in entretenimiento
               ):
-
                   return "entretenimiento"
 
-
-              # ========================================================
-              # SI EL RSS ES TENDENCIAS
-              #
-              # Lo que no sea claramente deporte o entretenimiento
-              # se queda como México.
-              # ========================================================
-
               if categoria_fuente == "tendencias":
-
                   return "mexico"
-
-
-              # ========================================================
-              # EMPRESAS / POLÍTICA
-              # ========================================================
 
               if categoria_fuente == "mexico":
-
                   return "mexico"
 
-
-              # ========================================================
-              # TECNOLOGÍA POR PALABRAS
-              # ========================================================
-
               tecnologia = [
-
                   "tecnologia",
-                  "tecnología",
                   "inteligencia artificial",
                   "ia generativa",
                   "chatgpt",
@@ -654,49 +410,34 @@ jobs:
                   "internet",
                   "software",
                   "aplicacion",
-                  "aplicación",
                   "smartphone",
                   "computadora",
                   "robot",
                   "robotica",
-                  "robótica",
                   "ciberseguridad",
                   "videojuego",
                   "videojuegos",
                   "nvidia",
                   "chip",
                   "chips"
-
               ]
-
 
               if any(
                   palabra in texto
                   for palabra in tecnologia
               ):
-
                   return "tecnologia"
 
-
-              # ========================================================
-              # ECONOMÍA POR PALABRAS
-              # ========================================================
-
               economia = [
-
                   "economia",
-                  "economía",
                   "finanzas",
                   "financiero",
                   "financiera",
                   "dolar",
-                  "dólar",
                   "peso mexicano",
                   "inflacion",
-                  "inflación",
                   "banxico",
                   "banco de mexico",
-                  "banco de méxico",
                   "bolsa",
                   "acciones",
                   "mercado",
@@ -712,40 +453,25 @@ jobs:
                   "empresa",
                   "empresas",
                   "petroleo",
-                  "petróleo",
                   "gasolina",
                   "inversion",
-                  "inversión",
                   "creditos",
-                  "créditos",
                   "hipoteca",
-                  "tasas de interes",
-                  "tasas de interés"
-
+                  "tasas de interes"
               ]
-
 
               if any(
                   palabra in texto
                   for palabra in economia
               ):
-
                   return "economia"
 
-
-              # ========================================================
-              # MUNDO POR PALABRAS
-              # ========================================================
-
               mundo = [
-
                   "estados unidos",
                   "eeuu",
                   "ee.uu",
                   "canada",
-                  "canadá",
                   "espana",
-                  "españa",
                   "francia",
                   "alemania",
                   "italia",
@@ -755,14 +481,12 @@ jobs:
                   "ucrania",
                   "china",
                   "japon",
-                  "japón",
                   "india",
                   "brasil",
                   "argentina",
                   "colombia",
                   "chile",
                   "peru",
-                  "perú",
                   "venezuela",
                   "ecuador",
                   "bolivia",
@@ -772,419 +496,189 @@ jobs:
                   "otan",
                   "casa blanca",
                   "presidente de estados unidos"
-
               ]
-
 
               if any(
                   palabra in texto
                   for palabra in mundo
               ):
-
                   return "mundo"
-
-
-              # ========================================================
-              # POR DEFECTO
-              # ========================================================
 
               return "mexico"
 
-
-          # ============================================================
-          # DESCARGAR TODAS LAS FUENTES
-          # ============================================================
-
           noticias = []
 
-
           for fuente_rss in FUENTES_RSS:
+              rss_url = fuente_rss["url"]
+              categoria_fuente = fuente_rss["categoria"]
 
-              rss_url =
-                  fuente_rss["url"]
-
-
-              categoria_fuente =
-                  fuente_rss["categoria"]
-
-
-              data =
-                  descargar_rss(
-                      rss_url
-                  )
-
+              data = descargar_rss(rss_url)
 
               if not data:
-
                   continue
 
-
               try:
-
-                  root =
-                      ET.fromstring(
-                          data
-                      )
+                  root = ET.fromstring(data)
 
               except Exception as error:
-
                   print(
                       "ERROR XML:",
                       rss_url,
                       error
                   )
-
                   continue
 
+              contador = 0
 
-              contador =
-                  0
-
-
-              for item in root.findall(
-                  ".//item"
-              ):
-
-                  titulo =
-                      obtener_tag(
-                          item,
-                          "title"
-                      )
-
-
-                  enlace =
-                      obtener_tag(
-                          item,
-                          "link"
-                      )
-
-
-                  descripcion =
-                      obtener_tag(
-                          item,
-                          "description"
-                      )
-
-
-                  fecha =
-                      obtener_tag(
-                          item,
-                          "pubDate"
-                      )
-
-
-                  categoria_rss =
-                      obtener_tag(
-                          item,
-                          "category"
-                      )
-
-
-                  if not titulo or not enlace:
-
-                      continue
-
-
-                  descripcion_limpia =
-                      limpiar_html(
-                          descripcion
-                      )
-
-
-                  imagen =
-                      obtener_imagen(
-                          item,
-                          rss_url
-                      )
-
-
-                  categoria =
-                      clasificar_noticia(
-
-                          titulo,
-
-                          descripcion_limpia,
-
-                          enlace,
-
-                          categoria_fuente
-
-                      )
-
-
-                  noticia = {
-
-                      "titulo":
-                          limpiar_html(
-                              titulo
-                          ),
-
-                      "descripcion":
-                          descripcion_limpia[:600],
-
-                      "enlace":
-                          enlace.strip(),
-
-                      "fecha":
-                          fecha.strip(),
-
-                      "fuente":
-                          "Expansión",
-
-                      "categoria":
-                          categoria,
-
-                      "imagen":
-                          imagen,
-
-                      "rss":
-                          categoria_fuente
-
-                  }
-
-
-                  noticias.append(
-                      noticia
+              for item in root.findall(".//item"):
+                  titulo = obtener_tag(
+                      item,
+                      "title"
                   )
 
+                  enlace = obtener_tag(
+                      item,
+                      "link"
+                  )
 
+                  descripcion = obtener_tag(
+                      item,
+                      "description"
+                  )
+
+                  fecha = obtener_tag(
+                      item,
+                      "pubDate"
+                  )
+
+                  if not titulo or not enlace:
+                      continue
+
+                  descripcion_limpia = limpiar_html(
+                      descripcion
+                  )
+
+                  imagen = obtener_imagen(
+                      item,
+                      rss_url
+                  )
+
+                  categoria = clasificar_noticia(
+                      titulo,
+                      descripcion_limpia,
+                      enlace,
+                      categoria_fuente
+                  )
+
+                  noticia = {
+                      "titulo": limpiar_html(titulo),
+                      "descripcion": descripcion_limpia[:600],
+                      "enlace": enlace.strip(),
+                      "fecha": fecha.strip(),
+                      "fuente": "Expansión",
+                      "categoria": categoria,
+                      "imagen": imagen,
+                      "rss": categoria_fuente
+                  }
+
+                  noticias.append(noticia)
                   contador += 1
-
 
               print(
                   "Noticias obtenidas:",
                   contador
               )
 
-
-          # ============================================================
-          # ELIMINAR DUPLICADOS
-          # ============================================================
-
           noticias_unicas = {}
 
-
           for noticia in noticias:
-
-              enlace =
-                  noticia["enlace"]
-
+              enlace = noticia["enlace"]
 
               if not enlace:
                   continue
 
-
-              # Si ya existe, preferimos
-              # la versión que tenga imagen.
-
               if enlace not in noticias_unicas:
-
-                  noticias_unicas[
-                      enlace
-                  ] = noticia
-
+                  noticias_unicas[enlace] = noticia
               else:
-
-                  existente =
-                      noticias_unicas[
-                          enlace
-                      ]
-
+                  existente = noticias_unicas[enlace]
 
                   if (
-                      not existente.get(
-                          "imagen"
-                      )
-                      and noticia.get(
-                          "imagen"
-                      )
+                      not existente.get("imagen")
+                      and noticia.get("imagen")
                   ):
+                      noticias_unicas[enlace] = noticia
 
-                      noticias_unicas[
-                          enlace
-                      ] = noticia
-
-
-          noticias =
-              list(
-                  noticias_unicas.values()
-              )
-
-
-          # ============================================================
-          # ORDENAR POR FECHA
-          # ============================================================
-
-          def fecha_orden(noticia):
-
-              return noticia.get(
-                  "fecha",
-                  ""
-              )
-
+          noticias = list(
+              noticias_unicas.values()
+          )
 
           noticias.sort(
-              key=fecha_orden,
+              key=lambda noticia: noticia.get(
+                  "fecha",
+                  ""
+              ),
               reverse=True
           )
 
-
-          noticias =
-              noticias[
-                  :MAX_NOTICIAS
-              ]
-
-
-          # ============================================================
-          # ESTADÍSTICAS
-          # ============================================================
+          noticias = noticias[:MAX_NOTICIAS]
 
           conteo = {
-
               "mexico": 0,
-
               "mundo": 0,
-
               "economia": 0,
-
               "deportes": 0,
-
               "entretenimiento": 0,
-
               "tecnologia": 0
-
           }
-
 
           imagenes = 0
 
-
           for noticia in noticias:
-
-              categoria =
-                  noticia.get(
-                      "categoria"
-                  )
-
+              categoria = noticia.get(
+                  "categoria"
+              )
 
               if categoria in conteo:
+                  conteo[categoria] += 1
 
-                  conteo[
-                      categoria
-                  ] += 1
-
-
-              if noticia.get(
-                  "imagen"
-              ):
-
+              if noticia.get("imagen"):
                   imagenes += 1
 
-
-          # ============================================================
-          # MOSTRAR RESULTADOS
-          # ============================================================
-
           print("")
-          print(
-              "======================================"
-          )
-          print(
-              "      TENDENCIAS MX - RSS"
-          )
-          print(
-              "======================================"
-          )
-
-          print(
-              "TOTAL:",
-              len(noticias)
-          )
-
-          print(
-              "MÉXICO:",
-              conteo["mexico"]
-          )
-
-          print(
-              "MUNDO:",
-              conteo["mundo"]
-          )
-
-          print(
-              "ECONOMÍA:",
-              conteo["economia"]
-          )
-
-          print(
-              "DEPORTES:",
-              conteo["deportes"]
-          )
-
-          print(
-              "ENTRETENIMIENTO:",
-              conteo["entretenimiento"]
-          )
-
-          print(
-              "TECNOLOGÍA:",
-              conteo["tecnologia"]
-          )
-
-          print(
-              "CON IMAGEN:",
-              imagenes
-          )
-
-          print(
-              "======================================"
-          )
-
-
-          # ============================================================
-          # CREAR JSON
-          # ============================================================
+          print("======================================")
+          print("       TENDENCIAS MX - RSS")
+          print("======================================")
+          print("TOTAL:", len(noticias))
+          print("MÉXICO:", conteo["mexico"])
+          print("MUNDO:", conteo["mundo"])
+          print("ECONOMÍA:", conteo["economia"])
+          print("DEPORTES:", conteo["deportes"])
+          print("ENTRETENIMIENTO:", conteo["entretenimiento"])
+          print("TECNOLOGÍA:", conteo["tecnologia"])
+          print("CON IMAGEN:", imagenes)
+          print("======================================")
 
           resultado = {
-
-              "actualizado":
-                  datetime.now(
-                      timezone.utc
-                  ).isoformat(),
-
-              "fuente":
-                  "Expansión",
-
-              "total":
-                  len(noticias),
-
-              "categorias":
-                  conteo,
-
-              "noticias":
-                  noticias
-
+              "actualizado": datetime.now(
+                  timezone.utc
+              ).isoformat(),
+              "fuente": "Expansión",
+              "total": len(noticias),
+              "categorias": conteo,
+              "noticias": noticias
           }
-
 
           with open(
               "noticias.json",
               "w",
               encoding="utf-8"
           ) as archivo:
-
               json.dump(
-
                   resultado,
-
                   archivo,
-
                   ensure_ascii=False,
-
                   indent=2
-
               )
-
 
           print("")
           print(
@@ -1192,18 +686,12 @@ jobs:
           )
           print("")
 
-
           PY
-
 
       - name: Guardar noticias actualizadas
         run: |
-
-          git config user.name \
-            "Tendencias MX Bot"
-
-          git config user.email \
-            "actions@github.com"
+          git config user.name "Tendencias MX Bot"
+          git config user.email "actions@github.com"
 
           git add noticias.json
 
