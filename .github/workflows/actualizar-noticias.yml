@@ -1,0 +1,128 @@
+name: Actualizar noticias RSS
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Crear noticias.json desde RSS
+        run: |
+          python - <<'PY'
+          import urllib.request
+          import xml.etree.ElementTree as ET
+          import json
+          import re
+          from datetime import datetime, timezone
+
+          RSS_URL = "https://expansion.mx/rss"
+
+          try:
+              req = urllib.request.Request(
+                  RSS_URL,
+                  headers={
+                      "User-Agent": "Mozilla/5.0"
+                  }
+              )
+
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  data = response.read()
+
+              root = ET.fromstring(data)
+
+              noticias = []
+
+              for item in root.findall(".//item"):
+
+                  titulo = item.findtext("title", "").strip()
+                  enlace = item.findtext("link", "").strip()
+                  descripcion = item.findtext("description", "").strip()
+                  fecha = item.findtext("pubDate", "").strip()
+
+                  if not titulo or not enlace:
+                      continue
+
+                  descripcion = re.sub(
+                      r"<[^>]+>",
+                      "",
+                      descripcion
+                  )
+
+                  descripcion = re.sub(
+                      r"\s+",
+                      " ",
+                      descripcion
+                  ).strip()
+
+                  noticias.append({
+                      "titulo": titulo,
+                      "descripcion": descripcion[:300],
+                      "enlace": enlace,
+                      "fecha": fecha,
+                      "fuente": "Expansión",
+                      "categoria": "mexico"
+                  })
+
+              resultado = {
+                  "actualizado": datetime.now(
+                      timezone.utc
+                  ).isoformat(),
+
+                  "fuente": "Expansión",
+
+                  "noticias": noticias[:30]
+              }
+
+              with open(
+                  "noticias.json",
+                  "w",
+                  encoding="utf-8"
+              ) as archivo:
+
+                  json.dump(
+                      resultado,
+                      archivo,
+                      ensure_ascii=False,
+                      indent=2
+                  )
+
+              print(
+                  f"Noticias encontradas: {len(noticias)}"
+              )
+
+          except Exception as error:
+
+              print(
+                  "Error al obtener RSS:",
+                  error
+              )
+
+              raise
+          PY
+
+      - name: Guardar noticias actualizadas
+        run: |
+          git config user.name "Tendencias MX Bot"
+          git config user.email "actions@github.com"
+
+          git add noticias.json
+
+          git diff --cached --quiet || git commit -m "Actualizar noticias RSS"
+
+          git push
