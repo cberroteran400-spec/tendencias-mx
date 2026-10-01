@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-01T14:22:28.806608+00:00",
-  "total": 1138,
+  "actualizado": "2026-10-01T14:26:36.326007+00:00",
+  "total": 1139,
   "imagenes": {
-    "con_imagen": 1138,
+    "con_imagen": 1139,
     "sin_imagen": 0,
     "imagenes_unicas": 233
   },
@@ -3689,6 +3689,17 @@
       "imagen": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "fecha": "2026-10-01T10:39:59+00:00",
       "fuente": "Superdeporte",
+      "categoria": "Deportes",
+      "subcategoria": "otros"
+    },
+    {
+      "id": "171cb909693efb7e5306e823f3d1c1a2f72b4d724f724e0f4d8d0d7a047198d6",
+      "titulo": "Campeonato abre telón en el Anual",
+      "descripcion": "Campeonato abre telón en el Anual El Siglo de Torreón",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOY21rSHAzQTc5ZURUa002ai1UbHhPeFRTSExyU3ZleG80dTh3cDMybUNoaUl5bVphcmpydzQ2aW1HS0RqX1ZiNkJKUmhWUGZhRlVnX2J1TnRfeFdCZTdfWVdWcVo3VlRmQkdSUmRkV3lab1Rla0FheFJYZzlPbmpoRDB0cGcyMF90Y2wwdy1LQ3g?oc=5",
+      "imagen": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "fecha": "2026-10-01T10:33:34+00:00",
+      "fuente": "El Siglo de Torreón",
       "categoria": "Deportes",
       "subcategoria": "otros"
     },
@@ -10348,6 +10359,17 @@
       "id": "33b29113d4930ea127bc1104b21255142aa6292023a51d0896cd31c1e6068a73"
     },
     {
+      "id": "a0912d2b5d2667171363f83b086849bb2eeaf55bee696a737b53ac2a60f57aaf",
+      "titulo": "Ravens-Cowboys en Río de Janeiro es el juego internacional más visto en la historia de la NFL",
+      "descripcion": "Ravens-Cowboys en Río de Janeiro es el juego internacional más visto en la historia de la NFL record.com.mx",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUXY2bEx6R2o2a0xZQU93QVE3V0VOeGQ2Wm5Ccm5hYklkZUtCdXFueHhMWVVuRE1hXy01SGlWTzVrTDBZQzl0eDQ1SktsclA5MjlLMWpwMjllNS1hVDR5UlAtZ2RQMmJtYjFIdmNHQ3dVVWJVYmg4ZnpMVGt4cWwxRkptcV9mYzJpaFluNFBwRFhaYkRjNXA2MzFTVkp1bFFyTGRrN0tfams1TUI0NVhBbDJEVVlhTmI5dllqMFFOcHJuMzdUcVNlODFWUmZ0UG1GOWpUTlM5M0lRSnFidG85MTR3?oc=5",
+      "imagen": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "fecha": "2026-09-30T00:08:00+00:00",
+      "fuente": "record.com.mx",
+      "categoria": "Deportes",
+      "subcategoria": "nfl"
+    },
+    {
       "id": "4c0ec879e3af306f2337b4ab8ce7c1ed6b961d4d1c6be7569b16e518769c808e",
       "titulo": "Checo Pérez recorrerá las calles de Ciudad de México por sus 300 grandes premios en la F1",
       "descripcion": "Checo Pérez recorrerá las calles de Ciudad de México por sus 300 grandes premios en la F1 laopinion.com",
@@ -10775,17 +10797,6 @@
       "categoria": "Deportes",
       "subcategoria": "formula1",
       "id": "caab9a23d91c78e23df6c055c07221e3e5434c3fa61af16049da1e8fcdbdbfe6"
-    },
-    {
-      "titulo": "Deportistas mexiquenses obtienen 79 medallas en la Paralimpiada Nacional CONADE 2026 - La Crónica de Hoy",
-      "descripcion": "Deportistas mexiquenses obtienen 79 medallas en la Paralimpiada Nacional CONADE 2026 La Crónica de Hoy",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOWJUVXhtNlhua3VGdFVKa1ZjSFN4cVhhakp1RVZFcFpjNldwRWJYVlV6c182b1EtSHplTG1rT2E4bDFFaHhNTl9LdmoxdlVMRDVkUHlha2RfNEQxb1g0STN2X0l6TmlFQk9GcEszM2hublBuWldTczRzNUV5Qkl4ZEJTTG1zbjVaWWk5NktBZ3k3TW9MWG1TMjAtUVdGMm5MRjgxbFZTbUwxSi1JYnNTQnpoOGtGelJWX1A3VmFxUV9LUENxX2RETGo1dklwZw?oc=5",
-      "imagen": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
-      "fecha": "2026-09-29T20:19:05+00:00",
-      "fuente": "Google News",
-      "categoria": "Deportes",
-      "subcategoria": "otros",
-      "id": "907f23a36a58ae52582b50a89d99ad6cf67819adaf17959bf6116cc22f749a04"
     },
     {
       "id": "04eca79d583b7d2078efbe30f0b98533065785dac86d5661fcd227ba1b0273bb",
