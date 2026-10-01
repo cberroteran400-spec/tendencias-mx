@@ -1,11 +1,41 @@
 {
-  "actualizado": "2026-10-01T23:52:02.818686+00:00",
-  "total": 535,
+  "actualizado": "2026-10-01T23:58:08.317672+00:00",
+  "total": 540,
   "imagenes": {
-    "con_imagen": 455,
-    "sin_imagen": 80
+    "con_imagen": 462,
+    "sin_imagen": 78
   },
   "noticias": [
+    {
+      "titulo": "Antes de que naciera Carlos Slim, Telcel ya tenía historia: comenzó con directorios y hoy genera 275,000 mdp",
+      "url": "https://expansion.mx/empresas/2026/10/01/telcel-historia-carlos-slim-directorios-telefonicos",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/01df654/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F32%2F4d%2Fbb7ca9924e97876502d9650e5e4d%2Fcarlos-slim-telcel-america-movil.png",
+      "descripcion": "La compañía que comenzó vinculada a los directorios telefónicos terminó en el centro del imperio de telecomunicaciones de Carlos Slim y hoy representa una parte clave de los ingresos de América Móvil.",
+      "fuente": "Roberto Trejo",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-01T23:54:17+00:00"
+    },
+    {
+      "titulo": "La Ley de Economía Digital es aprobada por diputados en Comisión de Hacienda",
+      "url": "https://expansion.mx/economia/2026/10/01/ley-economia-digital-aprobada-diputados-comision-hacienda",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/35ab737/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fac%2F79%2F26de87e949f4a8690ab4e5c4a06d%2F5-pago-electronico-gettyimages-2276443040.jpeg",
+      "descripcion": "La propuesta que busca disminuir el uso del efectivo en México, enviada por la presidenta Claudia Sheinbaum, fue aprobada en lo general y particular con 25 votos a favor, cuatro en contra y cero abstenciones.",
+      "fuente": "Dainzú Patiño",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-01T23:50:11+00:00"
+    },
+    {
+      "titulo": "¿Cuándo y dónde ver el Gran Premio de Bahréin 2026? - abcnoticias.mx",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTS1KN2plcmxYT2xBeTNZM1FxeGZ6aFNuQ3VVWkNuelZEdFU1TFhJZG5iSDh2MmwwU0RtLWtZLXdMWXFBY0hVZnJfTnBTcGZYQTFHSmdrWjQ2RS1KeThybk02NjJoOTdqa3dkSEFKVzBleWNSUS01NG02U3VGLVJveUR4UG9ZOWtFS2h3d3J3dnR2OUlsd19jWnVXQnlrYm9WSF9WdVdB?oc=5",
+      "imagen": "https://img.abcnoticias.mx/uv0Yk_F-8epI5N_WnDFDrUngN42DFduFKNf1Wfaz3KA/rs:fill:1200:630:0/g:fp:0.449:0.239/f:jpg/aHR0cHM6Ly9hc3NldHMuYWJjbm90aWNpYXMubXgvaW1nLzE3OTA4OTg1NTM2NTEtcW14MjhkLnBuZw",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxOTS1KN2plcmxYT2xBeTNZM1FxeGZ6aFNuQ3VVWkNuelZEdFU1TFhJZG5iSDh2MmwwU0RtLWtZLXdMWXFBY0hVZnJfTnBTcGZYQTFHSmdrWjQ2RS1KeThybk02NjJoOTdqa3dkSEFKVzBleWNSUS01NG02U3VGLVJveUR4UG9ZOWtFS2h3d3J3dnR2OUlsd19jWnVXQnlrYm9WSF9WdVdB?oc=5\" target=\"_blank\">¿Cuándo y dónde ver el Gran Premio de Bahréin 2026?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">abcnoticias.mx</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-01T23:49:31+00:00"
+    },
     {
       "titulo": "Robo de identidad y el fraude son las mayores amenazas para los mexicanos: Buró de Crédito",
       "url": "https://expansion.mx/economia/2026/10/01/robo-de-identidad-y-el-fraude-son-las-mayores-amenazas-para-los-mexicanos-buro-de-credito",
@@ -161,6 +191,16 @@
       "fuente": "MILENIO",
       "categoria": "Deportes",
       "subcategoria": "beisbol"
+    },
+    {
+      "titulo": "Gilberto Mora ‘reactiva’ al Liverpool: La oferta que se saborean en Tijuana - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeGNoczF6bHJCQzd5dFBnaWlfWVlxTGx1Q0lHbDdiUXJhUG8tcXR1MG44eExGc3MtdE1WRWNzVHFPTW9Jb01KX0NaUGNNUVNoU0VpS256cEVRSmhfRUk0ZjdFUG1WNno0cHB1cFpFTXFIOG1qdC1aM1FPZzlUNGZuWEQ0WTVaNExZZXZrbXRZbURKNl9qaW83dGhBZm5sRi13ak9pWnJiLVN1aGhRU3hyWnlR0gGyAUFVX3lxTFBoVm1CWUlaSk53R0M4aW1URk5EMnQ1a1VCcFRqaFNkVENwb3AtSVZlWENKMTRJb002STJQbkEwYndFUXpmYW5YbUFMOVdmTXkzcW1IbldjRkV5M25ITXI5WWRvWmk1aVVqdTkyRUpNRjNNcW1HQWRZV2Z0MjZ5Wi1fcGJEcjl4Ujl1NHFQNVROZWh6cGcweGtQR2xHVVVQT3ZYdnI1U0FMdGVQM1NBYXJabnc?oc=5",
+      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/01/6abed1e969049.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxOeGNoczF6bHJCQzd5dFBnaWlfWVlxTGx1Q0lHbDdiUXJhUG8tcXR1MG44eExGc3MtdE1WRWNzVHFPTW9Jb01KX0NaUGNNUVNoU0VpS256cEVRSmhfRUk0ZjdFUG1WNno0cHB1cFpFTXFIOG1qdC1aM1FPZzlUNGZuWEQ0WTVaNExZZXZrbXRZbURKNl9qaW83dGhBZm5sRi13ak9pWnJiLVN1aGhRU3hyWnlR0gGyAUFVX3lxTFBoVm1CWUlaSk53R0M4aW1URk5EMnQ1a1VCcFRqaFNkVENwb3AtSVZlWENKMTRJb002STJQbkEwYndFUXpmYW5YbUFMOVdmTXkzcW1IbldjRkV5M25ITXI5WWRvWmk1aVVqdTkyRUpNRjNNcW1HQWRZV2Z0MjZ5Wi1fcGJEcjl4Ujl1NHFQNVROZWh6cGcweGtQR2xHVVVQT3ZYdnI1U0FMdGVQM1NBYXJabnc?oc=5\" target=\"_blank\">Gilberto Mora ‘reactiva’ al Liverpool: La oferta que se saborean en Tijuana</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-01T21:53:02+00:00"
     },
     {
       "id": "0ea2071aa5c0a8c812d68df3dcf4796f775a0890da350d92613dd236d0229767",
@@ -1325,6 +1365,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-01T15:48:02+00:00"
+    },
+    {
+      "titulo": "Empate a domicilio ante el Manchester City - Real Madrid CF | Web Oficial",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNEFrWnVoeHF1N1lRQnFodjBza2FheTE4UkdWNlVGWGNkXzhKMDVLRlJKYnhwSUE1WjJDVkw2cWd1RHUzVjI3eVBlanozeFJFdXZFeDhrQ21WdUp0MzFUREJWTDVjeFRaWi1WZklEUlNsYlp5dzQ5OGxOaWh2UzlWZGlON2tRbUcxRlpYbTM3bHRJSG01c0RnY2FKVlVqdk5oUnh0ZVFSWXBMMXI5a3FydmIxb2ZFNnJSeU9XNjNCYno5a0o5Znc?oc=5",
+      "imagen": "https://assets.realmadrid.com/is/image/realmadrid/ND-CHAMPIONS-J02-CITY-RM-ALEGRIA-GRUPO-03_MJ22438?wid=1200&hei=675",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQNEFrWnVoeHF1N1lRQnFodjBza2FheTE4UkdWNlVGWGNkXzhKMDVLRlJKYnhwSUE1WjJDVkw2cWd1RHUzVjI3eVBlanozeFJFdXZFeDhrQ21WdUp0MzFUREJWTDVjeFRaWi1WZklEUlNsYlp5dzQ5OGxOaWh2UzlWZGlON2tRbUcxRlpYbTM3bHRJSG01c0RnY2FKVlVqdk5oUnh0ZVFSWXBMMXI5a3FydmIxb2ZFNnJSeU9XNjNCYno5a0o5Znc?oc=5\" target=\"_blank\">Empate a domicilio ante el Manchester City</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Real Madrid CF | Web Oficial</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-01T15:27:00+00:00"
     },
     {
       "id": "7fa088dcf4194ffb1fe7be88e41275f51251fe2036d204e0c89284886d837584",
@@ -3158,7 +3208,7 @@
       "titulo": "Mario Hezonja, la estrella que vuelve a la NBA y huye del calor - EL PAÍS",
       "descripcion": "Mario Hezonja, la estrella que vuelve a la NBA y huye del calor EL PAÍS",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMkRfUF83LTV4UmVWWFRtOC1JOFA5Xy1COUd0alVtem1ZT1JZa2xaMTV4bzF2Y25Kb3J1bnB1Vm0zVkI5V3cxY3haUFlWM3ZnbUc3OEprUnBIRXE5TXk3VnROc1JLdXRkT3JLYnJnWkFNY2o4dGVPZ0NOOG9KSXhRbFllUEtNRUpBNFBqOTlRYmtMSGJIdjlSaGFfRW5mUUFMdWNzUzh5LVJCX1gtc2szSjBrQlUwZUZ10gHMAUFVX3lxTE9zMDNIVC1EbkZBb2VnZFlaX1NCdURyZ0E5U3FaZEJ1TGduOXgyQ1V1WjdnNTBBSmtDelR4Ykd0SUVTZjlGaXVsR05Ma1BXT3FadkZJNFdzbWVmRUJxTF91VDVtVy00eE84ZkFRYVFuT3ZlWDZCY1JLYy1ubzFRSkhwNXBBOHhpZFk5TzN0MWRrb0hOSUxpVGFQNGVNdWFjYUgydEJxc0ZyV0d5UnUxMEw3Y19BSFFsNFN2bnVLTy1jaE5vUXBxN21fNVRFVg?oc=5",
-      "imagen": "",
+      "imagen": "https://imagenes.elpais.com/resizer/v2/LOTBV3ZS3NGWBCD5MZWHIXCHFU.jpg?auth=7729c8f52edfd849c009d4ced5e7c1dae140339ab59c64c554e3930964f46857&width=1200",
       "fecha": "2026-09-30T17:42:48+00:00",
       "fuente": "EL PAÍS",
       "categoria": "Deportes",
@@ -5799,7 +5849,7 @@
       "titulo": "Senado pone bajo la lupa al futbol mexicano: analizarán el fin del ascenso y en Liga MX - AS México",
       "descripcion": "Senado pone bajo la lupa al futbol mexicano: analizarán el fin del ascenso y en Liga MX AS México",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdWF1ckhGbUpreTRFcWVRWkcxemM4V1RWQzFJQmtpSUpOSnVVSHBOQXk3Qkd1SmpPZEJPdHVIclRpMGRyMUwyWkNWQXlaMU9pYnV1ckxTNFFYM212ODBfVE5HbU9icHE3VloxR0NUS0ZWbmE5akpuNzBodFNKOUVnUUwzdnhUNmoteWgySFJOWFpDVnVoNXVIdUJsZFJqNnZtVVpTUGtQSnpkRVBCTEt6OEtqZWk5YlAzcFFEcnRybzJFOXpDOVp1Vk9jS2I5dFVad1lWUWZ0NXYtQdIB7gFBVV95cUxQcTlMdVF4R3MwQ2NtMWc0SXVwVDliSlotNTZ3ZUhQNnpoMVZZbnZ6U3o4SGZwcmxaenBIX25KU0RwNS1XSUdEVVlqLVpWdmIxTXZiSnNHQkc1UHZxZVhEY3p0RWZLRGlXN1Y2ZDVURWVRMzdxN1FwTnZGNmhrbXpCR3NTVVh3Y2hHcjkyQTJPZW82QUFnZjhoNkMtZ19SQUZVV0pOV2dBTm1CdXhBY2Zqb2p4YTk3RmViWDU5aXQxU0N1SWNOcVR3RWJPcHFjeTdyaTkydjhIYjJYanJld3dlRU01YlBNanM4ZWtLOFRB?oc=5",
-      "imagen": "",
+      "imagen": "https://img.asmedia.epimg.net/resizer/v2/2GI7IHQ7LNNDHJ7MZAGFP6O2KY.jpg?auth=f88d4e4e4fb2eff416fa708ce11198391cf764b42018c003802b58e5d32d1018&width=1472&height=828&smart=true",
       "fecha": "2026-09-18T07:00:00+00:00",
       "fuente": "AS México",
       "categoria": "Deportes",
