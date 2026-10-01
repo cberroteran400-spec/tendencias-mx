@@ -1,581 +1,886 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es-MX">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TendenciasMX | Noticias, Tecnología, Deportes y Más</title><meta name="description" content="TendenciasMX: noticias de actualidad, deportes, entretenimiento, tecnología, dinero, política y trámites en México.">
-<meta name="keywords" content="noticias México, tendencias, actualidad, deportes, tecnología, entretenimiento, dinero, política, trámites"><style>
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f6f8;
-    color:#111827;
-}
+  <title>TendenciasMX | Noticias y tendencias de México</title>
 
-header{
-    background:#111827;
-    color:white;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.15);
-}
+  <meta name="description" content="TendenciasMX: noticias, deportes, entretenimiento, tecnología, dinero, política y trámites. Descubre las tendencias más importantes de México.">
 
-.header-inner{
-    max-width:1100px;
-    margin:auto;
-    padding:16px 20px;
-}
+  <meta name="keywords" content="noticias México, tendencias México, noticias de hoy, deportes, entretenimiento, tecnología, dinero, política, trámites">
 
-.logo{
-    font-size:28px;
-    font-weight:800;
-    margin-bottom:12px;
-}
+  <meta name="theme-color" content="#111827">
 
-.logo span{
-    color:#22c55e;
-}
-
-nav{
-    display:flex;
-    gap:8px;
-    overflow-x:auto;
-    padding-bottom:4px;
-    scrollbar-width:none;
-}
-
-nav::-webkit-scrollbar{
-    display:none;
-}
-
-nav a{
-    color:#d1d5db;
-    text-decoration:none;
-    padding:8px 12px;
-    border-radius:8px;
-    white-space:nowrap;
-    font-size:14px;
-    transition:.2s;
-}
-
-nav a:hover,
-nav a.active{
-    background:#22c55e;
-    color:#052e16;
-}
-
-main{
-    max-width:1100px;
-    margin:auto;
-    padding:30px 20px 55px;
-}
-
-.hero{
-    background:linear-gradient(135deg,#111827,#1f2937);
-    color:white;
-    border-radius:20px;
-    padding:45px 30px;
-    margin-bottom:28px;
-}
-
-.hero h1{
-    font-size:40px;
-    margin-bottom:12px;
-}
-
-.hero h1 span{
-    color:#22c55e;
-}
-
-.hero p{
-    color:#d1d5db;
-    font-size:17px;
-    line-height:1.7;
-    max-width:800px;
-}
-
-.hero-button{
-    display:inline-block;
-    margin-top:22px;
-    background:#22c55e;
-    color:#052e16;
-    text-decoration:none;
-    font-weight:800;
-    padding:13px 20px;
-    border-radius:9px;
-}
-
-.hero-button:hover{
-    background:#16a34a;
-    color:white;
-}
-
-.section-title{
-    font-size:26px;
-    margin:25px 0 15px;
-}
-
-.categories{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:16px;
-}
-
-.category-card{
-    background:white;
-    border-radius:15px;
-    padding:22px;
-    text-decoration:none;
-    color:#111827;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-    transition:.2s;
-}
-
-.category-card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 8px 22px rgba(0,0,0,.13);
-}
-
-.icon{
-    font-size:32px;
-    margin-bottom:12px;
-}
-
-.category-card h2{
-    font-size:18px;
-    margin-bottom:7px;
-}
-
-.category-card p{
-    color:#6b7280;
-    font-size:14px;
-    line-height:1.5;
-}
-
-.quick{
-    margin-top:30px;
-    background:white;
-    border-radius:16px;
-    padding:25px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-}
-
-.quick h2{
-    margin-bottom:10px;
-}
-
-.quick p{
-    color:#6b7280;
-    line-height:1.6;
-    margin-bottom:18px;
-}
-
-.quick-links{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.quick-links a{
-    text-decoration:none;
-    background:#ecfdf5;
-    color:#166534;
-    padding:10px 14px;
-    border-radius:9px;
-    font-weight:700;
-    font-size:14px;
-}
-
-.quick-links a:hover{
-    background:#22c55e;
-    color:#052e16;
-}
-
-.info{
-    margin-top:25px;
-    background:#ecfdf5;
-    border-left:5px solid #22c55e;
-    border-radius:10px;
-    padding:18px;
-    color:#166534;
-    line-height:1.6;
-}
-
-footer{
-    background:#111827;
-    color:#9ca3af;
-    text-align:center;
-    padding:28px 20px;
-}
-
-.footer-links{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-bottom:12px;
-}
-
-.footer-links a{
-    color:#d1d5db;
-    text-decoration:none;
-    font-size:14px;
-}
-
-.footer-links a:hover{
-    color:#22c55e;
-}
-
-@media(max-width:850px){
-
-    .categories{
-        grid-template-columns:repeat(2,1fr);
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-}
-
-@media(max-width:600px){
-
-    main{
-        padding:22px 15px 45px;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #111827;
+      line-height: 1.6;
     }
 
-    .hero{
-        padding:32px 22px;
+    header {
+      background: #111827;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,.15);
     }
 
-    .hero h1{
-        font-size:30px;
+    .header-container {
+      max-width: 1250px;
+      margin: auto;
+      padding: 18px 20px;
     }
 
-    .hero p{
-        font-size:15px;
+    .logo {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 14px;
     }
 
-    .categories{
-        grid-template-columns:1fr;
+    .logo span {
+      color: #22c55e;
     }
 
-}
-</style></head><body><header><div class="header-inner">
+    nav {
+      display: flex;
+      gap: 7px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: thin;
+    }
 
-    <div class="logo">
-        Tendencias<span>MX</span>
-    </div>
+    nav a {
+      color: #d1d5db;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      white-space: nowrap;
+      font-size: 14px;
+      transition: .2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #22c55e;
+      color: #052e16;
+      font-weight: 700;
+    }
+
+    main {
+      max-width: 1250px;
+      margin: auto;
+      padding: 30px 20px 60px;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(17,24,39,.97), rgba(31,41,55,.94));
+      color: white;
+      border-radius: 22px;
+      padding: 55px 25px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #22c55e;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      color: #d1d5db;
+      font-size: 18px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .hero-button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      background: #22c55e;
+      color: #052e16;
+    }
+
+    .hero-button.secondary {
+      background: #374151;
+      color: white;
+    }
+
+    /* SECTION */
+
+    .section {
+      margin-bottom: 35px;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .section-title h2 {
+      font-size: 25px;
+    }
+
+    .section-title h2 span {
+      color: #22c55e;
+    }
+
+    .section-title a {
+      color: #15803d;
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* NEWS CARDS */
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,.07);
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,.11);
+    }
+
+    .news-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .news-content {
+      padding: 18px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #15803d;
+      background: #dcfce7;
+      padding: 4px 8px;
+      border-radius: 20px;
+      margin-bottom: 9px;
+    }
+
+    .news-content h3 {
+      font-size: 19px;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    .news-content p {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .news-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: #15803d;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* CATEGORY BLOCKS */
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .category-card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px 18px;
+      text-decoration: none;
+      color: #111827;
+      box-shadow: 0 4px 18px rgba(0,0,0,.06);
+      transition: .2s;
+      border: 1px solid #eef0f2;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      border-color: #22c55e;
+    }
+
+    .category-icon {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .category-card h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .category-card p {
+      color: #6b7280;
+      font-size: 13px;
+    }
+
+    /* TRENDING LIST */
+
+    .trending-box {
+      background: white;
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.06);
+    }
+
+    .trending-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .trend {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px;
+      border-radius: 10px;
+      background: #f9fafb;
+      text-decoration: none;
+      color: #111827;
+      border: 1px solid #eef0f2;
+    }
+
+    .trend-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #dcfce7;
+      color: #15803d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .trend strong {
+      display: block;
+      font-size: 15px;
+    }
+
+    .trend small {
+      color: #6b7280;
+    }
+
+    /* QUICK ACCESS */
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .quick-card {
+      background: #111827;
+      color: white;
+      border-radius: 16px;
+      padding: 24px;
+      text-decoration: none;
+      transition: .2s;
+    }
+
+    .quick-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .quick-card .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .quick-card h3 {
+      margin-bottom: 5px;
+    }
+
+    .quick-card p {
+      color: #d1d5db;
+      font-size: 14px;
+    }
+
+    /* INFO */
+
+    .info {
+      background: #ecfdf5;
+      border: 1px solid #bbf7d0;
+      border-radius: 18px;
+      padding: 25px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .info h2 {
+      margin-bottom: 8px;
+    }
+
+    .info p {
+      color: #4b5563;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 15px 0;
+    }
+
+    .footer-links a {
+      color: #d1d5db;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #22c55e;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .header-container {
+        padding: 15px;
+      }
+
+      .logo {
+        font-size: 25px;
+      }
+
+      main {
+        padding: 20px 15px 45px;
+      }
+
+      .hero {
+        padding: 40px 18px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .news-grid,
+      .category-grid,
+      .quick-grid,
+      .trending-list {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .news-image {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+
+    <a class="logo" href="./index.html">
+      Tendencias<span>MX</span>
+    </a>
 
     <nav>
-
-        <a href="./index.html" class="active">
-            Inicio
-        </a>
-
-        <a href="./noticias.html">
-            Noticias
-        </a>
-
-        <a href="./deportes.html">
-            Deportes
-        </a>
-
-        <a href="./entretenimiento.html">
-            Entretenimiento
-        </a>
-
-        <a href="./tecnologia.html">
-            Tecnología
-        </a>
-
-        <a href="./dinero.html">
-            Dinero
-        </a>
-
-        <a href="./politica.html">
-            Política
-        </a>
-
-        <a href="./tramites.html">
-            Trámites
-        </a>
-
-        <a href="./contacto.html">
-            Contacto
-        </a>
-
-        <a href="./preguntas.html">
-            Preguntas
-        </a>
-
+      <a href="./index.html" class="active">Inicio</a>
+      <a href="./noticias.html">Noticias</a>
+      <a href="./deportes.html">Deportes</a>
+      <a href="./entretenimiento.html">Entretenimiento</a>
+      <a href="./tecnologia.html">Tecnología</a>
+      <a href="./dinero.html">Dinero</a>
+      <a href="./politica.html">Política</a>
+      <a href="./tramites.html">Trámites</a>
+      <a href="./contacto.html">Contacto</a>
+      <a href="./preguntas.html">Preguntas</a>
     </nav>
 
-</div>
+  </div>
+</header>
 
-</header><main><section class="hero">
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
 
     <h1>
-        Bienvenido a <span>TendenciasMX</span>
+      Lo que está pasando en <span>México</span>
     </h1>
 
     <p>
-        Noticias, información y contenido de actualidad en un solo lugar.
-        Explora las principales categorías de TendenciasMX y encuentra
-        rápidamente los temas que te interesan.
+      Noticias, deportes, entretenimiento, tecnología, dinero,
+      política y tendencias en un solo lugar.
     </p>
 
-    <a
-        href="./noticias.html"
-        class="hero-button"
-    >
-        Ver noticias →
-    </a>
+    <div class="hero-buttons">
+      <a class="hero-button" href="./noticias.html">
+        📰 Ver noticias
+      </a>
 
-</section>
+      <a class="hero-button secondary" href="#tendencias">
+        🔥 Ver tendencias
+      </a>
+    </div>
 
+  </section>
 
-<h2 class="section-title">
-    Explora nuestras secciones
-</h2>
 
+  <!-- NOTICIAS DESTACADAS -->
 
-<section class="categories">
+  <section class="section">
 
+    <div class="section-title">
+      <h2>📰 Noticias <span>destacadas</span></h2>
+      <a href="./noticias.html">Ver todas →</a>
+    </div>
 
-    <a
-        href="./noticias.html"
-        class="category-card"
-    >
+    <div class="news-grid">
 
-        <div class="icon">📰</div>
+      <article class="news-card">
 
-        <h2>Noticias</h2>
+        <img
+          class="news-image"
+          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=80"
+          alt="Noticias de México"
+        >
 
-        <p>
-            Información y actualidad nacional e internacional.
-        </p>
+        <div class="news-content">
 
-    </a>
+          <span class="tag">Noticias</span>
 
+          <h3>
+            Las noticias que están marcando la conversación
+          </h3>
 
-    <a
-        href="./deportes.html"
-        class="category-card"
-    >
+          <p>
+            Consulta las principales noticias y temas de actualidad.
+          </p>
 
-        <div class="icon">⚽</div>
+          <a class="news-link" href="./noticias.html">
+            Leer noticias →
+          </a>
 
-        <h2>Deportes</h2>
+        </div>
 
-        <p>
-            Fútbol, NFL, béisbol, boxeo y otros deportes.
-        </p>
+      </article>
 
-    </a>
 
+      <article class="news-card">
 
-    <a
-        href="./entretenimiento.html"
-        class="category-card"
-    >
+        <img
+          class="news-image"
+          src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80"
+          alt="Actualidad de México"
+        >
 
-        <div class="icon">🎬</div>
+        <div class="news-content">
 
-        <h2>Entretenimiento</h2>
+          <span class="tag">Actualidad</span>
 
-        <p>
-            Cine, televisión, música, famosos y videojuegos.
-        </p>
+          <h3>
+            Información nacional y temas de interés
+          </h3>
 
-    </a>
+          <p>
+            Noticias y acontecimientos que generan conversación.
+          </p>
 
+          <a class="news-link" href="./noticias.html">
+            Ver actualidad →
+          </a>
 
-    <a
-        href="./tecnologia.html"
-        class="category-card"
-    >
+        </div>
 
-        <div class="icon">💻</div>
+      </article>
 
-        <h2>Tecnología</h2>
 
-        <p>
-            IA, gadgets, aplicaciones, redes y ciberseguridad.
-        </p>
+      <article class="news-card">
 
-    </a>
+        <img
+          class="news-image"
+          src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=900&q=80"
+          alt="Información y noticias"
+        >
 
+        <div class="news-content">
 
-    <a
-        href="./dinero.html"
-        class="category-card"
-    >
+          <span class="tag">Tendencias</span>
 
-        <div class="icon">💰</div>
+          <h3>
+            Lo más buscado y comentado
+          </h3>
 
-        <h2>Dinero</h2>
+          <p>
+            Descubre los temas que están llamando la atención.
+          </p>
 
-        <p>
-            Economía, bancos, empresas, dólar y finanzas personales.
-        </p>
+          <a class="news-link" href="#tendencias">
+            Ver tendencias →
+          </a>
 
-    </a>
+        </div>
 
-
-    <a
-        href="./politica.html"
-        class="category-card"
-    >
-
-        <div class="icon">🏛️</div>
-
-        <h2>Política</h2>
-
-        <p>
-            Información sobre asuntos públicos y política nacional.
-        </p>
-
-    </a>
-
-
-    <a
-        href="./tramites.html"
-        class="category-card"
-    >
-
-        <div class="icon">📄</div>
-
-        <h2>Trámites</h2>
-
-        <p>
-            Guías y accesos para consultar diferentes trámites.
-        </p>
-
-    </a>
-
-
-    <a
-        href="./preguntas.html"
-        class="category-card"
-    >
-
-        <div class="icon">❓</div>
-
-        <h2>Preguntas frecuentes</h2>
-
-        <p>
-            Encuentra respuestas sobre TendenciasMX y sus secciones.
-        </p>
-
-    </a>
-
-</section>
-
-
-<section class="quick">
-
-    <h2>Accesos rápidos</h2>
-
-    <p>
-        También puedes entrar directamente a las principales áreas
-        del sitio.
-    </p>
-
-    <div class="quick-links">
-
-        <a href="./noticias.html">
-            Noticias
-        </a>
-
-        <a href="./deportes.html">
-            Deportes
-        </a>
-
-        <a href="./entretenimiento.html">
-            Entretenimiento
-        </a>
-
-        <a href="./tecnologia.html">
-            Tecnología
-        </a>
-
-        <a href="./dinero.html">
-            Dinero
-        </a>
-
-        <a href="./politica.html">
-            Política
-        </a>
-
-        <a href="./tramites.html">
-            Trámites
-        </a>
-
-        <a href="./contacto.html">
-            Contacto
-        </a>
+      </article>
 
     </div>
 
-</section>
+  </section>
 
 
-<div class="info">
+  <!-- TENDENCIAS POR SECCIÓN -->
 
-    <strong>TendenciasMX</strong><br>
+  <section class="section" id="tendencias">
 
-    Explora nuestras diferentes secciones desde un mismo lugar.
-    El menú superior permanece disponible para navegar por todo
-    el sitio.
+    <div class="section-title">
+      <h2>🔥 Tendencias por <span>sección</span></h2>
+    </div>
 
-</div>
+    <div class="category-grid">
 
-</main><footer><div class="footer-links">
+      <a class="category-card" href="./noticias.html">
+        <div class="category-icon">📰</div>
+        <h3>Noticias</h3>
+        <p>Información nacional y temas de actualidad.</p>
+      </a>
 
-    <a href="./index.html">
-        Inicio
-    </a>
+      <a class="category-card" href="./deportes.html">
+        <div class="category-icon">⚽</div>
+        <h3>Deportes</h3>
+        <p>Fútbol, NFL, béisbol y las noticias deportivas.</p>
+      </a>
 
-    <a href="./noticias.html">
-        Noticias
-    </a>
+      <a class="category-card" href="./entretenimiento.html">
+        <div class="category-icon">🎬</div>
+        <h3>Entretenimiento</h3>
+        <p>Cine, televisión, música, famosos y videojuegos.</p>
+      </a>
 
-    <a href="./deportes.html">
-        Deportes
-    </a>
+      <a class="category-card" href="./tecnologia.html">
+        <div class="category-icon">💻</div>
+        <h3>Tecnología</h3>
+        <p>IA, gadgets, aplicaciones, redes y seguridad.</p>
+      </a>
 
-    <a href="./entretenimiento.html">
-        Entretenimiento
-    </a>
+      <a class="category-card" href="./dinero.html">
+        <div class="category-icon">💰</div>
+        <h3>Dinero</h3>
+        <p>Dólar, economía, bancos, empresas y finanzas.</p>
+      </a>
 
-    <a href="./tecnologia.html">
-        Tecnología
-    </a>
+      <a class="category-card" href="./politica.html">
+        <div class="category-icon">🏛️</div>
+        <h3>Política</h3>
+        <p>Información política y actividad legislativa.</p>
+      </a>
 
-    <a href="./dinero.html">
-        Dinero
-    </a>
+      <a class="category-card" href="./tramites.html">
+        <div class="category-icon">📋</div>
+        <h3>Trámites</h3>
+        <p>Información útil sobre documentos y servicios.</p>
+      </a>
 
-    <a href="./politica.html">
-        Política
-    </a>
+      <a class="category-card" href="./preguntas.html">
+        <div class="category-icon">❓</div>
+        <h3>Preguntas</h3>
+        <p>Respuestas a las dudas más frecuentes.</p>
+      </a>
 
-    <a href="./tramites.html">
-        Trámites
-    </a>
+    </div>
 
-    <a href="./contacto.html">
-        Contacto
-    </a>
+  </section>
 
-    <a href="./preguntas.html">
-        Preguntas
-    </a>
 
-</div>
+  <!-- LO MÁS BUSCADO -->
 
-© 2026 TendenciasMX · Información y actualidad
+  <section class="section">
 
-</footer></body>
+    <div class="section-title">
+      <h2>📈 Lo más <span>buscado</span></h2>
+    </div>
+
+    <div class="trending-box">
+
+      <div class="trending-list">
+
+        <a class="trend" href="./deportes.html">
+          <div class="trend-number">1</div>
+          <div>
+            <strong>Noticias deportivas</strong>
+            <small>⚽ Deportes</small>
+          </div>
+        </a>
+
+        <a class="trend" href="./entretenimiento.html">
+          <div class="trend-number">2</div>
+          <div>
+            <strong>Música y famosos</strong>
+            <small>🎵 Entretenimiento</small>
+          </div>
+        </a>
+
+        <a class="trend" href="./tecnologia.html">
+          <div class="trend-number">3</div>
+          <div>
+            <strong>Inteligencia artificial</strong>
+            <small>💻 Tecnología</small>
+          </div>
+        </a>
+
+        <a class="trend" href="./dinero.html">
+          <div class="trend-number">4</div>
+          <div>
+            <strong>Dólar y economía</strong>
+            <small>💰 Dinero</small>
+          </div>
+        </a>
+
+        <a class="trend" href="./noticias.html">
+          <div class="trend-number">5</div>
+          <div>
+            <strong>Noticias de México</strong>
+            <small>📰 Noticias</small>
+          </div>
+        </a>
+
+        <a class="trend" href="./politica.html">
+          <div class="trend-number">6</div>
+          <div>
+            <strong>Actualidad política</strong>
+            <small>🏛️ Política</small>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ACCESOS RÁPIDOS -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <h2>🚀 Accesos <span>rápidos</span></h2>
+    </div>
+
+    <div class="quick-grid">
+
+      <a class="quick-card" href="./deportes.html">
+
+        <div class="icon">⚽</div>
+
+        <h3>Deportes</h3>
+
+        <p>
+          Consulta las últimas tendencias deportivas.
+        </p>
+
+      </a>
+
+
+      <a class="quick-card" href="./entretenimiento.html">
+
+        <div class="icon">🎬</div>
+
+        <h3>Entretenimiento</h3>
+
+        <p>
+          Cine, música, famosos y videojuegos.
+        </p>
+
+      </a>
+
+
+      <a class="quick-card" href="./tecnologia.html">
+
+        <div class="icon">🤖</div>
+
+        <h3>Tecnología</h3>
+
+        <p>
+          Tecnología, inteligencia artificial y gadgets.
+        </p>
+
+      </a>
+
+
+      <a class="quick-card" href="./dinero.html">
+
+        <div class="icon">💵</div>
+
+        <h3>Dinero</h3>
+
+        <p>
+          Economía, dólar, bancos y empresas.
+        </p>
+
+      </a>
+
+
+      <a class="quick-card" href="./politica.html">
+
+        <div class="icon">🏛️</div>
+
+        <h3>Política</h3>
+
+        <p>
+          Información política y legislativa.
+        </p>
+
+      </a>
+
+
+      <a class="quick-card" href="./tramites.html">
+
+        <div class="icon">📋</div>
+
+        <h3>Trámites</h3>
+
+        <p>
+          Encuentra información sobre trámites importantes.
+        </p>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- INFORMACIÓN -->
+
+  <section class="info">
+
+    <h2>🇲🇽 TendenciasMX</h2>
+
+    <p>
+      Un espacio para consultar noticias, tendencias e información
+      de interés de México. Explora nuestras diferentes secciones
+      y encuentra rápidamente el contenido que buscas.
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <p>
+    © 2026 <strong>TendenciasMX</strong>.
+    Todos los derechos reservados.
+  </p>
+
+  <div class="footer-links">
+
+    <a href="./index.html">Inicio</a>
+    <a href="./noticias.html">Noticias</a>
+    <a href="./deportes.html">Deportes</a>
+    <a href="./entretenimiento.html">Entretenimiento</a>
+    <a href="./tecnologia.html">Tecnología</a>
+    <a href="./dinero.html">Dinero</a>
+    <a href="./politica.html">Política</a>
+    <a href="./tramites.html">Trámites</a>
+    <a href="./contacto.html">Contacto</a>
+    <a href="./preguntas.html">Preguntas</a>
+
+  </div>
+
+</footer>
+
+</body>
 </html>
