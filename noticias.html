@@ -1,9 +1,42 @@
-<!DOCTYPE html><html lang="es-MX">
+<!DOCTYPE html>
+<html lang="es-MX">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Noticias de México y del mundo | Tendencias MX</title>  <meta name="description" content="Noticias de México y del mundo en Tendencias MX. Consulta actualidad, economía, deportes, entretenimiento, tecnología y los temas que están generando conversación.">  <meta name="keywords" content="noticias México, noticias de hoy, noticias México hoy, actualidad México, noticias nacionales, noticias internacionales, Tendencias MX">  <meta name="robots" content="index, follow">  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/noticias.html">  <meta property="og:title" content="Noticias de México y del mundo | Tendencias MX">
-  <meta property="og:description" content="Consulta las noticias y temas de actualidad en Tendencias MX.">
-  <meta property="og:type" content="website">  <style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Noticias de México y del mundo | Tendencias MX</title>
+
+  <meta
+    name="description"
+    content="Noticias de México y del mundo en Tendencias MX. Consulta actualidad, economía, deportes, entretenimiento, tecnología y los temas que están generando conversación."
+  >
+
+  <meta
+    name="keywords"
+    content="noticias México, noticias de hoy, noticias México hoy, actualidad México, noticias nacionales, noticias internacionales, economía, deportes, entretenimiento, tecnología, Tendencias MX"
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://cberroteran400-spec.github.io/tendencias-mx/noticias.html"
+  >
+
+  <meta
+    property="og:title"
+    content="Noticias de México y del mundo | Tendencias MX"
+  >
+
+  <meta
+    property="og:description"
+    content="Consulta las noticias y temas de actualidad en Tendencias MX."
+  >
+
+  <meta property="og:type" content="website">
+
+  <style>
 
     * {
       box-sizing: border-box;
@@ -79,7 +112,11 @@
 
     .hero {
       background:
-        radial-gradient(circle at top right, rgba(32,201,151,.18), transparent 35%),
+        radial-gradient(
+          circle at top right,
+          rgba(32,201,151,.18),
+          transparent 35%
+        ),
         linear-gradient(135deg, #101827, #1d3557);
 
       color: white;
@@ -109,6 +146,17 @@
       height: 8px;
       background: #ff4757;
       border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: .35;
+      }
     }
 
     .hero h1 {
@@ -142,6 +190,7 @@
       padding: 14px;
       font-size: 16px;
       color: #17202a;
+      min-width: 0;
     }
 
     .search button {
@@ -152,6 +201,10 @@
       border-radius: 10px;
       font-weight: 900;
       cursor: pointer;
+    }
+
+    .search button:hover {
+      filter: brightness(.95);
     }
 
     /* MAIN */
@@ -175,6 +228,29 @@
       color: #68737e;
     }
 
+    /* STATUS */
+
+    .status-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: white;
+      border: 1px solid #e1e6eb;
+      padding: 14px 17px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      font-size: 14px;
+      color: #56616c;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      background: #20c997;
+      border-radius: 50%;
+      flex: 0 0 auto;
+    }
+
     /* CATEGORIES */
 
     .categories {
@@ -183,6 +259,7 @@
       overflow-x: auto;
       padding-bottom: 14px;
       margin-bottom: 30px;
+      scrollbar-width: thin;
     }
 
     .category-btn {
@@ -218,6 +295,8 @@
       overflow: hidden;
       box-shadow: 0 7px 20px rgba(20,35,50,.06);
       transition: .2s;
+      display: flex;
+      flex-direction: column;
     }
 
     .news-card:hover {
@@ -231,15 +310,24 @@
       justify-content: center;
       align-items: center;
       font-size: 62px;
-      background: linear-gradient(135deg, #e9fdf6, #edf4ff);
+      background:
+        linear-gradient(
+          135deg,
+          #e9fdf6,
+          #edf4ff
+        );
     }
 
     .news-content {
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     .tag {
       display: inline-block;
+      width: fit-content;
       background: #e6fcf5;
       color: #087f5b;
       padding: 5px 9px;
@@ -263,13 +351,27 @@
 
     .news-meta {
       border-top: 1px solid #edf0f2;
-      margin-top: 17px;
+      margin-top: auto;
       padding-top: 13px;
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       color: #7b858f;
       font-size: 12px;
       font-weight: 700;
+      margin-top: 17px;
+    }
+
+    .read-news {
+      display: inline-block;
+      margin-top: 15px;
+      color: #087f5b;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .read-news:hover {
+      text-decoration: underline;
     }
 
     /* FEATURED */
@@ -286,9 +388,18 @@
       border-radius: 20px;
       padding: 30px;
       color: white;
+
       background:
-        linear-gradient(rgba(10,20,35,.6), rgba(10,20,35,.8)),
-        linear-gradient(135deg, #164e63, #172554);
+        linear-gradient(
+          rgba(10,20,35,.6),
+          rgba(10,20,35,.8)
+        ),
+        linear-gradient(
+          135deg,
+          #164e63,
+          #172554
+        );
+
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -333,20 +444,38 @@
       font-size: 14px;
     }
 
-    /* NOTICE */
+    /* EMPTY */
 
-    .demo-notice {
-      background: #fff8e1;
-      border: 1px solid #ffe082;
-      color: #725b00;
-      padding: 15px 18px;
-      border-radius: 12px;
-      margin-bottom: 28px;
-      font-size: 14px;
+    .empty {
+      display: none;
+      text-align: center;
+      background: white;
+      border: 1px solid #e1e6eb;
+      border-radius: 18px;
+      padding: 40px 20px;
+      color: #68737e;
     }
 
-    .demo-notice strong {
-      color: #514100;
+    .empty strong {
+      display: block;
+      color: #17202a;
+      font-size: 20px;
+      margin-bottom: 7px;
+    }
+
+    /* INFO */
+
+    .info-section {
+      margin-top: 55px;
+      background: #111827;
+      color: white;
+      border-radius: 22px;
+      padding: 35px;
+    }
+
+    .info-section p {
+      color: #cdd7e2;
+      max-width: 850px;
     }
 
     /* FOOTER */
@@ -412,389 +541,567 @@
         padding: 24px;
       }
 
+      .info-section {
+        padding: 25px 20px;
+      }
+
     }
 
-  </style></head><body><header>  <div class="header-inner"><a href="index.html" class="logo">
-  Tendencias<span>MX</span>
-</a>
+  </style>
+</head>
 
-<nav>
-  <a href="index.html">Inicio</a>
-  <a href="tendencias.html">Tendencias</a>
-  <a href="noticias.html" class="active">Noticias</a>
-  <a href="entretenimiento.html">Entretenimiento</a>
-</nav>
+<body>
 
-  </div></header><section class="hero">  <div class="hero-content"><div class="live">
-  <span class="live-dot"></span>
-  ACTUALIDAD
-</div>
+<header>
 
-<h1>Noticias de México y del mundo</h1>
+  <div class="header-inner">
 
-<p>
-  Explora información de actualidad, temas nacionales,
-  entretenimiento, deportes y tecnología en Tendencias MX.
-</p>
+    <a href="index.html" class="logo">
+      Tendencias<span>MX</span>
+    </a>
 
-<div class="search">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="tendencias.html">Tendencias</a>
+      <a href="noticias.html" class="active">Noticias</a>
+      <a href="entretenimiento.html">Entretenimiento</a>
+    </nav>
 
-  <input
-    type="search"
-    id="searchInput"
-    placeholder="Buscar noticias..."
-    aria-label="Buscar noticias"
-  >
+  </div>
 
-  <button onclick="buscarNoticias()">
-    Buscar
-  </button>
-
-</div>
-
-  </div></section><main>  <div class="demo-notice">
-    <strong>Versión inicial:</strong>
-    esta página está preparada para conectar posteriormente fuentes
-    de noticias y RSS. Las tarjetas actuales son contenido de demostración.
-  </div>  <!-- NOTICIA DESTACADA -->  <section class="featured"><article class="featured-main">
-
-  <span class="tag">Destacada</span>
-
-  <h2>
-    Las noticias y temas que están generando conversación en México
-  </h2>
-
-  <p>
-    Esta sección será utilizada para destacar las historias
-    más importantes del día.
-  </p>
-
-</article>
+</header>
 
 
-<div class="featured-side">
+<section class="hero">
 
-  <article class="mini-news">
+  <div class="hero-content">
 
-    <span class="tag">México</span>
+    <div class="live">
+      <span class="live-dot"></span>
+      ACTUALIDAD
+    </div>
 
-    <h3>
-      Información nacional y acontecimientos relevantes
-    </h3>
+    <h1>
+      Noticias de México y del mundo
+    </h1>
 
     <p>
-      Espacio preparado para noticias de actualidad nacional.
+      Explora información de actualidad, temas nacionales,
+      economía, deportes, entretenimiento y tecnología
+      en Tendencias MX.
     </p>
 
-  </article>
+    <div class="search">
+
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Buscar noticias..."
+        aria-label="Buscar noticias"
+      >
+
+      <button
+        type="button"
+        onclick="buscarNoticias()"
+      >
+        Buscar
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
 
 
-  <article class="mini-news">
+<main>
 
-    <span class="tag">Actualidad</span>
+  <div class="status-box">
 
-    <h3>
-      Los temas que están generando interés
-    </h3>
+    <span class="status-dot"></span>
+
+    <span>
+      <strong>Noticias:</strong>
+      sistema preparado para recibir información actualizada de fuentes RSS.
+    </span>
+
+  </div>
+
+
+  <!-- DESTACADA -->
+
+  <section class="featured">
+
+    <article class="featured-main">
+
+      <span class="tag">
+        Tendencias MX
+      </span>
+
+      <h2>
+        Las noticias y temas que están generando conversación en México
+      </h2>
+
+      <p>
+        Aquí destacaremos las historias más importantes
+        conforme conectemos las fuentes de información.
+      </p>
+
+    </article>
+
+
+    <div class="featured-side">
+
+      <article class="mini-news">
+
+        <span class="tag">
+          México
+        </span>
+
+        <h3>
+          Información nacional y acontecimientos relevantes
+        </h3>
+
+        <p>
+          Noticias nacionales seleccionadas para Tendencias MX.
+        </p>
+
+      </article>
+
+
+      <article class="mini-news">
+
+        <span class="tag">
+          Actualidad
+        </span>
+
+        <h3>
+          Los temas que están generando interés
+        </h3>
+
+        <p>
+          Información actualizada organizada por categorías.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORÍAS -->
+
+  <section>
+
+    <div class="section-heading">
+
+      <h2>
+        📰 Últimas noticias
+      </h2>
+
+      <p>
+        Explora las noticias por categoría.
+      </p>
+
+    </div>
+
+
+    <div class="categories">
+
+      <button
+        type="button"
+        class="category-btn active"
+        onclick="filtrarNoticias('todos', this)"
+      >
+        Todas
+      </button>
+
+      <button
+        type="button"
+        class="category-btn"
+        onclick="filtrarNoticias('mexico', this)"
+      >
+        🇲🇽 México
+      </button>
+
+      <button
+        type="button"
+        class="category-btn"
+        onclick="filtrarNoticias('mundo', this)"
+      >
+        🌎 Mundo
+      </button>
+
+      <button
+        type="button"
+        class="category-btn"
+        onclick="filtrarNoticias('economia', this)"
+      >
+        💰 Economía
+      </button>
+
+      <button
+        type="button"
+        class="category-btn"
+        onclick="filtrarNoticias('deportes', this)"
+      >
+        ⚽ Deportes
+      </button>
+
+      <button
+        type="button"
+        class="category-btn"
+        onclick="filtrarNoticias('entretenimiento', this)"
+      >
+        🎬 Entretenimiento
+      </button>
+
+      <button
+        type="button"
+        class="category-btn"
+        onclick="filtrarNoticias('tecnologia', this)"
+      >
+        📱 Tecnología
+      </button>
+
+    </div>
+
+
+    <div
+      class="news-grid"
+      id="newsGrid"
+    >
+
+
+      <!-- NOTICIA 1 -->
+
+      <article
+        class="news-card"
+        data-category="mexico"
+        data-title="actualidad mexico noticias nacionales"
+      >
+
+        <div class="news-image">
+          🇲🇽
+        </div>
+
+        <div class="news-content">
+
+          <span class="tag">
+            México
+          </span>
+
+          <h3>
+            Actualidad nacional y noticias de México
+          </h3>
+
+          <p>
+            Información sobre acontecimientos y temas
+            de interés nacional.
+          </p>
+
+          <div class="news-meta">
+            <span>🇲🇽 Nacional</span>
+            <span>Actualidad</span>
+          </div>
+
+          <a
+            href="México.html"
+            class="read-news"
+          >
+            Ver sección →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NOTICIA 2 -->
+
+      <article
+        class="news-card"
+        data-category="mundo"
+        data-title="mundo noticias internacionales actualidad"
+      >
+
+        <div class="news-image">
+          🌎
+        </div>
+
+        <div class="news-content">
+
+          <span class="tag">
+            Mundo
+          </span>
+
+          <h3>
+            Noticias internacionales y actualidad mundial
+          </h3>
+
+          <p>
+            Información relevante de otros países
+            y regiones del mundo.
+          </p>
+
+          <div class="news-meta">
+            <span>🌎 Internacional</span>
+            <span>Actualidad</span>
+          </div>
+
+          <a
+            href="noticias.html"
+            class="read-news"
+          >
+            Ver noticias →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NOTICIA 3 -->
+
+      <article
+        class="news-card"
+        data-category="economia"
+        data-title="economia dinero finanzas negocios mexico"
+      >
+
+        <div class="news-image">
+          💰
+        </div>
+
+        <div class="news-content">
+
+          <span class="tag">
+            Economía
+          </span>
+
+          <h3>
+            Economía, negocios y finanzas
+          </h3>
+
+          <p>
+            Información relacionada con economía,
+            empresas, dinero y negocios.
+          </p>
+
+          <div class="news-meta">
+            <span>💰 Economía</span>
+            <span>Actualidad</span>
+          </div>
+
+          <a
+            href="dinero.html"
+            class="read-news"
+          >
+            Ver dinero y economía →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NOTICIA 4 -->
+
+      <article
+        class="news-card"
+        data-category="deportes"
+        data-title="deportes futbol partidos mexico"
+      >
+
+        <div class="news-image">
+          ⚽
+        </div>
+
+        <div class="news-content">
+
+          <span class="tag">
+            Deportes
+          </span>
+
+          <h3>
+            Noticias deportivas
+          </h3>
+
+          <p>
+            Información y actualidad del mundo deportivo,
+            incluyendo fútbol y otros deportes.
+          </p>
+
+          <div class="news-meta">
+            <span>⚽ Deportes</span>
+            <span>Actualidad</span>
+          </div>
+
+          <a
+            href="deportes.html"
+            class="read-news"
+          >
+            Ver deportes →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NOTICIA 5 -->
+
+      <article
+        class="news-card"
+        data-category="entretenimiento"
+        data-title="entretenimiento musica cine television artistas"
+      >
+
+        <div class="news-image">
+          🎬
+        </div>
+
+        <div class="news-content">
+
+          <span class="tag">
+            Entretenimiento
+          </span>
+
+          <h3>
+            Música, cine y entretenimiento
+          </h3>
+
+          <p>
+            Temas relacionados con artistas,
+            música, películas y televisión.
+          </p>
+
+          <div class="news-meta">
+            <span>🎬 Entretenimiento</span>
+            <span>Actualidad</span>
+          </div>
+
+          <a
+            href="entretenimiento.html"
+            class="read-news"
+          >
+            Ver entretenimiento →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NOTICIA 6 -->
+
+      <article
+        class="news-card"
+        data-category="tecnologia"
+        data-title="tecnologia inteligencia artificial internet aplicaciones"
+      >
+
+        <div class="news-image">
+          📱
+        </div>
+
+        <div class="news-content">
+
+          <span class="tag">
+            Tecnología
+          </span>
+
+          <h3>
+            Tecnología e inteligencia artificial
+          </h3>
+
+          <p>
+            Aplicaciones, inteligencia artificial,
+            internet y novedades tecnológicas.
+          </p>
+
+          <div class="news-meta">
+            <span>📱 Tecnología</span>
+            <span>Actualidad</span>
+          </div>
+
+          <a
+            href="tecnologia.html"
+            class="read-news"
+          >
+            Ver tecnología →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+    <div
+      class="empty"
+      id="emptyMessage"
+    >
+
+      <strong>
+        No encontramos noticias
+      </strong>
+
+      <span>
+        Prueba con otra palabra o selecciona otra categoría.
+      </span>
+
+    </div>
+
+  </section>
+
+
+  <!-- INFORMACIÓN SEO -->
+
+  <section class="info-section">
+
+    <h2 style="margin-bottom:10px;">
+      Tendencias MX: noticias y actualidad
+    </h2>
 
     <p>
-      Aquí aparecerán contenidos actualizados de diferentes fuentes.
+      Tendencias MX reúne información y temas de actualidad
+      de México y del mundo en diferentes categorías.
+      El objetivo es facilitar el acceso a noticias,
+      economía, deportes, entretenimiento y tecnología
+      desde un solo sitio.
     </p>
 
-  </article>
+  </section>
 
-</div>
+</main>
 
-  </section>  <!-- CATEGORÍAS -->  <section><div class="section-heading">
 
-  <h2>📰 Últimas noticias</h2>
+<footer>
 
   <p>
-    Explora las noticias por categoría.
+    <strong>Tendencias MX</strong>
+    · Noticias y tendencias de México.
   </p>
 
-</div>
-
-
-<div class="categories">
-
-  <button
-    class="category-btn active"
-    onclick="filtrarNoticias('todos', this)">
-    Todas
-  </button>
-
-  <button
-    class="category-btn"
-    onclick="filtrarNoticias('mexico', this)">
-    🇲🇽 México
-  </button>
-
-  <button
-    class="category-btn"
-    onclick="filtrarNoticias('mundo', this)">
-    🌎 Mundo
-  </button>
-
-  <button
-    class="category-btn"
-    onclick="filtrarNoticias('economia', this)">
-    💰 Economía
-  </button>
-
-  <button
-    class="category-btn"
-    onclick="filtrarNoticias('deportes', this)">
-    ⚽ Deportes
-  </button>
-
-  <button
-    class="category-btn"
-    onclick="filtrarNoticias('entretenimiento', this)">
-    🎬 Entretenimiento
-  </button>
-
-  <button
-    class="category-btn"
-    onclick="filtrarNoticias('tecnologia', this)">
-    📱 Tecnología
-  </button>
-
-</div>
-
-
-<div class="news-grid" id="newsGrid">
-
-
-  <!-- NOTICIA 1 -->
-
-  <article
-    class="news-card"
-    data-category="mexico"
-    data-title="actualidad mexico noticias nacionales">
-
-    <div class="news-image">
-      🇲🇽
-    </div>
-
-    <div class="news-content">
-
-      <span class="tag">México</span>
-
-      <h3>
-        Actualidad nacional y noticias de México
-      </h3>
-
-      <p>
-        Contenido preparado para mostrar información nacional
-        de fuentes actualizadas.
-      </p>
-
-      <div class="news-meta">
-        <span>🇲🇽 Nacional</span>
-        <span>Hoy</span>
-      </div>
-
-    </div>
-
-  </article>
-
-
-  <!-- NOTICIA 2 -->
-
-  <article
-    class="news-card"
-    data-category="mundo"
-    data-title="mundo noticias internacionales actualidad">
-
-    <div class="news-image">
-      🌎
-    </div>
-
-    <div class="news-content">
-
-      <span class="tag">Mundo</span>
-
-      <h3>
-        Noticias internacionales y actualidad mundial
-      </h3>
-
-      <p>
-        Espacio destinado a información relevante de otros
-        países y regiones.
-      </p>
-
-      <div class="news-meta">
-        <span>🌎 Internacional</span>
-        <span>Hoy</span>
-      </div>
-
-    </div>
-
-  </article>
-
-
-  <!-- NOTICIA 3 -->
-
-  <article
-    class="news-card"
-    data-category="economia"
-    data-title="economia dinero finanzas negocios mexico">
-
-    <div class="news-image">
-      💰
-    </div>
-
-    <div class="news-content">
-
-      <span class="tag">Economía</span>
-
-      <h3>
-        Economía, negocios y finanzas
-      </h3>
-
-      <p>
-        Noticias relacionadas con economía, empresas,
-        mercados y finanzas.
-      </p>
-
-      <div class="news-meta">
-        <span>💰 Economía</span>
-        <span>Hoy</span>
-      </div>
-
-    </div>
-
-  </article>
-
-
-  <!-- NOTICIA 4 -->
-
-  <article
-    class="news-card"
-    data-category="deportes"
-    data-title="deportes futbol partidos mexico">
-
-    <div class="news-image">
-      ⚽
-    </div>
-
-    <div class="news-content">
-
-      <span class="tag">Deportes</span>
-
-      <h3>
-        Noticias deportivas
-      </h3>
-
-      <p>
-        Información y actualidad del mundo deportivo,
-        incluyendo fútbol y otros deportes.
-      </p>
-
-      <div class="news-meta">
-        <span>⚽ Deportes</span>
-        <span>Hoy</span>
-      </div>
-
-    </div>
-
-  </article>
-
-
-  <!-- NOTICIA 5 -->
-
-  <article
-    class="news-card"
-    data-category="entretenimiento"
-    data-title="entretenimiento musica cine television artistas">
-
-    <div class="news-image">
-      🎬
-    </div>
-
-    <div class="news-content">
-
-      <span class="tag">Entretenimiento</span>
-
-      <h3>
-        Música, cine y entretenimiento
-      </h3>
-
-      <p>
-        Temas relacionados con artistas, música, películas,
-        televisión y cultura pop.
-      </p>
-
-      <div class="news-meta">
-        <span>🎬 Entretenimiento</span>
-        <span>Hoy</span>
-      </div>
-
-    </div>
-
-  </article>
-
-
-  <!-- NOTICIA 6 -->
-
-  <article
-    class="news-card"
-    data-category="tecnologia"
-    data-title="tecnologia inteligencia artificial internet aplicaciones">
-
-    <div class="news-image">
-      📱
-    </div>
-
-    <div class="news-content">
-
-      <span class="tag">Tecnología</span>
-
-      <h3>
-        Tecnología e inteligencia artificial
-      </h3>
-
-      <p>
-        Aplicaciones, inteligencia artificial, internet
-        y novedades tecnológicas.
-      </p>
-
-      <div class="news-meta">
-        <span>📱 Tecnología</span>
-        <span>Hoy</span>
-      </div>
-
-    </div>
-
-  </article>
-
-
-</div>
-
-  </section>  <section class="info-section" style="
-    margin-top:55px;
-    background:#111827;
-    color:white;
-    border-radius:22px;
-    padding:35px;
-  "><h2 style="margin-bottom:10px;">
-  Tendencias MX
-</h2>
-
-<p style="color:#cdd7e2;max-width:850px;">
-  Nuestro objetivo es reunir en un solo lugar diferentes categorías
-  de actualidad para facilitar el acceso a información y temas que
-  generan interés en México.
-</p>
-
-  </section></main><footer>  <p>
-    <strong>Tendencias MX</strong> · Noticias y tendencias de México.
-  </p>  <p>
+  <p>
     © 2026 Tendencias MX
-  </p></footer><script>
+  </p>
+
+</footer>
+
+
+<script>
+
+  let categoriaActual = "todos";
+
 
   function filtrarNoticias(categoria, boton) {
+
+    categoriaActual = categoria;
 
     const tarjetas =
       document.querySelectorAll(".news-card");
@@ -808,17 +1115,47 @@
 
     boton.classList.add("active");
 
+    const busqueda =
+      document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+    let visibles = 0;
+
+
     tarjetas.forEach(tarjeta => {
 
-      if (categoria === "todos") {
+      const categoriaTarjeta =
+        tarjeta.dataset.category;
 
-        tarjeta.style.display = "block";
+      const texto =
+        (
+          tarjeta.dataset.title +
+          " " +
+          tarjeta.innerText
+        ).toLowerCase();
 
-      } else if (
-        tarjeta.dataset.category === categoria
+
+      const coincideCategoria =
+        categoria === "todos" ||
+        categoriaTarjeta === categoria;
+
+
+      const coincideBusqueda =
+        !busqueda ||
+        texto.includes(busqueda);
+
+
+      if (
+        coincideCategoria &&
+        coincideBusqueda
       ) {
 
-        tarjeta.style.display = "block";
+        tarjeta.style.display = "flex";
+
+        visibles++;
 
       } else {
 
@@ -827,6 +1164,9 @@
       }
 
     });
+
+
+    mostrarMensajeVacio(visibles);
 
   }
 
@@ -843,18 +1183,37 @@
     const tarjetas =
       document.querySelectorAll(".news-card");
 
+    let visibles = 0;
+
 
     tarjetas.forEach(tarjeta => {
 
       const texto =
-        tarjeta.dataset.title.toLowerCase() +
-        " " +
-        tarjeta.innerText.toLowerCase();
+        (
+          tarjeta.dataset.title +
+          " " +
+          tarjeta.innerText
+        ).toLowerCase();
 
 
-      if (!input || texto.includes(input)) {
+      const coincideCategoria =
+        categoriaActual === "todos" ||
+        tarjeta.dataset.category === categoriaActual;
 
-        tarjeta.style.display = "block";
+
+      const coincideBusqueda =
+        !input ||
+        texto.includes(input);
+
+
+      if (
+        coincideCategoria &&
+        coincideBusqueda
+      ) {
+
+        tarjeta.style.display = "flex";
+
+        visibles++;
 
       } else {
 
@@ -864,20 +1223,47 @@
 
     });
 
+
+    mostrarMensajeVacio(visibles);
+
+  }
+
+
+  function mostrarMensajeVacio(cantidad) {
+
+    const mensaje =
+      document.getElementById("emptyMessage");
+
+    if (cantidad === 0) {
+
+      mensaje.style.display = "block";
+
+    } else {
+
+      mensaje.style.display = "none";
+
+    }
+
   }
 
 
   document
     .getElementById("searchInput")
-    .addEventListener("keydown", function(event) {
+    .addEventListener(
+      "keydown",
+      function(event) {
 
-      if (event.key === "Enter") {
+        if (event.key === "Enter") {
 
-        buscarNoticias();
+          buscarNoticias();
+
+        }
 
       }
+    );
 
-    });
 
-</script></body>
+</script>
+
+</body>
 </html>
