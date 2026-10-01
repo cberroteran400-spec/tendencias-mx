@@ -679,38 +679,6 @@ jobs:
                   if img_valida:
                       return img_valida
 
-              for candidato in candidatos:
-
-                  if es_imagen_invalid_google(
-                      candidato
-                  ):
-                      continue
-
-                  try:
-                      candidato_normalizado = (
-                          normalizar_imagen(
-                              candidato
-                          )
-                      )
-
-                      if (
-                          candidato_normalizado
-                          and candidato_normalizado
-                          in IMAGENES_USADAS
-                      ):
-                          continue
-
-                      img_valida = comprobar_imagen(
-                          candidato,
-                          permitir_repetida=False
-                      )
-
-                      if img_valida:
-                          return img_valida
-
-                  except Exception:
-                      pass
-
               return ""
 
 
@@ -919,6 +887,12 @@ jobs:
               ):
                   return None
 
+              # ========================================================
+              # SOLO LAS NOTICIAS NUEVAS LLEGAN AQUÍ.
+              # Las noticias existentes son filtradas antes de llamar
+              # a esta función, por lo que no vuelven a buscar imagen.
+              # ========================================================
+
               imagen = obtener_imagen_entry(
                   entry
               )
@@ -1092,34 +1066,8 @@ jobs:
 
           mapa = {}
 
-          # Registrar las imágenes existentes.
-          # NO se vuelven a descargar las imágenes antiguas.
-
-          for noticia in noticias_existentes:
-
-              imagen_existente = noticia.get(
-                  "imagen",
-                  ""
-              )
-
-              imagen_normalizada = (
-                  normalizar_imagen(
-                      imagen_existente
-                  )
-              )
-
-              if (
-                  imagen_normalizada
-                  and not es_imagen_invalid_google(
-                      imagen_existente
-                  )
-              ):
-                  IMAGENES_USADAS.add(
-                      imagen_normalizada
-                  )
-
-
-          imagenes_revisadas = set()
+          # Registrar las noticias existentes.
+          # Sus imágenes NO se vuelven a descargar.
 
           for noticia in noticias_existentes:
 
@@ -1157,15 +1105,50 @@ jobs:
                   )
               )
 
-              # NO volver a descargar imágenes de noticias antiguas.
-              # Las imágenes existentes se conservan tal como están.
-
-              if img_normalizada:
-                  imagenes_revisadas.add(
+              if (
+                  img_normalizada
+                  and not es_imagen_invalid_google(
+                      img_actual
+                  )
+              ):
+                  IMAGENES_USADAS.add(
                       img_normalizada
                   )
 
               mapa[noticia_id] = noticia
+
+
+          # ============================================================
+          # FUNCIÓN PARA SABER SI UNA NOTICIA YA EXISTE
+          # ============================================================
+
+          def noticia_ya_existe(entry):
+
+              titulo = limpiar_titulo(
+                  entry.get(
+                      "title",
+                      ""
+                  )
+              )
+
+              url = (
+                  entry.get("link")
+                  or entry.get("id")
+                  or ""
+              )
+
+              if (
+                  not titulo
+                  or not url_valida(url)
+              ):
+                  return True
+
+              noticia_id = hash_noticia(
+                  titulo,
+                  url
+              )
+
+              return noticia_id in mapa
 
 
           # ============================================================
@@ -1206,6 +1189,17 @@ jobs:
 
                   for entry in entradas:
 
+                      # =================================================
+                      # IMPORTANTE:
+                      # Si ya existe, salimos ANTES de construirla.
+                      # Así no se busca ni descarga su imagen.
+                      # =================================================
+
+                      if noticia_ya_existe(
+                          entry
+                      ):
+                          continue
+
                       noticia = construir_noticia(
                           entry,
                           fuente,
@@ -1215,13 +1209,11 @@ jobs:
                       if not noticia:
                           continue
 
-                      if noticia["id"] not in mapa:
+                      mapa[
+                          noticia["id"]
+                      ] = noticia
 
-                          mapa[
-                              noticia["id"]
-                          ] = noticia
-
-                          nuevas += 1
+                      nuevas += 1
 
 
           # ============================================================
@@ -1272,6 +1264,16 @@ jobs:
 
                   for entry in entradas:
 
+                      # =================================================
+                      # NO procesar nuevamente noticias existentes.
+                      # Esto ocurre antes de buscar imágenes.
+                      # =================================================
+
+                      if noticia_ya_existe(
+                          entry
+                      ):
+                          continue
+
                       titulo = limpiar_titulo(
                           entry.get(
                               "title",
@@ -1319,13 +1321,11 @@ jobs:
                           ):
                               continue
 
-                      if noticia["id"] not in mapa:
+                      mapa[
+                          noticia["id"]
+                      ] = noticia
 
-                          mapa[
-                              noticia["id"]
-                          ] = noticia
-
-                          nuevas += 1
+                      nuevas += 1
 
 
           # ============================================================
@@ -1448,6 +1448,16 @@ jobs:
               for entry in feed.entries[
                   :MAX_NOTICIAS_POR_TENDENCIA
               ]:
+
+                  # =================================================
+                  # NO procesar noticias antiguas antes de buscar
+                  # título, clasificación o imagen.
+                  # =================================================
+
+                  if noticia_ya_existe(
+                      entry
+                  ):
+                      continue
 
                   titulo = limpiar_titulo(
                       entry.get(
@@ -1598,13 +1608,11 @@ jobs:
                   if not noticia:
                       continue
 
-                  if noticia["id"] not in mapa:
+                  mapa[
+                      noticia["id"]
+                  ] = noticia
 
-                      mapa[
-                          noticia["id"]
-                      ] = noticia
-
-                      nuevas += 1
+                  nuevas += 1
 
 
           # ============================================================
