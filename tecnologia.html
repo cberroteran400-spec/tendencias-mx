@@ -138,6 +138,12 @@ h1{
     box-shadow:0 8px 22px rgba(0,0,0,.12);
 }
 
+.card-link{
+    display:block;
+    color:inherit;
+    text-decoration:none;
+}
+
 .card-img{
     width:100%;
     height:180px;
@@ -199,6 +205,13 @@ h1{
     color:#94a3b8;
 }
 
+.leer{
+    margin-top:13px;
+    color:#16a34a;
+    font-size:13px;
+    font-weight:800;
+}
+
 .vacio{
     text-align:center;
     padding:50px 20px;
@@ -250,25 +263,15 @@ footer{
 
         <nav>
 
-            <a href="index.html">
-                Inicio
-            </a>
+            <a href="index.html">Inicio</a>
 
-            <a href="noticias.html">
-                Noticias
-            </a>
+            <a href="noticias.html">Noticias</a>
 
-            <a href="deportes.html">
-                Deportes
-            </a>
+            <a href="deportes.html">Deportes</a>
 
-            <a href="entretenimiento.html">
-                Entretenimiento
-            </a>
+            <a href="entretenimiento.html">Entretenimiento</a>
 
-            <a href="tecnologia.html">
-                Tecnología
-            </a>
+            <a href="tecnologia.html">Tecnología</a>
 
         </nav>
 
@@ -334,241 +337,170 @@ footer{
 
 <script>
 
-
-/* ==================================================
-   NOTICIAS REALES
-   FUENTES: EXPANSIÓN TECNOLOGÍA
-================================================== */
-
 const noticias = [
 
-    /* ==================================================
+    /* =========================
        INTELIGENCIA ARTIFICIAL
-    ================================================== */
+    ========================== */
 
     {
         categoria:"ia",
-
         titulo:"La IA que trabaja aunque no estés: así son los nuevos Dots de OpenAI",
-
         descripcion:"OpenAI presentó Dots, agentes impulsados por GPT-6 Astra capaces de mantener proyectos activos y trabajar de forma autónoma.",
-
         fecha:"29 de septiembre de 2026",
-
         emoji:"🤖",
-
-        imagen:"https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/29/openai-dots-agentes-ia-gpt-6-astra"
     },
-
 
     {
         categoria:"ia",
-
         titulo:"El 49% de las empresas en México pierden dinero en Inteligencia Artificial",
-
         descripcion:"Más de la mitad de las organizaciones mexicanas afirman utilizar IA, aunque una parte importante todavía no obtiene un impacto real en sus negocios.",
-
         fecha:"28 de septiembre de 2026",
-
         emoji:"🧠",
-
-        imagen:"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/28/empresas-en-mexico-pierden-dinero-ia"
     },
-
 
     {
         categoria:"ia",
-
         titulo:"Trump reúne a Google, Nvidia y Anthropic para fijar reglas a la IA",
-
         descripcion:"Empresas líderes de inteligencia artificial participaron en conversaciones sobre desarrollo, seguridad y autorregulación de esta tecnología.",
-
         fecha:"30 de septiembre de 2026",
-
         emoji:"🌐",
-
-        imagen:"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/30/trump-fija-reglas-a-la-ia-pero-pacto-tiene-grieta"
     },
-
 
     {
         categoria:"ia",
-
         titulo:"OpenAI retrasa su modelo de IA por preocupaciones de seguridad",
-
         descripcion:"La compañía señaló que su próximo modelo necesita cumplir con estándares de seguridad antes de su lanzamiento.",
-
         fecha:"29 de septiembre de 2026",
-
         emoji:"⚙️",
-
-        imagen:"https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/29/openai-retrasa-ia-por-preocupaciones-seguridad"
     },
 
 
-    /* ==================================================
+    /* =========================
        GADGETS
-    ================================================== */
+    ========================== */
 
     {
         categoria:"gadgets",
-
         titulo:"Las quejas por acoso no frenan a los lentes inteligentes de Meta",
-
-        descripcion:"Los lentes inteligentes continúan ganando usuarios pese a las críticas relacionadas con el uso de cámaras para grabar y tomar fotografías.",
-
+        descripcion:"Los lentes inteligentes continúan ganando usuarios pese a las críticas relacionadas con el uso de cámaras.",
         fecha:"29 de septiembre de 2026",
-
         emoji:"🥽",
-
-        imagen:"https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/29/quejas-acoso-no-frenan-lentes-inteligentes-meta"
     },
-
 
     {
         categoria:"gadgets",
-
         titulo:"Tu iPhone se puede convertir en un cazador de ofertas automático",
-
         descripcion:"Las funciones del iPhone permiten configurar avisos para conocer cuándo aparecen determinadas ofertas.",
-
         fecha:"30 de septiembre de 2026",
-
         emoji:"📱",
-
-        imagen:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/30/iphone-cazador-de-ofertas-automatico"
     },
-
 
     {
         categoria:"gadgets",
-
         titulo:"La tecnología que está cambiando la manera de usar nuestros dispositivos",
-
         descripcion:"Nuevos dispositivos y herramientas buscan hacer más sencilla la vida cotidiana mediante funciones inteligentes.",
-
         fecha:"27 de septiembre de 2026",
-
         emoji:"💻",
-
-        imagen:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia"
     },
 
 
-    /* ==================================================
+    /* =========================
        APPS Y REDES
-    ================================================== */
+    ========================== */
 
     {
         categoria:"apps_redes",
-
         titulo:"WhatsApp tendrá nuevas funciones para proteger a los menores",
-
         descripcion:"La aplicación prepara herramientas para que padres y responsables puedan configurar una experiencia más adecuada para adolescentes.",
-
         fecha:"30 de septiembre de 2026",
-
         emoji:"💬",
-
-        imagen:"https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia"
     },
-
 
     {
         categoria:"apps_redes",
-
         titulo:"Spotify presenta fallas a nivel global",
-
         descripcion:"Usuarios reportaron problemas para iniciar sesión y reproducir música durante una interrupción del servicio.",
-
         fecha:"29 de septiembre de 2026",
-
         emoji:"🎵",
-
-        imagen:"https://images.unsplash.com/photo-1611339555312-e607c8352fd7?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1611339555312-e607c8352fd7?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/29/spotify-falla-hoy-29-de-septiembre"
     },
-
 
     {
         categoria:"apps_redes",
-
         titulo:"Las aplicaciones continúan transformando la vida cotidiana",
-
         descripcion:"Las plataformas digitales se han convertido en herramientas esenciales para comunicación, entretenimiento y trabajo.",
-
         fecha:"26 de septiembre de 2026",
-
         emoji:"📲",
-
-        imagen:"https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia"
     },
 
 
-    /* ==================================================
+    /* =========================
        CIBERSEGURIDAD
-    ================================================== */
+    ========================== */
 
     {
         categoria:"ciberseguridad",
-
         titulo:"¿Vas a firmar un documento? Podría ser una nueva trampa de ciberdelincuentes",
-
         descripcion:"Kaspersky detectó campañas de phishing que utilizan nombres de servicios conocidos para intentar robar credenciales y datos personales.",
-
         fecha:"28 de septiembre de 2026",
-
         emoji:"🔐",
-
-        imagen:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/28/phishing-correos-falsos-zoom-docusign"
     },
-
 
     {
         categoria:"ciberseguridad",
-
         titulo:"México se prepara para los riesgos del cómputo cuántico",
-
         descripcion:"Expertos mexicanos crearon un consejo para analizar los riesgos que el avance de la computación cuántica puede representar para la seguridad digital.",
-
         fecha:"22 de septiembre de 2026",
-
         emoji:"🛡️",
-
-        imagen:"https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/22/mexico-consejo-riesgos-computo-cuantico-seguridad-digital"
     },
 
 
-    /* ==================================================
+    /* =========================
        TECNOLOGÍA EN MÉXICO
-    ================================================== */
+    ========================== */
 
     {
         categoria:"mexico",
-
         titulo:"La IA necesita electricistas, pero México forma cada vez menos técnicos",
-
         descripcion:"La expansión de centros de datos aumenta la necesidad de personal técnico especializado para operar infraestructura eléctrica y tecnológica.",
-
         fecha:"29 de septiembre de 2026",
-
         emoji:"🇲🇽",
-
-        imagen:"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/29/mexico-en-riesgo-de-perder-100-000-tecnicos"
     },
 
-
     {
         categoria:"mexico",
-
         titulo:"Las fábricas de IA podrían aportar 5.2% del PIB de México",
-
         descripcion:"La infraestructura especializada para entrenar y procesar inteligencia artificial está tomando relevancia dentro del desarrollo tecnológico del país.",
-
         fecha:"23 de septiembre de 2026",
-
         emoji:"🏭",
-
-        imagen:"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85"
+        imagen:"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85",
+        url:"https://expansion.mx/tecnologia/2026/09/23/fabricas-ia-negocio-mexico-contribuira-5-2-del-pib"
     }
 
 ];
@@ -583,7 +515,6 @@ function mostrar(categoria, boton){
     const contenedor =
         document.getElementById("contenedor");
 
-
     if(boton){
 
         document
@@ -595,9 +526,7 @@ function mostrar(categoria, boton){
         boton.classList.add("activo");
     }
 
-
     let lista;
-
 
     if(categoria === "todos"){
 
@@ -611,7 +540,6 @@ function mostrar(categoria, boton){
         );
 
     }
-
 
     if(lista.length === 0){
 
@@ -639,40 +567,54 @@ function mostrar(categoria, boton){
 
         <article class="card">
 
-            <div class="card-img">
+            <a
+                class="card-link"
+                href="${noticia.url}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
 
-                <img
-                    src="${noticia.imagen}"
-                    alt="${escapeHTML(noticia.titulo)}"
-                    loading="lazy"
-                    onerror="mostrarFallback(this,'${noticia.emoji}')"
-                >
+                <div class="card-img">
 
-            </div>
+                    <img
+                        src="${noticia.imagen}"
+                        alt="${escapeHTML(noticia.titulo)}"
+                        loading="lazy"
+                        onerror="mostrarFallback(this,'${noticia.emoji}')"
+                    >
 
-
-            <div class="card-content">
-
-                <span class="categoria">
-                    ${nombreCategoria(noticia.categoria)}
-                </span>
-
-
-                <h2>
-                    ${escapeHTML(noticia.titulo)}
-                </h2>
-
-
-                <p>
-                    ${escapeHTML(noticia.descripcion)}
-                </p>
-
-
-                <div class="fecha">
-                    ${escapeHTML(noticia.fecha)}
                 </div>
 
-            </div>
+
+                <div class="card-content">
+
+                    <span class="categoria">
+                        ${nombreCategoria(noticia.categoria)}
+                    </span>
+
+
+                    <h2>
+                        ${escapeHTML(noticia.titulo)}
+                    </h2>
+
+
+                    <p>
+                        ${escapeHTML(noticia.descripcion)}
+                    </p>
+
+
+                    <div class="fecha">
+                        ${escapeHTML(noticia.fecha)}
+                    </div>
+
+
+                    <div class="leer">
+                        Leer noticia completa →
+                    </div>
+
+                </div>
+
+            </a>
 
         </article>
 
@@ -700,7 +642,6 @@ function nombreCategoria(categoria){
         mexico:"Tecnología en México"
 
     };
-
 
     return nombres[categoria]
         || "Tecnología";
