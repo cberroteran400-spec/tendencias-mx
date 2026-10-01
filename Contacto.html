@@ -6,8 +6,8 @@
 
 <title>Contacto | TendenciasMX</title>
 
-<meta name="description" content="Contacta con TendenciasMX para enviar preguntas, sugerencias, comentarios o información.">
-<meta name="keywords" content="contacto TendenciasMX, contacto, sugerencias, noticias, información">
+<meta name="description" content="Contacta con TendenciasMX para enviar sugerencias, comentarios, preguntas o reportar errores.">
+<meta name="keywords" content="contacto TendenciasMX, contacto, sugerencias, noticias México">
 
 <style>
 *{
@@ -19,7 +19,8 @@
 body{
     font-family:Arial,Helvetica,sans-serif;
     background:#f4f6f8;
-    color:#111827;
+    color:#1f2937;
+    line-height:1.6;
 }
 
 header{
@@ -28,7 +29,7 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 3px 12px rgba(0,0,0,.15);
+    box-shadow:0 2px 12px rgba(0,0,0,.15);
 }
 
 .header-inner{
@@ -44,6 +45,8 @@ header{
 .logo{
     font-size:25px;
     font-weight:800;
+    text-decoration:none;
+    color:white;
     white-space:nowrap;
 }
 
@@ -54,26 +57,21 @@ header{
 nav{
     display:flex;
     gap:7px;
-    overflow-x:auto;
-    scrollbar-width:none;
-}
-
-nav::-webkit-scrollbar{
-    display:none;
+    flex-wrap:wrap;
+    justify-content:flex-end;
 }
 
 nav a{
     color:#d1d5db;
     text-decoration:none;
-    padding:9px 11px;
-    border-radius:8px;
     font-size:14px;
-    white-space:nowrap;
+    padding:8px 10px;
+    border-radius:8px;
     transition:.2s;
 }
 
 nav a:hover,
-nav a.activo{
+nav a.active{
     background:#1f2937;
     color:#22c55e;
 }
@@ -81,17 +79,18 @@ nav a.activo{
 main{
     max-width:1100px;
     margin:auto;
-    padding:40px 20px 60px;
+    padding:45px 20px 60px;
 }
 
 .hero{
     text-align:center;
-    margin-bottom:35px;
+    margin-bottom:40px;
 }
 
 .hero h1{
-    font-size:38px;
-    margin-bottom:10px;
+    font-size:42px;
+    color:#111827;
+    margin-bottom:12px;
 }
 
 .hero h1 span{
@@ -99,167 +98,142 @@ main{
 }
 
 .hero p{
-    max-width:700px;
+    max-width:720px;
     margin:auto;
     color:#6b7280;
-    line-height:1.6;
-    font-size:16px;
+    font-size:17px;
 }
 
-.contacto-grid{
+.contact-grid{
     display:grid;
     grid-template-columns:1fr 1.4fr;
     gap:25px;
 }
 
-.info-panel,
-.formulario{
+.card{
     background:white;
-    border:1px solid #e5e7eb;
-    border-radius:18px;
+    border-radius:16px;
     padding:28px;
-    box-shadow:0 4px 15px rgba(0,0,0,.07);
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    border:1px solid #e5e7eb;
 }
 
-.info-panel h2,
-.formulario h2{
-    font-size:22px;
-    margin-bottom:10px;
+.card h2{
+    color:#111827;
+    margin-bottom:18px;
+    font-size:24px;
 }
 
-.info-panel > p{
+.card p{
     color:#6b7280;
-    line-height:1.6;
-    font-size:14px;
-    margin-bottom:25px;
 }
 
-.info-item{
-    display:flex;
-    align-items:flex-start;
-    gap:14px;
-    padding:16px 0;
-    border-bottom:1px solid #eef0f2;
+.contact-item{
+    padding:17px 0;
+    border-bottom:1px solid #e5e7eb;
 }
 
-.info-item:last-child{
+.contact-item:last-child{
     border-bottom:0;
 }
 
-.icono{
-    width:44px;
-    height:44px;
-    min-width:44px;
-    border-radius:12px;
-    background:#dcfce7;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:21px;
-}
-
-.info-item h3{
-    font-size:15px;
-    margin-bottom:4px;
-}
-
-.info-item p{
-    color:#6b7280;
-    font-size:13px;
-    line-height:1.5;
-}
-
-.info-item a{
-    color:#16a34a;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.formulario > p{
-    color:#6b7280;
-    font-size:14px;
-    line-height:1.5;
-    margin-bottom:22px;
-}
-
-.campo{
-    margin-bottom:17px;
-}
-
-.campo label{
+.contact-item strong{
     display:block;
-    font-size:14px;
-    font-weight:bold;
+    color:#111827;
+    margin-bottom:5px;
+}
+
+.contact-item span{
+    color:#6b7280;
+    font-size:15px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:700;
+    color:#374151;
     margin-bottom:7px;
 }
 
-.campo input,
-.campo textarea,
-.campo select{
+.form-group input,
+.form-group select,
+.form-group textarea{
     width:100%;
     border:1px solid #d1d5db;
-    border-radius:9px;
-    padding:12px 13px;
-    font-family:Arial,Helvetica,sans-serif;
-    font-size:14px;
+    border-radius:10px;
+    padding:13px 14px;
+    font-family:inherit;
+    font-size:15px;
     outline:none;
     background:#fff;
 }
 
-.campo input:focus,
-.campo textarea:focus,
-.campo select:focus{
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
     border-color:#22c55e;
     box-shadow:0 0 0 3px rgba(34,197,94,.12);
 }
 
-.campo textarea{
-    min-height:140px;
+.form-group textarea{
+    min-height:150px;
     resize:vertical;
 }
 
-.btn-enviar{
+.submit-btn{
     width:100%;
     border:0;
+    border-radius:10px;
     background:#22c55e;
-    color:white;
+    color:#052e16;
     padding:14px;
-    border-radius:9px;
-    font-size:15px;
-    font-weight:bold;
+    font-size:16px;
+    font-weight:800;
     cursor:pointer;
     transition:.2s;
 }
 
-.btn-enviar:hover{
+.submit-btn:hover{
     background:#16a34a;
+    color:white;
 }
 
-.mensaje{
+.notice{
     display:none;
-    margin-top:15px;
-    padding:13px;
-    background:#dcfce7;
-    color:#166534;
-    border-radius:9px;
-    font-size:14px;
-    line-height:1.5;
-}
-
-.mensaje.mostrar{
-    display:block;
-}
-
-.aviso{
-    margin-top:25px;
-    background:white;
-    border:1px solid #e5e7eb;
+    margin-top:18px;
+    background:#ecfdf5;
     border-left:5px solid #22c55e;
-    border-radius:14px;
-    padding:20px;
+    padding:15px;
+    border-radius:10px;
+    color:#166534;
+}
+
+.help-box{
+    margin-top:30px;
+    background:white;
+    border-left:5px solid #22c55e;
+    border-radius:12px;
+    padding:22px;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+}
+
+.help-box h3{
+    color:#111827;
+    margin-bottom:7px;
+}
+
+.help-box p{
     color:#6b7280;
-    font-size:13px;
-    line-height:1.6;
+}
+
+.help-box a{
+    color:#16a34a;
+    font-weight:700;
+    text-decoration:none;
 }
 
 footer{
@@ -267,42 +241,54 @@ footer{
     color:#9ca3af;
     text-align:center;
     padding:25px 20px;
-    font-size:13px;
+    font-size:14px;
 }
 
 footer strong{
     color:#22c55e;
 }
 
-@media(max-width:800px){
+@media(max-width:850px){
 
     .header-inner{
         flex-direction:column;
-        align-items:flex-start;
+        align-items:center;
     }
 
     nav{
-        width:100%;
+        justify-content:center;
     }
 
-    .contacto-grid{
+    .contact-grid{
         grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:34px;
     }
 }
 
 @media(max-width:600px){
 
     main{
-        padding:30px 14px 45px;
+        padding:35px 15px 50px;
     }
 
     .hero h1{
         font-size:30px;
     }
 
-    .info-panel,
-    .formulario{
-        padding:21px;
+    .hero p{
+        font-size:15px;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    nav a{
+        font-size:13px;
+        padding:7px 8px;
     }
 }
 </style>
@@ -314,20 +300,32 @@ footer strong{
 
     <div class="header-inner">
 
-        <div class="logo">
+        <a href="./index.html" class="logo">
             Tendencias<span>MX</span>
-        </div>
+        </a>
 
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="deportes.html">Deportes</a>
-            <a href="entretenimiento.html">Entretenimiento</a>
-            <a href="tecnologia.html">Tecnología</a>
-            <a href="dinero.html">Dinero</a>
-            <a href="politica.html">Política</a>
-            <a href="tramites.html">Trámites</a>
-            <a href="contacto.html" class="activo">Contacto</a>
+
+            <a href="./index.html">Inicio</a>
+
+            <a href="./noticias.html">Noticias</a>
+
+            <a href="./deportes.html">Deportes</a>
+
+            <a href="./entretenimiento.html">Entretenimiento</a>
+
+            <a href="./tecnologia.html">Tecnología</a>
+
+            <a href="./dinero.html">Dinero</a>
+
+            <a href="./politica.html">Política</a>
+
+            <a href="./tramites.html">Trámites</a>
+
+            <a href="./contacto.html" class="active">Contacto</a>
+
+            <a href="./preguntas.html">Preguntas</a>
+
         </nav>
 
     </div>
@@ -344,113 +342,82 @@ footer strong{
         </h1>
 
         <p>
-            ¿Tienes una pregunta, sugerencia, comentario o quieres
-            compartir información con TendenciasMX? Escríbenos.
+            ¿Tienes una sugerencia, comentario, pregunta o encontraste
+            algún problema? Queremos conocer tu opinión.
         </p>
 
     </section>
 
 
-    <section class="contacto-grid">
+    <section class="contact-grid">
 
 
-        <div class="info-panel">
+        <div class="card">
 
-            <h2>Hablemos</h2>
+            <h2>Contáctanos</h2>
 
             <p>
-                Tu opinión nos ayuda a mejorar TendenciasMX.
-                Puedes utilizar el formulario para enviarnos
-                tus comentarios o sugerencias.
+                Utiliza este espacio para comunicarte con TendenciasMX
+                y compartir tus comentarios.
             </p>
 
 
-            <div class="info-item">
+            <div class="contact-item">
 
-                <div class="icono">
-                    ✉️
-                </div>
+                <strong>📧 Correo electrónico</strong>
 
-                <div>
-                    <h3>Correo electrónico</h3>
-
-                    <p>
-                        Próximamente disponible
-                    </p>
-                </div>
+                <span>
+                    Próximamente disponible
+                </span>
 
             </div>
 
 
-            <div class="info-item">
+            <div class="contact-item">
 
-                <div class="icono">
-                    📰
-                </div>
+                <strong>📰 Información y noticias</strong>
 
-                <div>
-                    <h3>Información y noticias</h3>
-
-                    <p>
-                        Puedes enviarnos sugerencias sobre temas
-                        que te gustaría encontrar en TendenciasMX.
-                    </p>
-                </div>
+                <span>
+                    Puedes enviarnos sugerencias relacionadas con
+                    noticias y contenidos.
+                </span>
 
             </div>
 
 
-            <div class="info-item">
+            <div class="contact-item">
 
-                <div class="icono">
-                    💡
-                </div>
+                <strong>💡 Sugerencias</strong>
 
-                <div>
-                    <h3>Sugerencias</h3>
-
-                    <p>
-                        Ayúdanos a mejorar el contenido y la
-                        experiencia del sitio.
-                    </p>
-                </div>
+                <span>
+                    Tu opinión puede ayudarnos a mejorar TendenciasMX.
+                </span>
 
             </div>
 
 
-            <div class="info-item">
+            <div class="contact-item">
 
-                <div class="icono">
-                    🔒
-                </div>
+                <strong>🔒 Privacidad</strong>
 
-                <div>
-                    <h3>Privacidad</h3>
-
-                    <p>
-                        Evita enviar información personal,
-                        contraseñas o datos sensibles mediante
-                        este formulario.
-                    </p>
-                </div>
+                <span>
+                    Evita enviar información personal sensible
+                    mediante este formulario.
+                </span>
 
             </div>
 
         </div>
 
 
-        <div class="formulario">
+
+        <div class="card">
 
             <h2>Envíanos un mensaje</h2>
 
-            <p>
-                Completa los siguientes campos.
-            </p>
+            <form id="contactForm">
 
-
-            <form id="formContacto">
-
-                <div class="campo">
+                <div class="form-group">
 
                     <label for="nombre">
                         Nombre
@@ -467,7 +434,7 @@ footer strong{
                 </div>
 
 
-                <div class="campo">
+                <div class="form-group">
 
                     <label for="correo">
                         Correo electrónico
@@ -477,46 +444,42 @@ footer strong{
                         type="email"
                         id="correo"
                         name="correo"
-                        placeholder="tucorreo@ejemplo.com"
+                        placeholder="tu@email.com"
                         required
                     >
 
                 </div>
 
 
-                <div class="campo">
+                <div class="form-group">
 
                     <label for="asunto">
                         Asunto
                     </label>
 
-                    <select
-                        id="asunto"
-                        name="asunto"
-                        required
-                    >
+                    <select id="asunto" name="asunto" required>
 
                         <option value="">
                             Selecciona una opción
                         </option>
 
-                        <option>
+                        <option value="sugerencia">
                             Sugerencia
                         </option>
 
-                        <option>
-                            Comentario
+                        <option value="noticia">
+                            Sugerencia de noticia
                         </option>
 
-                        <option>
-                            Corrección de información
+                        <option value="error">
+                            Reportar un error
                         </option>
 
-                        <option>
-                            Compartir una noticia
+                        <option value="pregunta">
+                            Pregunta
                         </option>
 
-                        <option>
+                        <option value="otro">
                             Otro
                         </option>
 
@@ -525,7 +488,7 @@ footer strong{
                 </div>
 
 
-                <div class="campo">
+                <div class="form-group">
 
                     <label for="mensaje">
                         Mensaje
@@ -543,35 +506,44 @@ footer strong{
 
                 <button
                     type="submit"
-                    class="btn-enviar"
+                    class="submit-btn"
                 >
                     Enviar mensaje
                 </button>
 
-
-                <div
-                    id="mensajeAviso"
-                    class="mensaje"
-                >
-                    Tu mensaje está listo para enviarse.
-                    Para recibir mensajes realmente necesitamos
-                    conectar este formulario con un servicio
-                    de correo o backend.
-                </div>
-
             </form>
+
+
+            <div id="notice" class="notice">
+
+                Tu mensaje está listo para enviarse.
+                El formulario necesitará conectarse posteriormente
+                a un servicio de correo o backend para realizar
+                el envío real.
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <div class="aviso">
+    <div class="help-box">
 
-        <strong>Información importante:</strong>
-        TendenciasMX utiliza esta página como medio de contacto
-        informativo. No compartas contraseñas, datos bancarios,
-        documentos oficiales ni otra información sensible.
+        <h3>¿Tienes otra pregunta?</h3>
+
+        <p>
+
+            Antes de contactarnos, también puedes consultar nuestra
+            sección de
+
+            <a href="./preguntas.html">
+                Preguntas frecuentes
+            </a>
+
+            para encontrar respuestas rápidas.
+
+        </p>
 
     </div>
 
@@ -580,22 +552,24 @@ footer strong{
 
 <footer>
 
-    <strong>TendenciasMX</strong>
-    · Información y servicios para México
+    © 2026 <strong>TendenciasMX</strong> · Información y actualidad
 
 </footer>
 
 
 <script>
 
-const formulario=document.getElementById("formContacto");
-const mensajeAviso=document.getElementById("mensajeAviso");
-
-formulario.addEventListener("submit",function(event){
+document
+.getElementById("contactForm")
+.addEventListener("submit", function(event){
 
     event.preventDefault();
 
-    mensajeAviso.classList.add("mostrar");
+    document
+    .getElementById("notice")
+    .style.display = "block";
+
+    this.reset();
 
 });
 
