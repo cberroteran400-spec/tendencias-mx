@@ -1,0 +1,931 @@
+<!DOCTYPE html><html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Entretenimiento en México | Música, Cine y TV | Tendencias MX</title>  <meta name="description" content="Descubre lo más destacado del entretenimiento en México: música, cine, series, televisión, artistas, videojuegos y temas virales en Tendencias MX.">  <meta name="keywords" content="entretenimiento México, música, cine, películas, series, televisión, artistas, famosos, videojuegos, viral, Tendencias MX">  <meta name="robots" content="index, follow">  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/entretenimiento.html">  <meta property="og:title" content="Entretenimiento en México | Tendencias MX">
+  <meta property="og:description" content="Música, cine, series, televisión, artistas y tendencias del entretenimiento.">
+  <meta property="og:type" content="website">  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f5f7;
+      color: #17202a;
+      line-height: 1.55;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #101827;
+      color: white;
+      box-shadow: 0 4px 18px rgba(0,0,0,.18);
+    }
+
+    .header-inner {
+      max-width: 1150px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .logo span {
+      color: #20c997;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #dce4ed;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #20c997;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(32,201,151,.18), transparent 35%),
+        linear-gradient(135deg, #101827, #32194f);
+
+      color: white;
+      padding: 55px 20px 65px;
+    }
+
+    .hero-content {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(32,201,151,.14);
+      border: 1px solid rgba(32,201,151,.4);
+      color: #63e6be;
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 17px;
+    }
+
+    .hero h1 {
+      font-size: clamp(37px, 6vw, 60px);
+      line-height: 1.05;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #d8dce7;
+      max-width: 720px;
+      font-size: 17px;
+    }
+
+    /* SEARCH */
+
+    .search {
+      margin-top: 27px;
+      max-width: 650px;
+      display: flex;
+      background: white;
+      padding: 6px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .search input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 14px;
+      font-size: 16px;
+      color: #17202a;
+    }
+
+    .search button {
+      border: none;
+      background: #20c997;
+      color: #062219;
+      padding: 0 20px;
+      border-radius: 10px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1150px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .section-heading {
+      margin-bottom: 22px;
+    }
+
+    .section-heading h2 {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .section-heading p {
+      color: #68737e;
+    }
+
+    /* CATEGORIES */
+
+    .categories {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+
+    .category-btn {
+      flex: 0 0 auto;
+      border: 1px solid #d7dde4;
+      background: white;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      cursor: pointer;
+      color: #35404c;
+    }
+
+    .category-btn:hover,
+    .category-btn.active {
+      background: #20c997;
+      border-color: #20c997;
+      color: #062219;
+    }
+
+    /* FEATURED */
+
+    .featured {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 20px;
+      margin-bottom: 45px;
+    }
+
+    .featured-main {
+      min-height: 350px;
+      border-radius: 22px;
+      padding: 30px;
+      color: white;
+
+      background:
+        linear-gradient(rgba(16,24,39,.45), rgba(16,24,39,.88)),
+        linear-gradient(135deg, #7c3aed, #be185d);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .featured-main .tag {
+      width: fit-content;
+    }
+
+    .featured-main h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.08;
+      margin-bottom: 10px;
+    }
+
+    .featured-main p {
+      color: #e7e5ee;
+      max-width: 650px;
+    }
+
+    .featured-side {
+      display: grid;
+      gap: 20px;
+    }
+
+    .mini-card {
+      background: white;
+      border: 1px solid #e1e6eb;
+      border-radius: 18px;
+      padding: 23px;
+      box-shadow: 0 7px 20px rgba(20,35,50,.06);
+    }
+
+    .mini-icon {
+      font-size: 35px;
+      margin-bottom: 8px;
+    }
+
+    .mini-card h3 {
+      font-size: 20px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .mini-card p {
+      color: #68737e;
+      font-size: 14px;
+    }
+
+    /* TAG */
+
+    .tag {
+      display: inline-block;
+      background: #e6fcf5;
+      color: #087f5b;
+      padding: 5px 9px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    /* GRID */
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .content-card {
+      background: white;
+      border: 1px solid #e1e6eb;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 7px 20px rgba(20,35,50,.06);
+      transition: .2s;
+    }
+
+    .content-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 30px rgba(20,35,50,.12);
+    }
+
+    .content-image {
+      height: 185px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 62px;
+      background: linear-gradient(135deg, #f4eaff, #ffeaf4);
+    }
+
+    .content-body {
+      padding: 20px;
+    }
+
+    .content-body h3 {
+      font-size: 20px;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .content-body p {
+      color: #68737e;
+      font-size: 14px;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #edf0f2;
+      margin-top: 17px;
+      padding-top: 13px;
+      color: #7b858f;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* INFO */
+
+    .info {
+      margin-top: 55px;
+      padding: 35px;
+      border-radius: 22px;
+      color: white;
+
+      background:
+        linear-gradient(135deg, #101827, #32194f);
+    }
+
+    .info h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      color: #d4dbe5;
+      max-width: 850px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0c111b;
+      color: #b7c1cc;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 30px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .header-inner {
+        flex-direction: column;
+      }
+
+      .featured {
+        grid-template-columns: 1fr;
+      }
+
+      .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 560px) {
+
+      .hero {
+        padding: 45px 17px 55px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      main {
+        padding: 35px 15px;
+      }
+
+      .search {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .search button {
+        height: 48px;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-main {
+        min-height: 290px;
+        padding: 24px;
+      }
+
+      .info {
+        padding: 25px;
+      }
+
+    }
+
+  </style></head><body><header>  <div class="header-inner"><a href="index.html" class="logo">
+  Tendencias<span>MX</span>
+</a>
+
+<nav>
+
+  <a href="index.html">
+    Inicio
+  </a>
+
+  <a href="tendencias.html">
+    Tendencias
+  </a>
+
+  <a href="noticias.html">
+    Noticias
+  </a>
+
+  <a href="entretenimiento.html" class="active">
+    Entretenimiento
+  </a>
+
+</nav>
+
+  </div></header><section class="hero">  <div class="hero-content"><span class="badge">
+  🎬 ENTRETENIMIENTO
+</span>
+
+<h1>
+  Lo más destacado del entretenimiento
+</h1>
+
+<p>
+  Descubre temas de música, cine, series, televisión,
+  artistas, videojuegos y contenido viral que genera conversación.
+</p>
+
+
+<div class="search">
+
+  <input
+    type="search"
+    id="searchInput"
+    placeholder="Buscar entretenimiento..."
+    aria-label="Buscar entretenimiento"
+  >
+
+  <button onclick="buscarContenido()">
+    Buscar
+  </button>
+
+</div>
+
+  </div></section><main>  <!-- DESTACADOS -->  <section class="featured"><article class="featured-main">
+
+  <span class="tag">
+    Destacado
+  </span>
+
+  <h2>
+    El mundo del entretenimiento en Tendencias MX
+  </h2>
+
+  <p>
+    Aquí reuniremos los temas de entretenimiento que estén
+    generando mayor interés.
+  </p>
+
+</article>
+
+
+<div class="featured-side">
+
+  <article class="mini-card">
+
+    <div class="mini-icon">
+      🎵
+    </div>
+
+    <h3>
+      Música
+    </h3>
+
+    <p>
+      Artistas, canciones, lanzamientos y temas musicales.
+    </p>
+
+  </article>
+
+
+  <article class="mini-card">
+
+    <div class="mini-icon">
+      🎥
+    </div>
+
+    <h3>
+      Cine y series
+    </h3>
+
+    <p>
+      Películas, series, estrenos y conversaciones de televisión.
+    </p>
+
+  </article>
+
+</div>
+
+  </section>  <!-- CATEGORÍAS -->  <section><div class="section-heading">
+
+  <h2>
+    🎬 Explora entretenimiento
+  </h2>
+
+  <p>
+    Selecciona una categoría para encontrar contenido.
+  </p>
+
+</div>
+
+
+<div class="categories">
+
+  <button
+    class="category-btn active"
+    onclick="filtrarContenido('todos', this)">
+    Todo
+  </button>
+
+  <button
+    class="category-btn"
+    onclick="filtrarContenido('musica', this)">
+    🎵 Música
+  </button>
+
+  <button
+    class="category-btn"
+    onclick="filtrarContenido('cine', this)">
+    🎥 Cine
+  </button>
+
+  <button
+    class="category-btn"
+    onclick="filtrarContenido('series', this)">
+    📺 Series
+  </button>
+
+  <button
+    class="category-btn"
+    onclick="filtrarContenido('artistas', this)">
+    ⭐ Artistas
+  </button>
+
+  <button
+    class="category-btn"
+    onclick="filtrarContenido('videojuegos', this)">
+    🎮 Videojuegos
+  </button>
+
+  <button
+    class="category-btn"
+    onclick="filtrarContenido('viral', this)">
+    🔥 Viral
+  </button>
+
+</div>
+
+
+<div class="content-grid" id="contentGrid">
+
+
+  <!-- MÚSICA -->
+
+  <article
+    class="content-card"
+    data-category="musica"
+    data-title="musica artistas canciones nuevos lanzamientos">
+
+    <div class="content-image">
+      🎵
+    </div>
+
+    <div class="content-body">
+
+      <span class="tag">
+        Música
+      </span>
+
+      <h3>
+        Música y nuevos lanzamientos
+      </h3>
+
+      <p>
+        Espacio para descubrir artistas, canciones,
+        álbumes y novedades musicales.
+      </p>
+
+      <div class="meta">
+        <span>🎵 Música</span>
+        <span>Hoy</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <!-- CINE -->
+
+  <article
+    class="content-card"
+    data-category="cine"
+    data-title="cine peliculas estrenos peliculas mexico">
+
+    <div class="content-image">
+      🎥
+    </div>
+
+    <div class="content-body">
+
+      <span class="tag">
+        Cine
+      </span>
+
+      <h3>
+        Películas y estrenos
+      </h3>
+
+      <p>
+        Información sobre películas, estrenos y temas
+        relacionados con el mundo del cine.
+      </p>
+
+      <div class="meta">
+        <span>🎥 Cine</span>
+        <span>Hoy</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <!-- SERIES -->
+
+  <article
+    class="content-card"
+    data-category="series"
+    data-title="series television streaming netflix programas">
+
+    <div class="content-image">
+      📺
+    </div>
+
+    <div class="content-body">
+
+      <span class="tag">
+        Series
+      </span>
+
+      <h3>
+        Series y televisión
+      </h3>
+
+      <p>
+        Series, programas, plataformas de streaming
+        y televisión.
+      </p>
+
+      <div class="meta">
+        <span>📺 Series</span>
+        <span>Hoy</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <!-- ARTISTAS -->
+
+  <article
+    class="content-card"
+    data-category="artistas"
+    data-title="artistas famosos celebridades cantantes actores">
+
+    <div class="content-image">
+      ⭐
+    </div>
+
+    <div class="content-body">
+
+      <span class="tag">
+        Artistas
+      </span>
+
+      <h3>
+        Artistas y celebridades
+      </h3>
+
+      <p>
+        Temas relacionados con actores, cantantes,
+        celebridades y figuras del entretenimiento.
+      </p>
+
+      <div class="meta">
+        <span>⭐ Artistas</span>
+        <span>Hoy</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <!-- VIDEOJUEGOS -->
+
+  <article
+    class="content-card"
+    data-category="videojuegos"
+    data-title="videojuegos gaming juegos consola pc">
+
+    <div class="content-image">
+      🎮
+    </div>
+
+    <div class="content-body">
+
+      <span class="tag">
+        Videojuegos
+      </span>
+
+      <h3>
+        Videojuegos y gaming
+      </h3>
+
+      <p>
+        Juegos, consolas, lanzamientos y temas
+        de la comunidad gamer.
+      </p>
+
+      <div class="meta">
+        <span>🎮 Gaming</span>
+        <span>Hoy</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <!-- VIRAL -->
+
+  <article
+    class="content-card"
+    data-category="viral"
+    data-title="viral redes sociales tiktok videos memes internet">
+
+    <div class="content-image">
+      🔥
+    </div>
+
+    <div class="content-body">
+
+      <span class="tag">
+        Viral
+      </span>
+
+      <h3>
+        Lo viral en redes sociales
+      </h3>
+
+      <p>
+        Videos, memes, conversaciones y contenidos
+        que se vuelven populares en internet.
+      </p>
+
+      <div class="meta">
+        <span>🔥 Viral</span>
+        <span>Hoy</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+</div>
+
+  </section>  <!-- INFORMACIÓN -->  <section class="info"><h2>
+  Entretenimiento en México
+</h2>
+
+<p>
+  Tendencias MX contará con una sección dedicada a descubrir
+  contenido de entretenimiento y cultura digital. Más adelante
+  podremos conectar fuentes actualizadas para mostrar información
+  real sobre música, cine, series, artistas, videojuegos y tendencias
+  virales.
+</p>
+
+  </section></main><footer>  <p>
+    <strong>Tendencias MX</strong>
+    · Entretenimiento, cultura y tendencias.
+  </p>  <p>
+    © 2026 Tendencias MX
+  </p></footer><script>
+
+
+  function filtrarContenido(categoria, boton) {
+
+    const tarjetas =
+      document.querySelectorAll(".content-card");
+
+    const botones =
+      document.querySelectorAll(".category-btn");
+
+
+    botones.forEach(btn => {
+
+      btn.classList.remove("active");
+
+    });
+
+
+    boton.classList.add("active");
+
+
+    tarjetas.forEach(tarjeta => {
+
+      if (categoria === "todos") {
+
+        tarjeta.style.display = "block";
+
+      } else if (
+        tarjeta.dataset.category === categoria
+      ) {
+
+        tarjeta.style.display = "block";
+
+      } else {
+
+        tarjeta.style.display = "none";
+
+      }
+
+    });
+
+  }
+
+
+  function buscarContenido() {
+
+    const input =
+      document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+
+    const tarjetas =
+      document.querySelectorAll(".content-card");
+
+
+    tarjetas.forEach(tarjeta => {
+
+      const texto =
+        tarjeta.dataset.title.toLowerCase() +
+        " " +
+        tarjeta.innerText.toLowerCase();
+
+
+      if (!input || texto.includes(input)) {
+
+        tarjeta.style.display = "block";
+
+      } else {
+
+        tarjeta.style.display = "none";
+
+      }
+
+    });
+
+  }
+
+
+  document
+    .getElementById("searchInput")
+    .addEventListener("keydown", function(event) {
+
+      if (event.key === "Enter") {
+
+        buscarContenido();
+
+      }
+
+    });
+
+
+</script></body>
+</html>

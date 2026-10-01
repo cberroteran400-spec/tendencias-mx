@@ -1,0 +1,665 @@
+<!DOCTYPE html><html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Tendencias en México | Lo más buscado y viral hoy | Tendencias MX</title>  <meta name="description" content="Descubre las tendencias de México: temas virales, búsquedas populares, entretenimiento, deportes, tecnología y las noticias que están llamando la atención.">
+  <meta name="keywords" content="tendencias México, tendencias hoy, qué es tendencia, temas virales México, búsquedas populares, noticias virales, Tendencias MX">
+  <meta name="robots" content="index, follow">  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/tendencias.html">  <meta property="og:title" content="Tendencias en México | Tendencias MX">
+  <meta property="og:description" content="Explora los temas, búsquedas y contenidos que están en tendencia en México.">
+  <meta property="og:type" content="website">  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #17202a;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #111827, #182c4a);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 18px rgba(0,0,0,.18);
+    }
+
+    .header-inner {
+      max-width: 1150px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -.5px;
+    }
+
+    .logo span {
+      color: #20c997;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #e9eef5;
+      font-size: 14px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #20c997;
+    }
+
+    /* HERO */
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(32,201,151,.18), transparent 35%),
+        linear-gradient(135deg, #101827, #1d3557);
+      color: white;
+      padding: 60px 20px 70px;
+    }
+
+    .hero-content {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(32,201,151,.14);
+      border: 1px solid rgba(32,201,151,.4);
+      color: #63e6be;
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 7vw, 62px);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #dce5ef;
+      font-size: 17px;
+    }
+
+    /* SEARCH */
+    .search-box {
+      max-width: 650px;
+      margin: 30px auto 0;
+      display: flex;
+      background: white;
+      border-radius: 14px;
+      padding: 6px;
+      box-shadow: 0 12px 35px rgba(0,0,0,.25);
+    }
+
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      color: #17202a;
+    }
+
+    .search-box button {
+      border: none;
+      background: #20c997;
+      color: #071a14;
+      font-weight: 900;
+      padding: 0 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* MAIN */
+    main {
+      max-width: 1150px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .section-title {
+      margin-bottom: 22px;
+    }
+
+    .section-title h2 {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .section-title p {
+      color: #66717d;
+    }
+
+    /* FILTERS */
+    .filters {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+
+    .filter {
+      flex: 0 0 auto;
+      border: 1px solid #d7dde4;
+      background: white;
+      color: #34404d;
+      padding: 10px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .filter:hover,
+    .filter.selected {
+      background: #20c997;
+      border-color: #20c997;
+      color: #062219;
+    }
+
+    /* GRID */
+    .trend-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .trend-card {
+      background: white;
+      border: 1px solid #e2e7ec;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 7px 20px rgba(20,35,50,.06);
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .trend-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 30px rgba(20,35,50,.12);
+    }
+
+    .trend-image {
+      height: 175px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 58px;
+      background: linear-gradient(135deg, #e9fdf6, #edf4ff);
+    }
+
+    .trend-content {
+      padding: 20px;
+    }
+
+    .category {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 900;
+      color: #087f5b;
+      background: #e6fcf5;
+      padding: 5px 9px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .trend-content h3 {
+      font-size: 20px;
+      line-height: 1.25;
+      margin-bottom: 9px;
+    }
+
+    .trend-content p {
+      color: #68737e;
+      font-size: 14px;
+    }
+
+    .trend-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #edf0f2;
+      color: #7b858f;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .trend-number {
+      color: #20a97d;
+    }
+
+    /* INFO */
+    .info-section {
+      margin-top: 55px;
+      background: #111827;
+      color: white;
+      border-radius: 22px;
+      padding: 35px;
+    }
+
+    .info-section h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .info-section p {
+      color: #cdd7e2;
+      max-width: 850px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0c111b;
+      color: #b7c1cc;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 30px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+      .header-inner {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .trend-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      .hero {
+        padding: 45px 18px 55px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .search-box {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .search-box button {
+        height: 48px;
+      }
+
+      main {
+        padding: 35px 15px;
+      }
+
+      .trend-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trend-image {
+        height: 150px;
+      }
+
+      .info-section {
+        padding: 25px;
+      }
+    }
+  </style></head><body><header>
+  <div class="header-inner"><a href="index.html" class="logo">
+  Tendencias<span>MX</span>
+</a>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="tendencias.html" class="active">Tendencias</a>
+  <a href="noticias.html">Noticias</a>
+  <a href="entretenimiento.html">Entretenimiento</a>
+</nav>
+
+  </div>
+</header><section class="hero">  <div class="hero-content"><div class="badge">🇲🇽 TENDENCIAS EN MÉXICO</div>
+
+<h1>¿Qué está en tendencia?</h1>
+
+<p>
+  Explora los temas, búsquedas, noticias y contenidos que están llamando
+  la atención en México.
+</p>
+
+<div class="search-box">
+  <input
+    type="search"
+    id="searchInput"
+    placeholder="Buscar una tendencia..."
+    aria-label="Buscar una tendencia"
+  >
+
+  <button onclick="buscarTendencia()">
+    Buscar
+  </button>
+</div>
+
+  </div></section><main>  <section><div class="section-title">
+  <h2>🔥 Tendencias de México</h2>
+  <p>Explora diferentes categorías y descubre nuevos temas.</p>
+</div>
+
+<div class="filters">
+
+  <button class="filter selected" onclick="filtrar('todos', this)">
+    Todas
+  </button>
+
+  <button class="filter" onclick="filtrar('viral', this)">
+    🔥 Viral
+  </button>
+
+  <button class="filter" onclick="filtrar('entretenimiento', this)">
+    🎬 Entretenimiento
+  </button>
+
+  <button class="filter" onclick="filtrar('deportes', this)">
+    ⚽ Deportes
+  </button>
+
+  <button class="filter" onclick="filtrar('tecnologia', this)">
+    📱 Tecnología
+  </button>
+
+  <button class="filter" onclick="filtrar('mexico', this)">
+    🇲🇽 México
+  </button>
+
+</div>
+
+<div class="trend-grid" id="trendGrid">
+
+  <article class="trend-card" data-category="viral" data-title="temas virales redes sociales">
+
+    <div class="trend-image">🔥</div>
+
+    <div class="trend-content">
+
+      <span class="category">Viral</span>
+
+      <h3>Temas que están dando de qué hablar</h3>
+
+      <p>
+        Descubre los contenidos y conversaciones que están llamando
+        la atención en redes sociales.
+      </p>
+
+      <div class="trend-footer">
+        <span>🔥 En tendencia</span>
+        <span class="trend-number">#01</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <article class="trend-card" data-category="entretenimiento" data-title="entretenimiento artistas musica television">
+
+    <div class="trend-image">🎬</div>
+
+    <div class="trend-content">
+
+      <span class="category">Entretenimiento</span>
+
+      <h3>Entretenimiento</h3>
+
+      <p>
+        Música, televisión, artistas, películas y otros temas
+        de entretenimiento que generan conversación.
+      </p>
+
+      <div class="trend-footer">
+        <span>🎬 Cultura pop</span>
+        <span class="trend-number">#02</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <article class="trend-card" data-category="deportes" data-title="deportes futbol mexico partidos">
+
+    <div class="trend-image">⚽</div>
+
+    <div class="trend-content">
+
+      <span class="category">Deportes</span>
+
+      <h3>Deportes en México</h3>
+
+      <p>
+        Conoce los temas deportivos que generan conversación
+        entre aficionados.
+      </p>
+
+      <div class="trend-footer">
+        <span>⚽ Deportes</span>
+        <span class="trend-number">#03</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <article class="trend-card" data-category="tecnologia" data-title="tecnologia inteligencia artificial aplicaciones internet">
+
+    <div class="trend-image">🤖</div>
+
+    <div class="trend-content">
+
+      <span class="category">Tecnología</span>
+
+      <h3>Tecnología e inteligencia artificial</h3>
+
+      <p>
+        Aplicaciones, inteligencia artificial, internet y novedades
+        tecnológicas que despiertan interés.
+      </p>
+
+      <div class="trend-footer">
+        <span>📱 Tecnología</span>
+        <span class="trend-number">#04</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <article class="trend-card" data-category="mexico" data-title="mexico ciudades cultura sociedad">
+
+    <div class="trend-image">🇲🇽</div>
+
+    <div class="trend-content">
+
+      <span class="category">México</span>
+
+      <h3>Lo que ocurre en México</h3>
+
+      <p>
+        Cultura, sociedad, ciudades y temas de interés nacional.
+      </p>
+
+      <div class="trend-footer">
+        <span>🇲🇽 México</span>
+        <span class="trend-number">#05</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <article class="trend-card" data-category="viral" data-title="redes sociales videos memes internet">
+
+    <div class="trend-image">📲</div>
+
+    <div class="trend-content">
+
+      <span class="category">Viral</span>
+
+      <h3>Lo más comentado en redes</h3>
+
+      <p>
+        Videos, memes, conversaciones y contenidos que se comparten
+        rápidamente en internet.
+      </p>
+
+      <div class="trend-footer">
+        <span>📲 Redes sociales</span>
+        <span class="trend-number">#06</span>
+      </div>
+
+    </div>
+
+  </article>
+
+</div>
+
+  </section>  <section class="info-section"><h2>Sobre las tendencias en México</h2>
+
+<p>
+  Tendencias MX reúne diferentes categorías de contenido para facilitar
+  la exploración de los temas que generan interés en México. Aquí podrás
+  descubrir tendencias, entretenimiento, deportes, tecnología y temas
+  relacionados con la cultura digital.
+</p>
+
+  </section></main><footer>  <p>
+    <strong>Tendencias MX</strong> · Explora lo que está pasando en México.
+  </p>  <p>
+    © 2026 Tendencias MX
+  </p></footer><script>
+
+  function filtrar(categoria, boton) {
+
+    const tarjetas = document.querySelectorAll(".trend-card");
+    const botones = document.querySelectorAll(".filter");
+
+    botones.forEach(btn => {
+      btn.classList.remove("selected");
+    });
+
+    boton.classList.add("selected");
+
+    tarjetas.forEach(tarjeta => {
+
+      if (categoria === "todos") {
+        tarjeta.style.display = "block";
+      } else if (tarjeta.dataset.category === categoria) {
+        tarjeta.style.display = "block";
+      } else {
+        tarjeta.style.display = "none";
+      }
+
+    });
+
+  }
+
+
+  function buscarTendencia() {
+
+    const input = document
+      .getElementById("searchInput")
+      .value
+      .toLowerCase()
+      .trim();
+
+    const tarjetas = document.querySelectorAll(".trend-card");
+
+    if (!input) {
+
+      tarjetas.forEach(tarjeta => {
+        tarjeta.style.display = "block";
+      });
+
+      return;
+    }
+
+    tarjetas.forEach(tarjeta => {
+
+      const texto =
+        tarjeta.dataset.title.toLowerCase() +
+        " " +
+        tarjeta.innerText.toLowerCase();
+
+      if (texto.includes(input)) {
+        tarjeta.style.display = "block";
+      } else {
+        tarjeta.style.display = "none";
+      }
+
+    });
+
+  }
+
+
+  document
+    .getElementById("searchInput")
+    .addEventListener("keydown", function(event) {
+
+      if (event.key === "Enter") {
+        buscarTendencia();
+      }
+
+    });
+
+</script></body>
+</html>

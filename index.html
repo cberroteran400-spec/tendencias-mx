@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TendenciaMX | Lo que México está buscando hoy</title>
+
+  <meta name="description" content="Descubre las tendencias de hoy en México: deportes, entretenimiento, tecnología, dinero, trámites y las búsquedas más populares. Información útil y actualizada para México.">
+
+  <meta name="keywords" content="tendencias México, tendencias de hoy, qué busca México, búsquedas populares, noticias México, deportes, entretenimiento, tecnología, dinero, trámites">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="author" content="TendenciaMX">
+
+  <link rel="canonical" href="https://TU-USUARIO.github.io/tendenciamx/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TendenciaMX | Lo que México está buscando hoy">
+  <meta property="og:description" content="Descubre las tendencias, temas populares y contenidos que están llamando la atención en México.">
+  <meta property="og:url" content="https://TU-USUARIO.github.io/tendenciamx/">
+  <meta property="og:site_name" content="TendenciaMX">
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TendenciaMX",
+    "url": "https://TU-USUARIO.github.io/tendenciamx/",
+    "description": "Tendencias, información y herramientas útiles para México.",
+    "inLanguage": "es-MX"
+  }
+  </script>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: white;
+      padding: 18px 16px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,.15);
+    }
+
+    .header-content {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .logo a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #22c55e;
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: #cbd5e1;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      margin-top: 15px;
+      padding-bottom: 3px;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      background: #374151;
+      padding: 9px 13px;
+      border-radius: 20px;
+      font-size: 13px;
+      white-space: nowrap;
+      transition: .2s;
+    }
+
+    nav a:hover {
+      background: #22c55e;
+      color: #052e16;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 15px 50px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: white;
+      border-radius: 22px;
+      padding: 30px 22px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.12);
+    }
+
+    .hero h1 {
+      font-size: 31px;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      max-width: 700px;
+      color: #f0fdf4;
+    }
+
+    .search-box {
+      background: white;
+      padding: 10px;
+      border-radius: 14px;
+      display: flex;
+      margin-top: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,.12);
+    }
+
+    .search-box input {
+      width: 100%;
+      border: 0;
+      outline: none;
+      padding: 12px;
+      font-size: 15px;
+    }
+
+    .search-box button {
+      border: 0;
+      background: #111827;
+      color: white;
+      border-radius: 10px;
+      padding: 0 18px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .section-title h2 {
+      font-size: 22px;
+    }
+
+    .section-title a {
+      color: #16a34a;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .trend-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .trend {
+      background: white;
+      border-radius: 15px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: #111827;
+      box-shadow: 0 3px 12px rgba(0,0,0,.06);
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .trend:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 18px rgba(0,0,0,.1);
+    }
+
+    .trend-number {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #dcfce7;
+      color: #15803d;
+      border-radius: 50%;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .trend-content {
+      flex: 1;
+    }
+
+    .trend-content h3 {
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+
+    .trend-content p {
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    .arrow {
+      color: #94a3b8;
+      font-size: 20px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .category {
+      background: white;
+      border-radius: 17px;
+      padding: 20px 15px;
+      text-decoration: none;
+      color: #111827;
+      box-shadow: 0 3px 12px rgba(0,0,0,.06);
+      transition: .2s;
+    }
+
+    .category:hover {
+      transform: translateY(-3px);
+    }
+
+    .category-icon {
+      font-size: 30px;
+      margin-bottom: 7px;
+    }
+
+    .category h3 {
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .category p {
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    .info {
+      background: white;
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.06);
+    }
+
+    .info h2 {
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      color: #475569;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #111827;
+      color: #cbd5e1;
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    footer p {
+      font-size: 13px;
+      margin-top: 7px;
+    }
+
+    @media (min-width: 700px) {
+
+      .categories {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .trend-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero {
+        padding: 45px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="header-content">
+
+    <div class="logo">
+      <div>
+        <a href="index.html">Tendencia<span>MX</span></a>
+        <div class="tagline">Lo que México está buscando hoy</div>
+      </div>
+    </div>
+
+    <nav aria-label="Navegación principal">
+
+      <a href="index.html">Inicio</a>
+
+      <a href="deportes.html">⚽ Deportes</a>
+
+      <a href="entretenimiento.html">🎬 Entretenimiento</a>
+
+      <a href="tecnologia.html">💻 Tecnología</a>
+
+      <a href="dinero.html">💰 Dinero</a>
+
+      <a href="tramites.html">🇲🇽 Trámites</a>
+
+      <a href="preguntas.html">❓ Preguntas</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+  <section class="hero">
+
+    <h1>¿Qué está buscando México hoy?</h1>
+
+    <p>
+      Descubre las tendencias, temas populares, deportes,
+      entretenimiento, tecnología, dinero y trámites que están
+      llamando la atención en México.
+    </p>
+
+    <div class="search-box">
+
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="¿Qué quieres buscar?"
+        aria-label="Buscar en TendenciaMX"
+      >
+
+      <button onclick="buscar()">
+        Buscar
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <div class="section-title">
+
+      <h2>🔥 Tendencias de hoy</h2>
+
+      <a href="#">Ver todas</a>
+
+    </div>
+
+    <div class="trend-list">
+
+      <a class="trend" href="deportes.html">
+
+        <div class="trend-number">1</div>
+
+        <div class="trend-content">
+
+          <h3>Lo más buscado en deportes</h3>
+
+          <p>Partidos, resultados, horarios y temas deportivos.</p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+
+      <a class="trend" href="entretenimiento.html">
+
+        <div class="trend-number">2</div>
+
+        <div class="trend-content">
+
+          <h3>Lo más buscado en entretenimiento</h3>
+
+          <p>Famosos, música, películas y series.</p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+
+      <a class="trend" href="tecnologia.html">
+
+        <div class="trend-number">3</div>
+
+        <div class="trend-content">
+
+          <h3>Temas de tecnología</h3>
+
+          <p>IA, celulares, aplicaciones y novedades.</p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+
+      <a class="trend" href="dinero.html">
+
+        <div class="trend-number">4</div>
+
+        <div class="trend-content">
+
+          <h3>Dinero y finanzas</h3>
+
+          <p>Dólar, peso mexicano, calculadoras y finanzas.</p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <div class="section-title">
+
+      <h2>📈 Lo más buscado</h2>
+
+    </div>
+
+    <div class="trend-list">
+
+      <a class="trend" href="dinero.html">
+
+        <div class="trend-number">1</div>
+
+        <div class="trend-content">
+
+          <h3>Dólar hoy en México</h3>
+
+          <p>Consulta información relacionada con el tipo de cambio.</p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+
+      <a class="trend" href="tramites.html">
+
+        <div class="trend-number">2</div>
+
+        <div class="trend-content">
+
+          <h3>Trámites y servicios en México</h3>
+
+          <p>Información útil sobre trámites y documentos.</p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+
+      <a class="trend" href="tecnologia.html">
+
+        <div class="trend-number">3</div>
+
+        <div class="trend-content">
+
+          <h3>Inteligencia artificial</h3>
+
+          <p>Herramientas, aplicaciones y novedades de IA.</p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+
+      <a class="trend" href="deportes.html">
+
+        <div class="trend-number">4</div>
+
+        <div class="trend-content">
+
+          <h3>Partidos y eventos deportivos</h3>
+
+          <p>Horarios, resultados y calendario.</p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <div class="section-title">
+
+      <h2>🚀 Lo que está subiendo</h2>
+
+    </div>
+
+    <div class="info">
+
+      <h2>Descubre nuevos temas</h2>
+
+      <p>
+        Esta sección estará diseñada para mostrar temas que están
+        aumentando rápidamente su interés entre las búsquedas de México.
+      </p>
+
+      <p>
+        La iremos conectando con datos reales y actualizados conforme
+        construyamos el sistema.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <div class="section-title">
+
+      <h2>📚 Explora por categoría</h2>
+
+    </div>
+
+    <div class="categories">
+
+      <a class="category" href="deportes.html">
+
+        <div class="category-icon">⚽</div>
+
+        <h3>Deportes</h3>
+
+        <p>Partidos, resultados, horarios y eventos.</p>
+
+      </a>
+
+
+      <a class="category" href="entretenimiento.html">
+
+        <div class="category-icon">🎬</div>
+
+        <h3>Entretenimiento</h3>
+
+        <p>Famosos, música, películas y series.</p>
+
+      </a>
+
+
+      <a class="category" href="tecnologia.html">
+
+        <div class="category-icon">💻</div>
+
+        <h3>Tecnología</h3>
+
+        <p>IA, celulares, apps y novedades.</p>
+
+      </a>
+
+
+      <a class="category" href="dinero.html">
+
+        <div class="category-icon">💰</div>
+
+        <h3>Dinero</h3>
+
+        <p>Dólar, finanzas y herramientas.</p>
+
+      </a>
+
+
+      <a class="category" href="tramites.html">
+
+        <div class="category-icon">🇲🇽</div>
+
+        <h3>Trámites</h3>
+
+        <p>Información y orientación para México.</p>
+
+      </a>
+
+
+      <a class="category" href="preguntas.html">
+
+        <div class="category-icon">❓</div>
+
+        <h3>Preguntas frecuentes</h3>
+
+        <p>Respuestas rápidas a preguntas comunes.</p>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <div class="info">
+
+      <h2>🇲🇽 TendenciaMX</h2>
+
+      <p>
+        TendenciaMX reúne temas populares, información útil y
+        herramientas para usuarios de México.
+      </p>
+
+      <p>
+        Nuestro objetivo es facilitar el acceso a información clara,
+        organizada y fácil de consultar desde cualquier dispositivo.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <strong>TendenciaMX</strong>
+
+  <p>
+    Tendencias e información útil para México.
+  </p>
+
+  <p>
+    © 2026 TendenciaMX
+  </p>
+
+</footer>
+
+
+<script>
+
+function buscar() {
+
+  const input = document
+    .getElementById("searchInput")
+    .value
+    .trim();
+
+  if (!input) {
+
+    alert("Escribe algo para buscar.");
+
+    return;
+
+  }
+
+  alert(
+    "La búsqueda de \"" +
+    input +
+    "\" estará disponible cuando terminemos el buscador."
+  );
+
+}
+
+document
+  .getElementById("searchInput")
+  .addEventListener("keydown", function(event) {
+
+    if (event.key === "Enter") {
+
+      buscar();
+
+    }
+
+  });
+
+</script>
+
+</body>
+</html>
