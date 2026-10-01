@@ -1,8 +1,14 @@
-<!DOCTYPE html><html lang="es-MX">
+<!DOCTYPE html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Entretenimiento | TendenciasMX</title><meta name="description" content="Noticias de cine, televisión, música, famosos, videojuegos y tendencias de entretenimiento.">
-<meta name="keywords" content="cine, películas, series, música, famosos, celebridades, videojuegos, entretenimiento, México"><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Entretenimiento | TendenciasMX</title>
+<meta name="description" content="Noticias de cine, televisión, música, famosos, videojuegos y tendencias en México y el mundo.">
+<meta name="keywords" content="entretenimiento, cine, televisión, música, famosos, videojuegos, tendencias, noticias">
+
+<style>
 *{
     box-sizing:border-box;
     margin:0;
@@ -11,563 +17,569 @@
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:#0b0f14;
-    color:#fff;
+    background:#f4f6f8;
+    color:#171717;
 }
 
 header{
-    background:linear-gradient(135deg,#111923,#172331);
-    padding:25px 15px;
-    text-align:center;
-    border-bottom:1px solid #263545;
+    background:#111827;
+    color:white;
+    padding:18px 15px;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
 }
 
-header h1{
+.header-content{
+    max-width:1100px;
+    margin:auto;
+}
+
+.logo{
+    font-size:27px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#22c55e;
+}
+
+.subtitle{
+    font-size:13px;
+    color:#cbd5e1;
+    margin-top:4px;
+}
+
+nav{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    margin-top:15px;
+    padding-bottom:3px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    background:#1f2937;
+    padding:9px 13px;
+    border-radius:20px;
+    font-size:13px;
+    white-space:nowrap;
+}
+
+nav a:hover{
+    background:#22c55e;
+    color:#111827;
+}
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:25px 15px 50px;
+}
+
+h1{
     font-size:30px;
     margin-bottom:8px;
 }
 
-header p{
-    color:#aebdcc;
+.descripcion{
+    color:#64748b;
+    margin-bottom:22px;
+    line-height:1.5;
 }
 
-.menu{
+.filtros{
     display:flex;
     gap:8px;
     overflow-x:auto;
-    padding:15px;
-    background:#10161d;
-    position:sticky;
-    top:0;
-    z-index:10;
+    margin-bottom:25px;
+    padding-bottom:5px;
 }
 
-.menu button{
-    border:1px solid #2c3b4b;
-    background:#18222d;
-    color:#fff;
-    padding:10px 14px;
-    border-radius:20px;
+.filtros button{
+    border:none;
+    background:#e2e8f0;
+    color:#1e293b;
+    padding:10px 15px;
+    border-radius:22px;
     cursor:pointer;
+    font-weight:700;
     white-space:nowrap;
-    font-size:14px;
 }
 
-.menu button.activo{
-    background:#65ff9a;
-    color:#07110b;
-    border-color:#65ff9a;
-    font-weight:bold;
-}
-
-.contenedor{
-    max-width:1100px;
-    margin:auto;
-    padding:20px 15px 50px;
-}
-
-.titulo-seccion{
-    margin-bottom:18px;
-}
-
-.titulo-seccion h2{
-    font-size:24px;
-    margin-bottom:5px;
-}
-
-.titulo-seccion p{
-    color:#9ba9b7;
+.filtros button.activo,
+.filtros button:hover{
+    background:#22c55e;
+    color:#07130b;
 }
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-    gap:18px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
 .card{
-    background:#121a23;
-    border:1px solid #253442;
+    background:white;
     border-radius:15px;
     overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
     transition:.2s;
 }
 
 .card:hover{
     transform:translateY(-3px);
-    border-color:#65ff9a;
+    box-shadow:0 8px 22px rgba(0,0,0,.12);
 }
 
 .card-img{
     width:100%;
     height:180px;
-    background:#1a2530;
+    background:#e5e7eb;
     display:flex;
     align-items:center;
     justify-content:center;
     overflow:hidden;
+    position:relative;
 }
 
 .card-img img{
     width:100%;
-    height:180px;
+    height:100%;
     object-fit:cover;
     display:block;
 }
 
-.card-contenido{
-    padding:16px;
+.fallback{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    background:linear-gradient(135deg,#111827,#334155);
+}
+
+.card-content{
+    padding:17px;
 }
 
 .categoria{
     display:inline-block;
-    font-size:12px;
-    color:#65ff9a;
-    margin-bottom:8px;
-    font-weight:bold;
+    font-size:11px;
+    font-weight:800;
+    color:#15803d;
+    background:#dcfce7;
+    padding:5px 9px;
+    border-radius:15px;
+    margin-bottom:10px;
+    text-transform:uppercase;
 }
 
-.card h3{
-    font-size:18px;
-    line-height:1.35;
-    margin-bottom:10px;
+.card h2{
+    font-size:19px;
+    line-height:1.3;
+    margin-bottom:9px;
 }
 
 .card p{
-    color:#aeb9c4;
+    color:#64748b;
     font-size:14px;
-    line-height:1.5;
-    margin-bottom:15px;
+    line-height:1.45;
 }
 
-.card a{
-    display:inline-block;
-    text-decoration:none;
-    color:#07110b;
-    background:#65ff9a;
-    padding:9px 13px;
-    border-radius:8px;
-    font-size:13px;
-    font-weight:bold;
+.fecha{
+    margin-top:12px;
+    font-size:12px;
+    color:#94a3b8;
 }
 
 .vacio{
     text-align:center;
-    color:#8f9eac;
-    padding:40px 10px;
+    padding:50px 20px;
+    color:#64748b;
+    background:white;
+    border-radius:15px;
 }
 
 footer{
+    background:#111827;
+    color:#94a3b8;
     text-align:center;
-    padding:25px;
-    color:#72808d;
-    border-top:1px solid #1e2a35;
+    padding:25px 15px;
+    font-size:13px;
 }
-</style></head><body><header>
-    <h1>🎬 Entretenimiento</h1>
-    <p>Cine, TV, música, famosos, videojuegos y tendencias</p>
-</header><nav class="menu"><button class="activo" onclick="mostrar('todos',this)">
-    Todo
-</button>
 
-<button onclick="mostrar('cine_tv',this)">
-    🎬 Cine y TV
-</button>
+@media(max-width:600px){
+    h1{
+        font-size:25px;
+    }
 
-<button onclick="mostrar('musica',this)">
-    🎵 Música
-</button>
+    .grid{
+        grid-template-columns:1fr;
+    }
 
-<button onclick="mostrar('famosos',this)">
-    ⭐ Famosos
-</button>
+    .card-img{
+        height:200px;
+    }
+}
+</style>
+</head>
 
-<button onclick="mostrar('videojuegos',this)">
-    🎮 Videojuegos
-</button>
+<body>
 
-<button onclick="mostrar('tendencias',this)">
-    🔥 Tendencias
-</button>
+<header>
+    <div class="header-content">
 
-</nav><main class="contenedor"><div class="titulo-seccion">
-    <h2 id="titulo">Últimas noticias de entretenimiento</h2>
-    <p id="contador"></p>
-</div>
+        <div class="logo">
+            Tendencias<span>MX</span>
+        </div>
 
-<div id="noticias" class="grid"></div>
+        <div class="subtitle">
+            Noticias, tendencias y actualidad
+        </div>
 
-</main><footer>
-    © 2026 TendenciasMX
-</footer><script>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="deportes.html">Deportes</a>
+            <a href="entretenimiento.html">Entretenimiento</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <h1>Entretenimiento</h1>
+
+    <p class="descripcion">
+        Las noticias más recientes de cine, televisión, música,
+        famosos, videojuegos y tendencias.
+    </p>
+
+    <div class="filtros">
+
+        <button class="activo" onclick="mostrar('todos',this)">
+            Todos
+        </button>
+
+        <button onclick="mostrar('cine_tv',this)">
+            🎬 Cine y TV
+        </button>
+
+        <button onclick="mostrar('musica',this)">
+            🎵 Música
+        </button>
+
+        <button onclick="mostrar('famosos',this)">
+            ⭐ Famosos
+        </button>
+
+        <button onclick="mostrar('videojuegos',this)">
+            🎮 Videojuegos
+        </button>
+
+        <button onclick="mostrar('tendencias',this)">
+            🔥 Tendencias
+        </button>
+
+    </div>
+
+    <div id="contenedor" class="grid"></div>
+
+</main>
+
+<footer>
+    © 2026 TendenciasMX · Noticias y entretenimiento
+</footer>
+
+<script>
 
 const noticias = [
 
     /* =========================
-       🎬 CINE Y TV
-       ========================= */
+       CINE Y TV
+    ========================== */
 
     {
         categoria:"cine_tv",
-        titulo:"Brad Pitt regresa a su papel como Cliff Booth y ya hay primer tráiler",
-        descripcion:"Las nuevas desventuras de Cliff Booth trae de vuelta al personaje interpretado por Brad Pitt en una nueva historia ambientada en Hollywood.",
-        fuente:"Life and Style / Expansión",
-        fecha:"21 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/noticias-cine-y-tv/2026/09/21/brad-pitt-regresa-a-su-papel-como-cliff-booth-y-ya-hay-primer-trailer",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/81bf4ff/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F60%2F81%2F588481cd4717b3482ab3725b4503%2Flas-nuevas-desventuras-de-cliff-booth-pelicula-brad-pitt-1.png"
+        titulo:"Brad Pitt regresa como Cliff Booth en una nueva aventura",
+        descripcion:"El personaje de Cliff Booth vuelve a la pantalla en una nueva producción relacionada con el universo de Quentin Tarantino.",
+        fecha:"21 de septiembre de 2026",
+        emoji:"🎬",
+        imagen:"https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=85"
     },
 
     {
         categoria:"cine_tv",
-        titulo:"Los Harrigan están de vuelta en MobLand",
-        descripcion:"Helen Mirren y Pierce Brosnan hablaron sobre la segunda temporada de MobLand y sus personajes.",
-        fuente:"Life and Style / Expansión",
-        fecha:"20 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/noticias-cine-y-tv/2026/09/20/mobland-temporada-2-helen-mirren-pierce-brosnan",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/9d9dc37/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F33%2F9c%2Fe0cc40034e769c682ab4e79e942e%2Fhelen-mirren-pierce-brosnan-mobland-entrevista.png"
-    },
-
-    {
-        categoria:"cine_tv",
-        titulo:"Qué ver en cine y streaming durante septiembre",
-        descripcion:"Entre los estrenos destacan Hechizo de Amor 2, Resident Evil, Mal de amores, The Mandalorian & Grogu y Toy Story 5.",
-        fuente:"Life and Style / Expansión",
-        fecha:"1 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/noticias-cine-y-tv/2026/09/01/que-ver-en-septiembre-los-estrenos-de-cine-y-streaming-que-no-te-puedes-perder",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/6e6b9a4/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F9e%2F89%2F3d4e9a3e4d1e0e7a6f0f5e3c5e8f%2Festrenos-cine-streaming-septiembre.png"
-    },
-
-    {
-        categoria:"cine_tv",
-        titulo:"La evolución de los zombis en el cine y la televisión",
-        descripcion:"Un recorrido por la evolución de los zombis desde las primeras películas hasta producciones como Resident Evil.",
-        fuente:"Life and Style / Expansión",
-        fecha:"23 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/noticias-cine-y-tv/2026/09/23/evolucion-zombis-cine-series-white-zombie-resident-evil",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/9a2e2a6/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3a%2F8e%2F7d1e5a0e7b9d5f3e4a2c6f8e9d1a%2Fevolucion-zombis-cine-series.png"
+        titulo:"Los estrenos de cine y televisión que están dando de qué hablar",
+        descripcion:"Nuevas películas y producciones televisivas llegan a las plataformas y salas durante esta temporada.",
+        fecha:"28 de septiembre de 2026",
+        emoji:"📺",
+        imagen:"https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=900&q=85"
     },
 
 
     /* =========================
-       🎵 MÚSICA
-       ========================= */
+       MÚSICA
+    ========================== */
 
     {
         categoria:"musica",
-        titulo:"Taylor Swift se convierte en la artista más galardonada de los MTV VMAs",
-        descripcion:"La cantante hizo historia durante los MTV Video Music Awards 2026 al superar el récord de Beyoncé.",
-        fuente:"Life and Style / Expansión",
-        fecha:"28 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/28/taylor-swift-la-artista-mas-galardonada-de-mtv-vmas",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/e2625dc/2147483647/strip/true/crop/3647x2431%2B0%2B0/resize/1200x800%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6f%2Fe6%2F0464b6744dde90f0f4efc71b230c%2Ftaylor-swift-mtv-vmas.jpg"
+        titulo:"Taylor Swift vuelve a estar en el centro de la conversación musical",
+        descripcion:"La cantante estadounidense continúa generando atención entre sus seguidores y la industria musical.",
+        fecha:"28 de septiembre de 2026",
+        emoji:"🎤",
+        imagen:"https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=900&q=85"
     },
 
     {
         categoria:"musica",
-        titulo:"Fuerza Regida anuncia conciertos en México para 2027",
-        descripcion:"La agrupación regresará a la Ciudad de México con su THIS IS OUR DREAM TOUR.",
-        fuente:"Life and Style / Expansión",
-        fecha:"29 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/29/fuerza-regida-cdmx-2027-fechas-boletos-preventa",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/73e8321/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F42%2F84%2F135256664debb396df97608bcbca%2Ffuerza-regida-traera-su-musica-a-la-ciudad-de-mexico-en-concierto.png"
+        titulo:"Fuerza Regida mantiene su presencia en la música mexicana",
+        descripcion:"El grupo continúa destacando dentro de la escena musical y entre las tendencias de los últimos meses.",
+        fecha:"27 de septiembre de 2026",
+        emoji:"🎶",
+        imagen:"https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=85"
     },
 
     {
         categoria:"musica",
-        titulo:"Niall Horan vuelve a México con nuevos conciertos",
-        descripcion:"El cantante irlandés anunció presentaciones en Ciudad de México y Guadalajara como parte de su nueva gira.",
-        fuente:"Life and Style / Expansión",
-        fecha:"28 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/28/niall-horan-conciertos-mexico-fechas",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/64a69fc/2147483647/strip/true/crop/3392x2415%2B0%2B0/resize/1200x854%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc2%2F50%2Fca5ee5c7454390b3b6a162a987f9%2Fniall-horan-conciertos-cdmx.jpg"
+        titulo:"Niall Horan prepara nuevos proyectos musicales",
+        descripcion:"El cantante continúa trabajando en nueva música mientras mantiene su actividad internacional.",
+        fecha:"26 de septiembre de 2026",
+        emoji:"🎧",
+        imagen:"https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=85"
     },
 
     {
         categoria:"musica",
-        titulo:"Interpol anuncia tres conciertos en México para 2027",
-        descripcion:"La banda confirmó fechas en Guadalajara, Ciudad de México y Monterrey.",
-        fuente:"Life and Style / Expansión",
-        fecha:"18 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/18/interpol-conciertos-mexico-2027",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/bc991b3/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6d%2Fea%2F53bbf04d495caf29b1ea85a3e613%2Finterpol-concierto.png"
-    },
-
-    {
-        categoria:"musica",
-        titulo:"El Malilla: el artista urbano que impulsa una nueva generación",
-        descripcion:"Life and Style presenta la trayectoria del artista mexicano y su crecimiento dentro del reggaetón.",
-        fuente:"Life and Style / Expansión",
-        fecha:"21 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/noticias-musica/2026/09/21/el-malilla-quien-es",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/6f1e1e7/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3c%2F75%2F2a5a4d1d4b6b8a3c2e1f9a7b5d6e%2Fel-malilla-artista-urbano.png"
+        titulo:"Interpol continúa conectando con sus seguidores",
+        descripcion:"La agrupación mantiene su actividad musical y su presencia dentro de la escena alternativa internacional.",
+        fecha:"25 de septiembre de 2026",
+        emoji:"🎸",
+        imagen:"https://images.unsplash.com/photo-1524650359799-842906ca1c06?auto=format&fit=crop&w=900&q=85"
     },
 
 
     /* =========================
-       ⭐ FAMOSOS
-       ========================= */
+       FAMOSOS
+    ========================== */
 
     {
         categoria:"famosos",
-        titulo:"La herencia de Chadwick Boseman continúa en disputa",
-        descripcion:"La administración del patrimonio del actor vuelve a enfrentar una disputa judicial entre familiares.",
-        fuente:"Life and Style / Expansión",
-        fecha:"27 septiembre 2026",
-        url:"https://lifeandstyle.expansion.mx/entretenimiento/2026/09/27/herencia-chadwick-boseman-viuda-pago-millones-disputa",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/fe5df82/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F15%2Ff3%2F0c03108f4f7d903148ef877512a2%2Fchadwick-boseman-herencia-disputa.png"
+        titulo:"Celebridades que vuelven a ser tendencia en redes sociales",
+        descripcion:"Distintas figuras del entretenimiento están generando conversación entre sus seguidores.",
+        fecha:"28 de septiembre de 2026",
+        emoji:"⭐",
+        imagen:"https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=900&q=85"
     },
 
     {
         categoria:"famosos",
-        titulo:"Margot Robbie y Ryan Gosling: el futuro de Barbie 2",
-        descripcion:"La posible secuela de Barbie continúa rodeada de negociaciones relacionadas con sus protagonistas y el estudio.",
-        fuente:"Life and Style / Expansión",
-        fecha:"7 agosto 2026",
-        url:"https://lifeandstyle.expansion.mx/entretenimiento/2026/08/07/barbie-margot-robbie-ryan-gosling-secuela-warner",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/9ea32ad/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F88%2F32%2Fc9ccc43341b89456ddcfe2a28822%2Fbarbie-margot-robbie-y-ryan-gosling.png"
-    },
-
-    {
-        categoria:"famosos",
-        titulo:"Los famosos que estuvieron en la inauguración del Mundial 2026",
-        descripcion:"Diversas celebridades estuvieron presentes durante la ceremonia inaugural del Mundial en México.",
-        fuente:"Life and Style / Expansión",
-        fecha:"11 junio 2026",
-        url:"https://lifeandstyle.expansion.mx/entretenimiento/2026/06/11/famosos-presentes-inauguracion-mundial-2026",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/de1f0ae/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F50%2Fca%2F5d9adf704a52bee9d2d55b237a80%2Ffamosos-inauguracion-mundial-2026.jpg"
+        titulo:"La industria recuerda a grandes figuras del entretenimiento",
+        descripcion:"Actores y artistas continúan siendo recordados por sus trabajos y aportaciones a la cultura popular.",
+        fecha:"27 de septiembre de 2026",
+        emoji:"🌟",
+        imagen:"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=85"
     },
 
 
     /* =========================
-       🎮 VIDEOJUEGOS
-       ========================= */
+       VIDEOJUEGOS
+    ========================== */
 
     {
         categoria:"videojuegos",
-        titulo:"Estos son los grandes lanzamientos de videojuegos de la semana",
-        descripcion:"La semana del 28 de septiembre al 4 de octubre trae lanzamientos para PS5, Xbox, PC, Nintendo Switch y Switch 2.",
-        fuente:"MeriStation",
-        fecha:"28 septiembre 2026",
-        url:"https://as.com/meristation/noticias/los-lanzamientos-de-videojuegos-mas-destacados-de-la-semana-del-28-de-septiembre-al-4-de-octubre-2026-para-ps5-switch-pc-steam-y-xbox-f202609-n/",
-        imagen:"https://img.asmedia.epimg.net/resizer/v2/https%3A%2F%2Fas.com%2Fmeristation%2Fimagenes%2F2026%2F09%2F28%2Fnoticias%2F1759037418_000000_1759037418_noticia_normal_recorte1.jpg?auth=example"
+        titulo:"Los videojuegos que están llamando la atención de los jugadores",
+        descripcion:"La industria prepara nuevos lanzamientos y actualizaciones que mantienen ocupada a la comunidad gamer.",
+        fecha:"28 de septiembre de 2026",
+        emoji:"🎮",
+        imagen:"https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=85"
     },
 
     {
         categoria:"videojuegos",
-        titulo:"The Witcher 3, Minecraft Dungeons II y Ace Combat 8 destacan entre los lanzamientos",
-        descripcion:"Varios títulos importantes llegan durante esta semana a distintas plataformas.",
-        fuente:"MeriStation",
-        fecha:"28 septiembre 2026",
-        url:"https://as.com/meristation/noticias/los-lanzamientos-de-videojuegos-mas-destacados-de-la-semana-del-28-de-septiembre-al-4-de-octubre-2026-para-ps5-switch-pc-steam-y-xbox-f202609-n/",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/7a8e9f2/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff1%2F5d%2F7c9a2e4b6d8f0a1c3e5b7d9f%2Fvideojuegos-2026.png"
-    },
-
-    {
-        categoria:"videojuegos",
-        titulo:"Marvel's Wolverine y Silent Hill: Townfall destacaron entre los videojuegos de septiembre",
-        descripcion:"Septiembre tuvo un calendario cargado de nuevos videojuegos y grandes franquicias.",
-        fuente:"MeriStation",
-        fecha:"1 septiembre 2026",
-        url:"https://as.com/meristation/noticias/lanzamientos-de-videojuegos-mas-destacados-para-septiembre-de-2026-playstation-xbox-pc-steam-y-nintendo-switch-f202609-n/",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/4c7e2a1/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F8e%2F4c%2F2a6b1d9f3e7c5a8b2d4f6e9a%2Fvideojuegos-septiembre-2026.png"
+        titulo:"The Witcher 3 continúa siendo uno de los RPG más recordados",
+        descripcion:"El juego de CD Projekt RED mantiene una importante comunidad de jugadores años después de su lanzamiento.",
+        fecha:"27 de septiembre de 2026",
+        emoji:"⚔️",
+        imagen:"https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=85"
     },
 
 
     /* =========================
-       🔥 TENDENCIAS
-       ========================= */
+       TENDENCIAS
+    ========================== */
 
     {
         categoria:"tendencias",
-        titulo:"El entretenimiento sigue transformándose con nuevas experiencias digitales",
-        descripcion:"La industria combina cine, música, videojuegos y nuevas formas de consumo de contenido.",
-        fuente:"TendenciasMX",
-        fecha:"2026",
-        url:"#",
-        imagen:"https://cdn-3.expansion.mx/dims4/default/08f02c9/2147483647/strip/true/crop/784x442%2B0%2B0/resize/1200x677%21/format/webp/quality/70/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F5e%2Fe9%2F4a8de26c4769a2272f86fb18b21e%2Finstagram-estrena-nuevo-logo-y-tipografia.png"
+        titulo:"Las tendencias que están dominando las conversaciones en internet",
+        descripcion:"Temas de cultura, entretenimiento y redes sociales están generando millones de interacciones.",
+        fecha:"28 de septiembre de 2026",
+        emoji:"🔥",
+        imagen:"https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=85"
     },
 
     {
         categoria:"tendencias",
-        titulo:"La cultura pop conecta cada vez más cine, música y videojuegos",
-        descripcion:"Las grandes franquicias continúan expandiéndose entre diferentes formatos de entretenimiento.",
-        fuente:"TendenciasMX",
-        fecha:"2026",
-        url:"#",
-        imagen:"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80"
+        titulo:"Lo que las redes sociales están convirtiendo en tendencia",
+        descripcion:"Videos, celebridades y temas virales continúan marcando la conversación digital.",
+        fecha:"26 de septiembre de 2026",
+        emoji:"📱",
+        imagen:"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
     }
 
 ];
 
 
-/* ==========================================
-   NOMBRES DE LAS CATEGORÍAS
-   ========================================== */
-
-const nombres = {
-
-    todos:"Últimas noticias de entretenimiento",
-
-    cine_tv:"Noticias de Cine y TV",
-
-    musica:"Noticias de Música",
-
-    famosos:"Noticias de Famosos",
-
-    videojuegos:"Noticias de Videojuegos",
-
-    tendencias:"Tendencias de entretenimiento"
-
-};
-
-
-/* ==========================================
+/* =====================================
    MOSTRAR NOTICIAS
-   ========================================== */
+===================================== */
 
 function mostrar(categoria, boton){
 
-    const contenedor = document.getElementById("noticias");
+    const contenedor = document.getElementById("contenedor");
 
-    const titulo = document.getElementById("titulo");
+    if(boton){
 
-    const contador = document.getElementById("contador");
+        document
+        .querySelectorAll(".filtros button")
+        .forEach(btn => btn.classList.remove("activo"));
 
-
-    let filtradas;
-
-    if(categoria === "todos"){
-
-        filtradas = noticias;
-
-    }else{
-
-        filtradas = noticias.filter(
-            noticia => noticia.categoria === categoria
-        );
-
+        boton.classList.add("activo");
     }
 
+    let lista;
 
-    titulo.textContent = nombres[categoria];
+    if(categoria === "todos"){
+        lista = noticias;
+    }else{
+        lista = noticias.filter(
+            noticia => noticia.categoria === categoria
+        );
+    }
 
-    contador.textContent =
-        filtradas.length +
-        (filtradas.length === 1 ? " noticia" : " noticias");
-
-
-    contenedor.innerHTML = "";
-
-
-    if(filtradas.length === 0){
+    if(lista.length === 0){
 
         contenedor.innerHTML = `
             <div class="vacio">
-                No hay noticias en esta categoría todavía.
+                <h2>No hay noticias disponibles</h2>
+                <p>Pronto agregaremos más contenido.</p>
             </div>
         `;
 
         return;
     }
 
+    contenedor.innerHTML = lista.map(noticia => `
 
-    filtradas.forEach(noticia => {
-
-        const tarjeta = document.createElement("article");
-
-        tarjeta.className = "card";
-
-
-        tarjeta.innerHTML = `
+        <article class="card">
 
             <div class="card-img">
+
                 <img
                     src="${noticia.imagen}"
-                    alt="${noticia.titulo}"
+                    alt="${escapeHTML(noticia.titulo)}"
                     loading="lazy"
-                    onerror="this.style.display='none'; this.parentElement.innerHTML='📰';"
+                    onerror="mostrarFallback(this,'${noticia.emoji}')"
                 >
+
             </div>
 
-            <div class="card-contenido">
+            <div class="card-content">
 
                 <span class="categoria">
                     ${nombreCategoria(noticia.categoria)}
                 </span>
 
-                <h3>
-                    ${noticia.titulo}
-                </h3>
+                <h2>
+                    ${escapeHTML(noticia.titulo)}
+                </h2>
 
                 <p>
-                    ${noticia.descripcion}
+                    ${escapeHTML(noticia.descripcion)}
                 </p>
 
-                <p style="font-size:12px;color:#73818e;">
-                    ${noticia.fuente} · ${noticia.fecha}
-                </p>
-
-                <a
-                    href="${noticia.url}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Leer noticia
-                </a>
+                <div class="fecha">
+                    ${escapeHTML(noticia.fecha)}
+                </div>
 
             </div>
 
-        `;
+        </article>
 
-
-        contenedor.appendChild(tarjeta);
-
-    });
-
-
-    document
-        .querySelectorAll(".menu button")
-        .forEach(b => b.classList.remove("activo"));
-
-
-    boton.classList.add("activo");
-
+    `).join("");
 }
 
 
-/* ==========================================
-   NOMBRE VISIBLE DE CATEGORÍA
-   ========================================== */
+/* =====================================
+   NOMBRE DE CATEGORÍA
+===================================== */
 
 function nombreCategoria(categoria){
 
-    const nombresCategorias = {
+    const nombres = {
 
-        cine_tv:"🎬 Cine y TV",
+        cine_tv:"Cine y TV",
 
-        musica:"🎵 Música",
+        musica:"Música",
 
-        famosos:"⭐ Famosos",
+        famosos:"Famosos",
 
-        videojuegos:"🎮 Videojuegos",
+        videojuegos:"Videojuegos",
 
-        tendencias:"🔥 Tendencias"
+        tendencias:"Tendencias"
 
     };
 
-    return nombresCategorias[categoria] || "";
-
+    return nombres[categoria] || "Entretenimiento";
 }
 
 
-/* ==========================================
-   CARGAR TODAS AL ENTRAR
-   ========================================== */
+/* =====================================
+   IMAGEN DE RESPALDO
+===================================== */
 
-mostrar(
-    "todos",
-    document.querySelector(".menu button")
-);
+function mostrarFallback(img, emoji){
 
-</script></body>
+    const contenedor = img.parentElement;
+
+    img.remove();
+
+    contenedor.innerHTML = `
+        <div class="fallback">
+            ${emoji || "📰"}
+        </div>
+    `;
+}
+
+
+/* =====================================
+   SEGURIDAD PARA TEXTO
+===================================== */
+
+function escapeHTML(text){
+
+    return String(text)
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+}
+
+
+/* =====================================
+   CARGAR AL INICIAR
+===================================== */
+
+mostrar("todos", document.querySelector(".filtros button"));
+
+</script>
+
+</body>
 </html>
