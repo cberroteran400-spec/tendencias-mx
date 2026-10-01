@@ -1,1048 +1,766 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tecnología | Tendencias MX</title>
+<title>Tecnología | TendenciasMX</title>
 
-  <meta name="description" content="Las últimas tendencias de tecnología en México y el mundo. Inteligencia artificial, celulares, aplicaciones, videojuegos, gadgets e innovación en Tendencias MX.">
-  <meta name="keywords" content="tecnología, noticias tecnología, inteligencia artificial, IA, celulares, aplicaciones, gadgets, videojuegos, innovación, tecnología México">
-  <meta name="author" content="Tendencias MX">
-  <meta name="robots" content="index, follow">
+<meta name="description" content="Noticias de tecnología, inteligencia artificial, gadgets, aplicaciones, redes sociales, ciberseguridad y tecnología en México.">
 
-  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/tecnologia.html">
+<meta name="keywords" content="tecnología, inteligencia artificial, IA, gadgets, celulares, aplicaciones, redes sociales, ciberseguridad, México">
 
-  <meta property="og:title" content="Tecnología | Tendencias MX">
-  <meta property="og:description" content="Tecnología, inteligencia artificial, celulares, aplicaciones, gadgets e innovación.">
-  <meta property="og:type" content="website">
+<style>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f6f8;
+    color:#171717;
+}
+
+header{
+    background:#111827;
+    color:white;
+    padding:18px 15px;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.header-content{
+    max-width:1100px;
+    margin:auto;
+}
+
+.logo{
+    font-size:27px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#22c55e;
+}
+
+.subtitle{
+    font-size:13px;
+    color:#cbd5e1;
+    margin-top:4px;
+}
+
+nav{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    margin-top:15px;
+    padding-bottom:3px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    background:#1f2937;
+    padding:9px 13px;
+    border-radius:20px;
+    font-size:13px;
+    white-space:nowrap;
+}
+
+nav a:hover{
+    background:#22c55e;
+    color:#111827;
+}
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:25px 15px 50px;
+}
+
+h1{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.descripcion{
+    color:#64748b;
+    margin-bottom:22px;
+    line-height:1.5;
+}
+
+.filtros{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    margin-bottom:25px;
+    padding-bottom:5px;
+}
+
+.filtros button{
+    border:none;
+    background:#e2e8f0;
+    color:#1e293b;
+    padding:10px 15px;
+    border-radius:22px;
+    cursor:pointer;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.filtros button.activo,
+.filtros button:hover{
+    background:#22c55e;
+    color:#07130b;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 22px rgba(0,0,0,.12);
+}
+
+.card-img{
+    width:100%;
+    height:180px;
+    background:#e5e7eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.card-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.fallback{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    background:linear-gradient(135deg,#111827,#334155);
+}
+
+.card-content{
+    padding:17px;
+}
+
+.categoria{
+    display:inline-block;
+    font-size:11px;
+    font-weight:800;
+    color:#15803d;
+    background:#dcfce7;
+    padding:5px 9px;
+    border-radius:15px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+
+.card h2{
+    font-size:19px;
+    line-height:1.3;
+    margin-bottom:9px;
+}
+
+.card p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.45;
+}
+
+.fecha{
+    margin-top:12px;
+    font-size:12px;
+    color:#94a3b8;
+}
+
+.vacio{
+    text-align:center;
+    padding:50px 20px;
+    color:#64748b;
+    background:white;
+    border-radius:15px;
+}
+
+footer{
+    background:#111827;
+    color:#94a3b8;
+    text-align:center;
+    padding:25px 15px;
+    font-size:13px;
+}
+
+@media(max-width:600px){
+
+    h1{
+        font-size:25px;
     }
 
-    html {
-      scroll-behavior: smooth;
+    .grid{
+        grid-template-columns:1fr;
     }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #07111f;
-      color: #fff;
-      min-height: 100vh;
+    .card-img{
+        height:200px;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+}
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(5, 12, 24, 0.96);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      backdrop-filter: blur(12px);
-    }
-
-    .header-container {
-      max-width: 1200px;
-      min-height: 70px;
-      margin: auto;
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .logo {
-      font-size: 25px;
-      font-weight: 900;
-      letter-spacing: -1px;
-      white-space: nowrap;
-    }
-
-    .logo span {
-      color: #35e875;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      padding: 10px 13px;
-      border-radius: 9px;
-      color: #dce5ef;
-      font-size: 14px;
-      font-weight: 700;
-      transition: 0.2s;
-    }
-
-    nav a:hover,
-    nav a.active {
-      background: #35e875;
-      color: #06111d;
-    }
-
-    /* HERO */
-
-    .hero {
-      max-width: 1200px;
-      margin: auto;
-      padding: 65px 20px 35px;
-    }
-
-    .hero-box {
-      position: relative;
-      overflow: hidden;
-      padding: 45px 30px;
-      border-radius: 24px;
-      border: 1px solid rgba(255,255,255,0.08);
-      background:
-        radial-gradient(circle at 85% 20%, rgba(53,232,117,0.20), transparent 30%),
-        linear-gradient(135deg, #10243a, #08111f);
-    }
-
-    .hero-label {
-      color: #35e875;
-      font-size: 14px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      margin-bottom: 15px;
-    }
-
-    .hero h1 {
-      font-size: clamp(38px, 7vw, 70px);
-      line-height: 0.98;
-      max-width: 800px;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 span {
-      color: #35e875;
-    }
-
-    .hero p {
-      color: #b9c6d5;
-      font-size: 17px;
-      line-height: 1.7;
-      max-width: 720px;
-    }
-
-    /* SEARCH */
-
-    .search-area {
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 20px 25px;
-    }
-
-    .search-box {
-      display: flex;
-      gap: 10px;
-      padding: 10px;
-      background: #0c1a2b;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 14px;
-    }
-
-    .search-box input {
-      flex: 1;
-      min-width: 0;
-      padding: 12px;
-      background: transparent;
-      border: none;
-      outline: none;
-      color: white;
-      font-size: 16px;
-    }
-
-    .search-box input::placeholder {
-      color: #8493a5;
-    }
-
-    .search-btn {
-      padding: 0 22px;
-      border: none;
-      border-radius: 9px;
-      background: #35e875;
-      color: #06111d;
-      font-weight: 900;
-      cursor: pointer;
-    }
-
-    /* CONTENT */
-
-    .content {
-      max-width: 1200px;
-      margin: auto;
-      padding: 10px 20px 60px;
-    }
-
-    .section-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
-      margin: 30px 0 20px;
-    }
-
-    .section-title h2 {
-      font-size: 28px;
-    }
-
-    .section-title span {
-      color: #35e875;
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    /* CATEGORIES */
-
-    .categories {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding-bottom: 10px;
-      scrollbar-width: none;
-    }
-
-    .categories::-webkit-scrollbar {
-      display: none;
-    }
-
-    .category {
-      padding: 10px 16px;
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 30px;
-      background: #0c1a2b;
-      color: #dce5ef;
-      cursor: pointer;
-      white-space: nowrap;
-      font-weight: 700;
-      transition: 0.2s;
-    }
-
-    .category:hover,
-    .category.active {
-      background: #35e875;
-      color: #06111d;
-      border-color: #35e875;
-    }
-
-    /* FEATURED */
-
-    .featured {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 20px;
-      margin-top: 25px;
-    }
-
-    .featured-main,
-    .featured-side {
-      overflow: hidden;
-      background: #0c1a2b;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-    }
-
-    .featured-image {
-      min-height: 280px;
-      padding: 25px;
-      display: flex;
-      align-items: flex-end;
-      background:
-        linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.05)),
-        linear-gradient(135deg, #164d50, #152b46 55%, #091421);
-    }
-
-    .featured-image h3 {
-      font-size: clamp(25px, 4vw, 40px);
-      line-height: 1.1;
-    }
-
-    .featured-info {
-      padding: 18px 20px 22px;
-    }
-
-    .featured-info p {
-      color: #9eacbc;
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-
-    .meta {
-      color: #35e875;
-      font-size: 12px;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .featured-side {
-      padding: 20px;
-    }
-
-    .featured-side h3 {
-      margin-bottom: 18px;
-      font-size: 21px;
-    }
-
-    .mini-news {
-      padding: 15px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .mini-news:last-child {
-      border-bottom: none;
-    }
-
-    .mini-news .meta {
-      display: block;
-      margin-bottom: 7px;
-    }
-
-    .mini-news h4 {
-      font-size: 16px;
-      line-height: 1.4;
-    }
-
-    /* GRID */
-
-    .news-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .card {
-      overflow: hidden;
-      background: #0c1a2b;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 18px;
-      transition: transform 0.2s, border-color 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(53,232,117,0.45);
-    }
-
-    .card-image {
-      height: 180px;
-      padding: 16px;
-      display: flex;
-      align-items: flex-end;
-      background:
-        linear-gradient(to top, rgba(0,0,0,0.75), transparent),
-        linear-gradient(135deg, #193d5b, #12263b);
-    }
-
-    .card:nth-child(2) .card-image {
-      background:
-        linear-gradient(to top, rgba(0,0,0,0.75), transparent),
-        linear-gradient(135deg, #40305a, #17354a);
-    }
-
-    .card:nth-child(3) .card-image {
-      background:
-        linear-gradient(to top, rgba(0,0,0,0.75), transparent),
-        linear-gradient(135deg, #174c38, #182d43);
-    }
-
-    .card:nth-child(4) .card-image {
-      background:
-        linear-gradient(to top, rgba(0,0,0,0.75), transparent),
-        linear-gradient(135deg, #493719, #1d3444);
-    }
-
-    .card:nth-child(5) .card-image {
-      background:
-        linear-gradient(to top, rgba(0,0,0,0.75), transparent),
-        linear-gradient(135deg, #263b55, #14233b);
-    }
-
-    .card:nth-child(6) .card-image {
-      background:
-        linear-gradient(to top, rgba(0,0,0,0.75), transparent),
-        linear-gradient(135deg, #44244e, #173247);
-    }
-
-    .tech-icon {
-      font-size: 38px;
-    }
-
-    .card-body {
-      padding: 18px;
-    }
-
-    .card-body .meta {
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .card-body h3 {
-      font-size: 19px;
-      line-height: 1.35;
-      margin-bottom: 10px;
-    }
-
-    .card-body p {
-      color: #9eacbc;
-      line-height: 1.55;
-      font-size: 14px;
-    }
-
-    .no-results {
-      display: none;
-      padding: 50px 20px;
-      text-align: center;
-      color: #9eacbc;
-      background: #0c1a2b;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 18px;
-    }
-
-    /* FOOTER */
-
-    footer {
-      padding: 35px 20px;
-      text-align: center;
-      background: #050c17;
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-
-    footer strong {
-      color: #35e875;
-    }
-
-    footer p {
-      color: #7f8c9c;
-      margin-top: 8px;
-      font-size: 14px;
-    }
-
-    /* RESPONSIVE */
-
-    @media (max-width: 850px) {
-
-      .header-container {
-        flex-direction: column;
-        padding-top: 15px;
-        padding-bottom: 15px;
-      }
-
-      nav {
-        justify-content: center;
-      }
-
-      .featured {
-        grid-template-columns: 1fr;
-      }
-
-      .news-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 560px) {
-
-      .hero {
-        padding-top: 30px;
-      }
-
-      .hero-box {
-        padding: 32px 22px;
-        border-radius: 18px;
-      }
-
-      .hero p {
-        font-size: 15px;
-      }
-
-      .search-box {
-        padding: 7px;
-      }
-
-      .search-btn {
-        padding: 0 15px;
-      }
-
-      .news-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .featured-image {
-        min-height: 230px;
-      }
-
-      nav a {
-        padding: 8px 9px;
-        font-size: 12px;
-      }
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <header>
+<header>
 
-    <div class="header-container">
+    <div class="header-content">
 
-      <a href="index.html" class="logo">
-        Tendencias<span>MX</span>
-      </a>
+        <div class="logo">
+            Tendencias<span>MX</span>
+        </div>
 
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="tendencias.html">Tendencias</a>
-        <a href="noticias.html">Noticias</a>
-        <a href="entretenimiento.html">Entretenimiento</a>
-        <a href="deportes.html">Deportes</a>
-        <a href="tecnologia.html" class="active">Tecnología</a>
-      </nav>
+        <div class="subtitle">
+            Noticias, tendencias y actualidad
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="noticias.html">
+                Noticias
+            </a>
+
+            <a href="deportes.html">
+                Deportes
+            </a>
+
+            <a href="entretenimiento.html">
+                Entretenimiento
+            </a>
+
+            <a href="tecnologia.html">
+                Tecnología
+            </a>
+
+        </nav>
 
     </div>
 
-  </header>
+</header>
 
 
-  <main>
+<main>
 
-    <section class="hero">
+    <h1>
+        Tecnología
+    </h1>
 
-      <div class="hero-box">
+    <p class="descripcion">
+        Noticias sobre inteligencia artificial, aplicaciones,
+        gadgets, redes sociales, ciberseguridad y tecnología
+        en México y el mundo.
+    </p>
 
-        <div class="hero-label">
-          💻 TENDENCIAS MX
+
+    <div class="filtros">
+
+        <button class="activo"
+                onclick="mostrar('todos',this)">
+            Todos
+        </button>
+
+        <button onclick="mostrar('ia',this)">
+            🤖 Inteligencia artificial
+        </button>
+
+        <button onclick="mostrar('gadgets',this)">
+            📱 Gadgets
+        </button>
+
+        <button onclick="mostrar('apps_redes',this)">
+            📲 Apps y redes
+        </button>
+
+        <button onclick="mostrar('ciberseguridad',this)">
+            🔐 Ciberseguridad
+        </button>
+
+        <button onclick="mostrar('mexico',this)">
+            🇲🇽 Tecnología en México
+        </button>
+
+    </div>
+
+
+    <div id="contenedor" class="grid"></div>
+
+</main>
+
+
+<footer>
+
+    © 2026 TendenciasMX · Tecnología
+
+</footer>
+
+
+<script>
+
+
+/* ==================================================
+   NOTICIAS REALES
+   FUENTES: EXPANSIÓN TECNOLOGÍA
+================================================== */
+
+const noticias = [
+
+    /* ==================================================
+       INTELIGENCIA ARTIFICIAL
+    ================================================== */
+
+    {
+        categoria:"ia",
+
+        titulo:"La IA que trabaja aunque no estés: así son los nuevos Dots de OpenAI",
+
+        descripcion:"OpenAI presentó Dots, agentes impulsados por GPT-6 Astra capaces de mantener proyectos activos y trabajar de forma autónoma.",
+
+        fecha:"29 de septiembre de 2026",
+
+        emoji:"🤖",
+
+        imagen:"https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    {
+        categoria:"ia",
+
+        titulo:"El 49% de las empresas en México pierden dinero en Inteligencia Artificial",
+
+        descripcion:"Más de la mitad de las organizaciones mexicanas afirman utilizar IA, aunque una parte importante todavía no obtiene un impacto real en sus negocios.",
+
+        fecha:"28 de septiembre de 2026",
+
+        emoji:"🧠",
+
+        imagen:"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    {
+        categoria:"ia",
+
+        titulo:"Trump reúne a Google, Nvidia y Anthropic para fijar reglas a la IA",
+
+        descripcion:"Empresas líderes de inteligencia artificial participaron en conversaciones sobre desarrollo, seguridad y autorregulación de esta tecnología.",
+
+        fecha:"30 de septiembre de 2026",
+
+        emoji:"🌐",
+
+        imagen:"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    {
+        categoria:"ia",
+
+        titulo:"OpenAI retrasa su modelo de IA por preocupaciones de seguridad",
+
+        descripcion:"La compañía señaló que su próximo modelo necesita cumplir con estándares de seguridad antes de su lanzamiento.",
+
+        fecha:"29 de septiembre de 2026",
+
+        emoji:"⚙️",
+
+        imagen:"https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    /* ==================================================
+       GADGETS
+    ================================================== */
+
+    {
+        categoria:"gadgets",
+
+        titulo:"Las quejas por acoso no frenan a los lentes inteligentes de Meta",
+
+        descripcion:"Los lentes inteligentes continúan ganando usuarios pese a las críticas relacionadas con el uso de cámaras para grabar y tomar fotografías.",
+
+        fecha:"29 de septiembre de 2026",
+
+        emoji:"🥽",
+
+        imagen:"https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    {
+        categoria:"gadgets",
+
+        titulo:"Tu iPhone se puede convertir en un cazador de ofertas automático",
+
+        descripcion:"Las funciones del iPhone permiten configurar avisos para conocer cuándo aparecen determinadas ofertas.",
+
+        fecha:"30 de septiembre de 2026",
+
+        emoji:"📱",
+
+        imagen:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    {
+        categoria:"gadgets",
+
+        titulo:"La tecnología que está cambiando la manera de usar nuestros dispositivos",
+
+        descripcion:"Nuevos dispositivos y herramientas buscan hacer más sencilla la vida cotidiana mediante funciones inteligentes.",
+
+        fecha:"27 de septiembre de 2026",
+
+        emoji:"💻",
+
+        imagen:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    /* ==================================================
+       APPS Y REDES
+    ================================================== */
+
+    {
+        categoria:"apps_redes",
+
+        titulo:"WhatsApp tendrá nuevas funciones para proteger a los menores",
+
+        descripcion:"La aplicación prepara herramientas para que padres y responsables puedan configurar una experiencia más adecuada para adolescentes.",
+
+        fecha:"30 de septiembre de 2026",
+
+        emoji:"💬",
+
+        imagen:"https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    {
+        categoria:"apps_redes",
+
+        titulo:"Spotify presenta fallas a nivel global",
+
+        descripcion:"Usuarios reportaron problemas para iniciar sesión y reproducir música durante una interrupción del servicio.",
+
+        fecha:"29 de septiembre de 2026",
+
+        emoji:"🎵",
+
+        imagen:"https://images.unsplash.com/photo-1611339555312-e607c8352fd7?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    {
+        categoria:"apps_redes",
+
+        titulo:"Las aplicaciones continúan transformando la vida cotidiana",
+
+        descripcion:"Las plataformas digitales se han convertido en herramientas esenciales para comunicación, entretenimiento y trabajo.",
+
+        fecha:"26 de septiembre de 2026",
+
+        emoji:"📲",
+
+        imagen:"https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    /* ==================================================
+       CIBERSEGURIDAD
+    ================================================== */
+
+    {
+        categoria:"ciberseguridad",
+
+        titulo:"¿Vas a firmar un documento? Podría ser una nueva trampa de ciberdelincuentes",
+
+        descripcion:"Kaspersky detectó campañas de phishing que utilizan nombres de servicios conocidos para intentar robar credenciales y datos personales.",
+
+        fecha:"28 de septiembre de 2026",
+
+        emoji:"🔐",
+
+        imagen:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    {
+        categoria:"ciberseguridad",
+
+        titulo:"México se prepara para los riesgos del cómputo cuántico",
+
+        descripcion:"Expertos mexicanos crearon un consejo para analizar los riesgos que el avance de la computación cuántica puede representar para la seguridad digital.",
+
+        fecha:"22 de septiembre de 2026",
+
+        emoji:"🛡️",
+
+        imagen:"https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    /* ==================================================
+       TECNOLOGÍA EN MÉXICO
+    ================================================== */
+
+    {
+        categoria:"mexico",
+
+        titulo:"La IA necesita electricistas, pero México forma cada vez menos técnicos",
+
+        descripcion:"La expansión de centros de datos aumenta la necesidad de personal técnico especializado para operar infraestructura eléctrica y tecnológica.",
+
+        fecha:"29 de septiembre de 2026",
+
+        emoji:"🇲🇽",
+
+        imagen:"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=85"
+    },
+
+
+    {
+        categoria:"mexico",
+
+        titulo:"Las fábricas de IA podrían aportar 5.2% del PIB de México",
+
+        descripcion:"La infraestructura especializada para entrenar y procesar inteligencia artificial está tomando relevancia dentro del desarrollo tecnológico del país.",
+
+        fecha:"23 de septiembre de 2026",
+
+        emoji:"🏭",
+
+        imagen:"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85"
+    }
+
+];
+
+
+/* ==================================================
+   MOSTRAR NOTICIAS
+================================================== */
+
+function mostrar(categoria, boton){
+
+    const contenedor =
+        document.getElementById("contenedor");
+
+
+    if(boton){
+
+        document
+            .querySelectorAll(".filtros button")
+            .forEach(btn =>
+                btn.classList.remove("activo")
+            );
+
+        boton.classList.add("activo");
+    }
+
+
+    let lista;
+
+
+    if(categoria === "todos"){
+
+        lista = noticias;
+
+    }else{
+
+        lista = noticias.filter(
+            noticia =>
+                noticia.categoria === categoria
+        );
+
+    }
+
+
+    if(lista.length === 0){
+
+        contenedor.innerHTML = `
+
+            <div class="vacio">
+
+                <h2>
+                    No hay noticias disponibles
+                </h2>
+
+                <p>
+                    Pronto agregaremos más contenido.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+    }
+
+
+    contenedor.innerHTML = lista.map(noticia => `
+
+        <article class="card">
+
+            <div class="card-img">
+
+                <img
+                    src="${noticia.imagen}"
+                    alt="${escapeHTML(noticia.titulo)}"
+                    loading="lazy"
+                    onerror="mostrarFallback(this,'${noticia.emoji}')"
+                >
+
+            </div>
+
+
+            <div class="card-content">
+
+                <span class="categoria">
+                    ${nombreCategoria(noticia.categoria)}
+                </span>
+
+
+                <h2>
+                    ${escapeHTML(noticia.titulo)}
+                </h2>
+
+
+                <p>
+                    ${escapeHTML(noticia.descripcion)}
+                </p>
+
+
+                <div class="fecha">
+                    ${escapeHTML(noticia.fecha)}
+                </div>
+
+            </div>
+
+        </article>
+
+    `).join("");
+
+}
+
+
+/* ==================================================
+   NOMBRES DE CATEGORÍAS
+================================================== */
+
+function nombreCategoria(categoria){
+
+    const nombres = {
+
+        ia:"Inteligencia artificial",
+
+        gadgets:"Gadgets",
+
+        apps_redes:"Apps y redes",
+
+        ciberseguridad:"Ciberseguridad",
+
+        mexico:"Tecnología en México"
+
+    };
+
+
+    return nombres[categoria]
+        || "Tecnología";
+
+}
+
+
+/* ==================================================
+   FALLBACK DE IMAGEN
+================================================== */
+
+function mostrarFallback(img, emoji){
+
+    const contenedor =
+        img.parentElement;
+
+    img.remove();
+
+    contenedor.innerHTML = `
+
+        <div class="fallback">
+            ${emoji || "💻"}
         </div>
 
-        <h1>
-          El futuro está
-          <span>aquí</span>
-        </h1>
+    `;
 
-        <p>
-          Tecnología, inteligencia artificial, celulares, aplicaciones,
-          videojuegos, gadgets e innovación. Descubre las tendencias
-          digitales que están cambiando México y el mundo.
-        </p>
+}
 
-      </div>
 
-    </section>
+/* ==================================================
+   PROTECCIÓN DEL TEXTO
+================================================== */
 
+function escapeHTML(text){
 
-    <section class="search-area">
+    return String(text)
 
-      <div class="search-box">
+        .replace(/&/g,"&amp;")
 
-        <input
-          type="search"
-          id="searchInput"
-          placeholder="Buscar en tecnología..."
-          aria-label="Buscar en tecnología"
-        >
+        .replace(/</g,"&lt;")
 
-        <button class="search-btn" onclick="buscarNoticias()">
-          Buscar
-        </button>
+        .replace(/>/g,"&gt;")
 
-      </div>
+        .replace(/"/g,"&quot;")
 
-    </section>
+        .replace(/'/g,"&#039;");
 
+}
 
-    <section class="content">
 
-      <div class="section-title">
-        <h2>Categorías</h2>
-        <span>EXPLORA</span>
-      </div>
+/* ==================================================
+   INICIAR
+================================================== */
 
+mostrar(
+    "todos",
+    document.querySelector(".filtros button")
+);
 
-      <div class="categories">
-
-        <button class="category active" data-category="todos">
-          Todos
-        </button>
-
-        <button class="category" data-category="inteligencia artificial">
-          🤖 Inteligencia Artificial
-        </button>
-
-        <button class="category" data-category="celulares">
-          📱 Celulares
-        </button>
-
-        <button class="category" data-category="apps">
-          📲 Apps
-        </button>
-
-        <button class="category" data-category="gadgets">
-          🎧 Gadgets
-        </button>
-
-        <button class="category" data-category="videojuegos">
-          🎮 Videojuegos
-        </button>
-
-        <button class="category" data-category="innovacion">
-          🚀 Innovación
-        </button>
-
-      </div>
-
-
-      <div class="section-title">
-        <h2>Lo más destacado</h2>
-        <span>TECNOLOGÍA</span>
-      </div>
-
-
-      <div class="featured">
-
-        <article class="featured-main">
-
-          <div class="featured-image">
-
-            <div>
-
-              <div class="meta">
-                Inteligencia Artificial
-              </div>
-
-              <h3>
-                La tecnología que está cambiando la forma de vivir y trabajar
-              </h3>
-
-            </div>
-
-          </div>
-
-          <div class="featured-info">
-
-            <p>
-              Conoce las innovaciones, herramientas y tendencias
-              tecnológicas que están generando conversación.
-            </p>
-
-            <div class="meta">
-              Tendencias MX · Innovación digital
-            </div>
-
-          </div>
-
-        </article>
-
-
-        <aside class="featured-side">
-
-          <h3>
-            En el radar tecnológico
-          </h3>
-
-          <div class="mini-news">
-
-            <span class="meta">
-              Inteligencia Artificial
-            </span>
-
-            <h4>
-              Las nuevas herramientas de IA que están llamando la atención.
-            </h4>
-
-          </div>
-
-
-          <div class="mini-news">
-
-            <span class="meta">
-              Celulares
-            </span>
-
-            <h4>
-              Las novedades que llegan al mundo de los smartphones.
-            </h4>
-
-          </div>
-
-
-          <div class="mini-news">
-
-            <span class="meta">
-              Gadgets
-            </span>
-
-            <h4>
-              Dispositivos y accesorios que están marcando tendencia.
-            </h4>
-
-          </div>
-
-        </aside>
-
-      </div>
-
-
-      <div class="section-title">
-
-        <h2>
-          Últimas tendencias tecnológicas
-        </h2>
-
-        <span id="contador">
-          6 historias
-        </span>
-
-      </div>
-
-
-      <div class="news-grid" id="newsGrid">
-
-
-        <article
-          class="card"
-          data-category="inteligencia artificial innovacion"
-        >
-
-          <div class="card-image">
-            <div class="tech-icon">🤖</div>
-          </div>
-
-          <div class="card-body">
-
-            <span class="meta">
-              Inteligencia Artificial
-            </span>
-
-            <h3>
-              La evolución de la inteligencia artificial
-            </h3>
-
-            <p>
-              Herramientas, aplicaciones y tendencias de IA que están
-              transformando diferentes actividades.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article
-          class="card"
-          data-category="celulares gadgets"
-        >
-
-          <div class="card-image">
-            <div class="tech-icon">📱</div>
-          </div>
-
-          <div class="card-body">
-
-            <span class="meta">
-              Celulares
-            </span>
-
-            <h3>
-              Las novedades que llegan a los smartphones
-            </h3>
-
-            <p>
-              Nuevas funciones, dispositivos y tecnologías presentes
-              en el mercado de teléfonos inteligentes.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article
-          class="card"
-          data-category="apps"
-        >
-
-          <div class="card-image">
-            <div class="tech-icon">📲</div>
-          </div>
-
-          <div class="card-body">
-
-            <span class="meta">
-              Apps
-            </span>
-
-            <h3>
-              Aplicaciones que están ganando popularidad
-            </h3>
-
-            <p>
-              Descubre aplicaciones y servicios digitales que están
-              llamando la atención entre los usuarios.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article
-          class="card"
-          data-category="gadgets"
-        >
-
-          <div class="card-image">
-            <div class="tech-icon">🎧</div>
-          </div>
-
-          <div class="card-body">
-
-            <span class="meta">
-              Gadgets
-            </span>
-
-            <h3>
-              Los gadgets que mezclan tecnología y entretenimiento
-            </h3>
-
-            <p>
-              Dispositivos inteligentes, accesorios y productos
-              tecnológicos que están marcando tendencia.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article
-          class="card"
-          data-category="videojuegos"
-        >
-
-          <div class="card-image">
-            <div class="tech-icon">🎮</div>
-          </div>
-
-          <div class="card-body">
-
-            <span class="meta">
-              Videojuegos
-            </span>
-
-            <h3>
-              El mundo de los videojuegos sigue evolucionando
-            </h3>
-
-            <p>
-              Lanzamientos, plataformas, experiencias digitales y
-              tendencias dentro de la industria del gaming.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article
-          class="card"
-          data-category="innovacion inteligencia artificial"
-        >
-
-          <div class="card-image">
-            <div class="tech-icon">🚀</div>
-          </div>
-
-          <div class="card-body">
-
-            <span class="meta">
-              Innovación
-            </span>
-
-            <h3>
-              Innovaciones que pueden cambiar nuestro futuro
-            </h3>
-
-            <p>
-              Nuevas ideas y avances tecnológicos que están abriendo
-              posibilidades para los próximos años.
-            </p>
-
-          </div>
-
-        </article>
-
-
-      </div>
-
-
-      <div class="no-results" id="noResults">
-
-        <h3>
-          No encontramos resultados
-        </h3>
-
-        <p>
-          Intenta buscar otra palabra o selecciona otra categoría.
-        </p>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <footer>
-
-    <strong>
-      Tendencias MX
-    </strong>
-
-    <p>
-      Noticias, tendencias, entretenimiento, deportes y tecnología
-      en un solo lugar.
-    </p>
-
-    <p>
-      © 2026 Tendencias MX · Todos los derechos reservados.
-    </p>
-
-  </footer>
-
-
-  <script>
-
-    const categories =
-      document.querySelectorAll(".category");
-
-    const cards =
-      document.querySelectorAll(".card");
-
-    const searchInput =
-      document.getElementById("searchInput");
-
-    const noResults =
-      document.getElementById("noResults");
-
-    const contador =
-      document.getElementById("contador");
-
-    let categoriaActual = "todos";
-
-
-    categories.forEach(button => {
-
-      button.addEventListener("click", () => {
-
-        categories.forEach(btn => {
-          btn.classList.remove("active");
-        });
-
-        button.classList.add("active");
-
-        categoriaActual =
-          button.dataset.category.toLowerCase();
-
-        filtrarNoticias();
-
-      });
-
-    });
-
-
-    searchInput.addEventListener(
-      "input",
-      filtrarNoticias
-    );
-
-
-    function buscarNoticias() {
-
-      filtrarNoticias();
-
-      document
-        .getElementById("newsGrid")
-        .scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-
-    }
-
-
-    function filtrarNoticias() {
-
-      const texto =
-        searchInput.value
-          .toLowerCase()
-          .trim();
-
-      let visibles = 0;
-
-
-      cards.forEach(card => {
-
-        const categoriasCard =
-          card.dataset.category.toLowerCase();
-
-        const contenido =
-          card.textContent.toLowerCase();
-
-        const coincideCategoria =
-          categoriaActual === "todos" ||
-          categoriasCard.includes(categoriaActual);
-
-        const coincideBusqueda =
-          texto === "" ||
-          contenido.includes(texto);
-
-
-        if (
-          coincideCategoria &&
-          coincideBusqueda
-        ) {
-
-          card.style.display = "";
-
-          visibles++;
-
-        } else {
-
-          card.style.display = "none";
-
-        }
-
-      });
-
-
-      contador.textContent =
-        visibles +
-        (visibles === 1
-          ? " historia"
-          : " historias");
-
-
-      noResults.style.display =
-        visibles === 0
-          ? "block"
-          : "none";
-
-    }
-
-  </script>
+</script>
 
 </body>
 </html>
