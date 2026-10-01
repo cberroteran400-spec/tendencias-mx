@@ -1,152 +1,919 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deportes | Tendencias MX</title>
-  <meta name="description" content="Últimas noticias deportivas de México y el mundo: fútbol, Liga MX, NFL, Fórmula 1, boxeo, tenis, básquetbol, béisbol y más.">
-  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/deportes.html">
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{background:#0a1a1a;color:#fff;font-family:Inter,system-ui,sans-serif}
-    header{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#0e2a2a;position:sticky;top:0;z-index:10}
-   .logo{font-weight:800;color:#2cff8e}.logo span{color:#fff}
-    nav a{color:#aaa;text-decoration:none;margin-left:14px;font-size:13px} nav a.active{color:#2cff8e;background:#1a3d3d;padding:6px 10px;border-radius:20px}
-   .hero{padding:28px 20px}
-   .hero h1{font-size:32px;margin:8px 0}
-   .search-box{display:flex;background:#122e2e;border-radius:10px;padding:8px;margin-top:18px}
-   .search-box input{flex:1;background:transparent;border:none;color:#fff;outline:none}
-   .search-box button{background:#2cff8e;border:none;padding:6px 14px;border-radius:8px;font-weight:700;cursor:pointer}
-   .filtros{display:flex;gap:8px;overflow:auto;margin:14px 20px}
-   .filtros button{background:#152f2f;border:none;color:#fff;padding:7px 12px;border-radius:20px;font-size:12px;cursor:pointer;white-space:nowrap}
-   .filtros button.activo{background:#2cff8e;color:#000}
-   .seccion{padding:0 20px;margin-top:18px}
-   .radar{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-    @media(min-width:700px){.radar{grid-template-columns:repeat(4,1fr)}}
-   .radar-card{background:#122e2e;border-radius:12px;padding:12px}
-   .destacada{margin:18px 20px;border-radius:16px;min-height:300px;background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:20px;position:relative;overflow:hidden}
-   .destacada::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent, rgba(0,0,0,.85))}
-   .destacada-content{position:relative;z-index:1}
-   .tag{background:#2cff8e;color:#000;font-size:10px;padding:4px 8px;border-radius:6px;font-weight:800}
-   .grid{margin:20px;display:grid;grid-template-columns:1fr;gap:14px}
-    @media(min-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}
-    @media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
-   .card{background:#122e2e;border-radius:14px;overflow:hidden}
-   .card-img{height:180px;background-size:cover;background-position:center;position:relative}
-   .card-img.tag{position:absolute;top:10px;left:10px}
-   .card-body{padding:12px}
-   .card-body h3{font-size:14px;line-height:1.3;margin-bottom:6px}
-   .card-body p{font-size:11px;color:#9ab; height:36px;overflow:hidden}
-   .card-body a{font-size:11px;color:#2cff8e;text-decoration:none;display:block;margin-top:8px}
-  </style>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Dinero | TendenciasMX</title>
+
+<meta name="description"
+      content="Noticias de dinero, economía, mercados, bancos, empresas y finanzas personales en México.">
+
+<meta name="keywords"
+      content="dinero, economía, finanzas, dólar, peso, bancos, empresas, mercados, ahorro, créditos, México">
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f6f8;
+    color:#171717;
+}
+
+header{
+    background:#111827;
+    color:white;
+    padding:18px 15px;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.header-content{
+    max-width:1100px;
+    margin:auto;
+}
+
+.logo{
+    font-size:27px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#22c55e;
+}
+
+.subtitle{
+    font-size:13px;
+    color:#cbd5e1;
+    margin-top:4px;
+}
+
+nav{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    margin-top:15px;
+    padding-bottom:3px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    background:#1f2937;
+    padding:9px 13px;
+    border-radius:20px;
+    font-size:13px;
+    white-space:nowrap;
+}
+
+nav a:hover{
+    background:#22c55e;
+    color:#111827;
+}
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:25px 15px 50px;
+}
+
+h1{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.descripcion{
+    color:#64748b;
+    margin-bottom:22px;
+    line-height:1.5;
+}
+
+.filtros{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    margin-bottom:25px;
+    padding-bottom:5px;
+}
+
+.filtros button{
+    border:none;
+    background:#e2e8f0;
+    color:#1e293b;
+    padding:10px 15px;
+    border-radius:22px;
+    cursor:pointer;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.filtros button.activo,
+.filtros button:hover{
+    background:#22c55e;
+    color:#07130b;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 22px rgba(0,0,0,.12);
+}
+
+.card-link{
+    display:block;
+    color:inherit;
+    text-decoration:none;
+}
+
+.card-img{
+    width:100%;
+    height:180px;
+    background:#e5e7eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.card-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.fallback{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #334155
+        );
+}
+
+.card-content{
+    padding:17px;
+}
+
+.categoria{
+    display:inline-block;
+    font-size:11px;
+    font-weight:800;
+    color:#15803d;
+    background:#dcfce7;
+    padding:5px 9px;
+    border-radius:15px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+
+.card h2{
+    font-size:19px;
+    line-height:1.3;
+    margin-bottom:9px;
+}
+
+.card p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.45;
+}
+
+.fecha{
+    margin-top:12px;
+    font-size:12px;
+    color:#94a3b8;
+}
+
+.leer{
+    margin-top:13px;
+    color:#16a34a;
+    font-size:13px;
+    font-weight:800;
+}
+
+.vacio{
+    text-align:center;
+    padding:50px 20px;
+    color:#64748b;
+    background:white;
+    border-radius:15px;
+}
+
+footer{
+    background:#111827;
+    color:#94a3b8;
+    text-align:center;
+    padding:25px 15px;
+    font-size:13px;
+}
+
+@media(max-width:600px){
+
+    h1{
+        font-size:25px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .card-img{
+        height:200px;
+    }
+
+}
+
+</style>
+
 </head>
+
 <body>
+
+
 <header>
-  <div class="logo">Tendencias<span>MX</span></div>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="noticias.html">Noticias</a>
-    <a href="deportes.html" class="active">Deportes</a>
-    <a href="entretenimiento.html">Entretenimiento</a>
-    <a href="tecnologia.html">Tecnologia</a>
-  </nav>
+
+    <div class="header-content">
+
+        <div class="logo">
+            Tendencias<span>MX</span>
+        </div>
+
+        <div class="subtitle">
+            Noticias, tendencias y actualidad
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="noticias.html">
+                Noticias
+            </a>
+
+            <a href="deportes.html">
+                Deportes
+            </a>
+
+            <a href="entretenimiento.html">
+                Entretenimiento
+            </a>
+
+            <a href="tecnologia.html">
+                Tecnología
+            </a>
+
+            <a href="dinero.html">
+                Dinero
+            </a>
+
+        </nav>
+
+    </div>
+
 </header>
 
-<div class="hero">
-  <div style="color:#2cff8e;font-size:11px;letter-spacing:1px">⚡ TENDENCIASMX DEPORTES</div>
-  <h1>Todo el mundo del deporte</h1>
-  <p style="color:#9ab;font-size:13px">Las últimas noticias deportivas de México y el mundo: fútbol, Liga MX, NFL, boxeo, Fórmula 1, básquetbol, tenis, béisbol y las historias que están generando conversación.</p>
-  <div class="search-box"><input id="buscador" placeholder="Buscar en deportes..."><button onclick="filtrar()">Buscar</button></div>
-</div>
 
-<div class="filtros">
-  <button class="activo" onclick="filtrarCategoria('todos')">Todos</button>
-  <button onclick="filtrarCategoria('futbol')">⚽ Fútbol</button>
-  <button onclick="filtrarCategoria('ligamx')">🇲🇽 Liga MX</button>
-  <button onclick="filtrarCategoria('nfl')">🏈 NFL</button>
-  <button onclick="filtrarCategoria('boxeo')">🥊 Boxeo</button>
-  <button onclick="filtrarCategoria('f1')">🏎️ Fórmula 1</button>
-  <button onclick="filtrarCategoria('basquetbol')">🏀 Básquetbol</button>
-</div>
+<main>
 
-<div class="seccion"><h3>En el radar deportivo</h3><div class="radar"><div class="radar-card">⚽<br><b>FÚTBOL</b><br><small>Noticias y resultados</small></div><div class="radar-card">🇲🇽<br><b>LIGA MX</b><br><small>Equipos y partidos</small></div><div class="radar-card">🏈<br><b>NFL</b><br><small>Fútbol americano</small></div><div class="radar-card">🏎️<br><b>MOTOR</b><br><small>F1 y automovilismo</small></div></div></div>
+    <h1>
+        Dinero
+    </h1>
 
-<div id="destacada" class="destacada"><div class="destacada-content"><span class="tag">DEPORTES</span><h2 id="dest-titulo">Cargando...</h2><p id="dest-desc"></p><a id="dest-link" href="#" target="_blank" style="background:#fff;color:#000;padding:6px 12px;border-radius:20px;text-decoration:none;font-size:12px;display:inline-block;margin-top:10px">Leer noticia →</a></div></div>
+    <p class="descripcion">
+        Noticias de economía, mercados, bancos,
+        empresas y finanzas personales en México.
+    </p>
 
-<div class="seccion"><h3>Últimas noticias deportivas</h3></div>
-<div id="grid-deportes" class="grid"></div>
+
+    <div class="filtros">
+
+        <button
+            class="activo"
+            onclick="mostrar('todos',this)">
+            Todos
+        </button>
+
+        <button
+            onclick="mostrar('dolar',this)">
+            💵 Dólar y mercados
+        </button>
+
+        <button
+            onclick="mostrar('economia',this)">
+            📊 Economía
+        </button>
+
+        <button
+            onclick="mostrar('bancos',this)">
+            🏦 Bancos y finanzas
+        </button>
+
+        <button
+            onclick="mostrar('empresas',this)">
+            🏢 Empresas
+        </button>
+
+        <button
+            onclick="mostrar('personales',this)">
+            👛 Finanzas personales
+        </button>
+
+    </div>
+
+
+    <div
+        id="contenedor"
+        class="grid">
+    </div>
+
+</main>
+
+
+<footer>
+
+    © 2026 TendenciasMX · Dinero
+
+</footer>
+
 
 <script>
-let todasDeportes = [];
-let categoriaActual = 'todos';
 
-async function cargarDeportes(){
-  const res = await fetch('./noticias.json?v=' + Date.now());
-  const data = await res.json();
-  let noticias = data.noticias || [];
 
-  todasDeportes = noticias.filter(n=>{
-    const cat = (n.categoria||'').toLowerCase();
-    const tit = (n.titulo+' '+ (n.descripcion||'')).toLowerCase();
-    return cat.includes('deport') || tit.includes('futbol') || tit.includes('fútbol') || tit.includes('liga mx') || tit.includes('nfl') || tit.includes('checo perez') || tit.includes('f1') || tit.includes('messi') || tit.includes('cristiano') || tit.includes('ochoa') || tit.includes('nba') || tit.includes('boxeo');
-  });
+const noticias = [
 
-  if(todasDeportes.length===0){
-    document.getElementById('grid-deportes').innerHTML = '<p style="padding:20px;color:#9ab">No hay noticias deportivas. Ve a Actions y ejecuta el workflow.</p>';
-    return;
-  }
-  mostrar(todasDeportes);
+/* ==================================================
+   DÓLAR Y MERCADOS
+================================================== */
+
+{
+    categoria:"dolar",
+
+    titulo:
+    "Peso borra ganancias de 2026; tipo de cambio rompe barrera de 18 unidades por dólar",
+
+    descripcion:
+    "El peso mexicano se mantuvo por arriba de 18 unidades por dólar ante el repunte de los rendimientos de los bonos de Estados Unidos y la fortaleza del dólar.",
+
+    fecha:
+    "29 de septiembre de 2026",
+
+    emoji:"💵",
+
+    imagen:
+    "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/mercados/2026/09/29/peso-mexicano-borra-ganancia-2026-cotiza-cerca-18-14-dolar"
+},
+
+
+{
+    categoria:"dolar",
+
+    titulo:
+    "¿Qué le pasó al superpeso? se deprecia en una semana clave para Banxico",
+
+    descripcion:
+    "El dólar recuperó terreno mientras petróleo, bonos y T-MEC aumentaron la presión sobre el tipo de cambio.",
+
+    fecha:
+    "24 de septiembre de 2026",
+
+    emoji:"📉",
+
+    imagen:
+    "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/economia/2026/09/24/tipo-cambio-hoy-24-septiembre-peso-dolar"
+},
+
+
+{
+    categoria:"dolar",
+
+    titulo:
+    "Mercado Libre emite deuda en BIVA ante riesgos de fondeo",
+
+    descripcion:
+    "Mercado Libre realizó su primera emisión de deuda pública en México por 3,750 millones de pesos para ampliar sus fuentes de financiamiento.",
+
+    fecha:
+    "29 de septiembre de 2026",
+
+    emoji:"📈",
+
+    imagen:
+    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/mercados/2026/09/29/mercado-libre-deuda-biva-mercado-pago-riesgos-fondeo"
+},
+
+
+/* ==================================================
+   ECONOMÍA
+================================================== */
+
+{
+    categoria:"economia",
+
+    titulo:
+    "Sofipos quieren el mercado de pagos que todavía domina el efectivo",
+
+    descripcion:
+    "Las nuevas reglas para los pagos digitales pueden abrir espacio para que las Sofipos amplíen su participación y lleguen a pequeños comercios.",
+
+    fecha:
+    "30 de septiembre de 2026",
+
+    emoji:"💳",
+
+    imagen:
+    "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/economia/2026/09/30/sofipos-van-mercado-pagos-todavia-domina-efectivo"
+},
+
+
+{
+    categoria:"economia",
+
+    titulo:
+    "Fitch mejora a 1.4% el crecimiento de México para 2026",
+
+    descripcion:
+    "La calificadora elevó su pronóstico de crecimiento para México, aunque señaló riesgos relacionados con el T-MEC y las reformas internas.",
+
+    fecha:
+    "22 de septiembre de 2026",
+
+    emoji:"📊",
+
+    imagen:
+    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/economia/2026/09/22/fitch-mejora-crecimiento-mexico-2026-ia-eu-exportaciones"
+},
+
+
+{
+    categoria:"economia",
+
+    titulo:
+    "Reforma a la inversión extranjera llega al pleno del Senado",
+
+    descripcion:
+    "La propuesta plantea revisar determinadas adquisiciones extranjeras relacionadas con sectores considerados estratégicos.",
+
+    fecha:
+    "29 de septiembre de 2026",
+
+    emoji:"🏛️",
+
+    imagen:
+    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/economia/2026/09/29/reforma-inversion-extranjera-pleno-senado-criticas"
+},
+
+
+/* ==================================================
+   BANCOS Y FINANZAS
+================================================== */
+
+{
+    categoria:"bancos",
+
+    titulo:
+    "Bancos y Sofomes tienen liquidez, pero las pymes frenan el crédito",
+
+    descripcion:
+    "El financiamiento para pequeñas y medianas empresas pierde dinamismo pese a que bancos y financieras aseguran contar con recursos para prestar.",
+
+    fecha:
+    "18 de septiembre de 2026",
+
+    emoji:"🏦",
+
+    imagen:
+    "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/economia/2026/09/18/bancos-sofomes-liquidez-pymes-credito"
+},
+
+
+{
+    categoria:"bancos",
+
+    titulo:
+    "Nu México nombra a Estephany Paulette Ley como CEO",
+
+    descripcion:
+    "Nu México nombró a Estephany Paulette Ley como directora general en una nueva etapa para la institución de banca múltiple.",
+
+    fecha:
+    "29 de septiembre de 2026",
+
+    emoji:"🏦",
+
+    imagen:
+    "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/economia/2026/09/29/nu-mexico-nombra-a-estephany-paulette-ley-como-ceo"
+},
+
+
+{
+    categoria:"bancos",
+
+    titulo:
+    "HSBC celebra su primer Wealth Investment Summit en México",
+
+    descripcion:
+    "El encuentro reunió a clientes con necesidades patrimoniales e internacionales junto con especialistas en economía, comercio e inversión.",
+
+    fecha:
+    "2 de septiembre de 2026",
+
+    emoji:"💼",
+
+    imagen:
+    "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/economia/2026/09/02/hsbc-celebra-su-primer-wealth-investment-summit-en-mexico"
+},
+
+
+/* ==================================================
+   EMPRESAS
+================================================== */
+
+{
+    categoria:"empresas",
+
+    titulo:
+    "Producción petrolera de Pemex se desploma a su mes más bajo desde que se tiene registro",
+
+    descripcion:
+    "La producción de petróleo crudo de Pemex cayó en agosto a 1.33 millones de barriles diarios.",
+
+    fecha:
+    "30 de septiembre de 2026",
+
+    emoji:"⛽",
+
+    imagen:
+    "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/empresas/2026/09/30/produccion-petrolera-pemex-mas-baja-desde-que-hay-registro"
+},
+
+
+{
+    categoria:"empresas",
+
+    titulo:
+    "Gobierno ofrece deducciones fiscales a pequeños operadores para llevar internet a zonas remotas",
+
+    descripcion:
+    "El gobierno busca apoyar a pequeños operadores de telecomunicaciones mediante incentivos fiscales para ampliar la conectividad.",
+
+    fecha:
+    "29 de septiembre de 2026",
+
+    emoji:"🏢",
+
+    imagen:
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/empresas/2026/09/29/gobierno-cambia-estrategia-llevar-internet-zonas-remotas"
+},
+
+
+{
+    categoria:"empresas",
+
+    titulo:
+    "Carlos Slim no le perdona la renta ni a sus propias marcas",
+
+    descripcion:
+    "Sanborns, Sears y DAX pagan rentas por ocupar espacios administrados por Inmuebles Carso.",
+
+    fecha:
+    "29 de septiembre de 2026",
+
+    emoji:"🏢",
+
+    imagen:
+    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/empresas/2026/09/29/carlos-slim-renta-sus-marcas-sanborns-sears-dax"
+},
+
+
+/* ==================================================
+   FINANZAS PERSONALES
+================================================== */
+
+{
+    categoria:"personales",
+
+    titulo:
+    "Aguinaldo 2026: cuándo se paga, cuánto te corresponde y qué pasa si trabajaste menos de un año",
+
+    descripcion:
+    "El aguinaldo puede calcularse antes de diciembre y quienes trabajaron solo una parte del año tienen derecho a recibir la parte proporcional.",
+
+    fecha:
+    "27 de septiembre de 2026",
+
+    emoji:"💰",
+
+    imagen:
+    "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/finanzas-personales/2026/09/27/aguinaldo-2026-cuando-cuanto-trabajaste-menos-ano"
+},
+
+
+{
+    categoria:"personales",
+
+    titulo:
+    "¿Pagarás impuestos al SAT por pagos digitales? Esto debes saber",
+
+    descripcion:
+    "La propuesta de Ley de Economía Digital no plantea cobrar un impuesto por utilizar pagos digitales, aunque estas operaciones dejan trazabilidad financiera.",
+
+    fecha:
+    "29 de septiembre de 2026",
+
+    emoji:"📱",
+
+    imagen:
+    "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85",
+
+    url:
+    "https://expansion.mx/finanzas-personales/2026/09/29/pagaras-impuestos-extra-tarjeta-debito"
 }
 
-function mostrar(lista){
-  if(lista.length===0) return;
-  const dest = lista[0];
-  document.getElementById('dest-titulo').innerText = dest.titulo;
-  document.getElementById('dest-desc').innerText = dest.descripcion;
-  document.getElementById('dest-link').href = dest.link;
-  document.getElementById('destacada').style.backgroundImage = `url('${dest.imagen || 'https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d'}')`;
+];
 
-  let html='';
-  lista.slice(1).forEach(n=>{
-    let img = n.imagen || 'https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?q=80&w=800';
-    let tag='FÚTBOL';
-    const t = n.titulo.toLowerCase();
-    if(t.includes('nfl')) tag='NFL';
-    else if(t.includes('f1') || t.includes('checo') || t.includes('formula 1')) tag='F1';
-    else if(t.includes('liga mx')) tag='LIGA MX';
-    else if(t.includes('nba') || t.includes('basquet')) tag='BÁSQUETBOL';
-    else if(t.includes('box')) tag='BOXEO';
 
-    html+=`<article class="card"><div class="card-img" style="background-image:url('${img}')"><span class="tag">${tag}</span></div><div class="card-body"><h3>${n.titulo}</h3><p>${n.descripcion}</p><a href="${n.link}" target="_blank">Leer noticia →</a></div></article>`;
-  });
-  document.getElementById('grid-deportes').innerHTML = html;
+/* ==================================================
+   MOSTRAR NOTICIAS
+================================================== */
+
+function mostrar(categoria, boton){
+
+    const contenedor =
+        document.getElementById("contenedor");
+
+
+    if(boton){
+
+        document
+            .querySelectorAll(".filtros button")
+            .forEach(btn =>
+                btn.classList.remove("activo")
+            );
+
+        boton.classList.add("activo");
+    }
+
+
+    let lista;
+
+
+    if(categoria === "todos"){
+
+        lista = noticias;
+
+    }else{
+
+        lista = noticias.filter(
+            noticia =>
+                noticia.categoria === categoria
+        );
+
+    }
+
+
+    if(lista.length === 0){
+
+        contenedor.innerHTML = `
+
+            <div class="vacio">
+
+                <h2>
+                    No hay noticias disponibles
+                </h2>
+
+                <p>
+                    Pronto agregaremos más contenido.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+    }
+
+
+    contenedor.innerHTML =
+        lista.map(noticia => `
+
+        <article class="card">
+
+            <a
+                class="card-link"
+                href="${noticia.url}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <div class="card-img">
+
+                    <img
+                        src="${noticia.imagen}"
+                        alt="${escapeHTML(noticia.titulo)}"
+                        loading="lazy"
+                        onerror="mostrarFallback(this,'${noticia.emoji}')"
+                    >
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <span class="categoria">
+                        ${nombreCategoria(noticia.categoria)}
+                    </span>
+
+
+                    <h2>
+                        ${escapeHTML(noticia.titulo)}
+                    </h2>
+
+
+                    <p>
+                        ${escapeHTML(noticia.descripcion)}
+                    </p>
+
+
+                    <div class="fecha">
+                        ${escapeHTML(noticia.fecha)}
+                    </div>
+
+
+                    <div class="leer">
+                        Leer noticia completa →
+                    </div>
+
+                </div>
+
+            </a>
+
+        </article>
+
+    `).join("");
+
 }
 
-function filtrarCategoria(cat){
-  categoriaActual=cat;
-  document.querySelectorAll('.filtros button').forEach(b=>b.classList.remove('activo'));
-  event.target.classList.add('activo');
-  if(cat==='todos'){ mostrar(todasDeportes); return; }
-  const filtradas = todasDeportes.filter(n=>{
-    const t = (n.titulo+' '+(n.descripcion||'')).toLowerCase();
-    if(cat==='futbol') return t.includes('futbol') || t.includes('fútbol') || t.includes('messi') || t.includes('cristiano');
-    if(cat==='ligamx') return t.includes('liga mx');
-    if(cat==='nfl') return t.includes('nfl');
-    if(cat==='f1') return t.includes('f1') || t.includes('checo') || t.includes('formula');
-    if(cat==='basquetbol') return t.includes('nba') || t.includes('basquet');
-    if(cat==='boxeo') return t.includes('box');
-    return true;
-  });
-  mostrar(filtradas);
+
+/* ==================================================
+   NOMBRES DE CATEGORÍAS
+================================================== */
+
+function nombreCategoria(categoria){
+
+    const nombres = {
+
+        dolar:
+            "Dólar y mercados",
+
+        economia:
+            "Economía",
+
+        bancos:
+            "Bancos y finanzas",
+
+        empresas:
+            "Empresas",
+
+        personales:
+            "Finanzas personales"
+
+    };
+
+
+    return nombres[categoria]
+        || "Dinero";
+
 }
 
-function filtrar(){
-  const q = document.getElementById('buscador').value.toLowerCase();
-  const filtradas = todasDeportes.filter(n=> (n.titulo+' '+(n.descripcion||'')).toLowerCase().includes(q));
-  mostrar(filtradas);
+
+/* ==================================================
+   IMAGEN DE RESPALDO
+================================================== */
+
+function mostrarFallback(img, emoji){
+
+    const contenedor =
+        img.parentElement;
+
+
+    img.remove();
+
+
+    contenedor.innerHTML = `
+
+        <div class="fallback">
+            ${emoji || "💰"}
+        </div>
+
+    `;
+
 }
 
-cargarDeportes();
+
+/* ==================================================
+   PROTECCIÓN DEL TEXTO
+================================================== */
+
+function escapeHTML(text){
+
+    return String(text)
+
+        .replace(/&/g,"&amp;")
+
+        .replace(/</g,"&lt;")
+
+        .replace(/>/g,"&gt;")
+
+        .replace(/"/g,"&quot;")
+
+        .replace(/'/g,"&#039;");
+
+}
+
+
+/* ==================================================
+   INICIAR
+================================================== */
+
+mostrar(
+    "todos",
+    document.querySelector(".filtros button")
+);
+
 </script>
+
 </body>
 </html>
