@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dinero | Finanzas, Economía y Consejos | Tendencias MX</title>
+
+  <meta name="description" content="Información sobre dinero, finanzas personales, ahorro, economía, empleo, negocios y consejos financieros para México en Tendencias MX.">
+
+  <meta name="keywords" content="dinero, finanzas, finanzas personales, ahorro, economía, negocios, empleo, consejos financieros, México">
+
+  <meta name="author" content="Tendencias MX">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/dinero.html">
+
+  <meta property="og:title" content="Dinero | Tendencias MX">
+  <meta property="og:description" content="Finanzas, economía, ahorro, empleo y negocios en México.">
+  <meta property="og:type" content="website">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font-family: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(5, 12, 24, 0.96);
+
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+
+      backdrop-filter: blur(12px);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      min-height: 70px;
+
+      margin: auto;
+      padding: 0 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: #35e875;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 10px 13px;
+
+      border-radius: 9px;
+
+      color: #dce5ef;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      transition: 0.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #35e875;
+      color: #06111d;
+    }
+
+    /* HERO */
+
+    .hero {
+      max-width: 1200px;
+
+      margin: auto;
+
+      padding: 60px 20px 35px;
+    }
+
+    .hero-box {
+      position: relative;
+      overflow: hidden;
+
+      padding: 50px 30px;
+
+      border-radius: 24px;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      background:
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(53,232,117,0.20),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #10243a,
+          #08111f
+        );
+    }
+
+    .hero-label {
+      color: #35e875;
+
+      font-size: 14px;
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+
+      font-size: clamp(40px, 8vw, 75px);
+
+      line-height: 0.98;
+
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #35e875;
+    }
+
+    .hero p {
+      max-width: 760px;
+
+      color: #b9c6d5;
+
+      font-size: 17px;
+
+      line-height: 1.7;
+    }
+
+    /* CONTENT */
+
+    .content {
+      max-width: 1200px;
+
+      margin: auto;
+
+      padding: 10px 20px 70px;
+    }
+
+    .section-title {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 15px;
+
+      margin: 30px 0 20px;
+    }
+
+    .section-title h2 {
+      font-size: 28px;
+    }
+
+    .section-title span {
+      color: #35e875;
+
+      font-size: 13px;
+
+      font-weight: 800;
+    }
+
+    /* CATEGORIES */
+
+    .categories {
+      display: flex;
+
+      gap: 10px;
+
+      overflow-x: auto;
+
+      padding-bottom: 10px;
+
+      scrollbar-width: none;
+    }
+
+    .categories::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category {
+      padding: 10px 16px;
+
+      border: 1px solid rgba(255,255,255,0.10);
+
+      border-radius: 30px;
+
+      background: #0c1a2b;
+
+      color: #dce5ef;
+
+      cursor: pointer;
+
+      white-space: nowrap;
+
+      font-weight: 700;
+
+      transition: 0.2s;
+    }
+
+    .category:hover,
+    .category.active {
+      background: #35e875;
+
+      color: #06111d;
+
+      border-color: #35e875;
+    }
+
+    /* NEWS GRID */
+
+    .news-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .card {
+      overflow: hidden;
+
+      background: #0c1a2b;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      border-radius: 18px;
+
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+
+      border-color:
+        rgba(53,232,117,0.45);
+    }
+
+    .card-image {
+      height: 190px;
+
+      padding: 18px;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,0.78),
+          transparent
+        ),
+        linear-gradient(
+          135deg,
+          #174b35,
+          #17354b
+        );
+    }
+
+    .card:nth-child(2) .card-image {
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,0.78),
+          transparent
+        ),
+        linear-gradient(
+          135deg,
+          #4a381b,
+          #1b3549
+        );
+    }
+
+    .card:nth-child(3) .card-image {
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,0.78),
+          transparent
+        ),
+        linear-gradient(
+          135deg,
+          #193f57,
+          #16283d
+        );
+    }
+
+    .card:nth-child(4) .card-image {
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,0.78),
+          transparent
+        ),
+        linear-gradient(
+          135deg,
+          #49301f,
+          #19354b
+        );
+    }
+
+    .card:nth-child(5) .card-image {
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,0.78),
+          transparent
+        ),
+        linear-gradient(
+          135deg,
+          #193f32,
+          #172e46
+        );
+    }
+
+    .card:nth-child(6) .card-image {
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,0.78),
+          transparent
+        ),
+        linear-gradient(
+          135deg,
+          #3d284b,
+          #172d44
+        );
+    }
+
+    .money-icon {
+      font-size: 42px;
+    }
+
+    .card-body {
+      padding: 18px;
+    }
+
+    .meta {
+      display: block;
+
+      color: #35e875;
+
+      font-size: 12px;
+
+      font-weight: 900;
+
+      text-transform: uppercase;
+
+      margin-bottom: 8px;
+    }
+
+    .card-body h3 {
+      font-size: 19px;
+
+      line-height: 1.35;
+
+      margin-bottom: 10px;
+    }
+
+    .card-body p {
+      color: #9eacbc;
+
+      font-size: 14px;
+
+      line-height: 1.6;
+    }
+
+    /* CALCULATOR */
+
+    .calculator {
+      margin-top: 40px;
+
+      padding: 28px;
+
+      background: #0c1a2b;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      border-radius: 20px;
+    }
+
+    .calculator h2 {
+      margin-bottom: 8px;
+    }
+
+    .calculator > p {
+      color: #9eacbc;
+
+      line-height: 1.6;
+
+      margin-bottom: 25px;
+    }
+
+    .calculator-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 15px;
+    }
+
+    .field label {
+      display: block;
+
+      margin-bottom: 8px;
+
+      color: #dce5ef;
+
+      font-size: 14px;
+
+      font-weight: 800;
+    }
+
+    .field input {
+      width: 100%;
+
+      padding: 13px;
+
+      background: #07111f;
+
+      color: #ffffff;
+
+      border: 1px solid rgba(255,255,255,0.10);
+
+      border-radius: 9px;
+
+      outline: none;
+    }
+
+    .field input:focus {
+      border-color: #35e875;
+    }
+
+    .calculate-btn {
+      width: 100%;
+
+      margin-top: 18px;
+
+      padding: 14px;
+
+      border: none;
+
+      border-radius: 10px;
+
+      background: #35e875;
+
+      color: #06111d;
+
+      font-weight: 900;
+
+      font-size: 16px;
+
+      cursor: pointer;
+    }
+
+    .result {
+      display: none;
+
+      margin-top: 18px;
+
+      padding: 18px;
+
+      border-radius: 10px;
+
+      background: rgba(53,232,117,0.10);
+
+      border: 1px solid rgba(53,232,117,0.25);
+
+      color: #baf5ce;
+
+      line-height: 1.7;
+    }
+
+    /* SEARCH */
+
+    .search-box {
+      display: flex;
+
+      gap: 10px;
+
+      margin-bottom: 25px;
+
+      padding: 9px;
+
+      background: #0c1a2b;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      border-radius: 12px;
+    }
+
+    .search-box input {
+      flex: 1;
+
+      min-width: 0;
+
+      padding: 12px;
+
+      background: transparent;
+
+      border: none;
+
+      outline: none;
+
+      color: #ffffff;
+
+      font-size: 16px;
+    }
+
+    .search-box input::placeholder {
+      color: #8493a5;
+    }
+
+    .search-button {
+      padding: 0 20px;
+
+      border: none;
+
+      border-radius: 8px;
+
+      background: #35e875;
+
+      color: #06111d;
+
+      font-weight: 900;
+
+      cursor: pointer;
+    }
+
+    .no-results {
+      display: none;
+
+      padding: 40px 20px;
+
+      text-align: center;
+
+      color: #9eacbc;
+
+      background: #0c1a2b;
+
+      border-radius: 15px;
+
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 20px;
+
+      text-align: center;
+
+      background: #050c17;
+
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    footer strong {
+      color: #35e875;
+    }
+
+    footer p {
+      color: #7f8c9c;
+
+      margin-top: 8px;
+
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+
+      .header-container {
+        flex-direction: column;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .hero {
+        padding-top: 30px;
+      }
+
+      .hero-box {
+        padding: 35px 22px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .calculator-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .search-box {
+        padding: 7px;
+      }
+
+      .search-button {
+        padding: 0 14px;
+      }
+
+      nav a {
+        padding: 8px 9px;
+
+        font-size: 12px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="header-container">
+
+      <a
+        href="index.html"
+        class="logo"
+      >
+        Tendencias<span>MX</span>
+      </a>
+
+
+      <nav>
+
+        <a href="index.html">
+          Inicio
+        </a>
+
+        <a href="tendencias.html">
+          Tendencias
+        </a>
+
+        <a href="noticias.html">
+          Noticias
+        </a>
+
+        <a href="entretenimiento.html">
+          Entretenimiento
+        </a>
+
+        <a href="deportes.html">
+          Deportes
+        </a>
+
+        <a href="tecnologia.html">
+          Tecnología
+        </a>
+
+        <a href="mexico.html">
+          México
+        </a>
+
+        <a href="dinero.html" class="active">
+          Dinero
+        </a>
+
+        <a href="contacto.html">
+          Contacto
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-box">
+
+      <div class="hero-label">
+        💰 DINERO
+      </div>
+
+      <h1>
+        Tu dinero,
+        <span>mejor informado</span>
+      </h1>
+
+      <p>
+        Información sobre finanzas personales, ahorro,
+        economía, empleo, negocios y temas financieros
+        que pueden afectar a los mexicanos.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTENT -->
+
+  <main class="content">
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Buscar temas de dinero..."
+      >
+
+      <button
+        class="search-button"
+        onclick="buscar()"
+      >
+        Buscar
+      </button>
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+
+    <div class="section-title">
+
+      <h2>
+        Finanzas y economía
+      </h2>
+
+      <span>
+        EXPLORA
+      </span>
+
+    </div>
+
+
+    <div class="categories">
+
+      <button
+        class="category active"
+        data-category="todos"
+      >
+        Todos
+      </button>
+
+      <button
+        class="category"
+        data-category="ahorro"
+      >
+        💰 Ahorro
+      </button>
+
+      <button
+        class="category"
+        data-category="economia"
+      >
+        📈 Economía
+      </button>
+
+      <button
+        class="category"
+        data-category="empleo"
+      >
+        💼 Empleo
+      </button>
+
+      <button
+        class="category"
+        data-category="negocios"
+      >
+        🏢 Negocios
+      </button>
+
+      <button
+        class="category"
+        data-category="finanzas"
+      >
+        💳 Finanzas
+      </button>
+
+    </div>
+
+
+    <!-- NEWS -->
+
+    <div class="section-title">
+
+      <h2>
+        Temas destacados
+      </h2>
+
+      <span id="contador">
+        6 historias
+      </span>
+
+    </div>
+
+
+    <div
+      class="news-grid"
+      id="newsGrid"
+    >
+
+
+      <article
+        class="card"
+        data-category="ahorro"
+      >
+
+        <div class="card-image">
+
+          <div class="money-icon">
+            💰
+          </div>
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="meta">
+            Ahorro
+          </span>
+
+          <h3>
+            Ideas para organizar mejor tus gastos
+          </h3>
+
+          <p>
+            Consejos generales para conocer tus ingresos,
+            gastos y mejorar la organización de tus finanzas.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card"
+        data-category="economia"
+      >
+
+        <div class="card-image">
+
+          <div class="money-icon">
+            📈
+          </div>
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="meta">
+            Economía
+          </span>
+
+          <h3>
+            Los temas económicos que debes conocer
+          </h3>
+
+          <p>
+            Información y contexto sobre acontecimientos
+            económicos que generan interés en México.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card"
+        data-category="empleo"
+      >
+
+        <div class="card-image">
+
+          <div class="money-icon">
+            💼
+          </div>
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="meta">
+            Empleo
+          </span>
+
+          <h3>
+            Tendencias del mercado laboral
+          </h3>
+
+          <p>
+            Información sobre empleo, oportunidades laborales
+            y cambios en el mercado de trabajo.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card"
+        data-category="negocios"
+      >
+
+        <div class="card-image">
+
+          <div class="money-icon">
+            🏢
+          </div>
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="meta">
+            Negocios
+          </span>
+
+          <h3>
+            Ideas y tendencias para pequeños negocios
+          </h3>
+
+          <p>
+            Noticias y temas relacionados con emprendimiento,
+            negocios y actividad empresarial.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card"
+        data-category="finanzas"
+      >
+
+        <div class="card-image">
+
+          <div class="money-icon">
+            💳
+          </div>
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="meta">
+            Finanzas
+          </span>
+
+          <h3>
+            Conceptos financieros explicados fácilmente
+          </h3>
+
+          <p>
+            Aprende de manera sencilla sobre conceptos
+            relacionados con dinero y finanzas personales.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card"
+        data-category="economia finanzas"
+      >
+
+        <div class="card-image">
+
+          <div class="money-icon">
+            🇲🇽
+          </div>
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="meta">
+            México
+          </span>
+
+          <h3>
+            Economía mexicana y temas de actualidad
+          </h3>
+
+          <p>
+            Información económica de interés para personas,
+            familias y negocios en México.
+          </p>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+    <div
+      class="no-results"
+      id="noResults"
+    >
+
+      <h3>
+        No encontramos resultados
+      </h3>
+
+      <p>
+        Prueba con otra palabra o categoría.
+      </p>
+
+    </div>
+
+
+    <!-- CALCULATOR -->
+
+    <section class="calculator">
+
+      <h2>
+        🧮 Calculadora de ahorro
+      </h2>
+
+      <p>
+        Calcula cuánto podrías acumular si ahorras una cantidad
+        determinada cada mes. Es una herramienta educativa y
+        no constituye asesoría financiera.
+      </p>
+
+
+      <div class="calculator-grid">
+
+        <div class="field">
+
+          <label for="ahorroMensual">
+            Ahorro mensual
+          </label>
+
+          <input
+            type="number"
+            id="ahorroMensual"
+            placeholder="Ej. 1000"
+            min="0"
+          >
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="meses">
+            Número de meses
+          </label>
+
+          <input
+            type="number"
+            id="meses"
+            placeholder="Ej. 12"
+            min="1"
+          >
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="calculate-btn"
+        onclick="calcularAhorro()"
+      >
+        Calcular ahorro
+      </button>
+
+
+      <div
+        class="result"
+        id="result"
+      ></div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <strong>
+      Tendencias MX
+    </strong>
+
+    <p>
+      Noticias, tendencias, entretenimiento, deportes,
+      tecnología, México y dinero.
+    </p>
+
+    <p>
+      © 2026 Tendencias MX · Todos los derechos reservados.
+    </p>
+
+  </footer>
+
+
+  <script>
+
+    /* FILTROS */
+
+    const categories =
+      document.querySelectorAll(".category");
+
+    const cards =
+      document.querySelectorAll(".card");
+
+    const searchInput =
+      document.getElementById("searchInput");
+
+    const contador =
+      document.getElementById("contador");
+
+    const noResults =
+      document.getElementById("noResults");
+
+
+    let categoriaActual = "todos";
+
+
+    categories.forEach(button => {
+
+      button.addEventListener(
+        "click",
+        function() {
+
+          categories.forEach(btn => {
+            btn.classList.remove("active");
+          });
+
+          this.classList.add("active");
+
+          categoriaActual =
+            this.dataset.category;
+
+          filtrar();
+
+        }
+      );
+
+    });
+
+
+    searchInput.addEventListener(
+      "input",
+      filtrar
+    );
+
+
+    function buscar() {
+
+      filtrar();
+
+      document
+        .getElementById("newsGrid")
+        .scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+    }
+
+
+    function filtrar() {
+
+      const texto =
+        searchInput.value
+          .toLowerCase()
+          .trim();
+
+      let visibles = 0;
+
+
+      cards.forEach(card => {
+
+        const categoria =
+          card.dataset.category.toLowerCase();
+
+        const contenido =
+          card.textContent.toLowerCase();
+
+
+        const coincideCategoria =
+          categoriaActual === "todos" ||
+          categoria.includes(categoriaActual);
+
+
+        const coincideTexto =
+          texto === "" ||
+          contenido.includes(texto);
+
+
+        if (
+          coincideCategoria &&
+          coincideTexto
+        ) {
+
+          card.style.display = "";
+
+          visibles++;
+
+        } else {
+
+          card.style.display = "none";
+
+        }
+
+      });
+
+
+      contador.textContent =
+        visibles +
+        (
+          visibles === 1
+            ? " historia"
+            : " historias"
+        );
+
+
+      noResults.style.display =
+        visibles === 0
+          ? "block"
+          : "none";
+
+    }
+
+
+    /* CALCULADORA */
+
+    function calcularAhorro() {
+
+      const ahorro =
+        Number(
+          document.getElementById(
+            "ahorroMensual"
+          ).value
+        );
+
+      const meses =
+        Number(
+          document.getElementById(
+            "meses"
+          ).value
+        );
+
+
+      const result =
+        document.getElementById(
+          "result"
+        );
+
+
+      if (
+        ahorro <= 0 ||
+        meses <= 0
+      ) {
+
+        result.style.display = "block";
+
+        result.innerHTML =
+          "⚠️ Introduce una cantidad mensual y un número de meses válidos.";
+
+        return;
+
+      }
+
+
+      const total =
+        ahorro * meses;
+
+
+      const dineroFormateado =
+        total.toLocaleString(
+          "es-MX",
+          {
+            style: "currency",
+            currency: "MXN"
+          }
+        );
+
+
+      result.style.display = "block";
+
+      result.innerHTML =
+        "Si ahorras <strong>" +
+        ahorro.toLocaleString(
+          "es-MX",
+          {
+            style: "currency",
+            currency: "MXN"
+          }
+        ) +
+        "</strong> durante <strong>" +
+        meses +
+        "</strong> meses, acumularías aproximadamente <strong>" +
+        dineroFormateado +
+        "</strong>.<br><br>" +
+        "Este cálculo no considera rendimientos, comisiones, impuestos ni inflación.";
+
+    }
+
+  </script>
+
+
+</body>
+</html>

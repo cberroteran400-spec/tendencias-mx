@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Preguntas Frecuentes | Tendencias MX</title>
+
+  <meta name="description" content="Preguntas frecuentes sobre Tendencias MX, noticias, tendencias, información, contenido y funcionamiento de nuestra plataforma.">
+
+  <meta name="keywords" content="preguntas frecuentes, Tendencias MX, noticias México, información México, ayuda, preguntas">
+
+  <meta name="author" content="Tendencias MX">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/preguntas.html">
+
+  <meta property="og:title" content="Preguntas Frecuentes | Tendencias MX">
+  <meta property="og:description" content="Respuestas a las preguntas más frecuentes sobre Tendencias MX.">
+  <meta property="og:type" content="website">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font-family: inherit;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(5, 12, 24, 0.96);
+
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+
+      backdrop-filter: blur(12px);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      min-height: 70px;
+
+      margin: auto;
+      padding: 0 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+
+      letter-spacing: -1px;
+
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: #35e875;
+    }
+
+    nav {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 10px 13px;
+
+      border-radius: 9px;
+
+      color: #dce5ef;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      transition: 0.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #35e875;
+
+      color: #06111d;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      max-width: 1200px;
+
+      margin: auto;
+
+      padding: 60px 20px 35px;
+    }
+
+    .hero-box {
+      position: relative;
+
+      overflow: hidden;
+
+      padding: 50px 30px;
+
+      border-radius: 24px;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      background:
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(53,232,117,0.20),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #10243a,
+          #08111f
+        );
+    }
+
+    .hero-label {
+      color: #35e875;
+
+      font-size: 14px;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+
+      font-size: clamp(40px, 8vw, 72px);
+
+      line-height: 0.98;
+
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #35e875;
+    }
+
+    .hero p {
+      max-width: 760px;
+
+      color: #b9c6d5;
+
+      font-size: 17px;
+
+      line-height: 1.7;
+    }
+
+    /* =========================
+       CONTENT
+    ========================== */
+
+    .content {
+      max-width: 950px;
+
+      margin: auto;
+
+      padding: 10px 20px 70px;
+    }
+
+    /* SEARCH */
+
+    .search-box {
+      display: flex;
+
+      gap: 10px;
+
+      padding: 9px;
+
+      margin-bottom: 35px;
+
+      background: #0c1a2b;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      border-radius: 12px;
+    }
+
+    .search-box input {
+      flex: 1;
+
+      min-width: 0;
+
+      padding: 13px;
+
+      background: transparent;
+
+      border: none;
+
+      outline: none;
+
+      color: #ffffff;
+
+      font-size: 16px;
+    }
+
+    .search-box input::placeholder {
+      color: #8493a5;
+    }
+
+    .search-button {
+      padding: 0 20px;
+
+      border: none;
+
+      border-radius: 8px;
+
+      background: #35e875;
+
+      color: #06111d;
+
+      font-weight: 900;
+
+      cursor: pointer;
+    }
+
+    /* =========================
+       CATEGORIES
+    ========================== */
+
+    .categories {
+      display: flex;
+
+      gap: 10px;
+
+      flex-wrap: wrap;
+
+      margin-bottom: 25px;
+    }
+
+    .category {
+      padding: 10px 15px;
+
+      border: 1px solid rgba(255,255,255,0.10);
+
+      border-radius: 30px;
+
+      background: #0c1a2b;
+
+      color: #dce5ef;
+
+      cursor: pointer;
+
+      font-weight: 700;
+
+      transition: 0.2s;
+    }
+
+    .category:hover,
+    .category.active {
+      background: #35e875;
+
+      color: #06111d;
+
+      border-color: #35e875;
+    }
+
+    /* =========================
+       FAQ
+    ========================== */
+
+    .faq-list {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 12px;
+    }
+
+    .faq {
+      background: #0c1a2b;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      border-radius: 16px;
+
+      overflow: hidden;
+
+      transition: 0.2s;
+    }
+
+    .faq:hover {
+      border-color: rgba(53,232,117,0.30);
+    }
+
+    .faq-question {
+      width: 100%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 15px;
+
+      padding: 20px;
+
+      border: none;
+
+      background: transparent;
+
+      color: #ffffff;
+
+      text-align: left;
+
+      font-size: 16px;
+
+      font-weight: 800;
+
+      cursor: pointer;
+    }
+
+    .faq-icon {
+      width: 30px;
+
+      height: 30px;
+
+      flex-shrink: 0;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: rgba(53,232,117,0.10);
+
+      color: #35e875;
+
+      font-size: 20px;
+
+      transition: 0.2s;
+    }
+
+    .faq.open .faq-icon {
+      transform: rotate(45deg);
+
+      background: #35e875;
+
+      color: #06111d;
+    }
+
+    .faq-answer {
+      display: none;
+
+      padding: 0 20px 22px;
+
+      color: #9eacbc;
+
+      font-size: 15px;
+
+      line-height: 1.7;
+    }
+
+    .faq.open .faq-answer {
+      display: block;
+    }
+
+    /* =========================
+       EMPTY
+    ========================== */
+
+    .no-results {
+      display: none;
+
+      padding: 45px 20px;
+
+      text-align: center;
+
+      color: #9eacbc;
+
+      background: #0c1a2b;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      border-radius: 15px;
+    }
+
+    /* =========================
+       HELP BOX
+    ========================== */
+
+    .help-box {
+      margin-top: 45px;
+
+      padding: 30px;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(53,232,117,0.12),
+          rgba(53,232,117,0.03)
+        );
+
+      border: 1px solid rgba(53,232,117,0.20);
+
+      text-align: center;
+    }
+
+    .help-box h2 {
+      margin-bottom: 10px;
+    }
+
+    .help-box p {
+      max-width: 650px;
+
+      margin: auto;
+
+      color: #b9c6d5;
+
+      line-height: 1.7;
+    }
+
+    .help-button {
+      display: inline-block;
+
+      margin-top: 20px;
+
+      padding: 13px 20px;
+
+      border-radius: 10px;
+
+      background: #35e875;
+
+      color: #06111d;
+
+      font-weight: 900;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      padding: 35px 20px;
+
+      text-align: center;
+
+      background: #050c17;
+
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    footer strong {
+      color: #35e875;
+    }
+
+    footer p {
+      color: #7f8c9c;
+
+      margin-top: 8px;
+
+      font-size: 14px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .header-container {
+        flex-direction: column;
+
+        padding-top: 15px;
+
+        padding-bottom: 15px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .hero {
+        padding-top: 30px;
+      }
+
+      .hero-box {
+        padding: 35px 22px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      nav a {
+        padding: 8px 9px;
+
+        font-size: 12px;
+      }
+
+      .search-box {
+        padding: 7px;
+      }
+
+      .search-button {
+        padding: 0 14px;
+      }
+
+      .faq-question {
+        padding: 17px;
+
+        font-size: 15px;
+      }
+
+      .faq-answer {
+        padding: 0 17px 18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+
+    <div class="header-container">
+
+      <a
+        href="index.html"
+        class="logo"
+      >
+        Tendencias<span>MX</span>
+      </a>
+
+
+      <nav>
+
+        <a href="index.html">
+          Inicio
+        </a>
+
+        <a href="tendencias.html">
+          Tendencias
+        </a>
+
+        <a href="noticias.html">
+          Noticias
+        </a>
+
+        <a href="entretenimiento.html">
+          Entretenimiento
+        </a>
+
+        <a href="deportes.html">
+          Deportes
+        </a>
+
+        <a href="tecnologia.html">
+          Tecnología
+        </a>
+
+        <a href="mexico.html">
+          México
+        </a>
+
+        <a href="dinero.html">
+          Dinero
+        </a>
+
+        <a href="tramites.html">
+          Trámites
+        </a>
+
+        <a
+          href="preguntas.html"
+          class="active"
+        >
+          Preguntas
+        </a>
+
+        <a href="contacto.html">
+          Contacto
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <section class="hero">
+
+    <div class="hero-box">
+
+      <div class="hero-label">
+        ❓ CENTRO DE AYUDA
+      </div>
+
+      <h1>
+        Preguntas
+        <span>frecuentes</span>
+      </h1>
+
+      <p>
+        Encuentra respuestas sobre Tendencias MX,
+        nuestras secciones, contenido, noticias,
+        información y funcionamiento del sitio.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTENT
+  ========================== -->
+
+  <main class="content">
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="¿Qué quieres saber?"
+        aria-label="Buscar preguntas frecuentes"
+      >
+
+      <button
+        class="search-button"
+        onclick="buscarPreguntas()"
+      >
+        Buscar
+      </button>
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+
+    <div class="categories">
+
+      <button
+        class="category active"
+        data-category="todos"
+      >
+        Todas
+      </button>
+
+      <button
+        class="category"
+        data-category="sitio"
+      >
+        🌐 Sitio
+      </button>
+
+      <button
+        class="category"
+        data-category="noticias"
+      >
+        📰 Noticias
+      </button>
+
+      <button
+        class="category"
+        data-category="contenido"
+      >
+        📚 Contenido
+      </button>
+
+      <button
+        class="category"
+        data-category="contacto"
+      >
+        📩 Contacto
+      </button>
+
+    </div>
+
+
+    <!-- FAQ -->
+
+    <div
+      class="faq-list"
+      id="faqList"
+    >
+
+
+      <article
+        class="faq"
+        data-category="sitio"
+        data-search="qué es tendencias mx sitio plataforma"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿Qué es Tendencias MX?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          Tendencias MX es una plataforma digital enfocada
+          en noticias, tendencias, entretenimiento, deportes,
+          tecnología, información de México y otros temas
+          de interés para los usuarios.
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="faq"
+        data-category="noticias"
+        data-search="noticias información actualidad noticias mexico"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿Dónde puedo encontrar las noticias?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          Puedes consultar la sección de Noticias desde el
+          menú principal. Ahí se organizará la información
+          relacionada con acontecimientos y temas de actualidad.
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="faq"
+        data-category="contenido"
+        data-search="tendencias temas contenido secciones"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿Qué tipo de contenido puedo encontrar?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          El sitio cuenta con diferentes secciones como
+          Tendencias, Noticias, Entretenimiento, Deportes,
+          Tecnología, México, Dinero y Trámites.
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="faq"
+        data-category="contenido"
+        data-search="dinero finanzas economia ahorro"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿Qué puedo encontrar en la sección Dinero?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          La sección Dinero está enfocada en temas de
+          finanzas personales, ahorro, economía, empleo,
+          negocios y otros asuntos relacionados con el dinero.
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="faq"
+        data-category="contenido"
+        data-search="tramites gobierno documentos mexico servicios"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿Qué información hay en Trámites?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          La sección Trámites funciona como una guía
+          informativa para encontrar temas relacionados
+          con documentos y servicios públicos. Siempre
+          debes verificar los requisitos directamente
+          con la institución oficial correspondiente.
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="faq"
+        data-category="contenido"
+        data-search="deportes futbol entretenimiento tecnologia mexico"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿Qué otras secciones tiene Tendencias MX?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          Puedes encontrar secciones dedicadas a
+          entretenimiento, deportes, tecnología,
+          México y tendencias.
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="faq"
+        data-category="noticias"
+        data-search="informacion noticias fuentes actualidad"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿La información se actualizará?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          El sitio está preparado para incorporar contenido
+          actualizado. En una siguiente etapa podremos conectar
+          fuentes de noticias para automatizar parte de la
+          actualización de información.
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="faq"
+        data-category="contacto"
+        data-search="contactar contacto mensaje sugerencia correo"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿Cómo puedo contactar con Tendencias MX?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          Puedes utilizar la sección Contacto para enviar
+          sugerencias, comentarios, información o propuestas
+          de colaboración.
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="faq"
+        data-category="contacto"
+        data-search="enviar noticia informacion propuesta colaboracion"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿Puedo enviar información o proponer un tema?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          Sí. Puedes utilizar el formulario de contacto
+          para enviar sugerencias, información o propuestas.
+          Posteriormente podremos conectar el formulario
+          a un sistema real de recepción de mensajes.
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="faq"
+        data-category="sitio"
+        data-search="celular movil telefono responsive computadora"
+      >
+
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            ¿El sitio funciona desde el celular?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          Sí. La interfaz está diseñada para adaptarse a
+          teléfonos celulares, tablets y computadoras.
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+    <!-- NO RESULTS -->
+
+    <div
+      class="no-results"
+      id="noResults"
+    >
+
+      <h3>
+        No encontramos esa pregunta
+      </h3>
+
+      <p>
+        Prueba con otra palabra o selecciona otra categoría.
+      </p>
+
+    </div>
+
+
+    <!-- HELP -->
+
+    <section class="help-box">
+
+      <h2>
+        ¿No encontraste lo que buscabas?
+      </h2>
+
+      <p>
+        Si tienes otra pregunta, sugerencia o comentario,
+        puedes ponerte en contacto con Tendencias MX.
+      </p>
+
+      <a
+        href="contacto.html"
+        class="help-button"
+      >
+        Ir a Contacto
+      </a>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <strong>
+      Tendencias MX
+    </strong>
+
+    <p>
+      Noticias, tendencias, entretenimiento, deportes,
+      tecnología, México, dinero y trámites.
+    </p>
+
+    <p>
+      © 2026 Tendencias MX · Todos los derechos reservados.
+    </p>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    const faqItems =
+      document.querySelectorAll(".faq");
+
+    const categoryButtons =
+      document.querySelectorAll(".category");
+
+    const searchInput =
+      document.getElementById("searchInput");
+
+    const noResults =
+      document.getElementById("noResults");
+
+
+    let categoriaActual =
+      "todos";
+
+
+    /* =========================
+       ABRIR / CERRAR PREGUNTAS
+    ========================== */
+
+    faqItems.forEach(faq => {
+
+      const question =
+        faq.querySelector(".faq-question");
+
+      question.addEventListener(
+        "click",
+        function() {
+
+          const estabaAbierta =
+            faq.classList.contains("open");
+
+
+          faqItems.forEach(item => {
+            item.classList.remove("open");
+          });
+
+
+          if (!estabaAbierta) {
+
+            faq.classList.add("open");
+
+          }
+
+        }
+      );
+
+    });
+
+
+    /* =========================
+       CATEGORÍAS
+    ========================== */
+
+    categoryButtons.forEach(button => {
+
+      button.addEventListener(
+        "click",
+        function() {
+
+          categoryButtons.forEach(btn => {
+            btn.classList.remove("active");
+          });
+
+          this.classList.add("active");
+
+          categoriaActual =
+            this.dataset.category;
+
+          filtrarPreguntas();
+
+        }
+      );
+
+    });
+
+
+    /* =========================
+       BUSCADOR
+    ========================== */
+
+    searchInput.addEventListener(
+      "input",
+      filtrarPreguntas
+    );
+
+
+    function buscarPreguntas() {
+
+      filtrarPreguntas();
+
+      document
+        .getElementById("faqList")
+        .scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+    }
+
+
+    function filtrarPreguntas() {
+
+      const texto =
+        searchInput.value
+          .toLowerCase()
+          .trim();
+
+
+      let visibles = 0;
+
+
+      faqItems.forEach(faq => {
+
+        const categoria =
+          faq.dataset.category
+            .toLowerCase();
+
+        const contenido =
+          (
+            faq.dataset.search +
+            " " +
+            faq.textContent
+          ).toLowerCase();
+
+
+        const coincideCategoria =
+          categoriaActual === "todos" ||
+          categoria === categoriaActual;
+
+
+        const coincideTexto =
+          texto === "" ||
+          contenido.includes(texto);
+
+
+        if (
+          coincideCategoria &&
+          coincideTexto
+        ) {
+
+          faq.style.display = "";
+
+          visibles++;
+
+        } else {
+
+          faq.style.display = "none";
+
+          faq.classList.remove("open");
+
+        }
+
+      });
+
+
+      noResults.style.display =
+        visibles === 0
+          ? "block"
+          : "none";
+
+    }
+
+  </script>
+
+
+</body>
+</html>
