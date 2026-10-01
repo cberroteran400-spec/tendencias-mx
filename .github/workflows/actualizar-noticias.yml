@@ -1,10 +1,7 @@
-name: Actualizar noticias
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */3 * * *'
+name: Actualizar con fotos reales
+on: workflow_dispatch
 jobs:
-  actualizar:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -16,54 +13,37 @@ jobs:
       - run: pip install feedparser requests beautifulsoup4 lxml
       - run: |
           python3 << 'PY'
-          import feedparser, json, requests
+          import feedparser, requests, json
           from bs4 import BeautifulSoup
           from datetime import datetime, timezone
 
-          FUENTES = {
-            "https://www.mediotiempo.com/rss.xml": "deportes",
-            "https://www.record.com.mx/rss.xml": "deportes",
-            "https://expansion.mx/rss/economia": "economia",
-            "https://expansion.mx/rss/tecnologia": "tecnologia",
-            "https://expansion.mx/rss/rss_mundo.xml": "mundo"
-          }
-
-          def get_imagen_real(link, rss_img):
-              if rss_img and rss_img.startswith("http") and "google" not in rss_img:
-                  return rss_img
+          RSS = "https://lifeandstyle.expansion.mx/rss"
+          
+          def get_foto(link):
               try:
-                  r = requests.get(link, timeout=8, headers={"User-Agent":"Mozilla/5.0"})
-                  soup = BeautifulSoup(r.text, "lxml")
-                  og = soup.find("meta", property="og:image")
-                  if og and og.get("content"):
-                      return og["content"]
+                  r = requests.get(link, timeout=10, headers={"User-Agent":"Mozilla/5.0"})
+                  s = BeautifulSoup(r.text, "lxml")
+                  og = s.find("meta", property="og:image")
+                  if og: return og.get("content")
               except: pass
-              return rss_img or f"https://picsum.photos/seed/{abs(hash(link))%99999}/600/400"
+              return f"https://picsum.photos/seed/{abs(hash(link))%100000}/600/400"
 
-          todas=[]
-          for url, cat in FUENTES.items():
-              feed = feedparser.parse(url)
-              for e in feed.entries[:15]:
-                  img = ""
-                  if 'media_content' in e: img = e.media_content[0].get('url','')
-                  elif e.get('enclosures'): img = e.enclosures[0].href
-                  link = e.get('link','')
-                  todas.append({
-                    "titulo": e.get('title',''),
-                    "descripcion": BeautifulSoup(e.get('description',''), "lxml").get_text()[:200],
-                    "link": link,
-                    "categoria": cat,
-                    "imagen": get_imagen_real(link, img),
-                    "fecha": e.get('published','')
-                  })
-          data={"actualizado": datetime.now(timezone.utc).isoformat(), "noticias": list({n['link']:n for n in todas}.values())}
-          with open('noticias.json','w',encoding='utf-8') as f:
-              json.dump(data,f,ensure_ascii=False,indent=2)
-          print("Listo")
+          feed = feedparser.parse(RSS)
+          noticias=[]
+          for e in feed.entries[:50]:
+              link = e.link
+              noticias.append({
+                "titulo": e.title,
+                "descripcion": BeautifulSoup(e.description, "lxml").get_text()[:180],
+                "link": link,
+                "categoria": "deportes",
+                "imagen": get_foto(link)
+              })
+          json.dump({"actualizado": datetime.now(timezone.utc).isoformat(), "noticias": noticias}, open('noticias.json','w',encoding='utf-8'), ensure_ascii=False, indent=2)
           PY
       - run: |
           git config user.name "bot"
           git config user.email "bot@github.com"
           git add noticias.json
-          git commit -m "fix imagenes" || true
+          git commit -m "fotos reales" || true
           git push
