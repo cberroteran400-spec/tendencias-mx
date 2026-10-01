@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<title>Dinero | Economía, Dólar, Bancos y Empresas | TendenciasMX</title>
 
-<title>Dinero | TendenciasMX</title>
-
-<meta name="description"
-      content="Noticias de dinero, economía, mercados, bancos, empresas y finanzas personales en México.">
-
-<meta name="keywords"
-      content="dinero, economía, finanzas, dólar, peso, bancos, empresas, mercados, ahorro, créditos, México">
+<meta name="description" content="Noticias de dinero, economía, dólar, bancos, empresas y finanzas personales en TendenciasMX.">
+<meta name="keywords" content="dinero, economía, dólar, bancos, empresas, finanzas personales, México, noticias">
 
 <style>
-
 *{
     box-sizing:border-box;
     margin:0;
@@ -26,892 +19,604 @@
 body{
     font-family:Arial,Helvetica,sans-serif;
     background:#f4f6f8;
-    color:#171717;
+    color:#111827;
 }
 
 header{
     background:#111827;
     color:white;
-    padding:18px 15px;
     position:sticky;
     top:0;
-    z-index:100;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
-.header-content{
-    max-width:1100px;
+.header-inner{
+    max-width:1200px;
     margin:auto;
+    padding:16px 20px;
 }
 
 .logo{
-    font-size:27px;
+    font-size:28px;
     font-weight:800;
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+    margin-bottom:14px;
 }
 
 .logo span{
     color:#22c55e;
 }
 
-.subtitle{
-    font-size:13px;
-    color:#cbd5e1;
-    margin-top:4px;
-}
-
 nav{
     display:flex;
     gap:8px;
     overflow-x:auto;
-    margin-top:15px;
-    padding-bottom:3px;
+    padding-bottom:4px;
+    scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+    display:none;
 }
 
 nav a{
-    color:white;
+    color:#d1d5db;
     text-decoration:none;
-    background:#1f2937;
     padding:9px 13px;
-    border-radius:20px;
-    font-size:13px;
+    border-radius:8px;
     white-space:nowrap;
+    font-size:14px;
+    transition:.2s;
 }
 
-nav a:hover{
+nav a:hover,
+nav a.active{
     background:#22c55e;
-    color:#111827;
+    color:#052e16;
+    font-weight:700;
 }
 
 main{
     max-width:1100px;
     margin:auto;
-    padding:25px 15px 50px;
+    padding:30px 20px 50px;
 }
 
-h1{
-    font-size:30px;
-    margin-bottom:8px;
-}
-
-.descripcion{
-    color:#64748b;
-    margin-bottom:22px;
-    line-height:1.5;
-}
-
-.filtros{
-    display:flex;
-    gap:8px;
-    overflow-x:auto;
+.hero{
+    background:linear-gradient(135deg,#111827,#1f2937);
+    color:white;
+    border-radius:18px;
+    padding:30px 25px;
     margin-bottom:25px;
-    padding-bottom:5px;
 }
 
-.filtros button{
+.hero h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#d1d5db;
+    line-height:1.6;
+    max-width:750px;
+}
+
+.search-box{
+    margin:25px 0;
+}
+
+.search-box input{
+    width:100%;
+    padding:15px 17px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    background:white;
+}
+
+.search-box input:focus{
+    border-color:#22c55e;
+    box-shadow:0 0 0 3px rgba(34,197,94,.12);
+}
+
+.filters{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:28px;
+}
+
+.filter-btn{
     border:none;
-    background:#e2e8f0;
-    color:#1e293b;
+    background:white;
+    color:#374151;
+    border:1px solid #d1d5db;
     padding:10px 15px;
-    border-radius:22px;
+    border-radius:999px;
     cursor:pointer;
-    font-weight:700;
-    white-space:nowrap;
+    font-size:14px;
+    font-weight:600;
 }
 
-.filtros button.activo,
-.filtros button:hover{
+.filter-btn:hover,
+.filter-btn.active{
     background:#22c55e;
-    color:#07130b;
+    border-color:#22c55e;
+    color:#052e16;
 }
 
-.grid{
+.news-grid{
     display:grid;
-    grid-template-columns:
-        repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
 }
 
 .card{
     background:white;
-    border-radius:15px;
+    border-radius:16px;
     overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    box-shadow:0 4px 15px rgba(0,0,0,.07);
     transition:.2s;
+    height:100%;
 }
 
 .card:hover{
-    transform:translateY(-3px);
-    box-shadow:0 8px 22px rgba(0,0,0,.12);
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-.card-link{
-    display:block;
-    color:inherit;
-    text-decoration:none;
-}
-
-.card-img{
+.news-image{
     width:100%;
-    height:180px;
+    height:190px;
     background:#e5e7eb;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     overflow:hidden;
 }
 
-.card-img img{
+.news-image img{
     width:100%;
     height:100%;
     object-fit:cover;
     display:block;
 }
 
-.fallback{
-    width:100%;
-    height:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:55px;
-    background:
-        linear-gradient(
-            135deg,
-            #111827,
-            #334155
-        );
-}
-
 .card-content{
-    padding:17px;
+    padding:18px;
 }
 
-.categoria{
+.category{
     display:inline-block;
-    font-size:11px;
-    font-weight:800;
-    color:#15803d;
     background:#dcfce7;
+    color:#166534;
     padding:5px 9px;
-    border-radius:15px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:700;
     margin-bottom:10px;
-    text-transform:uppercase;
 }
 
 .card h2{
     font-size:19px;
-    line-height:1.3;
+    line-height:1.35;
     margin-bottom:9px;
 }
 
-.card p{
-    color:#64748b;
-    font-size:14px;
-    line-height:1.45;
-}
-
-.fecha{
-    margin-top:12px;
-    font-size:12px;
-    color:#94a3b8;
-}
-
-.leer{
-    margin-top:13px;
-    color:#16a34a;
+.date{
+    color:#6b7280;
     font-size:13px;
-    font-weight:800;
+    margin-bottom:10px;
 }
 
-.vacio{
-    text-align:center;
-    padding:50px 20px;
-    color:#64748b;
+.description{
+    color:#4b5563;
+    line-height:1.5;
+    font-size:14px;
+    margin-bottom:13px;
+}
+
+.read{
+    color:#16a34a;
+    font-size:14px;
+    font-weight:700;
+}
+
+.info{
+    background:#ecfdf5;
+    border:1px solid #bbf7d0;
+    border-radius:15px;
+    padding:20px;
+    margin-top:35px;
+}
+
+.info h3{
+    margin-bottom:8px;
+    color:#166534;
+}
+
+.info p{
+    color:#374151;
+    line-height:1.6;
+}
+
+.empty{
+    grid-column:1/-1;
     background:white;
     border-radius:15px;
+    padding:35px;
+    text-align:center;
+    color:#6b7280;
 }
 
 footer{
     background:#111827;
-    color:#94a3b8;
+    color:#9ca3af;
     text-align:center;
-    padding:25px 15px;
-    font-size:13px;
+    padding:25px 20px;
+    margin-top:20px;
+}
+
+footer strong{
+    color:#22c55e;
+}
+
+@media(max-width:900px){
+    .news-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
 }
 
 @media(max-width:600px){
+    .header-inner{
+        padding:14px 12px;
+    }
 
-    h1{
+    .logo{
         font-size:25px;
     }
 
-    .grid{
+    nav a{
+        font-size:13px;
+        padding:8px 10px;
+    }
+
+    main{
+        padding:20px 14px 40px;
+    }
+
+    .hero{
+        padding:25px 20px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .news-grid{
         grid-template-columns:1fr;
     }
 
-    .card-img{
-        height:200px;
+    .news-image{
+        height:210px;
     }
-
 }
-
 </style>
-
 </head>
 
 <body>
 
-
 <header>
+    <div class="header-inner">
 
-    <div class="header-content">
-
-        <div class="logo">
+        <a href="./index.html" class="logo">
             Tendencias<span>MX</span>
-        </div>
-
-        <div class="subtitle">
-            Noticias, tendencias y actualidad
-        </div>
+        </a>
 
         <nav>
-
-            <a href="index.html">
-                Inicio
-            </a>
-
-            <a href="noticias.html">
-                Noticias
-            </a>
-
-            <a href="deportes.html">
-                Deportes
-            </a>
-
-            <a href="entretenimiento.html">
-                Entretenimiento
-            </a>
-
-            <a href="tecnologia.html">
-                Tecnología
-            </a>
-
-            <a href="dinero.html">
-                Dinero
-            </a>
-
+            <a href="./index.html">Inicio</a>
+            <a href="./noticias.html">Noticias</a>
+            <a href="./deportes.html">Deportes</a>
+            <a href="./entretenimiento.html">Entretenimiento</a>
+            <a href="./tecnologia.html">Tecnología</a>
+            <a href="./dinero.html" class="active">Dinero</a>
+            <a href="./politica.html">Política</a>
+            <a href="./tramites.html">Trámites</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./preguntas.html">Preguntas</a>
         </nav>
 
     </div>
-
 </header>
-
 
 <main>
 
-    <h1>
-        Dinero
-    </h1>
+    <section class="hero">
+        <h1>Dinero</h1>
+        <p>
+            Información sobre dólar, economía, bancos, empresas y finanzas personales.
+            Consulta las noticias y tendencias económicas más relevantes.
+        </p>
+    </section>
 
-    <p class="descripcion">
-        Noticias de economía, mercados, bancos,
-        empresas y finanzas personales en México.
-    </p>
+    <div class="search-box">
+        <input
+            type="text"
+            id="search"
+            placeholder="Buscar noticias de dinero..."
+        >
+    </div>
 
+    <div class="filters">
 
-    <div class="filtros">
-
-        <button
-            class="activo"
-            onclick="mostrar('todos',this)">
+        <button class="filter-btn active" data-category="todos">
             Todos
         </button>
 
-        <button
-            onclick="mostrar('dolar',this)">
-            💵 Dólar y mercados
+        <button class="filter-btn" data-category="dolar">
+            💵 Dólar
         </button>
 
-        <button
-            onclick="mostrar('economia',this)">
+        <button class="filter-btn" data-category="economia">
             📊 Economía
         </button>
 
-        <button
-            onclick="mostrar('bancos',this)">
-            🏦 Bancos y finanzas
+        <button class="filter-btn" data-category="bancos">
+            🏦 Bancos
         </button>
 
-        <button
-            onclick="mostrar('empresas',this)">
+        <button class="filter-btn" data-category="empresas">
             🏢 Empresas
         </button>
 
-        <button
-            onclick="mostrar('personales',this)">
-            👛 Finanzas personales
+        <button class="filter-btn" data-category="personales">
+            👤 Finanzas personales
         </button>
 
     </div>
 
+    <section class="news-grid" id="newsGrid"></section>
 
-    <div
-        id="contenedor"
-        class="grid">
-    </div>
+    <section class="info">
+        <h3>Sobre la sección Dinero</h3>
+        <p>
+            Aquí encontrarás información relacionada con el dólar,
+            economía, bancos, empresas y finanzas personales.
+            Cada noticia puede abrirse desde su fuente original.
+        </p>
+    </section>
 
 </main>
 
-
 <footer>
-
-    © 2026 TendenciasMX · Dinero
-
+    <p>
+        © 2026 <strong>TendenciasMX</strong> · Información y actualidad
+    </p>
 </footer>
-
 
 <script>
 
-
 const noticias = [
 
-/* ==================================================
-   DÓLAR Y MERCADOS
-================================================== */
-
-{
-    categoria:"dolar",
-
-    titulo:
-    "Peso borra ganancias de 2026; tipo de cambio rompe barrera de 18 unidades por dólar",
-
-    descripcion:
-    "El peso mexicano se mantuvo por arriba de 18 unidades por dólar ante el repunte de los rendimientos de los bonos de Estados Unidos y la fortaleza del dólar.",
-
-    fecha:
-    "29 de septiembre de 2026",
-
-    emoji:"💵",
-
-    imagen:
-    "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/mercados/2026/09/29/peso-mexicano-borra-ganancia-2026-cotiza-cerca-18-14-dolar"
-},
-
-
-{
-    categoria:"dolar",
-
-    titulo:
-    "¿Qué le pasó al superpeso? se deprecia en una semana clave para Banxico",
-
-    descripcion:
-    "El dólar recuperó terreno mientras petróleo, bonos y T-MEC aumentaron la presión sobre el tipo de cambio.",
-
-    fecha:
-    "24 de septiembre de 2026",
-
-    emoji:"📉",
-
-    imagen:
-    "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/economia/2026/09/24/tipo-cambio-hoy-24-septiembre-peso-dolar"
-},
-
-
-{
-    categoria:"dolar",
-
-    titulo:
-    "Mercado Libre emite deuda en BIVA ante riesgos de fondeo",
-
-    descripcion:
-    "Mercado Libre realizó su primera emisión de deuda pública en México por 3,750 millones de pesos para ampliar sus fuentes de financiamiento.",
-
-    fecha:
-    "29 de septiembre de 2026",
-
-    emoji:"📈",
-
-    imagen:
-    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/mercados/2026/09/29/mercado-libre-deuda-biva-mercado-pago-riesgos-fondeo"
-},
-
-
-/* ==================================================
-   ECONOMÍA
-================================================== */
-
-{
-    categoria:"economia",
-
-    titulo:
-    "Sofipos quieren el mercado de pagos que todavía domina el efectivo",
-
-    descripcion:
-    "Las nuevas reglas para los pagos digitales pueden abrir espacio para que las Sofipos amplíen su participación y lleguen a pequeños comercios.",
-
-    fecha:
-    "30 de septiembre de 2026",
-
-    emoji:"💳",
-
-    imagen:
-    "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/economia/2026/09/30/sofipos-van-mercado-pagos-todavia-domina-efectivo"
-},
-
-
-{
-    categoria:"economia",
-
-    titulo:
-    "Fitch mejora a 1.4% el crecimiento de México para 2026",
-
-    descripcion:
-    "La calificadora elevó su pronóstico de crecimiento para México, aunque señaló riesgos relacionados con el T-MEC y las reformas internas.",
-
-    fecha:
-    "22 de septiembre de 2026",
-
-    emoji:"📊",
-
-    imagen:
-    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/economia/2026/09/22/fitch-mejora-crecimiento-mexico-2026-ia-eu-exportaciones"
-},
-
-
-{
-    categoria:"economia",
-
-    titulo:
-    "Reforma a la inversión extranjera llega al pleno del Senado",
-
-    descripcion:
-    "La propuesta plantea revisar determinadas adquisiciones extranjeras relacionadas con sectores considerados estratégicos.",
-
-    fecha:
-    "29 de septiembre de 2026",
-
-    emoji:"🏛️",
-
-    imagen:
-    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/economia/2026/09/29/reforma-inversion-extranjera-pleno-senado-criticas"
-},
-
-
-/* ==================================================
-   BANCOS Y FINANZAS
-================================================== */
-
-{
-    categoria:"bancos",
-
-    titulo:
-    "Bancos y Sofomes tienen liquidez, pero las pymes frenan el crédito",
-
-    descripcion:
-    "El financiamiento para pequeñas y medianas empresas pierde dinamismo pese a que bancos y financieras aseguran contar con recursos para prestar.",
-
-    fecha:
-    "18 de septiembre de 2026",
-
-    emoji:"🏦",
-
-    imagen:
-    "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/economia/2026/09/18/bancos-sofomes-liquidez-pymes-credito"
-},
-
-
-{
-    categoria:"bancos",
-
-    titulo:
-    "Nu México nombra a Estephany Paulette Ley como CEO",
-
-    descripcion:
-    "Nu México nombró a Estephany Paulette Ley como directora general en una nueva etapa para la institución de banca múltiple.",
-
-    fecha:
-    "29 de septiembre de 2026",
-
-    emoji:"🏦",
-
-    imagen:
-    "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/economia/2026/09/29/nu-mexico-nombra-a-estephany-paulette-ley-como-ceo"
-},
-
-
-{
-    categoria:"bancos",
-
-    titulo:
-    "HSBC celebra su primer Wealth Investment Summit en México",
-
-    descripcion:
-    "El encuentro reunió a clientes con necesidades patrimoniales e internacionales junto con especialistas en economía, comercio e inversión.",
-
-    fecha:
-    "2 de septiembre de 2026",
-
-    emoji:"💼",
-
-    imagen:
-    "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/economia/2026/09/02/hsbc-celebra-su-primer-wealth-investment-summit-en-mexico"
-},
-
-
-/* ==================================================
-   EMPRESAS
-================================================== */
-
-{
-    categoria:"empresas",
-
-    titulo:
-    "Producción petrolera de Pemex se desploma a su mes más bajo desde que se tiene registro",
-
-    descripcion:
-    "La producción de petróleo crudo de Pemex cayó en agosto a 1.33 millones de barriles diarios.",
-
-    fecha:
-    "30 de septiembre de 2026",
-
-    emoji:"⛽",
-
-    imagen:
-    "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/empresas/2026/09/30/produccion-petrolera-pemex-mas-baja-desde-que-hay-registro"
-},
-
-
-{
-    categoria:"empresas",
-
-    titulo:
-    "Gobierno ofrece deducciones fiscales a pequeños operadores para llevar internet a zonas remotas",
-
-    descripcion:
-    "El gobierno busca apoyar a pequeños operadores de telecomunicaciones mediante incentivos fiscales para ampliar la conectividad.",
-
-    fecha:
-    "29 de septiembre de 2026",
-
-    emoji:"🏢",
-
-    imagen:
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/empresas/2026/09/29/gobierno-cambia-estrategia-llevar-internet-zonas-remotas"
-},
-
-
-{
-    categoria:"empresas",
-
-    titulo:
-    "Carlos Slim no le perdona la renta ni a sus propias marcas",
-
-    descripcion:
-    "Sanborns, Sears y DAX pagan rentas por ocupar espacios administrados por Inmuebles Carso.",
-
-    fecha:
-    "29 de septiembre de 2026",
-
-    emoji:"🏢",
-
-    imagen:
-    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/empresas/2026/09/29/carlos-slim-renta-sus-marcas-sanborns-sears-dax"
-},
-
-
-/* ==================================================
-   FINANZAS PERSONALES
-================================================== */
-
-{
-    categoria:"personales",
-
-    titulo:
-    "Aguinaldo 2026: cuándo se paga, cuánto te corresponde y qué pasa si trabajaste menos de un año",
-
-    descripcion:
-    "El aguinaldo puede calcularse antes de diciembre y quienes trabajaron solo una parte del año tienen derecho a recibir la parte proporcional.",
-
-    fecha:
-    "27 de septiembre de 2026",
-
-    emoji:"💰",
-
-    imagen:
-    "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/finanzas-personales/2026/09/27/aguinaldo-2026-cuando-cuanto-trabajaste-menos-ano"
-},
-
-
-{
-    categoria:"personales",
-
-    titulo:
-    "¿Pagarás impuestos al SAT por pagos digitales? Esto debes saber",
-
-    descripcion:
-    "La propuesta de Ley de Economía Digital no plantea cobrar un impuesto por utilizar pagos digitales, aunque estas operaciones dejan trazabilidad financiera.",
-
-    fecha:
-    "29 de septiembre de 2026",
-
-    emoji:"📱",
-
-    imagen:
-    "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85",
-
-    url:
-    "https://expansion.mx/finanzas-personales/2026/09/29/pagaras-impuestos-extra-tarjeta-debito"
-}
+    {
+        categoria:"dolar",
+        titulo:"Dólar y peso mexicano: cotización y movimientos del mercado",
+        fecha:"Actualidad",
+        descripcion:"Consulta información sobre el comportamiento del dólar frente al peso mexicano y los movimientos del mercado.",
+        imagen:"https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/mercados"
+    },
+
+    {
+        categoria:"economia",
+        titulo:"Economía de México: indicadores y noticias relevantes",
+        fecha:"Actualidad",
+        descripcion:"Información sobre inflación, crecimiento económico, empleo y otros indicadores que afectan a México.",
+        imagen:"https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/economia"
+    },
+
+    {
+        categoria:"bancos",
+        titulo:"Bancos y servicios financieros en México",
+        fecha:"Actualidad",
+        descripcion:"Noticias sobre bancos, productos financieros, créditos, cuentas y cambios importantes para los usuarios.",
+        imagen:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/finanzas-personales"
+    },
+
+    {
+        categoria:"empresas",
+        titulo:"Empresas y negocios: actualidad del sector empresarial",
+        fecha:"Actualidad",
+        descripcion:"Información sobre compañías, inversiones, negocios y acontecimientos importantes del sector empresarial.",
+        imagen:"https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/empresas"
+    },
+
+    {
+        categoria:"personales",
+        titulo:"Finanzas personales: consejos para administrar tu dinero",
+        fecha:"Actualidad",
+        descripcion:"Información útil sobre ahorro, gastos, créditos, tarjetas y administración de las finanzas personales.",
+        imagen:"https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/finanzas-personales"
+    },
+
+    {
+        categoria:"dolar",
+        titulo:"Mercados financieros y tipo de cambio",
+        fecha:"Actualidad",
+        descripcion:"Conoce los principales movimientos del mercado financiero y el tipo de cambio.",
+        imagen:"https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/mercados"
+    },
+
+    {
+        categoria:"economia",
+        titulo:"Inflación y precios: información económica para México",
+        fecha:"Actualidad",
+        descripcion:"Datos y noticias relacionadas con precios, inflación y economía de los hogares.",
+        imagen:"https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/economia"
+    },
+
+    {
+        categoria:"empresas",
+        titulo:"Negocios e inversiones en México",
+        fecha:"Actualidad",
+        descripcion:"Noticias sobre compañías, inversiones, emprendimiento y actividad empresarial.",
+        imagen:"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/empresas"
+    },
+
+    {
+        categoria:"personales",
+        titulo:"Ahorro, crédito y administración del dinero",
+        fecha:"Actualidad",
+        descripcion:"Contenido relacionado con decisiones financieras y administración del dinero personal.",
+        imagen:"https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1000&q=80",
+        url:"https://expansion.mx/finanzas-personales"
+    }
 
 ];
 
+const grid = document.getElementById("newsGrid");
+const search = document.getElementById("search");
+const buttons = document.querySelectorAll(".filter-btn");
 
-/* ==================================================
-   MOSTRAR NOTICIAS
-================================================== */
+let categoriaActual = "todos";
 
-function mostrar(categoria, boton){
+function mostrarNoticias(){
 
-    const contenedor =
-        document.getElementById("contenedor");
+    const texto = search.value.toLowerCase().trim();
 
+    const filtradas = noticias.filter(noticia => {
 
-    if(boton){
+        const coincideCategoria =
+            categoriaActual === "todos" ||
+            noticia.categoria === categoriaActual;
 
-        document
-            .querySelectorAll(".filtros button")
-            .forEach(btn =>
-                btn.classList.remove("activo")
-            );
+        const contenido =
+            (
+                noticia.titulo + " " +
+                noticia.descripcion + " " +
+                noticia.categoria
+            ).toLowerCase();
 
-        boton.classList.add("activo");
-    }
+        const coincideBusqueda =
+            texto === "" || contenido.includes(texto);
 
+        return coincideCategoria && coincideBusqueda;
+    });
 
-    let lista;
+    if(filtradas.length === 0){
 
-
-    if(categoria === "todos"){
-
-        lista = noticias;
-
-    }else{
-
-        lista = noticias.filter(
-            noticia =>
-                noticia.categoria === categoria
-        );
-
-    }
-
-
-    if(lista.length === 0){
-
-        contenedor.innerHTML = `
-
-            <div class="vacio">
-
-                <h2>
-                    No hay noticias disponibles
-                </h2>
-
-                <p>
-                    Pronto agregaremos más contenido.
-                </p>
-
+        grid.innerHTML = `
+            <div class="empty">
+                <h2>No encontramos noticias</h2>
+                <p>Prueba con otra palabra o selecciona otra categoría.</p>
             </div>
-
         `;
 
         return;
     }
 
+    grid.innerHTML = filtradas.map(noticia => `
 
-    contenedor.innerHTML =
-        lista.map(noticia => `
+        <a
+            class="card-link"
+            href="${noticia.url}"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
 
-        <article class="card">
+            <article class="card">
 
-            <a
-                class="card-link"
-                href="${noticia.url}"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <div class="card-img">
+                <div class="news-image">
 
                     <img
                         src="${noticia.imagen}"
-                        alt="${escapeHTML(noticia.titulo)}"
+                        alt="${noticia.titulo}"
                         loading="lazy"
-                        onerror="mostrarFallback(this,'${noticia.emoji}')"
+                        onerror="this.style.display='none'"
                     >
 
                 </div>
 
-
                 <div class="card-content">
 
-                    <span class="categoria">
+                    <span class="category">
                         ${nombreCategoria(noticia.categoria)}
                     </span>
 
-
                     <h2>
-                        ${escapeHTML(noticia.titulo)}
+                        ${noticia.titulo}
                     </h2>
 
-
-                    <p>
-                        ${escapeHTML(noticia.descripcion)}
-                    </p>
-
-
-                    <div class="fecha">
-                        ${escapeHTML(noticia.fecha)}
+                    <div class="date">
+                        ${noticia.fecha}
                     </div>
 
+                    <p class="description">
+                        ${noticia.descripcion}
+                    </p>
 
-                    <div class="leer">
+                    <div class="read">
                         Leer noticia completa →
                     </div>
 
                 </div>
 
-            </a>
+            </article>
 
-        </article>
+        </a>
 
     `).join("");
-
 }
-
-
-/* ==================================================
-   NOMBRES DE CATEGORÍAS
-================================================== */
 
 function nombreCategoria(categoria){
 
     const nombres = {
-
-        dolar:
-            "Dólar y mercados",
-
-        economia:
-            "Economía",
-
-        bancos:
-            "Bancos y finanzas",
-
-        empresas:
-            "Empresas",
-
-        personales:
-            "Finanzas personales"
-
+        dolar:"Dólar",
+        economia:"Economía",
+        bancos:"Bancos",
+        empresas:"Empresas",
+        personales:"Finanzas personales"
     };
 
-
-    return nombres[categoria]
-        || "Dinero";
-
+    return nombres[categoria] || categoria;
 }
 
+buttons.forEach(button => {
 
-/* ==================================================
-   IMAGEN DE RESPALDO
-================================================== */
+    button.addEventListener("click", () => {
 
-function mostrarFallback(img, emoji){
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
 
-    const contenedor =
-        img.parentElement;
+        button.classList.add("active");
 
+        categoriaActual =
+            button.dataset.category;
 
-    img.remove();
+        mostrarNoticias();
 
+    });
 
-    contenedor.innerHTML = `
+});
 
-        <div class="fallback">
-            ${emoji || "💰"}
-        </div>
+search.addEventListener("input", mostrarNoticias);
 
-    `;
-
-}
-
-
-/* ==================================================
-   PROTECCIÓN DEL TEXTO
-================================================== */
-
-function escapeHTML(text){
-
-    return String(text)
-
-        .replace(/&/g,"&amp;")
-
-        .replace(/</g,"&lt;")
-
-        .replace(/>/g,"&gt;")
-
-        .replace(/"/g,"&quot;")
-
-        .replace(/'/g,"&#039;");
-
-}
-
-
-/* ==================================================
-   INICIAR
-================================================== */
-
-mostrar(
-    "todos",
-    document.querySelector(".filtros button")
-);
+mostrarNoticias();
 
 </script>
 
