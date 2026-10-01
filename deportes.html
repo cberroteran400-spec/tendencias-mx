@@ -6,77 +6,107 @@
 <title>Deportes | TendenciasMX</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#0b1913;color:#fff;font-family:system-ui,sans-serif}
-header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#0e2a1e;position:sticky;top:0}
-.logo{font-weight:900;color:#2cff8e}.logo span{color:#fff}
-nav a{color:#9ab;text-decoration:none;margin-left:10px;font-size:11px} nav a.active{color:#2cff8e;background:#143324;padding:6px 10px;border-radius:20px}
-.hero{padding:20px}
-.grid{padding:16px;display:grid;grid-template-columns:1fr;gap:14px}
-@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+body{background:#07140e;color:#fff;font-family:Inter,system-ui,sans-serif}
+header{padding:12px 16px;background:#0c2116;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20;border-bottom:1px solid #143324}
+.logo{font-weight:900;color:#2cff8e;font-size:18px}.logo span{color:#fff}
+nav a{color:#7aa192;text-decoration:none;margin-left:10px;font-size:11px} nav a.active{color:#2cff8e}
+.hero{padding:24px 16px 10px}
+.hero h1{font-size:28px;font-weight:900}
+.hero p{color:#7aa192;font-size:12px;margin-top:6px}
+.tabs{padding:12px 16px;display:flex;gap:8px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;position:sticky;top:50px;background:#07140e;z-index:10}
+.tabs::-webkit-scrollbar{display:none}
+.tab{background:#122a1e;border:1px solid #1d3d2a;color:#8fbba3;padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer;transition:.2s}
+.tab.active{background:#2cff8e;color:#000;border-color:#2cff8e;box-shadow:0 0 15px rgba(44,255,142,.4)}
+.destacada{margin:16px;border-radius:20px;height:380px;background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end;overflow:hidden;border:1px solid #1e3a28}
+.destacada::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.9) 10%,rgba(0,0,0,.2) 70%)}
+.destacada.info{position:relative;z-index:1;padding:18px;width:100%}
+.badge{background:#2cff8e;color:#000;font-size:10px;padding:4px 8px;border-radius:6px;font-weight:900;letter-spacing:.5px}
+.destacada h2{font-size:20px;margin:8px 0;line-height:1.2}
+.grid{padding:0 16px 40px;display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:650px){.grid{grid-template-columns:1fr 1fr}}
 @media(min-width:1000px){.grid{grid-template-columns:1fr 1fr 1fr}}
-.card{background:#14281d;border-radius:16px;overflow:hidden;border:1px solid #1e3a28}
-.card img{width:100%;height:200px;object-fit:cover;display:block}
+.card{background:#0f241a;border-radius:18px;overflow:hidden;border:1px solid #1a3326;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#2cff8e}
+.card img{width:100%;height:180px;object-fit:cover;display:block}
 .card-body{padding:12px}
-.card-body h3{font-size:14px}
-.card-body p{font-size:11px;color:#8aa399}
-.tag{font-size:10px;background:#1a3d2b;color:#2cff8e;padding:3px 7px;border-radius:6px;font-weight:800}
-.destacada{margin:16px;border-radius:20px;min-height:320px;background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end;overflow:hidden}
-.destacada::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent, rgba(0,0,0,.9))}
-.destacada div{position:relative;z-index:1;padding:18px}
+.card-body h3{font-size:13.5px;line-height:1.3;min-height:36px}
+.card-body.meta{font-size:10px;color:#5a7d6b;margin-top:8px;display:flex;justify-content:space-between}
+.empty{text-align:center;padding:60px 20px;color:#5a7d6b}
 </style>
 </head>
 <body>
 <header>
 <div class="logo">Tendencias<span>MX</span></div>
-<nav>
-<a href="index.html">Inicio</a>
-<a href="noticias.html">Noticias</a>
-<a href="deportes.html" class="active">Deportes</a>
-<a href="entretenimiento.html">Entretenimiento</a>
-</nav>
+<nav><a href="index.html">Inicio</a><a href="noticias.html">Noticias</a><a href="deportes.html" class="active">Deportes</a></nav>
 </header>
+
 <div class="hero">
-<div style="color:#2cff8e;font-size:10px">⚡ DEPORTES</div>
+<div style="color:#2cff8e;font-size:10px;font-weight:800;letter-spacing:1px">● EN VIVO DEPORTES</div>
 <h1>Todo el mundo del deporte</h1>
+<p>Filtra por deporte y ve solo lo que te interesa</p>
 </div>
-<div id="destacada" class="destacada"><div><span class="tag">DESTACADA</span><h2 id="d-t">Cargando...</h2><a id="d-l" href="#" target="_blank" style="background:#2cff8e;color:#000;padding:6px 12px;border-radius:20px;text-decoration:none;font-size:12px;margin-top:10px;display:inline-block">Leer →</a></div></div>
+
+<div class="tabs">
+<button class="tab active" data-f="todos" onclick="filtrar('todos',this)">🔥 Todos</button>
+<button class="tab" data-f="futbol" onclick="filtrar('futbol',this)">⚽ Fútbol</button>
+<button class="tab" data-f="ligamx" onclick="filtrar('ligamx',this)">🇲🇽 Liga MX</button>
+<button class="tab" data-f="f1" onclick="filtrar('f1',this)">🏎️ Fórmula 1</button>
+<button class="tab" data-f="nfl" onclick="filtrar('nfl',this)">🏈 NFL</button>
+<button class="tab" data-f="beisbol" onclick="filtrar('beisbol',this)">⚾ Béisbol</button>
+<button class="tab" data-f="tenis" onclick="filtrar('tenis',this)">🎾 Tenis</button>
+<button class="tab" data-f="basquet" onclick="filtrar('basquet',this)">🏀 Básquet</button>
+<button class="tab" data-f="boxeo" onclick="filtrar('boxeo',this)">🥊 Boxeo</button>
+</div>
+
+<div id="destacada" class="destacada"><div class="info"><span class="badge" id="d-badge">DESTACADA</span><h2 id="d-t">Cargando deportes...</h2><div style="font-size:11px;color:#b9d8c7" id="d-desc"></div></div></div>
+
 <div id="grid" class="grid"></div>
+<div id="empty" class="empty" style="display:none">No hay noticias de este deporte por ahora 😕<br>Prueba con Todos</div>
+
 <script>
+let TODAS = [];
 const FALLBACK = [
-  {titulo:"Checo Pérez y Red Bull buscan revancha en el GP de México", descripcion:"El piloto mexicano quiere brillar en casa", link:"https://www.mediotiempo.com", imagen:"https://images.unsplash.com/photo-1511910849309-0dffb8785146?w=800", categoria:"f1"},
-  {titulo:"América vs Cruz Azul: Clásico Joven se enciende", descripcion:"Liga MX jornada", link:"https://www.mediotiempo.com", imagen:"https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=800", categoria:"ligamx"},
-  {titulo:"NFL: 49ers imparables en la temporada", descripcion:"Temporada NFL", link:"#", imagen:"https://images.unsplash.com/photo-1560272564-c83b66a9adac?w=800", categoria:"nfl"},
-  {titulo:"Wimbledon: Alcaraz vs Sinner la final soñada", descripcion:"Tenis mundial", link:"#", imagen:"https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=800", categoria:"tenis"},
-  {titulo:"NBA: Lakers con nuevo refuerzo", descripcion:"Basquetbol", link:"#", imagen:"https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800", categoria:"nba"},
-  {titulo:"Canelo Álvarez anuncia próxima pelea", descripcion:"Boxeo", link:"#", imagen:"https://images.unsplash.com/photo-1593352216913-b0d2ed6e0e0f?w=800", categoria:"boxeo"}
+{titulo:"Checo Pérez hace historia en GP de México",desc:"Fórmula 1",cat:"f1",img:"https://images.unsplash.com/photo-1511910849309-0dffb8785146?w=800",link:"#"},
+{titulo:"América vs Chivas: el Clásico Nacional enciende la Liga MX",desc:"Liga MX",cat:"ligamx",img:"https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=800",link:"#"},
+{titulo:"México vs USA: fecha y hora del próximo partido del Tri",desc:"Fútbol",cat:"futbol",img:"https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=800",link:"#"},
+{titulo:"NFL: Cowboys vs 49ers, el partido de la semana",desc:"NFL",cat:"nfl",img:"https://images.unsplash.com/photo-1560272564-c83b66a9adac?w=800",link:"#"},
+{titulo:"Alcaraz y Sinner se enfrentan en final de Wimbledon",desc:"Tenis",cat:"tenis",img:"https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=800",link:"#"},
+{titulo:"Lakers vs Knicks: el duelo de la NBA",desc:"Básquet",cat:"basquet",img:"https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",link:"#"},
+{titulo:"Canelo Álvarez anuncia pelea en Las Vegas",desc:"Boxeo",cat:"boxeo",img:"https://images.unsplash.com/photo-1593352216913-b0d2ed6e0e0f?w=800",link:"#"},
+{titulo:"¿No entiendes el béisbol? Esta guía es para ti",desc:"Béisbol",cat:"beisbol",img:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800",link:"#"}
 ];
+
 async function cargar(){
-  let noticias = [];
   try{
     const r = await fetch('./noticias.json?v='+Date.now());
     const j = await r.json();
-    noticias = j.noticias || j || [];
-  }catch(e){}
-  let lista = noticias.filter(n=>{
-    const t = (n.titulo||'').toLowerCase();
-    return t.includes('futbol')||t.includes('fútbol')||t.includes('nfl')||t.includes('liga')||t.includes('f1')||t.includes('checo')||t.includes('wimbledon')||t.includes('nba')||t.includes('deport')|| (n.categoria||'').toLowerCase().includes('deport');
-  });
-  if(lista.length < 3){ lista = [...noticias,...FALLBACK]; }
-  if(lista.length===0) lista = FALLBACK;
-  pintar(lista);
+    let datos = j.noticias || j || [];
+    // Mapear a formato con categoria real
+    TODAS = datos.map(n=>{
+      const txt = (n.titulo + ' ' + (n.descripcion||'')).toLowerCase();
+      let c = (n.categoria||'').toLowerCase();
+      if(txt.includes('checo')||txt.includes('f1')||txt.includes('formula 1')||txt.includes('verstappen')||txt.includes('hamilton')||txt.includes('gp de')) c='f1';
+      else if(txt.includes('liga mx')||txt.includes('américa')||txt.includes('chivas')||txt.includes('cruz azul')||txt.includes('pumas')||txt.includes('tigres')) c='ligamx';
+      else if(txt.includes('nfl')||txt.includes('cowboys')||txt.includes('49ers')||txt.includes('touchdown')) c='nfl';
+      else if(txt.includes('wimbledon')||txt.includes('alcaraz')||txt.includes('sinner')||txt.includes('djokovic')||txt.includes('tenis')) c='tenis';
+      else if(txt.includes('nba')||txt.includes('lakers')||txt.includes('knicks')||txt.includes('básquet')||txt.includes('basquet')) c='basquet';
+      else if(txt.includes('box')||txt.includes('canelo')||txt.includes('pelea')) c='boxeo';
+      else if(txt.includes('béisbol')||txt.includes('beisbol')||txt.includes('yankees')||txt.includes('dodgers')) c='beisbol';
+      else if(txt.includes('fútbol')||txt.includes('futbol')||txt.includes('messi')||txt.includes('ronaldo')||txt.includes('mundial')||txt.includes('tri')||txt.includes('selección')) c='futbol';
+      else c='futbol';
+      return {...n, _cat:c, _img:n.imagen||`https://picsum.photos/seed/${Math.abs(n.link?.length||1)}/600/400`}
+    });
+  }catch(e){ TODAS = []; }
+  if(TODAS.length<5) TODAS = [...TODAS,...FALLBACK.map(f=>({titulo:f.titulo,descripcion:f.desc,categoria:f.cat,imagen:f.img,link:f.link,_cat:f.cat,_img:f.img}))];
+  pintar(TODAS);
 }
+
 function pintar(lista){
+  const empty = document.getElementById('empty');
+  const grid = document.getElementById('grid');
+  if(!lista.length){ grid.innerHTML=''; empty.style.display='block'; return; }
+  empty.style.display='none';
   const dest = lista[0];
   document.getElementById('d-t').innerText = dest.titulo;
-  document.getElementById('d-l').href = dest.link;
-  document.getElementById('destacada').style.backgroundImage = `url('${dest.imagen}')`;
-  let h='';
-  lista.slice(1).forEach(n=>{
-    h+=`<article class="card"><img src="${n.imagen}" onerror="this.src='https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=800'"><div class="card-body"><span class="tag">${(n.categoria||'DEPORTES').toUpperCase()}</span><h3>${n.titulo}</h3><p>${n.descripcion||''}</p><a href="${n.link}" target="_blank" style="color:#2cff8e;font-size:11px;text-decoration:none">Leer →</a></div></article>`;
-  });
-  document.getElementById('grid').innerHTML = h;
-}
-cargar();
-</script>
-</body>
-</html>
+  document.getElementById('d-desc').innerText = dest.descripcion||dest.desc||'';
+  document.getElementById('d-badge').innerText = (dest._cat||dest.categoria||'DEPORTES').toUpperCase
