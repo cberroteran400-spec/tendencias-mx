@@ -34,11 +34,11 @@ jobs:
           import unicodedata
 
           from datetime import datetime, timezone
-          from urllib.parse import urljoin
+          from urllib.parse import urljoin, urlparse
 
 
           # ============================================================
-          # CONFIGURACIÓN GENERAL
+          # CONFIGURACIÓN
           # ============================================================
 
           MAX_NOTICIAS = 150
@@ -93,7 +93,7 @@ jobs:
                       url,
                       headers={
                           "User-Agent":
-                              "Mozilla/5.0 (compatible; TendenciasMX/2.0)"
+                              "Mozilla/5.0 (compatible; TendenciasMX/1.0)"
                       }
                   )
 
@@ -107,6 +107,7 @@ jobs:
               except Exception as error:
 
                   print("ERROR RSS:", url, error)
+
                   return None
 
 
@@ -119,7 +120,7 @@ jobs:
               if not texto:
                   return ""
 
-              texto = html.unescape(str(texto))
+              texto = html.unescape(texto)
 
               texto = re.sub(
                   r"<script[^>]*>.*?</script>",
@@ -137,7 +138,7 @@ jobs:
 
               texto = re.sub(
                   r"<[^>]+>",
-                  " ",
+                  "",
                   texto
               )
 
@@ -151,7 +152,7 @@ jobs:
 
 
           # ============================================================
-          # OBTENER TAG XML
+          # OBTENER TAG
           # ============================================================
 
           def obtener_tag(item, nombre):
@@ -177,9 +178,7 @@ jobs:
 
           def obtener_imagen(item, rss_url):
 
-              # --------------------------------------------------------
-              # 1. Atributos directos
-              # --------------------------------------------------------
+              # Primero buscamos elementos multimedia.
 
               for elemento in item.iter():
 
@@ -219,10 +218,7 @@ jobs:
                                   url
                               )
 
-
-              # --------------------------------------------------------
-              # 2. Imágenes dentro del contenido
-              # --------------------------------------------------------
+              # Después buscamos imágenes dentro de description.
 
               for elemento in item.iter():
 
@@ -241,33 +237,45 @@ jobs:
 
                       contenido = elemento.text or ""
 
-                      patrones = [
+                      resultado = re.search(
                           r'<img[^>]+src=["\']([^"\']+)["\']',
-                          r'<img[^>]+data-src=["\']([^"\']+)["\']',
-                          r'<img[^>]+data-original=["\']([^"\']+)["\']'
-                      ]
+                          contenido,
+                          re.I
+                      )
 
-                      for patron in patrones:
+                      if resultado:
 
-                          resultado = re.search(
-                              patron,
-                              contenido,
-                              re.I
+                          url = html.unescape(
+                              resultado.group(1)
+                          ).strip()
+
+                          if url.startswith("//"):
+                              url = "https:" + url
+
+                          return urljoin(
+                              rss_url,
+                              url
                           )
 
-                          if resultado:
+                      resultado = re.search(
+                          r'<img[^>]+data-src=["\']([^"\']+)["\']',
+                          contenido,
+                          re.I
+                      )
 
-                              url = html.unescape(
-                                  resultado.group(1)
-                              ).strip()
+                      if resultado:
 
-                              if url.startswith("//"):
-                                  url = "https:" + url
+                          url = html.unescape(
+                              resultado.group(1)
+                          ).strip()
 
-                              return urljoin(
-                                  rss_url,
-                                  url
-                              )
+                          if url.startswith("//"):
+                              url = "https:" + url
+
+                          return urljoin(
+                              rss_url,
+                              url
+                          )
 
               return ""
 
@@ -278,7 +286,9 @@ jobs:
 
           def normalizar(texto):
 
-              texto = str(texto or "").lower()
+              texto = str(
+                  texto or ""
+              ).lower()
 
               texto = unicodedata.normalize(
                   "NFD",
@@ -304,11 +314,6 @@ jobs:
           # COMPROBAR PALABRAS
           # ============================================================
 
-          def contiene(texto, termino):
-
-              return termino in texto
-
-
           def contiene_alguno(texto, lista):
 
               return any(
@@ -318,860 +323,448 @@ jobs:
 
 
           # ============================================================
-          # DEPORTES
+          # SECCIÓN REAL DEL ENLACE
           #
-          # IMPORTANTE:
-          # No usamos palabras genéricas como:
-          # "america"
-          # "jugador"
-          # "mercedes"
-          # "mundialista"
-          #
-          # Se necesitan señales deportivas claras.
+          # ESTA FUNCIÓN TIENE PRIORIDAD SOBRE LAS PALABRAS.
           # ============================================================
 
-          FUTBOL_TERMS = [
-
-              "futbol",
-              "futbolista",
-              "futbolistas",
-
-              "liga mx",
-              "liga bbva mx",
-              "liga mexicana",
-
-              "club america",
-              "america de mexico",
-              "america futbol club",
-              "las aguilas del america",
-
-              "chivas",
-              "club guadalajara",
-
-              "cruz azul",
-
-              "pumas unam",
-              "pumas",
-
-              "rayados",
-              "monterrey futbol",
-
-              "tigres uanl",
-              "tigres futbol",
-
-              "toluca futbol",
-              "club toluca",
-
-              "pachuca futbol",
-              "club pachuca",
-
-              "club leon",
-              "leon futbol",
-
-              "santos laguna",
-
-              "necaxa",
-
-              "atlas futbol",
-              "atlas fc",
-
-              "mazatlan fc",
-
-              "bravos de juarez",
-              "fc juarez",
-
-              "xolos",
-              "tijuana futbol",
-
-              "club queretaro",
-
-              "atletico de san luis",
-
-              "seleccion mexicana",
-              "seleccion de mexico",
-              "seleccion nacional de mexico",
-              "el tri",
-
-              "mundial de futbol",
-              "mundial de clubes",
-
-              "copa del mundo",
-              "copa mundial",
-
-              "champions league",
-              "uefa champions",
-
-              "europa league",
-
-              "premier league",
-
-              "la liga espanola",
-              "laliga",
-
-              "bundesliga",
-
-              "serie a italiana",
-
-              "ligue 1",
-
-              "concacaf",
-
-              "copa libertadores",
-
-              "leagues cup",
-
-              "real madrid",
-
-              "fc barcelona",
-              "barcelona futbol",
-
-              "atletico de madrid",
-
-              "bayern munich",
-              "bayern munchen",
-
-              "manchester united",
-              "manchester city",
-
-              "liverpool fc",
-
-              "arsenal fc",
-
-              "chelsea fc",
-
-              "psg",
-              "paris saint germain",
-
-              "inter de milan",
-
-              "ac milan",
-
-              "juventus fc",
-
-              "napoli futbol",
-
-              "roma futbol",
-
-              "sevilla fc",
-
-              "real betis",
-
-              "liguilla",
-
-              "apertura",
-              "clausura",
-
-              "gol",
-              "goles",
-
-              "marcador",
-
-              "fichaje",
-              "fichajes",
-
-              "mercado de fichajes",
-
-              "entrenador de futbol",
-
-              "director tecnico",
-
-              "portero",
-
-              "delantero",
-
-              "defensa central",
-
-              "mediocampista",
-
-              "arbitro",
-
-              "arbitraje",
-
-              "penalti",
-              "penaltis",
-
-              "tarjeta roja",
-              "tarjeta amarilla"
-          ]
-
-
-          OTROS_DEPORTES_TERMS = [
-
-              "nfl",
-
-              "nba",
-
-              "mlb",
-
-              "nhl",
-
-              "tenis",
-
-              "atp",
-
-              "wta",
-
-              "boxeo",
-
-              "boxeador",
-
-              "boxeadora",
-
-              "beisbol",
-
-              "basquetbol",
-
-              "baloncesto",
-
-              "formula 1",
-
-              "formula1",
-
-              "f1",
-
-              "gran premio de formula",
-
-              "gran premio de",
-
-              "piloto de formula",
-
-              "pilotos de formula",
-
-              "red bull racing",
-
-              "scuderia ferrari",
-
-              "mclaren racing",
-
-              "mercedes amg petronas",
-
-              "checo perez",
-
-              "super bowl",
-
-              "touchdown",
-
-              "quarterback",
-
-              "running back",
-
-              "linebacker",
-
-              "olimpicos",
-
-              "juegos olimpicos",
-
-              "medalla olimpica",
-
-              "atleta",
-
-              "atletismo",
-
-              "lucha libre",
-
-              "wwe",
-
-              "ufc",
-
-              "mma",
-
-              "deporte",
-
-              "deportes"
-          ]
-
-
-          # ============================================================
-          # POLÍTICA
-          # ============================================================
-
-          POLITICA_TERMS = [
-
-              "presidente de mexico",
-              "presidenta de mexico",
-
-              "presidencia de mexico",
-
-              "gobierno de mexico",
-              "gobierno mexicano",
-
-              "gobernador",
-              "gobernadora",
-
-              "politica mexicana",
-
-              "politica nacional",
-
-              "eleccion",
-              "elecciones",
-
-              "votacion",
-
-              "congreso de la union",
-
-              "camara de diputados",
-
-              "camara de senadores",
-
-              "senado de la republica",
-
-              "diputado",
-              "diputada",
-
-              "senador",
-              "senadora",
-
-              "morena",
-
-              "accion nacional",
-
-              "partido accion nacional",
-
-              "pri",
-
-              "partido revolucionario institucional",
-
-              "partido del trabajo",
-
-              "pt",
-
-              "pvem",
-
-              "movimiento ciudadano",
-
-              "oposicion politica",
-
-              "reforma constitucional",
-
-              "ley federal",
-
-              "decreto presidencial",
-
-              "secretaria de estado",
-
-              "secretario de estado",
-
-              "candidato",
-
-              "candidata",
-
-              "campana electoral",
-
-              "partido politico",
-
-              "claudia sheinbaum",
-
-              "sheinbaum"
-          ]
-
-
-          # ============================================================
-          # TECNOLOGÍA
-          # ============================================================
-
-          TECNOLOGIA_TERMS = [
-
-              "tecnologia",
-
-              "inteligencia artificial",
-
-              "ia generativa",
-
-              "chatgpt",
-
-              "openai",
-
-              "gemini",
-
-              "google ai",
-
-              "apple",
-
-              "iphone",
-
-              "ipad",
-
-              "android",
-
-              "samsung galaxy",
-
-              "microsoft",
-
-              "windows",
-
-              "meta",
-
-              "facebook",
-
-              "instagram",
-
-              "whatsapp",
-
-              "tiktok",
-
-              "internet",
-
-              "software",
-
-              "aplicacion movil",
-
-              "aplicacion",
-
-              "aplicaciones",
-
-              "smartphone",
-
-              "celular",
-
-              "computadora",
-
-              "robotica",
-
-              "robot",
-
-              "ciberseguridad",
-
-              "videojuego",
-
-              "videojuegos",
-
-              "nvidia",
-
-              "procesador",
-
-              "chip",
-
-              "chips",
-
-              "semiconductor",
-
-              "semiconductores"
-          ]
-
-
-          # ============================================================
-          # DINERO
-          #
-          # Esta será la categoría para:
-          # economía, finanzas, empresas, mercados, dinero.
-          # ============================================================
-
-          DINERO_TERMS = [
-
-              "economia",
-
-              "finanzas",
-
-              "financiero",
-
-              "financiera",
-
-              "dolar",
-
-              "peso mexicano",
-
-              "tipo de cambio",
-
-              "inflacion",
-
-              "banxico",
-
-              "banco de mexico",
-
-              "tasas de interes",
-
-              "tasa de interes",
-
-              "bolsa mexicana",
-
-              "bolsa de valores",
-
-              "acciones",
-
-              "mercado financiero",
-
-              "mercados financieros",
-
-              "mercado",
-
-              "empleo",
-
-              "desempleo",
-
-              "salario",
-
-              "salarios",
-
-              "impuesto",
-
-              "impuestos",
-
-              "credito",
-
-              "creditos",
-
-              "hipoteca",
-
-              "inversion",
-
-              "inversiones",
-
-              "fintech",
-
-              "banco",
-
-              "bancos",
-
-              "banca",
-
-              "prestamo",
-
-              "prestamos",
-
-              "deuda",
-
-              "deudas",
-
-              "ahorro",
-
-              "ahorros",
-
-              "pension",
-
-              "pensiones",
-
-              "afore",
-
-              "afores",
-
-              "remesas",
-
-              "gasolina",
-
-              "diesel",
-
-              "petroleo",
-
-              "energia",
-
-              "empresa",
-
-              "empresas",
-
-              "negocio",
-
-              "negocios",
-
-              "ventas",
-
-              "ingresos",
-
-              "utilidades",
-
-              "ganancias",
-
-              "perdidas",
-
-              "inversion extranjera",
-
-              "t-mec",
-              "tmec"
-          ]
-
-
-          # ============================================================
-          # ENTRETENIMIENTO
-          # ============================================================
-
-          ENTRETENIMIENTO_TERMS = [
-
-              "actor",
-
-              "actriz",
-
-              "cantante",
-
-              "cantantes",
-
-              "celebridad",
-
-              "celebridades",
-
-              "famoso",
-
-              "famosa",
-
-              "famosos",
-
-              "artista",
-
-              "artistas",
-
-              "pelicula",
-
-              "peliculas",
-
-              "serie de television",
-
-              "series de television",
-
-              "netflix",
-
-              "hollywood",
-
-              "cine",
-
-              "television",
-
-              "musica",
-
-              "album",
-
-              "cancion",
-
-              "concierto",
-
-              "conciertos",
-
-              "festival musical",
-
-              "premios",
-
-              "espectaculo",
-
-              "espectaculos",
-
-              "entretenimiento",
-
-              "reality show",
-
-              "grammy",
-
-              "oscar",
-
-              "emmy"
-          ]
-
-
-          # ============================================================
-          # MUNDO
-          # ============================================================
-
-          MUNDO_TERMS = [
-
-              "estados unidos",
-
-              "eeuu",
-
-              "ee.uu",
-
-              "canada",
-
-              "espana",
-
-              "francia",
-
-              "alemania",
-
-              "italia",
-
-              "reino unido",
-
-              "inglaterra",
-
-              "rusia",
-
-              "ucrania",
-
-              "china",
-
-              "japon",
-
-              "india",
-
-              "brasil",
-
-              "argentina",
-
-              "colombia",
-
-              "chile",
-
-              "peru",
-
-              "venezuela",
-
-              "ecuador",
-
-              "bolivia",
-
-              "internacional",
-
-              "internacionales",
-
-              "onu",
-
-              "otan",
-
-              "casa blanca",
-
-              "guerra",
-
-              "conflicto",
-
-              "geopolitica",
-
-              "medio oriente"
-          ]
-
-
-          # ============================================================
-          # TRÁMITES
-          #
-          # Se prepara la categoría aunque todavía no tengamos
-          # un RSS exclusivo de trámites.
-          # ============================================================
-
-          TRAMITES_TERMS = [
-
-              "tramite",
-
-              "tramites",
-
-              "curp",
-
-              "acta de nacimiento",
-
-              "pasaporte",
-
-              "visa",
-
-              "licencia de conducir",
-
-              "licencia",
-
-              "ine",
-
-              "credencial para votar",
-
-              "rfc",
-
-              "sat",
-
-              "hacienda",
-
-              "imss",
-
-              "infonavit",
-
-              "registro civil",
-
-              "cita",
-
-              "citas",
-
-              "documentos",
-
-              "documentacion",
-
-              "renovacion",
-
-              "renovar",
-
-              "requisitos",
-
-              "como sacar",
-
-              "como obtener"
-          ]
-
-
-          # ============================================================
-          # DETECTAR SECCIÓN REAL DEL URL
-          #
-          # Esto sirve como segunda barrera contra errores del RSS.
-          # ============================================================
-
-          def seccion_url(enlace):
-
-              url = normalizar(enlace)
-
-              if "/deportes/" in url:
-                  return "deportes"
-
-              if "/futbol/" in url:
-                  return "deportes"
-
-              if "/economia/" in url:
-                  return "dinero"
-
-              if "/empresas/" in url:
-                  return "dinero"
-
-              if "/tecnologia/" in url:
-                  return "tecnologia"
-
-              if "/politica/" in url:
-                  return "politica"
-
-              if "/internacional/" in url:
-                  return "mundo"
-
-              if "/mundo/" in url:
-                  return "mundo"
-
-              if "/entretenimiento/" in url:
-                  return "entretenimiento"
-
-              if "/tendencias/" in url:
-                  return "tendencias"
+          def obtener_seccion_url(enlace):
+
+              try:
+
+                  ruta = urlparse(
+                      enlace
+                  ).path.lower()
+
+                  ruta = normalizar(
+                      ruta
+                  )
+
+                  # ----------------------------------------
+                  # DEPORTES
+                  # ----------------------------------------
+
+                  if any(
+                      parte in ruta
+                      for parte in [
+                          "/deportes/",
+                          "/deporte/",
+                          "/futbol/",
+                          "/futbol-mexicano/",
+                          "/liga-mx/",
+                          "/nfl/",
+                          "/boxeo/",
+                          "/tenis/",
+                          "/formula-1/",
+                          "/automovilismo/",
+                          "/basquetbol/",
+                          "/beisbol/",
+                          "/nba/",
+                          "/mlb/"
+                      ]
+                  ):
+                      return "deportes"
+
+                  # ----------------------------------------
+                  # DINERO
+                  # ----------------------------------------
+
+                  if any(
+                      parte in ruta
+                      for parte in [
+                          "/economia/",
+                          "/economia",
+                          "/empresas/",
+                          "/empresas",
+                          "/finanzas/",
+                          "/finanzas/",
+                          "/mercados/",
+                          "/dinero/"
+                      ]
+                  ):
+                      return "dinero"
+
+                  # ----------------------------------------
+                  # TECNOLOGÍA
+                  # ----------------------------------------
+
+                  if any(
+                      parte in ruta
+                      for parte in [
+                          "/tecnologia/",
+                          "/tecnologia",
+                          "/tech/",
+                          "/innovacion/",
+                          "/ciencia/"
+                      ]
+                  ):
+                      return "tecnologia"
+
+                  # ----------------------------------------
+                  # POLÍTICA
+                  # ----------------------------------------
+
+                  if any(
+                      parte in ruta
+                      for parte in [
+                          "/politica/",
+                          "/politica",
+                          "/politics/"
+                      ]
+                  ):
+                      return "politica"
+
+                  # ----------------------------------------
+                  # MUNDO
+                  # ----------------------------------------
+
+                  if any(
+                      parte in ruta
+                      for parte in [
+                          "/internacional/",
+                          "/internacional",
+                          "/mundo/",
+                          "/mundo"
+                      ]
+                  ):
+                      return "mundo"
+
+                  # ----------------------------------------
+                  # ENTRETENIMIENTO
+                  # ----------------------------------------
+
+                  if any(
+                      parte in ruta
+                      for parte in [
+                          "/entretenimiento/",
+                          "/entretenimiento",
+                          "/espectaculos/",
+                          "/cine/",
+                          "/musica/"
+                      ]
+                  ):
+                      return "entretenimiento"
+
+                  # ----------------------------------------
+                  # TENDENCIAS
+                  # ----------------------------------------
+
+                  if any(
+                      parte in ruta
+                      for parte in [
+                          "/tendencias/",
+                          "/tendencias"
+                      ]
+                  ):
+                      return "tendencias"
+
+              except Exception:
+                  pass
 
               return ""
 
 
           # ============================================================
-          # VALIDAR DEPORTES
-          #
-          # Una noticia NO entra a deportes solamente porque:
-          # - tenga la palabra América
-          # - mencione Mercedes
-          # - mencione un jugador empresarial
-          # - venga con categoría incorrecta
-          #
-          # Debe existir una señal deportiva clara.
+          # PALABRAS FUERTES DE DEPORTES
           # ============================================================
 
-          def es_deporte_real(texto, enlace):
+          FUTBOL_FUERTE = [
+              "liga mx",
+              "liga bbva mx",
+              "liga mexicana",
+              "club america",
+              "america vs",
+              "america enfrenta",
+              "america juega",
+              "america gana",
+              "america pierde",
+              "america empata",
+              "chivas",
+              "guadalajara",
+              "cruz azul",
+              "pumas unam",
+              "monterrey",
+              "rayados",
+              "tigres uanl",
+              "toluca",
+              "pachuca",
+              "santos laguna",
+              "necaxa",
+              "atlas fc",
+              "mazatlan fc",
+              "tijuana xolos",
+              "queretaro fc",
+              "san luis",
+              "seleccion mexicana",
+              "seleccion nacional",
+              "el tri",
+              "mundial de futbol",
+              "mundial de clubes",
+              "copa del mundo",
+              "champions league",
+              "premier league",
+              "la liga",
+              "laliga",
+              "bundesliga",
+              "serie a",
+              "ligue 1",
+              "concacaf",
+              "libertadores",
+              "leagues cup",
+              "fc barcelona",
+              "real madrid",
+              "atletico de madrid",
+              "bayern munich",
+              "bayern munchen",
+              "manchester united",
+              "manchester city",
+              "liverpool fc",
+              "arsenal fc",
+              "chelsea fc",
+              "paris saint germain",
+              "inter de milan",
+              "ac milan",
+              "juventus",
+              "napoli",
+              "sevilla fc",
+              "real betis",
+              "liguilla",
+              "apertura 2026",
+              "clausura 2026",
+              "fichaje",
+              "fichajes",
+              "mercado de fichajes",
+              "partido de futbol",
+              "partido de fútbol",
+              "marcador",
+              "alineacion",
+              "alineacion titular",
+              "once titular",
+              "entrenador",
+              "director tecnico",
+              "portero",
+              "delantero",
+              "mediocampista",
+              "arbitro",
+              "arbitraje",
+              "penalti",
+              "penaltis",
+              "tarjeta roja",
+              "tarjeta amarilla"
+          ]
 
-              texto_n = normalizar(texto)
-              url_n = normalizar(enlace)
 
-              # URL deportiva explícita
-              if (
-                  "/deportes/" in url_n
-                  or "/futbol/" in url_n
-              ):
-                  return True
-
-              # Fútbol específico
-              if contiene_alguno(
-                  texto_n,
-                  FUTBOL_TERMS
-              ):
-                  return True
-
-              # Otros deportes
-              if contiene_alguno(
-                  texto_n,
-                  OTROS_DEPORTES_TERMS
-              ):
-                  return True
-
-              return False
+          OTROS_DEPORTES_FUERTE = [
+              "nfl",
+              "nba",
+              "mlb",
+              "nhl",
+              "atp",
+              "wta",
+              "tenis",
+              "boxeo",
+              "boxeador",
+              "beisbol",
+              "basquetbol",
+              "baloncesto",
+              "formula 1",
+              "formula1",
+              "gran premio",
+              "piloto de f1",
+              "pilotos de f1",
+              "super bowl",
+              "lucha libre",
+              "wwe",
+              "ufc",
+              "olimpicos",
+              "juegos olimpicos",
+              "medalla olimpica",
+              "atletismo"
+          ]
 
 
           # ============================================================
-          # CLASIFICACIÓN PRINCIPAL
+          # PALABRAS DE DINERO
+          # ============================================================
+
+          DINERO_FUERTE = [
+              "inflacion",
+              "inflación",
+              "peso mexicano",
+              "tipo de cambio",
+              "dolar",
+              "dólar",
+              "mercado cambiario",
+              "banxico",
+              "banco de mexico",
+              "tasa de interes",
+              "tasas de interes",
+              "tasas de interés",
+              "ieps",
+              "gasolina",
+              "gasolinas",
+              "diesel",
+              "diésel",
+              "bolsa mexicana",
+              "bolsa de valores",
+              "acciones",
+              "inversion",
+              "inversión",
+              "inversiones",
+              "credito",
+              "crédito",
+              "creditos",
+              "créditos",
+              "hipoteca",
+              "salario",
+              "salarios",
+              "empleo",
+              "desempleo",
+              "pib",
+              "economia",
+              "economía",
+              "economico",
+              "económico",
+              "finanzas",
+              "financiero",
+              "financiera",
+              "impuesto",
+              "impuestos",
+              "arancel",
+              "aranceles",
+              "tmec",
+              "t-mec",
+              "empresa",
+              "empresas",
+              "negocio",
+              "negocios",
+              "ventas",
+              "ganancias",
+              "utilidades",
+              "inversion empresarial"
+          ]
+
+
+          # ============================================================
+          # PALABRAS DE TECNOLOGÍA
+          # ============================================================
+
+          TECNOLOGIA_FUERTE = [
+              "inteligencia artificial",
+              "ia generativa",
+              "chatgpt",
+              "openai",
+              "google",
+              "apple",
+              "iphone",
+              "android",
+              "samsung",
+              "microsoft",
+              "meta",
+              "facebook",
+              "instagram",
+              "whatsapp",
+              "tiktok",
+              "internet",
+              "software",
+              "aplicacion",
+              "aplicaciones",
+              "smartphone",
+              "computadora",
+              "robot",
+              "robotica",
+              "robotica",
+              "ciberseguridad",
+              "videojuego",
+              "videojuegos",
+              "nvidia",
+              "chip",
+              "chips",
+              "procesador",
+              "procesadores"
+          ]
+
+
+          # ============================================================
+          # PALABRAS DE ENTRETENIMIENTO
+          # ============================================================
+
+          ENTRETENIMIENTO_FUERTE = [
+              "actor",
+              "actriz",
+              "cantante",
+              "cantantes",
+              "celebridad",
+              "celebridades",
+              "famoso",
+              "famosa",
+              "artista",
+              "artistas",
+              "pelicula",
+              "peliculas",
+              "serie de television",
+              "series de television",
+              "netflix",
+              "hollywood",
+              "cine",
+              "television",
+              "musica",
+              "album",
+              "cancion",
+              "concierto",
+              "conciertos",
+              "festival",
+              "premios",
+              "espectaculo",
+              "espectaculos",
+              "entretenimiento",
+              "reality",
+              "grammy",
+              "oscar",
+              "emmy"
+          ]
+
+
+          # ============================================================
+          # PALABRAS DE TRÁMITES
+          # ============================================================
+
+          TRAMITES_FUERTE = [
+              "tramite",
+              "tramites",
+              "cita",
+              "documentos",
+              "documentacion",
+              "curp",
+              "rfc",
+              "ine",
+              "pasaporte",
+              "visa",
+              "acta de nacimiento",
+              "acta de matrimonio",
+              "licencia de conducir",
+              "licencia",
+              "cartilla militar",
+              "sat",
+              "imss",
+              "infonavit",
+              "registro civil",
+              "gobierno digital"
+          ]
+
+
+          # ============================================================
+          # CLASIFICACIÓN
+          #
+          # ORDEN DE PRIORIDAD:
+          #
+          # 1. URL
+          # 2. RSS
+          # 3. SEÑALES FUERTES
+          # 4. MÉXICO COMO ÚLTIMO RECURSO
+          #
+          # JAMÁS dejamos que una palabra débil de deportes
+          # sobreescriba una sección económica o internacional.
           # ============================================================
 
           def clasificar_noticia(
@@ -1181,7 +774,9 @@ jobs:
               categoria_fuente
           ):
 
-              titulo_n = normalizar(titulo)
+              titulo_n = normalizar(
+                  titulo
+              )
 
               descripcion_n = normalizar(
                   descripcion
@@ -1197,184 +792,165 @@ jobs:
                   + descripcion_n
               )
 
-              seccion = seccion_url(
-                  enlace_n
+
+              # ========================================================
+              # 1. LA URL MANDA
+              # ========================================================
+
+              seccion_url = obtener_seccion_url(
+                  enlace
               )
 
+              if seccion_url:
 
-              # --------------------------------------------------------
-              # 1. DEPORTES
-              #
-              # Solo si hay evidencia deportiva real.
-              # --------------------------------------------------------
-
-              if es_deporte_real(
-                  texto,
-                  enlace_n
-              ):
-
-                  return "deportes"
+                  return seccion_url
 
 
-              # --------------------------------------------------------
-              # 2. TECNOLOGÍA
-              # --------------------------------------------------------
+              # ========================================================
+              # 2. SI NO HAY SECCIÓN, CONFIAMOS EN EL RSS
+              # ========================================================
 
-              if (
-                  categoria_fuente == "tecnologia"
-                  or
-                  seccion == "tecnologia"
-              ):
-
-                  return "tecnologia"
-
-
-              # --------------------------------------------------------
-              # 3. POLÍTICA
-              # --------------------------------------------------------
-
-              if (
-                  categoria_fuente == "politica"
-                  or
-                  seccion == "politica"
-              ):
-
+              if categoria_fuente == "politica":
                   return "politica"
 
+              if categoria_fuente == "mundo":
+                  return "mundo"
 
-              # --------------------------------------------------------
-              # 4. DINERO
-              #
-              # Economía y Empresas van aquí.
-              # --------------------------------------------------------
+              if categoria_fuente == "dinero":
+                  return "dinero"
 
-              if (
-                  categoria_fuente == "dinero"
-                  or
-                  seccion == "dinero"
-              ):
+              if categoria_fuente == "tecnologia":
+                  return "tecnologia"
 
+              if categoria_fuente == "empresas":
                   return "dinero"
 
 
-              # --------------------------------------------------------
-              # 5. ENTRETENIMIENTO
-              # --------------------------------------------------------
-
-              if (
-                  categoria_fuente == "entretenimiento"
-                  or
-                  seccion == "entretenimiento"
-              ):
-
-                  return "entretenimiento"
-
-
-              # --------------------------------------------------------
-              # 6. MUNDO
-              # --------------------------------------------------------
-
-              if (
-                  categoria_fuente == "mundo"
-                  or
-                  seccion == "mundo"
-              ):
-
-                  return "mundo"
-
-
-              # --------------------------------------------------------
-              # 7. TRÁMITES
-              # --------------------------------------------------------
+              # ========================================================
+              # 3. TRÁMITES
+              # ========================================================
 
               if contiene_alguno(
                   texto,
-                  TRAMITES_TERMS
+                  TRAMITES_FUERTE
               ):
-
                   return "tramites"
 
 
-              # --------------------------------------------------------
-              # 8. TECNOLOGÍA POR CONTENIDO
-              # --------------------------------------------------------
+              # ========================================================
+              # 4. DEPORTES
+              # ========================================================
 
               if contiene_alguno(
                   texto,
-                  TECNOLOGIA_TERMS
+                  FUTBOL_FUERTE
               ):
+                  return "deportes"
 
+              if contiene_alguno(
+                  texto,
+                  OTROS_DEPORTES_FUERTE
+              ):
+                  return "deportes"
+
+
+              # ========================================================
+              # 5. TECNOLOGÍA
+              # ========================================================
+
+              if contiene_alguno(
+                  texto,
+                  TECNOLOGIA_FUERTE
+              ):
                   return "tecnologia"
 
 
-              # --------------------------------------------------------
-              # 9. ENTRETENIMIENTO POR CONTENIDO
-              # --------------------------------------------------------
+              # ========================================================
+              # 6. ENTRETENIMIENTO
+              # ========================================================
 
               if contiene_alguno(
                   texto,
-                  ENTRETENIMIENTO_TERMS
+                  ENTRETENIMIENTO_FUERTE
               ):
-
                   return "entretenimiento"
 
 
-              # --------------------------------------------------------
-              # 10. DINERO POR CONTENIDO
-              # --------------------------------------------------------
+              # ========================================================
+              # 7. DINERO
+              # ========================================================
 
               if contiene_alguno(
                   texto,
-                  DINERO_TERMS
+                  DINERO_FUERTE
               ):
-
                   return "dinero"
 
 
-              # --------------------------------------------------------
-              # 11. POLÍTICA POR CONTENIDO
-              # --------------------------------------------------------
+              # ========================================================
+              # 8. MUNDO
+              # ========================================================
+
+              MUNDO_FUERTE = [
+                  "estados unidos",
+                  "eeuu",
+                  "ee.uu",
+                  "canada",
+                  "espana",
+                  "francia",
+                  "alemania",
+                  "italia",
+                  "reino unido",
+                  "inglaterra",
+                  "rusia",
+                  "ucrania",
+                  "china",
+                  "japon",
+                  "india",
+                  "brasil",
+                  "argentina",
+                  "colombia",
+                  "chile",
+                  "peru",
+                  "venezuela",
+                  "ecuador",
+                  "bolivia",
+                  "internacional",
+                  "internacionales",
+                  "onu",
+                  "otan",
+                  "casa blanca",
+                  "guerra",
+                  "conflicto",
+                  "iran",
+                  "irán",
+                  "israel"
+              ]
 
               if contiene_alguno(
                   texto,
-                  POLITICA_TERMS
+                  MUNDO_FUERTE
               ):
-
-                  return "politica"
-
-
-              # --------------------------------------------------------
-              # 12. MUNDO POR CONTENIDO
-              # --------------------------------------------------------
-
-              if contiene_alguno(
-                  texto,
-                  MUNDO_TERMS
-              ):
-
                   return "mundo"
 
 
-              # --------------------------------------------------------
-              # 13. TENDENCIAS
-              # --------------------------------------------------------
+              # ========================================================
+              # 9. TENDENCIAS
+              # ========================================================
 
               if categoria_fuente == "tendencias":
-
                   return "tendencias"
 
 
-              # --------------------------------------------------------
-              # 14. GENERAL
-              #
-              # Para noticias generales de México.
-              # --------------------------------------------------------
+              # ========================================================
+              # 10. MÉXICO COMO ÚLTIMO RECURSO
+              # ========================================================
 
               return "mexico"
 
 
           # ============================================================
-          # DESCARGAR TODAS LAS FUENTES
+          # DESCARGAR TODAS LAS NOTICIAS
           # ============================================================
 
           noticias = []
@@ -1384,14 +960,11 @@ jobs:
 
               rss_url = fuente_rss["url"]
 
-              categoria_fuente = \
-                  fuente_rss["categoria"]
-
+              categoria_fuente = fuente_rss["categoria"]
 
               data = descargar_rss(
                   rss_url
               )
-
 
               if not data:
                   continue
@@ -1442,24 +1015,17 @@ jobs:
                   )
 
 
-                  if (
-                      not titulo
-                      or
-                      not enlace
-                  ):
-
+                  if not titulo or not enlace:
                       continue
 
 
-                  titulo_limpio = \
-                      limpiar_html(
-                          titulo
-                      )
+                  titulo_limpio = limpiar_html(
+                      titulo
+                  )
 
-                  descripcion_limpia = \
-                      limpiar_html(
-                          descripcion
-                      )
+                  descripcion_limpia = limpiar_html(
+                      descripcion
+                  )
 
 
                   imagen = obtener_imagen(
@@ -1468,13 +1034,12 @@ jobs:
                   )
 
 
-                  categoria = \
-                      clasificar_noticia(
-                          titulo_limpio,
-                          descripcion_limpia,
-                          enlace,
-                          categoria_fuente
-                      )
+                  categoria = clasificar_noticia(
+                      titulo_limpio,
+                      descripcion_limpia,
+                      enlace,
+                      categoria_fuente
+                  )
 
 
                   noticia = {
@@ -1502,7 +1067,6 @@ jobs:
 
                       "rss":
                           categoria_fuente
-
                   }
 
 
@@ -1533,7 +1097,6 @@ jobs:
                   ""
               )
 
-
               if not enlace:
                   continue
 
@@ -1546,18 +1109,13 @@ jobs:
 
               else:
 
-                  existente = \
-                      noticias_unicas[
-                          enlace
-                      ]
-
-
-                  # Preferimos la versión con imagen.
+                  existente = noticias_unicas[
+                      enlace
+                  ]
 
                   if (
                       not existente.get("imagen")
-                      and
-                      noticia.get("imagen")
+                      and noticia.get("imagen")
                   ):
 
                       noticias_unicas[
@@ -1585,7 +1143,7 @@ jobs:
 
 
           # ============================================================
-          # LIMITAR A 150
+          # LIMITAR
           # ============================================================
 
           noticias = noticias[
@@ -1597,7 +1155,7 @@ jobs:
           # CONTADORES
           # ============================================================
 
-          categorias = {
+          conteo = {
 
               "mexico": 0,
 
@@ -1616,135 +1174,90 @@ jobs:
               "tendencias": 0,
 
               "tramites": 0
-
           }
 
 
           imagenes = 0
 
-          futbol_total = 0
-
 
           for noticia in noticias:
 
               categoria = noticia.get(
-                  "categoria",
-                  "mexico"
+                  "categoria"
               )
 
+              if categoria in conteo:
 
-              if categoria in categorias:
-
-                  categorias[
+                  conteo[
                       categoria
                   ] += 1
 
 
-              if noticia.get("imagen"):
+              if noticia.get(
+                  "imagen"
+              ):
 
                   imagenes += 1
 
 
-              texto = normalizar(
-                  noticia.get(
-                      "titulo",
-                      ""
-                  )
-                  + " "
-                  +
-                  noticia.get(
-                      "descripcion",
-                      ""
-                  )
-              )
-
-
-              if (
-                  categoria == "deportes"
-                  and
-                  contiene_alguno(
-                      texto,
-                      FUTBOL_TERMS
-                  )
-              ):
-
-                  futbol_total += 1
-
-
           # ============================================================
-          # INFORMACIÓN DEL WORKFLOW
+          # INFORME
           # ============================================================
 
           print("")
           print("======================================")
-          print("       TENDENCIASMX - RSS")
+          print("       TENDENCIAS MX - RSS")
           print("======================================")
-
           print(
               "TOTAL:",
               len(noticias)
           )
-
           print(
               "MÉXICO:",
-              categorias["mexico"]
+              conteo["mexico"]
           )
-
           print(
               "POLÍTICA:",
-              categorias["politica"]
+              conteo["politica"]
           )
-
           print(
               "MUNDO:",
-              categorias["mundo"]
+              conteo["mundo"]
           )
-
           print(
               "DINERO:",
-              categorias["dinero"]
+              conteo["dinero"]
           )
-
           print(
               "DEPORTES:",
-              categorias["deportes"]
+              conteo["deportes"]
           )
-
-          print(
-              "FÚTBOL:",
-              futbol_total
-          )
-
           print(
               "ENTRETENIMIENTO:",
-              categorias["entretenimiento"]
+              conteo["entretenimiento"]
           )
-
           print(
               "TECNOLOGÍA:",
-              categorias["tecnologia"]
+              conteo["tecnologia"]
           )
-
           print(
               "TENDENCIAS:",
-              categorias["tendencias"]
+              conteo["tendencias"]
           )
-
           print(
               "TRÁMITES:",
-              categorias["tramites"]
+              conteo["tramites"]
           )
-
           print(
               "CON IMAGEN:",
               imagenes
           )
-
           print("======================================")
+          print("")
 
 
           # ============================================================
-          # CREAR noticias.json
+          # GUARDAR JSON
           # ============================================================
 
           resultado = {
@@ -1761,14 +1274,10 @@ jobs:
                   len(noticias),
 
               "categorias":
-                  categorias,
-
-              "futbol":
-                  futbol_total,
+                  conteo,
 
               "noticias":
                   noticias
-
           }
 
 
@@ -1786,25 +1295,18 @@ jobs:
               )
 
 
-          print("")
           print(
               "noticias.json creado correctamente."
           )
-          print("")
-
 
           PY
 
-
-      # ================================================================
-      # GUARDAR CAMBIOS
-      # ================================================================
 
       - name: Guardar noticias actualizadas
         run: |
 
           git config user.name \
-            "TendenciasMX Bot"
+            "TendenciaMX Bot"
 
           git config user.email \
             "actions@github.com"
