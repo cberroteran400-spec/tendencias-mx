@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Política | TendenciasMX</title>
+
+<meta name="description" content="Noticias de política de México y el mundo: gobierno, Congreso, justicia y política nacional e internacional.">
+<meta name="keywords" content="política México, noticias políticas, gobierno, Congreso, Senado, diputados, justicia, política nacional, política internacional">
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f6f8;
+    color:#111827;
+}
+
+header{
+    background:#111827;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+}
+
+.header-inner{
+    max-width:1100px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:800;
+    white-space:nowrap;
+}
+
+.logo span{
+    color:#22c55e;
+}
+
+nav{
+    display:flex;
+    gap:7px;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+    display:none;
+}
+
+nav a{
+    color:#d1d5db;
+    text-decoration:none;
+    padding:9px 11px;
+    border-radius:8px;
+    font-size:14px;
+    white-space:nowrap;
+    transition:.2s;
+}
+
+nav a:hover{
+    background:#1f2937;
+    color:#22c55e;
+}
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px 50px;
+}
+
+.hero{
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:36px;
+    margin-bottom:8px;
+}
+
+.hero p{
+    color:#6b7280;
+    font-size:16px;
+    line-height:1.5;
+}
+
+.filtros{
+    display:flex;
+    gap:9px;
+    overflow-x:auto;
+    padding:5px 0 20px;
+    scrollbar-width:none;
+}
+
+.filtros::-webkit-scrollbar{
+    display:none;
+}
+
+.filtros button{
+    border:1px solid #d1d5db;
+    background:white;
+    color:#374151;
+    padding:10px 15px;
+    border-radius:999px;
+    cursor:pointer;
+    white-space:nowrap;
+    font-size:14px;
+    transition:.2s;
+}
+
+.filtros button:hover,
+.filtros button.activo{
+    background:#22c55e;
+    color:white;
+    border-color:#22c55e;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.25s;
+    border:1px solid #e5e7eb;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 25px rgba(0,0,0,.13);
+}
+
+.card-link{
+    display:block;
+    color:inherit;
+    text-decoration:none;
+}
+
+.card-img{
+    height:180px;
+    background:#111827;
+    overflow:hidden;
+}
+
+.card-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.card-content{
+    padding:17px;
+}
+
+.badge{
+    display:inline-block;
+    background:#dcfce7;
+    color:#15803d;
+    font-size:12px;
+    font-weight:bold;
+    padding:5px 9px;
+    border-radius:999px;
+    margin-bottom:10px;
+}
+
+.date{
+    color:#9ca3af;
+    font-size:12px;
+    margin-bottom:9px;
+}
+
+.card h2{
+    font-size:19px;
+    line-height:1.3;
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.card p{
+    color:#6b7280;
+    font-size:14px;
+    line-height:1.5;
+    margin-bottom:14px;
+}
+
+.leer{
+    color:#16a34a;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.empty{
+    grid-column:1/-1;
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:15px;
+    color:#6b7280;
+}
+
+footer{
+    background:#111827;
+    color:#9ca3af;
+    text-align:center;
+    padding:25px 20px;
+    margin-top:30px;
+    font-size:13px;
+}
+
+@media(max-width:850px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .header-inner{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav{
+        width:100%;
+    }
+}
+
+@media(max-width:600px){
+    main{
+        padding:25px 14px 40px;
+    }
+
+    .hero h1{
+        font-size:29px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .card-img{
+        height:200px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            Tendencias<span>MX</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="deportes.html">Deportes</a>
+            <a href="entretenimiento.html">Entretenimiento</a>
+            <a href="tecnologia.html">Tecnología</a>
+            <a href="dinero.html">Dinero</a>
+            <a href="politica.html">Política</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>Política</h1>
+        <p>
+            Las noticias más relevantes sobre gobierno, Congreso,
+            justicia y política nacional e internacional.
+        </p>
+    </section>
+
+    <div class="filtros">
+
+        <button class="activo" onclick="mostrar('todos',this)">
+            Todas
+        </button>
+
+        <button onclick="mostrar('gobierno',this)">
+            🏛️ Gobierno
+        </button>
+
+        <button onclick="mostrar('congreso',this)">
+            🗳️ Congreso
+        </button>
+
+        <button onclick="mostrar('justicia',this)">
+            ⚖️ Justicia
+        </button>
+
+        <button onclick="mostrar('nacional',this)">
+            🇲🇽 Política nacional
+        </button>
+
+        <button onclick="mostrar('internacional',this)">
+            🌎 Política internacional
+        </button>
+
+    </div>
+
+    <section id="contenedor" class="grid"></section>
+
+</main>
+
+<footer>
+    © 2026 TendenciasMX · Información política y actualidad
+</footer>
+
+<script>
+
+const noticias = [
+
+    {
+        categoria:"congreso",
+        nombreCategoria:"Congreso",
+        fecha:"29 de septiembre de 2026",
+        titulo:"El Senado aprueba la reforma sobre doble nacionalidad para cargos públicos",
+        descripcion:"El Senado aprobó una reforma constitucional que establece requisitos relacionados con la nacionalidad para aspirantes a la Presidencia, gubernaturas y la Jefatura de Gobierno de Ciudad de México.",
+        imagen:"https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1000&q=80",
+        emoji:"🏛️",
+        url:"https://elpais.com/mexico/2026-09-29/el-senado-concreta-la-reforma-que-veta-la-doble-nacionalidad-para-ser-presidente-o-gobernador.html"
+    },
+
+    {
+        categoria:"congreso",
+        nombreCategoria:"Congreso",
+        fecha:"29 de septiembre de 2026",
+        titulo:"El Senado prepara comparecencias del gabinete para octubre",
+        descripcion:"El Senado informó que durante octubre comenzarán las comparecencias de integrantes del gabinete federal como parte del análisis del informe de gobierno.",
+        imagen:"https://images.unsplash.com/photo-1555848962-6e79363ec58f?auto=format&fit=crop&w=1000&q=80",
+        emoji:"🗳️",
+        url:"https://canaldelcongreso.gob.mx/noticias/10295"
+    },
+
+    {
+        categoria:"gobierno",
+        nombreCategoria:"Gobierno",
+        fecha:"1 de octubre de 2026",
+        titulo:"Delfina Gómez entrega su Tercer Informe de Gobierno en el Estado de México",
+        descripcion:"La gobernadora del Estado de México entregó su Tercer Informe de Gobierno al Congreso estatal para su análisis y glosa.",
+        imagen:"https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1000&q=80",
+        emoji:"🏛️",
+        url:"https://sintesis.yoporlajusticia.gob.mx/2026/10/01/delfina-gomez-entrego-el-tercer-informe-de-gobierno-al-congreso-de-edomex/"
+    },
+
+    {
+        categoria:"gobierno",
+        nombreCategoria:"Gobierno",
+        fecha:"1 de octubre de 2026",
+        titulo:"El Gobierno del Estado de México presenta resultados de sus primeros tres años",
+        descripcion:"Durante la presentación del Tercer Informe se expusieron resultados de la primera mitad de la administración y acciones previstas para la segunda parte del periodo.",
+        imagen:"https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1000&q=80",
+        emoji:"🇲🇽",
+        url:"https://sintesis.yoporlajusticia.gob.mx/2026/10/01/en-toluca-delfina-gomez-alvarez-rindio-tercer-informe/"
+    },
+
+    {
+        categoria:"justicia",
+        nombreCategoria:"Justicia",
+        fecha:"1 de octubre de 2026",
+        titulo:"El Poder Judicial del Estado de México recibe reunión internacional de jueces",
+        descripcion:"El Poder Judicial del Estado de México recibió una reunión latinoamericana vinculada con la Red Internacional de Jueces de La Haya.",
+        imagen:"https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1000&q=80",
+        emoji:"⚖️",
+        url:"https://sintesis.yoporlajusticia.gob.mx/2026/10/01/pjedemex-recibe-a-18-paises-latinoamericanos-de-la-red-internacional-de-jueces-de-la-haya/"
+    },
+
+    {
+        categoria:"nacional",
+        nombreCategoria:"Política nacional",
+        fecha:"22 de septiembre de 2026",
+        titulo:"La reforma sobre doble nacionalidad avanza en la Cámara de Diputados",
+        descripcion:"La Cámara de Diputados aprobó la reforma constitucional y el proceso legislativo continuó posteriormente en el Senado.",
+        imagen:"https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80",
+        emoji:"🇲🇽",
+        url:"https://elpais.com/mexico/2026-09-22/la-reforma-de-sheinbaum-contra-la-doble-nacionalidad-avanza-en-la-camara-de-diputados.html"
+    },
+
+    {
+        categoria:"nacional",
+        nombreCategoria:"Política nacional",
+        fecha:"4 de septiembre de 2026",
+        titulo:"La Cámara de Diputados establece calendario para analizar el informe de Gobierno",
+        descripcion:"La Cámara de Diputados aprobó el acuerdo para organizar el análisis del Segundo Informe de Gobierno durante el periodo ordinario.",
+        imagen:"https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=1000&q=80",
+        emoji:"🏛️",
+        url:"https://canaldelcongreso.gob.mx/noticias/10254"
+    },
+
+    {
+        categoria:"internacional",
+        nombreCategoria:"Política internacional",
+        fecha:"11 de abril de 2026",
+        titulo:"Las elecciones de Perú 2026 se desarrollan en un escenario político fragmentado",
+        descripcion:"El proceso electoral peruano ha estado marcado por la fragmentación de las fuerzas políticas y la búsqueda de coaliciones legislativas.",
+        imagen:"https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1000&q=80",
+        emoji:"🌎",
+        url:"https://elpais.com/america/2026-04-11/elecciones-peru-2026-cuando-la-fragmentacion-politica-se-convierte-en-sistema.html"
+    },
+
+    {
+        categoria:"internacional",
+        nombreCategoria:"Política internacional",
+        fecha:"23 de junio de 2026",
+        titulo:"El Senado de Estados Unidos vota una resolución relacionada con la guerra contra Irán",
+        descripcion:"El Senado estadounidense votó una resolución relacionada con los poderes de guerra y el conflicto con Irán.",
+        imagen:"https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=1000&q=80",
+        emoji:"🌎",
+        url:"https://elpais.com/internacional/2026-06-23/el-senado-asesta-un-reves-a-trump-y-vota-a-favor-de-acabar-la-guerra-con-iran.html"
+    },
+
+    {
+        categoria:"nacional",
+        nombreCategoria:"Política nacional",
+        fecha:"29 de mayo de 2026",
+        titulo:"México modifica la Constitución sobre la injerencia extranjera en elecciones",
+        descripcion:"Una reforma constitucional estableció nuevas disposiciones relacionadas con la intervención extranjera y los procesos electorales.",
+        imagen:"https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1000&q=80",
+        emoji:"🗳️",
+        url:"https://elpais.com/mexico/2026-05-29/mexico-cambia-la-constitucion-para-permitir-que-las-elecciones-se-puedan-anular-por-injerencia-extranjera.html"
+    }
+
+];
+
+function escapeHTML(text){
+    return String(text)
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+}
+
+function mostrarFallback(img, emoji){
+
+    const contenedor = img.parentElement;
+
+    img.style.display="none";
+
+    contenedor.style.display="flex";
+    contenedor.style.alignItems="center";
+    contenedor.style.justifyContent="center";
+    contenedor.style.fontSize="55px";
+    contenedor.textContent=emoji;
+
+}
+
+function mostrar(categoria, boton){
+
+    const contenedor=document.getElementById("contenedor");
+
+    document.querySelectorAll(".filtros button").forEach(b=>{
+        b.classList.remove("activo");
+    });
+
+    if(boton){
+        boton.classList.add("activo");
+    }
+
+    let filtradas;
+
+    if(categoria==="todos"){
+        filtradas=noticias;
+    }else{
+        filtradas=noticias.filter(
+            noticia=>noticia.categoria===categoria
+        );
+    }
+
+    if(filtradas.length===0){
+
+        contenedor.innerHTML=`
+            <div class="empty">
+                No hay noticias disponibles en esta categoría.
+            </div>
+        `;
+
+        return;
+    }
+
+    contenedor.innerHTML=filtradas.map(noticia=>`
+
+        <article class="card">
+
+            <a
+                class="card-link"
+                href="${escapeHTML(noticia.url)}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <div class="card-img">
+
+                    <img
+                        src="${escapeHTML(noticia.imagen)}"
+                        alt="${escapeHTML(noticia.titulo)}"
+                        loading="lazy"
+                        onerror="mostrarFallback(this,'${escapeHTML(noticia.emoji)}')"
+                    >
+
+                </div>
+
+                <div class="card-content">
+
+                    <span class="badge">
+                        ${escapeHTML(noticia.nombreCategoria)}
+                    </span>
+
+                    <div class="date">
+                        ${escapeHTML(noticia.fecha)}
+                    </div>
+
+                    <h2>
+                        ${escapeHTML(noticia.titulo)}
+                    </h2>
+
+                    <p>
+                        ${escapeHTML(noticia.descripcion)}
+                    </p>
+
+                    <div class="leer">
+                        Leer noticia completa →
+                    </div>
+
+                </div>
+
+            </a>
+
+        </article>
+
+    `).join("");
+
+}
+
+mostrar(
+    "todos",
+    document.querySelector(".filtros button")
+);
+
+</script>
+
+</body>
+</html>
