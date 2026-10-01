@@ -1,827 +1,1136 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Deportes | Fútbol, NFL, MLB y más | TendenciasMX</title>
+<title>Deportes | TendenciasMX</title>
 
-<meta name="description" content="Noticias deportivas de México y el mundo: fútbol, Liga MX, NFL, MLB, boxeo, automovilismo y más en TendenciasMX.">
-<meta name="keywords" content="deportes, fútbol, Liga MX, NFL, MLB, béisbol, boxeo, automovilismo, México">
+<meta name="description" content="Noticias deportivas de México y el mundo: fútbol, tenis, béisbol, NFL, básquetbol, boxeo, Fórmula 1 y automovilismo.">
+<meta name="keywords" content="deportes, fútbol, futbol mexicano, Liga MX, tenis, béisbol, MLB, NFL, NBA, básquetbol, boxeo, Fórmula 1, F1, automovilismo, deportes México">
 
 <style>
+:root{
+  --verde:#65ff9a;
+  --verde2:#2ee879;
+  --fondo:#07100d;
+  --fondo2:#0d1814;
+  --card:#101c17;
+  --texto:#f4fff8;
+  --gris:#a9b7b0;
+  --borde:rgba(101,255,154,.16);
+}
+
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f6f8;
-    color:#111827;
+  font-family:Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(circle at top right,rgba(101,255,154,.08),transparent 35%),
+    linear-gradient(180deg,#07100d,#0b1511 45%,#07100d);
+  color:var(--texto);
+  min-height:100vh;
 }
 
-header{
-    background:#111827;
-    color:white;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.15);
+a{
+  color:inherit;
+  text-decoration:none;
 }
 
-.header-inner{
-    max-width:1200px;
-    margin:auto;
-    padding:16px 20px;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:800;
-    color:white;
-    text-decoration:none;
-    display:inline-block;
-    margin-bottom:14px;
-}
-
-.logo span{
-    color:#22c55e;
-}
+/* NAV */
 
 nav{
-    display:flex;
-    gap:8px;
-    overflow-x:auto;
-    padding-bottom:4px;
-    scrollbar-width:none;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  display:flex;
+  gap:7px;
+  align-items:center;
+  overflow-x:auto;
+  padding:12px 14px;
+  background:rgba(5,10,8,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--borde);
+  scrollbar-width:none;
 }
 
 nav::-webkit-scrollbar{
-    display:none;
+  display:none;
 }
 
 nav a{
-    color:#d1d5db;
-    text-decoration:none;
-    padding:9px 13px;
-    border-radius:8px;
-    white-space:nowrap;
-    font-size:14px;
-    transition:.2s;
+  flex:0 0 auto;
+  padding:9px 13px;
+  border-radius:999px;
+  color:#c7d3cc;
+  font-size:13px;
+  font-weight:700;
+  white-space:nowrap;
+  transition:.2s;
 }
 
 nav a:hover,
 nav a.active{
-    background:#22c55e;
-    color:#052e16;
-    font-weight:700;
+  background:var(--verde);
+  color:#041009;
 }
 
-main{
-    max-width:1100px;
-    margin:auto;
-    padding:30px 20px 50px;
+/* CONTENEDOR */
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
 }
+
+/* HERO */
 
 .hero{
-    background:linear-gradient(135deg,#111827,#1f2937);
-    color:white;
-    border-radius:18px;
-    padding:30px 25px;
-    margin-bottom:25px;
+  padding:60px 0 35px;
+  text-align:center;
+}
+
+.badge{
+  display:inline-block;
+  padding:7px 13px;
+  border:1px solid rgba(101,255,154,.28);
+  background:rgba(101,255,154,.07);
+  color:var(--verde);
+  border-radius:999px;
+  font-size:12px;
+  font-weight:800;
+  margin-bottom:15px;
 }
 
 .hero h1{
-    font-size:34px;
-    margin-bottom:10px;
+  font-size:clamp(38px,7vw,72px);
+  line-height:.95;
+  letter-spacing:-3px;
+  margin-bottom:18px;
+}
+
+.hero h1 span{
+  color:var(--verde);
 }
 
 .hero p{
-    color:#d1d5db;
-    line-height:1.6;
-    max-width:800px;
+  max-width:760px;
+  margin:auto;
+  color:var(--gris);
+  line-height:1.7;
+  font-size:16px;
 }
 
+/* BUSCADOR */
+
 .search-box{
-    margin:25px 0;
+  margin:25px auto 20px;
+  max-width:720px;
+  display:flex;
+  gap:10px;
 }
 
 .search-box input{
-    width:100%;
-    padding:15px 17px;
-    border:1px solid #d1d5db;
-    border-radius:12px;
-    font-size:16px;
-    outline:none;
-    background:white;
+  width:100%;
+  padding:15px 18px;
+  border-radius:14px;
+  border:1px solid var(--borde);
+  outline:none;
+  background:#0d1914;
+  color:white;
+  font-size:15px;
 }
 
 .search-box input:focus{
-    border-color:#22c55e;
-    box-shadow:0 0 0 3px rgba(34,197,94,.12);
+  border-color:var(--verde);
+  box-shadow:0 0 0 3px rgba(101,255,154,.08);
 }
 
-.filters{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-bottom:28px;
+/* CATEGORÍAS */
+
+.categories{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:9px;
+  margin:25px 0 35px;
 }
 
-.filter-btn{
-    border:none;
-    background:white;
-    color:#374151;
-    border:1px solid #d1d5db;
-    padding:10px 15px;
-    border-radius:999px;
-    cursor:pointer;
-    font-size:14px;
-    font-weight:600;
+.category-btn{
+  border:1px solid var(--borde);
+  background:#0d1914;
+  color:#c9d5cf;
+  padding:10px 15px;
+  border-radius:999px;
+  cursor:pointer;
+  font-weight:800;
+  font-size:13px;
+  transition:.2s;
 }
 
-.filter-btn:hover,
-.filter-btn.active{
-    background:#22c55e;
-    border-color:#22c55e;
-    color:#052e16;
+.category-btn:hover,
+.category-btn.active{
+  background:var(--verde);
+  color:#041009;
+  border-color:var(--verde);
 }
+
+/* ESTADO */
+
+.status{
+  margin:0 auto 25px;
+  text-align:center;
+  color:var(--gris);
+  font-size:14px;
+}
+
+/* DESTACADAS */
+
+.section-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:15px;
+  margin:35px 0 18px;
+}
+
+.section-title h2{
+  font-size:27px;
+}
+
+.section-title span{
+  color:var(--verde);
+  font-size:13px;
+  font-weight:800;
+}
+
+/* GRID */
 
 .news-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
 
-.card-link{
-    text-decoration:none;
-    color:inherit;
-    display:block;
-}
+/* CARD */
 
 .card{
-    background:white;
-    border-radius:16px;
-    overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,.07);
-    transition:.2s;
-    height:100%;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.01)),
+    var(--card);
+  border:1px solid var(--borde);
+  border-radius:20px;
+  overflow:hidden;
+  transition:.25s;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
 }
 
 .card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
+  transform:translateY(-4px);
+  border-color:rgba(101,255,154,.4);
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
-.news-image{
-    width:100%;
-    height:190px;
-    background:#e5e7eb;
-    overflow:hidden;
+.card-image{
+  width:100%;
+  height:205px;
+  object-fit:cover;
+  display:block;
+  background:#13231c;
 }
 
-.news-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
+.card-body{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
 }
 
-.card-content{
-    padding:18px;
+.card-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  align-items:center;
+  margin-bottom:11px;
 }
 
-.category{
-    display:inline-block;
-    background:#dcfce7;
-    color:#166534;
-    padding:5px 9px;
-    border-radius:999px;
-    font-size:12px;
-    font-weight:700;
-    margin-bottom:10px;
-}
-
-.card h2{
-    font-size:19px;
-    line-height:1.35;
-    margin-bottom:9px;
+.tag{
+  display:inline-block;
+  padding:5px 8px;
+  border-radius:7px;
+  background:rgba(101,255,154,.09);
+  color:var(--verde);
+  font-size:10px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.4px;
 }
 
 .date{
-    color:#6b7280;
-    font-size:13px;
-    margin-bottom:10px;
+  color:#819089;
+  font-size:11px;
 }
 
-.description{
-    color:#4b5563;
-    line-height:1.5;
-    font-size:14px;
-    margin-bottom:13px;
+.card h3{
+  font-size:18px;
+  line-height:1.25;
+  margin-bottom:10px;
 }
 
-.read{
-    color:#16a34a;
-    font-size:14px;
-    font-weight:700;
+.card p{
+  color:#aab8b1;
+  line-height:1.55;
+  font-size:13px;
+  margin-bottom:17px;
 }
+
+.card-link{
+  margin-top:auto;
+  color:var(--verde);
+  font-weight:900;
+  font-size:13px;
+}
+
+/* BLOQUES DE CATEGORÍAS */
+
+.category-strip{
+  margin:45px 0;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:13px;
+}
+
+.category-box{
+  border:1px solid var(--borde);
+  background:#0c1712;
+  border-radius:17px;
+  padding:20px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.category-box:hover{
+  transform:translateY(-3px);
+  border-color:rgba(101,255,154,.4);
+}
+
+.category-icon{
+  font-size:28px;
+  margin-bottom:12px;
+}
+
+.category-box h3{
+  font-size:16px;
+  margin-bottom:6px;
+}
+
+.category-box p{
+  color:#87958e;
+  font-size:12px;
+  line-height:1.5;
+}
+
+/* SIN RESULTADOS */
 
 .empty{
-    grid-column:1/-1;
-    background:white;
-    border-radius:15px;
-    padding:35px;
-    text-align:center;
-    color:#6b7280;
+  grid-column:1/-1;
+  text-align:center;
+  padding:55px 20px;
+  border:1px dashed rgba(101,255,154,.22);
+  border-radius:20px;
+  background:#0b1511;
 }
+
+.empty strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.empty p{
+  color:var(--gris);
+}
+
+/* INFO */
 
 .info{
-    background:#ecfdf5;
-    border:1px solid #bbf7d0;
-    border-radius:15px;
-    padding:20px;
-    margin-top:35px;
+  margin:50px 0;
+  padding:25px;
+  border:1px solid var(--borde);
+  background:rgba(101,255,154,.035);
+  border-radius:20px;
 }
 
-.info h3{
-    margin-bottom:8px;
-    color:#166534;
+.info h2{
+  margin-bottom:10px;
 }
 
 .info p{
-    color:#374151;
-    line-height:1.6;
+  color:#aab8b1;
+  line-height:1.7;
+  font-size:14px;
 }
 
+/* FOOTER */
+
 footer{
-    background:#111827;
-    color:#9ca3af;
-    text-align:center;
-    padding:25px 20px;
-    margin-top:20px;
+  margin-top:70px;
+  padding:35px 0;
+  border-top:1px solid var(--borde);
+  text-align:center;
+  color:#78867f;
+  font-size:13px;
 }
 
 footer strong{
-    color:#22c55e;
+  color:var(--verde);
 }
+
+/* RESPONSIVE */
 
 @media(max-width:900px){
-    .news-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+  .news-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .category-strip{
+    grid-template-columns:repeat(2,1fr);
+  }
 }
 
-@media(max-width:600px){
+@media(max-width:620px){
+  .hero{
+    padding-top:45px;
+  }
 
-    .header-inner{
-        padding:14px 12px;
-    }
+  .hero h1{
+    letter-spacing:-2px;
+  }
 
-    .logo{
-        font-size:25px;
-    }
+  .search-box{
+    flex-direction:column;
+  }
 
-    nav a{
-        font-size:13px;
-        padding:8px 10px;
-    }
+  .news-grid{
+    grid-template-columns:1fr;
+  }
 
-    main{
-        padding:20px 14px 40px;
-    }
+  .category-strip{
+    grid-template-columns:1fr 1fr;
+  }
 
-    .hero{
-        padding:25px 20px;
-    }
-
-    .hero h1{
-        font-size:28px;
-    }
-
-    .news-grid{
-        grid-template-columns:1fr;
-    }
-
-    .news-image{
-        height:210px;
-    }
+  .card-image{
+    height:220px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-
-    <div class="header-inner">
-
-        <a href="./index.html" class="logo">
-            Tendencias<span>MX</span>
-        </a>
-
-        <nav>
-
-            <a href="./index.html">
-                Inicio
-            </a>
-
-            <a href="./noticias.html">
-                Noticias
-            </a>
-
-            <a href="./deportes.html" class="active">
-                Deportes
-            </a>
-
-            <a href="./entretenimiento.html">
-                Entretenimiento
-            </a>
-
-            <a href="./tecnologia.html">
-                Tecnología
-            </a>
-
-            <a href="./dinero.html">
-                Dinero
-            </a>
-
-            <a href="./politica.html">
-                Política
-            </a>
-
-            <a href="./tramites.html">
-                Trámites
-            </a>
-
-            <a href="./contacto.html">
-                Contacto
-            </a>
-
-            <a href="./preguntas.html">
-                Preguntas
-            </a>
-
-        </nav>
-
-    </div>
-
-</header>
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="noticias.html">Noticias</a>
+  <a href="deportes.html" class="active">Deportes</a>
+  <a href="entretenimiento.html">Entretenimiento</a>
+  <a href="tecnologia.html">Tecnología</a>
+  <a href="dinero.html">Dinero</a>
+  <a href="politica.html">Política</a>
+  <a href="tramites.html">Trámites</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="preguntas.html">Preguntas</a>
+</nav>
 
 <main>
 
-    <section class="hero">
+<section class="hero">
+  <div class="container">
 
-        <h1>Deportes</h1>
+    <div class="badge">TENDENCIASMX · DEPORTES</div>
 
-        <p>
-            Toda la actualidad deportiva: fútbol, Liga MX, NFL,
-            MLB, boxeo, automovilismo y otros deportes de México
-            y el mundo.
-        </p>
+    <h1>
+      Todo el deporte.<br>
+      <span>Cada disciplina en su lugar.</span>
+    </h1>
 
-    </section>
+    <p>
+      Noticias deportivas organizadas por disciplina:
+      fútbol, tenis, béisbol, NFL, básquetbol, boxeo,
+      Fórmula 1, automovilismo y otros deportes.
+    </p>
 
     <div class="search-box">
-
-        <input
-            type="text"
-            id="search"
-            placeholder="Buscar noticias deportivas..."
-        >
-
+      <input
+        type="search"
+        id="search"
+        placeholder="Buscar jugador, equipo, torneo o noticia..."
+        autocomplete="off"
+      >
     </div>
 
-    <div class="filters">
+  </div>
+</section>
 
-        <button class="filter-btn active" data-category="todos">
-            Todos
-        </button>
+<section class="container">
 
-        <button class="filter-btn" data-category="futbol">
-            ⚽ Fútbol
-        </button>
+  <div class="categories">
 
-        <button class="filter-btn" data-category="nfl">
-            🏈 NFL
-        </button>
+    <button class="category-btn active" data-category="todas">
+      🏆 Todas
+    </button>
 
-        <button class="filter-btn" data-category="beisbol">
-            ⚾ Béisbol
-        </button>
+    <button class="category-btn" data-category="futbol">
+      ⚽ Fútbol
+    </button>
 
-        <button class="filter-btn" data-category="boxeo">
-            🥊 Boxeo
-        </button>
+    <button class="category-btn" data-category="tenis">
+      🎾 Tenis
+    </button>
 
-        <button class="filter-btn" data-category="automovilismo">
-            🏎️ Automovilismo
-        </button>
+    <button class="category-btn" data-category="beisbol">
+      ⚾ Béisbol
+    </button>
 
-        <button class="filter-btn" data-category="otros">
-            🏅 Otros deportes
-        </button>
+    <button class="category-btn" data-category="nfl">
+      🏈 NFL
+    </button>
 
+    <button class="category-btn" data-category="basquetbol">
+      🏀 Básquetbol
+    </button>
+
+    <button class="category-btn" data-category="boxeo">
+      🥊 Boxeo
+    </button>
+
+    <button class="category-btn" data-category="formula1">
+      🏎️ Fórmula 1
+    </button>
+
+    <button class="category-btn" data-category="automovilismo">
+      🏁 Automovilismo
+    </button>
+
+    <button class="category-btn" data-category="otros">
+      🏅 Otros
+    </button>
+
+  </div>
+
+  <div class="status" id="status">
+    Mostrando todas las noticias deportivas.
+  </div>
+
+  <div class="news-grid" id="newsGrid"></div>
+
+</section>
+
+<section class="container">
+
+  <div class="section-title">
+    <h2>Explora por deporte</h2>
+    <span>ELIGE UNA DISCIPLINA</span>
+  </div>
+
+  <div class="category-strip">
+
+    <div class="category-box" data-go="futbol">
+      <div class="category-icon">⚽</div>
+      <h3>Fútbol</h3>
+      <p>Liga MX, selección, clubes, Champions, Europa y fútbol internacional.</p>
     </div>
 
-    <section
-        class="news-grid"
-        id="newsGrid"
-    ></section>
+    <div class="category-box" data-go="tenis">
+      <div class="category-icon">🎾</div>
+      <h3>Tenis</h3>
+      <p>ATP, WTA, Grand Slams, jugadores y torneos.</p>
+    </div>
 
-    <section class="info">
+    <div class="category-box" data-go="beisbol">
+      <div class="category-icon">⚾</div>
+      <h3>Béisbol</h3>
+      <p>MLB, LMB, jugadores, playoffs y grandes torneos.</p>
+    </div>
 
-        <h3>
-            Sobre la sección Deportes
-        </h3>
+    <div class="category-box" data-go="nfl">
+      <div class="category-icon">🏈</div>
+      <h3>NFL</h3>
+      <p>Equipos, jugadores, temporada regular y Super Bowl.</p>
+    </div>
 
-        <p>
-            Encuentra información deportiva organizada por categorías.
-            Cada noticia puede abrirse desde su fuente original.
-        </p>
+    <div class="category-box" data-go="basquetbol">
+      <div class="category-icon">🏀</div>
+      <h3>Básquetbol</h3>
+      <p>NBA, playoffs, jugadores y baloncesto internacional.</p>
+    </div>
 
-    </section>
+    <div class="category-box" data-go="boxeo">
+      <div class="category-icon">🥊</div>
+      <h3>Boxeo</h3>
+      <p>Peleas, campeonatos, mexicanos y figuras internacionales.</p>
+    </div>
+
+    <div class="category-box" data-go="formula1">
+      <div class="category-icon">🏎️</div>
+      <h3>Fórmula 1</h3>
+      <p>Ferrari, McLaren, Red Bull, Mercedes, pilotos y Grandes Premios.</p>
+    </div>
+
+    <div class="category-box" data-go="automovilismo">
+      <div class="category-icon">🏁</div>
+      <h3>Automovilismo</h3>
+      <p>NASCAR, IndyCar, resistencia y otras competencias.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="container">
+
+  <div class="info">
+    <h2>Deportes organizados correctamente</h2>
+
+    <p>
+      En esta sección cada noticia pertenece a una sola disciplina.
+      Una noticia sobre Ferrari en Fórmula 1 se muestra en Fórmula 1;
+      una noticia sobre el Real Madrid se muestra en Fútbol;
+      una noticia sobre un jugador de la MLB se muestra en Béisbol;
+      y una noticia de los 49ers se muestra en NFL.
+      No se mezclan categorías solamente porque una palabra aparezca
+      dentro del título.
+    </p>
+  </div>
+
+</section>
 
 </main>
 
 <footer>
-
-    <p>
-        © 2026 <strong>TendenciasMX</strong> · Información y actualidad
-    </p>
-
+  <div class="container">
+    <strong>TendenciasMX</strong><br>
+    Deportes, noticias y actualidad deportiva.
+  </div>
 </footer>
 
 <script>
 
-const grid = document.getElementById("newsGrid");
-
-const search = document.getElementById("search");
-
-const buttons = document.querySelectorAll(".filter-btn");
-
-let categoriaActual = "todos";
-
-
-function nombreCategoria(categoria){
-
-    const nombres = {
-
-        futbol:"Fútbol",
-
-        nfl:"NFL",
-
-        beisbol:"Béisbol",
-
-        boxeo:"Boxeo",
-
-        automovilismo:"Automovilismo",
-
-        otros:"Otros deportes"
-
-    };
-
-    return nombres[categoria] || "Deportes";
-
-}
-
-
 /*
-    IMPORTANTE:
+==========================================================
+DATOS DEPORTIVOS
+==========================================================
 
-    Aquí solamente entran noticias deportivas.
-    No se utilizan noticias de economía, dinero,
-    tecnología o política.
+IMPORTANTE:
+
+La categoría de cada noticia está escrita explícitamente.
+
+NO se utiliza una búsqueda de palabras como:
+"si aparece Ferrari = F1"
+o
+"si aparece México = fútbol".
+
+Cada registro tiene su categoría definida.
+==========================================================
 */
 
 const noticias = [
 
-    {
-        categoria:"futbol",
+  /* =========================
+     FÚTBOL
+     ========================= */
 
-        titulo:"La Liga MX continúa con su actividad en el Apertura 2026",
+  {
+    categoria:"futbol",
+    disciplina:"Fútbol",
+    titulo:"UEFA Nations League 2026/27: qué es, cómo funciona y qué se juega",
+    descripcion:"La nueva edición de la Nations League reúne a selecciones europeas y comienza una nueva fase de competencia.",
+    fecha:"24 septiembre 2026",
+    imagen:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2026/09/24/uefa-nations-league-2026-27-que-es-formato-partidos-hoy"
+  },
 
-        fecha:"Actualidad",
+  {
+    categoria:"futbol",
+    disciplina:"Fútbol",
+    titulo:"Mbappé, Quiñones y los nominados al Balón de Oro 2026",
+    descripcion:"La lista del Balón de Oro reúne a varias de las principales figuras del fútbol internacional.",
+    fecha:"8 septiembre 2026",
+    imagen:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2026/09/08/nominados-al-balon-de-oro-2026"
+  },
 
-        descripcion:
-        "Información, resultados y actualidad del fútbol mexicano.",
+  {
+    categoria:"futbol",
+    disciplina:"Fútbol",
+    titulo:"Memo Ochoa anuncia su retiro del fútbol profesional",
+    descripcion:"Guillermo Ochoa anunció el cierre de su carrera profesional después de una trayectoria de más de dos décadas.",
+    fecha:"22 julio 2026",
+    imagen:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2026/07/22/memo-ochoa-retiro-futbol-profesional"
+  },
 
-        imagen:
-        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1000&q=80",
+  {
+    categoria:"futbol",
+    disciplina:"Fútbol",
+    titulo:"La Premier League analiza el caso del Manchester City",
+    descripcion:"La actualidad del fútbol inglés incluye el proceso relacionado con las normas financieras de la Premier League.",
+    fecha:"Actualidad",
+    imagen:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes"
+  },
 
-        url:
-        "https://www.fmf.mx/noticias"
 
-    },
+  /* =========================
+     TENIS
+     ========================= */
 
-    {
-        categoria:"futbol",
+  {
+    categoria:"tenis",
+    disciplina:"Tenis",
+    titulo:"Rybakina gana el US Open y se convierte en número uno",
+    descripcion:"Elena Rybakina conquistó el US Open 2026 y alcanzó el número uno del ranking mundial.",
+    fecha:"12 septiembre 2026",
+    imagen:"https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2026/09/12/rybakina-gana-us-open-zverev-shelton-final"
+  },
 
-        titulo:"La Selección Mexicana continúa su preparación deportiva",
+  {
+    categoria:"tenis",
+    disciplina:"Tenis",
+    titulo:"Todo lo que debes saber del US Open 2026",
+    descripcion:"El último Grand Slam de la temporada reunió a las grandes figuras de la ATP y WTA en Nueva York.",
+    fecha:"19 agosto 2026",
+    imagen:"https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2026/08/19/us-open-2026-cuando-comienza-fechas-horarios-jugadores"
+  },
 
-        fecha:"Actualidad",
+  {
+    categoria:"tenis",
+    disciplina:"Tenis",
+    titulo:"Mifel Tennis Open 2026: así se vivió el torneo en Los Cabos",
+    descripcion:"El torneo mexicano de Los Cabos llegó a su décima edición con una propuesta que combinó tenis y entretenimiento.",
+    fecha:"29 julio 2026",
+    imagen:"https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2026/07/29/experiencia-mifel-tennis-open-2026-gastronomia-los-cabos"
+  },
 
-        descripcion:
-        "Noticias y actualidad relacionadas con la Selección Mexicana.",
 
-        imagen:
-        "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1000&q=80",
+  /* =========================
+     BÉISBOL
+     ========================= */
 
-        url:
-        "https://www.fmf.mx/noticias"
+  {
+    categoria:"beisbol",
+    disciplina:"Béisbol",
+    titulo:"MLB: los playoffs y la Serie Mundial entran en la agenda deportiva",
+    descripcion:"La recta final de la temporada de Grandes Ligas concentra la atención de los aficionados al béisbol.",
+    fecha:"Octubre 2026",
+    imagen:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes"
+  },
 
-    },
+  {
+    categoria:"beisbol",
+    disciplina:"Béisbol",
+    titulo:"Clásico Mundial de Béisbol: uno de los grandes eventos deportivos de 2026",
+    descripcion:"El calendario deportivo de 2026 incluye una nueva edición del Clásico Mundial de Béisbol.",
+    fecha:"Calendario 2026",
+    imagen:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2025/12/26/eventos-deportivos-2026-fechas"
+  },
 
-    {
-        categoria:"nfl",
 
-        titulo:"La NFL prepara su regreso a México",
+  /* =========================
+     NFL
+     ========================= */
 
-        fecha:"1 de octubre de 2026",
+  {
+    categoria:"nfl",
+    disciplina:"NFL",
+    titulo:"NFL Semana 3: quién manda en el camino al Super Bowl LXI",
+    descripcion:"La temporada de la NFL avanza con nuevos resultados y movimientos rumbo a los playoffs.",
+    fecha:"Septiembre 2026",
+    imagen:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes"
+  },
 
-        descripcion:
-        "La NFL volverá a México con un partido entre San Francisco 49ers y Minnesota Vikings el 22 de noviembre de 2026.",
+  {
+    categoria:"nfl",
+    disciplina:"NFL",
+    titulo:"Los 49ers jugarán como locales en México durante 2026",
+    descripcion:"La NFL confirmó que San Francisco tendrá un partido como local en el Estadio Azteca durante la temporada 2026.",
+    fecha:"18 febrero 2026",
+    imagen:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2026/02/18/49ers-mexico-2026-nfl"
+  },
 
-        imagen:
-        "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1000&q=80",
+  {
+    categoria:"nfl",
+    disciplina:"NFL",
+    titulo:"NFL 2026: comienza el camino hacia una nueva temporada",
+    descripcion:"La pretemporada sirve para evaluar jugadores y definir los rosters rumbo a la campaña.",
+    fecha:"5 agosto 2026",
+    imagen:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2026/08/05/nfl-2026-kickoff-pretemporada-donde-ver"
+  },
 
-        url:
-        "https://efe.com/deportes/"
 
-    },
+  /* =========================
+     BÁSQUETBOL
+     ========================= */
 
-    {
-        categoria:"nfl",
+  {
+    categoria:"basquetbol",
+    disciplina:"Básquetbol",
+    titulo:"NBA: las grandes fechas del calendario deportivo 2026",
+    descripcion:"La temporada de básquetbol incluye el All-Star Game, playoffs y las Finales de la NBA.",
+    fecha:"Calendario 2026",
+    imagen:"https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2025/12/26/eventos-deportivos-2026-fechas"
+  },
 
-        titulo:"La temporada 2026 de la NFL continúa con nuevos encuentros",
 
-        fecha:"Actualidad",
+  /* =========================
+     BOXEO
+     ========================= */
 
-        descripcion:
-        "Resultados, calendario y noticias de la temporada de fútbol americano.",
+  {
+    categoria:"boxeo",
+    disciplina:"Boxeo",
+    titulo:"El boxeo mantiene su lugar entre los grandes eventos deportivos",
+    descripcion:"Las grandes carteleras y campeonatos forman parte de la agenda deportiva internacional.",
+    fecha:"Agenda deportiva",
+    imagen:"https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1200&q=80",
+    fuente:"TendenciasMX",
+    url:"https://lifeandstyle.expansion.mx/deportes"
+  },
 
-        imagen:
-        "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1000&q=80",
 
-        url:
-        "https://mexico.as.com/noticias/futbol-americano/"
+  /* =========================
+     FÓRMULA 1
+     ========================= */
 
-    },
+  {
+    categoria:"formula1",
+    disciplina:"Fórmula 1",
+    titulo:"Checo Pérez regresa a México con un Show Run",
+    descripcion:"El piloto mexicano volverá a realizar una exhibición pública en Paseo de la Reforma con Cadillac.",
+    fecha:"Actualidad",
+    imagen:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes"
+  },
 
-    {
-        categoria:"beisbol",
+  {
+    categoria:"formula1",
+    disciplina:"Fórmula 1",
+    titulo:"Aston Martin confirma a Lance Stroll y Fernando Alonso para 2027",
+    descripcion:"La escudería confirmó a sus pilotos para la temporada 2027.",
+    fecha:"Actualidad",
+    imagen:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes"
+  },
 
-        titulo:"Los playoffs de MLB ya están definidos",
+  {
+    categoria:"formula1",
+    disciplina:"Fórmula 1",
+    titulo:"GP de Azerbaiyán 2026: Russell gana en Bakú",
+    descripcion:"George Russell consiguió la victoria en el Gran Premio de Azerbaiyán 2026.",
+    fecha:"Septiembre 2026",
+    imagen:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes"
+  },
 
-        fecha:"28 de septiembre de 2026",
+  {
+    categoria:"formula1",
+    disciplina:"Fórmula 1",
+    titulo:"El Gran Premio de México 2027 ya tiene fecha",
+    descripcion:"La Fórmula 1 confirmó la fecha del Gran Premio de México 2027 en el Autódromo Hermanos Rodríguez.",
+    fecha:"17 septiembre 2026",
+    imagen:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2026/09/17/gp-de-mexico-fecha-temporada-2027"
+  },
 
-        descripcion:
-        "La postemporada de las Grandes Ligas reúne a los equipos clasificados para competir por el campeonato.",
 
-        imagen:
-        "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1000&q=80",
+  /* =========================
+     AUTOMOVILISMO
+     ========================= */
 
-        url:
-        "https://www.reporteindigo.com/deportes/juego-de-comodines-de-las-grandes-ligas-de-beisbol-mlb-playoff-bracket-20260928-0010.html"
+  {
+    categoria:"automovilismo",
+    disciplina:"Automovilismo",
+    titulo:"El automovilismo internacional prepara nuevos grandes eventos",
+    descripcion:"Además de la Fórmula 1, el calendario deportivo contempla competencias de resistencia y otras categorías.",
+    fecha:"Calendario 2026",
+    imagen:"https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2025/12/26/eventos-deportivos-2026-fechas"
+  },
 
-    },
 
-    {
-        categoria:"beisbol",
+  /* =========================
+     OTROS
+     ========================= */
 
-        titulo:"Béisbol mexicano y Grandes Ligas mantienen la actividad",
-
-        fecha:"Actualidad",
-
-        descripcion:
-        "Noticias y resultados del béisbol nacional e internacional.",
-
-        imagen:
-        "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1000&q=80",
-
-        url:
-        "https://mexico.as.com/"
-
-    },
-
-    {
-        categoria:"boxeo",
-
-        titulo:"El boxeo mexicano continúa con actividad internacional",
-
-        fecha:"Actualidad",
-
-        descripcion:
-        "Información sobre boxeadores mexicanos y las principales funciones internacionales.",
-
-        imagen:
-        "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1000&q=80",
-
-        url:
-        "https://mexico.as.com/"
-
-    },
-
-    {
-        categoria:"automovilismo",
-
-        titulo:"El automovilismo internacional mantiene su calendario",
-
-        fecha:"Actualidad",
-
-        descripcion:
-        "Noticias de Fórmula 1, NASCAR y otras categorías del automovilismo.",
-
-        imagen:
-        "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1000&q=80",
-
-        url:
-        "https://mexico.as.com/"
-
-    },
-
-    {
-        categoria:"otros",
-
-        titulo:"México y sus atletas continúan destacando en distintas disciplinas",
-
-        fecha:"Actualidad",
-
-        descripcion:
-        "Información sobre atletismo, ciclismo, deportes olímpicos y otras disciplinas.",
-
-        imagen:
-        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1000&q=80",
-
-        url:
-        "https://www.efe.com/deportes/"
-
-    }
+  {
+    categoria:"otros",
+    disciplina:"Otros deportes",
+    titulo:"Calendario deportivo 2026: los grandes eventos del año",
+    descripcion:"El calendario incluye competencias de diferentes disciplinas deportivas durante todo el año.",
+    fecha:"26 diciembre 2025",
+    imagen:"https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+    fuente:"Expansión",
+    url:"https://lifeandstyle.expansion.mx/deportes/2025/12/26/eventos-deportivos-2026-fechas"
+  }
 
 ];
 
 
-function mostrarNoticias(){
+/* ==========================================================
+   FUNCION PARA ESCAPAR HTML
+   ========================================================== */
 
-    const texto =
-        search.value
-        .toLowerCase()
-        .trim();
+function escaparHTML(texto){
 
-
-    const filtradas =
-        noticias.filter(noticia => {
-
-            const coincideCategoria =
-                categoriaActual === "todos" ||
-                noticia.categoria === categoriaActual;
-
-
-            const contenido = (
-
-                noticia.titulo +
-                " " +
-                noticia.descripcion +
-                " " +
-                noticia.categoria
-
-            ).toLowerCase();
-
-
-            const coincideBusqueda =
-                texto === "" ||
-                contenido.includes(texto);
-
-
-            return
-                coincideCategoria &&
-                coincideBusqueda;
-
-        });
-
-
-    if(filtradas.length === 0){
-
-        grid.innerHTML = `
-
-            <div class="empty">
-
-                <h2>
-                    No encontramos noticias deportivas
-                </h2>
-
-                <p>
-                    Prueba con otra palabra o categoría.
-                </p>
-
-            </div>
-
-        `;
-
-        return;
-    }
-
-
-    grid.innerHTML =
-        filtradas.map(noticia => `
-
-            <a
-                class="card-link"
-                href="${noticia.url}"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <article class="card">
-
-                    <div class="news-image">
-
-                        <img
-                            src="${noticia.imagen}"
-                            alt="${noticia.titulo}"
-                            loading="lazy"
-                            onerror="this.style.display='none'"
-                        >
-
-                    </div>
-
-
-                    <div class="card-content">
-
-                        <span class="category">
-
-                            ${nombreCategoria(
-                                noticia.categoria
-                            )}
-
-                        </span>
-
-
-                        <h2>
-                            ${noticia.titulo}
-                        </h2>
-
-
-                        <div class="date">
-                            ${noticia.fecha}
-                        </div>
-
-
-                        <p class="description">
-                            ${noticia.descripcion}
-                        </p>
-
-
-                        <div class="read">
-                            Leer noticia completa →
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </a>
-
-        `).join("");
+  return String(texto ?? "")
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
 
 }
 
 
-buttons.forEach(button => {
+/* ==========================================================
+   VARIABLES
+   ========================================================== */
 
-    button.addEventListener(
-        "click",
-        () => {
-
-            buttons.forEach(btn => {
-
-                btn.classList.remove("active");
-
-            });
+let categoriaActual = "todas";
+let busquedaActual = "";
 
 
-            button.classList.add("active");
+/* ==========================================================
+   ELEMENTOS
+   ========================================================== */
+
+const grid = document.getElementById("newsGrid");
+const search = document.getElementById("search");
+const status = document.getElementById("status");
+const botones = document.querySelectorAll(".category-btn");
 
 
-            categoriaActual =
-                button.dataset.category;
+/* ==========================================================
+   MOSTRAR NOTICIAS
+   ========================================================== */
+
+function mostrarNoticias(){
+
+  const filtradas = noticias.filter(noticia => {
+
+    const coincideCategoria =
+      categoriaActual === "todas" ||
+      noticia.categoria === categoriaActual;
+
+    const texto = `
+      ${noticia.titulo}
+      ${noticia.descripcion}
+      ${noticia.disciplina}
+      ${noticia.fuente}
+    `.toLowerCase();
+
+    const coincideBusqueda =
+      !busquedaActual ||
+      texto.includes(busquedaActual);
+
+    return coincideCategoria && coincideBusqueda;
+
+  });
 
 
-            mostrarNoticias();
+  if(categoriaActual === "todas"){
 
-        }
-    );
+    status.textContent =
+      `Mostrando ${filtradas.length} noticias deportivas.`;
+
+  }else{
+
+    const nombreCategoria =
+      document.querySelector(
+        `.category-btn[data-category="${categoriaActual}"]`
+      )?.textContent.trim() || categoriaActual;
+
+    status.textContent =
+      `${nombreCategoria}: ${filtradas.length} noticias.`;
+
+  }
+
+
+  if(!filtradas.length){
+
+    grid.innerHTML = `
+      <div class="empty">
+        <strong>No encontramos noticias.</strong>
+        <p>
+          Prueba con otra categoría o cambia la búsqueda.
+        </p>
+      </div>
+    `;
+
+    return;
+  }
+
+
+  grid.innerHTML = filtradas.map(noticia => `
+
+    <article class="card">
+
+      <img
+        class="card-image"
+        src="${escaparHTML(noticia.imagen)}"
+        alt="${escaparHTML(noticia.titulo)}"
+        loading="lazy"
+        onerror="this.style.display='none';"
+      >
+
+      <div class="card-body">
+
+        <div class="card-meta">
+
+          <span class="tag">
+            ${escaparHTML(noticia.disciplina)}
+          </span>
+
+          <span class="date">
+            ${escaparHTML(noticia.fecha)}
+          </span>
+
+        </div>
+
+        <h3>
+          ${escaparHTML(noticia.titulo)}
+        </h3>
+
+        <p>
+          ${escaparHTML(noticia.descripcion)}
+        </p>
+
+        <a
+          class="card-link"
+          href="${escaparHTML(noticia.url)}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Leer fuente →
+        </a>
+
+      </div>
+
+    </article>
+
+  `).join("");
+
+}
+
+
+/* ==========================================================
+   FILTROS
+   ========================================================== */
+
+botones.forEach(boton => {
+
+  boton.addEventListener("click",() => {
+
+    botones.forEach(b => b.classList.remove("active"));
+
+    boton.classList.add("active");
+
+    categoriaActual =
+      boton.dataset.category;
+
+    mostrarNoticias();
+
+    window.scrollTo({
+      top:document.querySelector(".categories").offsetTop - 80,
+      behavior:"smooth"
+    });
+
+  });
 
 });
 
 
-search.addEventListener(
-    "input",
-    mostrarNoticias
-);
+/* ==========================================================
+   BUSCADOR
+   ========================================================== */
 
+search.addEventListener("input",() => {
+
+  busquedaActual =
+    search.value.trim().toLowerCase();
+
+  mostrarNoticias();
+
+});
+
+
+/* ==========================================================
+   CUADROS DE CATEGORÍA
+   ========================================================== */
+
+document.querySelectorAll(".category-box").forEach(box => {
+
+  box.addEventListener("click",() => {
+
+    const categoria = box.dataset.go;
+
+    categoriaActual = categoria;
+
+    botones.forEach(boton => {
+
+      boton.classList.toggle(
+        "active",
+        boton.dataset.category === categoria
+      );
+
+    });
+
+    mostrarNoticias();
+
+    window.scrollTo({
+      top:document.querySelector(".categories").offsetTop - 80,
+      behavior:"smooth"
+    });
+
+  });
+
+});
+
+
+/* ==========================================================
+   INICIAR
+   ========================================================== */
 
 mostrarNoticias();
 
