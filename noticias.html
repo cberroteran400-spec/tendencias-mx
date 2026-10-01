@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html lang="es-MX">
+<!DOCTYPE html><html lang="es-MX">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Noticias | Tendencias MX</title>
-
-<meta name="description" content="Últimas noticias de México, mundo, economía, deportes, entretenimiento y tecnología. Noticias actualizadas automáticamente en Tendencias MX.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Noticias | TendenciaMX</title><meta name="description" content="Últimas noticias de México, mundo, economía, deportes, entretenimiento y tecnología. Noticias actualizadas automáticamente en TendenciaMX.">
 <meta name="keywords" content="noticias México, noticias de hoy, últimas noticias, México, mundo, economía, deportes, entretenimiento, tecnología">
-<meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/noticias.html">
-
-<meta property="og:title" content="Noticias | Tendencias MX">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/noticias.html"><meta property="og:title" content="Noticias | TendenciaMX">
 <meta property="og:description" content="Las últimas noticias de México y el mundo.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cberroteran400-spec.github.io/tendencias-mx/noticias.html">
-
-<style>
+<meta property="og:site_name" content="TendenciaMX">
+<meta property="og:locale" content="es_MX"><style>
 
 *{
     box-sizing:border-box;
@@ -74,6 +65,10 @@ nav a:hover{
     color:#65ff9a;
 }
 
+nav a.active{
+    color:#65ff9a;
+}
+
 .hero{
     max-width:1200px;
     margin:auto;
@@ -98,7 +93,7 @@ nav a:hover{
 .search-box{
     display:flex;
     gap:10px;
-    max-width:700px;
+    max-width:800px;
 }
 
 .search-box input{
@@ -114,6 +109,7 @@ nav a:hover{
 
 .search-box input:focus{
     border-color:#65ff9a;
+    box-shadow:0 0 0 2px rgba(101,255,154,.08);
 }
 
 .search-box button{
@@ -124,6 +120,34 @@ nav a:hover{
     color:#07100a;
     font-weight:900;
     cursor:pointer;
+}
+
+.search-box button:hover{
+    opacity:.9;
+}
+
+.clear-button{
+    border:1px solid #34404c;
+    border-radius:10px;
+    padding:0 18px;
+    background:#151c24;
+    color:#ddd;
+    font-weight:bold;
+    cursor:pointer;
+    display:none;
+}
+
+.clear-button:hover{
+    border-color:#65ff9a;
+    color:#65ff9a;
+}
+
+.search-info{
+    max-width:800px;
+    margin-top:12px;
+    color:#8f9ba6;
+    font-size:13px;
+    min-height:18px;
 }
 
 .categories{
@@ -158,6 +182,10 @@ nav a:hover{
     padding:0 20px 20px;
     color:#8f9ba6;
     font-size:14px;
+}
+
+.status strong{
+    color:#65ff9a;
 }
 
 .news-grid{
@@ -258,8 +286,17 @@ nav a:hover{
 .empty{
     grid-column:1/-1;
     text-align:center;
-    padding:50px 20px;
+    padding:60px 20px;
     color:#9ca7b1;
+}
+
+.empty h2{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.empty p{
+    line-height:1.6;
 }
 
 .loading{
@@ -289,6 +326,10 @@ footer{
         gap:12px;
     }
 
+    .hero{
+        padding-top:30px;
+    }
+
     .hero h1{
         font-size:30px;
     }
@@ -297,127 +338,120 @@ footer{
         flex-direction:column;
     }
 
-    .search-box button{
+    .search-box button,
+    .clear-button{
         padding:14px;
+    }
+
+    .clear-button{
+        display:none;
     }
 
 }
 
-</style>
-</head>
+</style></head><body><header><div class="header-inner">
 
-<body>
+    <a href="index.html" class="logo">
+        TendenciaMX
+    </a>
 
-<header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="tendencias.html">Tendencias</a>
+        <a href="noticias.html" class="active">Noticias</a>
+        <a href="entretenimiento.html">Entretenimiento</a>
+    </nav>
 
-    <div class="header-inner">
+</div>
 
-        <a href="index.html" class="logo">
-            Tendencias MX
-        </a>
+</header><section class="hero"><h1>
+    Últimas <span>Noticias</span>
+</h1>
 
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="tendencias.html">Tendencias</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="entretenimiento.html">Entretenimiento</a>
-        </nav>
+<p>
+    Mantente informado con noticias actualizadas de México,
+    el mundo, economía, deportes, entretenimiento y tecnología.
+</p>
 
-    </div>
+<div class="search-box">
 
-</header>
+    <input
+        type="search"
+        id="buscador"
+        placeholder="Buscar noticias..."
+        autocomplete="off"
+        enterkeyhint="search"
+    >
 
-
-<section class="hero">
-
-    <h1>
-        Últimas <span>Noticias</span>
-    </h1>
-
-    <p>
-        Mantente informado con noticias actualizadas de México,
-        el mundo, economía, deportes, entretenimiento y tecnología.
-    </p>
-
-    <div class="search-box">
-
-        <input
-            type="search"
-            id="buscador"
-            placeholder="Buscar noticias..."
-            autocomplete="off"
-        >
-
-        <button onclick="buscarNoticias()">
-            Buscar
-        </button>
-
-    </div>
-
-</section>
-
-
-<div class="categories">
-
-    <button class="category-btn active" data-category="todas">
-        Todas
+    <button
+        type="button"
+        onclick="buscarNoticias()"
+    >
+        🔎 Buscar
     </button>
 
-    <button class="category-btn" data-category="mexico">
-        🇲🇽 México
-    </button>
-
-    <button class="category-btn" data-category="mundo">
-        🌎 Mundo
-    </button>
-
-    <button class="category-btn" data-category="economia">
-        💰 Economía
-    </button>
-
-    <button class="category-btn" data-category="deportes">
-        ⚽ Deportes
-    </button>
-
-    <button class="category-btn" data-category="entretenimiento">
-        🎬 Entretenimiento
-    </button>
-
-    <button class="category-btn" data-category="tecnologia">
-        📱 Tecnología
+    <button
+        type="button"
+        id="limpiarBusqueda"
+        class="clear-button"
+        onclick="limpiarBusqueda()"
+    >
+        Limpiar
     </button>
 
 </div>
 
+<div
+    id="searchInfo"
+    class="search-info"
+    aria-live="polite"
+></div>
 
-<div class="status" id="estado">
+</section><div class="categories"><button class="category-btn active" data-category="todas">
+    Todas
+</button>
+
+<button class="category-btn" data-category="mexico">
+    🇲🇽 México
+</button>
+
+<button class="category-btn" data-category="mundo">
+    🌎 Mundo
+</button>
+
+<button class="category-btn" data-category="economia">
+    💰 Economía
+</button>
+
+<button class="category-btn" data-category="deportes">
+    ⚽ Deportes
+</button>
+
+<button class="category-btn" data-category="entretenimiento">
+    🎬 Entretenimiento
+</button>
+
+<button class="category-btn" data-category="tecnologia">
+    📱 Tecnología
+</button>
+
+</div><div class="status" id="estado">
+    Cargando noticias...
+</div><main class="news-grid" id="newsGrid"><div class="loading">
     Cargando noticias...
 </div>
 
+</main><footer><p>
+    © 2026 TendenciaMX · Noticias actualizadas automáticamente
+</p>
 
-<main class="news-grid" id="newsGrid">
-
-    <div class="loading">
-        Cargando noticias...
-    </div>
-
-</main>
-
-
-<footer>
-
-    <p>
-        © 2026 Tendencias MX · Noticias actualizadas automáticamente
-    </p>
-
-</footer>
-
-
-<script>
+</footer><script>
 
 let todasLasNoticias = [];
 
 let categoriaActual = "todas";
+
+let terminoBusqueda = "";
 
 
 /* =====================================================
@@ -456,6 +490,25 @@ function limpiarTexto(texto){
         .replace(/\s+/g," ")
 
         .trim();
+}
+
+
+/* =====================================================
+   NORMALIZAR TEXTO PARA BÚSQUEDA
+===================================================== */
+
+function normalizarTexto(texto){
+
+    return limpiarTexto(texto)
+
+        .toLowerCase()
+
+        .normalize("NFD")
+
+        .replace(/[\u0300-\u036f]/g,"")
+
+        .trim();
+
 }
 
 
@@ -513,35 +566,20 @@ function obtenerImagen(noticia){
     const posibles = [
 
         noticia.imagen,
-
         noticia.image,
-
         noticia.imagen_url,
-
         noticia.image_url,
-
         noticia.thumbnail,
-
         noticia.miniatura,
-
         noticia.foto,
-
         noticia.fotografia,
-
         noticia.urlImagen,
-
         noticia.url_imagen,
-
         noticia.media,
-
         noticia.media_url,
-
         noticia.mediaContent,
-
         noticia.media_content,
-
         noticia.enclosure,
-
         noticia.og_image
 
     ];
@@ -725,27 +763,11 @@ function obtenerCategoria(noticia){
         normalizarCategoria(categoriaRSS);
 
 
-    /*
-       IMPORTANTE:
-
-       Si noticias.json ya trae categoría,
-       respetamos esa categoría.
-
-       Así los filtros coinciden exactamente
-       con lo que genera el RSS.
-    */
-
     if(categoriaNormalizada){
 
         return categoriaNormalizada;
 
     }
-
-
-    /*
-       Si no existe categoría,
-       intentamos clasificar automáticamente.
-    */
 
 
     const titulo =
@@ -800,8 +822,6 @@ function obtenerCategoria(noticia){
         enlace;
 
 
-    /* TECNOLOGÍA */
-
     const tecnologia = [
 
         "tecnologia",
@@ -838,8 +858,6 @@ function obtenerCategoria(noticia){
 
     }
 
-
-    /* DEPORTES */
 
     const deportes = [
 
@@ -882,8 +900,6 @@ function obtenerCategoria(noticia){
     }
 
 
-    /* ENTRETENIMIENTO */
-
     const entretenimiento = [
 
         "actor",
@@ -921,8 +937,6 @@ function obtenerCategoria(noticia){
 
     }
 
-
-    /* ECONOMÍA */
 
     const economia = [
 
@@ -968,8 +982,6 @@ function obtenerCategoria(noticia){
     }
 
 
-    /* MÉXICO */
-
     const mexico = [
 
         "méxico",
@@ -1002,8 +1014,6 @@ function obtenerCategoria(noticia){
 
     }
 
-
-    /* MUNDO */
 
     const mundo = [
 
@@ -1067,15 +1077,10 @@ function obtenerIcono(categoria){
     const iconos = {
 
         mexico:"🇲🇽",
-
         mundo:"🌎",
-
         economia:"💰",
-
         deportes:"⚽",
-
         entretenimiento:"🎬",
-
         tecnologia:"📱"
 
     };
@@ -1094,15 +1099,10 @@ function nombreCategoria(categoria){
     const nombres = {
 
         mexico:"México",
-
         mundo:"Mundo",
-
         economia:"Economía",
-
         deportes:"Deportes",
-
         entretenimiento:"Entretenimiento",
-
         tecnologia:"Tecnología"
 
     };
@@ -1157,6 +1157,104 @@ function formatearFecha(fecha){
         return limpiarTexto(fecha);
 
     }
+
+}
+
+
+/* =====================================================
+   LEER PARÁMETROS DE LA URL
+===================================================== */
+
+function leerParametrosURL(){
+
+    const parametros =
+        new URLSearchParams(
+            window.location.search
+        );
+
+
+    const busquedaURL =
+        parametros.get("buscar");
+
+
+    const categoriaURL =
+        parametros.get("categoria");
+
+
+    if(busquedaURL){
+
+        terminoBusqueda =
+            limpiarTexto(
+                busquedaURL
+            );
+
+        document.getElementById(
+            "buscador"
+        ).value =
+            terminoBusqueda;
+
+    }
+
+
+    if(categoriaURL){
+
+        const categoriaNormalizada =
+            normalizarCategoria(
+                categoriaURL
+            );
+
+
+        const categoriasPermitidas = [
+
+            "todas",
+            "mexico",
+            "mundo",
+            "economia",
+            "deportes",
+            "entretenimiento",
+            "tecnologia"
+
+        ];
+
+
+        if(
+            categoriasPermitidas.includes(
+                categoriaNormalizada
+            )
+        ){
+
+            categoriaActual =
+                categoriaNormalizada;
+
+        }
+
+    }
+
+
+    actualizarBotonesCategoria();
+
+}
+
+
+/* =====================================================
+   ACTUALIZAR BOTONES DE CATEGORÍA
+===================================================== */
+
+function actualizarBotonesCategoria(){
+
+    document
+    .querySelectorAll(".category-btn")
+    .forEach(
+        boton => {
+
+            boton.classList.toggle(
+                "active",
+                boton.dataset.category ===
+                categoriaActual
+            );
+
+        }
+    );
 
 }
 
@@ -1240,10 +1338,6 @@ async function cargarNoticias(){
 
         }
 
-
-        /*
-           NORMALIZAR NOTICIAS
-        */
 
         const noticiasNormalizadas =
             noticias.map(
@@ -1359,12 +1453,6 @@ async function cargarNoticias(){
             );
 
 
-        /*
-           ELIMINAR DUPLICADOS
-
-           Usamos el enlace como identificador.
-        */
-
         const enlacesUsados =
             new Set();
 
@@ -1404,10 +1492,6 @@ async function cargarNoticias(){
                 }
             );
 
-
-        /*
-           ORDENAR POR FECHA
-        */
 
         todasLasNoticias.sort(
             (a,b) => {
@@ -1449,50 +1533,6 @@ async function cargarNoticias(){
             }
         );
 
-
-        /*
-           ESTADÍSTICAS
-        */
-
-        const conteo = {
-
-            mexico:0,
-
-            mundo:0,
-
-            economia:0,
-
-            deportes:0,
-
-            entretenimiento:0,
-
-            tecnologia:0
-
-        };
-
-
-        todasLasNoticias.forEach(
-            noticia => {
-
-                if(
-                    conteo[
-                        noticia.categoria
-                    ] !== undefined
-                ){
-
-                    conteo[
-                        noticia.categoria
-                    ]++;
-
-                }
-
-            }
-        );
-
-
-        /*
-           FECHA DE ACTUALIZACIÓN DEL JSON
-        */
 
         let textoActualizacion =
             "";
@@ -1592,15 +1632,18 @@ function mostrarNoticias(){
 
 
     const busqueda =
-        buscador.value
-        .trim()
-        .toLowerCase();
+        normalizarTexto(
+            buscador.value
+        );
+
+
+    terminoBusqueda =
+        buscador.value.trim();
 
 
     const noticiasFiltradas =
         todasLasNoticias.filter(
             noticia => {
-
 
                 const coincideCategoria =
 
@@ -1612,22 +1655,36 @@ function mostrarNoticias(){
 
                 const textoBusqueda =
 
-                    (
+                    normalizarTexto(
+
                         noticia.titulo +
                         " " +
                         noticia.descripcion +
                         " " +
-                        noticia.fuente
-                    )
-                    .toLowerCase();
+                        noticia.fuente +
+                        " " +
+                        nombreCategoria(
+                            noticia.categoria
+                        )
+
+                    );
+
+
+                const palabrasBusqueda =
+                    busqueda
+                    .split(/\s+/)
+                    .filter(Boolean);
 
 
                 const coincideBusqueda =
 
-                    !busqueda ||
+                    !palabrasBusqueda.length ||
 
-                    textoBusqueda.includes(
-                        busqueda
+                    palabrasBusqueda.every(
+                        palabra =>
+                            textoBusqueda.includes(
+                                palabra
+                            )
                     );
 
 
@@ -1640,6 +1697,11 @@ function mostrarNoticias(){
         );
 
 
+    actualizarInformacionBusqueda(
+        noticiasFiltradas.length
+    );
+
+
     if(
         noticiasFiltradas.length === 0
     ){
@@ -1649,12 +1711,27 @@ function mostrarNoticias(){
             <div class="empty">
 
                 <h2>
-                    No hay noticias
+                    🔎 No encontramos noticias
                 </h2>
 
                 <p>
-                    Prueba con otra categoría
-                    o realiza otra búsqueda.
+                    No hay resultados para
+                    <strong>
+                        "${escaparHTML(
+                            terminoBusqueda
+                        )}"
+                    </strong>
+                    en esta categoría.
+                </p>
+
+                <p style="margin-top:10px;">
+                    Prueba con otra palabra,
+                    por ejemplo:
+                    <strong>México</strong>,
+                    <strong>dólar</strong>,
+                    <strong>fútbol</strong>
+                    o
+                    <strong>tecnología</strong>.
                 </p>
 
             </div>
@@ -1738,7 +1815,6 @@ function mostrarNoticias(){
 
 
                         <div class="news-content">
-
 
                             <div class="news-category">
 
@@ -1834,18 +1910,177 @@ function mostrarNoticias(){
 
 
 /* =====================================================
-   BUSCAR
+   INFORMACIÓN DE BÚSQUEDA
 ===================================================== */
 
-function buscarNoticias(){
+function actualizarInformacionBusqueda(
+    cantidad
+){
 
-    mostrarNoticias();
+    const info =
+        document.getElementById(
+            "searchInfo"
+        );
+
+
+    const botonLimpiar =
+        document.getElementById(
+            "limpiarBusqueda"
+        );
+
+
+    if(terminoBusqueda){
+
+        info.textContent =
+            cantidad +
+            (
+                cantidad === 1
+                ? " resultado"
+                : " resultados"
+            ) +
+            " para: " +
+            terminoBusqueda;
+
+
+        botonLimpiar.style.display =
+            "block";
+
+    }
+    else{
+
+        info.textContent =
+
+            categoriaActual === "todas"
+
+            ?
+
+            "Mostrando las noticias más recientes."
+
+            :
+
+            "Mostrando noticias de " +
+            nombreCategoria(
+                categoriaActual
+            ) +
+            ".";
+
+
+        botonLimpiar.style.display =
+            "none";
+
+    }
 
 }
 
 
 /* =====================================================
-   FILTROS
+   BUSCAR
+===================================================== */
+
+function buscarNoticias(){
+
+    const buscador =
+        document.getElementById(
+            "buscador"
+        );
+
+
+    terminoBusqueda =
+        buscador.value.trim();
+
+
+    mostrarNoticias();
+
+
+    /*
+       Actualizamos la URL para que
+       la búsqueda se pueda compartir.
+    */
+
+    actualizarURL();
+
+}
+
+
+/* =====================================================
+   LIMPIAR BÚSQUEDA
+===================================================== */
+
+function limpiarBusqueda(){
+
+    const buscador =
+        document.getElementById(
+            "buscador"
+        );
+
+
+    buscador.value = "";
+
+    terminoBusqueda = "";
+
+    mostrarNoticias();
+
+    actualizarURL();
+
+}
+
+
+/* =====================================================
+   ACTUALIZAR URL
+===================================================== */
+
+function actualizarURL(){
+
+    const parametros =
+        new URLSearchParams();
+
+
+    if(terminoBusqueda){
+
+        parametros.set(
+            "buscar",
+            terminoBusqueda
+        );
+
+    }
+
+
+    if(
+        categoriaActual &&
+        categoriaActual !== "todas"
+    ){
+
+        parametros.set(
+            "categoria",
+            categoriaActual
+        );
+
+    }
+
+
+    const nuevaURL =
+        window.location.pathname +
+        (
+            parametros.toString()
+            ?
+            "?" +
+            parametros.toString()
+            :
+            ""
+        );
+
+
+    window.history.replaceState(
+        {},
+        "",
+        nuevaURL
+    );
+
+}
+
+
+/* =====================================================
+   FILTROS DE CATEGORÍA
 ===================================================== */
 
 document
@@ -1857,28 +2092,17 @@ document
             "click",
             function(){
 
-                document
-                .querySelectorAll(
-                    ".category-btn"
-                )
-                .forEach(
-                    b =>
-                        b.classList.remove(
-                            "active"
-                        )
-                );
-
-
-                this.classList.add(
-                    "active"
-                );
-
-
                 categoriaActual =
                     this.dataset.category;
 
 
+                actualizarBotonesCategoria();
+
+
                 mostrarNoticias();
+
+
+                actualizarURL();
 
             }
         );
@@ -1897,7 +2121,35 @@ document
     "input",
     function(){
 
+        terminoBusqueda =
+            this.value.trim();
+
+
         mostrarNoticias();
+
+    }
+);
+
+
+/* =====================================================
+   BUSCAR CON ENTER
+===================================================== */
+
+document
+.getElementById("buscador")
+.addEventListener(
+    "keydown",
+    function(event){
+
+        if(
+            event.key === "Enter"
+        ){
+
+            event.preventDefault();
+
+            buscarNoticias();
+
+        }
 
     }
 );
@@ -1906,6 +2158,8 @@ document
 /* =====================================================
    INICIAR
 ===================================================== */
+
+leerParametrosURL();
 
 cargarNoticias();
 
@@ -1919,7 +2173,5 @@ setInterval(
     10 * 60 * 1000
 );
 
-</script>
-
-</body>
+</script></body>
 </html>
