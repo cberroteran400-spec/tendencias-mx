@@ -1,12 +1,22 @@
 {
-  "actualizado": "2026-10-01T21:46:08.738303+00:00",
-  "total": 438,
+  "actualizado": "2026-10-01T22:11:55.644964+00:00",
+  "total": 462,
   "imagenes": {
     "con_imagen": 122,
-    "sin_imagen": 316,
-    "imagenes_unicas": 122
+    "sin_imagen": 340
   },
   "noticias": [
+    {
+      "id": "0ea2071aa5c0a8c812d68df3dcf4796f775a0890da350d92613dd236d0229767",
+      "titulo": "El Barcelona lidera la clasificación en solitario con pleno - Diario AS",
+      "descripcion": "El Barcelona lidera la clasificación en solitario con pleno Diario AS",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZDlpMFkwbXpFdTRiT3BDNFRtX25COTh1Tzc0TXdiX2g0YkE3RlFVSVp6UGZBSTN4VTVES3lhQmpYdlBGOGl2Y1NvRDF5S19sMHpoVkJBMEk3VS0xeEdCRG9vQ05yQk5SRDl1dmo3YUFHa0RrS2ZNSHM3c3p3V2QwNDZHdlhzSU1pNW9Va1Nqb1g1WmZmM0R5QzhUbG1pSXhaM1Rj0gG3AUFVX3lxTE5rdjNET3lGTGF0NWVFZUxKVE51c3ZHa19NNkVTNDFpbWE4em05N19yNkQ3MmpQOGFiX2VyMVRTc2RqbUhZRWNzSlhPUXk2MGFISXRYODlNSmowczBLd1hfRm53bUJmd0RLM2lDQ2wtX1BTWFA0Mmt3YTU1dHE1YVJBeXlhZnVjSDNkWXhLWnQ5RFpnamRrd1BBSmRYZUhyQ2dic2JMSE9BSVMzUktzVjAtYUFmTE5uYw?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T21:46:14+00:00",
+      "fuente": "Diario AS",
+      "categoria": "Deportes",
+      "subcategoria": "futbol"
+    },
     {
       "id": "10f12f939f80b8207911c36d7fac2a0e8b5f5dd28cc9ad811c9d3a13c5bf6e54",
       "titulo": "Tulum recibe torneo universitario de golf de la NCAA - Galu Comunicación",
@@ -171,6 +181,28 @@
       "fuente": "Diario AS",
       "categoria": "Deportes",
       "subcategoria": "basquetbol"
+    },
+    {
+      "id": "37c144b0eb8733b7491cb226ee9d0208480a732c5021382f666d4f097ffb8cca",
+      "titulo": "GP de Bahréin 2026: fechas, pruebas, horarios y dónde ver EN VIVO a Checo Pérez en la F1 - El Heraldo de México",
+      "descripcion": "GP de Bahréin 2026: fechas, pruebas, horarios y dónde ver EN VIVO a Checo Pérez en la F1 El Heraldo de México",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdk5tZDJoT3ZpVmllaVNZT1laWGhYcERxRlFVT2tFbHI1Y0hUZ3dxajlRVDdHdGFGYlFTUF9mQnRwVEZsaDA5dUk1YnUwc0lvbzNQU0EzVkhxYS01dWdxbHpPbl9yZTU5ZlZuZ2g1MHliRHJhVU80SmtMLXR1U1VYZFI0VUVnMFU4azJpQ0k2UExTSVpSQm9vZ1lJd3pBdjNnY2JkY2k2SV9zLXd1bkFMM3BqQnZvd2Q1eUFBUkhhOGsxSFo1UTkydE5CYkhYT3FPMVUxZDZxdVFpLXc?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T20:30:00+00:00",
+      "fuente": "El Heraldo de México",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
+      "id": "759e0837dc44de1ba5a8b469b38cfdbf344034510a096f4853dff1e8d5ec1bcd",
+      "titulo": "Atlanta-Braves-vs-Philadelphia-Philles: a-que hora-y donde-ver Juego-3 playoffs-MLB-2026 - Mediotiempo",
+      "descripcion": "Atlanta-Braves-vs-Philadelphia-Philles: a-que hora-y donde-ver Juego-3 playoffs-MLB-2026 Mediotiempo",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPd3Rwb1liQjVKYmw3QVRqVEtLTlpXTlJTQjhoYjcySlZMUDhBRVUwWVpPYjBmbldCVEs4ZG1zOTlsdnRfUWljTnlqWEN5djBwdF9LNUlPVHJhb1NrcHk1SUNfU3JucjYtRzFvUFdleUx6bmxkNG9SZ043aVRkVFNkbmNYWUdTTjZpdm1wWk9HU2pyNi1RTWJBNmZUQ2g3azRPUHN3a05SZzAtWktIcFZYZGxuT2hHYmtrZ0ZoWTBzM3E0QXZ4Q0HSAcYBQVVfeXFMTmlscHJVa0dQOVhvRkdxd0pUS0JRVWtGbnpiSkgwUFY4Y216OS13Y2NBYkFwd2xfVEtOTlpQTHlPNlIwa0xzYmRiRko3VEZMWGJIbHowUTItZkVUSzlmYW42OG9FbWphNnkzdU9zdnZZQnNpMXh1cEowN2NTRjFWQmRJWVRsOEVITWVuSHNmay01TUVudFQ5VVhwWHdXeWE1Z3J0cC1BY0JJb1l4S0J3Q2hKM1dyUk0tMzVTR2JMOVRjSWp2ekdR?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T20:15:07+00:00",
+      "fuente": "Mediotiempo",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol"
     },
     {
       "id": "5d0146bd8c670231ff4f4e0347d68c90e2474ca8bfb134e2dac42375fb819b60",
@@ -426,6 +458,17 @@
       "subcategoria": "boxeo"
     },
     {
+      "id": "13479bf9b60fa8f8c78e2c2bac4c681d6a7f99a131f55cc27829e4f62fd2fbbb",
+      "titulo": "La historia del primer podio de Checo Pérez en la Fórmula 1: Fue 2° en Malasia - Sopitas.com",
+      "descripcion": "La historia del primer podio de Checo Pérez en la Fórmula 1: Fue 2° en Malasia Sopitas.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQ25QeUM4UmtKQlBQdEJYM0pjUVBUZm9UNUVPVE00RkJwM0xGbmMtS1BaM29zYU5aN1ZybG1aa0NwWWxWMTVoYWE5NUNHdTNuV2dlLWV5dDcwbnJjZ1hYVU9EbEtaVm81OFNGRkE5UWlRT2dOWkpVN1hHN0FMQUJON01wa3AwMmZOOE5lTkl5ZkI3Zw?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T18:47:03+00:00",
+      "fuente": "Sopitas.com",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "3b52205aef06915cc045c9715bc22aa057aa6cd0a0117442096812e410e4ebb8",
       "titulo": "MLB: El equipo del Papa León XIV avanza en los playoffs y elimina a los Astros - El Informador",
       "descripcion": "MLB: El equipo del Papa León XIV avanza en los playoffs y elimina a los Astros El Informador",
@@ -624,6 +667,28 @@
       "subcategoria": "otros"
     },
     {
+      "id": "2aefb0988410385a34c22ca956fb07bae012e7e490f491c6d458d4f9ce2c5c59",
+      "titulo": "¿Por qué el GP de Bahréin 2026 se correrá en Malasia? Checo Pérez se dice confundido por la situación - Infobae",
+      "descripcion": "¿Por qué el GP de Bahréin 2026 se correrá en Malasia? Checo Pérez se dice confundido por la situación Infobae",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPdld4VUR6ZlBQWHZ0dWJ6ZGVSZThUVVJBSHB1STJLUUUyTGh1SWdFWU5Xb3V3YVlFTWFTSnhoUUZwdHZibFdGUU9vV3ZBVkJEenpkUVNsR0VpYW9JNC1EWlJvdFhhVFBxRm1SRERiR3FIRjdrSllCNVh1OFF2b1J0bGRlYU96LXpqZFhUNVVEUFNCN01SWU1kOEgxd3dhRjgyVkYwVnkwNnpDeUV1Z2pBVXJSRHdIV3VFQzVGQU5JaG96QjlaWnJTbXJHb0w0OFFkWlRjUXJxaHQ2YnBqSXgyNy1KSWZTQdIBgAJBVV95cUxPSWhxRDJXd2lXcUdqWEQ2bmhvRWg4ZmxpckQ0ZTFRRTF4bWFVYUZmNHBVajU3c293MG9CeTBQR0U0aE12c3MxWDVZamtyVGVVU3M1dmRERnB1eHU0T0FOODZxaFdTOWNBekI0N2lPLXhXYlZqMlVwdWtrQjFBZDllMmNzXzdmY3lxY2RHZkxNUWhPc0xMbzloNEphZkh2WWlRRndOcnUwRmJYamxzc1lkQUtlR2pOSVBRWTlQZXlOSTRKUkQ4V3MzQUF3ekc5cHYyWTFnVVp4V0RKTm1qNnQ1bENWQ3RoYnZjaEhxTDVaMEFwb0w5bVZwQTE3VHJDeGhD?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T17:08:00+00:00",
+      "fuente": "Infobae",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
+      "id": "ed24073516cf0dfca616dd049dc587569ea97a8d09ab5825791ad73aed9ebac8",
+      "titulo": "Checo Pérez celebrará sus 300 GP con un Show Run en Paseo de la Reforma - Noticias Radiorama",
+      "descripcion": "Checo Pérez celebrará sus 300 GP con un Show Run en Paseo de la Reforma Noticias Radiorama",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYUI4UlpsOWxMNGtnTzFfQ2xWRTJSd3hDbzJnNFk4QTI0TWFNTl95QWprOGRTblFnb3MyaUpYdjY0RjBoZVUwS2VxS1hYLTFWc1lZTFJwYWlXTFRhLW1XUWlEbHNpdHNiMmwycHY1ZHh2azlDbnpUX1dZVm1EblE1TVIyTUJyVFR5clBvQXY4bjdOLWlKLXhXQTZuSEhneGctZDUwclR4bE1XYmNvMHdOb0F4UHhTVU0x?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T17:05:37+00:00",
+      "fuente": "Noticias Radiorama",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "c60c184371d9adf6501c33d087f7e1a810d1be7b45c01c9b28a314b03b8f5c77",
       "titulo": "El Factor X: ¿Será De Paula la sorpresa de Dodgers en octubre? - MLB.com",
       "descripcion": "El Factor X: ¿Será De Paula la sorpresa de Dodgers en octubre? MLB.com",
@@ -653,6 +718,17 @@
       "imagen": "",
       "fecha": "2026-10-01T17:00:00+00:00",
       "fuente": "365Scores",
+      "categoria": "Deportes",
+      "subcategoria": "futbol"
+    },
+    {
+      "id": "e6e1b83525b72da9ae721796cb8e769849066681d3696a6dc2656a9e464d81ae",
+      "titulo": "Él es Anwar Hernández, el mexicano que conquistó Andorra y jugará la UEFA Conference League - Infobae",
+      "descripcion": "Él es Anwar Hernández, el mexicano que conquistó Andorra y jugará la UEFA Conference League Infobae",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONjRISHgzZzdUcFdlVlFDTVlJVzBzMVhqa0wyMGoxYVROcGlhZnUyb3h6TlNvM2tHRW9Tc3pENXdOZU1lMUZSUVVHUGEyNGxZaUtsbjZrNjBOSWtpb3oyVU0tTWFzZFc2V0xOUTg2R2tzWTN6MGVNd0VoSThhamVCcDFlSmVVc19UOF9Wb3FlZFpGWTltbThTbHdzQ0RLLTFMV2p2ZUZQN2ZoWVRnRVUxZXZVZnpBZEVJNHNLWUJQRGZCel9uUWZHZXRDRnVONElPSW5IOXRpMVFSZ9IB9AFBVV95cUxNYXhoWGZTMjYzUUh0TmpEb3ZDbjgyc0RKS1lSTm5QUHp0MExFdkYzRHZ3U3ZYNkFoMzR5NENVWEdwRTRSZjhSQVl2dEprTWI2WklOUHV6VGFQS0ZlZ3NFOWNaSVlmMHJ6eElRVi1NbHZnT1dpdzRORzA3VFVpY1JadVkyTHBJLWNSbVRTQ3pzd2RKeTB3bEhKYV9GNk9ONkQySnZZMDMtam5CcmwtMWdzSjlyS1ByQlprSTU2bTd6N1F5dUNHUlM1TW8xQUhkdk0tSzExUTI1NFRHZEFsdWNlOG0yUEs3eERReGVxVVdiMzNwVEth?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T16:59:47+00:00",
+      "fuente": "Infobae",
       "categoria": "Deportes",
       "subcategoria": "futbol"
     },
@@ -732,6 +808,17 @@
       "fuente": "Grupo Animal",
       "categoria": "Deportes",
       "subcategoria": "nfl"
+    },
+    {
+      "id": "c7dcb16b177154b9e7d497556feb1882bdfe0dda0568793e3d3d78bd13f35682",
+      "titulo": "La hora exacta para ver el Manchester City vs Real Madrid, partido de la UEFA Champions League Femenil - TV Azteca",
+      "descripcion": "La hora exacta para ver el Manchester City vs Real Madrid, partido de la UEFA Champions League Femenil TV Azteca",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaWpLbW9ocnlYOFB0Z3ZobnprakNIaTBONk9fYmNWSEJxbjkyb3ItZnc1WDVQTHVLbk80S01tTWpUSDJaTWlDNnJUcFBISGFicjhMVGppcXlJRnd4RVI0NXFuNHhJUlJVWF83VjZXT0hLbHNzMGp2OXRDaHJKd0lORXdZTmNFdnlqUmFKSE9nNENvVGNJdklSbm9rTE1NMHlrMnJVbVpGS0hDUi03a0lV0gG8AUFVX3lxTFBXaVc2eW5obVVpTmdsS2Z2dzhUVng2dzNwcklrT3B4M3JtQnZXWXBRNXZ2OHRtVzdxelNGTGl6SEhzaXJXUVJVcDR2akxSeWNIZ1FJdFBOSWZlY0tveHJ4cmY1b0xhVW9vZzhseXB1YlE3bEJwZmtuMG5fODI3UF9jMmVsTDBkOEhkdHpJZDdxcjBmb3BUc1djbXpTN2hRNVNvU3l4ek9OZW5pT2ctOThEZGxBeHBEaFNVeWdi?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T16:40:14+00:00",
+      "fuente": "TV Azteca",
+      "categoria": "Deportes",
+      "subcategoria": "futbol"
     },
     {
       "id": "06d9244824c656ac577fe75423f1ab91d8cbd3806d7c45249de83bdb078f4ed6",
@@ -2076,6 +2163,17 @@
       "subcategoria": ""
     },
     {
+      "id": "c2b4146912ff2374093fb143a67c29ec0e443842076525f85b3a795e10b2c075",
+      "titulo": "MLB Gameday: Red Sox 2, Yankees 9 Resultado Final (30/09/2026) - MLB.com",
+      "descripcion": "MLB Gameday: Red Sox 2, Yankees 9 Resultado Final (30/09/2026) MLB.com",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUHUxTlotcE1jajZXbzhjVUQ5T2R0dHVFcGdzUzdUS0M4ZE9jTVpYUG1iWjN2SWlxemNJc3piSUpDbDdaRTlCaUk4VFVLbVd5S1hFeTNlVzlOdjJueF8ycXRGckZ0Y3FMbzYydkdKSDVBR2RQS2lmZU5pQ0c2aVJNa21Uck4?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T00:00:00+00:00",
+      "fuente": "MLB.com",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol"
+    },
+    {
       "id": "fa31b8154759d0e204f77606d12f77a3c290952753b6e7f1dd4a910b1e700f28",
       "titulo": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión - MARCA",
       "descripcion": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión MARCA",
@@ -2329,6 +2427,17 @@
       "subcategoria": ""
     },
     {
+      "id": "d3557148d9beba521b60f9556a9054ebcaf1c4baebf19a142c2f9ec55ddd8213",
+      "titulo": "MLB: ¿Qué jugadores pegaron más jonrones en los playoffs? - ESPN Deportes",
+      "descripcion": "MLB: ¿Qué jugadores pegaron más jonrones en los playoffs? ESPN Deportes",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNzhiNWZFYWtBcnVtMmo3SW1uUldfcy1CMWI1ZkJzRUhnRy0tSS1BeE80LXJSOFZOUV8zQ1lCLVZvQUpvbXlJOFBhN2lOTW9MTWFBbXRBWGFaR1dSWXJkUzZtU1FNakZzUjNfekhoaEJFMU1uMmtyQlM3MEVyZUNXdmJXSUZkam15STZ2LVpwNm5iOXRDclhZS2JSaVlLNjA0THZWdV9jbFFta1FaV2tiWmkzSnl0Q1dfSlVrRUgxbGtTOTNmeDZnRmR1d0JRUQ?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-30T20:30:00+00:00",
+      "fuente": "ESPN Deportes",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol"
+    },
+    {
       "id": "41bd875e746ecb59b1c2816581ed0dd21d217c410c7b9c8060b6860df2937947",
       "titulo": "Checo Pérez prende alarmas en la F1 si no hay cambios pronto: “va a pasar algo malo” - La Razón de México",
       "descripcion": "Checo Pérez prende alarmas en la F1 si no hay cambios pronto: “va a pasar algo malo” La Razón de México",
@@ -2538,6 +2647,17 @@
       "subcategoria": "basquetbol"
     },
     {
+      "id": "a816a343381b0eca7068c73e1d1c9d2a632cb73ce11511d1485ab923d5ed7a5c",
+      "titulo": "F1: Checo Pérez vuelve a Malasia, escenario donde logró su primer podio - Récord",
+      "descripcion": "F1: Checo Pérez vuelve a Malasia, escenario donde logró su primer podio Récord",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNV3doc3NWN3VsUDI4YlFpWUdBMmpCQ2hQWjVlQlVlYldWdUtfdGtYaXJLSFUzRjN3b0tBSjdVX1hUVlNFSS16Vm9STXRNZmhoYmF4Y2NqczR6RmhGQkNTZE1FTWNpWVRTVHUzSG1rbVRpSEZwR01BbmF3UHZYem9KdEpHUnBKa2JUaEg2MFJPZ2p1c2NVcUxkZXpNRTRmcWxJWTRtZFljRVpBV0dESEFsTDQydkIzell1SFcwVktycE9pdw?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-30T17:53:00+00:00",
+      "fuente": "Récord",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "c68d62381455909bbf4d087ab2b92b3aabc0b864b3f19a489122a2368a9470f5",
       "titulo": "Wellness Weekend 2026 reunirá boxeo y fisicoculturismo en el WTC de CDMX - DigitalMex Periodismo confiable",
       "descripcion": "Wellness Weekend 2026 reunirá boxeo y fisicoculturismo en el WTC de CDMX DigitalMex Periodismo confiable",
@@ -2734,6 +2854,17 @@
       "fuente": "MARCA",
       "categoria": "Deportes",
       "subcategoria": "otros"
+    },
+    {
+      "id": "05641bd3e4b27fc50e6d6a4aad1af6991241680429c9d02ba4bcefb274440492",
+      "titulo": "¿Por qué Canelo eligió territorio árabe para su próxima pelea? - ESPN México",
+      "descripcion": "¿Por qué Canelo eligió territorio árabe para su próxima pelea? ESPN México",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUmZ2U21XTUdNSFJzS2V3amxseFYtQk9HcHd4SENSY3RvamNoYTlDSUpyRWxWUDV6cXJOMUtHOURnUDBhTHBMZTZubTIwU3FHOTNzZHNnbkdMRjJvcHBDVV9td3JtNjIyejdjc201Vy10LUk5bjdDTTlPa0pwWDJoY2YwbklTc2YxZTQ5YjNsSHZsaVRKOXRXN3UyS01wNzdQMVdfakZSd0ZMY2Q2eEZLa2djNlFsTmFz?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-30T16:15:00+00:00",
+      "fuente": "ESPN México",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo"
     },
     {
       "id": "1caf686c0c8c42b00866eecd761b28fe18a5a7dddd32625e2cd89670db87a67c",
@@ -2945,6 +3076,17 @@
       "subcategoria": "formula1"
     },
     {
+      "id": "7b091af06997c77c8f39bca5c2230c6af3341f36745045a7de7353ff5c1ca0fe",
+      "titulo": "Gobierno CDMX invita a fans de la Fórmula 1 al Show Run de Checo Pérez en Paseo de la Reforma - Infobae",
+      "descripcion": "Gobierno CDMX invita a fans de la Fórmula 1 al Show Run de Checo Pérez en Paseo de la Reforma Infobae",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZVVzZnFmcm9ReHlwcnVCcHZWdGw0S2R5anBVazFkN2FjLTJFMFBWMFlYNUJTMk9ZX3N0WkhvcXRRSFNOR3ZfVUZuLXlZWm9helpOekxzbnFYeGdaRy1aYmFLWk94UGhsdzRYdFNKWkNkdm1OOHl5eWl6bDVpYlE5UjBaZzhERElZckdOTndaOEVtbU02Wlh5LWlHTDA1eGhMSW1HTFp5SzdKMk02WG1ZYmt6SG1hT19wSS1KRXAzeS05V21QR3IzUVZ5VXNweFVoSmNTYUwxeUJwbk9VcmfSAfgBQVVfeXFMTW51bkVSbzhGY2h0UEpHUklyVmZKeXZnR3p0QnQwQVdMUFRXWmdLVGVjNGVTM0FCT3QwSWEtVzBxdTdKNXNWOFhTMlhHQk4xYWN6bUxyMVRmR2xpV2FSbkdOdDQzdlFUWnhMZm1xYUJEZUc5YmpVbTlTSHk3MDR1LVVvZ0lUamlFQ2Fpem1VWWREWldOR0R3WXlhMnJSWmhVdnMzZXhVLTNFYnktUkxzSVItZUU0MFFwOUpFMnN2WXRRMnB3TE50SlI4M2M4LVJOYVJWeTZjMElXVGVQaWZwWk1FR3BZYldyNkF6el80RTc5MW9aT0pCWG8?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-30T04:45:00+00:00",
+      "fuente": "Infobae",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "4b67c723ffce887a4f2a0fbc3bec6e89cea944b11026dbef8fa6c712f10d1d99",
       "titulo": "León se convierte en la capital del golf mexicano; 250 jugadores van por la histórica Copa Challenge - La Crónica de Hoy",
       "descripcion": "León se convierte en la capital del golf mexicano; 250 jugadores van por la histórica Copa Challenge La Crónica de Hoy",
@@ -3066,6 +3208,17 @@
       "subcategoria": "formula1"
     },
     {
+      "id": "c07b43192f8c0351ecac7fe958c9f339fcaad07faa6882f575734eafb85e264c",
+      "titulo": "F1 gratis en México: Checo Pérez hará Show Run en Paseo de la Reforma el 28 de octubre - Infobae",
+      "descripcion": "F1 gratis en México: Checo Pérez hará Show Run en Paseo de la Reforma el 28 de octubre Infobae",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNXzFxaWI1aWFsbkRBdllveEpfZ1cyYWxLemQxM0xCY3BqUl9IdUduMGRRQjJ0dGdQWXJqUWJSLVI5dnRBemQyZF83Tmg5ZldEOU1Ec3JMOEJoTXNNX0k4akFZVEx3TDV2bk5GTnJqemNBWHROOWxmLXRJVUJPTWxDWGhHdTZPYmo1ZlFoSjYyeHYzQmVyTU52U0lYQ2tUSWdlb1NYTGZ5VG9aR0tlT2JMek96S0RIb0lMLUQ0NHdPeTNNMGFBRUhn0gHiAUFVX3lxTE9XWWVFZ25XWURxemtDRWpTYUJ3RWFmSk9vWGt1Z0xmcXBqOU9BVDN3TmJvaDJXLTFMei10TWJnQm1jRUNxZDRSbUlrMUxNTGZLcFJTTkI5b1JBWkN3c2VCOWZjdS0tZXJiNVRsWlA1WHRPV0ZYTnR2aFFpQmFTNjhTdjlyWExmSDNuTEpkRHBHZEJLXzN4OFdfV2ZnNFhJSDNRM1QwNmhLVHZXWktQY1FCaVl3blNoeU5YUXhQOWVYSmZWOHVJb18yNzlfU0doeUtpU25zWG5ybUJJMC12ZEJ0dEE?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-29T22:30:00+00:00",
+      "fuente": "Infobae",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "deea188271f06755b24b45cece1533dea2594d7bfe0e4856176ca453a623ddfb",
       "titulo": "Nu México nombra a Estephany Paulette Ley como CEO",
       "descripcion": "Se trata de la segunda mujer al frente de un banco en México. Cuenta con amplia trayectoria en el sistema financiero del país.",
@@ -3086,6 +3239,17 @@
       "fuente": "Expansión",
       "categoria": "Tecnologia",
       "subcategoria": ""
+    },
+    {
+      "id": "e9bbf76a2e9a5e2cac6bada4c7550105447868b728b3a45d3191cb170e450765",
+      "titulo": "Checo Pérez celebra sus 300 carreras de F1 en CDMX con Cadillac - MARCA",
+      "descripcion": "Checo Pérez celebra sus 300 carreras de F1 en CDMX con Cadillac MARCA",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcFhKOFZVX0xjWFljSnNYUExQbkY5eVpvamNYcFMweGR5UjZLUEU1M0lsczE1dk53TENyeEJmbjkteTJkVVNIZGk3NjlZb09tTy1KSElxT2JGQVMwZzdCZUxCbWhVUjJ6MDhMbDl5c2xCN2JURDRPbDN4bko1WWp1RXBSS1pjV2E0Zk04NU5sZEphQzgyT3F0TVM4eGhBMWRUeHZWMjA0cG5NZ9IBqgFBVV95cUxQYXByTlhpeUlYRW94cHRrVE1RRld5T2dORk1WX1AzMHEwMFFOQVNzVFZLd0lzNWx5aUN6T0x0ck9JM1JOdkVKVVRmVDZVaDFZN21WQ0NobVlHR1pORzYyU3NuWHB6RTcxakk0WUZiMGNyeDFHYWZDSzUxS3FIZkRLSlFWTEVWN3hSeW1MVFkxeTFkYUxWZktyLUltUS1CSzhvR2ZWa0FNOGVGQQ?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-29T21:58:55+00:00",
+      "fuente": "MARCA",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
     },
     {
       "id": "8e3a6aac6525fc202341d121466f8ed84a4200e674ec42f2360ddcbc877098e1",
@@ -3154,6 +3318,28 @@
       "subcategoria": "formula1"
     },
     {
+      "id": "8797df5714154f165ba338482a12e3ced6c1eec34ddeb6e42def45d2ef2e95fb",
+      "titulo": "Fecha y hora confirmadas: Checo Pérez hará un show run en CDMX con Cadillac el 28 de octubre - Sopitas.com",
+      "descripcion": "Fecha y hora confirmadas: Checo Pérez hará un show run en CDMX con Cadillac el 28 de octubre Sopitas.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVVJsb1ZQNllXY3pfX29tWk02ajVfYURYY3hCNTNFdkMwWk54NmkyNEdNZXdNeDJZS21QRzZkRk1tSnhLRjFETnNFczJWYlNkeTg3WTRCTTNuUE0wRzJ6UzJXVkFxQmhTM0hiSWVjOWR5VHMzTENZSlM4Zm1hRm9sQ1RsWE1YdHE1NDJQZnlhVG9PQQ?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-29T20:13:30+00:00",
+      "fuente": "Sopitas.com",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
+      "id": "64222f3b6a6d07c6af1be54c69e781105150cc54cc19a284aa8d500a5a3d40b4",
+      "titulo": "¡Es OFICIAL! ‘Checo’ Pérez tendrá un Show Run en CDMX: ¿Cuándo, dónde y a qué hora? - El Financiero",
+      "descripcion": "¡Es OFICIAL! ‘Checo’ Pérez tendrá un Show Run en CDMX: ¿Cuándo, dónde y a qué hora? El Financiero",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOS295enlXck5iTktmcS15R2czWFk1eDRxNlFkazJBVDVMNHZjcnFtOXZTVVlTUXJHaDVob2tVSGNpWUJxby1xNHRIMl8tckdFdmFYbmJYY0kwZzdzeWV3c1BCV0pfTV90d3VKd0NMNVJsNmNibGh4OEUtc3VuZm1hOFBLNjVBTWVLOXpzTDNBa3BXLUFNSW13RXU4dWsyMDBYSnhzU25xWXp4UllzRTdFbXZKVENwT2dodVhBTWZwU05SUQ?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-29T20:01:05+00:00",
+      "fuente": "El Financiero",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "3d5c93304bc71bd1bb92503216c679d0c9915a5b7b63ce2becc9c3c3ab87db45",
       "titulo": "Checo Pérez y Cadillac confirman oficialmente Show Run en Paseo de la Reforma - excelsior.com.mx",
       "descripcion": "Checo Pérez y Cadillac confirman oficialmente Show Run en Paseo de la Reforma excelsior.com.mx",
@@ -3196,6 +3382,28 @@
       "fuente": "ESPN México",
       "categoria": "Deportes",
       "subcategoria": "boxeo"
+    },
+    {
+      "id": "2df7f98147de1e25029dd8bed97214a174a65469114680bdff2ebe9538229438",
+      "titulo": "\"No hay mejor lugar\": Checo Pérez revela su emoción por el Show Run con Cadillac en CDMX - Motorsport.com Latinoamérica",
+      "descripcion": "\"No hay mejor lugar\": Checo Pérez revela su emoción por el Show Run con Cadillac en CDMX Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRTRaRjl1WXZBZjZnNVlQSlNSLVptNzI1dE9paTVSNlg3Ukx5ZTdUNGpYSkhDcllNMlNaWXNNNEprZHJzeG1JeDdVcDF1d0QzdTBEdG5NVXM1SjhXSC1XdXcwSEJ2TXo2Q0RoUFZtVGVEMkwxRGtlU1JYTVA1aEhtYlhiYTBJTHAyR0o1WThJSk80OExfNkc4blA4cW4?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-29T19:47:05+00:00",
+      "fuente": "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
+      "id": "455d4547fd8c3e1218fac639095ac770515a1f5909d8e4179168d943d0791c70",
+      "titulo": "Oficial: Cadillac anuncia el show run con Checo Pérez en Ciudad de México; conoce el día y el horario - Motorsport.com Latinoamérica",
+      "descripcion": "Oficial: Cadillac anuncia el show run con Checo Pérez en Ciudad de México; conoce el día y el horario Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSFdRR3c3VDBwOW5aeDBaZDAyYnVkUEVybTZJSkpldmZIUnhTbk5jZXpvZU1lYVJSdWJYbGh2WmhvUzNCR1dldHhvMVA3OWVMNGYzcmM2cXhRVkxuQ0RwVmtKZlFfbEVaQ1VlZ09UaktpSzU1d2hvUEZBS2cybXp6elY0b21JMEJBWEpOUDdQMVZRYU9nbk5mWXNGWWtUTTZpbG1ZNHdOTS10VjA?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-29T19:45:56+00:00",
+      "fuente": "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
     },
     {
       "id": "568cf69b93ba510bf9f55dcd317fae41503b7114f90f79f5c6d3666bba161513",
@@ -3484,6 +3692,17 @@
       "subcategoria": "futbol"
     },
     {
+      "id": "5791581b7c8e380e2d5c624376c1ad56e359546d2af874aa73236981336a15b1",
+      "titulo": "Checo Pérez advierte que pronto puede pasar \"algo malo\" por la diferencia de velocidad de los coches - Motorsport.com Latinoamérica",
+      "descripcion": "Checo Pérez advierte que pronto puede pasar \"algo malo\" por la diferencia de velocidad de los coches Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUjd3ak9FcVpNYXg1UzFSN1BaSllNSE5vdzVXNWJwYV9hemNOei00TUROb1hCV2NhZEtLTElJQjQtSVhnTmNSOTBSLWZ0QnFPUHpyd3VWZ1hSUWJDWGMwYWN3bjRXSzVNYm80eEVEbFNzbVptbk1ZLVZuZTFLNWktWTQyX2RETlJvRTYwdE1CVW1VNHRLVUJpbGRtWUh3ekdoeDRrQzhPZ291c0daMjBncl9KU2lFUQ?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-29T08:10:02+00:00",
+      "fuente": "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "64e962799c7e89070c5919f2242dfaa9f2183dbbfd3f96f70bdf917d867cd31b",
       "titulo": "Amanda Bisk, entrenadora de atletismo y profesora de yoga y pilates: \"Añadir ejercicios unilaterales (de un solo lado), cruzados y con base de apoyo limitada como estos no solo mejora tu progreso en el gimnasio, sino que también aumenta la longevidad\" - Cuerpomente",
       "descripcion": "Amanda Bisk, entrenadora de atletismo y profesora de yoga y pilates: \"Añadir ejercicios unilaterales (de un solo lado), cruzados y con base de apoyo limitada como estos no solo mejora tu progreso en el gimnasio, sino que también aumenta la longevidad\" Cuerpomente",
@@ -3548,6 +3767,17 @@
       "fuente": "Meridiano.net",
       "categoria": "Deportes",
       "subcategoria": "basquetbol"
+    },
+    {
+      "id": "8f8d8efeb90e4544ccaa702e260af8f9b52683557543607d8b3b0e256b820cf6",
+      "titulo": "¿Qué sabemos del Show Run de ‘Checo’ Pérez en Reforma? - El Financiero",
+      "descripcion": "¿Qué sabemos del Show Run de ‘Checo’ Pérez en Reforma? El Financiero",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTm1CbVdNY0xLdzFTd2h0NjJTR2h3RmZtNDJMblA2WU1PYXptd1JlczVyRGx6Ym80VnA5TWZ3MnZTSmp2T3BGdDFlaFVBQklfVEhtVnZySVkwNlhPOThFV2tNS2tKY1F6UnZ5NGI1SW1RSmpyck9hRVFWXzdqUFB2cDNXc2ZmS2pzTTNjTDRyb2w2SXhRV0ZDVDRzbFBqUXVVWjdFZkl5azhteS1DV2E2aS1EdXdBZWlrUHFtZFFrbkNQaEVoYW0yeDkya0YwM3ZN?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-28T23:49:32+00:00",
+      "fuente": "El Financiero",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
     },
     {
       "id": "5ee36d0fe8af0fd68be65cffc5f8575aefc862c566dfd8ba5869d0814ef37d8c",
@@ -3858,6 +4088,17 @@
       "subcategoria": "tenis"
     },
     {
+      "id": "a3c08160c83329f852cd9914a6f6aeac0d6cd0bd95a4aa1cfe85955db1deffb8",
+      "titulo": "F1 2026: ¿Cuándo y dónde es la próxima carrera de Checo Pérez? - Récord",
+      "descripcion": "F1 2026: ¿Cuándo y dónde es la próxima carrera de Checo Pérez? Récord",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEp0V2l1OExGbTc4TElQNGRoYnBybklNT2FOdnR3cEZ0X29JNF9zeGVIZ24weEN3ZEVoaUk2c1pCNUFxSlhZQnVlYmwyalNuZUFmbmdDdGxRU1EzOTNob3MxNlBxTGUtMjZ2RjJtNTlER1lBMTFGMnJSakFnbG03SVpVOXRFVV9teXhVcm41VXY0M1luOHZpUFEzcVNaLXBRcTVjTE9MbVo1VFk5Ul9vVUZaQXk?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-27T18:52:00+00:00",
+      "fuente": "Récord",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "8bfb21a49590fda4ac94666f629bd1f1000a5dbb7abdc17b1fbd154986a2d331",
       "titulo": "México consigue su segunda victoria dentro del Mundial de Beisbol Sub 15 al vencer a República Dominicana - Infobae",
       "descripcion": "México consigue su segunda victoria dentro del Mundial de Beisbol Sub 15 al vencer a República Dominicana Infobae",
@@ -3990,6 +4231,17 @@
       "subcategoria": ""
     },
     {
+      "id": "a29da8791ac6456ba6466ebb0bfdea477fbdc6c0c1bbfe2cb99eab502d2e70fb",
+      "titulo": "Checo desafía a Williams, Audi y Aston Martin, pero la falta de velocidad sepulta sus puntos - Motorsport.com Latinoamérica",
+      "descripcion": "Checo desafía a Williams, Audi y Aston Martin, pero la falta de velocidad sepulta sus puntos Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZndvTnljZzRaWnkzRGRobzF6NWI1a24zbkJZQ1Jpc2dhSjkzdXJqUGo5Yko2aEV6d0xPQ2lwdV9VMjNXc2hTOXM3YktWYTJsWDV4Uk9pZmJRY0R6WVNNWmNNTm04SmJkejBiZmxPLVpDVE9obHdrR0NpZGlQZFBmLU84dkVlOHUwVzlEQkl5UldnRW5vRWZaVTI4YlVZUTdwaE5RZnJR?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-26T14:43:40+00:00",
+      "fuente": "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "9e26b44d98d58129ea689b72e5fd5720c50433d3fd6510c9ac8c5e771ad21748",
       "titulo": "¿Cómo le fue a Checo Pérez en la carrera del GP de Azerbaiyán de F1? - ESPN México",
       "descripcion": "¿Cómo le fue a Checo Pérez en la carrera del GP de Azerbaiyán de F1? ESPN México",
@@ -3997,6 +4249,17 @@
       "imagen": "",
       "fecha": "2026-09-26T13:39:00+00:00",
       "fuente": "ESPN México",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
+      "id": "867d0950df5723df1f7a5aeb6e33761b800e42deef8806b8e87a6aa92241ba69",
+      "titulo": "¿Cómo le fue a Checo Pérez en la carrera del GP de Azerbaiyán de F1? - ESPN Deportes",
+      "descripcion": "¿Cómo le fue a Checo Pérez en la carrera del GP de Azerbaiyán de F1? ESPN Deportes",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPclhSeU8xOFVFWTFwZEEzQlNCNnZZem1TWExvWmJ5Q3Z3Mk5FT3E5UXNFSXpKYTVwVFFERzJHcHMxeWkyWUxwSmhqS212WUV2eXNyaEFQSG9sSlpRcVdEU2pUeWlHZGRMdDdMclFRWGNUOEwtSUVXM0tVYy05d0lRbFgxaVNmM0FzV3J2Vk9LVHh5NXhLc1IxWE43WGdSUzYwWDBybGFnWDNJekxVZkhBM29xZUUtTU5Xc3N3OXFyeDk3WG8t?oc=5",
+      "imagen": "",
+      "fecha": "2026-09-26T12:39:00+00:00",
+      "fuente": "ESPN Deportes",
       "categoria": "Deportes",
       "subcategoria": "formula1"
     },
