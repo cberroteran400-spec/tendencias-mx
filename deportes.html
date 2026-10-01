@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Deportes | TendenciasMX</title>
+<title>Deportes | Tendencias MX</title>
 
-<meta name="description" content="Las últimas noticias deportivas de México y el mundo: fútbol, Liga MX, NFL, boxeo, Fórmula 1, básquetbol y tenis.">
-<meta name="keywords" content="deportes, noticias deportivas, fútbol, Liga MX, NFL, boxeo, Fórmula 1, básquetbol, tenis, México">
+<meta name="description" content="Últimas noticias deportivas de México y el mundo: fútbol, Liga MX, NFL, boxeo, Fórmula 1, básquetbol, tenis y más.">
+<meta name="keywords" content="deportes, noticias deportivas, fútbol, Liga MX, NFL, boxeo, Fórmula 1, básquetbol, tenis, béisbol, México">
 
 <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/deportes.html">
 
@@ -21,7 +21,7 @@
 body{
     font-family:Arial,Helvetica,sans-serif;
     background:
-        radial-gradient(circle at top,#10251c 0%,#07110d 32%,#030605 75%);
+        radial-gradient(circle at top,#10251e 0%,#07100d 35%,#050807 100%);
     color:#fff;
     min-height:100vh;
 }
@@ -34,346 +34,334 @@ a{
 header{
     position:sticky;
     top:0;
-    z-index:1000;
-    background:rgba(3,8,6,.96);
+    z-index:100;
+    background:rgba(5,10,8,.94);
     backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(101,255,154,.15);
+    border-bottom:1px solid rgba(101,255,154,.18);
 }
 
-.nav{
+.header-inner{
     max-width:1200px;
     margin:auto;
-    padding:14px 18px;
+    padding:16px 18px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:20px;
+    gap:15px;
 }
 
 .logo{
-    font-size:23px;
+    font-size:22px;
     font-weight:900;
-    letter-spacing:-.5px;
     color:#65ff9a;
     white-space:nowrap;
 }
 
-.menu{
+nav{
     display:flex;
-    gap:7px;
+    gap:8px;
     flex-wrap:wrap;
     justify-content:flex-end;
 }
 
-.menu a{
-    padding:9px 12px;
+nav a{
+    padding:8px 11px;
     border-radius:10px;
-    color:#d8e5dd;
-    font-size:14px;
+    color:#d9e9df;
+    font-size:13px;
     font-weight:700;
 }
 
-.menu a:hover,
-.menu a.active{
+nav a:hover,
+nav a.active{
     background:#65ff9a;
-    color:#031007;
+    color:#061009;
 }
 
-.container{
-    width:min(1180px,92%);
+main{
+    max-width:1200px;
     margin:auto;
+    padding:30px 18px 60px;
 }
 
 .hero{
-    padding:48px 0 25px;
+    padding:28px 0 22px;
 }
 
-.hero h1{
-    font-size:clamp(34px,6vw,62px);
-    line-height:1;
-    margin-bottom:15px;
-    letter-spacing:-2px;
-}
-
-.hero h1 span{
+.badge{
+    display:inline-block;
+    background:rgba(101,255,154,.1);
+    border:1px solid rgba(101,255,154,.35);
     color:#65ff9a;
+    padding:7px 12px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:13px;
+}
+
+h1{
+    font-size:clamp(32px,6vw,58px);
+    line-height:1;
+    margin-bottom:13px;
 }
 
 .hero p{
-    max-width:760px;
-    color:#aebdb4;
-    line-height:1.65;
+    max-width:780px;
+    color:#b9c8bf;
+    line-height:1.6;
     font-size:16px;
 }
 
-.searchBox{
+.search-box{
+    margin:20px 0 25px;
     display:flex;
     gap:10px;
-    margin:20px 0;
     max-width:700px;
 }
 
-.searchBox input{
+.search-box input{
     flex:1;
     min-width:0;
-    background:#0b1510;
+    background:#0c1511;
+    border:1px solid #294336;
     color:#fff;
-    border:1px solid #263b30;
+    padding:14px 15px;
     border-radius:12px;
-    padding:14px 16px;
     outline:none;
     font-size:15px;
 }
 
-.searchBox input:focus{
+.search-box input:focus{
     border-color:#65ff9a;
 }
 
-.searchBox button{
+.search-box button{
     border:0;
-    border-radius:12px;
     background:#65ff9a;
-    color:#031007;
-    font-weight:900;
+    color:#061009;
     padding:0 20px;
+    border-radius:12px;
+    font-weight:900;
     cursor:pointer;
-}
-
-.sectionTitle{
-    font-size:22px;
-    margin:25px 0 14px;
 }
 
 .categories{
     display:flex;
-    gap:9px;
-    overflow-x:auto;
-    padding-bottom:8px;
-    scrollbar-width:none;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:28px;
 }
 
-.categories::-webkit-scrollbar{
-    display:none;
-}
-
-.cat{
-    flex:0 0 auto;
-    border:1px solid #263b30;
-    background:#09110d;
-    color:#dce9e0;
+.category-btn{
+    border:1px solid #294336;
+    background:#0b1310;
+    color:#d5e3da;
+    padding:9px 13px;
     border-radius:999px;
-    padding:10px 14px;
-    font-weight:800;
     cursor:pointer;
+    font-weight:700;
+    font-size:13px;
 }
 
-.cat:hover,
-.cat.active{
+.category-btn:hover,
+.category-btn.active{
     background:#65ff9a;
-    color:#031007;
+    color:#061009;
     border-color:#65ff9a;
 }
 
+.section-title{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin:28px 0 15px;
+}
+
+.section-title h2{
+    font-size:23px;
+}
+
+.count{
+    color:#8fa69a;
+    font-size:13px;
+}
+
 .featured{
+    display:none;
+    margin-bottom:25px;
+    border:1px solid rgba(101,255,154,.2);
+    background:linear-gradient(145deg,#10231a,#09100d);
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.featured img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    display:block;
+}
+
+.featured-content{
+    padding:20px;
+}
+
+.tag{
+    color:#65ff9a;
+    font-size:11px;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+    margin-bottom:9px;
+}
+
+.featured h2{
+    font-size:clamp(24px,4vw,38px);
+    line-height:1.15;
+    margin-bottom:10px;
+}
+
+.featured p{
+    color:#b9c8bf;
+    line-height:1.5;
+    margin-bottom:14px;
+}
+
+.date{
+    color:#83978d;
+    font-size:12px;
+}
+
+.grid{
     display:grid;
-    grid-template-columns:1.35fr 1fr;
-    gap:20px;
-    margin-top:20px;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
 }
 
 .card{
-    background:linear-gradient(145deg,#0d1913,#07100c);
+    background:#0b1310;
     border:1px solid #1d3026;
-    border-radius:18px;
+    border-radius:16px;
     overflow:hidden;
     transition:.2s ease;
 }
 
 .card:hover{
     transform:translateY(-3px);
-    border-color:rgba(101,255,154,.55);
+    border-color:#65ff9a;
 }
 
-.imageWrap{
-    position:relative;
-    background:#0a120e;
-    overflow:hidden;
-}
-
-.imageWrap.feature{
-    height:350px;
-}
-
-.imageWrap.normal{
-    height:205px;
-}
-
-.imageWrap img{
+.card img{
     width:100%;
-    height:100%;
+    height:190px;
     object-fit:cover;
     display:block;
+    background:#101814;
 }
 
-.noImage{
-    width:100%;
-    height:100%;
-    min-height:160px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:52px;
-    background:linear-gradient(135deg,#0c1d14,#13291d);
-}
-
-.cardBody{
-    padding:18px;
-}
-
-.badge{
-    display:inline-block;
-    color:#031007;
-    background:#65ff9a;
-    border-radius:999px;
-    padding:6px 9px;
-    font-size:11px;
-    font-weight:900;
-    margin-bottom:10px;
-}
-
-.card h2,
-.card h3{
-    line-height:1.25;
-    margin-bottom:9px;
-}
-
-.card h2{
-    font-size:25px;
+.card-content{
+    padding:16px;
 }
 
 .card h3{
     font-size:18px;
-}
-
-.description{
-    color:#aebdb4;
-    line-height:1.55;
-    font-size:14px;
-}
-
-.meta{
-    color:#718178;
-    font-size:12px;
-    margin-top:13px;
-}
-
-.radar{
-    margin-top:25px;
-}
-
-.radarGrid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:14px;
-}
-
-.radarItem{
-    background:#09120e;
-    border:1px solid #1d3026;
-    border-radius:15px;
-    padding:17px;
-}
-
-.radarIcon{
-    font-size:25px;
+    line-height:1.25;
     margin-bottom:9px;
 }
 
-.radarItem h3{
-    font-size:15px;
-    line-height:1.35;
-    margin-bottom:8px;
-}
-
-.radarItem small{
-    color:#718178;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-    margin:18px 0 45px;
+.card p{
+    color:#9fb0a6;
+    font-size:14px;
+    line-height:1.45;
+    margin-bottom:12px;
 }
 
 .empty{
+    padding:35px 20px;
     text-align:center;
-    padding:55px 20px;
-    color:#8b9a91;
-    border:1px dashed #263b30;
+    border:1px dashed #294336;
     border-radius:16px;
-    margin:20px 0 50px;
+    color:#9fb0a6;
+    background:#09100d;
 }
 
-.status{
-    color:#718178;
+.radar{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-bottom:30px;
+}
+
+.radar-item{
+    padding:15px;
+    border-radius:14px;
+    background:#0b1310;
+    border:1px solid #1d3026;
+}
+
+.radar-item strong{
+    display:block;
+    color:#65ff9a;
+    margin-bottom:7px;
     font-size:13px;
-    margin-top:12px;
+}
+
+.radar-item span{
+    display:block;
+    color:#c3d0c8;
+    font-size:13px;
+    line-height:1.35;
 }
 
 footer{
-    border-top:1px solid #16251d;
-    padding:28px 0;
-    color:#718178;
+    border-top:1px solid #18271f;
+    background:#050907;
+    padding:30px 18px;
     text-align:center;
-    font-size:13px;
+    color:#82948a;
+    line-height:1.6;
+}
+
+footer strong{
+    color:#65ff9a;
 }
 
 @media(max-width:900px){
-    .featured{
-        grid-template-columns:1fr;
-    }
-
-    .radarGrid{
-        grid-template-columns:1fr;
-    }
-
     .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .radar{
         grid-template-columns:repeat(2,1fr);
     }
 }
 
-@media(max-width:600px){
-    .nav{
+@media(max-width:650px){
+    .header-inner{
         align-items:flex-start;
         flex-direction:column;
     }
 
-    .menu{
+    nav{
         justify-content:flex-start;
-        width:100%;
-        overflow-x:auto;
-        flex-wrap:nowrap;
-        padding-bottom:3px;
     }
 
-    .menu a{
-        white-space:nowrap;
+    nav a{
+        font-size:12px;
+        padding:7px 9px;
     }
 
-    .hero{
-        padding-top:32px;
+    main{
+        padding:20px 13px 45px;
     }
 
-    .hero h1{
-        font-size:39px;
-    }
-
-    .searchBox{
+    .search-box{
         flex-direction:column;
     }
 
-    .searchBox button{
+    .search-box button{
         padding:13px;
     }
 
@@ -381,8 +369,12 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .imageWrap.feature{
-        height:245px;
+    .radar{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .featured img{
+        height:220px;
     }
 }
 </style>
@@ -391,174 +383,136 @@ footer{
 <body>
 
 <header>
-    <nav class="nav">
-        <a class="logo" href="index.html">TendenciasMX</a>
+    <div class="header-inner">
 
-        <div class="menu">
+        <a href="index.html" class="logo">⚽ TENDENCIAS MX</a>
+
+        <nav>
             <a href="index.html">Inicio</a>
-            <a href="tendencias.html">Tendencias</a>
             <a href="noticias.html">Noticias</a>
+            <a href="deportes.html" class="active">Deportes</a>
             <a href="entretenimiento.html">Entretenimiento</a>
-            <a class="active" href="deportes.html">Deportes</a>
-        </div>
-    </nav>
+            <a href="tecnologia.html">Tecnología</a>
+            <a href="dinero.html">Dinero</a>
+            <a href="tramites.html">Trámites</a>
+        </nav>
+
+    </div>
 </header>
 
-<main class="container">
+<main>
 
     <section class="hero">
-        <h1>⚽ <span>TENDENCIAS MX</span></h1>
 
-        <h2 style="font-size:26px;margin-bottom:10px;">
-            Todo el mundo del deporte
-        </h2>
+        <div class="badge">⚽ DEPORTES</div>
+
+        <h1>Todo el mundo del deporte</h1>
 
         <p>
             Las últimas noticias deportivas de México y el mundo:
             fútbol, Liga MX, NFL, boxeo, Fórmula 1, básquetbol,
-            tenis y las historias que están generando conversación.
+            tenis, béisbol y las historias que están generando conversación.
         </p>
 
-        <div class="searchBox">
-            <input
-                id="searchInput"
-                type="search"
-                placeholder="Buscar en deportes..."
-                autocomplete="off"
-            >
-            <button id="searchButton">Buscar</button>
+    </section>
+
+    <div class="search-box">
+        <input
+            id="searchInput"
+            type="search"
+            placeholder="Buscar en deportes..."
+            autocomplete="off"
+        >
+        <button id="searchBtn">Buscar</button>
+    </div>
+
+    <div class="categories">
+        <button class="category-btn active" data-cat="todos">Todos</button>
+        <button class="category-btn" data-cat="futbol">⚽ Fútbol</button>
+        <button class="category-btn" data-cat="liga mx">🇲🇽 Liga MX</button>
+        <button class="category-btn" data-cat="nfl">🏈 NFL</button>
+        <button class="category-btn" data-cat="boxeo">🥊 Boxeo</button>
+        <button class="category-btn" data-cat="formula 1">🏎️ Fórmula 1</button>
+        <button class="category-btn" data-cat="basquetbol">🏀 Básquetbol</button>
+        <button class="category-btn" data-cat="tenis">🎾 Tenis</button>
+        <button class="category-btn" data-cat="motor">🏁 Motor</button>
+    </div>
+
+    <div class="section-title">
+        <h2>En el radar deportivo</h2>
+    </div>
+
+    <div id="radar" class="radar">
+        <div class="radar-item">
+            <strong>⚽ FÚTBOL</strong>
+            <span>Noticias y resultados del mundo del fútbol.</span>
         </div>
 
-        <div class="status" id="status">
-            Cargando noticias deportivas...
-        </div>
-    </section>
-
-
-    <section>
-        <h2 class="sectionTitle">Categorías</h2>
-
-        <div class="categories" id="categories">
-
-            <button class="cat active" data-category="todos">
-                Explora
-            </button>
-
-            <button class="cat" data-category="futbol">
-                ⚽ Fútbol
-            </button>
-
-            <button class="cat" data-category="liga-mx">
-                🇲🇽 Liga MX
-            </button>
-
-            <button class="cat" data-category="nfl">
-                🏈 NFL
-            </button>
-
-            <button class="cat" data-category="boxeo">
-                🥊 Boxeo
-            </button>
-
-            <button class="cat" data-category="formula-1">
-                🏎️ Fórmula 1
-            </button>
-
-            <button class="cat" data-category="basquetbol">
-                🏀 Básquetbol
-            </button>
-
-            <button class="cat" data-category="tenis">
-                🎾 Tenis
-            </button>
-
-            <button class="cat" data-category="motor">
-                🏁 Motor
-            </button>
-
-        </div>
-    </section>
-
-
-    <section id="featuredSection">
-
-        <h2 class="sectionTitle">
-            Lo más destacado
-        </h2>
-
-        <div id="featured"></div>
-
-    </section>
-
-
-    <section class="radar">
-
-        <h2 class="sectionTitle">
-            En el radar deportivo
-        </h2>
-
-        <div class="radarGrid" id="radar"></div>
-
-    </section>
-
-
-    <section>
-
-        <h2 class="sectionTitle">
-            Últimas noticias deportivas
-        </h2>
-
-        <div id="newsGrid" class="grid"></div>
-
-        <div id="empty" class="empty" style="display:none;">
-            No encontramos noticias deportivas con esos criterios.
+        <div class="radar-item">
+            <strong>🇲🇽 LIGA MX</strong>
+            <span>Equipos, partidos, jugadores y actualidad.</span>
         </div>
 
-    </section>
+        <div class="radar-item">
+            <strong>🏈 NFL</strong>
+            <span>Noticias del fútbol americano.</span>
+        </div>
+
+        <div class="radar-item">
+            <strong>🏎️ MOTOR</strong>
+            <span>Fórmula 1 y automovilismo.</span>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Últimas noticias deportivas</h2>
+        <span id="count" class="count"></span>
+    </div>
+
+    <article id="featured" class="featured"></article>
+
+    <section id="newsGrid" class="grid"></section>
+
+    <div id="empty" class="empty" style="display:none;">
+        No encontramos noticias deportivas con esos criterios.
+    </div>
 
 </main>
 
-
 <footer>
-    <div class="container">
-        <strong style="color:#65ff9a;">Tendencias MX</strong>
-        <br>
-        Noticias, tendencias, entretenimiento y deportes en un solo lugar.
-        <br><br>
-        © 2026 Tendencias MX · Todos los derechos reservados.
-    </div>
+    <strong>Tendencias MX</strong><br>
+    Noticias, tendencias, entretenimiento y deportes en un solo lugar.
+    <br><br>
+    © 2026 Tendencias MX · Todos los derechos reservados.
 </footer>
-
 
 <script>
 
 const JSON_URL = "./noticias.json?v=" + Date.now();
 
-let todasLasNoticias = [];
-let noticiasDeportivas = [];
-let categoriaActual = "todos";
-let busquedaActual = "";
+let allNews = [];
+let currentCategory = "todos";
+let currentSearch = "";
 
 
-/* ============================================================
+/* =========================
    UTILIDADES
-   ============================================================ */
+========================= */
 
-function normalizar(texto){
+function normalize(text){
 
-    return String(texto || "")
+    return String(text || "")
         .toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g,"")
-        .replace(/\s+/g," ")
         .trim();
 
 }
 
 
-function escapeHTML(texto){
+function escapeHTML(text){
 
-    return String(texto || "")
+    return String(text || "")
         .replace(/&/g,"&amp;")
         .replace(/</g,"&lt;")
         .replace(/>/g,"&gt;")
@@ -572,15 +526,9 @@ function safeURL(url){
 
     try{
 
-        const u = new URL(
-            String(url || ""),
-            window.location.href
-        );
+        const u = new URL(url,window.location.href);
 
-        if(
-            u.protocol === "http:" ||
-            u.protocol === "https:"
-        ){
+        if(u.protocol === "http:" || u.protocol === "https:"){
             return u.href;
         }
 
@@ -592,48 +540,925 @@ function safeURL(url){
 
 
 function getTitle(n){
-    return n?.titulo || n?.title || "";
+
+    return n?.titulo ||
+           n?.title ||
+           n?.nombre ||
+           "";
+
 }
 
 
 function getDescription(n){
-    return n?.descripcion || n?.description || "";
+
+    return n?.descripcion ||
+           n?.description ||
+           n?.resumen ||
+           "";
+
 }
 
 
 function getLink(n){
-    return n?.enlace || n?.link || "";
-}
 
+    return n?.enlace ||
+           n?.link ||
+           n?.url ||
+           "";
 
-function getDate(n){
-    return n?.fecha || n?.pubDate || n?.date || "";
-}
-
-
-function getSource(n){
-    return n?.fuente || "Expansión";
 }
 
 
 function getImage(n){
-    return n?.imagen || n?.image || "";
+
+    return n?.imagen ||
+           n?.image ||
+           n?.imagen_url ||
+           "";
+
 }
 
 
-function fechaBonita(fecha){
+function getDate(n){
 
-    if(!fecha){
+    return n?.fecha ||
+           n?.date ||
+           n?.pubDate ||
+           "";
+
+}
+
+
+function getCategory(n){
+
+    return normalize(
+        n?.categoria ||
+        n?.category ||
+        ""
+    );
+
+}
+
+
+function getFullText(n){
+
+    return normalize(
+        getTitle(n) + " " +
+        getDescription(n) + " " +
+        getCategory(n)
+    );
+
+}
+
+
+/* =========================
+   DETECCIÓN DE DEPORTES
+========================= */
+
+/*
+   Palabras suficientemente específicas.
+   Evitamos términos demasiado genéricos como
+   "México", "América", "campeón", etc.
+*/
+
+const SPORTS_TERMS = [
+
+    /* Fútbol */
+    "futbol",
+    "fútbol",
+    "liga mx",
+    "liga-mx",
+    "club america",
+    "club américa",
+    "america de mexico",
+    "américa de méxico",
+    "chivas",
+    "guadalajara",
+    "cruz azul",
+    "pumas",
+    "monterrey",
+    "rayados",
+    "tigres uanl",
+    "tigres",
+    "santos laguna",
+    "toluca",
+    "pachuca",
+    "leon",
+    "león",
+    "necaxa",
+    "puebla fc",
+    "atlas fc",
+    "mazatlan fc",
+    "juarez fc",
+    "queretaro fc",
+    "tijuana xolos",
+    "seleccion mexicana",
+    "selección mexicana",
+    "el tri",
+    "champions league",
+    "europa league",
+    "mundial de clubes",
+    "copa del mundo",
+    "premier league",
+    "la liga",
+    "serie a",
+    "bundesliga",
+    "ligue 1",
+    "real madrid",
+    "barcelona",
+    "manchester united",
+    "manchester city",
+    "liverpool",
+    "arsenal",
+    "chelsea",
+    "bayern munich",
+    "psg",
+    "paris saint-germain",
+    "inter de milan",
+    "juventus",
+    "atletico de madrid",
+    "atlético de madrid",
+
+    /* NFL */
+    "nfl",
+    "super bowl",
+    "superbowl",
+    "touchdown",
+    "quarterback",
+    "qb ",
+    "wide receiver",
+    "running back",
+    "linebacker",
+    "american football",
+    "futbol americano",
+    "fútbol americano",
+    "chiefs",
+    "eagles",
+    "cowboys",
+    "49ers",
+    "packers",
+    "ravens",
+    "bills",
+    "dolphins",
+    "patriots",
+    "steelers",
+    "broncos",
+    "bengals",
+    "texans",
+    "lions",
+    "vikings",
+    "seahawks",
+    "raiders",
+    "chargers",
+
+    /* NBA / básquetbol */
+    "nba",
+    "basquetbol",
+    "básquetbol",
+    "baloncesto",
+    "basketball",
+    "playoffs nba",
+    "lakers",
+    "warriors",
+    "celtics",
+    "knicks",
+    "bulls",
+    "heat",
+    "spurs",
+    "nuggets",
+    "bucks",
+    "suns",
+    "mavericks",
+    "mavericks",
+    "clippers",
+    "thunder",
+
+    /* Boxeo / MMA */
+    "boxeo",
+    "boxeador",
+    "boxeadora",
+    "boxeadores",
+    "ring",
+    "nocaut",
+    "knockout",
+    "ko ",
+    "peso pesado",
+    "peso ligero",
+    "peso welter",
+    "peso supermedio",
+    "pelea",
+    "peleador",
+    "peleadora",
+    "ufc",
+    "mma",
+
+    /* Fórmula 1 / motor */
+    "formula 1",
+    "fórmula 1",
+    "formula-1",
+    "f1",
+    "gran premio",
+    "grand prix",
+    "automovilismo",
+    "motogp",
+    "nascar",
+    "piloto",
+    "pilotos",
+    "escuderia",
+    "escudería",
+    "ferrari",
+    "mclaren",
+    "red bull racing",
+    "mercedes amg",
+    "aston martin f1",
+    "lando norris",
+    "max verstappen",
+    "verstappen",
+    "lewis hamilton",
+    "charles leclerc",
+    "sergio perez",
+    "checo perez",
+    "checo pérez",
+
+    /* Tenis */
+    "tenis",
+    "wimbledon",
+    "roland garros",
+    "us open",
+    "australian open",
+    "atp",
+    "wta",
+    "masters 1000",
+    "grand slam",
+    "alcaraz",
+    "carlos alcaraz",
+    "djokovic",
+    "nadal",
+    "sinner",
+    "zverev",
+    "swiatek",
+    "sabalenka",
+
+    /* Béisbol */
+    "beisbol",
+    "béisbol",
+    "mlb",
+    "home run",
+    "jonron",
+    "jonrón",
+    "pitcher",
+    "bateador",
+    "lanzador",
+    "innings",
+    "dodgers",
+    "yankees",
+    "mets",
+    "red sox",
+    "astros",
+    "padres",
+    "diablos rojos del mexico",
+    "diablos rojos",
+
+    /* Otros deportes */
+    "golf",
+    "gimnasia",
+    "natacion",
+    "natación",
+    "atletismo",
+    "voleibol",
+    "ciclismo",
+    "maraton",
+    "maratón",
+    "olimpicos",
+    "olímpicos",
+    "juegos olimpicos",
+    "juegos olímpicos",
+    "medalla olimpica",
+    "medalla olímpica",
+    "surf",
+    "skate",
+    "lucha libre",
+    "luchador",
+    "luchadora",
+
+    /* Terminología deportiva */
+    "partido",
+    "partidos",
+    "marcador",
+    "resultado",
+    "resultados",
+    "temporada",
+    "torneo",
+    "torneos",
+    "campeonato",
+    "campeonatos",
+    "entrenador",
+    "entrenadora",
+    "jugador",
+    "jugadora",
+    "jugadores",
+    "jugadoras",
+    "equipo",
+    "equipos",
+    "estadio",
+    "cancha",
+    "gol",
+    "goles",
+    "golazo",
+    "penalti",
+    "penal",
+    "fichaje",
+    "fichajes",
+    "transferencia",
+    "transferencias",
+    "alineacion",
+    "alineación",
+    "lesion",
+    "lesión",
+    "clasificacion",
+    "clasificación",
+    "tabla general",
+    "jornada",
+    "jornadas"
+];
+
+
+/* =========================
+   SECCIONES QUE NO DEBEN
+   APARECER COMO DEPORTES
+========================= */
+
+const NON_SPORT_PATHS = [
+
+    "/economia/",
+    "/economía/",
+    "/empresas/",
+    "/finanzas/",
+    "/mercados/",
+    "/dinero/",
+    "/tecnologia/",
+    "/tecnología/",
+    "/tech/",
+    "/politica/",
+    "/política/",
+    "/politics/",
+    "/internacional/",
+    "/mundo/",
+    "/entretenimiento/",
+    "/espectaculos/",
+    "/espectáculos/",
+    "/cine/",
+    "/musica/",
+    "/música/",
+    "/tendencias/",
+    "/salud/",
+    "/educacion/",
+    "/educación/",
+    "/viajes/",
+    "/estilo/",
+    "/vida/"
+];
+
+
+const SPORT_PATHS = [
+
+    "/deportes/",
+    "/deporte/",
+    "/futbol/",
+    "/fútbol/",
+    "/liga-mx/",
+    "/ligamx/",
+    "/nfl/",
+    "/nba/",
+    "/mlb/",
+    "/boxeo/",
+    "/tenis/",
+    "/formula-1/",
+    "/formula1/",
+    "/automovilismo/",
+    "/basquetbol/",
+    "/básquetbol/",
+    "/beisbol/",
+    "/béisbol/",
+    "/motor/",
+    "/motogp/",
+    "/ufc/"
+];
+
+
+function getPath(url){
+
+    try{
+
+        return new URL(url,window.location.href)
+            .pathname
+            .toLowerCase();
+
+    }catch(e){
+
+        return "";
+
+    }
+
+}
+
+
+function hasNonSportPath(url){
+
+    const path = getPath(url);
+
+    return NON_SPORT_PATHS.some(section =>
+        path.includes(section)
+    );
+
+}
+
+
+function hasSportPath(url){
+
+    const path = getPath(url);
+
+    return SPORT_PATHS.some(section =>
+        path.includes(section)
+    );
+
+}
+
+
+function hasStrongSportTerm(text){
+
+    const strongTerms = SPORTS_TERMS.filter(term => {
+
+        return ![
+            "partido",
+            "partidos",
+            "resultado",
+            "resultados",
+            "temporada",
+            "torneo",
+            "torneos",
+            "campeonato",
+            "campeonatos",
+            "entrenador",
+            "entrenadora",
+            "jugador",
+            "jugadora",
+            "jugadores",
+            "jugadoras",
+            "equipo",
+            "equipos",
+            "estadio",
+            "cancha",
+            "gol",
+            "goles",
+            "jornada",
+            "jornadas"
+        ].includes(term);
+
+    });
+
+    return strongTerms.some(term =>
+        text.includes(normalize(term))
+    );
+
+}
+
+
+function isSportsNews(news){
+
+    const url = getLink(news);
+    const title = normalize(getTitle(news));
+    const description = normalize(getDescription(news));
+    const category = getCategory(news);
+
+    const text =
+        title + " " +
+        description;
+
+    /*
+      REGLA 1:
+      Si la URL pertenece claramente a otra sección,
+      NO entra a Deportes.
+    */
+    if(hasNonSportPath(url)){
+        return false;
+    }
+
+    /*
+      REGLA 2:
+      Si la URL es claramente deportiva,
+      entra directamente.
+    */
+    if(hasSportPath(url)){
+        return true;
+    }
+
+    /*
+      REGLA 3:
+      Si RSS puso deportes y además existe
+      evidencia deportiva fuerte en título/descripción,
+      entra.
+    */
+    if(
+        category.includes("deport") &&
+        hasStrongSportTerm(text)
+    ){
+        return true;
+    }
+
+    /*
+      REGLA 4:
+      Aunque RSS se haya equivocado de categoría,
+      si el título/descripción tiene una palabra
+      deportiva muy clara, puede entrar.
+    */
+    if(hasStrongSportTerm(text)){
+        return true;
+    }
+
+    return false;
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+function matchesCategory(news){
+
+    if(currentCategory === "todos"){
+        return true;
+    }
+
+    const text = getFullText(news);
+
+    const categoryTerms = {
+
+        "futbol":[
+            "futbol",
+            "fútbol",
+            "liga mx",
+            "champions league",
+            "premier league",
+            "la liga",
+            "real madrid",
+            "barcelona",
+            "chivas",
+            "america",
+            "américa",
+            "pumas",
+            "cruz azul",
+            "tigres",
+            "monterrey",
+            "rayados",
+            "toluca",
+            "pachuca"
+        ],
+
+        "liga mx":[
+            "liga mx",
+            "liga-mx",
+            "chivas",
+            "america",
+            "américa",
+            "pumas",
+            "cruz azul",
+            "tigres",
+            "monterrey",
+            "rayados",
+            "toluca",
+            "pachuca",
+            "necaxa",
+            "puebla",
+            "atlas",
+            "mazatlan",
+            "mazatlán",
+            "tijuana",
+            "queretaro",
+            "querétaro",
+            "juarez",
+            "juárez",
+            "santos laguna"
+        ],
+
+        "nfl":[
+            "nfl",
+            "super bowl",
+            "touchdown",
+            "quarterback",
+            "chiefs",
+            "eagles",
+            "cowboys",
+            "49ers",
+            "packers",
+            "ravens",
+            "bills",
+            "dolphins",
+            "patriots",
+            "steelers"
+        ],
+
+        "boxeo":[
+            "boxeo",
+            "boxeador",
+            "boxeadora",
+            "nocaut",
+            "knockout",
+            "ufc",
+            "mma",
+            "peleador",
+            "peleadora"
+        ],
+
+        "formula 1":[
+            "formula 1",
+            "fórmula 1",
+            "formula-1",
+            "f1",
+            "gran premio",
+            "automovilismo",
+            "verstappen",
+            "lando norris",
+            "lewis hamilton",
+            "ferrari",
+            "mclaren"
+        ],
+
+        "basquetbol":[
+            "nba",
+            "basquetbol",
+            "básquetbol",
+            "baloncesto",
+            "basketball",
+            "lakers",
+            "warriors",
+            "celtics",
+            "knicks",
+            "bulls"
+        ],
+
+        "tenis":[
+            "tenis",
+            "wimbledon",
+            "roland garros",
+            "us open",
+            "australian open",
+            "atp",
+            "wta",
+            "alcaraz",
+            "djokovic",
+            "nadal",
+            "sinner"
+        ],
+
+        "motor":[
+            "formula 1",
+            "fórmula 1",
+            "f1",
+            "automovilismo",
+            "motogp",
+            "nascar",
+            "piloto",
+            "escuderia",
+            "escudería",
+            "ferrari",
+            "mclaren",
+            "verstappen"
+        ]
+
+    };
+
+    const terms = categoryTerms[currentCategory] || [];
+
+    return terms.some(term =>
+        text.includes(normalize(term))
+    );
+}
+
+
+/* =========================
+   BÚSQUEDA
+========================= */
+
+function matchesSearch(news){
+
+    if(!currentSearch){
+        return true;
+    }
+
+    const text = normalize(
+        getTitle(news) + " " +
+        getDescription(news) + " " +
+        getCategory(news)
+    );
+
+    return text.includes(currentSearch);
+}
+
+
+/* =========================
+   ORDENAR
+========================= */
+
+function sortNews(news){
+
+    return [...news].sort((a,b)=>{
+
+        const da = new Date(getDate(a)).getTime() || 0;
+        const db = new Date(getDate(b)).getTime() || 0;
+
+        return db - da;
+
+    });
+
+}
+
+
+/* =========================
+   RENDER
+========================= */
+
+function render(){
+
+    const grid = document.getElementById("newsGrid");
+    const featured = document.getElementById("featured");
+    const empty = document.getElementById("empty");
+    const count = document.getElementById("count");
+
+    let filtered = allNews.filter(isSportsNews);
+
+    filtered = filtered.filter(matchesCategory);
+    filtered = filtered.filter(matchesSearch);
+
+    filtered = sortNews(filtered);
+
+    count.textContent =
+        filtered.length +
+        (filtered.length === 1 ? " noticia" : " noticias");
+
+    if(filtered.length === 0){
+
+        featured.style.display = "none";
+        grid.innerHTML = "";
+        empty.style.display = "block";
+
+        return;
+    }
+
+    empty.style.display = "none";
+
+    /*
+      Primera noticia como destacada
+    */
+
+    const first = filtered[0];
+
+    const firstTitle = escapeHTML(getTitle(first));
+    const firstDesc = escapeHTML(getDescription(first));
+    const firstLink = safeURL(getLink(first));
+    const firstImage = safeURL(getImage(first));
+
+    featured.innerHTML = `
+
+        ${
+            firstImage !== "#"
+            ?
+            `<img src="${firstImage}"
+                  alt="${firstTitle}"
+                  loading="eager"
+                  onerror="this.style.display='none'">`
+            :
+            ""
+        }
+
+        <div class="featured-content">
+
+            <div class="tag">⚽ Noticia destacada</div>
+
+            <h2>${firstTitle}</h2>
+
+            ${
+                firstDesc
+                ?
+                `<p>${firstDesc}</p>`
+                :
+                ""
+            }
+
+            <div class="date">
+                ${formatDate(getDate(first))}
+            </div>
+
+            <br>
+
+            <a href="${firstLink}"
+               target="_blank"
+               rel="noopener noreferrer"
+               style="
+                    display:inline-block;
+                    padding:11px 15px;
+                    background:#65ff9a;
+                    color:#061009;
+                    border-radius:10px;
+                    font-weight:900;
+               ">
+               Leer noticia →
+            </a>
+
+        </div>
+    `;
+
+    featured.style.display = "block";
+
+
+    /*
+      Resto de noticias
+    */
+
+    const rest = filtered.slice(1);
+
+    grid.innerHTML = rest.map(news => {
+
+        const title = escapeHTML(getTitle(news));
+        const desc = escapeHTML(getDescription(news));
+        const link = safeURL(getLink(news));
+        const image = safeURL(getImage(news));
+
+        return `
+
+            <article class="card">
+
+                ${
+                    image !== "#"
+                    ?
+                    `<a href="${link}"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <img
+                            src="${image}"
+                            alt="${title}"
+                            loading="lazy"
+                            onerror="this.style.display='none'"
+                        >
+
+                    </a>`
+                    :
+                    ""
+                }
+
+                <div class="card-content">
+
+                    <div class="tag">⚽ Deportes</div>
+
+                    <h3>
+                        <a href="${link}"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                           ${title}
+                        </a>
+                    </h3>
+
+                    ${
+                        desc
+                        ?
+                        `<p>${desc}</p>`
+                        :
+                        ""
+                    }
+
+                    <div class="date">
+                        ${formatDate(getDate(news))}
+                    </div>
+
+                </div>
+
+            </article>
+
+        `;
+
+    }).join("");
+
+}
+
+
+/* =========================
+   FECHA
+========================= */
+
+function formatDate(value){
+
+    if(!value){
         return "";
     }
 
-    const d = new Date(fecha);
+    const date = new Date(value);
 
-    if(isNaN(d.getTime())){
-        return escapeHTML(fecha);
+    if(isNaN(date.getTime())){
+        return escapeHTML(value);
     }
 
-    return d.toLocaleDateString(
+    return date.toLocaleDateString(
         "es-MX",
         {
             day:"2-digit",
@@ -645,1032 +1470,123 @@ function fechaBonita(fecha){
 }
 
 
-/* ============================================================
-   PROTECCIÓN DE DEPORTES
-   ============================================================
-
-   ESTA ES LA PARTE IMPORTANTE.
-
-   NO confiamos únicamente en:
-       categoria === "deportes"
-
-   Primero comprobamos si la URL pertenece claramente
-   a economía, tecnología, política, mundo, etc.
-
-   Si pertenece a una sección NO deportiva,
-   queda automáticamente fuera.
-   ============================================================ */
-
-function esSeccionNoDeportiva(url){
-
-    const u = normalizar(url);
-
-    const seccionesBloqueadas = [
-
-        "/economia/",
-        "/economia",
-
-        "/empresas/",
-        "/empresas",
-
-        "/finanzas/",
-        "/finanzas",
-
-        "/mercados/",
-        "/mercados",
-
-        "/dinero/",
-        "/dinero",
-
-        "/tecnologia/",
-        "/tecnologia",
-
-        "/tech/",
-        "/tech",
-
-        "/politica/",
-        "/politica",
-
-        "/politics/",
-        "/politics",
-
-        "/internacional/",
-        "/internacional",
-
-        "/mundo/",
-        "/mundo",
-
-        "/entretenimiento/",
-        "/entretenimiento",
-
-        "/espectaculos/",
-        "/espectaculos",
-
-        "/cine/",
-        "/cine",
-
-        "/musica/",
-        "/musica",
-
-        "/tendencias/",
-        "/tendencias"
-    ];
-
-    return seccionesBloqueadas.some(
-        seccion => u.includes(seccion)
-    );
-
-}
-
-
-/* ============================================================
-   SECCIONES DEPORTIVAS CLARAS
-   ============================================================ */
-
-function urlEsDeportiva(url){
-
-    const u = normalizar(url);
-
-    const seccionesDeportivas = [
-
-        "/deportes/",
-        "/deportes",
-
-        "/deporte/",
-        "/deporte",
-
-        "/futbol/",
-        "/futbol",
-
-        "/liga-mx/",
-        "/liga-mx",
-
-        "/nfl/",
-        "/nfl",
-
-        "/nba/",
-        "/nba",
-
-        "/mlb/",
-        "/mlb",
-
-        "/boxeo/",
-        "/boxeo",
-
-        "/tenis/",
-        "/tenis",
-
-        "/formula-1/",
-        "/formula-1",
-
-        "/automovilismo/",
-        "/automovilismo",
-
-        "/basquetbol/",
-        "/basquetbol",
-
-        "/beisbol/",
-        "/beisbol"
-    ];
-
-    return seccionesDeportivas.some(
-        seccion => u.includes(seccion)
-    );
-
-}
-
-
-/* ============================================================
-   TÉRMINOS DEPORTIVOS FUERTES
-   ============================================================ */
-
-const FUTBOL = [
-
-    "liga mx",
-    "liga bbva mx",
-    "liga mexicana",
-
-    "club america",
-    "america vs",
-    "america enfrenta",
-    "america juega",
-    "america gana",
-    "america pierde",
-    "america empata",
-
-    "chivas",
-    "guadalajara",
-    "cruz azul",
-    "pumas unam",
-    "rayados",
-    "tigres uanl",
-    "toluca",
-    "pachuca",
-    "santos laguna",
-    "necaxa",
-    "atlas fc",
-    "mazatlan fc",
-    "tijuana xolos",
-    "queretaro fc",
-
-    "seleccion mexicana",
-    "seleccion nacional",
-    "el tri",
-
-    "mundial de futbol",
-    "mundial de clubes",
-    "copa del mundo",
-
-    "champions league",
-    "premier league",
-    "la liga",
-    "laliga",
-    "bundesliga",
-    "serie a",
-    "ligue 1",
-    "concacaf",
-    "libertadores",
-    "leagues cup",
-
-    "fc barcelona",
-    "real madrid",
-    "atletico de madrid",
-    "bayern munich",
-    "manchester united",
-    "manchester city",
-    "liverpool fc",
-    "arsenal fc",
-    "chelsea fc",
-    "paris saint germain",
-    "inter de milan",
-    "ac milan",
-    "juventus",
-    "napoli",
-
-    "liguilla",
-    "apertura 2026",
-    "clausura 2026",
-    "fichaje",
-    "fichajes",
-    "mercado de fichajes",
-
-    "partido de futbol",
-    "partido de fútbol",
-    "marcador",
-    "alineacion titular",
-    "once titular",
-    "entrenador de futbol",
-    "director tecnico",
-    "portero",
-    "delantero",
-    "mediocampista",
-    "arbitro",
-    "arbitraje",
-    "penalti",
-    "penaltis",
-    "tarjeta roja",
-    "tarjeta amarilla"
-];
-
-
-const OTROS_DEPORTES = [
-
-    "nfl",
-    "nba",
-    "mlb",
-    "nhl",
-
-    "atp",
-    "wta",
-    "tenis",
-
-    "boxeo",
-    "boxeador",
-    "beisbol",
-    "basquetbol",
-    "baloncesto",
-
-    "formula 1",
-    "formula1",
-    "gran premio",
-
-    "piloto de f1",
-    "pilotos de f1",
-
-    "super bowl",
-
-    "lucha libre",
-    "wwe",
-    "ufc",
-
-    "juegos olimpicos",
-    "juegos olímpicos",
-    "medalla olimpica",
-    "atletismo"
-];
-
-
-function contieneTermino(texto, lista){
-
-    return lista.some(
-        termino => texto.includes(normalizar(termino))
-    );
-
-}
-
-
-/* ============================================================
-   DETERMINAR SI UNA NOTICIA ES REALMENTE DEPORTIVA
-   ============================================================ */
-
-function esDeporteReal(noticia){
-
-    const titulo = normalizar(
-        getTitle(noticia)
-    );
-
-    const descripcion = normalizar(
-        getDescription(noticia)
-    );
-
-    const enlace = normalizar(
-        getLink(noticia)
-    );
-
-    const categoria = normalizar(
-        noticia?.categoria || ""
-    );
-
-    const texto = titulo + " " + descripcion;
-
-
-    /*
-       REGLA 1:
-       Si la URL pertenece claramente a otra sección,
-       NO entra aunque categoria diga deportes.
-    */
-
-    if(esSeccionNoDeportiva(enlace)){
-        return false;
-    }
-
-
-    /*
-       REGLA 2:
-       Una URL deportiva es evidencia fuerte.
-    */
-
-    if(urlEsDeportiva(enlace)){
-        return true;
-    }
-
-
-    /*
-       REGLA 3:
-       Términos deportivos específicos.
-    */
-
-    if(contieneTermino(texto,FUTBOL)){
-        return true;
-    }
-
-    if(contieneTermino(texto,OTROS_DEPORTES)){
-        return true;
-    }
-
-
-    /*
-       REGLA 4:
-       Si únicamente dice "deportes", no basta.
-       Evita que un JSON mal clasificado contamine la página.
-    */
-
-    if(
-        categoria === "deportes" &&
-        !titulo.includes("inflacion") &&
-        !titulo.includes("inflacion") &&
-        !titulo.includes("tipo de cambio") &&
-        !titulo.includes("dolar") &&
-        !titulo.includes("peso mexicano") &&
-        !titulo.includes("arancel") &&
-        !titulo.includes("iphone") &&
-        !titulo.includes("qualcomm")
-    ){
-
-        /*
-           No aceptamos automáticamente la categoría.
-           Exigimos evidencia deportiva adicional.
-        */
-
-        return false;
-    }
-
-
-    return false;
-
-}
-
-
-/* ============================================================
-   CATEGORÍA VISUAL
-   ============================================================ */
-
-function categoriaDeportiva(noticia){
-
-    const texto = normalizar(
-        getTitle(noticia)
-        + " "
-        + getDescription(noticia)
-    );
-
-    if(
-        texto.includes("nfl") ||
-        texto.includes("super bowl")
-    ){
-        return "NFL";
-    }
-
-    if(
-        texto.includes("liga mx") ||
-        texto.includes("liga bbva mx") ||
-        texto.includes("chivas") ||
-        texto.includes("cruz azul") ||
-        texto.includes("pumas") ||
-        texto.includes("tigres") ||
-        texto.includes("rayados") ||
-        texto.includes("club america")
-    ){
-        return "Liga MX";
-    }
-
-    if(
-        contieneTermino(texto,FUTBOL)
-    ){
-        return "Fútbol";
-    }
-
-    if(
-        texto.includes("boxeo") ||
-        texto.includes("boxeador") ||
-        texto.includes("ufc") ||
-        texto.includes("wwe") ||
-        texto.includes("lucha libre")
-    ){
-        return "Boxeo";
-    }
-
-    if(
-        texto.includes("formula 1") ||
-        texto.includes("formula1") ||
-        texto.includes("f1") ||
-        texto.includes("gran premio")
-    ){
-        return "Fórmula 1";
-    }
-
-    if(
-        texto.includes("nba") ||
-        texto.includes("basquetbol") ||
-        texto.includes("baloncesto")
-    ){
-        return "Básquetbol";
-    }
-
-    if(
-        texto.includes("tenis") ||
-        texto.includes("atp") ||
-        texto.includes("wta")
-    ){
-        return "Tenis";
-    }
-
-    if(
-        texto.includes("automovil") ||
-        texto.includes("piloto") ||
-        texto.includes("motor")
-    ){
-        return "Motor";
-    }
-
-    return "Deportes";
-}
-
-
-/* ============================================================
-   FILTRAR
-   ============================================================ */
-
-function obtenerNoticiasFiltradas(){
-
-    let lista = noticiasDeportivas.slice();
-
-
-    if(categoriaActual !== "todos"){
-
-        lista = lista.filter(
-            noticia => {
-
-                const texto = normalizar(
-                    getTitle(noticia)
-                    + " "
-                    + getDescription(noticia)
-                );
-
-                switch(categoriaActual){
-
-                    case "futbol":
-                        return contieneTermino(
-                            texto,
-                            FUTBOL
-                        );
-
-                    case "liga-mx":
-                        return (
-                            texto.includes("liga mx") ||
-                            texto.includes("liga bbva mx") ||
-                            texto.includes("chivas") ||
-                            texto.includes("cruz azul") ||
-                            texto.includes("pumas") ||
-                            texto.includes("tigres") ||
-                            texto.includes("rayados") ||
-                            texto.includes("club america")
-                        );
-
-                    case "nfl":
-                        return (
-                            texto.includes("nfl") ||
-                            texto.includes("super bowl")
-                        );
-
-                    case "boxeo":
-                        return (
-                            texto.includes("boxeo") ||
-                            texto.includes("boxeador") ||
-                            texto.includes("ufc") ||
-                            texto.includes("wwe") ||
-                            texto.includes("lucha libre")
-                        );
-
-                    case "formula-1":
-                        return (
-                            texto.includes("formula 1") ||
-                            texto.includes("formula1") ||
-                            texto.includes("f1") ||
-                            texto.includes("gran premio")
-                        );
-
-                    case "basquetbol":
-                        return (
-                            texto.includes("nba") ||
-                            texto.includes("basquetbol") ||
-                            texto.includes("baloncesto")
-                        );
-
-                    case "tenis":
-                        return (
-                            texto.includes("tenis") ||
-                            texto.includes("atp") ||
-                            texto.includes("wta")
-                        );
-
-                    case "motor":
-                        return (
-                            texto.includes("formula 1") ||
-                            texto.includes("formula1") ||
-                            texto.includes("automovil") ||
-                            texto.includes("piloto") ||
-                            texto.includes("motor")
-                        );
-
-                }
-
-                return true;
-
-            }
-        );
-
-    }
-
-
-    if(busquedaActual){
-
-        lista = lista.filter(
-            noticia => {
-
-                const texto = normalizar(
-                    getTitle(noticia)
-                    + " "
-                    + getDescription(noticia)
-                );
-
-                return texto.includes(
-                    busquedaActual
-                );
-
-            }
-        );
-
-    }
-
-
-    return lista;
-
-}
-
-
-/* ============================================================
-   IMAGEN
-   ============================================================ */
-
-function crearImagen(noticia,clase){
-
-    const imagen = safeURL(
-        getImage(noticia)
-    );
-
-    if(imagen !== "#"){
-
-        return `
-            <div class="imageWrap ${clase}">
-                <img
-                    src="${escapeHTML(imagen)}"
-                    alt="${escapeHTML(getTitle(noticia))}"
-                    loading="lazy"
-                    onerror="this.parentElement.innerHTML='<div class=&quot;noImage&quot;>⚽</div>'"
-                >
-            </div>
-        `;
-
-    }
-
-    return `
-        <div class="imageWrap ${clase}">
-            <div class="noImage">⚽</div>
-        </div>
-    `;
-
-}
-
-
-/* ============================================================
-   TARJETA DESTACADA
-   ============================================================ */
-
-function crearDestacada(noticia){
-
-    const enlace = safeURL(
-        getLink(noticia)
-    );
-
-    return `
-        <article class="card">
-
-            <a href="${escapeHTML(enlace)}"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                ${crearImagen(noticia,"feature")}
-
-                <div class="cardBody">
-
-                    <span class="badge">
-                        🏅 ${escapeHTML(categoriaDeportiva(noticia))}
-                    </span>
-
-                    <h2>
-                        ${escapeHTML(getTitle(noticia))}
-                    </h2>
-
-                    <p class="description">
-                        ${escapeHTML(getDescription(noticia))}
-                    </p>
-
-                    <div class="meta">
-                        ${escapeHTML(getSource(noticia))}
-                        ·
-                        ${fechaBonita(getDate(noticia))}
-                    </div>
-
-                </div>
-
-            </a>
-
-        </article>
-    `;
-
-}
-
-
-/* ============================================================
-   TARJETA NORMAL
-   ============================================================ */
-
-function crearTarjeta(noticia){
-
-    const enlace = safeURL(
-        getLink(noticia)
-    );
-
-    return `
-        <article class="card">
-
-            <a href="${escapeHTML(enlace)}"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                ${crearImagen(noticia,"normal")}
-
-                <div class="cardBody">
-
-                    <span class="badge">
-                        ${escapeHTML(categoriaDeportiva(noticia))}
-                    </span>
-
-                    <h3>
-                        ${escapeHTML(getTitle(noticia))}
-                    </h3>
-
-                    <p class="description">
-                        ${escapeHTML(getDescription(noticia))}
-                    </p>
-
-                    <div class="meta">
-                        ${escapeHTML(getSource(noticia))}
-                        ·
-                        ${fechaBonita(getDate(noticia))}
-                    </div>
-
-                </div>
-
-            </a>
-
-        </article>
-    `;
-
-}
-
-
-/* ============================================================
-   DESTACADA
-   ============================================================ */
-
-function renderFeatured(lista){
-
-    const contenedor =
-        document.getElementById("featured");
-
-    if(!lista.length){
-
-        contenedor.innerHTML = "";
-
-        document.getElementById(
-            "featuredSection"
-        ).style.display = "none";
-
-        return;
-
-    }
-
-    document.getElementById(
-        "featuredSection"
-    ).style.display = "block";
-
-
-    contenedor.innerHTML =
-        crearDestacada(lista[0]);
-
-}
-
-
-/* ============================================================
-   RADAR
-   ============================================================ */
-
-function renderRadar(lista){
-
-    const radar =
-        document.getElementById("radar");
-
-    const elementos =
-        lista.slice(0,3);
-
-
-    radar.innerHTML =
-        elementos.map(
-            noticia => {
-
-                const enlace =
-                    safeURL(
-                        getLink(noticia)
-                    );
-
-                return `
-                    <a
-                        class="radarItem"
-                        href="${escapeHTML(enlace)}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-
-                        <div class="radarIcon">
-                            ${categoriaDeportiva(noticia) === "NFL"
-                                ? "🏈"
-                                : categoriaDeportiva(noticia) === "Liga MX"
-                                ? "🇲🇽"
-                                : "⚽"
-                            }
-                        </div>
-
-                        <h3>
-                            ${escapeHTML(getTitle(noticia))}
-                        </h3>
-
-                        <small>
-                            ${escapeHTML(categoriaDeportiva(noticia))}
-                            ·
-                            ${fechaBonita(getDate(noticia))}
-                        </small>
-
-                    </a>
-                `;
-
-            }
-        ).join("");
-
-}
-
-
-/* ============================================================
-   GRID
-   ============================================================ */
-
-function renderGrid(lista){
-
-    const grid =
-        document.getElementById("newsGrid");
-
-    const empty =
-        document.getElementById("empty");
-
-
-    if(!lista.length){
-
-        grid.innerHTML = "";
-
-        empty.style.display = "block";
-
-        return;
-
-    }
-
-
-    empty.style.display = "none";
-
-
-    /*
-       La primera ya aparece como destacada.
-       Aquí mostramos las siguientes.
-    */
-
-    const restantes =
-        lista.slice(1);
-
-
-    grid.innerHTML =
-        restantes.map(
-            crearTarjeta
-        ).join("");
-
-
-    document.getElementById(
-        "status"
-    ).textContent =
-        `${lista.length} noticias deportivas encontradas`;
-
-}
-
-
-/* ============================================================
-   RENDER GENERAL
-   ============================================================ */
-
-function render(){
-
-    const lista =
-        obtenerNoticiasFiltradas();
-
-
-    renderFeatured(lista);
-
-    renderRadar(lista);
-
-    renderGrid(lista);
-
-
-    if(!lista.length){
-
-        document.getElementById(
-            "status"
-        ).textContent =
-            "No se encontraron noticias deportivas.";
-
-    }
-
-}
-
-
-/* ============================================================
+/* =========================
    CARGAR JSON
-   ============================================================ */
+========================= */
 
-async function cargarNoticias(){
+async function loadNews(){
 
-    const status =
-        document.getElementById("status");
-
+    const grid = document.getElementById("newsGrid");
+    const empty = document.getElementById("empty");
 
     try{
 
-        const respuesta =
-            await fetch(JSON_URL, {
-                cache:"no-store"
-            });
+        grid.innerHTML = `
+            <div class="empty" style="grid-column:1/-1;">
+                Cargando noticias deportivas...
+            </div>
+        `;
 
+        const response = await fetch(JSON_URL,{
+            cache:"no-store"
+        });
 
-        if(!respuesta.ok){
+        if(!response.ok){
+            throw new Error("No se pudo cargar noticias.json");
+        }
 
-            throw new Error(
-                "No se pudo cargar noticias.json"
-            );
+        const data = await response.json();
+
+        /*
+          Aceptamos tanto:
+          [
+            {...}
+          ]
+
+          como:
+          {
+            noticias:[...]
+          }
+        */
+
+        if(Array.isArray(data)){
+
+            allNews = data;
+
+        }else if(Array.isArray(data.noticias)){
+
+            allNews = data.noticias;
+
+        }else if(Array.isArray(data.articles)){
+
+            allNews = data.articles;
+
+        }else{
+
+            allNews = [];
 
         }
 
-
-        const data =
-            await respuesta.json();
-
-
-        todasLasNoticias =
-            Array.isArray(data)
-                ? data
-                : Array.isArray(data.noticias)
-                    ? data.noticias
-                    : [];
-
-
-        /*
-           AQUÍ SE APLICA EL FILTRO REAL.
-           No usamos solamente categoria.
-        */
-
-        noticiasDeportivas =
-            todasLasNoticias.filter(
-                esDeporteReal
-            );
-
-
-        status.textContent =
-            `${noticiasDeportivas.length} noticias deportivas encontradas`;
-
-
-        console.log(
-            "Noticias totales:",
-            todasLasNoticias.length
-        );
-
-        console.log(
-            "Noticias deportivas válidas:",
-            noticiasDeportivas.length
-        );
-
-
-        /*
-           Mostrar en consola cuáles quedaron fuera
-           si queremos comprobar el filtro.
-        */
-
-        console.log(
-            "Filtro Deportes activo."
-        );
-
-
         render();
-
 
     }catch(error){
 
         console.error(error);
 
-        status.textContent =
-            "No se pudieron cargar las noticias.";
+        document.getElementById("featured").style.display="none";
 
+        grid.innerHTML = "";
 
-        document.getElementById(
-            "newsGrid"
-        ).innerHTML = "";
+        empty.innerHTML = `
+            No se pudieron cargar las noticias.
+            <br><br>
+            <small>
+                Revisa que <strong>noticias.json</strong>
+                exista en la raíz del repositorio.
+            </small>
+        `;
 
-
-        document.getElementById(
-            "empty"
-        ).style.display = "block";
-
+        empty.style.display="block";
     }
 
 }
 
 
-/* ============================================================
-   CATEGORÍAS
-   ============================================================ */
+/* =========================
+   BOTONES DE CATEGORÍA
+========================= */
 
-document
-    .querySelectorAll(".cat")
-    .forEach(
-        boton => {
+document.querySelectorAll(".category-btn")
+.forEach(button => {
 
-            boton.addEventListener(
-                "click",
-                () => {
+    button.addEventListener("click",()=>{
 
-                    document
-                        .querySelectorAll(".cat")
-                        .forEach(
-                            b =>
-                                b.classList.remove(
-                                    "active"
-                                )
-                        );
+        document.querySelectorAll(".category-btn")
+        .forEach(btn =>
+            btn.classList.remove("active")
+        );
 
+        button.classList.add("active");
 
-                    boton.classList.add(
-                        "active"
-                    );
+        currentCategory =
+            normalize(button.dataset.cat);
+
+        render();
+
+    });
+
+});
 
 
-                    categoriaActual =
-                        boton.dataset.category;
-
-
-                    render();
-
-                }
-            );
-
-        }
-    );
-
-
-/* ============================================================
+/* =========================
    BUSCADOR
-   ============================================================ */
+========================= */
 
-function ejecutarBusqueda(){
+function executeSearch(){
 
-    busquedaActual =
-        normalizar(
-            document.getElementById(
-                "searchInput"
-            ).value
+    currentSearch =
+        normalize(
+            document.getElementById("searchInput").value
         );
 
     render();
@@ -1679,61 +1595,34 @@ function ejecutarBusqueda(){
 
 
 document
-    .getElementById("searchButton")
-    .addEventListener(
-        "click",
-        ejecutarBusqueda
-    );
+    .getElementById("searchBtn")
+    .addEventListener("click",executeSearch);
 
 
 document
     .getElementById("searchInput")
-    .addEventListener(
-        "keydown",
-        event => {
+    .addEventListener("keydown",event=>{
 
-            if(event.key === "Enter"){
-                ejecutarBusqueda();
-            }
-
+        if(event.key === "Enter"){
+            executeSearch();
         }
-    );
+
+    });
 
 
-document
-    .getElementById("searchInput")
-    .addEventListener(
-        "input",
-        () => {
+/* =========================
+   INICIAR
+========================= */
 
-            busquedaActual =
-                normalizar(
-                    document.getElementById(
-                        "searchInput"
-                    ).value
-                );
-
-            render();
-
-        }
-    );
-
-
-/* ============================================================
-   INICIO
-   ============================================================ */
-
-cargarNoticias();
+loadNews();
 
 
 /*
-   Actualizar cada 10 minutos.
+  Actualiza automáticamente
+  cada 10 minutos.
 */
 
-setInterval(
-    cargarNoticias,
-    10 * 60 * 1000
-);
+setInterval(loadNews,10 * 60 * 1000);
 
 </script>
 
