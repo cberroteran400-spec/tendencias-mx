@@ -5,161 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deportes | TendenciasMX</title>
   <meta name="description" content="Noticias deportivas de México y el mundo. Fútbol, tenis, béisbol, boxeo, NFL, básquetbol, Fórmula 1 y más en TendenciasMX.">
-  <meta name="keywords" content="deportes, noticias deportivas, fútbol, futbol mexicano, Liga MX, tenis, béisbol, MLB, NFL, NBA, boxeo, Fórmula 1, deportes México">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/deportes.html">
-  <meta property="og:title" content="Deportes | TendenciasMX">
-  <meta property="og:description" content="Las noticias deportivas más importantes de México y el mundo.">
-  <meta property="og:url" content="https://cberroteran400-spec.github.io/tendencias-mx/deportes.html">
-  <meta property="og:type" content="website">
   <style>
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top left, rgba(45,255,140,.10), transparent 30%),linear-gradient(135deg,#050807,#0b1511 55%,#06100b);color:#f4f7f5;min-height:100vh}a{color:inherit;text-decoration:none}header{position:sticky;top:0;z-index:1000;background:rgba(5,8,7,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(101,255,154,.15)}.nav-container{max-width:1250px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px}.logo{font-size:24px;font-weight:900;color:#65ff9a;letter-spacing:-.8px;white-space:nowrap}nav{display:flex;align-items:center;gap:7px;overflow-x:auto;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{padding:9px 11px;border-radius:10px;color:#cbd5cf;font-size:13px;white-space:nowrap;transition:.2s}nav a:hover,nav a.active{color:#65ff9a;background:rgba(101,255,154,.10)}main{max-width:1250px;margin:auto;padding:30px 18px 60px}.hero{padding:38px 0 25px}.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(101,255,154,.35);background:rgba(101,255,154,.08);color:#65ff9a;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.8px;margin-bottom:15px}h1{margin:0;max-width:800px;font-size:clamp(36px,7vw,70px);line-height:.98;letter-spacing:-3px}h1 span{color:#65ff9a}.hero p{max-width:720px;color:#aebbb3;font-size:17px;line-height:1.6;margin:20px 0 0}.tools{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 25px}.search{flex:1 1 300px;min-width:240px;background:#0c1511;border:1px solid #20362a;color:white;padding:14px 16px;border-radius:13px;outline:none;font-size:15px}.search:focus{border-color:#65ff9a;box-shadow:0 0 0 3px rgba(101,255,154,.08)}.status{color:#93a39a;font-size:13px;padding:13px 2px}.categories{display:flex;gap:8px;overflow-x:auto;padding:5px 0 15px;scrollbar-width:none}.categories::-webkit-scrollbar{display:none}.category-btn{border:1px solid #20362a;background:#0b130f;color:#b8c4bd;border-radius:999px;padding:9px 14px;cursor:pointer;white-space:nowrap;font-size:13px;transition:.2s}.category-btn:hover,.category-btn.active{background:#65ff9a;color:#061009;border-color:#65ff9a;font-weight:800}.featured{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin:10px 0 35px}.featured-card{position:relative;min-height:330px;border-radius:20px;overflow:hidden;background:#0c1511;border:1px solid #1d3025}.featured-card img{width:100%;height:100%;min-height:330px;object-fit:cover;display:block}.featured-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:25px;background:linear-gradient(transparent 25%,rgba(0,0,0,.88) 100%)}.featured-label{color:#65ff9a;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:9px}.featured-title{font-size:clamp(23px,4vw,36px);font-weight:900;line-height:1.08;margin:0 0 8px}.featured-date{color:#b8c3bc;font-size:12px}.section-title{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:35px 0 16px}.section-title h2{margin:0;font-size:25px}.section-title span{color:#65ff9a;font-size:12px;font-weight:800}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.news-card{background:rgba(11,19,15,.92);border:1px solid #1b2c22;border-radius:17px;overflow:hidden;transition:transform.2s,border-color.2s}.news-card:hover{transform:translateY(-4px);border-color:rgba(101,255,154,.5)}.news-image{width:100%;height:205px;object-fit:cover;display:block;background:#101814}.news-content{padding:16px}.news-meta{display:flex;justify-content:space-between;gap:8px;color:#7f9187;font-size:11px;margin-bottom:10px}.news-category{color:#65ff9a;font-weight:800;text-transform:uppercase}.news-title{margin:0 0 9px;font-size:18px;line-height:1.2}.news-description{color:#9eaaa3;font-size:13px;line-height:1.55;margin:0 0 15px}.read-more{display:inline-flex;align-items:center;gap:6px;color:#65ff9a;font-size:13px;font-weight:800}.trends{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}.trend{padding:17px;border:1px solid #1b2c22;background:#0b130f;border-radius:14px}.trend-number{color:#65ff9a;font-size:12px;font-weight:900;margin-bottom:7px}.trend-text{font-size:14px;font-weight:700;line-height:1.35}.empty{text-align:center;padding:45px 20px;color:#93a39a;border:1px dashed #294234;border-radius:16px;margin-top:15px}.error{padding:20px;background:rgba(255,80,80,.08);border:1px solid rgba(255,80,80,.25);border-radius:15px;color:#ffaaaa;margin-top:20px;line-height:1.5}footer{border-top:1px solid #17251d;color:#77847d;text-align:center;padding:30px 18px;font-size:13px}@media (max-width:900px){.featured{grid-template-columns:1fr}.news-grid{grid-template-columns:repeat(2,1fr)}.trends{grid-template-columns:repeat(2,1fr)}}@media (max-width:650px){.nav-container{align-items:flex-start;flex-direction:column}nav{width:100%}main{padding:20px 13px 45px}.hero{padding-top:25px}h1{letter-spacing:-2px}.news-grid{grid-template-columns:1fr}.trends{grid-template-columns:1fr}.featured-card,.featured-card img{min-height:270px}}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top left, rgba(45,255,140,.10), transparent 30%),linear-gradient(135deg,#050807,#0b1511 55%,#06100b);color:#f4f7f5;min-height:100vh}a{color:inherit;text-decoration:none}header{position:sticky;top:0;z-index:1000;background:rgba(5,8,7,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(101,255,154,.15)}.nav-container{max-width:1250px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px}.logo{font-size:24px;font-weight:900;color:#65ff9a}nav{display:flex;gap:7px;overflow-x:auto}nav a{padding:9px 11px;border-radius:10px;color:#cbd5cf;font-size:13px;white-space:nowrap}nav a.active{color:#65ff9a;background:rgba(101,255,154,.10)}main{max-width:1250px;margin:auto;padding:30px 18px 60px}.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(101,255,154,.35);background:rgba(101,255,154,.08);color:#65ff9a;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:15px}h1{margin:0;font-size:clamp(36px,7vw,70px)}h1 span{color:#65ff9a}.tools{display:flex;gap:12px;margin:20px 0 25px}.search{flex:1;background:#0c1511;border:1px solid #20362a;color:white;padding:14px 16px;border-radius:13px;outline:none}.status{color:#93a39a;font-size:13px;padding:13px 2px}.categories{display:flex;gap:8px;overflow-x:auto;padding:5px 0 15px}.category-btn{border:1px solid #20362a;background:#0b130f;color:#b8c4bd;border-radius:999px;padding:9px 14px;cursor:pointer;white-space:nowrap;font-size:13px}.category-btn.active{background:#65ff9a;color:#061009;font-weight:800}.featured{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin:10px 0 35px}.featured-card{position:relative;min-height:330px;border-radius:20px;overflow:hidden;background:#0c1511;border:1px solid #1d3025}.featured-card img{width:100%;height:100%;min-height:330px;object-fit:cover}.featured-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:25px;background:linear-gradient(transparent 25%,rgba(0,0,0,.88) 100%)}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.news-card{background:rgba(11,19,15,.92);border:1px solid #1b2c22;border-radius:17px;overflow:hidden}.news-image{width:100%;height:205px;object-fit:cover;background:#101814}.news-content{padding:16px}.news-meta{display:flex;justify-content:space-between;color:#7f9187;font-size:11px;margin-bottom:10px}.news-category{color:#65ff9a;font-weight:800;text-transform:uppercase}.news-title{margin:0 0 9px;font-size:18px}.news-description{color:#9eaaa3;font-size:13px;margin:0 0 15px}.read-more{color:#65ff9a;font-size:13px;font-weight:800}.trends{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}.trend{padding:17px;border:1px solid #1b2c22;background:#0b130f;border-radius:14px}.empty{text-align:center;padding:45px;color:#93a39a;border:1px dashed #294234;border-radius:16px}footer{border-top:1px solid #17251d;color:#77847d;text-align:center;padding:30px 18px;font-size:13px}@media (max-width:900px){.featured{grid-template-columns:1fr}.news-grid{grid-template-columns:repeat(2,1fr)}}@media (max-width:650px){.news-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-<header>
-  <div class="nav-container">
-    <a href="index.html" class="logo">TendenciasMX</a>
-    <nav>
-      <a href="index.html">Inicio</a><a href="noticias.html">Noticias</a><a href="deportes.html" class="active">Deportes</a><a href="entretenimiento.html">Entretenimiento</a><a href="tecnologia.html">Tecnología</a><a href="dinero.html">Dinero</a><a href="politica.html">Política</a><a href="tramites.html">Trámites</a><a href="contacto.html">Contacto</a><a href="preguntas.html">Preguntas</a>
-    </nav>
-  </div>
-</header>
+<header><div class="nav-container"><a href="index.html" class="logo">TendenciasMX</a><nav><a href="index.html">Inicio</a><a href="noticias.html">Noticias</a><a href="deportes.html" class="active">Deportes</a><a href="entretenimiento.html">Entretenimiento</a><a href="tecnologia.html">Tecnología</a></nav></div></header>
 <main>
-  <section class="hero"><div class="badge">DEPORTES</div><h1>Noticias de <span>Deportes</span></h1><p>Las noticias, resultados y temas deportivos que están generando conversación en México y el mundo.</p></section>
-  <div class="tools"><input id="buscador" class="search" type="search" placeholder="🔎 Buscar noticias deportivas..." autocomplete="off"></div>
-  <div id="estado" class="status">Cargando noticias deportivas...</div>
+  <div class="badge">DEPORTES</div><h1>Noticias de <span>Deportes</span></h1>
+  <div class="tools"><input id="buscador" class="search" type="search" placeholder="🔎 Buscar noticias deportivas..."></div>
+  <div id="estado" class="status">Cargando...</div>
   <div id="categorias" class="categories">
     <button class="category-btn active" data-categoria="todos">Todas</button><button class="category-btn" data-categoria="futbol">⚽ Fútbol</button><button class="category-btn" data-categoria="tenis">🎾 Tenis</button><button class="category-btn" data-categoria="beisbol">⚾ Béisbol</button><button class="category-btn" data-categoria="nfl">🏈 NFL</button><button class="category-btn" data-categoria="basquetbol">🏀 Básquetbol</button><button class="category-btn" data-categoria="boxeo">🥊 Boxeo</button><button class="category-btn" data-categoria="formula1">🏎️ Fórmula 1</button><button class="category-btn" data-categoria="otros">🏅 Otros</button>
   </div>
   <section id="destacada" class="featured"></section>
-  <section><div class="section-title"><h2>Últimas noticias deportivas</h2><span id="contador">0 noticias</span></div><div id="noticias" class="news-grid"></div></section>
-  <section><div class="section-title"><h2>Tendencias deportivas</h2><span>AHORA</span></div><div id="tendencias" class="trends"></div></section>
+  <section><div id="noticias" class="news-grid"></div></section>
+  <section><div id="tendencias" class="trends"></div></section>
 </main>
-<footer>© 2026 TendenciasMX · Noticias, deportes y actualidad</footer>
 <script>
-  let todasLasNoticias = []; let categoriaActual = "todos"; let busquedaActual = "";
-  const ARCHIVO_DATOS = "noticias.json";
-  const palabrasDeportivas = ["deporte","deportes","fútbol","futbol","liga mx","liga-mx","selección mexicana","seleccion mexicana","selección","seleccion","mundial","champions","uefa","concacaf","tenis","atp","wta","us open","roland garros","wimbledon","australian open","béisbol","beisbol","mlb","liga mexicana","serie mundial","nfl","super bowl","touchdown","nba","basquetbol","básquetbol","boxeo","boxeador","peleador","ufc","mma","fórmula 1","formula 1","f1","gran premio","fia","automovilismo","atletismo","olímpico","olimpico","olimpiadas","ciclismo","golf","natación","natacion","maratón","maraton","entrenador","entrenamiento","jugador","jugadora","equipo","equipos","partido","partidos","torneo","torneos","campeonato","campeonatos","liga","ligas","estadio","gol","goles","victoria","derrota","final","semifinal"];
-
-  // === FIX IMAGENES: fallback por categoria, no la misma foto de pista ===
-  const fallbackImagenes = {
-    futbol: "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=800&q=80",
-    tenis: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=800&q=80",
-    beisbol: "https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800&q=80",
-    nfl: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=800&q=80",
-    basquetbol: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&q=80",
-    boxeo: "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=800&q=80",
-    formula1: "https://images.unsplash.com/photo-1514770198934-d632356140ce?w=800&q=80",
-    otros: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=80"
-  };
-
-  function obtenerImagenReal(noticia){
-    const cat = obtenerCategoriaDeportiva(noticia);
-    if(noticia.imagen && noticia.imagen.startsWith("http") &&!noticia.imagen.includes("photo-1461896836934")){
-      return noticia.imagen;
-    }
-    return fallbackImagenes[cat] || fallbackImagenes.otros;
-  }
-
-  async function cargarNoticias(){
-    const estado = document.getElementById("estado");
-    try{
-      estado.textContent = "Cargando noticias deportivas...";
-      const respuesta = await fetch(ARCHIVO_DATOS + "?actualizacion=" + Date.now(),{cache:"no-store"});
-      if(!respuesta.ok) throw new Error("No se pudo leer noticias.json. Código HTTP: "+respuesta.status);
-      const datos = await respuesta.json();
-      if(Array.isArray(datos)) todasLasNoticias = datos;
-      else if(datos && Array.isArray(datos.noticias)) todasLasNoticias = datos.noticias;
-      else throw new Error("El formato de noticias.json no es válido.");
-      todasLasNoticias = todasLasNoticias.filter(esNoticiaDeportiva);
-      todasLasNoticias.sort(function(a,b){const fechaA=new Date(a.fecha||0).getTime(); const fechaB=new Date(b.fecha||0).getTime(); return fechaB-fechaA;});
-      estado.textContent = "Noticias deportivas: "+todasLasNoticias.length;
-      mostrarNoticias();
-    }catch(error){
-      console.error(error); estado.textContent="No se pudieron cargar las noticias deportivas.";
-      document.getElementById("noticias").innerHTML=`<div class="error"><strong>Error al cargar las noticias.</strong><br><br>El archivo <strong>noticias.json</strong> no pudo ser leído.<br><br>Revisa que <strong>noticias.json</strong> esté en la raíz del repositorio junto a <strong>deportes.html</strong>.</div>`;
-    }
-  }
-
-  function esNoticiaDeportiva(noticia){
-    const categoria=normalizar(noticia.categoria); const subcategoria=normalizar(noticia.subcategoria);
-    const titulo=normalizar(noticia.titulo); const descripcion=normalizar(noticia.descripcion);
-    const textoCompleto=(categoria+" "+subcategoria+" "+titulo+" "+descripcion).trim();
-    if(categoria.includes("deporte")||subcategoria.includes("deporte")||categoria.includes("sports")||subcategoria.includes("sports")) return true;
-    return palabrasDeportivas.some(function(palabra){return textoCompleto.includes(normalizar(palabra));});
-  }
-  function normalizar(texto){return String(texto||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();}
-
-  function mostrarNoticias(){
-    const contenedor=document.getElementById("noticias");
-    const textoBusqueda=normalizar(busquedaActual);
-    // FIX: return en la misma linea (antes tenias salto de linea y retornaba undefined)
-    const resultadoFinal = todasLasNoticias.filter(function(noticia){
-      const coincideCategoria = categoriaActual==="todos" || obtenerCategoriaDeportiva(noticia)===categoriaActual;
-      const contenido = normalizar((noticia.titulo||"")+" "+(noticia.descripcion||"")+" "+(noticia.categoria||"")+" "+(noticia.subcategoria||"")+" "+(noticia.fuente||""));
-      const coincideBusqueda =!textoBusqueda || contenido.includes(textoBusqueda);
-      return coincideCategoria && coincideBusqueda;
-    });
-
-    document.getElementById("contador").textContent = resultadoFinal.length + (resultadoFinal.length===1?" noticia":" noticias");
-    if(!resultadoFinal.length){
-      contenedor.innerHTML=`<div class="empty">No encontramos noticias deportivas con esos criterios.</div>`;
-      document.getElementById("destacada").innerHTML=""; mostrarTendencias([]); return;
-    }
-    mostrarDestacada(resultadoFinal[0]);
-    contenedor.innerHTML = resultadoFinal.map(crearTarjeta).join("");
-    mostrarTendencias(resultadoFinal);
-  }
-
-  function obtenerCategoriaDeportiva(noticia){
-    const texto=normalizar((noticia.categoria||"")+" "+(noticia.subcategoria||"")+" "+(noticia.titulo||"")+" "+(noticia.descripcion||""));
-    if(texto.includes("futbol")||texto.includes("liga mx")||texto.includes("champions")||texto.includes("uefa")) return "futbol";
-    if(texto.includes("tenis")||texto.includes("atp")||texto.includes("wta")||texto.includes("wimbledon")||texto.includes("roland garros")) return "tenis";
-    if(texto.includes("beisbol")||texto.includes("mlb")||texto.includes("serie mundial")) return "beisbol";
-    if(texto.includes("nfl")||texto.includes("super bowl")||texto.includes("touchdown")) return "nfl";
-    if(texto.includes("nba")||texto.includes("basquetbol")) return "basquetbol";
-    if(texto.includes("boxeo")||texto.includes("boxeador")||texto.includes("ufc")||texto.includes("mma")) return "boxeo";
-    if(texto.includes("formula 1")||texto.includes("formula1")||texto.includes("f1")||texto.includes("gran premio")||texto.includes("automovilismo")) return "formula1";
-    return "otros";
-  }
-
-  function crearTarjeta(noticia){
-    const titulo=escaparHTML(noticia.titulo||"Noticia deportiva");
-    const descripcion=escaparHTML(noticia.descripcion||"Consulta la información completa.");
-    const imagen=obtenerImagenReal(noticia);
-    const fecha=formatearFecha(noticia.fecha);
-    const categoria=obtenerCategoriaDeportiva(noticia);
-    const url=noticia.url||"#";
-    const fallback=fallbackImagenes[categoria]||fallbackImagenes.otros;
-    return `<article class="news-card"><a href="${escaparAtributo(url)}" target="_blank" rel="noopener noreferrer"><img class="news-image" src="${escaparAtributo(imagen)}" alt="${escaparAtributo(titulo)}" loading="lazy" onerror="this.onerror=null;this.src='${fallback}'"></a><div class="news-content"><div class="news-meta"><span class="news-category">${escaparHTML(categoria)}</span><span>${fecha}</span></div><h3 class="news-title">${titulo}</h3><p class="news-description">${descripcion}</p><a class="read-more" href="${escaparAtributo(url)}" target="_blank" rel="noopener noreferrer">Leer noticia →</a></div></article>`;
-  }
-
-  function mostrarDestacada(noticia){
-    const contenedor=document.getElementById("destacada");
-    const titulo=escaparHTML(noticia.titulo||"Última noticia deportiva");
-    const imagen=obtenerImagenReal(noticia);
-    const fecha=formatearFecha(noticia.fecha);
-    const url=noticia.url||"#";
-    const categoria=obtenerCategoriaDeportiva(noticia);
-    const fallback=fallbackImagenes[categoria]||fallbackImagenes.otros;
-    contenedor.innerHTML=`<a class="featured-card" href="${escaparAtributo(url)}" target="_blank" rel="noopener noreferrer"><img src="${escaparAtributo(imagen)}" alt="${escaparAtributo(titulo)}" onerror="this.onerror=null;this.src='${fallback}'"><div class="featured-overlay"><div class="featured-label">TendenciasMX Deportes</div><h2 class="featured-title">${titulo}</h2><div class="featured-date">${fecha}</div></div></a>`;
-  }
-
-  function mostrarTendencias(noticias){
-    const contenedor=document.getElementById("tendencias"); const usadas=new Set(); const tendencias=[];
-    for(const noticia of noticias){const categoria=obtenerCategoriaDeportiva(noticia); if(!usadas.has(categoria)){usadas.add(categoria); tendencias.push({categoria:categoria,titulo:noticia.titulo||"Noticias deportivas"});} if(tendencias.length>=4) break;}
-    if(!tendencias.length){contenedor.innerHTML=""; return;}
-    contenedor.innerHTML=tendencias.map(function(item,indice){return `<div class="trend"><div class="trend-number">#${indice+1} · ${escaparHTML(item.categoria)}</div><div class="trend-text">${escaparHTML(item.titulo)}</div></div>`;}).join("");
-  }
-
-  document.getElementById("buscador").addEventListener("input",function(event){busquedaActual=event.target.value; mostrarNoticias();});
-  document.querySelectorAll(".category-btn").forEach(function(boton){boton.addEventListener("click",function(){document.querySelectorAll(".category-btn").forEach(function(btn){btn.classList.remove("active");}); boton.classList.add("active"); categoriaActual=boton.dataset.categoria; mostrarNoticias();});});
-
-  function formatearFecha(fecha){if(!fecha) return "Fecha no disponible"; const fechaObj=new Date(fecha); if(isNaN(fechaObj.getTime())) return escaparHTML(String(fecha)); return fechaObj.toLocaleDateString("es-MX",{day:"numeric",month:"short",year:"numeric"});}
-  function escaparHTML(texto){return String(texto||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");}
-  function escaparAtributo(texto){return escaparHTML(texto);}
-  cargarNoticias();
+let todasLasNoticias=[];let categoriaActual="todos";let busquedaActual="";const ARCHIVO_DATOS="noticias.json";
+const fallbackImagenesPorCategoria={
+futbol:["https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800","https://images.unsplash.com/photo-1579952363873-27f3bfad9c0d?w=800","https://images.unsplash.com/photo-1522778119026-d647f0596c35?w=800","https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=800"],
+tenis:["https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=800","https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800","https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800"],
+beisbol:["https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800","https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800","https://images.unsplash.com/photo-1508344928928-7165b67de128?w=800"],
+nfl:["https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=800","https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800"],
+basquetbol:["https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800","https://images.unsplash.com/photo-1519861531473-9200262188bf?w=800"],
+boxeo:["https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=800","https://images.unsplash.com/photo-1593352216894-289989e3f2ee?w=800"],
+formula1:["https://images.unsplash.com/photo-1511910849309-0dffb8785146?w=800","https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=800"],
+otros:["https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800","https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800"]
+};
+function esImagenBasura(url){if(!url) return true; const u=url.toLowerCase(); if(u.length<25) return true; if(u.includes('gstatic')||u.includes('googlelogo')||u.includes('branding')) return true; return false;}
+function obtenerImagenReal(noticia){let img=noticia.imagen||""; if(img&&!esImagenBasura(img)) return img; const cat=obtenerCategoriaDeportiva(noticia); const lista=fallbackImagenesPorCategoria[cat]||fallbackImagenesPorCategoria.otros; let hash=0; const titulo=noticia.titulo||""; for(let i=0;i<titulo.length;i++) hash=(hash*31+titulo.charCodeAt(i))%1000; return lista[hash%lista.length];}
+async function cargarNoticias(){try{const r=await fetch(ARCHIVO_DATOS+"?"+Date.now(),{cache:"no-store"}); const datos=await r.json(); todasLasNoticias=Array.isArray(datos)?datos:datos.noticias; mostrarNoticias(); document.getElementById("estado").textContent=todasLasNoticias.length+" noticias";}catch(e){document.getElementById("estado").textContent="Error cargando noticias";}}
+function normalizar(t){return String(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();}
+function obtenerCategoriaDeportiva(n){const t=normalizar((n.categoria||"")+" "+(n.subcategoria||"")+" "+(n.titulo||"")); if(t.includes("futbol")||t.includes("liga mx")) return "futbol"; if(t.includes("tenis")) return "tenis"; if(t.includes("beisbol")) return "beisbol"; if(t.includes("nfl")) return "nfl"; if(t.includes("nba")||t.includes("basquetbol")) return "basquetbol"; if(t.includes("boxeo")||t.includes("ufc")) return "boxeo"; if(t.includes("formula 1")||t.includes("f1")) return "formula1"; return "otros";}
+function mostrarNoticias(){const cont=document.getElementById("noticias"); const texto=normalizar(busquedaActual); const res=todasLasNoticias.filter(n=>{const c=categoriaActual==="todos"||obtenerCategoriaDeportiva(n)===categoriaActual; const txt=normalizar((n.titulo||"")+(n.descripcion||"")); return c&&(!texto||txt.includes(texto));}); cont.innerHTML=res.map(n=>{const img=obtenerImagenReal(n); const cat=obtenerCategoriaDeportiva(n); return `<article class="news-card"><a href="${n.url}" target="_blank"><img class="news-image" src="${img}" alt="" loading="lazy" onerror="this.src='${fallbackImagenesPorCategoria[cat][0]}'"></a><div class="news-content"><div class="news-meta"><span class="news-category">${cat}</span></div><h3 class="news-title">${n.titulo||""}</h3><p class="news-description">${(n.descripcion||"").substring(0,120)}...</p><a class="read-more" href="${n.url}" target="_blank">Leer →</a></div></article>`}).join(""); if(res.length) mostrarDestacada(res[0]);}
+function mostrarDestacada(n){const c=document.getElementById("destacada"); const img=obtenerImagenReal(n); c.innerHTML=`<a class="featured-card" href="${n.url}" target="_blank"><img src="${img}" alt=""><div class="featured-overlay" style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:25px;background:linear-gradient(transparent,rgba(0,0,0,.88))"><h2 style="margin:0">${n.titulo}</h2></div></a>`;}
+document.getElementById("buscador").addEventListener("input",e=>{busquedaActual=e.target.value; mostrarNoticias();});
+document.querySelectorAll(".category-btn").forEach(b=>{b.addEventListener("click",()=>{document.querySelectorAll(".category-btn").forEach(x=>x.classList.remove("active")); b.classList.add("active"); categoriaActual=b.dataset.categoria; mostrarNoticias();});});
+cargarNoticias();
 </script>
 </body>
 </html>
