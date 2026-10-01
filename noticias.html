@@ -16,23 +16,30 @@
     content="noticias México, noticias hoy, presidentes, política, gobierno, elecciones, fútbol, Liga MX, América, Chivas, Cruz Azul, Pumas, selección mexicana, Mundial, Champions, Premier League, Barcelona, Real Madrid, economía, tecnología, deportes, entretenimiento"
   >
 
+  <meta name="author" content="TendenciaMX">
+  <meta name="robots" content="index, follow">
+
   <link
     rel="canonical"
     href="https://cberroteran400-spec.github.io/tendencias-mx/noticias.html"
   >
 
   <meta property="og:title" content="Noticias | TendenciaMX">
+
   <meta
     property="og:description"
     content="Noticias de México, mundo, política, presidentes, fútbol, economía, tecnología y entretenimiento."
   >
+
   <meta
     property="og:url"
     content="https://cberroteran400-spec.github.io/tendencias-mx/noticias.html"
   >
+
   <meta property="og:type" content="website">
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -45,7 +52,12 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background:
-        radial-gradient(circle at top, #17233d 0%, #0b1220 45%, #050911 100%);
+        radial-gradient(
+          circle at top,
+          #17233d 0%,
+          #0b1220 45%,
+          #050911 100%
+        );
       color: #fff;
       min-height: 100vh;
     }
@@ -61,7 +73,7 @@
       z-index: 1000;
       background: rgba(5, 9, 17, 0.95);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(101, 255, 154, 0.15);
+      border-bottom: 1px solid rgba(101,255,154,0.15);
     }
 
     .header-inner {
@@ -244,7 +256,9 @@
       border: 1px solid rgba(255,255,255,.08);
       border-radius: 18px;
       overflow: hidden;
-      transition: transform .2s ease, border-color .2s ease;
+      transition:
+        transform .2s ease,
+        border-color .2s ease;
       box-shadow: 0 10px 30px rgba(0,0,0,.18);
     }
 
@@ -325,12 +339,15 @@
     }
 
     @media (max-width: 900px) {
+
       .news-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
     }
 
     @media (max-width: 650px) {
+
       .header-inner {
         flex-direction: column;
         align-items: flex-start;
@@ -355,33 +372,49 @@
       .news-image {
         height: 215px;
       }
+
     }
+
   </style>
 </head>
 
 <body>
 
 <header>
+
   <div class="header-inner">
 
-    <a class="logo" href="index.html">
+    <a
+      class="logo"
+      href="index.html"
+    >
       TendenciaMX
     </a>
 
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="noticias.html">📰 Noticias</a>
+
+      <a href="index.html">
+        Inicio
+      </a>
+
+      <a href="noticias.html">
+        📰 Noticias
+      </a>
+
     </nav>
 
   </div>
+
 </header>
+
 
 <main class="container">
 
   <section class="hero">
 
     <h1>
-      📰 Noticias de <span>TendenciaMX</span>
+      📰 Noticias de
+      <span>TendenciaMX</span>
     </h1>
 
     <p>
@@ -390,6 +423,7 @@
       fútbol, deportes, economía,
       entretenimiento y tecnología.
     </p>
+
 
     <div class="search-box">
 
@@ -412,6 +446,7 @@
 
   </section>
 
+
   <!-- CATEGORÍAS -->
 
   <section
@@ -426,12 +461,22 @@
       📰 Todas
     </button>
 
+
     <button
       class="category-btn"
       data-category="mexico"
     >
       🇲🇽 México
     </button>
+
+
+    <button
+      class="category-btn"
+      data-category="politica"
+    >
+      🏛️ Política
+    </button>
+
 
     <button
       class="category-btn"
@@ -440,12 +485,14 @@
       🌎 Mundo
     </button>
 
+
     <button
       class="category-btn"
       data-category="economia"
     >
       💰 Economía
     </button>
+
 
     <button
       class="category-btn"
@@ -454,6 +501,7 @@
       🏆 Deportes
     </button>
 
+
     <button
       class="category-btn"
       data-category="futbol"
@@ -461,12 +509,14 @@
       ⚽ Fútbol
     </button>
 
+
     <button
       class="category-btn"
       data-category="entretenimiento"
     >
       🎬 Entretenimiento
     </button>
+
 
     <button
       class="category-btn"
@@ -476,6 +526,7 @@
     </button>
 
   </section>
+
 
   <div class="results-info">
 
@@ -493,6 +544,7 @@
 
   </div>
 
+
   <section
     id="newsGrid"
     class="news-grid"
@@ -507,9 +559,13 @@
 
 </main>
 
+
 <footer>
+
   © 2026 TendenciaMX · Noticias y tendencias
+
 </footer>
+
 
 <script>
 
@@ -549,9 +605,6 @@
 
   /* =========================================================
      TÉRMINOS DE FÚTBOL
-     
-     El sistema no depende solamente de que la noticia
-     tenga la palabra "fútbol".
   ========================================================= */
 
   const futbolTerms = [
@@ -564,7 +617,6 @@
     "liga mexicana",
     "liga bbva mx",
 
-    "america",
     "club america",
     "america de mexico",
 
@@ -583,33 +635,24 @@
     "tigres uanl",
 
     "toluca",
-
     "pachuca",
-
     "leon",
 
     "santos",
     "santos laguna",
 
     "necaxa",
-
     "atlas",
-
     "mazatlan",
-
     "juarez",
-
     "tijuana",
-
     "queretaro",
-
     "san luis",
 
     "seleccion",
     "seleccion mexicana",
     "seleccion nacional",
     "el tri",
-    "tri",
 
     "mundial",
     "copa mundial",
@@ -636,9 +679,7 @@
     "manchester city",
 
     "liverpool",
-
     "arsenal",
-
     "chelsea",
 
     "psg",
@@ -648,36 +689,26 @@
     "inter milan",
 
     "milan",
-
     "juventus",
-
     "napoli",
-
     "roma",
 
     "sevilla",
-
     "betis",
 
     "laliga",
     "la liga",
 
     "liga inglesa",
-
     "liga italiana",
-
     "liga alemana",
-
     "liga francesa",
 
     "concacaf",
-
     "libertadores",
-
     "liguilla",
 
     "apertura",
-
     "clausura",
 
     "partido",
@@ -689,64 +720,48 @@
     "marcador",
 
     "cancha",
-
     "estadio",
 
     "jugador",
     "jugadores",
 
     "entrenador",
-
     "director tecnico",
-
     "tecnico",
 
     "portero",
-
     "delantero",
-
     "defensa",
-
     "mediocampista",
 
     "fichaje",
-
     "fichajes",
 
     "transferencia",
-
     "transferencias",
 
     "mercado de fichajes",
 
     "arbitro",
-
     "arbitraje",
 
     "penal",
-
     "penaltis",
 
     "tarjeta roja",
-
     "tarjeta amarilla",
 
     "torneo",
-
     "torneos",
 
     "campeon",
-
     "campeonato"
 
   ];
 
 
   /* =========================================================
-     TÉRMINOS POLÍTICOS / PRESIDENTES
-     
-     Sirven para que el buscador encuentre noticias políticas
-     aunque el usuario no sepa en qué categoría quedaron.
+     TÉRMINOS POLÍTICOS
   ========================================================= */
 
   const politicaTerms = [
@@ -827,7 +842,6 @@
     "javier milei",
 
     "presidente de estados unidos",
-
     "presidente de mexico"
 
   ];
@@ -835,11 +849,6 @@
 
   /* =========================================================
      NORMALIZAR TEXTO
-     
-     Convierte:
-     Fútbol -> futbol
-     México -> mexico
-     Selección -> seleccion
   ========================================================= */
 
   function normalizeText(value) {
@@ -968,9 +977,7 @@
 
 
   /* =========================================================
-     TEXTO COMPLETO DE CADA NOTICIA
-     
-     El buscador revisa prácticamente todo.
+     TEXTO COMPLETO DE LA NOTICIA
   ========================================================= */
 
   function getNewsText(item) {
@@ -978,11 +985,8 @@
     return normalizeText([
 
       getTitle(item),
-
       getDescription(item),
-
       getSource(item),
-
       getOriginalCategory(item),
 
       item.etiquetas || "",
@@ -1000,6 +1004,9 @@
 
   /* =========================================================
      NORMALIZAR CATEGORÍA
+     
+     IMPORTANTE:
+     Política ahora es una categoría independiente.
   ========================================================= */
 
   function normalizeCategory(value) {
@@ -1007,22 +1014,38 @@
     const c =
       normalizeText(value);
 
+
+    if (
+      c.includes("politica") ||
+      c.includes("politico") ||
+      c.includes("politica")
+    ) {
+
+      return "politica";
+
+    }
+
+
     if (
       c.includes("mexico") ||
-      c.includes("nacional") ||
-      c.includes("politica") ||
-      c.includes("congreso")
+      c.includes("nacional")
     ) {
+
       return "mexico";
+
     }
+
 
     if (
       c.includes("mundo") ||
       c.includes("internacional") ||
       c.includes("global")
     ) {
+
       return "mundo";
+
     }
+
 
     if (
       c.includes("economia") ||
@@ -1032,16 +1055,22 @@
       c.includes("mercados") ||
       c.includes("empresas")
     ) {
+
       return "economia";
+
     }
+
 
     if (
       c.includes("deporte") ||
       c.includes("deportes") ||
       c.includes("sport")
     ) {
+
       return "deportes";
+
     }
+
 
     if (
       c.includes("entretenimiento") ||
@@ -1050,17 +1079,22 @@
       c.includes("famosos") ||
       c.includes("celebridades")
     ) {
+
       return "entretenimiento";
+
     }
+
 
     if (
       c.includes("tecnologia") ||
-      c.includes("tecnología") ||
       c.includes("tech") ||
       c.includes("ciencia")
     ) {
+
       return "tecnologia";
+
     }
+
 
     return c || "otros";
 
@@ -1069,14 +1103,6 @@
 
   /* =========================================================
      DETECTAR FÚTBOL
-     
-     IMPORTANTE:
-     1. Si la noticia está marcada como Deportes,
-        se analiza.
-     2. Si no tiene categoría, también se puede detectar
-        por contenido.
-     3. Si está claramente en otra categoría,
-        no se mete automáticamente en Fútbol.
   ========================================================= */
 
   function isFutbolNews(item) {
@@ -1089,6 +1115,12 @@
     const text =
       getNewsText(item);
 
+
+    /*
+     * Si el RSS dice que es deportes,
+     * analizamos si es fútbol.
+     */
+
     const hasFootballTerm =
       futbolTerms.some(term =>
         text.includes(
@@ -1096,41 +1128,66 @@
         )
       );
 
+
     if (!hasFootballTerm) {
+
       return false;
+
     }
 
+
     /*
-     * Si explícitamente viene como deportes,
-     * es fútbol.
+     * Deportes + término futbolístico
      */
-    if (category === "deportes") {
+
+    if (
+      category === "deportes"
+    ) {
+
       return true;
+
     }
 
+
     /*
-     * Si no tiene categoría clara,
-     * usamos el contenido.
+     * Categoría fútbol directa
      */
+
+    if (
+      category === "futbol"
+    ) {
+
+      return true;
+
+    }
+
+
+    /*
+     * Sin categoría clara
+     */
+
     if (
       category === "otros" ||
       !getOriginalCategory(item)
     ) {
+
       return true;
+
     }
 
+
     /*
-     * Si la propia noticia contiene términos
-     * muy fuertes de fútbol, también permitimos
-     * que aparezca.
+     * Términos fuertes de fútbol
      */
+
     const strongFootballTerms = [
+
       "liga mx",
       "champions league",
       "premier league",
       "real madrid",
       "barcelona",
-      "america",
+      "club america",
       "chivas",
       "cruz azul",
       "pumas",
@@ -1139,7 +1196,9 @@
       "mundial de clubes",
       "futbolista",
       "futbolistas"
+
     ];
+
 
     return strongFootballTerms.some(term =>
       text.includes(
@@ -1152,15 +1211,27 @@
 
   /* =========================================================
      DETECTAR POLÍTICA
-     
-     NO elimina ni mueve noticias.
-     Solamente ayuda al buscador.
   ========================================================= */
 
   function isPoliticalNews(item) {
 
+    const category =
+      normalizeCategory(
+        getOriginalCategory(item)
+      );
+
     const text =
       getNewsText(item);
+
+
+    if (
+      category === "politica"
+    ) {
+
+      return true;
+
+    }
+
 
     return politicaTerms.some(term =>
       text.includes(
@@ -1173,12 +1244,6 @@
 
   /* =========================================================
      CATEGORÍA INTELIGENTE
-     
-     Si el RSS trae una categoría correcta,
-     la respetamos.
-
-     Si viene vacía o desconocida,
-     intentamos identificarla por contenido.
   ========================================================= */
 
   function getSmartCategory(item) {
@@ -1189,19 +1254,77 @@
     const normalized =
       normalizeCategory(original);
 
+
+    /*
+     * Si RSS ya trae una categoría válida,
+     * la respetamos.
+     */
+
     if (
-      normalized !== "otros" &&
-      normalized !== ""
+      [
+        "mexico",
+        "politica",
+        "mundo",
+        "economia",
+        "deportes",
+        "entretenimiento",
+        "tecnologia"
+      ].includes(normalized)
     ) {
+
+      /*
+       * Dentro de deportes,
+       * distinguimos fútbol visualmente.
+       */
+
+      if (
+        normalized === "deportes" &&
+        isFutbolNews(item)
+      ) {
+
+        return "futbol";
+
+      }
+
+
       return normalized;
+
     }
 
-    if (isFutbolNews(item)) {
+
+    /*
+     * FÚTBOL
+     */
+
+    if (
+      isFutbolNews(item)
+    ) {
+
       return "futbol";
+
     }
+
 
     const text =
       getNewsText(item);
+
+
+    /*
+     * POLÍTICA
+     */
+
+    if (
+      isPoliticalNews(item)
+    ) {
+
+      return "politica";
+
+    }
+
+
+    /*
+     * ECONOMÍA
+     */
 
     if (
       text.includes("dolar") ||
@@ -1209,31 +1332,36 @@
       text.includes("peso mexicano") ||
       text.includes("banxico") ||
       text.includes("economia") ||
-      text.includes("mercado")
+      text.includes("mercado") ||
+      text.includes("finanzas")
     ) {
+
       return "economia";
+
     }
 
-    if (
-      isPoliticalNews(item) &&
-      (
-        text.includes("mexico") ||
-        text.includes("sheinbaum") ||
-        text.includes("gobierno")
-      )
-    ) {
-      return "mexico";
-    }
+
+    /*
+     * MUNDO
+     */
 
     if (
       text.includes("trump") ||
       text.includes("putin") ||
       text.includes("xi jinping") ||
       text.includes("guerra") ||
-      text.includes("onu")
+      text.includes("onu") ||
+      text.includes("internacional")
     ) {
+
       return "mundo";
+
     }
+
+
+    /*
+     * TECNOLOGÍA
+     */
 
     if (
       text.includes("iphone") ||
@@ -1244,8 +1372,26 @@
       text.includes("inteligencia artificial") ||
       text.includes("tecnologia")
     ) {
+
       return "tecnologia";
+
     }
+
+
+    /*
+     * MÉXICO
+     */
+
+    if (
+      text.includes("mexico") ||
+      text.includes("mexicano") ||
+      text.includes("mexicana")
+    ) {
+
+      return "mexico";
+
+    }
+
 
     return "otros";
 
@@ -1259,19 +1405,26 @@
   function formatDate(value) {
 
     if (!value) {
+
       return "";
+
     }
+
 
     const date =
       new Date(value);
+
 
     if (
       Number.isNaN(
         date.getTime()
       )
     ) {
+
       return String(value);
+
     }
+
 
     return date.toLocaleDateString(
       "es-MX",
@@ -1286,17 +1439,23 @@
 
 
   /* =========================================================
-     BÚSQUEDA
+     BÚSQUEDA INTELIGENTE
      
-     Todas las palabras introducidas deben aparecer.
+     AQUÍ ESTÁ EL CAMBIO PRINCIPAL.
      
-     Ejemplo:
-     "presidente mexico"
+     Si escribes:
      
-     Busca:
-     presidente + mexico
+     fútbol
+     futbol
      
-     en TODAS las noticias.
+     se comprueba isFutbolNews().
+     
+     Si escribes:
+     
+     política
+     politica
+     
+     se comprueba isPoliticalNews().
   ========================================================= */
 
   function getSearchTerms() {
@@ -1310,20 +1469,211 @@
   }
 
 
+  function termMatchesNews(item, term) {
+
+    const normalizedTerm =
+      normalizeText(term);
+
+
+    const text =
+      getNewsText(item);
+
+
+    /*
+     * FÚTBOL
+     */
+
+    if (
+      normalizedTerm === "futbol" ||
+      normalizedTerm === "futbolista" ||
+      normalizedTerm === "futbolistas"
+    ) {
+
+      return isFutbolNews(item);
+
+    }
+
+
+    /*
+     * POLÍTICA
+     */
+
+    if (
+      normalizedTerm === "politica" ||
+      normalizedTerm === "politico" ||
+      normalizedTerm === "presidente" ||
+      normalizedTerm === "presidenta"
+    ) {
+
+      if (
+        normalizedTerm === "politica" ||
+        normalizedTerm === "politico"
+      ) {
+
+        return isPoliticalNews(item);
+
+      }
+
+      return (
+        text.includes(normalizedTerm) ||
+        isPoliticalNews(item)
+      );
+
+    }
+
+
+    /*
+     * DEPORTES
+     */
+
+    if (
+      normalizedTerm === "deporte" ||
+      normalizedTerm === "deportes"
+    ) {
+
+      return (
+        normalizeCategory(
+          getOriginalCategory(item)
+        ) === "deportes" ||
+        isFutbolNews(item)
+      );
+
+    }
+
+
+    /*
+     * MÉXICO
+     */
+
+    if (
+      normalizedTerm === "mexico" ||
+      normalizedTerm === "mexicano" ||
+      normalizedTerm === "mexicana"
+    ) {
+
+      return (
+        normalizeCategory(
+          getOriginalCategory(item)
+        ) === "mexico" ||
+        text.includes("mexico") ||
+        text.includes("mexicano") ||
+        text.includes("mexicana")
+      );
+
+    }
+
+
+    /*
+     * ECONOMÍA
+     */
+
+    if (
+      normalizedTerm === "economia" ||
+      normalizedTerm === "economico" ||
+      normalizedTerm === "dinero"
+    ) {
+
+      return (
+        normalizeCategory(
+          getOriginalCategory(item)
+        ) === "economia" ||
+        getSmartCategory(item) === "economia" ||
+        text.includes(normalizedTerm)
+      );
+
+    }
+
+
+    /*
+     * TECNOLOGÍA
+     */
+
+    if (
+      normalizedTerm === "tecnologia" ||
+      normalizedTerm === "tech"
+    ) {
+
+      return (
+        normalizeCategory(
+          getOriginalCategory(item)
+        ) === "tecnologia" ||
+        getSmartCategory(item) === "tecnologia" ||
+        text.includes(normalizedTerm)
+      );
+
+    }
+
+
+    /*
+     * ENTRETENIMIENTO
+     */
+
+    if (
+      normalizedTerm === "entretenimiento"
+    ) {
+
+      return (
+        normalizeCategory(
+          getOriginalCategory(item)
+        ) === "entretenimiento" ||
+        getSmartCategory(item) === "entretenimiento"
+      );
+
+    }
+
+
+    /*
+     * MUNDO
+     */
+
+    if (
+      normalizedTerm === "mundo" ||
+      normalizedTerm === "internacional"
+    ) {
+
+      return (
+        normalizeCategory(
+          getOriginalCategory(item)
+        ) === "mundo" ||
+        getSmartCategory(item) === "mundo"
+      );
+
+    }
+
+
+    /*
+     * BÚSQUEDA NORMAL
+     */
+
+    return text.includes(
+      normalizedTerm
+    );
+
+  }
+
+
   function matchesSearch(item) {
 
     const terms =
       getSearchTerms();
 
+
     if (!terms.length) {
+
       return true;
+
     }
 
-    const text =
-      getNewsText(item);
+
+    /*
+     * Todas las palabras deben coincidir.
+     */
 
     return terms.every(term =>
-      text.includes(term)
+      termMatchesNews(
+        item,
+        term
+      )
     );
 
   }
@@ -1338,22 +1688,39 @@
     if (
       currentCategory === "todas"
     ) {
+
       return true;
+
     }
+
 
     if (
       currentCategory === "futbol"
     ) {
+
       return isFutbolNews(item);
+
     }
+
+
+    if (
+      currentCategory === "politica"
+    ) {
+
+      return isPoliticalNews(item);
+
+    }
+
 
     const category =
       normalizeCategory(
         getOriginalCategory(item)
       );
 
+
     const smartCategory =
       getSmartCategory(item);
+
 
     return (
       category === currentCategory ||
@@ -1364,7 +1731,7 @@
 
 
   /* =========================================================
-     FILTRAR
+     FILTRAR NOTICIAS
   ========================================================= */
 
   function getFilteredNews() {
@@ -1396,6 +1763,7 @@
           height="450"
           viewBox="0 0 800 450"
         >
+
           <rect
             width="800"
             height="450"
@@ -1414,6 +1782,7 @@
           >
             TendenciaMX
           </text>
+
         </svg>
       `)
     );
@@ -1429,15 +1798,23 @@
 
     const labels = {
 
-      mexico: "🇲🇽 México",
+      mexico:
+        "🇲🇽 México",
 
-      mundo: "🌎 Mundo",
+      politica:
+        "🏛️ Política",
 
-      economia: "💰 Economía",
+      mundo:
+        "🌎 Mundo",
 
-      deportes: "🏆 Deportes",
+      economia:
+        "💰 Economía",
 
-      futbol: "⚽ Fútbol",
+      deportes:
+        "🏆 Deportes",
+
+      futbol:
+        "⚽ Fútbol",
 
       entretenimiento:
         "🎬 Entretenimiento",
@@ -1450,6 +1827,7 @@
 
     };
 
+
     return (
       labels[category] ||
       "📰 Noticias"
@@ -1459,13 +1837,18 @@
 
 
   /* =========================================================
-     RENDERIZAR NOTICIAS
+     RENDERIZAR
   ========================================================= */
 
   function renderNews() {
 
     const filteredNews =
       getFilteredNews();
+
+
+    /*
+     * TEXTO DE RESULTADOS
+     */
 
     if (
       currentCategory === "futbol"
@@ -1483,25 +1866,55 @@
 
       }
 
-    } else if (currentSearch) {
+    }
+
+    else if (
+      currentCategory === "politica"
+    ) {
+
+      if (currentSearch) {
+
+        resultsText.innerHTML =
+          `🏛️ Política · <strong>${filteredNews.length}</strong> resultado(s) para "<strong>${escapeHTML(currentSearch)}</strong>"`;
+
+      } else {
+
+        resultsText.innerHTML =
+          `🏛️ Política · <strong>${filteredNews.length}</strong> noticia(s)`;
+
+      }
+
+    }
+
+    else if (
+      currentSearch
+    ) {
 
       resultsText.innerHTML =
         `<strong>${filteredNews.length}</strong> resultado(s) para "<strong>${escapeHTML(currentSearch)}</strong>"`;
 
-    } else if (
+    }
+
+    else if (
       currentCategory !== "todas"
     ) {
 
       resultsText.innerHTML =
         `<strong>${filteredNews.length}</strong> noticia(s)`;
 
-    } else {
+    }
+
+    else {
 
       resultsText.innerHTML =
         `<strong>${filteredNews.length}</strong> noticias disponibles`;
 
     }
 
+
+    /*
+     * MOSTRAR BOTÓN LIMPIAR
+     */
 
     clearButton.style.display =
       (
@@ -1512,13 +1925,20 @@
         : "none";
 
 
-    if (!filteredNews.length) {
+    /*
+     * SIN RESULTADOS
+     */
+
+    if (
+      !filteredNews.length
+    ) {
 
       let title =
         "No encontramos noticias";
 
       let message =
         "Prueba con otra palabra o categoría.";
+
 
       if (
         currentCategory === "futbol"
@@ -1528,18 +1948,39 @@
           "⚽ No encontramos fútbol";
 
         message =
-          "No hay noticias futbolísticas disponibles en este momento dentro de las noticias cargadas.";
+          "No hay noticias futbolísticas disponibles en este momento.";
 
       }
 
-      if (currentSearch) {
+
+      if (
+        currentCategory === "politica"
+      ) {
+
+        title =
+          "🏛️ No encontramos política";
+
+        message =
+          "No hay noticias políticas disponibles en este momento.";
+
+      }
+
+
+      if (
+        currentSearch
+      ) {
+
+        title =
+          "No encontramos resultados";
 
         message =
           `No encontramos resultados para "${escapeHTML(currentSearch)}". Prueba con otra palabra.`;
 
       }
 
+
       newsGrid.innerHTML = `
+
         <div class="empty">
 
           <strong>
@@ -1551,12 +1992,17 @@
           </div>
 
         </div>
+
       `;
 
       return;
 
     }
 
+
+    /* =====================================================
+       CREAR TARJETAS
+    ===================================================== */
 
     newsGrid.innerHTML =
       filteredNews.map(item => {
@@ -1566,15 +2012,18 @@
             getTitle(item)
           );
 
+
         const description =
           escapeHTML(
             getDescription(item)
           );
 
+
         const source =
           escapeHTML(
             getSource(item)
           );
+
 
         const date =
           escapeHTML(
@@ -1583,24 +2032,54 @@
             )
           );
 
+
         const link =
           getLink(item);
+
 
         const image =
           getImage(item) ||
           fallbackImage();
 
+
         let category =
           getSmartCategory(item);
+
+
+        /*
+         * Si estamos viendo fútbol,
+         * mostramos la etiqueta fútbol.
+         */
 
         if (
           currentCategory === "futbol" &&
           isFutbolNews(item)
         ) {
-          category = "futbol";
+
+          category =
+            "futbol";
+
         }
 
+
+        /*
+         * Si estamos viendo política,
+         * mostramos la etiqueta política.
+         */
+
+        if (
+          currentCategory === "politica" &&
+          isPoliticalNews(item)
+        ) {
+
+          category =
+            "politica";
+
+        }
+
+
         return `
+
           <article class="news-card">
 
             <a
@@ -1623,9 +2102,11 @@
                   ${categoryLabel(category)}
                 </div>
 
+
                 <h2 class="news-title">
                   ${title}
                 </h2>
+
 
                 ${
                   description
@@ -1637,11 +2118,13 @@
                     : ""
                 }
 
+
                 <div class="news-meta">
 
                   <span>
                     ${source}
                   </span>
+
 
                   ${
                     date
@@ -1660,6 +2143,7 @@
             </a>
 
           </article>
+
         `;
 
       }).join("");
@@ -1668,7 +2152,7 @@
 
 
   /* =========================================================
-     BOTONES DE CATEGORÍA
+     CATEGORÍA ACTIVA
   ========================================================= */
 
   function setActiveCategory() {
@@ -1695,7 +2179,10 @@
     const params =
       new URLSearchParams();
 
-    if (currentSearch) {
+
+    if (
+      currentSearch
+    ) {
 
       params.set(
         "buscar",
@@ -1703,6 +2190,7 @@
       );
 
     }
+
 
     if (
       currentCategory &&
@@ -1716,13 +2204,16 @@
 
     }
 
+
     const query =
       params.toString();
+
 
     const newURL =
       query
         ? `${location.pathname}?${query}`
         : location.pathname;
+
 
     history.replaceState(
       {},
@@ -1734,17 +2225,21 @@
 
 
   /* =========================================================
-     LIMPIAR
+     LIMPIAR FILTROS
   ========================================================= */
 
   function clearFilters() {
 
-    currentSearch = "";
+    currentSearch =
+      "";
 
     currentCategory =
       "todas";
 
-    searchInput.value = "";
+
+    searchInput.value =
+      "";
+
 
     setActiveCategory();
 
@@ -1766,14 +2261,18 @@
         window.location.search
       );
 
+
     const buscar =
       params.get("buscar");
+
 
     const categoria =
       params.get("categoria");
 
 
-    if (buscar) {
+    if (
+      buscar
+    ) {
 
       currentSearch =
         buscar.trim();
@@ -1788,6 +2287,7 @@
 
       "todas",
       "mexico",
+      "politica",
       "mundo",
       "economia",
       "deportes",
@@ -1817,7 +2317,7 @@
 
 
   /* =========================================================
-     CARGAR NOTICIAS
+     CARGAR RSS / NOTICIAS.JSON
   ========================================================= */
 
   async function loadNews() {
@@ -1833,7 +2333,9 @@
         );
 
 
-      if (!response.ok) {
+      if (
+        !response.ok
+      ) {
 
         throw new Error(
           "No se pudo cargar noticias.json"
@@ -1850,13 +2352,13 @@
 
 
       /*
-       * Aceptamos tanto:
+       * Aceptamos:
        *
        * [
        *   {...}
        * ]
        *
-       * como:
+       * o:
        *
        * {
        *   noticias: [...]
@@ -1867,9 +2369,12 @@
         Array.isArray(data)
       ) {
 
-        news = data;
+        news =
+          data;
 
-      } else if (
+      }
+
+      else if (
         Array.isArray(
           data.noticias
         )
@@ -1895,8 +2400,9 @@
           const link =
             getLink(item);
 
+
           /*
-           * Si no tiene enlace,
+           * Sin enlace:
            * conservamos la noticia.
            */
 
@@ -1928,8 +2434,6 @@
 
       /*
        * ORDENAR POR FECHA
-       *
-       * Noticias más recientes primero.
        */
 
       allNews.sort(
@@ -1940,10 +2444,12 @@
               getDate(a)
             ).getTime() || 0;
 
+
           const dateB =
             new Date(
               getDate(b)
             ).getTime() || 0;
+
 
           return dateB - dateA;
 
@@ -1951,9 +2457,16 @@
       );
 
 
+      /*
+       * MOSTRAR
+       */
+
       renderNews();
 
-    } catch (error) {
+    }
+
+
+    catch (error) {
 
       console.error(
         "Error cargando noticias:",
@@ -1987,9 +2500,8 @@
 
 
   /* =========================================================
-     EVENTOS
+     EVENTOS DE CATEGORÍA
   ========================================================= */
-
 
   categoryButtons.forEach(
     button => {
@@ -2000,6 +2512,7 @@
 
           currentCategory =
             button.dataset.category;
+
 
           setActiveCategory();
 
@@ -2014,12 +2527,17 @@
   );
 
 
+  /* =========================================================
+     BUSCADOR EN TIEMPO REAL
+  ========================================================= */
+
   searchInput.addEventListener(
     "input",
     () => {
 
       currentSearch =
         searchInput.value.trim();
+
 
       updateURL();
 
@@ -2028,6 +2546,10 @@
     }
   );
 
+
+  /* =========================================================
+     BOTÓN BUSCAR
+  ========================================================= */
 
   searchButton.addEventListener(
     "click",
@@ -2036,6 +2558,7 @@
       currentSearch =
         searchInput.value.trim();
 
+
       updateURL();
 
       renderNews();
@@ -2043,6 +2566,10 @@
     }
   );
 
+
+  /* =========================================================
+     ENTER
+  ========================================================= */
 
   searchInput.addEventListener(
     "keydown",
@@ -2054,8 +2581,10 @@
 
         event.preventDefault();
 
+
         currentSearch =
           searchInput.value.trim();
+
 
         updateURL();
 
@@ -2066,6 +2595,10 @@
     }
   );
 
+
+  /* =========================================================
+     LIMPIAR
+  ========================================================= */
 
   clearButton.addEventListener(
     "click",
@@ -2082,11 +2615,9 @@
   loadNews();
 
 
-  /*
-   * ACTUALIZAR CADA 10 MINUTOS
-   *
-   * El RSS puede generar nuevas noticias.
-   */
+  /* =========================================================
+     ACTUALIZAR CADA 10 MINUTOS
+  ========================================================= */
 
   setInterval(
     loadNews,
