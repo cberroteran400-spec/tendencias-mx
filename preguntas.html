@@ -48,42 +48,30 @@
       font-family: inherit;
     }
 
-    /* =========================
-       HEADER
-    ========================== */
-
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-
       background: rgba(5, 12, 24, 0.96);
-
       border-bottom: 1px solid rgba(255,255,255,0.08);
-
       backdrop-filter: blur(12px);
     }
 
     .header-container {
       max-width: 1200px;
       min-height: 70px;
-
       margin: auto;
       padding: 0 20px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 20px;
     }
 
     .logo {
       font-size: 25px;
       font-weight: 900;
-
       letter-spacing: -1px;
-
       white-space: nowrap;
     }
 
@@ -93,57 +81,38 @@
 
     nav {
       display: flex;
-
       align-items: center;
       justify-content: center;
-
       gap: 8px;
-
       flex-wrap: wrap;
     }
 
     nav a {
       padding: 10px 13px;
-
       border-radius: 9px;
-
       color: #dce5ef;
-
       font-size: 14px;
-
       font-weight: 700;
-
       transition: 0.2s;
     }
 
     nav a:hover,
     nav a.active {
       background: #35e875;
-
       color: #06111d;
     }
 
-    /* =========================
-       HERO
-    ========================== */
-
     .hero {
       max-width: 1200px;
-
       margin: auto;
-
       padding: 60px 20px 35px;
     }
 
     .hero-box {
       position: relative;
-
       overflow: hidden;
-
       padding: 50px 30px;
-
       border-radius: 24px;
-
       border: 1px solid rgba(255,255,255,0.08);
 
       background:
@@ -161,23 +130,16 @@
 
     .hero-label {
       color: #35e875;
-
       font-size: 14px;
-
       font-weight: 900;
-
       letter-spacing: 2px;
-
       margin-bottom: 15px;
     }
 
     .hero h1 {
       max-width: 850px;
-
       font-size: clamp(40px, 8vw, 72px);
-
       line-height: 0.98;
-
       margin-bottom: 20px;
     }
 
@@ -187,59 +149,35 @@
 
     .hero p {
       max-width: 760px;
-
       color: #b9c6d5;
-
       font-size: 17px;
-
       line-height: 1.7;
     }
 
-    /* =========================
-       CONTENT
-    ========================== */
-
     .content {
       max-width: 950px;
-
       margin: auto;
-
       padding: 10px 20px 70px;
     }
 
-    /* SEARCH */
-
     .search-box {
       display: flex;
-
       gap: 10px;
-
       padding: 9px;
-
       margin-bottom: 35px;
-
       background: #0c1a2b;
-
       border: 1px solid rgba(255,255,255,0.08);
-
       border-radius: 12px;
     }
 
     .search-box input {
       flex: 1;
-
       min-width: 0;
-
       padding: 13px;
-
       background: transparent;
-
       border: none;
-
       outline: none;
-
       color: #ffffff;
-
       font-size: 16px;
     }
 
@@ -249,82 +187,50 @@
 
     .search-button {
       padding: 0 20px;
-
       border: none;
-
       border-radius: 8px;
-
       background: #35e875;
-
       color: #06111d;
-
       font-weight: 900;
-
       cursor: pointer;
     }
 
-    /* =========================
-       CATEGORIES
-    ========================== */
-
     .categories {
       display: flex;
-
       gap: 10px;
-
       flex-wrap: wrap;
-
       margin-bottom: 25px;
     }
 
     .category {
       padding: 10px 15px;
-
       border: 1px solid rgba(255,255,255,0.10);
-
       border-radius: 30px;
-
       background: #0c1a2b;
-
       color: #dce5ef;
-
       cursor: pointer;
-
       font-weight: 700;
-
       transition: 0.2s;
     }
 
     .category:hover,
     .category.active {
       background: #35e875;
-
       color: #06111d;
-
       border-color: #35e875;
     }
 
-    /* =========================
-       FAQ
-    ========================== */
-
     .faq-list {
       display: flex;
-
       flex-direction: column;
-
       gap: 12px;
     }
 
     .faq {
       background: #0c1a2b;
-
       border: 1px solid rgba(255,255,255,0.08);
-
       border-radius: 16px;
-
       overflow: hidden;
-
       transition: 0.2s;
     }
 
@@ -334,73 +240,45 @@
 
     .faq-question {
       width: 100%;
-
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: 15px;
-
       padding: 20px;
-
       border: none;
-
       background: transparent;
-
       color: #ffffff;
-
       text-align: left;
-
       font-size: 16px;
-
       font-weight: 800;
-
       cursor: pointer;
     }
 
     .faq-icon {
       width: 30px;
-
       height: 30px;
-
       flex-shrink: 0;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       border-radius: 50%;
-
       background: rgba(53,232,117,0.10);
-
       color: #35e875;
-
       font-size: 20px;
-
       transition: 0.2s;
     }
 
     .faq.open .faq-icon {
       transform: rotate(45deg);
-
       background: #35e875;
-
       color: #06111d;
     }
 
     .faq-answer {
       display: none;
-
       padding: 0 20px 22px;
-
       color: #9eacbc;
-
       font-size: 15px;
-
       line-height: 1.7;
     }
 
@@ -408,35 +286,19 @@
       display: block;
     }
 
-    /* =========================
-       EMPTY
-    ========================== */
-
     .no-results {
       display: none;
-
       padding: 45px 20px;
-
       text-align: center;
-
       color: #9eacbc;
-
       background: #0c1a2b;
-
       border: 1px solid rgba(255,255,255,0.08);
-
       border-radius: 15px;
     }
 
-    /* =========================
-       HELP BOX
-    ========================== */
-
     .help-box {
       margin-top: 45px;
-
       padding: 30px;
-
       border-radius: 20px;
 
       background:
@@ -447,7 +309,6 @@
         );
 
       border: 1px solid rgba(53,232,117,0.20);
-
       text-align: center;
     }
 
@@ -457,41 +318,25 @@
 
     .help-box p {
       max-width: 650px;
-
       margin: auto;
-
       color: #b9c6d5;
-
       line-height: 1.7;
     }
 
     .help-button {
       display: inline-block;
-
       margin-top: 20px;
-
       padding: 13px 20px;
-
       border-radius: 10px;
-
       background: #35e875;
-
       color: #06111d;
-
       font-weight: 900;
     }
 
-    /* =========================
-       FOOTER
-    ========================== */
-
     footer {
       padding: 35px 20px;
-
       text-align: center;
-
       background: #050c17;
-
       border-top: 1px solid rgba(255,255,255,0.08);
     }
 
@@ -501,23 +346,15 @@
 
     footer p {
       color: #7f8c9c;
-
       margin-top: 8px;
-
       font-size: 14px;
     }
-
-    /* =========================
-       RESPONSIVE
-    ========================== */
 
     @media (max-width: 900px) {
 
       .header-container {
         flex-direction: column;
-
         padding-top: 15px;
-
         padding-bottom: 15px;
       }
 
@@ -543,7 +380,6 @@
 
       nav a {
         padding: 8px 9px;
-
         font-size: 12px;
       }
 
@@ -557,7 +393,6 @@
 
       .faq-question {
         padding: 17px;
-
         font-size: 15px;
       }
 
@@ -570,25 +405,15 @@
   </style>
 </head>
 
-
 <body>
-
-
-  <!-- =========================
-       HEADER
-  ========================== -->
 
   <header>
 
     <div class="header-container">
 
-      <a
-        href="index.html"
-        class="logo"
-      >
+      <a href="index.html" class="logo">
         Tendencias<span>MX</span>
       </a>
-
 
       <nav>
 
@@ -616,7 +441,7 @@
           Tecnología
         </a>
 
-        <a href="mexico.html">
+        <a href="México.html">
           México
         </a>
 
@@ -628,14 +453,11 @@
           Trámites
         </a>
 
-        <a
-          href="preguntas.html"
-          class="active"
-        >
+        <a href="preguntas.html" class="active">
           Preguntas
         </a>
 
-        <a href="contacto.html">
+        <a href="Contacto.html">
           Contacto
         </a>
 
@@ -645,10 +467,6 @@
 
   </header>
 
-
-  <!-- =========================
-       HERO
-  ========================== -->
 
   <section class="hero">
 
@@ -674,14 +492,7 @@
   </section>
 
 
-  <!-- =========================
-       CONTENT
-  ========================== -->
-
   <main class="content">
-
-
-    <!-- SEARCH -->
 
     <div class="search-box">
 
@@ -694,6 +505,7 @@
 
       <button
         class="search-button"
+        type="button"
         onclick="buscarPreguntas()"
       >
         Buscar
@@ -702,12 +514,11 @@
     </div>
 
 
-    <!-- CATEGORIES -->
-
     <div class="categories">
 
       <button
         class="category active"
+        type="button"
         data-category="todos"
       >
         Todas
@@ -715,6 +526,7 @@
 
       <button
         class="category"
+        type="button"
         data-category="sitio"
       >
         🌐 Sitio
@@ -722,6 +534,7 @@
 
       <button
         class="category"
+        type="button"
         data-category="noticias"
       >
         📰 Noticias
@@ -729,6 +542,7 @@
 
       <button
         class="category"
+        type="button"
         data-category="contenido"
       >
         📚 Contenido
@@ -736,9 +550,8 @@
 
       <button
         class="category"
-        <a href="Contacto.html" class="help-button">
-  Ir a Contacto
-      </a>
+        type="button"
+        data-category="contacto"
       >
         📩 Contacto
       </button>
@@ -746,13 +559,7 @@
     </div>
 
 
-    <!-- FAQ -->
-
-    <div
-      class="faq-list"
-      id="faqList"
-    >
-
+    <div class="faq-list" id="faqList">
 
       <article
         class="faq"
@@ -1077,16 +884,10 @@
 
       </article>
 
-
     </div>
 
 
-    <!-- NO RESULTS -->
-
-    <div
-      class="no-results"
-      id="noResults"
-    >
+    <div class="no-results" id="noResults">
 
       <h3>
         No encontramos esa pregunta
@@ -1099,8 +900,6 @@
     </div>
 
 
-    <!-- HELP -->
-
     <section class="help-box">
 
       <h2>
@@ -1112,8 +911,10 @@
         puedes ponerte en contacto con Tendencias MX.
       </p>
 
+      <!-- CORREGIDO: C mayúscula -->
+
       <a
-        href="contacto.html"
+        href="Contacto.html"
         class="help-button"
       >
         Ir a Contacto
@@ -1121,13 +922,8 @@
 
     </section>
 
-
   </main>
 
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
 
   <footer>
 
@@ -1147,10 +943,6 @@
   </footer>
 
 
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
-
   <script>
 
     const faqItems =
@@ -1165,75 +957,51 @@
     const noResults =
       document.getElementById("noResults");
 
+    let categoriaActual = "todos";
 
-    let categoriaActual =
-      "todos";
-
-
-    /* =========================
-       ABRIR / CERRAR PREGUNTAS
-    ========================== */
 
     faqItems.forEach(faq => {
 
       const question =
         faq.querySelector(".faq-question");
 
-      question.addEventListener(
-        "click",
-        function() {
+      question.addEventListener("click", function() {
 
-          const estabaAbierta =
-            faq.classList.contains("open");
+        const estabaAbierta =
+          faq.classList.contains("open");
 
+        faqItems.forEach(item => {
+          item.classList.remove("open");
+        });
 
-          faqItems.forEach(item => {
-            item.classList.remove("open");
-          });
-
-
-          if (!estabaAbierta) {
-
-            faq.classList.add("open");
-
-          }
-
+        if (!estabaAbierta) {
+          faq.classList.add("open");
         }
-      );
+
+      });
 
     });
 
-
-    /* =========================
-       CATEGORÍAS
-    ========================== */
 
     categoryButtons.forEach(button => {
 
-      button.addEventListener(
-        "click",
-        function() {
+      button.addEventListener("click", function() {
 
-          categoryButtons.forEach(btn => {
-            btn.classList.remove("active");
-          });
+        categoryButtons.forEach(btn => {
+          btn.classList.remove("active");
+        });
 
-          this.classList.add("active");
+        this.classList.add("active");
 
-          categoriaActual =
-            this.dataset.category;
+        categoriaActual =
+          this.dataset.category;
 
-          filtrarPreguntas();
+        filtrarPreguntas();
 
-        }
-      );
+      });
 
     });
 
-
-    /* =========================
-       BUSCADOR
-    ========================== */
 
     searchInput.addEventListener(
       "input",
@@ -1262,15 +1030,13 @@
           .toLowerCase()
           .trim();
 
-
       let visibles = 0;
 
 
       faqItems.forEach(faq => {
 
         const categoria =
-          faq.dataset.category
-            .toLowerCase();
+          faq.dataset.category.toLowerCase();
 
         const contenido =
           (
@@ -1279,11 +1045,9 @@
             faq.textContent
           ).toLowerCase();
 
-
         const coincideCategoria =
           categoriaActual === "todos" ||
           categoria === categoriaActual;
-
 
         const coincideTexto =
           texto === "" ||
@@ -1296,13 +1060,11 @@
         ) {
 
           faq.style.display = "";
-
           visibles++;
 
         } else {
 
           faq.style.display = "none";
-
           faq.classList.remove("open");
 
         }
@@ -1318,7 +1080,6 @@
     }
 
   </script>
-
 
 </body>
 </html>
