@@ -1,12 +1,45 @@
 {
-  "actualizado": "2026-10-01T22:23:54.266577+00:00",
-  "total": 470,
+  "actualizado": "2026-10-01T22:44:32.184469+00:00",
+  "total": 480,
   "imagenes": {
-    "con_imagen": 125,
-    "sin_imagen": 345,
-    "imagenes_unicas": 125
+    "con_imagen": 128,
+    "sin_imagen": 352,
+    "imagenes_unicas": 128
   },
   "noticias": [
+    {
+      "id": "146d83a9a77ee484255ef129a82e2087fa385b7b3640a7e9f4b9a223549ca798",
+      "titulo": "Canelo Álvarez confirma que busca su retiro con pelea en el Estadio Azteca - Tribuna de México",
+      "descripcion": "Canelo Álvarez confirma que busca su retiro con pelea en el Estadio Azteca Tribuna de México",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeWVUU2xjUUVBck45M0JRczI5OHFYbjhEM002OW5ueXpPM05FdXlpTFN3Nk5lU2VDSU1UMEI0cnNzZmZTdGtmZkRMS0UybndHV0VJdlpIOS1xSHlYd25zMDAxQ25sUUNIRlpRcjJUREtOWGIzd1ZiX3RZZXF1LUxtMmp3LU8zR096ckxLLTlCVnJwNlB5U2ZrQVlsSFlXbWI1NGZ2STB3?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T22:28:32+00:00",
+      "fuente": "Tribuna de México",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo"
+    },
+    {
+      "id": "a0fb1feea283a4cd0337011d3b1ec5711f6fe844b79e5150c4812ee36d10bfd3",
+      "titulo": "Canelo Álvarez revela posibilidades de pelear en el Estadio Azteca: “Es muy real” - bolavip.com",
+      "descripcion": "Canelo Álvarez revela posibilidades de pelear en el Estadio Azteca: “Es muy real” bolavip.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcGtwYml4SWlfT1RlWVdrVXJvMjNaSDdXeUxWME9tRzU4N25tSXNfQ1Z2M0pnTTlNXzV1WlJGOTYxM3ZIOHgwcEh2NWFoeWpQNlNqMXI1djJ5YkNEWmlNYWMzV1pKYW5JSzlYNy1GUExyZ1JmN0NYUGgxaExoSVRRSExrdUtid2tFOFVuUWM5RUt6QnM4MDFxYzVxOFZreUNUTGVDaDB1UldDa1HSAbABQVVfeXFMTUpLMDVmZE9TblVFb2ZjOUI2bWkzUjVKTjFweHVVbWl5aXVNcDhOXzZhaVdwdHpBc0JJcVRrZGY4Wmt5UHVxb0Z5VUpmcVhwbWNFdkNjOFJCVzVyV2JfOTYwNWl5S29lWEhMUUFYcUtiVjNuam1OLUJwaEpDMWVXUTdKVmo3bG5QVnR6eWxNNUhtcXJtNkhFeURVVkJOZDRfYjNhUkNzYWtuN1ctckk5ckc?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T22:26:32+00:00",
+      "fuente": "bolavip.com",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo"
+    },
+    {
+      "id": "242bc6027c467a7618d4ad2766f0c1dca925b734fc528e4301955b657ac1f099",
+      "titulo": "Diputados aplican cambios contra el huachicol fiscal y aprueban en Comisión la reforma a Ley Aduanera",
+      "descripcion": "El dictamen fue enviado a la Mesa Directiva de la Cámara de Diputados para que pueda ser discutida y votada en el pleno.",
+      "url": "https://expansion.mx/economia/2026/10/01/diputados-reforma-ley-aduanera-contra-huachicol-fiscal",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/2b0f0bb/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1f%2F92%2F5c4ef59843be88595cbedd26570c%2F10-aduanas-1.jpeg",
+      "fecha": "2026-10-01T22:23:13+00:00",
+      "fuente": "Expansión",
+      "categoria": "Dinero",
+      "subcategoria": ""
+    },
     {
       "id": "47af3448840edb45b9049ef4745f76610fd26bee7936f834172087a4b6eebf43",
       "titulo": "Joe Montana - MLB.com",
@@ -349,6 +382,17 @@
       "subcategoria": "beisbol"
     },
     {
+      "id": "24fca58e07318955356f21bcfbf1bafabe8b3046f57f1755e9c4890b9ee569e4",
+      "titulo": "Checo Pérez y el eterno recuerdo del GP de Bahréin; así logró su primer podio en la F1 - El Heraldo de México",
+      "descripcion": "Checo Pérez y el eterno recuerdo del GP de Bahréin; así logró su primer podio en la F1 El Heraldo de México",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQaUhWdHRkRWNvMVhQN2t5WDZkTENkZjBsZXotaUJKNVRnd2dDRTlwS1V1aTY1c0hPcUIzRTNJX3Q2WGZHeDNBZl81ek0zRHNIaC1mb0djSUQxXzBNVFZFa3NjNUJLeWliM3Y5U05zRS0yWTFDZkdjZHBrTkJEcTFUOVg4SXJ5cEI5V21TcVpTbEF1RUF1NHhKXzFVekNrZ2pXNGdCUHdwZ3JLdUJDNzM3Wnc0bG82WWtudDl5WFRiSm9fQXV3SUIyQVdpQWNVVHpJRi1MQlJsQ00yNkJaVFE?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T19:40:00+00:00",
+      "fuente": "El Heraldo de México",
+      "categoria": "Deportes",
+      "subcategoria": "formula1"
+    },
+    {
       "id": "1e25c6bbdd5a239738ba71f586071527b8a0617dc0fb534feea77cb039824e3e",
       "titulo": "NBA: 'Soy fan de Kobe': El brutal dardo de Bam Adebayo a sus críticos tras meter sus históricos 83 puntos - Al Bat",
       "descripcion": "NBA: 'Soy fan de Kobe': El brutal dardo de Bam Adebayo a sus críticos tras meter sus históricos 83 puntos Al Bat",
@@ -602,6 +646,17 @@
       "subcategoria": "formula1"
     },
     {
+      "id": "19fd836634380f1887a5804d654b286dd614ac65d4d6157abd0ec41b3d519cd3",
+      "titulo": "Mbilli tunde al ‘Canelo’: ‘va en declive’ - Excélsior",
+      "descripcion": "Mbilli tunde al ‘Canelo’: ‘va en declive’ Excélsior",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5CUW5Uc05SYnZOaE1RQ0pUbEd0QzkzempSaFVsX2IxRV9hWUc2aGVzX2FpSEd5RDlKNHEweURVdEI2SWVCVmxob1B0cmlJb0N5XzRKQVo4V2ZnV21lNmpjMGNLaDJScDNuYWI5MjQ2bVB1WGlCV1pN0gF8QVVfeXFMUE1TUko1dEZRd2EyODhiZE1uamN3TXBweGkzN3RNVG9aS1NrTG1jRjlLVHB0N1ZQb3NzcDRmRG5wUnh1ZGpscXJQa3plR0MybUNvY1BqVFFKb0tDZWJPQ093aTBvVS1sbFJCOXVyM1lEWTM2WFpKQXl2SHNDeA?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T17:55:05+00:00",
+      "fuente": "Excélsior",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo"
+    },
+    {
       "id": "5c8bf816d6dcbe5071eb96a79a79c1e9ef3fa1ea0077b2a13aa94cd0b56b1c6a",
       "titulo": "Audi confirma sus planes para un nuevo campus de F1 en Hinwil - Motorsport.com España",
       "descripcion": "Audi confirma sus planes para un nuevo campus de F1 en Hinwil Motorsport.com España",
@@ -611,6 +666,17 @@
       "fuente": "Motorsport.com España",
       "categoria": "Deportes",
       "subcategoria": "formula1"
+    },
+    {
+      "id": "8a2d5fbd0228d14bb6bab756cbb79ef5645617210b21353c382009809c517c5b",
+      "titulo": "¿Qué es el caso Negreira y su historia con el FC Barcelona? - Sports Illustrated",
+      "descripcion": "¿Qué es el caso Negreira y su historia con el FC Barcelona? Sports Illustrated",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQN0cxc2I5VldyNVN4c0w5dmdnWUZ3YXFMZjRDVUVGcmZOSlJMaGd3QklpN2dDczFEaEM3QlVERFJ0NGx5anljR0NqS3JQV2N3aFI5VzZQalBZRjBydG5Sb3lnVUZYQlBzZ2NPOTFJb2hiZU1SMEhnejhybUN1OVNlTzgxMFJka09QMUVMVmtZUU81Rjg?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T17:53:21+00:00",
+      "fuente": "Sports Illustrated",
+      "categoria": "Deportes",
+      "subcategoria": "futbol"
     },
     {
       "id": "36e3b89fc13004e2fdc576d0b7f436196675bb824687def77a7eed06853e2986",
@@ -644,6 +710,17 @@
       "fuente": "Real Federación Española de Golf",
       "categoria": "Deportes",
       "subcategoria": "otros"
+    },
+    {
+      "id": "7c8207a0d7dceea23728ef93ad510cfd406eb9695cfd1a0fbd87ce5d887bec79",
+      "titulo": "Canelo quiere despedirse en el Estadio Azteca: ¿romperá el récord de Julio César Chávez? - MARCA",
+      "descripcion": "Canelo quiere despedirse en el Estadio Azteca: ¿romperá el récord de Julio César Chávez? MARCA",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPODVjNENvcmN5ZlJOSnV2Z2UwOWVCVF9xYU5veE1FbnM0dWRvVXNvSjJWaDRfNW82M3dFc3dSeEpMazRtSHhWODdtOTNUWHNhbDdrdVY1eF9LTHlKVkw4c1g3VmlYcVFpSFV1V0JIcWRxN2x6bi0zZTZPQmVvRGhZR0xtOVR6eXFrNzZkMWRfcGQ3TEpPSk5SZl93SVUtRkVwTFEtREl3ZjJBaVRCMG1BcEl5eDlxRFp4MThrRXhWX1h1UGJV0gHEAUFVX3lxTE8tdG1pTkpCeEs2X0NRcmxqYng5T3lzM3BFZXdBeU5JRDA2VzI2Y3BKQk10b2xvVzl6TEhzZW9pV1VqU0lnTU44bTJfQndPRXhzS2YxOG1PVnpqSkZ0a3Bjc0gxbWVZXzVqc1JMdjdRN3VranNDSkhoTk05dEEwYkpyeWxTMmEtRkRCQ3BXRHlNTEdBaTVHLXVnWkFlRFJWZEJGZEFhZ2ZvTUM0MVZ2MjZfYlNURDZrdE01UzhKQ0NleWpjOFg?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T17:43:26+00:00",
+      "fuente": "MARCA",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo"
     },
     {
       "id": "097aa75d0d8726076f084885598004c0f365d56ad1467464b77079fb8777f488",
@@ -1603,6 +1680,17 @@
       "subcategoria": "boxeo"
     },
     {
+      "id": "799238ba6968d8dcc8fe23fc7f35d34a8a8fe2fd88906db49116804c7521371a",
+      "titulo": "Yankees no dan tregua: arrasan con Medias Rojas y sellan boleto a la SDLA - MLB.com",
+      "descripcion": "Yankees no dan tregua: arrasan con Medias Rojas y sellan boleto a la SDLA MLB.com",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNUxJVFp3Sm5tQV9FbkpYOWxKcU5rZjRuV0ZnNEc4M1FIamNLSkROQVl1SVZhYWlxeDF1enI5ZXdjcmtwNk5uc1V0NHVvclFJbnU5Y3V4eURnQmNON0kwSmhYRnRMMGpFNE9TMU84ek91d1cwa1RxVzNGZW0xRGFjcVZxUQ?oc=5",
+      "imagen": "",
+      "fecha": "2026-10-01T06:47:45+00:00",
+      "fuente": "MLB.com",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol"
+    },
+    {
       "id": "f533a51d58ea871b224c0fec701fb7c669a7a7761f8f83d1968590974f27a22b",
       "titulo": "Alonso: \"Si estoy en casa viendo la F1, siento que puedo hacerlo mejor que ellos\" - Motorsport.com España",
       "descripcion": "Alonso: \"Si estoy en casa viendo la F1, siento que puedo hacerlo mejor que ellos\" Motorsport.com España",
@@ -2096,6 +2184,17 @@
       "fuente": "El Sol de México",
       "categoria": "Deportes",
       "subcategoria": "boxeo"
+    },
+    {
+      "id": "3bf5b473138c2d9cfe38589787b85ff7083fd78bda3e9a8ee5f13a76cf02c240",
+      "titulo": "Termina la huelga en el Monte de Piedad, ¿cuándo abre y qué pasará con los empeños de los clientes?",
+      "descripcion": "La huelga de Nacional Monte de Piedad terminó este 30 de septiembre, después de meses de negociaciones entre la institución y el sindicato.",
+      "url": "https://expansion.mx/economia/2026/09/30/termina-huelga-monte-piedad-cuando-abre-empenos",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/dbea817/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fee%2Fa5%2Fda35f8294a90b504b4b4e95752d6%2F2-monte-piedad-huelga-1063552-continua-huelga-nacional-monte-de-piedad-web.jpeg",
+      "fecha": "2026-10-01T01:25:45+00:00",
+      "fuente": "Expansión",
+      "categoria": "Noticias",
+      "subcategoria": ""
     },
     {
       "id": "476610edfe11a65138a8baf608aca0c9e7190b45b170d7468b9c1e5e26775730",
@@ -3273,6 +3372,17 @@
       "fuente": "Infobae",
       "categoria": "Deportes",
       "subcategoria": "formula1"
+    },
+    {
+      "id": "fdbe3d12f368692f635aa514301c323d0d4c235fa780c3ddae653b0ae677ec5d",
+      "titulo": "¿Pagarás impuestos al SAT por pagos digitales? Esto es lo que debes saber de la iniciativa de Ley",
+      "descripcion": "La propuesta de Ley de Economía Digital no plantea el cobro de impuestos por pagar con medios digitales, pero un efecto colateral de usar estos medios es dejar trazabilidad de pagos en el sistema financiero.",
+      "url": "https://expansion.mx/finanzas-personales/2026/09/29/pagaras-impuestos-extra-tarjeta-debito",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/09e2e08/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F44%2F8c%2F78f76fcf4048b42fd63e094a1000%2F7-pago-electronico-264251-cajeros-cobros-impreso-1.jpeg",
+      "fecha": "2026-09-29T22:21:48+00:00",
+      "fuente": "Expansión",
+      "categoria": "Noticias",
+      "subcategoria": ""
     },
     {
       "id": "deea188271f06755b24b45cece1533dea2594d7bfe0e4856176ca453a623ddfb",
