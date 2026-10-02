@@ -1,11 +1,41 @@
 {
-  "actualizado": "2026-10-02T23:13:34.119131+00:00",
-  "total": 695,
+  "actualizado": "2026-10-02T23:44:13.521150+00:00",
+  "total": 698,
   "imagenes": {
-    "con_imagen": 595,
+    "con_imagen": 598,
     "sin_imagen": 100
   },
   "noticias": [
+    {
+      "titulo": "Jonathan Aranda, egresado de la Academia de los Toros, de vuelta en la postemporada de MLB - Liga Mexicana de Beisbol",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeG9VODdqUzRxakN1WTVKRG5GRUE4UjJtNWJTVm8tNk05Y2x6ZDhOSVkzUVpfcmdFQmhXQXJfNDRzNzhrREZKWTNmcE41NDRWMWlaM1FhOEVGUkpacWlWRzJIYXpmbzZiRGdJTEZFVHFzUDNzY2xnVzRJNFRUWTRpVmJueHAzcnJ2a25sM3NaeTltQU5HVHRBcDdKUEhXZGFGZlhvdkNIVXZ1d1NxUUpldHB2UFZMVG8?oc=5",
+      "imagen": "https://d11rb39sj794dg.cloudfront.net/public/2026-10/Aranda.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQeG9VODdqUzRxakN1WTVKRG5GRUE4UjJtNWJTVm8tNk05Y2x6ZDhOSVkzUVpfcmdFQmhXQXJfNDRzNzhrREZKWTNmcE41NDRWMWlaM1FhOEVGUkpacWlWRzJIYXpmbzZiRGdJTEZFVHFzUDNzY2xnVzRJNFRUWTRpVmJueHAzcnJ2a25sM3NaeTltQU5HVHRBcDdKUEhXZGFGZlhvdkNIVXZ1d1NxUUpldHB2UFZMVG8?oc=5\" target=\"_blank\">Jonathan Aranda, egresado de la Academia de los Toros, de vuelta en la postemporada de MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Liga Mexicana de Beisbol</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-02T23:36:39+00:00"
+    },
+    {
+      "titulo": "El diésel inicia octubre sin IEPS, mientras Hacienda reporta caídas en su recaudación",
+      "url": "https://expansion.mx/economia/2026/10/02/diesel-gasolinas-ieps-hacienda-cae-recaudacion",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/545e1c5/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6a%2F67%2Ff7d242874011a55e6e10ac8ecd2d%2F3-gasolina-diesel-750819-merida-precio-gasolinas-impreso-1.jpeg",
+      "descripcion": "Para la semana del 3 al 9 de octubre, las cuotas IEPS para las gasolinas serán mayores y continuará el estímulo complementario para el diésel, que acumula un mes sin el impuesto",
+      "fuente": "Dainzú Patiño",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-02T23:34:53+00:00"
+    },
+    {
+      "titulo": "¿Canelo Álvarez es mejor que Julio César Chávez? Así reaccionó el tapatío - Excélsior",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMXNoWkpHRDVPZ1R1aWx0ZUlNRnJEbEJVVDNHTVRPVmVfZVNKY0lVMG42R3JHOS1Bay1IMW02RDFaUWJFeXVEeWRmYkJKNzNqWVVnaDlmUkt0YzgxaVB4aFZCaXJXdS1fdjBMVkpqMHYzR3lmWGVobmU5ak0zaXVyRFA5amlOcW9mZzlIb3lkLW9wRnpGXzhGZmw4aFpTX0dGUmFSdNIBqgFBVV95cUxOM2VNaGRtWDd6WVdSZHNCWnRiUWZuQzhCbmkxaTFEeTRyRUNvSkp4LWR1cEdnQ3lZQkhiSnRJOXJWdW1xdWdlYngtemFQalNwd25MNTFmY0N3Qk9fQnBBT0xNUHdON29XTnBwOHE0NjJFYVF6ZkdXYUNrbDhXbE1NZHVDcTItUnBzQVpqVm1ocklnVDNGRzliWXc5c09rRi14Z0FTN2RkZGkydw?oc=5",
+      "imagen": "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/10/02/6ac03b117db65.png",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNMXNoWkpHRDVPZ1R1aWx0ZUlNRnJEbEJVVDNHTVRPVmVfZVNKY0lVMG42R3JHOS1Bay1IMW02RDFaUWJFeXVEeWRmYkJKNzNqWVVnaDlmUkt0YzgxaVB4aFZCaXJXdS1fdjBMVkpqMHYzR3lmWGVobmU5ak0zaXVyRFA5amlOcW9mZzlIb3lkLW9wRnpGXzhGZmw4aFpTX0dGUmFSdNIBqgFBVV95cUxOM2VNaGRtWDd6WVdSZHNCWnRiUWZuQzhCbmkxaTFEeTRyRUNvSkp4LWR1cEdnQ3lZQkhiSnRJOXJWdW1xdWdlYngtemFQalNwd25MNTFmY0N3Qk9fQnBBT0xNUHdON29XTnBwOHE0NjJFYVF6ZkdXYUNrbDhXbE1NZHVDcTItUnBzQVpqVm1ocklnVDNGRzliWXc5c09rRi14Z0FTN2RkZGkydw?oc=5\" target=\"_blank\">¿Canelo Álvarez es mejor que Julio César Chávez? Así reaccionó el tapatío</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Excélsior</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-02T23:27:33+00:00"
+    },
     {
       "titulo": "OXIO tiene seis meses para cerrar la compra de Telefónica y quedarse con los 21 millones de usuarios de Movistar",
       "url": "https://expansion.mx/empresas/2026/10/02/oxio-6-meses-concretar-compra-movistar-usuarios",
