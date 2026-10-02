@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-02T18:19:52.769873+00:00",
-  "total": 653,
+  "actualizado": "2026-10-02T18:49:11.279839+00:00",
+  "total": 655,
   "imagenes": {
-    "con_imagen": 558,
-    "sin_imagen": 95
+    "con_imagen": 561,
+    "sin_imagen": 94
   },
   "noticias": [
+    {
+      "titulo": "Bitso procesa 15% de las remesas de Estados Unidos a México",
+      "url": "https://expansion.mx/economia/2026/10/02/bitso-procesa-15-de-las-remesas-de-estados-unidos-a-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/dad7c7a/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fbe%2Fea%2Ff371b99b41eda59ee39024fc1f2e%2Fistock-1299738083.jpg",
+      "descripcion": "La firma elevó su participación desde el más de 10% que reportaba en 2024 y utiliza activos digitales y stablecoins como infraestructura para mover dinero entre ambos países.",
+      "fuente": "Antonio Hernández",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-02T18:40:44+00:00"
+    },
     {
       "titulo": "Volkswagen y sindicato acuerdan incremento salarial de 13% luego de que trabajadores rechazaron una primera propuesta",
       "url": "https://expansion.mx/empresas/2026/10/02/volkswagen-sindicato-alza-salarial",
@@ -69,7 +79,7 @@
     {
       "titulo": "México y sus sacos de boxeo en la Liga MX - AS México",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNeGI3TnlIakZUNDVqM0FPMU9qMnZISUstcThROXloNjBqc3d1bHlGUGhEcnlPcmtJNVlEOVd2X01MdUVqZzhCWTBzSVhEdmlXTTlTVXBscGNDZHRzcVlkVDZXUlN0Yjh6bHJoTE53Y0s3bk5oRVBMNUJQU3pseHoyS093TFdId3NpLUMtTVNNY3h4M0VzZXJGX01zckRieWxGY2RZeGNjbUpvOFJnOG92eXRNd0Jtc2F2WHBHeDctdlNmV1JTTlRybEowT1p1S3ZhVm02bVZn0gHqAUFVX3lxTE5VRHFUQ0xRSFJYd0VIbVdqQTh4bEh6WVhLMWR6R0hrMnFhMlhwS1FiQktaYkJoZVNTS0EwcHAwSzYzUmE5b0U4cmdaNXR3MU1rbzRMU0NwUS1XMDRyazAzMnhpeER1ZDdyM3lMUzBUNDUzLXVQbzJVaHNBWmVHcFFGelZwYjRsNXlNSXJiY1NnaEUzeEVWMXZJcUEtb3JxYzVmRndzNGdqN1o0VUlTXzZKakVrY0xDajhIN19jSnlmTFRQSTNZZkpzS1R3V2FBTGFpWHZEbmw3SnowdE5Fdks0YmRBcGRPbVkzdw?oc=5",
-      "imagen": "",
+      "imagen": "https://img.asmedia.epimg.net/resizer/v2/RWPA7SFYGVBSDBJEJ6TIEJZVHE.jpg?auth=c15ae630fd39975a81c32b0176d9a932a563d08e181a2b5ca1dc944e4417db45&width=1472&height=828&focal=691%2C262",
       "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxNeGI3TnlIakZUNDVqM0FPMU9qMnZISUstcThROXloNjBqc3d1bHlGUGhEcnlPcmtJNVlEOVd2X01MdUVqZzhCWTBzSVhEdmlXTTlTVXBscGNDZHRzcVlkVDZXUlN0Yjh6bHJoTE53Y0s3bk5oRVBMNUJQU3pseHoyS093TFdId3NpLUMtTVNNY3h4M0VzZXJGX01zckRieWxGY2RZeGNjbUpvOFJnOG92eXRNd0Jtc2F2WHBHeDctdlNmV1JTTlRybEowT1p1S3ZhVm02bVZn0gHqAUFVX3lxTE5VRHFUQ0xRSFJYd0VIbVdqQTh4bEh6WVhLMWR6R0hrMnFhMlhwS1FiQktaYkJoZVNTS0EwcHAwSzYzUmE5b0U4cmdaNXR3MU1rbzRMU0NwUS1XMDRyazAzMnhpeER1ZDdyM3lMUzBUNDUzLXVQbzJVaHNBWmVHcFFGelZwYjRsNXlNSXJiY1NnaEUzeEVWMXZJcUEtb3JxYzVmRndzNGdqN1o0VUlTXzZKakVrY0xDajhIN19jSnlmTFRQSTNZZkpzS1R3V2FBTGFpWHZEbmw3SnowdE5Fdks0YmRBcGRPbVkzdw?oc=5\" target=\"_blank\">México y sus sacos de boxeo en la Liga MX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AS México</font>",
       "fuente": "Futbol",
       "categoria": "Deportes",
@@ -475,6 +485,16 @@
       "categoria": "Deportes",
       "subcategoria": "formula1",
       "fecha": "2026-10-02T09:04:05+00:00"
+    },
+    {
+      "titulo": "Jake Paul insiste en amarrar una pelea ante Saúl “Canelo” Álvarez - UNANIMO Deportes",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSkFuaDBjOFN5SjdPN0RGellKZUs2M0h2VklzUVdLWDQ5ZzVzbGFmNzFPTWRsQUpTTUg2LVU0X2kweVJoTzBna051UnllWnJ5aHJGYUVCZ1RnMi1YU212RlU4Y0syUHJoNnhKSWdSWTd6OUlpTXB0MlgzUDZaa3hDSzAzODdnOUVtcUJaTUxxUUg5VnhFSG5Ib09td2l5MHBaeWV2a3dvSjgwbkE?oc=5",
+      "imagen": "https://unanimodeportes.s3.amazonaws.com/wp-content/uploads/2026/10/Jake-Paul.webp",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSkFuaDBjOFN5SjdPN0RGellKZUs2M0h2VklzUVdLWDQ5ZzVzbGFmNzFPTWRsQUpTTUg2LVU0X2kweVJoTzBna051UnllWnJ5aHJGYUVCZ1RnMi1YU212RlU4Y0syUHJoNnhKSWdSWTd6OUlpTXB0MlgzUDZaa3hDSzAzODdnOUVtcUJaTUxxUUg5VnhFSG5Ib09td2l5MHBaeWV2a3dvSjgwbkE?oc=5\" target=\"_blank\">Jake Paul insiste en amarrar una pelea ante Saúl “Canelo” Álvarez</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">UNANIMO Deportes</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-02T08:00:57+00:00"
     },
     {
       "titulo": "Estados Unidos, la nueva casa del futbol mexicano: ¿a costa de qué? - Excélsior",
