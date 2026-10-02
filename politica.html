@@ -40,7 +40,7 @@ input{
 
 
 /* =========================================================
-   HEADER — MISMO ESTILO DE ENTRETENIMIENTO
+   HEADER
 ========================================================= */
 
 header{
@@ -153,19 +153,9 @@ nav a.active{
     font-size:16px;
 }
 
-.status{
-    margin-top:15px;
-    color:#829188;
-    font-size:13px;
-}
-
-.status strong{
-    color:#65ff9a;
-}
-
 
 /* =========================================================
-   BUSCADOR Y FILTROS
+   HERRAMIENTAS
 ========================================================= */
 
 .tools{
@@ -217,6 +207,23 @@ nav a.active{
 
 
 /* =========================================================
+   STATUS
+========================================================= */
+
+.status{
+    max-width:1250px;
+    margin:0 auto;
+    padding:0 20px 20px;
+    color:#829188;
+    font-size:13px;
+}
+
+.status strong{
+    color:#65ff9a;
+}
+
+
+/* =========================================================
    CONTENIDO
 ========================================================= */
 
@@ -252,6 +259,10 @@ nav a.active{
 
 .featured-section{
     margin-bottom:35px;
+}
+
+.featured-section.hidden{
+    display:none;
 }
 
 .featured-grid{
@@ -406,14 +417,12 @@ nav a.active{
     display:flex;
     align-items:center;
     justify-content:center;
-
     background:
         linear-gradient(
             135deg,
             #102018,
             #07100b
         );
-
     color:#65ff9a;
     font-size:42px;
 }
@@ -592,7 +601,8 @@ footer strong{
     }
 
     .tools,
-    .news-section{
+    .news-section,
+    .status{
         padding-left:15px;
         padding-right:15px;
     }
@@ -632,20 +642,10 @@ footer strong{
 
 }
 
-
-/* =========================================================
-   OCULTAR DESTACADAS
-========================================================= */
-
-.featured-section.hidden{
-    display:none;
-}
-
 </style>
 </head>
 
 <body>
-
 
 <header>
 
@@ -657,45 +657,25 @@ footer strong{
 
         <nav>
 
-            <a href="index.html">
-                Inicio
-            </a>
+            <a href="index.html">Inicio</a>
 
-            <a href="noticias.html">
-                Noticias
-            </a>
+            <a href="noticias.html">Noticias</a>
 
-            <a href="deportes.html">
-                Deportes
-            </a>
+            <a href="deportes.html">Deportes</a>
 
-            <a href="entretenimiento.html">
-                Entretenimiento
-            </a>
+            <a href="entretenimiento.html">Entretenimiento</a>
 
-            <a href="tecnologia.html">
-                Tecnología
-            </a>
+            <a href="tecnologia.html">Tecnología</a>
 
-            <a href="dinero.html">
-                Dinero
-            </a>
+            <a href="dinero.html">Dinero</a>
 
-            <a href="politica.html" class="active">
-                Política
-            </a>
+            <a href="politica.html" class="active">Política</a>
 
-            <a href="tramites.html">
-                Trámites
-            </a>
+            <a href="tramites.html">Trámites</a>
 
-            <a href="contacto.html">
-                Contacto
-            </a>
+            <a href="contacto.html">Contacto</a>
 
-            <a href="preguntas.html">
-                Preguntas
-            </a>
+            <a href="preguntas.html">Preguntas</a>
 
         </nav>
 
@@ -740,45 +720,27 @@ footer strong{
 
     <div class="filters">
 
-        <button
-            class="filter active"
-            data-category="todos"
-        >
+        <button class="filter active" data-category="todos">
             Todo
         </button>
 
-        <button
-            class="filter"
-            data-category="gobierno"
-        >
+        <button class="filter" data-category="gobierno">
             🏛️ Gobierno
         </button>
 
-        <button
-            class="filter"
-            data-category="congreso"
-        >
+        <button class="filter" data-category="congreso">
             🏛️ Congreso
         </button>
 
-        <button
-            class="filter"
-            data-category="justicia"
-        >
+        <button class="filter" data-category="justicia">
             ⚖️ Justicia
         </button>
 
-        <button
-            class="filter"
-            data-category="nacional"
-        >
+        <button class="filter" data-category="nacional">
             🇲🇽 Política nacional
         </button>
 
-        <button
-            class="filter"
-            data-category="internacional"
-        >
+        <button class="filter" data-category="internacional">
             🌎 Internacional
         </button>
 
@@ -787,8 +749,7 @@ footer strong{
 </section>
 
 
-<div class="status"
-     style="max-width:1250px;margin:0 auto;padding:0 20px 20px;">
+<div class="status">
     <span id="status">
         Cargando información política...
     </span>
@@ -797,25 +758,16 @@ footer strong{
 
 <section class="news-section">
 
-    <div
-        class="result-count"
-        id="resultCount"
-    ></div>
+    <div class="result-count" id="resultCount"></div>
 
 
-    <section
-        class="featured-section"
-        id="featuredSection"
-    >
+    <section class="featured-section" id="featuredSection">
 
         <h2 class="section-title">
             Lo más <span>destacado</span>
         </h2>
 
-        <div
-            class="featured-grid"
-            id="featuredGrid"
-        ></div>
+        <div class="featured-grid" id="featuredGrid"></div>
 
     </section>
 
@@ -825,10 +777,7 @@ footer strong{
     </h2>
 
 
-    <section
-        class="latest-grid"
-        id="newsGrid"
-    >
+    <section class="latest-grid" id="newsGrid">
 
         <div class="loading">
             Cargando noticias políticas...
@@ -837,10 +786,7 @@ footer strong{
     </section>
 
 
-    <div
-        class="pagination"
-        id="pagination"
-    ></div>
+    <div class="pagination" id="pagination"></div>
 
 </section>
 
@@ -854,10 +800,6 @@ footer strong{
 
 
 <script>
-
-/* =========================================================
-   CONFIGURACIÓN
-========================================================= */
 
 const JSON_URL =
     "./noticias.json?actualizacion=" + Date.now();
@@ -1415,25 +1357,15 @@ function obtenerTipo(noticia){
     if(
 
         texto.includes("politica exterior") ||
-
         texto.includes("politica internacional") ||
-
         texto.includes("relaciones exteriores") ||
-
         texto.includes("relaciones internacionales") ||
-
         texto.includes("trump") ||
-
         texto.includes("xi jinping") ||
-
         texto.includes("estados unidos") ||
-
         texto.includes("china") ||
-
         texto.includes("iran") ||
-
         texto.includes("ucrania") ||
-
         texto.includes("rusia")
 
     ){
@@ -1441,15 +1373,10 @@ function obtenerTipo(noticia){
         if(
 
             texto.includes("presidente") ||
-
             texto.includes("gobierno") ||
-
             texto.includes("diplomatic") ||
-
             texto.includes("politica") ||
-
             texto.includes("politica exterior") ||
-
             texto.includes("relaciones")
 
         ){
@@ -1613,11 +1540,8 @@ function crearDestacada(noticia,index){
         <div class="featured-card${clase}">
 
             <div class="featured-image">
-
                 ${imagenHTML}
-
             </div>
-
 
             <div class="featured-overlay">
 
@@ -1677,7 +1601,7 @@ function crearDestacada(noticia,index){
 
 
 /* =========================================================
-   TARJETA NORMAL
+   TARJETA
 ========================================================= */
 
 function crearTarjeta(noticia){
@@ -1727,18 +1651,14 @@ function crearTarjeta(noticia){
         <article class="news-card">
 
             <div class="news-image">
-
                 ${imagenHTML}
-
             </div>
-
 
             <div class="news-content">
 
                 <div class="badge-card">
                     ${escaparHTML(nombreTipo(tipo))}
                 </div>
-
 
                 ${
                     fecha
@@ -1752,11 +1672,9 @@ function crearTarjeta(noticia){
                     ""
                 }
 
-
                 <h2>
                     ${escaparHTML(titulo)}
                 </h2>
-
 
                 ${
                     descripcion
@@ -1769,7 +1687,6 @@ function crearTarjeta(noticia){
                     :
                     ""
                 }
-
 
                 ${
                     url
@@ -1997,8 +1914,6 @@ function mostrarNoticias(){
         `<strong>${filtradas.length}</strong> publicaciones de política disponibles`;
 
 
-    /* DESTACADAS */
-
     if(filtradas.length > 0){
 
         const destacadas =
@@ -2035,8 +1950,6 @@ function mostrarNoticias(){
     }
 
 
-    /* PAGINACIÓN */
-
     const totalPaginas =
         Math.max(
             1,
@@ -2070,8 +1983,6 @@ function mostrarNoticias(){
         );
 
 
-    /* SIN RESULTADOS */
-
     if(filtradas.length === 0){
 
         grid.innerHTML = `
@@ -2098,8 +2009,6 @@ function mostrarNoticias(){
 
     }
 
-
-    /* TARJETAS */
 
     grid.innerHTML =
         pagina
@@ -2245,15 +2154,25 @@ function cambiarPagina(pagina){
     mostrarNoticias();
 
 
-    window.scrollTo({
-
-        top:document.querySelector(
+    const seccion =
+        document.querySelector(
             ".news-section"
-        ).offsetTop - 80,
+        );
 
-        behavior:"smooth"
 
-    });
+    if(seccion){
+
+        window.scrollTo({
+
+            top:
+                seccion.offsetTop - 80,
+
+            behavior:
+                "smooth"
+
+        });
+
+    }
 
 }
 
