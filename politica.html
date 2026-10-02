@@ -6,9 +6,9 @@
 
   <title>Política | Gobierno, Congreso y Justicia | TendenciasMX</title>
 
-  <meta name="description" content="Noticias reales de política en México: gobierno, Congreso, Senado, justicia, elecciones y actualidad nacional. Información actualizada de fuentes informativas.">
+  <meta name="description" content="Noticias reales de política en México: gobierno, Congreso, Senado, justicia, elecciones y actualidad nacional. Información actualizada.">
 
-  <meta name="keywords" content="política México, noticias políticas, gobierno de México, Congreso, Senado, diputados, justicia, elecciones, actualidad política">
+  <meta name="keywords" content="política México, noticias políticas, gobierno de México, Congreso, Senado, diputados, justicia, elecciones">
 
   <meta name="theme-color" content="#050807">
 
@@ -206,26 +206,6 @@
         0 20px 70px rgba(0, 0, 0, 0.35);
     }
 
-    .hero::after {
-      content: "";
-
-      position: absolute;
-
-      width: 230px;
-      height: 230px;
-
-      right: -90px;
-      bottom: -120px;
-
-      border-radius: 50%;
-
-      background: rgba(101, 255, 154, 0.07);
-
-      filter: blur(25px);
-
-      pointer-events: none;
-    }
-
     .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -282,7 +262,7 @@
     }
 
     /* =========================
-       SEARCH
+       BUSCADOR
     ========================= */
 
     .search {
@@ -331,7 +311,7 @@
     }
 
     /* =========================
-       CATEGORY FILTERS
+       CATEGORÍAS
     ========================= */
 
     .categories {
@@ -367,19 +347,15 @@
       font-size: 0.83rem;
       font-weight: 800;
 
-      transition:
-        background 0.2s ease,
-        color 0.2s ease,
-        border 0.2s ease,
-        transform 0.2s ease;
+      transition: 0.2s ease;
     }
 
     .category-btn:hover {
-      transform: translateY(-1px);
-
       color: var(--white);
 
       border-color: var(--border-strong);
+
+      transform: translateY(-1px);
     }
 
     .category-btn.active {
@@ -413,7 +389,7 @@
     }
 
     /* =========================
-       SECTIONS
+       TITULOS
     ========================= */
 
     .section-title {
@@ -444,7 +420,7 @@
     }
 
     /* =========================
-       FEATURED
+       DESTACADAS
     ========================= */
 
     .featured {
@@ -497,6 +473,13 @@
       object-fit: cover;
 
       transition: transform 0.5s ease;
+
+      background:
+        linear-gradient(
+          135deg,
+          #0d1710,
+          #050807
+        );
     }
 
     .featured-card:hover .featured-image {
@@ -571,7 +554,7 @@
     }
 
     /* =========================
-       LATEST
+       NOTICIAS
     ========================= */
 
     .latest {
@@ -581,7 +564,8 @@
     .news-grid {
       display: grid;
 
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
 
       gap: 17px;
     }
@@ -622,7 +606,12 @@
 
       overflow: hidden;
 
-      background: #0a0f0c;
+      background:
+        linear-gradient(
+          135deg,
+          #0d1710,
+          #050807
+        );
     }
 
     .news-image {
@@ -701,7 +690,7 @@
     }
 
     /* =========================
-       EMPTY / ERROR
+       SIN RESULTADOS
     ========================= */
 
     .empty {
@@ -715,7 +704,8 @@
 
       border-radius: 17px;
 
-      background: rgba(101, 255, 154, 0.025);
+      background:
+        rgba(101, 255, 154, 0.025);
     }
 
     .empty strong {
@@ -735,7 +725,7 @@
     }
 
     /* =========================
-       PAGINATION
+       PAGINACIÓN
     ========================= */
 
     .pagination {
@@ -881,6 +871,7 @@
     ========================= */
 
     @media (max-width: 900px) {
+
       .header-inner {
         gap: 14px;
       }
@@ -894,11 +885,14 @@
       }
 
       .news-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
       }
+
     }
 
     @media (max-width: 650px) {
+
       .header-inner {
         padding: 12px 14px;
       }
@@ -953,6 +947,7 @@
       .section-title h2 {
         font-size: 1.25rem;
       }
+
     }
   </style>
 </head>
@@ -960,6 +955,7 @@
 <body>
 
 <header>
+
   <div class="header-inner">
 
     <a href="index.html" class="logo">
@@ -967,20 +963,53 @@
     </a>
 
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="noticias.html">Noticias</a>
-      <a href="deportes.html">Deportes</a>
-      <a href="entretenimiento.html">Entretenimiento</a>
-      <a href="tecnologia.html">Tecnología</a>
-      <a href="dinero.html">Dinero</a>
-      <a href="politica.html" class="active">Política</a>
-      <a href="tramites.html">Trámites</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="preguntas.html">Preguntas</a>
+
+      <a href="index.html">
+        Inicio
+      </a>
+
+      <a href="noticias.html">
+        Noticias
+      </a>
+
+      <a href="deportes.html">
+        Deportes
+      </a>
+
+      <a href="entretenimiento.html">
+        Entretenimiento
+      </a>
+
+      <a href="tecnologia.html">
+        Tecnología
+      </a>
+
+      <a href="dinero.html">
+        Dinero
+      </a>
+
+      <a href="politica.html" class="active">
+        Política
+      </a>
+
+      <a href="tramites.html">
+        Trámites
+      </a>
+
+      <a href="contacto.html">
+        Contacto
+      </a>
+
+      <a href="preguntas.html">
+        Preguntas
+      </a>
+
     </nav>
 
   </div>
+
 </header>
+
 
 <main>
 
@@ -1001,6 +1030,7 @@
     </p>
 
     <div class="search">
+
       <span>⌕</span>
 
       <input
@@ -1009,9 +1039,11 @@
         placeholder="Buscar noticias de política..."
         autocomplete="off"
       >
+
     </div>
 
   </section>
+
 
   <div class="categories">
 
@@ -1059,6 +1091,7 @@
 
   </div>
 
+
   <div
     class="status"
     id="status"
@@ -1067,15 +1100,18 @@
     Cargando noticias reales...
   </div>
 
+
   <section
     class="featured"
     id="featuredSection"
   >
 
     <div class="section-title">
+
       <h2>
         Lo más <span>destacado</span>
       </h2>
+
     </div>
 
     <div
@@ -1084,6 +1120,7 @@
     ></div>
 
   </section>
+
 
   <section class="latest">
 
@@ -1112,6 +1149,7 @@
 
   </section>
 
+
   <div class="info-box">
 
     <h3>
@@ -1127,6 +1165,7 @@
   </div>
 
 </main>
+
 
 <footer>
 
@@ -1144,1360 +1183,1686 @@
 
 </footer>
 
+
 <script>
-  const JSON_URL =
-    "./noticias.json?actualizacion=" + Date.now();
 
-  const grid =
-    document.getElementById("grid");
+/* =========================================================
+   CONFIGURACIÓN
+========================================================= */
 
-  const featuredGrid =
-    document.getElementById("featuredGrid");
+const JSON_URL =
+  "./noticias.json?actualizacion=" + Date.now();
 
-  const featuredSection =
-    document.getElementById("featuredSection");
+const grid =
+  document.getElementById("grid");
 
-  const buscador =
-    document.getElementById("buscador");
+const featuredGrid =
+  document.getElementById("featuredGrid");
 
-  const status =
-    document.getElementById("status");
+const featuredSection =
+  document.getElementById("featuredSection");
 
-  const pagination =
-    document.getElementById("pagination");
+const buscador =
+  document.getElementById("buscador");
 
-  const resultCount =
-    document.getElementById("resultCount");
+const status =
+  document.getElementById("status");
 
-  const botones =
-    document.querySelectorAll(".category-btn");
+const pagination =
+  document.getElementById("pagination");
 
-  let todasLasNoticias = [];
+const resultCount =
+  document.getElementById("resultCount");
 
-  let noticiasPolitica = [];
-
-  let categoriaActual = "todos";
-
-  let paginaActual = 1;
-
-  const POR_PAGINA = 12;
+const botones =
+  document.querySelectorAll(".category-btn");
 
 
-  /* =========================
-     UTILIDADES
-  ========================= */
+let todasLasNoticias = [];
 
-  function normalizar(valor) {
+let noticiasPolitica = [];
 
-    return String(valor ?? "")
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .trim();
+let categoriaActual = "todos";
+
+let paginaActual = 1;
+
+const POR_PAGINA = 12;
+
+
+/* =========================================================
+   NORMALIZAR TEXTO
+========================================================= */
+
+function normalizar(valor) {
+
+  return String(valor ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+
+}
+
+
+/* =========================================================
+   OBTENER CAMPO
+========================================================= */
+
+function campo(obj, nombres) {
+
+  for (const nombre of nombres) {
+
+    if (
+      obj &&
+      obj[nombre] !== undefined &&
+      obj[nombre] !== null &&
+      String(obj[nombre]).trim() !== ""
+    ) {
+
+      return obj[nombre];
+
+    }
+
+  }
+
+  return "";
+
+}
+
+
+/* =========================================================
+   CAMPOS DE NOTICIA
+========================================================= */
+
+function obtenerURL(noticia) {
+
+  return campo(noticia, [
+    "url",
+    "link",
+    "enlace",
+    "href"
+  ]);
+
+}
+
+
+function obtenerImagen(noticia) {
+
+  const posibles = [
+
+    noticia?.imagen,
+    noticia?.image,
+    noticia?.img,
+    noticia?.image_url,
+    noticia?.imageUrl,
+    noticia?.thumbnail,
+    noticia?.thumbnail_url,
+    noticia?.media
+
+  ];
+
+  for (const imagen of posibles) {
+
+    if (
+      typeof imagen === "string" &&
+      imagen.trim() !== "" &&
+      /^https?:\/\//i.test(
+        imagen.trim()
+      )
+    ) {
+
+      return imagen.trim();
+
+    }
+
+  }
+
+  return "";
+
+}
+
+
+function obtenerTitulo(noticia) {
+
+  return campo(noticia, [
+    "titulo",
+    "title",
+    "headline",
+    "nombre"
+  ]) || "Noticia de política";
+
+}
+
+
+function obtenerDescripcion(noticia) {
+
+  return campo(noticia, [
+    "descripcion",
+    "description",
+    "summary",
+    "resumen",
+    "extracto"
+  ]) ||
+  "Información y actualidad de México.";
+
+}
+
+
+function obtenerFecha(noticia) {
+
+  return campo(noticia, [
+    "fecha",
+    "date",
+    "published",
+    "publishedAt",
+    "pubDate",
+    "actualizado"
+  ]);
+
+}
+
+
+function fechaNumerica(noticia) {
+
+  const numero =
+    Date.parse(
+      obtenerFecha(noticia)
+    );
+
+  return Number.isNaN(numero)
+    ? 0
+    : numero;
+
+}
+
+
+function textoCompleto(noticia) {
+
+  return normalizar(
+    [
+      campo(noticia, ["categoria"]),
+      campo(noticia, ["subcategoria"]),
+      campo(noticia, ["seccion"]),
+      campo(noticia, ["fuente", "source"]),
+      obtenerTitulo(noticia),
+      obtenerDescripcion(noticia),
+      obtenerURL(noticia)
+    ].join(" ")
+  );
+
+}
+
+
+/* =========================================================
+   ESCAPAR HTML
+========================================================= */
+
+function escaparHTML(valor) {
+
+  return String(valor ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+
+}
+
+
+/* =========================================================
+   IMAGEN DE RESPALDO
+========================================================= */
+
+function imagenRespaldo() {
+
+  const svg = `
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1200"
+      height="630"
+      viewBox="0 0 1200 630"
+    >
+
+      <defs>
+
+        <linearGradient
+          id="fondo"
+          x1="0"
+          y1="0"
+          x2="1"
+          y2="1"
+        >
+
+          <stop
+            offset="0%"
+            stop-color="#101a13"
+          />
+
+          <stop
+            offset="100%"
+            stop-color="#050807"
+          />
+
+        </linearGradient>
+
+      </defs>
+
+
+      <rect
+        width="1200"
+        height="630"
+        fill="url(#fondo)"
+      />
+
+
+      <circle
+        cx="950"
+        cy="120"
+        r="230"
+        fill="#65ff9a"
+        opacity=".06"
+      />
+
+
+      <circle
+        cx="160"
+        cy="540"
+        r="260"
+        fill="#65ff9a"
+        opacity=".035"
+      />
+
+
+      <rect
+        x="75"
+        y="75"
+        width="1050"
+        height="480"
+        rx="35"
+        fill="none"
+        stroke="#65ff9a"
+        stroke-width="2"
+        opacity=".22"
+      />
+
+
+      <text
+        x="600"
+        y="275"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="72"
+        font-weight="900"
+        fill="#ffffff"
+      >
+        POLÍTICA
+      </text>
+
+
+      <text
+        x="600"
+        y="350"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="30"
+        font-weight="700"
+        fill="#65ff9a"
+      >
+        TENDENCIASMX
+      </text>
+
+
+      <line
+        x1="475"
+        y1="390"
+        x2="725"
+        y2="390"
+        stroke="#65ff9a"
+        stroke-width="4"
+        opacity=".7"
+      />
+
+    </svg>
+
+  `;
+
+
+  return (
+    "data:image/svg+xml;charset=UTF-8," +
+    encodeURIComponent(svg)
+  );
+
+}
+
+
+/* =========================================================
+   CREAR IMAGEN SEGURA
+========================================================= */
+
+function crearImagenSegura(
+  noticia,
+  titulo,
+  clase,
+  loading
+) {
+
+  const imagen =
+    obtenerImagen(noticia);
+
+  const respaldo =
+    imagenRespaldo();
+
+  const alt =
+    escaparHTML(
+      titulo ||
+      "Noticias de Política"
+    );
+
+
+  /*
+    EXISTE IMAGEN REAL
+  */
+
+  if (imagen) {
+
+    return `
+
+      <img
+        class="${clase}"
+        src="${escaparHTML(imagen)}"
+        alt="${alt}"
+        loading="${loading}"
+        decoding="async"
+        referrerpolicy="no-referrer"
+
+        onerror="
+          this.onerror=null;
+          this.src='${respaldo}';
+        "
+      >
+
+    `;
 
   }
 
 
-  function campo(obj, nombres) {
+  /*
+    NO EXISTE IMAGEN
+  */
 
-    for (const nombre of nombres) {
+  return `
 
-      if (
-        obj &&
-        obj[nombre] !== undefined &&
-        obj[nombre] !== null &&
-        String(obj[nombre]).trim() !== ""
-      ) {
+    <img
+      class="${clase}"
+      src="${respaldo}"
+      alt="${alt}"
+      loading="${loading}"
+      decoding="async"
+    >
 
-        return obj[nombre];
+  `;
 
-      }
+}
 
-    }
+
+/* =========================================================
+   FECHA BONITA
+========================================================= */
+
+function fechaBonita(noticia) {
+
+  const fecha =
+    obtenerFecha(noticia);
+
+  if (!fecha) {
 
     return "";
 
   }
 
 
-  function obtenerURL(noticia) {
-
-    return campo(noticia, [
-      "url",
-      "link",
-      "enlace",
-      "href"
-    ]);
-
-  }
+  const numero =
+    Date.parse(fecha);
 
 
-  function obtenerImagen(noticia) {
+  if (
+    Number.isNaN(numero)
+  ) {
 
-    return campo(noticia, [
-      "imagen",
-      "image",
-      "img",
-      "image_url",
-      "imageUrl",
-      "thumbnail",
-      "thumbnail_url",
-      "media"
-    ]);
+    return escaparHTML(fecha);
 
   }
 
 
-  function obtenerTitulo(noticia) {
+  try {
 
-    return campo(noticia, [
-      "titulo",
-      "title",
-      "headline",
-      "nombre"
-    ]) || "Noticia de política";
-
-  }
-
-
-  function obtenerDescripcion(noticia) {
-
-    return campo(noticia, [
-      "descripcion",
-      "description",
-      "summary",
-      "resumen",
-      "extracto"
-    ]) || "Información y actualidad de México.";
-
-  }
-
-
-  function obtenerFecha(noticia) {
-
-    return campo(noticia, [
-      "fecha",
-      "date",
-      "published",
-      "publishedAt",
-      "pubDate",
-      "actualizado"
-    ]);
-
-  }
-
-
-  function fechaNumerica(noticia) {
-
-    const fecha = obtenerFecha(noticia);
-
-    const numero = Date.parse(fecha);
-
-    return Number.isNaN(numero)
-      ? 0
-      : numero;
-
-  }
-
-
-  function textoCompleto(noticia) {
-
-    return normalizar(
-      [
-        campo(noticia, ["categoria"]),
-        campo(noticia, ["subcategoria"]),
-        campo(noticia, ["seccion"]),
-        campo(noticia, ["fuente", "source"]),
-        obtenerTitulo(noticia),
-        obtenerDescripcion(noticia),
-        obtenerURL(noticia)
-      ].join(" ")
+    return new Intl.DateTimeFormat(
+      "es-MX",
+      {
+        day: "2-digit",
+        month: "short",
+        year: "numeric"
+      }
+    ).format(
+      new Date(numero)
     );
 
-  }
+  } catch {
 
-
-  /* =========================
-     POLÍTICA
-  ========================= */
-
-  function esPolitica(noticia) {
-
-    const categoria =
-      normalizar(
-        campo(noticia, ["categoria"])
-      );
-
-    const subcategoria =
-      normalizar(
-        campo(noticia, ["subcategoria"])
-      );
-
-    const seccion =
-      normalizar(
-        campo(noticia, ["seccion"])
-      );
-
-    const fuente =
-      normalizar(
-        campo(noticia, ["fuente", "source"])
-      );
-
-    const url =
-      normalizar(
-        obtenerURL(noticia)
-      );
-
-    const titulo =
-      normalizar(
-        obtenerTitulo(noticia)
-      );
-
-    const descripcion =
-      normalizar(
-        obtenerDescripcion(noticia)
-      );
-
-    const categoriasPoliticas = [
-      "politica",
-      "politicas",
-      "politica nacional",
-      "gobierno",
-      "congreso",
-      "justicia"
-    ];
-
-    const subcategoriasPoliticas = [
-      "politica",
-      "politicas",
-      "gobierno",
-      "congreso",
-      "senado",
-      "diputados",
-      "justicia",
-      "nacional",
-      "internacional",
-      "elecciones",
-      "eleccion"
-    ];
-
-    const seccionesPoliticas = [
-      "politica",
-      "politicas",
-      "gobierno",
-      "congreso",
-      "justicia"
-    ];
-
-    if (
-      categoriasPoliticas.includes(categoria) ||
-      subcategoriasPoliticas.includes(subcategoria) ||
-      seccionesPoliticas.includes(seccion)
-    ) {
-
-      return true;
-
-    }
-
-
-    const rutasPoliticas = [
-      "/politica",
-      "/politicas",
-      "/gobierno",
-      "/congreso",
-      "/senado",
-      "/camara-de-diputados",
-      "/justicia",
-      "/elecciones"
-    ];
-
-    if (
-      rutasPoliticas.some(
-        ruta => url.includes(ruta)
-      )
-    ) {
-
-      return true;
-
-    }
-
-
-    const fuentesPoliticas = [
-      "canal del congreso",
-      "senado",
-      "camara de diputados",
-      "presidencia",
-      "gobierno de mexico",
-      "secretaria de gobernacion",
-      "segob"
-    ];
-
-    if (
-      fuentesPoliticas.some(
-        fuentePolitica =>
-          fuente.includes(fuentePolitica)
-      )
-    ) {
-
-      return true;
-
-    }
-
-
-    const palabrasFuertes = [
-      "presidente de mexico",
-      "presidenta de mexico",
-      "presidencia de mexico",
-      "palacio nacional",
-      "senado de la republica",
-      "camara de diputados",
-      "suprema corte",
-      "poder judicial",
-      "gobierno federal",
-      "secretaria de gobernacion",
-      "elecciones",
-      "eleccion presidencial",
-      "reforma constitucional",
-      "iniciativa de ley",
-      "proceso electoral"
-    ];
-
-    if (
-      palabrasFuertes.some(
-        palabra =>
-          titulo.includes(palabra) ||
-          descripcion.includes(palabra)
-      )
-    ) {
-
-      return true;
-
-    }
-
-
-    const palabrasPoliticas = [
-      "presidente",
-      "presidenta",
-      "gobierno",
-      "senado",
-      "senador",
-      "senadora",
-      "diputado",
-      "diputada",
-      "congreso",
-      "politica",
-      "politico",
-      "politica nacional",
-      "ministro",
-      "ministra",
-      "tribunal",
-      "fiscalia",
-      "fiscal",
-      "secretaria",
-      "secretario",
-      "gabinete",
-      "moren",
-      "pri",
-      "pan",
-      "mc",
-      "partido politico",
-      "eleccion",
-      "elecciones",
-      "votacion",
-      "urna",
-      "reforma",
-      "iniciativa",
-      "ley",
-      "constitucional",
-      "legislador",
-      "legisladora"
-    ];
-
-    const texto =
-      [
-        titulo,
-        descripcion,
-        categoria,
-        subcategoria,
-        seccion
-      ].join(" ");
-
-    const coincidencias =
-      palabrasPoliticas.filter(
-        palabra =>
-          texto.includes(palabra)
-      ).length;
-
-    return coincidencias >= 2;
+    return escaparHTML(fecha);
 
   }
 
-
-  /* =========================
-     TIPO DE POLÍTICA
-  ========================= */
-
-  function obtenerTipo(noticia) {
-
-    const texto =
-      textoCompleto(noticia);
+}
 
 
-    const internacional = [
-      "trump",
-      "donald trump",
-      "estados unidos",
-      "china",
-      "xi jinping",
-      "iran",
-      "ucrania",
-      "rusia",
-      "putin",
-      "israel",
-      "gaza",
-      "internacional"
-    ];
+/* =========================================================
+   DETECTAR POLÍTICA
+========================================================= */
 
-    if (
-      internacional.some(
-        palabra => texto.includes(palabra)
-      )
-    ) {
+function esPolitica(noticia) {
 
-      return "internacional";
+  const categoria =
+    normalizar(
+      campo(noticia, ["categoria"])
+    );
 
-    }
+  const subcategoria =
+    normalizar(
+      campo(noticia, ["subcategoria"])
+    );
 
+  const seccion =
+    normalizar(
+      campo(noticia, ["seccion"])
+    );
 
-    const congreso = [
-      "senado",
-      "senador",
-      "senadora",
-      "congreso",
-      "diputado",
-      "diputada",
-      "camara de diputados",
-      "legislador",
-      "legisladora",
-      "iniciativa de ley",
-      "comision legislativa"
-    ];
+  const fuente =
+    normalizar(
+      campo(noticia, ["fuente", "source"])
+    );
 
-    if (
-      congreso.some(
-        palabra => texto.includes(palabra)
-      )
-    ) {
+  const url =
+    normalizar(
+      obtenerURL(noticia)
+    );
 
-      return "congreso";
+  const titulo =
+    normalizar(
+      obtenerTitulo(noticia)
+    );
 
-    }
+  const descripcion =
+    normalizar(
+      obtenerDescripcion(noticia)
+    );
 
 
-    const justicia = [
-      "suprema corte",
-      "poder judicial",
-      "tribunal",
-      "juzgado",
-      "juez",
-      "jueza",
-      "fiscalia",
-      "fiscal",
-      "ministro de la corte",
-      "ministra de la corte",
-      "magistrado",
-      "magistrada"
-    ];
+  const categoriasPoliticas = [
 
-    if (
-      justicia.some(
-        palabra => texto.includes(palabra)
-      )
-    ) {
+    "politica",
+    "politicas",
+    "politica nacional",
+    "gobierno",
+    "congreso",
+    "justicia"
 
-      return "justicia";
-
-    }
+  ];
 
 
-    const gobierno = [
-      "presidente",
-      "presidenta",
-      "presidencia",
-      "gobierno",
-      "secretaria",
-      "secretario",
-      "gabinete",
-      "palacio nacional"
-    ];
+  const subcategoriasPoliticas = [
 
-    if (
-      gobierno.some(
-        palabra => texto.includes(palabra)
-      )
-    ) {
+    "politica",
+    "politicas",
+    "gobierno",
+    "congreso",
+    "senado",
+    "diputados",
+    "justicia",
+    "nacional",
+    "internacional",
+    "elecciones",
+    "eleccion"
 
-      return "gobierno";
-
-    }
+  ];
 
 
-    return "nacional";
+  const seccionesPoliticas = [
 
-  }
+    "politica",
+    "politicas",
+    "gobierno",
+    "congreso",
+    "justicia"
 
-
-  function nombreTipo(tipo) {
-
-    const nombres = {
-
-      gobierno: "Gobierno",
-
-      congreso: "Congreso",
-
-      justicia: "Justicia",
-
-      nacional: "Nacional",
-
-      internacional: "Internacional"
-
-    };
-
-    return nombres[tipo] || "Política";
-
-  }
+  ];
 
 
-  /* =========================
-     HTML SEGURO
-  ========================= */
+  if (
 
-  function escaparHTML(valor) {
+    categoriasPoliticas.includes(
+      categoria
+    ) ||
 
-    return String(valor ?? "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
+    subcategoriasPoliticas.includes(
+      subcategoria
+    ) ||
 
-  }
+    seccionesPoliticas.includes(
+      seccion
+    )
 
-
-  /* =========================
-     IMAGEN
-  ========================= */
-
-  function imagenValida(url) {
-
-    if (!url) {
-      return false;
-    }
-
-    const limpia =
-      String(url).trim();
-
-    if (
-      !/^https?:\/\//i.test(limpia)
-    ) {
-
-      return false;
-
-    }
+  ) {
 
     return true;
 
   }
 
 
-  function fallbackImagen() {
+  const rutasPoliticas = [
 
-    return `
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 800 450"
-        width="800"
-        height="450"
-      >
-        <rect
-          width="800"
-          height="450"
-          fill="#0b120e"
-        />
+    "/politica",
+    "/politicas",
+    "/gobierno",
+    "/congreso",
+    "/senado",
+    "/camara-de-diputados",
+    "/justicia",
+    "/elecciones"
 
-        <circle
-          cx="400"
-          cy="210"
-          r="95"
-          fill="none"
-          stroke="#65ff9a"
-          stroke-width="5"
-          opacity=".8"
-        />
-
-        <path
-          d="M330 210h140M400 140v140"
-          stroke="#65ff9a"
-          stroke-width="5"
-          opacity=".7"
-        />
-
-        <text
-          x="400"
-          y="365"
-          fill="#65ff9a"
-          font-size="38"
-          font-family="Arial, sans-serif"
-          font-weight="700"
-          text-anchor="middle"
-        >
-          POLÍTICA
-        </text>
-      </svg>
-    `;
-
-  }
+  ];
 
 
-  function imagenConFallback(url) {
+  if (
 
-    if (
-      !imagenValida(url)
-    ) {
+    rutasPoliticas.some(
+      ruta =>
+        url.includes(ruta)
+    )
 
-      return "data:image/svg+xml;charset=UTF-8," +
-        encodeURIComponent(
-          fallbackImagen()
-        );
-
-    }
-
-    return escaparHTML(url);
-
-  }
-
-
-  /* =========================
-     FECHA
-  ========================= */
-
-  function fechaBonita(noticia) {
-
-    const fecha =
-      obtenerFecha(noticia);
-
-    if (!fecha) {
-      return "";
-    }
-
-    const numero =
-      Date.parse(fecha);
-
-    if (
-      Number.isNaN(numero)
-    ) {
-
-      return escaparHTML(fecha);
-
-    }
-
-    try {
-
-      return new Intl.DateTimeFormat(
-        "es-MX",
-        {
-          day: "2-digit",
-          month: "short",
-          year: "numeric"
-        }
-      ).format(
-        new Date(numero)
-      );
-
-    } catch {
-
-      return escaparHTML(fecha);
-
-    }
-
-  }
-
-
-  /* =========================
-     DESTACADAS
-  ========================= */
-
-  function crearDestacada(
-    noticia,
-    indice
   ) {
 
-    const titulo =
-      escaparHTML(
-        obtenerTitulo(noticia)
-      );
+    return true;
 
-    const url =
-      escaparHTML(
-        obtenerURL(noticia) || "#"
-      );
+  }
 
-    const imagen =
-      imagenConFallback(
-        obtenerImagen(noticia)
-      );
 
-    const tipo =
-      escaparHTML(
-        nombreTipo(
-          obtenerTipo(noticia)
+  const fuentesPoliticas = [
+
+    "canal del congreso",
+    "senado",
+    "camara de diputados",
+    "presidencia",
+    "gobierno de mexico",
+    "secretaria de gobernacion",
+    "segob"
+
+  ];
+
+
+  if (
+
+    fuentesPoliticas.some(
+      fuentePolitica =>
+        fuente.includes(
+          fuentePolitica
         )
-      );
+    )
 
-    const fecha =
-      fechaBonita(noticia);
+  ) {
+
+    return true;
+
+  }
 
 
-    return `
+  const palabrasFuertes = [
+
+    "presidente de mexico",
+    "presidenta de mexico",
+    "presidencia de mexico",
+    "palacio nacional",
+    "senado de la republica",
+    "camara de diputados",
+    "suprema corte",
+    "poder judicial",
+    "gobierno federal",
+    "secretaria de gobernacion",
+    "elecciones",
+    "eleccion presidencial",
+    "reforma constitucional",
+    "iniciativa de ley",
+    "proceso electoral"
+
+  ];
+
+
+  if (
+
+    palabrasFuertes.some(
+      palabra =>
+        titulo.includes(palabra) ||
+        descripcion.includes(palabra)
+    )
+
+  ) {
+
+    return true;
+
+  }
+
+
+  const palabrasPoliticas = [
+
+    "presidente",
+    "presidenta",
+    "gobierno",
+    "senado",
+    "senador",
+    "senadora",
+    "diputado",
+    "diputada",
+    "congreso",
+    "politica",
+    "politico",
+    "politica nacional",
+    "ministro",
+    "ministra",
+    "tribunal",
+    "fiscalia",
+    "fiscal",
+    "secretaria",
+    "secretario",
+    "gabinete",
+    "moren",
+    "pri",
+    "pan",
+    "mc",
+    "partido politico",
+    "eleccion",
+    "elecciones",
+    "votacion",
+    "urna",
+    "reforma",
+    "iniciativa",
+    "ley",
+    "constitucional",
+    "legislador",
+    "legisladora"
+
+  ];
+
+
+  const texto = [
+
+    titulo,
+    descripcion,
+    categoria,
+    subcategoria,
+    seccion
+
+  ].join(" ");
+
+
+  const coincidencias =
+    palabrasPoliticas.filter(
+      palabra =>
+        texto.includes(palabra)
+    ).length;
+
+
+  return coincidencias >= 2;
+
+}
+
+
+/* =========================================================
+   TIPO
+========================================================= */
+
+function obtenerTipo(noticia) {
+
+  const texto =
+    textoCompleto(noticia);
+
+
+  const internacional = [
+
+    "trump",
+    "donald trump",
+    "estados unidos",
+    "china",
+    "xi jinping",
+    "iran",
+    "ucrania",
+    "rusia",
+    "putin",
+    "israel",
+    "gaza",
+    "internacional"
+
+  ];
+
+
+  if (
+
+    internacional.some(
+      palabra =>
+        texto.includes(palabra)
+    )
+
+  ) {
+
+    return "internacional";
+
+  }
+
+
+  const congreso = [
+
+    "senado",
+    "senador",
+    "senadora",
+    "congreso",
+    "diputado",
+    "diputada",
+    "camara de diputados",
+    "legislador",
+    "legisladora",
+    "iniciativa de ley",
+    "comision legislativa"
+
+  ];
+
+
+  if (
+
+    congreso.some(
+      palabra =>
+        texto.includes(palabra)
+    )
+
+  ) {
+
+    return "congreso";
+
+  }
+
+
+  const justicia = [
+
+    "suprema corte",
+    "poder judicial",
+    "tribunal",
+    "juzgado",
+    "juez",
+    "jueza",
+    "fiscalia",
+    "fiscal",
+    "ministro de la corte",
+    "ministra de la corte",
+    "magistrado",
+    "magistrada"
+
+  ];
+
+
+  if (
+
+    justicia.some(
+      palabra =>
+        texto.includes(palabra)
+    )
+
+  ) {
+
+    return "justicia";
+
+  }
+
+
+  const gobierno = [
+
+    "presidente",
+    "presidenta",
+    "presidencia",
+    "gobierno",
+    "secretaria",
+    "secretario",
+    "gabinete",
+    "palacio nacional"
+
+  ];
+
+
+  if (
+
+    gobierno.some(
+      palabra =>
+        texto.includes(palabra)
+    )
+
+  ) {
+
+    return "gobierno";
+
+  }
+
+
+  return "nacional";
+
+}
+
+
+/* =========================================================
+   NOMBRE DEL TIPO
+========================================================= */
+
+function nombreTipo(tipo) {
+
+  const nombres = {
+
+    gobierno: "Gobierno",
+
+    congreso: "Congreso",
+
+    justicia: "Justicia",
+
+    nacional: "Nacional",
+
+    internacional: "Internacional"
+
+  };
+
+
+  return nombres[tipo] ||
+    "Política";
+
+}
+
+
+/* =========================================================
+   DESTACADA
+========================================================= */
+
+function crearDestacada(
+  noticia,
+  indice
+) {
+
+  const titulo =
+    escaparHTML(
+      obtenerTitulo(noticia)
+    );
+
+
+  const url =
+    escaparHTML(
+      obtenerURL(noticia) ||
+      "#"
+    );
+
+
+  const tipo =
+    escaparHTML(
+      nombreTipo(
+        obtenerTipo(noticia)
+      )
+    );
+
+
+  const fecha =
+    fechaBonita(noticia);
+
+
+  return `
+
+    <a
+      class="featured-card ${
+        indice === 0
+          ? "large"
+          : "small"
+      }"
+
+      href="${url}"
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+    >
+
+      ${crearImagenSegura(
+        noticia,
+        titulo,
+        "featured-image",
+        indice === 0
+          ? "eager"
+          : "lazy"
+      )}
+
+      <div
+        class="featured-overlay"
+      ></div>
+
+      <div
+        class="featured-content"
+      >
+
+        <span
+          class="featured-tag"
+        >
+          ${tipo}
+        </span>
+
+
+        ${
+          fecha
+            ? `
+              <span
+                class="featured-date"
+              >
+                ${fecha}
+              </span>
+            `
+            : ""
+        }
+
+
+        <h3>
+          ${titulo}
+        </h3>
+
+      </div>
+
+    </a>
+
+  `;
+
+}
+
+
+/* =========================================================
+   TARJETA
+========================================================= */
+
+function crearTarjeta(
+  noticia
+) {
+
+  const titulo =
+    escaparHTML(
+      obtenerTitulo(noticia)
+    );
+
+
+  const descripcion =
+    escaparHTML(
+      obtenerDescripcion(noticia)
+    );
+
+
+  const url =
+    escaparHTML(
+      obtenerURL(noticia) ||
+      "#"
+    );
+
+
+  const tipo =
+    escaparHTML(
+      nombreTipo(
+        obtenerTipo(noticia)
+      )
+    );
+
+
+  const fecha =
+    fechaBonita(noticia);
+
+
+  return `
+
+    <article class="news-card">
+
       <a
-        class="featured-card ${indice === 0 ? "large" : "small"}"
         href="${url}"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="${titulo}"
       >
 
-        <img
-          class="featured-image"
-          src="${imagen}"
-          alt="${titulo}"
-          loading="${indice === 0 ? "eager" : "lazy"}"
-          onerror="this.onerror=null;this.src='${imagenConFallback("")}'"
+        <div
+          class="news-image-wrap"
         >
 
-        <div class="featured-overlay"></div>
+          ${crearImagenSegura(
+            noticia,
+            titulo,
+            "news-image",
+            "lazy"
+          )}
 
-        <div class="featured-content">
+        </div>
 
-          <span class="featured-tag">
-            ${tipo}
-          </span>
 
-          ${
-            fecha
-              ? `<span class="featured-date">${fecha}</span>`
-              : ""
-          }
+        <div class="news-body">
+
+          <div class="news-meta">
+
+            <span
+              class="news-badge"
+            >
+              ${tipo}
+            </span>
+
+
+            ${
+              fecha
+                ? `
+                  <span
+                    class="news-date"
+                  >
+                    ${fecha}
+                  </span>
+                `
+                : ""
+            }
+
+          </div>
+
 
           <h3>
             ${titulo}
           </h3>
 
+
+          <p>
+            ${descripcion}
+          </p>
+
         </div>
 
       </a>
-    `;
 
-  }
+    </article>
 
+  `;
 
-  /* =========================
-     TARJETA
-  ========================= */
-
-  function crearTarjeta(
-    noticia
-  ) {
-
-    const titulo =
-      escaparHTML(
-        obtenerTitulo(noticia)
-      );
-
-    const descripcion =
-      escaparHTML(
-        obtenerDescripcion(noticia)
-      );
-
-    const url =
-      escaparHTML(
-        obtenerURL(noticia) || "#"
-      );
-
-    const imagen =
-      imagenConFallback(
-        obtenerImagen(noticia)
-      );
-
-    const tipo =
-      escaparHTML(
-        nombreTipo(
-          obtenerTipo(noticia)
-        )
-      );
-
-    const fecha =
-      fechaBonita(noticia);
+}
 
 
-    return `
-      <article class="news-card">
+/* =========================================================
+   CARGAR JSON
+========================================================= */
 
-        <a
-          href="${url}"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="${titulo}"
-        >
+async function cargarNoticias() {
 
-          <div class="news-image-wrap">
+  status.className =
+    "status loading";
 
-            <img
-              class="news-image"
-              src="${imagen}"
-              alt="${titulo}"
-              loading="lazy"
-              onerror="this.onerror=null;this.src='${imagenConFallback("")}'"
-            >
-
-          </div>
-
-          <div class="news-body">
-
-            <div class="news-meta">
-
-              <span class="news-badge">
-                ${tipo}
-              </span>
-
-              ${
-                fecha
-                  ? `<span class="news-date">${fecha}</span>`
-                  : ""
-              }
-
-            </div>
-
-            <h3>
-              ${titulo}
-            </h3>
-
-            <p>
-              ${descripcion}
-            </p>
-
-          </div>
-
-        </a>
-
-      </article>
-    `;
-
-  }
+  status.textContent =
+    "Cargando noticias reales...";
 
 
-  /* =========================
-     CARGAR NOTICIAS
-  ========================= */
+  try {
 
-  async function cargarNoticias() {
-
-    status.className = "status loading";
-
-    status.textContent =
-      "Cargando noticias reales...";
-
-    try {
-
-      const respuesta =
-        await fetch(JSON_URL, {
+    const respuesta =
+      await fetch(
+        JSON_URL,
+        {
           cache: "no-store"
-        });
-
-      if (!respuesta.ok) {
-
-        throw new Error(
-          "No se pudo cargar noticias.json"
-        );
-
-      }
+        }
+      );
 
 
-      const datos =
-        await respuesta.json();
+    if (!respuesta.ok) {
 
-
-      if (Array.isArray(datos)) {
-
-        todasLasNoticias = datos;
-
-      } else if (
-        datos &&
-        Array.isArray(datos.noticias)
-      ) {
-
-        todasLasNoticias =
-          datos.noticias;
-
-      } else {
-
-        throw new Error(
-          "Formato de noticias.json no reconocido"
-        );
-
-      }
-
-
-      noticiasPolitica =
-        todasLasNoticias
-          .filter(esPolitica)
-          .sort(
-            (a, b) =>
-              fechaNumerica(b) -
-              fechaNumerica(a)
-          );
-
-
-      paginaActual = 1;
-
-
-      status.className = "status";
-
-      status.textContent =
-        `${noticiasPolitica.length} noticias políticas disponibles.`;
-
-      mostrarNoticias();
-
-    } catch (error) {
-
-      console.error(error);
-
-      status.className =
-        "status error";
-
-      status.textContent =
-        "No se pudieron cargar las noticias en este momento.";
-
-      featuredSection.style.display =
-        "none";
-
-      grid.innerHTML = `
-        <div class="empty">
-
-          <strong>
-            No fue posible cargar las noticias
-          </strong>
-
-          <p>
-            Revisa que noticias.json esté disponible en la raíz del sitio.
-          </p>
-
-        </div>
-      `;
-
-      pagination.innerHTML = "";
+      throw new Error(
+        "No se pudo cargar noticias.json"
+      );
 
     }
 
-  }
 
-
-  /* =========================
-     FILTROS
-  ========================= */
-
-  function obtenerNoticiasFiltradas() {
-
-    const termino =
-      normalizar(
-        buscador.value
-      );
-
-
-    return noticiasPolitica.filter(
-      noticia => {
-
-        const tipo =
-          obtenerTipo(noticia);
-
-        const texto =
-          textoCompleto(noticia);
-
-
-        const coincideBusqueda =
-          !termino ||
-          texto.includes(termino);
-
-
-        const coincideCategoria =
-          categoriaActual === "todos" ||
-          tipo === categoriaActual;
-
-
-        return (
-          coincideBusqueda &&
-          coincideCategoria
-        );
-
-      }
-    );
-
-  }
-
-
-  /* =========================
-     MOSTRAR
-  ========================= */
-
-  function mostrarNoticias() {
-
-    const filtradas =
-      obtenerNoticiasFiltradas();
-
-
-    resultCount.textContent =
-      `${filtradas.length} publicaciones`;
+    const datos =
+      await respuesta.json();
 
 
     if (
-      filtradas.length === 0
+      Array.isArray(datos)
     ) {
 
-      featuredSection.style.display =
-        "none";
+      todasLasNoticias =
+        datos;
 
-      grid.innerHTML = `
-        <div class="empty">
+    } else if (
 
-          <strong>
-            No encontramos noticias
-          </strong>
+      datos &&
+      Array.isArray(
+        datos.noticias
+      )
 
-          <p>
-            Prueba con otra búsqueda o categoría.
-          </p>
+    ) {
 
-        </div>
-      `;
+      todasLasNoticias =
+        datos.noticias;
 
-      pagination.innerHTML = "";
+    } else {
 
-      return;
+      throw new Error(
+        "Formato de noticias.json no reconocido"
+      );
 
     }
+
+
+    noticiasPolitica =
+      todasLasNoticias
+        .filter(esPolitica)
+        .sort(
+          (a, b) =>
+            fechaNumerica(b) -
+            fechaNumerica(a)
+        );
+
+
+    paginaActual = 1;
+
+
+    status.className =
+      "status";
+
+
+    status.textContent =
+      `${noticiasPolitica.length} noticias políticas disponibles.`;
+
+
+    mostrarNoticias();
+
+  } catch (error) {
+
+    console.error(error);
+
+
+    status.className =
+      "status error";
+
+
+    status.textContent =
+      "No se pudieron cargar las noticias en este momento.";
 
 
     featuredSection.style.display =
-      "";
+      "none";
 
 
-    /* DESTACADAS */
+    grid.innerHTML = `
 
-    const destacadas =
-      filtradas.slice(0, 3);
+      <div class="empty">
+
+        <strong>
+          No fue posible cargar las noticias
+        </strong>
+
+        <p>
+          Revisa que noticias.json esté disponible
+          en la raíz del sitio.
+        </p>
+
+      </div>
+
+    `;
 
 
-    featuredGrid.innerHTML =
-      destacadas
-        .map(
-          (noticia, indice) =>
-            crearDestacada(
-              noticia,
-              indice
-            )
-        )
-        .join("");
+    pagination.innerHTML = "";
+
+  }
+
+}
 
 
-    /* PAGINACIÓN */
+/* =========================================================
+   FILTRAR
+========================================================= */
 
-    const totalPaginas =
-      Math.ceil(
-        filtradas.length /
-        POR_PAGINA
+function obtenerNoticiasFiltradas() {
+
+  const termino =
+    normalizar(
+      buscador.value
+    );
+
+
+  return noticiasPolitica.filter(
+    noticia => {
+
+      const tipo =
+        obtenerTipo(noticia);
+
+
+      const texto =
+        textoCompleto(noticia);
+
+
+      const coincideBusqueda =
+        !termino ||
+        texto.includes(
+          termino
+        );
+
+
+      const coincideCategoria =
+        categoriaActual === "todos" ||
+        tipo === categoriaActual;
+
+
+      return (
+        coincideBusqueda &&
+        coincideCategoria
       );
-
-
-    if (
-      paginaActual >
-      totalPaginas
-    ) {
-
-      paginaActual =
-        totalPaginas;
 
     }
+  );
+
+}
 
 
-    const inicio =
-      (paginaActual - 1) *
-      POR_PAGINA;
+/* =========================================================
+   MOSTRAR
+========================================================= */
 
-    const fin =
-      inicio +
-      POR_PAGINA;
+function mostrarNoticias() {
 
-
-    const paginaNoticias =
-      filtradas.slice(
-        inicio,
-        fin
-      );
+  const filtradas =
+    obtenerNoticiasFiltradas();
 
 
-    grid.innerHTML =
-      paginaNoticias
-        .map(
-          crearTarjeta
-        )
-        .join("");
+  resultCount.textContent =
+    `${filtradas.length} publicaciones`;
 
 
-    crearPaginacion(
-      totalPaginas
-    );
+  if (
+    filtradas.length === 0
+  ) {
+
+    featuredSection.style.display =
+      "none";
+
+
+    grid.innerHTML = `
+
+      <div class="empty">
+
+        <strong>
+          No encontramos noticias
+        </strong>
+
+        <p>
+          Prueba con otra búsqueda o categoría.
+        </p>
+
+      </div>
+
+    `;
+
+
+    pagination.innerHTML = "";
+
+    return;
 
   }
 
 
-  /* =========================
-     PAGINACIÓN
-  ========================= */
+  featuredSection.style.display =
+    "";
 
-  function crearPaginacion(
+
+  /* DESTACADAS */
+
+  const destacadas =
+    filtradas.slice(
+      0,
+      3
+    );
+
+
+  featuredGrid.innerHTML =
+    destacadas
+      .map(
+        (noticia, indice) =>
+          crearDestacada(
+            noticia,
+            indice
+          )
+      )
+      .join("");
+
+
+  /* PAGINACIÓN */
+
+  const totalPaginas =
+    Math.ceil(
+      filtradas.length /
+      POR_PAGINA
+    );
+
+
+  if (
+    paginaActual >
     totalPaginas
   ) {
 
-    pagination.innerHTML = "";
+    paginaActual =
+      totalPaginas;
+
+  }
+
+
+  const inicio =
+    (paginaActual - 1) *
+    POR_PAGINA;
+
+
+  const fin =
+    inicio +
+    POR_PAGINA;
+
+
+  const paginaNoticias =
+    filtradas.slice(
+      inicio,
+      fin
+    );
+
+
+  grid.innerHTML =
+    paginaNoticias
+      .map(
+        crearTarjeta
+      )
+      .join("");
+
+
+  crearPaginacion(
+    totalPaginas
+  );
+
+}
+
+
+/* =========================================================
+   PAGINACIÓN
+========================================================= */
+
+function crearPaginacion(
+  totalPaginas
+) {
+
+  pagination.innerHTML =
+    "";
+
+
+  if (
+    totalPaginas <= 1
+  ) {
+
+    return;
+
+  }
+
+
+  const anterior =
+    document.createElement(
+      "button"
+    );
+
+
+  anterior.className =
+    "page-btn";
+
+
+  anterior.textContent =
+    "‹";
+
+
+  anterior.disabled =
+    paginaActual === 1;
+
+
+  anterior.addEventListener(
+    "click",
+    () => {
+
+      if (
+        paginaActual > 1
+      ) {
+
+        paginaActual--;
+
+        mostrarNoticias();
+
+        window.scrollTo({
+          top: 500,
+          behavior: "smooth"
+        });
+
+      }
+
+    }
+  );
+
+
+  pagination.appendChild(
+    anterior
+  );
+
+
+  const maxBotones = 7;
+
+
+  let inicio =
+    Math.max(
+      1,
+      paginaActual -
+      Math.floor(
+        maxBotones / 2
+      )
+    );
+
+
+  let fin =
+    Math.min(
+      totalPaginas,
+      inicio +
+      maxBotones -
+      1
+    );
+
+
+  if (
+    fin - inicio + 1 <
+    maxBotones
+  ) {
+
+    inicio =
+      Math.max(
+        1,
+        fin -
+        maxBotones +
+        1
+      );
+
+  }
+
+
+  for (
+    let i = inicio;
+    i <= fin;
+    i++
+  ) {
+
+    const boton =
+      document.createElement(
+        "button"
+      );
+
+
+    boton.className =
+      "page-btn";
 
 
     if (
-      totalPaginas <= 1
+      i === paginaActual
     ) {
 
-      return;
+      boton.classList.add(
+        "active"
+      );
 
     }
 
 
-    const anterior =
-      document.createElement("button");
+    boton.textContent =
+      i;
 
-    anterior.className =
-      "page-btn";
 
-    anterior.textContent =
-      "‹";
-
-    anterior.disabled =
-      paginaActual === 1;
-
-    anterior.addEventListener(
+    boton.addEventListener(
       "click",
       () => {
 
-        if (
-          paginaActual > 1
-        ) {
+        paginaActual =
+          i;
 
-          paginaActual--;
+        mostrarNoticias();
 
-          mostrarNoticias();
-
-          window.scrollTo({
-            top: 500,
-            behavior: "smooth"
-          });
-
-        }
+        window.scrollTo({
+          top: 500,
+          behavior: "smooth"
+        });
 
       }
     );
 
 
     pagination.appendChild(
-      anterior
+      boton
+    );
+
+  }
+
+
+  const siguiente =
+    document.createElement(
+      "button"
     );
 
 
-    const maxBotones = 7;
-
-    let inicio =
-      Math.max(
-        1,
-        paginaActual -
-        Math.floor(maxBotones / 2)
-      );
-
-    let fin =
-      Math.min(
-        totalPaginas,
-        inicio +
-        maxBotones -
-        1
-      );
+  siguiente.className =
+    "page-btn";
 
 
-    if (
-      fin - inicio + 1 <
-      maxBotones
-    ) {
-
-      inicio =
-        Math.max(
-          1,
-          fin -
-          maxBotones +
-          1
-        );
-
-    }
+  siguiente.textContent =
+    "›";
 
 
-    for (
-      let i = inicio;
-      i <= fin;
-      i++
-    ) {
+  siguiente.disabled =
+    paginaActual ===
+    totalPaginas;
 
-      const boton =
-        document.createElement("button");
 
-      boton.className =
-        "page-btn";
+  siguiente.addEventListener(
+    "click",
+    () => {
 
       if (
-        i === paginaActual
+        paginaActual <
+        totalPaginas
       ) {
+
+        paginaActual++;
+
+        mostrarNoticias();
+
+        window.scrollTo({
+          top: 500,
+          behavior: "smooth"
+        });
+
+      }
+
+    }
+  );
+
+
+  pagination.appendChild(
+    siguiente
+  );
+
+}
+
+
+/* =========================================================
+   BOTONES DE CATEGORÍA
+========================================================= */
+
+botones.forEach(
+  boton => {
+
+    boton.addEventListener(
+      "click",
+      () => {
+
+        botones.forEach(
+          b =>
+            b.classList.remove(
+              "active"
+            )
+        );
+
 
         boton.classList.add(
           "active"
         );
 
-      }
 
-      boton.textContent =
-        i;
-
-      boton.addEventListener(
-        "click",
-        () => {
-
-          paginaActual = i;
-
-          mostrarNoticias();
-
-          window.scrollTo({
-            top: 500,
-            behavior: "smooth"
-          });
-
-        }
-      );
+        categoriaActual =
+          boton.dataset.category;
 
 
-      pagination.appendChild(
-        boton
-      );
-
-    }
+        paginaActual = 1;
 
 
-    const siguiente =
-      document.createElement("button");
-
-    siguiente.className =
-      "page-btn";
-
-    siguiente.textContent =
-      "›";
-
-    siguiente.disabled =
-      paginaActual === totalPaginas;
-
-    siguiente.addEventListener(
-      "click",
-      () => {
-
-        if (
-          paginaActual <
-          totalPaginas
-        ) {
-
-          paginaActual++;
-
-          mostrarNoticias();
-
-          window.scrollTo({
-            top: 500,
-            behavior: "smooth"
-          });
-
-        }
+        mostrarNoticias();
 
       }
-    );
-
-
-    pagination.appendChild(
-      siguiente
     );
 
   }
+);
 
 
-  /* =========================
-     EVENTOS
-  ========================= */
+/* =========================================================
+   BUSCADOR
+========================================================= */
 
-  botones.forEach(
-    boton => {
+buscador.addEventListener(
+  "input",
+  () => {
 
-      boton.addEventListener(
-        "click",
-        () => {
+    paginaActual = 1;
 
-          botones.forEach(
-            b =>
-              b.classList.remove(
-                "active"
-              )
-          );
+    mostrarNoticias();
 
-          boton.classList.add(
-            "active"
-          );
-
-          categoriaActual =
-            boton.dataset.category;
-
-          paginaActual = 1;
-
-          mostrarNoticias();
-
-        }
-      );
-
-    }
-  );
+  }
+);
 
 
-  buscador.addEventListener(
-    "input",
-    () => {
+/* =========================================================
+   ARRANCAR
+========================================================= */
 
-      paginaActual = 1;
-
-      mostrarNoticias();
-
-    }
-  );
-
-
-  /* =========================
-     INICIO
-  ========================= */
-
-  cargarNoticias();
+cargarNoticias();
 
 </script>
 
