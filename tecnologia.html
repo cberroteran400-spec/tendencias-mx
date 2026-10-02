@@ -780,7 +780,8 @@ function normalizar(texto){
     return String(texto || "")
         .toLowerCase()
         .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g,"");
+        .replace(/[\u0300-\u036f]/g,"")
+        .trim();
 
 }
 
@@ -791,152 +792,82 @@ function normalizar(texto){
 
 function esTecnologia(noticia){
 
+    /*
+       ESTA ES LA CORRECCIÓN PRINCIPAL.
+
+       Si el RSS ya puso:
+
+       categoria: "Tecnología"
+
+       la noticia entra.
+
+       No importa qué palabras tenga
+       el título.
+    */
+
     const categoria =
         normalizar(noticia.categoria);
+
+    if(
+        categoria === "tecnologia" ||
+        categoria === "tecnologias"
+    ){
+
+        return true;
+
+    }
+
+
+    /*
+       También aceptamos subcategoría tecnológica
+       cuando exista.
+    */
 
     const subcategoria =
         normalizar(noticia.subcategoria);
 
-    const titulo =
-        normalizar(noticia.titulo);
-
-    const descripcion =
-        normalizar(noticia.descripcion);
-
-    const url =
-        normalizar(noticia.url);
-
-    /*
-       PRIMERA REGLA:
-
-       Si el RSS ya marcó la noticia
-       como Tecnología, entra directamente.
-    */
-
-    if(categoria === "tecnologia"){
-        return true;
-    }
-
-
-    /*
-       SEGUNDA REGLA:
-
-       Algunas publicaciones pueden llegar
-       como Noticias pero pertenecer realmente
-       a la sección tecnológica de Expansión.
-
-       Detectamos el dominio/ruta de tecnología.
-    */
 
     if(
-        url.includes("expansion.mx/tecnologia/")
+        subcategoria === "tecnologia" ||
+        subcategoria === "ia" ||
+        subcategoria === "inteligencia artificial" ||
+        subcategoria === "gadgets" ||
+        subcategoria === "apps" ||
+        subcategoria === "aplicaciones" ||
+        subcategoria === "software" ||
+        subcategoria === "ciberseguridad"
     ){
+
         return true;
+
     }
 
 
     /*
-       TERCERA REGLA:
-
-       Detectar temas tecnológicos reales.
+       Y aceptamos URLs de la sección
+       tecnológica del medio.
     */
 
-    const texto =
-        categoria + " " +
-        subcategoria + " " +
-        titulo + " " +
-        descripcion;
+    const url =
+        normalizar(
+            noticia.url ||
+            noticia.link ||
+            noticia.enlace
+        );
 
 
-    const palabrasTecnologia = [
+    if(
+        url.includes(
+            "expansion.mx/tecnologia"
+        )
+    ){
 
-        "inteligencia artificial",
-        "inteligencia artificial",
-        "ia generativa",
-        "chatgpt",
-        "openai",
-        "gemini",
-        "copilot",
-        "claude",
-        "deepseek",
+        return true;
 
-        "tecnologia",
-        "tecnológico",
-        "tecnologica",
-        "tecnologicas",
-
-        "software",
-        "aplicacion",
-        "aplicaciones",
-        "app",
-        "apps",
-
-        "smartphone",
-        "celular",
-        "telefono inteligente",
-        "iphone",
-        "android",
-
-        "computadora",
-        "laptop",
-        "procesador",
-        "chip",
-        "semiconductor",
-
-        "gadget",
-        "dispositivo",
-        "dispositivos",
-        "wearable",
-        "reloj inteligente",
-
-        "internet",
-        "red social",
-        "redes sociales",
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube",
-        "whatsapp",
-
-        "ciberseguridad",
-        "seguridad digital",
-        "hackeo",
-        "hacker",
-        "phishing",
-        "fraude digital",
-        "datos personales",
-
-        "nube",
-        "cloud",
-        "blockchain",
-        "criptomoneda",
-
-        "robot",
-        "robotica",
-        "automatizacion",
-
-        "realidad virtual",
-        "realidad aumentada",
-
-        "tesla",
-        "spacex",
-        "satélite",
-        "satelite",
-
-        "gaming",
-        "videojuego",
-        "videojuegos",
-        "consola",
-        "playstation",
-        "xbox",
-        "nintendo"
-
-    ];
+    }
 
 
-    return palabrasTecnologia.some(
-        palabra => texto.includes(palabra)
-    );
+    return false;
 
 }
 
@@ -953,9 +884,15 @@ function esDeporte(noticia){
     const subcategoria =
         normalizar(noticia.subcategoria);
 
-    if(categoria === "deportes"){
+
+    if(
+        categoria === "deportes"
+    ){
+
         return true;
+
     }
+
 
     const deportes = [
 
@@ -964,48 +901,71 @@ function esDeporte(noticia){
         "beisbol",
         "nfl",
         "nba",
-        "boxeo",
-        "formula 1",
-        "formula1",
-        "golf",
         "mlb",
-        "liga mx",
-        "champions league",
-        "premier league"
+        "boxeo",
+        "golf",
+        "formula1",
+        "formula 1"
 
     ];
 
-    return deportes.includes(subcategoria);
+
+    return deportes.includes(
+        subcategoria
+    );
 
 }
 
 
 /* =========================================================
-   CLASIFICAR TECNOLOGÍA
+   CLASIFICAR NOTICIA
 ========================================================= */
 
 function obtenerTipo(noticia){
 
-    const texto = normalizar(
+    const texto =
+        normalizar(
 
-        (noticia.titulo || "") + " " +
-        (noticia.descripcion || "") + " " +
-        (noticia.subcategoria || "") + " " +
-        (noticia.url || "")
+            (noticia.titulo || "") + " " +
+            (noticia.descripcion || "") + " " +
+            (noticia.subcategoria || "")
 
-    );
+        );
 
 
     if(
 
-        texto.includes("inteligencia artificial") ||
-        texto.includes("ia generativa") ||
-        texto.includes("chatgpt") ||
-        texto.includes("openai") ||
-        texto.includes("gemini") ||
-        texto.includes("copilot") ||
-        texto.includes("claude") ||
-        texto.includes("deepseek")
+        texto.includes(
+            "inteligencia artificial"
+        ) ||
+
+        texto.includes(
+            "ia generativa"
+        ) ||
+
+        texto.includes(
+            "chatgpt"
+        ) ||
+
+        texto.includes(
+            "openai"
+        ) ||
+
+        texto.includes(
+            "gemini"
+        ) ||
+
+        texto.includes(
+            "copilot"
+        ) ||
+
+        texto.includes(
+            "claude"
+        ) ||
+
+        texto.includes(
+            "deepseek"
+        )
 
     ){
 
@@ -1018,9 +978,8 @@ function obtenerTipo(noticia){
 
         texto.includes("aplicacion") ||
         texto.includes("aplicaciones") ||
-        texto.includes("app") ||
         texto.includes("software") ||
-        texto.includes("plataforma digital")
+        texto.includes("app")
 
     ){
 
@@ -1083,17 +1042,11 @@ function obtenerTipo(noticia){
     }
 
 
-    if(
-
-        normalizar(noticia.titulo)
-            .includes("mexico")
-
-    ){
-
-        return "mexico";
-
-    }
-
+    /*
+       Si es Tecnología pero no encaja
+       en una subcategoría concreta,
+       sigue apareciendo en "Todas".
+    */
 
     return "tecnologia";
 
@@ -1131,7 +1084,10 @@ function nombreTipo(tipo){
 
     };
 
-    return nombres[tipo] || "Tecnología";
+
+    return
+        nombres[tipo] ||
+        "Tecnología";
 
 }
 
@@ -1162,12 +1118,21 @@ function fechaBonita(fecha){
         return "";
     }
 
+
     const d =
         new Date(fecha);
 
-    if(isNaN(d.getTime())){
+
+    if(
+        isNaN(
+            d.getTime()
+        )
+    ){
+
         return "";
+
     }
+
 
     return d.toLocaleDateString(
         "es-MX",
@@ -1201,7 +1166,7 @@ function obtenerImagen(noticia){
 
 
 /* =========================================================
-   FALLBACK DE IMAGEN
+   FALLBACK
 ========================================================= */
 
 function mostrarFallback(contenedor){
@@ -1221,10 +1186,10 @@ function mostrarFallback(contenedor){
                     #08100b
                 );
             color:#65ff9a;
-            font-size:42px;
+            font-size:34px;
             font-weight:900;
         ">
-            TECH
+            TECNOLOGÍA
         </div>
 
     `;
@@ -1239,7 +1204,10 @@ function mostrarFallback(contenedor){
 async function cargarNoticias(){
 
     const status =
-        document.getElementById("statusText");
+        document.getElementById(
+            "statusText"
+        );
+
 
     try{
 
@@ -1270,67 +1238,97 @@ async function cargarNoticias(){
 
 
         /*
-           El JSON actual utiliza:
+           Soportamos ambos formatos:
+
+           [...]
+
+           o
 
            {
-               actualizado: "...",
-               total: ...,
-               imagenes: {...},
-               noticias: [...]
+             noticias:[...]
            }
-
-           También soportamos un array directo.
         */
 
         const lista =
             Array.isArray(datos)
+
                 ? datos
-                : Array.isArray(datos.noticias)
+
+                : Array.isArray(
+                    datos.noticias
+                )
+
                     ? datos.noticias
+
                     : [];
 
 
         /*
            FILTRO PRINCIPAL:
 
-           Solo tecnología real.
+           TODA noticia cuya categoría
+           real sea Tecnología entra.
 
-           NO usamos una lista inventada.
-           NO usamos publicaciones de ejemplo.
+           No se limita por palabras del título.
         */
 
-        todasLasNoticias = lista
+        todasLasNoticias =
+            lista
 
-            .filter(noticia =>
-                noticia &&
-                noticia.titulo
-            )
+                .filter(
+                    noticia =>
+                        noticia &&
+                        noticia.titulo
+                )
 
-            .filter(noticia =>
-                esTecnologia(noticia)
-            )
+                .filter(
+                    noticia =>
+                        esTecnologia(
+                            noticia
+                        )
+                )
 
-            .filter(noticia =>
-                !esDeporte(noticia)
-            );
+                .filter(
+                    noticia =>
+                        !esDeporte(
+                            noticia
+                        )
+                );
 
 
         /*
-           Ordenar por fecha más reciente.
+           MÁS RECIENTES PRIMERO.
         */
 
         todasLasNoticias.sort(
-            (a,b) =>
-                new Date(b.fecha || 0) -
-                new Date(a.fecha || 0)
+            (a,b) => {
+
+                return (
+                    new Date(
+                        b.fecha || 0
+                    ) -
+
+                    new Date(
+                        a.fecha || 0
+                    )
+                );
+
+            }
         );
 
 
         aplicarFiltros();
 
 
-        status.innerHTML =
-            `<strong>${todasLasNoticias.length}</strong> noticias de tecnología disponibles`;
+        status.innerHTML = `
+
+            <strong>
+                ${todasLasNoticias.length}
+            </strong>
+
+            noticias de tecnología disponibles
+
+        `;
 
     }
 
@@ -1338,11 +1336,15 @@ async function cargarNoticias(){
 
         console.error(error);
 
+
         status.textContent =
-            "No se pudieron cargar las noticias.";
+            "Error al cargar las noticias.";
+
 
         document
-            .getElementById("newsGrid")
+            .getElementById(
+                "newsGrid"
+            )
             .innerHTML = `
 
                 <div
@@ -1357,7 +1359,8 @@ async function cargarNoticias(){
                         No se pudo cargar noticias.json
                     </strong>
 
-                    Comprueba que el archivo esté
+                    Comprueba que
+                    noticias.json esté
                     en la raíz del repositorio.
 
                 </div>
@@ -1376,48 +1379,63 @@ async function cargarNoticias(){
 function aplicarFiltros(){
 
     const busqueda =
-        normalizar(busquedaActual);
+        normalizar(
+            busquedaActual
+        );
 
 
     noticiasFiltradas =
-        todasLasNoticias.filter(noticia => {
+        todasLasNoticias.filter(
+            noticia => {
 
 
-            const tipo =
-                obtenerTipo(noticia);
+                const tipo =
+                    obtenerTipo(
+                        noticia
+                    );
 
 
-            const coincideCategoria =
+                const coincideCategoria =
 
-                categoriaActual === "todos" ||
+                    categoriaActual ===
+                    "todos"
 
-                tipo === categoriaActual;
+                    ||
+
+                    tipo ===
+                    categoriaActual;
 
 
-            const texto =
-                normalizar(
+                const texto =
+                    normalizar(
 
-                    (noticia.titulo || "") + " " +
-                    (noticia.descripcion || "") + " " +
-                    (noticia.fuente || "")
+                        (noticia.titulo || "") +
+                        " " +
+                        (noticia.descripcion || "") +
+                        " " +
+                        (noticia.fuente || "")
+
+                    );
+
+
+                const coincideBusqueda =
+
+                    !busqueda ||
+
+                    texto.includes(
+                        busqueda
+                    );
+
+
+                return (
+
+                    coincideCategoria &&
+                    coincideBusqueda
 
                 );
 
-
-            const coincideBusqueda =
-
-                !busqueda ||
-                texto.includes(busqueda);
-
-
-            return (
-
-                coincideCategoria &&
-                coincideBusqueda
-
-            );
-
-        });
+            }
+        );
 
 
     paginaActual = 1;
@@ -1434,11 +1452,15 @@ function aplicarFiltros(){
 function crearTarjeta(noticia){
 
     const imagen =
-        obtenerImagen(noticia);
+        obtenerImagen(
+            noticia
+        );
 
 
     const tipo =
-        obtenerTipo(noticia);
+        obtenerTipo(
+            noticia
+        );
 
 
     const titulo =
@@ -1476,7 +1498,9 @@ function crearTarjeta(noticia){
 
 
     const article =
-        document.createElement("article");
+        document.createElement(
+            "article"
+        );
 
 
     article.className =
@@ -1484,7 +1508,9 @@ function crearTarjeta(noticia){
 
 
     const link =
-        document.createElement("a");
+        document.createElement(
+            "a"
+        );
 
 
     link.className =
@@ -1504,7 +1530,9 @@ function crearTarjeta(noticia){
 
 
     const imageBox =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
 
     imageBox.className =
@@ -1514,7 +1542,9 @@ function crearTarjeta(noticia){
     if(imagen){
 
         const img =
-            document.createElement("img");
+            document.createElement(
+                "img"
+            );
 
 
         img.src =
@@ -1539,7 +1569,9 @@ function crearTarjeta(noticia){
             };
 
 
-        imageBox.appendChild(img);
+        imageBox.appendChild(
+            img
+        );
 
     }
     else{
@@ -1552,7 +1584,9 @@ function crearTarjeta(noticia){
 
 
     const content =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
 
     content.className =
@@ -1562,12 +1596,22 @@ function crearTarjeta(noticia){
     content.innerHTML = `
 
         <span class="badge">
-            ${escapar(nombreTipo(tipo))}
+
+            ${escapar(
+                nombreTipo(
+                    tipo
+                )
+            )}
+
         </span>
 
+
         <h2>
+
             ${titulo}
+
         </h2>
+
 
         ${
             descripcion
@@ -1575,13 +1619,24 @@ function crearTarjeta(noticia){
                 : ""
         }
 
+
         <div class="date">
+
             ${fuente}
-            ${fecha ? " · " + fecha : ""}
+
+            ${
+                fecha
+                    ? " · " + fecha
+                    : ""
+            }
+
         </div>
 
+
         <div class="read">
+
             Leer noticia completa →
+
         </div>
 
     `;
@@ -1626,16 +1681,15 @@ function renderizarDestacadas(){
         );
 
 
-    if(!destacadas.length){
+    contenedor.innerHTML =
+        "";
 
-        contenedor.innerHTML = "";
+
+    if(!destacadas.length){
 
         return;
 
     }
-
-
-    contenedor.innerHTML = "";
 
 
     destacadas.forEach(
@@ -1643,7 +1697,9 @@ function renderizarDestacadas(){
 
 
             const imagen =
-                obtenerImagen(noticia);
+                obtenerImagen(
+                    noticia
+                );
 
 
             const url =
@@ -1654,7 +1710,9 @@ function renderizarDestacadas(){
 
 
             const enlace =
-                document.createElement("a");
+                document.createElement(
+                    "a"
+                );
 
 
             enlace.className =
@@ -1681,7 +1739,9 @@ function renderizarDestacadas(){
             if(imagen){
 
                 const img =
-                    document.createElement("img");
+                    document.createElement(
+                        "img"
+                    );
 
 
                 img.src =
@@ -1689,7 +1749,8 @@ function renderizarDestacadas(){
 
 
                 img.alt =
-                    noticia.titulo || "Tecnología";
+                    noticia.titulo ||
+                    "Tecnología";
 
 
                 img.loading =
@@ -1715,7 +1776,9 @@ function renderizarDestacadas(){
 
 
             const overlay =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             overlay.className =
@@ -1727,17 +1790,24 @@ function renderizarDestacadas(){
                 <div class="feature-content">
 
                     <div class="feature-tag">
+
                         ${escapar(
                             nombreTipo(
-                                obtenerTipo(noticia)
+                                obtenerTipo(
+                                    noticia
+                                )
                             )
                         )}
+
                     </div>
 
+
                     <h3>
+
                         ${escapar(
                             noticia.titulo
                         )}
+
                     </h3>
 
                 </div>
@@ -1779,7 +1849,9 @@ function renderizarNoticias(){
 
 
     const inicio =
-        (paginaActual - 1) *
+        (
+            paginaActual - 1
+        ) *
         POR_PAGINA;
 
 
@@ -1795,7 +1867,8 @@ function renderizarNoticias(){
         );
 
 
-    grid.innerHTML = "";
+    grid.innerHTML =
+        "";
 
 
     if(!pagina.length){
@@ -1841,12 +1914,15 @@ function renderizarPaginacion(){
 
     const totalPaginas =
         Math.ceil(
+
             noticiasFiltradas.length /
             POR_PAGINA
+
         );
 
 
-    contenedor.innerHTML = "";
+    contenedor.innerHTML =
+        "";
 
 
     if(totalPaginas <= 1){
@@ -1864,6 +1940,7 @@ function renderizarPaginacion(){
                 paginaActual - 1
             );
 
+
         contenedor.appendChild(
             boton
         );
@@ -1880,7 +1957,9 @@ function renderizarPaginacion(){
         if(
 
             i === 1 ||
+
             i === totalPaginas ||
+
             Math.abs(
                 i - paginaActual
             ) <= 2
@@ -1892,6 +1971,7 @@ function renderizarPaginacion(){
                     i,
                     i
                 );
+
 
             contenedor.appendChild(
                 boton
@@ -1912,6 +1992,7 @@ function renderizarPaginacion(){
                 "Siguiente →",
                 paginaActual + 1
             );
+
 
         contenedor.appendChild(
             boton
@@ -1942,8 +2023,7 @@ function crearBotonPagina(
 
 
     if(
-        numero === paginaActual &&
-        typeof numero === "number"
+        numero === paginaActual
     ){
 
         boton.classList.add(
@@ -1961,8 +2041,10 @@ function crearBotonPagina(
         "click",
         () => {
 
+
             paginaActual =
                 numero;
+
 
             renderizar();
 
@@ -1991,7 +2073,7 @@ function crearBotonPagina(
 
 
 /* =========================================================
-   RENDER GENERAL
+   RENDER
 ========================================================= */
 
 function renderizar(){
@@ -2010,40 +2092,46 @@ function renderizar(){
 ========================================================= */
 
 document
-    .querySelectorAll(".category-btn")
-    .forEach(button => {
+    .querySelectorAll(
+        ".category-btn"
+    )
+    .forEach(
+        button => {
 
-        button.addEventListener(
-            "click",
-            () => {
+
+            button.addEventListener(
+                "click",
+                () => {
 
 
-                document
-                    .querySelectorAll(
-                        ".category-btn"
-                    )
-                    .forEach(btn =>
-                        btn.classList.remove(
-                            "active"
+                    document
+                        .querySelectorAll(
+                            ".category-btn"
                         )
+                        .forEach(
+                            btn =>
+                                btn.classList.remove(
+                                    "active"
+                                )
+                        );
+
+
+                    button.classList.add(
+                        "active"
                     );
 
 
-                button.classList.add(
-                    "active"
-                );
+                    categoriaActual =
+                        button.dataset.category;
 
 
-                categoriaActual =
-                    button.dataset.category;
+                    aplicarFiltros();
 
+                }
+            );
 
-                aplicarFiltros();
-
-            }
-        );
-
-    });
+        }
+    );
 
 
 /* =========================================================
@@ -2051,7 +2139,9 @@ document
 ========================================================= */
 
 document
-    .getElementById("searchInput")
+    .getElementById(
+        "searchInput"
+    )
     .addEventListener(
         "input",
         event => {
