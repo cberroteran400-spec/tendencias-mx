@@ -1,11 +1,71 @@
 {
-  "actualizado": "2026-10-02T11:46:43.545450+00:00",
-  "total": 605,
+  "actualizado": "2026-10-02T12:19:14.516743+00:00",
+  "total": 611,
   "imagenes": {
-    "con_imagen": 518,
+    "con_imagen": 524,
     "sin_imagen": 87
   },
   "noticias": [
+    {
+      "titulo": "El Liverpool hace a Gilberto Mora cuestionarse su deseo original de jugar en España - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVzJseVROM2ZIWjFCVUtBZlRyYWJpNFpKQ3YybVhVd3NpZjJ5ZldMbENoa0lYelBEQ2xYbWxyN3A4S29jMkNoYk9tM3F3bkxVaDlKdDRmOWxES25hMWVMOWYwZzROa0RkaERTbjc2ZDhTS054enN5b0pOTGtXY1ZXcFdfME95di0yejlWT19yLVRFYXNER0hzSzNDcUtJN1JQNk56RFA3akVybl8ydEhxbEcwM3dkeGlYQXlqWdIBvAFBVV95cUxQQ1V0R285UVZhZ29ZYTVUdjdqejZiVjM2cGpIT2lEVG90Z3doR1BXU3VnZGplUDVzd1RjMUFGc2hvOFd4cnNqVFFQR2U3TlNNRUFoSW9YMGlQWS1qNE8ybldlbjNZX3NaeXkzR0MwLUhGeV9yelE2Q1ZLY0s5QTJPUHI5ZzFEOXVIQnFfYVFzM3RqM2VJZXYxc1JWZDU5anhwNWNuTDhHZTRteEFDb3ktdERJOXIxcHhJS1o1aA?oc=5",
+      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/02/6abf9d33d1691.png",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxOVzJseVROM2ZIWjFCVUtBZlRyYWJpNFpKQ3YybVhVd3NpZjJ5ZldMbENoa0lYelBEQ2xYbWxyN3A4S29jMkNoYk9tM3F3bkxVaDlKdDRmOWxES25hMWVMOWYwZzROa0RkaERTbjc2ZDhTS054enN5b0pOTGtXY1ZXcFdfME95di0yejlWT19yLVRFYXNER0hzSzNDcUtJN1JQNk56RFA3akVybl8ydEhxbEcwM3dkeGlYQXlqWdIBvAFBVV95cUxQQ1V0R285UVZhZ29ZYTVUdjdqejZiVjM2cGpIT2lEVG90Z3doR1BXU3VnZGplUDVzd1RjMUFGc2hvOFd4cnNqVFFQR2U3TlNNRUFoSW9YMGlQWS1qNE8ybldlbjNZX3NaeXkzR0MwLUhGeV9yelE2Q1ZLY0s5QTJPUHI5ZzFEOXVIQnFfYVFzM3RqM2VJZXYxc1JWZDU5anhwNWNuTDhHZTRteEFDb3ktdERJOXIxcHhJS1o1aA?oc=5\" target=\"_blank\">El Liverpool hace a Gilberto Mora cuestionarse su deseo original de jugar en España</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-02T12:09:11+00:00"
+    },
+    {
+      "titulo": "México logra inversión récord, ¿por qué no crece más?",
+      "url": "https://expansion.mx/opinion/2026/10/02/mexico-logra-inversion-record-por-que-no-crece-mas",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/6952980/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0f%2Fad%2Fcae432f548a09dbb4fdcef65359f%2F16-planta-la-costena-201808031648014-mg-3042.jpeg",
+      "descripcion": "La explicación más cómoda es culpar a los factores externos: la desaceleración económica global, la incertidumbre comercial en todo el mundo o los aranceles del gobierno estadounidense.",
+      "fuente": "Martín Pustilnick",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-02T12:06:59+00:00"
+    },
+    {
+      "titulo": "CBX convierte el cruce Tijuana-San Diego en un negocio de 4 millones de pasajeros",
+      "url": "https://expansion.mx/empresas/2026/10/02/cruzar-tijuana-san-diego-menos-600-pesos-cbx-ahorra-tiempo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c37b46f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F7c%2F42%2Ffb85f69c4f22bd137ae79fa54957%2Fcbx-terminal-007.png",
+      "descripcion": "El puente cobra por el cruce y suma transporte, renta de autos y servicios para viajeros; ahora busca expandirse con GAP tras una década de crecimiento.",
+      "fuente": "Ivet Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-02T11:55:35+00:00"
+    },
+    {
+      "titulo": "México quiere diversificar sus exportaciones, pero menos empresas buscan nuevos mercados",
+      "url": "https://expansion.mx/economia/2026/10/02/mexico-exportaciones-fuera-eu-empresas-diversificacion",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/86998b8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fdd%2F83%2F4b18dba04e7681e197afd7d9cd93%2Fexportaciones-mexico-diversificacion-comercial.jpeg",
+      "descripcion": "Aunque 58.4% de las compañías espera elevar sus ventas al exterior, las que planean exportar a más países cayeron de 56.5% a 48.3%.",
+      "fuente": "Patricia Tapia",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-02T11:55:15+00:00"
+    },
+    {
+      "titulo": "Aumenta la preocupación en el Manchester City tras el comunicado de la Federación Inglesa - Sports Illustrated",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONk12bXNFV194ZFhJSHNkUXBQMWNIbDh0TmlsUlI2Nm1mWjRnRnFVcGExWUotZWdBWEZzTmZwQWxvMW1hM1cwS3JBSno3Q2NkdDBiQUMtVUF6WHpyRXFVSTZleXFLRm9xdDIyVGpMT0FuN1lRSkdyU09yOWxoN0o3dDlST0E2bjZIM2NiOTlMMHpVTmFHNjFvemRpLWFpc18yRmh5UU5ySXpMOENCWlJXWUlDbnAxU2x0UGNtODZB?oc=5",
+      "imagen": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_187,w_6000,h_3375/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/sports_illustrated_ftbol/01m3y5zyv23zq43cb3zt.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxONk12bXNFV194ZFhJSHNkUXBQMWNIbDh0TmlsUlI2Nm1mWjRnRnFVcGExWUotZWdBWEZzTmZwQWxvMW1hM1cwS3JBSno3Q2NkdDBiQUMtVUF6WHpyRXFVSTZleXFLRm9xdDIyVGpMT0FuN1lRSkdyU09yOWxoN0o3dDlST0E2bjZIM2NiOTlMMHpVTmFHNjFvemRpLWFpc18yRmh5UU5ySXpMOENCWlJXWUlDbnAxU2x0UGNtODZB?oc=5\" target=\"_blank\">Aumenta la preocupación en el Manchester City tras el comunicado de la Federación Inglesa</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-02T11:55:13+00:00"
+    },
+    {
+      "titulo": "Checo Pérez complicó su viernes en Malasia con un cambio “muy radical” en su Cadillac - Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9DdWViNl9hRGo4akZLdE5raVR1VGk4Yl9selNxWjhjTmh3bVJ5a3N1UVNjZk9BeElvVjR4VkNQRGdrWWNjZDFWRzBWaHZ5UjNkbzFiaTFxdzN4WTJFOHpBWElJby1DZzkwNjhQNnRLMXlfaTBfelUwV2xIZDM?oc=5",
+      "imagen": "https://cdn-6.motorsport.com/images/amp/6b8ZOen2/s6/sergio-perez-cadillac-racing.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE9DdWViNl9hRGo4akZLdE5raVR1VGk4Yl9selNxWjhjTmh3bVJ5a3N1UVNjZk9BeElvVjR4VkNQRGdrWWNjZDFWRzBWaHZ5UjNkbzFiaTFxdzN4WTJFOHpBWElJby1DZzkwNjhQNnRLMXlfaTBfelUwV2xIZDM?oc=5\" target=\"_blank\">Checo Pérez complicó su viernes en Malasia con un cambio “muy radical” en su Cadillac</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-02T11:47:35+00:00"
+    },
     {
       "titulo": "El mensaje de Checo Pérez sobre un posible cierre de la F1 2026 en una invernal Imola - Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWXlydzdoa2R4eEg3YWFyUHlYaUtrQjEwbDc2aUFlWXJzd1YzM1h3ZWlFSE5FT3VhUDNJOWI3Tkc5WTY5VllaQTBrNzJ6OWFCMzA0Wm9nYXpGM2tKd0l3RWxlTEo0UHl5UmFudlVWVTVsSG1QY3NoTmtTYlIxRXZHQ2trMVlzazdpOG9WekNnVQ?oc=5",
