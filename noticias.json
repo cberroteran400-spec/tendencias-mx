@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-02T21:47:04.979340+00:00",
-  "total": 683,
+  "actualizado": "2026-10-02T22:15:17.458309+00:00",
+  "total": 686,
   "imagenes": {
-    "con_imagen": 585,
-    "sin_imagen": 98
+    "con_imagen": 587,
+    "sin_imagen": 99
   },
   "noticias": [
+    {
+      "titulo": "¿Por qué los Brewers son favoritos para llegar a la Serie Mundial? - espn.com.mx",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZ2kzZkFTNEF6TkIzN1JXYmkwa3E4WVViZGlFTGJza0xWeXhvU0k1QjdQYk54Zy03YWFIMXRxaEhSbWw3Q1p0Q2lJclB5TG9abDZvN3htaUhsaUY3THZjOGNidVdPdlNvYXctVXluTllXZTc0Y2EzODhMcVJkWjNuajl0UXRMbS1DdWFEY0R6UmJnU1poSFhFRlpUdWxZajg0V3diUjYyZklmS3E5a3c?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxPZ2kzZkFTNEF6TkIzN1JXYmkwa3E4WVViZGlFTGJza0xWeXhvU0k1QjdQYk54Zy03YWFIMXRxaEhSbWw3Q1p0Q2lJclB5TG9abDZvN3htaUhsaUY3THZjOGNidVdPdlNvYXctVXluTllXZTc0Y2EzODhMcVJkWjNuajl0UXRMbS1DdWFEY0R6UmJnU1poSFhFRlpUdWxZajg0V3diUjYyZklmS3E5a3c?oc=5\" target=\"_blank\">¿Por qué los Brewers son favoritos para llegar a la Serie Mundial?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">espn.com.mx</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-02T21:56:15+00:00"
+    },
     {
       "titulo": "Adultos mayores se enfrentan a seguros de gastos médicos mayores más caros en México",
       "url": "https://expansion.mx/economia/2026/10/02/adultos-mayores-se-enfrentan-a-seguros-de-gastos-medicos-mayores-mas-caros-en-mexico",
@@ -45,6 +55,16 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-02T20:59:15+00:00"
+    },
+    {
+      "titulo": "Un día como hoy: Bayern Múnich conocía la furia de Jhon Jader Durán - AS Colombia",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQd2dGSm9RZUo0Qmw0ZW45RS1zeEZoaDF5QlZxMWphUk1sY2lLMGF1N2psLWFibnQ0SUFzNVdwYzZRam5MekR4dG1ETm9rR0otejVWSEd5OHlLb2ZzeVEzOWNmeHR2NXR1WDZNOHVVSUpoYk1SODlwaEZxWktCSGM2alJBaFlHNnVNRzkyWFBjeTgyQmZCUmdHbGZablJfZDQ1ZExpR0ctQWtOVzJMNDJiY1M2VTZpbUZZM19wNktRcUt6N0F4QVdVUUZ5eVE5UdIB4gFBVV95cUxQcXZRYkdrcmFGeENXMFBLNHNnbU5PN2VrcXFTYVVyaURlM1FJaU8xdE5rRGpuQUd2QnUxamp0ZkRpUG96OWVsc2dDcmFDNld5cHg1bjJFRTdIR3hteUJUY3lsNFNHMmZNRkxPMXBUM19fWTBjTU5td3JqMVZ0WUd0Nk9Ndjg2X09zUXpVeHdUdWVzU0RfeEFmYkZERmRZR09yM3ZHUnBUVGJQS3R5R3Y4NDB3SGRIeVh3cHVnaXZPaGdNMXR4Qk9WcURTM3pINWx4aUh2enFZRm5xM2czcXNsQnN3?oc=5",
+      "imagen": "https://img.asmedia.epimg.net/resizer/v2/JYKIH22W7ZHCXNABCX4VVSBQXE.jpg?auth=18a1beac5d1b9edf03caa3ea6d658978a409a5cfe117d45accf45de38e4c256e&width=1472&height=828&smart=true",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxQd2dGSm9RZUo0Qmw0ZW45RS1zeEZoaDF5QlZxMWphUk1sY2lLMGF1N2psLWFibnQ0SUFzNVdwYzZRam5MekR4dG1ETm9rR0otejVWSEd5OHlLb2ZzeVEzOWNmeHR2NXR1WDZNOHVVSUpoYk1SODlwaEZxWktCSGM2alJBaFlHNnVNRzkyWFBjeTgyQmZCUmdHbGZablJfZDQ1ZExpR0ctQWtOVzJMNDJiY1M2VTZpbUZZM19wNktRcUt6N0F4QVdVUUZ5eVE5UdIB4gFBVV95cUxQcXZRYkdrcmFGeENXMFBLNHNnbU5PN2VrcXFTYVVyaURlM1FJaU8xdE5rRGpuQUd2QnUxamp0ZkRpUG96OWVsc2dDcmFDNld5cHg1bjJFRTdIR3hteUJUY3lsNFNHMmZNRkxPMXBUM19fWTBjTU5td3JqMVZ0WUd0Nk9Ndjg2X09zUXpVeHdUdWVzU0RfeEFmYkZERmRZR09yM3ZHUnBUVGJQS3R5R3Y4NDB3SGRIeVh3cHVnaXZPaGdNMXR4Qk9WcURTM3pINWx4aUh2enFZRm5xM2czcXNsQnN3?oc=5\" target=\"_blank\">Un día como hoy: Bayern Múnich conocía la furia de Jhon Jader Durán</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AS Colombia</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-02T20:41:14+00:00"
     },
     {
       "titulo": "“El inicio no ha sido el que esperábamos”: Cucurella ante lo hecho por el Real Madrid en liga - El Sol de México",
@@ -1599,6 +1619,16 @@
       "fuente": "Mediotiempo",
       "categoria": "Deportes",
       "subcategoria": "beisbol"
+    },
+    {
+      "titulo": "Yankees de New York vs Rays de Tampa Bay: Fecha, hora y dónde ver en vivo Juego 1 de la ALDS - RPCTV",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeDdXYjhJVWN2cjMzRTlkRjdKSFRKRzdJWlJjWXZ5SjhlT2RQbmRVaDJaU2JYT1Y5MU1STlJxbF93Yzl0SXM3d2xUOFpiYWJzYWdHVFZnU3VNd054NHI1WXV5MXlPeUdfS0JHenRKWURqUnZjakdodGRyOVdrTjZMS3lRbWJLcHRqNXFSMWR0VHRvRllVeXMzT21wei1aMElLMEx5Z0d1ejZ5c0pTZTd0alZqcnZtaGNHaWlpRE5B0gHDAUFVX3lxTE5hRFRuWWVXS2NrcWNEZF9pakdOOFB5Vkt6Y1JvWElYcHZpZmdoeXJILTllcUg5SU5KZDY2R21NdW5UQlU2QmJnamplQlJvTUthMDJHTV9PR2RUNEQtcGp1TDNPTHlPQWFHYml6cTQzV3dqaHhSWVp4azBWOWxpc0NfbGU2dy1fandPNUJiREU5Q2x0aGR5VUxTVUQyTmZ5RG96LXJ2YzNLWE8wbW5IQzNOTE5RVnpiX2N1TXpLVlhzOExUSQ?oc=5",
+      "imagen": "https://media.rpctv.com/p/721360781ac22f5168e5cd41f4f06d15/adjuntos/314/imagenes/019/133/0019133137/1200x675/smart/yankees-vs-rays.PNG",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNeDdXYjhJVWN2cjMzRTlkRjdKSFRKRzdJWlJjWXZ5SjhlT2RQbmRVaDJaU2JYT1Y5MU1STlJxbF93Yzl0SXM3d2xUOFpiYWJzYWdHVFZnU3VNd054NHI1WXV5MXlPeUdfS0JHenRKWURqUnZjakdodGRyOVdrTjZMS3lRbWJLcHRqNXFSMWR0VHRvRllVeXMzT21wei1aMElLMEx5Z0d1ejZ5c0pTZTd0alZqcnZtaGNHaWlpRE5B0gHDAUFVX3lxTE5hRFRuWWVXS2NrcWNEZF9pakdOOFB5Vkt6Y1JvWElYcHZpZmdoeXJILTllcUg5SU5KZDY2R21NdW5UQlU2QmJnamplQlJvTUthMDJHTV9PR2RUNEQtcGp1TDNPTHlPQWFHYml6cTQzV3dqaHhSWVp4azBWOWxpc0NfbGU2dy1fandPNUJiREU5Q2x0aGR5VUxTVUQyTmZ5RG96LXJ2YzNLWE8wbW5IQzNOTE5RVnpiX2N1TXpLVlhzOExUSQ?oc=5\" target=\"_blank\">Yankees de New York vs Rays de Tampa Bay: Fecha, hora y dónde ver en vivo Juego 1 de la ALDS</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">RPCTV</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-01T20:08:00+00:00"
     },
     {
       "id": "5d0146bd8c670231ff4f4e0347d68c90e2474ca8bfb134e2dac42375fb819b60",
