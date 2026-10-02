@@ -6,11 +6,13 @@
 
   <title>TendenciasMX | Noticias y tendencias de México</title>
 
-  <meta name="description" content="TendenciasMX: noticias, deportes, entretenimiento, tecnología, dinero, política y trámites. Descubre las tendencias más importantes de México.">
+  <meta name="description" content="TendenciasMX: noticias de México, tendencias, deportes, entretenimiento, tecnología, dinero, política y trámites. Descubre las noticias más recientes y los temas que están generando conversación.">
 
-  <meta name="keywords" content="noticias México, tendencias México, noticias de hoy, deportes, entretenimiento, tecnología, dinero, política, trámites">
+  <meta name="keywords" content="noticias México, noticias de hoy, tendencias México, noticias de México, deportes, entretenimiento, tecnología, dinero, política, trámites">
 
-  <meta name="theme-color" content="#111827">
+  <meta name="theme-color" content="#050807">
+
+  <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/">
 
   <style>
     * {
@@ -19,39 +21,70 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #111827;
+      background: #050807;
+      color: #ffffff;
       line-height: 1.6;
     }
 
     header {
-      background: #111827;
+      background: rgba(5, 8, 7, .97);
       color: white;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,.15);
+      border-bottom: 1px solid #1a261f;
+      backdrop-filter: blur(12px);
     }
 
     .header-container {
       max-width: 1250px;
       margin: auto;
-      padding: 18px 20px;
+      padding: 17px 20px;
+    }
+
+    .top-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 13px;
     }
 
     .logo {
       display: inline-block;
       color: white;
       text-decoration: none;
-      font-size: 28px;
-      font-weight: 800;
-      margin-bottom: 14px;
+      font-size: 29px;
+      font-weight: 900;
+      letter-spacing: -1px;
     }
 
     .logo span {
-      color: #22c55e;
+      color: #65ff9a;
+    }
+
+    .live-status {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: #87948b;
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      background: #65ff9a;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(101,255,154,.7);
     }
 
     nav {
@@ -63,78 +96,142 @@
     }
 
     nav a {
-      color: #d1d5db;
+      color: #aeb9b1;
       text-decoration: none;
       padding: 8px 12px;
       border-radius: 8px;
       white-space: nowrap;
-      font-size: 14px;
+      font-size: 13px;
+      font-weight: 700;
       transition: .2s;
     }
 
     nav a:hover,
     nav a.active {
-      background: #22c55e;
+      background: #65ff9a;
       color: #052e16;
-      font-weight: 700;
+      font-weight: 800;
     }
 
     main {
       max-width: 1250px;
       margin: auto;
-      padding: 30px 20px 60px;
+      padding: 25px 20px 60px;
     }
 
     /* HERO */
 
     .hero {
+      position: relative;
+      overflow: hidden;
       background:
-        linear-gradient(135deg, rgba(17,24,39,.97), rgba(31,41,55,.94));
+        radial-gradient(circle at 85% 15%, rgba(101,255,154,.22), transparent 32%),
+        radial-gradient(circle at 10% 90%, rgba(101,255,154,.08), transparent 30%),
+        linear-gradient(135deg, #0a120d, #111a14);
       color: white;
+      border: 1px solid #1d2b22;
       border-radius: 22px;
-      padding: 55px 25px;
-      text-align: center;
-      margin-bottom: 30px;
+      padding: 50px 30px;
+      margin-bottom: 25px;
     }
 
-    .hero h1 {
-      font-size: 44px;
-      line-height: 1.15;
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      color: #65ff9a;
+      background: rgba(101,255,154,.10);
+      border: 1px solid rgba(101,255,154,.22);
+      padding: 6px 11px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 900;
       margin-bottom: 15px;
     }
 
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 60px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 17px;
+    }
+
     .hero h1 span {
-      color: #22c55e;
+      color: #65ff9a;
     }
 
     .hero p {
-      max-width: 720px;
-      margin: auto;
-      color: #d1d5db;
-      font-size: 18px;
+      max-width: 730px;
+      color: #b7c3bb;
+      font-size: 17px;
     }
 
     .hero-buttons {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 25px;
+      gap: 10px;
+      margin-top: 23px;
     }
 
     .hero-button {
       display: inline-block;
-      padding: 12px 20px;
+      padding: 12px 18px;
       border-radius: 10px;
       text-decoration: none;
-      font-weight: 700;
-      background: #22c55e;
+      font-weight: 800;
+      font-size: 14px;
+      background: #65ff9a;
       color: #052e16;
+      transition: .2s;
     }
 
     .hero-button.secondary {
-      background: #374151;
+      background: #151f19;
+      border: 1px solid #29382e;
       color: white;
+    }
+
+    .hero-button:hover {
+      transform: translateY(-2px);
+    }
+
+    /* SEARCH */
+
+    .search-container {
+      margin-bottom: 30px;
+    }
+
+    .search-box {
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      background: #0b110e;
+      color: white;
+      border: 1px solid #1e2b23;
+      border-radius: 12px;
+      padding: 15px 18px 15px 46px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: #65ff9a;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: #65ff9a;
     }
 
     /* SECTION */
@@ -153,133 +250,33 @@
 
     .section-title h2 {
       font-size: 25px;
+      letter-spacing: -.5px;
     }
 
     .section-title h2 span {
-      color: #22c55e;
+      color: #65ff9a;
     }
 
     .section-title a {
-      color: #15803d;
+      color: #65ff9a;
       text-decoration: none;
       font-weight: 700;
       white-space: nowrap;
-    }
-
-    /* NEWS CARDS */
-
-    .news-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .news-card {
-      background: white;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 4px 18px rgba(0,0,0,.07);
-      transition: transform .2s, box-shadow .2s;
-    }
-
-    .news-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0,0,0,.11);
-    }
-
-    .news-image {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .news-content {
-      padding: 18px;
-    }
-
-    .tag {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      color: #15803d;
-      background: #dcfce7;
-      padding: 4px 8px;
-      border-radius: 20px;
-      margin-bottom: 9px;
-    }
-
-    .news-content h3 {
-      font-size: 19px;
-      line-height: 1.3;
-      margin-bottom: 8px;
-    }
-
-    .news-content p {
-      color: #6b7280;
-      font-size: 14px;
-    }
-
-    .news-link {
-      display: inline-block;
-      margin-top: 12px;
-      color: #15803d;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    /* CATEGORY BLOCKS */
-
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-    }
-
-    .category-card {
-      background: white;
-      border-radius: 16px;
-      padding: 25px 18px;
-      text-decoration: none;
-      color: #111827;
-      box-shadow: 0 4px 18px rgba(0,0,0,.06);
-      transition: .2s;
-      border: 1px solid #eef0f2;
-    }
-
-    .category-card:hover {
-      transform: translateY(-4px);
-      border-color: #22c55e;
-    }
-
-    .category-icon {
-      font-size: 35px;
-      margin-bottom: 10px;
-    }
-
-    .category-card h3 {
-      font-size: 18px;
-      margin-bottom: 5px;
-    }
-
-    .category-card p {
-      color: #6b7280;
       font-size: 13px;
     }
 
-    /* TRENDING LIST */
+    /* TRENDING */
 
     .trending-box {
-      background: white;
+      background: #0b110e;
+      border: 1px solid #1a271f;
       border-radius: 18px;
-      padding: 22px;
-      box-shadow: 0 4px 18px rgba(0,0,0,.06);
+      padding: 16px;
     }
 
     .trending-list {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 12px;
     }
 
@@ -287,34 +284,261 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      padding: 13px;
-      border-radius: 10px;
-      background: #f9fafb;
+      padding: 14px;
+      border-radius: 11px;
+      background: #101812;
       text-decoration: none;
-      color: #111827;
-      border: 1px solid #eef0f2;
+      color: #ffffff;
+      border: 1px solid #1c2921;
+      transition: .2s;
+    }
+
+    .trend:hover {
+      border-color: #65ff9a;
+      transform: translateY(-2px);
     }
 
     .trend-number {
-      width: 32px;
-      height: 32px;
+      width: 34px;
+      height: 34px;
       border-radius: 50%;
-      background: #dcfce7;
-      color: #15803d;
+      background: #65ff9a;
+      color: #052e16;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-weight: 800;
+      font-weight: 900;
       flex-shrink: 0;
     }
 
     .trend strong {
       display: block;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .trend small {
-      color: #6b7280;
+      color: #77847c;
+      font-size: 12px;
+    }
+
+    /* FEATURED NEWS */
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+    }
+
+    .featured-side {
+      display: grid;
+      gap: 16px;
+    }
+
+    .featured-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 230px;
+      background: #0b110e;
+      border: 1px solid #1a271f;
+      border-radius: 17px;
+      text-decoration: none;
+    }
+
+    .featured-card.large {
+      min-height: 480px;
+    }
+
+    .featured-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s;
+    }
+
+    .featured-card:hover .featured-image {
+      transform: scale(1.04);
+    }
+
+    .featured-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,.95),
+          rgba(0,0,0,.20) 70%,
+          rgba(0,0,0,.05)
+        );
+    }
+
+    .featured-content {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      z-index: 2;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #65ff9a;
+      color: #052e16;
+      padding: 5px 9px;
+      border-radius: 20px;
+      font-size: 10px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .featured-content h3 {
+      font-size: 21px;
+      line-height: 1.2;
+      margin-bottom: 7px;
+    }
+
+    .featured-card.large .featured-content h3 {
+      font-size: 30px;
+    }
+
+    .featured-content p {
+      color: #c2cbc5;
+      font-size: 13px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* NEWS CARDS */
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .news-card {
+      background: #0b110e;
+      border: 1px solid #1a271f;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+      border-color: #314538;
+    }
+
+    .news-image-container {
+      position: relative;
+      height: 190px;
+      overflow: hidden;
+      background: #101812;
+    }
+
+    .news-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .35s;
+    }
+
+    .news-card:hover .news-image {
+      transform: scale(1.04);
+    }
+
+    .fallback-image {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(101,255,154,.14), transparent 45%),
+        #0c1510;
+      color: #65ff9a;
+      font-weight: 900;
+      font-size: 17px;
+    }
+
+    .news-content {
+      padding: 17px;
+    }
+
+    .news-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      color: #6f7c73;
+      font-size: 11px;
+      margin-bottom: 8px;
+    }
+
+    .news-content h3 {
+      font-size: 18px;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    .news-content p {
+      color: #8f9c94;
+      font-size: 13px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .news-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: #65ff9a;
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    /* CATEGORY BLOCKS */
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .category-card {
+      background: #0b110e;
+      border: 1px solid #1a271f;
+      border-radius: 15px;
+      padding: 21px 17px;
+      text-decoration: none;
+      color: #ffffff;
+      transition: .2s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      border-color: #65ff9a;
+    }
+
+    .category-icon {
+      font-size: 30px;
+      margin-bottom: 9px;
+    }
+
+    .category-card h3 {
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .category-card p {
+      color: #859188;
+      font-size: 12px;
     }
 
     /* QUICK ACCESS */
@@ -322,44 +546,62 @@
     .quick-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      gap: 15px;
     }
 
     .quick-card {
-      background: #111827;
+      background:
+        linear-gradient(135deg, #101812, #0b110e);
       color: white;
-      border-radius: 16px;
-      padding: 24px;
+      border: 1px solid #1a271f;
+      border-radius: 15px;
+      padding: 21px;
       text-decoration: none;
       transition: .2s;
     }
 
     .quick-card:hover {
       transform: translateY(-3px);
+      border-color: #65ff9a;
     }
 
     .quick-card .icon {
-      font-size: 30px;
-      margin-bottom: 10px;
+      font-size: 29px;
+      margin-bottom: 9px;
     }
 
     .quick-card h3 {
-      margin-bottom: 5px;
+      margin-bottom: 4px;
+      font-size: 17px;
     }
 
     .quick-card p {
-      color: #d1d5db;
-      font-size: 14px;
+      color: #89968e;
+      font-size: 13px;
+    }
+
+    /* STATUS */
+
+    .status {
+      color: #7d8981;
+      font-size: 13px;
+      margin-bottom: 13px;
+    }
+
+    .status strong {
+      color: #65ff9a;
     }
 
     /* INFO */
 
     .info {
-      background: #ecfdf5;
-      border: 1px solid #bbf7d0;
-      border-radius: 18px;
-      padding: 25px;
-      text-align: center;
+      background:
+        radial-gradient(circle at top right, rgba(101,255,154,.08), transparent 35%),
+        #0b110e;
+      border: 1px solid #1b2920;
+      border-left: 3px solid #65ff9a;
+      border-radius: 14px;
+      padding: 24px;
       margin-top: 10px;
     }
 
@@ -367,17 +609,34 @@
       margin-bottom: 8px;
     }
 
+    .info h2 span {
+      color: #65ff9a;
+    }
+
     .info p {
-      color: #4b5563;
+      color: #9aa69e;
       max-width: 800px;
-      margin: auto;
+    }
+
+    /* EMPTY */
+
+    .empty {
+      display: none;
+      grid-column: 1 / -1;
+      background: #0b110e;
+      border: 1px solid #1a271f;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      color: #7f8c84;
     }
 
     /* FOOTER */
 
     footer {
-      background: #111827;
-      color: #9ca3af;
+      background: #030605;
+      border-top: 1px solid #18221c;
+      color: #748078;
       padding: 35px 20px;
       text-align: center;
     }
@@ -390,23 +649,24 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 14px;
+      gap: 13px;
       margin: 15px 0;
     }
 
     .footer-links a {
-      color: #d1d5db;
+      color: #a5b0a8;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .footer-links a:hover {
-      color: #22c55e;
+      color: #65ff9a;
     }
 
     /* RESPONSIVE */
 
     @media (max-width: 950px) {
+
       .news-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -418,27 +678,59 @@
       .quick-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .trending-list {
+        grid-template-columns: 1fr;
+      }
+
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 750px) {
+
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-card.large {
+        min-height: 360px;
+      }
+
+      .featured-side {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
       .header-container {
-        padding: 15px;
+        padding: 14px;
+      }
+
+      .top-header {
+        margin-bottom: 11px;
       }
 
       .logo {
         font-size: 25px;
       }
 
+      .live-status {
+        display: none;
+      }
+
       main {
-        padding: 20px 15px 45px;
+        padding: 18px 14px 45px;
       }
 
       .hero {
-        padding: 40px 18px;
+        padding: 38px 20px;
+        border-radius: 19px;
       }
 
       .hero h1 {
-        font-size: 32px;
+        font-size: 36px;
+        letter-spacing: -1px;
       }
 
       .hero p {
@@ -447,9 +739,20 @@
 
       .news-grid,
       .category-grid,
-      .quick-grid,
-      .trending-list {
+      .quick-grid {
         grid-template-columns: 1fr;
+      }
+
+      .featured-side {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-card.large {
+        min-height: 330px;
+      }
+
+      .featured-card.large .featured-content h3 {
+        font-size: 24px;
       }
 
       .section-title {
@@ -457,9 +760,10 @@
         flex-direction: column;
       }
 
-      .news-image {
-        height: 200px;
+      .news-image-container {
+        height: 205px;
       }
+
     }
   </style>
 </head>
@@ -467,11 +771,21 @@
 <body>
 
 <header>
+
   <div class="header-container">
 
-    <a class="logo" href="./index.html">
-      Tendencias<span>MX</span>
-    </a>
+    <div class="top-header">
+
+      <a class="logo" href="./index.html">
+        Tendencias<span>MX</span>
+      </a>
+
+      <div class="live-status">
+        <span class="live-dot"></span>
+        ACTUALIDAD
+      </div>
+
+    </div>
 
     <nav>
       <a href="./index.html" class="active">Inicio</a>
@@ -487,6 +801,7 @@
     </nav>
 
   </div>
+
 </header>
 
 <main>
@@ -495,23 +810,115 @@
 
   <section class="hero">
 
-    <h1>
-      Lo que está pasando en <span>México</span>
-    </h1>
+    <div class="hero-content">
 
-    <p>
-      Noticias, deportes, entretenimiento, tecnología, dinero,
-      política y tendencias en un solo lugar.
-    </p>
+      <div class="hero-badge">
+        🔥 TENDENCIASMX
+      </div>
 
-    <div class="hero-buttons">
-      <a class="hero-button" href="./noticias.html">
-        📰 Ver noticias
+      <h1>
+        Lo que está pasando en
+        <span>México</span>
+      </h1>
+
+      <p>
+        Noticias, actualidad y tendencias de México en un solo lugar.
+        Descubre los temas que están generando conversación y las
+        noticias más recientes.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a class="hero-button" href="./noticias.html">
+          📰 Ver noticias
+        </a>
+
+        <a class="hero-button secondary" href="#tendencias">
+          🔥 Explorar tendencias
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BUSCADOR -->
+
+  <section class="search-container">
+
+    <div class="search-box">
+
+      <span class="search-icon">🔎</span>
+
+      <input
+        type="search"
+        id="buscador"
+        placeholder="Buscar noticias, temas o palabras..."
+        autocomplete="off"
+      >
+
+    </div>
+
+  </section>
+
+
+  <!-- TENDENCIAS -->
+
+  <section class="section" id="tendencias">
+
+    <div class="section-title">
+
+      <h2>
+        🔥 En <span>tendencia</span>
+      </h2>
+
+      <a href="./noticias.html">
+        Ver todas →
       </a>
 
-      <a class="hero-button secondary" href="#tendencias">
-        🔥 Ver tendencias
-      </a>
+    </div>
+
+    <div class="trending-box">
+
+      <div class="trending-list" id="trendingList">
+
+        <a class="trend" href="./noticias.html">
+
+          <div class="trend-number">1</div>
+
+          <div>
+            <strong>Noticias de México</strong>
+            <small>Actualidad</small>
+          </div>
+
+        </a>
+
+        <a class="trend" href="./deportes.html">
+
+          <div class="trend-number">2</div>
+
+          <div>
+            <strong>Deportes</strong>
+            <small>Últimas noticias</small>
+          </div>
+
+        </a>
+
+        <a class="trend" href="./tecnologia.html">
+
+          <div class="trend-number">3</div>
+
+          <div>
+            <strong>Tecnología</strong>
+            <small>Innovación e IA</small>
+          </div>
+
+        </a>
+
+      </div>
+
     </div>
 
   </section>
@@ -522,97 +929,75 @@
   <section class="section">
 
     <div class="section-title">
-      <h2>📰 Noticias <span>destacadas</span></h2>
-      <a href="./noticias.html">Ver todas →</a>
+
+      <h2>
+        ⭐ Noticias <span>destacadas</span>
+      </h2>
+
+      <a href="./noticias.html">
+        Ver todas →
+      </a>
+
     </div>
 
-    <div class="news-grid">
+    <div class="featured-grid" id="featuredGrid">
 
-      <article class="news-card">
+      <div class="featured-card large">
 
-        <img
-          class="news-image"
-          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=80"
-          alt="Noticias de México"
-        >
+        <div class="fallback-image">
+          TENDENCIASMX
+        </div>
 
-        <div class="news-content">
+        <div class="featured-overlay"></div>
 
-          <span class="tag">Noticias</span>
+        <div class="featured-content">
+
+          <span class="tag">
+            CARGANDO
+          </span>
 
           <h3>
-            Las noticias que están marcando la conversación
+            Cargando las noticias más recientes...
           </h3>
 
           <p>
-            Consulta las principales noticias y temas de actualidad.
+            Actualizando la portada de TendenciasMX.
           </p>
-
-          <a class="news-link" href="./noticias.html">
-            Leer noticias →
-          </a>
 
         </div>
 
-      </article>
+      </div>
+
+    </div>
+
+  </section>
 
 
-      <article class="news-card">
+  <!-- ÚLTIMAS NOTICIAS -->
 
-        <img
-          class="news-image"
-          src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80"
-          alt="Actualidad de México"
-        >
+  <section class="section">
 
-        <div class="news-content">
+    <div class="section-title">
 
-          <span class="tag">Actualidad</span>
+      <h2>
+        📰 Últimas <span>noticias</span>
+      </h2>
 
-          <h3>
-            Información nacional y temas de interés
-          </h3>
+      <a href="./noticias.html">
+        Más noticias →
+      </a>
 
-          <p>
-            Noticias y acontecimientos que generan conversación.
-          </p>
+    </div>
 
-          <a class="news-link" href="./noticias.html">
-            Ver actualidad →
-          </a>
+    <div class="status" id="status">
+      <strong>Actualizando...</strong>
+    </div>
 
-        </div>
+    <div class="news-grid" id="newsGrid">
 
-      </article>
-
-
-      <article class="news-card">
-
-        <img
-          class="news-image"
-          src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=900&q=80"
-          alt="Información y noticias"
-        >
-
-        <div class="news-content">
-
-          <span class="tag">Tendencias</span>
-
-          <h3>
-            Lo más buscado y comentado
-          </h3>
-
-          <p>
-            Descubre los temas que están llamando la atención.
-          </p>
-
-          <a class="news-link" href="#tendencias">
-            Ver tendencias →
-          </a>
-
-        </div>
-
-      </article>
+      <div class="empty" id="empty">
+        No encontramos noticias para esa búsqueda.
+      </div>
 
     </div>
 
@@ -621,10 +1006,14 @@
 
   <!-- TENDENCIAS POR SECCIÓN -->
 
-  <section class="section" id="tendencias">
+  <section class="section">
 
     <div class="section-title">
-      <h2>🔥 Tendencias por <span>sección</span></h2>
+
+      <h2>
+        🔥 Tendencias por <span>sección</span>
+      </h2>
+
     </div>
 
     <div class="category-grid">
@@ -632,117 +1021,50 @@
       <a class="category-card" href="./noticias.html">
         <div class="category-icon">📰</div>
         <h3>Noticias</h3>
-        <p>Información nacional y temas de actualidad.</p>
+        <p>Información nacional y actualidad.</p>
       </a>
 
       <a class="category-card" href="./deportes.html">
         <div class="category-icon">⚽</div>
         <h3>Deportes</h3>
-        <p>Fútbol, NFL, béisbol y las noticias deportivas.</p>
+        <p>Fútbol, NFL, béisbol y más.</p>
       </a>
 
       <a class="category-card" href="./entretenimiento.html">
         <div class="category-icon">🎬</div>
         <h3>Entretenimiento</h3>
-        <p>Cine, televisión, música, famosos y videojuegos.</p>
+        <p>Cine, música, famosos y cultura.</p>
       </a>
 
       <a class="category-card" href="./tecnologia.html">
         <div class="category-icon">💻</div>
         <h3>Tecnología</h3>
-        <p>IA, gadgets, aplicaciones, redes y seguridad.</p>
+        <p>IA, gadgets, aplicaciones y redes.</p>
       </a>
 
       <a class="category-card" href="./dinero.html">
         <div class="category-icon">💰</div>
         <h3>Dinero</h3>
-        <p>Dólar, economía, bancos, empresas y finanzas.</p>
+        <p>Dólar, economía, bancos y empresas.</p>
       </a>
 
       <a class="category-card" href="./politica.html">
         <div class="category-icon">🏛️</div>
         <h3>Política</h3>
-        <p>Información política y actividad legislativa.</p>
+        <p>Información política y legislativa.</p>
       </a>
 
       <a class="category-card" href="./tramites.html">
         <div class="category-icon">📋</div>
         <h3>Trámites</h3>
-        <p>Información útil sobre documentos y servicios.</p>
+        <p>Documentos, servicios e información útil.</p>
       </a>
 
       <a class="category-card" href="./preguntas.html">
         <div class="category-icon">❓</div>
         <h3>Preguntas</h3>
-        <p>Respuestas a las dudas más frecuentes.</p>
+        <p>Respuestas a dudas frecuentes.</p>
       </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- LO MÁS BUSCADO -->
-
-  <section class="section">
-
-    <div class="section-title">
-      <h2>📈 Lo más <span>buscado</span></h2>
-    </div>
-
-    <div class="trending-box">
-
-      <div class="trending-list">
-
-        <a class="trend" href="./deportes.html">
-          <div class="trend-number">1</div>
-          <div>
-            <strong>Noticias deportivas</strong>
-            <small>⚽ Deportes</small>
-          </div>
-        </a>
-
-        <a class="trend" href="./entretenimiento.html">
-          <div class="trend-number">2</div>
-          <div>
-            <strong>Música y famosos</strong>
-            <small>🎵 Entretenimiento</small>
-          </div>
-        </a>
-
-        <a class="trend" href="./tecnologia.html">
-          <div class="trend-number">3</div>
-          <div>
-            <strong>Inteligencia artificial</strong>
-            <small>💻 Tecnología</small>
-          </div>
-        </a>
-
-        <a class="trend" href="./dinero.html">
-          <div class="trend-number">4</div>
-          <div>
-            <strong>Dólar y economía</strong>
-            <small>💰 Dinero</small>
-          </div>
-        </a>
-
-        <a class="trend" href="./noticias.html">
-          <div class="trend-number">5</div>
-          <div>
-            <strong>Noticias de México</strong>
-            <small>📰 Noticias</small>
-          </div>
-        </a>
-
-        <a class="trend" href="./politica.html">
-          <div class="trend-number">6</div>
-          <div>
-            <strong>Actualidad política</strong>
-            <small>🏛️ Política</small>
-          </div>
-        </a>
-
-      </div>
 
     </div>
 
@@ -754,7 +1076,11 @@
   <section class="section">
 
     <div class="section-title">
-      <h2>🚀 Accesos <span>rápidos</span></h2>
+
+      <h2>
+        🚀 Accesos <span>rápidos</span>
+      </h2>
+
     </div>
 
     <div class="quick-grid">
@@ -766,11 +1092,10 @@
         <h3>Deportes</h3>
 
         <p>
-          Consulta las últimas tendencias deportivas.
+          Consulta las últimas noticias deportivas.
         </p>
 
       </a>
-
 
       <a class="quick-card" href="./entretenimiento.html">
 
@@ -779,11 +1104,10 @@
         <h3>Entretenimiento</h3>
 
         <p>
-          Cine, música, famosos y videojuegos.
+          Cine, música, famosos y cultura.
         </p>
 
       </a>
-
 
       <a class="quick-card" href="./tecnologia.html">
 
@@ -792,11 +1116,10 @@
         <h3>Tecnología</h3>
 
         <p>
-          Tecnología, inteligencia artificial y gadgets.
+          Inteligencia artificial, gadgets y aplicaciones.
         </p>
 
       </a>
-
 
       <a class="quick-card" href="./dinero.html">
 
@@ -810,7 +1133,6 @@
 
       </a>
 
-
       <a class="quick-card" href="./politica.html">
 
         <div class="icon">🏛️</div>
@@ -823,7 +1145,6 @@
 
       </a>
 
-
       <a class="quick-card" href="./tramites.html">
 
         <div class="icon">📋</div>
@@ -831,7 +1152,7 @@
         <h3>Trámites</h3>
 
         <p>
-          Encuentra información sobre trámites importantes.
+          Información sobre trámites y servicios.
         </p>
 
       </a>
@@ -845,12 +1166,14 @@
 
   <section class="info">
 
-    <h2>🇲🇽 TendenciasMX</h2>
+    <h2>
+      🇲🇽 Tendencias<span>MX</span>
+    </h2>
 
     <p>
-      Un espacio para consultar noticias, tendencias e información
-      de interés de México. Explora nuestras diferentes secciones
-      y encuentra rápidamente el contenido que buscas.
+      TendenciasMX reúne noticias, tendencias e información de interés
+      de México en diferentes secciones. Explora la portada y encuentra
+      rápidamente los temas que están generando conversación.
     </p>
 
   </section>
@@ -881,6 +1204,1083 @@
   </div>
 
 </footer>
+
+
+<script>
+
+  const JSON_URL =
+    "./noticias.json?actualizacion=" + Date.now();
+
+  const newsGrid =
+    document.getElementById("newsGrid");
+
+  const featuredGrid =
+    document.getElementById("featuredGrid");
+
+  const status =
+    document.getElementById("status");
+
+  const buscador =
+    document.getElementById("buscador");
+
+  const empty =
+    document.getElementById("empty");
+
+  const trendingList =
+    document.getElementById("trendingList");
+
+  let noticias = [];
+  let noticiasFiltradas = [];
+
+
+  function normalizar(texto) {
+
+    return String(texto || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .trim();
+
+  }
+
+
+  function valor(obj, campos) {
+
+    for (const campo of campos) {
+
+      if (
+        obj &&
+        obj[campo] !== undefined &&
+        obj[campo] !== null &&
+        String(obj[campo]).trim() !== ""
+      ) {
+
+        return obj[campo];
+
+      }
+
+    }
+
+    return "";
+
+  }
+
+
+  function limpiarTexto(texto) {
+
+    return String(texto || "")
+      .replace(/<[^>]*>/g, "")
+      .replace(/&nbsp;/gi, " ")
+      .replace(/&amp;/gi, "&")
+      .replace(/&quot;/gi, '"')
+      .replace(/&#39;/gi, "'")
+      .replace(/\s+/g, " ")
+      .trim();
+
+  }
+
+
+  function esDeporte(noticia) {
+
+    const categoria = normalizar(
+      valor(noticia, [
+        "categoria",
+        "category",
+        "seccion"
+      ])
+    );
+
+    const subcategoria = normalizar(
+      valor(noticia, [
+        "subcategoria",
+        "subCategory",
+        "subseccion"
+      ])
+    );
+
+    const titulo = normalizar(
+      valor(noticia, [
+        "titulo",
+        "title"
+      ])
+    );
+
+    const url = normalizar(
+      valor(noticia, [
+        "url",
+        "link",
+        "enlace"
+      ])
+    );
+
+    const palabras = [
+      "deporte",
+      "futbol",
+      "soccer",
+      "tenis",
+      "beisbol",
+      "mlb",
+      "nfl",
+      "nba",
+      "basquetbol",
+      "boxeo",
+      "formula 1",
+      "formula1",
+      "golf"
+    ];
+
+    return palabras.some(palabra =>
+      categoria.includes(palabra) ||
+      subcategoria.includes(palabra) ||
+      titulo.includes(palabra) ||
+      url.includes("/sports") ||
+      url.includes("/deportes")
+    );
+
+  }
+
+
+  function fechaNoticia(noticia) {
+
+    const fecha = valor(noticia, [
+      "fecha",
+      "date",
+      "published",
+      "pubDate",
+      "fecha_publicacion"
+    ]);
+
+    if (!fecha) {
+      return "";
+    }
+
+    const d = new Date(fecha);
+
+    if (Number.isNaN(d.getTime())) {
+      return String(fecha);
+    }
+
+    return d.toLocaleDateString(
+      "es-MX",
+      {
+        day: "2-digit",
+        month: "short",
+        year: "numeric"
+      }
+    );
+
+  }
+
+
+  function obtenerFechaReal(noticia) {
+
+    const fecha = valor(noticia, [
+      "fecha",
+      "date",
+      "published",
+      "pubDate",
+      "fecha_publicacion"
+    ]);
+
+    const d = new Date(fecha);
+
+    if (Number.isNaN(d.getTime())) {
+      return 0;
+    }
+
+    return d.getTime();
+
+  }
+
+
+  function ordenarPorFecha(lista) {
+
+    return [...lista].sort(
+      (a, b) =>
+        obtenerFechaReal(b) -
+        obtenerFechaReal(a)
+    );
+
+  }
+
+
+  function esFacebookImagen(url) {
+
+    const u = normalizar(url);
+
+    return (
+      u.includes("facebook.com") ||
+      u.includes("fbcdn.net") ||
+      u.includes("fbsbx.com")
+    );
+
+  }
+
+
+  function imagenRespaldo(texto = "NOTICIAS") {
+
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="1200"
+           height="700">
+
+        <rect width="1200"
+              height="700"
+              fill="#0b110e"/>
+
+        <circle
+          cx="600"
+          cy="350"
+          r="230"
+          fill="#101b14"/>
+
+        <circle
+          cx="600"
+          cy="350"
+          r="150"
+          fill="none"
+          stroke="#65ff9a"
+          stroke-width="3"
+          opacity=".25"/>
+
+        <text
+          x="600"
+          y="335"
+          text-anchor="middle"
+          font-family="Arial"
+          font-size="52"
+          font-weight="bold"
+          fill="#65ff9a">
+          TENDENCIASMX
+        </text>
+
+        <text
+          x="600"
+          y="390"
+          text-anchor="middle"
+          font-family="Arial"
+          font-size="24"
+          fill="#aeb9b1">
+          ${texto}
+        </text>
+
+      </svg>
+    `;
+
+    return (
+      "data:image/svg+xml;charset=UTF-8," +
+      encodeURIComponent(svg)
+    );
+
+  }
+
+
+  function imagenSegura(url) {
+
+    if (
+      !url ||
+      esFacebookImagen(url)
+    ) {
+
+      return imagenRespaldo();
+
+    }
+
+    return url;
+
+  }
+
+
+  function obtenerDatos(noticia) {
+
+    const titulo = limpiarTexto(
+      valor(noticia, [
+        "titulo",
+        "title",
+        "name"
+      ])
+    ) || "Noticia de actualidad";
+
+
+    const descripcion = limpiarTexto(
+      valor(noticia, [
+        "descripcion",
+        "description",
+        "resumen",
+        "summary",
+        "contenido"
+      ])
+    );
+
+
+    const imagen = valor(noticia, [
+      "imagen",
+      "image",
+      "img",
+      "imagen_url",
+      "image_url",
+      "thumbnail",
+      "enclosure"
+    ]);
+
+
+    const url = valor(noticia, [
+      "url",
+      "link",
+      "enlace"
+    ]);
+
+
+    const categoria = limpiarTexto(
+      valor(noticia, [
+        "categoria",
+        "category",
+        "seccion"
+      ])
+    ) || "Noticias";
+
+
+    const fuente = limpiarTexto(
+      valor(noticia, [
+        "fuente",
+        "source",
+        "medio"
+      ])
+    );
+
+
+    return {
+
+      titulo,
+
+      descripcion,
+
+      imagen: imagenSegura(imagen),
+
+      url:
+        url ||
+        "./noticias.html",
+
+      categoria,
+
+      fuente,
+
+      fecha:
+        fechaNoticia(noticia)
+
+    };
+
+  }
+
+
+  function crearImagen(img, titulo) {
+
+    img.referrerPolicy =
+      "no-referrer";
+
+    img.onerror =
+      function() {
+
+        this.onerror = null;
+
+        this.src =
+          imagenRespaldo("NOTICIAS");
+
+      };
+
+  }
+
+
+  function crearFeatured(
+    noticia,
+    grande = false
+  ) {
+
+    const d =
+      obtenerDatos(noticia);
+
+
+    const card =
+      document.createElement("a");
+
+    card.className =
+      "featured-card" +
+      (grande ? " large" : "");
+
+
+    card.href =
+      d.url;
+
+
+    card.target =
+      "_blank";
+
+
+    card.rel =
+      "noopener noreferrer";
+
+
+    const img =
+      document.createElement("img");
+
+    img.className =
+      "featured-image";
+
+    img.src =
+      d.imagen;
+
+    img.alt =
+      d.titulo;
+
+    img.loading =
+      grande ? "eager" : "lazy";
+
+    crearImagen(
+      img,
+      d.titulo
+    );
+
+
+    const overlay =
+      document.createElement("div");
+
+    overlay.className =
+      "featured-overlay";
+
+
+    const content =
+      document.createElement("div");
+
+    content.className =
+      "featured-content";
+
+
+    const tag =
+      document.createElement("span");
+
+    tag.className =
+      "tag";
+
+    tag.textContent =
+      d.categoria;
+
+
+    const title =
+      document.createElement("h3");
+
+    title.textContent =
+      d.titulo;
+
+
+    const desc =
+      document.createElement("p");
+
+    desc.textContent =
+      d.descripcion ||
+      "Consulta la información completa de esta noticia.";
+
+
+    content.appendChild(tag);
+
+    content.appendChild(title);
+
+    content.appendChild(desc);
+
+
+    card.appendChild(img);
+
+    card.appendChild(overlay);
+
+    card.appendChild(content);
+
+
+    return card;
+
+  }
+
+
+  function mostrarDestacadas(lista) {
+
+    featuredGrid.innerHTML = "";
+
+
+    if (!lista.length) {
+      return;
+    }
+
+
+    const destacadas =
+      lista.slice(0, 3);
+
+
+    if (destacadas[0]) {
+
+      featuredGrid.appendChild(
+        crearFeatured(
+          destacadas[0],
+          true
+        )
+      );
+
+    }
+
+
+    if (
+      destacadas.length > 1
+    ) {
+
+      const side =
+        document.createElement("div");
+
+      side.className =
+        "featured-side";
+
+
+      destacadas
+        .slice(1, 3)
+        .forEach(noticia => {
+
+          side.appendChild(
+            crearFeatured(
+              noticia,
+              false
+            )
+          );
+
+        });
+
+
+      featuredGrid.appendChild(side);
+
+    }
+
+  }
+
+
+  function crearCard(noticia) {
+
+    const d =
+      obtenerDatos(noticia);
+
+
+    const article =
+      document.createElement("article");
+
+    article.className =
+      "news-card";
+
+
+    const imageContainer =
+      document.createElement("div");
+
+    imageContainer.className =
+      "news-image-container";
+
+
+    const img =
+      document.createElement("img");
+
+    img.className =
+      "news-image";
+
+    img.src =
+      d.imagen;
+
+    img.alt =
+      d.titulo;
+
+    img.loading =
+      "lazy";
+
+    crearImagen(
+      img,
+      d.titulo
+    );
+
+
+    imageContainer.appendChild(img);
+
+
+    const content =
+      document.createElement("div");
+
+    content.className =
+      "news-content";
+
+
+    const meta =
+      document.createElement("div");
+
+    meta.className =
+      "news-meta";
+
+
+    const category =
+      document.createElement("span");
+
+    category.textContent =
+      d.categoria;
+
+
+    const date =
+      document.createElement("span");
+
+    date.textContent =
+      d.fecha;
+
+
+    meta.appendChild(category);
+
+    meta.appendChild(date);
+
+
+    const title =
+      document.createElement("h3");
+
+    title.textContent =
+      d.titulo;
+
+
+    const description =
+      document.createElement("p");
+
+    description.textContent =
+      d.descripcion ||
+      "Consulta la información completa de esta noticia.";
+
+
+    const link =
+      document.createElement("a");
+
+    link.className =
+      "news-link";
+
+    link.href =
+      d.url;
+
+    link.target =
+      "_blank";
+
+    link.rel =
+      "noopener noreferrer";
+
+    link.textContent =
+      "Leer noticia →";
+
+
+    content.appendChild(meta);
+
+    content.appendChild(title);
+
+    content.appendChild(description);
+
+    content.appendChild(link);
+
+
+    article.appendChild(
+      imageContainer
+    );
+
+    article.appendChild(
+      content
+    );
+
+
+    return article;
+
+  }
+
+
+  function mostrarNoticias(lista) {
+
+    newsGrid.innerHTML = "";
+
+
+    if (!lista.length) {
+
+      empty.style.display =
+        "block";
+
+      newsGrid.appendChild(
+        empty
+      );
+
+      status.innerHTML =
+        "<strong>0</strong> noticias encontradas.";
+
+      return;
+
+    }
+
+
+    empty.style.display =
+      "none";
+
+
+    lista
+      .slice(0, 12)
+      .forEach(noticia => {
+
+        newsGrid.appendChild(
+          crearCard(noticia)
+        );
+
+      });
+
+
+    status.innerHTML =
+      "<strong>" +
+      Math.min(
+        lista.length,
+        12
+      ) +
+      "</strong> noticias recientes";
+
+  }
+
+
+  function actualizarTendencias(lista) {
+
+    const conteo = {};
+
+
+    lista.forEach(noticia => {
+
+      const d =
+        obtenerDatos(noticia);
+
+      const categoria =
+        d.categoria ||
+        "Noticias";
+
+
+      conteo[categoria] =
+        (conteo[categoria] || 0) + 1;
+
+    });
+
+
+    const principales =
+      Object.entries(conteo)
+        .sort(
+          (a, b) =>
+            b[1] - a[1]
+        )
+        .slice(0, 3);
+
+
+    if (!principales.length) {
+      return;
+    }
+
+
+    const iconos = {
+
+      noticias: "📰",
+
+      actualidad: "📰",
+
+      deportes: "⚽",
+
+      entretenimiento: "🎬",
+
+      tecnologia: "💻",
+
+      tecnologías: "💻",
+
+      tecnología: "💻",
+
+      dinero: "💰",
+
+      politica: "🏛️",
+
+      política: "🏛️",
+
+      tramites: "📋",
+
+      trámites: "📋"
+
+    };
+
+
+    trendingList.innerHTML =
+      "";
+
+
+    principales.forEach(
+      (item, index) => {
+
+        const nombre =
+          item[0];
+
+        const cantidad =
+          item[1];
+
+
+        const trend =
+          document.createElement("a");
+
+        trend.className =
+          "trend";
+
+
+        trend.href =
+          "./noticias.html";
+
+
+        const numero =
+          document.createElement("div");
+
+        numero.className =
+          "trend-number";
+
+        numero.textContent =
+          index + 1;
+
+
+        const texto =
+          document.createElement("div");
+
+
+        const strong =
+          document.createElement("strong");
+
+
+        const icono =
+          iconos[
+            normalizar(nombre)
+          ] || "🔥";
+
+
+        strong.textContent =
+          icono +
+          " " +
+          nombre;
+
+
+        const small =
+          document.createElement("small");
+
+
+        small.textContent =
+          cantidad +
+          " publicaciones";
+
+
+        texto.appendChild(
+          strong
+        );
+
+        texto.appendChild(
+          small
+        );
+
+
+        trend.appendChild(
+          numero
+        );
+
+        trend.appendChild(
+          texto
+        );
+
+
+        trendingList.appendChild(
+          trend
+        );
+
+      }
+    );
+
+  }
+
+
+  function aplicarBusqueda() {
+
+    const termino =
+      normalizar(
+        buscador.value
+      );
+
+
+    if (!termino) {
+
+      noticiasFiltradas =
+        [...noticias];
+
+    } else {
+
+      noticiasFiltradas =
+        noticias.filter(
+          noticia => {
+
+            const d =
+              obtenerDatos(noticia);
+
+
+            const texto =
+              normalizar(
+                d.titulo +
+                " " +
+                d.descripcion +
+                " " +
+                d.categoria +
+                " " +
+                d.fuente
+              );
+
+
+            return texto.includes(
+              termino
+            );
+
+          }
+        );
+
+    }
+
+
+    mostrarNoticias(
+      noticiasFiltradas
+    );
+
+  }
+
+
+  async function cargarNoticias() {
+
+    try {
+
+      status.innerHTML =
+        "<strong>Actualizando noticias...</strong>";
+
+
+      const respuesta =
+        await fetch(
+          JSON_URL,
+          {
+            cache: "no-store"
+          }
+        );
+
+
+      if (!respuesta.ok) {
+
+        throw new Error(
+          "No se pudo cargar noticias.json"
+        );
+
+      }
+
+
+      const datos =
+        await respuesta.json();
+
+
+      if (Array.isArray(datos)) {
+
+        noticias =
+          datos;
+
+      } else if (
+        datos &&
+        Array.isArray(
+          datos.noticias
+        )
+      ) {
+
+        noticias =
+          datos.noticias;
+
+      } else {
+
+        noticias =
+          [];
+
+      }
+
+
+      noticias =
+        ordenarPorFecha(
+          noticias.filter(
+            noticia =>
+              !esDeporte(noticia)
+          )
+        );
+
+
+      noticiasFiltradas =
+        [...noticias];
+
+
+      actualizarTendencias(
+        noticias
+      );
+
+
+      mostrarDestacadas(
+        noticias
+      );
+
+
+      mostrarNoticias(
+        noticiasFiltradas
+      );
+
+
+    } catch (error) {
+
+      console.error(error);
+
+
+      status.innerHTML =
+        "No se pudieron actualizar las noticias.";
+
+
+      featuredGrid.innerHTML = `
+
+        <div class="featured-card large">
+
+          <div class="fallback-image">
+            TENDENCIASMX
+          </div>
+
+          <div class="featured-overlay"></div>
+
+          <div class="featured-content">
+
+            <span class="tag">
+              TENDENCIASMX
+            </span>
+
+            <h3>
+              No fue posible cargar las noticias.
+            </h3>
+
+            <p>
+              Actualiza la página para volver a intentarlo.
+            </p>
+
+          </div>
+
+        </div>
+
+      `;
+
+    }
+
+  }
+
+
+  buscador.addEventListener(
+    "input",
+    aplicarBusqueda
+  );
+
+
+  cargarNoticias();
+
+</script>
 
 </body>
 </html>
