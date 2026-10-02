@@ -11,10 +11,6 @@
 
 <style>
 
-/* =========================================================
-   BASE
-========================================================= */
-
 *{
     box-sizing:border-box;
     margin:0;
@@ -27,7 +23,7 @@ html{
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:#050706;
+    background:#050807;
     color:#f4f7f5;
     min-height:100vh;
 }
@@ -44,27 +40,26 @@ input{
 
 
 /* =========================================================
-   HEADER
+   HEADER — MISMO ESTILO DE ENTRETENIMIENTO
 ========================================================= */
 
 header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(5,7,6,.96);
-    border-bottom:1px solid #18231d;
-    backdrop-filter:blur(14px);
+    background:rgba(5,8,7,.96);
+    border-bottom:1px solid #1b3024;
+    backdrop-filter:blur(12px);
 }
 
 .header-inner{
     max-width:1250px;
     margin:auto;
-    min-height:72px;
-    padding:12px 20px;
+    padding:16px 20px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:25px;
+    gap:20px;
 }
 
 .logo{
@@ -72,7 +67,6 @@ header{
     font-weight:900;
     color:#65ff9a;
     white-space:nowrap;
-    letter-spacing:-1px;
 }
 
 .logo span{
@@ -81,25 +75,24 @@ header{
 
 nav{
     display:flex;
-    align-items:center;
-    justify-content:flex-end;
-    gap:5px;
     flex-wrap:wrap;
+    gap:7px;
+    justify-content:flex-end;
 }
 
 nav a{
-    padding:9px 11px;
+    padding:8px 10px;
     border-radius:8px;
-    color:#aeb8b2;
-    font-size:12px;
-    transition:.2s ease;
+    color:#b9c5be;
+    font-size:13px;
+    transition:.2s;
     white-space:nowrap;
 }
 
 nav a:hover,
 nav a.active{
     color:#65ff9a;
-    background:#102218;
+    background:#102017;
 }
 
 
@@ -109,76 +102,44 @@ nav a.active{
 
 .hero{
     max-width:1250px;
-    margin:auto;
-    padding:40px 20px 24px;
+    margin:0 auto;
+    padding:55px 20px 30px;
 }
 
 .hero-box{
-    position:relative;
-    overflow:hidden;
-
     background:
         radial-gradient(
             circle at 80% 20%,
-            rgba(101,255,154,.18),
-            transparent 32%
-        ),
-        radial-gradient(
-            circle at 20% 100%,
-            rgba(39,120,69,.12),
-            transparent 35%
+            rgba(101,255,154,.16),
+            transparent 30%
         ),
         linear-gradient(
             135deg,
-            #0b1710,
-            #07100b 55%,
-            #08130d
+            #0d1711,
+            #07100b
         );
 
-    border:1px solid #1d3425;
-    border-radius:20px;
-    padding:40px 36px;
-    min-height:230px;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.02),
-        0 15px 45px rgba(0,0,0,.16);
-}
-
-.hero-box::after{
-    content:"";
-    position:absolute;
-    width:280px;
-    height:280px;
-    right:-100px;
-    bottom:-150px;
-    border-radius:50%;
-    background:rgba(101,255,154,.05);
-    filter:blur(25px);
-    pointer-events:none;
+    border:1px solid #1d3927;
+    border-radius:22px;
+    padding:42px 30px;
 }
 
 .badge{
-    display:inline-flex;
-    align-items:center;
-    padding:6px 11px;
+    display:inline-block;
+    padding:7px 12px;
     border-radius:999px;
-    background:#10281a;
-    border:1px solid #245237;
+    background:#102519;
     color:#65ff9a;
-    font-size:10px;
-    font-weight:900;
-    letter-spacing:.4px;
-    margin-bottom:16px;
+    border:1px solid #214a30;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:15px;
 }
 
 .hero h1{
-    position:relative;
-    z-index:1;
-    font-size:clamp(40px,6vw,64px);
-    line-height:.98;
-    letter-spacing:-2px;
-    margin-bottom:18px;
+    font-size:clamp(34px,6vw,62px);
+    line-height:1;
+    margin-bottom:15px;
 }
 
 .hero h1 span{
@@ -186,20 +147,16 @@ nav a.active{
 }
 
 .hero p{
-    position:relative;
-    z-index:1;
-    max-width:780px;
-    color:#aab5ae;
-    line-height:1.6;
-    font-size:14px;
+    max-width:760px;
+    color:#aebbb3;
+    line-height:1.7;
+    font-size:16px;
 }
 
 .status{
-    position:relative;
-    z-index:1;
-    margin-top:18px;
-    color:#65736a;
-    font-size:11px;
+    margin-top:15px;
+    color:#829188;
+    font-size:13px;
 }
 
 .status strong{
@@ -213,56 +170,45 @@ nav a.active{
 
 .tools{
     max-width:1250px;
-    margin:auto;
+    margin:0 auto;
     padding:0 20px 25px;
 }
 
 .search{
     width:100%;
-    height:42px;
-    background:#09100c;
-    color:#f4f7f5;
-    border:1px solid #1a2a20;
-    border-radius:11px;
-    padding:0 14px;
-    font-size:12px;
+    background:#0b110e;
+    color:#fff;
+    border:1px solid #203629;
+    border-radius:13px;
+    padding:15px 17px;
+    font-size:15px;
     outline:none;
-    transition:.2s ease;
-}
-
-.search::placeholder{
-    color:#66736b;
 }
 
 .search:focus{
     border-color:#65ff9a;
-    box-shadow:0 0 0 3px rgba(101,255,154,.06);
 }
 
 .filters{
     display:flex;
-    gap:7px;
+    gap:8px;
     flex-wrap:wrap;
-    margin-top:10px;
+    margin-top:14px;
 }
 
 .filter{
-    border:1px solid #1b2c21;
-    background:#0a110d;
-    color:#9eaaa3;
-    padding:8px 12px;
-    border-radius:8px;
+    border:1px solid #263b2d;
+    background:#0b120e;
+    color:#aebbb3;
+    padding:9px 13px;
+    border-radius:9px;
     cursor:pointer;
-    font-size:11px;
+    font-size:13px;
     font-weight:700;
-    transition:.2s ease;
+    transition:.2s;
 }
 
-.filter:hover{
-    color:#65ff9a;
-    border-color:#31553c;
-}
-
+.filter:hover,
 .filter.active{
     background:#65ff9a;
     color:#041008;
@@ -277,29 +223,22 @@ nav a.active{
 .news-section{
     max-width:1250px;
     margin:auto;
-    padding:0 20px 55px;
+    padding:0 20px 50px;
 }
 
 .result-count{
-    color:#69766e;
-    font-size:11px;
-    margin:0 0 22px;
+    color:#829188;
+    font-size:13px;
+    margin-bottom:20px;
 }
 
 .result-count strong{
     color:#65ff9a;
 }
 
-
-/* =========================================================
-   TÍTULOS DE SECCIÓN
-========================================================= */
-
 .section-title{
-    font-size:21px;
-    line-height:1.2;
-    margin-bottom:14px;
-    letter-spacing:-.3px;
+    font-size:25px;
+    margin-bottom:18px;
 }
 
 .section-title span{
@@ -311,50 +250,48 @@ nav a.active{
    DESTACADAS
 ========================================================= */
 
+.featured-section{
+    margin-bottom:35px;
+}
+
 .featured-grid{
     display:grid;
     grid-template-columns:2fr 1fr;
-    grid-template-rows:300px 220px;
-    gap:12px;
-    margin-bottom:38px;
+    gap:15px;
 }
 
 .featured-card{
     position:relative;
+    min-height:300px;
     overflow:hidden;
-    border:1px solid #1d3024;
-    border-radius:15px;
-    background:#0a100d;
-    min-width:0;
-    transition:.25s ease;
-}
-
-.featured-card:first-child{
-    grid-row:1 / 3;
+    border-radius:18px;
+    border:1px solid #20382a;
+    background:#0b120e;
+    transition:.25s;
 }
 
 .featured-card:hover{
     border-color:#65ff9a;
-    transform:translateY(-3px);
-    box-shadow:0 15px 35px rgba(0,0,0,.28);
+    transform:translateY(-4px);
+}
+
+.featured-card img{
+    width:100%;
+    height:100%;
+    min-height:300px;
+    object-fit:cover;
+    display:block;
+    transition:.35s;
+}
+
+.featured-card:hover img{
+    transform:scale(1.04);
 }
 
 .featured-image{
     position:absolute;
     inset:0;
-    background:#101812;
-}
-
-.featured-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    transition:.4s ease;
-}
-
-.featured-card:hover .featured-image img{
-    transform:scale(1.04);
+    background:#101913;
 }
 
 .featured-image::after{
@@ -364,61 +301,66 @@ nav a.active{
     background:
         linear-gradient(
             to top,
-            rgba(0,0,0,.9) 0%,
-            rgba(0,0,0,.48) 45%,
-            rgba(0,0,0,.05) 75%
+            rgba(0,0,0,.95),
+            rgba(0,0,0,.2) 65%,
+            transparent
         );
 }
 
 .featured-overlay{
     position:absolute;
+    inset:0;
+    display:flex;
+    align-items:flex-end;
+    padding:25px;
     z-index:2;
-    left:0;
-    right:0;
-    bottom:0;
-    padding:22px;
 }
 
-.featured-badge{
+.featured-content{
+    max-width:800px;
+}
+
+.featured-tag{
+    display:inline-block;
     color:#65ff9a;
-    font-size:9px;
+    font-size:11px;
     font-weight:900;
     text-transform:uppercase;
     margin-bottom:8px;
 }
 
 .featured-date{
-    color:#b5beb9;
-    opacity:.8;
-    font-size:9px;
+    color:#aebbb3;
+    font-size:11px;
     margin-bottom:8px;
 }
 
-.featured-overlay h2{
-    color:#fff;
-    font-size:clamp(20px,2.4vw,28px);
-    line-height:1.08;
-    letter-spacing:-.5px;
-    text-shadow:0 2px 8px rgba(0,0,0,.6);
+.featured-content h2{
+    font-size:clamp(21px,3vw,32px);
+    line-height:1.15;
 }
 
-.featured-card:not(:first-child) .featured-overlay{
-    padding:18px;
+.featured-small{
+    min-height:300px;
 }
 
-.featured-card:not(:first-child) .featured-overlay h2{
-    font-size:21px;
+.featured-small img{
+    min-height:300px;
 }
 
 
 /* =========================================================
-   ÚLTIMAS NOTICIAS
+   NOTICIAS
 ========================================================= */
+
+.latest-title{
+    margin-top:5px;
+}
 
 .latest-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:14px;
+    gap:18px;
 }
 
 .news-link{
@@ -427,25 +369,23 @@ nav a.active{
 }
 
 .news-card{
-    height:100%;
+    background:#0b110e;
+    border:1px solid #1d3024;
+    border-radius:16px;
     overflow:hidden;
-    background:#0a100d;
-    border:1px solid #1b2c21;
-    border-radius:14px;
-    transition:.25s ease;
+    height:100%;
+    transition:.25s;
 }
 
 .news-card:hover{
     transform:translateY(-4px);
     border-color:#65ff9a;
-    box-shadow:0 12px 30px rgba(0,0,0,.25);
 }
 
 .news-image{
-    width:100%;
-    height:205px;
+    height:195px;
+    background:#101913;
     overflow:hidden;
-    background:#101812;
 }
 
 .news-image img{
@@ -453,7 +393,7 @@ nav a.active{
     height:100%;
     object-fit:cover;
     display:block;
-    transition:.35s ease;
+    transition:.35s;
 }
 
 .news-card:hover .news-image img{
@@ -468,11 +408,6 @@ nav a.active{
     justify-content:center;
 
     background:
-        radial-gradient(
-            circle at 50% 30%,
-            rgba(101,255,154,.14),
-            transparent 35%
-        ),
         linear-gradient(
             135deg,
             #102018,
@@ -480,41 +415,38 @@ nav a.active{
         );
 
     color:#65ff9a;
-    font-size:38px;
-    font-weight:900;
+    font-size:42px;
 }
 
 .news-content{
-    padding:15px;
+    padding:17px;
 }
 
 .badge-card{
     color:#65ff9a;
-    font-size:9px;
+    font-size:11px;
     font-weight:900;
     text-transform:uppercase;
-    margin-bottom:7px;
+    margin-bottom:8px;
 }
 
 .date{
-    color:#66736b;
-    font-size:9px;
+    color:#65736a;
+    font-size:11px;
     margin-bottom:8px;
 }
 
 .news-card h2{
-    color:#f4f7f5;
-    font-size:17px;
-    line-height:1.2;
-    letter-spacing:-.2px;
-    margin-bottom:9px;
+    font-size:18px;
+    line-height:1.3;
+    margin-bottom:10px;
 }
 
 .news-card p{
-    color:#8e9b93;
-    font-size:11px;
-    line-height:1.5;
-    margin-bottom:12px;
+    color:#9daaa2;
+    font-size:13px;
+    line-height:1.55;
+    margin-bottom:13px;
 
     display:-webkit-box;
     -webkit-line-clamp:3;
@@ -524,7 +456,7 @@ nav a.active{
 
 .read{
     color:#65ff9a;
-    font-size:10px;
+    font-size:11px;
     font-weight:800;
 }
 
@@ -537,22 +469,19 @@ nav a.active{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:6px;
+    gap:7px;
     flex-wrap:wrap;
     margin-top:30px;
 }
 
 .page-btn{
-    min-width:38px;
-    background:#0b130e;
-    border:1px solid #203328;
-    color:#a8b3ac;
-    padding:9px 11px;
+    background:#0c1510;
+    border:1px solid #23372a;
+    color:#aebbb3;
+    padding:9px 12px;
     border-radius:8px;
     cursor:pointer;
-    font-size:11px;
-    font-weight:700;
-    transition:.2s ease;
+    font-size:13px;
 }
 
 .page-btn:hover,
@@ -578,8 +507,7 @@ nav a.active{
     grid-column:1/-1;
     text-align:center;
     padding:60px 20px;
-    border-radius:15px;
-    background:#0a100d;
+    border-radius:16px;
 }
 
 .empty{
@@ -615,12 +543,12 @@ nav a.active{
 ========================================================= */
 
 footer{
-    border-top:1px solid #18261e;
+    border-top:1px solid #1b2d22;
     background:#030504;
-    padding:28px 20px;
+    padding:30px 20px;
     text-align:center;
-    color:#657169;
-    font-size:11px;
+    color:#68756d;
+    font-size:13px;
 }
 
 footer strong{
@@ -634,91 +562,39 @@ footer strong{
 
 @media(max-width:900px){
 
-    .header-inner{
-        align-items:center;
-    }
-
-    nav{
-        overflow-x:auto;
-        flex-wrap:nowrap;
-        justify-content:flex-start;
-        max-width:65%;
-        scrollbar-width:none;
-    }
-
-    nav::-webkit-scrollbar{
-        display:none;
-    }
-
     .featured-grid{
-        grid-template-columns:2fr 1fr;
-        grid-template-rows:260px 190px;
+        grid-template-columns:1fr;
     }
 
     .latest-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
+    nav{
+        display:none;
+    }
+
 }
 
 
-@media(max-width:650px){
-
-    header{
-        position:relative;
-    }
+@media(max-width:600px){
 
     .header-inner{
-        min-height:auto;
-        padding:14px 15px 10px;
-        display:block;
-    }
-
-    .logo{
-        display:block;
-        margin-bottom:11px;
-        font-size:23px;
-    }
-
-    nav{
-        max-width:none;
-        width:100%;
-        gap:4px;
-        overflow-x:auto;
-        flex-wrap:nowrap;
-        justify-content:flex-start;
-        padding-bottom:2px;
-    }
-
-    nav a{
-        font-size:10px;
-        padding:7px 9px;
+        padding:14px 15px;
     }
 
     .hero{
-        padding:25px 14px 18px;
+        padding:30px 15px 20px;
     }
 
     .hero-box{
-        padding:28px 20px;
-        min-height:215px;
-        border-radius:17px;
-    }
-
-    .hero h1{
-        font-size:42px;
-        letter-spacing:-1.5px;
-    }
-
-    .hero p{
-        font-size:12px;
-        line-height:1.55;
+        padding:30px 20px;
     }
 
     .tools,
     .news-section{
-        padding-left:14px;
-        padding-right:14px;
+        padding-left:15px;
+        padding-right:15px;
     }
 
     .filters{
@@ -734,86 +610,31 @@ footer strong{
 
     .filter{
         flex:0 0 auto;
-        font-size:10px;
-        padding:8px 10px;
-    }
-
-    .result-count{
-        margin-top:2px;
-        margin-bottom:18px;
-    }
-
-    .featured-grid{
-        display:flex;
-        flex-direction:column;
-        gap:12px;
-    }
-
-    .featured-card,
-    .featured-card:first-child{
-        height:300px;
-        min-height:300px;
-    }
-
-    .featured-card:not(:first-child){
-        height:240px;
-        min-height:240px;
-    }
-
-    .featured-overlay h2{
-        font-size:23px;
-    }
-
-    .featured-card:not(:first-child) .featured-overlay h2{
-        font-size:20px;
     }
 
     .latest-grid{
         grid-template-columns:1fr;
-        gap:12px;
     }
 
     .news-image{
-        height:220px;
-    }
-
-    .news-content{
-        padding:15px;
-    }
-
-    .news-card h2{
-        font-size:18px;
-    }
-
-}
-
-
-@media(max-width:400px){
-
-    .hero h1{
-        font-size:36px;
+        height:210px;
     }
 
     .featured-card,
-    .featured-card:first-child{
-        height:275px;
-        min-height:275px;
+    .featured-small{
+        min-height:300px;
     }
 
-    .featured-card:not(:first-child){
-        height:225px;
-        min-height:225px;
-    }
-
-    .news-image{
-        height:205px;
+    .featured-card img,
+    .featured-small img{
+        min-height:300px;
     }
 
 }
 
 
 /* =========================================================
-   OCULTAR DESTACADAS SI NO HAY RESULTADOS
+   OCULTAR DESTACADAS
 ========================================================= */
 
 .featured-section.hidden{
@@ -826,51 +647,53 @@ footer strong{
 <body>
 
 
-<!-- ======================================================
-     HEADER
-====================================================== -->
-
 <header>
 
     <div class="header-inner">
 
-        <a class="logo" href="./index.html">
+        <a class="logo" href="index.html">
             Tendencias<span>MX</span>
         </a>
 
         <nav>
 
-            <a href="./index.html">Inicio</a>
+            <a href="index.html">
+                Inicio
+            </a>
 
-            <a href="./noticias.html">Noticias</a>
+            <a href="noticias.html">
+                Noticias
+            </a>
 
-            <a href="./deportes.html">Deportes</a>
+            <a href="deportes.html">
+                Deportes
+            </a>
 
-            <a href="./entretenimiento.html">
+            <a href="entretenimiento.html">
                 Entretenimiento
             </a>
 
-            <a href="./tecnologia.html">
+            <a href="tecnologia.html">
                 Tecnología
             </a>
 
-            <a href="./dinero.html">
+            <a href="dinero.html">
                 Dinero
             </a>
 
-            <a href="./politica.html" class="active">
+            <a href="politica.html" class="active">
                 Política
             </a>
 
-            <a href="./tramites.html">
+            <a href="tramites.html">
                 Trámites
             </a>
 
-            <a href="./contacto.html">
+            <a href="contacto.html">
                 Contacto
             </a>
 
-            <a href="./preguntas.html">
+            <a href="preguntas.html">
                 Preguntas
             </a>
 
@@ -880,10 +703,6 @@ footer strong{
 
 </header>
 
-
-<!-- ======================================================
-     HERO
-====================================================== -->
 
 <section class="hero">
 
@@ -904,18 +723,10 @@ footer strong{
             y asuntos públicos.
         </p>
 
-        <div class="status" id="status">
-            Cargando información política...
-        </div>
-
     </div>
 
 </section>
 
-
-<!-- ======================================================
-     BUSCADOR
-====================================================== -->
 
 <section class="tools">
 
@@ -923,7 +734,7 @@ footer strong{
         id="buscador"
         class="search"
         type="search"
-        placeholder="🔎 Buscar noticias de política..."
+        placeholder="Buscar noticias de política..."
         autocomplete="off"
     >
 
@@ -976,9 +787,13 @@ footer strong{
 </section>
 
 
-<!-- ======================================================
-     NOTICIAS
-====================================================== -->
+<div class="status"
+     style="max-width:1250px;margin:0 auto;padding:0 20px 20px;">
+    <span id="status">
+        Cargando información política...
+    </span>
+</div>
+
 
 <section class="news-section">
 
@@ -987,8 +802,6 @@ footer strong{
         id="resultCount"
     ></div>
 
-
-    <!-- DESTACADAS -->
 
     <section
         class="featured-section"
@@ -1007,11 +820,10 @@ footer strong{
     </section>
 
 
-    <!-- ÚLTIMAS -->
-
-    <h2 class="section-title">
+    <h2 class="section-title latest-title">
         Últimas <span>publicaciones</span>
     </h2>
+
 
     <section
         class="latest-grid"
@@ -1033,14 +845,10 @@ footer strong{
 </section>
 
 
-<!-- ======================================================
-     FOOTER
-====================================================== -->
-
 <footer>
 
     © 2026 <strong>TendenciasMX</strong>
-    · Información y actualidad
+    · Noticias y tendencias de México
 
 </footer>
 
@@ -1091,7 +899,7 @@ const POR_PAGINA = 12;
 
 
 /* =========================================================
-   NORMALIZAR TEXTO
+   NORMALIZAR
 ========================================================= */
 
 function normalizar(valor){
@@ -1109,7 +917,7 @@ function normalizar(valor){
    OBTENER CAMPO
 ========================================================= */
 
-function campo(noticia, campos){
+function campo(noticia,campos){
 
     for(const nombre of campos){
 
@@ -1197,30 +1005,35 @@ function obtenerDescripcion(noticia){
 
 function obtenerFecha(noticia){
 
-    const valor = campo(noticia,[
-        "fecha",
-        "published",
-        "pubDate",
-        "date",
-        "fecha_publicacion",
-        "published_at"
-    ]);
+    const valor =
+        campo(noticia,[
+            "fecha",
+            "published",
+            "pubDate",
+            "date",
+            "fecha_publicacion",
+            "published_at"
+        ]);
 
     if(!valor){
         return "";
     }
 
-    const fecha = new Date(valor);
+    const fecha =
+        new Date(valor);
 
     if(Number.isNaN(fecha.getTime())){
         return valor;
     }
 
-    return fecha.toLocaleString("es-MX",{
-        day:"2-digit",
-        month:"short",
-        year:"numeric"
-    });
+    return fecha.toLocaleDateString(
+        "es-MX",
+        {
+            day:"2-digit",
+            month:"short",
+            year:"numeric"
+        }
+    );
 
 }
 
@@ -1231,16 +1044,18 @@ function obtenerFecha(noticia){
 
 function fechaNumerica(noticia){
 
-    const valor = campo(noticia,[
-        "fecha",
-        "published",
-        "pubDate",
-        "date",
-        "fecha_publicacion",
-        "published_at"
-    ]);
+    const valor =
+        campo(noticia,[
+            "fecha",
+            "published",
+            "pubDate",
+            "date",
+            "fecha_publicacion",
+            "published_at"
+        ]);
 
-    const fecha = Date.parse(valor);
+    const fecha =
+        Date.parse(valor);
 
     return Number.isNaN(fecha)
         ? 0
@@ -1285,7 +1100,6 @@ function textoCompleto(noticia){
 
 /* =========================================================
    DETECTAR POLÍTICA
-   MISMA LÓGICA ORIGINAL
 ========================================================= */
 
 function esPolitica(noticia){
@@ -1330,25 +1144,32 @@ function esPolitica(noticia){
 
 
     const categoriasPoliticas = [
+
         "politica",
         "politicas",
         "politica nacional",
         "gobierno",
         "congreso",
         "justicia"
+
     ];
 
+
     if(
-        categoriasPoliticas.some(c =>
-            categoria === c ||
-            categoria.includes(c)
+        categoriasPoliticas.some(
+            c =>
+                categoria === c ||
+                categoria.includes(c)
         )
     ){
+
         return true;
+
     }
 
 
     const subcategoriasPoliticas = [
+
         "politica",
         "politicas",
         "gobierno",
@@ -1360,37 +1181,49 @@ function esPolitica(noticia){
         "internacional",
         "elecciones",
         "eleccion"
+
     ];
 
+
     if(
-        subcategoriasPoliticas.some(c =>
-            subcategoria === c ||
-            subcategoria.includes(c)
+        subcategoriasPoliticas.some(
+            c =>
+                subcategoria === c ||
+                subcategoria.includes(c)
         )
     ){
+
         return true;
+
     }
 
 
     const seccionesPoliticas = [
+
         "politica",
         "politicas",
         "gobierno",
         "congreso",
         "justicia"
+
     ];
 
+
     if(
-        seccionesPoliticas.some(c =>
-            seccion === c ||
-            seccion.includes(c)
+        seccionesPoliticas.some(
+            c =>
+                seccion === c ||
+                seccion.includes(c)
         )
     ){
+
         return true;
+
     }
 
 
     const rutasPoliticas = [
+
         "/politica",
         "/politicas",
         "/gobierno",
@@ -1399,20 +1232,26 @@ function esPolitica(noticia){
         "/camara-de-diputados",
         "/justicia",
         "/elecciones"
+
     ];
 
+
     if(
-        rutasPoliticas.some(ruta =>
-            url.includes(
-                normalizar(ruta)
-            )
+        rutasPoliticas.some(
+            ruta =>
+                url.includes(
+                    normalizar(ruta)
+                )
         )
     ){
+
         return true;
+
     }
 
 
     const fuentesPoliticas = [
+
         "canal del congreso",
         "senado",
         "camara de diputados",
@@ -1423,14 +1262,21 @@ function esPolitica(noticia){
         "secretaria de gobernacion",
         "secretaría de gobernación",
         "segob"
+
     ];
 
+
     if(
-        fuentesPoliticas.some(f =>
-            fuente.includes(normalizar(f))
+        fuentesPoliticas.some(
+            f =>
+                fuente.includes(
+                    normalizar(f)
+                )
         )
     ){
+
         return true;
+
     }
 
 
@@ -1538,12 +1384,16 @@ function esPolitica(noticia){
                 )
         )
     ){
+
         return true;
+
     }
 
 
     if(coincidencias.length >= 2){
+
         return true;
+
     }
 
 
@@ -1554,7 +1404,6 @@ function esPolitica(noticia){
 
 /* =========================================================
    CLASIFICAR
-   MISMA LÓGICA ORIGINAL
 ========================================================= */
 
 function obtenerTipo(noticia){
@@ -1615,21 +1464,13 @@ function obtenerTipo(noticia){
     if(
 
         texto.includes("senado") ||
-
         texto.includes("senador") ||
-
         texto.includes("senadora") ||
-
         texto.includes("congreso") ||
-
         texto.includes("diputado") ||
-
         texto.includes("diputada") ||
-
         texto.includes("legislatura") ||
-
         texto.includes("camara de diputados") ||
-
         texto.includes("cámara de diputados")
 
     ){
@@ -1642,19 +1483,12 @@ function obtenerTipo(noticia){
     if(
 
         texto.includes("suprema corte") ||
-
         texto.includes("poder judicial") ||
-
         texto.includes("tribunal") ||
-
         texto.includes("juzgado") ||
-
         texto.includes("fiscalia") ||
-
         texto.includes("fiscalía") ||
-
         texto.includes("ministro de la corte") ||
-
         texto.includes("ministra de la corte")
 
     ){
@@ -1667,21 +1501,13 @@ function obtenerTipo(noticia){
     if(
 
         texto.includes("presidencia") ||
-
         texto.includes("presidenta") ||
-
         texto.includes("presidente") ||
-
         texto.includes("gobierno federal") ||
-
         texto.includes("gobierno de mexico") ||
-
         texto.includes("gobierno de méxico") ||
-
         texto.includes("secretaria de estado") ||
-
         texto.includes("secretaría de estado") ||
-
         texto.includes("secretario de estado")
 
     ){
@@ -1738,10 +1564,10 @@ function escaparHTML(valor){
 
 
 /* =========================================================
-   TARJETA DESTACADA
+   DESTACADA
 ========================================================= */
 
-function crearDestacada(noticia){
+function crearDestacada(noticia,index){
 
     const titulo =
         obtenerTitulo(noticia);
@@ -1758,60 +1584,66 @@ function crearDestacada(noticia){
     const tipo =
         obtenerTipo(noticia);
 
+    const clase =
+        index === 0
+            ? ""
+            : " featured-small";
+
+
+    const imagenHTML = imagen
+        ?
+        `
+        <img
+            src="${escaparHTML(imagen)}"
+            alt="${escaparHTML(titulo)}"
+            loading="lazy"
+            onerror="this.style.display='none'"
+        >
+        `
+        :
+        `
+        <div class="image-fallback">
+            ★
+        </div>
+        `;
+
 
     const contenido = `
 
-        <div class="featured-card">
+        <div class="featured-card${clase}">
 
             <div class="featured-image">
 
-                ${
-                    imagen
-                    ?
-                    `
-                    <img
-                        src="${escaparHTML(imagen)}"
-                        alt="${escaparHTML(titulo)}"
-                        loading="lazy"
-                        onerror="
-                            this.style.display='none';
-                        "
-                    >
-                    `
-                    :
-                    `
-                    <div class="image-fallback">
-                        ★
-                    </div>
-                    `
-                }
+                ${imagenHTML}
 
             </div>
 
 
             <div class="featured-overlay">
 
-                <div class="featured-badge">
-                    ${escaparHTML(nombreTipo(tipo))}
-                </div>
+                <div class="featured-content">
 
-
-                ${
-                    fecha
-                    ?
-                    `
-                    <div class="featured-date">
-                        ${escaparHTML(fecha)}
+                    <div class="featured-tag">
+                        ${escaparHTML(nombreTipo(tipo))}
                     </div>
-                    `
-                    :
-                    ""
-                }
 
+                    ${
+                        fecha
+                        ?
+                        `
+                        <div class="featured-date">
+                            ${escaparHTML(fecha)}
+                        </div>
+                        `
+                        :
+                        ""
+                    }
 
-                <h2>
-                    ${escaparHTML(titulo)}
-                </h2>
+                    <h2>
+                        ${escaparHTML(titulo)}
+                    </h2>
+
+                </div>
 
             </div>
 
@@ -1828,9 +1660,10 @@ function crearDestacada(noticia){
                 href="${escaparHTML(url)}"
                 target="_blank"
                 rel="noopener noreferrer"
-                style="display:block;height:100%;"
             >
+
                 ${contenido}
+
             </a>
 
         `;
@@ -1868,33 +1701,34 @@ function crearTarjeta(noticia){
         obtenerTipo(noticia);
 
 
+    const imagenHTML = imagen
+        ?
+        `
+        <img
+            src="${escaparHTML(imagen)}"
+            alt="${escaparHTML(titulo)}"
+            loading="lazy"
+            onerror="
+                this.style.display='none';
+                this.parentElement.innerHTML='<div class=&quot;image-fallback&quot;>★</div>';
+            "
+        >
+        `
+        :
+        `
+        <div class="image-fallback">
+            ★
+        </div>
+        `;
+
+
     const contenido = `
 
         <article class="news-card">
 
             <div class="news-image">
 
-                ${
-                    imagen
-                    ?
-                    `
-                    <img
-                        src="${escaparHTML(imagen)}"
-                        alt="${escaparHTML(titulo)}"
-                        loading="lazy"
-                        onerror="
-                            this.style.display='none';
-                            this.parentElement.innerHTML='<span class=&quot;image-fallback&quot;>★</span>';
-                        "
-                    >
-                    `
-                    :
-                    `
-                    <div class="image-fallback">
-                        ★
-                    </div>
-                    `
-                }
+                ${imagenHTML}
 
             </div>
 
@@ -1989,6 +1823,10 @@ async function cargarNoticias(){
 
     try{
 
+        status.textContent =
+            "Cargando información política...";
+
+
         const respuesta =
             await fetch(
                 JSON_URL,
@@ -2013,9 +1851,11 @@ async function cargarNoticias(){
 
         if(Array.isArray(datos)){
 
-            todasLasNoticias = datos;
+            todasLasNoticias =
+                datos;
 
         }
+
         else if(
             datos &&
             Array.isArray(datos.noticias)
@@ -2025,6 +1865,7 @@ async function cargarNoticias(){
                 datos.noticias;
 
         }
+
         else{
 
             throw new Error(
@@ -2036,12 +1877,12 @@ async function cargarNoticias(){
 
         noticiasPolitica =
             todasLasNoticias
-            .filter(esPolitica)
-            .sort(
-                (a,b) =>
-                    fechaNumerica(b) -
-                    fechaNumerica(a)
-            );
+                .filter(esPolitica)
+                .sort(
+                    (a,b) =>
+                        fechaNumerica(b) -
+                        fechaNumerica(a)
+                );
 
 
         status.innerHTML =
@@ -2053,16 +1894,25 @@ async function cargarNoticias(){
         mostrarNoticias();
 
     }
+
+
     catch(error){
 
         console.error(error);
 
+
         status.textContent =
             "No fue posible cargar las noticias.";
 
-        featuredSection.classList.add("hidden");
 
-        resultCount.textContent = "";
+        featuredSection.classList.add(
+            "hidden"
+        );
+
+
+        resultCount.textContent =
+            "";
+
 
         grid.innerHTML = `
 
@@ -2080,7 +1930,9 @@ async function cargarNoticias(){
 
         `;
 
-        pagination.innerHTML = "";
+
+        pagination.innerHTML =
+            "";
 
     }
 
@@ -2088,7 +1940,7 @@ async function cargarNoticias(){
 
 
 /* =========================================================
-   OBTENER FILTRADAS
+   FILTRAR
 ========================================================= */
 
 function obtenerNoticiasFiltradas(){
@@ -2132,7 +1984,7 @@ function obtenerNoticiasFiltradas(){
 
 
 /* =========================================================
-   MOSTRAR NOTICIAS
+   MOSTRAR
 ========================================================= */
 
 function mostrarNoticias(){
@@ -2145,36 +1997,45 @@ function mostrarNoticias(){
         `<strong>${filtradas.length}</strong> publicaciones de política disponibles`;
 
 
-    /* -----------------------------------------------------
-       DESTACADAS
-       Las primeras 3 noticias del resultado actual.
-    ----------------------------------------------------- */
+    /* DESTACADAS */
 
     if(filtradas.length > 0){
 
         const destacadas =
             filtradas.slice(0,3);
 
+
         featuredGrid.innerHTML =
             destacadas
-                .map(crearDestacada)
+                .map(
+                    (noticia,index) =>
+                        crearDestacada(
+                            noticia,
+                            index
+                        )
+                )
                 .join("");
 
-        featuredSection.classList.remove("hidden");
+
+        featuredSection.classList.remove(
+            "hidden"
+        );
 
     }
+
     else{
 
-        featuredGrid.innerHTML = "";
+        featuredGrid.innerHTML =
+            "";
 
-        featuredSection.classList.add("hidden");
+        featuredSection.classList.add(
+            "hidden"
+        );
 
     }
 
 
-    /* -----------------------------------------------------
-       PAGINACIÓN
-    ----------------------------------------------------- */
+    /* PAGINACIÓN */
 
     const totalPaginas =
         Math.max(
@@ -2209,9 +2070,7 @@ function mostrarNoticias(){
         );
 
 
-    /* -----------------------------------------------------
-       SIN RESULTADOS
-    ----------------------------------------------------- */
+    /* SIN RESULTADOS */
 
     if(filtradas.length === 0){
 
@@ -2231,16 +2090,16 @@ function mostrarNoticias(){
 
         `;
 
-        pagination.innerHTML = "";
+
+        pagination.innerHTML =
+            "";
 
         return;
 
     }
 
 
-    /* -----------------------------------------------------
-       MOSTRAR TARJETAS
-    ----------------------------------------------------- */
+    /* TARJETAS */
 
     grid.innerHTML =
         pagina
@@ -2263,42 +2122,45 @@ function crearPaginacion(totalPaginas){
 
     if(totalPaginas <= 1){
 
-        pagination.innerHTML = "";
+        pagination.innerHTML =
+            "";
 
         return;
 
     }
 
 
-    let html = `
+    let html = "";
 
-        <button
-            class="page-btn"
-            onclick="cambiarPagina(${paginaActual - 1})"
-            ${paginaActual === 1 ? "disabled" : ""}
-        >
-            ←
-        </button>
 
-    `;
+    if(paginaActual > 1){
+
+        html += `
+
+            <button
+                class="page-btn"
+                onclick="cambiarPagina(${paginaActual - 1})"
+            >
+                ← Anterior
+            </button>
+
+        `;
+
+    }
 
 
     for(
-        let i = 1;
-        i <= totalPaginas;
+        let i=1;
+        i<=totalPaginas;
         i++
     ){
 
         if(
-
             i === 1 ||
-
             i === totalPaginas ||
-
             Math.abs(
                 i - paginaActual
             ) <= 2
-
         ){
 
             html += `
@@ -2321,21 +2183,23 @@ function crearPaginacion(totalPaginas){
     }
 
 
-    html += `
+    if(
+        paginaActual <
+        totalPaginas
+    ){
 
-        <button
-            class="page-btn"
-            onclick="cambiarPagina(${paginaActual + 1})"
-            ${
-                paginaActual === totalPaginas
-                ? "disabled"
-                : ""
-            }
-        >
-            →
-        </button>
+        html += `
 
-    `;
+            <button
+                class="page-btn"
+                onclick="cambiarPagina(${paginaActual + 1})"
+            >
+                Siguiente →
+            </button>
+
+        `;
+
+    }
 
 
     pagination.innerHTML =
@@ -2383,7 +2247,9 @@ function cambiarPagina(pagina){
 
     window.scrollTo({
 
-        top:0,
+        top:document.querySelector(
+            ".news-section"
+        ).offsetTop - 80,
 
         behavior:"smooth"
 
@@ -2441,7 +2307,8 @@ buscador.addEventListener(
     "input",
     () => {
 
-        paginaActual = 1;
+        paginaActual =
+            1;
 
         mostrarNoticias();
 
@@ -2450,7 +2317,7 @@ buscador.addEventListener(
 
 
 /* =========================================================
-   INICIO
+   INICIAR
 ========================================================= */
 
 cargarNoticias();
