@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es-MX">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dinero | Economía, Dólar, Bancos y Empresas | TendenciasMX</title>
-
-<meta name="description" content="Noticias de dinero, economía, dólar, bancos, empresas y finanzas personales en TendenciasMX.">
-<meta name="keywords" content="dinero, economía, dólar, bancos, empresas, finanzas personales, México, noticias">
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dinero | Economía, Dólar, Bancos y Empresas | TendenciasMX</title><meta name="description" content="Noticias de dinero, economía, dólar, bancos, empresas, mercados y finanzas personales en México. Información actualizada en TendenciasMX.">
+<meta name="keywords" content="dinero, economía, dólar, peso mexicano, bancos, empresas, mercados, finanzas personales, México, noticias económicas"><style>
 *{
     box-sizing:border-box;
     margin:0;
@@ -101,7 +94,17 @@ main{
 .hero p{
     color:#d1d5db;
     line-height:1.6;
-    max-width:750px;
+    max-width:800px;
+}
+
+.status{
+    margin-top:16px;
+    color:#9ca3af;
+    font-size:13px;
+}
+
+.status strong{
+    color:#22c55e;
 }
 
 .search-box{
@@ -140,6 +143,7 @@ main{
     cursor:pointer;
     font-size:14px;
     font-weight:600;
+    transition:.2s;
 }
 
 .filter-btn:hover,
@@ -178,8 +182,11 @@ main{
 .news-image{
     width:100%;
     height:190px;
-    background:#e5e7eb;
+    background:#111827;
     overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .news-image img{
@@ -187,6 +194,13 @@ main{
     height:100%;
     object-fit:cover;
     display:block;
+}
+
+.image-fallback{
+    color:#22c55e;
+    font-size:14px;
+    font-weight:800;
+    letter-spacing:1px;
 }
 
 .card-content{
@@ -256,6 +270,56 @@ main{
     color:#6b7280;
 }
 
+.loading{
+    grid-column:1/-1;
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    color:#6b7280;
+}
+
+.error{
+    grid-column:1/-1;
+    background:#fff7ed;
+    border:1px solid #fed7aa;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    color:#9a3412;
+}
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.page-btn{
+    border:1px solid #d1d5db;
+    background:white;
+    color:#374151;
+    padding:9px 13px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.page-btn:hover,
+.page-btn.active{
+    background:#22c55e;
+    border-color:#22c55e;
+    color:#052e16;
+}
+
+.page-btn:disabled{
+    opacity:.45;
+    cursor:not-allowed;
+}
+
 footer{
     background:#111827;
     color:#9ca3af;
@@ -308,281 +372,533 @@ footer strong{
         height:210px;
     }
 }
-</style>
-</head>
+</style></head><body><header>
+    <div class="header-inner">    <a href="./index.html" class="logo">
+        Tendencias<span>MX</span>
+    </a>
 
-<body>
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./noticias.html">Noticias</a>
+        <a href="./deportes.html">Deportes</a>
+        <a href="./entretenimiento.html">Entretenimiento</a>
+        <a href="./tecnologia.html">Tecnología</a>
+        <a href="./dinero.html" class="active">Dinero</a>
+        <a href="./politica.html">Política</a>
+        <a href="./tramites.html">Trámites</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./preguntas.html">Preguntas</a>
+    </nav>
 
-<header>
-    <div class="header-inner">
+</div>
 
-        <a href="./index.html" class="logo">
-            Tendencias<span>MX</span>
-        </a>
+</header><main><section class="hero">
+    <h1>Dinero</h1>
 
-        <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="./noticias.html">Noticias</a>
-            <a href="./deportes.html">Deportes</a>
-            <a href="./entretenimiento.html">Entretenimiento</a>
-            <a href="./tecnologia.html">Tecnología</a>
-            <a href="./dinero.html" class="active">Dinero</a>
-            <a href="./politica.html">Política</a>
-            <a href="./tramites.html">Trámites</a>
-            <a href="./contacto.html">Contacto</a>
-            <a href="./preguntas.html">Preguntas</a>
-        </nav>
+    <p>
+        Noticias sobre dólar, peso mexicano, economía, mercados,
+        bancos, empresas, inversiones y finanzas personales.
+    </p>
 
+    <div class="status" id="status">
+        Cargando noticias...
     </div>
-</header>
+</section>
 
-<main>
+<div class="search-box">
+    <input
+        type="text"
+        id="search"
+        placeholder="Buscar noticias de dinero..."
+        autocomplete="off"
+    >
+</div>
 
-    <section class="hero">
-        <h1>Dinero</h1>
-        <p>
-            Información sobre dólar, economía, bancos, empresas y finanzas personales.
-            Consulta las noticias y tendencias económicas más relevantes.
-        </p>
-    </section>
+<div class="filters">
 
-    <div class="search-box">
-        <input
-            type="text"
-            id="search"
-            placeholder="Buscar noticias de dinero..."
-        >
+    <button class="filter-btn active" data-category="todos">
+        Todos
+    </button>
+
+    <button class="filter-btn" data-category="dolar">
+        💵 Dólar
+    </button>
+
+    <button class="filter-btn" data-category="economia">
+        📊 Economía
+    </button>
+
+    <button class="filter-btn" data-category="bancos">
+        🏦 Bancos
+    </button>
+
+    <button class="filter-btn" data-category="empresas">
+        🏢 Empresas
+    </button>
+
+    <button class="filter-btn" data-category="personales">
+        👤 Finanzas personales
+    </button>
+
+</div>
+
+<section class="news-grid" id="newsGrid">
+
+    <div class="loading">
+        Cargando noticias de dinero...
     </div>
 
-    <div class="filters">
+</section>
 
-        <button class="filter-btn active" data-category="todos">
-            Todos
-        </button>
+<div class="pagination" id="pagination"></div>
 
-        <button class="filter-btn" data-category="dolar">
-            💵 Dólar
-        </button>
+<section class="info">
 
-        <button class="filter-btn" data-category="economia">
-            📊 Economía
-        </button>
+    <h3>Sobre la sección Dinero</h3>
 
-        <button class="filter-btn" data-category="bancos">
-            🏦 Bancos
-        </button>
+    <p>
+        Aquí encontrarás información actualizada relacionada con el dólar,
+        economía, mercados, bancos, empresas, inversiones y finanzas personales.
+        Las noticias se obtienen del contenido recopilado por TendenciasMX
+        y cada publicación puede abrirse desde su fuente original.
+    </p>
 
-        <button class="filter-btn" data-category="empresas">
-            🏢 Empresas
-        </button>
+</section>
 
-        <button class="filter-btn" data-category="personales">
-            👤 Finanzas personales
-        </button>
-
-    </div>
-
-    <section class="news-grid" id="newsGrid"></section>
-
-    <section class="info">
-        <h3>Sobre la sección Dinero</h3>
-        <p>
-            Aquí encontrarás información relacionada con el dólar,
-            economía, bancos, empresas y finanzas personales.
-            Cada noticia puede abrirse desde su fuente original.
-        </p>
-    </section>
-
-</main>
-
-<footer>
+</main><footer>
     <p>
         © 2026 <strong>TendenciasMX</strong> · Información y actualidad
     </p>
-</footer>
+</footer><script>
 
-<script>
-
-const noticias = [
-
-    {
-        categoria:"dolar",
-        titulo:"Dólar y peso mexicano: cotización y movimientos del mercado",
-        fecha:"Actualidad",
-        descripcion:"Consulta información sobre el comportamiento del dólar frente al peso mexicano y los movimientos del mercado.",
-        imagen:"https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/mercados"
-    },
-
-    {
-        categoria:"economia",
-        titulo:"Economía de México: indicadores y noticias relevantes",
-        fecha:"Actualidad",
-        descripcion:"Información sobre inflación, crecimiento económico, empleo y otros indicadores que afectan a México.",
-        imagen:"https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/economia"
-    },
-
-    {
-        categoria:"bancos",
-        titulo:"Bancos y servicios financieros en México",
-        fecha:"Actualidad",
-        descripcion:"Noticias sobre bancos, productos financieros, créditos, cuentas y cambios importantes para los usuarios.",
-        imagen:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/finanzas-personales"
-    },
-
-    {
-        categoria:"empresas",
-        titulo:"Empresas y negocios: actualidad del sector empresarial",
-        fecha:"Actualidad",
-        descripcion:"Información sobre compañías, inversiones, negocios y acontecimientos importantes del sector empresarial.",
-        imagen:"https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/empresas"
-    },
-
-    {
-        categoria:"personales",
-        titulo:"Finanzas personales: consejos para administrar tu dinero",
-        fecha:"Actualidad",
-        descripcion:"Información útil sobre ahorro, gastos, créditos, tarjetas y administración de las finanzas personales.",
-        imagen:"https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/finanzas-personales"
-    },
-
-    {
-        categoria:"dolar",
-        titulo:"Mercados financieros y tipo de cambio",
-        fecha:"Actualidad",
-        descripcion:"Conoce los principales movimientos del mercado financiero y el tipo de cambio.",
-        imagen:"https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/mercados"
-    },
-
-    {
-        categoria:"economia",
-        titulo:"Inflación y precios: información económica para México",
-        fecha:"Actualidad",
-        descripcion:"Datos y noticias relacionadas con precios, inflación y economía de los hogares.",
-        imagen:"https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/economia"
-    },
-
-    {
-        categoria:"empresas",
-        titulo:"Negocios e inversiones en México",
-        fecha:"Actualidad",
-        descripcion:"Noticias sobre compañías, inversiones, emprendimiento y actividad empresarial.",
-        imagen:"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/empresas"
-    },
-
-    {
-        categoria:"personales",
-        titulo:"Ahorro, crédito y administración del dinero",
-        fecha:"Actualidad",
-        descripcion:"Contenido relacionado con decisiones financieras y administración del dinero personal.",
-        imagen:"https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/finanzas-personales"
-    }
-
-];
+const JSON_URL = "./noticias.json?actualizacion=" + Date.now();
 
 const grid = document.getElementById("newsGrid");
 const search = document.getElementById("search");
+const status = document.getElementById("status");
+const pagination = document.getElementById("pagination");
 const buttons = document.querySelectorAll(".filter-btn");
 
+let todasLasNoticias = [];
+let noticiasDinero = [];
 let categoriaActual = "todos";
+let paginaActual = 1;
 
-function mostrarNoticias(){
+const POR_PAGINA = 12;
 
-    const texto = search.value.toLowerCase().trim();
 
-    const filtradas = noticias.filter(noticia => {
+/* ================================
+   NORMALIZAR TEXTO
+================================ */
 
-        const coincideCategoria =
-            categoriaActual === "todos" ||
-            noticia.categoria === categoriaActual;
+function normalizar(valor){
 
-        const contenido =
-            (
-                noticia.titulo + " " +
-                noticia.descripcion + " " +
-                noticia.categoria
-            ).toLowerCase();
+    return String(valor ?? "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g,"")
+        .toLowerCase()
+        .trim();
 
-        const coincideBusqueda =
-            texto === "" || contenido.includes(texto);
-
-        return coincideCategoria && coincideBusqueda;
-    });
-
-    if(filtradas.length === 0){
-
-        grid.innerHTML = `
-            <div class="empty">
-                <h2>No encontramos noticias</h2>
-                <p>Prueba con otra palabra o selecciona otra categoría.</p>
-            </div>
-        `;
-
-        return;
-    }
-
-    grid.innerHTML = filtradas.map(noticia => `
-
-        <a
-            class="card-link"
-            href="${noticia.url}"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-
-            <article class="card">
-
-                <div class="news-image">
-
-                    <img
-                        src="${noticia.imagen}"
-                        alt="${noticia.titulo}"
-                        loading="lazy"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-                <div class="card-content">
-
-                    <span class="category">
-                        ${nombreCategoria(noticia.categoria)}
-                    </span>
-
-                    <h2>
-                        ${noticia.titulo}
-                    </h2>
-
-                    <div class="date">
-                        ${noticia.fecha}
-                    </div>
-
-                    <p class="description">
-                        ${noticia.descripcion}
-                    </p>
-
-                    <div class="read">
-                        Leer noticia completa →
-                    </div>
-
-                </div>
-
-            </article>
-
-        </a>
-
-    `).join("");
 }
 
-function nombreCategoria(categoria){
+
+/* ================================
+   OBTENER VALOR DE UN CAMPO
+================================ */
+
+function campo(noticia, campos){
+
+    for(const campo of campos){
+
+        if(
+            noticia &&
+            noticia[campo] !== undefined &&
+            noticia[campo] !== null &&
+            String(noticia[campo]).trim() !== ""
+        ){
+            return String(noticia[campo]).trim();
+        }
+
+    }
+
+    return "";
+
+}
+
+
+/* ================================
+   FECHA
+================================ */
+
+function obtenerFecha(noticia){
+
+    const valor = campo(noticia,[
+        "fecha",
+        "published",
+        "pubDate",
+        "date",
+        "fecha_publicacion",
+        "published_at"
+    ]);
+
+    if(!valor){
+        return "";
+    }
+
+    const fecha = new Date(valor);
+
+    if(Number.isNaN(fecha.getTime())){
+        return valor;
+    }
+
+    return fecha.toLocaleString("es-MX",{
+        day:"2-digit",
+        month:"short",
+        year:"numeric"
+    });
+
+}
+
+
+/* ================================
+   FECHA PARA ORDENAR
+================================ */
+
+function fechaNumerica(noticia){
+
+    const valor = campo(noticia,[
+        "fecha",
+        "published",
+        "pubDate",
+        "date",
+        "fecha_publicacion",
+        "published_at"
+    ]);
+
+    const tiempo = Date.parse(valor);
+
+    return Number.isNaN(tiempo) ? 0 : tiempo;
+
+}
+
+
+/* ================================
+   URL
+================================ */
+
+function obtenerURL(noticia){
+
+    return campo(noticia,[
+        "url",
+        "link",
+        "enlace"
+    ]);
+
+}
+
+
+/* ================================
+   IMAGEN
+================================ */
+
+function obtenerImagen(noticia){
+
+    return campo(noticia,[
+        "imagen",
+        "image",
+        "image_url",
+        "imagen_url"
+    ]);
+
+}
+
+
+/* ================================
+   TEXTO GENERAL DE LA NOTICIA
+================================ */
+
+function textoNoticia(noticia){
+
+    return normalizar(
+        [
+            campo(noticia,["categoria"]),
+            campo(noticia,["subcategoria"]),
+            campo(noticia,["seccion"]),
+            campo(noticia,["titulo","title"]),
+            campo(noticia,["descripcion","description","summary"]),
+            campo(noticia,["fuente","source"]),
+            obtenerURL(noticia)
+        ].join(" ")
+    );
+
+}
+
+
+/* ================================
+   DETECTAR DINERO
+================================ */
+
+function esDinero(noticia){
+
+    const categoria = normalizar(
+        campo(noticia,["categoria"])
+    );
+
+    const subcategoria = normalizar(
+        campo(noticia,["subcategoria"])
+    );
+
+    const seccion = normalizar(
+        campo(noticia,["seccion"])
+    );
+
+    const url = normalizar(
+        obtenerURL(noticia)
+    );
+
+    const titulo = normalizar(
+        campo(noticia,["titulo","title"])
+    );
+
+    /*
+       PRIMERO:
+       Si el RSS ya marcó explícitamente la noticia
+       como Dinero/Economía/Finanzas, entra.
+    */
+
+    const categoriasDinero = [
+        "dinero",
+        "economia",
+        "economia y finanzas",
+        "finanzas",
+        "finanzas personales",
+        "mercados",
+        "empresas",
+        "negocios"
+    ];
+
+    if(
+        categoriasDinero.some(c =>
+            categoria === c ||
+            categoria.includes(c)
+        )
+    ){
+        return true;
+    }
+
+
+    /*
+       SUBCATEGORÍAS
+    */
+
+    const subcategoriasDinero = [
+        "dinero",
+        "economia",
+        "economia y finanzas",
+        "finanzas",
+        "finanzas personales",
+        "mercados",
+        "mercado",
+        "empresas",
+        "negocios",
+        "bancos",
+        "banca",
+        "inversiones",
+        "inversion",
+        "bolsa",
+        "tipo de cambio",
+        "dolar"
+    ];
+
+    if(
+        subcategoriasDinero.some(c =>
+            subcategoria === c ||
+            subcategoria.includes(c)
+        )
+    ){
+        return true;
+    }
+
+
+    /*
+       SECCIÓN
+    */
+
+    if(
+        [
+            "dinero",
+            "economia",
+            "finanzas",
+            "finanzas personales",
+            "mercados",
+            "empresas",
+            "negocios"
+        ].some(c =>
+            seccion === c ||
+            seccion.includes(c)
+        )
+    ){
+        return true;
+    }
+
+
+    /*
+       URLS DE SECCIONES ECONÓMICAS
+       DE LAS FUENTES
+    */
+
+    const rutasDinero = [
+        "/dinero",
+        "/economia",
+        "/economía",
+        "/mercados",
+        "/finanzas",
+        "/finanzas-personales",
+        "/empresas",
+        "/negocios",
+        "/economy"
+    ];
+
+    if(
+        rutasDinero.some(ruta =>
+            url.includes(normalizar(ruta))
+        )
+    ){
+        return true;
+    }
+
+
+    /*
+       PALABRAS CLAVE COMO ÚLTIMO RESPALDO.
+
+       No usamos esto como primera condición para evitar
+       que cualquier noticia que mencione "dinero"
+       termine aquí.
+    */
+
+    const palabrasEconomicas = [
+        "dolar",
+        "dólar",
+        "peso mexicano",
+        "tipo de cambio",
+        "inflacion",
+        "inflación",
+        "economia",
+        "economía",
+        "economico",
+        "económico",
+        "mercados financieros",
+        "mercado financiero",
+        "bolsa mexicana",
+        "banco de mexico",
+        "banxico",
+        "bancos",
+        "banca",
+        "credito",
+        "crédito",
+        "tarjetas",
+        "finanzas personales",
+        "finanzas",
+        "inversiones",
+        "inversión",
+        "acciones",
+        "tasas de interes",
+        "tasas de interés",
+        "tasa de interes",
+        "tasa de interés",
+        "empleo",
+        "desempleo",
+        "pib",
+        "deuda",
+        "impuestos",
+        "salario minimo",
+        "salario mínimo",
+        "empresas",
+        "negocios",
+        "utilidades",
+        "ganancias",
+        "ventas",
+        "inversion extranjera",
+        "inversión extranjera"
+    ];
+
+    const coincidencias = palabrasEconomicas.filter(p =>
+        titulo.includes(normalizar(p))
+    ).length;
+
+
+    /*
+       Para evitar falsos positivos:
+       se requieren al menos dos señales económicas
+       cuando la noticia no viene etiquetada por categoría.
+    */
+
+    if(coincidencias >= 2){
+        return true;
+    }
+
+    return false;
+
+}
+
+
+/* ================================
+   CLASIFICAR FILTROS
+================================ */
+
+function obtenerTipo(noticia){
+
+    const texto = textoNoticia(noticia);
+
+    if(
+        texto.includes("dolar") ||
+        texto.includes("tipo de cambio") ||
+        texto.includes("peso mexicano")
+    ){
+        return "dolar";
+    }
+
+    if(
+        texto.includes("banco") ||
+        texto.includes("banca") ||
+        texto.includes("credito") ||
+        texto.includes("tarjeta") ||
+        texto.includes("banxico")
+    ){
+        return "bancos";
+    }
+
+    if(
+        texto.includes("empresa") ||
+        texto.includes("negocio") ||
+        texto.includes("inversion") ||
+        texto.includes("acciones") ||
+        texto.includes("utilidades")
+    ){
+        return "empresas";
+    }
+
+    if(
+        texto.includes("finanzas personales") ||
+        texto.includes("ahorro") ||
+        texto.includes("deuda") ||
+        texto.includes("presupuesto") ||
+        texto.includes("gastos") ||
+        texto.includes("salario")
+    ){
+        return "personales";
+    }
+
+    return "economia";
+
+}
+
+
+/* ================================
+   NOMBRE DE CATEGORÍA
+================================ */
+
+function nombreCategoria(tipo){
 
     const nombres = {
         dolar:"Dólar",
@@ -592,12 +908,401 @@ function nombreCategoria(categoria){
         personales:"Finanzas personales"
     };
 
-    return nombres[categoria] || categoria;
+    return nombres[tipo] || "Dinero";
+
 }
+
+
+/* ================================
+   ESCAPAR HTML
+================================ */
+
+function escaparHTML(valor){
+
+    return String(valor ?? "")
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
+}
+
+
+/* ================================
+   CARGAR NOTICIAS
+================================ */
+
+async function cargarNoticias(){
+
+    try{
+
+        const respuesta = await fetch(JSON_URL,{
+            cache:"no-store"
+        });
+
+        if(!respuesta.ok){
+            throw new Error("No se pudo cargar noticias.json");
+        }
+
+        const datos = await respuesta.json();
+
+        if(Array.isArray(datos)){
+            todasLasNoticias = datos;
+        }
+        else if(
+            datos &&
+            Array.isArray(datos.noticias)
+        ){
+            todasLasNoticias = datos.noticias;
+        }
+        else{
+            throw new Error("Formato de noticias.json no reconocido");
+        }
+
+
+        /*
+           FILTRAMOS SOLO DINERO.
+           No modificamos el JSON.
+        */
+
+        noticiasDinero = todasLasNoticias
+            .filter(esDinero)
+            .sort((a,b) =>
+                fechaNumerica(b) - fechaNumerica(a)
+            );
+
+
+        status.innerHTML =
+            `<strong>${noticiasDinero.length}</strong> noticias económicas disponibles`;
+
+
+        paginaActual = 1;
+
+        mostrarNoticias();
+
+
+    }catch(error){
+
+        console.error(error);
+
+        status.textContent =
+            "No fue posible cargar las noticias.";
+
+        grid.innerHTML = `
+            <div class="error">
+                <h2>No pudimos cargar las noticias</h2>
+                <p>
+                    Intenta actualizar la página nuevamente.
+                </p>
+            </div>
+        `;
+
+        pagination.innerHTML = "";
+
+    }
+
+}
+
+
+/* ================================
+   MOSTRAR NOTICIAS
+================================ */
+
+function mostrarNoticias(){
+
+    const texto = normalizar(search.value);
+
+    let filtradas = noticiasDinero.filter(noticia => {
+
+        const tipo = obtenerTipo(noticia);
+
+        const coincideCategoria =
+            categoriaActual === "todos" ||
+            tipo === categoriaActual;
+
+        const contenido =
+            textoNoticia(noticia);
+
+        const coincideBusqueda =
+            texto === "" ||
+            contenido.includes(texto);
+
+        return coincideCategoria && coincideBusqueda;
+
+    });
+
+
+    const totalPaginas =
+        Math.max(
+            1,
+            Math.ceil(filtradas.length / POR_PAGINA)
+        );
+
+
+    if(paginaActual > totalPaginas){
+        paginaActual = totalPaginas;
+    }
+
+
+    const inicio =
+        (paginaActual - 1) * POR_PAGINA;
+
+    const pagina =
+        filtradas.slice(
+            inicio,
+            inicio + POR_PAGINA
+        );
+
+
+    if(filtradas.length === 0){
+
+        grid.innerHTML = `
+            <div class="empty">
+                <h2>No encontramos noticias</h2>
+                <p>
+                    Prueba con otra palabra o selecciona otra categoría.
+                </p>
+            </div>
+        `;
+
+        pagination.innerHTML = "";
+
+        return;
+    }
+
+
+    grid.innerHTML = pagina.map(noticia => {
+
+        const titulo = campo(noticia,[
+            "titulo",
+            "title"
+        ]) || "Noticia de actualidad";
+
+
+        const descripcion = campo(noticia,[
+            "descripcion",
+            "description",
+            "summary"
+        ]);
+
+
+        const url = obtenerURL(noticia);
+
+        const imagen = obtenerImagen(noticia);
+
+        const fecha = obtenerFecha(noticia);
+
+        const tipo = obtenerTipo(noticia);
+
+
+        const tarjeta = `
+
+            <article class="card">
+
+                <div class="news-image">
+
+                    ${
+                        imagen
+                        ?
+                        `
+                        <img
+                            src="${escaparHTML(imagen)}"
+                            alt="${escaparHTML(titulo)}"
+                            loading="lazy"
+                            onerror="
+                                this.style.display='none';
+                                this.parentElement.innerHTML='<span class=&quot;image-fallback&quot;>TENDENCIASMX</span>';
+                            "
+                        >
+                        `
+                        :
+                        `
+                        <span class="image-fallback">
+                            TENDENCIASMX
+                        </span>
+                        `
+                    }
+
+                </div>
+
+                <div class="card-content">
+
+                    <span class="category">
+                        ${escaparHTML(nombreCategoria(tipo))}
+                    </span>
+
+                    <h2>
+                        ${escaparHTML(titulo)}
+                    </h2>
+
+                    ${
+                        fecha
+                        ?
+                        `
+                        <div class="date">
+                            ${escaparHTML(fecha)}
+                        </div>
+                        `
+                        :
+                        ""
+                    }
+
+                    ${
+                        descripcion
+                        ?
+                        `
+                        <p class="description">
+                            ${escaparHTML(descripcion)}
+                        </p>
+                        `
+                        :
+                        ""
+                    }
+
+                    ${
+                        url
+                        ?
+                        `
+                        <div class="read">
+                            Leer noticia completa →
+                        </div>
+                        `
+                        :
+                        ""
+                    }
+
+                </div>
+
+            </article>
+
+        `;
+
+
+        if(url){
+
+            return `
+                <a
+                    class="card-link"
+                    href="${escaparHTML(url)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    ${tarjeta}
+                </a>
+            `;
+
+        }
+
+
+        return tarjeta;
+
+    }).join("");
+
+
+    crearPaginacion(totalPaginas);
+
+}
+
+
+/* ================================
+   PAGINACIÓN
+================================ */
+
+function crearPaginacion(totalPaginas){
+
+    if(totalPaginas <= 1){
+
+        pagination.innerHTML = "";
+
+        return;
+    }
+
+
+    let html = `
+
+        <button
+            class="page-btn"
+            onclick="cambiarPagina(${paginaActual - 1})"
+            ${paginaActual === 1 ? "disabled" : ""}
+        >
+            ← Anterior
+        </button>
+
+    `;
+
+
+    for(let i = 1; i <= totalPaginas; i++){
+
+        if(
+            i === 1 ||
+            i === totalPaginas ||
+            Math.abs(i - paginaActual) <= 2
+        ){
+
+            html += `
+
+                <button
+                    class="page-btn ${i === paginaActual ? "active" : ""}"
+                    onclick="cambiarPagina(${i})"
+                >
+                    ${i}
+                </button>
+
+            `;
+
+        }
+
+    }
+
+
+    html += `
+
+        <button
+            class="page-btn"
+            onclick="cambiarPagina(${paginaActual + 1})"
+            ${paginaActual === totalPaginas ? "disabled" : ""}
+        >
+            Siguiente →
+        </button>
+
+    `;
+
+
+    pagination.innerHTML = html;
+
+}
+
+
+/* ================================
+   CAMBIAR PÁGINA
+================================ */
+
+function cambiarPagina(pagina){
+
+    if(pagina < 1){
+        return;
+    }
+
+    paginaActual = pagina;
+
+    mostrarNoticias();
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+/* ================================
+   FILTROS
+================================ */
 
 buttons.forEach(button => {
 
-    button.addEventListener("click", () => {
+    button.addEventListener("click",() => {
 
         buttons.forEach(btn => {
             btn.classList.remove("active");
@@ -608,17 +1313,33 @@ buttons.forEach(button => {
         categoriaActual =
             button.dataset.category;
 
+        paginaActual = 1;
+
         mostrarNoticias();
 
     });
 
 });
 
-search.addEventListener("input", mostrarNoticias);
 
-mostrarNoticias();
+/* ================================
+   BUSCADOR
+================================ */
 
-</script>
+search.addEventListener("input",() => {
 
-</body>
+    paginaActual = 1;
+
+    mostrarNoticias();
+
+});
+
+
+/* ================================
+   INICIAR
+================================ */
+
+cargarNoticias();
+
+</script></body>
 </html>
