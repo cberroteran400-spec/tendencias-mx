@@ -2,17 +2,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Política | Gobierno, Congreso y Justicia | TendenciasMX</title><meta name="description" content="Noticias de política de México y el mundo: gobierno, Congreso, justicia, decisiones públicas y los temas políticos más relevantes.">
-<meta name="keywords" content="política México, noticias política, gobierno México, Congreso, justicia, elecciones, Senado, Cámara de Diputados, TendenciasMX">
+<meta name="keywords" content="política México, noticias política, gobierno México, Congreso, justicia, Senado, diputados, elecciones, TendenciasMX">
 <meta name="robots" content="index, follow"><link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/politica.html"><meta property="og:type" content="website">
 <meta property="og:title" content="Política | TendenciasMX">
-<meta property="og:description" content="Las noticias políticas más relevantes de México y el mundo.">
+<meta property="og:description" content="Noticias de política, gobierno, Congreso, justicia y actualidad nacional e internacional.">
 <meta property="og:url" content="https://cberroteran400-spec.github.io/tendencias-mx/politica.html"><style>
 :root{
   --bg:#050807;
   --card:#0d1410;
-  --card-2:#111a15;
+  --card2:#111a15;
   --green:#65ff9a;
-  --white:#ffffff;
+  --white:#fff;
   --muted:#94a39a;
   --border:rgba(101,255,154,.16);
 }
@@ -29,7 +29,7 @@ html{
 
 body{
   background:
-    radial-gradient(circle at 50% -10%, rgba(101,255,154,.07), transparent 35%),
+    radial-gradient(circle at 50% -10%,rgba(101,255,154,.07),transparent 35%),
     var(--bg);
   color:var(--white);
   font-family:Arial,Helvetica,sans-serif;
@@ -45,26 +45,26 @@ header{
   position:sticky;
   top:0;
   z-index:1000;
-  background:rgba(5,8,7,.94);
+  background:rgba(5,8,7,.95);
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--border);
 }
 
 .header-inner{
   max-width:1250px;
-  margin:auto;
   min-height:72px;
+  margin:auto;
+  padding:0 20px;
   display:flex;
   align-items:center;
   gap:28px;
-  padding:0 20px;
 }
 
 .logo{
   font-size:23px;
   font-weight:900;
-  white-space:nowrap;
   letter-spacing:-.7px;
+  white-space:nowrap;
 }
 
 .logo span{
@@ -85,12 +85,12 @@ nav::-webkit-scrollbar{
 }
 
 nav a{
-  white-space:nowrap;
   padding:10px 14px;
   border-radius:25px;
   color:#c8d0ca;
   font-size:14px;
   font-weight:700;
+  white-space:nowrap;
   transition:.2s;
 }
 
@@ -112,11 +112,11 @@ main{
 .hero{
   position:relative;
   overflow:hidden;
+  padding:38px 30px;
   border:1px solid var(--border);
   border-radius:20px;
-  padding:38px 30px;
   background:
-    radial-gradient(circle at 85% 10%, rgba(101,255,154,.18), transparent 30%),
+    radial-gradient(circle at 85% 10%,rgba(101,255,154,.18),transparent 30%),
     linear-gradient(135deg,#0d1711,#09100c);
 }
 
@@ -125,32 +125,32 @@ main{
   position:absolute;
   width:260px;
   height:260px;
-  border-radius:50%;
   right:-100px;
   bottom:-150px;
+  border-radius:50%;
   background:rgba(101,255,154,.08);
   filter:blur(30px);
 }
 
 .badge{
   display:inline-block;
+  margin-bottom:17px;
   padding:7px 12px;
+  border:1px solid rgba(101,255,154,.22);
   border-radius:20px;
   background:rgba(101,255,154,.1);
-  border:1px solid rgba(101,255,154,.22);
   color:var(--green);
   font-size:12px;
   font-weight:900;
   letter-spacing:.8px;
-  margin-bottom:17px;
 }
 
 .hero h1{
   position:relative;
   z-index:2;
+  max-width:800px;
   font-size:clamp(32px,5vw,58px);
   line-height:1.03;
-  max-width:800px;
   letter-spacing:-2px;
 }
 
@@ -161,7 +161,7 @@ main{
 .hero p{
   position:relative;
   z-index:2;
-  max-width:760px;
+  max-width:780px;
   margin-top:17px;
   color:var(--muted);
   font-size:16px;
@@ -171,18 +171,18 @@ main{
 .search-box{
   position:relative;
   z-index:3;
-  margin-top:25px;
   max-width:650px;
+  margin-top:25px;
 }
 
 .search-box input{
   width:100%;
   padding:16px 18px;
-  border-radius:14px;
   border:1px solid rgba(101,255,154,.2);
+  border-radius:14px;
+  outline:none;
   background:#070b09;
   color:white;
-  outline:none;
   font-size:15px;
 }
 
@@ -204,15 +204,15 @@ main{
 }
 
 .category-btn{
+  padding:10px 16px;
   border:1px solid rgba(101,255,154,.16);
+  border-radius:30px;
   background:#0b110d;
   color:#aeb9b1;
-  border-radius:30px;
-  padding:10px 16px;
+  font-size:13px;
+  font-weight:700;
   white-space:nowrap;
   cursor:pointer;
-  font-weight:700;
-  font-size:13px;
   transition:.2s;
 }
 
@@ -222,21 +222,20 @@ main{
 }
 
 .category-btn.active{
+  border-color:var(--green);
   background:var(--green);
   color:#050807;
-  border-color:var(--green);
 }
 
 .status{
+  padding:14px 0 28px;
   color:var(--muted);
   font-size:13px;
-  padding:14px 0 28px;
 }
 
 .section-title{
   display:flex;
   align-items:center;
-  justify-content:space-between;
   gap:15px;
   margin:10px 0 17px;
 }
@@ -248,8 +247,8 @@ main{
 
 .section-title .line{
   height:1px;
-  background:var(--border);
   flex:1;
+  background:var(--border);
 }
 
 .featured-grid{
@@ -262,8 +261,8 @@ main{
   position:relative;
   min-height:320px;
   overflow:hidden;
-  border-radius:17px;
   border:1px solid var(--border);
+  border-radius:17px;
   background:var(--card);
   cursor:pointer;
 }
@@ -273,10 +272,10 @@ main{
 }
 
 .featured-card img{
+  display:block;
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block;
   transition:transform .4s ease;
 }
 
@@ -299,15 +298,15 @@ main{
 .featured-content{
   position:absolute;
   z-index:3;
-  left:20px;
   right:20px;
   bottom:18px;
+  left:20px;
 }
 
 .featured-content h3{
+  margin-top:9px;
   font-size:clamp(20px,3vw,31px);
   line-height:1.12;
-  margin-top:9px;
 }
 
 .featured-card.small .featured-content h3{
@@ -315,14 +314,14 @@ main{
 }
 
 .featured-content p{
-  color:#ccd3ce;
+  display:-webkit-box;
+  overflow:hidden;
   margin-top:8px;
+  color:#ccd3ce;
   font-size:13px;
   line-height:1.4;
-  display:-webkit-box;
   -webkit-line-clamp:2;
   -webkit-box-orient:vertical;
-  overflow:hidden;
 }
 
 .tag{
@@ -347,9 +346,9 @@ main{
 
 .news-card{
   overflow:hidden;
+  border:1px solid var(--border);
   border-radius:15px;
   background:var(--card);
-  border:1px solid var(--border);
   transition:.25s;
 }
 
@@ -361,14 +360,14 @@ main{
 .news-image{
   position:relative;
   height:195px;
-  background:#101712;
   overflow:hidden;
+  background:#101712;
 }
 
 .news-image img{
+  display:block;
   width:100%;
   height:100%;
-  display:block;
   object-fit:cover;
   transition:transform .35s ease;
 }
@@ -382,19 +381,19 @@ main{
 }
 
 .news-body h3{
+  margin:10px 0 9px;
   font-size:18px;
   line-height:1.25;
-  margin-bottom:9px;
 }
 
 .news-body p{
+  display:-webkit-box;
+  overflow:hidden;
   color:var(--muted);
   font-size:13px;
   line-height:1.5;
-  display:-webkit-box;
   -webkit-line-clamp:3;
   -webkit-box-orient:vertical;
-  overflow:hidden;
 }
 
 .meta{
@@ -418,12 +417,12 @@ main{
 .page-btn{
   min-width:38px;
   height:38px;
-  border-radius:10px;
   border:1px solid var(--border);
+  border-radius:10px;
   background:#0b110d;
   color:#b8c2bb;
-  cursor:pointer;
   font-weight:800;
+  cursor:pointer;
 }
 
 .page-btn:hover{
@@ -432,9 +431,9 @@ main{
 }
 
 .page-btn.active{
+  border-color:var(--green);
   background:var(--green);
   color:#050807;
-  border-color:var(--green);
 }
 
 .info-box{
@@ -448,24 +447,25 @@ main{
   line-height:1.6;
 }
 
-footer{
-  border-top:1px solid var(--border);
-  padding:28px 20px;
-  text-align:center;
-  color:#68736c;
-  font-size:12px;
-}
-
 .empty{
   grid-column:1/-1;
   padding:45px 20px;
-  text-align:center;
   border:1px dashed var(--border);
   border-radius:15px;
   color:var(--muted);
+  text-align:center;
+}
+
+footer{
+  padding:28px 20px;
+  border-top:1px solid var(--border);
+  color:#68736c;
+  font-size:12px;
+  text-align:center;
 }
 
 @media(max-width:900px){
+
   .featured-grid{
     grid-template-columns:1fr 1fr;
   }
@@ -477,9 +477,11 @@ footer{
   .news-grid{
     grid-template-columns:repeat(2,1fr);
   }
+
 }
 
 @media(max-width:600px){
+
   .header-inner{
     min-height:62px;
     gap:15px;
@@ -523,9 +525,9 @@ footer{
   .news-image{
     height:210px;
   }
+
 }
-</style></head><body><header>
-  <div class="header-inner"><a href="index.html" class="logo">
+</style></head><body><header>  <div class="header-inner"><a href="index.html" class="logo">
   Tendencias<span>MX</span>
 </a>
 
@@ -542,8 +544,7 @@ footer{
   <a href="preguntas.html">Preguntas</a>
 </nav>
 
-  </div>
-</header><main>  <section class="hero"><div class="badge">POLÍTICA</div>
+  </div></header><main>  <section class="hero"><div class="badge">POLÍTICA</div>
 
 <h1>
   Todo lo que está
@@ -598,9 +599,16 @@ footer{
 <div class="featured-grid" id="featuredGrid"></div>
 
   </section>  <section class="latest"><div class="section-title">
+
   <h2>Últimas noticias</h2>
+
   <div class="line"></div>
-  <span id="resultCount" style="color:#7d8b82;font-size:12px;"></span>
+
+  <span
+    id="resultCount"
+    style="color:#7d8b82;font-size:12px;"
+  ></span>
+
 </div>
 
 <div class="news-grid" id="grid"></div>
@@ -614,7 +622,8 @@ footer{
   © 2026 TendenciasMX · Noticias, tendencias y actualidad
 </footer><script>
 
-const JSON_URL = "./noticias.json?actualizacion=" + Date.now();
+const JSON_URL =
+  "./noticias.json?actualizacion=" + Date.now();
 
 const POR_PAGINA = 12;
 
@@ -622,6 +631,11 @@ let todasLasNoticias = [];
 let noticiasFiltradas = [];
 let paginaActual = 1;
 let categoriaActual = "todas";
+
+
+/* =========================
+   UTILIDADES
+========================= */
 
 function normalizar(valor){
 
@@ -633,7 +647,7 @@ function normalizar(valor){
 
 }
 
-function campo(noticia, nombres){
+function campo(noticia,nombres){
 
   for(const nombre of nombres){
 
@@ -719,71 +733,139 @@ function fechaNumerica(noticia){
 
   const numero = Date.parse(fecha);
 
-  return Number.isNaN(numero) ? 0 : numero;
+  return Number.isNaN(numero)
+    ? 0
+    : numero;
 
 }
 
 function textoCompleto(noticia){
 
-  return normalizar(
-    [
-      campo(noticia,["categoria","category"]),
-      campo(noticia,["subcategoria","subcategoria","subcategory"]),
-      campo(noticia,["seccion","section"]),
-      campo(noticia,["fuente","source","medio"]),
-      obtenerTitulo(noticia),
-      obtenerDescripcion(noticia),
-      obtenerURL(noticia)
-    ].join(" ")
-  );
+  return normalizar([
+    campo(noticia,[
+      "categoria",
+      "category"
+    ]),
+
+    campo(noticia,[
+      "subcategoria",
+      "subcategory"
+    ]),
+
+    campo(noticia,[
+      "seccion",
+      "section"
+    ]),
+
+    campo(noticia,[
+      "fuente",
+      "source",
+      "medio"
+    ]),
+
+    obtenerTitulo(noticia),
+
+    obtenerDescripcion(noticia),
+
+    obtenerURL(noticia)
+
+  ].join(" "));
 
 }
 
+
+/* =========================
+   DEPORTES
+   NO DEJAMOS QUE SE METAN
+   EN POLÍTICA
+========================= */
+
 function esDeporte(noticia){
 
-  const texto = textoCompleto(noticia);
+  const categoria =
+    normalizar(
+      campo(noticia,[
+        "categoria",
+        "category"
+      ])
+    );
 
-  const categoria = normalizar(
-    campo(noticia,["categoria","category"])
-  );
+  const subcategoria =
+    normalizar(
+      campo(noticia,[
+        "subcategoria",
+        "subcategory"
+      ])
+    );
 
-  const subcategoria = normalizar(
-    campo(noticia,["subcategoria","subcategory"])
-  );
+  const titulo =
+    normalizar(
+      obtenerTitulo(noticia)
+    );
 
-  const señales = [
-    "futbol",
-    "soccer",
-    "tenis",
-    "beisbol",
-    "baseball",
-    "nfl",
-    "nba",
-    "basquetbol",
-    "basketball",
-    "boxeo",
-    "formula 1",
-    "formula1",
-    "golf",
-    "liga mx",
-    "mlb",
-    "premier league",
-    "champions league"
-  ];
+  const url =
+    normalizar(
+      obtenerURL(noticia)
+    );
 
   if(
     categoria === "deportes" ||
     categoria === "deporte" ||
-    subcategoria === "deportes"
+    subcategoria === "deportes" ||
+    subcategoria === "deporte"
   ){
 
     return true;
 
   }
 
-  return señales.some(señal => texto.includes(señal));
+  if(
+    url.includes("/deportes") ||
+    url.includes("/sport") ||
+    url.includes("/sports")
+  ){
+
+    return true;
+
+  }
+
+  /*
+    Solo bloqueamos términos deportivos muy claros.
+    No bloqueamos una noticia únicamente porque
+    aparezca una palabra ambigua.
+  */
+
+  const señalesDeportivas = [
+    "partido de futbol",
+    "partido de fútbol",
+    "liga mx",
+    "champions league",
+    "premier league",
+    "la liga",
+    "mlb",
+    "nfl",
+    "nba",
+    "formula 1",
+    "formula1",
+    "wimbledon",
+    "roland garros",
+    "us open tenis",
+    "grand slam tenis",
+    "boxeo profesional"
+  ];
+
+  return señalesDeportivas.some(
+    señal => titulo.includes(
+      normalizar(señal)
+    )
+  );
 
 }
+
+
+/* =========================
+   POLÍTICA
+========================= */
 
 function esPolitica(noticia){
 
@@ -791,64 +873,113 @@ function esPolitica(noticia){
     return false;
   }
 
-  const categoria = normalizar(
-    campo(noticia,["categoria","category"])
-  );
+  const categoria =
+    normalizar(
+      campo(noticia,[
+        "categoria",
+        "category"
+      ])
+    );
 
-  const subcategoria = normalizar(
-    campo(noticia,["subcategoria","subcategory"])
-  );
+  const subcategoria =
+    normalizar(
+      campo(noticia,[
+        "subcategoria",
+        "subcategory"
+      ])
+    );
 
-  const seccion = normalizar(
-    campo(noticia,["seccion","section"])
-  );
+  const seccion =
+    normalizar(
+      campo(noticia,[
+        "seccion",
+        "section"
+      ])
+    );
 
-  const fuente = normalizar(
-    campo(noticia,["fuente","source","medio"])
-  );
+  const fuente =
+    normalizar(
+      campo(noticia,[
+        "fuente",
+        "source",
+        "medio"
+      ])
+    );
 
-  const url = normalizar(obtenerURL(noticia));
+  const url =
+    normalizar(
+      obtenerURL(noticia)
+    );
 
-  const titulo = normalizar(obtenerTitulo(noticia));
+  const titulo =
+    normalizar(
+      obtenerTitulo(noticia)
+    );
 
-  const descripcion = normalizar(obtenerDescripcion(noticia));
+  const descripcion =
+    normalizar(
+      obtenerDescripcion(noticia)
+    );
 
   /*
-    Se revisan primero las señales estructurales.
-    No dependemos únicamente de la palabra "politica",
-    porque algunas fuentes pueden clasificar una noticia
-    política dentro de Noticias, Dinero u otra sección.
+    1. CATEGORÍAS Y SECCIONES
   */
 
-  const categoriasPoliticas = [
+  const camposPoliticos = [
+    categoria,
+    subcategoria,
+    seccion,
+    fuente
+  ];
+
+  const palabrasDeSeccion = [
     "politica",
     "politicas",
-    "politica nacional",
-    "politica internacional"
+    "gobierno",
+    "congreso",
+    "senado",
+    "justicia",
+    "elecciones",
+    "electoral",
+    "poder"
   ];
 
   if(
-    categoriasPoliticas.includes(categoria) ||
-    categoriasPoliticas.includes(subcategoria) ||
-    categoriasPoliticas.includes(seccion)
+    camposPoliticos.some(
+      campo =>
+        palabrasDeSeccion.some(
+          palabra =>
+            campo === palabra ||
+            campo.includes(palabra)
+        )
+    )
   ){
 
     return true;
 
   }
 
+  /*
+    2. URL DE LA FUENTE
+  */
+
   const rutasPoliticas = [
     "/politica",
+    "/politicas",
     "/politics",
     "/gobierno",
     "/congreso",
     "/senado",
     "/diputados",
-    "/justicia"
+    "/justicia",
+    "/elecciones",
+    "/electoral"
   ];
 
   if(
-    rutasPoliticas.some(ruta => url.includes(ruta))
+    rutasPoliticas.some(
+      ruta => url.includes(ruta)
+    )
   ){
 
     return true;
@@ -856,58 +987,151 @@ function esPolitica(noticia){
   }
 
   /*
-    Señales políticas fuertes.
+    3. SEÑALES POLÍTICAS FUERTES
+       EN TÍTULO O DESCRIPCIÓN
   */
 
+  const textoNoticia =
+    `${titulo} ${descripcion}`;
+
   const señalesFuertes = [
+
+    "presidente de mexico",
+    "presidente de méxico",
+    "presidenta de mexico",
+    "presidenta de méxico",
+
     "presidente",
     "presidenta",
     "presidencia",
+
     "gobierno federal",
     "gobierno de mexico",
     "gobierno de méxico",
-    "senado",
-    "senadora",
-    "senador",
-    "camara de diputados",
-    "cámara de diputados",
-    "diputada",
-    "diputado",
-    "congreso",
-    "congresista",
-    "secretaria de gobernacion",
-    "secretaría de gobernación",
+
     "gobernador",
     "gobernadora",
-    "alcalde",
-    "alcaldesa",
-    "jefe de gobierno",
-    "ministro",
-    "ministra",
+
+    "secretario de estado",
+    "secretaria de estado",
+    "secretario",
+    "secretaria",
+
+    "senado",
+    "senador",
+    "senadora",
+
+    "camara de diputados",
+    "cámara de diputados",
+    "diputado federal",
+    "diputada federal",
+    "diputado",
+    "diputada",
+
+    "congreso de la union",
+    "congreso de la unión",
+    "congreso",
+
     "suprema corte",
     "tribunal electoral",
+    "tribunal",
+
+    "fiscalia general",
+    "fiscalía general",
+    "fiscalia",
+    "fiscalía",
+
+    "juez",
+    "jueza",
+
     "elecciones",
     "eleccion",
     "elección",
+    "electoral",
+
+    "reforma constitucional",
+    "constitucion",
+    "constitución",
+
+    "ley federal",
+    "iniciativa de ley",
+    "propuesta de ley",
+
     "partido politico",
     "partido político",
+
     "morena",
     "pan ",
     "pri ",
     "movimiento ciudadano",
+    "partido verde",
     "pt ",
-    "verde ecologista",
-    "diputados federales",
-    "senadores"
+
+    "candidata",
+    "candidato",
+    "candidatura",
+
+    "votacion",
+    "votación",
+
+    "urna",
+    "voto",
+
+    "politica nacional",
+    "política nacional",
+
+    "politica mexicana",
+    "política mexicana"
+
   ];
+
+  /*
+    4. CONTAMOS SEÑALES.
+       Una sola señal MUY fuerte puede bastar.
+  */
+
+  const señalesMuyFuertes = [
+    "presidente",
+    "presidenta",
+    "presidencia",
+    "senado",
+    "senador",
+    "senadora",
+    "camara de diputados",
+    "cámara de diputados",
+    "diputado federal",
+    "diputada federal",
+    "suprema corte",
+    "tribunal electoral",
+    "elecciones",
+    "gobierno federal",
+    "gobernador",
+    "gobernadora"
+  ];
+
+  if(
+    señalesMuyFuertes.some(
+      señal =>
+        textoNoticia.includes(
+          normalizar(señal)
+        )
+    )
+  ){
+
+    return true;
+
+  }
 
   let coincidencias = 0;
 
-  for(const señal of señalesFuertes){
+  for(
+    const señal of señalesFuertes
+  ){
 
     if(
-      titulo.includes(señal) ||
-      descripcion.includes(señal)
+      textoNoticia.includes(
+        normalizar(señal)
+      )
     ){
 
       coincidencias++;
@@ -917,8 +1141,8 @@ function esPolitica(noticia){
   }
 
   /*
-    Con dos señales políticas en título/descripción
-    consideramos la publicación política.
+    Dos señales normales también
+    son suficientes.
   */
 
   if(coincidencias >= 2){
@@ -928,20 +1152,34 @@ function esPolitica(noticia){
   }
 
   /*
-    Señales adicionales cuando la fuente o sección
-    claramente indican contenido político.
+    5. SEÑALES DE POLÍTICA INTERNACIONAL
   */
 
-  const señalesSeccion = [
-    "politica",
-    "gobierno",
-    "congreso",
-    "justicia",
-    "elecciones"
+  const internacionales = [
+
+    "donald trump",
+    "casa blanca",
+    "white house",
+    "presidente de estados unidos",
+    "presidenta de estados unidos",
+    "elecciones en estados unidos",
+    "elecciones presidenciales",
+    "primer ministro",
+    "jefe de estado",
+    "jefa de estado",
+    "parlamento",
+    "senado de estados unidos",
+    "gobierno de estados unidos"
+
   ];
 
   if(
-    señalesSeccion.some(s => fuente.includes(s))
+    internacionales.some(
+      señal =>
+        textoNoticia.includes(
+          normalizar(señal)
+        )
+    )
   ){
 
     return true;
@@ -952,15 +1190,23 @@ function esPolitica(noticia){
 
 }
 
+
+/* =========================
+   TIPO DE NOTICIA
+========================= */
+
 function obtenerTipo(noticia){
 
-  const texto = textoCompleto(noticia);
+  const texto =
+    textoCompleto(noticia);
 
   if(
     texto.includes("internacional") ||
-    texto.includes("estados unidos") ||
     texto.includes("donald trump") ||
-    texto.includes("mundo")
+    texto.includes("casa blanca") ||
+    texto.includes("estados unidos") ||
+    texto.includes("parlamento") ||
+    texto.includes("primer ministro")
   ){
 
     return "internacional";
@@ -970,7 +1216,8 @@ function obtenerTipo(noticia){
   if(
     texto.includes("congreso") ||
     texto.includes("senado") ||
-    texto.includes("diputados") ||
+    texto.includes("diputado") ||
+    texto.includes("diputada") ||
     texto.includes("camara de diputados") ||
     texto.includes("cámara de diputados")
   ){
@@ -985,6 +1232,7 @@ function obtenerTipo(noticia){
     texto.includes("fiscalia") ||
     texto.includes("fiscalía") ||
     texto.includes("juez") ||
+    texto.includes("jueza") ||
     texto.includes("justicia")
   ){
 
@@ -995,11 +1243,12 @@ function obtenerTipo(noticia){
   if(
     texto.includes("presidente") ||
     texto.includes("presidenta") ||
+    texto.includes("presidencia") ||
     texto.includes("gobierno") ||
     texto.includes("gobernador") ||
     texto.includes("gobernadora") ||
-    texto.includes("secretaria") ||
-    texto.includes("secretaría")
+    texto.includes("secretario") ||
+    texto.includes("secretaria")
   ){
 
     return "gobierno";
@@ -1013,16 +1262,24 @@ function obtenerTipo(noticia){
 function nombreTipo(tipo){
 
   const nombres = {
+
     gobierno:"Gobierno",
     congreso:"Congreso",
     justicia:"Justicia",
     nacional:"Nacional",
     internacional:"Internacional"
+
   };
 
-  return nombres[tipo] || "Política";
+  return nombres[tipo] ||
+    "Política";
 
 }
+
+
+/* =========================
+   HTML
+========================= */
 
 function escaparHTML(valor){
 
@@ -1035,52 +1292,67 @@ function escaparHTML(valor){
 
 }
 
-/*
-  IMAGEN DE RESPALDO
 
-  Esta imagen NO es una noticia falsa.
-  Solamente se utiliza cuando una imagen externa
-  no existe, viene de Facebook o no puede cargarse.
-*/
+/* =========================
+   IMAGEN DE RESPALDO
+========================= */
 
 function imagenRespaldo(){
 
   const svg = `
-  <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="1200"
+       height="700"
+       viewBox="0 0 1200 700">
+
     <defs>
-      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#07100b"/>
-        <stop offset="100%" stop-color="#122319"/>
+
+      <linearGradient
+        id="fondo"
+        x1="0"
+        y1="0"
+        x2="1"
+        y2="1">
+
+        <stop
+          offset="0%"
+          stop-color="#07100b"/>
+
+        <stop
+          offset="100%"
+          stop-color="#122319"/>
+
       </linearGradient>
+
     </defs>
 
-    <rect width="1200" height="700" fill="url(#g)"/>
+    <rect
+      width="1200"
+      height="700"
+      fill="url(#fondo)"/>
 
     <circle
       cx="1020"
       cy="100"
       r="240"
       fill="#65ff9a"
-      opacity=".07"
-    />
+      opacity=".07"/>
 
     <circle
       cx="180"
       cy="620"
       r="220"
       fill="#65ff9a"
-      opacity=".04"
-    />
+      opacity=".04"/>
 
     <text
       x="600"
       y="330"
       text-anchor="middle"
-      font-family="Arial, Helvetica, sans-serif"
+      font-family="Arial,Helvetica,sans-serif"
       font-size="92"
       font-weight="900"
-      fill="#65ff9a"
-    >
+      fill="#65ff9a">
       POLÍTICA
     </text>
 
@@ -1088,11 +1360,10 @@ function imagenRespaldo(){
       x="600"
       y="395"
       text-anchor="middle"
-      font-family="Arial, Helvetica, sans-serif"
+      font-family="Arial,Helvetica,sans-serif"
       font-size="27"
       fill="#ffffff"
-      opacity=".78"
-    >
+      opacity=".78">
       TendenciasMX
     </text>
 
@@ -1104,6 +1375,11 @@ function imagenRespaldo(){
 
 }
 
+
+/* =========================
+   FACEBOOK
+========================= */
+
 function esFacebookImagen(url){
 
   if(!url){
@@ -1112,15 +1388,22 @@ function esFacebookImagen(url){
 
   try{
 
-    const host = new URL(url).hostname.toLowerCase();
+    const host =
+      new URL(url)
+        .hostname
+        .toLowerCase();
 
     return (
+
       host === "facebook.com" ||
       host.endsWith(".facebook.com") ||
+
       host === "fbcdn.net" ||
       host.endsWith(".fbcdn.net") ||
+
       host === "fbsbx.com" ||
       host.endsWith(".fbsbx.com")
+
     );
 
   }catch{
@@ -1131,25 +1414,38 @@ function esFacebookImagen(url){
 
 }
 
+
+/* =========================
+   IMÁGENES SEGURAS
+========================= */
+
 function imagenFallida(img){
 
   if(!img){
     return;
   }
 
-  if(img.dataset.fallback === "1"){
+  if(
+    img.dataset.fallback === "1"
+  ){
+
     return;
+
   }
 
   img.dataset.fallback = "1";
 
   img.onerror = null;
 
-  img.removeAttribute("srcset");
+  img.removeAttribute(
+    "srcset"
+  );
 
-  img.src = imagenRespaldo();
+  img.src =
+    imagenRespaldo();
 
 }
+
 
 function crearImagenSegura(
   noticia,
@@ -1158,15 +1454,33 @@ function crearImagenSegura(
   loading = "lazy"
 ){
 
-  const imagen = obtenerImagen(noticia);
+  const imagen =
+    obtenerImagen(noticia);
 
   /*
-    Facebook y sus CDNs quedan fuera.
-    No intentamos cargarlos.
+    Si no existe imagen,
+    utilizamos respaldo.
+  */
+
+  if(!imagen){
+
+    return `
+      <img
+        class="${escaparHTML(clase)}"
+        src="${imagenRespaldo()}"
+        alt="${escaparHTML(titulo)}"
+        loading="${loading}"
+        decoding="async">
+    `;
+
+  }
+
+  /*
+    Facebook no se muestra.
+    Se usa directamente el respaldo.
   */
 
   if(
-    !imagen ||
     esFacebookImagen(imagen)
   ){
 
@@ -1176,16 +1490,14 @@ function crearImagenSegura(
         src="${imagenRespaldo()}"
         alt="${escaparHTML(titulo)}"
         loading="${loading}"
-        decoding="async"
-      >
+        decoding="async">
     `;
 
   }
 
   /*
-    Las demás imágenes sí se intentan cargar.
-    Si alguna falla, imagenFallida() coloca
-    automáticamente el respaldo.
+    Las imágenes de otras fuentes
+    se cargan normalmente.
   */
 
   return `
@@ -1196,11 +1508,15 @@ function crearImagenSegura(
       loading="${loading}"
       decoding="async"
       referrerpolicy="no-referrer"
-      onerror="imagenFallida(this)"
-    >
+      onerror="imagenFallida(this)">
   `;
 
 }
+
+
+/* =========================
+   FECHA
+========================= */
 
 function fechaBonita(fecha){
 
@@ -1208,10 +1524,15 @@ function fechaBonita(fecha){
     return "";
   }
 
-  const numero = Date.parse(fecha);
+  const numero =
+    Date.parse(fecha);
 
-  if(Number.isNaN(numero)){
+  if(
+    Number.isNaN(numero)
+  ){
+
     return String(fecha);
+
   }
 
   return new Intl.DateTimeFormat(
@@ -1221,28 +1542,46 @@ function fechaBonita(fecha){
       month:"short",
       year:"numeric"
     }
-  ).format(new Date(numero));
+  ).format(
+    new Date(numero)
+  );
 
 }
 
-function crearDestacada(noticia, indice){
 
-  const titulo = obtenerTitulo(noticia);
+/* =========================
+   DESTACADAS
+========================= */
 
-  const descripcion = obtenerDescripcion(noticia);
+function crearDestacada(
+  noticia,
+  indice
+){
 
-  const tipo = obtenerTipo(noticia);
+  const titulo =
+    obtenerTitulo(noticia);
 
-  const url = obtenerURL(noticia);
+  const descripcion =
+    obtenerDescripcion(noticia);
 
-  const clase = indice === 0 ? "" : "small";
+  const tipo =
+    obtenerTipo(noticia);
+
+  const url =
+    obtenerURL(noticia);
+
+  const clase =
+    indice === 0
+      ? ""
+      : "small";
 
   return `
     <a
       class="featured-card ${clase}"
       href="${escaparHTML(url || "#")}"
-      ${url ? 'target="_blank" rel="noopener noreferrer"' : ""}
-    >
+      ${url
+        ? 'target="_blank" rel="noopener noreferrer"'
+        : ""}>
 
       ${crearImagenSegura(
         noticia,
@@ -1254,7 +1593,9 @@ function crearDestacada(noticia, indice){
       <div class="featured-content">
 
         <span class="tag">
-          ${escaparHTML(nombreTipo(tipo))}
+          ${escaparHTML(
+            nombreTipo(tipo)
+          )}
         </span>
 
         <h3>
@@ -1263,10 +1604,14 @@ function crearDestacada(noticia, indice){
 
         ${
           descripcion
-          ?
-          `<p>${escaparHTML(descripcion)}</p>`
-          :
-          ""
+            ? `
+              <p>
+                ${escaparHTML(
+                  descripcion
+                )}
+              </p>
+            `
+            : ""
         }
 
       </div>
@@ -1276,25 +1621,36 @@ function crearDestacada(noticia, indice){
 
 }
 
+
+/* =========================
+   TARJETA
+========================= */
+
 function crearTarjeta(noticia){
 
-  const titulo = obtenerTitulo(noticia);
+  const titulo =
+    obtenerTitulo(noticia);
 
-  const descripcion = obtenerDescripcion(noticia);
+  const descripcion =
+    obtenerDescripcion(noticia);
 
-  const fecha = obtenerFecha(noticia);
+  const fecha =
+    obtenerFecha(noticia);
 
-  const tipo = obtenerTipo(noticia);
+  const tipo =
+    obtenerTipo(noticia);
 
-  const url = obtenerURL(noticia);
+  const url =
+    obtenerURL(noticia);
 
   return `
     <article class="news-card">
 
       <a
         href="${escaparHTML(url || "#")}"
-        ${url ? 'target="_blank" rel="noopener noreferrer"' : ""}
-      >
+        ${url
+          ? 'target="_blank" rel="noopener noreferrer"'
+          : ""}>
 
         <div class="news-image">
 
@@ -1310,7 +1666,9 @@ function crearTarjeta(noticia){
         <div class="news-body">
 
           <span class="tag">
-            ${escaparHTML(nombreTipo(tipo))}
+            ${escaparHTML(
+              nombreTipo(tipo)
+            )}
           </span>
 
           <h3>
@@ -1319,16 +1677,22 @@ function crearTarjeta(noticia){
 
           ${
             descripcion
-            ?
-            `<p>${escaparHTML(descripcion)}</p>`
-            :
-            ""
+              ? `
+                <p>
+                  ${escaparHTML(
+                    descripcion
+                  )}
+                </p>
+              `
+              : ""
           }
 
           <div class="meta">
 
             <span>
-              ${escaparHTML(fechaBonita(fecha))}
+              ${escaparHTML(
+                fechaBonita(fecha)
+              )}
             </span>
 
             <span>
@@ -1346,21 +1710,30 @@ function crearTarjeta(noticia){
 
 }
 
+
+/* =========================
+   CARGAR JSON
+========================= */
+
 async function cargarNoticias(){
 
-  const status = document.getElementById("status");
+  const status =
+    document.getElementById(
+      "status"
+    );
 
   try{
 
     status.textContent =
       "Cargando noticias de política...";
 
-    const respuesta = await fetch(
-      JSON_URL,
-      {
-        cache:"no-store"
-      }
-    );
+    const respuesta =
+      await fetch(
+        JSON_URL,
+        {
+          cache:"no-store"
+        }
+      );
 
     if(!respuesta.ok){
 
@@ -1370,20 +1743,41 @@ async function cargarNoticias(){
 
     }
 
-    const datos = await respuesta.json();
+    const datos =
+      await respuesta.json();
 
-    if(Array.isArray(datos)){
+    /*
+      Aceptamos directamente
+      un array.
+    */
 
-      todasLasNoticias = datos;
-
-    }else if(
-      datos &&
-      Array.isArray(datos.noticias)
+    if(
+      Array.isArray(datos)
     ){
 
-      todasLasNoticias = datos.noticias;
+      todasLasNoticias =
+        datos;
 
-    }else{
+    }
+
+    /*
+      También aceptamos:
+      { noticias: [] }
+    */
+
+    else if(
+      datos &&
+      Array.isArray(
+        datos.noticias
+      )
+    ){
+
+      todasLasNoticias =
+        datos.noticias;
+
+    }
+
+    else{
 
       throw new Error(
         "Formato de noticias.json no reconocido"
@@ -1426,6 +1820,11 @@ async function cargarNoticias(){
   }
 
 }
+
+
+/* =========================
+   FILTRADO
+========================= */
 
 function obtenerNoticiasFiltradas(){
 
@@ -1475,6 +1874,11 @@ function obtenerNoticiasFiltradas(){
   return resultado;
 
 }
+
+
+/* =========================
+   MOSTRAR
+========================= */
 
 function mostrarNoticias(){
 
@@ -1533,7 +1937,10 @@ function mostrarNoticias(){
     "block";
 
   const destacadas =
-    noticiasFiltradas.slice(0,3);
+    noticiasFiltradas.slice(
+      0,
+      3
+    );
 
   featuredGrid.innerHTML =
     destacadas
@@ -1591,6 +1998,11 @@ function mostrarNoticias(){
 
 }
 
+
+/* =========================
+   PAGINACIÓN
+========================= */
+
 function crearPaginacion(){
 
   const contenedor =
@@ -1604,9 +2016,12 @@ function crearPaginacion(){
       POR_PAGINA
     );
 
-  if(totalPaginas <= 1){
+  if(
+    totalPaginas <= 1
+  ){
 
-    contenedor.innerHTML = "";
+    contenedor.innerHTML =
+      "";
 
     return;
 
@@ -1614,13 +2029,16 @@ function crearPaginacion(){
 
   let html = "";
 
-  if(paginaActual > 1){
+  if(
+    paginaActual > 1
+  ){
 
     html += `
       <button
         class="page-btn"
-        data-page="${paginaActual - 1}"
-      >
+        data-page="${
+          paginaActual - 1
+        }">
         ‹
       </button>
     `;
@@ -1633,7 +2051,9 @@ function crearPaginacion(){
     Math.max(
       1,
       paginaActual -
-      Math.floor(maxVisible / 2)
+      Math.floor(
+        maxVisible / 2
+      )
     );
 
   let fin =
@@ -1669,11 +2089,10 @@ function crearPaginacion(){
       <button
         class="page-btn ${
           pagina === paginaActual
-          ? "active"
-          : ""
+            ? "active"
+            : ""
         }"
-        data-page="${pagina}"
-      >
+        data-page="${pagina}">
         ${pagina}
       </button>
     `;
@@ -1688,8 +2107,9 @@ function crearPaginacion(){
     html += `
       <button
         class="page-btn"
-        data-page="${paginaActual + 1}"
-      >
+        data-page="${
+          paginaActual + 1
+        }">
         ›
       </button>
     `;
@@ -1729,6 +2149,11 @@ function crearPaginacion(){
     );
 
 }
+
+
+/* =========================
+   BOTONES DE CATEGORÍA
+========================= */
 
 document
   .querySelectorAll(
@@ -1772,6 +2197,11 @@ document
     }
   );
 
+
+/* =========================
+   BUSCADOR
+========================= */
+
 document
   .getElementById(
     "buscador"
@@ -1789,6 +2219,11 @@ document
 
     }
   );
+
+
+/* =========================
+   ARRANQUE
+========================= */
 
 cargarNoticias();
 
