@@ -1258,48 +1258,57 @@ jobs:
                       )
                   )
 
-              # =================================================
+              
+              
+                  
+
+                  # =================================================
               # GUARDAR SOLO SI ES REAL
               # =================================================
 
-              if (
-                  imagen_nueva
-                  and imagen_nueva
-                  not in imagenes_usadas
-              ):
+              if imagen_nueva:
 
-                  noticia["imagen"] = (
-                      imagen_nueva
-                  )
-
-                  imagenes_usadas.add(
-                      imagen_nueva
-                  )
-
-                  cambios = True
-
-                  print(
-                      "NUEVA IMAGEN:",
-                      imagen_nueva
-                  )
-
-              else:
+                  # Si encontramos una imagen real,
+                  # la guardamos aunque otra noticia
+                  # ya utilice la misma URL.
 
                   if noticia.get(
                       "imagen",
                       ""
-                  ) != "":
+                  ) != imagen_nueva:
 
-                      noticia["imagen"] = ""
+                      noticia["imagen"] = (
+                          imagen_nueva
+                      )
+
+                      imagenes_usadas.add(
+                          imagen_nueva
+                      )
 
                       cambios = True
+
+                      print(
+                          "NUEVA IMAGEN:",
+                          imagen_nueva
+                      )
+
+                  else:
+
+                      print(
+                          "Imagen ya asignada:",
+                          imagen_nueva
+                      )
+
+              else:
+
+                  # Si no encontramos imagen real,
+                  # NO borramos una imagen existente.
 
                   print(
                       "No se encontro imagen real."
                   )
 
               time.sleep(0.2)
-
           # =================================================
           # NUEVAS NOTICIAS
           # =================================================
