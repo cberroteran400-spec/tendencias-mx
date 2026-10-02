@@ -4,34 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Entretenimiento | Cine, Música, Famosos y Videojuegos | TendenciasMX</title>
+<title>Entretenimiento | TendenciasMX</title>
 
-<meta name="description" content="Noticias de entretenimiento, cine, televisión, música, famosos, videojuegos y tendencias en TendenciasMX.">
-<meta name="keywords" content="entretenimiento, cine, televisión, música, famosos, videojuegos, tendencias, México">
-<meta name="robots" content="index, follow">
+<meta name="description" content="Las últimas noticias de entretenimiento, música, cine, televisión, famosos, cultura y tendencias en México.">
+<meta name="keywords" content="entretenimiento México, noticias de entretenimiento, famosos, música, cine, televisión, tendencias, celebridades">
 
 <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/entretenimiento.html">
 
-<meta property="og:title" content="Entretenimiento | TendenciasMX">
-<meta property="og:description" content="Las últimas noticias de cine, televisión, música, famosos, videojuegos y entretenimiento.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://cberroteran400-spec.github.io/tendencias-mx/entretenimiento.html">
-
 <style>
-
-:root{
-    --verde:#65ff9a;
-    --verde2:#35d878;
-    --fondo:#050807;
-    --fondo2:#0a100d;
-    --tarjeta:#101814;
-    --tarjeta2:#121d17;
-    --borde:rgba(101,255,154,.16);
-    --texto:#f3fff7;
-    --gris:#9ca9a1;
-    --gris2:#6f7d75;
-}
-
 *{
     box-sizing:border-box;
     margin:0;
@@ -44,10 +24,8 @@ html{
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:
-        radial-gradient(circle at 50% -10%,rgba(101,255,154,.08),transparent 35%),
-        linear-gradient(180deg,#050807,#080d0a 50%,#050807);
-    color:var(--texto);
+    background:#050807;
+    color:#f4f7f5;
     min-height:100vh;
 }
 
@@ -56,24 +34,19 @@ a{
     text-decoration:none;
 }
 
-/* =========================
-HEADER
-========================= */
-
 header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(5,8,7,.95);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid var(--borde);
+    background:rgba(5,8,7,.96);
+    border-bottom:1px solid #1b3024;
+    backdrop-filter:blur(12px);
 }
 
 .header-inner{
     max-width:1250px;
-    min-height:72px;
     margin:auto;
-    padding:12px 20px;
+    padding:16px 20px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -81,1347 +54,904 @@ header{
 }
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    color:white;
-    font-size:23px;
+    font-size:25px;
     font-weight:900;
+    color:#65ff9a;
     white-space:nowrap;
 }
 
-.logo-icon{
-    width:38px;
-    height:38px;
-    display:grid;
-    place-items:center;
-    border-radius:12px;
-    background:var(--verde);
-    color:#061009;
-    font-size:20px;
-    box-shadow:0 0 25px rgba(101,255,154,.22);
-}
-
 .logo span{
-    color:var(--verde);
+    color:#fff;
 }
 
 nav{
     display:flex;
-    gap:5px;
-    overflow-x:auto;
-    scrollbar-width:none;
-}
-
-nav::-webkit-scrollbar{
-    display:none;
+    flex-wrap:wrap;
+    gap:7px;
+    justify-content:flex-end;
 }
 
 nav a{
-    color:#b7c3bc;
-    padding:10px 12px;
-    border-radius:10px;
-    font-size:14px;
-    font-weight:700;
-    white-space:nowrap;
+    padding:8px 10px;
+    border-radius:8px;
+    color:#b9c5be;
+    font-size:13px;
     transition:.2s;
 }
 
 nav a:hover,
 nav a.active{
-    background:rgba(101,255,154,.09);
-    color:var(--verde);
+    color:#65ff9a;
+    background:#102017;
 }
-
-/* =========================
-CONTENEDOR
-========================= */
-
-.container{
-    width:min(1250px,calc(100% - 32px));
-    margin:auto;
-}
-
-/* =========================
-HERO
-========================= */
 
 .hero{
-    padding:45px 0 25px;
+    max-width:1250px;
+    margin:0 auto;
+    padding:55px 20px 30px;
 }
 
 .hero-box{
-    position:relative;
-    overflow:hidden;
-    border:1px solid var(--borde);
-    border-radius:24px;
-    padding:40px;
     background:
-        radial-gradient(circle at 90% 15%,rgba(101,255,154,.14),transparent 30%),
-        linear-gradient(135deg,#0d1711,#09100c);
-    box-shadow:0 20px 60px rgba(0,0,0,.28);
-}
-
-.hero-box:after{
-    content:"🎬";
-    position:absolute;
-    right:45px;
-    bottom:-30px;
-    font-size:150px;
-    opacity:.035;
+        radial-gradient(circle at 80% 20%,rgba(101,255,154,.16),transparent 30%),
+        linear-gradient(135deg,#0d1711,#07100b);
+    border:1px solid #1d3927;
+    border-radius:22px;
+    padding:42px 30px;
 }
 
 .badge{
-    display:inline-flex;
-    align-items:center;
-    gap:7px;
+    display:inline-block;
     padding:7px 12px;
-    border-radius:30px;
-    background:rgba(101,255,154,.08);
-    border:1px solid rgba(101,255,154,.2);
-    color:var(--verde);
-    font-size:11px;
-    font-weight:900;
-    letter-spacing:.7px;
-    text-transform:uppercase;
-    margin-bottom:16px;
-}
-
-.badge-dot{
-    width:7px;
-    height:7px;
-    border-radius:50%;
-    background:var(--verde);
-    box-shadow:0 0 10px var(--verde);
+    border-radius:999px;
+    background:#102519;
+    color:#65ff9a;
+    border:1px solid #214a30;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:15px;
 }
 
 .hero h1{
-    position:relative;
-    z-index:2;
-    font-size:clamp(34px,5vw,58px);
+    font-size:clamp(34px,6vw,62px);
     line-height:1;
-    letter-spacing:-2px;
     margin-bottom:15px;
 }
 
 .hero h1 span{
-    color:var(--verde);
+    color:#65ff9a;
 }
 
 .hero p{
-    position:relative;
-    z-index:2;
     max-width:760px;
-    color:var(--gris);
+    color:#aebbb3;
     line-height:1.7;
     font-size:16px;
 }
 
-/* =========================
-BUSCADOR
-========================= */
-
-.search-area{
-    margin:10px 0 20px;
+.tools{
+    max-width:1250px;
+    margin:0 auto;
+    padding:0 20px 25px;
 }
 
-.search-box{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    padding:8px 10px 8px 16px;
-    border:1px solid var(--borde);
-    border-radius:16px;
-    background:var(--tarjeta);
-    transition:.2s;
-}
-
-.search-box:focus-within{
-    border-color:rgba(101,255,154,.4);
-    box-shadow:0 0 0 4px rgba(101,255,154,.04);
-}
-
-.search-icon{
-    color:var(--verde);
-    font-size:21px;
-}
-
-.search-box input{
-    flex:1;
-    min-width:0;
-    border:0;
-    outline:0;
-    background:transparent;
-    color:white;
+.search{
+    width:100%;
+    background:#0b110e;
+    color:#fff;
+    border:1px solid #203629;
+    border-radius:13px;
+    padding:15px 17px;
     font-size:15px;
-    padding:10px 4px;
+    outline:none;
 }
 
-.search-box input::placeholder{
-    color:var(--gris2);
+.search:focus{
+    border-color:#65ff9a;
 }
-
-.search-button{
-    border:0;
-    border-radius:11px;
-    background:var(--verde);
-    color:#061009;
-    padding:11px 17px;
-    font-weight:900;
-    cursor:pointer;
-}
-
-/* =========================
-FILTROS
-========================= */
 
 .filters{
     display:flex;
-    gap:9px;
-    overflow-x:auto;
-    padding:2px 2px 9px;
-    scrollbar-width:none;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:14px;
 }
 
-.filters::-webkit-scrollbar{
-    display:none;
-}
-
-.filter-btn{
-    border:1px solid var(--borde);
-    background:#0c1310;
-    color:#aab6af;
-    padding:11px 15px;
-    border-radius:30px;
+.filter{
+    border:1px solid #263b2d;
+    background:#0b120e;
+    color:#aebbb3;
+    padding:9px 13px;
+    border-radius:9px;
     cursor:pointer;
     font-size:13px;
-    font-weight:800;
-    white-space:nowrap;
-    transition:.2s;
+    font-weight:700;
 }
 
-.filter-btn:hover{
-    color:white;
-    border-color:rgba(101,255,154,.35);
+.filter:hover,
+.filter.active{
+    background:#65ff9a;
+    color:#041008;
+    border-color:#65ff9a;
 }
-
-.filter-btn.active{
-    background:var(--verde);
-    border-color:var(--verde);
-    color:#061009;
-}
-
-/* =========================
-ESTADO
-========================= */
 
 .status{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:15px;
-    margin:24px 0 14px;
-    color:var(--gris);
+    max-width:1250px;
+    margin:0 auto;
+    padding:0 20px 20px;
+    color:#829188;
     font-size:13px;
 }
 
 .status strong{
-    color:var(--verde);
-}
-
-.updated{
-    color:var(--gris2);
-    font-size:12px;
-}
-
-/* =========================
-DESTACADAS
-========================= */
-
-.section-title{
-    display:flex;
-    align-items:end;
-    justify-content:space-between;
-    gap:15px;
-    margin:32px 0 16px;
-}
-
-.section-title h2{
-    font-size:24px;
-    letter-spacing:-.7px;
-}
-
-.section-title p{
-    color:var(--gris2);
-    font-size:12px;
+    color:#65ff9a;
 }
 
 .featured{
+    max-width:1250px;
+    margin:auto;
+    padding:10px 20px 30px;
+}
+
+.section-title{
+    font-size:25px;
+    margin-bottom:18px;
+}
+
+.section-title span{
+    color:#65ff9a;
+}
+
+.feature-grid{
     display:grid;
-    grid-template-columns:1.5fr 1fr 1fr;
+    grid-template-columns:2fr 1fr;
     gap:15px;
 }
 
-.feature-card{
+.feature{
     position:relative;
-    min-height:280px;
+    min-height:300px;
     overflow:hidden;
-    border:1px solid var(--borde);
-    border-radius:19px;
-    background:#0c130f;
+    border-radius:18px;
+    border:1px solid #20382a;
+    background:#0b120e;
 }
 
-.feature-card:first-child{
-    min-height:360px;
-}
-
-.feature-image{
-    position:absolute;
-    inset:0;
-    background:
-        linear-gradient(180deg,transparent 20%,rgba(0,0,0,.9) 100%);
-}
-
-.feature-image img{
+.feature img{
     width:100%;
     height:100%;
+    min-height:300px;
     object-fit:cover;
     display:block;
-    opacity:.76;
-    transition:.35s;
 }
 
-.feature-card:hover .feature-image img{
-    transform:scale(1.05);
-    opacity:.9;
-}
-
-.feature-fallback{
-    width:100%;
-    height:100%;
-    min-height:280px;
-    display:grid;
-    place-items:center;
-    background:
-        radial-gradient(circle at 50% 35%,rgba(101,255,154,.18),transparent 40%),
-        linear-gradient(135deg,#132019,#080c0a);
-    color:var(--verde);
-    font-size:48px;
+.feature-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.95),
+        rgba(0,0,0,.2) 65%,
+        transparent
+    );
+    display:flex;
+    align-items:flex-end;
+    padding:25px;
 }
 
 .feature-content{
-    position:absolute;
-    z-index:2;
-    left:0;
-    right:0;
-    bottom:0;
-    padding:21px;
+    max-width:800px;
 }
 
-.feature-category{
+.feature-content .tag{
     display:inline-block;
-    background:var(--verde);
-    color:#061009;
-    padding:5px 8px;
-    border-radius:6px;
-    font-size:10px;
+    color:#65ff9a;
+    font-size:11px;
     font-weight:900;
     text-transform:uppercase;
-    margin-bottom:9px;
+    margin-bottom:8px;
 }
 
 .feature-content h3{
-    font-size:clamp(17px,2.2vw,25px);
-    line-height:1.2;
+    font-size:clamp(21px,3vw,32px);
+    line-height:1.15;
 }
 
-.feature-card:not(:first-child) .feature-content h3{
-    font-size:17px;
+.feature-small{
+    min-height:300px;
 }
 
-/* =========================
-GRID
-========================= */
+.feature-small img{
+    min-height:300px;
+}
+
+.news-section{
+    max-width:1250px;
+    margin:auto;
+    padding:0 20px 50px;
+}
 
 .news-grid{
     display:grid;
-    grid-template-columns:repeat(3,minmax(0,1fr));
-    gap:17px;
-}
-
-.card-link{
-    display:block;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
 }
 
 .card{
-    height:100%;
+    background:#0b110e;
+    border:1px solid #1d3024;
+    border-radius:16px;
     overflow:hidden;
-    border:1px solid var(--borde);
-    border-radius:18px;
-    background:linear-gradient(180deg,#101813,#0b110e);
     transition:.25s;
 }
 
 .card:hover{
     transform:translateY(-4px);
-    border-color:rgba(101,255,154,.34);
-    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    border-color:#65ff9a;
 }
 
-.news-image{
-    position:relative;
-    width:100%;
-    height:200px;
+.card-image{
+    height:195px;
+    background:#101913;
     overflow:hidden;
-    background:#0a100d;
 }
 
-.news-image img{
+.card-image img{
     width:100%;
     height:100%;
-    display:block;
     object-fit:cover;
-    transition:.3s;
+    display:block;
 }
 
-.card:hover .news-image img{
-    transform:scale(1.04);
-}
-
-.image-fallback{
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-    background:
-        radial-gradient(circle at 50% 40%,rgba(101,255,154,.14),transparent 40%),
-        #0b110e;
-    color:var(--verde);
-}
-
-.image-fallback-icon{
-    font-size:35px;
-}
-
-.image-fallback-text{
-    color:var(--gris2);
-    font-size:11px;
-    font-weight:700;
-}
-
-.card-content{
+.card-body{
     padding:17px;
 }
 
-.category{
-    display:inline-block;
-    padding:5px 9px;
-    border-radius:999px;
-    background:rgba(101,255,154,.09);
-    color:var(--verde);
-    border:1px solid rgba(101,255,154,.12);
-    font-size:10px;
+.card-tag{
+    color:#65ff9a;
+    font-size:11px;
     font-weight:900;
     text-transform:uppercase;
+    margin-bottom:9px;
+}
+
+.card h3{
+    font-size:18px;
+    line-height:1.3;
     margin-bottom:10px;
 }
 
-.card h2{
-    font-size:17px;
-    line-height:1.35;
-    margin-bottom:9px;
-}
-
-.date{
-    color:var(--gris2);
-    font-size:11px;
-    margin-bottom:9px;
-}
-
-.description{
-    color:var(--gris);
-    line-height:1.5;
+.card p{
+    color:#9daaa2;
     font-size:13px;
-    margin-bottom:14px;
+    line-height:1.55;
+    margin-bottom:13px;
 }
 
-.card-footer{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:10px;
-    padding-top:13px;
-    border-top:1px solid rgba(255,255,255,.06);
-}
-
-.source{
-    color:var(--gris2);
-    font-size:10px;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-
-.read{
-    color:var(--verde);
+.meta{
+    color:#65736a;
     font-size:11px;
-    font-weight:900;
-    white-space:nowrap;
 }
-
-/* =========================
-INFO
-========================= */
-
-.info{
-    margin:35px 0 45px;
-    padding:22px;
-    border-radius:17px;
-    border:1px solid var(--borde);
-    background:
-        linear-gradient(135deg,rgba(101,255,154,.07),rgba(101,255,154,.025));
-}
-
-.info h3{
-    color:var(--verde);
-    margin-bottom:9px;
-    font-size:17px;
-}
-
-.info p{
-    color:var(--gris);
-    line-height:1.65;
-    font-size:13px;
-}
-
-/* =========================
-LOADING
-========================= */
-
-.loading{
-    grid-column:1/-1;
-    padding:70px 20px;
-    text-align:center;
-    color:var(--gris);
-}
-
-.spinner{
-    width:36px;
-    height:36px;
-    margin:0 auto 15px;
-    border:3px solid rgba(101,255,154,.15);
-    border-top-color:var(--verde);
-    border-radius:50%;
-    animation:girar .8s linear infinite;
-}
-
-@keyframes girar{
-    to{
-        transform:rotate(360deg);
-    }
-}
-
-.empty{
-    grid-column:1/-1;
-    padding:55px 20px;
-    text-align:center;
-    border:1px dashed var(--borde);
-    border-radius:18px;
-    color:var(--gris);
-}
-
-.empty-icon{
-    font-size:40px;
-    margin-bottom:10px;
-}
-
-.error{
-    grid-column:1/-1;
-    padding:35px 20px;
-    text-align:center;
-    border:1px solid rgba(255,92,112,.25);
-    border-radius:17px;
-    color:#ff9daa;
-    background:rgba(255,92,112,.05);
-}
-
-/* =========================
-PAGINACIÓN
-========================= */
 
 .pagination{
     display:flex;
     justify-content:center;
-    gap:8px;
-    margin:30px 0 15px;
+    align-items:center;
+    gap:7px;
+    flex-wrap:wrap;
+    margin-top:30px;
 }
 
 .page-btn{
-    border:1px solid var(--borde);
-    background:#0c1310;
-    color:#b7c4bc;
-    padding:10px 14px;
-    border-radius:9px;
+    background:#0c1510;
+    border:1px solid #23372a;
+    color:#aebbb3;
+    padding:9px 12px;
+    border-radius:8px;
     cursor:pointer;
-    font-weight:800;
 }
 
+.page-btn:hover,
 .page-btn.active{
-    background:var(--verde);
-    color:#061009;
-    border-color:var(--verde);
+    background:#65ff9a;
+    color:#041008;
+    border-color:#65ff9a;
 }
 
-.page-btn:disabled{
-    opacity:.4;
-    cursor:not-allowed;
+.empty{
+    text-align:center;
+    padding:60px 20px;
+    border:1px dashed #294232;
+    border-radius:16px;
+    color:#89968e;
 }
 
-/* =========================
-FOOTER
-========================= */
+.empty strong{
+    display:block;
+    color:#65ff9a;
+    font-size:20px;
+    margin-bottom:8px;
+}
 
 footer{
-    border-top:1px solid var(--borde);
-    background:#050807;
-    padding:32px 0;
+    border-top:1px solid #1b2d22;
+    background:#030504;
+    padding:30px 20px;
+    text-align:center;
+    color:#68756d;
+    font-size:13px;
 }
 
-.footer-inner{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
+footer strong{
+    color:#65ff9a;
 }
 
-.footer-brand{
-    font-weight:900;
-}
-
-.footer-brand span{
-    color:var(--verde);
-}
-
-.footer-text{
-    color:var(--gris2);
-    font-size:11px;
-}
-
-/* =========================
-RESPONSIVE
-========================= */
-
-@media(max-width:1000px){
-
-    .featured{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .feature-card:first-child{
-        grid-column:1/-1;
+@media(max-width:900px){
+    .feature-grid{
+        grid-template-columns:1fr;
     }
 
     .news-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
+    nav{
+        display:none;
+    }
 }
 
-@media(max-width:650px){
-
+@media(max-width:600px){
     .header-inner{
-        padding:9px 12px;
-        min-height:62px;
-    }
-
-    .logo{
-        font-size:19px;
-    }
-
-    .logo-icon{
-        width:34px;
-        height:34px;
-    }
-
-    nav a{
-        font-size:12px;
-        padding:8px 9px;
-    }
-
-    .container{
-        width:calc(100% - 22px);
+        padding:14px 15px;
     }
 
     .hero{
-        padding:24px 0 18px;
+        padding:30px 15px 20px;
     }
 
     .hero-box{
-        padding:28px 21px;
-        border-radius:20px;
+        padding:30px 20px;
     }
 
-    .hero h1{
-        font-size:35px;
-    }
-
-    .hero p{
-        font-size:14px;
-    }
-
-    .featured{
-        grid-template-columns:1fr;
-    }
-
-    .feature-card:first-child{
-        grid-column:auto;
-        min-height:300px;
-    }
-
-    .feature-card{
-        min-height:250px;
+    .tools,
+    .status,
+    .featured,
+    .news-section{
+        padding-left:15px;
+        padding-right:15px;
     }
 
     .news-grid{
         grid-template-columns:1fr;
     }
 
-    .news-image{
+    .card-image{
         height:210px;
     }
-
-    .status{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .footer-inner{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
 }
-
-@media(max-width:430px){
-
-    .search-button{
-        font-size:0;
-        width:40px;
-        height:40px;
-        padding:0;
-    }
-
-    .search-button:after{
-        content:"🔍";
-        font-size:16px;
-    }
-
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-
     <div class="header-inner">
 
-        <a href="./index.html" class="logo">
-
-            <div class="logo-icon">
-                T
-            </div>
-
+        <a class="logo" href="index.html">
             Tendencias<span>MX</span>
-
         </a>
 
         <nav>
-
-            <a href="./index.html">
-                Inicio
-            </a>
-
-            <a href="./noticias.html">
-                Noticias
-            </a>
-
-            <a href="./deportes.html">
-                Deportes
-            </a>
-
-            <a href="./entretenimiento.html" class="active">
-                Entretenimiento
-            </a>
-
-            <a href="./tecnologia.html">
-                Tecnología
-            </a>
-
-            <a href="./dinero.html">
-                Dinero
-            </a>
-
-            <a href="./politica.html">
-                Política
-            </a>
-
-            <a href="./tramites.html">
-                Trámites
-            </a>
-
-            <a href="./contacto.html">
-                Contacto
-            </a>
-
-            <a href="./preguntas.html">
-                Preguntas
-            </a>
-
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="deportes.html">Deportes</a>
+            <a href="entretenimiento.html" class="active">Entretenimiento</a>
+            <a href="tecnologia.html">Tecnología</a>
+            <a href="dinero.html">Dinero</a>
+            <a href="politica.html">Política</a>
+            <a href="tramites.html">Trámites</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="preguntas.html">Preguntas</a>
         </nav>
 
     </div>
-
 </header>
 
-<main>
-
 <section class="hero">
+    <div class="hero-box">
+        <div class="badge">ENTRETENIMIENTO</div>
 
-    <div class="container">
+        <h1>
+            Todo lo que está<br>
+            <span>dando de qué hablar</span>
+        </h1>
 
-        <div class="hero-box">
+        <p>
+            Noticias reales de entretenimiento, música, cine, televisión,
+            celebridades, cultura y tendencias, actualizadas automáticamente.
+        </p>
+    </div>
+</section>
 
-            <div class="badge">
+<section class="tools">
 
-                <span class="badge-dot"></span>
+    <input
+        id="buscador"
+        class="search"
+        type="search"
+        placeholder="Buscar noticias de entretenimiento..."
+        autocomplete="off"
+    >
 
-                Entretenimiento actualizado
-
-            </div>
-
-            <h1>
-                Todo el entretenimiento
-                <span>en un solo lugar.</span>
-            </h1>
-
-            <p>
-                Noticias de cine, televisión, música, famosos,
-                videojuegos y los temas de entretenimiento que están
-                generando conversación.
-            </p>
-
-        </div>
-
+    <div class="filters">
+        <button class="filter active" data-filtro="todos">Todo</button>
+        <button class="filter" data-filtro="cine">Cine y TV</button>
+        <button class="filter" data-filtro="musica">Música</button>
+        <button class="filter" data-filtro="famosos">Famosos</button>
+        <button class="filter" data-filtro="cultura">Cultura</button>
+        <button class="filter" data-filtro="tendencias">Tendencias</button>
     </div>
 
 </section>
 
+<div class="status">
+    <span id="estado">Cargando publicaciones...</span>
+</div>
 
-<section>
+<section class="featured">
+    <h2 class="section-title">
+        Lo más <span>destacado</span>
+    </h2>
 
-    <div class="container">
-
-        <div class="search-area">
-
-            <div class="search-box">
-
-                <div class="search-icon">
-                    ⌕
-                </div>
-
-                <input
-                    type="search"
-                    id="search"
-                    placeholder="Buscar noticias de entretenimiento..."
-                    autocomplete="off"
-                >
-
-                <button
-                    class="search-button"
-                    id="btnBuscar"
-                >
-                    Buscar
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <div class="filters">
-
-            <button
-                class="filter-btn active"
-                data-category="todos"
-            >
-                Todos
-            </button>
-
-            <button
-                class="filter-btn"
-                data-category="cine_tv"
-            >
-                🎬 Cine y TV
-            </button>
-
-            <button
-                class="filter-btn"
-                data-category="musica"
-            >
-                🎵 Música
-            </button>
-
-            <button
-                class="filter-btn"
-                data-category="famosos"
-            >
-                ⭐ Famosos
-            </button>
-
-            <button
-                class="filter-btn"
-                data-category="videojuegos"
-            >
-                🎮 Videojuegos
-            </button>
-
-            <button
-                class="filter-btn"
-                data-category="tendencias"
-            >
-                🔥 Tendencias
-            </button>
-
-        </div>
-
-
-        <div class="status">
-
-            <div>
-
-                <strong id="contador">
-                    Cargando...
-                </strong>
-
-                <span>
-                    noticias de entretenimiento
-                </span>
-
-            </div>
-
-            <div
-                class="updated"
-                id="actualizado"
-            >
-                Actualizando...
-            </div>
-
-        </div>
-
-    </div>
-
+    <div id="destacadas" class="feature-grid"></div>
 </section>
 
+<section class="news-section">
 
-<section>
+    <h2 class="section-title">
+        Últimas publicaciones
+    </h2>
 
-    <div class="container">
+    <div id="contenedorNoticias" class="news-grid"></div>
 
-        <div class="section-title">
-
-            <h2>
-                🎬 Destacadas
-            </h2>
-
-            <p>
-                Lo más reciente
-            </p>
-
-        </div>
-
-
-        <div
-            class="featured"
-            id="destacadas"
-        >
-
-            <div class="loading">
-
-                <div class="spinner"></div>
-
-                Cargando noticias...
-
-            </div>
-
-        </div>
-
-    </div>
+    <div id="paginacion" class="pagination"></div>
 
 </section>
-
-
-<section>
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>
-                📰 Últimas noticias
-            </h2>
-
-            <p id="resultadoTexto"></p>
-
-        </div>
-
-
-        <div
-            class="news-grid"
-            id="newsGrid"
-        >
-
-            <div class="loading">
-
-                <div class="spinner"></div>
-
-                Cargando información...
-
-            </div>
-
-        </div>
-
-
-        <div
-            class="pagination"
-            id="paginacion"
-        ></div>
-
-
-        <section class="info">
-
-            <h3>
-                Sobre Entretenimiento
-            </h3>
-
-            <p>
-                Encuentra las últimas noticias de cine, televisión,
-                música, celebridades, videojuegos y tendencias.
-                Las publicaciones se cargan desde la información
-                actualizada de TendenciasMX y cada noticia puede
-                abrirse desde su fuente original.
-            </p>
-
-        </section>
-
-    </div>
-
-</section>
-
-</main>
-
 
 <footer>
-
-    <div class="container">
-
-        <div class="footer-inner">
-
-            <div class="footer-brand">
-                Tendencias<span>MX</span>
-            </div>
-
-            <div class="footer-text">
-                © 2026 TendenciasMX · Información y actualidad
-            </div>
-
-        </div>
-
-    </div>
-
+    © 2026 <strong>TendenciasMX</strong> · Noticias y tendencias de México
 </footer>
-
 
 <script>
 
-/* ==========================================================
-   TENDENCIASMX
-   ENTREТENIMIENTO
-   Fuente: noticias.json
-========================================================== */
-
-const URL_JSON =
-    "noticias.json?actualizacion=" + Date.now();
-
+const URL_JSON = "noticias.json?actualizacion=" + Date.now();
 
 let todasLasNoticias = [];
-
 let noticiasFiltradas = [];
 
-let categoriaActual = "todos";
-
 let paginaActual = 1;
-
 const POR_PAGINA = 12;
 
-
-const grid =
-    document.getElementById("newsGrid");
-
-const search =
-    document.getElementById("search");
-
-const destacadas =
-    document.getElementById("destacadas");
-
-const contador =
-    document.getElementById("contador");
-
-const actualizado =
-    document.getElementById("actualizado");
-
-const resultadoTexto =
-    document.getElementById("resultadoTexto");
-
-const paginacion =
-    document.getElementById("paginacion");
+let filtroActual = "todos";
+let textoBusqueda = "";
 
 
-/* ==========================================================
+/* =========================
    NORMALIZAR TEXTO
-========================================================== */
+========================= */
 
 function normalizar(texto){
 
     return String(texto || "")
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g,"")
         .toLowerCase()
-        .trim();
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g,"");
 
 }
 
 
-/* ==========================================================
-   CATEGORÍA DE ENTRETENIMIENTO
-========================================================== */
+/* =========================
+   DETECTAR ENTRETENIMIENTO
+========================= */
 
-function obtenerCategoria(noticia){
+function esEntretenimiento(noticia){
 
-    const categoria =
-        normalizar(noticia.categoria);
+    const categoria = normalizar(noticia.categoria);
+    const subcategoria = normalizar(noticia.subcategoria);
+    const titulo = normalizar(noticia.titulo);
+    const descripcion = normalizar(noticia.descripcion);
 
-    const subcategoria =
-        normalizar(noticia.subcategoria);
-
-    const titulo =
-        normalizar(
-            noticia.titulo ||
-            noticia.title ||
-            ""
-        );
+    const texto =
+        categoria + " " +
+        subcategoria + " " +
+        titulo + " " +
+        descripcion;
 
 
     /*
-       Si el RSS ya clasificó la noticia
-       como entretenimiento, utilizamos
-       esa información.
+       IMPORTANTE:
+
+       El JSON actual no utiliza
+       "Entretenimiento" como categoría.
+
+       Utiliza principalmente:
+       "Tendencias"
+
+       Por eso ahora Tendencias
+       alimenta esta sección.
     */
 
-    if(
-        categoria.includes("entretenimiento") ||
-        categoria.includes("espectaculo") ||
-        categoria.includes("espectaculos")
-    ){
-
-        if(
-            subcategoria.includes("cine") ||
-            subcategoria.includes("tv") ||
-            subcategoria.includes("television") ||
-            subcategoria.includes("series")
-        ){
-            return "cine_tv";
-        }
-
-        if(
-            subcategoria.includes("musica") ||
-            subcategoria.includes("music")
-        ){
-            return "musica";
-        }
-
-        if(
-            subcategoria.includes("famos") ||
-            subcategoria.includes("celebr")
-        ){
-            return "famosos";
-        }
-
-        if(
-            subcategoria.includes("videojuego") ||
-            subcategoria.includes("gaming")
-        ){
-            return "videojuegos";
-        }
-
-        if(
-            subcategoria.includes("tendencia")
-        ){
-            return "tendencias";
-        }
-
-        /*
-           Si es entretenimiento pero
-           no tiene subcategoría clara,
-           la clasificamos usando el título.
-        */
-
-        if(
-            titulo.includes("pelicula") ||
-            titulo.includes("cine") ||
-            titulo.includes("serie") ||
-            titulo.includes("actor") ||
-            titulo.includes("actriz") ||
-            titulo.includes("netflix") ||
-            titulo.includes("television") ||
-            titulo.includes("televisión")
-        ){
-            return "cine_tv";
-        }
-
-        if(
-            titulo.includes("cancion") ||
-            titulo.includes("canción") ||
-            titulo.includes("musica") ||
-            titulo.includes("musical") ||
-            titulo.includes("album") ||
-            titulo.includes("cantante")
-        ){
-            return "musica";
-        }
-
-        if(
-            titulo.includes("famoso") ||
-            titulo.includes("famosa") ||
-            titulo.includes("celebridad") ||
-            titulo.includes("actor") ||
-            titulo.includes("actriz")
-        ){
-            return "famosos";
-        }
-
-        if(
-            titulo.includes("videojuego") ||
-            titulo.includes("playstation") ||
-            titulo.includes("xbox") ||
-            titulo.includes("nintendo")
-        ){
-            return "videojuegos";
-        }
-
-        return "tendencias";
-
+    if(categoria.includes("tendencias")){
+        return true;
     }
 
+
+    const palabrasEntretenimiento = [
+
+        "entretenimiento",
+        "espectaculo",
+        "famoso",
+        "famosos",
+        "famosa",
+        "celebridad",
+        "celebridades",
+        "actor",
+        "actriz",
+        "cantante",
+        "musica",
+        "album",
+        "cancion",
+        "concierto",
+        "festival",
+        "cine",
+        "pelicula",
+        "serie",
+        "television",
+        "tv",
+        "streaming",
+        "netflix",
+        "disney",
+        "hbo",
+        "prime video",
+        "spotify",
+        "grammy",
+        "oscar",
+        "premios",
+        "alfombra roja",
+        "reality",
+        "viral",
+        "influencer",
+        "youtuber",
+        "tiktok",
+        "instagram",
+        "cultura",
+        "teatro",
+        "libro",
+        "literatura",
+        "arte",
+        "moda"
+    ];
+
+    return palabrasEntretenimiento.some(palabra =>
+        texto.includes(palabra)
+    );
+}
+
+
+/* =========================
+   EVITAR DEPORTES
+========================= */
+
+function esClaramenteDeporte(noticia){
+
+    const categoria = normalizar(noticia.categoria);
+    const subcategoria = normalizar(noticia.subcategoria);
+    const titulo = normalizar(noticia.titulo);
+
+    if(categoria === "deportes"){
+        return true;
+    }
+
+    const palabrasDeporte = [
+
+        "futbol",
+        "liga mx",
+        "champions league",
+        "premier league",
+        "la liga",
+        "serie a",
+        "bundesliga",
+        "mlb",
+        "nba",
+        "nfl",
+        "nhl",
+        "boxeo",
+        "tenis",
+        "formula 1",
+        "formula1",
+        "golf",
+        "beisbol",
+        "baloncesto",
+        "basquetbol",
+        "mundial",
+        "partido",
+        "jugador",
+        "jugadora",
+        "equipo",
+        "liga",
+        "estadio",
+        "entrenador",
+        "campeonato"
+    ];
 
     /*
-       También aceptamos registros que el RSS
-       haya clasificado directamente.
+       Si pertenece explícitamente a una
+       subcategoría deportiva, se excluye.
     */
 
+    const subcategoriasDeportivas = [
+        "futbol",
+        "tenis",
+        "beisbol",
+        "nfl",
+        "nba",
+        "boxeo",
+        "formula1",
+        "golf",
+        "otros"
+    ];
+
+    if(subcategoriasDeportivas.includes(subcategoria)){
+        return true;
+    }
+
+    /*
+       Solo bloqueamos títulos claramente deportivos.
+    */
+
+    return palabrasDeporte.some(palabra =>
+        titulo.includes(palabra)
+    );
+}
+
+
+/* =========================
+   CLASIFICAR FILTROS
+========================= */
+
+function obtenerTipo(noticia){
+
+    const texto = normalizar(
+        (noticia.titulo || "") + " " +
+        (noticia.descripcion || "") + " " +
+        (noticia.subcategoria || "")
+    );
+
     if(
-        categoria.includes("cine") ||
-        categoria.includes("television")
+        texto.includes("pelicula") ||
+        texto.includes("cine") ||
+        texto.includes("serie") ||
+        texto.includes("television") ||
+        texto.includes("netflix") ||
+        texto.includes("disney") ||
+        texto.includes("actor") ||
+        texto.includes("actriz")
     ){
-        return "cine_tv";
+        return "cine";
     }
 
     if(
-        categoria.includes("musica")
+        texto.includes("musica") ||
+        texto.includes("cantante") ||
+        texto.includes("album") ||
+        texto.includes("cancion") ||
+        texto.includes("concierto") ||
+        texto.includes("spotify")
     ){
         return "musica";
     }
 
     if(
-        categoria.includes("famos")
+        texto.includes("famoso") ||
+        texto.includes("famosa") ||
+        texto.includes("celebridad") ||
+        texto.includes("influencer") ||
+        texto.includes("artista")
     ){
         return "famosos";
     }
 
     if(
-        categoria.includes("videojuego")
+        texto.includes("cultura") ||
+        texto.includes("arte") ||
+        texto.includes("teatro") ||
+        texto.includes("libro") ||
+        texto.includes("literatura")
     ){
-        return "videojuegos";
+        return "cultura";
     }
 
-    return null;
+    return "tendencias";
+}
+
+
+/* =========================
+   CARGAR JSON
+========================= */
+
+async function cargarNoticias(){
+
+    const estado = document.getElementById("estado");
+
+    try{
+
+        estado.textContent = "Cargando publicaciones...";
+
+        const respuesta = await fetch(URL_JSON,{
+            cache:"no-store"
+        });
+
+        if(!respuesta.ok){
+            throw new Error("No se pudo cargar noticias.json");
+        }
+
+        const datos = await respuesta.json();
+
+        let lista = Array.isArray(datos)
+            ? datos
+            : Array.isArray(datos.noticias)
+                ? datos.noticias
+                : [];
+
+
+        /*
+           Aquí está la corrección principal:
+           aceptar Tendencias como fuente de entretenimiento.
+        */
+
+        todasLasNoticias = lista
+            .filter(noticia => esEntretenimiento(noticia))
+            .filter(noticia => !esClaramenteDeporte(noticia))
+            .filter(noticia => noticia.titulo);
+
+
+        /*
+           Ordenar por fecha más reciente.
+        */
+
+        todasLasNoticias.sort((a,b) => {
+
+            return new Date(b.fecha || 0) -
+                   new Date(a.fecha || 0);
+
+        });
+
+
+        aplicarFiltros();
+
+        estado.innerHTML =
+            `<strong>${todasLasNoticias.length}</strong> publicaciones de entretenimiento disponibles`;
+
+    }catch(error){
+
+        console.error(error);
+
+        estado.textContent =
+            "No se pudieron cargar las publicaciones.";
+
+        document.getElementById("contenedorNoticias").innerHTML = `
+            <div class="empty">
+                <strong>Error al cargar noticias</strong>
+                Revisa que noticias.json esté disponible en la raíz del repositorio.
+            </div>
+        `;
+
+    }
 
 }
 
 
-/* ==========================================================
-   FECHA
-========================================================== */
+/* =========================
+   APLICAR FILTROS
+========================= */
 
-function fechaBonita(fecha){
+function aplicarFiltros(){
 
-    if(!fecha) return "";
+    const busqueda = normalizar(textoBusqueda);
 
-    const d =
-        new Date(fecha);
+    noticiasFiltradas = todasLasNoticias.filter(noticia => {
 
-    if(isNaN(d.getTime())) return "";
+        const coincideCategoria =
+            filtroActual === "todos" ||
+            obtenerTipo(noticia) === filtroActual;
 
-    return d.toLocaleDateString(
-        "es-MX",
-        {
-            day:"2-digit",
-            month:"short",
-            year:"numeric"
-        }
+        const texto =
+            normalizar(
+                (noticia.titulo || "") + " " +
+                (noticia.descripcion || "") + " " +
+                (noticia.fuente || "")
+            );
+
+        const coincideBusqueda =
+            !busqueda ||
+            texto.includes(busqueda);
+
+        return coincideCategoria && coincideBusqueda;
+
+    });
+
+    paginaActual = 1;
+
+    renderizar();
+
+}
+
+
+/* =========================
+   IMAGEN
+========================= */
+
+function imagenSegura(noticia){
+
+    return (
+        noticia.imagen ||
+        noticia.image ||
+        noticia.image_url ||
+        noticia.imagen_url ||
+        ""
     );
 
 }
 
 
-/* ==========================================================
-   DESCRIPCIÓN
-========================================================== */
+function imagenFallback(){
 
-function descripcionBonita(texto){
-
-    if(!texto){
-        return "Información y detalles de esta noticia.";
-    }
-
-    let textoLimpio =
-        String(texto)
-        .replace(/<[^>]*>/g," ")
-        .replace(/\s+/g," ")
-        .trim();
-
-
-    if(textoLimpio.length > 150){
-
-        textoLimpio =
-            textoLimpio
-            .substring(0,150)
-            .trim() + "...";
-
-    }
-
-    return textoLimpio;
+    return `
+        <div style="
+            width:100%;
+            height:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:linear-gradient(135deg,#102018,#07100b);
+            color:#65ff9a;
+            font-size:42px;
+        ">
+            ★
+        </div>
+    `;
 
 }
 
 
-/* ==========================================================
+/* =========================
+   FECHA
+========================= */
+
+function fechaBonita(fecha){
+
+    if(!fecha){
+        return "";
+    }
+
+    const date = new Date(fecha);
+
+    if(isNaN(date.getTime())){
+        return "";
+    }
+
+    return date.toLocaleDateString("es-MX",{
+        day:"2-digit",
+        month:"short",
+        year:"numeric"
+    });
+
+}
+
+
+/* =========================
    ESCAPAR HTML
-========================================================== */
+========================= */
 
 function escapar(texto){
 
@@ -1435,957 +965,370 @@ function escapar(texto){
 }
 
 
-/* ==========================================================
-   URL
-========================================================== */
-
-function obtenerURL(noticia){
-
-    return (
-        noticia.url ||
-        noticia.link ||
-        noticia.enlace ||
-        "#"
-    );
-
-}
-
-
-/* ==========================================================
-   NOMBRE CATEGORÍA
-========================================================== */
-
-function nombreCategoria(tipo){
-
-    const nombres = {
-
-        cine_tv:"Cine y TV",
-
-        musica:"Música",
-
-        famosos:"Famosos",
-
-        videojuegos:"Videojuegos",
-
-        tendencias:"Tendencias"
-
-    };
-
-    return nombres[tipo] || "Entretenimiento";
-
-}
-
-
-/* ==========================================================
-   ICONO
-========================================================== */
-
-function iconoCategoria(tipo){
-
-    const iconos = {
-
-        cine_tv:"🎬",
-
-        musica:"🎵",
-
-        famosos:"⭐",
-
-        videojuegos:"🎮",
-
-        tendencias:"🔥"
-
-    };
-
-    return iconos[tipo] || "🎬";
-
-}
-
-
-/* ==========================================================
-   IMAGEN
-========================================================== */
-
-function crearImagen(noticia,tipo){
-
-    const imagen =
-        noticia.imagen ||
-        noticia.image ||
-        noticia.image_url ||
-        "";
-
-
-    const titulo =
-        escapar(
-            noticia.titulo ||
-            noticia.title ||
-            "Noticia"
-        );
-
-
-    if(!imagen){
-
-        return `
-
-            <div class="image-fallback">
-
-                <div class="image-fallback-icon">
-                    ${iconoCategoria(tipo)}
-                </div>
-
-                <div class="image-fallback-text">
-                    Imagen no disponible
-                </div>
-
-            </div>
-
-        `;
-
-    }
-
-
-    return `
-
-        <img
-            src="${escapar(imagen)}"
-            alt="${titulo}"
-            loading="lazy"
-            decoding="async"
-            onerror="this.style.display='none';this.parentElement.innerHTML='<div class=&quot;image-fallback&quot;><div class=&quot;image-fallback-icon&quot;>${iconoCategoria(tipo)}</div><div class=&quot;image-fallback-text&quot;>Imagen no disponible</div></div>'"
-        >
-
-    `;
-
-}
-
-
-/* ==========================================================
-   CARGAR JSON
-========================================================== */
-
-async function cargarNoticias(){
-
-    try{
-
-        const respuesta =
-            await fetch(
-                URL_JSON,
-                {
-                    cache:"no-store"
-                }
-            );
-
-
-        if(!respuesta.ok){
-
-            throw new Error(
-                "No se pudo cargar noticias.json"
-            );
-
-        }
-
-
-        const datos =
-            await respuesta.json();
-
-
-        let registros = [];
-
-
-        if(Array.isArray(datos)){
-
-            registros = datos;
-
-        }else if(
-            datos &&
-            Array.isArray(datos.noticias)
-        ){
-
-            registros = datos.noticias;
-
-        }else{
-
-            throw new Error(
-                "Formato de noticias.json no reconocido"
-            );
-
-        }
-
-
-        /*
-           Solo entretenimiento.
-        */
-
-        todasLasNoticias =
-            registros
-            .filter(noticia => {
-
-                const titulo =
-                    noticia.titulo ||
-                    noticia.title;
-
-                const url =
-                    noticia.url ||
-                    noticia.link ||
-                    noticia.enlace;
-
-                const tipo =
-                    obtenerCategoria(noticia);
-
-
-                return (
-                    titulo &&
-                    url &&
-                    tipo !== null
-                );
-
-            })
-            .map(noticia => {
-
-                return {
-
-                    ...noticia,
-
-                    categoriaEntretenimiento:
-                        obtenerCategoria(noticia)
-
-                };
-
-            });
-
-
-        /*
-           Más recientes primero.
-        */
-
-        todasLasNoticias.sort((a,b)=>{
-
-            const fechaA =
-                new Date(
-                    a.fecha ||
-                    a.date ||
-                    a.pubDate ||
-                    0
-                ).getTime();
-
-
-            const fechaB =
-                new Date(
-                    b.fecha ||
-                    b.date ||
-                    b.pubDate ||
-                    0
-                ).getTime();
-
-
-            return fechaB - fechaA;
-
-        });
-
-
-        actualizarEstado(datos);
-
-
-        aplicarFiltros();
-
-
-        crearDestacadas();
-
-
-    }catch(error){
-
-        console.error(error);
-
-
-        contador.textContent = "0";
-
-
-        grid.innerHTML = `
-
-            <div class="error">
-
-                <h3>
-                    ⚠️ No se pudieron cargar las noticias
-                </h3>
-
-                <p style="margin-top:8px">
-                    Revisa que <strong>noticias.json</strong>
-                    esté en la raíz del repositorio.
-                </p>
-
-            </div>
-
-        `;
-
-
-        destacadas.innerHTML = `
-
-            <div class="error">
-
-                No se pudo cargar la información.
-
-            </div>
-
-        `;
-
-    }
-
-}
-
-
-/* ==========================================================
-   ESTADO
-========================================================== */
-
-function actualizarEstado(datos){
-
-    const total =
-        todasLasNoticias.length;
-
-
-    contador.textContent =
-        total.toLocaleString("es-MX");
-
-
-    let fecha =
-        datos.actualizado ||
-        datos.updated ||
-        "";
-
-
-    if(fecha){
-
-        const d =
-            new Date(fecha);
-
-
-        if(!isNaN(d.getTime())){
-
-            actualizado.textContent =
-                "Actualizado: " +
-                d.toLocaleString(
-                    "es-MX",
-                    {
-                        dateStyle:"medium",
-                        timeStyle:"short"
-                    }
-                );
-
-        }
-
-    }else{
-
-        actualizado.textContent =
-            "Información actualizada";
-
-    }
-
-}
-
-
-/* ==========================================================
-   FILTROS
-========================================================== */
-
-function aplicarFiltros(){
-
-    const texto =
-        normalizar(
-            search.value
-        );
-
-
-    noticiasFiltradas =
-        todasLasNoticias.filter(noticia => {
-
-            const tipo =
-                noticia.categoriaEntretenimiento;
-
-
-            const titulo =
-                normalizar(
-                    noticia.titulo ||
-                    noticia.title ||
-                    ""
-                );
-
-
-            const descripcion =
-                normalizar(
-                    noticia.descripcion ||
-                    noticia.description ||
-                    noticia.resumen ||
-                    ""
-                );
-
-
-            const fuente =
-                normalizar(
-                    noticia.fuente ||
-                    noticia.source ||
-                    ""
-                );
-
-
-            const coincideCategoria =
-                categoriaActual === "todos" ||
-                tipo === categoriaActual;
-
-
-            const coincideBusqueda =
-                !texto ||
-                titulo.includes(texto) ||
-                descripcion.includes(texto) ||
-                fuente.includes(texto);
-
-
-            return (
-                coincideCategoria &&
-                coincideBusqueda
-            );
-
-        });
-
-
-    paginaActual = 1;
-
-
-    mostrarPagina();
-
-}
-
-
-/* ==========================================================
+/* =========================
    TARJETA
-========================================================== */
+========================= */
 
 function crearTarjeta(noticia){
 
-    const titulo =
-        noticia.titulo ||
-        noticia.title ||
-        "Sin título";
+    const imagen = imagenSegura(noticia);
+    const tipo = obtenerTipo(noticia);
 
+    const titulo =
+        escapar(noticia.titulo || "Sin título");
 
     const descripcion =
-        noticia.descripcion ||
-        noticia.description ||
-        noticia.resumen ||
-        "";
-
-
-    const tipo =
-        noticia.categoriaEntretenimiento;
-
-
-    const fecha =
-        noticia.fecha ||
-        noticia.date ||
-        noticia.pubDate ||
-        "";
-
+        escapar(noticia.descripcion || "");
 
     const fuente =
-        noticia.fuente ||
-        noticia.source ||
-        "TendenciasMX";
+        escapar(noticia.fuente || "TendenciasMX");
 
+    const fecha =
+        fechaBonita(noticia.fecha);
 
     const url =
-        obtenerURL(noticia);
+        noticia.url ||
+        noticia.link ||
+        noticia.enlace ||
+        "#";
+
+
+    const imagenHTML = imagen
+        ? `
+            <img
+                src="${escapar(imagen)}"
+                alt="${titulo}"
+                loading="lazy"
+                onerror="this.parentElement.innerHTML='${imagenFallback().replace(/'/g,"&#39;")}'"
+            >
+          `
+        : imagenFallback();
 
 
     return `
+        <article class="card">
 
-        <a
-            class="card-link"
-            href="${escapar(url)}"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+            <a
+                href="${escapar(url)}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
 
-            <article class="card">
-
-                <div class="news-image">
-
-                    ${crearImagen(noticia,tipo)}
-
+                <div class="card-image">
+                    ${imagenHTML}
                 </div>
 
+                <div class="card-body">
 
-                <div class="card-content">
-
-                    <span class="category">
-
-                        ${iconoCategoria(tipo)}
-
-                        ${nombreCategoria(tipo)}
-
-                    </span>
-
-
-                    <h2>
-                        ${escapar(titulo)}
-                    </h2>
-
-
-                    <div class="date">
-
-                        ${fechaBonita(fecha)}
-
+                    <div class="card-tag">
+                        ${escapar(tipo)}
                     </div>
 
+                    <h3>
+                        ${titulo}
+                    </h3>
 
-                    <p class="description">
+                    ${
+                        descripcion
+                        ? `<p>${descripcion}</p>`
+                        : ""
+                    }
 
-                        ${escapar(
-                            descripcionBonita(descripcion)
-                        )}
-
-                    </p>
-
-
-                    <div class="card-footer">
-
-                        <span class="source">
-
-                            ${escapar(fuente)}
-
-                        </span>
-
-                        <span class="read">
-
-                            Leer noticia →
-
-                        </span>
-
+                    <div class="meta">
+                        ${fuente}
+                        ${fecha ? " · " + fecha : ""}
                     </div>
 
                 </div>
 
-            </article>
+            </a>
 
-        </a>
-
+        </article>
     `;
 
 }
 
 
-/* ==========================================================
-   MOSTRAR PÁGINA
-========================================================== */
-
-function mostrarPagina(){
-
-    const totalPaginas =
-        Math.max(
-            1,
-            Math.ceil(
-                noticiasFiltradas.length /
-                POR_PAGINA
-            )
-        );
-
-
-    if(
-        paginaActual >
-        totalPaginas
-    ){
-
-        paginaActual =
-            totalPaginas;
-
-    }
-
-
-    const inicio =
-        (paginaActual - 1) *
-        POR_PAGINA;
-
-
-    const pagina =
-        noticiasFiltradas.slice(
-            inicio,
-            inicio + POR_PAGINA
-        );
-
-
-    resultadoTexto.textContent =
-        noticiasFiltradas.length
-        ? `${noticiasFiltradas.length.toLocaleString("es-MX")} resultados`
-        : "";
-
-
-    if(!pagina.length){
-
-        grid.innerHTML = `
-
-            <div class="empty">
-
-                <div class="empty-icon">
-                    🔎
-                </div>
-
-                <h3>
-                    No encontramos noticias
-                </h3>
-
-                <p style="margin-top:8px">
-                    Prueba otra búsqueda o categoría.
-                </p>
-
-            </div>
-
-        `;
-
-    }else{
-
-        grid.innerHTML =
-            pagina
-            .map(crearTarjeta)
-            .join("");
-
-    }
-
-
-    crearPaginacion(totalPaginas);
-
-}
-
-
-/* ==========================================================
+/* =========================
    DESTACADAS
-========================================================== */
+========================= */
 
-function crearDestacadas(){
+function renderizarDestacadas(){
 
-    const lista =
-        todasLasNoticias.slice(0,3);
+    const contenedor =
+        document.getElementById("destacadas");
 
+    const destacadas =
+        noticiasFiltradas.slice(0,3);
 
-    if(!lista.length){
+    if(!destacadas.length){
 
-        destacadas.innerHTML = `
-
-            <div class="empty">
-
-                No hay noticias de entretenimiento
-                disponibles actualmente.
-
+        contenedor.innerHTML = `
+            <div class="empty" style="grid-column:1/-1">
+                <strong>No hay publicaciones</strong>
+                Prueba con otro filtro o cambia la búsqueda.
             </div>
-
         `;
 
         return;
-
     }
 
 
-    destacadas.innerHTML =
-        lista
-        .map(noticia => {
+    contenedor.innerHTML =
+        destacadas.map((noticia,index) => {
 
-            const titulo =
-                noticia.titulo ||
-                noticia.title ||
-                "Noticia";
-
-
-            const tipo =
-                noticia.categoriaEntretenimiento;
-
+            const imagen =
+                imagenSegura(noticia);
 
             const url =
-                obtenerURL(noticia);
+                noticia.url ||
+                noticia.link ||
+                noticia.enlace ||
+                "#";
+
+            const clase =
+                index === 0
+                    ? ""
+                    : " feature-small";
+
+
+            const imagenHTML = imagen
+                ? `
+                    <img
+                        src="${escapar(imagen)}"
+                        alt="${escapar(noticia.titulo)}"
+                        onerror="this.style.display='none'"
+                    >
+                  `
+                : "";
 
 
             return `
-
                 <a
-                    class="feature-card"
+                    class="feature${clase}"
                     href="${escapar(url)}"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
 
-                    <div class="feature-image">
+                    ${imagenHTML}
 
-                        ${
-                            noticia.imagen ||
-                            noticia.image ||
-                            noticia.image_url
-                            ?
+                    <div class="feature-overlay">
 
-                            `<img
-                                src="${escapar(
-                                    noticia.imagen ||
-                                    noticia.image ||
-                                    noticia.image_url
-                                )}"
-                                alt="${escapar(titulo)}"
-                                loading="lazy"
-                                onerror="this.style.display='none'"
-                            >`
+                        <div class="feature-content">
 
-                            :
+                            <div class="tag">
+                                DESTACADO
+                            </div>
 
-                            `<div class="feature-fallback">
-                                ${iconoCategoria(tipo)}
-                            </div>`
-                        }
+                            <h3>
+                                ${escapar(noticia.titulo)}
+                            </h3>
 
-                    </div>
-
-
-                    <div class="feature-content">
-
-                        <span class="feature-category">
-
-                            ${iconoCategoria(tipo)}
-
-                            ${nombreCategoria(tipo)}
-
-                        </span>
-
-
-                        <h3>
-                            ${escapar(titulo)}
-                        </h3>
+                        </div>
 
                     </div>
 
                 </a>
-
             `;
 
-        })
-        .join("");
+        }).join("");
 
 }
 
 
-/* ==========================================================
-   PAGINACIÓN
-========================================================== */
+/* =========================
+   NOTICIAS
+========================= */
 
-function crearPaginacion(totalPaginas){
+function renderizarNoticias(){
+
+    const contenedor =
+        document.getElementById("contenedorNoticias");
+
+    const inicio =
+        (paginaActual - 1) * POR_PAGINA;
+
+    const fin =
+        inicio + POR_PAGINA;
+
+    const pagina =
+        noticiasFiltradas.slice(inicio,fin);
+
+
+    if(!pagina.length){
+
+        contenedor.innerHTML = `
+            <div class="empty" style="grid-column:1/-1">
+                <strong>No encontramos publicaciones</strong>
+                Prueba con otro término de búsqueda.
+            </div>
+        `;
+
+        return;
+    }
+
+
+    contenedor.innerHTML =
+        pagina.map(crearTarjeta).join("");
+
+}
+
+
+/* =========================
+   PAGINACIÓN
+========================= */
+
+function renderizarPaginacion(){
+
+    const contenedor =
+        document.getElementById("paginacion");
+
+    const totalPaginas =
+        Math.ceil(
+            noticiasFiltradas.length /
+            POR_PAGINA
+        );
+
 
     if(totalPaginas <= 1){
 
-        paginacion.innerHTML = "";
+        contenedor.innerHTML = "";
 
         return;
-
     }
 
 
     let html = "";
 
 
-    html += `
-
-        <button
-            class="page-btn"
-            onclick="irPagina(${paginaActual - 1})"
-            ${paginaActual === 1 ? "disabled" : ""}
-        >
-            ←
-        </button>
-
-    `;
-
-
-    let inicio =
-        Math.max(
-            1,
-            paginaActual - 2
-        );
-
-
-    let fin =
-        Math.min(
-            totalPaginas,
-            inicio + 4
-        );
-
-
-    if(
-        fin - inicio < 4
-    ){
-
-        inicio =
-            Math.max(
-                1,
-                fin - 4
-            );
-
-    }
-
-
-    for(
-        let i = inicio;
-        i <= fin;
-        i++
-    ){
+    if(paginaActual > 1){
 
         html += `
-
             <button
-                class="page-btn ${
-                    i === paginaActual
-                    ? "active"
-                    : ""
-                }"
-                onclick="irPagina(${i})"
+                class="page-btn"
+                onclick="cambiarPagina(${paginaActual - 1})"
             >
-                ${i}
+                ← Anterior
             </button>
-
         `;
 
     }
 
 
-    html += `
+    for(let i=1;i<=totalPaginas;i++){
 
-        <button
-            class="page-btn"
-            onclick="irPagina(${paginaActual + 1})"
-            ${
-                paginaActual === totalPaginas
-                ? "disabled"
-                : ""
-            }
-        >
-            →
-        </button>
+        if(
+            i === 1 ||
+            i === totalPaginas ||
+            Math.abs(i - paginaActual) <= 2
+        ){
 
-    `;
+            html += `
+                <button
+                    class="page-btn ${i === paginaActual ? "active" : ""}"
+                    onclick="cambiarPagina(${i})"
+                >
+                    ${i}
+                </button>
+            `;
 
-
-    paginacion.innerHTML =
-        html;
-
-}
-
-
-function irPagina(numero){
-
-    const totalPaginas =
-        Math.max(
-            1,
-            Math.ceil(
-                noticiasFiltradas.length /
-                POR_PAGINA
-            )
-        );
-
-
-    if(
-        numero < 1 ||
-        numero > totalPaginas
-    ){
-
-        return;
+        }
 
     }
 
 
-    paginaActual =
-        numero;
+    if(paginaActual < totalPaginas){
+
+        html += `
+            <button
+                class="page-btn"
+                onclick="cambiarPagina(${paginaActual + 1})"
+            >
+                Siguiente →
+            </button>
+        `;
+
+    }
 
 
-    mostrarPagina();
+    contenedor.innerHTML = html;
 
+}
+
+
+function cambiarPagina(numero){
+
+    paginaActual = numero;
+
+    renderizar();
 
     window.scrollTo({
-        top:
-            document.querySelector(
-                ".section-title"
-            ).offsetTop - 80,
+        top:document.querySelector(".news-section").offsetTop - 80,
         behavior:"smooth"
     });
 
 }
 
 
-/* ==========================================================
-   BOTONES
-========================================================== */
+/* =========================
+   RENDER GENERAL
+========================= */
 
-document
-.querySelectorAll(".filter-btn")
-.forEach(button => {
+function renderizar(){
 
-    button.addEventListener(
-        "click",
-        () => {
+    renderizarDestacadas();
+    renderizarNoticias();
+    renderizarPaginacion();
 
-            document
-            .querySelectorAll(".filter-btn")
-            .forEach(btn => {
-
-                btn.classList.remove(
-                    "active"
-                );
-
-            });
+}
 
 
-            button.classList.add(
-                "active"
+/* =========================
+   FILTROS
+========================= */
+
+document.querySelectorAll(".filter").forEach(boton => {
+
+    boton.addEventListener("click",() => {
+
+        document
+            .querySelectorAll(".filter")
+            .forEach(btn =>
+                btn.classList.remove("active")
             );
 
+        boton.classList.add("active");
 
-            categoriaActual =
-                button.dataset.category;
+        filtroActual =
+            boton.dataset.filtro;
 
+        aplicarFiltros();
 
-            aplicarFiltros();
-
-        }
-    );
+    });
 
 });
 
 
-/* ==========================================================
-   BUSCAR
-========================================================== */
+/* =========================
+   BUSCADOR
+========================= */
 
 document
-.getElementById("btnBuscar")
-.addEventListener(
-    "click",
-    aplicarFiltros
-);
+    .getElementById("buscador")
+    .addEventListener("input",event => {
+
+        textoBusqueda =
+            event.target.value;
+
+        aplicarFiltros();
+
+    });
 
 
-search.addEventListener(
-    "input",
-    aplicarFiltros
-);
-
-
-search.addEventListener(
-    "keydown",
-    event => {
-
-        if(event.key === "Enter"){
-
-            event.preventDefault();
-
-            aplicarFiltros();
-
-        }
-
-    }
-);
-
-
-/* ==========================================================
+/* =========================
    INICIAR
-========================================================== */
+========================= */
 
 cargarNoticias();
 
