@@ -1,11 +1,51 @@
 {
-  "actualizado": "2026-10-02T14:17:19.202210+00:00",
-  "total": 618,
+  "actualizado": "2026-10-02T14:49:14.368406+00:00",
+  "total": 622,
   "imagenes": {
-    "con_imagen": 529,
+    "con_imagen": 533,
     "sin_imagen": 89
   },
   "noticias": [
+    {
+      "titulo": "Carlos Slim apuesta 4,000 mdp por Puebla: vivienda, comercios y nuevos espacios en una zona histórica",
+      "url": "https://expansion.mx/empresas/2026/10/02/carlos-slim-transforma-centro-historico-puebla-4-000-mdp",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/dd9bdb2/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3d%2F4c%2Fcb7da55f4383adfa4304962ed38f%2Fcarlos-slim-puebla.png",
+      "descripcion": "El proyecto de Paseo San Francisco combinará vivienda, comercio y recuperación urbana, con obras previstas durante los próximos dos años.",
+      "fuente": "Expansión Digital",
+      "categoria": "Empresas",
+      "subcategoria": "",
+      "fecha": "2026-10-02T14:43:24+00:00"
+    },
+    {
+      "titulo": "Juegos y resultados en MLB - PSN Noticias",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9XSWlqSHpIdWhMOEg5NmRkSlFpQVNsWmJWT0JiUVljbkVlU2ZiUldxRHF0b1AxZExsZmpmaS1NZUw5NEpVUmpiU05lMTcyRDBGMTJwN3k2ZDJvSHRhZ0NiTjJLRTB1UQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE9XSWlqSHpIdWhMOEg5NmRkSlFpQVNsWmJWT0JiUVljbkVlU2ZiUldxRHF0b1AxZExsZmpmaS1NZUw5NEpVUmpiU05lMTcyRDBGMTJwN3k2ZDJvSHRhZ0NiTjJLRTB1UQ?oc=5\" target=\"_blank\">Juegos y resultados en MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PSN Noticias</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-02T14:40:58+00:00"
+    },
+    {
+      "titulo": "Beisbol: Zach Neto: del rechazo de Cuba para el Clásico a un gran 2026 en la MLB - 14ymedio",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPYTRMMHpxOGttaWZoOFBuNU0wNG1pWjFTWnZGa3cxNTQ1cklVQUtHTkxxTGF4THpiaVkwVlVLRUs5bWlXdGFLdHFpMlVKRGtUSTRZVEpTSE0tNWlySnA1R2d4RzZ0ejlNc1BESzRBOHdDWW1RUFlzWllPZnB6Vnk3Mk1FZFh5QdIBiwFBVV95cUxObGNNMVdWT0c2NUR4S2RTV3FDLXlpdTFrVEY3Z3g4TzV4Nmx3V3lRTnIzZUVGMEFzWDV6ckJrYUdsa1E5QndXdnVmMmZTTVE1cFU2SVQ5OU10N0lsajdkekxvcDJSM2ppdzl4ZjNfbUZER0ptcDRPS1VXdkc3bUFRU2pRU005eHIwNllz?oc=5",
+      "imagen": "https://static.14ymedio.com/clip/5609a5e8-0e51-48ab-800f-dffb959790e9_facebook-aspect-ratio_default_0.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxPYTRMMHpxOGttaWZoOFBuNU0wNG1pWjFTWnZGa3cxNTQ1cklVQUtHTkxxTGF4THpiaVkwVlVLRUs5bWlXdGFLdHFpMlVKRGtUSTRZVEpTSE0tNWlySnA1R2d4RzZ0ejlNc1BESzRBOHdDWW1RUFlzWllPZnB6Vnk3Mk1FZFh5QdIBiwFBVV95cUxObGNNMVdWT0c2NUR4S2RTV3FDLXlpdTFrVEY3Z3g4TzV4Nmx3V3lRTnIzZUVGMEFzWDV6ckJrYUdsa1E5QndXdnVmMmZTTVE1cFU2SVQ5OU10N0lsajdkekxvcDJSM2ppdzl4ZjNfbUZER0ptcDRPS1VXdkc3bUFRU2pRU005eHIwNllz?oc=5\" target=\"_blank\">Beisbol: Zach Neto: del rechazo de Cuba para el Clásico a un gran 2026 en la MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">14ymedio</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-02T14:38:53+00:00"
+    },
+    {
+      "titulo": "David Jiménez toma las riendas globales de Softtek con el reto de dejar atrás los 'pilotos de IA sin resultados'",
+      "url": "https://expansion.mx/carrera/2026/10/02/david-jimenez-ceo-global-softtek-ia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/ee99561/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0a%2Fbe%2F6f5bbd5d4f82af79b2d4f44ebcb3%2Fdavid-jimenez-ceo-softtek.jpeg",
+      "descripcion": "Jiménez llega a la dirección global después de 15 años en Softtek y con una carrera que se construyó dentro de la organización. Su primera etapa como CEO estará marcada por reuniones con clientes y un enfoque AI-First.",
+      "fuente": "Ivet Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-02T14:36:22+00:00"
+    },
     {
       "titulo": "Canelo Álvarez quiere que su última pelea sea en el Estadio Banorte - renegado.com.mx",
       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNeXBoTFlNNmYwQ3p2TEVsdTdqeXFZTHkwZER4RmZWSzJYblN5ODRxVk8zSko1SkFhVV8tbGZZVWcxNEFoVlVzTmlnVVBpNEFVQ3IzVzJLeFNIT2dZbTFXRHFyZVIzcC1PZExsNFhnbktONF82ak1vdVhaN2ZYck10RENMeEo1YUFQSHVkaDc1RXVyVVdzYWc5a3gwbnJxTDNoQWQwbHVVSkxtSElSY2pRYWdSTDh3UjVtX0p3ZjBNd1Q5MDVlY2hYUEV5YXI5aVl3MnNmNEV0THdEaWhuaF95Y0VhS2tRNlVhOW9tQTcxTHp5clk?oc=5",
@@ -4198,7 +4238,7 @@
     {
       "titulo": "Manchester City - Real Madrid: TV, horario y cómo ver la Champions Femenina online hoy - Diario AS",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPa1hCNGNlYW9NdTJobEhyN2dUajVuOVVIUGI2cloyWnlvdDNWdkNxcjRhQ3JIaTJ5V2owT0c3TUhDUVZoQmZ3eTFYNnhIeEVIcWRfZVdncWpsSENza3BEQkhpdExhSVd1dFdRT2JxZ2EtUHBTNUxkR3ZxN0xVLW14MDJOSUVqd3ZBLWRrb2RTbTJPNW84QkR2MmFudVppbGlYb1lJWVpTbEVnS2VrbEVXMWx6SXIyeU5NY0RXeElDWGRKQdIB1gFBVV95cUxQZHFvWVpjWjlPalAtT2NsUnFnbWxVWEpJT3ZqdU1rcU4yNVdiRXNYcUxxdHZuNnZfX1NfcmhiZUU3b0J3eUZsYUYxNVRkZjdMR3hJeUh2ei02VDdKSFdQcmVPZktkNmpxRHU4NzhYc1Y0RF9xUmNGVnJTTldFMmlNaGFQRzg5NWYwNXRCR3Y4T0NScnBxN1g3SklfTmdvY0dReUx4dTA4T1VabFVYWVQybi1GaEdXU3NZZnF3RGpjYlJUNmJIS3Z4N3VXRjFvUnl6eG9uNU1R?oc=5",
-      "imagen": "",
+      "imagen": "https://img.asmedia.epimg.net/resizer/v2/TATULCTB5NPSDGUR5JFZ7GJFB4.jpg?auth=2913dd8e64f456d350b89f3a0c3c8be24d39c83cf81b994397fe5ba0f5518975&width=1472&height=828&focal=2896%2C1551",
       "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPa1hCNGNlYW9NdTJobEhyN2dUajVuOVVIUGI2cloyWnlvdDNWdkNxcjRhQ3JIaTJ5V2owT0c3TUhDUVZoQmZ3eTFYNnhIeEVIcWRfZVdncWpsSENza3BEQkhpdExhSVd1dFdRT2JxZ2EtUHBTNUxkR3ZxN0xVLW14MDJOSUVqd3ZBLWRrb2RTbTJPNW84QkR2MmFudVppbGlYb1lJWVpTbEVnS2VrbEVXMWx6SXIyeU5NY0RXeElDWGRKQdIB1gFBVV95cUxQZHFvWVpjWjlPalAtT2NsUnFnbWxVWEpJT3ZqdU1rcU4yNVdiRXNYcUxxdHZuNnZfX1NfcmhiZUU3b0J3eUZsYUYxNVRkZjdMR3hJeUh2ei02VDdKSFdQcmVPZktkNmpxRHU4NzhYc1Y0RF9xUmNGVnJTTldFMmlNaGFQRzg5NWYwNXRCR3Y4T0NScnBxN1g3SklfTmdvY0dReUx4dTA4T1VabFVYWVQybi1GaEdXU3NZZnF3RGpjYlJUNmJIS3Z4N3VXRjFvUnl6eG9uNU1R?oc=5\" target=\"_blank\">Manchester City - Real Madrid: TV, horario y cómo ver la Champions Femenina online hoy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Diario AS</font>",
       "fuente": "Futbol",
       "categoria": "Deportes",
