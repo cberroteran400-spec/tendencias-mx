@@ -1,11 +1,31 @@
 {
-  "actualizado": "2026-10-02T20:46:50.087388+00:00",
-  "total": 677,
+  "actualizado": "2026-10-02T21:15:31.859061+00:00",
+  "total": 680,
   "imagenes": {
-    "con_imagen": 580,
+    "con_imagen": 583,
     "sin_imagen": 97
   },
   "noticias": [
+    {
+      "titulo": "Huawei Mate PadAir, la competencia más seria del iPad para destronar a Apple",
+      "url": "https://expansion.mx/tecnologia/2026/10/02/huawei-mate-padair-competencia-del-ipad-apple",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/147ccc6/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe2%2F57%2Ffe53d0cc4d5ba375260cb8178d79%2Fresena-ipad-air.jpeg",
+      "descripcion": "La Huawei MatePad Air me sorprendió con una pantalla mate, gran potencia y un diseño ligero que hacen que la tablet se sienta como algo más que un teléfono grande.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-02T21:00:32+00:00"
+    },
+    {
+      "titulo": "FMI urge a México a reducir la deuda y recuerda a Banxico que la meta de inflación es 3%",
+      "url": "https://expansion.mx/economia/2026/10/02/fmi-mexico-ajuste-fiscal-inflacion-banxico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/61f3cdb/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb1%2Fb9%2F641ac39e41fc9f4fd016d3a17266%2Fdeuda-publica-ante-el-llamado-del-fmi.png",
+      "descripcion": "El FMI pide acelerar el ajuste fiscal para reducir la deuda y reforzar el mensaje de Banxico: el rango de variabilidad de la inflación no es un rango de tolerancia",
+      "fuente": "Octavio Torres",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-02T20:59:15+00:00"
+    },
     {
       "titulo": "“El inicio no ha sido el que esperábamos”: Cucurella ante lo hecho por el Real Madrid en liga - El Sol de México",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNHpYYV92b2NDNGVCSUhiUmJvRTBoZEFYcXRJcTVWcDNrTEt1RmhWR0pEZVlNQkp3dmItY05QR01OMEdvLXMzTTlfRkUzekNvem1TanVKUTNvMkdyX2t6bkJVNWZkai1kRFQwclpuXzR3NE1KdnJQbFhrVnpEc2M2VThXeGtybFduQ09nc05DTklfUDRTWk9fNW9aWWV4RmxkaDZEVTFyaVctdDVFSTNmX1MxWnFfMWdIM3RoNm95ekszSlJCMV9MNTRoU3prNWw2ZExHMjFuQQ?oc=5",
@@ -225,6 +245,16 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-10-02T17:41:38+00:00"
+    },
+    {
+      "titulo": "¿Qué fue de los campeones de México en el Mundial Sub-17 de Perú? El 2 de octubre de 2005 quedó en el olvido - Mediotiempo",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZUM2RGNSaUJrcW10eHIxeFBoRUxXaDlXSDZMS3JpNXJZWndEbjNCN3VISnhMY1pCS3hhN3pIOUtFNG11dDhOLTFVWGJKZUMtUEx6VHBNS3N0ZU5EWWszWC1lbWI1VVpfbnJGdGVtdGNWekk4emdZaHdGWWx2aWNxd2F0Qk9jajdWRDJaMUVZNnpVMVVpN09xbFBpb2lTU29PQUFXU2pzR0hLckFHOGZZ0gGvAUFVX3lxTE5kZXp5VkJ3Y3B3Q3FoWS01T1cwNWc4RDBnOEtnOW1QZTBlNUdFYUY0YWtLTXFXMjBxVTdpX0pUektMal9Wa1dXcGpJWmRjWmFYakZjYTdOS0NPdE1KM1ZacDhNWmRlRFR3ajFONGpqY19VcUNVWlc3eWxnVG1VUG5pY3pORjFMQzBwci1sNkY0VFd2aExMMTFSOEt1RVFUWkJLbWJFaVhfeU1nYzJuODg?oc=5",
+      "imagen": "https://cdn2.mediotiempo.com/uploads/media/2025/10/02/anos-tri-sub-historia-peru.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxPZUM2RGNSaUJrcW10eHIxeFBoRUxXaDlXSDZMS3JpNXJZWndEbjNCN3VISnhMY1pCS3hhN3pIOUtFNG11dDhOLTFVWGJKZUMtUEx6VHBNS3N0ZU5EWWszWC1lbWI1VVpfbnJGdGVtdGNWekk4emdZaHdGWWx2aWNxd2F0Qk9jajdWRDJaMUVZNnpVMVVpN09xbFBpb2lTU29PQUFXU2pzR0hLckFHOGZZ0gGvAUFVX3lxTE5kZXp5VkJ3Y3B3Q3FoWS01T1cwNWc4RDBnOEtnOW1QZTBlNUdFYUY0YWtLTXFXMjBxVTdpX0pUektMal9Wa1dXcGpJWmRjWmFYakZjYTdOS0NPdE1KM1ZacDhNWmRlRFR3ajFONGpqY19VcUNVWlc3eWxnVG1VUG5pY3pORjFMQzBwci1sNkY0VFd2aExMMTFSOEt1RVFUWkJLbWJFaVhfeU1nYzJuODg?oc=5\" target=\"_blank\">¿Qué fue de los campeones de México en el Mundial Sub-17 de Perú? El 2 de octubre de 2005 quedó en el olvido</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-02T17:31:00+00:00"
     },
     {
       "titulo": "México y sus sacos de boxeo en la Liga MX - AS México",
