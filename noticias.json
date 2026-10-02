@@ -1,11 +1,31 @@
 {
-  "actualizado": "2026-10-02T21:15:31.859061+00:00",
-  "total": 680,
+  "actualizado": "2026-10-02T21:47:04.979340+00:00",
+  "total": 683,
   "imagenes": {
-    "con_imagen": 583,
-    "sin_imagen": 97
+    "con_imagen": 585,
+    "sin_imagen": 98
   },
   "noticias": [
+    {
+      "titulo": "Adultos mayores se enfrentan a seguros de gastos médicos mayores más caros en México",
+      "url": "https://expansion.mx/economia/2026/10/02/adultos-mayores-se-enfrentan-a-seguros-de-gastos-medicos-mayores-mas-caros-en-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/23714ac/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fmedia%2F2012%2F10%2F01%2Fadultos-mayores-viejitas.jpg",
+      "descripcion": "En este año se han reportado incrementos de hasta 80% en las pólizas para atención médica privada, afectando principalmente a la población mayor de 65 años",
+      "fuente": "Santiago Nolasco",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-02T21:30:00+00:00"
+    },
+    {
+      "titulo": "Canelo recibe palabras dolorosas de su próximo rival - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWTZVczhlM2tVMnh6ZU1wOTFwQ2JuWDhKQjktenNiWmp4TVR1VXFDYi1VSkU3OThOal8wMFlEUHUxcGt3NEVkYUZIU3puNlhWMERMRm00RTZiQmUxRkZwQlFjZllrRkowb04wcDJmZUpSV3BhajlHWmUwUjlBVVdmTWd3NGpjajd4RVRzZFl3?oc=5",
+      "imagen": "https://www.tudn.com/api/image/og/us/boxeo/canelo-recibe-palabras-dolorosas-de-su-proximo-rival-video",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxQWTZVczhlM2tVMnh6ZU1wOTFwQ2JuWDhKQjktenNiWmp4TVR1VXFDYi1VSkU3OThOal8wMFlEUHUxcGt3NEVkYUZIU3puNlhWMERMRm00RTZiQmUxRkZwQlFjZllrRkowb04wcDJmZUpSV3BhajlHWmUwUjlBVVdmTWd3NGpjajd4RVRzZFl3?oc=5\" target=\"_blank\">Canelo recibe palabras dolorosas de su próximo rival</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-02T21:15:00+00:00"
+    },
     {
       "titulo": "Huawei Mate PadAir, la competencia más seria del iPad para destronar a Apple",
       "url": "https://expansion.mx/tecnologia/2026/10/02/huawei-mate-padair-competencia-del-ipad-apple",
@@ -3136,6 +3156,16 @@
       "fuente": "Mundo Deportivo",
       "categoria": "Deportes",
       "subcategoria": "futbol"
+    },
+    {
+      "titulo": "UEFA Nations League 2026/27: partidos y resultados por selección - es.uefa.com",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVUROdG1yenZURTJBQ1BKNDBkaDdMSk9KOVFvV3FEb1ZDSWpjc0cyczFJRmFfYjZGaE01ZWdodHRRa1ZQYy1pZ0N4eUNLWTZrdGtYVFowRk1RX0pYc0NtZDNxM3RSbFdCT0tPa09wVXFKc3pkWHkxY1locnRrUERraUNLNXpVTkVmdEdVTTNLdGJqZU9YV05RQnhoZmRnYU5CVHZmTmhPaVZvWkVTYzVVbGpvLTFIYVFCWHUtazZ3bzNqMXhFTkZvMC0tRlo2SkwzX0d5SmR3?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVUROdG1yenZURTJBQ1BKNDBkaDdMSk9KOVFvV3FEb1ZDSWpjc0cyczFJRmFfYjZGaE01ZWdodHRRa1ZQYy1pZ0N4eUNLWTZrdGtYVFowRk1RX0pYc0NtZDNxM3RSbFdCT0tPa09wVXFKc3pkWHkxY1locnRrUERraUNLNXpVTkVmdEdVTTNLdGJqZU9YV05RQnhoZmRnYU5CVHZmTmhPaVZvWkVTYzVVbGpvLTFIYVFCWHUtazZ3bzNqMXhFTkZvMC0tRlo2SkwzX0d5SmR3?oc=5\" target=\"_blank\">UEFA Nations League 2026/27: partidos y resultados por selección</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">es.uefa.com</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-01T07:00:00+00:00"
     },
     {
       "id": "7dbf39c05dae861b027ddec54dfc7834c8092279150cffcf5bb8814161c259ae",
