@@ -1,50 +1,87 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es-MX">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tecnología | TendenciasMX</title><meta name="description" content="Noticias de tecnología, inteligencia artificial, gadgets, aplicaciones, redes sociales y ciberseguridad en TendenciasMX.">
-<meta name="keywords" content="tecnología, inteligencia artificial, IA, gadgets, aplicaciones, redes sociales, ciberseguridad, México"><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tecnología | TendenciasMX</title>
+
+<meta
+    name="description"
+    content="Noticias de tecnología, inteligencia artificial, gadgets, aplicaciones, redes sociales y ciberseguridad en TendenciasMX."
+>
+
+<meta
+    name="keywords"
+    content="tecnología, inteligencia artificial, IA, gadgets, aplicaciones, redes sociales, ciberseguridad, México"
+>
+
+<link
+    rel="canonical"
+    href="https://cberroteran400-spec.github.io/tendencias-mx/tecnologia.html"
+>
+
+<style>
+
 *{
     box-sizing:border-box;
     margin:0;
     padding:0;
 }
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f6f8;
-    color:#111827;
+html{
+    scroll-behavior:smooth;
 }
 
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#050807;
+    color:#f4f7f5;
+    min-height:100vh;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* =========================
+   HEADER
+========================= */
+
 header{
-    background:#111827;
-    color:white;
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.15);
+    background:rgba(5,8,7,.97);
+    border-bottom:1px solid #1b3024;
+    backdrop-filter:blur(12px);
 }
 
 .header-inner{
-    max-width:1100px;
+    max-width:1250px;
     margin:auto;
-    padding:16px 20px;
+    padding:15px 20px;
 }
 
 .logo{
     font-size:28px;
-    font-weight:800;
+    font-weight:900;
     margin-bottom:12px;
+    color:#fff;
 }
 
 .logo span{
-    color:#22c55e;
+    color:#65ff9a;
 }
 
 nav{
     display:flex;
-    gap:8px;
+    gap:7px;
     overflow-x:auto;
-    padding-bottom:4px;
+    padding-bottom:3px;
     scrollbar-width:none;
 }
 
@@ -53,64 +90,100 @@ nav::-webkit-scrollbar{
 }
 
 nav a{
-    color:#d1d5db;
+    color:#b8c4bd;
     text-decoration:none;
-    padding:8px 12px;
+    padding:8px 11px;
     border-radius:8px;
     white-space:nowrap;
-    font-size:14px;
+    font-size:13px;
     transition:.2s;
 }
 
 nav a:hover,
 nav a.active{
-    background:#22c55e;
-    color:#052e16;
+    background:#65ff9a;
+    color:#041008;
 }
+
+/* =========================
+   MAIN
+========================= */
 
 main{
-    max-width:1100px;
+    max-width:1250px;
     margin:auto;
-    padding:30px 20px 50px;
+    padding:30px 20px 55px;
 }
 
+/* =========================
+   HERO
+========================= */
+
 .hero{
-    background:linear-gradient(135deg,#111827,#1f2937);
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(101,255,154,.15),
+            transparent 32%
+        ),
+        linear-gradient(135deg,#0d1711,#07100b);
+
     color:white;
-    border-radius:18px;
-    padding:30px 24px;
-    margin-bottom:25px;
+    border-radius:20px;
+    padding:38px 30px;
+    margin-bottom:24px;
+    border:1px solid #1d3927;
 }
 
 .hero h1{
-    font-size:34px;
-    margin-bottom:10px;
+    font-size:clamp(32px,5vw,52px);
+    line-height:1.05;
+    margin-bottom:12px;
+}
+
+.hero h1 span{
+    color:#65ff9a;
 }
 
 .hero p{
-    color:#d1d5db;
-    line-height:1.6;
-    max-width:800px;
+    color:#b7c2bb;
+    line-height:1.7;
+    max-width:850px;
+    font-size:16px;
 }
 
+/* =========================
+   SEARCH
+========================= */
+
 .search{
-    margin-top:20px;
+    margin-top:22px;
 }
 
 .search input{
     width:100%;
-    padding:14px 16px;
-    border:none;
-    border-radius:10px;
-    font-size:16px;
+    padding:15px 17px;
+    background:#09100c;
+    color:#fff;
+    border:1px solid #23392a;
+    border-radius:11px;
+    font-size:15px;
     outline:none;
 }
 
+.search input:focus{
+    border-color:#65ff9a;
+}
+
+/* =========================
+   CATEGORIES
+========================= */
+
 .categories{
     display:flex;
-    gap:10px;
+    gap:9px;
     overflow-x:auto;
-    padding:5px 0 18px;
+    padding:5px 0 20px;
     scrollbar-width:none;
 }
 
@@ -119,53 +192,152 @@ main{
 }
 
 .category-btn{
-    border:none;
-    background:white;
-    color:#374151;
-    padding:10px 16px;
+    border:1px solid #263b2d;
+    background:#0b120e;
+    color:#aebbb3;
+    padding:10px 15px;
     border-radius:30px;
     cursor:pointer;
     white-space:nowrap;
-    font-weight:600;
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    font-weight:700;
+    font-size:13px;
+    transition:.2s;
 }
 
 .category-btn.active,
 .category-btn:hover{
-    background:#22c55e;
-    color:#052e16;
+    background:#65ff9a;
+    color:#041008;
+    border-color:#65ff9a;
 }
+
+/* =========================
+   STATUS
+========================= */
+
+.status{
+    color:#748179;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.status strong{
+    color:#65ff9a;
+}
+
+/* =========================
+   FEATURED
+========================= */
+
+.featured{
+    margin-bottom:35px;
+}
+
+.section-title{
+    font-size:25px;
+    margin-bottom:17px;
+}
+
+.section-title span{
+    color:#65ff9a;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:15px;
+}
+
+.feature{
+    position:relative;
+    min-height:300px;
+    overflow:hidden;
+    border-radius:17px;
+    border:1px solid #20382a;
+    background:#0b120e;
+}
+
+.feature img{
+    width:100%;
+    height:100%;
+    min-height:300px;
+    object-fit:cover;
+    display:block;
+}
+
+.feature-overlay{
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.96),
+            rgba(0,0,0,.18) 70%,
+            transparent
+        );
+
+    display:flex;
+    align-items:flex-end;
+    padding:23px;
+}
+
+.feature-content{
+    width:100%;
+}
+
+.feature-tag{
+    color:#65ff9a;
+    font-size:11px;
+    font-weight:900;
+    text-transform:uppercase;
+    margin-bottom:8px;
+}
+
+.feature h3{
+    font-size:clamp(20px,3vw,31px);
+    line-height:1.18;
+}
+
+.feature-small{
+    min-height:300px;
+}
+
+.feature-small img{
+    min-height:300px;
+}
+
+/* =========================
+   NEWS GRID
+========================= */
 
 .news-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:20px;
+    gap:19px;
 }
 
 .card{
-    background:white;
+    background:#0b110e;
+    border:1px solid #1d3024;
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-    transition:transform .2s,box-shadow .2s;
+    transition:.22s;
 }
 
 .card:hover{
     transform:translateY(-4px);
-    box-shadow:0 8px 22px rgba(0,0,0,.13);
+    border-color:#65ff9a;
 }
 
 .card-link{
     display:block;
-    color:inherit;
-    text-decoration:none;
 }
 
 .card-image{
     width:100%;
-    height:190px;
+    height:195px;
     overflow:hidden;
-    background:#e5e7eb;
+    background:#101913;
 }
 
 .card-image img{
@@ -173,410 +345,1734 @@ main{
     height:100%;
     object-fit:cover;
     display:block;
+    transition:transform .3s;
+}
+
+.card:hover .card-image img{
+    transform:scale(1.04);
 }
 
 .card-content{
-    padding:18px;
+    padding:17px;
 }
 
 .badge{
     display:inline-block;
-    background:#dcfce7;
-    color:#166534;
+    background:#102519;
+    color:#65ff9a;
+    border:1px solid #214a30;
     padding:5px 9px;
     border-radius:20px;
-    font-size:12px;
-    font-weight:700;
+    font-size:11px;
+    font-weight:800;
     margin-bottom:9px;
 }
 
 .card h2{
-    font-size:19px;
+    font-size:18px;
     line-height:1.3;
     margin-bottom:9px;
 }
 
 .card p{
-    color:#6b7280;
-    font-size:14px;
-    line-height:1.5;
+    color:#9ba79f;
+    font-size:13px;
+    line-height:1.55;
     margin-bottom:12px;
 }
 
 .date{
-    color:#9ca3af;
-    font-size:12px;
-    margin-bottom:10px;
+    color:#68756d;
+    font-size:11px;
 }
 
 .read{
-    color:#16a34a;
+    color:#65ff9a;
     font-weight:700;
-    font-size:14px;
+    font-size:13px;
+    margin-top:11px;
 }
+
+/* =========================
+   EMPTY
+========================= */
 
 .no-results{
     display:none;
-    background:white;
+    background:#0b110e;
+    border:1px dashed #294232;
     border-radius:14px;
-    padding:30px;
+    padding:40px 25px;
     text-align:center;
-    color:#6b7280;
+    color:#89968e;
     margin-top:20px;
 }
 
+.no-results strong{
+    display:block;
+    color:#65ff9a;
+    font-size:19px;
+    margin-bottom:7px;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    gap:7px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.page-btn{
+    background:#0b120e;
+    border:1px solid #24372a;
+    color:#aebbb3;
+    padding:9px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.page-btn:hover,
+.page-btn.active{
+    background:#65ff9a;
+    color:#041008;
+    border-color:#65ff9a;
+}
+
+/* =========================
+   INFO
+========================= */
+
 .info{
-    background:#ecfdf5;
-    border-left:5px solid #22c55e;
+    background:#0b1810;
+    border-left:5px solid #65ff9a;
     padding:18px;
     border-radius:10px;
-    margin-top:30px;
-    color:#166534;
+    margin-top:35px;
+    color:#a9b8ae;
     line-height:1.6;
 }
 
-footer{
-    background:#111827;
-    color:#9ca3af;
-    text-align:center;
-    padding:25px 20px;
-    margin-top:20px;
+.info strong{
+    color:#65ff9a;
 }
 
-@media(max-width:850px){
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#030504;
+    color:#68756d;
+    text-align:center;
+    padding:27px 20px;
+    border-top:1px solid #1b2d22;
+}
+
+footer strong{
+    color:#65ff9a;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
     .news-grid{
         grid-template-columns:repeat(2,1fr);
     }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
 }
 
 @media(max-width:600px){
+
+    .header-inner{
+        padding:14px 15px;
+    }
+
     .logo{
         font-size:24px;
     }
 
+    main{
+        padding:22px 15px 40px;
+    }
+
+    .hero{
+        padding:30px 20px;
+    }
+
     .hero h1{
-        font-size:28px;
+        font-size:30px;
     }
 
     .news-grid{
         grid-template-columns:1fr;
     }
 
-    main{
-        padding:22px 15px 40px;
+    .card-image{
+        height:210px;
     }
+
 }
-</style></head><body><header>
-    <div class="header-inner">    <div class="logo">
-        Tendencias<span>MX</span>
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-inner">
+
+        <div class="logo">
+            Tendencias<span>MX</span>
+        </div>
+
+        <nav>
+
+            <a href="./index.html">Inicio</a>
+
+            <a href="./noticias.html">Noticias</a>
+
+            <a href="./deportes.html">Deportes</a>
+
+            <a href="./entretenimiento.html">
+                Entretenimiento
+            </a>
+
+            <a
+                href="./tecnologia.html"
+                class="active"
+            >
+                Tecnología
+            </a>
+
+            <a href="./dinero.html">
+                Dinero
+            </a>
+
+            <a href="./politica.html">
+                Política
+            </a>
+
+            <a href="./tramites.html">
+                Trámites
+            </a>
+
+            <a href="./contacto.html">
+                Contacto
+            </a>
+
+            <a href="./preguntas.html">
+                Preguntas
+            </a>
+
+        </nav>
+
     </div>
 
-    <nav>
-        <a href="./index.html">Inicio</a>
-        <a href="./noticias.html">Noticias</a>
-        <a href="./deportes.html">Deportes</a>
-        <a href="./entretenimiento.html">Entretenimiento</a>
-        <a href="./tecnologia.html" class="active">Tecnología</a>
-        <a href="./dinero.html">Dinero</a>
-        <a href="./politica.html">Política</a>
-        <a href="./tramites.html">Trámites</a>
-        <a href="./contacto.html">Contacto</a>
-        <a href="./preguntas.html">Preguntas</a>
-    </nav>
+</header>
 
-</div>
 
-</header><main><section class="hero">
+<main>
 
-    <h1>Noticias de Tecnología</h1>
+    <section class="hero">
 
-    <p>
-        Mantente informado sobre inteligencia artificial, gadgets,
-        aplicaciones, redes sociales, ciberseguridad y tecnología
-        en México y el mundo.
-    </p>
+        <h1>
+            Noticias de <span>Tecnología</span>
+        </h1>
 
-    <div class="search">
-        <input
-            type="search"
-            id="searchInput"
-            placeholder="Buscar noticias de tecnología..."
+        <p>
+            Mantente informado sobre inteligencia artificial,
+            aplicaciones, dispositivos, innovación, redes sociales,
+            seguridad digital y los avances tecnológicos que están
+            transformando México y el mundo.
+        </p>
+
+        <div class="search">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Buscar noticias de tecnología..."
+                autocomplete="off"
+            >
+
+        </div>
+
+    </section>
+
+
+    <div class="categories">
+
+        <button
+            class="category-btn active"
+            data-category="todos"
         >
+            Todas
+        </button>
+
+        <button
+            class="category-btn"
+            data-category="ia"
+        >
+            Inteligencia Artificial
+        </button>
+
+        <button
+            class="category-btn"
+            data-category="apps"
+        >
+            Apps y Software
+        </button>
+
+        <button
+            class="category-btn"
+            data-category="gadgets"
+        >
+            Gadgets
+        </button>
+
+        <button
+            class="category-btn"
+            data-category="redes"
+        >
+            Redes Sociales
+        </button>
+
+        <button
+            class="category-btn"
+            data-category="ciberseguridad"
+        >
+            Ciberseguridad
+        </button>
+
+        <button
+            class="category-btn"
+            data-category="mexico"
+        >
+            Tecnología en México
+        </button>
+
     </div>
 
-</section>
 
-<div class="categories">
+    <div class="status">
 
-    <button class="category-btn active" data-category="todos">
-        Todos
-    </button>
+        <span id="statusText">
+            Cargando noticias...
+        </span>
 
-    <button class="category-btn" data-category="ia">
-        Inteligencia Artificial
-    </button>
+    </div>
 
-    <button class="category-btn" data-category="gadgets">
-        Gadgets
-    </button>
 
-    <button class="category-btn" data-category="apps_redes">
-        Apps y Redes
-    </button>
+    <section class="featured">
 
-    <button class="category-btn" data-category="ciberseguridad">
-        Ciberseguridad
-    </button>
+        <h2 class="section-title">
+            Lo más <span>destacado</span>
+        </h2>
 
-    <button class="category-btn" data-category="mexico">
-        Tecnología en México
-    </button>
+        <div
+            id="featuredGrid"
+            class="feature-grid"
+        ></div>
 
-</div>
+    </section>
 
-<section class="news-grid" id="newsGrid"></section>
 
-<div class="no-results" id="noResults">
-    No encontramos noticias que coincidan con tu búsqueda.
-</div>
+    <section>
 
-<div class="info">
-    <strong>Tecnología en TendenciasMX</strong><br>
-    Encuentra información sobre inteligencia artificial, dispositivos,
-    aplicaciones, redes sociales y seguridad digital.
-</div>
+        <h2 class="section-title">
+            Últimas noticias
+        </h2>
 
-</main><footer>
-    © 2026 TendenciasMX · Información y actualidad
-</footer><script>
+        <div
+            class="news-grid"
+            id="newsGrid"
+        ></div>
 
-const noticias = [
+        <div
+            class="no-results"
+            id="noResults"
+        >
 
-    {
-        categoria:"ia",
-        titulo:"La inteligencia artificial continúa transformando la tecnología",
-        descripcion:"Los avances en inteligencia artificial están impulsando nuevas herramientas para empresas, usuarios y desarrolladores.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    },
+            <strong>
+                No encontramos noticias
+            </strong>
 
-    {
-        categoria:"ia",
-        titulo:"Nuevas herramientas de IA buscan facilitar tareas cotidianas",
-        descripcion:"Las herramientas basadas en inteligencia artificial siguen incorporándose a diferentes servicios digitales.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    },
+            Prueba con otro término de búsqueda
+            o selecciona otra categoría.
 
-    {
-        categoria:"gadgets",
-        titulo:"Los nuevos dispositivos inteligentes ganan espacio entre los consumidores",
-        descripcion:"Teléfonos, relojes y otros dispositivos conectados continúan evolucionando con nuevas funciones.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    },
+        </div>
 
-    {
-        categoria:"gadgets",
-        titulo:"Los teléfonos inteligentes incorporan nuevas funciones",
-        descripcion:"Los fabricantes continúan desarrollando dispositivos con cámaras, procesadores y funciones cada vez más avanzadas.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    },
+        <div
+            id="pagination"
+            class="pagination"
+        ></div>
 
-    {
-        categoria:"apps_redes",
-        titulo:"Las aplicaciones móviles siguen cambiando la forma de comunicarnos",
-        descripcion:"Las plataformas digitales continúan incorporando nuevas herramientas para sus usuarios.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    },
+    </section>
 
-    {
-        categoria:"apps_redes",
-        titulo:"Las redes sociales evolucionan con nuevas funciones",
-        descripcion:"Las principales plataformas digitales siguen modificando sus herramientas y formatos de contenido.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    },
 
-    {
-        categoria:"ciberseguridad",
-        titulo:"La seguridad digital se vuelve cada vez más importante",
-        descripcion:"Usuarios y empresas deben prestar atención a sus contraseñas, cuentas y dispositivos conectados.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    },
+    <div class="info">
 
-    {
-        categoria:"ciberseguridad",
-        titulo:"Expertos recomiendan reforzar la protección de las cuentas digitales",
-        descripcion:"La autenticación en dos pasos y las contraseñas seguras son algunas de las medidas recomendadas.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    },
+        <strong>
+            Tecnología en TendenciasMX
+        </strong>
 
-    {
-        categoria:"mexico",
-        titulo:"México continúa avanzando en la adopción de tecnología digital",
-        descripcion:"Empresas y usuarios mexicanos incorporan cada vez más herramientas digitales en sus actividades.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    },
+        <br>
 
-    {
-        categoria:"mexico",
-        titulo:"La transformación digital abre nuevas oportunidades para empresas mexicanas",
-        descripcion:"Las soluciones tecnológicas forman parte de las estrategias de digitalización de distintos negocios.",
-        fecha:"Actualidad",
-        imagen:"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80",
-        url:"https://expansion.mx/tecnologia"
-    }
+        Noticias reales y actualizadas sobre tecnología,
+        inteligencia artificial, aplicaciones, dispositivos,
+        innovación y seguridad digital.
 
-];
+    </div>
+
+</main>
+
+
+<footer>
+
+    © 2026 <strong>TendenciasMX</strong>
+    · Información y actualidad
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   CONFIGURACIÓN
+========================================================= */
+
+const URL_JSON =
+    "noticias.json?actualizacion=" + Date.now();
+
+const POR_PAGINA = 12;
+
+let todasLasNoticias = [];
+
+let noticiasFiltradas = [];
 
 let categoriaActual = "todos";
 
-const grid = document.getElementById("newsGrid");
-const searchInput = document.getElementById("searchInput");
-const noResults = document.getElementById("noResults");
+let busquedaActual = "";
 
-function renderNoticias(){
+let paginaActual = 1;
 
-    const busqueda = searchInput.value.toLowerCase().trim();
 
-    const filtradas = noticias.filter(noticia => {
+/* =========================================================
+   NORMALIZAR TEXTO
+========================================================= */
 
-        const coincideCategoria =
-            categoriaActual === "todos" ||
-            noticia.categoria === categoriaActual;
+function normalizar(texto){
 
-        const texto =
-            noticia.titulo + " " +
-            noticia.descripcion;
-
-        const coincideBusqueda =
-            texto.toLowerCase().includes(busqueda);
-
-        return coincideCategoria && coincideBusqueda;
-
-    });
-
-    grid.innerHTML = "";
-
-    noResults.style.display =
-        filtradas.length === 0 ? "block" : "none";
-
-    filtradas.forEach(noticia => {
-
-        const card = document.createElement("article");
-
-        card.className = "card";
-
-        card.innerHTML = `
-
-            <a
-                class="card-link"
-                href="${noticia.url}"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <div class="card-image">
-
-                    <img
-                        src="${noticia.imagen}"
-                        alt="${noticia.titulo}"
-                        loading="lazy"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-                <div class="card-content">
-
-                    <span class="badge">
-                        ${nombreCategoria(noticia.categoria)}
-                    </span>
-
-                    <div class="date">
-                        ${noticia.fecha}
-                    </div>
-
-                    <h2>
-                        ${noticia.titulo}
-                    </h2>
-
-                    <p>
-                        ${noticia.descripcion}
-                    </p>
-
-                    <div class="read">
-                        Leer noticia completa →
-                    </div>
-
-                </div>
-
-            </a>
-
-        `;
-
-        grid.appendChild(card);
-
-    });
+    return String(texto || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g,"");
 
 }
 
-function nombreCategoria(categoria){
+
+/* =========================================================
+   DETECTAR TECNOLOGÍA
+========================================================= */
+
+function esTecnologia(noticia){
+
+    const categoria =
+        normalizar(noticia.categoria);
+
+    const subcategoria =
+        normalizar(noticia.subcategoria);
+
+    const titulo =
+        normalizar(noticia.titulo);
+
+    const descripcion =
+        normalizar(noticia.descripcion);
+
+    const url =
+        normalizar(noticia.url);
+
+    /*
+       PRIMERA REGLA:
+
+       Si el RSS ya marcó la noticia
+       como Tecnología, entra directamente.
+    */
+
+    if(categoria === "tecnologia"){
+        return true;
+    }
+
+
+    /*
+       SEGUNDA REGLA:
+
+       Algunas publicaciones pueden llegar
+       como Noticias pero pertenecer realmente
+       a la sección tecnológica de Expansión.
+
+       Detectamos el dominio/ruta de tecnología.
+    */
+
+    if(
+        url.includes("expansion.mx/tecnologia/")
+    ){
+        return true;
+    }
+
+
+    /*
+       TERCERA REGLA:
+
+       Detectar temas tecnológicos reales.
+    */
+
+    const texto =
+        categoria + " " +
+        subcategoria + " " +
+        titulo + " " +
+        descripcion;
+
+
+    const palabrasTecnologia = [
+
+        "inteligencia artificial",
+        "inteligencia artificial",
+        "ia generativa",
+        "chatgpt",
+        "openai",
+        "gemini",
+        "copilot",
+        "claude",
+        "deepseek",
+
+        "tecnologia",
+        "tecnológico",
+        "tecnologica",
+        "tecnologicas",
+
+        "software",
+        "aplicacion",
+        "aplicaciones",
+        "app",
+        "apps",
+
+        "smartphone",
+        "celular",
+        "telefono inteligente",
+        "iphone",
+        "android",
+
+        "computadora",
+        "laptop",
+        "procesador",
+        "chip",
+        "semiconductor",
+
+        "gadget",
+        "dispositivo",
+        "dispositivos",
+        "wearable",
+        "reloj inteligente",
+
+        "internet",
+        "red social",
+        "redes sociales",
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube",
+        "whatsapp",
+
+        "ciberseguridad",
+        "seguridad digital",
+        "hackeo",
+        "hacker",
+        "phishing",
+        "fraude digital",
+        "datos personales",
+
+        "nube",
+        "cloud",
+        "blockchain",
+        "criptomoneda",
+
+        "robot",
+        "robotica",
+        "automatizacion",
+
+        "realidad virtual",
+        "realidad aumentada",
+
+        "tesla",
+        "spacex",
+        "satélite",
+        "satelite",
+
+        "gaming",
+        "videojuego",
+        "videojuegos",
+        "consola",
+        "playstation",
+        "xbox",
+        "nintendo"
+
+    ];
+
+
+    return palabrasTecnologia.some(
+        palabra => texto.includes(palabra)
+    );
+
+}
+
+
+/* =========================================================
+   EXCLUIR DEPORTES
+========================================================= */
+
+function esDeporte(noticia){
+
+    const categoria =
+        normalizar(noticia.categoria);
+
+    const subcategoria =
+        normalizar(noticia.subcategoria);
+
+    if(categoria === "deportes"){
+        return true;
+    }
+
+    const deportes = [
+
+        "futbol",
+        "tenis",
+        "beisbol",
+        "nfl",
+        "nba",
+        "boxeo",
+        "formula 1",
+        "formula1",
+        "golf",
+        "mlb",
+        "liga mx",
+        "champions league",
+        "premier league"
+
+    ];
+
+    return deportes.includes(subcategoria);
+
+}
+
+
+/* =========================================================
+   CLASIFICAR TECNOLOGÍA
+========================================================= */
+
+function obtenerTipo(noticia){
+
+    const texto = normalizar(
+
+        (noticia.titulo || "") + " " +
+        (noticia.descripcion || "") + " " +
+        (noticia.subcategoria || "") + " " +
+        (noticia.url || "")
+
+    );
+
+
+    if(
+
+        texto.includes("inteligencia artificial") ||
+        texto.includes("ia generativa") ||
+        texto.includes("chatgpt") ||
+        texto.includes("openai") ||
+        texto.includes("gemini") ||
+        texto.includes("copilot") ||
+        texto.includes("claude") ||
+        texto.includes("deepseek")
+
+    ){
+
+        return "ia";
+
+    }
+
+
+    if(
+
+        texto.includes("aplicacion") ||
+        texto.includes("aplicaciones") ||
+        texto.includes("app") ||
+        texto.includes("software") ||
+        texto.includes("plataforma digital")
+
+    ){
+
+        return "apps";
+
+    }
+
+
+    if(
+
+        texto.includes("iphone") ||
+        texto.includes("android") ||
+        texto.includes("smartphone") ||
+        texto.includes("celular") ||
+        texto.includes("telefono") ||
+        texto.includes("gadget") ||
+        texto.includes("dispositivo") ||
+        texto.includes("laptop") ||
+        texto.includes("computadora") ||
+        texto.includes("procesador") ||
+        texto.includes("chip")
+
+    ){
+
+        return "gadgets";
+
+    }
+
+
+    if(
+
+        texto.includes("facebook") ||
+        texto.includes("instagram") ||
+        texto.includes("tiktok") ||
+        texto.includes("youtube") ||
+        texto.includes("whatsapp") ||
+        texto.includes("redes sociales") ||
+        texto.includes("red social")
+
+    ){
+
+        return "redes";
+
+    }
+
+
+    if(
+
+        texto.includes("ciberseguridad") ||
+        texto.includes("seguridad digital") ||
+        texto.includes("hackeo") ||
+        texto.includes("hacker") ||
+        texto.includes("phishing") ||
+        texto.includes("robo de identidad")
+
+    ){
+
+        return "ciberseguridad";
+
+    }
+
+
+    if(
+
+        normalizar(noticia.titulo)
+            .includes("mexico")
+
+    ){
+
+        return "mexico";
+
+    }
+
+
+    return "tecnologia";
+
+}
+
+
+/* =========================================================
+   NOMBRE DEL TIPO
+========================================================= */
+
+function nombreTipo(tipo){
 
     const nombres = {
 
-        ia:"Inteligencia Artificial",
+        ia:
+            "Inteligencia Artificial",
 
-        gadgets:"Gadgets",
+        apps:
+            "Apps y Software",
 
-        apps_redes:"Apps y Redes",
+        gadgets:
+            "Gadgets",
 
-        ciberseguridad:"Ciberseguridad",
+        redes:
+            "Redes Sociales",
 
-        mexico:"Tecnología en México"
+        ciberseguridad:
+            "Ciberseguridad",
+
+        mexico:
+            "Tecnología en México",
+
+        tecnologia:
+            "Tecnología"
 
     };
 
-    return nombres[categoria] || "Tecnología";
+    return nombres[tipo] || "Tecnología";
 
 }
 
-document.querySelectorAll(".category-btn").forEach(button => {
 
-    button.addEventListener("click", () => {
+/* =========================================================
+   ESCAPAR HTML
+========================================================= */
+
+function escapar(texto){
+
+    return String(texto || "")
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
+}
+
+
+/* =========================================================
+   FECHA
+========================================================= */
+
+function fechaBonita(fecha){
+
+    if(!fecha){
+        return "";
+    }
+
+    const d =
+        new Date(fecha);
+
+    if(isNaN(d.getTime())){
+        return "";
+    }
+
+    return d.toLocaleDateString(
+        "es-MX",
+        {
+            day:"2-digit",
+            month:"short",
+            year:"numeric"
+        }
+    );
+
+}
+
+
+/* =========================================================
+   IMAGEN
+========================================================= */
+
+function obtenerImagen(noticia){
+
+    return (
+
+        noticia.imagen ||
+        noticia.image ||
+        noticia.image_url ||
+        noticia.imagen_url ||
+        ""
+
+    );
+
+}
+
+
+/* =========================================================
+   FALLBACK DE IMAGEN
+========================================================= */
+
+function mostrarFallback(contenedor){
+
+    contenedor.innerHTML = `
+
+        <div style="
+            width:100%;
+            height:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:
+                radial-gradient(
+                    circle at center,
+                    #173321,
+                    #08100b
+                );
+            color:#65ff9a;
+            font-size:42px;
+            font-weight:900;
+        ">
+            TECH
+        </div>
+
+    `;
+
+}
+
+
+/* =========================================================
+   CARGAR JSON
+========================================================= */
+
+async function cargarNoticias(){
+
+    const status =
+        document.getElementById("statusText");
+
+    try{
+
+        status.textContent =
+            "Cargando noticias...";
+
+
+        const respuesta =
+            await fetch(
+                URL_JSON,
+                {
+                    cache:"no-store"
+                }
+            );
+
+
+        if(!respuesta.ok){
+
+            throw new Error(
+                "No se pudo cargar noticias.json"
+            );
+
+        }
+
+
+        const datos =
+            await respuesta.json();
+
+
+        /*
+           El JSON actual utiliza:
+
+           {
+               actualizado: "...",
+               total: ...,
+               imagenes: {...},
+               noticias: [...]
+           }
+
+           También soportamos un array directo.
+        */
+
+        const lista =
+            Array.isArray(datos)
+                ? datos
+                : Array.isArray(datos.noticias)
+                    ? datos.noticias
+                    : [];
+
+
+        /*
+           FILTRO PRINCIPAL:
+
+           Solo tecnología real.
+
+           NO usamos una lista inventada.
+           NO usamos publicaciones de ejemplo.
+        */
+
+        todasLasNoticias = lista
+
+            .filter(noticia =>
+                noticia &&
+                noticia.titulo
+            )
+
+            .filter(noticia =>
+                esTecnologia(noticia)
+            )
+
+            .filter(noticia =>
+                !esDeporte(noticia)
+            );
+
+
+        /*
+           Ordenar por fecha más reciente.
+        */
+
+        todasLasNoticias.sort(
+            (a,b) =>
+                new Date(b.fecha || 0) -
+                new Date(a.fecha || 0)
+        );
+
+
+        aplicarFiltros();
+
+
+        status.innerHTML =
+            `<strong>${todasLasNoticias.length}</strong> noticias de tecnología disponibles`;
+
+    }
+
+    catch(error){
+
+        console.error(error);
+
+        status.textContent =
+            "No se pudieron cargar las noticias.";
 
         document
-            .querySelectorAll(".category-btn")
-            .forEach(btn => btn.classList.remove("active"));
+            .getElementById("newsGrid")
+            .innerHTML = `
 
-        button.classList.add("active");
+                <div
+                    class="no-results"
+                    style="
+                        display:block;
+                        grid-column:1/-1;
+                    "
+                >
 
-        categoriaActual = button.dataset.category;
+                    <strong>
+                        No se pudo cargar noticias.json
+                    </strong>
 
-        renderNoticias();
+                    Comprueba que el archivo esté
+                    en la raíz del repositorio.
+
+                </div>
+
+            `;
+
+    }
+
+}
+
+
+/* =========================================================
+   APLICAR FILTROS
+========================================================= */
+
+function aplicarFiltros(){
+
+    const busqueda =
+        normalizar(busquedaActual);
+
+
+    noticiasFiltradas =
+        todasLasNoticias.filter(noticia => {
+
+
+            const tipo =
+                obtenerTipo(noticia);
+
+
+            const coincideCategoria =
+
+                categoriaActual === "todos" ||
+
+                tipo === categoriaActual;
+
+
+            const texto =
+                normalizar(
+
+                    (noticia.titulo || "") + " " +
+                    (noticia.descripcion || "") + " " +
+                    (noticia.fuente || "")
+
+                );
+
+
+            const coincideBusqueda =
+
+                !busqueda ||
+                texto.includes(busqueda);
+
+
+            return (
+
+                coincideCategoria &&
+                coincideBusqueda
+
+            );
+
+        });
+
+
+    paginaActual = 1;
+
+    renderizar();
+
+}
+
+
+/* =========================================================
+   CREAR TARJETA
+========================================================= */
+
+function crearTarjeta(noticia){
+
+    const imagen =
+        obtenerImagen(noticia);
+
+
+    const tipo =
+        obtenerTipo(noticia);
+
+
+    const titulo =
+        escapar(
+            noticia.titulo ||
+            "Sin título"
+        );
+
+
+    const descripcion =
+        escapar(
+            noticia.descripcion ||
+            ""
+        );
+
+
+    const fuente =
+        escapar(
+            noticia.fuente ||
+            "TendenciasMX"
+        );
+
+
+    const fecha =
+        fechaBonita(
+            noticia.fecha
+        );
+
+
+    const url =
+        noticia.url ||
+        noticia.link ||
+        noticia.enlace ||
+        "#";
+
+
+    const article =
+        document.createElement("article");
+
+
+    article.className =
+        "card";
+
+
+    const link =
+        document.createElement("a");
+
+
+    link.className =
+        "card-link";
+
+
+    link.href =
+        url;
+
+
+    link.target =
+        "_blank";
+
+
+    link.rel =
+        "noopener noreferrer";
+
+
+    const imageBox =
+        document.createElement("div");
+
+
+    imageBox.className =
+        "card-image";
+
+
+    if(imagen){
+
+        const img =
+            document.createElement("img");
+
+
+        img.src =
+            imagen;
+
+
+        img.alt =
+            titulo;
+
+
+        img.loading =
+            "lazy";
+
+
+        img.onerror =
+            function(){
+
+                mostrarFallback(
+                    imageBox
+                );
+
+            };
+
+
+        imageBox.appendChild(img);
+
+    }
+    else{
+
+        mostrarFallback(
+            imageBox
+        );
+
+    }
+
+
+    const content =
+        document.createElement("div");
+
+
+    content.className =
+        "card-content";
+
+
+    content.innerHTML = `
+
+        <span class="badge">
+            ${escapar(nombreTipo(tipo))}
+        </span>
+
+        <h2>
+            ${titulo}
+        </h2>
+
+        ${
+            descripcion
+                ? `<p>${descripcion}</p>`
+                : ""
+        }
+
+        <div class="date">
+            ${fuente}
+            ${fecha ? " · " + fecha : ""}
+        </div>
+
+        <div class="read">
+            Leer noticia completa →
+        </div>
+
+    `;
+
+
+    link.appendChild(
+        imageBox
+    );
+
+
+    link.appendChild(
+        content
+    );
+
+
+    article.appendChild(
+        link
+    );
+
+
+    return article;
+
+}
+
+
+/* =========================================================
+   DESTACADAS
+========================================================= */
+
+function renderizarDestacadas(){
+
+    const contenedor =
+        document.getElementById(
+            "featuredGrid"
+        );
+
+
+    const destacadas =
+        noticiasFiltradas.slice(
+            0,
+            3
+        );
+
+
+    if(!destacadas.length){
+
+        contenedor.innerHTML = "";
+
+        return;
+
+    }
+
+
+    contenedor.innerHTML = "";
+
+
+    destacadas.forEach(
+        (noticia,index) => {
+
+
+            const imagen =
+                obtenerImagen(noticia);
+
+
+            const url =
+                noticia.url ||
+                noticia.link ||
+                noticia.enlace ||
+                "#";
+
+
+            const enlace =
+                document.createElement("a");
+
+
+            enlace.className =
+                "feature" +
+                (
+                    index > 0
+                        ? " feature-small"
+                        : ""
+                );
+
+
+            enlace.href =
+                url;
+
+
+            enlace.target =
+                "_blank";
+
+
+            enlace.rel =
+                "noopener noreferrer";
+
+
+            if(imagen){
+
+                const img =
+                    document.createElement("img");
+
+
+                img.src =
+                    imagen;
+
+
+                img.alt =
+                    noticia.titulo || "Tecnología";
+
+
+                img.loading =
+                    index === 0
+                        ? "eager"
+                        : "lazy";
+
+
+                img.onerror =
+                    function(){
+
+                        this.style.display =
+                            "none";
+
+                    };
+
+
+                enlace.appendChild(
+                    img
+                );
+
+            }
+
+
+            const overlay =
+                document.createElement("div");
+
+
+            overlay.className =
+                "feature-overlay";
+
+
+            overlay.innerHTML = `
+
+                <div class="feature-content">
+
+                    <div class="feature-tag">
+                        ${escapar(
+                            nombreTipo(
+                                obtenerTipo(noticia)
+                            )
+                        )}
+                    </div>
+
+                    <h3>
+                        ${escapar(
+                            noticia.titulo
+                        )}
+                    </h3>
+
+                </div>
+
+            `;
+
+
+            enlace.appendChild(
+                overlay
+            );
+
+
+            contenedor.appendChild(
+                enlace
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   NOTICIAS
+========================================================= */
+
+function renderizarNoticias(){
+
+    const grid =
+        document.getElementById(
+            "newsGrid"
+        );
+
+
+    const noResults =
+        document.getElementById(
+            "noResults"
+        );
+
+
+    const inicio =
+        (paginaActual - 1) *
+        POR_PAGINA;
+
+
+    const fin =
+        inicio +
+        POR_PAGINA;
+
+
+    const pagina =
+        noticiasFiltradas.slice(
+            inicio,
+            fin
+        );
+
+
+    grid.innerHTML = "";
+
+
+    if(!pagina.length){
+
+        noResults.style.display =
+            "block";
+
+        return;
+
+    }
+
+
+    noResults.style.display =
+        "none";
+
+
+    pagina.forEach(
+        noticia => {
+
+            grid.appendChild(
+                crearTarjeta(
+                    noticia
+                )
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   PAGINACIÓN
+========================================================= */
+
+function renderizarPaginacion(){
+
+    const contenedor =
+        document.getElementById(
+            "pagination"
+        );
+
+
+    const totalPaginas =
+        Math.ceil(
+            noticiasFiltradas.length /
+            POR_PAGINA
+        );
+
+
+    contenedor.innerHTML = "";
+
+
+    if(totalPaginas <= 1){
+
+        return;
+
+    }
+
+
+    if(paginaActual > 1){
+
+        const boton =
+            crearBotonPagina(
+                "← Anterior",
+                paginaActual - 1
+            );
+
+        contenedor.appendChild(
+            boton
+        );
+
+    }
+
+
+    for(
+        let i = 1;
+        i <= totalPaginas;
+        i++
+    ){
+
+        if(
+
+            i === 1 ||
+            i === totalPaginas ||
+            Math.abs(
+                i - paginaActual
+            ) <= 2
+
+        ){
+
+            const boton =
+                crearBotonPagina(
+                    i,
+                    i
+                );
+
+            contenedor.appendChild(
+                boton
+            );
+
+        }
+
+    }
+
+
+    if(
+        paginaActual <
+        totalPaginas
+    ){
+
+        const boton =
+            crearBotonPagina(
+                "Siguiente →",
+                paginaActual + 1
+            );
+
+        contenedor.appendChild(
+            boton
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   BOTÓN PAGINACIÓN
+========================================================= */
+
+function crearBotonPagina(
+    texto,
+    numero
+){
+
+    const boton =
+        document.createElement(
+            "button"
+        );
+
+
+    boton.className =
+        "page-btn";
+
+
+    if(
+        numero === paginaActual &&
+        typeof numero === "number"
+    ){
+
+        boton.classList.add(
+            "active"
+        );
+
+    }
+
+
+    boton.textContent =
+        texto;
+
+
+    boton.addEventListener(
+        "click",
+        () => {
+
+            paginaActual =
+                numero;
+
+            renderizar();
+
+
+            window.scrollTo({
+
+                top:
+                    document
+                        .querySelector(
+                            ".news-grid"
+                        )
+                        .offsetTop - 90,
+
+                behavior:
+                    "smooth"
+
+            });
+
+        }
+    );
+
+
+    return boton;
+
+}
+
+
+/* =========================================================
+   RENDER GENERAL
+========================================================= */
+
+function renderizar(){
+
+    renderizarDestacadas();
+
+    renderizarNoticias();
+
+    renderizarPaginacion();
+
+}
+
+
+/* =========================================================
+   BOTONES DE CATEGORÍA
+========================================================= */
+
+document
+    .querySelectorAll(".category-btn")
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+
+                document
+                    .querySelectorAll(
+                        ".category-btn"
+                    )
+                    .forEach(btn =>
+                        btn.classList.remove(
+                            "active"
+                        )
+                    );
+
+
+                button.classList.add(
+                    "active"
+                );
+
+
+                categoriaActual =
+                    button.dataset.category;
+
+
+                aplicarFiltros();
+
+            }
+        );
 
     });
 
-});
 
-searchInput.addEventListener("input", renderNoticias);
+/* =========================================================
+   BUSCADOR
+========================================================= */
 
-renderNoticias();
+document
+    .getElementById("searchInput")
+    .addEventListener(
+        "input",
+        event => {
 
-</script></body>
+            busquedaActual =
+                event.target.value;
+
+            aplicarFiltros();
+
+        }
+    );
+
+
+/* =========================================================
+   INICIAR
+========================================================= */
+
+cargarNoticias();
+
+</script>
+
+</body>
+
 </html>
