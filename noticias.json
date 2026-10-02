@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-01T23:58:08.317672+00:00",
-  "total": 540,
+  "actualizado": "2026-10-02T00:12:28.374314+00:00",
+  "total": 542,
   "imagenes": {
-    "con_imagen": 462,
-    "sin_imagen": 78
+    "con_imagen": 467,
+    "sin_imagen": 75
   },
   "noticias": [
+    {
+      "titulo": "Pemex pierde ingresos millonarios con el petróleo caro y sus exportaciones en mínimos",
+      "url": "https://expansion.mx/empresas/2026/10/01/pemex-pierde-ingresos-petroleo-caro-exportaciones-minimos",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/4d2dec9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fcb%2Ff8%2F1086d26a4890ac05f4db13cd39eb%2F4.jpeg",
+      "descripcion": "La producción petrolera de Pemex tocó mínimos históricos en agosto, limitando su capacidad exportadora justo cuando el petróleo supera los 100 dólares por barril.",
+      "fuente": "Diana Gante",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-01T23:57:58+00:00"
+    },
     {
       "titulo": "Antes de que naciera Carlos Slim, Telcel ya tenía historia: comenzó con directorios y hoy genera 275,000 mdp",
       "url": "https://expansion.mx/empresas/2026/10/01/telcel-historia-carlos-slim-directorios-telefonicos",
@@ -111,6 +121,16 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTVBRNmdCaVZoaE5lRlp4ZWMxWmI4UnlnRTlLQmI5eDAxTkRlVWV3NVBUWF8yYVlKc0E1R01LeTdYY3JqNEYwRlNXbWoxSTZCSWpVSnozUVFOQ3RtY3pXdTN2QzFiZkMwRzdiRHhDQ29mU3VFMG1qV2loSXhuem1ORE5zaTg0TVlybjNBR0pYRjg4eWdMUGo4UXBZMEtPTDk2a1E4TGhRY3lVSTDSAasBQVVfeXFMTU1QUTZnQmlWaGhOZUZaeGVjMVpiOFJ5Z0U5S0JiOXgwMU5EZVVldzVQVFhfMmFZSnNBNUdNS3k3WGNyajRGMEZTV21qMUk2QklqVUp6M1FRTkN0bWN6V3UzdkMxYmZDMEc3YkR4Q0NvZlN1RTBtaldpaEl4bnptTkROc2k4NE1Zcm4zQUdKWEY4OHlnTFBqOFFwWTBLT0w5NmtROExoUWN5VUkw?oc=5",
       "imagen": "https://cdn.milenio.com/uploads/media/2026/10/01/phillies-vs-braves-vivo-juego.jpg",
       "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTVBRNmdCaVZoaE5lRlp4ZWMxWmI4UnlnRTlLQmI5eDAxTkRlVWV3NVBUWF8yYVlKc0E1R01LeTdYY3JqNEYwRlNXbWoxSTZCSWpVSnozUVFOQ3RtY3pXdTN2QzFiZkMwRzdiRHhDQ29mU3VFMG1qV2loSXhuem1ORE5zaTg0TVlybjNBR0pYRjg4eWdMUGo4UXBZMEtPTDk2a1E4TGhRY3lVSTDSAasBQVVfeXFMTU1QUTZnQmlWaGhOZUZaeGVjMVpiOFJ5Z0U5S0JiOXgwMU5EZVVldzVQVFhfMmFZSnNBNUdNS3k3WGNyajRGMEZTV21qMUk2QklqVUp6M1FRTkN0bWN6V3UzdkMxYmZDMEc3YkR4Q0NvZlN1RTBtaldpaEl4bnptTkROc2k4NE1Zcm4zQUdKWEY4OHlnTFBqOFFwWTBLT0w5NmtROExoUWN5VUkw?oc=5\" target=\"_blank\">Phillies vs Braves EN VIVO: A qué hora y dónde VER Juego 3 de la Serie de Comodines Playoffs MLB 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">milenio.com</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-01T22:35:00+00:00"
+    },
+    {
+      "titulo": "Phillies vs Braves EN VIVO: A qué hora y dónde VER Juego 3 de la Serie de Comodines Playoffs MLB 2026 - MILENIO",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUzBIWGNzWHNoU05WblV2QS16YzJ2bEo2eEk1MDRSZGljS1FvZjFWVWhJaU9YX240R0xkV0w4T0p3eUIxTDVEakloWUc1RnIybTRzVGJRZERfSDE3bkszVC01aFgwdjRJWXY0NUJmNndCQ0RxUm1ybTJsR3FMQXZQS2RIWDdCNFF1a3NTR01YRzJhQV9YS09fSnZ6NXhpc2g2aHptbHhRNWFDRmfSAasBQVVfeXFMTU1QUTZnQmlWaGhOZUZaeGVjMVpiOFJ5Z0U5S0JiOXgwMU5EZVVldzVQVFhfMmFZSnNBNUdNS3k3WGNyajRGMEZTV21qMUk2QklqVUp6M1FRTkN0bWN6V3UzdkMxYmZDMEc3YkR4Q0NvZlN1RTBtaldpaEl4bnptTkROc2k4NE1Zcm4zQUdKWEY4OHlnTFBqOFFwWTBLT0w5NmtROExoUWN5VUkw?oc=5",
+      "imagen": "https://cdn.milenio.com/uploads/media/2026/10/01/phillies-vs-braves-vivo-juego.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUzBIWGNzWHNoU05WblV2QS16YzJ2bEo2eEk1MDRSZGljS1FvZjFWVWhJaU9YX240R0xkV0w4T0p3eUIxTDVEakloWUc1RnIybTRzVGJRZERfSDE3bkszVC01aFgwdjRJWXY0NUJmNndCQ0RxUm1ybTJsR3FMQXZQS2RIWDdCNFF1a3NTR01YRzJhQV9YS09fSnZ6NXhpc2g2aHptbHhRNWFDRmfSAasBQVVfeXFMTU1QUTZnQmlWaGhOZUZaeGVjMVpiOFJ5Z0U5S0JiOXgwMU5EZVVldzVQVFhfMmFZSnNBNUdNS3k3WGNyajRGMEZTV21qMUk2QklqVUp6M1FRTkN0bWN6V3UzdkMxYmZDMEc3YkR4Q0NvZlN1RTBtaldpaEl4bnptTkROc2k4NE1Zcm4zQUdKWEY4OHlnTFBqOFFwWTBLT0w5NmtROExoUWN5VUkw?oc=5\" target=\"_blank\">Phillies vs Braves EN VIVO: A qué hora y dónde VER Juego 3 de la Serie de Comodines Playoffs MLB 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MILENIO</font>",
       "fuente": "Beisbol",
       "categoria": "Deportes",
       "subcategoria": "beisbol",
@@ -375,7 +395,7 @@
     {
       "titulo": "Guillermo Ochoa recibirá homenaje con la Selección de México en Los Ángeles - AS México",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOd05ScU9KaTFaQ0JMRjd5TVFsNmVFbGtrNWRfN0Zhc3oycFNVRzlaZi1Nc01DalNmdm1GLVlvSzZhRDBNT1BBZUdxcUw1WDl1VDlHcGg3VFVINGJvTGFOZTdGdF94SlNtUWZFcU45S1llMm05Y3VDQV9pWVBUOXVET3V4N0tVbk1sMXpnT21CUnc0V1FYbmxoUHB1d2pEdkpZOVlidUYtc0poWXR5ZWh4aWE5WmE1d9IBygFBVV95cUxPNF9pUnRQWjdjeU81UnhGN0RJTGFCRFZLdnF6MnozZ09TS0hubmtYS0VSX0ZHTThPOWhjT2JKdjVzNWFGVnJxWWlkOGh0d19kbUZrUFlPeUUtdjV1dVRNMkVsS0RvSXlNUm1ibTRTOW5EcWZGQmI1alc0dFpTcm40cFpLa2RVaEFNRTBvaEp5VDFRTlFhQ01iUG4yYmNILUpIZzA4U0ZacGlQVVZPRi1EbDJ6dFNXUGIwYnBJUXQ2aXJqSGFucEk0dC1n?oc=5",
-      "imagen": "",
+      "imagen": "https://img.asmedia.epimg.net/resizer/v2/RB5JFJ4G5JKI5LVCD64WSKJVV4.jpg?auth=cae99e1f31acb6be9d6b54d6a3adaffebac58c098d135b68dd2b7835f9a7f933&width=1472&height=828&focal=2188%2C1010",
       "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxOd05ScU9KaTFaQ0JMRjd5TVFsNmVFbGtrNWRfN0Zhc3oycFNVRzlaZi1Nc01DalNmdm1GLVlvSzZhRDBNT1BBZUdxcUw1WDl1VDlHcGg3VFVINGJvTGFOZTdGdF94SlNtUWZFcU45S1llMm05Y3VDQV9pWVBUOXVET3V4N0tVbk1sMXpnT21CUnc0V1FYbmxoUHB1d2pEdkpZOVlidUYtc0poWXR5ZWh4aWE5WmE1d9IBygFBVV95cUxPNF9pUnRQWjdjeU81UnhGN0RJTGFCRFZLdnF6MnozZ09TS0hubmtYS0VSX0ZHTThPOWhjT2JKdjVzNWFGVnJxWWlkOGh0d19kbUZrUFlPeUUtdjV1dVRNMkVsS0RvSXlNUm1ibTRTOW5EcWZGQmI1alc0dFpTcm40cFpLa2RVaEFNRTBvaEp5VDFRTlFhQ01iUG4yYmNILUpIZzA4U0ZacGlQVVZPRi1EbDJ6dFNXUGIwYnBJUXQ2aXJqSGFucEk0dC1n?oc=5\" target=\"_blank\">Guillermo Ochoa recibirá homenaje con la Selección de México en Los Ángeles</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AS México</font>",
       "fuente": "Futbol",
       "categoria": "Deportes",
@@ -1546,7 +1566,7 @@
       "titulo": "La Jean Bouin acerca el atletismo a 200 niños y niñas en La Mar Bella - Mundo Deportivo",
       "descripcion": "La Jean Bouin acerca el atletismo a 200 niños y niñas en La Mar Bella Mundo Deportivo",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYWtJaHN4NGJRUUlKdEhlbjNlRHBTMVdHTXFYUXhyRFdkc2JydW5URkpCZ2dwWFRPVmF0NGZPMkNXaHVmSG1pSEhCSXlfS0Q1bF9SbmhzdFBYSXhmenBPMzZXXzNwbmZwbF81dmRmYW5oZkZ5elVpcHdVTjBGbU1zdlhRUkRHbkF0SFNiUDVKX3JnMzR6cUdDdTY2VmtrN0hJenhGSEZXYlFVZ1dkT183SkNvN2ZqamN6d28yUWhJWXE2SUNWa2ZHNExn0gHXAUFVX3lxTE40X0pJX1NyR05MdGZmNnd2MDhUWC12YVJ0QktLVHBUTkJma181T1dvUDhvbHlHTFIzaVJsOG5LR250NXU0bWlyNldNVDNBS3IxZTVUQ3pVdklDQWNyY0ZHakZyWWlkRnRKQTdUbmVhVzRHQ1VPUTV1Y21oMm0yQlNJbkxsRlN6Z1VtZ0I4NXhUSmpvRWpSc2oxbWFlLUphbzZqOTBEZVJCYVBtZ1N2THdxdlZXaEt6bWZUZnQwZDFCV3hPTzAySFpCVC1FTllKU01PY0Z1TWpB?oc=5",
-      "imagen": "",
+      "imagen": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/01/6abe5ec3939c9.jpeg",
       "fecha": "2026-10-01T13:30:00+00:00",
       "fuente": "Mundo Deportivo",
       "categoria": "Deportes",
@@ -2642,7 +2662,7 @@
       "titulo": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión - MARCA",
       "descripcion": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión MARCA",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUUJjbnpfY0FuUVVLY2hIS0wyVXZnYVg1YkJCeXFWbHJSamxtMER1WnNQRFF2clA5c1ZzWVgyTUNFOWxhUW1wRlBPaXNWSjU1TUZsZ2dlQ0JQWFg0b2lENHZXYTN3STA3T2ZsbWN6cXpqWlJKTTB0SEQxaHF4ZWlQYWdBRXJwZVZMYXVjUkc5WnZES2xOTERBdTZFNFoxUlpyX2lySnhmQ3F2SGtiUl9Wb2x6NmpjcHlZYWE4?oc=5",
-      "imagen": "",
+      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/01/6abd9e8a07bff.jpeg",
       "fecha": "2026-09-30T23:55:27+00:00",
       "fuente": "MARCA",
       "categoria": "Deportes",
