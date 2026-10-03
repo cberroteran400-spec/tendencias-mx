@@ -1,11 +1,41 @@
 {
-  "actualizado": "2026-10-02T23:44:13.521150+00:00",
-  "total": 698,
+  "actualizado": "2026-10-03T00:20:22.428357+00:00",
+  "total": 702,
   "imagenes": {
-    "con_imagen": 598,
-    "sin_imagen": 100
+    "con_imagen": 601,
+    "sin_imagen": 101
   },
   "noticias": [
+    {
+      "titulo": "Banxico cierra el programa de envío de remesas \"Directo a México\"; garantiza operaciones ordenadas",
+      "url": "https://expansion.mx/economia/2026/10/02/banxico-cierre-programa-directo-a-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/1e4e4cb/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe2%2Fc0%2F3f60f0004f1ca07c8effc0ef3c4c%2F5-banxico-gettyimages-1235707490.jpeg",
+      "descripcion": "El servicio mantendrá la continuidad de sus operaciones con normalidad para procesar y liquidar todas las transacciones que se realicen hasta el 20 de noviembre del presente año, informó el banco central mexicano.",
+      "fuente": "Expansión",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-03T00:13:58+00:00"
+    },
+    {
+      "titulo": "Bancos en México refuerzan prevención de lavado de dinero ante mayores exigencias de EU en combate a cárteles",
+      "url": "https://expansion.mx/economia/2026/10/02/bancos-en-mexico-refuerzan-prevencion-de-lavado-de-dinero-ante-mayores-exigencias-de-eu-en-combate-a-carteles",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5e8e3ab/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F67%2Fff%2F2bcec8db4a12a62cbf4b4f6a211a%2Fronald-johnson-embajador-estados-unidos-en-mexico.jpeg",
+      "descripcion": "\"Cuando les quitamos el dinero, les pegamos en el corazón de sus redes criminales”, dijo ante el sector bancario en septiembre pasado el embajador de Estados Unidos en México, Ronald Johnson.",
+      "fuente": "Expansión",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-03T00:00:32+00:00"
+    },
+    {
+      "titulo": "¿Qué pasó con Cristiano Ronaldo? Portugal planea perdón para que CR7 no se retire por polémica con Jorge Jesus - Reporte Indigo",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTElZcE9oNXNkc0FfTHRMQWV3dWZIQzBvVy1ldGZ1MzdobTMzR2gxQTdjQzJlNzlCLWNZMFZjLWJkeGg3MTlPRFVSbDNPSm5oM2lrR0J4RTNPSGU0MzN4eWtiQzBGWFhXaEZBRTg5Ul9VLUJhcVdSbjBOWU9IWXFlVmlua2dlS1ZkM3pIeXVKYjZfUV9aV2hNdE42Zmk0UU9kZ0RvTFllRG9jV18zRzZFczdmVjkzYUhDVkVPRlFJc2lDZVhzVm1ZemVkRER6TWc?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxQTElZcE9oNXNkc0FfTHRMQWV3dWZIQzBvVy1ldGZ1MzdobTMzR2gxQTdjQzJlNzlCLWNZMFZjLWJkeGg3MTlPRFVSbDNPSm5oM2lrR0J4RTNPSGU0MzN4eWtiQzBGWFhXaEZBRTg5Ul9VLUJhcVdSbjBOWU9IWXFlVmlua2dlS1ZkM3pIeXVKYjZfUV9aV2hNdE42Zmk0UU9kZ0RvTFllRG9jV18zRzZFczdmVjkzYUhDVkVPRlFJc2lDZVhzVm1ZemVkRER6TWc?oc=5\" target=\"_blank\">¿Qué pasó con Cristiano Ronaldo? Portugal planea perdón para que CR7 no se retire por polémica con Jorge Jesus</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Reporte Indigo</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-02T23:53:25+00:00"
+    },
     {
       "titulo": "Jonathan Aranda, egresado de la Academia de los Toros, de vuelta en la postemporada de MLB - Liga Mexicana de Beisbol",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeG9VODdqUzRxakN1WTVKRG5GRUE4UjJtNWJTVm8tNk05Y2x6ZDhOSVkzUVpfcmdFQmhXQXJfNDRzNzhrREZKWTNmcE41NDRWMWlaM1FhOEVGUkpacWlWRzJIYXpmbzZiRGdJTEZFVHFzUDNzY2xnVzRJNFRUWTRpVmJueHAzcnJ2a25sM3NaeTltQU5HVHRBcDdKUEhXZGFGZlhvdkNIVXZ1d1NxUUpldHB2UFZMVG8?oc=5",
@@ -115,6 +145,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-02T21:56:15+00:00"
+    },
+    {
+      "titulo": "Mbilli, próximo rival del Canelo, ve a Saúl Álvarez \"en decadencia\" - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUGtGV04wTk9ZNy04QmlmbGhJbUc0czdHVnRxTDY0ZGZUYWtkM1Jxb0QtdUhkOGhId1FlRUNzUlQ0TkM4elR3WW5La0RWbHdOR3k1V010SFptRldrVXdXOHBrZnJGazRWdTVxdl81Q0k0OG5adEMwamxZV3VYWl8wRGE2RTlnM29mTDFpZkFfTlFySEk0dWkwQQ?oc=5",
+      "imagen": "https://www.tudn.com/api/image/og/us/boxeo/christian-mbilli-proximo-rival-canelo-ve-a-saul-alvarez-decadencia",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxPUGtGV04wTk9ZNy04QmlmbGhJbUc0czdHVnRxTDY0ZGZUYWtkM1Jxb0QtdUhkOGhId1FlRUNzUlQ0TkM4elR3WW5La0RWbHdOR3k1V010SFptRldrVXdXOHBrZnJGazRWdTVxdl81Q0k0OG5adEMwamxZV3VYWl8wRGE2RTlnM29mTDFpZkFfTlFySEk0dWkwQQ?oc=5\" target=\"_blank\">Mbilli, próximo rival del Canelo, ve a Saúl Álvarez \"en decadencia\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-02T21:33:24+00:00"
     },
     {
       "titulo": "Adultos mayores se enfrentan a seguros de gastos médicos mayores más caros en México",
