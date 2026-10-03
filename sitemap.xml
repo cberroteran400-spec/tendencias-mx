@@ -2,75 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://cberroteran400-spec.github.io/tendencias-mx/</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <loc>https://cberroteran400-spec.github.io/tendencias-mx/index.html</loc>
   </url>
 
   <url>
     <loc>https://cberroteran400-spec.github.io/tendencias-mx/noticias.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://cberroteran400-spec.github.io/tendencias-mx/deportes.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://cberroteran400-spec.github.io/tendencias-mx/entretenimiento.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://cberroteran400-spec.github.io/tendencias-mx/tecnologia.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://cberroteran400-spec.github.io/tendencias-mx/dinero.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://cberroteran400-spec.github.io/tendencias-mx/politica.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cberroteran400-spec.github.io/tendencias-mx/mexico.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cberroteran400-spec.github.io/tendencias-mx/tendencias.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://cberroteran400-spec.github.io/tendencias-mx/tramites.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://cberroteran400-spec.github.io/tendencias-mx/preguntas.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://cberroteran400-spec.github.io/tendencias-mx/contacto.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://cberroteran400-spec.github.io/tendencias-mx/preguntas.html</loc>
   </url>
 
 </urlset>
