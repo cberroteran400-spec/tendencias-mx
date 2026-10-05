@@ -1,11 +1,41 @@
 {
-  "actualizado": "2026-10-05T22:13:44.580181+00:00",
-  "total": 999,
+  "actualizado": "2026-10-05T22:42:51.672772+00:00",
+  "total": 1005,
   "imagenes": {
-    "con_imagen": 671,
-    "sin_imagen": 328
+    "con_imagen": 674,
+    "sin_imagen": 331
   },
   "noticias": [
+    {
+      "titulo": "MLB - Exclusivas Puebla",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nblNVcmR6VkhkaklzbkIyUFQwS0JkWVoya0xuTFRvQzN4WlBIdTZEVm1aWl8xQ1NmTFRGZWZ6UFZ4cENUUFZQSEdHcnpEWk1RRlBJUjBQYlFMQ2VyUXBFekkyOVNfdF9zaElkdGFIdw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE9nblNVcmR6VkhkaklzbkIyUFQwS0JkWVoya0xuTFRvQzN4WlBIdTZEVm1aWl8xQ1NmTFRGZWZ6UFZ4cENUUFZQSEdHcnpEWk1RRlBJUjBQYlFMQ2VyUXBFekkyOVNfdF9zaElkdGFIdw?oc=5\" target=\"_blank\">MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Exclusivas Puebla</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-05T22:28:59+00:00"
+    },
+    {
+      "titulo": "Carlos Slim tiene el estacionamiento más grande de México: le gana al AICM, Estadio Azteca y Centro Santa Fe",
+      "url": "https://expansion.mx/empresas/2026/10/05/carlos-slim-estacionamiento-mas-grande-de-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5b379a7/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3a%2F76%2Fdaf47b5b4c8e82ccda6112eb0a57%2Fcarlos-slim-plaza-carso.jpg",
+      "descripcion": "El empresario construyó bajo tierra una enorme infraestructura para atender la demanda de visitantes de uno de sus desarrollos más emblemáticos.",
+      "fuente": "Roberto Trejo",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-05T22:24:03+00:00"
+    },
+    {
+      "titulo": "March y Kwid no son los únicos: estos autos nuevos cuestan menos de 300,000 pesos",
+      "url": "https://expansion.mx/empresas/2026/10/05/auto-nuevos-por-menos-de-300-000-pesos",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/e59d22d/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F06%2Fef%2F32459d264dba92b94c8c9000eac8%2Fagencia-seminuevos.jpeg",
+      "descripcion": "Varias marcas mantienen modelos nuevos dentro del presupuesto y algunas permiten mejorar seguridad, tecnología o transmisión sin rebasarlo.",
+      "fuente": "Josep Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-05T22:14:55+00:00"
+    },
     {
       "titulo": "⚾ ¡Juegazo! Así podrás VER EN VIVO el juego 2 entre Yankees vs Rays de la Serie Divisional MLB 🏟️ - facebook.com",
       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONkxOUFBCd1dETGJjV0lReDVQa2ZENWVkMTBfT2tYQ2xLQmRsb1ZSekl3b0VtcU9Gb0t0Y3dIa1JzWVZvTnRJUElfZXotZlcyaXBvbTFfa0RaeHkzRXZKbjI0VUJmOWRtbjJxeHdHOFVmYTM5dE9FeGdZNkFBMkZJUGlWNXNFQmNZSDd4SzFtMjZXZ2ZDOEh4WlAxN0MyNGg1S2FkRDVmU3ZHa2hUa09ySWJNcVI4UlZFeXhBOGN2YUQwNDhNYlNCVzVRVXJsakJTTTdod0gyNXRzNzBLYnBhRlFqTkRGMXpK?oc=5",
@@ -25,6 +55,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-05T22:04:46+00:00"
+    },
+    {
+      "titulo": "¿Qué empresas serán las más afectadas por la jornada de 40 horas y por qué tendrán que cambiar?",
+      "url": "https://expansion.mx/empresas/2026/10/05/jornada-40-horas-estrategia-empresas-cambios",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/8669748/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff2%2Fa9%2F4d90cd304eb7a0c980d54305096f%2Fempresas-cambio-jornada-laboral-40-horas.jpg",
+      "descripcion": "Siete de cada diez empresas admiten que no están listas para la reducción laboral. Especialistas revelan cómo la tecnología y la planeación de la demanda evitarán una crisis de costos.",
+      "fuente": "Dolores Luna",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-05T21:48:29+00:00"
     },
     {
       "titulo": "White Sox vs Guardians EN VIVO: A qué hora y dónde VER Juego 2 de la Serie Divisional de MLB 2026 - MILENIO",
@@ -195,6 +235,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-05T18:38:16+00:00"
+    },
+    {
+      "titulo": "México pierde jugadores para el cierre de la fecha FIFA - Sports Illustrated",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONlRYVXlsX0RueHFqYzFYMm9YMkZjYzhUY0JHMWx2dUZhdnREUFV3SXBWWlpFS1FFYWY0OGxjM256Zy1iTklydndoeHRibHU2MmYyV1NGdVRzWThEa1RiTkRVa3pEUTA4el9udmswdkduN0Zpa2dQZ2hBVW1Qd09Mbnh2X0lYMXBNN2h6Ry1BSzE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxONlRYVXlsX0RueHFqYzFYMm9YMkZjYzhUY0JHMWx2dUZhdnREUFV3SXBWWlpFS1FFYWY0OGxjM256Zy1iTklydndoeHRibHU2MmYyV1NGdVRzWThEa1RiTkRVa3pEUTA4el9udmswdkduN0Zpa2dQZ2hBVW1Qd09Mbnh2X0lYMXBNN2h6Ry1BSzE?oc=5\" target=\"_blank\">México pierde jugadores para el cierre de la fecha FIFA</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-05T18:36:32+00:00"
     },
     {
       "titulo": "La insólita cantidad de dinero que perdió Canelo Álvarez por apostar a favor de México contra Estados Unidos - Infobae",
@@ -2435,6 +2485,16 @@
       "categoria": "Deportes",
       "subcategoria": "formula1",
       "fecha": "2026-10-03T04:51:00+00:00"
+    },
+    {
+      "titulo": "¿Cuántas peleas le quedan al Canelo Álvarez como profesional, el mexicano lo revela TODO? (VIDEO) - La Razón de México",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaFJVX18wTjZIRzZOOTA0RklhNGNnak13aEVMSHU2cEhFaS1aQkx6VjFqZVZhbTZSTG82c045eEdGTExfZmtfY2FlR19hY0MyVWJLVkhXYmVyWS1KZ1pKUWFHS1EyamJLSUNIUTZCT0J5RklfRi1ObkVSZU9zb2hQUDY4bkZRNVpHNkVvNTF0RnFad25Iakt4OWVlUXJuTjZtWF9tcVZRS0ctRXdaemRqZVFMbi1DaW1BNzc4dlNOU2J6allkTkRTTENMTDY1LTZxamtrZA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaFJVX18wTjZIRzZOOTA0RklhNGNnak13aEVMSHU2cEhFaS1aQkx6VjFqZVZhbTZSTG82c045eEdGTExfZmtfY2FlR19hY0MyVWJLVkhXYmVyWS1KZ1pKUWFHS1EyamJLSUNIUTZCT0J5RklfRi1ObkVSZU9zb2hQUDY4bkZRNVpHNkVvNTF0RnFad25Iakt4OWVlUXJuTjZtWF9tcVZRS0ctRXdaemRqZVFMbi1DaW1BNzc4dlNOU2J6allkTkRTTENMTDY1LTZxamtrZA?oc=5\" target=\"_blank\">¿Cuántas peleas le quedan al Canelo Álvarez como profesional, el mexicano lo revela TODO? (VIDEO)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Razón de México</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-03T04:44:16+00:00"
     },
     {
       "titulo": "Canelo Álvarez revela cuántas peleas le quedan antes de retirarse del ring - Juanfutbol",
