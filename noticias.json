@@ -1,11 +1,31 @@
 {
-  "actualizado": "2026-10-05T22:42:51.672772+00:00",
-  "total": 1005,
+  "actualizado": "2026-10-05T23:12:20.837808+00:00",
+  "total": 1008,
   "imagenes": {
-    "con_imagen": 674,
-    "sin_imagen": 331
+    "con_imagen": 675,
+    "sin_imagen": 333
   },
   "noticias": [
+    {
+      "titulo": "¿Qué sabemos de la muerte de una trabajadora por neumonía en Siberia?",
+      "url": "https://expansion.mx/mundo/2026/10/05/muerte-trabajadora-neumonia-siberia-rusia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c99be10/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fad%2Fb6%2F55d9d7c54cc387d58fbb13b79eef%2Fafp-20261005-d29z363-v1-highres-russiahealthplague.jpg",
+      "descripcion": "La muerte ocurrió después de una hospitalización por neumonía grave, pero Rusia sostiene que hasta ahora no se ha confirmado que se trate de peste neumónica.",
+      "fuente": "Expansión Digital",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-05T22:52:15+00:00"
+    },
+    {
+      "titulo": "El Tri ‘noquea’ la cartera del Canelo: la fuerte apuesta que perdió el boxeador tras la derrota ante Estados Unidos - Grupo Marmor",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOS3dLZmNrU3RnWG4xSGhzUkMtTGZRckZkMzBqNDRCODNIcFhTWi1SMWI3SUVfNTJFWnhzNzBKUjNZWlh4aWs5RDBuRklIQmh3MmZUX0tESlBpSzRQMVZNbkUtV2FfYUFqQ1o0TGZzU200cVlHOC1ld0YzUEZDSUlJNi1nQnFQNXhHMUdRY2g0N21tOTE0QmRPSDdiNFRoeWZkSjh5UXlCbW84UEFfdUZ3NXNyTk05QTYzbGN6UV9hNzc1Q3RKQU93OFI3X08wb0dpSnA1NU1FRloxQ2FtZWhPenNGc29zZw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxOS3dLZmNrU3RnWG4xSGhzUkMtTGZRckZkMzBqNDRCODNIcFhTWi1SMWI3SUVfNTJFWnhzNzBKUjNZWlh4aWs5RDBuRklIQmh3MmZUX0tESlBpSzRQMVZNbkUtV2FfYUFqQ1o0TGZzU200cVlHOC1ld0YzUEZDSUlJNi1nQnFQNXhHMUdRY2g0N21tOTE0QmRPSDdiNFRoeWZkSjh5UXlCbW84UEFfdUZ3NXNyTk05QTYzbGN6UV9hNzc1Q3RKQU93OFI3X08wb0dpSnA1NU1FRloxQ2FtZWhPenNGc29zZw?oc=5\" target=\"_blank\">El Tri ‘noquea’ la cartera del Canelo: la fuerte apuesta que perdió el boxeador tras la derrota ante Estados Unidos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Grupo Marmor</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-05T22:49:43+00:00"
+    },
     {
       "titulo": "MLB - Exclusivas Puebla",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nblNVcmR6VkhkaklzbkIyUFQwS0JkWVoya0xuTFRvQzN4WlBIdTZEVm1aWl8xQ1NmTFRGZWZ6UFZ4cENUUFZQSEdHcnpEWk1RRlBJUjBQYlFMQ2VyUXBFekkyOVNfdF9zaElkdGFIdw?oc=5",
@@ -195,6 +215,16 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-05T19:07:54+00:00"
+    },
+    {
+      "titulo": "MLB Playoffs 2026: ¿Quién tiene la mayor ventaja de local? - ESPN Deportes",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd3VHczZzM0kyQnpPU0tNVTA5STM5ZlhCaXJtdWlER1VaU1B2dzBBRHpsOHR0Y29WNllNdC1Ec1ZGNklOdTZZZkFMMHRFb255ejFoVFpEU1NBcDJ5ZmJCQk1aS0Uza1V6NF9IRmdXY1J2WWV2b3JiZzc1cHl5ZUFGUUh0T0xyYkNaYmpwMmlIM1kxNlNYOU5pMG12YlNlNDUtVjlWN0VFbUQ4OEhVakFWZ2cwMkVZUFoxbGZCU0RTY2REQQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd3VHczZzM0kyQnpPU0tNVTA5STM5ZlhCaXJtdWlER1VaU1B2dzBBRHpsOHR0Y29WNllNdC1Ec1ZGNklOdTZZZkFMMHRFb255ejFoVFpEU1NBcDJ5ZmJCQk1aS0Uza1V6NF9IRmdXY1J2WWV2b3JiZzc1cHl5ZUFGUUh0T0xyYkNaYmpwMmlIM1kxNlNYOU5pMG12YlNlNDUtVjlWN0VFbUQ4OEhVakFWZ2cwMkVZUFoxbGZCU0RTY2REQQ?oc=5\" target=\"_blank\">MLB Playoffs 2026: ¿Quién tiene la mayor ventaja de local?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-05T19:00:00+00:00"
     },
     {
       "titulo": "White Sox vs. Guardians EN VIVO: ¿A qué hora y dónde ver Juego 2 Serie Divisional MLB 2026? - Mediotiempo",
