@@ -1,11 +1,31 @@
 {
-  "actualizado": "2026-10-06T16:16:11.785122+00:00",
-  "total": 1079,
+  "actualizado": "2026-10-06T16:47:33.984205+00:00",
+  "total": 1081,
   "imagenes": {
-    "con_imagen": 688,
-    "sin_imagen": 391
+    "con_imagen": 689,
+    "sin_imagen": 392
   },
   "noticias": [
+    {
+      "titulo": "México crecerá por debajo del promedio de América Latina en 2026, dice el Banco Mundial",
+      "url": "https://expansion.mx/economia/2026/10/06/el-salvador-paraguay-creceran-mas-mexico-2026-banco-mundial",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/2a4ec33/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F47%2F88%2Fd071ffaf48f49d2bb3d7f6f726ae%2Fmexico-crecimiento-economia-banco-mundial-2026.png",
+      "descripcion": "La economía mexicana crecerá 1.4% en 2026, detrás del índice regional de 2.2%, limitado por tasas altas, incertidumbre y menor impulso de la inversión pública. El Salvador y Paraguay crecerán más del triple.",
+      "fuente": "Expansión",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T16:29:34+00:00"
+    },
+    {
+      "titulo": "Un Checo Pérez competitivo en Singapur tras los destellos de su Cadillac F1 en Bahréin - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVlhoRnI3R1pyUmVMMWhLcWNRQ1dxdmZwYzRJVF9nRGQ2Wm9yQkpidGVWa2dkdlNEVVJVcXlJS1d2Nm1jSjZERlItaDA2VS1nQ1R5dHVFZWtSd0xGOUtteGF6c2NnZmlUX1lSZ29SMk1xSldVSUo1RTNFMDViZUNxSkZNOFB2NDZwRzZKUm5qbkZIcEZ5UmdhOU5EcDdTR2NhMXNwX25vUHVYdV9UcDA3c2VZOFdZNFNOV0Zn0gG7AUFVX3lxTE13OWM5WW81X3lmR3N0OFdBRVE2TlBqN0RXVEkydlZUM045eWQ1eUxrN0VFbjdMUTljTjM4eWFlWUk0TFJ0empVWFpZOTY0b0NNOHBpcGdkajdPTXViVHVqTTlhTktFYllibm51TU1RUDZyLV92Rm1HX3NjSWhfV1FVWkRtTHVxVHdKSjVNRGVCNVd6NlVza3I5UXdFT3czWGZiaktjVmFYbFg3Qm40czd1V1RuQV91QXByY1U?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVlhoRnI3R1pyUmVMMWhLcWNRQ1dxdmZwYzRJVF9nRGQ2Wm9yQkpidGVWa2dkdlNEVVJVcXlJS1d2Nm1jSjZERlItaDA2VS1nQ1R5dHVFZWtSd0xGOUtteGF6c2NnZmlUX1lSZ29SMk1xSldVSUo1RTNFMDViZUNxSkZNOFB2NDZwRzZKUm5qbkZIcEZ5UmdhOU5EcDdTR2NhMXNwX25vUHVYdV9UcDA3c2VZOFdZNFNOV0Zn0gG7AUFVX3lxTE13OWM5WW81X3lmR3N0OFdBRVE2TlBqN0RXVEkydlZUM045eWQ1eUxrN0VFbjdMUTljTjM4eWFlWUk0TFJ0empVWFpZOTY0b0NNOHBpcGdkajdPTXViVHVqTTlhTktFYllibm51TU1RUDZyLV92Rm1HX3NjSWhfV1FVWkRtTHVxVHdKSjVNRGVCNVd6NlVza3I5UXdFT3czWGZiaktjVmFYbFg3Qm40czd1V1RuQV91QXByY1U?oc=5\" target=\"_blank\">Un Checo Pérez competitivo en Singapur tras los destellos de su Cadillac F1 en Bahréin</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-06T16:24:09+00:00"
+    },
     {
       "titulo": "Guiño a México: Helinho sorprende entrenando con la playera de la Selección Mexicana - Infobae",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVlJYcnBqRmwyRVFDVnF2SHJUVEVoN2txb3NmRC1WMEszTjBIRkpveHdrNk55alNRbG1wZVA3QzdSNExoSGRocHd4RFJ3RW5JZ2laaFptc3V2SVJBTVlkd3FtVFpqX1lEUm1RMlAta1UySXZ5aXgzcHJVVU9kS3BoLXpYSjJNa09nbHlvWTRZODg1blAxUWtqdFlQRXB1cGdCd1UzaXpSS1JsM0NDV0tqS3k4ZXBqWmhoMEVVMGtrUGk5S2E10gHfAUFVX3lxTE1pZjRCWExEMU9tVFEtUE1kYk1LYml4bGNtSDJPQ1FaMHpUR2lwZmJUUVVPMFVPVkkwSDRaMHYwdVZ4SjluNWJEeGJQaEJlV0lGWnU1N2dlcXdaTjVPU3g5M0k2MWpKb0Q0aFRkUklzTkM0dE04TnNMUHNQLWtzbkk0S29CTVNDN19Qc3EyZG9uaVZOS2FLZndmSDQ0d1NKaGxfZUFwclN0RzY5TlExRWdoTFlVVGlWdEpMN29GbXAzYmN1OGwyVUE1UlhmanZYV2tZbFFjUDZWT29GNjNfU1k?oc=5",
