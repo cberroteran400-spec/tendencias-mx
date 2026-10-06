@@ -1,8 +1,8 @@
 {
-  "actualizado": "2026-10-06T22:13:34.006334+00:00",
-  "total": 1125,
+  "actualizado": "2026-10-06T22:44:16.527904+00:00",
+  "total": 1126,
   "imagenes": {
-    "con_imagen": 697,
+    "con_imagen": 698,
     "sin_imagen": 428
   },
   "noticias": [
@@ -65,6 +65,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-06T21:18:39+00:00"
+    },
+    {
+      "titulo": "Sanborns empezó como una farmacia en CDMX, Slim la compró en plena crisis y hoy es de las marcas más valiosas de México",
+      "url": "https://expansion.mx/empresas/2026/10/06/sanborns-historia-carlos-slim",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/f4553bd/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F7b%2F1b%2Ffc7e987b48119f269c6e18144612%2Fcarlos-slim-como-compro-sanborns-ok.jpg",
+      "descripcion": "La hoy famosa tienda departamental nació como una pequeña farmacia en el Porfiriato, se transformó en ícono urbano y hoy es pieza clave del imperio de Carlos Slim en el país.",
+      "fuente": "Roberto Trejo",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T21:08:53+00:00"
     },
     {
       "titulo": "México cierra la puerta a inversiones de riesgo, pero el nuevo filtro de 49% deja rendijas",
