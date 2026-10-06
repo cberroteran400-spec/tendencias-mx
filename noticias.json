@@ -1,11 +1,41 @@
 {
-  "actualizado": "2026-10-06T13:46:42.685578+00:00",
-  "total": 1064,
+  "actualizado": "2026-10-06T14:16:23.479668+00:00",
+  "total": 1067,
   "imagenes": {
-    "con_imagen": 684,
-    "sin_imagen": 380
+    "con_imagen": 685,
+    "sin_imagen": 382
   },
   "noticias": [
+    {
+      "titulo": "Desde la Antártida llega el Nobel de Física 2026: un enorme cubo de hielo captura a los mensajeros del universo",
+      "url": "https://expansion.mx/mundo/2026/10/06/nobel-fisica-francis-halzen-neutrinos-icecube",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/9d3968f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F49%2Fdf%2Ffbe9a17a444abefe50445e0570cf%2Fpremio-nobel-de-fisica-2026.jpg",
+      "descripcion": "Francis Halzen fue reconocido por impulsar IceCube, un observatorio instalado bajo el hielo de la Antártida que permitió rastrear el origen de partículas de altísima energía.",
+      "fuente": "Expansión Digital",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T14:03:54+00:00"
+    },
+    {
+      "titulo": "Los mejores medios y extremos izquierdos jóvenes para fichar en el modo carrera del EA Sports FC 27 - Sports Illustrated",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNLUZ2bUxKRHpHc3h1RGZNQUcxSEdKbjE4cF84SjJHMmhPelJMbzhsYkE3eHZGMFZfRDliSmt3ZWFhUDdQOUJldlczUWlJWWhfZTMzcVlzWXpUT0dTQ3FtSHRRS1d5R0lxQUlXVk9UNEFjTmxpcDl1N05XWEJxQ212dU9valI2ZnR6d05obEdSOFlVd1ZjYXlOWkdaTVpRcGlqa0htVk5JNVNtZUtVaVpicGJVZkFVUDB6WExSMGU3SFZqbWtFeURseVBoZw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxNLUZ2bUxKRHpHc3h1RGZNQUcxSEdKbjE4cF84SjJHMmhPelJMbzhsYkE3eHZGMFZfRDliSmt3ZWFhUDdQOUJldlczUWlJWWhfZTMzcVlzWXpUT0dTQ3FtSHRRS1d5R0lxQUlXVk9UNEFjTmxpcDl1N05XWEJxQ212dU9valI2ZnR6d05obEdSOFlVd1ZjYXlOWkdaTVpRcGlqa0htVk5JNVNtZUtVaVpicGJVZkFVUDB6WExSMGU3SFZqbWtFeURseVBoZw?oc=5\" target=\"_blank\">Los mejores medios y extremos izquierdos jóvenes para fichar en el modo carrera del EA Sports FC 27</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-06T14:02:47+00:00"
+    },
+    {
+      "titulo": "Los mejores centros delanteros jóvenes para fichar en el modo carrera del EA Sports FC 27 - Sports Illustrated",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcHBMQkl5TVBCVFdkYkR0clNUeS1sMm1CNXBPY0pqeHlWLTFBNVJGdmNnemc4dzlVdVh2SVBFZTVKSnJSZFMtQ1JROUJyTWxRMDlDUW5fMHNraW9wOTE5RVk4ZW9aMlhQbUxjaUJPZXdHaTdyNDFYVEw2VWxrY0NmbW9ySlBNUzd6ZXRMZXdYUmUxaE0zNEVfR1ZTakRlUlVMSWtkenVsQVljSWlISXg1UFp0Um4?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxNcHBMQkl5TVBCVFdkYkR0clNUeS1sMm1CNXBPY0pqeHlWLTFBNVJGdmNnemc4dzlVdVh2SVBFZTVKSnJSZFMtQ1JROUJyTWxRMDlDUW5fMHNraW9wOTE5RVk4ZW9aMlhQbUxjaUJPZXdHaTdyNDFYVEw2VWxrY0NmbW9ySlBNUzd6ZXRMZXdYUmUxaE0zNEVfR1ZTakRlUlVMSWtkenVsQVljSWlISXg1UFp0Um4?oc=5\" target=\"_blank\">Los mejores centros delanteros jóvenes para fichar en el modo carrera del EA Sports FC 27</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-06T13:25:52+00:00"
+    },
     {
       "titulo": "De la Hoya le exige a \"Canelo\" Álvarez pelear ante rivales de verdad - UNANIMO Deportes",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNS29aU2o2QzFjU2RoYWFhUVFySUFXczU4V21rb2tib1dIdERta1NKUU1NMnBJb1FQcGdYMFFLVXpNYnZ2czNJUmV1aTFTTjlvTHpVOU9rQk93R1pOWVpyZmNnUGpqVEZoOTVkdURFd2YwSmNrNXhvRkI2djVPOWd0eV9BMmxreDNOMkxVTTJMdEJvV3otSDBhSmY5UExTTmVZWWFPcHVleWM3bGl0Z0Fr?oc=5",
