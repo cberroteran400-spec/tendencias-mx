@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-06T00:52:23.082715+00:00",
-  "total": 1015,
+  "actualizado": "2026-10-06T01:14:30.899465+00:00",
+  "total": 1016,
   "imagenes": {
-    "con_imagen": 677,
+    "con_imagen": 678,
     "sin_imagen": 338
   },
   "noticias": [
+    {
+      "titulo": "Convocatoria UNAM: fechas, costo del examen y requisitos para ingresar a licenciatura",
+      "url": "https://expansion.mx/carrera/2026/10/05/convocatoria-unam-fechas-costo-examen-requisitos-ingresar",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/2609a7f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F2a%2F95%2Fc7c71bb54b8e91baa86c3eda486c%2Fdescarga-1.jpg",
+      "descripcion": "La Universidad Nacional abrió una nueva convocatoria para ingresar a licenciaturas del SUAyED; el registro comienza el 8 de octubre y el examen será en noviembre.",
+      "fuente": "Elizabeth Santiago",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T01:03:41+00:00"
+    },
     {
       "titulo": "Querétaro, Cancún y Los Cabos crecen, pero falta vivienda para sus trabajadores",
       "url": "https://expansion.mx/economia/2026/10/05/queretaro-cancun-cabos-crecen-pero-falta-vivienda",
