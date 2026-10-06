@@ -1,11 +1,31 @@
 {
-  "actualizado": "2026-10-06T03:14:00.654195+00:00",
-  "total": 1029,
+  "actualizado": "2026-10-06T03:46:22.706458+00:00",
+  "total": 1034,
   "imagenes": {
-    "con_imagen": 679,
-    "sin_imagen": 350
+    "con_imagen": 680,
+    "sin_imagen": 354
   },
   "noticias": [
+    {
+      "titulo": "Banco de México destaca respaldo del FMI y descarta alarma por depreciación del peso",
+      "url": "https://expansion.mx/economia/2026/10/05/omar-mejia-banxico-fmi-inflacion-2028",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/a981769/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe1%2F87%2F61e3b4224aa596ba978d6168b98f%2Fomar-mejia-banxico-bmv-inflacion-2028.jpg.jpg",
+      "descripcion": "El subgobernador Omar Mejía resaltó la confianza de organismos multilaterales, aunque el organismo prevé una convergencia más lenta de la inflación hacia la meta de 3% hasta 2028.",
+      "fuente": "Octavio Torres",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T03:25:59+00:00"
+    },
+    {
+      "titulo": "Todos los goles de Lionel Messi en su carrera - espn.com.mx",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMlFhSk05ZnJzMDFFeVpXRUVtTjNlU0RiSzhuQVdoa3AtaXNTNFpDSmwwZm9UQjFNT2luQ0tZWU5FX1dJMzhnVUllRHF4VkxGU3NNMzF6VUF6U0U2WDFMMUotWlRqdXNPMmhQVW1MbDhMSEh0RDd1RjlTWFMxYXgzN1oxX2R6eDYtWnJueEtQU0dMMVhFMjhEWjRZYXQwWmNOM2I2cQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQMlFhSk05ZnJzMDFFeVpXRUVtTjNlU0RiSzhuQVdoa3AtaXNTNFpDSmwwZm9UQjFNT2luQ0tZWU5FX1dJMzhnVUllRHF4VkxGU3NNMzF6VUF6U0U2WDFMMUotWlRqdXNPMmhQVW1MbDhMSEh0RDd1RjlTWFMxYXgzN1oxX2R6eDYtWnJueEtQU0dMMVhFMjhEWjRZYXQwWmNOM2I2cQ?oc=5\" target=\"_blank\">Todos los goles de Lionel Messi en su carrera</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">espn.com.mx</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-06T03:24:49+00:00"
+    },
     {
       "titulo": "El registro telefónico supera los 90 millones de líneas vinculadas",
       "url": "https://expansion.mx/empresas/2026/10/05/registro-telefonico-supera-90-millones-lineas-vinculadas",
@@ -15,6 +35,36 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-06T03:00:36+00:00"
+    },
+    {
+      "titulo": "¡Gol de Jamaica, tremendo bombazo de Campbell! - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaFByOXg0MU9VOUVJSm1yejRGb2hNczFidVM5dW5wSDBkT2E0TmdpZDlFbzVVMlpJZmk3TWllekludVI5VUE4ZmxGajVWLTdld0JJRUlPdENWTFozWUlFaHpZdGFXMzFZVFlmaFgxT0YxSjhIYVhNbjJFLURkS0h5ZTZEam9CVi1zTjBrZk1DN25raGNlUWJ3SDVuV1E3czR6?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOaFByOXg0MU9VOUVJSm1yejRGb2hNczFidVM5dW5wSDBkT2E0TmdpZDlFbzVVMlpJZmk3TWllekludVI5VUE4ZmxGajVWLTdld0JJRUlPdENWTFozWUlFaHpZdGFXMzFZVFlmaFgxT0YxSjhIYVhNbjJFLURkS0h5ZTZEam9CVi1zTjBrZk1DN25raGNlUWJ3SDVuV1E3czR6?oc=5\" target=\"_blank\">¡Gol de Jamaica, tremendo bombazo de Campbell!</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-06T02:31:24+00:00"
+    },
+    {
+      "titulo": "INICIA EL PARTIDO: Honduras vs Jamaica Nations League en vivo AQUÍ - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdXVpcmxidHZyNThZLUtZT1FmQ1ZkREEtcmVIVzl2TlE5b1QzZEY2UFpwUGc5RXlMM2QyWGpwSEJaV0JocDlqMlRWSXRHX2VOWUNoWnFmSVNkaTF3Y2ZMNVRLd0FtS0ladEJGSFozTkcwRXBEM1dvbTd2dkNZMWoxRlpCcW00WklEaVN4amFmZmtzMjdWU1lPZDlDQVJKaUR5cWFfcl9TNUVwWWM5MWpGd1J5VWxzX0pNUFBkeXBn?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxPdXVpcmxidHZyNThZLUtZT1FmQ1ZkREEtcmVIVzl2TlE5b1QzZEY2UFpwUGc5RXlMM2QyWGpwSEJaV0JocDlqMlRWSXRHX2VOWUNoWnFmSVNkaTF3Y2ZMNVRLd0FtS0ladEJGSFozTkcwRXBEM1dvbTd2dkNZMWoxRlpCcW00WklEaVN4amFmZmtzMjdWU1lPZDlDQVJKaUR5cWFfcl9TNUVwWWM5MWpGd1J5VWxzX0pNUFBkeXBn?oc=5\" target=\"_blank\">INICIA EL PARTIDO: Honduras vs Jamaica Nations League en vivo AQUÍ</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-06T02:03:24+00:00"
+    },
+    {
+      "titulo": "INICIA EL PARTIDO: Honduras vs Jamaica Nations League en vivo AQUÍ - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMHVGU0tKYzJaU3VDRWU2NkpSTzBnVkx6OXozalN2QzRJYUZKYXM0dDFNUThadC1kWXUxejc1emF1YkFnaGZBem1lT281NU1icWNyYkVFV0pCYVhxZ0p4b3hENjJLdVdPOTc0ZmxISlNhaVBRZE5JZl9QbUlaRko2c0pjV0tISkxiME5HSEE5WFI4dXp6U1oyWF9hWlNfdXZ1X3cyRUVTXzU4TXNxcWxWWDBpNmMxZnNhYmJodEh0YmlVVGxodVE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOMHVGU0tKYzJaU3VDRWU2NkpSTzBnVkx6OXozalN2QzRJYUZKYXM0dDFNUThadC1kWXUxejc1emF1YkFnaGZBem1lT281NU1icWNyYkVFV0pCYVhxZ0p4b3hENjJLdVdPOTc0ZmxISlNhaVBRZE5JZl9QbUlaRko2c0pjV0tISkxiME5HSEE5WFI4dXp6U1oyWF9hWlNfdXZ1X3cyRUVTXzU4TXNxcWxWWDBpNmMxZnNhYmJodEh0YmlVVGxodVE?oc=5\" target=\"_blank\">INICIA EL PARTIDO: Honduras vs Jamaica Nations League en vivo AQUÍ</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-06T02:03:24+00:00"
     },
     {
       "titulo": "MLB: Medias Blancas vence por la mínima a Cleveland y está a un juego de la Serie de Campeonato - lineadirectaportal.com",
