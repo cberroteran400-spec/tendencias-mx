@@ -1,11 +1,51 @@
 {
-  "actualizado": "2026-10-06T12:17:23.859520+00:00",
-  "total": 1059,
+  "actualizado": "2026-10-06T12:50:19.379371+00:00",
+  "total": 1063,
   "imagenes": {
-    "con_imagen": 680,
+    "con_imagen": 684,
     "sin_imagen": 379
   },
   "noticias": [
+    {
+      "titulo": "Nuestra próxima tasa de interés podría decidirla un algoritmo",
+      "url": "https://expansion.mx/opinion/2026/10/06/nuestra-proxima-tasa-de-interes-podria-decidirla-un-algoritmo",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/9e212fb/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fmedia%2F2011%2F08%2F12%2Fespeculador-inversion-bolsa-indice.jpg",
+      "descripcion": "La inteligencia artificial permitirá a los bancos calcular mejor el riesgo de cada cliente, pero también abre una pregunta: ¿podremos saber por qué nos cobran una determinada tasa?",
+      "fuente": "Manuel Herrejón Suárez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T11:59:45+00:00"
+    },
+    {
+      "titulo": "La manufactura frente a una demanda que ya no espera",
+      "url": "https://expansion.mx/opinion/2026/10/06/la-manufactura-frente-a-una-demanda-que-ya-no-espera",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/426b2f4/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F9c%2Fcb%2F8352993a45a5ad2f8aa2f5deeb60%2Fla-automatizacion-de-las-fabricas-empieza-con-datos-no-con-robots.jpg",
+      "descripcion": "La capacidad de los proveedores será determinante para que las empresas mexicanas puedan aprovechar nuevas oportunidades en las cadenas globales de manufactura.",
+      "fuente": "José Ambe",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T11:59:23+00:00"
+    },
+    {
+      "titulo": "El efectivo vuelve invisible a las pymes y les cierra la puerta al crédito",
+      "url": "https://expansion.mx/economia/2026/10/06/pagos-digitales-efectivo-pymes-credito-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/6f6d960/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb4%2Fda%2F0acfa488436c81169ffcfe4f3317%2Fpagos-digitales-pymes-credito-mexico.jpg.jpeg",
+      "descripcion": "Digitalizar pagos, cobros y tesorería genera una huella financiera que ayuda a las instituciones a medir el riesgo de una pyme y facilitar su acceso al crédito.",
+      "fuente": "Octavio Torres",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T11:55:17+00:00"
+    },
+    {
+      "titulo": "La IA da consulta antes que el doctor y gana terreno ante el alto costo de la atención médica",
+      "url": "https://expansion.mx/tecnologia/2026/10/06/ia-consultar-sintomas-riesgos-antes-de-ir-al-medico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/2561527/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F78%2F7e%2Fc1b84da94308a4d5d52d61541499%2Fgemini-generated-image-c9s0grc9s0grc9s0.jpg",
+      "descripcion": "En México, 23% de los pacientes ya recurre a plataformas de IA para informarse sobre salud, pero sus respuestas pueden contener errores y no sustituyen al médico.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T11:55:01+00:00"
+    },
     {
       "titulo": "Croacia vs España: previa, predicciones y alineaciones - Sports Illustrated",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOc0xGWS0zanZRenh6ZjdBOUFLdExDdmtJWmpXUXMzbDJqTjZRTURNZ3lldFg5LU1jcWotYzdiTDNUVjBoZGdfOGMyZjZLeXRxYWM3VTdlTkhUb3dEWXRJUWdLUXJESGpJMkF4SWo5ODA0WEpWWXFQM3UtV0R3cy1PdzRHS3lTeHl1cWgxQjBFQXVvdXNGam5MWnh3?oc=5",
