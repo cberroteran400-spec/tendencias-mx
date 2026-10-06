@@ -1,11 +1,51 @@
 {
-  "actualizado": "2026-10-06T17:13:27.131486+00:00",
-  "total": 1083,
+  "actualizado": "2026-10-06T17:45:48.316918+00:00",
+  "total": 1087,
   "imagenes": {
-    "con_imagen": 690,
-    "sin_imagen": 393
+    "con_imagen": 691,
+    "sin_imagen": 396
   },
   "noticias": [
+    {
+      "titulo": "Amazon abre más de 11,000 empleos temporales en México para fin de año",
+      "url": "https://expansion.mx/tecnologia/2026/10/06/amazon-abre-11-000-empleos-temporales-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/d24aa98/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F7c%2Ff3%2Fc6f16e8645a69857be6c5282f5a1%2Famazon-centro-distribucion-empleos-temporales-mexico-2026.jpg",
+      "descripcion": "La tecnológica contratará 37.5% más trabajadores temporales que el año pasado para reforzar su operación logística durante la temporada de mayor demanda.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T17:30:02+00:00"
+    },
+    {
+      "titulo": "Arsenal, decidido a 'actuar con más agresividad' para sumar a Gilberto Mora; 'goza de la estima de Arteta', reporta prensa - Mediotiempo",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPX1FENnkwaWY2MTRnRC1RNlQtUnZVb19TNk5hYm1IOVFVcTZYaGRnNEE1aGF6VFY4YlkxY1dvYmVibkdzY3g1Rl9zUHFzSzFxS1FuWjdQa2owRTVVcUQxSGdJaFBxRHRRSWk4MHdhMzcyejlqUFh2N09CUEg1YjhFZU9UQk5CcmoxeGh4YWlrejFLbkppUC1YZkl0RHQtSkNfNmJGcmFMM0fSAagBQVVfeXFMTWxyYTRodjhOQkVFUngyMUFvRXBhbzNVQ28ydFdlTUtZRThMdWdhMzFWTllXVHZMM3VBWWJWRUFvRUpLQk1EWjBRckRzMGlTNFpiZkhBTm5NZjVfQktxeklnQmpkVjk2WWJIUWZMZEdycnV5NVJRb1RXbTR6X0QzeGsxVFVfbkZQZEp5TGh6MVFBR1YyNDVEOFA3aTFlYkJ3eHFlQl9ISEhf?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPX1FENnkwaWY2MTRnRC1RNlQtUnZVb19TNk5hYm1IOVFVcTZYaGRnNEE1aGF6VFY4YlkxY1dvYmVibkdzY3g1Rl9zUHFzSzFxS1FuWjdQa2owRTVVcUQxSGdJaFBxRHRRSWk4MHdhMzcyejlqUFh2N09CUEg1YjhFZU9UQk5CcmoxeGh4YWlrejFLbkppUC1YZkl0RHQtSkNfNmJGcmFMM0fSAagBQVVfeXFMTWxyYTRodjhOQkVFUngyMUFvRXBhbzNVQ28ydFdlTUtZRThMdWdhMzFWTllXVHZMM3VBWWJWRUFvRUpLQk1EWjBRckRzMGlTNFpiZkhBTm5NZjVfQktxeklnQmpkVjk2WWJIUWZMZEdycnV5NVJRb1RXbTR6X0QzeGsxVFVfbkZQZEp5TGh6MVFBR1YyNDVEOFA3aTFlYkJ3eHFlQl9ISEhf?oc=5\" target=\"_blank\">Arsenal, decidido a 'actuar con más agresividad' para sumar a Gilberto Mora; 'goza de la estima de Arteta', reporta prensa</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-06T17:29:00+00:00"
+    },
+    {
+      "titulo": "Óscar de la Hoya manda contundente exigencia a Canelo Álvarez: “Esa no es la manera de retirarte” - Infobae",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdlZOT2dLN3RBNHpseGt6S1luWmdRLXcwNVdyVFRkSlN1MjFCWWtXSmF0VWNCR0V0RGgyTEtSNERBSXM0M3FGdnBvMkVxVkl2blJRRWJnWGRJOUdiekN4TUZNOEFBMU9vNUlzbVVrWnNudXZnMjB6emRDRXZVWjZQWHdVbFgyV0lpLVUzZXhtdzFIT3VraWxXVFJQQ1lCYl83S1lIZVRpMUd6YUdpWG1POTA1ekZBcFlXakVtaWtjMDJWVFRKcEhWd0xLdzIzX3RUcl9VamZPSy1FQXN3Vkcw0gH6AUFVX3lxTE9fV1EzMlVWMWhiaFIzdE40UDVUY0RMX1NMRk5iSUtLX05UYVQ4aHJPU3Y5QTZwVnpwLUlvclZFekxRUk9oNkRvbzhtTTd0WkFTaUoyRFZDc0pUbnBXYk50dEJJZXJLMThLYjdJWktjRnNPMGJKS1VVLUh1OWdSai1ma1Y3ZzlVUG50V3pjb0RGQWYxWVdMMUNaTjZXTDVab2FyTXJhY1dFbU94X2ZsWVl4clhYRFJOVUJXbnhXN08zOE5VakhPYmtEeTZJWmx4aWlrb2lRVl9VTlI2TTBHN1BjVUV4SGhOY0hDbHc4cS1qaV9nOWZKYnlUWkE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdlZOT2dLN3RBNHpseGt6S1luWmdRLXcwNVdyVFRkSlN1MjFCWWtXSmF0VWNCR0V0RGgyTEtSNERBSXM0M3FGdnBvMkVxVkl2blJRRWJnWGRJOUdiekN4TUZNOEFBMU9vNUlzbVVrWnNudXZnMjB6emRDRXZVWjZQWHdVbFgyV0lpLVUzZXhtdzFIT3VraWxXVFJQQ1lCYl83S1lIZVRpMUd6YUdpWG1POTA1ekZBcFlXakVtaWtjMDJWVFRKcEhWd0xLdzIzX3RUcl9VamZPSy1FQXN3Vkcw0gH6AUFVX3lxTE9fV1EzMlVWMWhiaFIzdE40UDVUY0RMX1NMRk5iSUtLX05UYVQ4aHJPU3Y5QTZwVnpwLUlvclZFekxRUk9oNkRvbzhtTTd0WkFTaUoyRFZDc0pUbnBXYk50dEJJZXJLMThLYjdJWktjRnNPMGJKS1VVLUh1OWdSai1ma1Y3ZzlVUG50V3pjb0RGQWYxWVdMMUNaTjZXTDVab2FyTXJhY1dFbU94X2ZsWVl4clhYRFJOVUJXbnhXN08zOE5VakhPYmtEeTZJWmx4aWlrb2lRVl9VTlI2TTBHN1BjVUV4SGhOY0hDbHc4cS1qaV9nOWZKYnlUWkE?oc=5\" target=\"_blank\">Óscar de la Hoya manda contundente exigencia a Canelo Álvarez: “Esa no es la manera de retirarte”</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Infobae</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-06T17:20:42+00:00"
+    },
+    {
+      "titulo": "Rivales de México para noviembre: Jamaica en Nations League - 365Scores",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5fT09IRGNKWnlMNVczMEJVSXJBSGdCazUyQlVDMzBpR1IxU0JMbjVlZ0VtVWhPdGlvc1g4OWtVbmRBNmdwa0dlNmcwZlpxY1hyRnEyaHlFUGJkRXk4SzVqMTlHbkcyclJiZkFRWEZMeWd6VzZTa1E?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE5fT09IRGNKWnlMNVczMEJVSXJBSGdCazUyQlVDMzBpR1IxU0JMbjVlZ0VtVWhPdGlvc1g4OWtVbmRBNmdwa0dlNmcwZlpxY1hyRnEyaHlFUGJkRXk4SzVqMTlHbkcyclJiZkFRWEZMeWd6VzZTa1E?oc=5\" target=\"_blank\">Rivales de México para noviembre: Jamaica en Nations League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">365Scores</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-06T16:54:02+00:00"
+    },
     {
       "titulo": "LuxuryLab Global marca las tendencias de la industria del lujo",
       "url": "https://expansion.mx/tendencias/2026/10/06/luxurylab-global-marca-las-tendencias-de-la-industria-del-lujo",
