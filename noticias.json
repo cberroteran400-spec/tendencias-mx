@@ -1,11 +1,61 @@
 {
-  "actualizado": "2026-10-06T02:46:05.247234+00:00",
-  "total": 1020,
+  "actualizado": "2026-10-06T03:14:00.654195+00:00",
+  "total": 1029,
   "imagenes": {
-    "con_imagen": 678,
-    "sin_imagen": 342
+    "con_imagen": 679,
+    "sin_imagen": 350
   },
   "noticias": [
+    {
+      "titulo": "El registro telefónico supera los 90 millones de líneas vinculadas",
+      "url": "https://expansion.mx/empresas/2026/10/05/registro-telefonico-supera-90-millones-lineas-vinculadas",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/e355e4f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F92%2F6e%2Fd5ed2dd64e75a254e14fc5ed304c%2Fimg-9427.jpeg",
+      "descripcion": "El avance incorpora el último corte después de que venció el plazo para las líneas cuyo número telefónico termina en 3.",
+      "fuente": "Expansión",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-06T03:00:36+00:00"
+    },
+    {
+      "titulo": "MLB: Medias Blancas vence por la mínima a Cleveland y está a un juego de la Serie de Campeonato - lineadirectaportal.com",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPejAtR005SUN0a0E4TC1zR0xwcDJTQVV1VFhhbmhjRV9KRDdFaThTMmhWRk5zeGRSQmd3NzItcmZISU5CaFNLSE1iVzg0NTE2LTI0bENmdmpaNUdOeWMxaVdjVzM4Q2lPRG81S0pXWWhFZWZWaUIxNjNDSVdMemJ1Z0VIemgtN1pxMEYtU25xTXdscGY2eEV0OHBpYTljTzJyVVk4RlJCTnZqWVMtYlpOVTZjV0VDQ3NmUlZkWUsxWnhKWnpEUXFlQVpRWUZqajRIQ3FhQV9xR0RCR3lOUHN6UXZPUUNYSTJkU2c?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxPejAtR005SUN0a0E4TC1zR0xwcDJTQVV1VFhhbmhjRV9KRDdFaThTMmhWRk5zeGRSQmd3NzItcmZISU5CaFNLSE1iVzg0NTE2LTI0bENmdmpaNUdOeWMxaVdjVzM4Q2lPRG81S0pXWWhFZWZWaUIxNjNDSVdMemJ1Z0VIemgtN1pxMEYtU25xTXdscGY2eEV0OHBpYTljTzJyVVk4RlJCTnZqWVMtYlpOVTZjV0VDQ3NmUlZkWUsxWnhKWnpEUXFlQVpRWUZqajRIQ3FhQV9xR0RCR3lOUHN6UXZPUUNYSTJkU2c?oc=5\" target=\"_blank\">MLB: Medias Blancas vence por la mínima a Cleveland y está a un juego de la Serie de Campeonato</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">lineadirectaportal.com</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-06T01:39:45+00:00"
+    },
+    {
+      "titulo": "MLB: Carlos Peña realiza el lanzamiento de honor con los Rays - debate.com.mx",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeU1kaDJFcll0Z29rQXVqbjBOeHFmRjVsdU9Cb0pOd2RXWUt5dWNGMnlUVUxlbDJQOHZScnU3VGIxNW5iX0kzeWN3bl9xbGZrZjRpMVV2OVYzQ2hlMHhPZ0kwOXJMaUFrZWVncjJVOE1pTmpvNDNnUVBNcnhlNVA0OWVRS0dtQ1c4dDJjbGxoeFh2Vlc4LVVxbG8yM0hZYVVRZ1p2clF0OTZWWHV2RWVpQnhONDY?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPeU1kaDJFcll0Z29rQXVqbjBOeHFmRjVsdU9Cb0pOd2RXWUt5dWNGMnlUVUxlbDJQOHZScnU3VGIxNW5iX0kzeWN3bl9xbGZrZjRpMVV2OVYzQ2hlMHhPZ0kwOXJMaUFrZWVncjJVOE1pTmpvNDNnUVBNcnhlNVA0OWVRS0dtQ1c4dDJjbGxoeFh2Vlc4LVVxbG8yM0hZYVVRZ1p2clF0OTZWWHV2RWVpQnhONDY?oc=5\" target=\"_blank\">MLB: Carlos Peña realiza el lanzamiento de honor con los Rays</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">debate.com.mx</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-06T01:29:06+00:00"
+    },
+    {
+      "titulo": "Dodgers y Brewers vuelven a saltar a la escena: ¿Cuándo y dónde ver el juego 3 de los playoffs de la MLB - oem.com.mx",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOMERPOE9hWFZDbWVQU0Q4dGM4V2JqTHhpZm1tWjNoQ3JwVGVrbHJCbGVYaUlhMGgybXBaeHdWc19GZGVlVDBrdjU2cmlNSUlBWl9hWUlpU29pRTBlQ3Q0bjNrS055SGtBaFdBdGZqYUhXdkhEa1Z6bmVvcTRncTRKUjc0YzF2TkZ1TDZqeUt3MEtCdENvaWlvUVE0OHl3UGo2eWxCa3Rzb2x2RTlQTThIOFlEZUpNaXFVZlBHQjNuRGp6ZEV0eWR6M0lJR3NkNHg3dElDdDdTdkNkbWlDdHg3UWJnWmdZeTRSeWtKSGJiTC15NGJva0Q3MVNXUFNPZXdGam9jTw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxOMERPOE9hWFZDbWVQU0Q4dGM4V2JqTHhpZm1tWjNoQ3JwVGVrbHJCbGVYaUlhMGgybXBaeHdWc19GZGVlVDBrdjU2cmlNSUlBWl9hWUlpU29pRTBlQ3Q0bjNrS055SGtBaFdBdGZqYUhXdkhEa1Z6bmVvcTRncTRKUjc0YzF2TkZ1TDZqeUt3MEtCdENvaWlvUVE0OHl3UGo2eWxCa3Rzb2x2RTlQTThIOFlEZUpNaXFVZlBHQjNuRGp6ZEV0eWR6M0lJR3NkNHg3dElDdDdTdkNkbWlDdHg3UWJnWmdZeTRSeWtKSGJiTC15NGJva0Q3MVNXUFNPZXdGam9jTw?oc=5\" target=\"_blank\">Dodgers y Brewers vuelven a saltar a la escena: ¿Cuándo y dónde ver el juego 3 de los playoffs de la MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">oem.com.mx</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-06T01:06:33+00:00"
+    },
+    {
+      "titulo": "¿Regaló el juego? Cerrador de Padres habría delatado pitcheo en la derrota ante Brewers - mediotiempo.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZjZiekJSR3ZKZUpfcVdkd2pYZUlWVlhqcVd4QTYzT0xodU5MUWRTV1MwTzNaalpqVU9aQnI0RzJia3A5X3lTRVZncHUxVXhTcFh5M2Y1LTZrLXVuTGhaWVJyQkY2VUU4SjBYTWVyNDB4MzNKZ1BEaVdtT01uOU9HVmhxazBpWHVmMlMtbHZBd1VyTENPNGVicFFGX3kya0dlZnQ1RGFlWnk4YUlpQ0hBdU5iSkV0TG9sMUHSAboBQVVfeXFMT0Y1b1lMVm1yeGpFSUVOV1BCZ1pUdzNoTzdLQ1F3eGVyanotQ1lxbVl6azREekZDX2pqSlVuYllLNmxzcjNJQVM5b3EyTVFCQk0tTWlCZm1TTjRaa3JJY3dBcHh0T2FOd29XS1YyVUtuakRuR3NBWjdvZTNMSWxyTDFjbUExV2lEck4tWHBuWXRodXpXV1V1RmlmSDBlOURQSElZLVp2RE1fN0k3SGRZMmpQTTduaTgxSUdR?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxPZjZiekJSR3ZKZUpfcVdkd2pYZUlWVlhqcVd4QTYzT0xodU5MUWRTV1MwTzNaalpqVU9aQnI0RzJia3A5X3lTRVZncHUxVXhTcFh5M2Y1LTZrLXVuTGhaWVJyQkY2VUU4SjBYTWVyNDB4MzNKZ1BEaVdtT01uOU9HVmhxazBpWHVmMlMtbHZBd1VyTENPNGVicFFGX3kya0dlZnQ1RGFlWnk4YUlpQ0hBdU5iSkV0TG9sMUHSAboBQVVfeXFMT0Y1b1lMVm1yeGpFSUVOV1BCZ1pUdzNoTzdLQ1F3eGVyanotQ1lxbVl6azREekZDX2pqSlVuYllLNmxzcjNJQVM5b3EyTVFCQk0tTWlCZm1TTjRaa3JJY3dBcHh0T2FOd29XS1YyVUtuakRuR3NBWjdvZTNMSWxyTDFjbUExV2lEck4tWHBuWXRodXpXV1V1RmlmSDBlOURQSElZLVp2RE1fN0k3SGRZMmpQTTduaTgxSUdR?oc=5\" target=\"_blank\">¿Regaló el juego? Cerrador de Padres habría delatado pitcheo en la derrota ante Brewers</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">mediotiempo.com</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-06T01:04:00+00:00"
+    },
     {
       "titulo": "Convocatoria UNAM: fechas, costo del examen y requisitos para ingresar a licenciatura",
       "url": "https://expansion.mx/carrera/2026/10/05/convocatoria-unam-fechas-costo-examen-requisitos-ingresar",
@@ -65,6 +115,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-05T23:50:53+00:00"
+    },
+    {
+      "titulo": "¿Por qué el Barcelona-Real Madrid aún no es verdadera rivalidad en el futbol femenino? - Sports Illustrated",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVkViblB6Q3BvTi1WeWF0TXpVTDk3c3JDWmtTN1ZldjZMSmx0czU1V0lWSW5rR0FjN2ZrRmR3ZFRRMlYxdldFNXl5NWdIUmlZUUdiMVdDMVNwV3JISS1xOVRxMlBtTmxGcUJ1bDdwMDZaSXQ5cEJITWZ1eXgwa0FoanFoZnIwSi1NUF9sVE1yUURTbnBkdGVnVVUxY1hZTW0ta0RMd293WDlYZmpEaDZPc25JV0ZxSjRwOEMzT0dR?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQVkViblB6Q3BvTi1WeWF0TXpVTDk3c3JDWmtTN1ZldjZMSmx0czU1V0lWSW5rR0FjN2ZrRmR3ZFRRMlYxdldFNXl5NWdIUmlZUUdiMVdDMVNwV3JISS1xOVRxMlBtTmxGcUJ1bDdwMDZaSXQ5cEJITWZ1eXgwa0FoanFoZnIwSi1NUF9sVE1yUURTbnBkdGVnVVUxY1hZTW0ta0RMd293WDlYZmpEaDZPc25JV0ZxSjRwOEMzT0dR?oc=5\" target=\"_blank\">¿Por qué el Barcelona-Real Madrid aún no es verdadera rivalidad en el futbol femenino?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-05T23:24:06+00:00"
     },
     {
       "titulo": "Saúl \"Canelo\" Álvarez pierde miles de dólares tras apostar por la Selección Mexicana - quintafuerza.mx",
@@ -207,6 +267,16 @@
       "fecha": "2026-10-05T20:38:21+00:00"
     },
     {
+      "titulo": "El Salvador no puede con Martinica y confirma su descenso a la Liga B - Claro Sports",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNM1cxSWVFNXE0NVZqbGliWXhTMDNVeFg1dm51Y0RSNnZlSkZJQU42bTF0ZVM1alhyZTRXN0xERDZFaFBIUTZwblBjM3NjZDh5bUhNNjdSZDJzblY3aWozRkM2d2o2OUo3dFBIeVgyZE5GS3lLdlIxLWRTNmVSMDBTWHMxeF9lYVVicXA1YWVwRExfWnctMzhlM3dDbXJpWjgxV3VJU18wWVl2NnpfZVRVaTAxdk81RURoTUN6d3kzS19uUnhfVExoLWFxYVFibFk0SHB0cHhlMFgwX2NocWVnYTcwVVBlXzRUQ3U3Q09zM2daX2l1WHZoOHhtTThJM0RLaE05aA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxNM1cxSWVFNXE0NVZqbGliWXhTMDNVeFg1dm51Y0RSNnZlSkZJQU42bTF0ZVM1alhyZTRXN0xERDZFaFBIUTZwblBjM3NjZDh5bUhNNjdSZDJzblY3aWozRkM2d2o2OUo3dFBIeVgyZE5GS3lLdlIxLWRTNmVSMDBTWHMxeF9lYVVicXA1YWVwRExfWnctMzhlM3dDbXJpWjgxV3VJU18wWVl2NnpfZVRVaTAxdk81RURoTUN6d3kzS19uUnhfVExoLWFxYVFibFk0SHB0cHhlMFgwX2NocWVnYTcwVVBlXzRUQ3U3Q09zM2daX2l1WHZoOHhtTThJM0RLaE05aA?oc=5\" target=\"_blank\">El Salvador no puede con Martinica y confirma su descenso a la Liga B</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Claro Sports</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-05T20:29:19+00:00"
+    },
+    {
       "titulo": "White Sox y Guardians, una rivalidad ligada a la historia de MLB - ESPN México",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbkJyTHhnZVVnUTNyd0ZvOVpmeGVLNVExRER2ekZkYjdCcUVlSnZHTG9ESUtfdWNOelZ3SW1tTS1JOFA1UUpuSjRMOEJESFpmQm5BZFh4WkU5MGU5SHp3MGU4X011Z1lIYXI5b0RaUGo3RWNWb2Z4bkhzdW9KQUVadllBU2pfVkdzNXJYZktUeWgxWEtOdUg5anRYYlB2UnJBT0tvZ2NGc2tJTl9BRWZLOFcyOXcyc0JQZnZHWlVsZw?oc=5",
       "imagen": "",
@@ -275,6 +345,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-05T19:34:14+00:00"
+    },
+    {
+      "titulo": "White Sox y Guardians, una rivalidad ligada a la historia de MLB - ESPN Deportes",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQa2o2QW5fR2FzQjNSU3V4c3RfU1dKOEhXYlFrMVFKa2xtUVUwZ0YzU2t3ZkR1bE05M0JsVTNRUEdYZXNSQXRxSmYwbmJoZnBfZ2k3RE9sdk1TcElnQWNrQV9yMHNDMGl3cDJtTEpKd1VELTdYWjdFcWJFMWplMGc5MXVBTk5xTE5sOV9sclRyT2lsZHdCVVFhTms0UVZDdjRvUTNpV2YzeWRGengxYWFtYTVGNlBCN01YME9EbHVkeExyQQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQa2o2QW5fR2FzQjNSU3V4c3RfU1dKOEhXYlFrMVFKa2xtUVUwZ0YzU2t3ZkR1bE05M0JsVTNRUEdYZXNSQXRxSmYwbmJoZnBfZ2k3RE9sdk1TcElnQWNrQV9yMHNDMGl3cDJtTEpKd1VELTdYWjdFcWJFMWplMGc5MXVBTk5xTE5sOV9sclRyT2lsZHdCVVFhTms0UVZDdjRvUTNpV2YzeWRGengxYWFtYTVGNlBCN01YME9EbHVkeExyQQ?oc=5\" target=\"_blank\">White Sox y Guardians, una rivalidad ligada a la historia de MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-05T19:28:00+00:00"
     },
     {
       "titulo": "MLB: ¿Qué le prohibió Dodgers a Pagés en los playoffs? - debate.com.mx",
@@ -685,6 +765,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-05T13:32:30+00:00"
+    },
+    {
+      "titulo": "Las posibles alineaciones titulares del partido México vs Chile - Sports Illustrated",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTmNBX2gwZVBia185NUpVRVBISzZJMGM4aXlidV9LYkhMRy1ZWDJuWFdzVlZMZFUyMW1TSkJBaTZEYjJIT0I5cWlxV2R1aVJ4V2c2Yk02Ql9hUi1PVzI4RXo2cmM5ZnlWNVYyVUtOM0w4cE4teUZrd0xTeVpSZTNoZVRMV0RYV3JvNThib3ZiWkhzd1hXVzk0SkpDY2xzUVRTN09XNDVKMEZ4UQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTmNBX2gwZVBia185NUpVRVBISzZJMGM4aXlidV9LYkhMRy1ZWDJuWFdzVlZMZFUyMW1TSkJBaTZEYjJIT0I5cWlxV2R1aVJ4V2c2Yk02Ql9hUi1PVzI4RXo2cmM5ZnlWNVYyVUtOM0w4cE4teUZrd0xTeVpSZTNoZVRMV0RYV3JvNThib3ZiWkhzd1hXVzk0SkpDY2xzUVRTN09XNDVKMEZ4UQ?oc=5\" target=\"_blank\">Las posibles alineaciones titulares del partido México vs Chile</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-05T13:20:28+00:00"
     },
     {
       "titulo": "Tensión central - Diario AS",
