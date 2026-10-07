@@ -1,11 +1,31 @@
 {
-  "actualizado": "2026-10-07T16:17:35.924977+00:00",
+  "actualizado": "2026-10-07T16:48:35.202156+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 701,
-    "sin_imagen": 499
+    "con_imagen": 699,
+    "sin_imagen": 501
   },
   "noticias": [
+    {
+      "titulo": "El riesgo de la IA para la economía mundial crece si las inversiones no cumplen las expectativas, alerta el FMI",
+      "url": "https://expansion.mx/economia/2026/10/07/riesgo-ia-economia-mundial-inversion-cumplen-expectativa-fmi",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/464d135/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F34%2F60%2F710fead34194a0e02eaf73c03014%2Finversion-intelingencia-artificial-fmi.jpg",
+      "descripcion": "La directora gerente del Fondo Monetario Internacional, Kristalina Georgieva, advirtió sobre las emisiones masivas de bonos corporativos para financiar inversiones en IA.",
+      "fuente": "AFP",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-07T16:20:41+00:00"
+    },
+    {
+      "titulo": "Prensa argentina confirma si Lionel Messi se retira del futbol definitivamente o no - TV Azteca",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNanJQekpqT01uTTNRc0FtaW85ZGRRMDRVVU1pc0FQd05FbllOUm8xQlhWVC1rU05TWmsyd2YzRjBTOUhYVnZ2YTNVcXVlUmVjOXFJZmN6NUhHVWtlbE5KemhjTjFtZ0U1WkVmM0V0bXFZZlNlNVV3M3U5SXBqRjdDWFd0M25SUHoxV2xZM3lPODA3Q1lBVWRnYdIBpgFBVV95cUxPclpKUndjcy1iUVE5dGtWXzB2ZVRiOFpPZ044Nk9nc1M4WWZPRV9heW9OSWNkV2ZLd3R1TDd6RlY3bTdsOC01d3Mzam5jdnZDNEZLQXduTUh4cV8yR2ZvU0swRWNGeVU2ZGpITzFqZjRJOEEwbEJpUnc0cEdNeUlIb0xTQ1JtdnRDVm1QWVRHMmN6TkNRdnlIV2R5U1JrbVdtYU9kR25n?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxNanJQekpqT01uTTNRc0FtaW85ZGRRMDRVVU1pc0FQd05FbllOUm8xQlhWVC1rU05TWmsyd2YzRjBTOUhYVnZ2YTNVcXVlUmVjOXFJZmN6NUhHVWtlbE5KemhjTjFtZ0U1WkVmM0V0bXFZZlNlNVV3M3U5SXBqRjdDWFd0M25SUHoxV2xZM3lPODA3Q1lBVWRnYdIBpgFBVV95cUxPclpKUndjcy1iUVE5dGtWXzB2ZVRiOFpPZ044Nk9nc1M4WWZPRV9heW9OSWNkV2ZLd3R1TDd6RlY3bTdsOC01d3Mzam5jdnZDNEZLQXduTUh4cV8yR2ZvU0swRWNGeVU2ZGpITzFqZjRJOEEwbEJpUnc0cEdNeUlIb0xTQ1JtdnRDVm1QWVRHMmN6TkNRdnlIV2R5U1JrbVdtYU9kR25n?oc=5\" target=\"_blank\">Prensa argentina confirma si Lionel Messi se retira del futbol definitivamente o no</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TV Azteca</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-07T16:09:56+00:00"
+    },
     {
       "titulo": "Cómo influirán estos playoffs de MLB en las negociaciones del CBA - ESPN México",
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWERqcWFXVWlyMW5uTFdCdnRXU1lWVTBMSHdpWXFzT0NHVzFTRjJoUnNQQy1qUDlvQk1udGt0N0tEU2IzalhVYjZfMGt3NGc5UHlhcFBKcG1mNGNPUlE5aUltbkljMVZMXzBuc0NqMkd6Y0ktWnQzaDhRVlltemRfUXBqSVpQejZzSlBhMExvNkFZSW5Xa0s5WVFid0JfM0MxT1ZXa1I3M2xQUV9mbUc4Q1RUMi1aaGh0WUo0cnd6dlVLYVlndGpQOTdfU0J4QWNFcHpZeXlsVUxZbzg?oc=5",
@@ -45,6 +65,16 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-07T15:00:13+00:00"
+    },
+    {
+      "titulo": "MLB: ¿Dónde y a qué hora ver EN VIVO el tercero de la SDLA entre Rays y Yankees? - Debate",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSThGS19PVHg0aWNUMjgxSmFfc1ZLNlZveTE1SDBMZHFNTmVodHJpcDZ2UFpOYjNSSnRVNi1Yd2xybVlGQWdnUmwtVUVIVFdHSmZDbG1JS0FZOHpEYWU2UVZhVnlHbXViaFlFQ1NiNGI4TzlqRzZfNTBPMGhtTWNQSm1PRUNwTW5maVFncnBZSHdqRjhhQ1B4b0lKZE5zNHdiWU1zX2o2NVZYT2doZHJZb0pLZnMwWnJYa1dPYW41cUFiSVNEUkJHU1hZWQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxNSThGS19PVHg0aWNUMjgxSmFfc1ZLNlZveTE1SDBMZHFNTmVodHJpcDZ2UFpOYjNSSnRVNi1Yd2xybVlGQWdnUmwtVUVIVFdHSmZDbG1JS0FZOHpEYWU2UVZhVnlHbXViaFlFQ1NiNGI4TzlqRzZfNTBPMGhtTWNQSm1PRUNwTW5maVFncnBZSHdqRjhhQ1B4b0lKZE5zNHdiWU1zX2o2NVZYT2doZHJZb0pLZnMwWnJYa1dPYW41cUFiSVNEUkJHU1hZWQ?oc=5\" target=\"_blank\">MLB: ¿Dónde y a qué hora ver EN VIVO el tercero de la SDLA entre Rays y Yankees?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Debate</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-07T15:00:00+00:00"
     },
     {
       "titulo": "Champions League 2026-27: el nuevo formato, los favoritos y lo que hay que saber - El Día de Gualeguaychú",
@@ -229,6 +259,16 @@
     {
       "titulo": "El boom de la IA impulsa las plusvalías de las Afores y hace crecer el ahorro",
       "url": "https://expansion.mx/economia/2026/10/07/el-boom-de-la-ia-impulsa-las-plusvalias-de-las-afores-y-hace-crecer-el-ahorro",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/4a5081a/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F63%2F22%2F38b821764b31b7f4df41972ec267%2Fnvidia-y-microsoft-defienden-la-ia.jpg",
+      "descripcion": "Las inversiones en bolsas extranjeras generaron 226,171 millones de pesos en plusvalías durante el primer semestre, casi la mitad del total registrado por las administradoras.",
+      "fuente": "Santiago Nolasco",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-07T11:55:33+00:00"
+    },
+    {
+      "titulo": "El boom de la IA impulsa las plusvalías de las Afores y hace crecer el ahorro",
+      "url": "https://expansion.mx/economia/2026/10/07/ya-estas-invirtiendo-ia-afore-pone-ahorros-empresas-nvidia",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/4a5081a/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F63%2F22%2F38b821764b31b7f4df41972ec267%2Fnvidia-y-microsoft-defienden-la-ia.jpg",
       "descripcion": "Las inversiones en bolsas extranjeras generaron 226,171 millones de pesos en plusvalías durante el primer semestre, casi la mitad del total registrado por las administradoras.",
       "fuente": "Santiago Nolasco",
@@ -12435,46 +12475,6 @@
       "fuente": "UEFA.com",
       "categoria": "Deportes",
       "subcategoria": "futbol"
-    },
-    {
-      "titulo": "“No es capricho” Pepe del Bosque enumera cuántos mundialistas de Javier Aguirre pasaron por Expansión MX - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQYVQtRmVvY0dsdTRQX0JjRjEtVEx6czZucU5OanRpRmFrWG9pMDBmX290UnpCZHJEN2ZPMVBRaENvRVBlV3FQYk5VbnRoZDFiTnZvc0dBWUttZUVOaE53TUQ5V3lWT3VRSHFYbHRrZFFNdGhyQlBzTFNSZXktS0lueDJ1MDlxQjVSUTlmUmVQeUd3Rk9WNnc3QzNfQkFBd01SbTJaRGd2Y282WnVFWk1ldDRvamk5Um9obmstNHNnd0MySEFMRzBrVHd2OGUwWUIwclBmcUNXd2dpUTFwUFEw0gHfAUFVX3lxTFBKS3EtNDJfSEpzVV9mbWIwdXlEc2NrLXpEQURPUERRLTJ2VWVCWnFlZVhzaUdYelpaU0p4WWZGb0Z5M3FlSWFjSWlFQzNyNkJRLTdzMHdVWEo2SWlRazhWdU1MdlRRNjRnYWwtTHFDem10SGZqQ3MtZlRwLXd3OWhkUzJVVF9VdWlySjBMSGtJU2xCY2pHcXJBc1NoMlR4SHRkUEp2bDkwUHpUNTVvbTdtQjNlbnlnV1hTUU16UUVvS2RydmRMazhOclI3N2hHMXZVOUQ2Z3hHeGpSeEF6U3c?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/09/22/6ab1f79e1b79b.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxQYVQtRmVvY0dsdTRQX0JjRjEtVEx6czZucU5OanRpRmFrWG9pMDBmX290UnpCZHJEN2ZPMVBRaENvRVBlV3FQYk5VbnRoZDFiTnZvc0dBWUttZUVOaE53TUQ5V3lWT3VRSHFYbHRrZFFNdGhyQlBzTFNSZXktS0lueDJ1MDlxQjVSUTlmUmVQeUd3Rk9WNnc3QzNfQkFBd01SbTJaRGd2Y282WnVFWk1ldDRvamk5Um9obmstNHNnd0MySEFMRzBrVHd2OGUwWUIwclBmcUNXd2dpUTFwUFEw0gHfAUFVX3lxTFBKS3EtNDJfSEpzVV9mbWIwdXlEc2NrLXpEQURPUERRLTJ2VWVCWnFlZVhzaUdYelpaU0p4WWZGb0Z5M3FlSWFjSWlFQzNyNkJRLTdzMHdVWEo2SWlRazhWdU1MdlRRNjRnYWwtTHFDem10SGZqQ3MtZlRwLXd3OWhkUzJVVF9VdWlySjBMSGtJU2xCY2pHcXJBc1NoMlR4SHRkUEp2bDkwUHpUNTVvbTdtQjNlbnlnV1hTUU16UUVvS2RydmRMazhOclI3N2hHMXZVOUQ2Z3hHeGpSeEF6U3c?oc=5\" target=\"_blank\">“No es capricho” Pepe del Bosque enumera cuántos mundialistas de Javier Aguirre pasaron por Expansión MX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-09-21T07:00:00+00:00"
-    },
-    {
-      "titulo": "México vs Colombia EN VIVO y GRATIS, partido de debut de Rafa Márquez como entrenador de la Selección Mexicana, septiembre de 2026 - TV Azteca",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSjZZanhUSDZjNms5eVNYWFhWRzRJSU43X0FUY3kyOVRuNGU1OGVuUEZ6am82WFltVUYtX0R0RTVacVBlaGZwdTZHSGVVemFlYjlGR1ptUF92a2pGaHp6eEw0MGp0T0JNMW0xX3Z3YmZRM0NMcWk5N05vR19QSDhuNklBWExwOVd3OW9CRHlMclNBa2tJd0xkOHZjLVppMjQzOWlVQ21FYzFsdUVsUXBuaWQ2X3daR3BkWkNMQXlFMkhNYVRnbFNLVDRXU3dPd9IB2wFBVV95cUxNRlk3VHZFU1FCWTkxeUFNdS11dG1TS09WX1VZTTlXRkxQTURubEoxckwxbzB0LW5nSE5ycWtnMWxwUVlNenFvekgxV1gyUGJPTndjMTJ4cFlpVm9md29NcGlaRGtIWEdpRVc4YXNzR215WFdfSXV1TTRQUmVpZmpQeFFOSk1rS3ZxUTZNVjlBQjdUN00yS2tpbzdZb2tBaGx2QWVjUUVCNWt6MkhnT1BOUWlkX2hmYTcwNm9iSzllQzJycXcyaVNXNl9BQTd1QWZLM0lWRENmTnVEc0k?oc=5",
-      "imagen": "https://tvazteca.brightspotcdn.com/dims4/default/7dd1f35/2147483647/strip/true/crop/1920x1008+0+0/resize/1200x630!/quality/90/?url=https%3A%2F%2Ftv-azteca-production-tv-azteca.s3.us-west-2.amazonaws.com%2Fbrightspot%2F4b%2Fe8%2F04a0d24945a3ab4d3ce5b29f415e%2Fmexico-vs-colombia-en-vivo-y-gratis-seleccion-mexicana-partido-amistoso.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNSjZZanhUSDZjNms5eVNYWFhWRzRJSU43X0FUY3kyOVRuNGU1OGVuUEZ6am82WFltVUYtX0R0RTVacVBlaGZwdTZHSGVVemFlYjlGR1ptUF92a2pGaHp6eEw0MGp0T0JNMW0xX3Z3YmZRM0NMcWk5N05vR19QSDhuNklBWExwOVd3OW9CRHlMclNBa2tJd0xkOHZjLVppMjQzOWlVQ21FYzFsdUVsUXBuaWQ2X3daR3BkWkNMQXlFMkhNYVRnbFNLVDRXU3dPd9IB2wFBVV95cUxNRlk3VHZFU1FCWTkxeUFNdS11dG1TS09WX1VZTTlXRkxQTURubEoxckwxbzB0LW5nSE5ycWtnMWxwUVlNenFvekgxV1gyUGJPTndjMTJ4cFlpVm9md29NcGlaRGtIWEdpRVc4YXNzR215WFdfSXV1TTRQUmVpZmpQeFFOSk1rS3ZxUTZNVjlBQjdUN00yS2tpbzdZb2tBaGx2QWVjUUVCNWt6MkhnT1BOUWlkX2hmYTcwNm9iSzllQzJycXcyaVNXNl9BQTd1QWZLM0lWRENmTnVEc0k?oc=5\" target=\"_blank\">México vs Colombia EN VIVO y GRATIS, partido de debut de Rafa Márquez como entrenador de la Selección Mexicana, septiembre de 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TV Azteca</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-09-21T07:00:00+00:00"
-    },
-    {
-      "titulo": "México vs Colombia EN VIVO y GRATIS, partido de debut de Rafa Márquez como entrenador de la Selección Mexicana, septiembre de 2026 - TV Azteca",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSjZZanhUSDZjNms5eVNYWFhWRzRJSU43X0FUY3kyOVRuNGU1OGVuUEZ6am82WFltVUYtX0R0RTVacVBlaGZwdTZHSGVVemFlYjlGR1ptUF92a2pGaHp6eEw0MGp0T0JNMW0xX3Z3YmZRM0NMcWk5N05vR19QSDhuNklBWExwOVd3OW9CRHlMclNBa2tJd0xkOHZjLVppMjQzOWlVQ21FYzFsdUVsUXBuaWQ2X3daR3BkWkNMQXlFMkhNYVRnbFNLVDRXU3dPdw?oc=5",
-      "imagen": "https://tvazteca.brightspotcdn.com/dims4/default/7dd1f35/2147483647/strip/true/crop/1920x1008+0+0/resize/1200x630!/quality/90/?url=https%3A%2F%2Ftv-azteca-production-tv-azteca.s3.us-west-2.amazonaws.com%2Fbrightspot%2F4b%2Fe8%2F04a0d24945a3ab4d3ce5b29f415e%2Fmexico-vs-colombia-en-vivo-y-gratis-seleccion-mexicana-partido-amistoso.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNSjZZanhUSDZjNms5eVNYWFhWRzRJSU43X0FUY3kyOVRuNGU1OGVuUEZ6am82WFltVUYtX0R0RTVacVBlaGZwdTZHSGVVemFlYjlGR1ptUF92a2pGaHp6eEw0MGp0T0JNMW0xX3Z3YmZRM0NMcWk5N05vR19QSDhuNklBWExwOVd3OW9CRHlMclNBa2tJd0xkOHZjLVppMjQzOWlVQ21FYzFsdUVsUXBuaWQ2X3daR3BkWkNMQXlFMkhNYVRnbFNLVDRXU3dPdw?oc=5\" target=\"_blank\">México vs Colombia EN VIVO y GRATIS, partido de debut de Rafa Márquez como entrenador de la Selección Mexicana, septiembre de 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TV Azteca</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-09-21T07:00:00+00:00"
-    },
-    {
-      "titulo": "“No es capricho” Pepe del Bosque enumera cuántos mundialistas de Javier Aguirre pasaron por Expansión MX - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQYVQtRmVvY0dsdTRQX0JjRjEtVEx6czZucU5OanRpRmFrWG9pMDBmX290UnpCZHJEN2ZPMVBRaENvRVBlV3FQYk5VbnRoZDFiTnZvc0dBWUttZUVOaE53TUQ5V3lWT3VRSHFYbHRrZFFNdGhyQlBzTFNSZXktS0lueDJ1MDlxQjVSUTlmUmVQeUd3Rk9WNnc3QzNfQkFBd01SbTJaRGd2Y282WnVFWk1ldDRvamk5Um9obmstNHNnd0MySEFMRzBrVHd2OGUwWUIwclBmcUNXd2dpUTFwUFEw?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/09/22/6ab1f79e1b79b.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxQYVQtRmVvY0dsdTRQX0JjRjEtVEx6czZucU5OanRpRmFrWG9pMDBmX290UnpCZHJEN2ZPMVBRaENvRVBlV3FQYk5VbnRoZDFiTnZvc0dBWUttZUVOaE53TUQ5V3lWT3VRSHFYbHRrZFFNdGhyQlBzTFNSZXktS0lueDJ1MDlxQjVSUTlmUmVQeUd3Rk9WNnc3QzNfQkFBd01SbTJaRGd2Y282WnVFWk1ldDRvamk5Um9obmstNHNnd0MySEFMRzBrVHd2OGUwWUIwclBmcUNXd2dpUTFwUFEw?oc=5\" target=\"_blank\">“No es capricho” Pepe del Bosque enumera cuántos mundialistas de Javier Aguirre pasaron por Expansión MX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-09-21T07:00:00+00:00"
     }
   ]
 }
