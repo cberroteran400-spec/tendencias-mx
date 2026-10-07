@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-07T21:14:36.842269+00:00",
+  "actualizado": "2026-10-07T21:48:10.931528+00:00",
   "total": 1200,
   "imagenes": {
     "con_imagen": 674,
     "sin_imagen": 526
   },
   "noticias": [
+    {
+      "titulo": "Un Tesla correrá la Panamericana para probar hasta dónde llega la infraestructura de carga en México",
+      "url": "https://expansion.mx/empresas/2026/10/07/tesla-carrera-panamericana-infraestructura-carga-electrica",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/ea22b1a/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1e%2F31%2Ffcd8f8f0495bbe605ea3e2ee95ee%2Ftesla-carrera-panamericana-mexico.jpg",
+      "descripcion": "El Tesla Model S enfrentará más de 4,000 kilómetros entre Tuxtla y Zacatecas con una estrategia de carga que busca probar la viabilidad de los viajes eléctricos y detectar oportunidades para ampliar la infraestructura.",
+      "fuente": "Ivet Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-07T21:22:51+00:00"
+    },
     {
       "titulo": "La jornada de 40 horas exige un registro electrónico y las multas pueden llegar a 586,550 pesos",
       "url": "https://expansion.mx/carrera/2026/10/07/jornada-40-horas-registro-electronico-empresas",
@@ -12432,17 +12442,6 @@
       "fecha": "2026-09-24T14:14:00+00:00",
       "fuente": "Expansión",
       "categoria": "Mundo",
-      "subcategoria": ""
-    },
-    {
-      "id": "a498b773c6e09df7ad20cf96c7c5993362c0fbf1316d8de8889e89d622c7aebb",
-      "titulo": "La clave de wifi que te dan en recepción es el primer paso para paralizar a toda tu empresa",
-      "descripcion": "Las empresas multiplican certificados, llaves y credenciales digitales sin tener claro cuántos tienen, dónde están o cuándo vencen. Esto puede traducirse en interrupciones, pérdidas económicas y daños a su reputación.",
-      "url": "https://expansion.mx/tecnologia/2026/09/24/clave-wifi-puede-paralizar-toda-tu-empresa",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/f8d6bc3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F8a%2Ff8%2Ffe7f76c64ed09bb367a8fca32e14%2Fchatgpt-image-23-sept-2026-15-43-03.png",
-      "fecha": "2026-09-24T11:55:35+00:00",
-      "fuente": "Expansión",
-      "categoria": "Tecnologia",
       "subcategoria": ""
     }
   ]
