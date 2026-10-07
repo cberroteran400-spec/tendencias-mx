@@ -1,11 +1,41 @@
 {
-  "actualizado": "2026-10-07T18:17:24.750393+00:00",
+  "actualizado": "2026-10-07T18:51:10.595571+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 692,
-    "sin_imagen": 508
+    "con_imagen": 689,
+    "sin_imagen": 511
   },
   "noticias": [
+    {
+      "titulo": "¿Cómo le ha ido a Checo Pérez en el Gran Premio de Singapur? - Récord",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMXk4cENNNVhZRUNUT1laRnl5S2JUbXFodHlfV2lHMFBnVGVmRllEUEF2MGtEQVVQbkhwMXdWai1TRGg4QldsaUk5T1p5ZFo0aXNYc0V0MURrUFpIclJNSzVMSTRBN2Z2Ql9zQXBCeFhpOWpqR2ZnMHZTWURtU2RJUFJCODhNa2FPNU14VWdlZkNlcExCTjdBRDNEb3lKcDlYd1pVMk9YSmhvQzFnUzFrWWoxOA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQMXk4cENNNVhZRUNUT1laRnl5S2JUbXFodHlfV2lHMFBnVGVmRllEUEF2MGtEQVVQbkhwMXdWai1TRGg4QldsaUk5T1p5ZFo0aXNYc0V0MURrUFpIclJNSzVMSTRBN2Z2Ql9zQXBCeFhpOWpqR2ZnMHZTWURtU2RJUFJCODhNa2FPNU14VWdlZkNlcExCTjdBRDNEb3lKcDlYd1pVMk9YSmhvQzFnUzFrWWoxOA?oc=5\" target=\"_blank\">¿Cómo le ha ido a Checo Pérez en el Gran Premio de Singapur?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Récord</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-07T18:36:00+00:00"
+    },
+    {
+      "titulo": "Almacenes Ánfora apuesta por equipar las cocinas de hoteles y restaurantes",
+      "url": "https://expansion.mx/empresas/2026/10/07/almacenes-anfora-crecer-negocio-vender-hoteles-restaurantes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/50e476b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F30%2F78%2F0a9663c74ab3ba5c973d9e9e5451%2Falmacenes-anfora.jpeg",
+      "descripcion": "El cambio representa una evolución importante para una empresa que nació en 1940 y que actualmente está dirigida por su cuarta generación.",
+      "fuente": "Mara Echeverría",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-07T18:30:47+00:00"
+    },
+    {
+      "titulo": "Canelo Álvarez descarta su última pelea en el Estadio Azteca; revela su máximo sueño - El Universal",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbnl2SUJjcDlHRWlRcy13dmJkdG9yU0xWd3NkbW9uVzFobVJKc1FIbkdxdmNvaGZLUU9WVll1SE0wX3BvNkFJY016RjhXclZzQUpienVvLVAzSEdIWTF0N19GSmRTdGs1blR5a21LUmk2RzdaQjdPQ2NiM0EzNnl6R29MNGF4Nld3bVZ3S204QlcyLWIwX1VmSDIzVnNGT0VlcjZKUXpFUkt5QmNwOERIZ0g3YTZLWU5BQUlubHpoUGxMQdIB1gFBVV95cUxQeVhHWWtEN040VE9NYTFpdzBlbjhSbHhLTlNKWmVKS1EwZlRtZERha04zdWVhVkF2U0NrSXBnekdHXzE3a0ZTRGUzV0ZRREoxUXFtV0RvbUhCYWlYVDhqcTlFakhvdHdFUlRwTnZydG5tRHdlaTlaTnc3MGlXU3dVWG9ka3d5eTNsT3RTX19hai1xbE1Ccm53ZC0zWHFBNmljYVlFR2NIQmc1Yi1udzBBZktVSzVHeUtFaThNbjRWZ0stXzc2TGhUdVE5MTVvRVlYbXNDNHFR?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbnl2SUJjcDlHRWlRcy13dmJkdG9yU0xWd3NkbW9uVzFobVJKc1FIbkdxdmNvaGZLUU9WVll1SE0wX3BvNkFJY016RjhXclZzQUpienVvLVAzSEdIWTF0N19GSmRTdGs1blR5a21LUmk2RzdaQjdPQ2NiM0EzNnl6R29MNGF4Nld3bVZ3S204QlcyLWIwX1VmSDIzVnNGT0VlcjZKUXpFUkt5QmNwOERIZ0g3YTZLWU5BQUlubHpoUGxMQdIB1gFBVV95cUxQeVhHWWtEN040VE9NYTFpdzBlbjhSbHhLTlNKWmVKS1EwZlRtZERha04zdWVhVkF2U0NrSXBnekdHXzE3a0ZTRGUzV0ZRREoxUXFtV0RvbUhCYWlYVDhqcTlFakhvdHdFUlRwTnZydG5tRHdlaTlaTnc3MGlXU3dVWG9ka3d5eTNsT3RTX19hai1xbE1Ccm53ZC0zWHFBNmljYVlFR2NIQmc1Yi1udzBBZktVSzVHeUtFaThNbjRWZ0stXzc2TGhUdVE5MTVvRVlYbXNDNHFR?oc=5\" target=\"_blank\">Canelo Álvarez descarta su última pelea en el Estadio Azteca; revela su máximo sueño</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Universal</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-07T18:24:00+00:00"
+    },
     {
       "titulo": "Programa del SAT que condona multas y recargos hasta 100% cierra solicitudes el 31 de octubre",
       "url": "https://expansion.mx/economia/2026/10/07/sat-condonacion-multas-recargos-vence-31-octubre",
@@ -15,6 +45,16 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-07T18:08:51+00:00"
+    },
+    {
+      "titulo": "Canelo quiere pelear en el Azteca, pero que la última sea en Guadalajara - Sports Illustrated",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTnNZeVo1OHBrangzamtFRjNKY2JLS0s4aUlNZkxueUZwMUNXY0wwdV9NQkZSMktHOXlZN0FTR1dwWmdyX3Rya2RfNm0zaFZadTFyNzBaSmVqSFFTUXBPWjhndEFBRFZkOWJ5VnA2ZERycFBUUDBwcWVUVF9ZN2ZEaVNXYjQ5Qk0xVUFIdDJkT211cXg4aFBXVk5mVGJHU1hhYmNqeUczZGtBVVd4?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxNTnNZeVo1OHBrangzamtFRjNKY2JLS0s4aUlNZkxueUZwMUNXY0wwdV9NQkZSMktHOXlZN0FTR1dwWmdyX3Rya2RfNm0zaFZadTFyNzBaSmVqSFFTUXBPWjhndEFBRFZkOWJ5VnA2ZERycFBUUDBwcWVUVF9ZN2ZEaVNXYjQ5Qk0xVUFIdDJkT211cXg4aFBXVk5mVGJHU1hhYmNqeUczZGtBVVd4?oc=5\" target=\"_blank\">Canelo quiere pelear en el Azteca, pero que la última sea en Guadalajara</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-07T18:08:16+00:00"
     },
     {
       "titulo": "ChatGPT estrena interfaz visual: qué es Intelligent UI y quiénes pueden usarlo",
@@ -12420,50 +12460,6 @@
       "fuente": "Expansión",
       "categoria": "Tecnologia",
       "subcategoria": ""
-    },
-    {
-      "id": "a8f2b13cf9d595118288393a2793499311e238f7aa1b4f434d390fa2a2a989e5",
-      "titulo": "Coliseo GNP Seguros: la historia del estadio mundialista que ahora se convierte en foro de conciertos en México",
-      "descripcion": "Anteriormente conocido como Estadio 3 de Marzo, el inmueble comienza a escribir una nueva historia con la presentación de Michael Bublé.",
-      "url": "https://expansion.mx/tendencias/2026/09/22/coliseo-gnp-seguros-historia-estadio-foro-conciertos",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/7b2b70f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F15%2Fbe%2F38bacb2b4c5385a8756e3e7a5750%2Fcoliseo-gnp-seguros-historia-estadio-mundialista-1.jpeg",
-      "fecha": "2026-09-22T18:39:54+00:00",
-      "fuente": "Expansión",
-      "categoria": "Tendencias",
-      "subcategoria": ""
-    },
-    {
-      "id": "2c2fb7a85f075debb729086ce2e55f3a46e98ebc7e6d72a241d0aaddbe77957f",
-      "titulo": "El anti-Tinder que gana millones enseñándole a la gente a desinstalar su app",
-      "descripcion": "En México, 38.7 millones de internautas descargaron alguna vez una app de citas. Hinge, que propone un modelo donde el éxito consiste en que el usuario se vaya, crece 22% en ingresos.",
-      "url": "https://expansion.mx/tecnologia/2026/09/22/hinge-app-citas-disenada-para-ser-eliminada-crece",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/12c5b98/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F60%2Fff%2Fc64c0e0f40d4850dc0b7e0d2ba97%2Fhinge-app.jpeg",
-      "fecha": "2026-09-22T11:55:24+00:00",
-      "fuente": "Expansión",
-      "categoria": "Tecnologia",
-      "subcategoria": ""
-    },
-    {
-      "id": "b755dabe4e610dd5b8327af27af8d02cf9fbeb362ca8a1be903dbccfe89253fa",
-      "titulo": "Liga MX cambia fecha y horario de partidos de la Jornada 10 - El Informador",
-      "descripcion": "Liga MX cambia fecha y horario de partidos de la Jornada 10 El Informador",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbFBkLVlSNzctVGk1VmQtMlY5RlBIUXpxSGc1RVpQUlgyTmFlZWFkbEJxNXFvMzJ3TzdSekpEX2lqSEVBTXp6akFCUGJDUTJMTEg3bC1DaV9yVG9DUXdDNDJ4QWJUZ3hUTnZMMWRoMU5vd2pTcVhpQnlIZmJVNHRzX25QTzFnUDhqdUhxblR5VVRCdWpmY3R3UjdoM2VvQUdkYkdvMF9mZ2JlanR0TldNazcyONIBuAFBVV95cUxQWFVtZmszTzQzY1d6a1l3YVFXeFBYZ1FoSzA4LTFfOFA1MHVzWHlwR2xucl82bzVzdmdUMWRwU3ZnRHFIcWdpb1FuSFJaMm1COW44TzJQN0ptLThpRlp6eU9vY0JBRXNNS1ZhVnpCa180SFZ1YW5Bak03XzNCR1V1WFpMQkZSOHkxOXc4SGZXeTZnbE9ROEtNRE1FUm1NSklsaGRoUmVLa3hjX0pyYzlzdm5GMklPU05F?oc=5",
-      "imagen": "https://www.informador.mx/__export/1790079807873/sites/elinformador/img/2026/09/22/tgres_puebla_1_crop1790079769078.jpg_2024461655.jpg",
-      "fecha": "2026-09-22T07:00:00+00:00",
-      "fuente": "El Informador",
-      "categoria": "Deportes",
-      "subcategoria": "futbol"
-    },
-    {
-      "id": "e73ecf0151e3d816af8cb550493cf5bcdc2ece7cec81fd5c899ef90f2d8c5e12",
-      "titulo": "Fecha FIFA septiembre 2026: ¿Se detiene la Liga MX o habrá partidos del Apertura 2026? - Infobae",
-      "descripcion": "Fecha FIFA septiembre 2026: ¿Se detiene la Liga MX o habrá partidos del Apertura 2026? Infobae",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSG5fLUpRMEt6YXVkellUMVJ5ck1iRWZCUUJsS3hOZzBXQUwzUjI2UXVKZ1Vuak1OVHFVSGxlOWkxemowQ1ZqUWlxNnNmb2xqbUtQM3BHMDlaNmtKSFFzNm5Ia2kwNE9RRm40dWxnSmpaaTFYa2kwZFJOZDZXM1hYaElHSGYwbXRMajRiOVotbFdKeW9ZaWdoN0pxS1QweThTRUFaQUdhQWRFZUdDOW9oWUNfeHdfSGhUWS1LdHVEaEQzRGpqTjI4Z09wVlhPazQ00gHrAUFVX3lxTE5ya2lqbXRNcjFTWXhJbXh3aV8yTjhKRE93OVEyOWFYdVRVS3h1a0htM1lTWFdnZnpvTzRZR1RMMjRCc1pEZXRRSTd4UW9VTTJ1OXpacmZnYUtXVmQtR0VIMkg4UERKSU5tQ2xXVnBITmZVQzR4RkRWUUlhSDFvYVUxUGw2c2lXMFZfM09wRWtYV1dtWUdNWDhIVWVrMnROSWtyRW9KZmdBZWVFaGNzSUpLd21LamUxSU94b2FFMWwtT2VXZGlxTGR4eC01SVU1bTVRZWpYUXMzczBvZEZZS2tWeVZlekVOcVJURjA?oc=5",
-      "imagen": "https://www.infobae.com/resizer/v2/WUE5Y56QMRCIRILEW6FJLVZ7OA.JPG?auth=6ccbe1d2630a0b1d1835284407c73976c6a014d41309c0fdee72895b081d30a7&smart=true&width=1024&height=512&quality=85",
-      "fecha": "2026-09-22T07:00:00+00:00",
-      "fuente": "Infobae",
-      "categoria": "Deportes",
-      "subcategoria": "futbol"
     }
   ]
 }
