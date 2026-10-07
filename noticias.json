@@ -1,11 +1,61 @@
 {
-  "actualizado": "2026-10-07T14:47:15.804510+00:00",
+  "actualizado": "2026-10-07T15:26:06.101442+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 710,
-    "sin_imagen": 490
+    "con_imagen": 705,
+    "sin_imagen": 495
   },
   "noticias": [
+    {
+      "titulo": "Se retiró una de las sorpresas del Barcelona de Guardiola que brilló con Messi - TyC Sports",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTnZ0SGtINHhCOGpFMjhWWXg3TlhxV0RMM0xyd3ltTFZKdFdVWEhDVDdrSllqVVhnYnFvdWR0X29ZaWVPeUVRVE9vZHVUWHFyYnpxT0FBOW03Z3luNEZjX2tScDJrWWxjejNuaTRDbE9ZS1ZUelBNYURQSXpuYWlUSmtxanpIRjJ0ZTF3TEFiRWlQVXBPZUVzcHN6UGhYRVJHYi1pODY5YUJ0a05lSkRjMW5kVFdnQXIzWWZjYUZObDdjNHF1U1JiSGV3UzFXUUdVakIwY01B?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTnZ0SGtINHhCOGpFMjhWWXg3TlhxV0RMM0xyd3ltTFZKdFdVWEhDVDdrSllqVVhnYnFvdWR0X29ZaWVPeUVRVE9vZHVUWHFyYnpxT0FBOW03Z3luNEZjX2tScDJrWWxjejNuaTRDbE9ZS1ZUelBNYURQSXpuYWlUSmtxanpIRjJ0ZTF3TEFiRWlQVXBPZUVzcHN6UGhYRVJHYi1pODY5YUJ0a05lSkRjMW5kVFdnQXIzWWZjYUZObDdjNHF1U1JiSGV3UzFXUUdVakIwY01B?oc=5\" target=\"_blank\">Se retiró una de las sorpresas del Barcelona de Guardiola que brilló con Messi</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TyC Sports</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-07T15:03:07+00:00"
+    },
+    {
+      "titulo": "Golpe a los centros de datos de Google: gobierno detiene dos de sus grandes obras en Finlandia",
+      "url": "https://expansion.mx/tecnologia/2026/10/07/golpe-a-centros-de-datos-de-google-detienen-obras",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/26a8dde/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F05%2Fb4%2F6e6fb2b641418f84510337ddc3fd%2Fla-ia-ya-decidio-cuales-son-las-marcas-mas-valiosas-del-mundo.jpg",
+      "descripcion": "Las autoridades finlandesas señalaron que los proyectos del gigante tecnológico tendrán un gran impacto en el medio ambiente y por ello los suspendieron hasta terminar las investigaciones al respecto.",
+      "fuente": "Fernando Guarneros Olmos",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-07T15:00:13+00:00"
+    },
+    {
+      "titulo": "Champions League 2026-27: el nuevo formato, los favoritos y lo que hay que saber - El Día de Gualeguaychú",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUVZqM2k2QjhFV1FleDVjVTVjMndTSTNaRzJiQ1hWYVY1b01hVDVXR1hVSU1SNWhkZ0RkcnZNbEk0SFJEdTc1N0lkcDNqRUdxSEdUMVhyY2xXdkZLdDFOWXUwZTRFNXA5bzNQNkJQbzdWMUFNaW91X3NveUEtaEpzb1pWTkZWOE5OUEluRGNNMTFJakVTUFNEdThDZjUzV2w2cVJCMnBTa2ptdw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUVZqM2k2QjhFV1FleDVjVTVjMndTSTNaRzJiQ1hWYVY1b01hVDVXR1hVSU1SNWhkZ0RkcnZNbEk0SFJEdTc1N0lkcDNqRUdxSEdUMVhyY2xXdkZLdDFOWXUwZTRFNXA5bzNQNkJQbzdWMUFNaW91X3NveUEtaEpzb1pWTkZWOE5OUEluRGNNMTFJakVTUFNEdThDZjUzV2w2cVJCMnBTa2ptdw?oc=5\" target=\"_blank\">Champions League 2026-27: el nuevo formato, los favoritos y lo que hay que saber</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Día de Gualeguaychú</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-07T14:54:51+00:00"
+    },
+    {
+      "titulo": "Juegos y resultados en MLB - PSN Noticias",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5XdDlGWmRSbWkwYld1ZEhrZE9ZZWVPb2huT3NkNGJXakoxbUlhUnlvNmowVlhwSzlGNTc1QXREdVJsU3ladHlSQWpRZzYwSDBBUlBBRC1zM1hxRUU0YUR5N2tEM2k?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE5XdDlGWmRSbWkwYld1ZEhrZE9ZZWVPb2huT3NkNGJXakoxbUlhUnlvNmowVlhwSzlGNTc1QXREdVJsU3ladHlSQWpRZzYwSDBBUlBBRC1zM1hxRUU0YUR5N2tEM2k?oc=5\" target=\"_blank\">Juegos y resultados en MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PSN Noticias</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-07T14:54:09+00:00"
+    },
+    {
+      "titulo": "Dodgers vs Braves: ¿A qué hora juegan y dónde ver el Juego 4 de la Serie Divisional MLB 2026? - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOU1JSV19lbTlXOUtjZHdtbk16QkxNQnFoQTdqcHRRNmxzbDVVczZHa3hpNmJPWGpjLXkwcW9INjdiVTZLekRLQkVENkZ3dEVaeDhaZWpldXdYMC1hdWRoUURnZHYtR0JBc0VrR0t2QkoyMGZ3VWVnNms1Q0ZLMFFqaUJHZDVJUHhqSmlXQmJJQ19KRlJMR21oS2hOWm1wV1QxV2xJclYyNUE4VERLaFc1emwwUmRNYS1GZW1pRFVsVXpvUDd1WmRLOURn0gHKAUFVX3lxTFBwTlZIeHZ5ellNNzdNZjNVZThzVnRWY2E2eWdVWUs3RzlGOXpyXzc5c05pQmV0SHJUeUZLSTVYNE04YmRjUFpRZkczSkZDRnU4YnhUXzI5SFcyckQ2QWJtbTJWd1hhSVpUMmpyQjgyb0tfR1gxeHZFWmRZSzZTVHJYLXRnN2k1N0NPdmlrc1VocWVkRTU0ZG5TaHE1ZWU0WnhHU3pWMzM1YzMyZ1h5X3pLOERRM2ZQRjVTQU5KcUFCS25PZWNZN01QYnc?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxOU1JSV19lbTlXOUtjZHdtbk16QkxNQnFoQTdqcHRRNmxzbDVVczZHa3hpNmJPWGpjLXkwcW9INjdiVTZLekRLQkVENkZ3dEVaeDhaZWpldXdYMC1hdWRoUURnZHYtR0JBc0VrR0t2QkoyMGZ3VWVnNms1Q0ZLMFFqaUJHZDVJUHhqSmlXQmJJQ19KRlJMR21oS2hOWm1wV1QxV2xJclYyNUE4VERLaFc1emwwUmRNYS1GZW1pRFVsVXpvUDd1WmRLOURn0gHKAUFVX3lxTFBwTlZIeHZ5ellNNzdNZjNVZThzVnRWY2E2eWdVWUs3RzlGOXpyXzc5c05pQmV0SHJUeUZLSTVYNE04YmRjUFpRZkczSkZDRnU4YnhUXzI5SFcyckQ2QWJtbTJWd1hhSVpUMmpyQjgyb0tfR1gxeHZFWmRZSzZTVHJYLXRnN2k1N0NPdmlrc1VocWVkRTU0ZG5TaHE1ZWU0WnhHU3pWMzM1YzMyZ1h5X3pLOERRM2ZQRjVTQU5KcUFCS25PZWNZN01QYnc?oc=5\" target=\"_blank\">Dodgers vs Braves: ¿A qué hora juegan y dónde ver el Juego 4 de la Serie Divisional MLB 2026?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-07T14:50:07+00:00"
+    },
     {
       "titulo": "Cómo Manchester City vs. PSG se convirtió en un clásico en la Champions - ESPN México",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeDctYkV5NTdFUmZ6a1I0SUdyXzJsbmdrUVZpWGxBYjBIY3BqYXNSenBoTUgySkJuYWVsME9fYTlwVndVTl9HX1Rva3FXb1ZOQlpPWWtmUkRPdFdtcU1tSlFHYml1WUlJQ25xckNyZVhLcmpoUlJoVmJpbnJFcHBMNFdyRUxmTDdDVjNNTWRTTzlBQ1ZDcjlITUJZSko4U3VfcDBySEJBRWcwVGhyN2EzRjVFLWtyNmZkUmdTdWJ1N3I?oc=5",
@@ -165,6 +215,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-07T11:54:04+00:00"
+    },
+    {
+      "titulo": "Pedro Rodríguez anuncia su retirada del fútbol - EL PAÍS",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOa1lzRy1aVmJWT0xWOVhaam5QTUxVMUNWc2VJOTE4ZTZVWWNaaWludnRfVmRtSk5KYXF4dTl2aFNZZ21MRW9Tb1VlVTJsSERwZkFWNDRhSlNaV1ZIXzNvdldIVG1zT1dDSUV3dzdKT1BKSHRkMW1PMTZQdGZIQ3ZIY0tEMUpZWnp2YzRONWtCUmc3R3hWWmZTMmpEWTFwQdIBsgFBVV95cUxPeTUyRld5WU01dTF5R1FUVWtJMGROSUNrQWcxRjFkS0lYVW9ZMW9BYmRnTnZsRkNfMmVJSVBjbGVWZG1LcElLWTdjYk0wb0hqOTMxNU1ONVd2VTJuTkpSRmpsX1p6bVgxaVFKOEpLZmNKLWRDRzcySXoyWXlWc3o2Nm1LLWNUYS1HalB2NlpfM3hZakhCOVVIMjBUUWFQeXdORE1Tb0p6LXlqV2VoSmd3N3l3?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxOa1lzRy1aVmJWT0xWOVhaam5QTUxVMUNWc2VJOTE4ZTZVWWNaaWludnRfVmRtSk5KYXF4dTl2aFNZZ21MRW9Tb1VlVTJsSERwZkFWNDRhSlNaV1ZIXzNvdldIVG1zT1dDSUV3dzdKT1BKSHRkMW1PMTZQdGZIQ3ZIY0tEMUpZWnp2YzRONWtCUmc3R3hWWmZTMmpEWTFwQdIBsgFBVV95cUxPeTUyRld5WU01dTF5R1FUVWtJMGROSUNrQWcxRjFkS0lYVW9ZMW9BYmRnTnZsRkNfMmVJSVBjbGVWZG1LcElLWTdjYk0wb0hqOTMxNU1ONVd2VTJuTkpSRmpsX1p6bVgxaVFKOEpLZmNKLWRDRzcySXoyWXlWc3o2Nm1LLWNUYS1HalB2NlpfM3hZakhCOVVIMjBUUWFQeXdORE1Tb0p6LXlqV2VoSmd3N3l3?oc=5\" target=\"_blank\">Pedro Rodríguez anuncia su retirada del fútbol</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">EL PAÍS</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-07T11:42:03+00:00"
     },
     {
       "titulo": "Ver al Barça en directo en la Champions sólo cuesta 7,5 euros, pero el partido es en... Bakú - MARCA",
@@ -12419,71 +12479,6 @@
       "fuente": "Expansión",
       "categoria": "Mundo",
       "subcategoria": ""
-    },
-    {
-      "id": "d39883b2c9628588c727341d98ff38547066f634ef88bd973218c644416d8d58",
-      "titulo": "No solo Mbappé: estas figuras del deporte también rompieron con Nike y cambiaron de marca",
-      "descripcion": "Harry Kane, Simone Biles y Roger Federer son solo algunas de las figuras del deporte global que han dejado a la marca \"de la palomita\".",
-      "url": "https://expansion.mx/tendencias/2026/09/18/no-solo-mbappe-otras-figuras-deporte-dejaron-nike",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/6d5830c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F82%2F23%2Fd17eb79d4d6587f7e2785706446c%2Fdeportistas-nike-mbappe-1.jpeg",
-      "fecha": "2026-09-18T23:22:45+00:00",
-      "fuente": "Expansión",
-      "categoria": "Tendencias",
-      "subcategoria": ""
-    },
-    {
-      "id": "12baa0e7430707011742c655aacb1de061409c9dd5670afec5d0a2c31abc5ea1",
-      "titulo": "Rodrigo Pacheco, el gran ausente de México para la Copa Davis ante Bermuda - esto - El Sol de México",
-      "descripcion": "Rodrigo Pacheco, el gran ausente de México para la Copa Davis ante Bermuda - esto El Sol de México",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQTBkRURXbk5VNjhEaG1mQk5GakZBd2NxYmFwOHBJbEFlQkQzWUVzYkREQk1MMlpWQVZXSVRTZDdGbC10aVRGVDkyNnIxaXNlcDUyX0NRY2F4TEFTSGlPOEZHMFh5WjRGanNmQnFYUFhJcUN4U2EtXzNhZ2FnNDBxMUNqbGZOUkFMY0hMRkp2SXFWZ2kwR3NkNG12Y3prd0NYSnA0TVRsZVNWU0RscnVFbjhB?oc=5",
-      "imagen": "https://oem.com.mx/esto/img/32147287/1789751343/BASE_LANDSCAPE/1200/image.jpg",
-      "fecha": "2026-09-18T22:15:57+00:00",
-      "fuente": "El Sol de México",
-      "categoria": "Deportes",
-      "subcategoria": "tenis"
-    },
-    {
-      "id": "63e356fb5cc40b4abb2c15c3d174ff7fd630a3e89da92ea0d990b8c290555890",
-      "titulo": "¿Cuándo será el equinoccio de otoño en México? Los días serán más cortos a partir de esta fecha",
-      "descripcion": "La temporada de verano está llegando a su fin y pronto comenzará el otoño, lo que significa que los días serán más cortos.",
-      "url": "https://expansion.mx/tendencias/2026/09/18/cuando-sera-equinoccio-otono-mexico-dias-mas-cortos-fecha",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/2fa15d3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb8%2F99%2Fabf081ea404b85a2630a2df826d5%2Fequinoccio-otono-mexico-1.jpeg",
-      "fecha": "2026-09-18T20:45:16+00:00",
-      "fuente": "Expansión",
-      "categoria": "Tendencias",
-      "subcategoria": ""
-    },
-    {
-      "id": "69a996455fc53d2c703e942a631be3214cfd4a0bfb4f4022d0b4b8ff125375eb",
-      "titulo": "¿Quién es el dueño de On, la marca que le quitó a Nike a Kylian Mbappé para entrar al futbol mundial?",
-      "descripcion": "La firma suiza nació con una manguera de jardín, creció con Roger Federer y ahora busca competir en una industria dominada por Nike y Adidas.",
-      "url": "https://expansion.mx/tendencias/2026/09/18/quien-es-el-dueno-de-on-marca-que-ficho-a-mbappe",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/0ddaf26/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F57%2F72%2F4f5022a14d64a131883ebc5d64f7%2Fkylian-mbappe-marca-on.jpg",
-      "fecha": "2026-09-18T14:42:06+00:00",
-      "fuente": "Expansión",
-      "categoria": "Tendencias",
-      "subcategoria": ""
-    },
-    {
-      "id": "e4815bd1000f6dbd68ce3978c6b965db6c6fa4002783aadfc0855b94a638aa94",
-      "titulo": "Senado pone bajo la lupa al futbol mexicano: analizarán el fin del ascenso y en Liga MX - AS México",
-      "descripcion": "Senado pone bajo la lupa al futbol mexicano: analizarán el fin del ascenso y en Liga MX AS México",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdWF1ckhGbUpreTRFcWVRWkcxemM4V1RWQzFJQmtpSUpOSnVVSHBOQXk3Qkd1SmpPZEJPdHVIclRpMGRyMUwyWkNWQXlaMU9pYnV1ckxTNFFYM212ODBfVE5HbU9icHE3VloxR0NUS0ZWbmE5akpuNzBodFNKOUVnUUwzdnhUNmoteWgySFJOWFpDVnVoNXVIdUJsZFJqNnZtVVpTUGtQSnpkRVBCTEt6OEtqZWk5YlAzcFFEcnRybzJFOXpDOVp1Vk9jS2I5dFVad1lWUWZ0NXYtQdIB7gFBVV95cUxQcTlMdVF4R3MwQ2NtMWc0SXVwVDliSlotNTZ3ZUhQNnpoMVZZbnZ6U3o4SGZwcmxaenBIX25KU0RwNS1XSUdEVVlqLVpWdmIxTXZiSnNHQkc1UHZxZVhEY3p0RWZLRGlXN1Y2ZDVURWVRMzdxN1FwTnZGNmhrbXpCR3NTVVh3Y2hHcjkyQTJPZW82QUFnZjhoNkMtZ19SQUZVV0pOV2dBTm1CdXhBY2Zqb2p4YTk3RmViWDU5aXQxU0N1SWNOcVR3RWJPcHFjeTdyaTkydjhIYjJYanJld3dlRU01YlBNanM4ZWtLOFRB?oc=5",
-      "imagen": "https://img.asmedia.epimg.net/resizer/v2/2GI7IHQ7LNNDHJ7MZAGFP6O2KY.jpg?auth=f88d4e4e4fb2eff416fa708ce11198391cf764b42018c003802b58e5d32d1018&width=1472&height=828&smart=true",
-      "fecha": "2026-09-18T07:00:00+00:00",
-      "fuente": "AS México",
-      "categoria": "Deportes",
-      "subcategoria": "futbol"
-    },
-    {
-      "titulo": "\"El proceso inició mal\": Critican decisión de no parar Liga MX en fecha FIFA del debut de Rafael Márquez - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaHZoWVBvMGdLSDFlZUJlcDh5aHA4b0swMGg5dTFCZXphZm1vTnFBUXdCU3BUY2xKbHZubHk2NXlGTG9WaUExZklVazcyVjZEVktsNTJSdWZYTXVoeXZmaUdoNjdINlVzeVlRbWgxY2V6OFk1bWlnVU9LYjNnWksteVllNVUtQVI0UzhpX0JWd3lxSF80Q1d2MmNuR1dWVkVtdFNwUTVsZHBsYncyckxtUWhZNmZXLWZnTnQtWHNTTGkzT016Nk1SN3JTQnh5M2RzeG9xRkRZRUpOdmfSAdsBQVVfeXFMT0JOR3A3eUhIWVpHcnhWXzRhTG9NazdSSzBqTGV1ZU9pN1M3Z2ozYVg3cDNvVGR5dFpIbkVLbzJGZFZkdFFCV1ZrOVZraURGWUw2RHQ3RlVvQnlpZnB0Mmkwdm1WZUFGQWFoazBpUW84Y0M1a2JsaXhUUWFfeG93Mk9KcGxtMTRueWNFUkI3TC1JZ19sUmJYNWptWE1FaENISDgwbFRabTJMMzQ3ZWFycXlDMGRKM0hpMVVyTTZQNkVZZjJNd2piWG1XYjJ1LVd0VnluY1Rwd0hkOUdz?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/09/18/6aaccd1be741c.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaHZoWVBvMGdLSDFlZUJlcDh5aHA4b0swMGg5dTFCZXphZm1vTnFBUXdCU3BUY2xKbHZubHk2NXlGTG9WaUExZklVazcyVjZEVktsNTJSdWZYTXVoeXZmaUdoNjdINlVzeVlRbWgxY2V6OFk1bWlnVU9LYjNnWksteVllNVUtQVI0UzhpX0JWd3lxSF80Q1d2MmNuR1dWVkVtdFNwUTVsZHBsYncyckxtUWhZNmZXLWZnTnQtWHNTTGkzT016Nk1SN3JTQnh5M2RzeG9xRkRZRUpOdmfSAdsBQVVfeXFMT0JOR3A3eUhIWVpHcnhWXzRhTG9NazdSSzBqTGV1ZU9pN1M3Z2ozYVg3cDNvVGR5dFpIbkVLbzJGZFZkdFFCV1ZrOVZraURGWUw2RHQ3RlVvQnlpZnB0Mmkwdm1WZUFGQWFoazBpUW84Y0M1a2JsaXhUUWFfeG93Mk9KcGxtMTRueWNFUkI3TC1JZ19sUmJYNWptWE1FaENISDgwbFRabTJMMzQ3ZWFycXlDMGRKM0hpMVVyTTZQNkVZZjJNd2piWG1XYjJ1LVd0VnluY1Rwd0hkOUdz?oc=5\" target=\"_blank\">\"El proceso inició mal\": Critican decisión de no parar Liga MX en fecha FIFA del debut de Rafael Márquez</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-09-18T07:00:00+00:00"
     }
   ]
 }
