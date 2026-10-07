@@ -1,9 +1,9 @@
 {
-  "actualizado": "2026-10-07T15:52:08.765032+00:00",
+  "actualizado": "2026-10-07T16:17:35.924977+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 703,
-    "sin_imagen": 497
+    "con_imagen": 701,
+    "sin_imagen": 499
   },
   "noticias": [
     {
@@ -25,6 +25,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-07T15:03:07+00:00"
+    },
+    {
+      "titulo": "Barcelona: Cómo Pedro se hizo de un lugar en el equipo de Guardiola - ESPN Argentina",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPME5sc01yTVZqbmI0aEVZbFNKWHc1OXRraXlQWGMwcGx1X1VwTnEyanN4MHplamIzRGE1SzFCMmFTY1p5OGEzQWhrektzUTNVWFFBRlZ0YW5VbVZsSHJsblRRWVpndlJHM1hLaU41Nml5RENFZDFaeHd4bG1heTlzMzF1dC1XQXl2cUladElsZFJMVW5Na1hvT1BIekViak5PMU9BdlByeU5oZENqcjMzVy1pdGtaMEl0d2c?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxPME5sc01yTVZqbmI0aEVZbFNKWHc1OXRraXlQWGMwcGx1X1VwTnEyanN4MHplamIzRGE1SzFCMmFTY1p5OGEzQWhrektzUTNVWFFBRlZ0YW5VbVZsSHJsblRRWVpndlJHM1hLaU41Nml5RENFZDFaeHd4bG1heTlzMzF1dC1XQXl2cUladElsZFJMVW5Na1hvT1BIekViak5PMU9BdlByeU5oZENqcjMzVy1pdGtaMEl0d2c?oc=5\" target=\"_blank\">Barcelona: Cómo Pedro se hizo de un lugar en el equipo de Guardiola</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Argentina</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-07T15:03:00+00:00"
     },
     {
       "titulo": "Golpe a los centros de datos de Google: gobierno detiene dos de sus grandes obras en Finlandia",
@@ -65,6 +75,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-07T14:50:07+00:00"
+    },
+    {
+      "titulo": "“Es el momento de comenzar una nueva etapa”: Pedro Rodríguez anuncia su retiro - El Sol de México",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNXdqLWZUczFhd0tEU0ZzSjl1T1hlMllLQnNJNUxzQWlkclZOSTJQOS1kcnZNNDNuVmdncU1kLTNfVXZ5djNDYmxNUzNTazNfeUFrZjRFdzRwZTZwMjJuT0RyOEFVc2hiSTcxaWcwYWZUQUNBYUR5NWZCVW5Ha1BHQjhTQ2JHd2gwYXFZQTRZT004Rmo0LTR1NEFjMWFoR3J6blNSNG9GRDFGalpETm01TkNlLWVCSXVnZzR1dExsQl8ydw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNXdqLWZUczFhd0tEU0ZzSjl1T1hlMllLQnNJNUxzQWlkclZOSTJQOS1kcnZNNDNuVmdncU1kLTNfVXZ5djNDYmxNUzNTazNfeUFrZjRFdzRwZTZwMjJuT0RyOEFVc2hiSTcxaWcwYWZUQUNBYUR5NWZCVW5Ha1BHQjhTQ2JHd2gwYXFZQTRZT004Rmo0LTR1NEFjMWFoR3J6blNSNG9GRDFGalpETm01TkNlLWVCSXVnZzR1dExsQl8ydw?oc=5\" target=\"_blank\">“Es el momento de comenzar una nueva etapa”: Pedro Rodríguez anuncia su retiro</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Sol de México</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-07T14:47:04+00:00"
     },
     {
       "titulo": "Cómo Manchester City vs. PSG se convirtió en un clásico en la Champions - ESPN México",
@@ -12455,28 +12475,6 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-09-21T07:00:00+00:00"
-    },
-    {
-      "id": "21b682c6314b8f488dc52dc6e9219396ca9364069bdebb7e3c84e202b384ce0a",
-      "titulo": "México gana a Bermuda y avanza a los playoffs del Grupo Mundial 1 en la Copa Davis - esto - El Sol de México",
-      "descripcion": "México gana a Bermuda y avanza a los playoffs del Grupo Mundial 1 en la Copa Davis - esto El Sol de México",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMjlwSVpoQTBrcm5yejBpQ3V0VGlkVEQ0MzJHelpfTWlIdmlxTXdVbjVEQ3kwSXlJeWo5VVY2WTc4emhjTGNaTThGY3Q2R0JrVlMycERiS0o3WmFzRHViYzRuanc0VWg2emMyOUMtRURGYWNZdnFpc3dIOVpqaWY1UXNmc2xrM0wxSTNXQlh1NGVQUzRiTnQ5bmxteGtfTUs2QVVWaU5fTEJQWjlRemVEVU91SnRQUzhZdmdsV193?oc=5",
-      "imagen": "https://oem.com.mx/esto/img/32180032/1789917440/BASE_LANDSCAPE/1200/image.jpg",
-      "fecha": "2026-09-20T07:00:00+00:00",
-      "fuente": "El Sol de México",
-      "categoria": "Deportes",
-      "subcategoria": "tenis"
-    },
-    {
-      "id": "6ade30d6726b6a355d43600220e0c7eba47673fb123d8dfe4f28021c89380633",
-      "titulo": "México vence 2-0 a Bermuda con triunfos de Magadán y Hernández en la Copa Davis 2026 - esto - El Sol de México",
-      "descripcion": "México vence 2-0 a Bermuda con triunfos de Magadán y Hernández en la Copa Davis 2026 - esto El Sol de México",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRTA2N0lCMGpsM3d0ZVl6LUZQVHNkeVhpTkdVenpiUGdiTGxacjdpMjVjTmtaaTQ0ckVuQXpGMW9zamhzdDdZdDdWM2dFcWtsWFdvWmZRb3ZSLW5Kd2owRFhselBYcXZ2VTJuVHZFUzR1a3R2d19GaTVFT1lydmJZVlZ2OGdNSzdjWm1JRTJwQWF2R3BxMy1iUzU3UmJpeVpUeV9BUWI2Y3JEc0tGU09mLUNwQUVPZDVMRmU2R1RoMlU?oc=5",
-      "imagen": "https://oem.com.mx/esto/img/32163795/1789842758/BASE_LANDSCAPE/1200/image.jpg",
-      "fecha": "2026-09-19T07:00:00+00:00",
-      "fuente": "El Sol de México",
-      "categoria": "Deportes",
-      "subcategoria": "tenis"
     }
   ]
 }
