@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-07T01:46:11.220858+00:00",
-  "total": 1151,
+  "actualizado": "2026-10-07T02:18:09.172463+00:00",
+  "total": 1152,
   "imagenes": {
-    "con_imagen": 703,
+    "con_imagen": 704,
     "sin_imagen": 448
   },
   "noticias": [
+    {
+      "titulo": "La tasa más baja de Infonavit es de 3.69% y esta la única condición para acceder a ella",
+      "url": "https://expansion.mx/finanzas-personales/2026/10/06/tasa-baja-infonavit-unica-condicion-acceder-ella",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c912cea/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fbe%2F07%2Fd127792d4a6c811c4065407a33c9%2F831574997-1070846735941036-8327401352841613545-n.jpeg",
+      "descripcion": "El salario determina la tasa de interés que pagarás durante todo el crédito, pero el monto que puedes obtener depende de tu capacidad de pago.",
+      "fuente": "Elizabeth Santiago",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-07T01:45:53+00:00"
+    },
     {
       "titulo": "La CRT depurará 25 millones de líneas móviles y los chips gratis explican una parte del ajuste",
       "url": "https://expansion.mx/empresas/2026/10/06/chip-gratis-deja-25-millones-lineas-desuso-registro",
