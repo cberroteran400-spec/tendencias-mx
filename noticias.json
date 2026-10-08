@@ -1,11 +1,61 @@
 {
-  "actualizado": "2026-10-08T11:47:09.271707+00:00",
+  "actualizado": "2026-10-08T12:19:34.709407+00:00",
   "total": 1200,
   "imagenes": {
     "con_imagen": 597,
     "sin_imagen": 603
   },
   "noticias": [
+    {
+      "titulo": "Una semana para multiplicar el talento STEM en México",
+      "url": "https://expansion.mx/opinion/2026/10/08/una-semana-para-multiplicar-el-talento-stem-en-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/8e1c304/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0f%2F0d%2Fbb111b124f7487fa4c87b74cad25%2Feducacion-tecnica-mas-salario-en-mexico-cepal.jpg",
+      "descripcion": "La escasez de talento especializado exige ampliar la formación más allá de las carreras universitarias y conectar a empresas, escuelas y trabajadores con nuevas formas de aprendizaje.",
+      "fuente": "Fátima Masse",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-08T12:04:14+00:00"
+    },
+    {
+      "titulo": "El valor de cambiar de opinión",
+      "url": "https://expansion.mx/https:/obras.expansion.mx/opinion/2026/10/08/el-valor-de-cambiar-de-opinion",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/45c3834/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2F78%2F7b%2F150131dc4d54ac257c2355cfa9a4%2Fetica.jpg",
+      "descripcion": "Cambiar de opinión no es necesariamente una muestra de inconsistencia: también puede ser la consecuencia de aprender, cuestionar nuestras certezas y entender que el mundo que nos rodea ha cambiado.",
+      "fuente": "David González Natal",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-08T11:59:11+00:00"
+    },
+    {
+      "titulo": "Gmail bloquea 100 millones de intentos de phishing diarios: así detecta Google las amenazas",
+      "url": "https://expansion.mx/tecnologia/2026/10/08/google-trust-safety-phishing-ia-ciberseguridad",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/6fc9ebd/2147483647/strip/true/crop/1800x1200+0+0/resize/800x533!/format/webp/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fd7%2Fab%2F6353a3be400787eee580501e742b%2F3-computadora-tecno-201808081335057-92a1052.jpeg",
+      "descripcion": "Laurie Richardson, vicepresidenta de Trust & Safety, explica cómo la IA está cambiando la velocidad con la que la compañía detecta abusos y corrige sus propios sistemas.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-08T11:55:43+00:00"
+    },
+    {
+      "titulo": "Amigo GNL tiene permiso ambiental, pero dos suspensiones frenan sus obras",
+      "url": "https://expansion.mx/empresas/2026/10/08/amigo-gnl-permisos-suspensiones-proyecto-gas-guaymas-sonora",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/673c234/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F66%2Ff1%2Fb11a48f64063afd60853eb41c746%2F1.jpg",
+      "descripcion": "El proyecto de licuefacción en Guaymas cuenta con permisos energéticos, pero la autorización de ASEA está impugnada y no puede surtir efectos mientras siga el juicio.",
+      "fuente": "Diana Gante",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-08T11:55:28+00:00"
+    },
+    {
+      "titulo": "El CCE advierte que cambios a deducciones pueden llevar a empresas a la quiebra",
+      "url": "https://expansion.mx/economia/2026/10/08/cce-advierte-riesgo-de-quiebra-ante-ajustes-de-deducciones",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/b3f9ed4/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F67%2Ffb%2F00f97d2e466dbfc229f0271e6b78%2Fjose-medina-mora-cce.jpg",
+      "descripcion": "El sector privado negocia con Hacienda ajustes al Paquete Económico 2027. Anticipa mayor certidumbre y pide cuidar la inversión. Respalda la Ley de Economía Digital, pero subraya retos en zonas rurales.",
+      "fuente": "Antonio Hernández",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-08T11:55:12+00:00"
+    },
     {
       "titulo": "Borini se retira: \"Todo empezó con un vuelo. Gracias, fútbol\" - Goal.com",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQU1F4dVNMSkZqT0gzTGlFVU1TQlRlallGMF94MVR1WDhXNTcxWHR5RG5rNDg4WmNEaHB5djNzR3pNMVpFZndJaXR1YUtnWG1BMUswN0MtOVN5V045OEZXQnZmNW1nTklMMllMaDFLbklpOUItRDZ3NFBrQzNkYVRPT3l3UEN3cTZRcFlmNkRBbHZkWndORWx6UmF2UkVzRDU5aFRvNnJBUVozMkFLMnc?oc=5",
@@ -12295,61 +12345,6 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-09-29T16:01:00+00:00"
-    },
-    {
-      "id": "3f61e2e336fa8e08873f0217b39c072a0659c9ea4f44495add09021e48bbe06a",
-      "titulo": "Shaquille O'Neal se moja: \"El juego europeo es un poco mejor que el de la NBA\" - MARCA",
-      "descripcion": "Shaquille O'Neal se moja: \"El juego europeo es un poco mejor que el de la NBA\" MARCA",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTUpwVzZjbDUwcjZPVEI2bGhHUDJQWi1UYlpRN3dsRFR0cEpRVUpabXVGUVIzRjZyNzY2THF3bHN4cl9CdUw2RW50Q3VaUDVrOS16NEhMbXY0NEh0T1JjSFlrZ2RTYmliUEFGSFdCZDhFV2VDU3dRRFRGMWRsM18wNzRTMDFjU21tdHBNdFIxaGthV05VdGRlNV9Gamh5dVQ3d01r0gGjAUFVX3lxTE9raFc2MzR1ekZ5TW5YOHBtZjJZZDA0bE1JekxUNDlSN1VycjhrNzY5a0kyd2FCdmhLMEdwTUdTSGx2d2xOWWtXdi1yTVptemRpenlvX3ZCbWRaOUt3b3g3endUZjRvR3c5WmU1SkU3NkZGS2FHb1lvTjZlaHFwV3lQaFNQRWFPdmlhbUZIS2ZJdF81WkNDQkcxNlQ5YmFkTHNIdWM?oc=5",
-      "imagen": "https://objetos-xlk.estaticos-marca.com/files/article_main_microformat/uploads/2026/09/29/BLNkC8Bn.jpeg",
-      "fecha": "2026-09-29T15:56:22+00:00",
-      "fuente": "MARCA",
-      "categoria": "Deportes",
-      "subcategoria": "basquetbol"
-    },
-    {
-      "id": "623f82cb41f9dfec7a26330bb7d8b6e30ed0ec2d88a32bc42087a45554979aac",
-      "titulo": "Historia pura: Mariachi mexicano toca himno de Estados Unidos - TUDN",
-      "descripcion": "Historia pura: Mariachi mexicano toca himno de Estados Unidos TUDN",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTVR1ZTNvbVBybkRiR21nMlQ2ODNuM3J5b05sQ01FWHJVVnZvSDlGOXZCQ29vMzVYdloxc0syRks4TTc3RktCVzF4WFVZN1JsNFQ4REp5SkZGbTlWeTl0cFlGM19pTVNBblhVX1dZN1RTUTZXYWlfcVFlYWxrNTJTVzVtRG05REZ5OEFFODJUNWJ0ekZ5THhraA?oc=5",
-      "imagen": "https://www.tudn.com/api/image/og/us/nfl/nfl-mariachi-herencia-de-mexico-entona-himno-de-estados-unidos-video",
-      "fecha": "2026-09-29T15:55:00+00:00",
-      "fuente": "TUDN",
-      "categoria": "Deportes",
-      "subcategoria": "nfl"
-    },
-    {
-      "id": "cbef1ee5f645a6bcac493f82947b750e8c0f5c2e630885de02f1bcca15351c29",
-      "titulo": "LeBron James iba a fichar por los Knicks este año: esto es lo que acabó pasando - Mundo Deportivo",
-      "descripcion": "LeBron James iba a fichar por los Knicks este año: esto es lo que acabó pasando Mundo Deportivo",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbG9vTTByYkRFX3NMZVZkOUg2Tm9IMlFHeTVXYXl0dEJxQUFncXBZV2V4c25Rb0JrOVVOTEFIbE40ZE5RcXJxSUUxOXFpRGlvdV9hMnlxR3RpSWpHRUozTDc4TW0tQ3FhZTg4d3NRc2RTdUlFZTdFaVFpS1FjUWdTeVJnSDM1eWRpZ3lhZENwbEVvaFdkenE2YXd6NDk5Zy1rcU9wNExKT1N3dDdobGNQN0J1RXFHNEtxaC00M3BuU0NmZ9IBzwFBVV95cUxNM2pqVV85T3I0elRpeU9oU3h2aUxITWtPY2h5WjFyeVBKOVlXQ0x5UVJBTHpfTDVKdnJkTmdBbjFWVTBFTFIwQWw1RTMwbHZpM2RvaEJiaDB6ZFZyZEd6RmlUQVh5R1B2MEU4NWdkMmxCdFJtWE5GSXB2a0htVk5CT0lXemdEZ0VqVE5IYWRoOFBsX2VGWWUzUnpQakdJeE5VejkzSlA5dEpTVDBKVTR1VF9IT2tVYTR3aW43RmxQYmNYVVM0SHNwTC01UDBYcVE?oc=5",
-      "imagen": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/09/29/6abb50ab7d7de.r_d.549-361-11439.jpeg",
-      "fecha": "2026-09-29T15:45:31+00:00",
-      "fuente": "Mundo Deportivo",
-      "categoria": "Deportes",
-      "subcategoria": "basquetbol"
-    },
-    {
-      "id": "2c7df429591a3eac6324790616fd8b4180a0a98cc1e2d1407b40623a0155281f",
-      "titulo": "Playoffs MLB 2026: fechas, horarios y dónde ver cada juego de la Serie de Comodines desde México - Infobae",
-      "descripcion": "Playoffs MLB 2026: fechas, horarios y dónde ver cada juego de la Serie de Comodines desde México Infobae",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUWd5SUtGelo2ajhnaS1vUnVvenlQVXFsMmNnSFRrZ0daX3Z0Mk41S00xdWhoTkVpQ0ktTk81QmQ5VU5JT1BJdHdKcDM0b0VFX1BpQVlrdGFfV2ZMalp1WGM2d0g0M0ppaC14RlY3eWZyM2RtN1dvYWl3UnhHUDduYzJTN1J2Qkt0aHVpeUFZdGEzam42ckpJeHFqQXhuRjJtX0xqaERncUlUQVI0TDFKaDIwX3kzb0JONGdKTXJCWk9DVUhnQjJXY1hOcW81RVUzRlIwS2dVbE1lWG5NTjQ00gH6AUFVX3lxTE5iQ1h3MjIzbF9weEY5QmE3M2RyVDR4YlV4N04wemtFcG8tdzM3dHZOYXU5bU5qcXVGSWZMbjFuQlZpX2MyVWVlOTYzLXp0X0R2WjFnMXdKMExDSVZUNUoyY2xOZ2w4elFndE14dS1HaURoVDlxMzZuSEZWQzB1VlpiVWYtM0plcnZoOG5hS0JXdEhneWVGeFRmWjNWRkdxSzNncWF1amZ6clNOaW1IN1I2ZXpMS0dvZmRGQkwzYkxHRkhPdThKRFZJRTJJcGZHRGlPTUxPSU9HZEs5V2JlX0ppLVhZMlZPODM2X1JNM3k0S25VVDNKZUxrV3c?oc=5",
-      "imagen": "https://www.infobae.com/resizer/v2/VY6JIZXSQBDXHAE4JY56YXZ23Q.JPG?auth=936bc209e1bc476a00e4765ae29ded3afdd86d2d73abf44bed87b2d2f9c12ed6&smart=true&width=1024&height=512&quality=85",
-      "fecha": "2026-09-29T15:19:00+00:00",
-      "fuente": "Infobae",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol"
-    },
-    {
-      "id": "15b1b83b180912148e6984f944e472205162fbf5159d9f5703d902a211da5039",
-      "titulo": "¿Quién era Emiliano Caballero, joven promesa del boxeo mexicano asesinado en Toluca? - heraldodemexico.com.mx",
-      "descripcion": "¿Quién era Emiliano Caballero, joven promesa del boxeo mexicano asesinado en Toluca? heraldodemexico.com.mx",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNR1VZV2dRaHNPd01BR2RwZ2dBNGM4ZUVMakhIVG12Ynhlb0c1SXc3SHNuc0E3NkZkc0ZybE5OczBucEZmRkllcGt1VWFkZWZoSnVwYkdYZkFZNVptLXp2WjJmQ3VLWmhPdUV5dUY5bF9HRXdfVzl4STNEX21YdkZ0eHpqajRpZkFtZXBPQ2JiSXE0S1NjSk1yR2ZSRTRtYWJENG9WS2RzQ2hQanlBLVZvcWYtd3JoQnp0dkdKUjNweFkyUF92MzJ0UmdfR2VIajB5MFdndFI2WVYzTTQ?oc=5",
-      "imagen": "https://heraldodemexico.com.mx/u/fotografias/m/2026/9/29/f1280x720-1334566_1466241_5050.jpg",
-      "fecha": "2026-09-29T14:50:00+00:00",
-      "fuente": "heraldodemexico.com.mx",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo"
     }
   ]
 }
