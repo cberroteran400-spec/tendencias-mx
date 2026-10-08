@@ -1,11 +1,71 @@
 {
-  "actualizado": "2026-10-08T22:47:19.607091+00:00",
+  "actualizado": "2026-10-08T23:14:23.915393+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 508,
-    "sin_imagen": 692
+    "con_imagen": 506,
+    "sin_imagen": 694
   },
   "noticias": [
+    {
+      "titulo": "Los contratos mixtos no atraen a los gigantes petroleros, pero algunas empresas sí ven negocio con Pemex",
+      "url": "https://expansion.mx/empresas/2026/10/08/contratos-mixtos-no-atraen-shell-bp-empresas-negocio-pemex",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/2952319/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F41%2Fcd%2Fbf00585047fcb542c7e44eab1574%2Fistock-155600602.jpg",
+      "descripcion": "Consorcio 5M del Golfo ya obtuvo tres campos bajo este esquema, pero considera que los contratos mixtos no son adecuados para todos los proyectos petroleros.",
+      "fuente": "Diana Gante",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-08T23:08:33+00:00"
+    },
+    {
+      "titulo": "Jaime Munguía expondrá ante Nikita Zón en la cartelera Canelo vs. Mbilli - Solo Boxeo",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUzBVdEdFNFF2R0FNV1c5czlUcTVPRU1KVUZOTjlQZ0JSWkZFSWhnSjE1RGRGMkM3bUgxbjM0Uks1VDljMlpNRjlTdDNWTndwRE5BakVWUHBmTC1GVU50V2xSVnB1di1va084M2RYQ0VDbEpGMEx1S2JadDVrMVgyNlpqTUNoMG5JUEVFUU9JSXNRTUh1ZGROME8zNlo2Y2JPbHQtdlpXeXp2TmE0c1E?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxQUzBVdEdFNFF2R0FNV1c5czlUcTVPRU1KVUZOTjlQZ0JSWkZFSWhnSjE1RGRGMkM3bUgxbjM0Uks1VDljMlpNRjlTdDNWTndwRE5BakVWUHBmTC1GVU50V2xSVnB1di1va084M2RYQ0VDbEpGMEx1S2JadDVrMVgyNlpqTUNoMG5JUEVFUU9JSXNRTUh1ZGROME8zNlo2Y2JPbHQtdlpXeXp2TmE0c1E?oc=5\" target=\"_blank\">Jaime Munguía expondrá ante Nikita Zón en la cartelera Canelo vs. Mbilli</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Solo Boxeo</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-08T23:03:21+00:00"
+    },
+    {
+      "titulo": "¿Adiós a los 162 juegos? MLB propone un cambio histórico que revolucionaría los Playoffs - vanguardia.com.mx",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNeV9hdkNjRzJmSGFKQVdIdGZXd1NLT082OWk4SFpTdjdsU0FaeXl0UUc4RUZuaDdsY3l1ZF9nSW5GQm9Hb3BkMXZvVVptZnZXbDhsNjByRTJ4ZlV2QWs1QjRRVHZBUFU5UkM0cnRsOFhTbll5Yk9WaDhOb0Uwa1hHZ2k1ZlJNbVkxWkIwckNzalZzSWhETmJOV015b0xvVmJTOUc4MzJfNTlVeE90MkFKdGVfSHhsOVJRWHF2ekMzcHBmWVpudHYtMThVZkRwWkVoREVCYl9VOA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxNeV9hdkNjRzJmSGFKQVdIdGZXd1NLT082OWk4SFpTdjdsU0FaeXl0UUc4RUZuaDdsY3l1ZF9nSW5GQm9Hb3BkMXZvVVptZnZXbDhsNjByRTJ4ZlV2QWs1QjRRVHZBUFU5UkM0cnRsOFhTbll5Yk9WaDhOb0Uwa1hHZ2k1ZlJNbVkxWkIwckNzalZzSWhETmJOV015b0xvVmJTOUc4MzJfNTlVeE90MkFKdGVfSHhsOVJRWHF2ekMzcHBmWVpudHYtMThVZkRwWkVoREVCYl9VOA?oc=5\" target=\"_blank\">¿Adiós a los 162 juegos? MLB propone un cambio histórico que revolucionaría los Playoffs</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">vanguardia.com.mx</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-08T23:03:12+00:00"
+    },
+    {
+      "titulo": "MLB propone recortar temporada y ampliar playoffs para 2029 - Mediotiempo",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUnJJbDBiLW1IYTlrQU5ESEhvWC1PZUFWaE5xSmhjSWZKNU92ZmtMT2ZYY0dISUR1R01FT0pXa3lQazUwZWh2TXdiNkZ4VDJpVjB0MkFrS0drMFZCSkl6U2s0U3JUMEVBOFZxUm9zNXdRaGVMNzhDU3B5ZzV6U014c0RyTEk1VWhFeHpYMlZER0hlYmsxcTlj0gGXAUFVX3lxTE4wUm1uSWNlRHN0TkZCeTAtWE1IcUR4M251QTBjODdCTHV3RERJZnpCakd5SDR4YS1JY1pGVmlPR09uckFYZWltVkhUT2k2VVMxcWJDbUlVcGxwOFU5bVF1SFpqdWgxNmJtNDRiZ243LWZUQzlHeFVIaThkUmhSVUh6S2lHazZMTy1YaFU3VDMzWDJ5SVowQVE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQUnJJbDBiLW1IYTlrQU5ESEhvWC1PZUFWaE5xSmhjSWZKNU92ZmtMT2ZYY0dISUR1R01FT0pXa3lQazUwZWh2TXdiNkZ4VDJpVjB0MkFrS0drMFZCSkl6U2s0U3JUMEVBOFZxUm9zNXdRaGVMNzhDU3B5ZzV6U014c0RyTEk1VWhFeHpYMlZER0hlYmsxcTlj0gGXAUFVX3lxTE4wUm1uSWNlRHN0TkZCeTAtWE1IcUR4M251QTBjODdCTHV3RERJZnpCakd5SDR4YS1JY1pGVmlPR09uckFYZWltVkhUT2k2VVMxcWJDbUlVcGxwOFU5bVF1SFpqdWgxNmJtNDRiZ243LWZUQzlHeFVIaThkUmhSVUh6S2lHazZMTy1YaFU3VDMzWDJ5SVowQVE?oc=5\" target=\"_blank\">MLB propone recortar temporada y ampliar playoffs para 2029</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-08T22:56:35+00:00"
+    },
+    {
+      "titulo": "Atento Real Madrid: Kroos quiere ser entrenador y se formará en España - DSports",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNWx3OHZTX3RxREx3VHY3Y3lPWlBBeldGQ3NQT3c3R3l4OG5uMUNfa2Z1ZXFiVGlHdWdNVVJUS2FFdldyeFdVOF9laGw5QTA1VUduQTNxOWxxMTFveWZwVmt5LVpfR0V2TEUtVXJ6RGtRT3o0RHNhNTJ5TW1wR1NvdlBJR0RGWkRhUHdXcWw0SmFualVaclQ4LUZfTEZoTmZVQ0NmNHZRRkl0c01qcWFLVGFoU19mZXhxaWJWVUxEMmFpLTTSAcgBQVVfeXFMUE5sdTNhNzRtQzhXcFRWWl81RXBNY01ReHF5elpHYTRxQkhtSi0yc2tKTGpVc0tpS3Y0TFoyUzNqcTYxU0s4Q1RBbEg5aUpqMnRzOXFxZk0xQkEtOFlpelBTNWFmdWhoRFBtcmdYOTM2S2FIcWF6M19tNE03ZVdKVGdET09tSVZ1UUZvUFdnaTIxV1NhUUxEbjBFVkxOcTZkeGZveEVicVpzSVVqeHJBV3lOSlB0dXIyYlNhZHpIS1VCa1BjSndSTWg?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNWx3OHZTX3RxREx3VHY3Y3lPWlBBeldGQ3NQT3c3R3l4OG5uMUNfa2Z1ZXFiVGlHdWdNVVJUS2FFdldyeFdVOF9laGw5QTA1VUduQTNxOWxxMTFveWZwVmt5LVpfR0V2TEUtVXJ6RGtRT3o0RHNhNTJ5TW1wR1NvdlBJR0RGWkRhUHdXcWw0SmFualVaclQ4LUZfTEZoTmZVQ0NmNHZRRkl0c01qcWFLVGFoU19mZXhxaWJWVUxEMmFpLTTSAcgBQVVfeXFMUE5sdTNhNzRtQzhXcFRWWl81RXBNY01ReHF5elpHYTRxQkhtSi0yc2tKTGpVc0tpS3Y0TFoyUzNqcTYxU0s4Q1RBbEg5aUpqMnRzOXFxZk0xQkEtOFlpelBTNWFmdWhoRFBtcmdYOTM2S2FIcWF6M19tNE03ZVdKVGdET09tSVZ1UUZvUFdnaTIxV1NhUUxEbjBFVkxOcTZkeGZveEVicVpzSVVqeHJBV3lOSlB0dXIyYlNhZHpIS1VCa1BjSndSTWg?oc=5\" target=\"_blank\">Atento Real Madrid: Kroos quiere ser entrenador y se formará en España</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DSports</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-08T22:54:10+00:00"
+    },
+    {
+      "titulo": "Barcelona pidió modificar la fecha de un partido de Champions League: los motivos - DSports",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRUdJWWZZUXVNUkQ4d3hKMFExQ3lSbktMQlFUUnNSNUZ5cGJLNUJnOXRjNW5ra256S0gyeXNnVGxlZ3dmVDBSWFdiNXpBX254cDBWckt1bEVyM3ZFX05BUTJJQTRaVUpiM2JVUnZZa3RpNWpSakVDRWFla1JLVGJOSnJjYjFfcUUzeGxIaE1FQXRId1ZqbWJuMm1FTnh5cFlLUHVWREdvU2ZEVmpLUEpZTl9iTmdpRWRRSkhzei1aYk42NFlHMllRM2xMTWlDOGw5dHfSAdcBQVVfeXFMUEhqTE9tbTlNaUpkSUx3UmRRLWloNXhkQVBJbnRKb1diQVM1YU5Bb3p5YVNYd1ZnZXJCNVNKS1U3blJkc2tRcEprUUhMS0ktWWp6bU5JMzB2WmhzSlJPdHFvTm5lOHlZT1JwaFYwMThKOGhMNzhQbzVsSUNLWEwzUEpXNlBmSUxnTl9DVW82N0YyXzNsVEdiMVVaN3J4Y2t0MnBoZjgtUkhLT1lVOWpqelVoTm9QZzMtRmx0TzB5Q3BxMXN2MlFKa0NGai1JVkVYRTFSa0Nvd28?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRUdJWWZZUXVNUkQ4d3hKMFExQ3lSbktMQlFUUnNSNUZ5cGJLNUJnOXRjNW5ra256S0gyeXNnVGxlZ3dmVDBSWFdiNXpBX254cDBWckt1bEVyM3ZFX05BUTJJQTRaVUpiM2JVUnZZa3RpNWpSakVDRWFla1JLVGJOSnJjYjFfcUUzeGxIaE1FQXRId1ZqbWJuMm1FTnh5cFlLUHVWREdvU2ZEVmpLUEpZTl9iTmdpRWRRSkhzei1aYk42NFlHMllRM2xMTWlDOGw5dHfSAdcBQVVfeXFMUEhqTE9tbTlNaUpkSUx3UmRRLWloNXhkQVBJbnRKb1diQVM1YU5Bb3p5YVNYd1ZnZXJCNVNKS1U3blJkc2tRcEprUUhMS0ktWWp6bU5JMzB2WmhzSlJPdHFvTm5lOHlZT1JwaFYwMThKOGhMNzhQbzVsSUNLWEwzUEpXNlBmSUxnTl9DVW82N0YyXzNsVEdiMVVaN3J4Y2t0MnBoZjgtUkhLT1lVOWpqelVoTm9QZzMtRmx0TzB5Q3BxMXN2MlFKa0NGai1JVkVYRTFSa0Nvd28?oc=5\" target=\"_blank\">Barcelona pidió modificar la fecha de un partido de Champions League: los motivos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DSports</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-08T22:50:45+00:00"
+    },
     {
       "titulo": "MLB propone acortar rol regular y ampliar Series Divisionales - ESPN México",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVGhlblJJWkM3RWRXX1R4SDVjVDdpX21BWGxCbDhsX1kxa29FNGNsZkxwaEhZNVZJUXN5aDVRRUFwc0hfbWZ1dHVuLXpLSTFiUVdDSFY3WHMzclIyUWt5WkVfM0prNmxrTmEyVDBtR0JReWs3MXJ5bFhGYlpBMWdLai1TenRkdTVsZGF3bDI0Sy1fdkdlMWh2YVJqYVUwNHVCRmdyZElWNkFWY2ZCYkdnMXZ3T3Y?oc=5",
@@ -12172,70 +12232,6 @@
       "fuente": "marca usa",
       "categoria": "Deportes",
       "subcategoria": "basquetbol"
-    },
-    {
-      "id": "c7d1478594b5b52b3078909feea24dc2232f2b875b10641a30c0a5c31ce7ebd3",
-      "titulo": "DeepSeek y Huawei unen fuerzas para reducir la dependencia de Nvidia en chips de IA",
-      "descripcion": "DeepSeek liberó herramientas de código abierto adaptadas a los chips Ascend de Huawei, en un intento por facilitar el desarrollo de inteligencia artificial sobre hardware chino.",
-      "url": "https://expansion.mx/tecnologia/2026/09/30/deepseek-huawei-unen-fuerzas-reducir-dependencia-nvidia",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/83a0b81/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F8b%2F6ade715346528d2f0848b6ce801d%2Fhuawei-vs-nvidia.jpg",
-      "fecha": "2026-09-30T21:37:14+00:00",
-      "fuente": "Expansión",
-      "categoria": "Noticias",
-      "subcategoria": ""
-    },
-    {
-      "id": "8f5e671a325cd595efcd9632bbdfdcb6348aea5b24452d5ca3d70c9aa2737373",
-      "titulo": "La vez que Nacho Beristáin comparó a Canelo Álvarez con Jorge Kahwagi: \"Tiraba golpes a medio metro y se caían sus rivales\" - Radio Fórmula",
-      "descripcion": "La vez que Nacho Beristáin comparó a Canelo Álvarez con Jorge Kahwagi: \"Tiraba golpes a medio metro y se caían sus rivales\" Radio Fórmula",
-      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOOXRnY3hXQnJ1VXduZXhCNERENUx0Ujh6UHFmWkJBT0U5UFJySHR2eGg1bWJGck9LTXdEZWtDTS1UeGRyWVBJbU9HSEtleC01VXJpZ01oQTM1dEF2eTZFMUhpbWc0OEhqSl92SFJ2aURuNkE1Rmd1RTMxTUE4ZmJ3ZFFfNjNsUUk2MThBbWdlX050bUw0aXB3V2hmMDA0YWpQZlAyMjRDSjV5b2dEUE9KZmRhTFFRejl2aWRybldQNVlieG5VdzNod005NVpyTlFjUVhzUm1JSmVldkd2OGVaMGFoVFlSNDFJODdpU2pQVElKTmhEY0lvUDhrdEpSOUszOFkxaVBtRUFaZ240dEVYT0pCSXp2a25E?oc=5",
-      "imagen": "",
-      "fecha": "2026-09-30T21:34:05+00:00",
-      "fuente": "Radio Fórmula",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo"
-    },
-    {
-      "id": "e5793e93adb9175fa86156889f36de4048f8e12823d500bea79adb6a757f6f87",
-      "titulo": "Cancelación de vuelos de Aeroméxico y Volaris al Aeropuerto de Tulum recrudece crisis turística en el destino",
-      "descripcion": "La suspensión de vuelos de Aeroméxico y Volaris suma presión a Tulum, un destino que busca recuperar ocupación tras perder atractivo por sus precios y enfrentar mayor competencia internacional.",
-      "url": "https://expansion.mx/empresas/2026/09/30/tulum-aeromexico-volaris-suspenden-vuelos",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/8351cde/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F08%2F32%2F074131a54aaf81416778ccbefabf%2Faeromexico-volaris-tulum-clean-v2.png",
-      "fecha": "2026-09-30T21:32:02+00:00",
-      "fuente": "Expansión",
-      "categoria": "Noticias",
-      "subcategoria": ""
-    },
-    {
-      "titulo": "MLB: Phillies reviven su esperanza y fuerzan a los Braves al tercer juego decisivo - debate.com.mx",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMTl6YnpLYnVCWTFHSnRTS1oyM3haX1hORE55N2g2cDdEVWpUZUd0dG1yRWpPTzVZc2xfYnlqaVhrNHQzal9ab0RnNG8xdzJPR2hBbElGa1VEU3lIby0zNEZiTW9uZG1xQy1TRWJrUFdLMUJOMHp2SGhERHB1STRpNERWUEY0UFRxaEV3RElzWHI0SWNIQUZwdElFYjduamVTcjBla0lDblZWRjZzaFNlRUNMUVhaRzBWejdWRlBOUEVpVG0yNWRfN2lycHMycnda?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMTl6YnpLYnVCWTFHSnRTS1oyM3haX1hORE55N2g2cDdEVWpUZUd0dG1yRWpPTzVZc2xfYnlqaVhrNHQzal9ab0RnNG8xdzJPR2hBbElGa1VEU3lIby0zNEZiTW9uZG1xQy1TRWJrUFdLMUJOMHp2SGhERHB1STRpNERWUEY0UFRxaEV3RElzWHI0SWNIQUZwdElFYjduamVTcjBla0lDblZWRjZzaFNlRUNMUVhaRzBWejdWRlBOUEVpVG0yNWRfN2lycHMycnda?oc=5\" target=\"_blank\">MLB: Phillies reviven su esperanza y fuerzan a los Braves al tercer juego decisivo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">debate.com.mx</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-09-30T21:31:18+00:00"
-    },
-    {
-      "titulo": "MLB: ¿Qué jugadores pegaron más jonrones en los playoffs? - espn.com.mx",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdktKTkhhcFB0TzVXSUpmTUp0NWxfS3F1Z3F3Q3MwdWRqT3dkMGNSd0ZTNTBrVXYxNDN5VkQ4M3NJZEExUExBUm1rZmtkek1xVnJLMndXa2tiVlI4aUkydkw2VWszb0NLUjNIcjhGeDA2ek9Da0o3NHNmUmVoanJKMzNRT01JNlJKb2ZtelI3MlNoRklLSmgtOFRtT1FVbFlyaWc5RkMxRGxick84THF3bDJQUkdod21KdlpnTTBTWHEyNnFWbEE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQdktKTkhhcFB0TzVXSUpmTUp0NWxfS3F1Z3F3Q3MwdWRqT3dkMGNSd0ZTNTBrVXYxNDN5VkQ4M3NJZEExUExBUm1rZmtkek1xVnJLMndXa2tiVlI4aUkydkw2VWszb0NLUjNIcjhGeDA2ek9Da0o3NHNmUmVoanJKMzNRT01JNlJKb2ZtelI3MlNoRklLSmgtOFRtT1FVbFlyaWc5RkMxRGxick84THF3bDJQUkdod21KdlpnTTBTWHEyNnFWbEE?oc=5\" target=\"_blank\">MLB: ¿Qué jugadores pegaron más jonrones en los playoffs?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">espn.com.mx</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-09-30T21:30:00+00:00"
-    },
-    {
-      "id": "4de911f503bffbd324af7ea5a02b33ce25f63e420d09f382de52d97fc338fa23",
-      "titulo": "Murió su hermano y Alberto Baillères cambió sus planes: terminó repartiendo cerveza en un camión",
-      "descripcion": "Su padre, Don Raúl Baillères, le impuso una regla que marcaría su carrera: si quería dirigir una empresa, primero tenía que conocerla desde abajo.",
-      "url": "https://expansion.mx/empresas/2026/09/30/alberto-bailleres-vendedor-cerveza-cerveceria-moctezuma",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/68817c8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F08%2F13%2F12c1eee84a85b359b5dd099efbc7%2Falberto-bailleres-venta-cerveza.jpg",
-      "fecha": "2026-09-30T21:24:25+00:00",
-      "fuente": "Expansión",
-      "categoria": "Noticias",
-      "subcategoria": ""
     }
   ]
 }
