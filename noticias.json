@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-08T16:50:21.311225+00:00",
+  "actualizado": "2026-10-08T17:16:46.937538+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 567,
-    "sin_imagen": 633
+    "con_imagen": 566,
+    "sin_imagen": 634
   },
   "noticias": [
+    {
+      "titulo": "Gemini falla este 8 de octubre y muestra el error 1099: qué significa y por qué aparece",
+      "url": "https://expansion.mx/tecnologia/2026/10/08/gemini-presenta-fallas-8-de-octubre-error-1099",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c10474b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff1%2F96%2Fc6bdef534f8391cba68279df678d%2Fgemini-presenta-fallas-8-de-octubre-error-1099.m.png",
+      "descripcion": "De acuerdo con la plataforma DownDetector los problemas comenzaron a las 8:00 de la mañana. Esto es lo que sabemos y lo que los usuarios comparten.",
+      "fuente": "Josep Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-08T17:05:39+00:00"
+    },
     {
       "titulo": "Dólar regresa a 18.20 pesos; moneda mexicana es afectada por petróleo y expectativas de la FED",
       "url": "https://expansion.mx/mercados/2026/10/08/tipo-cambio-hoy-8-octubre-2026-18-pesos-dolar",
@@ -85,6 +95,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-08T15:55:05+00:00"
+    },
+    {
+      "titulo": "“Yo fui masacrado”: José Mourinho asegura sentirse como una víctima del caso Vinicius-Prestianni - El Sol de México",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORDdEUVBnNDhUUWFfRTdPV1VESHlmVnVqdkZKdWNzOUotdm1JVUkyVlY5MkowQjZiU3FjcHlKWFRORFVIcDZzdkFrNFduaEF5VWFzMENuWm5ZUzl2T3pUQXl0b00yNEtwSWlIc3RvSWJsMkxFR1dJTTNJVTFaV2I4RkFOdnVpTVhtMEQ5OEpKQW1fTlVIN1lBRm1sNlRheUZGbW9DVTlyazI0bzl6c014dHNkcEpfWE1wR1hCWkd0V3I4Q283UWFYRHcycDNXRGtk?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxORDdEUVBnNDhUUWFfRTdPV1VESHlmVnVqdkZKdWNzOUotdm1JVUkyVlY5MkowQjZiU3FjcHlKWFRORFVIcDZzdkFrNFduaEF5VWFzMENuWm5ZUzl2T3pUQXl0b00yNEtwSWlIc3RvSWJsMkxFR1dJTTNJVTFaV2I4RkFOdnVpTVhtMEQ5OEpKQW1fTlVIN1lBRm1sNlRheUZGbW9DVTlyazI0bzl6c014dHNkcEpfWE1wR1hCWkd0V3I4Q283UWFYRHcycDNXRGtk?oc=5\" target=\"_blank\">“Yo fui masacrado”: José Mourinho asegura sentirse como una víctima del caso Vinicius-Prestianni</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Sol de México</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-08T15:41:35+00:00"
     },
     {
       "titulo": "\"Messi, ¿Puedo pitar el final?\" - Mundo Deportivo",
@@ -205,6 +225,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-08T15:00:00+00:00"
+    },
+    {
+      "titulo": "Juegos y resultados en MLB - PSN Noticias",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE44S0x4UUF1d011aTk2cDRvV2pERVV1Zi05WC1rQ1pEOFBWVUI2azhsNWlKU1BEYlBfMEpyNlYxckxsRVB4RWdoWmdoWFZBa1VuWXFMUWJ1SEZqelZIcS1ZRjF5YVE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE44S0x4UUF1d011aTk2cDRvV2pERVV1Zi05WC1rQ1pEOFBWVUI2azhsNWlKU1BEYlBfMEpyNlYxckxsRVB4RWdoWmdoWFZBa1VuWXFMUWJ1SEZqelZIcS1ZRjF5YVE?oc=5\" target=\"_blank\">Juegos y resultados en MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PSN Noticias</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-08T14:45:00+00:00"
     },
     {
       "titulo": "El Barça pide a la UEFA aplazar el partido ante el Arsenal por la huelga general - La Vanguardia",
@@ -12275,37 +12305,6 @@
       "fuente": "AS México",
       "categoria": "Deportes",
       "subcategoria": "basquetbol"
-    },
-    {
-      "id": "dfaf3b64bd1cd171c2c96d4211c14ae74cb81622de8db2fd51a6fd16e4026f13",
-      "titulo": "Confirmada la fecha y sede de la próxima pelea de Saul ‘Canelo’ Álvarez - López-Dóriga Digital",
-      "descripcion": "Confirmada la fecha y sede de la próxima pelea de Saul ‘Canelo’ Álvarez López-Dóriga Digital",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVlBKRmhzYUdKQk1laGZvSG1vZDVYWXI1cV9CZm8tQkd3a3FVMlZQV2hZbHlGQkZQLXlWM1ZqMC1ZQ1pjVTk2d2JYNGJHcDNPVGlhazJZRXNMbHdrbUgxSk90UjgtMU1NYmpEYWZBQURUR3Y5ay10VS1FZkUxRUh2YjRuMG1HYUJlNzVESzZDclFjYWs?oc=5",
-      "imagen": "https://lopezdoriga.com/wp-content/uploads/2025/05/saul-canelo-alvarez.jpg",
-      "fecha": "2026-09-30T00:28:52+00:00",
-      "fuente": "López-Dóriga Digital",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo"
-    },
-    {
-      "titulo": "México vs Perú: la alineación confirmada de la Selección Mexicana para el partido amistoso - AS México",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMGlKWkpMMmlmZ3U5dlYtSGpOT3dXWUlPSlVMa1NpVHJ1VzFCU1F0eFQzcFBRNlY5Vkp6dGJMWV8yMzBhbFl5R0g3WkJYRlo2RDUyUkJRZUFGQ29RT0hrSFhselE3VUU2NUh1MFBUb1Fqak01alQ2ODdFTG5ZQjU5QXlnRGlQVUtoOUhpSWhBU1daVzJLcUZLNUpBZ2wwNEZqNTRQNGNsY05QZFNyNHh6d3pRNFY4Y1FscW8wMjVkLVZzT0ZiVnRTQdIB3AFBVV95cUxQbVZTRUU1dVhmbG9hSkNleEp1cHJHVE1McWhwMnZRTDNHTDlydy1pLXh4YjBWRVZtUy1vRFVTcTJFeXg1LWlNdWJmcW1UQlZzbXcyclpfYVdGRjlobjVSY0p0NENhZllDel8zX0wwVXpKdEF0UHRzMzktZEdEcXBoSkstSmgyNEQzQm9ybnBFN0ZIOG1RZWt2Mnp0SHFrdWdLT18yQ3piXzZEb2cxRGM5cngtSi1pWW9IUW8zVTZOaWtKVEVOandDc0FpZl9XRWU0bXRsQ3cxaDlQdk9s?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMGlKWkpMMmlmZ3U5dlYtSGpOT3dXWUlPSlVMa1NpVHJ1VzFCU1F0eFQzcFBRNlY5Vkp6dGJMWV8yMzBhbFl5R0g3WkJYRlo2RDUyUkJRZUFGQ29RT0hrSFhselE3VUU2NUh1MFBUb1Fqak01alQ2ODdFTG5ZQjU5QXlnRGlQVUtoOUhpSWhBU1daVzJLcUZLNUpBZ2wwNEZqNTRQNGNsY05QZFNyNHh6d3pRNFY4Y1FscW8wMjVkLVZzT0ZiVnRTQdIB3AFBVV95cUxQbVZTRUU1dVhmbG9hSkNleEp1cHJHVE1McWhwMnZRTDNHTDlydy1pLXh4YjBWRVZtUy1vRFVTcTJFeXg1LWlNdWJmcW1UQlZzbXcyclpfYVdGRjlobjVSY0p0NENhZllDel8zX0wwVXpKdEF0UHRzMzktZEdEcXBoSkstSmgyNEQzQm9ybnBFN0ZIOG1RZWt2Mnp0SHFrdWdLT18yQ3piXzZEb2cxRGM5cngtSi1pWW9IUW8zVTZOaWtKVEVOandDc0FpZl9XRWU0bXRsQ3cxaDlQdk9s?oc=5\" target=\"_blank\">México vs Perú: la alineación confirmada de la Selección Mexicana para el partido amistoso</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AS México</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-09-30T00:24:27+00:00"
-    },
-    {
-      "titulo": "Las alineaciones del México vs Perú: ¡Fidalgo, Berterame y sorprende con debut en la portería! - foxsports.com.mx",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcms4d1ViVW1zOWJzRTRIb1NSa3FBTkxkWl9mdFBSd0NoeFJURUtjSGVkeEc1aTNkeUkzc18xa2V6blRJTEIyWDBkajQyS1FkR2h3YzRnemRhSjJtTnkzSU1BdmNhcHJPZDgxZm9YSE15YlZNT1pvVG9CUzZqQzJhOV9fVkxnZ3hqeElxU09Yd19SaGtIYXJHX3NNdkkzajVwdWFGbUE4MmpNa1VKZzJQS05NTTNtRHVSdlU3RFUtdE9wSnhKYkhjT2IzMA?oc=5",
-      "imagen": "https://www.foxsports.com.mx/resizer/v2/JC2FFG4YMRGLXN3VNQ3PKL3FK4.jpg?smart=true&auth=0619161fe4a70b015256c2d80b18819960e34b58df9a1439d18fedb3e90a3355&width=1200&height=630",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxNcms4d1ViVW1zOWJzRTRIb1NSa3FBTkxkWl9mdFBSd0NoeFJURUtjSGVkeEc1aTNkeUkzc18xa2V6blRJTEIyWDBkajQyS1FkR2h3YzRnemRhSjJtTnkzSU1BdmNhcHJPZDgxZm9YSE15YlZNT1pvVG9CUzZqQzJhOV9fVkxnZ3hqeElxU09Yd19SaGtIYXJHX3NNdkkzajVwdWFGbUE4MmpNa1VKZzJQS05NTTNtRHVSdlU3RFUtdE9wSnhKYkhjT2IzMA?oc=5\" target=\"_blank\">Las alineaciones del México vs Perú: ¡Fidalgo, Berterame y sorprende con debut en la portería!</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">foxsports.com.mx</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-09-30T00:12:00+00:00"
     }
   ]
 }
