@@ -1,11 +1,61 @@
 {
-  "actualizado": "2026-10-09T15:49:52.495513+00:00",
+  "actualizado": "2026-10-09T16:16:41.097556+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 421,
-    "sin_imagen": 779
+    "con_imagen": 417,
+    "sin_imagen": 783
   },
   "noticias": [
+    {
+      "titulo": "La deuda que la inteligencia artificial no puede pagar",
+      "url": "https://expansion.mx/opinion/2026/10/09/deuda-ia-inteligencia-artificial-empresas",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/80087de/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F15%2F45%2F8fa5969c4d7a9ba43536a283c65f%2Fgettyimages-2293173532.jpeg",
+      "descripcion": "Las empresas que ganen esta transformación no serán las que implementen más inteligencia artificial, sino las que tengan el valor de cuestionar a fondo lo que construyeron antes de que existiera.",
+      "fuente": "Jorge López Chapa",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-09T16:01:32+00:00"
+    },
+    {
+      "titulo": "Checo Pérez explica choque en Singapur y explica qué le falta a Cadillac - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV25sSXFoc0xoOUZfR1FkcWNvbEIxQmtaYS1IVmZDX0RfaC1vMng5NVFKaWI5aG1vaHRMLUJreU1Edi1KS1FGLXZwdTVMVHJEX2VHSHVUOXBsTDRWclRYcEVuLVFOVU1mSzI0WDZtYXJXaGREbXdPWlhLR0d4aWpsc1FYWXZHdURjekhVSm1oaVBzM3FNLXBZYmNBa21ocTNqdDZzTjNnM09kdGZTMlhhUHdGMlFlZFdXRk1HWmNQUdIBvwFBVV95cUxOdlBxZlpPQ0NoT2dHeUJOSlZnVlU5WHFsTVpYZXhGR1FUeXU5RHhxbHllQ3hKYjJMWGViYkItTDgtM1ZjN3lZcURmR2N0SVQ5VkoxV2duNE53Y1A3VE9OdkU0R041Q1YzYnBvd1M0VTZ0MFNHbEJsQWRTZFowSW9HVTBsM21CdlhlLTl0NXN5SVVpakNjalREWUluNnZtelRidFpUMmtpZ3ptcjNqU01YS0k3bXFPeTllNmxLbl80dw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNV25sSXFoc0xoOUZfR1FkcWNvbEIxQmtaYS1IVmZDX0RfaC1vMng5NVFKaWI5aG1vaHRMLUJreU1Edi1KS1FGLXZwdTVMVHJEX2VHSHVUOXBsTDRWclRYcEVuLVFOVU1mSzI0WDZtYXJXaGREbXdPWlhLR0d4aWpsc1FYWXZHdURjekhVSm1oaVBzM3FNLXBZYmNBa21ocTNqdDZzTjNnM09kdGZTMlhhUHdGMlFlZFdXRk1HWmNQUdIBvwFBVV95cUxOdlBxZlpPQ0NoT2dHeUJOSlZnVlU5WHFsTVpYZXhGR1FUeXU5RHhxbHllQ3hKYjJMWGViYkItTDgtM1ZjN3lZcURmR2N0SVQ5VkoxV2duNE53Y1A3VE9OdkU0R041Q1YzYnBvd1M0VTZ0MFNHbEJsQWRTZFowSW9HVTBsM21CdlhlLTl0NXN5SVVpakNjalREWUluNnZtelRidFpUMmtpZ3ptcjNqU01YS0k3bXFPeTllNmxLbl80dw?oc=5\" target=\"_blank\">Checo Pérez explica choque en Singapur y explica qué le falta a Cadillac</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-09T16:01:22+00:00"
+    },
+    {
+      "titulo": "“México vs The World”: la cartelera que acompañará a Mbilli y Canelo en Arabia Saudita - World Boxing Council",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdnR6YnczU0VqOGEwVjJ4VFNrSVZ6Nk5oV3V0R1BWWFRGbzVDeERPMXF1Z1ZCS1k1ZGtnQXlMaFZtZlNGcHA5RkF3QXFFMy1XMmR3U3ZWMjAxOWpGeFpPenBDOTFqaFVNdzJIN2RLM0lmT0dWWkdPQXhtM1l5Z3hQS2ZVWVNlc1FwLU5YUlNQaGdscmZBRE1IS29OcUZmYWplX1JJZV9rWWRxQQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdnR6YnczU0VqOGEwVjJ4VFNrSVZ6Nk5oV3V0R1BWWFRGbzVDeERPMXF1Z1ZCS1k1ZGtnQXlMaFZtZlNGcHA5RkF3QXFFMy1XMmR3U3ZWMjAxOWpGeFpPenBDOTFqaFVNdzJIN2RLM0lmT0dWWkdPQXhtM1l5Z3hQS2ZVWVNlc1FwLU5YUlNQaGdscmZBRE1IS29OcUZmYWplX1JJZV9rWWRxQQ?oc=5\" target=\"_blank\">“México vs The World”: la cartelera que acompañará a Mbilli y Canelo en Arabia Saudita</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">World Boxing Council</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-09T16:00:32+00:00"
+    },
+    {
+      "titulo": "Pronóstico GP Singapur para Checo Pérez y Cadillac en el circuito de Marina Bay - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcmVmZDNoaWREZ1huQmRUZmtpOGV2d09vR2VWeFVOb1ZQT2VDM3NGV3Y3WHZTUjljZE02MkZrbmlMekFQOEd0SDY4WnlTTkZVMF9jcnU5cXFjN1lkSW00SXRJX2tQRGlIMUFXTnhSR2kwUklWWkp2UlR1akVHcXFodnotYmwxVVRNNFl0ekhSNlFXeUNHdXZ3VzJ6Vk5uY3hjd3U2RF8zZFphbXJrR3liUjdTX2pXUnk1M1VjcNIBvAFBVV95cUxPN1IwVG9vU2tYaU1lYUxLZ2k2RWJtNzZ3RUE1dE5wZjhpVUhlaUc1emZhdllJU0g0NU12SjlnajFwT2ttQVRoQnRNWXh1aHUza3l4bXhnc1NkUzJoWWdxbzJFejZqZ0I3RldKdHQtR0Z2OTFVb3pZMmpyaFlfbGc1VmF0N2pRUS1CSkwwbmExVUk2ZExWSEN0bG8xcTNpX2VsaUN3RmpxZ1RjaDV3NEV5bHAtSEdlLVU4djE0Vw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPcmVmZDNoaWREZ1huQmRUZmtpOGV2d09vR2VWeFVOb1ZQT2VDM3NGV3Y3WHZTUjljZE02MkZrbmlMekFQOEd0SDY4WnlTTkZVMF9jcnU5cXFjN1lkSW00SXRJX2tQRGlIMUFXTnhSR2kwUklWWkp2UlR1akVHcXFodnotYmwxVVRNNFl0ekhSNlFXeUNHdXZ3VzJ6Vk5uY3hjd3U2RF8zZFphbXJrR3liUjdTX2pXUnk1M1VjcNIBvAFBVV95cUxPN1IwVG9vU2tYaU1lYUxLZ2k2RWJtNzZ3RUE1dE5wZjhpVUhlaUc1emZhdllJU0g0NU12SjlnajFwT2ttQVRoQnRNWXh1aHUza3l4bXhnc1NkUzJoWWdxbzJFejZqZ0I3RldKdHQtR0Z2OTFVb3pZMmpyaFlfbGc1VmF0N2pRUS1CSkwwbmExVUk2ZExWSEN0bG8xcTNpX2VsaUN3RmpxZ1RjaDV3NEV5bHAtSEdlLVU4djE0Vw?oc=5\" target=\"_blank\">Pronóstico GP Singapur para Checo Pérez y Cadillac en el circuito de Marina Bay</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-09T15:58:15+00:00"
+    },
+    {
+      "titulo": "El posible once del Real Madrid ¿Juega Mbappé ante Villarreal? - 365Scores",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE55VWp5U0M4UWNxNDZmYXlhOHoxSkU5RlVha0lvWnd6UFVCc0ZMdURWS1pSY3h4bENwaWpWUTI0ci1kM3lXRGdpdEx6a0MwQzVjS1NSMnlnU1JnaVhVdGxzZDBfUUF4WU1RblU3b2laM3VOdE1ud3R2eUtBSEFveWM?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE55VWp5U0M4UWNxNDZmYXlhOHoxSkU5RlVha0lvWnd6UFVCc0ZMdURWS1pSY3h4bENwaWpWUTI0ci1kM3lXRGdpdEx6a0MwQzVjS1NSMnlnU1JnaVhVdGxzZDBfUUF4WU1RblU3b2laM3VOdE1ud3R2eUtBSEFveWM?oc=5\" target=\"_blank\">El posible once del Real Madrid ¿Juega Mbappé ante Villarreal?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">365Scores</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-09T15:48:00+00:00"
+    },
     {
       "titulo": "¡Increíble reacción de los fans ante el combate entre Fury y Joshua! - MARCA",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOEJ5dE9sZ3dqdDhtRjBBUWdVTEVMRUQtVnlTOHY1UktxWVIxWklxTFhHTDVVM3BXUkFVVG90SWhRaXczeF9uaEVSU1FSNjhPMC1BOExKTGRrcl9lQ0xkMVZ3Z21vMFRaM3Q0OFc1OHhPTzhFZzBSdEp5X0xCMXFJTFZRN3dPdS1QNlh0UWZtckRHc1Vz?oc=5",
@@ -75,6 +125,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-09T15:06:00+00:00"
+    },
+    {
+      "titulo": "Juegos y resultados en MLB - PSN Noticias",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xS0VCMXhQVy14OG5tYVFscl9wNWQ3MFdodDQxS0RoSkNHSEpVa0t1ZG1sQjlfc3hmeG9tMm5Qb0FpOFBjNEtPQUx0aW04U1lJbW51SWhfOFBaRnFqUkw3WHFwelhGZw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xS0VCMXhQVy14OG5tYVFscl9wNWQ3MFdodDQxS0RoSkNHSEpVa0t1ZG1sQjlfc3hmeG9tMm5Qb0FpOFBjNEtPQUx0aW04U1lJbW51SWhfOFBaRnFqUkw3WHFwelhGZw?oc=5\" target=\"_blank\">Juegos y resultados en MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PSN Noticias</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-09T15:05:13+00:00"
     },
     {
       "titulo": "Santi Giménez tiene que recuperar la confianza y hacer a un lado la presión mediática, asegura DT del Porto - esto - El Sol de México",
@@ -12069,72 +12129,6 @@
       "fuente": "MARCA",
       "categoria": "Deportes",
       "subcategoria": "otros"
-    },
-    {
-      "id": "1899e6cf4d9152251db13d763380202ac8f8dd0ae366c610cab509c3a1e506c4",
-      "titulo": "La última milla del nearshoring: mover el capital entre fronteras",
-      "descripcion": "El crecimiento del comercio entre México y EU también exige pagos B2B más rápidos y transparentes para evitar que el capital quede atrapado entre fronteras.",
-      "url": "https://expansion.mx/opinion/2026/10/01/la-ultima-milla-del-nearshoring-mover-el-capital-entre-fronteras",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/1e2c5b8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F23%2Ff9%2F712e04e44677a114529d4d053490%2Ftrailers-frontera-comercio-2024-000-36en6w9.jpg",
-      "fecha": "2026-10-01T12:03:21+00:00",
-      "fuente": "Expansión",
-      "categoria": "Noticias",
-      "subcategoria": ""
-    },
-    {
-      "id": "55c225fdb341ee2e2b36961f015cb2340d8eb6ab7b4164cd522919e95545f9f9",
-      "titulo": "La San Silvestre de Las Rozas te espera en la mañana del 31 de diciembre - MARCA",
-      "descripcion": "La San Silvestre de Las Rozas te espera en la mañana del 31 de diciembre MARCA",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM0themRRZ0hCalVhdFp2RFVpUm9waTlrYmVLY18xaE12Mk1BbEtKQk1sVFNoYjQ5by03bFZZY2d0dFFtZFozMmUwcDhmcUEtV29ONTlfTG5seDk5Tk9lMHdTVDJKN3JXbHMtdU9wQ1VEZ1dCNWZqSTFfd25kQjN2RG01RUZQYTJFODl3YmViUFIxSjlkeHp0Tktpdy1XQdIBngFBVV95cUxPcGhSVmNjLXZoaFFnenZJWmczZUhkMzB0YUNXcG05Q3Z6dUJDSndKeHBpb0szXzdsd3VkQVNoLVlVZ3VjU1M4QzB2MGlaWkg5WlZBU1lvQ3lfUkhhckRWVERQMWpEcjhaTDhXZjlFTWE2LWNtTGpkVERfaE9PYjJ2bWprNHRoZXNid3VySTJQankxcnBYUnd5OE1UTHl1Zw?oc=5",
-      "imagen": "https://objetos-xlk.estaticos-marca.com/files/article_main_microformat/uploads/2026/10/01/6abe4b12ea907.jpeg",
-      "fecha": "2026-10-01T12:00:04+00:00",
-      "fuente": "MARCA",
-      "categoria": "Deportes",
-      "subcategoria": "otros"
-    },
-    {
-      "id": "a3451cb733f0106f9f4266bad6656308633816013fb3a8eb0f3679b2fb2a81ce",
-      "titulo": "MLB Playoffs 2026: Bracket, fechas, resultados, cómo ver y más - ESPN Deportes",
-      "descripcion": "MLB Playoffs 2026: Bracket, fechas, resultados, cómo ver y más ESPN Deportes",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOczBvd0JsYkZibWhRd21kZFdPS25iTGNqTzUzbU9nN21WOTZRZUgwMEpIVVlWbkVLZFJ4R3EzcmE5dU5Cb1J4YUM1Vkp2RGNGSlBUZmMxNWdod3lCYzRTS1hjakZHemFHanpPVUZ5OGpaNXdwNXRySHB1TFRreW5jZXBsVkhRemZjU3hVbXBXTmtkQlBJbUxYejJGcGJGRzlfNDJJZU16dnVRNmRmZlJxb2h0ZWFrd3hhVGR0YzQ1R3NhS1BNeGY0?oc=5",
-      "imagen": "",
-      "fecha": "2026-10-01T12:00:00+00:00",
-      "fuente": "ESPN Deportes",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol"
-    },
-    {
-      "id": "2fee50d8219a650c6b30b1194955c989b26f46d6ad2234704e5d7c0e92f3f55e",
-      "titulo": "Cancún y Veracruz se posicionan para atraer data centers, si logran superar la barrera del suministro eléctrico",
-      "descripcion": "La zona costera ofrece una ventaja para los centros de datos gracias a las estaciones de cables submarinos, pero enfrenta los mismos desafíos de energía e infraestructura que el resto de la industria.",
-      "url": "https://expansion.mx/tecnologia/2026/10/01/mexico-centros-datos-cancun-veracruz-cables-submarinos",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/2ecbd0e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fec%2F6d%2F9a84c69744448123edb0030f6ae8%2Fcentros-datos-cancun-veracruz-cables-submarinos.jpg.jpg",
-      "fecha": "2026-10-01T11:55:03+00:00",
-      "fuente": "Expansión",
-      "categoria": "Noticias",
-      "subcategoria": ""
-    },
-    {
-      "id": "629ac4b71d664a54b1a9a81cf490409f03bb982d77ce15f6e39665c7f4892c38",
-      "titulo": "Golf, deporte y legado social: conoce a Lorena Ochoa - Opinión 51",
-      "descripcion": "Golf, deporte y legado social: conoce a Lorena Ochoa Opinión 51",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBhWFFfb2cxWjRIeGF1UGlsVllBcWNoSDU1M3oxQjB1aHlrUDFWc2tObnNBNEVwNHlDWEItTXh3MDBUMm1MbWRxTlVCaGxJaGtIN0JtTzYwU2NqbTMxUHJoNDNaQTRGV05pMzdxWmFTTWVKSTRhWEQ0?oc=5",
-      "imagen": "https://storage.ghost.io/c/14/b7/14b7bfe8-2843-43b7-bed0-f12664386a30/content/images/size/w1200/2026/10/IMG_0016.PNG",
-      "fecha": "2026-10-01T11:54:44+00:00",
-      "fuente": "Opinión 51",
-      "categoria": "Deportes",
-      "subcategoria": "otros"
-    },
-    {
-      "id": "2ebcc03efc692615292580a8d29f83f11293d68a6d56dab803b462a19849fb2a",
-      "titulo": "Muere el ex boxeador Jorge Kahwagi - El Porvenir - Portada",
-      "descripcion": "Muere el ex boxeador Jorge Kahwagi El Porvenir - Portada",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3SXZuNU9NOFpQY2pZQ3puLWFQRjhad1VibXo5MTRBMWQyTS1hN2VZSFpGTUZueThTTllIZ2FWa2FNQ1pYZG1kYkdaazdsdkVyZjctclZfUFVkaEtGakhpRE5BTE4wTF9iOGFZcldlWUYtaElMcDdRaDRRaDBWdw?oc=5",
-      "imagen": "https://blob.elporvenir.mx/images/2026/10/01/5.jpg",
-      "fecha": "2026-10-01T11:52:00+00:00",
-      "fuente": "El Porvenir - Portada",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo"
     }
   ]
 }
