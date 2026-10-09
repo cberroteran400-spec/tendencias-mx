@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-09T01:48:49.550454+00:00",
+  "actualizado": "2026-10-09T02:15:42.277765+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 494,
-    "sin_imagen": 706
+    "con_imagen": 492,
+    "sin_imagen": 708
   },
   "noticias": [
+    {
+      "titulo": "MLB analiza polémica propuesta: ¡Los equipos líderes elegirían a su rival en Playoffs desde 2027! - Fox Sports",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOazVKUXdvMjRLdDNjWXZSOFRxSkJReGlaclN4R1h6SVZ2UWs5YmF6SEczWG93NW96bEttU1l0THpmX2dfUEdqaXU2S2IzUUN6Y05WN1REelh5NzliN1R6ZXp5RkNWV2J4dmJGeU5xVkhJZjFPb1NKNHc0WWZ2aFc5cFctTGFoa2lGaTI0RC1laFg0aEs1NXBtTXFxRlBVOUU1UXhDVlY1ajNCcFFnSFpYY2NPdGlaNVJENGFmaWdaa0RTQTZGR0pnRGFOZDlKaXd4?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOazVKUXdvMjRLdDNjWXZSOFRxSkJReGlaclN4R1h6SVZ2UWs5YmF6SEczWG93NW96bEttU1l0THpmX2dfUEdqaXU2S2IzUUN6Y05WN1REelh5NzliN1R6ZXp5RkNWV2J4dmJGeU5xVkhJZjFPb1NKNHc0WWZ2aFc5cFctTGFoa2lGaTI0RC1laFg0aEs1NXBtTXFxRlBVOUU1UXhDVlY1ajNCcFFnSFpYY2NPdGlaNVJENGFmaWdaa0RTQTZGR0pnRGFOZDlKaXd4?oc=5\" target=\"_blank\">MLB analiza polémica propuesta: ¡Los equipos líderes elegirían a su rival en Playoffs desde 2027!</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fox Sports</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-09T01:53:00+00:00"
+    },
     {
       "titulo": "Nissan se suma a otras 9 marcas tradicionales que importan autos desde China para abastecer a México",
       "url": "https://expansion.mx/empresas/2026/10/08/nissan-marcas-autos-china-mexico",
@@ -125,6 +135,16 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-08T23:42:09+00:00"
+    },
+    {
+      "titulo": "MLB: ¿Alex Cora a Yankees? Insider revela inesperado escenario que sacudiría a toda las Grandes Ligas - Al Bat",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTW1wMWFrSUdBUlJORjliaG4yVm5LZmgwb0VXQkNYM2REbzA0Z05MR1U0M3V6Unlsc29EaG9wTmRuSzJmQjlnRjc2UU5YdWx5b00wWFFtUWJOdnRGcDJxaF93aGlYZUdzemhhLWhMcUIzcFZCY1N5bW13aFdWbV9ReVZIdkVjb3hMa2JxRTM5N2RmSmdrbG84R0Z4M19aaE1jRms0bXpFb0xwcHg3ZGw2UXgteTBDYVlGaUw2cm1pRG12b21kTmVCanphV05mdm5zY1A3N2haV0E4LVHSAeABQVVfeXFMTmtfWURKNHZDcEpRTk9DMGNBWXdQUVdsWXdpeVNZd3BOYVVrcGl6cVlaZWVFcktaVVA2NDNzNGZpTENDNTNiWElPQjVnM3ZCQV9DUEs4RTB2bUdzNlBHU2xPR1laZHpiSGNmUnA4eTZPNV91c2s3UWd5MHBxSjBFSW5ad3hFTjJQUHNKMFlpQ2dyZlpDUjdEOXhUZzEwYXgzX0l5cDZkVDJkUHdETy1Yc1o4ZXVqUW9oR2plZEhRR2JQWFNoQjZFemNCYXoybUtGQ2ZYeDhhZi1ScERwTXVoRnA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTW1wMWFrSUdBUlJORjliaG4yVm5LZmgwb0VXQkNYM2REbzA0Z05MR1U0M3V6Unlsc29EaG9wTmRuSzJmQjlnRjc2UU5YdWx5b00wWFFtUWJOdnRGcDJxaF93aGlYZUdzemhhLWhMcUIzcFZCY1N5bW13aFdWbV9ReVZIdkVjb3hMa2JxRTM5N2RmSmdrbG84R0Z4M19aaE1jRms0bXpFb0xwcHg3ZGw2UXgteTBDYVlGaUw2cm1pRG12b21kTmVCanphV05mdm5zY1A3N2haV0E4LVHSAeABQVVfeXFMTmtfWURKNHZDcEpRTk9DMGNBWXdQUVdsWXdpeVNZd3BOYVVrcGl6cVlaZWVFcktaVVA2NDNzNGZpTENDNTNiWElPQjVnM3ZCQV9DUEs4RTB2bUdzNlBHU2xPR1laZHpiSGNmUnA4eTZPNV91c2s3UWd5MHBxSjBFSW5ad3hFTjJQUHNKMFlpQ2dyZlpDUjdEOXhUZzEwYXgzX0l5cDZkVDJkUHdETy1Yc1o4ZXVqUW9oR2plZEhRR2JQWFNoQjZFemNCYXoybUtGQ2ZYeDhhZi1ScERwTXVoRnA?oc=5\" target=\"_blank\">MLB: ¿Alex Cora a Yankees? Insider revela inesperado escenario que sacudiría a toda las Grandes Ligas</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Al Bat</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-08T23:38:00+00:00"
     },
     {
       "titulo": "MLB propone reducir la temporada regular a 154 partidos - El Comentario",
@@ -355,6 +375,16 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-08T21:50:48+00:00"
+    },
+    {
+      "titulo": "MLB Playoffs 2026: así llegan Brewers y Dodgers a la NLCS - ESPN Deportes",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbG5HR2NwaG5FWEpNamRtMmR6WWZwUGZxYUxZdnRJYU9QVW0tdjhyeWR2Rmc4ZUNHaTI0OFBhaXhSYWpMa013bjJKWjR0bTQyNmsxRVZsVDRhX2hqWHhUMFJJNWstX09YbzNkSE12dzdlYWZ1TGMySzdlXzlqMmJTVXdwSlJkclBZNXgycjlnajFjWUlnLXVCN2MxRVd4MW5pc2FiXw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQbG5HR2NwaG5FWEpNamRtMmR6WWZwUGZxYUxZdnRJYU9QVW0tdjhyeWR2Rmc4ZUNHaTI0OFBhaXhSYWpMa013bjJKWjR0bTQyNmsxRVZsVDRhX2hqWHhUMFJJNWstX09YbzNkSE12dzdlYWZ1TGMySzdlXzlqMmJTVXdwSlJkclBZNXgycjlnajFjWUlnLXVCN2MxRVd4MW5pc2FiXw?oc=5\" target=\"_blank\">MLB Playoffs 2026: así llegan Brewers y Dodgers a la NLCS</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-08T21:48:00+00:00"
     },
     {
       "titulo": "La Fórmula 1 enciende motores en México y recuerda la noche en que Checo Pérez conquistó Singapur - Infobae",
@@ -12186,39 +12216,6 @@
       "fuente": "MARCA",
       "categoria": "Deportes",
       "subcategoria": "boxeo"
-    },
-    {
-      "id": "0d3c3e8992151be2d3568219243af9e08d002794fa3d0a8d56957b99bad4c4ca",
-      "titulo": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión - MARCA",
-      "descripcion": "Canelo Álvarez terminó con carrera de púgil británico que ahora enfrenta 15 meses de prisión MARCA",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUUJjbnpfY0FuUVVLY2hIS0wyVXZnYVg1YkJCeXFWbHJSamxtMER1WnNQRFF2clA5c1ZzWVgyTUNFOWxhUW1wRlBPaXNWSjU1TUZsZ2dlQ0JQWFg0b2lENHZXYTN3STA3T2ZsbWN6cXpqWlJKTTB0SEQxaHF4ZWlQYWdBRXJwZVZMYXVjUkc5WnZES2xOTERBdTZFNFoxUlpyX2lySnhmQ3F2SGtiUl9Wb2x6NmpjcHlZYWE4?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/01/6abd9e8a07bff.jpeg",
-      "fecha": "2026-09-30T23:55:27+00:00",
-      "fuente": "MARCA",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo"
-    },
-    {
-      "id": "e5bef80f326c9e29940716acb1afb2518bebbd68fd46ed11858bac101ef2164f",
-      "titulo": "MLB NLWC: Ethan Salas hace historia al estar en line up titular de Juego 2 Padres vs Cubs - Al Bat",
-      "descripcion": "MLB NLWC: Ethan Salas hace historia al estar en line up titular de Juego 2 Padres vs Cubs Al Bat",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSjhJaU1NRjJmblJtcjhnNGN6Y3d3VGJhQmZSR3BERG1NcFdnQ01sRWR4UTY4SWxvbWkwdUpwYmxnQUNESW1oWERfNXNjNlQzZkdweFdkLU1lMk1IUU9BbEtYYkx3bmpzdFJhNjBWeFZIQkRIaXI4YWFIdGR6RGFpQXZkWjF4WlU0MnhhTl9wdmdKMzV3ckJoSUdlMjNLd1FOa1Y3RG9BelFKQWlXakdzOWlFdUI0X0VWak9vODhXV3p3VEN0b19odnAzdzB2Z9IB0wFBVV95cUxPVWhIWEFGUGhrMnM2b2JILTRfNWs2Y2tMOWNsUU56U3VrRllONzZGT2E4TWs1ZjVGekdkeVJSd19hSTRzNzd2WVh0N1Atd05VNV9ZMFBlNWZjaldiSTNaMGFGMloyVXRURGVQbEVHTGhwcjE4eXcxdnJZNzVCQzlObVZ6Q2lZWG5wWC1vMnY0YmVZTDVaYld3UHJDLUIxT0gyRkdnS3pPZU04SlBpaTF1R0FPcHRFeGJMWk9LMkg0WVZrRzFfVC1MaTZNZllGOWlRSDQ0?oc=5",
-      "imagen": "",
-      "fecha": "2026-09-30T23:48:00+00:00",
-      "fuente": "Al Bat",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol"
-    },
-    {
-      "id": "d103caa12b6d579a3cbf87b11f0db2a4c136e8761743de4bb2709ef25c553297",
-      "titulo": "México lleva al G20 dos frentes de tensión: presión sobre el acero y coerción en alimentos",
-      "descripcion": "Marcelo Ebrard puso sobre la mesa la sobrecapacidad, los subsidios y las diferencias entre productores de acero, además del riesgo de que los alimentos sean utilizados como instrumento de presión.",
-      "url": "https://expansion.mx/economia/2026/09/30/mexico-g20-tension-acero-alimentos-ebrard",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/a0050a4/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc3%2Fe1%2F158440ec4c5e9472f130f63ba917%2Fmexico-g20-acero-alimentos-ebrard.jpg",
-      "fecha": "2026-09-30T23:47:18+00:00",
-      "fuente": "Expansión",
-      "categoria": "Noticias",
-      "subcategoria": ""
     }
   ]
 }
