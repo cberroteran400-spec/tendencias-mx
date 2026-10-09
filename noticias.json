@@ -1,9 +1,9 @@
 {
-  "actualizado": "2026-10-09T06:20:23.372095+00:00",
+  "actualizado": "2026-10-09T06:54:58.176444+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 478,
-    "sin_imagen": 722
+    "con_imagen": 477,
+    "sin_imagen": 723
   },
   "noticias": [
     {
@@ -15,6 +15,16 @@
       "categoria": "Deportes",
       "subcategoria": "formula1",
       "fecha": "2026-10-09T06:09:17+00:00"
+    },
+    {
+      "titulo": "Los momentos más recordados de aficionados que se convirtieron en protagonistas del juego en la postemporada de la MLB - CNN en Español",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORTNLY1NMSzk3VzRhbk5uRWRYRVYwb2c0ZzNpVFJZendYN1V6RGxzN0NPTEdVRFdMZVp1RV9KV1lzTFQ3WDlHZU5WUENMdEVzZk82cUhaR1Y5M3ZmOUJvWEx1THFuUmMzWmk3bXp5c3hTeUdDMlF6YmJfT0tkV193bjlZSXhobDZoSmMtQXdGcVNCQkY4Zm90U1Fn?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxORTNLY1NMSzk3VzRhbk5uRWRYRVYwb2c0ZzNpVFJZendYN1V6RGxzN0NPTEdVRFdMZVp1RV9KV1lzTFQ3WDlHZU5WUENMdEVzZk82cUhaR1Y5M3ZmOUJvWEx1THFuUmMzWmk3bXp5c3hTeUdDMlF6YmJfT0tkV193bjlZSXhobDZoSmMtQXdGcVNCQkY4Zm90U1Fn?oc=5\" target=\"_blank\">Los momentos más recordados de aficionados que se convirtieron en protagonistas del juego en la postemporada de la MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNN en Español</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-09T05:39:57+00:00"
     },
     {
       "titulo": "LaLiga EA Sports 2026-2027: calendario, horario y partidos de la Jornada 7 - La Vanguardia",
@@ -12191,17 +12201,6 @@
       "fuente": "Claro Sports",
       "categoria": "Deportes",
       "subcategoria": "otros"
-    },
-    {
-      "id": "289baa589d12692f11d40154f5852c80f942158f49dfd0180092d612d2360134",
-      "titulo": "La ley de catastro mejorará finanzas de municipios y respetará su autonomía, asegura Hacienda",
-      "descripcion": "De aprobarse e implementarse esta iniciativa, todos los ingresos resultantes van a terminar en las tesorerías de los municipios, destacó el titular de la SHCP, Édgar Amador Zamora.",
-      "url": "https://expansion.mx/economia/2026/09/30/hacienda-ley-catastro-predial-mejorara-finanzas-municipios",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/e268e38/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fd0%2F92%2F6d3164124038bfb73f89bc2bb882%2F6-edgar-amador-1101316-comparecencia-edgar-amador-diputados-impreso.jpeg",
-      "fecha": "2026-10-01T01:28:58+00:00",
-      "fuente": "Expansión",
-      "categoria": "Noticias",
-      "subcategoria": ""
     }
   ]
 }
