@@ -1,11 +1,41 @@
 {
-  "actualizado": "2026-10-09T01:19:26.095900+00:00",
+  "actualizado": "2026-10-09T01:48:49.550454+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 495,
-    "sin_imagen": 705
+    "con_imagen": 494,
+    "sin_imagen": 706
   },
   "noticias": [
+    {
+      "titulo": "Nissan se suma a otras 9 marcas tradicionales que importan autos desde China para abastecer a México",
+      "url": "https://expansion.mx/empresas/2026/10/08/nissan-marcas-autos-china-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/ccc950f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F81%2F36%2Feefd1cc24ad68e56c44179610d56%2Fnissan-marcas-importan-china.jpg",
+      "descripcion": "La automotriz japonesa estrenó la Frontier PRO PHEV, su primer modelo desarrollado y fabricado en China para exportación global. Chevrolet, Ford y Stellantis ya importan miles de unidades de ese país a México.",
+      "fuente": "Ivet Rodríguez",
+      "categoria": "Empresas",
+      "subcategoria": "",
+      "fecha": "2026-10-09T01:43:05+00:00"
+    },
+    {
+      "titulo": "AriZona cambia de cancha: de su famoso té a bebidas con 5% de alcohol para conquistar otro mercado",
+      "url": "https://expansion.mx/mercadotecnia/2026/10/08/arizona-te-bebidas-alcohol-conquistar-mercado",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/68aa6a4/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F15%2Ff5a7bc614b0989bf923cd9db44ec%2Fdiseno-sin-titulo.png",
+      "descripcion": "De las bebidas de consumo cotidiano a las preparadas con tequila, AriZona amplía las categorías en las que compite sin dejar de lado los sabores frutales que identifican a la marca.",
+      "fuente": "Elizabeth Santiago",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-09T01:27:43+00:00"
+    },
+    {
+      "titulo": "Paulo Dybala pone a prueba uno de los mejores momentos de su carrera ante Real Madrid - ESPN México",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVldUNFR6emF6dlFxRS0xSUc0UDFiU29fZ243NVhDV1ZZZXZfVDhQTWU4ajMtMVhIaHc1UTZoUGNmbTNEclJibDJXVzE5REV0d2l3SzRHeTFzN1h4dllOTFJkU2xyWWE3aDNHLXBOSGZUcTh6Umc3c3dZR3ZOQjRRUi1oRlREN2R6SGxVTHZXT2ZPQmJIVFJrbWkzSjlnRkVfS2syLWRBaWxVUmxBZ3Q4emhyNjNXSmJzUHNfX3RFZw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxPVldUNFR6emF6dlFxRS0xSUc0UDFiU29fZ243NVhDV1ZZZXZfVDhQTWU4ajMtMVhIaHc1UTZoUGNmbTNEclJibDJXVzE5REV0d2l3SzRHeTFzN1h4dllOTFJkU2xyWWE3aDNHLXBOSGZUcTh6Umc3c3dZR3ZOQjRRUi1oRlREN2R6SGxVTHZXT2ZPQmJIVFJrbWkzSjlnRkVfS2syLWRBaWxVUmxBZ3Q4emhyNjNXSmJzUHNfX3RFZw?oc=5\" target=\"_blank\">Paulo Dybala pone a prueba uno de los mejores momentos de su carrera ante Real Madrid</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-09T01:25:07+00:00"
+    },
     {
       "titulo": "Mourinho habría dado reprimenda a Mbappé, ¿peligra su futuro en el Real Madrid? - El Heraldo de México",
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcjBlOFc2aDJURWJrVzBtZ19WeFZ4QzZaVS1BTU40Tjd5Y0NlbDE5ZWxPVFpOajlDdmJkSWZmSUM1RjNFMFRqMkhLX3pSNTFpV0hfdC1ienZyRGtsV3FKTDJZcHNzZVBJM0FGV0M4RDQ2TmlDbUxnSlVTMTc5cW15Vm1kcmVTUEg4UDIzb0QwRWhlaS1RRUF4QTVOVTdsYWY2Vm81dzV2aktIOEVTTXBnZGEwZzRtdVZoQnhnVVNJY2tsSGFWNkJUQk5QZ0cxSlRBQkE?oc=5",
@@ -12189,38 +12219,6 @@
       "fuente": "Expansión",
       "categoria": "Noticias",
       "subcategoria": ""
-    },
-    {
-      "titulo": "Canelo Álvarez se visualiza peleando en el Estadio Azteca; ¿romperá el récord de Julio César Chávez? - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOb3RySXVkWE9BeTh3VDItNnF1YlZZNnBXRDFVYXNNNXVEX2dfT3FXVEpKWVN1VjZKZVhLRTJjekVhVDM3ekp2Ymx4QW5YcS1SNm5SWW9VVkxTMTV5cWVzdGV1UkpLalNnTFRWVHI1SWEtVmk0TmpMTWQxUnNkSkFzcjlENE9BMTUyM3NyaW5wVjZtb1JmRlJtUkNpekN2WEc5Wk9CblB1WV94ODRzbi1weEY0Y2JlSWpiUjg1WlBhakZJaVBhNWxsTdIByAFBVV95cUxNU04zUTBPOHVFVVlybkxwZE9UVEs4WXlHWVdveWJpR196MVZzOS1OaTcyRERXdU9FZlBVM1VGSzh3dEVoNjY2eGNKc3VhVVVJUjM4cGlOZkx1NDVQNWx3OTBqamdHb1ZfSzAyeVRUamc5VWFfaXoxcm9NQVRnM2ZVclB3cGlzTTJNRWVWZXBjcjZ4bjNIdWJDZWZ5RnRXOVh5bkVpVmFQQ1FZeVExV21xckNKWkw1NXBwcUFrN1VEWkN6OHo1THgtYQ?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/01/fGCvQ1glfjdE2aliD.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxOb3RySXVkWE9BeTh3VDItNnF1YlZZNnBXRDFVYXNNNXVEX2dfT3FXVEpKWVN1VjZKZVhLRTJjekVhVDM3ekp2Ymx4QW5YcS1SNm5SWW9VVkxTMTV5cWVzdGV1UkpLalNnTFRWVHI1SWEtVmk0TmpMTWQxUnNkSkFzcjlENE9BMTUyM3NyaW5wVjZtb1JmRlJtUkNpekN2WEc5Wk9CblB1WV94ODRzbi1weEY0Y2JlSWpiUjg1WlBhakZJaVBhNWxsTdIByAFBVV95cUxNU04zUTBPOHVFVVlybkxwZE9UVEs4WXlHWVdveWJpR196MVZzOS1OaTcyRERXdU9FZlBVM1VGSzh3dEVoNjY2eGNKc3VhVVVJUjM4cGlOZkx1NDVQNWx3OTBqamdHb1ZfSzAyeVRUamc5VWFfaXoxcm9NQVRnM2ZVclB3cGlzTTJNRWVWZXBjcjZ4bjNIdWJDZWZ5RnRXOVh5bkVpVmFQQ1FZeVExV21xckNKWkw1NXBwcUFrN1VEWkN6OHo1THgtYQ?oc=5\" target=\"_blank\">Canelo Álvarez se visualiza peleando en el Estadio Azteca; ¿romperá el récord de Julio César Chávez?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-09-30T23:30:36+00:00"
-    },
-    {
-      "id": "fa9338485e6b33df993b05c06f28cd4bb202c34c029378ffcd416a7a03ce3142",
-      "titulo": "La NFL vuelve a México con demanda de 2.2 millones de boletos - abcnoticias.mx",
-      "descripcion": "La NFL vuelve a México con demanda de 2.2 millones de boletos abcnoticias.mx",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOHUzX1VPQWVPTnJRS1JKWUdhS21kWmJzZU9Ua0ZoMXFjVUZ5d0tWV2g2OWZJZ0JUV0cxR01na1U1eXVJS1ZTZ2lKcWtYNV90V29iV1BRcEZ1UEtwdnlyN2g2WjFhcXFSa0FDX0d2eWtCelZHb0JWOEF5bWtIVHlvV3UyYVY3UURJLXdzcU1NUldQTFFWVVZXMzhPc01ONWJXcEFfU2c3cE81RGxuMGcyZ1RlLTE?oc=5",
-      "imagen": "https://img.abcnoticias.mx/M_w0e01yEjb-9dao80k68jBJG5LBSVwsRtHrZaouW_U/rs:fill:1200:630:0/g:fp:0.5:0.5/f:jpg/aHR0cHM6Ly9hc3NldHMuYWJjbm90aWNpYXMubXgvaW1nLzE3OTA4MTA0NzgxNjMtZW9mc3R6LmpwZw",
-      "fecha": "2026-09-30T23:21:46+00:00",
-      "fuente": "abcnoticias.mx",
-      "categoria": "Deportes",
-      "subcategoria": "nfl"
-    },
-    {
-      "id": "bf539109b9ab3eec00d5bc1bf3df5a35aef01fc96f138de7d7b773802c03c8ce",
-      "titulo": "El curioso medio de transporte que eligió LeBron James para viajar de su casa al entrenamiento con su nuevo equipo de la NBA - Infobae",
-      "descripcion": "El curioso medio de transporte que eligió LeBron James para viajar de su casa al entrenamiento con su nuevo equipo de la NBA Infobae",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNVHRzTFFPRm80M1FPOWxveHJwS3QyY3Vqcm1EdnNxVkFZQkJMQTNaekxoM0l5WVB4Smd1RDM2blJQWnZHM1AtQlR2U2MzTVA2UU9icUhvQWJvaThCYnBJVjJId29JWFZwUVhtNWd0S2sxaGNEcWhkNzFaYnU0dWRQVENqWEhIUjM4c2FkZkdrd1lyMFZHOWZieC1jOWVpZWJkRUhVNjdFbW9oNVFBRnJyU2w5cDc4MXdDLWRDLVdxMlNLbHVwajdmZnFxQnRrQW5oVU1raW1oRDEyYmJqeXQ2OFV3VWZrUGtORU1KcGdLM1M5YW5FWEdZYmNNckJvd9IBmAJBVV95cUxPckZXUGZWbDd5eXlpanZhZFA2YlVrd2E1S3ZLLWFvZHc2dzFyc2lQc282cjJkemVZSm5neF9BSm9LOXFyTmUyV2RhUGp1WTBMbDFfb2hWMnZPLUhaWXFfaGFUbzd5YXZpNkVIRG1EUGZ3aGxQZXJFOXk1V19sNE9MSnIyLVREaGNUTHNlcU9tdXpkR2czSnRHOGY0QVJuQXlKaTJ1WFZLc09zLXp0dllkMHo1TlA4dXpTVTROVVlWRENFd0Z4eGpVanlXTWdla0ZKUmdLYXZ4MVBRZHM0cXJnV1F6UDB5MFlrcmpmUFMtNXpKUzEwVmZ5eVJ5R0hrWXZnRU85TlRPcTJGMWROekVjNlZkTi1wY0hI?oc=5",
-      "imagen": "https://www.infobae.com/resizer/v2/PRH76LWKFVF37HS4JHZTKQRXN4.JPG?auth=3dbec5156abd40c6ab30175eedd37f6693873616f5442cf1168ab0c913cb0aba&smart=true&width=1024&height=512&quality=85",
-      "fecha": "2026-09-30T23:16:00+00:00",
-      "fuente": "Infobae",
-      "categoria": "Deportes",
-      "subcategoria": "basquetbol"
     }
   ]
 }
