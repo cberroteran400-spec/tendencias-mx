@@ -1,11 +1,51 @@
 {
-  "actualizado": "2026-10-12T11:52:55.889081+00:00",
+  "actualizado": "2026-10-12T12:27:38.946818+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 128,
-    "sin_imagen": 1072
+    "con_imagen": 132,
+    "sin_imagen": 1068
   },
   "noticias": [
+    {
+      "titulo": "¿Cómo desarrollar talento y liderazgo en la era de la Inteligencia Artificial?",
+      "url": "https://expansion.mx/opinion/2026/10/12/como-desarrollar-talento-y-liderazgo-en-la-era-de-la-inteligencia-artificial",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/9be4ae3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6a%2Fdc%2F0d623d874d068d644969bdb1c3e7%2Fia-empresas-istock-work.jpg",
+      "descripcion": "El vínculo entre academia e industria es clave para la evolución del conocimiento, la tecnología y la experiencia, elementos que contribuyen al desarrollo de liderazgos, soluciones e impactos.",
+      "fuente": "Judith González",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-12T12:04:57+00:00"
+    },
+    {
+      "titulo": "Querétaro y el siguiente capítulo de la economía digital de México",
+      "url": "https://expansion.mx/opinion/2026/10/12/queretaro-y-el-siguiente-capitulo-de-la-economia-digital-de-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/df10a4c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ffd%2Ff9%2F9900dd704f89a1c67e31929b45fb%2Fmicrosoft-data.png",
+      "descripcion": "El auge de los centros de datos puede convertir a Querétaro en un nodo estratégico de la economía de la IA, pero el reto será acompañar la inversión con más electricidad, eficiencia hídrica e infraestructura.",
+      "fuente": "Alexis Milo",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-12T11:59:25+00:00"
+    },
+    {
+      "titulo": "La violencia en Sinaloa encarece los seguros y deja a conductores y transportistas más desprotegidos",
+      "url": "https://expansion.mx/economia/2026/10/12/la-violencia-en-sinaloa-encarece-los-seguros-y-deja-a-conductores-y-transportistas-mas-desprotegidos",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/9723045/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F42%2Feb%2Fd433e7cf454e96bd22c468efc940%2F7-cartel-sinaloa-994743-bloqueos-crimen-organizado-culiacan-impreso.jpeg",
+      "descripcion": "Las pólizas se disparan hasta 400%, reportan transportistas. La entidad registra un fuerte crecimiento en la contratación de seguros de vida, de acuerdo con datos de la CNSF.",
+      "fuente": "Santiago Nolasco",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-12T11:55:39+00:00"
+    },
+    {
+      "titulo": "¿Tu hijo tiene TDAH? Esta startup mexicana busca adaptar las clases a sus necesidades",
+      "url": "https://expansion.mx/tecnologia/2026/10/12/ia-educacion-startup-mexicana-emmi",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/8c53bc8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff6%2Ff2%2F2db5cc104222b0dc3aebab8c155f%2Ftdah-ensenanza-aula-ia.png",
+      "descripcion": "La EdTech mexicana Emmi utiliza IA para personalizar las actividades de alumnos de preescolar y primaria. La empresa llega a más de 12,000 niños y busca reducir la carga administrativa de los docentes.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-12T11:55:35+00:00"
+    },
     {
       "titulo": "La posible alineación titular del Arsenal para enfrentar al Lille OSC - Sports Illustrated",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRXhNZFVPTExyQkR3MFZJN2cyNjFzY21LUnpkR0tZR1d4OTYtM01zaGgxcWVsUWxDSFNycVhBOXF5cE1peW93YlFpNkpmQVhQR0w5UnBVaFF3OGc2U3Fvajl5VElnRkV5RWp3NDR6UjhLZ3JURGJzYWhZOVVLQlMtbzFyemtHU2p1eDNPNUpEVU5SbTdveS1laXhwdzlfVkV2Z0hlZEs1MDVtVFJadW9Sa0x3?oc=5",
@@ -11965,46 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "formula1",
       "fecha": "2026-10-04T14:43:45+00:00"
-    },
-    {
-      "titulo": "Playoffs MLB: ¿Se viene una revolución en Phillies? El misterioso mensaje de Bryce Harper tras eliminación - Al Bat",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQenJSeTcxWVFVakdmUTc0TlFwMjZ3WTFjdV81akZaNnVTLThOQW1YQjNkbmF2MURUMU8zTVB2Q3ExcGJsa1ZrRnZnLWFvVzNPX1RzbUxMZ2kyZlhnWmhJYTFwengwSkh4a0wyRGtMQ2tWQW81dWJZVVNuZjZLaEtpaWZNd2MyZmRZZHhINW9iMW5nQlU1S0NpQUdtODZ2SGp1YUpKQ1A1Ul94blFzNVM2SU43YmtvR3dKYm1CcDRzUW1SNktuYmNGYkhSa09qN01uZFFmSnFXRXVmRndvdVhGRE5OXzdpSlli0gHuAUFVX3lxTFBRVFQyOTl0VnVpU3gtUXpOdmJ2blNnQmo1WTdwcEFSZU9MeERWcFJlU3lLMWs5LWpOcXhmSEtPUVQtZEd4WjU0d3FORmFhaUFxSU5iWGUtMGtneFdyWlBYbHhlM2tEbEdTVkcwRjUzTTA4LXJyQkw5WE5sbmJqNUtacTk1cVQybFdndVQ5dW1JS1ZLVGt6VTFKZmpCUlA4WmJqZ2o2NGlJSHdzUkl3MnRCZS1QcG01U2pNNlgzaWVVYmhXRFMxMFVrZlY3aUlJR1p2WGxHNVZBdlQ1TEtNNFgzRjI2LWJmSUdBZFBnU3c?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxQenJSeTcxWVFVakdmUTc0TlFwMjZ3WTFjdV81akZaNnVTLThOQW1YQjNkbmF2MURUMU8zTVB2Q3ExcGJsa1ZrRnZnLWFvVzNPX1RzbUxMZ2kyZlhnWmhJYTFwengwSkh4a0wyRGtMQ2tWQW81dWJZVVNuZjZLaEtpaWZNd2MyZmRZZHhINW9iMW5nQlU1S0NpQUdtODZ2SGp1YUpKQ1A1Ul94blFzNVM2SU43YmtvR3dKYm1CcDRzUW1SNktuYmNGYkhSa09qN01uZFFmSnFXRXVmRndvdVhGRE5OXzdpSlli0gHuAUFVX3lxTFBRVFQyOTl0VnVpU3gtUXpOdmJ2blNnQmo1WTdwcEFSZU9MeERWcFJlU3lLMWs5LWpOcXhmSEtPUVQtZEd4WjU0d3FORmFhaUFxSU5iWGUtMGtneFdyWlBYbHhlM2tEbEdTVkcwRjUzTTA4LXJyQkw5WE5sbmJqNUtacTk1cVQybFdndVQ5dW1JS1ZLVGt6VTFKZmpCUlA4WmJqZ2o2NGlJSHdzUkl3MnRCZS1QcG01U2pNNlgzaWVVYmhXRFMxMFVrZlY3aUlJR1p2WGxHNVZBdlQ1TEtNNFgzRjI2LWJmSUdBZFBnU3c?oc=5\" target=\"_blank\">Playoffs MLB: ¿Se viene una revolución en Phillies? El misterioso mensaje de Bryce Harper tras eliminación</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Al Bat</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-04T14:30:00+00:00"
-    },
-    {
-      "titulo": "Juegos y resultados en MLB - PSN Noticias",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE03U1ZXbW1GZy1FOWs0cV80aDlkRFNYSDVZdFJmTXdWQzExcFJDVFhvYkdrY2dCdHI3eXJCdDJSYXdIZ3VVejlsZURQam1WSGU5YV9iWXdYMFhVZFA3N2ZR?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE03U1ZXbW1GZy1FOWs0cV80aDlkRFNYSDVZdFJmTXdWQzExcFJDVFhvYkdrY2dCdHI3eXJCdDJSYXdIZ3VVejlsZURQam1WSGU5YV9iWXdYMFhVZFA3N2ZR?oc=5\" target=\"_blank\">Juegos y resultados en MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PSN Noticias</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-04T14:27:56+00:00"
-    },
-    {
-      "titulo": "Los resultados completos del GP de Bahréin de F1 2026 en Malasia - Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeGt1STJ0Q2NCRC0yZkNUNWZZbFJ1WGk5U0s4MUxDVk5SNnl5RUM3bjc5VzFVVG9xVHNzZmg4cTIzT3NjQzZSNDNtUEdHM0dFQkhIVXlXb3dBdWZ4ZzlHLVNpemloNUZXQjA2ejBxa3V4WWc4ZXd4OG90T1RRLVRXZXpPelllQQ?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxQeGt1STJ0Q2NCRC0yZkNUNWZZbFJ1WGk5U0s4MUxDVk5SNnl5RUM3bjc5VzFVVG9xVHNzZmg4cTIzT3NjQzZSNDNtUEdHM0dFQkhIVXlXb3dBdWZ4ZzlHLVNpemloNUZXQjA2ejBxa3V4WWc4ZXd4OG90T1RRLVRXZXpPelllQQ?oc=5\" target=\"_blank\">Los resultados completos del GP de Bahréin de F1 2026 en Malasia</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-04T14:25:41+00:00"
-    },
-    {
-      "titulo": "El enojo de los pilotos por el fallo de software de la F1 en Bahréin: \"Totalmente inaceptable\", exclama Checo Pérez - Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZVRsOWZHelpaUmlnX1FrZE41cVE5SXBYZFB3TnFERXpUYlR2ZU9BNlBQOGlVbE8tNTBNMFpBNWtqNGQxMjNzQ2Nta2dtUWZQWVJzUHhmYW1WdWNDX0JwMkpXVS1ZWXA4d2xqaktjQVVWNERiTHAxNE84LURXeDFBUDMwQ09mbU9Ca2tqVTMxT3FCZTVzNzhfenFaTQ?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxQZVRsOWZHelpaUmlnX1FrZE41cVE5SXBYZFB3TnFERXpUYlR2ZU9BNlBQOGlVbE8tNTBNMFpBNWtqNGQxMjNzQ2Nta2dtUWZQWVJzUHhmYW1WdWNDX0JwMkpXVS1ZWXA4d2xqaktjQVVWNERiTHAxNE84LURXeDFBUDMwQ09mbU9Ca2tqVTMxT3FCZTVzNzhfenFaTQ?oc=5\" target=\"_blank\">El enojo de los pilotos por el fallo de software de la F1 en Bahréin: \"Totalmente inaceptable\", exclama Checo Pérez</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-04T14:14:05+00:00"
     }
   ]
 }
