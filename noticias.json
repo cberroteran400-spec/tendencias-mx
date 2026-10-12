@@ -1,11 +1,101 @@
 {
-  "actualizado": "2026-10-12T22:16:57.066000+00:00",
+  "actualizado": "2026-10-12T22:49:05.144364+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 127,
-    "sin_imagen": 1073
+    "con_imagen": 124,
+    "sin_imagen": 1076
   },
   "noticias": [
+    {
+      "titulo": "Carlos Slim tiene casi 100 departamentos frente a Bellas Artes: el negocio que pasa inadvertido en la CDMX",
+      "url": "https://expansion.mx/empresas/2026/10/12/carlos-slim-negocio-departamentos-frente-a-bellas-artes",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/68f311b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb5%2F96%2F7b6f76954bc4bbb00c80451109b5%2Fcarlos-slim-bellas-artes.jpg",
+      "descripcion": "El desarrollo forma parte de un portafolio residencial que suma al menos 3,546 viviendas identificables en México y refleja el alcance de los negocios inmobiliarios de Inmuebles Carso.",
+      "fuente": "Roberto Trejo",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-12T22:35:44+00:00"
+    },
+    {
+      "titulo": "Manchester United, por su primera victoria ante el Atlético de Madrid - FOX Deportes",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNV1IzX1BrejZJX0dhYWpLZlNBUzhfU0RDb25IMU5LQTF2ZWsyWTNxZktVcjV6ODdPdGpXYWJFdVdzUnNqOVZPLXBlMXc0SWIteFFwTDVPcVc4RjJWSUdyY2tqQk55NjdsbFVDQlBwNm5IczRQcDdsd0dLWE4wR3NpODc4bVFFS3M4S3JQYmNwZE04QmNZUGRweDU1NEoycHB1cGdDRldVTk5OTlJINkRPUF9adldOaFh3RVE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNV1IzX1BrejZJX0dhYWpLZlNBUzhfU0RDb25IMU5LQTF2ZWsyWTNxZktVcjV6ODdPdGpXYWJFdVdzUnNqOVZPLXBlMXc0SWIteFFwTDVPcVc4RjJWSUdyY2tqQk55NjdsbFVDQlBwNm5IczRQcDdsd0dLWE4wR3NpODc4bVFFS3M4S3JQYmNwZE04QmNZUGRweDU1NEoycHB1cGdDRldVTk5OTlJINkRPUF9adldOaFh3RVE?oc=5\" target=\"_blank\">Manchester United, por su primera victoria ante el Atlético de Madrid</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">FOX Deportes</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-12T22:25:45+00:00"
+    },
+    {
+      "titulo": "⚾ Juego 1: Así puedes VER EN VIVO el Guardians vs Rays de la Serie de Campeonato 🏟️ - Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNS2NrYlRGdkRjYk00RkQ2cWMzc1RKOG4wOWFZcWNxa2xTVEdRUExKekdKbTAtVlJMaVR6RkF0QzRjVDYzQzVCSEpES1R0QjR3QkJMSWJvMnJPenBFbTBrelFOWDk0Um9vcklTdUxoM3pOb2llZUJWbTZKdEhwb2RKbUZyU0tCRlRJMWFnTnBNeHc5b0lyUEVZd0h2djFYRXZXazh3d1Z1RjJSWTFsdVA2blBDSWJPUk54NFY1WXVXeU1PUkVkaFZhUzlRazY2WExZMVpISERsNmxsNlhCQm05R0ZKUWJuSWt2dlRNbA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi7AFBVV95cUxNS2NrYlRGdkRjYk00RkQ2cWMzc1RKOG4wOWFZcWNxa2xTVEdRUExKekdKbTAtVlJMaVR6RkF0QzRjVDYzQzVCSEpES1R0QjR3QkJMSWJvMnJPenBFbTBrelFOWDk0Um9vcklTdUxoM3pOb2llZUJWbTZKdEhwb2RKbUZyU0tCRlRJMWFnTnBNeHc5b0lyUEVZd0h2djFYRXZXazh3d1Z1RjJSWTFsdVA2blBDSWJPUk54NFY1WXVXeU1PUkVkaFZhUzlRazY2WExZMVpISERsNmxsNlhCQm05R0ZKUWJuSWt2dlRNbA?oc=5\" target=\"_blank\">⚾ Juego 1: Así puedes VER EN VIVO el Guardians vs Rays de la Serie de Campeonato 🏟️</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Facebook</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-12T22:16:09+00:00"
+    },
+    {
+      "titulo": "Futbolistas que han vestido la camiseta del Atlético de Madrid y del Manchester United - Diario AS",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZ1ZRNmNMZFdFYWx3NGdyUVM1dlBZaUcwNjdLVGc2cVdqR29HVlJwcVBYaDVOai1NaDRNel9pb3RGZkJLa1lYUXhIai01bkNXOEhIWXNEaTR3ZFRqVkhZUmhOUG9VVk9xZGtXM1NLdzYtVC1VN1JkUGoyNURQNmlZN0RhZ3k0eGEzMW9xZHY3WUtuVUYxR3dXaVZ4c1RCNFFOQ2NHeUJlR2dDRUdyamo2ekt2aGlhZmFNV1FFUXNLX2pSNEc0akNwR0tRcw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxNZ1ZRNmNMZFdFYWx3NGdyUVM1dlBZaUcwNjdLVGc2cVdqR29HVlJwcVBYaDVOai1NaDRNel9pb3RGZkJLa1lYUXhIai01bkNXOEhIWXNEaTR3ZFRqVkhZUmhOUG9VVk9xZGtXM1NLdzYtVC1VN1JkUGoyNURQNmlZN0RhZ3k0eGEzMW9xZHY3WUtuVUYxR3dXaVZ4c1RCNFFOQ2NHeUJlR2dDRUdyamo2ekt2aGlhZmFNV1FFUXNLX2pSNEc0akNwR0tRcw?oc=5\" target=\"_blank\">Futbolistas que han vestido la camiseta del Atlético de Madrid y del Manchester United</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Diario AS</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-12T22:14:44+00:00"
+    },
+    {
+      "titulo": "¿Canelo Álvarez, cada vez más cerca de Cristiano Ronaldo? Recibe a su mejor amigo en España - El Heraldo de México",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQUnp6MUFxbDNUVV9PQWM2azV2Rm1ZRVc3SFRmdld3UzJJYVJTU0tidHJ3Q3Y5cEhzWEVhSnJXbU9Xa2F3aTRxaE1OWE85YjRBZVZYMkZraFctQjNsazl4RWxRaEFsb3ZWOW8xME5Bcm4wVU9iVE1sX3l0SlBHcXVFWWd0MXRWN1JaTXpXVFZvTDdWQjNPSTc1eXVVUmpJWlRCQ1lfYXQ5cUZSZE1oMXBadXE5bjdZbVo5VFZPVDNXREUyUHhuM21PZ2FQbThaV0NURUlTeEpFY0pwdEMwQXlRQ1JTQQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxQUnp6MUFxbDNUVV9PQWM2azV2Rm1ZRVc3SFRmdld3UzJJYVJTU0tidHJ3Q3Y5cEhzWEVhSnJXbU9Xa2F3aTRxaE1OWE85YjRBZVZYMkZraFctQjNsazl4RWxRaEFsb3ZWOW8xME5Bcm4wVU9iVE1sX3l0SlBHcXVFWWd0MXRWN1JaTXpXVFZvTDdWQjNPSTc1eXVVUmpJWlRCQ1lfYXQ5cUZSZE1oMXBadXE5bjdZbVo5VFZPVDNXREUyUHhuM21PZ2FQbThaV0NURUlTeEpFY0pwdEMwQXlRQ1JTQQ?oc=5\" target=\"_blank\">¿Canelo Álvarez, cada vez más cerca de Cristiano Ronaldo? Recibe a su mejor amigo en España</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Heraldo de México</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-12T22:14:00+00:00"
+    },
+    {
+      "titulo": "¿Se cancela la pelea de Canelo? Esto se sabe sobre su combate en Arabia Saudita - Sociedad 3.0",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOb1pjWVc0MTFDRkw5b1VVT2FLRm1aUjBaTjVFNWNDdVNlQ0pGd0NXa3dzVnlXcVZMQ2g5SGszb2lQZVpJMllfcTRYbHJzQVNlSHhRc2lwSGVzaWc4NDVnWFE5V0pvQnZBaHNERGxYWTM4RU5DampwYS1mbEstSDVZQTZWSEYxdFUzU1B1UEk2blRuYnJ4Y1hTbnFwQTF4VmgweXNxLV92ZTZzX3AxLWt2ZC1TVUVha2d3cjV0MA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxOb1pjWVc0MTFDRkw5b1VVT2FLRm1aUjBaTjVFNWNDdVNlQ0pGd0NXa3dzVnlXcVZMQ2g5SGszb2lQZVpJMllfcTRYbHJzQVNlSHhRc2lwSGVzaWc4NDVnWFE5V0pvQnZBaHNERGxYWTM4RU5DampwYS1mbEstSDVZQTZWSEYxdFUzU1B1UEk2blRuYnJ4Y1hTbnFwQTF4VmgweXNxLV92ZTZzX3AxLWt2ZC1TVUVha2d3cjV0MA?oc=5\" target=\"_blank\">¿Se cancela la pelea de Canelo? Esto se sabe sobre su combate en Arabia Saudita</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sociedad 3.0</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-12T22:03:10+00:00"
+    },
+    {
+      "titulo": "GP de Estados Unidos: ¿Dónde y cuándo ver a Checo Pérez en la F1? - El Sol de México",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNjFBdmt1OTE1TFZMLWhxNzhSb2hmalpTVEl5ejQ1MXplZ3ZlMXFrbW5xc2x2SlJtMHFJTVVzbjl2QXJvdXJDWTRQRUZLQzlIQlI3cDZmXzBWc19wRkxiUW9VVEVoSDd1Zmd3elkwWFRlc3llMWoxVWkwWS1haG5FWTg2X3NFT3h1NWRNcHhLb2Q1U2EwaS1rWkxkUmV5WTBPU3V6d2UyWldQdk5vUGc?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxNNjFBdmt1OTE1TFZMLWhxNzhSb2hmalpTVEl5ejQ1MXplZ3ZlMXFrbW5xc2x2SlJtMHFJTVVzbjl2QXJvdXJDWTRQRUZLQzlIQlI3cDZmXzBWc19wRkxiUW9VVEVoSDd1Zmd3elkwWFRlc3llMWoxVWkwWS1haG5FWTg2X3NFT3h1NWRNcHhLb2Q1U2EwaS1rWkxkUmV5WTBPU3V6d2UyWldQdk5vUGc?oc=5\" target=\"_blank\">GP de Estados Unidos: ¿Dónde y cuándo ver a Checo Pérez en la F1?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Sol de México</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-12T21:55:26+00:00"
+    },
+    {
+      "titulo": "champions league donde ver horarios partidos jornada 2 transmision en vivo - Reporte Indigo",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaHJTUDBTZjJCSjQwZDk4WWNpdlJ5elVndVJSWkFWSUhsdFR5dDNpVjdIbFlnMHhwT2hxeVJ3T2k2ZDZLMC1qMUlCRmR4MFdnZnE1UGNHNFRNWjZGcWY5aERObHBNR1EzLVJBV09hd3pzbENHTmh2SlF6YTg4Um9QSjN3V0lJQWJiRTFIcWJzUDlUWk1CS3RKcUJyeEx3dTVQS3FnWEhGaTY4SklGZkk1VW1IS0VYSXBYQmdnbVg2UmR1NmNqTVV5ZkpjeHE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPaHJTUDBTZjJCSjQwZDk4WWNpdlJ5elVndVJSWkFWSUhsdFR5dDNpVjdIbFlnMHhwT2hxeVJ3T2k2ZDZLMC1qMUlCRmR4MFdnZnE1UGNHNFRNWjZGcWY5aERObHBNR1EzLVJBV09hd3pzbENHTmh2SlF6YTg4Um9QSjN3V0lJQWJiRTFIcWJzUDlUWk1CS3RKcUJyeEx3dTVQS3FnWEhGaTY4SklGZkk1VW1IS0VYSXBYQmdnbVg2UmR1NmNqTVV5ZkpjeHE?oc=5\" target=\"_blank\">champions league donde ver horarios partidos jornada 2 transmision en vivo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Reporte Indigo</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-12T21:52:00+00:00"
+    },
+    {
+      "titulo": "Posible alineación del Atlético ante el Manchester United en Champions League - Diario AS",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOEdIRVhoNWZIODRkcGdhUXU2bUFQbXdVMVYwcWNDZlNRak5kY1pHbFZyVXNkcmlJMkU1UnRBc20wZ0RPeklrbEpaMVVac1ZEWVJtdVk2U2ZVZUZmNUFISU5FLVdQbXBoVzl2YmFMelZaTEYteEtnVk9HVmltSzBHVkt6dElqdk1kSjRnbGtXUEV0a0VTREYzWXo5QkROTmY00gG0AUFVX3lxTFBsc3prNnBqVkIxSV9YZno5bnBiUnZ2QnhNQUwyTkE0OExtT0RBblhVelNMeGktUEZkLUYwMlUyRkFOSEVjc2dtWG42ekp1U0MxSzlvNG5MSlZEbUFYTEg0b1FYTWROVWZFbHU2TEZnQURYZjhoSFdia0hUNjlnUVFCMGJqN3BQMWE3aTlZclNkaXFRR1l0OEFSdThXYXdUelFUUmhaMkRzWTFFNnJ4WjRabGc2OA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPOEdIRVhoNWZIODRkcGdhUXU2bUFQbXdVMVYwcWNDZlNRak5kY1pHbFZyVXNkcmlJMkU1UnRBc20wZ0RPeklrbEpaMVVac1ZEWVJtdVk2U2ZVZUZmNUFISU5FLVdQbXBoVzl2YmFMelZaTEYteEtnVk9HVmltSzBHVkt6dElqdk1kSjRnbGtXUEV0a0VTREYzWXo5QkROTmY00gG0AUFVX3lxTFBsc3prNnBqVkIxSV9YZno5bnBiUnZ2QnhNQUwyTkE0OExtT0RBblhVelNMeGktUEZkLUYwMlUyRkFOSEVjc2dtWG42ekp1U0MxSzlvNG5MSlZEbUFYTEg0b1FYTWROVWZFbHU2TEZnQURYZjhoSFdia0hUNjlnUVFCMGJqN3BQMWE3aTlZclNkaXFRR1l0OEFSdThXYXdUelFUUmhaMkRzWTFFNnJ4WjRabGc2OA?oc=5\" target=\"_blank\">Posible alineación del Atlético ante el Manchester United en Champions League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Diario AS</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-12T21:51:06+00:00"
+    },
     {
       "titulo": "¿Quién transmite Atlético de Madrid vs Manchester United?: Horario y canal partido Champions League 2026 - Mediotiempo",
       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPdUc4VHR5aEJrME1VNzRCYjlQd21POGt2RHNkQWVSUHVEMHFJdlFZN2JVWDRjM3g4QW1QSExKRkN2alczZ1ppRENCc1JGOVkzQ3pYOWJJWU9ucVZIaVVPT2J6emtKdzh1NFB4bVB5RlBrSUdkNTJpbEhwZXp1dXpaMUY3VnNjYXBCNU1ycEpJLWxNQXhiZURnTUF3X1FtR1FwV2d0Vk1GczZKVFV3emd3Q0RMYjAwYXppOGQ1RzRhRDIwTFdnM25qUGZtMHhibG1yb1RYUTBhQ24tVlBqeThjVHcxTzRlaVFX0gHoAUFVX3lxTE5KZzJVUEV1TUpsSHlCM0hxODRlaF9udTBvcE5LNTV3ZklZekoxVm9UYWJHLTNWejdpSnVQSzZtSHF0N1cxLXRQTFNMcmpVcFlUWTJfOC14Z0dwdkU1WGFsWEpaUFFRVHZRX0RWWlFXR0dWUVFPVF9pQ1VrNU10MWV6OENNWTFRYjR0N3JfckVLRjhUenhTUmNUdERUb1NIWi1wMkNabm5icmZ6YU5SM3ZUSFlCdDFidGQwN3pnZHJSdGQzYTZMNlFQYzAxRFNmUWlETV9lSVNrYkx0NjlzMS1OcEN2NjUxQ1g?oc=5",
@@ -55,6 +145,16 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-12T21:27:46+00:00"
+    },
+    {
+      "titulo": "Titánico Cristiano - Diario AS",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE96U1Rkd1d2ZGxsMS1mM2lNa2RweWsxaFB3azFHTkR1M0hJRFVDNEJoMFJpSnJvMzgyRnpzVW44YUlaM1Q4eTR0c1JMc3NXWFNTRTdjYmZHeFVmN21CYzR4bGljc1RkUHBaOC01ekxiWVB1ajTSAYcBQVVfeXFMUEQ1M1YzekUwczl5LVFNd1RRVW9Ed3Y4dkVSNnJOTE0xNlZxVDZtYTUyclJ2X3dENWVxLWNfR2NrenVFeFM0Yi1uclViWkJsNHlBR1VsN0tWUHY2ZExnUk5ESmN3YnlRUGJZXzlWQS1SZUlTYzItemtacGI2T1FVUWhNZmR6cnFn?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE96U1Rkd1d2ZGxsMS1mM2lNa2RweWsxaFB3azFHTkR1M0hJRFVDNEJoMFJpSnJvMzgyRnpzVW44YUlaM1Q4eTR0c1JMc3NXWFNTRTdjYmZHeFVmN21CYzR4bGljc1RkUHBaOC01ekxiWVB1ajTSAYcBQVVfeXFMUEQ1M1YzekUwczl5LVFNd1RRVW9Ed3Y4dkVSNnJOTE0xNlZxVDZtYTUyclJ2X3dENWVxLWNfR2NrenVFeFM0Yi1uclViWkJsNHlBR1VsN0tWUHY2ZExnUk5ESmN3YnlRUGJZXzlWQS1SZUlTYzItemtacGI2T1FVUWhNZmR6cnFn?oc=5\" target=\"_blank\">Titánico Cristiano</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Diario AS</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-12T21:12:42+00:00"
     },
     {
       "titulo": "¿Dónde ver Inter vs Brujas? Canales y hora del partido de la J2 de Champions League - Récord",
@@ -317,6 +417,16 @@
       "fecha": "2026-10-12T19:07:10+00:00"
     },
     {
+      "titulo": "La Champions League regresa esta semana con la segunda jornada de Liga - El Informador",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOT0RKa1JDdFRwOVdJWmFYVVh1QWR0OXB5Z2I1OUhXYkFnOFgzMXF2UzVFX2lFeXctS3o3dVlrTlhGZjA2NU9waTBkN2lya2xzX2V0eUZUWXRHQTVJWlRWVUp1T3ZmN254eVlwYVZVdXpHc2tDU3pJcUxMMkpER3cyTGhSM1JpcGtBcGJUbnFOd255Skx5T2NUbmRSeWVKVmd0OEpILVc1UnVJVnNJNWE2eHpXejBfbzN0Z1pMQ1ZMRkZVd9IBxwFBVV95cUxOTHZjenZMelRTMlBETTRNNXU2Y2puTDg5YmpHbFRhSksxcWZFZ3NialBVaGxsR21OeU93d3ZHcEgxeUhZdmtMVFVxcHN1a3hKMEI4amc3aWxiVnVibnIyb1FLem1wckVzNFI2dVhEZ21LSnhnbVFVRjh0NXJaSWhjRzdieU9zTnRlM1NRTkhTaGJlLUNjM2REZm10VGQ5M3NPOTRWRzgyMkpXd0lIcDAwamFFa2l4UVp3RDMxcHVmU2g3Wmg2TlE4?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxOT0RKa1JDdFRwOVdJWmFYVVh1QWR0OXB5Z2I1OUhXYkFnOFgzMXF2UzVFX2lFeXctS3o3dVlrTlhGZjA2NU9waTBkN2lya2xzX2V0eUZUWXRHQTVJWlRWVUp1T3ZmN254eVlwYVZVdXpHc2tDU3pJcUxMMkpER3cyTGhSM1JpcGtBcGJUbnFOd255Skx5T2NUbmRSeWVKVmd0OEpILVc1UnVJVnNJNWE2eHpXejBfbzN0Z1pMQ1ZMRkZVd9IBxwFBVV95cUxOTHZjenZMelRTMlBETTRNNXU2Y2puTDg5YmpHbFRhSksxcWZFZ3NialBVaGxsR21OeU93d3ZHcEgxeUhZdmtMVFVxcHN1a3hKMEI4amc3aWxiVnVibnIyb1FLem1wckVzNFI2dVhEZ21LSnhnbVFVRjh0NXJaSWhjRzdieU9zTnRlM1NRTkhTaGJlLUNjM2REZm10VGQ5M3NPOTRWRzgyMkpXd0lIcDAwamFFa2l4UVp3RDMxcHVmU2g3Wmg2TlE4?oc=5\" target=\"_blank\">La Champions League regresa esta semana con la segunda jornada de Liga</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Informador</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-12T19:05:58+00:00"
+    },
+    {
       "titulo": "Empresas cumplen con pagos al IMSS dice el CCE; exige mejorar la atención para trabajadores",
       "url": "https://expansion.mx/economia/2026/10/12/empresas-pagan-imss-trabajadores-esperan-atencion",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/86f6096/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F18%2Fb5%2Fad46a98d4404aec3ff1942958bb8%2Fimss-trabajadores-espera-desabasto-medicamentos.jpg",
@@ -425,6 +535,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-12T19:01:39+00:00"
+    },
+    {
+      "titulo": "El ambiente turco, la gran amenaza del Barcelona en Champions League - FOX Deportes",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeFRBRXB6THN6ZERQeklNMjUwTktuaS1KdmVMZ05Pc1NJX2l4R2VwZnQzcEJzeWM4d3FMSzBwdzlKQXJOcmF4UlQxVG1BbXp1YXlpZWJBeHo5VE1DaWhjdVYzMGY4X3M0eWY5ZThsT3M2SFdNOV82eDhxYnc3VzhoYzUxQ0FfakRVTXdOMHNvVWZpNjQxSm1pUWtoMEhOUE5zTkRpQ3MyQXRqTGlsZGNoWDc5Rjc2MjBW?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeFRBRXB6THN6ZERQeklNMjUwTktuaS1KdmVMZ05Pc1NJX2l4R2VwZnQzcEJzeWM4d3FMSzBwdzlKQXJOcmF4UlQxVG1BbXp1YXlpZWJBeHo5VE1DaWhjdVYzMGY4X3M0eWY5ZThsT3M2SFdNOV82eDhxYnc3VzhoYzUxQ0FfakRVTXdOMHNvVWZpNjQxSm1pUWtoMEhOUE5zTkRpQ3MyQXRqTGlsZGNoWDc5Rjc2MjBW?oc=5\" target=\"_blank\">El ambiente turco, la gran amenaza del Barcelona en Champions League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">FOX Deportes</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-12T18:54:04+00:00"
     },
     {
       "titulo": "¿Dónde ver Viking vs Bayern Múnich? Canales y hora del partido de la J2 de Champions League - Récord",
@@ -1411,6 +1531,16 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWmppVXREZXZiSGZYNTdNbmRwOXBCc2l5bWdTOGhMeDAyWEZEQ3g5RTYxaGs5c202Q1FweXM3S0pKTmFWUURHYXNzY3NSRXd1YUdXVTZoU1V3ZlFGYnMtSmJJMTAySlNMWnpHWlVQYkR0ZERlV1VFdDVjSW44Sk9ma2M5dDc1RXIyaU5ZNVB0MTZnZlJKWlNyZHhRbWR3RHFiMVFleU5LY0RMYmJPc2FoZmdOZw?oc=5",
       "imagen": "",
       "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOWmppVXREZXZiSGZYNTdNbmRwOXBCc2l5bWdTOGhMeDAyWEZEQ3g5RTYxaGs5c202Q1FweXM3S0pKTmFWUURHYXNzY3NSRXd1YUdXVTZoU1V3ZlFGYnMtSmJJMTAySlNMWnpHWlVQYkR0ZERlV1VFdDVjSW44Sk9ma2M5dDc1RXIyaU5ZNVB0MTZnZlJKWlNyZHhRbWR3RHFiMVFleU5LY0RMYmJPc2FoZmdOZw?oc=5\" target=\"_blank\">Brewers vino de atrás ante Dodgers y abrió con triunfo SCLN</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-12T04:47:25+00:00"
+    },
+    {
+      "titulo": "Brewers vino de atrás ante Dodgers y abrió con triunfo SCLN - ESPN México",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTkcxSm9pSDZYN3Q3amNITXlsQ1Q5VjdjQXBGWEJORkR0dktZanBfVGlpdVlBZWs0cS1iVk1pQ1dUMUVxeVUxc2NITE9EV0RoZzVuRWM2X0dUQjdhYzdZM0RicTZhUHJNR3h5WDJsaDBFNXhwNWhOR1gtUEloblJweENXV1A2ejc1bWIzdlpJdm1fUTRUM0UweXpvX3JaMFZLSEFqT1BTYzJGMGtnV1lMQmtMcXgtWHBC?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTkcxSm9pSDZYN3Q3amNITXlsQ1Q5VjdjQXBGWEJORkR0dktZanBfVGlpdVlBZWs0cS1iVk1pQ1dUMUVxeVUxc2NITE9EV0RoZzVuRWM2X0dUQjdhYzdZM0RicTZhUHJNR3h5WDJsaDBFNXhwNWhOR1gtUEloblJweENXV1A2ejc1bWIzdlpJdm1fUTRUM0UweXpvX3JaMFZLSEFqT1BTYzJGMGtnV1lMQmtMcXgtWHBC?oc=5\" target=\"_blank\">Brewers vino de atrás ante Dodgers y abrió con triunfo SCLN</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
       "fuente": "Beisbol",
       "categoria": "Deportes",
       "subcategoria": "beisbol",
@@ -11875,136 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-05T21:28:00+00:00"
-    },
-    {
-      "titulo": "Plan México incentiva a la farmacéutica Adium a expandir capacidad industrial e investigación local",
-      "url": "https://expansion.mx/empresas/2026/10/05/asofarma-adium-investigacion-produccion-mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/c5ad18c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fda%2Ffc%2Fe20217e643408c7a380fb2fbb117%2Fadium-mexico-investigacion-medica.jpeg",
-      "descripcion": "La empresa ve espacio para aumentar su participación en investigación clínica mediante acuerdos con sus socios licenciantes y, al mismo tiempo, fortalecer la producción local de medicamentos sólidos.",
-      "fuente": "Mara Echeverría",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-05T21:10:52+00:00"
-    },
-    {
-      "titulo": "La sentencia a Canelo Álvarez para la pelea contra Mbilli: “Él va en declive” - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYW9iekRETlh5eDcxQVpxOXQwUHd3TmF6TGtraXRqZ3JQQ05yUVN1NlJISGtJNDR0MktWSmp4akFCWHRhTnJpRy1uUXpPLU8wVGtMS0Z5MkRLQ1hyN2RTQ253bURSUXFhM1BZdnZfaHV3UWxLVEdSc3lhWjZaVkFIV0JMbWQ5UzVUZ1JNbFhmXzhCTS1xbW9N0gGXAUFVX3lxTE9qMjhzcWgtVHdxRkFKbU8yLTFJanRjRWdkQ0hEd1dJcnBJYks1VzBjd0VqeTM0Xzg3dDdWNVpOXzRtTUxmd1Vlc3RsaEg4ZHBscjlycHc1cHltWXJLTy1BdHc2TmdGSTBDNWI0R0pSLVdRMHM5V3dpZExscVl5WGNQNDlkSF9oam9YV1U5dU05NUJVdjRMWEk?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxOYW9iekRETlh5eDcxQVpxOXQwUHd3TmF6TGtraXRqZ3JQQ05yUVN1NlJISGtJNDR0MktWSmp4akFCWHRhTnJpRy1uUXpPLU8wVGtMS0Z5MkRLQ1hyN2RTQ253bURSUXFhM1BZdnZfaHV3UWxLVEdSc3lhWjZaVkFIV0JMbWQ5UzVUZ1JNbFhmXzhCTS1xbW9N0gGXAUFVX3lxTE9qMjhzcWgtVHdxRkFKbU8yLTFJanRjRWdkQ0hEd1dJcnBJYks1VzBjd0VqeTM0Xzg3dDdWNVpOXzRtTUxmd1Vlc3RsaEg4ZHBscjlycHc1cHltWXJLTy1BdHc2TmdGSTBDNWI0R0pSLVdRMHM5V3dpZExscVl5WGNQNDlkSF9oam9YV1U5dU05NUJVdjRMWEk?oc=5\" target=\"_blank\">La sentencia a Canelo Álvarez para la pelea contra Mbilli: “Él va en declive”</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-05T21:00:13+00:00"
-    },
-    {
-      "titulo": "¡Uno menos! Selección Mexicana confirma la baja de otro futbolista para enfrentar a Chile - Mediotiempo",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdVRMNFZaZVJFTS1RM3JXZjV4cC1NWENpZ2luX0lNME1XWjNZTDVqUzljQUJnaGlsMEVFbEM1Mmc5TTFFelUzUHB5SXREaUV1akppVDZicnVKM0Z4YjRoV284RFNpdWI4QlpRQXMySVA3VVNjaDFUblFmWk15MWdBaGhmUU5EdFFpMXNOenNlUHprTzhuM2NZV0hWTWRwaElTdWhnRXBUS2xJRlkwOHFZ0gGvAUFVX3lxTE9ob0pBb0hQXzY1TkEyM2dDYkpMS0FpbXJ3NGVIVm1ZcGU5UTQtMkpDbXFUQW03MWtpMk4xb2tzZldYMG5aTjhmZmtyb214T3JPMjZ1Wm1TblRkTHFRc0hBNk96dXJzMU1Yb3BNMngtc00zOVdLOE9pcHBsOTdyM2h6dC1iUnRZSFZFSmVPdWdYbFJHdjhFUnpreVZqTFVRczBNZnNxalh6UkZXNk45WEU?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxOdVRMNFZaZVJFTS1RM3JXZjV4cC1NWENpZ2luX0lNME1XWjNZTDVqUzljQUJnaGlsMEVFbEM1Mmc5TTFFelUzUHB5SXREaUV1akppVDZicnVKM0Z4YjRoV284RFNpdWI4QlpRQXMySVA3VVNjaDFUblFmWk15MWdBaGhmUU5EdFFpMXNOenNlUHprTzhuM2NZV0hWTWRwaElTdWhnRXBUS2xJRlkwOHFZ0gGvAUFVX3lxTE9ob0pBb0hQXzY1TkEyM2dDYkpMS0FpbXJ3NGVIVm1ZcGU5UTQtMkpDbXFUQW03MWtpMk4xb2tzZldYMG5aTjhmZmtyb214T3JPMjZ1Wm1TblRkTHFRc0hBNk96dXJzMU1Yb3BNMngtc00zOVdLOE9pcHBsOTdyM2h6dC1iUnRZSFZFSmVPdWdYbFJHdjhFUnpreVZqTFVRczBNZnNxalh6UkZXNk45WEU?oc=5\" target=\"_blank\">¡Uno menos! Selección Mexicana confirma la baja de otro futbolista para enfrentar a Chile</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-05T20:42:00+00:00"
-    },
-    {
-      "titulo": "La cantidad que perdió Canelo Álvarez por apostar a México contra Estados Unidos sorprende a sus seguidores - debate.com.mx",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPbGhua2hvbkJOZTdMcXVBNkdvY2szY1F6VXgwZnVLTFpuMnpheVlzY3RzVktrOEtEY0R0Y0FuWXlJS25WSFp1UkJDaV84ZlB3cGsxLWxOZGhjamxaZGRBMjVhTWFvSk9uSkpySk5VQmdFWVhqaFVOZTU3cVZDNE9yajh3WnNYR1hBaGNFdmg1d1Z3QjB3NWNtNkItY1lxX1hBRVdPOGdXandCdmZzWnlWbnM2eVpVbEZieTg1NWt1Q2h6NWR6NlRMdXNvU3ZsQ0FtU0p5WDhQSm43a3BiVGprd19HR001dXhFa3J0NXZrOXNCVXVmbEE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi9gFBVV95cUxPbGhua2hvbkJOZTdMcXVBNkdvY2szY1F6VXgwZnVLTFpuMnpheVlzY3RzVktrOEtEY0R0Y0FuWXlJS25WSFp1UkJDaV84ZlB3cGsxLWxOZGhjamxaZGRBMjVhTWFvSk9uSkpySk5VQmdFWVhqaFVOZTU3cVZDNE9yajh3WnNYR1hBaGNFdmg1d1Z3QjB3NWNtNkItY1lxX1hBRVdPOGdXandCdmZzWnlWbnM2eVpVbEZieTg1NWt1Q2h6NWR6NlRMdXNvU3ZsQ0FtU0p5WDhQSm43a3BiVGprd19HR001dXhFa3J0NXZrOXNCVXVmbEE?oc=5\" target=\"_blank\">La cantidad que perdió Canelo Álvarez por apostar a México contra Estados Unidos sorprende a sus seguidores</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">debate.com.mx</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-05T20:38:21+00:00"
-    },
-    {
-      "titulo": "El Salvador no puede con Martinica y confirma su descenso a la Liga B - Claro Sports",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNM1cxSWVFNXE0NVZqbGliWXhTMDNVeFg1dm51Y0RSNnZlSkZJQU42bTF0ZVM1alhyZTRXN0xERDZFaFBIUTZwblBjM3NjZDh5bUhNNjdSZDJzblY3aWozRkM2d2o2OUo3dFBIeVgyZE5GS3lLdlIxLWRTNmVSMDBTWHMxeF9lYVVicXA1YWVwRExfWnctMzhlM3dDbXJpWjgxV3VJU18wWVl2NnpfZVRVaTAxdk81RURoTUN6d3kzS19uUnhfVExoLWFxYVFibFk0SHB0cHhlMFgwX2NocWVnYTcwVVBlXzRUQ3U3Q09zM2daX2l1WHZoOHhtTThJM0RLaE05aA?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxNM1cxSWVFNXE0NVZqbGliWXhTMDNVeFg1dm51Y0RSNnZlSkZJQU42bTF0ZVM1alhyZTRXN0xERDZFaFBIUTZwblBjM3NjZDh5bUhNNjdSZDJzblY3aWozRkM2d2o2OUo3dFBIeVgyZE5GS3lLdlIxLWRTNmVSMDBTWHMxeF9lYVVicXA1YWVwRExfWnctMzhlM3dDbXJpWjgxV3VJU18wWVl2NnpfZVRVaTAxdk81RURoTUN6d3kzS19uUnhfVExoLWFxYVFibFk0SHB0cHhlMFgwX2NocWVnYTcwVVBlXzRUQ3U3Q09zM2daX2l1WHZoOHhtTThJM0RLaE05aA?oc=5\" target=\"_blank\">El Salvador no puede con Martinica y confirma su descenso a la Liga B</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Claro Sports</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-05T20:29:19+00:00"
-    },
-    {
-      "titulo": "White Sox y Guardians, una rivalidad ligada a la historia de MLB - ESPN México",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbkJyTHhnZVVnUTNyd0ZvOVpmeGVLNVExRER2ekZkYjdCcUVlSnZHTG9ESUtfdWNOelZ3SW1tTS1JOFA1UUpuSjRMOEJESFpmQm5BZFh4WkU5MGU5SHp3MGU4X011Z1lIYXI5b0RaUGo3RWNWb2Z4bkhzdW9KQUVadllBU2pfVkdzNXJYZktUeWgxWEtOdUg5anRYYlB2UnJBT0tvZ2NGc2tJTl9BRWZLOFcyOXcyc0JQZnZHWlVsZw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNbkJyTHhnZVVnUTNyd0ZvOVpmeGVLNVExRER2ekZkYjdCcUVlSnZHTG9ESUtfdWNOelZ3SW1tTS1JOFA1UUpuSjRMOEJESFpmQm5BZFh4WkU5MGU5SHp3MGU4X011Z1lIYXI5b0RaUGo3RWNWb2Z4bkhzdW9KQUVadllBU2pfVkdzNXJYZktUeWgxWEtOdUg5anRYYlB2UnJBT0tvZ2NGc2tJTl9BRWZLOFcyOXcyc0JQZnZHWlVsZw?oc=5\" target=\"_blank\">White Sox y Guardians, una rivalidad ligada a la historia de MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-05T20:19:03+00:00"
-    },
-    {
-      "titulo": "Nafin quiere apoyar a más MiPymes y coloca 9,750 mdp como parte del Plan México",
-      "url": "https://expansion.mx/economia/2026/10/05/nafin-quiere-apoyar-a-mas-mipymes-y-coloca-9-750-mdp-como-parte-del-plan-mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/38d3736/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F89%2F57%2F4271439e43a7b26df69a42de037b%2Fcapacitacion-tecnica-empresas-plan-mexico.jpeg",
-      "descripcion": "Nafin realizó su tercera colocación de certificados en el mercado nacional en 2026. Sostiene que la emisión está respaldada por la solidez de sus indicadores.",
-      "fuente": "Santiago Nolasco",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-05T20:18:45+00:00"
-    },
-    {
-      "titulo": "MLB: CC Sabathia celebra la victoria más importante de su vida lejos de Yankees y el montículo - Al Bat",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSFJFNGt5SVBLenpGcTJDeDE4T3U2REhoNzMzWG83NUtMV2dpNXVmNklfVUstSzZZeDNJcFVKT0NVeW1vbnFQaWcwcE15bTFSd3FzSFBHcjRlNlVwRUJlYmE1d1drYmI1aWY0TkxuZlJ0c0NnX3VJZzFnUC1kbm5WSnV4c3JSNFY0aUdyLTVIc2MtRUlvMDlPY1FBdTlJSzVNaDl4bHRqZzFfcWF6dnVOaFFDS0g5VXBZbEljOWczRnBHdGR5WV9wWEJpSFNJMUl0X0NaR9IB2gFBVV95cUxQUzd4dk9OaS1FT2pnVmhpYjlNRHRZTjM0YzAtOC1zRnkzSy0yQklMaW5IWWt2M1laRWMzWkJJX0lmR0xxbkcydFNzcXF3bm9Da2tZWFZ5a3BUVWMxUUtIX1NwS3pDT1I3Zi1HWlJnUjlCNGFyME9MdDREQzJtSXRXZUpuTnZQd2FkSWIzaVp0cjlneTBWSlhGTmZZTzktenAxdmZuRW5WSlVVb0RFWEsyLW9KY21QVWVyOVgwOUU4Ri1yd1BHWTV5Q19oTzBSVlV3OHRndlQwb19GZw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSFJFNGt5SVBLenpGcTJDeDE4T3U2REhoNzMzWG83NUtMV2dpNXVmNklfVUstSzZZeDNJcFVKT0NVeW1vbnFQaWcwcE15bTFSd3FzSFBHcjRlNlVwRUJlYmE1d1drYmI1aWY0TkxuZlJ0c0NnX3VJZzFnUC1kbm5WSnV4c3JSNFY0aUdyLTVIc2MtRUlvMDlPY1FBdTlJSzVNaDl4bHRqZzFfcWF6dnVOaFFDS0g5VXBZbEljOWczRnBHdGR5WV9wWEJpSFNJMUl0X0NaR9IB2gFBVV95cUxQUzd4dk9OaS1FT2pnVmhpYjlNRHRZTjM0YzAtOC1zRnkzSy0yQklMaW5IWWt2M1laRWMzWkJJX0lmR0xxbkcydFNzcXF3bm9Da2tZWFZ5a3BUVWMxUUtIX1NwS3pDT1I3Zi1HWlJnUjlCNGFyME9MdDREQzJtSXRXZUpuTnZQd2FkSWIzaVp0cjlneTBWSlhGTmZZTzktenAxdmZuRW5WSlVVb0RFWEsyLW9KY21QVWVyOVgwOUU4Ri1yd1BHWTV5Q19oTzBSVlV3OHRndlQwb19GZw?oc=5\" target=\"_blank\">MLB: CC Sabathia celebra la victoria más importante de su vida lejos de Yankees y el montículo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Al Bat</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-05T20:18:00+00:00"
-    },
-    {
-      "titulo": "Falta de sanciones en su diseño amenaza la efectividad de la Ley de Economía Digital",
-      "url": "https://expansion.mx/economia/2026/10/05/ante-falta-de-sanciones-en-su-diseno-ley-de-economia-digital-puede-enfrentar-retos-en-su-implementacion",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/3ec5a03/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F95%2F88%2Fab4827184625a960374b5339ca63%2F6-ieps-gasolina-586855-gasolinera-impreso.jpeg",
-      "descripcion": "Con la inminente aprobación de la iniciativa del Ejecutivo, especialistas destacan que el nuevo marco legal ayudará a la trazabilidad y disminuir delitos como el robo de combustible en el país",
-      "fuente": "Antonio Hernández",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-05T20:17:21+00:00"
-    },
-    {
-      "titulo": "Yankees vs. Rays EN VIVO: ¿A qué hora y dónde ver Juego 2 Serie Divisional MLB 2026? - Mediotiempo",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdlhYemVPdDg5a1Y2Z2lsQl85cjNxQVhscWJIdjVuNkk0U1B4Wmh1OE9RdF9vX2hqRy1FVnpFbzNVb1Vkc3I5YjFDZFFDbks1NXJxODVzZ1Q5TGxGaDd6WGJNUXRNMlh0UWNCczNCZWs2bzhXZjNGXzRrSWdBU1NwaWhOd1RJRlJZamRlZ3BiNW5DZGdkVzJFTFVOS2k0QTYxYUxfeWx2eGg1UjBXS2hFWnFlcFUweFpQUlHSAboBQVVfeXFMTWpRMzJFSTF5TmN5c0ZaYTRjTEpEOGVCR1VKX1VzS1pkVXN3Z05DbzRrb2lJdWZxaHNSS1ZZalpka0xpdlRId0NiaFFVUzVncU5MRU9ISEhKcjhhblVkRTRjUVg3R3V4N2JxMDBfN1ZXcDVnQ1h1S21rdEdpX3VLekNWVDhJMzdsSkVpX05nVmtFTXBTZ2dFUXBQWnNjalJqNXJYekxpdlQ0NHNNeHRFdjZaaEp1SFdiRGJn?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQdlhYemVPdDg5a1Y2Z2lsQl85cjNxQVhscWJIdjVuNkk0U1B4Wmh1OE9RdF9vX2hqRy1FVnpFbzNVb1Vkc3I5YjFDZFFDbks1NXJxODVzZ1Q5TGxGaDd6WGJNUXRNMlh0UWNCczNCZWs2bzhXZjNGXzRrSWdBU1NwaWhOd1RJRlJZamRlZ3BiNW5DZGdkVzJFTFVOS2k0QTYxYUxfeWx2eGg1UjBXS2hFWnFlcFUweFpQUlHSAboBQVVfeXFMTWpRMzJFSTF5TmN5c0ZaYTRjTEpEOGVCR1VKX1VzS1pkVXN3Z05DbzRrb2lJdWZxaHNSS1ZZalpka0xpdlRId0NiaFFVUzVncU5MRU9ISEhKcjhhblVkRTRjUVg3R3V4N2JxMDBfN1ZXcDVnQ1h1S21rdEdpX3VLekNWVDhJMzdsSkVpX05nVmtFTXBTZ2dFUXBQWnNjalJqNXJYekxpdlQ0NHNNeHRFdjZaaEp1SFdiRGJn?oc=5\" target=\"_blank\">Yankees vs. Rays EN VIVO: ¿A qué hora y dónde ver Juego 2 Serie Divisional MLB 2026?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-05T20:04:00+00:00"
-    },
-    {
-      "titulo": "TikTok te paga hasta 70,000 pesos al mes por tus videos, pero nada tiene que ver si se hacen virales",
-      "url": "https://expansion.mx/tecnologia/2026/10/05/tiktok-te-paga-hasta-70-000-pesos-al-mes-por-tus-videos",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/8ca6cee/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F61%2F62%2Fa57d5436404db7212575cbae9dee%2Ftiktok-monetizacion-creadores-recompensas-especiales.jpeg",
-      "descripcion": "La segunda etapa de monetización de Tik Tok llamada “Special Reward Program” lleva alrededor de tres meses operando y busca premiar la calidad de los contenidos.",
-      "fuente": "Jimena Fuentes",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-05T20:00:02+00:00"
-    },
-    {
-      "titulo": "MLB Playoffs 2026: ¿Quién tiene la mayor ventaja de local? - ESPN México",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNzlhUHg3YWN6bWNuWjNNT2hXRXJEZUNUVFV6dkFoT0tuZDFxejFlaUY0dy1JakZkNnBQTnlCbjRES1NvQmJvMXZkMXNwVVV0NzJfcUE1TmtlNkVzSlV0MnYwR2tYQ0pzT2xRMzBSdXBpR2JUTkxWUng2c1U5MnpCdTlXUWVsT2M3MU05QWV3YzhtcXhVQ0lVcmpRU1BlYVZFaElneVFCM2NFa2ZycjJ3TGkwZWRBdkxla091VGlpMA?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNNzlhUHg3YWN6bWNuWjNNT2hXRXJEZUNUVFV6dkFoT0tuZDFxejFlaUY0dy1JakZkNnBQTnlCbjRES1NvQmJvMXZkMXNwVVV0NzJfcUE1TmtlNkVzSlV0MnYwR2tYQ0pzT2xRMzBSdXBpR2JUTkxWUng2c1U5MnpCdTlXUWVsT2M3MU05QWV3YzhtcXhVQ0lVcmpRU1BlYVZFaElneVFCM2NFa2ZycjJ3TGkwZWRBdkxla091VGlpMA?oc=5\" target=\"_blank\">MLB Playoffs 2026: ¿Quién tiene la mayor ventaja de local?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-05T19:44:53+00:00"
-    },
-    {
-      "titulo": "White Sox y Guardians, una rivalidad ligada a la historia de MLB - ESPN México",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORExodDlmZE83cV93cm1kVmdoc1lRNHk0RlpyZVVJb3pIQk8wNFFmWGM1bXZfZDFOak9DeG1ncjRKNUdmQVFhaHBjdUh0Y25FUlJDUTFvUlM1Sk1fYWRrUGRndG0tTHU3d184LXJENjE2em1CZldqd3BrdFZXY29wMGdNbmIwbEZiUVhPQTRRdUFFNzZjREN1Q0hDZzlTTWRjRGp6MzhlS2xpM3p5dDlxQTdsaXZRWXdOYVE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxORExodDlmZE83cV93cm1kVmdoc1lRNHk0RlpyZVVJb3pIQk8wNFFmWGM1bXZfZDFOak9DeG1ncjRKNUdmQVFhaHBjdUh0Y25FUlJDUTFvUlM1Sk1fYWRrUGRndG0tTHU3d184LXJENjE2em1CZldqd3BrdFZXY29wMGdNbmIwbEZiUVhPQTRRdUFFNzZjREN1Q0hDZzlTTWRjRGp6MzhlS2xpM3p5dDlxQTdsaXZRWXdOYVE?oc=5\" target=\"_blank\">White Sox y Guardians, una rivalidad ligada a la historia de MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-05T19:34:14+00:00"
     }
   ]
 }
