@@ -5,11 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Contacto | TendenciasMX</title>
-
   <meta name="description" content="Contacta con TendenciasMX para enviar comentarios, sugerencias, dudas o información relacionada con nuestro sitio.">
-
   <meta name="keywords" content="contacto TendenciasMX, contacto noticias México, sugerencias TendenciasMX">
-
   <meta name="theme-color" content="#050807">
 
   <style>
@@ -49,7 +46,10 @@
       margin-bottom: 14px;
     }
 
-    .logo span {
+    .logo span,
+    .hero h1 span,
+    .card h2 span,
+    .faq h2 span {
       color: #65ff9a;
     }
 
@@ -113,10 +113,6 @@
       margin-bottom: 15px;
     }
 
-    .hero h1 span {
-      color: #65ff9a;
-    }
-
     .hero p {
       max-width: 720px;
       margin: auto;
@@ -141,10 +137,6 @@
     .card h2 {
       font-size: 24px;
       margin-bottom: 10px;
-    }
-
-    .card h2 span {
-      color: #65ff9a;
     }
 
     .card p {
@@ -241,10 +233,6 @@
       margin-bottom: 15px;
     }
 
-    .faq h2 span {
-      color: #65ff9a;
-    }
-
     .faq-item {
       background: #0b110e;
       border: 1px solid #1b2820;
@@ -261,6 +249,38 @@
     .faq-item p {
       color: #aeb8b1;
       font-size: 14px;
+    }
+
+    /* Espacios publicitarios */
+    .ad-section {
+      width: 100%;
+      text-align: center;
+      margin: 25px auto;
+      padding: 12px 8px;
+      background: #080d0a;
+      border: 1px solid #18251c;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .ad-label {
+      color: #718077;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+
+    .ad-slot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 50px;
+      overflow: hidden;
+    }
+
+    .ad-300-slot {
+      min-height: 250px;
     }
 
     footer {
@@ -331,7 +351,6 @@
 
 <header>
   <div class="header-container">
-
     <a class="logo" href="./index.html">
       Tendencias<span>MX</span>
     </a>
@@ -348,31 +367,40 @@
       <a href="./contacto.html" class="active">Contacto</a>
       <a href="./preguntas.html">Preguntas</a>
     </nav>
-
   </div>
 </header>
 
 <main>
 
   <section class="hero">
-
     <div class="badge">CONTACTO</div>
-
-    <h1>
-      Estamos para <span>escucharte</span>
-    </h1>
-
+    <h1>Estamos para <span>escucharte</span></h1>
     <p>
       Envíanos tus dudas, comentarios, sugerencias o información
       relacionada con TendenciasMX.
     </p>
+  </section>
 
+  <!-- ANUNCIO 1: BANNER 320 x 50 -->
+  <section class="ad-section">
+    <div class="ad-label">PUBLICIDAD</div>
+    <div class="ad-slot">
+      <script>
+        atOptions = {
+          'key': '4835588a51fd9380f84839b13bf3044f',
+          'format': 'iframe',
+          'height': 50,
+          'width': 320,
+          'params': {}
+        };
+      </script>
+      <script src="https://bicea.org/22/4835588a51fd9380f84839b13bf3044f"></script>
+    </div>
   </section>
 
   <section class="content-grid">
 
     <div class="card">
-
       <h2>📩 <span>Contacto</span></h2>
 
       <p>
@@ -394,74 +422,59 @@
         <strong>❓ Preguntas</strong>
         <span>Resuelve dudas relacionadas con el funcionamiento del sitio.</span>
       </div>
-
     </div>
 
     <div class="card">
-
       <h2>✉️ Envíanos un <span>mensaje</span></h2>
 
       <form id="contactForm">
 
         <label>
           Nombre
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Tu nombre"
-            required
-          >
+          <input type="text" id="nombre" name="nombre"
+            placeholder="Tu nombre" required>
         </label>
 
         <label>
           Correo electrónico
-          <input
-            type="email"
-            id="correo"
-            name="correo"
-            placeholder="tu@email.com"
-            required
-          >
+          <input type="email" id="correo" name="correo"
+            placeholder="tu@email.com" required>
         </label>
 
         <label>
           Asunto
-          <input
-            type="text"
-            id="asunto"
-            name="asunto"
-            placeholder="¿En qué podemos ayudarte?"
-            required
-          >
+          <input type="text" id="asunto" name="asunto"
+            placeholder="¿En qué podemos ayudarte?" required>
         </label>
 
         <label>
           Mensaje
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            placeholder="Escribe tu mensaje..."
-            required
-          ></textarea>
+          <textarea id="mensaje" name="mensaje"
+            placeholder="Escribe tu mensaje..." required></textarea>
         </label>
 
-        <button type="submit">
-          Enviar mensaje
-        </button>
+        <button type="submit">Enviar mensaje</button>
 
         <div class="success" id="successMessage">
           Tu mensaje fue preparado correctamente.
         </div>
 
       </form>
-
     </div>
 
   </section>
 
-  <section class="faq">
+  <!-- ANUNCIO 2: NATIVE BANNER -->
+  <section class="ad-section">
+    <div class="ad-label">PUBLICIDAD</div>
+    <div class="ad-slot">
+      <script async="async" data-cfasync="false"
+        src="https://bicea.org/21/504632ea2e49625ec85a333ea088de15"></script>
+      <div id="container-504632ea2e49625ec85a333ea088de15"></div>
+    </div>
+  </section>
 
+  <section class="faq">
     <h2>Preguntas <span>frecuentes</span></h2>
 
     <div class="faq-item">
@@ -487,20 +500,34 @@
         La conexión con un servicio de envío de correo puede agregarse posteriormente.
       </p>
     </div>
+  </section>
 
+  <!-- ANUNCIO 3: BANNER 300 x 250 -->
+  <section class="ad-section">
+    <div class="ad-label">PUBLICIDAD</div>
+    <div class="ad-slot ad-300-slot">
+      <script>
+        atOptions = {
+          'key': '5e8551ffa531df26524b6268d5d663cf',
+          'format': 'iframe',
+          'height': 250,
+          'width': 300,
+          'params': {}
+        };
+      </script>
+      <script src="https://bicea.org/22/5e8551ffa531df26524b6268d5d663cf"></script>
+    </div>
   </section>
 
 </main>
 
 <footer>
-
   <p>
     © 2026 <strong>TendenciasMX</strong>.
     Todos los derechos reservados.
   </p>
 
   <div class="footer-links">
-
     <a href="./index.html">Inicio</a>
     <a href="./noticias.html">Noticias</a>
     <a href="./deportes.html">Deportes</a>
@@ -511,9 +538,7 @@
     <a href="./tramites.html">Trámites</a>
     <a href="./contacto.html">Contacto</a>
     <a href="./preguntas.html">Preguntas</a>
-
   </div>
-
 </footer>
 
 <script>
