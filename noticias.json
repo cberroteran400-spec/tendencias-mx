@@ -1,11 +1,101 @@
 {
-  "actualizado": "2026-10-13T18:23:07.146641+00:00",
+  "actualizado": "2026-10-13T19:01:00.050146+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 103,
-    "sin_imagen": 1097
+    "con_imagen": 105,
+    "sin_imagen": 1095
   },
   "noticias": [
+    {
+      "titulo": "Galatasaray vs Barcelona, EN VIVO Fase Liga - Jornada 2 - Champions League - Excélsior",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMk95UUlYaHFCMURYbDNBajBPTUdFMmZYY2lLaG5YMktZMjlfbzZtb2VuMlhlM1djRk1yUWNvQkpkR2VvZ3pBS3Jnb3V6cVNaSU1HYmZpcHZLbFdNQUo3S1lQVHNmNDNVR2pHX2g0bFE2OFgwM3VxUDRWeVpyWDJ0S3JGandTV3FLTXV4Qmw2eS1weGRvYUo5eUlDU09RYnljVTQ1RC0temFfY2VWcXliOVJmcS0zOWtEamVB?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMk95UUlYaHFCMURYbDNBajBPTUdFMmZYY2lLaG5YMktZMjlfbzZtb2VuMlhlM1djRk1yUWNvQkpkR2VvZ3pBS3Jnb3V6cVNaSU1HYmZpcHZLbFdNQUo3S1lQVHNmNDNVR2pHX2g0bFE2OFgwM3VxUDRWeVpyWDJ0S3JGandTV3FLTXV4Qmw2eS1weGRvYUo5eUlDU09RYnljVTQ1RC0temFfY2VWcXliOVJmcS0zOWtEamVB?oc=5\" target=\"_blank\">Galatasaray vs Barcelona, EN VIVO Fase Liga - Jornada 2 - Champions League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Excélsior</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T18:42:59+00:00"
+    },
+    {
+      "titulo": "Canelo Álvarez ya es el mejor boxeador mexicano: “En números, él es el mejor” - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSlJDRDRkS0N3Z1pXRUtwd1p5bm44akdfdTZvRWVyTWkyemNvalNqcEJ3djNZYUJnN0N0UUJJZ2NPMWVOMWNDbkZ5Nl95YzJUT3ZuWFlvUEd5YW84ZHBham5LZ3c4LVZDUnRsRUNyRG9taEppT2FmRldBeWJBSU94Vmx2aFpGM0w0bjhsdEJtREFmOVBVTmdzTHYxNDU2WkFo0gGgAUFVX3lxTE1Sck56MFdDNGUtSnVDaUtkaE9Ub0xNVXJjajBMWE9RRHJETHNPZmp6dmd2ZC1uWmlILS04cjREaVI1aUxhZ2pLSlNfdE9pUy1QMnF2a3hncDd0SEo5WmZUMlA2WWExOHFPY1BvTGxUYW44U0RjOEM3d0hkR2l3SVE1SHg2a1hwMjhBeWRDc0RJeW1nVWVZOWxpWm5GNWtnS0k?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQSlJDRDRkS0N3Z1pXRUtwd1p5bm44akdfdTZvRWVyTWkyemNvalNqcEJ3djNZYUJnN0N0UUJJZ2NPMWVOMWNDbkZ5Nl95YzJUT3ZuWFlvUEd5YW84ZHBham5LZ3c4LVZDUnRsRUNyRG9taEppT2FmRldBeWJBSU94Vmx2aFpGM0w0bjhsdEJtREFmOVBVTmdzTHYxNDU2WkFo0gGgAUFVX3lxTE1Sck56MFdDNGUtSnVDaUtkaE9Ub0xNVXJjajBMWE9RRHJETHNPZmp6dmd2ZC1uWmlILS04cjREaVI1aUxhZ2pLSlNfdE9pUy1QMnF2a3hncDd0SEo5WmZUMlA2WWExOHFPY1BvTGxUYW44U0RjOEM3d0hkR2l3SVE1SHg2a1hwMjhBeWRDc0RJeW1nVWVZOWxpWm5GNWtnS0k?oc=5\" target=\"_blank\">Canelo Álvarez ya es el mejor boxeador mexicano: “En números, él es el mejor”</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-13T18:42:10+00:00"
+    },
+    {
+      "titulo": "Con goles de Luis Suárez y Doumbia, Sporting suma su segunda victoria en Champions - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObmlmd1BIZWhkRmpKak40eWwyN3hfQXBqWUFFanZxZ2hmSEV3M2k3N2pDUVkyVVZ2VVAycW40bGZXOUw2R0JkSG56VGtZZHR3VnVMTUF1TXp6T04tVnNRUExXbVRud3V2V1IxV2pNWGg3YmlXbUdTeXRSbVlYY05kSkdDOXRUWW82NUNSVHBFTVdRRGFGcnpOY085ZUJDbFBoak90dTBvZEdDZUVnWGlxRG9aczdtMUM2RDNJ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxObmlmd1BIZWhkRmpKak40eWwyN3hfQXBqWUFFanZxZ2hmSEV3M2k3N2pDUVkyVVZ2VVAycW40bGZXOUw2R0JkSG56VGtZZHR3VnVMTUF1TXp6T04tVnNRUExXbVRud3V2V1IxV2pNWGg3YmlXbUdTeXRSbVlYY05kSkdDOXRUWW82NUNSVHBFTVdRRGFGcnpOY085ZUJDbFBoak90dTBvZEdDZUVnWGlxRG9aczdtMUM2RDNJ?oc=5\" target=\"_blank\">Con goles de Luis Suárez y Doumbia, Sporting suma su segunda victoria en Champions</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T18:41:40+00:00"
+    },
+    {
+      "titulo": "¿Por qué no juega Raphinha HOY? La razón de su baja en el Barcelona vs. Galatasaray de Champions League - Reporte Indigo",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOUZ5T1plQlhOc0RRRklqOWNtd2pQV2JGNERFZkVCQV9XNldQLUwtUThLeFhhanN3LV82V202Wm96MVl0VFJHRE8yeVVoczZURlVtZWRMRkU2dHR2R0VMNHh5eTdiSWFfOXVEamkyVWpnNmx3UVV4cGdqSkZUNlN3RjdvOHd4T2g3S1FhNXl5YTVsd2gtb3B4MDJ4OHVyMktNOXVyV2lHMHlBU2cxc1hwS0ZVUkpOZ1pSMkNZWXA2M3N0U0l5T1c0QkVBRXJnQQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNOUZ5T1plQlhOc0RRRklqOWNtd2pQV2JGNERFZkVCQV9XNldQLUwtUThLeFhhanN3LV82V202Wm96MVl0VFJHRE8yeVVoczZURlVtZWRMRkU2dHR2R0VMNHh5eTdiSWFfOXVEamkyVWpnNmx3UVV4cGdqSkZUNlN3RjdvOHd4T2g3S1FhNXl5YTVsd2gtb3B4MDJ4OHVyMktNOXVyV2lHMHlBU2cxc1hwS0ZVUkpOZ1pSMkNZWXA2M3N0U0l5T1c0QkVBRXJnQQ?oc=5\" target=\"_blank\">¿Por qué no juega Raphinha HOY? La razón de su baja en el Barcelona vs. Galatasaray de Champions League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Reporte Indigo</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T18:33:53+00:00"
+    },
+    {
+      "titulo": "Galatasaray vs Barcelona EN VIVO: Dónde ver, horario y canales, Champions League 2026 - El Informador",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQekh0eFBKd3d6d0hFRWdYb3MyN3RRQXhPZjRXdzJFXzdYWXRuWFpjME4tZTgyRzh3Ym9zYUp0RW5XVm1oM0FBeW81NlRzcG9VRWdnbkZLSmhGdjAxZjRORHFwSFdPZk12cWJhelBwSjNJVk1HbW5rbHlQVmlWY2tfY3F2QmZzck5GX2d3VzBjLXpfOEhxMzdYZHN2U2pCVTF0ZXdmRVd0UVJmVXZyalNDZEZQWXVjd2E3YnhtdS1DdFczMmprLXRBMzl6WWhxRDBlZnfSAdcBQVVfeXFMT1ByVF9uZzkwWjVhMmltRE04RTR4WVVaekltZmh1VGYzbGtlYUlENlJwMDFmdGxPRlZrRFdxODdPc3FUWmpDMVR1cnRlQXpwSDBpdXJnQS1rV202V0gwRWI1YVliSklrZHl4dnVCbGprUm1wbThpWUpVaEl5akw4UjFKN2c4RUZZUExyTlpQN0hWWm5LRi04NktsRDhSVFMxMDVoMmJFQ1AtMEhIYmJXMy04d1pWREpzU0wyYm9sX3dlYnhSU3A1NkUzMHViQ2k3TXJ3YnVGYXM?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxQekh0eFBKd3d6d0hFRWdYb3MyN3RRQXhPZjRXdzJFXzdYWXRuWFpjME4tZTgyRzh3Ym9zYUp0RW5XVm1oM0FBeW81NlRzcG9VRWdnbkZLSmhGdjAxZjRORHFwSFdPZk12cWJhelBwSjNJVk1HbW5rbHlQVmlWY2tfY3F2QmZzck5GX2d3VzBjLXpfOEhxMzdYZHN2U2pCVTF0ZXdmRVd0UVJmVXZyalNDZEZQWXVjd2E3YnhtdS1DdFczMmprLXRBMzl6WWhxRDBlZnfSAdcBQVVfeXFMT1ByVF9uZzkwWjVhMmltRE04RTR4WVVaekltZmh1VGYzbGtlYUlENlJwMDFmdGxPRlZrRFdxODdPc3FUWmpDMVR1cnRlQXpwSDBpdXJnQS1rV202V0gwRWI1YVliSklrZHl4dnVCbGprUm1wbThpWUpVaEl5akw4UjFKN2c4RUZZUExyTlpQN0hWWm5LRi04NktsRDhSVFMxMDVoMmJFQ1AtMEhIYmJXMy04d1pWREpzU0wyYm9sX3dlYnhSU3A1NkUzMHViQ2k3TXJ3YnVGYXM?oc=5\" target=\"_blank\">Galatasaray vs Barcelona EN VIVO: Dónde ver, horario y canales, Champions League 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Informador</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T18:32:34+00:00"
+    },
+    {
+      "titulo": "⚽ ¡Falta poco! Checa a qué HORA y CÓMO VER el Atlético de Madrid vs Manchester United de la Champions 🏟️ - Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPYWRGanQwZmdvM3FpaHRaOUQ4VDh5YXBhbXVJdklILXpQSXQyY2VfWnZBYUNBYkw1ckNBRjhobWh6dl80dW5FaHcySHZ2eTRoYk10RGJoU0w4M2t4QXNSUEtCVGh6V1ZVQUtrdmtsRjV4TmswZGdpWXJiNi1hQklWQlNTRDZGQjR1b0dKejRYYVVZMVBvNl9aSVdOOEpOaHFELXBKZ2lNZ0x4VnlhdkVQellmUkNSR1pDZXoxYmdPZ3B5R1hILVAxTXZqR2d1SFdiZnB2cUFNUFdVMTZ1UU5IMHdNQ1RlY29adnFnd0MySQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi7wFBVV95cUxPYWRGanQwZmdvM3FpaHRaOUQ4VDh5YXBhbXVJdklILXpQSXQyY2VfWnZBYUNBYkw1ckNBRjhobWh6dl80dW5FaHcySHZ2eTRoYk10RGJoU0w4M2t4QXNSUEtCVGh6V1ZVQUtrdmtsRjV4TmswZGdpWXJiNi1hQklWQlNTRDZGQjR1b0dKejRYYVVZMVBvNl9aSVdOOEpOaHFELXBKZ2lNZ0x4VnlhdkVQellmUkNSR1pDZXoxYmdPZ3B5R1hILVAxTXZqR2d1SFdiZnB2cUFNUFdVMTZ1UU5IMHdNQ1RlY29adnFnd0MySQ?oc=5\" target=\"_blank\">⚽ ¡Falta poco! Checa a qué HORA y CÓMO VER el Atlético de Madrid vs Manchester United de la Champions 🏟️</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Facebook</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T18:27:59+00:00"
+    },
+    {
+      "titulo": "¿Por qué no juega Bukayo Saka el Arsenal vs Lille por la Champions League? - Bolavip México",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTjZvcUhxRXdRVVVxdjJ1ZnRQdVZ3SnNJX1NWU1kyYU9zLVl3SlRXQjEtMF93c3RLMWNjUUt0MV82YWVVb1BPTEtVbF9BVjlWeGl2ZC1NSUNKTWZRN1hzcTlRQ0Z4M0N1YXRtd0s5QzFIaTFQTmQ3RmRLQzY4TDF3TDd0VzZ0SDZ5dURtWFBOd2ZlZDJjRmFsLTBuT3lQSmpiN0dzY3JvZ2RfQ3lvSTdWZENB0gG3AUFVX3lxTE80TGpiWm03aFpobnJuNTRMX3B5ejZsNi16TjdzZl92WHdsVW1LNDZBTTRndVZLREVCNlNOZjRKMU1vVS11QTB5eFU3aFhmbzZzSnF0dlUtTXdlQy1Bb2M5bS1LVXNQc2tBNjNzM19wTGMxOWNObHNySDA0clFlR1hsMlVsTEJtVFhERm5RN2RQRkxQdTJqUXIxa2J6UXpHMWNjclVueUhla3dDMlQzcXFjaWY2QTBVOA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNTjZvcUhxRXdRVVVxdjJ1ZnRQdVZ3SnNJX1NWU1kyYU9zLVl3SlRXQjEtMF93c3RLMWNjUUt0MV82YWVVb1BPTEtVbF9BVjlWeGl2ZC1NSUNKTWZRN1hzcTlRQ0Z4M0N1YXRtd0s5QzFIaTFQTmQ3RmRLQzY4TDF3TDd0VzZ0SDZ5dURtWFBOd2ZlZDJjRmFsLTBuT3lQSmpiN0dzY3JvZ2RfQ3lvSTdWZENB0gG3AUFVX3lxTE80TGpiWm03aFpobnJuNTRMX3B5ejZsNi16TjdzZl92WHdsVW1LNDZBTTRndVZLREVCNlNOZjRKMU1vVS11QTB5eFU3aFhmbzZzSnF0dlUtTXdlQy1Bb2M5bS1LVXNQc2tBNjNzM19wTGMxOWNObHNySDA0clFlR1hsMlVsTEJtVFhERm5RN2RQRkxQdTJqUXIxa2J6UXpHMWNjclVueUhla3dDMlQzcXFjaWY2QTBVOA?oc=5\" target=\"_blank\">¿Por qué no juega Bukayo Saka el Arsenal vs Lille por la Champions League?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bolavip México</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T18:18:15+00:00"
+    },
+    {
+      "titulo": "Partidos de Champions League en vivo: dónde y a qué hora ver el Barcelona vs. Galatasaray y todos los partidos",
+      "url": "https://expansion.mx/tendencias/2026/10/13/partidos-champions-league-donde-ver-barcelona-vs-galatasaray",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/d111941/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F5c%2F84%2F4a1529ba4879bfd36f7d3c2989dd%2Fbarcelona-galatasaray.png",
+      "descripcion": "Barcelona, Bayern Múnich, Arsenal, Inter y Atlético de Madrid entran en acción en una jornada con partidos desde las 10:45 horas.",
+      "fuente": "Expansión Digital",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-13T18:18:12+00:00"
+    },
+    {
+      "titulo": "Dmitry Bivol expondrá sus campeonatos del mundo ante este ex-rival del Canelo Álvarez - El Heraldo de México",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaTBkMVlEcTRtUVNxaHBzRkVQZ1FxZ0czSzk4aTRyRGQwcVFQR1pGTXNNYl8zb25QTWUyUjBUdWpKbjgyeXVldEp1YVdjNy0tX25xU1pKaG1NcVZoV1F6NHRUWGZ3b3k0cTdUdHBCalF4bm0xSm5SclEzRHFZdFRvMFZKMXNzcjVTLTBuYjdKTEJwR2tGdmlWU3E4SHpoWmtXWFdkQzJ4SEZZQ3N2bDNXWHJyeDJVZ2YtT0xTeG5GcGg2WVRZOXlhdDVidDBhLWVxR19jUTdDcVdYODFJN2E5VVdB?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaTBkMVlEcTRtUVNxaHBzRkVQZ1FxZ0czSzk4aTRyRGQwcVFQR1pGTXNNYl8zb25QTWUyUjBUdWpKbjgyeXVldEp1YVdjNy0tX25xU1pKaG1NcVZoV1F6NHRUWGZ3b3k0cTdUdHBCalF4bm0xSm5SclEzRHFZdFRvMFZKMXNzcjVTLTBuYjdKTEJwR2tGdmlWU3E4SHpoWmtXWFdkQzJ4SEZZQ3N2bDNXWHJyeDJVZ2YtT0xTeG5GcGg2WVRZOXlhdDVidDBhLWVxR19jUTdDcVdYODFJN2E5VVdB?oc=5\" target=\"_blank\">Dmitry Bivol expondrá sus campeonatos del mundo ante este ex-rival del Canelo Álvarez</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Heraldo de México</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-13T18:14:00+00:00"
+    },
     {
       "titulo": "Dónde ver Arsenal vs Lille: Horario y canal TV para la Champions League en México - MARCA",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVm9XNklnZTZBM2lJNEFsdU5Bdm5VbHY5cXNDUEZKbEhYdlgwQXNya3FIWTZTT05FQXlscWhqZ3JmR24wSHh3MDlmajh6MjhvQ2ZiZ3dqZTdpU2plQ3NxTzZWSHpZcUc5V0p1MVhiWm1Sb2UtQUNWTk1hZzBNOHMwT3VlN3pJeTlLa2tUcWtkbDNoUG91eGVod2tjU2ppV0ptd01GNF9NaEZIV0FTQ3FhNXBtUTVXUEY0M3V3M2pZUTlHc0Nw?oc=5",
@@ -17,6 +107,26 @@
       "fecha": "2026-10-13T18:11:45+00:00"
     },
     {
+      "titulo": "El negocio de las citas online no resiste: Bumble vuelve a ser privado por 1,300 millones de dólares",
+      "url": "https://expansion.mx/tecnologia/2026/10/13/bumble-adquisicion-1300-millones-dolares",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/561015b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F74%2Fba%2Fec31e1c54cdb8f354614be2e3599%2F20241112-200547.jpg",
+      "descripcion": "La aplicación de citas será adquirida por Ithaca Holdings en una operación que contempla un pago de 6.05 dólares por acción. Sus fundadores asumirán la dirección ejecutiva tras el cierre.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-13T18:09:28+00:00"
+    },
+    {
+      "titulo": "Oaxaca alista una nueva edición de “La fiesta más viva de todas”",
+      "url": "https://expansion.mx/tendencias/2026/10/13/oaxaca-alista-una-nueva-edicion",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/b7cb00e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F5f%2Fa8%2F350eb23441819ef11acaa4aa1138%2Fcelebracion-oaxaca.jpeg",
+      "descripcion": "Para las celebraciones del mes de noviembre, el gobierno del estado tiene preparada una lista de iniciativas culturales, artísticas y gastronómicas para recibir a visitantes nacionales e internacionales",
+      "fuente": "Branded Content",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-13T18:02:58+00:00"
+    },
+    {
       "titulo": "Menos dinero por petróleo y más por impuestos, el dictamen de la Ley de Ingresos llega al pleno de Diputados",
       "url": "https://expansion.mx/economia/2026/10/13/menos-dinero-por-petroleo-y-mas-por-impuestos-el-dictamen-de-la-ley-de-ingresos-llega-al-pleno-de-diputados",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/c8a1064/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F57%2F2e%2F658726b24defa7305e1f1a4fa703%2F3-presupuesto-diputados-1055230-sesion-camara-de-diputados-web-1.jpeg",
@@ -25,6 +135,26 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-13T17:44:11+00:00"
+    },
+    {
+      "titulo": "Decisión de sentar a Ohtani dependerá de su salud, fuentes - ESPN Deportes",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNHI4d0VETkJpYkd2QVVMNEF6VzRLXzZtZlVDeXJxSjdPUk9fZHNKdkpTZzczQkZ6R3o3YTNXVzBLQkhHYjZOR3ltY1ZvZmw4eFdlQkRXTWd2TUxxbkYtc0ZrcGJPRWdlZmRhbVJRV3lHTjJ3S0dqR2xaNmsxNms1UmVDa2VJQkZvTWg1LVhITWNpQ0ZaRHJXaHhYeFR6N19mQUs5cnh6U0dDbURlMHFr?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxPNHI4d0VETkJpYkd2QVVMNEF6VzRLXzZtZlVDeXJxSjdPUk9fZHNKdkpTZzczQkZ6R3o3YTNXVzBLQkhHYjZOR3ltY1ZvZmw4eFdlQkRXTWd2TUxxbkYtc0ZrcGJPRWdlZmRhbVJRV3lHTjJ3S0dqR2xaNmsxNms1UmVDa2VJQkZvTWg1LVhITWNpQ0ZaRHJXaHhYeFR6N19mQUs5cnh6U0dDbURlMHFr?oc=5\" target=\"_blank\">Decisión de sentar a Ohtani dependerá de su salud, fuentes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-13T17:39:00+00:00"
+    },
+    {
+      "titulo": "Atlético de Madrid vs Manchester United. Partido Champions League 2026 - Milenio",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObm9yQU9ZMnZ2emlVaTNEYXMtNm9VSjFrNXdVUjdadFhzb1B6ekNrMHA4SzlxWDZXOVI4bUpnbGhXUnVBanlwN3dKRzVjTTZDUzluUGpXTDRiaUhyaV83amNENjhpMXpjSWFzLVZKYVdhdURucGVpZUpscm1MTmVIc3ZUU0dJcEg1amJJYy1CaGU5SzY1SENOYUllSWZLNUYxallMM1BjZXpERG5qalRTZ1dCQUg4d1FiUmRYVzZ6YUw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxObm9yQU9ZMnZ2emlVaTNEYXMtNm9VSjFrNXdVUjdadFhzb1B6ekNrMHA4SzlxWDZXOVI4bUpnbGhXUnVBanlwN3dKRzVjTTZDUzluUGpXTDRiaUhyaV83amNENjhpMXpjSWFzLVZKYVdhdURucGVpZUpscm1MTmVIc3ZUU0dJcEg1amJJYy1CaGU5SzY1SENOYUllSWZLNUYxallMM1BjZXpERG5qalRTZ1dCQUg4d1FiUmRYVzZ6YUw?oc=5\" target=\"_blank\">Atlético de Madrid vs Manchester United. Partido Champions League 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Milenio</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T17:35:00+00:00"
     },
     {
       "titulo": "Galatasaray vs Barcelona: ¿A qué hora y dónde ver en vivo la jornada 2 de UEFA Champions League? - La Crónica de Hoy",
@@ -95,6 +225,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-13T17:17:00+00:00"
+    },
+    {
+      "titulo": "⭕ ESPN EN VIVO — Ver partido Barcelona vs. Galatasaray GRATIS por Champions League 2026 vía Disney Plus y TV online - El Comercio Perú",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOOEJ6WngweGttdVRwR3ZCa29MNTR3YzNNUHJJdVlwczlFTHRpY2hVVWlwZjFhSUFqVnFkLVd0OUowWHFIMXcyQWUxSTRjYXNxVkE4T3VoTlZWUk1xdUhUOHhqOWMwcXBoYkhMTm4xT0hsbVl1MW5YTHBya21UZnRUZ1QwRi1RalZPTGxoeFI1Zk56b0RZaVRkZWxIU2RucWFndlNVWGl2TlBPdFFrV2VubGRlT1gyWGlaSFU2MjdfdVJqUnJuSmM2c2o2MFBVQ0VNb2N1Sm9EbUoyR0pwSHFzU2VRUmdtN0ExWFZYeG5zOEpfQdIBhgJBVV95cUxPUDFGRWd3MmN2VVpTb3JNVjJZQm1uSm9QQVVJempjQXQ5MzBLc2RERTBfbnRNN0Q5aUtLS1o5VG9SdktFVU8wRnNmRlA5ZUV6TENvR1lyV1A2NVo5ZXBXeWh6N0RUMGtlLTVZUkViMUdTVkpGeklvMVpFOXpBZl9HdWZFSU5MQV9KaFRxZnNFQXUxX25PVDRVUmRIRmxmWFpUc2ZSeUw1RXQwY0hxX3R1VlJxYjZXLVMyYXpCdmktSHZ4UVZHMG93dlNtLWVSbUhDbWZmQnJIM0J2Vy10Z2p2YWtGSlZ1RVlmOUlEU3VfS1FncWx1ZFlGeTMwbVY3em9aLVJETDJ3?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxOOEJ6WngweGttdVRwR3ZCa29MNTR3YzNNUHJJdVlwczlFTHRpY2hVVWlwZjFhSUFqVnFkLVd0OUowWHFIMXcyQWUxSTRjYXNxVkE4T3VoTlZWUk1xdUhUOHhqOWMwcXBoYkhMTm4xT0hsbVl1MW5YTHBya21UZnRUZ1QwRi1RalZPTGxoeFI1Zk56b0RZaVRkZWxIU2RucWFndlNVWGl2TlBPdFFrV2VubGRlT1gyWGlaSFU2MjdfdVJqUnJuSmM2c2o2MFBVQ0VNb2N1Sm9EbUoyR0pwSHFzU2VRUmdtN0ExWFZYeG5zOEpfQdIBhgJBVV95cUxPUDFGRWd3MmN2VVpTb3JNVjJZQm1uSm9QQVVJempjQXQ5MzBLc2RERTBfbnRNN0Q5aUtLS1o5VG9SdktFVU8wRnNmRlA5ZUV6TENvR1lyV1A2NVo5ZXBXeWh6N0RUMGtlLTVZUkViMUdTVkpGeklvMVpFOXpBZl9HdWZFSU5MQV9KaFRxZnNFQXUxX25PVDRVUmRIRmxmWFpUc2ZSeUw1RXQwY0hxX3R1VlJxYjZXLVMyYXpCdmktSHZ4UVZHMG93dlNtLWVSbUhDbWZmQnJIM0J2Vy10Z2p2YWtGSlZ1RVlmOUlEU3VfS1FncWx1ZFlGeTMwbVY3em9aLVJETDJ3?oc=5\" target=\"_blank\">⭕ ESPN EN VIVO — Ver partido Barcelona vs. Galatasaray GRATIS por Champions League 2026 vía Disney Plus y TV online</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Comercio Perú</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T17:13:05+00:00"
     },
     {
       "titulo": "¡Silencio en Lens! Luis Javier Suárez firma el primero - TUDN",
@@ -1035,6 +1175,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-13T03:01:27+00:00"
+    },
+    {
+      "titulo": "¡Vuelve la Champions League! Partidos, días, horarios y dónde ver la jornada 2 - www.xeudeportes.mx",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNblM5RTd2a3ZLRW1KMHE4N0s4dlBjandVRkFlQWF0bUlpakRoYXc0eU9ubHJIbnI4SmJwU2xBbHI2Z3pUeEhaQmZOWEFtUmRiVHZWRnZzZlVCY1lrU3M3TV8za0lsLUtCVTM2ei1yY3VPME9YVjFReE9Mb1k3UWtzeXZ4LW5RYVFMY1dfQ3h2Tm1WYXYydl9qMWludHRVaEZHQnNPeWZvV2RvTDlxLWt5YmJ6TzZpZS00am9XenBaWWRjRjkwUDFaWGt3?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxNblM5RTd2a3ZLRW1KMHE4N0s4dlBjandVRkFlQWF0bUlpakRoYXc0eU9ubHJIbnI4SmJwU2xBbHI2Z3pUeEhaQmZOWEFtUmRiVHZWRnZzZlVCY1lrU3M3TV8za0lsLUtCVTM2ei1yY3VPME9YVjFReE9Mb1k3UWtzeXZ4LW5RYVFMY1dfQ3h2Tm1WYXYydl9qMWludHRVaEZHQnNPeWZvV2RvTDlxLWt5YmJ6TzZpZS00am9XenBaWWRjRjkwUDFaWGt3?oc=5\" target=\"_blank\">¡Vuelve la Champions League! Partidos, días, horarios y dónde ver la jornada 2</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.xeudeportes.mx</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T02:40:49+00:00"
     },
     {
       "titulo": "Tope a deducciones de empresas pasa al pleno de la Cámara de Diputados",
@@ -11855,156 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-07T11:42:03+00:00"
-    },
-    {
-      "titulo": "Ver al Barça en directo en la Champions sólo cuesta 7,5 euros, pero el partido es en... Bakú - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSXlBZjZ5LUMwbFBtVjh3cnRmY1FOVTE1VllaYU10Qnc2UkZDeHc0c3E3aERYVXM1Z3lMODc0V0ZmQnl4RXBNZGxKdzRrTlZPejhPQjNpWWRkWjdKUlpFcjRWZGdXTzk4Y25wbFdHOWVmUHUtYXcwbmwteGhMZFhUSkljUU52TjU5MG0ycmx4aDlzOUVGc0cyUC1OVnhWd0ZvT0dqRzh2R0hKR0tEdFR3TjMtMDFEMUdk0gG4AUFVX3lxTE5MZkxvM1FTNzVKQ3l6N3JlX1g1N0M1LUI4WWdacHdfT0J5ZzlJQlQ4aVhVUFh6ZHdSRGxDbHcxTW1YT3RRLTVDWDBVWVo5LVRIdzl2SGJuZTdjMVhISjFnRjl2TG9wa19uZmFSb2FmajVFWFB5MjBwMDIyNW5hSmFELW0xbTRJOTRhMG1HZkVpZHNQTnN1N19nYXp6Y3NCX2VjT2RPbTlsMms3MGN5RGs1VEVibVFjaWc?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSXlBZjZ5LUMwbFBtVjh3cnRmY1FOVTE1VllaYU10Qnc2UkZDeHc0c3E3aERYVXM1Z3lMODc0V0ZmQnl4RXBNZGxKdzRrTlZPejhPQjNpWWRkWjdKUlpFcjRWZGdXTzk4Y25wbFdHOWVmUHUtYXcwbmwteGhMZFhUSkljUU52TjU5MG0ycmx4aDlzOUVGc0cyUC1OVnhWd0ZvT0dqRzh2R0hKR0tEdFR3TjMtMDFEMUdk0gG4AUFVX3lxTE5MZkxvM1FTNzVKQ3l6N3JlX1g1N0M1LUI4WWdacHdfT0J5ZzlJQlQ4aVhVUFh6ZHdSRGxDbHcxTW1YT3RRLTVDWDBVWVo5LVRIdzl2SGJuZTdjMVhISjFnRjl2TG9wa19uZmFSb2FmajVFWFB5MjBwMDIyNW5hSmFELW0xbTRJOTRhMG1HZkVpZHNQTnN1N19nYXp6Y3NCX2VjT2RPbTlsMms3MGN5RGs1VEVibVFjaWc?oc=5\" target=\"_blank\">Ver al Barça en directo en la Champions sólo cuesta 7,5 euros, pero el partido es en... Bakú</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-07T11:26:42+00:00"
-    },
-    {
-      "titulo": "La sentencia a Canelo Álvarez para la pelea contra Mbilli: \"Él va en declive\" - marca usa",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQak5WY2s4TUxTRWw2RU13LVRYTURvVjBMdy1BTERNT1ZxR0p2M1Y0Rkpfc0Zzd2VOeXMwVno1TzV4d0tGWjYzNmpnVVgxQWR4LXduOEtxZHc0c0FUZTBFUldXcXQyOU81U0o0aUt4SGxHM1hmNDVOVzJIR25JMTVtenVLY1NHMDjSAYwBQVVfeXFMUDJKaFoyZDJ6OV9RMWhwSVZUMm5tWkw5MHdwdmxDVXFSLUR1bXhWTVlZZG8wdG41aEdFZHB4UkM3VVFNWkdjWUZVYzMxZXFJTHIwR0lpMzkzQmdEY0pyUnA0N1ZZZElYbUVOQ29yaGI0Z2hwWkp1TmhfcXBWekZQeUpmSENCQ2VnRGFxLWI?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQak5WY2s4TUxTRWw2RU13LVRYTURvVjBMdy1BTERNT1ZxR0p2M1Y0Rkpfc0Zzd2VOeXMwVno1TzV4d0tGWjYzNmpnVVgxQWR4LXduOEtxZHc0c0FUZTBFUldXcXQyOU81U0o0aUt4SGxHM1hmNDVOVzJIR25JMTVtenVLY1NHMDjSAYwBQVVfeXFMUDJKaFoyZDJ6OV9RMWhwSVZUMm5tWkw5MHdwdmxDVXFSLUR1bXhWTVlZZG8wdG41aEdFZHB4UkM3VVFNWkdjWUZVYzMxZXFJTHIwR0lpMzkzQmdEY0pyUnA0N1ZZZElYbUVOQ29yaGI0Z2hwWkp1TmhfcXBWekZQeUpmSENCQ2VnRGFxLWI?oc=5\" target=\"_blank\">La sentencia a Canelo Álvarez para la pelea contra Mbilli: \"Él va en declive\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">marca usa</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-07T11:21:02+00:00"
-    },
-    {
-      "titulo": "Entradas a 7,50 euros para ver al Barça en la Champions - Mundo Deportivo",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcW1uUDVWdTNXRG45MGl5cWczOHA3RktKRzJpR3JJSVB3Ti1fRkJiSlU1SHhsSHRIc0o3Yk94MVBrejFkcDUyeUZ3STVlUUpSSXhOTzhxaWZFTHJTaFpNSmxhVFZETGk0azU3cGthRE41aE51dEprenF3elZhNE1ZcWJBWXFHTUx2N3dxal9ZajZPOHVyal9ra1Jqd3I5VGVFR3dhd9IBsgFBVV95cUxQeUEzaVFCel9lbVdVM2hpNnpUc0NQejJRYW5uYU1vTmZSd3lydVN1OTlrOW9obnA5Qm5RRE52NF9hQnpmZWt0VlllaDFQTVpoQTV4RDgwZllEbXIxWkZnQlJmVWpZUDFkU0lROEtka1ZsZi0zbEI4WHBCVkRoWm9fUUd1dW5zVWJhTkl4U1YxbWVMd3lXTFQ1RlNSRWJpWWxUdXQxYU1OWTBXajVyenZlYlVB?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQcW1uUDVWdTNXRG45MGl5cWczOHA3RktKRzJpR3JJSVB3Ti1fRkJiSlU1SHhsSHRIc0o3Yk94MVBrejFkcDUyeUZ3STVlUUpSSXhOTzhxaWZFTHJTaFpNSmxhVFZETGk0azU3cGthRE41aE51dEprenF3elZhNE1ZcWJBWXFHTUx2N3dxal9ZajZPOHVyal9ra1Jqd3I5VGVFR3dhd9IBsgFBVV95cUxQeUEzaVFCel9lbVdVM2hpNnpUc0NQejJRYW5uYU1vTmZSd3lydVN1OTlrOW9obnA5Qm5RRE52NF9hQnpmZWt0VlllaDFQTVpoQTV4RDgwZllEbXIxWkZnQlJmVWpZUDFkU0lROEtka1ZsZi0zbEI4WHBCVkRoWm9fUUd1dW5zVWJhTkl4U1YxbWVMd3lXTFQ1RlNSRWJpWWxUdXQxYU1OWTBXajVyenZlYlVB?oc=5\" target=\"_blank\">Entradas a 7,50 euros para ver al Barça en la Champions</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mundo Deportivo</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-07T10:15:45+00:00"
-    },
-    {
-      "titulo": "Rafael Márquez firma el segundo peor inicio como DT de México en su historia - 365Scores",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0wNjY3amh0VzYwT3lXelg3ZU5BcGFiN2xuZy1ienU2OFJEckt6QXdYQlRqV0JHeUZFX0U4eEphWFV6NkxlM084T1ViSV9tamRGQkFKVXpwWS1PMjNONm1CZ0l6RVVWakJJT3hHMXVNbU1JTGxqaF84dE4wcXBHTms?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE0wNjY3amh0VzYwT3lXelg3ZU5BcGFiN2xuZy1ienU2OFJEckt6QXdYQlRqV0JHeUZFX0U4eEphWFV6NkxlM084T1ViSV9tamRGQkFKVXpwWS1PMjNONm1CZ0l6RVVWakJJT3hHMXVNbU1JTGxqaF84dE4wcXBHTms?oc=5\" target=\"_blank\">Rafael Márquez firma el segundo peor inicio como DT de México en su historia</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">365Scores</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-07T09:44:18+00:00"
-    },
-    {
-      "titulo": "Los Dodgers vencen a los Braves y los Padres evitan la barrida en los playoffs de la MLB - Tribunanoticias",
-      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPd3lmMkJuTy1IenFoRzNRdFN5WFdGd1R2RDZBQ05FNDhDTTVLWGJZM1oyWGNsVHdVYnpySTFtM3RLTWRwTWFjbUhVTXRvX05Ib2lONjAwSWhCb3lIbk9ZOVdwbnk1Y3R0RUR1Z2lScHVPbUN5V3JFSlhaVEhXcmdpeWc0R3hrV1JGamZzTnFiLS1YUERVbkZBbUJ3UjNlUGVhSkZ0NmpWWm1lcWxhNzUwamFVU0g3RDFDWkZTTVo5Nkk3WDMzM01vS19pLTRqVzd6S0hMUjZUNnk5eWtkLWdTTnYxUEpFOVRFYldPUmtqRjVZbWdmNDRDUDVaTkJ6VllqRVdzRWU0UWVETjg3aFF2aDVpQmhoMmdFZW5nTnlGVzh4WjZSZjFGa2ZvbTE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirAJBVV95cUxPd3lmMkJuTy1IenFoRzNRdFN5WFdGd1R2RDZBQ05FNDhDTTVLWGJZM1oyWGNsVHdVYnpySTFtM3RLTWRwTWFjbUhVTXRvX05Ib2lONjAwSWhCb3lIbk9ZOVdwbnk1Y3R0RUR1Z2lScHVPbUN5V3JFSlhaVEhXcmdpeWc0R3hrV1JGamZzTnFiLS1YUERVbkZBbUJ3UjNlUGVhSkZ0NmpWWm1lcWxhNzUwamFVU0g3RDFDWkZTTVo5Nkk3WDMzM01vS19pLTRqVzd6S0hMUjZUNnk5eWtkLWdTTnYxUEpFOVRFYldPUmtqRjVZbWdmNDRDUDVaTkJ6VllqRVdzRWU0UWVETjg3aFF2aDVpQmhoMmdFZW5nTnlGVzh4WjZSZjFGa2ZvbTE?oc=5\" target=\"_blank\">Los Dodgers vencen a los Braves y los Padres evitan la barrida en los playoffs de la MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Tribunanoticias</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-07T09:22:30+00:00"
-    },
-    {
-      "titulo": "Cómo ven clubes top de la Premier el veredicto vs Manchester City - ESPN Colombia",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOQVFwM3dKUkJnNllrTDNfdmpaTGZuN3h6dm12cVNFYm1uNG9PTS1oQm9PSk0zOVpYMGNLeTFyVkJjc29ZYi1MUjJjbE85eThZTEJZZzBlUGhzVkNUVnpPMHpZT3o3V081elpYT2ZEVzA3cmhGVHZVcEEtNWVuS0tITVRGVHJDNmd4Vlg5UGFnbUJGdGR5RVlZcENoVHBRdWhyR1hrR3hPZGhEUVZBbVBhaTA1Um0tNE42U3ZOcmxaODl5VTE5aTlkSkU0T0ZBcHBXS09UYXZLb0N1SWU2eUE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxOQVFwM3dKUkJnNllrTDNfdmpaTGZuN3h6dm12cVNFYm1uNG9PTS1oQm9PSk0zOVpYMGNLeTFyVkJjc29ZYi1MUjJjbE85eThZTEJZZzBlUGhzVkNUVnpPMHpZT3o3V081elpYT2ZEVzA3cmhGVHZVcEEtNWVuS0tITVRGVHJDNmd4Vlg5UGFnbUJGdGR5RVlZcENoVHBRdWhyR1hrR3hPZGhEUVZBbVBhaTA1Um0tNE42U3ZOcmxaODl5VTE5aTlkSkU0T0ZBcHBXS09UYXZLb0N1SWU2eUE?oc=5\" target=\"_blank\">Cómo ven clubes top de la Premier el veredicto vs Manchester City</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Colombia</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-07T08:31:19+00:00"
-    },
-    {
-      "titulo": "Chile frena el despegue de la era Rafa Márquez - UNANIMO Deportes",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE10WGhnbzNRVG5FVVRqWXlScEgwNjZ1Nm9YOENnVko5Ni1JZTF4SkFKbWMwb2hlVllCa3J2UVVXRjlHWHV0Q2hZbXVvcW56MkZGaElHbVVHM0paR2trZ0M3UDFZMXBqRDN2c1RhenFnREw5UGdKaUdXcmFR?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE10WGhnbzNRVG5FVVRqWXlScEgwNjZ1Nm9YOENnVko5Ni1JZTF4SkFKbWMwb2hlVllCa3J2UVVXRjlHWHV0Q2hZbXVvcW56MkZGaElHbVVHM0paR2trZ0M3UDFZMXBqRDN2c1RhenFnREw5UGdKaUdXcmFR?oc=5\" target=\"_blank\">Chile frena el despegue de la era Rafa Márquez</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">UNANIMO Deportes</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-07T07:49:47+00:00"
-    },
-    {
-      "titulo": "Spotify ya tiene audiolibros en México: así puedes acceder a más de 45,000 títulos",
-      "url": "https://expansion.mx/tecnologia/2026/10/07/spotify-ya-tiene-audiolibros-en-mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/95161a6/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fbf%2F60%2Fd515ebbd43b8bd8209e546d2240d%2Fab-mexico.jpg",
-      "descripcion": "Spotify inicia su expansión global de audiolibros a más de 180 mercados con la mira puesta en el consumidor mexicano. La plataforma ofrecerá 12 horas mensuales de escucha para usuarios Premium.",
-      "fuente": "Selene Ramírez",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-07T07:00:19+00:00"
-    },
-    {
-      "titulo": "Champions League 2026/27: calendario, fechas, horarios y resultados de los partidos de la fase liga - UEFA.com",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVXQxU2Vway04a3ByajdmTU5EOFpCUVkyR1N1aS01U21wODM0aGJEOEZ2bFBnVjFENEpfaHJzSjh4bFVicDhxNTVmMlFhYTJnTDUyY19fb3pRZlZ2SFBzaVdYR2EzME1aWGpjVHJLQzFlNDNZN0FidDczVTZvS1Bwelh2bk1wam5nV3diTWtOS0NrNnQ5SzRMQXItR1NFZmR0bkdpM1B4dGtkblA4MHlpTE1LQ1FabWFSSmVISFBwdG1yYThuWktvdU1XZUtxaHV4dkpmaURn?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVXQxU2Vway04a3ByajdmTU5EOFpCUVkyR1N1aS01U21wODM0aGJEOEZ2bFBnVjFENEpfaHJzSjh4bFVicDhxNTVmMlFhYTJnTDUyY19fb3pRZlZ2SFBzaVdYR2EzME1aWGpjVHJLQzFlNDNZN0FidDczVTZvS1Bwelh2bk1wam5nV3diTWtOS0NrNnQ5SzRMQXItR1NFZmR0bkdpM1B4dGtkblA4MHlpTE1LQ1FabWFSSmVISFBwdG1yYThuWktvdU1XZUtxaHV4dkpmaURn?oc=5\" target=\"_blank\">Champions League 2026/27: calendario, fechas, horarios y resultados de los partidos de la fase liga</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">UEFA.com</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-07T07:00:00+00:00"
-    },
-    {
-      "titulo": "«Afrontar urgentemente esta competición»: el jefe del Bayern lanza una exigencia clara | Goal.com México - Goal.com",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQcDFHQlhPcU9mb0pRSk9mdDhhNGtOTEdXV3hyZFBjZVpGakdKTFNnYUI1U21heVNDWjZVdEFRRjBZX3ZTdEdiUDhkT2lIeHpFWXJrUm9rbmJ1aXhHRjh0dExIYVRHRGxpSUdNdndUS0d6M0VoOXpYMXJJTFNGY3NpNUdzaGtXb2JVNUZDYm81SlFVbU95X21LcmpZOWFaRjg5TUpKdnUyU3JlSkdJb1FkQ3lsU25tOHVDSXN6QTRlaU9SZ3pJTW44TWlnaEVudi1MLVZEWm52T1E1YWZIdV9IWGI3VVUyTURGMklfbzZsM0FOVVZZQk9PcG1WS01DUE95Q0Ztbw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxQcDFHQlhPcU9mb0pRSk9mdDhhNGtOTEdXV3hyZFBjZVpGakdKTFNnYUI1U21heVNDWjZVdEFRRjBZX3ZTdEdiUDhkT2lIeHpFWXJrUm9rbmJ1aXhHRjh0dExIYVRHRGxpSUdNdndUS0d6M0VoOXpYMXJJTFNGY3NpNUdzaGtXb2JVNUZDYm81SlFVbU95X21LcmpZOWFaRjg5TUpKdnUyU3JlSkdJb1FkQ3lsU25tOHVDSXN6QTRlaU9SZ3pJTW44TWlnaEVudi1MLVZEWm52T1E1YWZIdV9IWGI3VVUyTURGMklfbzZsM0FOVVZZQk9PcG1WS01DUE95Q0Ztbw?oc=5\" target=\"_blank\">«Afrontar urgentemente esta competición»: el jefe del Bayern lanza una exigencia clara | Goal.com México</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Goal.com</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-07T06:10:44+00:00"
-    },
-    {
-      "titulo": "Partidos de hoy miércoles 6 de octubre: Series Divisionales MLB - TUDN",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTzdKQWIyb1cyejZEZk8xQmtMOEFObDNkZWI2ZFFSVkUtNUxPN2EzeGJUVkwxc1MzVGtJdlg3MFBZNTZ4am9xSEFZTE5YREdjV0hMOEVoa3BKYk1CMXdraUthbHVGUVZVQ19qSHhXaWpKRjdFU3pMRzNPVzdfQVJydm83Zl8ybzJ0emx6Tjl1RHktNTA?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNTzdKQWIyb1cyejZEZk8xQmtMOEFObDNkZWI2ZFFSVkUtNUxPN2EzeGJUVkwxc1MzVGtJdlg3MFBZNTZ4am9xSEFZTE5YREdjV0hMOEVoa3BKYk1CMXdraUthbHVGUVZVQ19qSHhXaWpKRjdFU3pMRzNPVzdfQVJydm83Zl8ybzJ0emx6Tjl1RHktNTA?oc=5\" target=\"_blank\">Partidos de hoy miércoles 6 de octubre: Series Divisionales MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-07T06:07:01+00:00"
-    },
-    {
-      "titulo": "MLB: \"Mr. Octubre\" Kiké Hernández rompe récord de jonrones en playoffs - Debate",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTGo1aDg4X0prOGpWaWgyV0pzM2xhSmZZcVRVdjM3VGtIVXVYdnIxV2ZnenIzZjRLVGcyUlE2Vm1FNVN0b1N1UEVHTnV5cmtwZ24zcURQb1R5X0JIRWhxUWxCdjhoRGVid0V0SVphd1piQ3BHU0kyY2FZaU1QVkN0QUR4Yks1eU94UVdqY1ZlWXgzQzNkRkYyWnUtNG55VllCM2ROaUcyYWduZ2FxZUNIV3FvRG9sMG9XQUhGLTF3?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxOTGo1aDg4X0prOGpWaWgyV0pzM2xhSmZZcVRVdjM3VGtIVXVYdnIxV2ZnenIzZjRLVGcyUlE2Vm1FNVN0b1N1UEVHTnV5cmtwZ24zcURQb1R5X0JIRWhxUWxCdjhoRGVid0V0SVphd1piQ3BHU0kyY2FZaU1QVkN0QUR4Yks1eU94UVdqY1ZlWXgzQzNkRkYyWnUtNG55VllCM2ROaUcyYWduZ2FxZUNIV3FvRG9sMG9XQUhGLTF3?oc=5\" target=\"_blank\">MLB: \"Mr. Octubre\" Kiké Hernández rompe récord de jonrones en playoffs</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Debate</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-07T05:36:51+00:00"
-    },
-    {
-      "titulo": "Padres evitan la barrida y mantienen vivo el sueño en los playoffs - El Informador",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTjBPX0NTWUNfcWFLbXJqNUVJUkljcnRCRWw1dUM4eXppVHBiQW1DQVVDcy0yeFRHVFctRGxEX0pCQ19BTjlrbDlDU3JsVy0wdkwweXhxT09pblM3cHlaSXVxcE8xcHRydGQtLW5XVXBpTEJWdDZfd3E3VTRVTmkyRE5CR2xkYlcyNlhpMHhIb3VyRW9DeGlaY0QySVNULW82akIwVHNtbUZJNmo5Q215Z0ZSV2piNF9mQlFQdWVlNERrQdIBxwFBVV95cUxQbC1NbUtadTQycy1xVTdXZk5SekY2VmF2RGd5Q0V5cjdldnAzX1JlREZqam00SDBpbFM1cnBZYTNWUVBwTy1IZmJhdWZVWl9uYXFsb3pIN09ycTAwd0h2ejFsWEVXVjNvTThic3NvT2UyYnFmZTQ3bU9yZXR2ank0YXp4ZVVRT2I0VkJEb1ZQdGJSdXAwdm5yM2RES3pRMWYybmE2dUtkSnhxMmNtU2tabjJDRU02cjl6Wmw2dC1OeXNKNGo4aGVB?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTjBPX0NTWUNfcWFLbXJqNUVJUkljcnRCRWw1dUM4eXppVHBiQW1DQVVDcy0yeFRHVFctRGxEX0pCQ19BTjlrbDlDU3JsVy0wdkwweXhxT09pblM3cHlaSXVxcE8xcHRydGQtLW5XVXBpTEJWdDZfd3E3VTRVTmkyRE5CR2xkYlcyNlhpMHhIb3VyRW9DeGlaY0QySVNULW82akIwVHNtbUZJNmo5Q215Z0ZSV2piNF9mQlFQdWVlNERrQdIBxwFBVV95cUxQbC1NbUtadTQycy1xVTdXZk5SekY2VmF2RGd5Q0V5cjdldnAzX1JlREZqam00SDBpbFM1cnBZYTNWUVBwTy1IZmJhdWZVWl9uYXFsb3pIN09ycTAwd0h2ejFsWEVXVjNvTThic3NvT2UyYnFmZTQ3bU9yZXR2ank0YXp4ZVVRT2I0VkJEb1ZQdGJSdXAwdm5yM2RES3pRMWYybmE2dUtkSnhxMmNtU2tabjJDRU02cjl6Wmw2dC1OeXNKNGo4aGVB?oc=5\" target=\"_blank\">Padres evitan la barrida y mantienen vivo el sueño en los playoffs</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Informador</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-07T05:33:01+00:00"
-    },
-    {
-      "titulo": "Padres derrota a Cerveceros y “respiran” en la Serie Divisional de Liga Nacional en MLB - Linea Directa",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPWEY0T2hUM2RUR0lYQXlWcmVYMmpHLVQ4eThIUjd5Tl9FM2xObVE2b09kWTRlT3dhYnZ1UmM2X2I0dUdBNHhHTHNFT2tTN1cyVXE4OWxHWjVvSUZCa1JGZ2k3M1d0YUhvdU9VRFd1dkRmcEp6T1podWNTYUZCc05ITDJLOUxMaFBnY0h4LTBzQlNfVEl6LWI5b1J5aElMMjBBZVdXcDBxNXQ5Z1BrMTd0d0VMdHlIQkFFTHdJdXpwVENEalVfVVBRbEo1TG5EdkgzMG1DRENPRXV0QXBKN3c?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxPWEY0T2hUM2RUR0lYQXlWcmVYMmpHLVQ4eThIUjd5Tl9FM2xObVE2b09kWTRlT3dhYnZ1UmM2X2I0dUdBNHhHTHNFT2tTN1cyVXE4OWxHWjVvSUZCa1JGZ2k3M1d0YUhvdU9VRFd1dkRmcEp6T1podWNTYUZCc05ITDJLOUxMaFBnY0h4LTBzQlNfVEl6LWI5b1J5aElMMjBBZVdXcDBxNXQ5Z1BrMTd0d0VMdHlIQkFFTHdJdXpwVENEalVfVVBRbEo1TG5EdkgzMG1DRENPRXV0QXBKN3c?oc=5\" target=\"_blank\">Padres derrota a Cerveceros y “respiran” en la Serie Divisional de Liga Nacional en MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Linea Directa</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-07T05:29:06+00:00"
-    },
-    {
-      "titulo": "¿Cuándo vuelve a jugar la Selección Mexicana? Fecha y rival - Mediotiempo",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjU3Z0RMYm5rbUt3TDBfdGpKa0dpRmlDanUzeFFHSk5DVFp6dmdTVnNEcFRPTW5ER19xc0gxY3lEbmtxTVpuOFlWMmZ5TW82Q1FBcTB6Z19hdGRBWkFVWVhJaHhpa3M3MHdJdy1sbHRWbWdUaF80RDRoUVF3czVLWTVYN19sdko4SldNaG1BTXhkRlFGRGVQeUJB0gGaAUFVX3lxTE5EMzFMWFRXY2c0VlJtR1hxalk0UEZqenZsdEdabkpZTXhoaFBxaElESG5iWldHTmxEZUhYeFhJd3NmRGgzOTM4ME82bzRKdTZEOUN2eEdTR2l6VmdSUGYyMTJYLW5ncVBYSy11NERtNzY5VDlhS0t4d1RUajRBSlpEcTlzSEprQUJ4akZta0xadnR1Uy1Wbl93bEE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjU3Z0RMYm5rbUt3TDBfdGpKa0dpRmlDanUzeFFHSk5DVFp6dmdTVnNEcFRPTW5ER19xc0gxY3lEbmtxTVpuOFlWMmZ5TW82Q1FBcTB6Z19hdGRBWkFVWVhJaHhpa3M3MHdJdy1sbHRWbWdUaF80RDRoUVF3czVLWTVYN19sdko4SldNaG1BTXhkRlFGRGVQeUJB0gGaAUFVX3lxTE5EMzFMWFRXY2c0VlJtR1hxalk0UEZqenZsdEdabkpZTXhoaFBxaElESG5iWldHTmxEZUhYeFhJd3NmRGgzOTM4ME82bzRKdTZEOUN2eEdTR2l6VmdSUGYyMTJYLW5ncVBYSy11NERtNzY5VDlhS0t4d1RUajRBSlpEcTlzSEprQUJ4akZta0xadnR1Uy1Wbl93bEE?oc=5\" target=\"_blank\">¿Cuándo vuelve a jugar la Selección Mexicana? Fecha y rival</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-07T05:22:38+00:00"
     }
   ]
 }
