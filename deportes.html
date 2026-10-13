@@ -7,29 +7,187 @@
   <meta name="description" content="Noticias deportivas de México y el mundo. Fútbol, tenis, béisbol, boxeo, NFL, básquetbol, Fórmula 1 y más en TendenciasMX.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://cberroteran400-spec.github.io/tendencias-mx/deportes.html">
+
   <style>
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top left, rgba(45,255,140,.10), transparent 30%),linear-gradient(135deg,#050807,#0b1511 55%,#06100b);color:#f4f7f5;min-height:100vh}a{color:inherit;text-decoration:none}header{position:sticky;top:0;z-index:1000;background:rgba(5,8,7,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(101,255,154,.15)}.nav-container{max-width:1250px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px}.logo{font-size:24px;font-weight:900;color:#65ff9a}nav{display:flex;gap:7px;overflow-x:auto}nav a{padding:9px 11px;border-radius:10px;color:#cbd5cf;font-size:13px;white-space:nowrap}nav a.active{color:#65ff9a;background:rgba(101,255,154,.10)}main{max-width:1250px;margin:auto;padding:30px 18px 60px}.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(101,255,154,.35);background:rgba(101,255,154,.08);color:#65ff9a;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:15px}h1{margin:0;font-size:clamp(36px,7vw,70px)}h1 span{color:#65ff9a}.tools{display:flex;gap:12px;margin:20px 0 25px}.search{flex:1;background:#0c1511;border:1px solid #20362a;color:white;padding:14px 16px;border-radius:13px;outline:none}.status{color:#93a39a;font-size:13px;padding:13px 2px}.categories{display:flex;gap:8px;overflow-x:auto;padding:5px 0 15px}.category-btn{border:1px solid #20362a;background:#0b130f;color:#b8c4bd;border-radius:999px;padding:9px 14px;cursor:pointer;white-space:nowrap;font-size:13px}.category-btn.active{background:#65ff9a;color:#061009;font-weight:800}.featured{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin:10px 0 35px}.featured-card{position:relative;min-height:330px;border-radius:20px;overflow:hidden;background:#0c1511;border:1px solid #1d3025}.featured-card img{width:100%;height:100%;min-height:330px;object-fit:cover}.featured-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:25px;background:linear-gradient(transparent 25%,rgba(0,0,0,.88) 100%)}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.news-card{background:rgba(11,19,15,.92);border:1px solid #1b2c22;border-radius:17px;overflow:hidden}.news-image{width:100%;height:205px;object-fit:cover;background:#101814}.news-content{padding:16px}.news-meta{display:flex;justify-content:space-between;color:#7f9187;font-size:11px;margin-bottom:10px}.news-category{color:#65ff9a;font-weight:800;text-transform:uppercase}.news-title{margin:0 0 9px;font-size:18px}.news-description{color:#9eaaa3;font-size:13px;margin:0 0 15px}.read-more{color:#65ff9a;font-size:13px;font-weight:800}.trends{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}.trend{padding:17px;border:1px solid #1b2c22;background:#0b130f;border-radius:14px}.empty{text-align:center;padding:45px;color:#93a39a;border:1px dashed #294234;border-radius:16px}footer{border-top:1px solid #17251d;color:#77847d;text-align:center;padding:30px 18px;font-size:13px}@media (max-width:900px){.featured{grid-template-columns:1fr}.news-grid{grid-template-columns:repeat(2,1fr)}}@media (max-width:650px){.news-grid{grid-template-columns:1fr}}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top left,rgba(45,255,140,.10),transparent 30%),linear-gradient(135deg,#050807,#0b1511 55%,#06100b);color:#f4f7f5;min-height:100vh}
+    a{color:inherit;text-decoration:none}
+    header{position:sticky;top:0;z-index:1000;background:rgba(5,8,7,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(101,255,154,.15)}
+    .nav-container{max-width:1250px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .logo{font-size:24px;font-weight:900;color:#65ff9a}
+    nav{display:flex;gap:7px;overflow-x:auto}
+    nav a{padding:9px 11px;border-radius:10px;color:#cbd5cf;font-size:13px;white-space:nowrap}
+    nav a.active{color:#65ff9a;background:rgba(101,255,154,.10)}
+    main{max-width:1250px;margin:auto;padding:30px 18px 60px}
+    .badge{display:inline-block;padding:7px 12px;border:1px solid rgba(101,255,154,.35);background:rgba(101,255,154,.08);color:#65ff9a;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:15px}
+    h1{margin:0;font-size:clamp(36px,7vw,70px)}
+    h1 span{color:#65ff9a}
+    .tools{display:flex;gap:12px;margin:20px 0 25px}
+    .search{flex:1;background:#0c1511;border:1px solid #20362a;color:white;padding:14px 16px;border-radius:13px;outline:none}
+    .status{color:#93a39a;font-size:13px;padding:13px 2px}
+    .categories{display:flex;gap:8px;overflow-x:auto;padding:5px 0 15px}
+    .category-btn{border:1px solid #20362a;background:#0b130f;color:#b8c4bd;border-radius:999px;padding:9px 14px;cursor:pointer;white-space:nowrap;font-size:13px}
+    .category-btn.active{background:#65ff9a;color:#061009;font-weight:800}
+    .featured{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin:10px 0 35px}
+    .featured-card{position:relative;min-height:330px;border-radius:20px;overflow:hidden;background:#0c1511;border:1px solid #1d3025}
+    .featured-card img{width:100%;height:100%;min-height:330px;object-fit:cover}
+    .featured-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:25px;background:linear-gradient(transparent 25%,rgba(0,0,0,.88) 100%)}
+    .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .news-card{background:rgba(11,19,15,.92);border:1px solid #1b2c22;border-radius:17px;overflow:hidden}
+    .news-image{width:100%;height:205px;object-fit:cover;background:#101814}
+    .news-content{padding:16px}
+    .news-meta{display:flex;justify-content:space-between;color:#7f9187;font-size:11px;margin-bottom:10px}
+    .news-category{color:#65ff9a;font-weight:800;text-transform:uppercase}
+    .news-title{margin:0 0 9px;font-size:18px}
+    .news-description{color:#9eaaa3;font-size:13px;margin:0 0 15px}
+    .read-more{color:#65ff9a;font-size:13px;font-weight:800}
+    .trends{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+    .trend{padding:17px;border:1px solid #1b2c22;background:#0b130f;border-radius:14px}
+    .empty{text-align:center;padding:45px;color:#93a39a;border:1px dashed #294234;border-radius:16px}
+
+    /* Espacios publicitarios */
+    .ad-section{
+      width:100%;
+      margin:24px auto;
+      padding:12px 8px;
+      text-align:center;
+      background:#080d0a;
+      border:1px solid #18251c;
+      border-radius:12px;
+      overflow:hidden;
+    }
+    .ad-label{
+      color:#718077;
+      font-size:10px;
+      letter-spacing:1.5px;
+      margin-bottom:10px;
+    }
+    .ad-slot{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      width:100%;
+      min-height:50px;
+      overflow:hidden;
+    }
+    .ad-300-slot{min-height:250px}
+
+    footer{border-top:1px solid #17251d;color:#77847d;text-align:center;padding:30px 18px;font-size:13px}
+
+    @media(max-width:900px){
+      .featured{grid-template-columns:1fr}
+      .news-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:650px){
+      .news-grid{grid-template-columns:1fr}
+    }
   </style>
 </head>
-<body>
-<header><div class="nav-container"><a href="index.html" class="logo">TendenciasMX</a><nav><a href="index.html">Inicio</a><a href="noticias.html">Noticias</a><a href="deportes.html" class="active">Deportes</a><a href="entretenimiento.html">Entretenimiento</a><a href="tecnologia.html">Tecnología</a></nav></div></header>
-<main>
-  <div class="badge">DEPORTES</div><h1>Noticias de <span>Deportes</span></h1>
-  <div class="tools"><input id="buscador" class="search" type="search" placeholder="🔎 Buscar noticias deportivas..."></div>
-  <div id="estado" class="status">Cargando...</div>
-  <div id="categorias" class="categories">
-    <button class="category-btn active" data-categoria="todos">Todas</button><button class="category-btn" data-categoria="futbol">⚽ Fútbol</button><button class="category-btn" data-categoria="tenis">🎾 Tenis</button><button class="category-btn" data-categoria="beisbol">⚾ Béisbol</button><button class="category-btn" data-categoria="nfl">🏈 NFL</button><button class="category-btn" data-categoria="basquetbol">🏀 Básquetbol</button><button class="category-btn" data-categoria="boxeo">🥊 Boxeo</button><button class="category-btn" data-categoria="formula1">🏎️ Fórmula 1</button><button class="category-btn" data-categoria="otros">🏅 Otros</button>
-  </div>
-  <section id="destacada" class="featured"></section>
-  <section><div id="noticias" class="news-grid"></div></section>
-  <section><div id="tendencias" class="trends"></div></section>
-</main>
-<script>
-let todasLasNoticias=[];let categoriaActual="todos";let busquedaActual="";const ARCHIVO_DATOS="noticias.json";
 
-/* =========================================================
-   BLOQUE DE IMÁGENES
-   ========================================================= */
+<body>
+
+<header>
+  <div class="nav-container">
+    <a href="index.html" class="logo">TendenciasMX</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="deportes.html" class="active">Deportes</a>
+      <a href="entretenimiento.html">Entretenimiento</a>
+      <a href="tecnologia.html">Tecnología</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="badge">DEPORTES</div>
+  <h1>Noticias de <span>Deportes</span></h1>
+
+  <div class="tools">
+    <input id="buscador" class="search" type="search" placeholder="🔎 Buscar noticias deportivas...">
+  </div>
+
+  <!-- ANUNCIO 1: BANNER 320 x 50 -->
+  <section class="ad-section">
+    <div class="ad-label">PUBLICIDAD</div>
+    <div class="ad-slot">
+      <script>
+        atOptions = {
+          'key': '4835588a51fd9380f84839b13bf3044f',
+          'format': 'iframe',
+          'height': 50,
+          'width': 320,
+          'params': {}
+        };
+      </script>
+      <script src="https://bicea.org/22/4835588a51fd9380f84839b13bf3044f"></script>
+    </div>
+  </section>
+
+  <div id="estado" class="status">Cargando...</div>
+
+  <div id="categorias" class="categories">
+    <button class="category-btn active" data-categoria="todos">Todas</button>
+    <button class="category-btn" data-categoria="futbol">⚽ Fútbol</button>
+    <button class="category-btn" data-categoria="tenis">🎾 Tenis</button>
+    <button class="category-btn" data-categoria="beisbol">⚾ Béisbol</button>
+    <button class="category-btn" data-categoria="nfl">🏈 NFL</button>
+    <button class="category-btn" data-categoria="basquetbol">🏀 Básquetbol</button>
+    <button class="category-btn" data-categoria="boxeo">🥊 Boxeo</button>
+    <button class="category-btn" data-categoria="formula1">🏎️ Fórmula 1</button>
+    <button class="category-btn" data-categoria="otros">🏅 Otros</button>
+  </div>
+
+  <section id="destacada" class="featured"></section>
+
+  <!-- ANUNCIO 2: NATIVE BANNER -->
+  <section class="ad-section">
+    <div class="ad-label">PUBLICIDAD</div>
+    <div class="ad-slot">
+      <script async="async" data-cfasync="false"
+        src="https://bicea.org/21/504632ea2e49625ec85a333ea088de15"></script>
+      <div id="container-504632ea2e49625ec85a333ea088de15"></div>
+    </div>
+  </section>
+
+  <section>
+    <div id="noticias" class="news-grid"></div>
+  </section>
+
+  <section>
+    <div id="tendencias" class="trends"></div>
+  </section>
+
+  <!-- ANUNCIO 3: BANNER 300 x 250 -->
+  <section class="ad-section">
+    <div class="ad-label">PUBLICIDAD</div>
+    <div class="ad-slot ad-300-slot">
+      <script>
+        atOptions = {
+          'key': '5e8551ffa531df26524b6268d5d663cf',
+          'format': 'iframe',
+          'height': 250,
+          'width': 300,
+          'params': {}
+        };
+      </script>
+      <script src="https://bicea.org/22/5e8551ffa531df26524b6268d5d663cf"></script>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 TendenciasMX. Todos los derechos reservados.
+</footer>
+
+<script>
+let todasLasNoticias=[];
+let categoriaActual="todos";
+let busquedaActual="";
+const ARCHIVO_DATOS="noticias.json";
 
 const fallbackImagenesPorCategoria={
 futbol:[
@@ -88,7 +246,6 @@ otros:[
 
 function esImagenBasura(url){
   if(!url) return true;
-
   const u=String(url).toLowerCase().trim();
 
   if(u.startsWith("data:")) return true;
@@ -107,16 +264,10 @@ function normalizarImagen(url){
   if(!url) return "";
 
   let u=String(url).trim();
-
   if(u.startsWith("//")) u="https:"+u;
 
   try{
     const x=new URL(u);
-
-    /*
-      Quitamos parámetros que pueden hacer que una misma imagen
-      aparezca como URLs diferentes.
-    */
     x.searchParams.delete("w");
     x.searchParams.delete("width");
     x.searchParams.delete("auto");
@@ -124,7 +275,6 @@ function normalizarImagen(url){
     x.searchParams.delete("quality");
     x.searchParams.delete("fit");
     x.searchParams.delete("crop");
-
     return x.href.toLowerCase();
   }catch(e){
     return u.toLowerCase();
@@ -148,7 +298,6 @@ function indiceImagenPorTitulo(titulo,longitud){
 
 function obtenerImagenReal(noticia){
   let img=(noticia.imagen||"").trim();
-
   if(img.startsWith("//")) img="https:"+img;
 
   if(img && !esImagenBasura(img)){
@@ -157,26 +306,20 @@ function obtenerImagenReal(noticia){
 
   const cat=obtenerCategoriaDeportiva(noticia);
   const lista=imagenesDisponiblesDeCategoria(cat);
-
   if(!lista.length) return "";
 
   const indice=indiceImagenPorTitulo(noticia.titulo,lista.length);
-
   return lista[indice];
 }
 
 function obtenerImagenAlternativa(noticia,imagenActual){
   const cat=obtenerCategoriaDeportiva(noticia);
   const lista=imagenesDisponiblesDeCategoria(cat);
-
   if(!lista.length) return "";
 
   const actual=normalizarImagen(imagenActual);
   const indiceBase=indiceImagenPorTitulo(noticia.titulo,lista.length);
 
-  /*
-    Busca otra imagen diferente a la que falló.
-  */
   for(let i=1;i<=lista.length;i++){
     const indice=(indiceBase+i)%lista.length;
     const candidata=lista[indice];
@@ -189,10 +332,6 @@ function obtenerImagenAlternativa(noticia,imagenActual){
   return lista[indiceBase];
 }
 
-/* =========================================================
-   FIN DEL BLOQUE DE IMÁGENES
-   ========================================================= */
-
 async function cargarNoticias(){
   try{
     const r=await fetch(ARCHIVO_DATOS+"?"+Date.now(),{
@@ -200,8 +339,11 @@ async function cargarNoticias(){
     });
 
     const datos=await r.json();
-
     todasLasNoticias=Array.isArray(datos)?datos:datos.noticias;
+
+    if(!Array.isArray(todasLasNoticias)){
+      throw new Error("Formato de noticias no válido");
+    }
 
     mostrarNoticias();
 
@@ -260,13 +402,11 @@ function mostrarNoticias(){
   cont.innerHTML=res.map(n=>{
     const img=obtenerImagenReal(n);
     const cat=obtenerCategoriaDeportiva(n);
-
     const segundo=obtenerImagenAlternativa(n,img);
-
     const tercer=obtenerImagenAlternativa(n,segundo);
 
     return `<article class="news-card">
-      <a href="${n.url}" target="_blank">
+      <a href="${n.url}" target="_blank" rel="noopener noreferrer">
         <img
           class="news-image"
           src="${img}"
@@ -293,30 +433,32 @@ function mostrarNoticias(){
           ${(n.descripcion||"").substring(0,120)}...
         </p>
 
-        <a
-          class="read-more"
+        <a class="read-more"
           href="${n.url}"
           target="_blank"
-        >Leer →</a>
+          rel="noopener noreferrer">Leer →</a>
       </div>
     </article>`;
   }).join("");
 
-  if(res.length) mostrarDestacada(res[0]);
+  if(res.length){
+    mostrarDestacada(res[0]);
+  }else{
+    document.getElementById("destacada").innerHTML="";
+    cont.innerHTML='<div class="empty">No se encontraron noticias para esta búsqueda.</div>';
+  }
 }
 
 function mostrarDestacada(n){
   const c=document.getElementById("destacada");
-
   const img=obtenerImagenReal(n);
   const alternativa=obtenerImagenAlternativa(n,img);
 
   c.innerHTML=`
-    <a
-      class="featured-card"
+    <a class="featured-card"
       href="${n.url}"
       target="_blank"
-    >
+      rel="noopener noreferrer">
       <img
         src="${img}"
         alt=""
@@ -325,23 +467,8 @@ function mostrarDestacada(n){
           this.src='${alternativa}';
         "
       >
-
-      <div
-        class="featured-overlay"
-        style="
-          position:absolute;
-          inset:0;
-          display:flex;
-          flex-direction:column;
-          justify-content:flex-end;
-          padding:25px;
-          background:linear-gradient(
-            transparent,
-            rgba(0,0,0,.88)
-          )
-        "
-      >
-        <h2 style="margin:0">${n.titulo}</h2>
+      <div class="featured-overlay">
+        <h2 style="margin:0">${n.titulo||""}</h2>
       </div>
     </a>
   `;
@@ -362,14 +489,13 @@ document.querySelectorAll(".category-btn").forEach(b=>{
       .forEach(x=>x.classList.remove("active"));
 
     b.classList.add("active");
-
     categoriaActual=b.dataset.categoria;
-
     mostrarNoticias();
   });
 });
 
 cargarNoticias();
 </script>
+
 </body>
 </html>
