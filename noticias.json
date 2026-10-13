@@ -1,11 +1,31 @@
 {
-  "actualizado": "2026-10-13T13:27:30.590348+00:00",
+  "actualizado": "2026-10-13T13:56:45.502126+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 112,
-    "sin_imagen": 1088
+    "con_imagen": 111,
+    "sin_imagen": 1089
   },
   "noticias": [
+    {
+      "titulo": "Apple lanza HomeView, su primer asistente con pantalla que competirá con Alexa",
+      "url": "https://expansion.mx/tecnologia/2026/10/13/apple-lanza-homeview-competira-con-alexa",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/7de8486/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F13%2Ffc%2F944631584d41bc33bed695d4f384%2Fapple-lanza-homeview.jpg",
+      "descripcion": "Apple HomeView es la nueva apuesta de la tecnológica para el mercado de dispositivos inteligentes para el hogar, un sector dominado por Alexa, de Amazon.",
+      "fuente": "Fernando Guarneros Olmos",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-13T13:41:09+00:00"
+    },
+    {
+      "titulo": "¿Van por tv abierta? Partidos de HOY 13 de octubre EN VIVO: Horario y CANAL para ver futbol en México - Fox Sports",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNFhtQ3JJc3RzUm0xT2Jqd2J2U1lJRy11Si11U1ctbEUzbkxZcFl4OHBJSmpXNHpOYXh5aC04aENiRDk0dzc5N1MwNFdIM2Y5RlB0LU5nRExXSGFxLS1YOHppQVhIWWIwSHRFR3FvZWFQWXhjVVpUd2J5cjNBZGpEYTBhT3hoU016N1hNNi11X1ZNWGw4Y2EtY2tzMWhQRnpfOFg4MFZhbm15TU9IcjJVZTZqTUVzMWRTNXdR?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNFhtQ3JJc3RzUm0xT2Jqd2J2U1lJRy11Si11U1ctbEUzbkxZcFl4OHBJSmpXNHpOYXh5aC04aENiRDk0dzc5N1MwNFdIM2Y5RlB0LU5nRExXSGFxLS1YOHppQVhIWWIwSHRFR3FvZWFQWXhjVVpUd2J5cjNBZGpEYTBhT3hoU016N1hNNi11X1ZNWGw4Y2EtY2tzMWhQRnpfOFg4MFZhbm15TU9IcjJVZTZqTUVzMWRTNXdR?oc=5\" target=\"_blank\">¿Van por tv abierta? Partidos de HOY 13 de octubre EN VIVO: Horario y CANAL para ver futbol en México</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fox Sports</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T13:21:43+00:00"
+    },
     {
       "titulo": "¡Oficial! La Fórmula 1 regresará África con un acuerdo de diez años - Récord",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMzNqekVtLURjczhCY2FWTHhiY3dTdFFURWxVSVJBSjZnTDJTVmxkUHEycDlDdEJMMWJ0OG1zOUUtbVl4RHNzeGRLcC03RzNFUFRJa0tJdTRydC13bXAwZ3hudk1tLURzbDc0VWFMSXdWTm5IV1VjbHRsZnhtSWd4aDdIRFdvWTQ4eTRSckc0TktQcVlfUFg4cWhfN3dVeFlnRW5nVmdfbEx0V21UNVZVQ3hEd3JqUUF2cmx2RA?oc=5",
@@ -45,6 +65,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-13T12:22:42+00:00"
+    },
+    {
+      "titulo": "Champions League: Luis Suárez, ante su primer reto en Francia con el Sporting - ESPN Deportes",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVHZZTG1wUS1JdmhwYWZYRWlodmY3UGdRbjdvNkRlRWthUGtUOHBlSWVET2xtUXJ4ZWNwTDN2ekpCdUtyT1RSajlsaV9GOWtHQWpaMTZ1QW96TmdRLUN2aE83NkJpeXJFRVNuSjJGSXNqc1ZtdmdCOWdFYW1OLXJxdE5qOVU4cDFUd2szSmdVZUNYTTBVS3JkZHJjQllMci14eUVLY29vVkVPNG5DblR3QldOaE13VGZ1MlhFR2VOTlBRS0NfZ2RvX2laVQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxOVHZZTG1wUS1JdmhwYWZYRWlodmY3UGdRbjdvNkRlRWthUGtUOHBlSWVET2xtUXJ4ZWNwTDN2ekpCdUtyT1RSajlsaV9GOWtHQWpaMTZ1QW96TmdRLUN2aE83NkJpeXJFRVNuSjJGSXNqc1ZtdmdCOWdFYW1OLXJxdE5qOVU4cDFUd2szSmdVZUNYTTBVS3JkZHJjQllMci14eUVLY29vVkVPNG5DblR3QldOaE13VGZ1MlhFR2VOTlBRS0NfZ2RvX2laVQ?oc=5\" target=\"_blank\">Champions League: Luis Suárez, ante su primer reto en Francia con el Sporting</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T12:16:00+00:00"
     },
     {
       "titulo": "Prohibir el celular no basta: efectos limitados de una ley que no cambia la realidad por decreto",
@@ -91,6 +121,16 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQalF4N09UcWtnMUlablYxSUlZQUwzemlfZjFVQkdRTUpBV2RqbUl2eGxITHZscEhGVVRtVXBjaTdYZWZMV1lmZ1ltYmxoQjZrcUUtR3g4WGt1ZFBVM2JoMDNyelM2Qmsyb0RwUDB6Ny1YdWlVNHpxNEpjOTdRZ1VnTTBjUEZlYnJyVGFkMXIzclBlMmtaV1l1ZlpXVV9wQXI0dVA2SGFTWnpMNWltd05WRGJR?oc=5",
       "imagen": "",
       "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQalF4N09UcWtnMUlablYxSUlZQUwzemlfZjFVQkdRTUpBV2RqbUl2eGxITHZscEhGVVRtVXBjaTdYZWZMV1lmZ1ltYmxoQjZrcUUtR3g4WGt1ZFBVM2JoMDNyelM2Qmsyb0RwUDB6Ny1YdWlVNHpxNEpjOTdRZ1VnTTBjUEZlYnJyVGFkMXIzclBlMmtaV1l1ZlpXVV9wQXI0dVA2SGFTWnpMNWltd05WRGJR?oc=5\" target=\"_blank\">Champions League: Jornada de fantásticos reencuentros</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T12:00:00+00:00"
+    },
+    {
+      "titulo": "Roma vs Real Madrid: Dónde ver en vivo y horario del partido de la Champions League por la Jornada 2 - El Heraldo de México",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQeVUtWDloYjN5dVJFVXJ4Y2VfdmhMUXdTcERMM2F5eE1ON0pKNlVWRDV6X1B2elFKZm9WZGllVDV4dkJJS1ZhajJlbWhZZXlnUUpoU3hySG1nUGg3eVkxUlVtanFNSkFKdkV1UllPZTA4TXBnTTQxQlV6U04xTDZHNTFQcHlBUElwTDFKN0FrZll3RU11dF80SGw0eXU0SWItQS1hd3ExNWpyOW8yaTVoQ0NGbGtPNW5KYmFHdnhlLTdSNEpZUElaU08zTjRzQVMyMXJFSmFDdnJVMUc4QlNfZmRlaEJURTdGRFo4R2hYRQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi7wFBVV95cUxQeVUtWDloYjN5dVJFVXJ4Y2VfdmhMUXdTcERMM2F5eE1ON0pKNlVWRDV6X1B2elFKZm9WZGllVDV4dkJJS1ZhajJlbWhZZXlnUUpoU3hySG1nUGg3eVkxUlVtanFNSkFKdkV1UllPZTA4TXBnTTQxQlV6U04xTDZHNTFQcHlBUElwTDFKN0FrZll3RU11dF80SGw0eXU0SWItQS1hd3ExNWpyOW8yaTVoQ0NGbGtPNW5KYmFHdnhlLTdSNEpZUElaU08zTjRzQVMyMXJFSmFDdnJVMUc4QlNfZmRlaEJURTdGRFo4R2hYRQ?oc=5\" target=\"_blank\">Roma vs Real Madrid: Dónde ver en vivo y horario del partido de la Champions League por la Jornada 2</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Heraldo de México</font>",
       "fuente": "Futbol",
       "categoria": "Deportes",
       "subcategoria": "futbol",
@@ -2241,6 +2281,16 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVkhMclZNbXRwUFVia25GTW92bFZKZDhrTGhMR1ZvbjBXZXgtVGI3OTFwa083V0ZEbm5ScDZVV3VTM3VfYUt6TDQ3bGNPc01fZVJSZVdPOVhGRmhvX096eERJYnptSlUtMjdSU1ZPWEYxdTVpNWVYZ2VQVWxzZG9NelE4MF93QVE3eEh1dEhEMEwtdHE4QTYzUlpzN243OWlzZF9yOHBuT05Lc245TDZLTm9B0gGyAUFVX3lxTE5fb0pKelNDU1FKZno3TkV4R0dFN1Fmc2l2UDZ6Y2Q4a1liRnNKNnFfM0R4X1RxcWw3VXZWYlBwTDFzOUZ2VzQtbUFod2FZR2FaRnNSc0JiWERFQlRkUHE4dkVBaklXVXVMVE9sb2IwLXd3dS1xUUYweW1CN1VodXVPQXluellnM0VrVjh6SEhHT0RFUUNpS01fT0xObFhtTl9GWm5aNDRFNE4tbWM0NFF0SXc?oc=5",
       "imagen": "",
       "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxOVkhMclZNbXRwUFVia25GTW92bFZKZDhrTGhMR1ZvbjBXZXgtVGI3OTFwa083V0ZEbm5ScDZVV3VTM3VfYUt6TDQ3bGNPc01fZVJSZVdPOVhGRmhvX096eERJYnptSlUtMjdSU1ZPWEYxdTVpNWVYZ2VQVWxzZG9NelE4MF93QVE3eEh1dEhEMEwtdHE4QTYzUlpzN243OWlzZF9yOHBuT05Lc245TDZLTm9B0gGyAUFVX3lxTE5fb0pKelNDU1FKZno3TkV4R0dFN1Fmc2l2UDZ6Y2Q4a1liRnNKNnFfM0R4X1RxcWw3VXZWYlBwTDFzOUZ2VzQtbUFod2FZR2FaRnNSc0JiWERFQlRkUHE4dkVBaklXVXVMVE9sb2IwLXd3dS1xUUYweW1CN1VodXVPQXluellnM0VrVjh6SEhHT0RFUUNpS01fT0xObFhtTl9GWm5aNDRFNE4tbWM0NFF0SXc?oc=5\" target=\"_blank\">Canelo Álvarez se la juega y peleará en Arabia Saudí pese a los bombardeos: \"No le teme a nada\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-12T10:18:56+00:00"
+    },
+    {
+      "titulo": "Canelo Álvarez se la juega y peleará en Arabia Saudí pese a los bombardeos: \"No le teme a nada\" - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX29KSnpTQ1NRSmZ6N05FeEdHRTdRZnNpdlA2emNkOGtZYkZzSjZxXzNEeF9UcXFsN1V2VmJQcEwxczlGdlc0LW1BaHdhWUdhWkZzUnNCYlhERUJUZFBxOHZFQWpJV1V1TFRPbG9iMC13d3UtcVFGMHltQjdVaHV1T0F5bnpZZzNFa1Y4ekhIR09ERVFDaUtNX09MTmxYbU5fRlpuWjQ0RTROLW1jNDRRdEl30gGyAUFVX3lxTE5fb0pKelNDU1FKZno3TkV4R0dFN1Fmc2l2UDZ6Y2Q4a1liRnNKNnFfM0R4X1RxcWw3VXZWYlBwTDFzOUZ2VzQtbUFod2FZR2FaRnNSc0JiWERFQlRkUHE4dkVBaklXVXVMVE9sb2IwLXd3dS1xUUYweW1CN1VodXVPQXluellnM0VrVjh6SEhHT0RFUUNpS01fT0xObFhtTl9GWm5aNDRFNE4tbWM0NFF0SXc?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxOX29KSnpTQ1NRSmZ6N05FeEdHRTdRZnNpdlA2emNkOGtZYkZzSjZxXzNEeF9UcXFsN1V2VmJQcEwxczlGdlc0LW1BaHdhWUdhWkZzUnNCYlhERUJUZFBxOHZFQWpJV1V1TFRPbG9iMC13d3UtcVFGMHltQjdVaHV1T0F5bnpZZzNFa1Y4ekhIR09ERVFDaUtNX09MTmxYbU5fRlpuWjQ0RTROLW1jNDRRdEl30gGyAUFVX3lxTE5fb0pKelNDU1FKZno3TkV4R0dFN1Fmc2l2UDZ6Y2Q4a1liRnNKNnFfM0R4X1RxcWw3VXZWYlBwTDFzOUZ2VzQtbUFod2FZR2FaRnNSc0JiWERFQlRkUHE4dkVBaklXVXVMVE9sb2IwLXd3dS1xUUYweW1CN1VodXVPQXluellnM0VrVjh6SEhHT0RFUUNpS01fT0xObFhtTl9GWm5aNDRFNE4tbWM0NFF0SXc?oc=5\" target=\"_blank\">Canelo Álvarez se la juega y peleará en Arabia Saudí pese a los bombardeos: \"No le teme a nada\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
       "fuente": "Boxeo",
       "categoria": "Deportes",
       "subcategoria": "boxeo",
@@ -11955,56 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-06T19:41:15+00:00"
-    },
-    {
-      "titulo": "Boxeadores mexicanos en EE.UU.: las peleas de octubre 2026 antes de Canelo - Claro Sports",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcDdTZksxR3hUaVdpb25EYUVXN1Y1MXBBRDkyR016ZlRzaVp0S2FaU2pLX2hyUElLc2xrMkM0TzF4TnhfLXJEcEJzdldmUktyaFZqVDdxUGw2elYxa0NQeEdyYkxpUHczazE3MU1lSGo0WjZ1U1I4WE8zOFNPcWhSbnFOZzZNVlkwcWFmNzNzYlNWWUxaMnpoMWwwX0QtbWl5MVB2ZzBNbw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxOcDdTZksxR3hUaVdpb25EYUVXN1Y1MXBBRDkyR016ZlRzaVp0S2FaU2pLX2hyUElLc2xrMkM0TzF4TnhfLXJEcEJzdldmUktyaFZqVDdxUGw2elYxa0NQeEdyYkxpUHczazE3MU1lSGo0WjZ1U1I4WE8zOFNPcWhSbnFOZzZNVlkwcWFmNzNzYlNWWUxaMnpoMWwwX0QtbWl5MVB2ZzBNbw?oc=5\" target=\"_blank\">Boxeadores mexicanos en EE.UU.: las peleas de octubre 2026 antes de Canelo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Claro Sports</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-06T19:35:25+00:00"
-    },
-    {
-      "titulo": "Bienvenida con “palomazo” incluido tuvo en Los Mochis Luis Gastélum tras año de debut en MLB - Linea Directa",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNXpZNmlZNjR4VzdVMDgxU3NvSzZvMC1sWEVBREJkTFptaTYxTzg0LTdiT2V3NDk2ZTU3VVV4aER6QVEtZlU5X1Zfa3hWa1p5LThRTnFSQVF5X1ctNDlyeGZBc2NsZTk0TG1Dd3hHQnRySHZ1SHpoRlhrcHR3djdHUWgyQjNaWWVxT2FqcnFwMjZvU1FqWTlPYTlqdGVHeHVoNGR5cHBEZlJaYVBZcngxRklNei1VdnNURFhmbkhCWi1DSC1MZVlMNDVyVzBDLXZ2RV9kRDFvdjRTZlRGbnF4X01CY20?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNXpZNmlZNjR4VzdVMDgxU3NvSzZvMC1sWEVBREJkTFptaTYxTzg0LTdiT2V3NDk2ZTU3VVV4aER6QVEtZlU5X1Zfa3hWa1p5LThRTnFSQVF5X1ctNDlyeGZBc2NsZTk0TG1Dd3hHQnRySHZ1SHpoRlhrcHR3djdHUWgyQjNaWWVxT2FqcnFwMjZvU1FqWTlPYTlqdGVHeHVoNGR5cHBEZlJaYVBZcngxRklNei1VdnNURFhmbkhCWi1DSC1MZVlMNDVyVzBDLXZ2RV9kRDFvdjRTZlRGbnF4X01CY20?oc=5\" target=\"_blank\">Bienvenida con “palomazo” incluido tuvo en Los Mochis Luis Gastélum tras año de debut en MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Linea Directa</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-06T19:30:18+00:00"
-    },
-    {
-      "titulo": "Primark llega a México y su modelo de tiendas será distinto al de Zara y H&M",
-      "url": "https://expansion.mx/empresas/2026/10/06/diferencia-tiendas-primark-zara-hm-mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/22e25ab/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff0%2Ff9%2Fa642cf50490394685a20d07818a4%2Fimage-20260927-154932-solo-haz-la-bolsa-de-primark-en-cafe-con-sus-letra.jpg",
-      "descripcion": "La llegada de Primark amplía la competencia en moda accesible, aunque su modelo de negocio será distinto al de Zara y H&amp;M en México.",
-      "fuente": "Elizabeth Santiago",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-06T19:25:12+00:00"
-    },
-    {
-      "titulo": "Dodgers vs Braves EN VIVO: A qué hora y dónde VER Juego 3 de la Serie Divisional de la MLB 2026 HOY - Milenio",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNM1duakl2a3ZfdXBpS3NUX3pfMkJxc0R6bnhoSTZOZjJkeTBYbUFkbGhzdjF6WmZlNWFtSXMzRUswZHpYaC01aUNNNjZvaVpNRFlfc3VGSDdfaTN4TmtkdzI3UDN5ZXpPV0QtMlZGYlZiLUtPNkFnRWN4OHhuajh5SG5fQW1LZGVXMGFsLXNuNENhRU9CMU5RWWJZV1F5NXh0QzYwbFBYakNldVM20gGsAUFVX3lxTE12TU9PZkJiR21mOWoyS3RKbUNLSGJpeXVPVy1qdUtkaU42d0ZRcFY1Nlpmemp2cTVlV0k1U0UtRkQyTThtN08teTdNZ2FWVVFIWWpVcTA0WGVjekVDTkVzOXZwX3Bzbzg1N05taVF6V3VKLXJ3aHQ2cWZTN2x5clNPYXBrQmx3UmJNWHdTLTNuazlmYkVha21RNUpPTVZYMUFEYW9EZlVzWGtOTlA?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxNM1duakl2a3ZfdXBpS3NUX3pfMkJxc0R6bnhoSTZOZjJkeTBYbUFkbGhzdjF6WmZlNWFtSXMzRUswZHpYaC01aUNNNjZvaVpNRFlfc3VGSDdfaTN4TmtkdzI3UDN5ZXpPV0QtMlZGYlZiLUtPNkFnRWN4OHhuajh5SG5fQW1LZGVXMGFsLXNuNENhRU9CMU5RWWJZV1F5NXh0QzYwbFBYakNldVM20gGsAUFVX3lxTE12TU9PZkJiR21mOWoyS3RKbUNLSGJpeXVPVy1qdUtkaU42d0ZRcFY1Nlpmemp2cTVlV0k1U0UtRkQyTThtN08teTdNZ2FWVVFIWWpVcTA0WGVjekVDTkVzOXZwX3Bzbzg1N05taVF6V3VKLXJ3aHQ2cWZTN2x5clNPYXBrQmx3UmJNWHdTLTNuazlmYkVha21RNUpPTVZYMUFEYW9EZlVzWGtOTlA?oc=5\" target=\"_blank\">Dodgers vs Braves EN VIVO: A qué hora y dónde VER Juego 3 de la Serie Divisional de la MLB 2026 HOY</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Milenio</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-06T19:20:00+00:00"
-    },
-    {
-      "titulo": "El nuevo hombre fuerte de Televisa supera a Azcárraga y entra al top 100 de los empresarios más importantes",
-      "url": "https://expansion.mx/empresas/2026/10/06/alfonso-de-angoitia-supera-a-emilio-azcarraga-en-ranking",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/064ab63/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4b%2Fd3%2F2ab275654ed3acc58c49e207b7a3%2Falfonso-de-angoitia-emilio-azcarraga-televisa.jpg",
-      "descripcion": "De Angoitia llegó a Televisa desde el mundo del derecho y, casi tres décadas después, se ha convertido en una de las figuras centrales del grupo.",
-      "fuente": "Roberto Trejo",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-06T19:15:27+00:00"
     }
   ]
 }
