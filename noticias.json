@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-14T04:28:58.058175+00:00",
+  "actualizado": "2026-10-14T05:03:52.903004+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 99,
-    "sin_imagen": 1101
+    "con_imagen": 100,
+    "sin_imagen": 1100
   },
   "noticias": [
+    {
+      "titulo": "Cámara de Diputados avala reforma a Ley de ISR que limita deducciones a las empresas",
+      "url": "https://expansion.mx/economia/2026/10/13/diputados-aprueba-reforma-ley-isr-deducciones-empresas",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5b1d1c1/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F8d%2Fc5%2Fdf9b18b143429bcd0ffaf3e464e8%2F3-diputados-1103326-sesion-ordinaria-camara-de-diputados-web.jpeg",
+      "descripcion": "El pleno aprobó, en lo general, el dictamen que también amplía los umbrales para inscribirse al RESICO.",
+      "fuente": "Dainzú Patiño",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-14T04:38:22+00:00"
+    },
     {
       "titulo": "Lejos del boxeo: Emily Cinnamon busca el éxito al estilo de su padre Canelo Álvarez en otro deporte olímpico - El Heraldo de México",
       "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxORFJLUUtMNm9PdVhEWm1vMGJHZ3BOdW15VVlwSG1aZm9JWTMwQnE4QXdreVh3aExYNF82ZUtYZy1TbUVWN3drZUdQaVVRdm11MUlwa3hiOGN1ZjRnNzhMeEZFR1ZTcHJFRWluSWUyYkhSMTdvZGd5cEF3UEhpZWlXenVscUIyQ1lpVXFLLThhTy1oRlFmTzBIOTZ5dzVXRkxGelBoRjZaNzY2bkhTQmNJRWlrYWdMWDRJdzFseVpHT3ZYckExOENRaUNna2tFdzQtYWJwbmlWUzhHNEloWDFMenVPN1Z5RjMwODFDdm5Pa25peDJNWmhGZGU3cVRXdnM?oc=5",
@@ -15,6 +25,16 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-10-14T03:59:00+00:00"
+    },
+    {
+      "titulo": "MLB: Shohei Ohtani estará con Dodgers en el Juego 3 de la NLCS - Debate",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPT0FVSU1OSmZSUHhJUzZ0ckkzdkRGTGFwaFNEN3BiUHM5eEdELUI1QnVZQWdfdnllNjVwSmZYekN1dTdxZlJQWElPekNvWTR5UTR6MExmZzlsVG9pZ2VnZnpNMXNkWXZWTlZXWFM4aXpUa0o0WUFhSC1QSnlSWEhvVkFEenNuZ3JKV2tFRGdIX1l0V3pYRHJYRHBmN2lsWHBGMHZCSFR0cEI3cUVYUVNlS0FueVY?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPT0FVSU1OSmZSUHhJUzZ0ckkzdkRGTGFwaFNEN3BiUHM5eEdELUI1QnVZQWdfdnllNjVwSmZYekN1dTdxZlJQWElPekNvWTR5UTR6MExmZzlsVG9pZ2VnZnpNMXNkWXZWTlZXWFM4aXpUa0o0WUFhSC1QSnlSWEhvVkFEenNuZ3JKV2tFRGdIX1l0V3pYRHJYRHBmN2lsWHBGMHZCSFR0cEI3cUVYUVNlS0FueVY?oc=5\" target=\"_blank\">MLB: Shohei Ohtani estará con Dodgers en el Juego 3 de la NLCS</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Debate</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-14T03:56:44+00:00"
     },
     {
       "titulo": "'Totalmente irresponsable': Mauricio Sulaiman se pronuncia sobre pelea de Canelo Álvarez en Riad - Mediotiempo",
@@ -55,6 +75,16 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-10-14T03:26:00+00:00"
+    },
+    {
+      "titulo": "Champions League: ¡Duelo de mexicanos! Fidalgo vs Santiago Giménez en J2, ¿quién llega mejor? - Al Bat",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPd191OUpkYzZzbk5rSzZVaE5JTkJIbFNDWTRxSUNWejl1TzViam9tNXlHT0QxZXlZTFo1NDkySWRIVGM5NUluLUVtWWFxV2NsMVRQNHduQUZIN2hQbGxoamNHMDM2LWtFbTNuZGhKdUtJQm5VeE8tdXZxNHFlTVhpMWNhS0JWeHhsTDIxRjFzV0RNS0dBWl9rWE5LSlZfMGNkd0tHdl95QUE1clZ1MjFTX3JsTVNvMXJEM0x4UGdRbUw0ZVZJb19hLVFjRjZaOGFtNmJv0gHYAUFVX3lxTE02dWFyZTBhclRNZFZSeU82NDFCcnZJRldBSkFHMjFHN3ZscGR2UTc1aktLQXpkNFBfWkJqTl9UMjgwT21GM25lWDJDZkJfU09DRktSemhlazlJaHBGNVZiYXVNcURvVU1WU3R3RzdkOS12OW1GbkxVLWhlZldxVmdhZjNLZ3lnNWJWLWV3UVhIa25NMEFKVnIyd1BYaElTSUFwcWJOTE14LXl5S1FlcUM2aTVBTlRMZ1JEVE9zdm93bzdpb0o2Q0w1RWlsWUV2Vk9JNDl2b0N3cQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxPd191OUpkYzZzbk5rSzZVaE5JTkJIbFNDWTRxSUNWejl1TzViam9tNXlHT0QxZXlZTFo1NDkySWRIVGM5NUluLUVtWWFxV2NsMVRQNHduQUZIN2hQbGxoamNHMDM2LWtFbTNuZGhKdUtJQm5VeE8tdXZxNHFlTVhpMWNhS0JWeHhsTDIxRjFzV0RNS0dBWl9rWE5LSlZfMGNkd0tHdl95QUE1clZ1MjFTX3JsTVNvMXJEM0x4UGdRbUw0ZVZJb19hLVFjRjZaOGFtNmJv0gHYAUFVX3lxTE02dWFyZTBhclRNZFZSeU82NDFCcnZJRldBSkFHMjFHN3ZscGR2UTc1aktLQXpkNFBfWkJqTl9UMjgwT21GM25lWDJDZkJfU09DRktSemhlazlJaHBGNVZiYXVNcURvVU1WU3R3RzdkOS12OW1GbkxVLWhlZldxVmdhZjNLZ3lnNWJWLWV3UVhIa25NMEFKVnIyd1BYaElTSUFwcWJOTE14LXl5S1FlcUM2aTVBTlRMZ1JEVE9zdm93bzdpb0o2Q0w1RWlsWUV2Vk9JNDl2b0N3cQ?oc=5\" target=\"_blank\">Champions League: ¡Duelo de mexicanos! Fidalgo vs Santiago Giménez en J2, ¿quién llega mejor?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Al Bat</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-14T03:17:00+00:00"
     },
     {
       "titulo": "MLB: Rays doman a Guardians y emparejan la Serie de Campeonato de la Liga Americana - Debate",
@@ -705,6 +735,16 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-10-13T21:14:50+00:00"
+    },
+    {
+      "titulo": "Atlético de Madrid vs. Manchester United - Game Highlights - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNV29YaS1EdUptSW1VMURiRUE4YkVtanZWSTVESnlCNGlBRnpJZ2VlZG81OTFiRGpkMUplaExmMGltTFJvdThSbDVpVHdzR2w5a0lPOVF6VWFMU2ptSjVfV2Q1aUVvQThiZ1lPa0tFamVxWlhNOTRrZl95eDc3WnZ6bWdzb3VXOE5lenRPa0h5djVpeXloX1M3MDE2MFF3OVpiTDRCSnZXVWRhY3J4T0x0ag?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNV29YaS1EdUptSW1VMURiRUE4YkVtanZWSTVESnlCNGlBRnpJZ2VlZG81OTFiRGpkMUplaExmMGltTFJvdThSbDVpVHdzR2w5a0lPOVF6VWFMU2ptSjVfV2Q1aUVvQThiZ1lPa0tFamVxWlhNOTRrZl95eDc3WnZ6bWdzb3VXOE5lenRPa0h5djVpeXloX1M3MDE2MFF3OVpiTDRCSnZXVWRhY3J4T0x0ag?oc=5\" target=\"_blank\">Atlético de Madrid vs. Manchester United - Game Highlights</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-13T21:14:30+00:00"
     },
     {
       "titulo": "Resumen | Leipzig vs. PSV: Triunfo sufrido y apretado de los locales - TUDN",
@@ -11965,46 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-08T02:40:00+00:00"
-    },
-    {
-      "titulo": "Se cae llegada de Dani Carvajal al Getafe; negociación se complica - Plano Informativo",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVEtxWWdfRTZFRFBiUTVnUmllTHFwVUk4N2Vrc2lCSkNPWDRxUXdCemd1LUR5X1VEdno0bUQwVHRDbmt5Ti16S0l3LVlsT1NoRGR6d0dVT0NFaVBiX0xNbGh4YVpvRm55Ump5dzIzZ1NiT1V0RG9fYkNQSW1abXRrdlNkdEJlTEYzZ1lDb0dwNkI3Vmp2c29kM09icEEtTnByZllSdVVUMkJ6eWppZnhsODZVWVNUOFE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxNVEtxWWdfRTZFRFBiUTVnUmllTHFwVUk4N2Vrc2lCSkNPWDRxUXdCemd1LUR5X1VEdno0bUQwVHRDbmt5Ti16S0l3LVlsT1NoRGR6d0dVT0NFaVBiX0xNbGh4YVpvRm55Ump5dzIzZ1NiT1V0RG9fYkNQSW1abXRrdlNkdEJlTEYzZ1lDb0dwNkI3Vmp2c29kM09icEEtTnByZllSdVVUMkJ6eWppZnhsODZVWVNUOFE?oc=5\" target=\"_blank\">Se cae llegada de Dani Carvajal al Getafe; negociación se complica</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Plano Informativo</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-08T02:02:22+00:00"
-    },
-    {
-      "titulo": "Dodgers elimina a Braves y está en Serie de Campeonato de la LN - ESPN Deportes",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMi11dHl2b3Nkdld0SEdzNkhrZ2R4cENjckdISVpmQTVBdGp4QnFTQVRSdXZtenJrV2s4d3FvaVpBRTFEUGN1cThud3A3eWE2bVhnMFVzRFF1a3R0TFJjMG56N1ZjUmVnb2tCSW5OcnAxR3diaC1lVHJYbVZIWlZGc0xOYV9lVkwyOWl5eVBTRTJkRUtQa3hEcTVrYklYVXlZWnh6NXBOaTlpcUFCcmpjUUFjZUV3aEtfWDRYYldBTHY?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMi11dHl2b3Nkdld0SEdzNkhrZ2R4cENjckdISVpmQTVBdGp4QnFTQVRSdXZtenJrV2s4d3FvaVpBRTFEUGN1cThud3A3eWE2bVhnMFVzRFF1a3R0TFJjMG56N1ZjUmVnb2tCSW5OcnAxR3diaC1lVHJYbVZIWlZGc0xOYV9lVkwyOWl5eVBTRTJkRUtQa3hEcTVrYklYVXlZWnh6NXBOaTlpcUFCcmpjUUFjZUV3aEtfWDRYYldBTHY?oc=5\" target=\"_blank\">Dodgers elimina a Braves y está en Serie de Campeonato de la LN</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-08T02:00:00+00:00"
-    },
-    {
-      "titulo": "Padres vs. Brewers EN VIVO: ¿A qué hora y dónde ver Juego 4 HOY Serie Divisional MLB 2026? - Mediotiempo",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaTFyc3JMVXBCLXo4cVBhaHFKY2xZR2pBNUpvaUR1TTNEQUZBQkZHN1UtMEtBWWlhOVNKTTE4VkY0ZmxUVGlXNWJ0aVhrNkozMlRSVy1qREltbURIWlJYM2RXRWNQVXJxUHpvUFBQUzdyTFRQOWVMcUIyWkg1OFQzNXU1d0UtVm1ZTTI1cTRVbnRLSjRlV3lXQXhMUnVlTFdHajJLRFBSOWNYd0dBQ3VVczlndGNjRTlIazBxYkVOcmwydw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaTFyc3JMVXBCLXo4cVBhaHFKY2xZR2pBNUpvaUR1TTNEQUZBQkZHN1UtMEtBWWlhOVNKTTE4VkY0ZmxUVGlXNWJ0aVhrNkozMlRSVy1qREltbURIWlJYM2RXRWNQVXJxUHpvUFBQUzdyTFRQOWVMcUIyWkg1OFQzNXU1d0UtVm1ZTTI1cTRVbnRLSjRlV3lXQXhMUnVlTFdHajJLRFBSOWNYd0dBQ3VVczlndGNjRTlIazBxYkVOcmwydw?oc=5\" target=\"_blank\">Padres vs. Brewers EN VIVO: ¿A qué hora y dónde ver Juego 4 HOY Serie Divisional MLB 2026?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-08T01:59:00+00:00"
-    },
-    {
-      "titulo": "Checo Pérez y Cadillac enfrentarán un cambio histórico en el GP de Singapur - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdGdqX2hmcFBRaHhIcTFoSlNrbDJCaFVDeDlpaXcyZ0R0eExqRkU3QXNjeFVxcUxXS0h4dkk5Tk54T0hJU3hodElqTHhTMXJHdHBOenRrcV9GcEtZSnkwUkZ2UTNtYmZQNUFvR0VLSDJxdHhtUjIwVTR0XzhmTTVyQmN2Y0dybFJqQjVHaVNIUjZTckJKdURVV0lHR1VmdGNqUWpEbjY1WWZ2SEU1WVNNS3R2T2pBVDEtR3fSAboBQVVfeXFMUHRnal9oZnBQUWh4SHExaEpTa2wyQmhVQ3g5aWl3MmdEdHhMakZFN0FzY3hVcXFMV0tIeHZJOU5OeE9ISVN4aHRJakx4UzFyR3RwTnp0a3FfRnBLWUp5MFJGdlEzbWJmUDVBb0dFS0gycXR4bVIyMFU0dF84Zk01ckJjdmNHcmxSakI1R2lTSFI2U3JCSnVEVVdJR0dVZnRjalFqRG42NVlmdkhFNVlTTUt0dk9qQVQxLUd3?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQdGdqX2hmcFBRaHhIcTFoSlNrbDJCaFVDeDlpaXcyZ0R0eExqRkU3QXNjeFVxcUxXS0h4dkk5Tk54T0hJU3hodElqTHhTMXJHdHBOenRrcV9GcEtZSnkwUkZ2UTNtYmZQNUFvR0VLSDJxdHhtUjIwVTR0XzhmTTVyQmN2Y0dybFJqQjVHaVNIUjZTckJKdURVV0lHR1VmdGNqUWpEbjY1WWZ2SEU1WVNNS3R2T2pBVDEtR3fSAboBQVVfeXFMUHRnal9oZnBQUWh4SHExaEpTa2wyQmhVQ3g5aWl3MmdEdHhMakZFN0FzY3hVcXFMV0tIeHZJOU5OeE9ISVN4aHRJakx4UzFyR3RwTnp0a3FfRnBLWUp5MFJGdlEzbWJmUDVBb0dFS0gycXR4bVIyMFU0dF84Zk01ckJjdmNHcmxSakI1R2lTSFI2U3JCSnVEVVdJR0dVZnRjalFqRG42NVlmdkhFNVlTTUt0dk9qQVQxLUd3?oc=5\" target=\"_blank\">Checo Pérez y Cadillac enfrentarán un cambio histórico en el GP de Singapur</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-08T01:49:00+00:00"
     }
   ]
 }
