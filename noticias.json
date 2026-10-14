@@ -1,11 +1,41 @@
 {
-  "actualizado": "2026-10-14T18:03:36.267433+00:00",
+  "actualizado": "2026-10-14T18:42:40.419156+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 99,
-    "sin_imagen": 1101
+    "con_imagen": 100,
+    "sin_imagen": 1100
   },
   "noticias": [
+    {
+      "titulo": "Grupo BAL y UNAM lanzan beca de 12,000 pesos para futuros ingenieros: qué carreras entran",
+      "url": "https://expansion.mx/carrera/2026/10/14/grupo-bal-unam-beca-12-000-pesos-ingenieros-carreras",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5669cae/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb8%2F51%2Fa6ba8ae14910a253eb2e146204a5%2Fdiseno-sin-titulo.png",
+      "descripcion": "La convocatoria contempla a estudiantes de primer semestre y de otros grados, siempre que cursen alguna de las carreras participantes y cumplan con las condiciones.",
+      "fuente": "Elizabeth Santiago",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-14T18:30:50+00:00"
+    },
+    {
+      "titulo": "Roma vs Real Madrid: hora en México y dónde ver el partido de Champions - La Verdad Noticias",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYVUzSjZfRUVkUGlqdHNVQ3FIRlFkQnB1V3N0WElJUXZVYjBweTlnTW5ULUZORVFGM2JMU0hrZGR5ZnN5YVVlTUpjMGlnZU9kQ29SSC1zbTNBSkF3YW1yN0Zyel9ZRnYzRUdhdkJlbU9JNXV2VnFJZjZYVVQ3YlVNQ2p30gGKAUFVX3lxTE1NWjk1T183Q3VVS3ZTOUgxSjU1T0gyR28wTUdMRGFmUjJWTmFPSXBZYVU4SU9ieTdiVnFpbXVBY0J2R0dVY0lqMmtIZ0trYlJiTWt5em9qMzlLcHdtb3VGb1VIN1k4R0RTTUExMk5XZElva3lSdlhqbGxjYTJqSTZjeEpmYTJVanloZw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxOYVUzSjZfRUVkUGlqdHNVQ3FIRlFkQnB1V3N0WElJUXZVYjBweTlnTW5ULUZORVFGM2JMU0hrZGR5ZnN5YVVlTUpjMGlnZU9kQ29SSC1zbTNBSkF3YW1yN0Zyel9ZRnYzRUdhdkJlbU9JNXV2VnFJZjZYVVQ3YlVNQ2p30gGKAUFVX3lxTE1NWjk1T183Q3VVS3ZTOUgxSjU1T0gyR28wTUdMRGFmUjJWTmFPSXBZYVU4SU9ieTdiVnFpbXVBY0J2R0dVY0lqMmtIZ0trYlJiTWt5em9qMzlLcHdtb3VGb1VIN1k4R0RTTUExMk5XZElva3lSdlhqbGxjYTJqSTZjeEpmYTJVanloZw?oc=5\" target=\"_blank\">Roma vs Real Madrid: hora en México y dónde ver el partido de Champions</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Verdad Noticias</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-14T18:25:02+00:00"
+    },
+    {
+      "titulo": "Dodgers vs. Brewers EN VIVO: ¿A qué hora y dónde ver Juego 3 HOY Serie de Campeonato MLB 2026? - Mediotiempo",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNb0NNaGZ0UHhnSjR2c0s1OVR6SU80a01IdnNVWF9ZVGxtVEVuTXpZb2FGaE96cWt3RVlXNEJKMmZlX1JzVHlvQ0xUWmZpVHh0Z2xvWlMzTzRiWFlmc3BJZXFvZ3NEU25vQ1JWbzhYcjVFMTFIY3hNTXJJTWFEdmxTcDZkM2JwSDZsSGwwemctbUFUMEJwZFhCYmxPbkM2Sko2U2tQbDlIVUF0YTVDcVBRVVh6LUR6dVpfUGVqNmt3MDc4R0U0MEdr0gHHAUFVX3lxTE9TYU9RQWhhYjZpdTFYa1RNZGl2ZjlrUDY0YnJrb3Fud2V3WVBuVFdZb2hVRlB0Nm4ySTNvSnladV9BNmc2U3NIQmwxX2ZuOXBJQzFTUWR5Nk1xTHMwUVY4TUpNbVRRRWdFcFFSckNkRjk4Q2dhd3lWWjhpUXBBQVVUT2RIMU53blBEV2VkajBVbEQ2UWdSVXBhTndYcng1YUk1Rlh0RHB3Q29vV0gzMW9xNXhIUXlvVTZIdHkyS0x5a01NQ2pvX1U?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNb0NNaGZ0UHhnSjR2c0s1OVR6SU80a01IdnNVWF9ZVGxtVEVuTXpZb2FGaE96cWt3RVlXNEJKMmZlX1JzVHlvQ0xUWmZpVHh0Z2xvWlMzTzRiWFlmc3BJZXFvZ3NEU25vQ1JWbzhYcjVFMTFIY3hNTXJJTWFEdmxTcDZkM2JwSDZsSGwwemctbUFUMEJwZFhCYmxPbkM2Sko2U2tQbDlIVUF0YTVDcVBRVVh6LUR6dVpfUGVqNmt3MDc4R0U0MEdr0gHHAUFVX3lxTE9TYU9RQWhhYjZpdTFYa1RNZGl2ZjlrUDY0YnJrb3Fud2V3WVBuVFdZb2hVRlB0Nm4ySTNvSnladV9BNmc2U3NIQmwxX2ZuOXBJQzFTUWR5Nk1xTHMwUVY4TUpNbVRRRWdFcFFSckNkRjk4Q2dhd3lWWjhpUXBBQVVUT2RIMU53blBEV2VkajBVbEQ2UWdSVXBhTndYcng1YUk1Rlh0RHB3Q29vV0gzMW9xNXhIUXlvVTZIdHkyS0x5a01NQ2pvX1U?oc=5\" target=\"_blank\">Dodgers vs. Brewers EN VIVO: ¿A qué hora y dónde ver Juego 3 HOY Serie de Campeonato MLB 2026?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-14T18:06:00+00:00"
+    },
     {
       "titulo": "¿Quién es Milagros Martínez? La DT que pasó por la Liga Mx Femenil y busca ganarle a México en el Mundial Sub 17 - Infobae",
       "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQSkp2aHhEb3A3b282S2UyNmNUTWhvVk5iclRSWlNKQ2JRdkRYalhVejFERFZhN21Sc21HRjliV3BQNmZqYTFiZjJELXB2OG9pdGs1N3I3Z0hVMmNibUU4eXJkMmRsME5yaFRxNXZQQmFOVm5FcjdzMnlMdGw1TUgwejhpT2JUdmdVUEh1M0Y1N1ZJQks2eUVDcWRWUXZFU0V5cU0ycDBSNHI4MmVBU2x3aVR2ZGlnTU05bC1tYndHdUpxdjRENktTNlM0ZWNHOC1wVXp0VHNoWDFuYmVqcW11aTh1Mi1wOF93bGRHQ1ZZa1U3UnNC0gGPAkFVX3lxTFBRX2Z6UGpVVFp2THZGQ014LUwxcVRTSUx5cS1ibUx4VEYwZFpQSUNoaElfQnU0MVdmby1Lb3VzUFFEWGR3em9pZzNkTlFJOFMwNDNuemdxV0NJcWROd1dCc0xXSkZkMi1hSHJHRk1TY2hCRTRKMmFVR2tWMXVfdDR0bWVEZGFvNktpYVV6YU1lQl9laDh3T1pGZmNrbjVhREZBZjVUeURCTVp3ZWNDeFcxbWM2QlJoeVFTWWJkaW9IZE1qTHNnX3d3c1dhV3dpNWZyUXh4ek1xWVlFdWdWeldtbi1jUUQyYllxVU8ydWtkMUVLNFN5RnRwZThmdWFDZmJQSE1YcHVwNm0ydGpkZlk?oc=5",
@@ -25,6 +55,26 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-14T17:31:57+00:00"
+    },
+    {
+      "titulo": "¡De videojuego! Gol de Liverpool para el doblete de Bradley Barcola - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNekZXeFFiYlpkaWlEekxhSHZxd01VQ2hGTndPZWxuSG5Kekl5OTY2SVh3OWxhSURCUGJTbHBMc3pvRVJYX2ljTUZBbkdDRVF0ZlhwV1hLX3c5djFqNzNicl84RlJCeUROaUhuWkdhdm83NU55VDlrdWNONTBRNHpUUmtaaEV1ZHpETnNEU2VweFhSb2ctSWFfMHdWbTFzbDlJTm9wQ3E2Vy1TRVBFRWFDN3h2SUl5V25aeU1NaEtUdy16X2FmaUE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxNekZXeFFiYlpkaWlEekxhSHZxd01VQ2hGTndPZWxuSG5Kekl5OTY2SVh3OWxhSURCUGJTbHBMc3pvRVJYX2ljTUZBbkdDRVF0ZlhwV1hLX3c5djFqNzNicl84RlJCeUROaUhuWkdhdm83NU55VDlrdWNONTBRNHpUUmtaaEV1ZHpETnNEU2VweFhSb2ctSWFfMHdWbTFzbDlJTm9wQ3E2Vy1TRVBFRWFDN3h2SUl5V25aeU1NaEtUdy16X2FmaUE?oc=5\" target=\"_blank\">¡De videojuego! Gol de Liverpool para el doblete de Bradley Barcola</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-14T17:27:00+00:00"
+    },
+    {
+      "titulo": "¡¿Por qué no entra?! Falla espantosa de Ryan Gravenberch con poste incluido - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdWd6NklrbVJKaDB5eEJGWERjSGo1aUFrZ1E4LWZNb2YyRGoyVFdHYjZoeTZUblJHd2JiLVNFUzRLZkIxS0lTbTBYNkNXeWpMSmdhc1dwWl95OG5CNTBCY2RvSjl1VUl6VHlaWG5iaFoxeDc4WW9haldzR01yZWJkTWZYTXNpQklVem56MmlyZ1RQNlluQ2VGWkYwal9PVTZLcGdWeUNmQ0NRUnRlUnh1b0lFWC1MLVpJOTJNRl8tWGtaQVpkYlE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQdWd6NklrbVJKaDB5eEJGWERjSGo1aUFrZ1E4LWZNb2YyRGoyVFdHYjZoeTZUblJHd2JiLVNFUzRLZkIxS0lTbTBYNkNXeWpMSmdhc1dwWl95OG5CNTBCY2RvSjl1VUl6VHlaWG5iaFoxeDc4WW9haldzR01yZWJkTWZYTXNpQklVem56MmlyZ1RQNlluQ2VGWkYwal9PVTZLcGdWeUNmQ0NRUnRlUnh1b0lFWC1MLVpJOTJNRl8tWGtaQVpkYlE?oc=5\" target=\"_blank\">¡¿Por qué no entra?! Falla espantosa de Ryan Gravenberch con poste incluido</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-14T17:22:00+00:00"
     },
     {
       "titulo": "¡UN AUTÉNTICO GOLAZO! Gjivai Zechiël prende el balón desde fuera del área y empata el partido - TUDN",
@@ -155,6 +205,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-14T16:22:00+00:00"
+    },
+    {
+      "titulo": "Lisandro Martínez podría salir del United tras polémicas declaraciones - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQb2NGYk5hRlprVXVOSlZPMTB6aGlmcE5oTFFVb3JFRFhWWEQ2YVVTVHd0QXNDSFhOYjQxa3BpMU5xbW5pYjV6OG15WC1SWXVfSWh5Y21Id3h5OW1HNGlmcDY2a04wdFA4amU1V3dfWkR4aHU4Y2JDcjFaR251dldFdFMxeTZZWEVNM2g3RDQwUVZIZksxNkJ2VWdqOERZT005Mi0tUVl5dkc4M0dQclplWXFRSllnTzdyZlNUUUtZeXFTZWZVa19NZThNYzNtODNURXEw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxQb2NGYk5hRlprVXVOSlZPMTB6aGlmcE5oTFFVb3JFRFhWWEQ2YVVTVHd0QXNDSFhOYjQxa3BpMU5xbW5pYjV6OG15WC1SWXVfSWh5Y21Id3h5OW1HNGlmcDY2a04wdFA4amU1V3dfWkR4aHU4Y2JDcjFaR251dldFdFMxeTZZWEVNM2g3RDQwUVZIZksxNkJ2VWdqOERZT005Mi0tUVl5dkc4M0dQclplWXFRSllnTzdyZlNUUUtZeXFTZWZVa19NZThNYzNtODNURXEw?oc=5\" target=\"_blank\">Lisandro Martínez podría salir del United tras polémicas declaraciones</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-14T16:21:00+00:00"
     },
     {
       "titulo": "Manchester City vs PSG EN VIVO: A qué hora y dónde VER partido de Jornada 2 de Champions League 2026 - Milenio",
@@ -11945,66 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-08T14:45:00+00:00"
-    },
-    {
-      "titulo": "El Barça pide a la UEFA aplazar el partido ante el Arsenal por la huelga general - La Vanguardia",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTTgtNEFXcGdOWFV5c3RCWnFxNjAwRVpUYnRWVVgwMndGTlVTTzlwenFJU3hIY1Z1QklDcDE2ZWNORldKclAzcHRoOFBibWlHWHhBajRyWEIyQmNndXB0dnJYNEQwX0phcE93a0MtNFFMNnJtZEh6US11Wmxzd1VveUtxT2p6eHlmUi1MRXJQMzJ0d3VTS1Bhbm43cGoyRmk1LU1LMXFoOUQ3ZzJYYVM4aHNVQXo1c0E3NnJ3STNtVXfSAcYBQVVfeXFMTTBkNk9BOFUwQ1pGaW11SzRhczBhQVQ4RUNJRTQ2VlQydV9zVmkzeEIyUm5kWGhtNXlvd2RtWXVwUXR4UDcxUDQxWUZ6R0htekVTSDRWbUdlSXMxdjBHZkoxYVNwejJoUVhIM0tadjNLZ2xYclRXR2RhQXdHN25VSTRhaGhGSV82NWgwWGxNU3J3MHd2WGVvWEN3ekY0UHlNVVkzc01wZmdKcHR2S1gwbm5zZS1ISlBzWUo1S0lHaER4MVZQNUxB?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTTgtNEFXcGdOWFV5c3RCWnFxNjAwRVpUYnRWVVgwMndGTlVTTzlwenFJU3hIY1Z1QklDcDE2ZWNORldKclAzcHRoOFBibWlHWHhBajRyWEIyQmNndXB0dnJYNEQwX0phcE93a0MtNFFMNnJtZEh6US11Wmxzd1VveUtxT2p6eHlmUi1MRXJQMzJ0d3VTS1Bhbm43cGoyRmk1LU1LMXFoOUQ3ZzJYYVM4aHNVQXo1c0E3NnJ3STNtVXfSAcYBQVVfeXFMTTBkNk9BOFUwQ1pGaW11SzRhczBhQVQ4RUNJRTQ2VlQydV9zVmkzeEIyUm5kWGhtNXlvd2RtWXVwUXR4UDcxUDQxWUZ6R0htekVTSDRWbUdlSXMxdjBHZkoxYVNwejJoUVhIM0tadjNLZ2xYclRXR2RhQXdHN25VSTRhaGhGSV82NWgwWGxNU3J3MHd2WGVvWEN3ekY0UHlNVVkzc01wZmdKcHR2S1gwbm5zZS1ISlBzWUo1S0lHaER4MVZQNUxB?oc=5\" target=\"_blank\">El Barça pide a la UEFA aplazar el partido ante el Arsenal por la huelga general</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Vanguardia</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-08T14:42:41+00:00"
-    },
-    {
-      "titulo": "John Cena reacciona a la eliminación de los Yankees con foto de Mariano Rivera - RPCTV",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQclp2V1VGWlpHdEtjOGo2RFdhblFZSVBFMXRFUFQ4bXNndnhZWU1SQUt3SHhhbTBtRkxiWFdrUVJaZGY5Yl9WeEpmc19NdnRtdFJINFc1NXVzeTlCcWJmaW0zZDQxdkNhT3pKanZVbnhVWWRMRkhpMDREUjNuLThpaVJZekh2bU5RZVhlUTFYY3Q1NEhLVnN3TFhlcTBuc0VMMXRxYTVWeWxWUkpKYXfSAbMBQVVfeXFMTnhZT0YzR0c2UzdKWGMzOWJrdF9NMVlhLVVPYkZDaVFEUnhuYWhoMFBYTjRPZm1LMTJsNDk5c3dkQ1FySHhRSkhBdmVhcUdrQnVOLVR3dVlSc3B1aUlGalk2Q1RKb3dOQXplbjhVLUMwOURtcWk3RTk0TG4xNk5fUjRWYXhBREtlZVkzd3J5N2Q4VlZvcGJpNjlhbncxZE5aRkRES3ZUcVJQYUtOVmZpWXNQVmM?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxQclp2V1VGWlpHdEtjOGo2RFdhblFZSVBFMXRFUFQ4bXNndnhZWU1SQUt3SHhhbTBtRkxiWFdrUVJaZGY5Yl9WeEpmc19NdnRtdFJINFc1NXVzeTlCcWJmaW0zZDQxdkNhT3pKanZVbnhVWWRMRkhpMDREUjNuLThpaVJZekh2bU5RZVhlUTFYY3Q1NEhLVnN3TFhlcTBuc0VMMXRxYTVWeWxWUkpKYXfSAbMBQVVfeXFMTnhZT0YzR0c2UzdKWGMzOWJrdF9NMVlhLVVPYkZDaVFEUnhuYWhoMFBYTjRPZm1LMTJsNDk5c3dkQ1FySHhRSkhBdmVhcUdrQnVOLVR3dVlSc3B1aUlGalk2Q1RKb3dOQXplbjhVLUMwOURtcWk3RTk0TG4xNk5fUjRWYXhBREtlZVkzd3J5N2Q4VlZvcGJpNjlhbncxZE5aRkRES3ZUcVJQYUtOVmZpWXNQVmM?oc=5\" target=\"_blank\">John Cena reacciona a la eliminación de los Yankees con foto de Mariano Rivera</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">RPCTV</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-08T14:39:00+00:00"
-    },
-    {
-      "titulo": "Declan Rice seguirá en el Arsenal y ya negocia su nuevo contrato - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVDU1ay1XdVdoUkJhUGRSX1ROUDdEWnNJMkVTRTA3X1o5T0lIWlBzelV5MkJGTGNsU3VkX2tWMmdsaWZJV3pNOWZvMFFnLTFiRkNjakR1bk5oTTd3UTFuQUc0dHlYc3l4NWpTb1ZiX1VoZUkxUGlQbGtyNHI0Qm5YSnVKVDZocVhLWmdLM0FkV1R3enpTT0RyMjB1bWE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPVDU1ay1XdVdoUkJhUGRSX1ROUDdEWnNJMkVTRTA3X1o5T0lIWlBzelV5MkJGTGNsU3VkX2tWMmdsaWZJV3pNOWZvMFFnLTFiRkNjakR1bk5oTTd3UTFuQUc0dHlYc3l4NWpTb1ZiX1VoZUkxUGlQbGtyNHI0Qm5YSnVKVDZocVhLWmdLM0FkV1R3enpTT0RyMjB1bWE?oc=5\" target=\"_blank\">Declan Rice seguirá en el Arsenal y ya negocia su nuevo contrato</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-08T14:38:13+00:00"
-    },
-    {
-      "titulo": "Canelo Álvarez desafía al tiempo - NVI Noticias",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNT25zRUNzc2hZRlkzcUNhS2JsblZWWEN6Wko3YU1jTlc0ZWZkWjd0ZUlPbTY3d0pZNUlZdlEwZ1FBZTF1WW5yVktfVGtYQ0NoX1MxVVlDVS1mWjY5d20yTW80QWRmRG9vdHVSUm1BNEFxSkdxay1iejJFS0dfaE9Pbjd1MWJaWGx4ZEE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNT25zRUNzc2hZRlkzcUNhS2JsblZWWEN6Wko3YU1jTlc0ZWZkWjd0ZUlPbTY3d0pZNUlZdlEwZ1FBZTF1WW5yVktfVGtYQ0NoX1MxVVlDVS1mWjY5d20yTW80QWRmRG9vdHVSUm1BNEFxSkdxay1iejJFS0dfaE9Pbjd1MWJaWGx4ZEE?oc=5\" target=\"_blank\">Canelo Álvarez desafía al tiempo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">NVI Noticias</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-08T14:34:40+00:00"
-    },
-    {
-      "titulo": "¿Dónde ver EN VIVO el GP de Singapur 2026 de F1? Horarios y canales de transmisión - El Informador",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSVpqd1hPc1Z4OFNjUVFKMl9ZcDZ4aC1xT2ZGTTA5QzBocG5MdFlfb3BST3h6X1o2enhtWkJtU3ZwN1BlZEt0Q09tZmRzc2lsdTk0S20xaG5pR19vSEdLMThORk5uNG0ycjgxYVdSYU8tYzFmZl9xWnpXbGR4NEduSlJlNGxQUV9NVkI0THNxQlZKLVRjRVB6RFVRVjNoVEUxVWpjaTdEaWxVR2tIdmNvZ3Zxa3BqaHlIY0xzTzVTQlBGOHFfTFJoNXdQOTHSAdIBQVVfeXFMTXVwdFFzd1ExT1dNcVVHa05naFBkRmdkc2tKUHR0ajZmQm10SE5qNk4xOVhJQ1ZnNVlUMkFOSFA2Ulc2d1RNS0IzdlYzcmlfcjZ2UG5VWWZPcWtlSkVrWEQwczh0WS0yemt2WGpOdHpjVnFTTmRzeWRGWUc1VU1WNVNDZXNHZ2I4STQ0a0h4LW8xU0J3Q2JmYlJEOUhJTlpjcWZMNkV0YnQ3a0R0X1haYVdtZ1doNWp2Unp6anpGTkNDTWNEbUZUc1JsSTVMY052YWdB?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPSVpqd1hPc1Z4OFNjUVFKMl9ZcDZ4aC1xT2ZGTTA5QzBocG5MdFlfb3BST3h6X1o2enhtWkJtU3ZwN1BlZEt0Q09tZmRzc2lsdTk0S20xaG5pR19vSEdLMThORk5uNG0ycjgxYVdSYU8tYzFmZl9xWnpXbGR4NEduSlJlNGxQUV9NVkI0THNxQlZKLVRjRVB6RFVRVjNoVEUxVWpjaTdEaWxVR2tIdmNvZ3Zxa3BqaHlIY0xzTzVTQlBGOHFfTFJoNXdQOTHSAdIBQVVfeXFMTXVwdFFzd1ExT1dNcVVHa05naFBkRmdkc2tKUHR0ajZmQm10SE5qNk4xOVhJQ1ZnNVlUMkFOSFA2Ulc2d1RNS0IzdlYzcmlfcjZ2UG5VWWZPcWtlSkVrWEQwczh0WS0yemt2WGpOdHpjVnFTTmRzeWRGWUc1VU1WNVNDZXNHZ2I4STQ0a0h4LW8xU0J3Q2JmYlJEOUhJTlpjcWZMNkV0YnQ3a0R0X1haYVdtZ1doNWp2Unp6anpGTkNDTWNEbUZUc1JsSTVMY052YWdB?oc=5\" target=\"_blank\">¿Dónde ver EN VIVO el GP de Singapur 2026 de F1? Horarios y canales de transmisión</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Informador</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-08T14:33:46+00:00"
-    },
-    {
-      "titulo": "Canelo Álvarez alza la mano para inaugurar el nuevo Estadio del Atlas: \"Es lo que sueño\" - El Heraldo de México",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVTBGU0liRFpObkpOTGxtYkdTOTN6ZWdlTEd3aUxmdXNNWEQ0cUFjQ2NXSDU1T0JudlNUZi1kdGk4MlRWaW14a0hOX08xYWxiY0ZpTnV1LUY3MUNSRDZzeFhPeS1qaHNiUFBRVTA5czdKSnV5dFFmMU4zOFhueGJSWFA4eFhJeWtfdUZhdmdhYlM3Q0JSSzZLVk5HOXpqOVo3Wlh5YWtLeG40VUg2SVZHRktWWENlMmlMZVhyZlpweTVHUmE0dG9JbXZRN1dEWFlQNzdKZUxhYmNLbmJmTWtDLQ?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVTBGU0liRFpObkpOTGxtYkdTOTN6ZWdlTEd3aUxmdXNNWEQ0cUFjQ2NXSDU1T0JudlNUZi1kdGk4MlRWaW14a0hOX08xYWxiY0ZpTnV1LUY3MUNSRDZzeFhPeS1qaHNiUFBRVTA5czdKSnV5dFFmMU4zOFhueGJSWFA4eFhJeWtfdUZhdmdhYlM3Q0JSSzZLVk5HOXpqOVo3Wlh5YWtLeG40VUg2SVZHRktWWENlMmlMZVhyZlpweTVHUmE0dG9JbXZRN1dEWFlQNzdKZUxhYmNLbmJmTWtDLQ?oc=5\" target=\"_blank\">Canelo Álvarez alza la mano para inaugurar el nuevo Estadio del Atlas: \"Es lo que sueño\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Heraldo de México</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-08T14:27:00+00:00"
     }
   ]
 }
