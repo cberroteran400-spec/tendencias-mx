@@ -1,11 +1,81 @@
 {
-  "actualizado": "2026-10-15T11:04:19.774760+00:00",
+  "actualizado": "2026-10-15T12:02:41.584541+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 98,
-    "sin_imagen": 1102
+    "con_imagen": 104,
+    "sin_imagen": 1096
   },
   "noticias": [
+    {
+      "titulo": "Telepeaje: la infraestructura invisible que impulsa la competitividad de México",
+      "url": "https://expansion.mx/opinion/2026/10/15/telepeaje-la-infraestructura-invisible-que-impulsa-la-competitividad-de-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/53e8ddd/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fec%2F54%2F8e7f55554d81b9bae4345e29bc65%2Fque-es-el-tag-caseta.jpg",
+      "descripcion": "El sistema representa un ejemplo de cómo la infraestructura física y la infraestructura digital pueden integrarse para generar beneficios concretos para las personas, las empresas y el país.",
+      "fuente": "Rubén López",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T11:59:38+00:00"
+    },
+    {
+      "titulo": "La ética como punto de partida de la responsabilidad social empresarial",
+      "url": "https://expansion.mx/opinion/2026/10/15/la-etica-como-punto-de-partida-de-la-responsabilidad-social-empresarial",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/4bd0a96/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fmedia%2F2013%2F05%2F14%2Fetica.jpg",
+      "descripcion": "Esta conducta debe formar parte de la manera habitual de hacer negocios y de las operaciones diarias de las empresas, para que sea un criterio que oriente decisiones sencillas, complejas y estratégicas.",
+      "fuente": "Jorge Reyes iturbide",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T11:59:13+00:00"
+    },
+    {
+      "titulo": "Vietnam incursiona como proveedor de autos para México con el primer embarque de Hyundai Creta",
+      "url": "https://expansion.mx/empresas/2026/10/15/vietnam-incursiona-proveedor-autos-para-mexico-hyundai-creta",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/84b90a3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe4%2Fb2%2Ffc06702c43fe910b3c6af146ae5d%2Fhyundai-creta-vietnam.png",
+      "descripcion": "El país asiático se incorpora a la cadena de suministro de vehículos para México en momentos en que los aranceles llevan a las marcas importadoras a buscar nuevos orígenes de producción.",
+      "fuente": "Ivet Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T11:55:24+00:00"
+    },
+    {
+      "titulo": "Las criptomonedas disparan 52% los avisos antilavado ante la UIF",
+      "url": "https://expansion.mx/economia/2026/10/15/las-criptomonedas-disparan-52-los-avisos-antilavado-ante-la-uif",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/8f7c2b8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F2a%2F9c%2F0dbe6f184558b0245819247ba1c8%2F4-cripto-gettyimages-1016927608.jpeg",
+      "descripcion": "Entre enero y septiembre se registraron 1.2 millones de avisos por operaciones con activos virtuales, en parte por la reducción del umbral para reportarlas.",
+      "fuente": "Santiago Nolasco",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T11:55:04+00:00"
+    },
+    {
+      "titulo": "Quiere Canelo pelear en febrero - El Porvenir - Portada",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE54QUduRWc1Yi1lcnY4bDRhMDBOd0VjU0RHYkZjS2pyUDJJejlwX1VwOFRNZV9Od1M3QlYxX1IwVklkWDJJZktfSGtlMWxtdG9LcUFKWFhHV1d5R1hkZ1pIRS0wOXlMRl9MaXR6bXpfQ2dxNEI1WXZOTWNR?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE54QUduRWc1Yi1lcnY4bDRhMDBOd0VjU0RHYkZjS2pyUDJJejlwX1VwOFRNZV9Od1M3QlYxX1IwVklkWDJJZktfSGtlMWxtdG9LcUFKWFhHV1d5R1hkZ1pIRS0wOXlMRl9MaXR6bXpfQ2dxNEI1WXZOTWNR?oc=5\" target=\"_blank\">Quiere Canelo pelear en febrero</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Porvenir - Portada</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-15T11:04:00+00:00"
+    },
+    {
+      "titulo": "Convocatoria Mentoras Expansión 2027",
+      "url": "https://expansion.mx/carrera/2026/10/15/convocatoria-mentoras-expansion-2027",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/963a2a8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4a%2Ffe%2F76a823c84d08aad959961f38fcaf%2Fmentoras-convocatoria.png",
+      "descripcion": "Mentoras Expansión abre su tercera convocatoria para impulsar el desarrollo profesional de mujeres con potencial de liderazgo.",
+      "fuente": "Expansión",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T11:01:18+00:00"
+    },
+    {
+      "titulo": "Convocatoria Las 100 mujeres más poderosas de los negocios 2027",
+      "url": "https://expansion.mx/carrera/2026/10/15/convocatoria-100-mujeres-mas-poderosas-negocios-2027",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/27080b9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F73%2F7a%2F59ab9409498ba88e76d6c21cb5a0%2Fmujerespoderosas2027-convocatoria.png",
+      "descripcion": "Expansión convoca a todas las mujeres empresarias o en un puesto de alta dirección para participar en el ranking ‘Las 100 mujeres más poderosas de los negocios’.",
+      "fuente": "Expansión",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T11:01:09+00:00"
+    },
     {
       "titulo": "Pleno histórico del fútbol español y castigo a la Serie A en las notas de la Champions - MARCA",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSl9GQ0dSS0h5bF94bENWMncxUTYxUUw1aURWYVVQYzhlYXZxUlRCV2dfX25HZUxEVDVJZVFvbC1qb090VzZlWGpyUklPY0V4NjZtU2lnN2lONjRaaUp1dTRTek9tXy1hTjdTX0NoUjJ4dU1oRDVHU0ozRF82amNGa0VCVE1ibi1ZcXd1OGpzSWZhUDJNTlhtTDB6ZjVhTHA3SVNmcU40c9IBpwFBVV95cUxQRjNEcHY5emxmN3V3QTBNQXh1Yi1PbTVCUUxSU0xjSHhnYVhZNEVHbmMzVy1WLUhmV0xjb1ZPMllTdi1TZEdDQVF2ZDZPTlZMd2RqLWJTT2o5RFlVdFZzRWV1UHdFYUY1UWRsNjhyRGZrODRCcmhFaHF1N09FQV9aSUxLTndVQTRxemRrT1E2TmVrWHI1Y2tOckF4bTF3d29qRnBlOUlIMA?oc=5",
@@ -11935,76 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "formula1",
       "fecha": "2026-10-09T10:03:49+00:00"
-    },
-    {
-      "titulo": "Russell lidera la FP1 del GP de Singapur con Colapinto y Checo Pérez al fondo del clasificador - Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNLTE1WFpBbHVyZ2FjQi02TG9WYkZYOGFlM3J0em1RYUk5M3o2dWQ5Z3Zjbk9oTUtNemR0QTF2WlpMdjR3ZVJROWc4LU5SVG1PdUdsNnJGcWtlZGxMdkd0SXJMd1p0SEZsYkIzM09kLUtYNTh4dkNmdnFEOTJUYjU2SEJCbkFJNGt4bFVQcW1SaWFRNnV2SHFIbU1taFM?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNLTE1WFpBbHVyZ2FjQi02TG9WYkZYOGFlM3J0em1RYUk5M3o2dWQ5Z3Zjbk9oTUtNemR0QTF2WlpMdjR3ZVJROWc4LU5SVG1PdUdsNnJGcWtlZGxMdkd0SXJMd1p0SEZsYkIzM09kLUtYNTh4dkNmdnFEOTJUYjU2SEJCbkFJNGt4bFVQcW1SaWFRNnV2SHFIbU1taFM?oc=5\" target=\"_blank\">Russell lidera la FP1 del GP de Singapur con Colapinto y Checo Pérez al fondo del clasificador</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-09T09:58:13+00:00"
-    },
-    {
-      "titulo": "Quique Setién revela los secretos de su salida del Barça: \"He tenido jugadores de 80 millones que no entienden el fútbol\" - Cadena SER",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOODA3MlVpenVCb2VCa1l5NHZKU0FlU1k4ZmtnZjJmWVJuRHhmRjctcUUzak9mVTJVZ05NV1lZaFVBbWZUd0NQUF9kUUJwMEVkbEFNa09vQkozQ2NJWkgzeFd3RkREZTV1aWdqZnQ5a29XRVprUzV1SDBwRjN3eXpjQWdkZVd4NENCRjZBNG1JeFQzNXdQcEdFSXQ2RDlSNlJ5X2t2clZRZXdOdS1WRWpkMVFoRzM5djZlT080Vy0zWWRMeGdWclg3SS1aV29oRkZTRHdmY3Q0YzA2UFJ6MlRDZ2w1eGQ5OGdHWjltZENEUmEwWWtjSzN6cFN5RjluRUlOSlHSAZYCQVVfeXFMTVV5R09yQjV6akoyalJBQ19wSGdlME5jM0EwdHNHN28tRHpnQnB6cFFmM0JoU1NNX2ZadHVJSkpFZzlYR2o4ZmlGYzNCcGE0bWp5SWUyRE00VldtenF3S3JEQ3JzSXBOU3U5UjFIUl9Td2NWWlhWY0RHc3NhT1U4QnBXZFJ6bGtCSGgxWmVJVDlqS0JQd0tFTm9vaDdHS3BOcUJKdHJEMGRhRkRadXBaRUtmMFlwRkNiNkFJNWgwd19YNkc5dFRyM1lDYWlEVk9oSHM1Wk9fbnlNdkRFaWdmdHhUQXJhUFdJdWN0OXRWTmtSUFU5ai05UFMxa1g1ak5QcjNZbG1DTWhLSC1nYUFaNDNWQnNLTnc?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiggJBVV95cUxOODA3MlVpenVCb2VCa1l5NHZKU0FlU1k4ZmtnZjJmWVJuRHhmRjctcUUzak9mVTJVZ05NV1lZaFVBbWZUd0NQUF9kUUJwMEVkbEFNa09vQkozQ2NJWkgzeFd3RkREZTV1aWdqZnQ5a29XRVprUzV1SDBwRjN3eXpjQWdkZVd4NENCRjZBNG1JeFQzNXdQcEdFSXQ2RDlSNlJ5X2t2clZRZXdOdS1WRWpkMVFoRzM5djZlT080Vy0zWWRMeGdWclg3SS1aV29oRkZTRHdmY3Q0YzA2UFJ6MlRDZ2w1eGQ5OGdHWjltZENEUmEwWWtjSzN6cFN5RjluRUlOSlHSAZYCQVVfeXFMTVV5R09yQjV6akoyalJBQ19wSGdlME5jM0EwdHNHN28tRHpnQnB6cFFmM0JoU1NNX2ZadHVJSkpFZzlYR2o4ZmlGYzNCcGE0bWp5SWUyRE00VldtenF3S3JEQ3JzSXBOU3U5UjFIUl9Td2NWWlhWY0RHc3NhT1U4QnBXZFJ6bGtCSGgxWmVJVDlqS0JQd0tFTm9vaDdHS3BOcUJKdHJEMGRhRkRadXBaRUtmMFlwRkNiNkFJNWgwd19YNkc5dFRyM1lDYWlEVk9oSHM1Wk9fbnlNdkRFaWdmdHhUQXJhUFdJdWN0OXRWTmtSUFU5ai05UFMxa1g1ak5QcjNZbG1DTWhLSC1nYUFaNDNWQnNLTnc?oc=5\" target=\"_blank\">Quique Setién revela los secretos de su salida del Barça: \"He tenido jugadores de 80 millones que no entienden el fútbol\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Cadena SER</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T09:53:41+00:00"
-    },
-    {
-      "titulo": "La posible alineación titular del Manchester United para enfrentar al Tottenham - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZnJKbktZenNBcEJMODJVT052clMwVEhMQS0wYmljMXp5M29tYmJRTGRPRnNuQ3FqNm1IeFE4QjlyYnhxN2I4R1BjSFc2MkdqbmhyUkZnMElEMUNfWjAwOFJYakN3OHhHT1NmNkZjTVlEYWZhSmlIZTF5eGFTVnhtOGliWm4xRWlvbjh1TWxfWGFOWTFTbV9QOUEzaHpGNklfeWdpaEZsV29QNE52U2JrQ0VVUm5XbVlIR1F6TzVJYw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNZnJKbktZenNBcEJMODJVT052clMwVEhMQS0wYmljMXp5M29tYmJRTGRPRnNuQ3FqNm1IeFE4QjlyYnhxN2I4R1BjSFc2MkdqbmhyUkZnMElEMUNfWjAwOFJYakN3OHhHT1NmNkZjTVlEYWZhSmlIZTF5eGFTVnhtOGliWm4xRWlvbjh1TWxfWGFOWTFTbV9QOUEzaHpGNklfeWdpaEZsV29QNE52U2JrQ0VVUm5XbVlIR1F6TzVJYw?oc=5\" target=\"_blank\">La posible alineación titular del Manchester United para enfrentar al Tottenham</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T09:38:00+00:00"
-    },
-    {
-      "titulo": "¿Cómo le fue a Checo Pérez en práctica del GP de Singapur de F1? - ESPN Deportes",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZ3BSSG9VTjVxQUtNeWtiRkZSMG9BbndjTGMyZlFMdFIyXzAtczFaNGNwang5dXJ5b0Q5TlZzNFJxTzlycVR5NWZ2SnVJcnN2NHJqQXBicEpGZmNpV0thSE9PcUlJUmxNMnNLQVEzdE53TWVOQXBFMXp3dG52emUyRGV1aU5NMmc0bGtaRVVsVDBZY1ppaGRzbjVQWi12R0pHeWs0bVk1NFpDTHZraWZSakczVS0yVVU?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQZ3BSSG9VTjVxQUtNeWtiRkZSMG9BbndjTGMyZlFMdFIyXzAtczFaNGNwang5dXJ5b0Q5TlZzNFJxTzlycVR5NWZ2SnVJcnN2NHJqQXBicEpGZmNpV0thSE9PcUlJUmxNMnNLQVEzdE53TWVOQXBFMXp3dG52emUyRGV1aU5NMmc0bGtaRVVsVDBZY1ppaGRzbjVQWi12R0pHeWs0bVk1NFpDTHZraWZSakczVS0yVVU?oc=5\" target=\"_blank\">¿Cómo le fue a Checo Pérez en práctica del GP de Singapur de F1?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-09T09:33:00+00:00"
-    },
-    {
-      "titulo": "La posible alineación titular del Atlético de Madrid para enfrentar a Alavés - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdmVmckVWTngtQ3FERlJWWlY1OEZPYjZjQWRHMF9USGhKZnBTOVQ3MFVCQzVZWnRHM0tFMTl1YnEzUVJwcWdpMnE2T1kzRS1idG5YT19JeXVFVGZrV0VmZ0dfank4LTJlRjJ5SUxPcjVOTWVZSnh3V1FqSlpZelRidW9yTUN5bXJhV2hwUHo2QzI0Y0ZwTW9UYmZjR1BQY2JLWnBvTjNudVpIMzFOcmxsbjZmQzlKSFZ4UnpB?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdmVmckVWTngtQ3FERlJWWlY1OEZPYjZjQWRHMF9USGhKZnBTOVQ3MFVCQzVZWnRHM0tFMTl1YnEzUVJwcWdpMnE2T1kzRS1idG5YT19JeXVFVGZrV0VmZ0dfank4LTJlRjJ5SUxPcjVOTWVZSnh3V1FqSlpZelRidW9yTUN5bXJhV2hwUHo2QzI0Y0ZwTW9UYmZjR1BQY2JLWnBvTjNudVpIMzFOcmxsbjZmQzlKSFZ4UnpB?oc=5\" target=\"_blank\">La posible alineación titular del Atlético de Madrid para enfrentar a Alavés</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T09:15:33+00:00"
-    },
-    {
-      "titulo": "El Once Más Caro de LaLiga - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5tX3lId28zenN2MGxVaVVhOVVXRzNGdE9FVFF1M3JTMkZ6NFdiUGpDWG94dW1SbFBVRkIyRXB0ZDdHWEp6SU1tczY2SXEtVkNRNFVmbjZvOTM1NXRubGV6MnJQQ1pyak4taXdV?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE5tX3lId28zenN2MGxVaVVhOVVXRzNGdE9FVFF1M3JTMkZ6NFdiUGpDWG94dW1SbFBVRkIyRXB0ZDdHWEp6SU1tczY2SXEtVkNRNFVmbjZvOTM1NXRubGV6MnJQQ1pyak4taXdV?oc=5\" target=\"_blank\">El Once Más Caro de LaLiga</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T09:04:12+00:00"
-    },
-    {
-      "titulo": "La posible alineación titular del Barcelona para enfrentar al Getafe - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ1lSbUlPWnJnYWtRd3d0MjJSdVJCc281SE1PajBENWNIaVFJeFpoejJJdS15N3djdlpyejRPRUNGMmRqSk05ZWYzM3gwQkJBSGMtY01VSUZMdWZLNVNzLWV2Tm5uTGJYWGwtemtfVHJIaHk0OEpBd0I5bUFhNVk4VEV3VXF5cUdxRHBXbjh2dXFfXzlxQk9aTnVGTVlORVNad1A0RzE3RnRpUE1IbVFCVw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ1lSbUlPWnJnYWtRd3d0MjJSdVJCc281SE1PajBENWNIaVFJeFpoejJJdS15N3djdlpyejRPRUNGMmRqSk05ZWYzM3gwQkJBSGMtY01VSUZMdWZLNVNzLWV2Tm5uTGJYWGwtemtfVHJIaHk0OEpBd0I5bUFhNVk4VEV3VXF5cUdxRHBXbjh2dXFfXzlxQk9aTnVGTVlORVNad1A0RzE3RnRpUE1IbVFCVw?oc=5\" target=\"_blank\">La posible alineación titular del Barcelona para enfrentar al Getafe</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T08:54:36+00:00"
     }
   ]
 }
