@@ -1,11 +1,51 @@
 {
-  "actualizado": "2026-10-15T14:31:47.976373+00:00",
+  "actualizado": "2026-10-15T15:10:05.848602+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 102,
-    "sin_imagen": 1098
+    "con_imagen": 103,
+    "sin_imagen": 1097
   },
   "noticias": [
+    {
+      "titulo": "Lo que el FMI y el Banco Mundial ven en México que vale la pena escuchar",
+      "url": "https://expansion.mx/opinion/2026/10/15/fmi-banco-mundial-ven-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/89b38ff/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc3%2Fdb%2Fa755a9044d33a1b7f3e911f78609%2F1-paquete-economico-571768-entrega-paquete-economico-impreso.jpeg",
+      "descripcion": "Ambas instituciones llegaron a una evaluación similar desde diferentes ángulos: México tiene fundamentos sólidos para crecer, pero está debajo de su potencial.",
+      "fuente": "Martín Pustilnick",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T15:01:12+00:00"
+    },
+    {
+      "titulo": "Juegos y resultados en MLB - PSN Noticias",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9QVDA0cGtWekNDNHhZeFQ3RHlqR05tZXMybnNZMVR4VWJCTmpDOHFrWGYtak1TcU1HbVpyLVkwdWFTcmhXc3ZaXzRVT1ltNS1QN01SWUUxUHQ5T3hObkpXbmpzR2s?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9QVDA0cGtWekNDNHhZeFQ3RHlqR05tZXMybnNZMVR4VWJCTmpDOHFrWGYtak1TcU1HbVpyLVkwdWFTcmhXc3ZaXzRVT1ltNS1QN01SWUUxUHQ5T3hObkpXbmpzR2s?oc=5\" target=\"_blank\">Juegos y resultados en MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PSN Noticias</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-15T14:54:42+00:00"
+    },
+    {
+      "titulo": "La inusual petición de Nvidia para la industria de la IA: EU y China “deberíamos trabajar juntos”",
+      "url": "https://expansion.mx/tecnologia/2026/10/15/nvidia-pide-colaborar-eu-china-controlar-ia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/5e081dd/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F8e%2Fb9%2F802f653241feab2bb2d208664331%2Fjensen-huang-ia-eu-china.jpeg",
+      "descripcion": "Jensen Huang, CEO de Nvidia, exhortó a las empresas de ambas potencias a colaborar más para supervisar los riesgos de una IA “potencialmente peligrosa”.",
+      "fuente": "Fernando Guarneros Olmos",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T14:45:13+00:00"
+    },
+    {
+      "titulo": "El nuevo apodo que se ganó Manuel Pellegrini tras triunfazo en Champions League - Bolavip Chile",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPamY4V1p6MW1JYl9kOEg5M2lFX1N2OGFfbUJ3TFAyZWRURDV0NktWV1VsOVBwNXcyWWRDM00xR0ZJV3J1ZEpiV21YVF9ubWgzNHROaTQzc0ZZSnFJd1o4MzVXUmhWdi1iTWgyRjBzdkh1d29iVEtfWGU4Y2F6ZnBZOFRkLXowc3dvOGR6TTRyQ0xkM2hGbGc2RTVjSm5acFhMeHNVRDJVRVdnZXJmMVI2Y3AyTmsyNTV5d1l30gHAAUFVX3lxTE9qU2pUY2g2c3RqWFgzV0hnTDBLXzR5LTdsREZMYlhZbG1WaVBjVXdUTFhQZ05VYXJIcEloVndzUjdHRkhTb1d6eDFQbkJXbG9HNjJMX3VWa3JGcTJSX29UNmIxbVF6WGo0WmhmYWljdV9vdDFDN3FFaC1ralk2dkNxUngzNFcwdzdRWEdzMWxQeUVMOHJreV95QzNLQ1BDcFo3MWFCbmlVd1I1Yloyd1VMR2d2X1IzNktDSkI5NERJdQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxPamY4V1p6MW1JYl9kOEg5M2lFX1N2OGFfbUJ3TFAyZWRURDV0NktWV1VsOVBwNXcyWWRDM00xR0ZJV3J1ZEpiV21YVF9ubWgzNHROaTQzc0ZZSnFJd1o4MzVXUmhWdi1iTWgyRjBzdkh1d29iVEtfWGU4Y2F6ZnBZOFRkLXowc3dvOGR6TTRyQ0xkM2hGbGc2RTVjSm5acFhMeHNVRDJVRVdnZXJmMVI2Y3AyTmsyNTV5d1l30gHAAUFVX3lxTE9qU2pUY2g2c3RqWFgzV0hnTDBLXzR5LTdsREZMYlhZbG1WaVBjVXdUTFhQZ05VYXJIcEloVndzUjdHRkhTb1d6eDFQbkJXbG9HNjJMX3VWa3JGcTJSX29UNmIxbVF6WGo0WmhmYWljdV9vdDFDN3FFaC1ralk2dkNxUngzNFcwdzdRWEdzMWxQeUVMOHJreV95QzNLQ1BDcFo3MWFCbmlVd1I1Yloyd1VMR2d2X1IzNktDSkI5NERJdQ?oc=5\" target=\"_blank\">El nuevo apodo que se ganó Manuel Pellegrini tras triunfazo en Champions League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bolavip Chile</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-15T14:20:09+00:00"
+    },
     {
       "titulo": "Harry Kane acecha el récord de Cristiano Ronaldo en la Champions League: ¿lo superará? - Soy Futbol",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZy1XMW50S0NrZ2lvWHVlWFlLTVhGcHF6N0RKZDFKNC1VZ2EyX1VuOEhuMWRJVl9WelJ3Wjkzd09Pc1JsTDNabllMcVhvX20yb0VhUHpsakVPZTh3ZXo0Q2gyNlRxUF85YnUwQ0dOci1GTV9vVktuTlNTUUJwOVNQZXNWb1RNbEhNYzZMWlpJaVpEN2lHYy03d3NSM19lM0o0M3F4RUpoZFZsempPR2w2VXhnXzBmcHBLbzdEZkFFRHhBUFh6V1M4NHQybUhDTmNsQ3Yw0gHYAUFVX3lxTFB5ZUpLYURWRXNBVWpORGlDZzVaalFlNWx2ZTBlMTJNTkNOV1doVDFJZnd5TjBFVEIzVGF4akR0dlJWdGZ0QjdQRUp4WFgzZ1dMSHFIRWt4a2Q5X3lGSXZEdThFV093LUFQTmZWc3NIS1h5MUs0eUlwdnREVVFiZUdYbVVKejRjMVplcGwtdmQ2N0c5S2o5dWhvZHg1Q3kydlZXci03bFVDd1RoR1NIYWFkelNjci1maGRlRDg1YlFPRG5KR3ZzZkM0REs2QWI1WG04bHJuREhOSQ?oc=5",
@@ -55,6 +95,16 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-10-15T12:39:45+00:00"
+    },
+    {
+      "titulo": "Lo que el FMI y el Banco Mundial ven en México que vale la pena escuchar",
+      "url": "https://expansion.mx/https:/expansion.mx/opinion/2026/10/15/fmi-banco-mundial-ven-en-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/89b38ff/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc3%2Fdb%2Fa755a9044d33a1b7f3e911f78609%2F1-paquete-economico-571768-entrega-paquete-economico-impreso.jpeg",
+      "descripcion": "Ambas instituciones llegaron a una evaluación similar desde diferentes ángulos: México tiene fundamentos sólidos para crecer, pero está debajo de su potencial.",
+      "fuente": "Martín Pustilnick",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T12:06:40+00:00"
     },
     {
       "titulo": "El trabajo ya cambió y América Latina es quien propone las reglas",
@@ -11955,56 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-09T12:46:57+00:00"
-    },
-    {
-      "titulo": "Flick confirma la baja de Raphinha: ¿cuántos partidos se perderá con el FC Barcelona? - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOY0NCbjhjeldjR2RXOHN3cWF3Zm1CMzBmZDRhVEo5bnl5SmZpQnpLVmpweW1OS19Lb01MLTJmc3dvM2hrSlVyLURYa3dJcjU2Qkc0ZUJ5SzRwNFI2ZFN6RFFnMnQ2bUNmLXdBaUpOV0gtcmJQOWdYdDEtOEI3eFJyNWlOLWJJdlRsbUUwaWtST1pfYm4zOUUxMklXNlZwcjFHQ1UxQjlXNXlCRHRUanNMZ1Y0dkg?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxOY0NCbjhjeldjR2RXOHN3cWF3Zm1CMzBmZDRhVEo5bnl5SmZpQnpLVmpweW1OS19Lb01MLTJmc3dvM2hrSlVyLURYa3dJcjU2Qkc0ZUJ5SzRwNFI2ZFN6RFFnMnQ2bUNmLXdBaUpOV0gtcmJQOWdYdDEtOEI3eFJyNWlOLWJJdlRsbUUwaWtST1pfYm4zOUUxMklXNlZwcjFHQ1UxQjlXNXlCRHRUanNMZ1Y0dkg?oc=5\" target=\"_blank\">Flick confirma la baja de Raphinha: ¿cuántos partidos se perderá con el FC Barcelona?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T12:45:03+00:00"
-    },
-    {
-      "titulo": "Barcelona: Flick anuncia baja de Raphinha y confirma dos titulares - ESPN Deportes",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWWFnU3RidjNGM0FiUmMtcUxSWUNJMjh3XzBjMHNUUF8yN0RuVXBwdDk3MWhBc1F3VERQQy11V2lyd0F0cVdCUlJxd21Ca2J0bUdRX3Fack9RczZLdDVXbGVBNld2QUk1N2VLTHctVWZsTlpqNXBYUzR1YmN1bk80Wm9ieUdBYUlWWEk1aEkweEVaTFp3SkU0bEdEbmJ4Z3paVGRrZEU3aWZ2eDVERWduTg?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNWWFnU3RidjNGM0FiUmMtcUxSWUNJMjh3XzBjMHNUUF8yN0RuVXBwdDk3MWhBc1F3VERQQy11V2lyd0F0cVdCUlJxd21Ca2J0bUdRX3Fack9RczZLdDVXbGVBNld2QUk1N2VLTHctVWZsTlpqNXBYUzR1YmN1bk80Wm9ieUdBYUlWWEk1aEkweEVaTFp3SkU0bEdEbmJ4Z3paVGRrZEU3aWZ2eDVERWduTg?oc=5\" target=\"_blank\">Barcelona: Flick anuncia baja de Raphinha y confirma dos titulares</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T12:38:00+00:00"
-    },
-    {
-      "titulo": "Boxing News: Se anuncia la cartelera preliminar de México vs. El Mundo en Canelo vs. Mbilli: » October 9, 2026 - FightNews",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV1pqUlNEWlFtMUk2V0Nmc0R2QW1UUW83MG9iTFRySmlWVVhCSkg1aXF2MTQxWkRtMFdVc1JKTml1NjM5eG50U0dUWU5PSEFXRDdQQTlGbHZZMnBVdG9id0l6c3hBMHlKX1d5eUtpMFA1UmJSY3NCZFVGQ3Nsb0tPSFBSVlpjN1RtTVcwVEZWcGljMmE1NER0MUx6NTlqMnVZQ29MTjVLT3U?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV1pqUlNEWlFtMUk2V0Nmc0R2QW1UUW83MG9iTFRySmlWVVhCSkg1aXF2MTQxWkRtMFdVc1JKTml1NjM5eG50U0dUWU5PSEFXRDdQQTlGbHZZMnBVdG9id0l6c3hBMHlKX1d5eUtpMFA1UmJSY3NCZFVGQ3Nsb0tPSFBSVlpjN1RtTVcwVEZWcGljMmE1NER0MUx6NTlqMnVZQ29MTjVLT3U?oc=5\" target=\"_blank\">Boxing News: Se anuncia la cartelera preliminar de México vs. El Mundo en Canelo vs. Mbilli: » October 9, 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">FightNews</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-09T12:12:38+00:00"
-    },
-    {
-      "titulo": "Pagos digitales: una oportunidad para ampliar la inclusión financiera en México",
-      "url": "https://expansion.mx/opinion/2026/10/09/pagos-digitales-una-oportunidad-para-ampliar-la-inclusion-financiera-en-mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/5cfd500/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1e%2Fe5%2F0fa0cc75431aa94cf2d65ed65018%2Fprosa-visa-antimonopolio.jpg",
-      "descripcion": "México cuenta con infraestructura de pagos digitales capaz de transformar la economía; el reto es generar confianza, interoperabilidad y adopción para que sus beneficios lleguen a más personas y mipymes.",
-      "fuente": "Carlos Marcel",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-09T12:08:37+00:00"
-    },
-    {
-      "titulo": "México y Europa: La infraestructura como prueba de absorción",
-      "url": "https://expansion.mx/opinion/2026/10/09/mexico-y-europa-la-infraestructura-como-prueba-de-absorcion",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/de6baec/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2F67%2Faa%2Fb55d89b44609a2415fa7508128a1%2Funion-europea-mexico-comercio-is-benguhan.jpg",
-      "descripcion": "La infraestructura mexicana será uno de los primeros campos para medir si la nueva relación económica con Europa consigue transformar acuerdos comerciales en inversión, producción local y crecimiento.",
-      "fuente": "Pamela Díaz Loubet",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-09T12:03:24+00:00"
     }
   ]
 }
