@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-15T05:02:32.757755+00:00",
+  "actualizado": "2026-10-15T05:33:46.938282+00:00",
   "total": 1200,
   "imagenes": {
     "con_imagen": 99,
     "sin_imagen": 1101
   },
   "noticias": [
+    {
+      "titulo": "Diputados aprueban eliminar límite para programa del SAT que condona multas y recargos en 2027",
+      "url": "https://expansion.mx/economia/2026/10/14/diputados-aprueban-sat-condona-multas-recargos-2027",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/7742847/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F2b%2F30%2F1f2701b74e54b35f2c307f4932c3%2Fdiputados-ley-de-ingresos.jpeg",
+      "descripcion": "El estimulo fiscal entró como reserva de Morena en la discusión y votación de Ley de Ingresos de la Federación 2027, Ricardo Monreal la presentó tras la reunión de la presidenta Sheinbaum con el CCE.",
+      "fuente": "Dainzú Patiño",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T05:21:26+00:00"
+    },
     {
       "titulo": "¡Colapsados! Dodgers caen ante Brewers y quedan al borde de la eliminación - Mediotiempo",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaGFOb2lfYWFEcmhpWUE4SUpSNDNhd1o5dzdmY0N3VVh1a2pDTUxqY004LUJQX1ByMEQ3akQ0VURzN0FDOG9RTjNwb2U0SnpoYUVYSmhVRi1ESk16M1c0eXk5c1JYNW5FbklRX04zTy04cXJXYXZOTFFLb3diRjQwU1JRY3lCa2ZKT25Jd0NySEVrUjJxV0cw0gGXAUFVX3lxTE5yM05vekVrdV90eUZrdjlETzNsODlBT2dUUlpCZlpnR0dpUk5xZ2NBcUJpQUQyV01zbWNDUk4tTmgzbWNyUDRMZThNYXV3TnYzelJsSThkb2lzRlg1NEhkWXJ0T1hhMnIzNXpVUDJCQ0tFNjFkWnJYbjVrLXA4aDVFRmIwM1oyWFRhQzZ4NXczWFRWdmlMQm8?oc=5",
@@ -15,6 +25,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-15T04:40:00+00:00"
+    },
+    {
+      "titulo": "Brewers gana a Dodgers; a un triunfo de la barrida en Serie de Campeonato - ESPN México",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNS2kxS0hDblV5cmhYU1NHc0c1RDJYUVM3N0o1RGhHZWp4a2x0dDl3MWZIMFZyd1E4OFM3a1d4ZzJXWTJ0SFlyUlFhOEkxbF9UTkU3MXBINGtROThReEx2U0ltMzFHdTZZV0QtQk5hUDZYdVdrSVltY09fSkZoaUlVT3BEbUFpdUdXOVEyOEtZRWFzcWs0UjRSdGxNT09RcUdjc3dsWlJn?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxNS2kxS0hDblV5cmhYU1NHc0c1RDJYUVM3N0o1RGhHZWp4a2x0dDl3MWZIMFZyd1E4OFM3a1d4ZzJXWTJ0SFlyUlFhOEkxbF9UTkU3MXBINGtROThReEx2U0ltMzFHdTZZV0QtQk5hUDZYdVdrSVltY09fSkZoaUlVT3BEbUFpdUdXOVEyOEtZRWFzcWs0UjRSdGxNT09RcUdjc3dsWlJn?oc=5\" target=\"_blank\">Brewers gana a Dodgers; a un triunfo de la barrida en Serie de Campeonato</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-15T04:11:59+00:00"
     },
     {
       "titulo": "Mbappé, el más joven en llegar a 100 partidos en la Champions League - Debate",
@@ -55,6 +75,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-15T03:18:06+00:00"
+    },
+    {
+      "titulo": "¿Noche amarga en Europa? Santi Giménez ingresa pero el Porto cae ante el Betis en Champions League - Soy Futbol",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPNGJ5T0FFY2tQdklkdVVtazJBV2VzeVk2azROcHFyYm5fR1Fra1RDT21JRVVIeC1XTjlsY2hYUGRxQloxRjhLeHBWZHpOcHppYVhPYXo2cVFUaEJZZ2ZlR2ZvNWZaZWxtcGNUdURCT1dZdW8yQWlMRm5UNlNmTzBVSlc4T0dWbEswUG9RVjQ1ZWppb2xlbzhVWFVkcHhOcV9SNW5BakpJUTY3dXNZSTBwQTBwY3VBYWNNNDdHQXh6clVLdzlvamtSaEdaVS1jNkpvR1FBT3BLZ0xrYVR5b0YwTzU5MDVhUFQ0cUc40gHwAUFVX3lxTE9oOEtQbVU0MWY2MHVrOUNQMjY3Uk9laXdPTjBINHhYRG1OUkhqMzQwLVpqQnpoaHJfclJBUllfUmdxbWNEdGtnYzhRWENHM3hfY290OGlENldnLVAtVEthX003d2o0NldHREpOUmxGaWdTS19GYUhiNWpYLXBiSHpuRmVDVHdFZm9teFh6V2VoQXNVSk1xZkc2RVNsbEVfNFVCSVhVRFp3MFkwVDhQcFVOUUd3cWx2ZDlXMEgzQTZsN2RKbVBqbjZhRWJZOWlONVJrTzN5NHhhQ21wbFpIbTlBTmlFcEN6LXVOUlFVbjNTQw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxPNGJ5T0FFY2tQdklkdVVtazJBV2VzeVk2azROcHFyYm5fR1Fra1RDT21JRVVIeC1XTjlsY2hYUGRxQloxRjhLeHBWZHpOcHppYVhPYXo2cVFUaEJZZ2ZlR2ZvNWZaZWxtcGNUdURCT1dZdW8yQWlMRm5UNlNmTzBVSlc4T0dWbEswUG9RVjQ1ZWppb2xlbzhVWFVkcHhOcV9SNW5BakpJUTY3dXNZSTBwQTBwY3VBYWNNNDdHQXh6clVLdzlvamtSaEdaVS1jNkpvR1FBT3BLZ0xrYVR5b0YwTzU5MDVhUFQ0cUc40gHwAUFVX3lxTE9oOEtQbVU0MWY2MHVrOUNQMjY3Uk9laXdPTjBINHhYRG1OUkhqMzQwLVpqQnpoaHJfclJBUllfUmdxbWNEdGtnYzhRWENHM3hfY290OGlENldnLVAtVEthX003d2o0NldHREpOUmxGaWdTS19GYUhiNWpYLXBiSHpuRmVDVHdFZm9teFh6V2VoQXNVSk1xZkc2RVNsbEVfNFVCSVhVRFp3MFkwVDhQcFVOUUd3cWx2ZDlXMEgzQTZsN2RKbVBqbjZhRWJZOWlONVJrTzN5NHhhQ21wbFpIbTlBTmlFcEN6LXVOUlFVbjNTQw?oc=5\" target=\"_blank\">¿Noche amarga en Europa? Santi Giménez ingresa pero el Porto cae ante el Betis en Champions League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Soy Futbol</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-15T02:13:14+00:00"
     },
     {
       "titulo": "Canelo Álvarez quiere la revancha contra Crawford: “Espero que esa pelea vuelva a suceder” - Publimetro México",
@@ -347,6 +377,16 @@
       "fecha": "2026-10-14T23:36:00+00:00"
     },
     {
+      "titulo": "PSG pone orden y le da una dura lección a Manchester City en la Champions League - Linea Directa",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPMGloZ1FFelp1X0dvaXFCT05QdHR1eENzeDNVNUxfNTN1YzE5SmliWW8wVXZkazhPU1ZhcWFhdy1ob3FKNWowTXJmZHVUZDlGXzdlaEdIVURKblRqazFLZGpNSE5vSEd1ZExUSWthZUE1UlU0eHN2R2oyMTRkdXlLTEtQYWZMWENIeFZ0Z0NrRDRVSmxkT01DbDdNeENJckpxRTlBakhKbm9tSFoxVGhuT3hkWGwyUmNUSFJxZi1OeG1VbU5Za0pzeVVMaVVGYk1NWjVfZUkxYw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxPMGloZ1FFelp1X0dvaXFCT05QdHR1eENzeDNVNUxfNTN1YzE5SmliWW8wVXZkazhPU1ZhcWFhdy1ob3FKNWowTXJmZHVUZDlGXzdlaEdIVURKblRqazFLZGpNSE5vSEd1ZExUSWthZUE1UlU0eHN2R2oyMTRkdXlLTEtQYWZMWENIeFZ0Z0NrRDRVSmxkT01DbDdNeENJckpxRTlBakhKbm9tSFoxVGhuT3hkWGwyUmNUSFJxZi1OeG1VbU5Za0pzeVVMaVVGYk1NWjVfZUkxYw?oc=5\" target=\"_blank\">PSG pone orden y le da una dura lección a Manchester City en la Champions League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Linea Directa</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-14T23:26:37+00:00"
+    },
+    {
       "titulo": "¡Voltereta fugaz! Real Madrid hace historia con su remontada a la Roma - TUDN",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNGlDMW5qX1Z2NmZOR05NTEdPT29qVlZ3M3ZybjI1N1ZyNnVLaG4yVjBsRWprTUl3MDFhRHRoREx2Sm0tYk1uY1NpTUlPaExmSnVzQzNhcVRKWWFtNjJBVVVieXhILVJmT3A5WVBodHhXY1lsNldGV2lERG41cl8tVDlZTVZYZVFDLWNiR0lJUVBUeE1FUUJwbnZqUllPUDNrNnRDQWdEN3B3NnRRSGU2SGhB?oc=5",
       "imagen": "",
@@ -405,6 +445,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-14T22:53:50+00:00"
+    },
+    {
+      "titulo": "Mourinho 'regala' par de joyas al final del Roma vs. Real Madrid - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOc0Q3b285X2w5TlpEU0g0cUtNQ3BCWndXcTl4SGRuYlJBVU15bDZIQ09DNENzTy1UeGtiN1NSM0xiZXRmdEhPRUNnMnhTaDdyTmoweWk0TWtBUnJldzBJUUI2UXhYc0FCY3hmYk9EWlFoaU5wVW1TMWlZaThUQm5oSkxESnhIWHZBMHNBSE9GVXE0dDd4Qy1zLUQwQkpBOFgtdzdKZ2l0Y0F2dGtZRklKeGNMaS04U2tB?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxOc0Q3b285X2w5TlpEU0g0cUtNQ3BCWndXcTl4SGRuYlJBVU15bDZIQ09DNENzTy1UeGtiN1NSM0xiZXRmdEhPRUNnMnhTaDdyTmoweWk0TWtBUnJldzBJUUI2UXhYc0FCY3hmYk9EWlFoaU5wVW1TMWlZaThUQm5oSkxESnhIWHZBMHNBSE9GVXE0dDd4Qy1zLUQwQkpBOFgtdzdKZ2l0Y0F2dGtZRklKeGNMaS04U2tB?oc=5\" target=\"_blank\">Mourinho 'regala' par de joyas al final del Roma vs. Real Madrid</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-14T22:46:00+00:00"
     },
     {
       "titulo": "AT&T compró Iusacell para desafiar a Slim, pero ahora vende su negocio en México por la mitad de lo que le costó",
@@ -11955,56 +12005,6 @@
       "categoria": "Empresas",
       "subcategoria": "",
       "fecha": "2026-10-09T01:43:05+00:00"
-    },
-    {
-      "titulo": "AriZona cambia de cancha: de su famoso té a bebidas con 5% de alcohol para conquistar otro mercado",
-      "url": "https://expansion.mx/mercadotecnia/2026/10/08/arizona-te-bebidas-alcohol-conquistar-mercado",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/68aa6a4/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F07%2F15%2Ff5a7bc614b0989bf923cd9db44ec%2Fdiseno-sin-titulo.png",
-      "descripcion": "De las bebidas de consumo cotidiano a las preparadas con tequila, AriZona amplía las categorías en las que compite sin dejar de lado los sabores frutales que identifican a la marca.",
-      "fuente": "Elizabeth Santiago",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-09T01:27:43+00:00"
-    },
-    {
-      "titulo": "Paulo Dybala pone a prueba uno de los mejores momentos de su carrera ante Real Madrid - ESPN México",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVldUNFR6emF6dlFxRS0xSUc0UDFiU29fZ243NVhDV1ZZZXZfVDhQTWU4ajMtMVhIaHc1UTZoUGNmbTNEclJibDJXVzE5REV0d2l3SzRHeTFzN1h4dllOTFJkU2xyWWE3aDNHLXBOSGZUcTh6Umc3c3dZR3ZOQjRRUi1oRlREN2R6SGxVTHZXT2ZPQmJIVFJrbWkzSjlnRkVfS2syLWRBaWxVUmxBZ3Q4emhyNjNXSmJzUHNfX3RFZw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxPVldUNFR6emF6dlFxRS0xSUc0UDFiU29fZ243NVhDV1ZZZXZfVDhQTWU4ajMtMVhIaHc1UTZoUGNmbTNEclJibDJXVzE5REV0d2l3SzRHeTFzN1h4dllOTFJkU2xyWWE3aDNHLXBOSGZUcTh6Umc3c3dZR3ZOQjRRUi1oRlREN2R6SGxVTHZXT2ZPQmJIVFJrbWkzSjlnRkVfS2syLWRBaWxVUmxBZ3Q4emhyNjNXSmJzUHNfX3RFZw?oc=5\" target=\"_blank\">Paulo Dybala pone a prueba uno de los mejores momentos de su carrera ante Real Madrid</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T01:25:07+00:00"
-    },
-    {
-      "titulo": "Álvaro Fidalgo sorprende con inesperado gesto en la Selección Mexicana y emociona a la afición del América - Al Bat",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTFk0TEhrd25rTWE5Z2ZLcHMxRFNqMnI3QlZTTVI5Q2w0QldzZHpCc2c5ZmFJeHVZV2dwVG5CazlzSFVKYms0MVlRajVtdWVUQTA4QkUxMEpia0ZKeW9XbjRoeU9KYktLRkxIWVdlZkN0eDZ3Y0xMZ281MmRYWjBVX0RvanpFUmZmdEJZb2J6a3hQYnpCR19yQ2RJSG80Y29tUlEyUmExcDBpbmdIeDViOGgxR25BbW52RjhRbTBqbjZsZjQ0dU05UlNzSzRnaF9jLXh4M0F4RS1QeGVQd0NlN2JYa0hoZTlQMkdLMtIB8gFBVV95cUxQQVFsOTZJc013bTNOT1JZV011TE9zdGF1TVJ5dDF2am14VTdtcFBOamx1Vk1qUXpLZWN3bDNScm4zUVN5SGEwc0pyd1pKb3pyRlYtUnFWTm5SUmhWNUxHa0liOWN1aXYtMTR4cUdnREJ2QjZxUUhRbVZPV1BOV01lMFg0V1V2UDRtYXdFQi1IbHQ4YUhNNHVJQlFod3ViWjZXTVFoMlVuTE1UcTlONnk0STZuUWFwWTJKMFl1dGJydDFGaDVhMWpjbEJkWnlsNDZWM084anpqU2ZqbDhyMEVyTGZuelpMeVBDTXBSZGZXZjlkUQ?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTFk0TEhrd25rTWE5Z2ZLcHMxRFNqMnI3QlZTTVI5Q2w0QldzZHpCc2c5ZmFJeHVZV2dwVG5CazlzSFVKYms0MVlRajVtdWVUQTA4QkUxMEpia0ZKeW9XbjRoeU9KYktLRkxIWVdlZkN0eDZ3Y0xMZ281MmRYWjBVX0RvanpFUmZmdEJZb2J6a3hQYnpCR19yQ2RJSG80Y29tUlEyUmExcDBpbmdIeDViOGgxR25BbW52RjhRbTBqbjZsZjQ0dU05UlNzSzRnaF9jLXh4M0F4RS1QeGVQd0NlN2JYa0hoZTlQMkdLMtIB8gFBVV95cUxQQVFsOTZJc013bTNOT1JZV011TE9zdGF1TVJ5dDF2am14VTdtcFBOamx1Vk1qUXpLZWN3bDNScm4zUVN5SGEwc0pyd1pKb3pyRlYtUnFWTm5SUmhWNUxHa0liOWN1aXYtMTR4cUdnREJ2QjZxUUhRbVZPV1BOV01lMFg0V1V2UDRtYXdFQi1IbHQ4YUhNNHVJQlFod3ViWjZXTVFoMlVuTE1UcTlONnk0STZuUWFwWTJKMFl1dGJydDFGaDVhMWpjbEJkWnlsNDZWM084anpqU2ZqbDhyMEVyTGZuelpMeVBDTXBSZGZXZjlkUQ?oc=5\" target=\"_blank\">Álvaro Fidalgo sorprende con inesperado gesto en la Selección Mexicana y emociona a la afición del América</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Al Bat</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T01:12:00+00:00"
-    },
-    {
-      "titulo": "Mourinho habría dado reprimenda a Mbappé, ¿peligra su futuro en el Real Madrid? - El Heraldo de México",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcjBlOFc2aDJURWJrVzBtZ19WeFZ4QzZaVS1BTU40Tjd5Y0NlbDE5ZWxPVFpOajlDdmJkSWZmSUM1RjNFMFRqMkhLX3pSNTFpV0hfdC1ienZyRGtsV3FKTDJZcHNzZVBJM0FGV0M4RDQ2TmlDbUxnSlVTMTc5cW15Vm1kcmVTUEg4UDIzb0QwRWhlaS1RRUF4QTVOVTdsYWY2Vm81dzV2aktIOEVTTXBnZGEwZzRtdVZoQnhnVVNJY2tsSGFWNkJUQk5QZ0cxSlRBQkE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcjBlOFc2aDJURWJrVzBtZ19WeFZ4QzZaVS1BTU40Tjd5Y0NlbDE5ZWxPVFpOajlDdmJkSWZmSUM1RjNFMFRqMkhLX3pSNTFpV0hfdC1ienZyRGtsV3FKTDJZcHNzZVBJM0FGV0M4RDQ2TmlDbUxnSlVTMTc5cW15Vm1kcmVTUEg4UDIzb0QwRWhlaS1RRUF4QTVOVTdsYWY2Vm81dzV2aktIOEVTTXBnZGEwZzRtdVZoQnhnVVNJY2tsSGFWNkJUQk5QZ0cxSlRBQkE?oc=5\" target=\"_blank\">Mourinho habría dado reprimenda a Mbappé, ¿peligra su futuro en el Real Madrid?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Heraldo de México</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T01:02:00+00:00"
-    },
-    {
-      "titulo": "Unos celebran y otros lo lamentan: los Yankees estiran la sequía de títulos en la MLB - CNN en Español",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWWtPZ0U2U0pVejR1bkU5M0JkeFVkcVhrZ3FrZTVycVBxZXJoWHlxZGVKWU1HWUZCTU5ib2hibXgzYjIyWGlTOW96ajhnUjAzSTNTcEgxbzlPOV90WDFfMmU5ZXNYTTZ4UVZLRzg5emp3X2ZzNFBhTzBQeHlTQ1YyNTE5UG5fWlBkQ3FKcw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxPWWtPZ0U2U0pVejR1bkU5M0JkeFVkcVhrZ3FrZTVycVBxZXJoWHlxZGVKWU1HWUZCTU5ib2hibXgzYjIyWGlTOW96ajhnUjAzSTNTcEgxbzlPOV90WDFfMmU5ZXNYTTZ4UVZLRzg5emp3X2ZzNFBhTzBQeHlTQ1YyNTE5UG5fWlBkQ3FKcw?oc=5\" target=\"_blank\">Unos celebran y otros lo lamentan: los Yankees estiran la sequía de títulos en la MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNN en Español</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-09T00:59:00+00:00"
     }
   ]
 }
