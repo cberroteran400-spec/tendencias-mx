@@ -1,11 +1,71 @@
 {
-  "actualizado": "2026-10-15T22:29:57.617149+00:00",
+  "actualizado": "2026-10-15T22:58:19.387404+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 105,
-    "sin_imagen": 1095
+    "con_imagen": 107,
+    "sin_imagen": 1093
   },
   "noticias": [
+    {
+      "titulo": "Playoffs MLB 2026 en vivo: Dodgers vs Brewers; ¿Quién gana hoy el Juego 4? Serie de Campeonato Liga Nacional - Claro Sports",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPVGt0VGJUSW9ZQTZrWm54NGVOWDByQXN2NWR4dUkxVGM1WlowcFFTcnduT2xNei1DU0FCWVh1cTI2WU9Tc1hVSHp0V0NLems4Y3JTWFFXWGdSeWtsaV9TdVFpaWZYNXRvWmVyTGlBRkRVYTA1VktTSXdPa0JIdUlzNk5DRWNGWmMzYUV5VlctemdqeHpBNmFwM0Y4eUpOUFhWUlBuS1l0NHRBMEFTUktMVkZ3c1VSV3pkalFjYktic3NMQlFRaDZ5YlM0TUlOWWp0SldmYkc0XzRFYjVvNFowOWhyZ0xyeE5icnhsVHRhVQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi7wFBVV95cUxPVGt0VGJUSW9ZQTZrWm54NGVOWDByQXN2NWR4dUkxVGM1WlowcFFTcnduT2xNei1DU0FCWVh1cTI2WU9Tc1hVSHp0V0NLems4Y3JTWFFXWGdSeWtsaV9TdVFpaWZYNXRvWmVyTGlBRkRVYTA1VktTSXdPa0JIdUlzNk5DRWNGWmMzYUV5VlctemdqeHpBNmFwM0Y4eUpOUFhWUlBuS1l0NHRBMEFTUktMVkZ3c1VSV3pkalFjYktic3NMQlFRaDZ5YlM0TUlOWWp0SldmYkc0XzRFYjVvNFowOWhyZ0xyeE5icnhsVHRhVQ?oc=5\" target=\"_blank\">Playoffs MLB 2026 en vivo: Dodgers vs Brewers; ¿Quién gana hoy el Juego 4? Serie de Campeonato Liga Nacional</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Claro Sports</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-15T22:51:05+00:00"
+    },
+    {
+      "titulo": "HR Ratings baja la calificación de largo plazo de México por deterioro fiscal y menor crecimiento",
+      "url": "https://expansion.mx/economia/2026/10/15/hr-ratings-recorta-calificacion-mexico-deterioro-fiscal",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/396d8d0/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb4%2F44%2F289e20ea4019a01b05156a273215%2Fhr-ratings-baja-calificacion-mexico-deuda.jpg",
+      "descripcion": "La agencia redujo de BBB+ a BBB la nota crediticia; mantuvo la perspectiva estable y ratificó la calificación de corto plazo en HR3.",
+      "fuente": "Patricia Tapia",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T22:49:38+00:00"
+    },
+    {
+      "titulo": "Olinia tendrá un rival chino: el mini auto eléctrico que consume 4 veces menos energía y busca conquistar México",
+      "url": "https://expansion.mx/empresas/2026/10/15/olinia-rival-auto-electrico-chino-cuatro-veces-menos-100-km",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/253cdff/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F22%2Fa1%2Fc964d895434298a1690f4127d11f%2Fimage-4ab289-en-diagonal-de-frente.jpg",
+      "descripcion": "Olinia busca desarrollar vehículos eléctricos accesibles con participación de instituciones públicas mexicanas. Mientras se prepara su llegada al mercado, Jinpeng ya comercializa modelos en México.",
+      "fuente": "Elizabeth Santiago",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T22:44:48+00:00"
+    },
+    {
+      "titulo": "Checo Pérez pudo llegar a Ferrari, pero tomó una decisión que casi acaba con su carrera en F1",
+      "url": "https://expansion.mx/tendencias/2026/10/15/checo-perez-ferrari-mclaren-f1",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c8eb797/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc9%2F8b%2Ff111bf9e43b594e067d3ab623172%2Fcheco-perez.jpeg",
+      "descripcion": "Con tres podios y varios equipos tras él, Checo parecía tener el futuro resuelto. Una elección cambió por completo el rumbo de su carrera.",
+      "fuente": "Josep Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-15T22:34:19+00:00"
+    },
+    {
+      "titulo": "Mbappé supera histórica marca de Lionel Messi en Champions - Milenio",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSUYtOUluUk0wWWFKcDUxY05ad1dDbXN3TEp0eUhOTUJoblMxNEVWMVV6MGRTMFVhczBSalphRGlDZUh5M2NtWFBJRjV5eU1SZXNUckxMMUN3Ty1Pc2U1SS1ndUsydUlGcnp3c3daZDFSMEVUZ0prQVM5WVdLOFZYNU01VzZ5ZUNOcHZueThjTkppUGdlOXR6RlpkTWw2M183bXUteTFVeGszUmFvQ25tS2Q3WdIBswFBVV95cUxNMnQtbm5vdmVqQ3otU3hQTk0zM2ZNZndCVTBMVWNmZUpNSnpjbVp3SFFyZHJRb3pTV0NrNThMd1F6RF9sdkEzNDZHY2JJLVEyZ0NhWXBEV29lTzA2aXlQUXJkTlJ2b2s3VkxsRUlsVGR2OXVIMHhmSm5UZlczRjJMMmdlamRMQ1VxbkxKSjNiLTB5aW5MOV9kSFIxN292dzlhSm5ja3ZPUFo5eGROb0MyNU45SQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNSUYtOUluUk0wWWFKcDUxY05ad1dDbXN3TEp0eUhOTUJoblMxNEVWMVV6MGRTMFVhczBSalphRGlDZUh5M2NtWFBJRjV5eU1SZXNUckxMMUN3Ty1Pc2U1SS1ndUsydUlGcnp3c3daZDFSMEVUZ0prQVM5WVdLOFZYNU01VzZ5ZUNOcHZueThjTkppUGdlOXR6RlpkTWw2M183bXUteTFVeGszUmFvQ25tS2Q3WdIBswFBVV95cUxNMnQtbm5vdmVqQ3otU3hQTk0zM2ZNZndCVTBMVWNmZUpNSnpjbVp3SFFyZHJRb3pTV0NrNThMd1F6RF9sdkEzNDZHY2JJLVEyZ0NhWXBEV29lTzA2aXlQUXJkTlJ2b2s3VkxsRUlsVGR2OXVIMHhmSm5UZlczRjJMMmdlamRMQ1VxbkxKSjNiLTB5aW5MOV9kSFIxN292dzlhSm5ja3ZPUFo5eGROb0MyNU45SQ?oc=5\" target=\"_blank\">Mbappé supera histórica marca de Lionel Messi en Champions</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Milenio</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-15T22:31:54+00:00"
+    },
+    {
+      "titulo": "Así fue la triste jornada de mexicanos en Champions y Europa League - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbVI0UWJVZnBuUTg3X3JvdFBwUnJuWDExSVNCNndDSXJsZF9mWU5NUE1pYVFEaEVkbWtiVmNmTGdnNjBhWWh5ZHZtV2JFWnFXUFlFSTJ0bERRZnB2Z1dZdFpCUXBPT3FRS29wdU9fZTRZbW0tX3dmWGNiaXJobVpoZEp5NDNGX2JVcmNEcl9icEFaWTRwcVhHbUltdV85cnZkT1lEcVdTRFp6Yi1idDBqc1BjaHExNmNPZ1o4?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbVI0UWJVZnBuUTg3X3JvdFBwUnJuWDExSVNCNndDSXJsZF9mWU5NUE1pYVFEaEVkbWtiVmNmTGdnNjBhWWh5ZHZtV2JFWnFXUFlFSTJ0bERRZnB2Z1dZdFpCUXBPT3FRS29wdU9fZTRZbW0tX3dmWGNiaXJobVpoZEp5NDNGX2JVcmNEcl9icEFaWTRwcVhHbUltdV85cnZkT1lEcVdTRFp6Yi1idDBqc1BjaHExNmNPZ1o4?oc=5\" target=\"_blank\">Así fue la triste jornada de mexicanos en Champions y Europa League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-15T22:30:35+00:00"
+    },
     {
       "titulo": "¡Que en el Banorte no! Canelo Álvarez aclaró dónde quiere retirarse en realidad y todo apunta al Estadio del Atlas - Mediotiempo",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVhHQ3l6b0xxYlIzb3hVQ2hfblZ3NlVwMV95Z2x5X192RHdsOTk0cUoyVDlaNWhyOVpzc0h1YjdQN1FPTm90Y09hR2ZVTk5Rcm1GLVNHV0lNenJFYVcxNEUySkJwcmVCLVBFYjdSNDdUcHQ4ZVZkSnNhWTAtcVBzMklsTlRRZ0Y5MHMtNlgxU3dTaFZ3ck5JdFlaWklrVTktR2QtQUNYZklfMmZ1UnVxYlBaTC3SAbQBQVVfeXFMTzRPTmVEOGtlT3dJemE1NUFLQU9EOElldHlEcVRzVTFUOW1oaTZuOEE0bVFnY1E3eHp5bWJjcUdTTW4xV01pZ1NrWVhoVHAzUldtTlpjTVo2cUtyRlduYTA3SzNReDNMdjRGMU5sUER4ZVd0LXBGZlRrYjJQX0RQeDVvVGxTcEFkaTFOVmVHbEhSbEhoU3YzdFB3YkRUSjhMN0tSZGJBWWVYZkF0NTZvUktuRmZx?oc=5",
@@ -11945,66 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-09T20:32:09+00:00"
-    },
-    {
-      "titulo": "Empezaron los cuestionamientos para Demichelis en Alemania: \"Es natural que exijan más...\" - Olé",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcVd4eXVMUVE0bTN4RHJXb0twUHJicUIxYVpYZDc2ZkpXcVhZNFZ5dXpRbGNVc2t6aExLZUZYUWo0cFprWHZnUGlSZjRTOVZFR2RwQ0kyZVRhYzlkQUpBWmNLaldmZ3Y4Skw3RVlVVjVxTkhXUmJ2UmtRZmlkWVZvUUkzVkFHRTJDd0stRzhrVGZtdlR1ZlktQWJNd3dSai1sNVBrNVhkTEIwMTRuNmo0eU44QzJrbHQ0VWlqMk93TGF0Rk51cTJHbGpzNVdaZmpOMm9JMGVR0gHbAUFVX3lxTE80Qlh0a1RodHNrTWRmSkkwZHdfQWxOcms4S2xmUy1abmxuQTlEb3BVUkJWcllkRFJHa2xDWGR1RURlVlpQZE5RMExvaGdPUmVSUG1wUlpWVnluYVY0NjBsYkxPcVk0RGFTLXItN3UyR1hhMml1c0xSdzNTRFJfekpNZ1JHLVZCSnZRcmswbTRCNVdibTg5ZU1NckRKb2F0ODBkTG9fZ2l2cWQ1ODNBWkhyWl9fb3VEWTJNRDk1Yk8tZlFYNXhZU1ZpUFY5NzFreW9FaTJ3MFpRQThuSQ?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcVd4eXVMUVE0bTN4RHJXb0twUHJicUIxYVpYZDc2ZkpXcVhZNFZ5dXpRbGNVc2t6aExLZUZYUWo0cFprWHZnUGlSZjRTOVZFR2RwQ0kyZVRhYzlkQUpBWmNLaldmZ3Y4Skw3RVlVVjVxTkhXUmJ2UmtRZmlkWVZvUUkzVkFHRTJDd0stRzhrVGZtdlR1ZlktQWJNd3dSai1sNVBrNVhkTEIwMTRuNmo0eU44QzJrbHQ0VWlqMk93TGF0Rk51cTJHbGpzNVdaZmpOMm9JMGVR0gHbAUFVX3lxTE80Qlh0a1RodHNrTWRmSkkwZHdfQWxOcms4S2xmUy1abmxuQTlEb3BVUkJWcllkRFJHa2xDWGR1RURlVlpQZE5RMExvaGdPUmVSUG1wUlpWVnluYVY0NjBsYkxPcVk0RGFTLXItN3UyR1hhMml1c0xSdzNTRFJfekpNZ1JHLVZCSnZRcmswbTRCNVdibTg5ZU1NckRKb2F0ODBkTG9fZ2l2cWQ1ODNBWkhyWl9fb3VEWTJNRDk1Yk8tZlFYNXhZU1ZpUFY5NzFreW9FaTJ3MFpRQThuSQ?oc=5\" target=\"_blank\">Empezaron los cuestionamientos para Demichelis en Alemania: \"Es natural que exijan más...\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Olé</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T20:26:24+00:00"
-    },
-    {
-      "titulo": "Santiago Giménez causa un problema en Porto: Tienen un agradecimiento a México - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdTBYcUFreFlUd3RpZmdRV3hyRnh0UWVHNTNKYm4yNGN5c2k4TmpDUWdKY1pVcWxGS3VtdDNJRkZ3ZUs5di1GOEdBc3RfaHFEMWlaQ2JmSDJuczJNTjBqUXQ0NEdGOVhBRXpJV0RfMUQxSF9KSmFsai1fa1FiNFZlbDFVRG9YWjM0UUlUU2FVcm1XWjhqd3l5M3NuVlRWNmRQb3E4TDB4U202UUNGVl91UHZRWVBTY0lvZDBjYTlXaUg?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdTBYcUFreFlUd3RpZmdRV3hyRnh0UWVHNTNKYm4yNGN5c2k4TmpDUWdKY1pVcWxGS3VtdDNJRkZ3ZUs5di1GOEdBc3RfaHFEMWlaQ2JmSDJuczJNTjBqUXQ0NEdGOVhBRXpJV0RfMUQxSF9KSmFsai1fa1FiNFZlbDFVRG9YWjM0UUlUU2FVcm1XWjhqd3l5M3NuVlRWNmRQb3E4TDB4U202UUNGVl91UHZRWVBTY0lvZDBjYTlXaUg?oc=5\" target=\"_blank\">Santiago Giménez causa un problema en Porto: Tienen un agradecimiento a México</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T20:25:23+00:00"
-    },
-    {
-      "titulo": "Santiago Giménez causa un problema en Porto: Tienen un agradecimiento a México - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdTBYcUFreFlUd3RpZmdRV3hyRnh0UWVHNTNKYm4yNGN5c2k4TmpDUWdKY1pVcWxGS3VtdDNJRkZ3ZUs5di1GOEdBc3RfaHFEMWlaQ2JmSDJuczJNTjBqUXQ0NEdGOVhBRXpJV0RfMUQxSF9KSmFsai1fa1FiNFZlbDFVRG9YWjM0UUlUU2FVcm1XWjhqd3l5M3NuVlRWNmRQb3E4TDB4U202UUNGVl91UHZRWVBTY0lvZDBjYTlXaUjSAcABQVVfeXFMUEJ0cHlUNmlyMEx6c2VxVmxtYjc2QVdkdjZ5cXJZeWJJYTkxSy0yS0U4cThVU0twejlzVzFFdFFJdklSN2Q0RzRRNWZ2RXZGS2hKTlJ3ZEJoSk5xdzRIemhvNExkeGxCaW9zZElaRDREQnE4ejlJTnlBRUFrMEhMS3lDb2g1d2lKcXBvTTJtVlRvdk9OUVR0cE9xN004ZXhMMl8tbXpuU3FVREdJNkNLSHZMSTBYMTd1YXppVHJLbkl0?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdTBYcUFreFlUd3RpZmdRV3hyRnh0UWVHNTNKYm4yNGN5c2k4TmpDUWdKY1pVcWxGS3VtdDNJRkZ3ZUs5di1GOEdBc3RfaHFEMWlaQ2JmSDJuczJNTjBqUXQ0NEdGOVhBRXpJV0RfMUQxSF9KSmFsai1fa1FiNFZlbDFVRG9YWjM0UUlUU2FVcm1XWjhqd3l5M3NuVlRWNmRQb3E4TDB4U202UUNGVl91UHZRWVBTY0lvZDBjYTlXaUjSAcABQVVfeXFMUEJ0cHlUNmlyMEx6c2VxVmxtYjc2QVdkdjZ5cXJZeWJJYTkxSy0yS0U4cThVU0twejlzVzFFdFFJdklSN2Q0RzRRNWZ2RXZGS2hKTlJ3ZEJoSk5xdzRIemhvNExkeGxCaW9zZElaRDREQnE4ejlJTnlBRUFrMEhMS3lDb2g1d2lKcXBvTTJtVlRvdk9OUVR0cE9xN004ZXhMMl8tbXpuU3FVREdJNkNLSHZMSTBYMTd1YXppVHJLbkl0?oc=5\" target=\"_blank\">Santiago Giménez causa un problema en Porto: Tienen un agradecimiento a México</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T20:25:23+00:00"
-    },
-    {
-      "titulo": "El árbitro somalí se acerca a la liga egipcia: la decisión final está en manos de la Federación de Fútbol - Goal.com",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaHMzY0Jkc2Ixa2ZKNjNrbE5MOUdtMVFUa19PdlFPa2U0bUFscFRPdGxtanF4Y0V1TlpYcnpyZjVWd3ZMODBtRWg0dFdDMVVqUXoxR3k3aDVaUG9SNEpXcXpTbWJaVFM3Z0phem5zTnh2dG84RGNvcTVua0dTRlRpWDd2OW9Nb1Z4cFE0Sm5JYTg0bEIwLWpQVnphczZqVXV1OWFleG1IYXFraWJpOGdvSDdsTnI3Ui1lLVVjTDd3aDZfYXl6SkNacjd1UldEdGhSdHNMYktwZ2hwS1puRmU4bmpOb3NnVlhmY0hUS3Y3MDB6dw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaHMzY0Jkc2Ixa2ZKNjNrbE5MOUdtMVFUa19PdlFPa2U0bUFscFRPdGxtanF4Y0V1TlpYcnpyZjVWd3ZMODBtRWg0dFdDMVVqUXoxR3k3aDVaUG9SNEpXcXpTbWJaVFM3Z0phem5zTnh2dG84RGNvcTVua0dTRlRpWDd2OW9Nb1Z4cFE0Sm5JYTg0bEIwLWpQVnphczZqVXV1OWFleG1IYXFraWJpOGdvSDdsTnI3Ui1lLVVjTDd3aDZfYXl6SkNacjd1UldEdGhSdHNMYktwZ2hwS1puRmU4bmpOb3NnVlhmY0hUS3Y3MDB6dw?oc=5\" target=\"_blank\">El árbitro somalí se acerca a la liga egipcia: la decisión final está en manos de la Federación de Fútbol</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Goal.com</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T20:13:02+00:00"
-    },
-    {
-      "titulo": "Los 15 jugadores más revalorizados del mercado - rankeados - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNamdwakR3cllNSktiQ3RkdFUzTHZYdUtJYy1obGtIQ2JLbGtSQVBLajdTeG0tWnRvUmpXeTE4dHpLbmprOVQ2MHB3b0htcmo1cFlZSHdMai1LcTh0QlQtRW5UVDFJRHByT3A1Ykc3M0xaRW5CaEFzc2xiOXA1NEg3TzgxSEF3b1A3eUtFOWI2SGczZw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNamdwakR3cllNSktiQ3RkdFUzTHZYdUtJYy1obGtIQ2JLbGtSQVBLajdTeG0tWnRvUmpXeTE4dHpLbmprOVQ2MHB3b0htcmo1cFlZSHdMai1LcTh0QlQtRW5UVDFJRHByT3A1Ykc3M0xaRW5CaEFzc2xiOXA1NEg3TzgxSEF3b1A3eUtFOWI2SGczZw?oc=5\" target=\"_blank\">Los 15 jugadores más revalorizados del mercado - rankeados</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T19:59:37+00:00"
-    },
-    {
-      "titulo": "Antes de Chivas y Omnilife, Jorge Vergara se levantaba a las 4:00 de la mañana para vender carnitas",
-      "url": "https://expansion.mx/empresas/2026/09/18/antes-de-chivas-omnilife-jorge-vergara-vendia-carnitas",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/af28a14/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0e%2F43%2Fdfcce0f7401ead84ef5868564f5d%2Fpuesto-de-carnitas-a-dueno-de-chivas-omnilife-jorge-vergara.jpeg",
-      "descripcion": "Antes de Chivas y Omnilife, Jorge Vergara enfrentó una quiebra y probó suerte con las carnitas; el giro decisivo llegó después.",
-      "fuente": "Josep Rodríguez",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-09T19:57:13+00:00"
     }
   ]
 }
