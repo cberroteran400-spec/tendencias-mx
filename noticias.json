@@ -1,11 +1,61 @@
 {
-  "actualizado": "2026-10-16T11:35:21.417888+00:00",
+  "actualizado": "2026-10-16T12:32:45.360997+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 112,
-    "sin_imagen": 1088
+    "con_imagen": 116,
+    "sin_imagen": 1084
   },
   "noticias": [
+    {
+      "titulo": "El efecto GLP-1: cuando cambia el consumidor, cambia el mercado",
+      "url": "https://expansion.mx/opinion/2026/10/16/el-efecto-glp-1-cuando-cambia-el-consumidor-cambia-el-mercado",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/511be6b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fmedia%2F2012%2F02%2F28%2Fhopping.jpg",
+      "descripcion": "Los medicamentos para tratar la obesidad modifican el gasto en ropa, alimentos y productos de bienestar. Las marcas deberán ajustar sus inventarios, categorías y estrategias frente a un consumidor en transformación.",
+      "fuente": "Mario A. Esparza",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-16T12:12:59+00:00"
+    },
+    {
+      "titulo": "Canelo Álvarez identifica el gran peligro de Christian Mbilli y cambia su preparación: “Voy a necesitar mucha resistencia” - DAZN",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSDVMdHJMcnk5YU9IU3dTME1vb3M1QXVZRHNqcFVmU1R2ZGhPRXAxenpWV0lYWkxUSDlPRE1USEFWczVPZS0zaVpVcDNNUExqMENpLWQySDktQ3d1VkVTazBxRTBnelhBWnZQYW1COHFjUlppdEtES0JoVkx5NUdjSUhfdHdHVmhPYWZrUzd1bGNFX2pqSW1Fc1gtenQ2eDlWdlhXVENZeFJ0SHk3MzQzS0ptZXpUM0F5ME1UMFFRcVllRTZ1?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxQSDVMdHJMcnk5YU9IU3dTME1vb3M1QXVZRHNqcFVmU1R2ZGhPRXAxenpWV0lYWkxUSDlPRE1USEFWczVPZS0zaVpVcDNNUExqMENpLWQySDktQ3d1VkVTazBxRTBnelhBWnZQYW1COHFjUlppdEtES0JoVkx5NUdjSUhfdHdHVmhPYWZrUzd1bGNFX2pqSW1Fc1gtenQ2eDlWdlhXVENZeFJ0SHk3MzQzS0ptZXpUM0F5ME1UMFFRcVllRTZ1?oc=5\" target=\"_blank\">Canelo Álvarez identifica el gran peligro de Christian Mbilli y cambia su preparación: “Voy a necesitar mucha resistencia”</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DAZN</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-16T12:02:47+00:00"
+    },
+    {
+      "titulo": "Balotaje en Brasil: ¿Vuelvo ideológico o estructural?",
+      "url": "https://expansion.mx/opinion/2026/10/16/balotaje-en-brasil-vuelvo-ideologico-o-estructural",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/632c5ae/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F66%2Ff5%2F63278b304e318a6367cb4a9951f5%2Flula-bolsonaro-elecciones-brasil-2026.jpg",
+      "descripcion": "El desgaste económico, la inseguridad y el hartazgo ciudadano explican el avance de la derecha en Brasil, más allá de un cambio ideológico del electorado.",
+      "fuente": "Rina Mussali",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-16T11:59:02+00:00"
+    },
+    {
+      "titulo": "Más costos y menos deducciones presionan a las empresas en México para 2027",
+      "url": "https://expansion.mx/economia/2026/10/16/empresas-reforma-ley-laboral-isr-aduanera-retos",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/520df9b/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe0%2F8f%2F380e19a846f4b6ae8c000c57fc7d%2F6-201706061652394-92a4106.jpeg",
+      "descripcion": "La reducción de la jornada laboral y los cambios fiscales y aduaneros amenazan la rentabilidad de los negocios y la llegada de nuevas inversiones.",
+      "fuente": "Dainzú Patiño",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-16T11:55:41+00:00"
+    },
+    {
+      "titulo": "La regla de oro de la Generación Alfa: 52% abandona una app si le aburre y 47% huye por exceso de anuncios",
+      "url": "https://expansion.mx/tecnologia/2026/10/16/generacion-alfa-abandona-apps-aburrimiento-anuncios",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/ac4b70c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1e%2Fa4%2F830666c041eb8135f74819a538bc%2Fgeneracion-alfa-habitos-digitales-apps.png",
+      "descripcion": "La paciencia de los consumidores más jóvenes tiene límites y las marcas que no consiguen captar su atención pueden perderlos en segundos.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-16T11:55:04+00:00"
+    },
     {
       "titulo": "Canelo Álvarez desafía el peligro y mantiene su pelea en Arabia Saudita - MARCA",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcG5FTXY1RWs5R2hLb1NSYUlldW43UEtnQ3ktRy1TUGZoelN1bGlpVTBiNVVGclBDM1NvTHdncWxMbXJmNDhRSnBpWU9WLTItaHIyeERnWjBENzdlajZfX0dReTJoMWVYUVFySUgwM25VbEF2cFlzTmlFZkx0aUU2LUJXSnhZQ0dxUzNwVDk2MlRubXdDUXlzVG5RdVJ2ZUNuU2lzWTBTcWtCZnhRbkNrenAya9IBswFBVV95cUxQeERRcVBHNDNOR3RwSjJyVTFOZzJLMXV4M0ZRV1FMNy1yMlJmNmE4cVR3TzRNXzRnXy1ObTRtaFlyTk9zVnhNVWZIUWpEbEM5SXpxOEtuVVVOWHI4UFVoS3pWakNyeVJOUlU1cFVEVl9WZVBUbExsQm1ZWGJTUG1QWVRRY0VIc2lHZW9uVnlkSTZsMHkzUWZLM1A5djV5MW9ZdVVDc1lLZFZuT1BYQmpEZHhsYw?oc=5",
@@ -335,6 +385,16 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-16T00:10:16+00:00"
+    },
+    {
+      "titulo": "🚨 ¡JUEGAZO! ¡YA VA A EMPEZAR! 🚨 Así podrás ver EN VIVO el Dodgers vs Brewers en el Juego 4 de la Serie de Campeonato en la MLB HOY 🏆 A esta HORA inicia... 🔥 - Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNOWozRXJjYXVGZFJhMlhqeTZ0Zm8xS2kwLWV5RG05VEczaXhDTVJ4Y1E4Zkh0aW0ydTV6YXNlYXJFR1pOVVdDMGRPV3BmVXd3eUJlOV9RS2o4bm5sb2E5WXRNMUVlLTNya2NCRlVCcjFXTVIwZUlJaktPS042eVFUM2ljZEFKSmoyVnQwY0h2dFAxWFFmQ0dTd19ENVFvczJpX2hvci13NzI5cS1TSnFJem1PY3paY2pCRGM2RWtlUmVzQ3FPT3d3REVNdWhRR2EwRmFReC1hZlBkNnlLdWdtWG5RV2RzcEMx?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxNOWozRXJjYXVGZFJhMlhqeTZ0Zm8xS2kwLWV5RG05VEczaXhDTVJ4Y1E4Zkh0aW0ydTV6YXNlYXJFR1pOVVdDMGRPV3BmVXd3eUJlOV9RS2o4bm5sb2E5WXRNMUVlLTNya2NCRlVCcjFXTVIwZUlJaktPS042eVFUM2ljZEFKSmoyVnQwY0h2dFAxWFFmQ0dTd19ENVFvczJpX2hvci13NzI5cS1TSnFJem1PY3paY2pCRGM2RWtlUmVzQ3FPT3d3REVNdWhRR2EwRmFReC1hZlBkNnlLdWdtWG5RV2RzcEMx?oc=5\" target=\"_blank\">🚨 ¡JUEGAZO! ¡YA VA A EMPEZAR! 🚨 Así podrás ver EN VIVO el Dodgers vs Brewers en el Juego 4 de la Serie de Campeonato en la MLB HOY 🏆 A esta HORA inicia... 🔥</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Facebook</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-16T00:00:33+00:00"
     },
     {
       "titulo": "Canelo Álvarez quiere retirarse en Guadalajara y no en el Estadio Azteca - Plano Informativo",
@@ -11945,66 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "formula1",
       "fecha": "2026-10-10T10:21:09+00:00"
-    },
-    {
-      "titulo": "Ciclón Ferran en París: elegido jugador del mes de septiembre en la Ligue 1 - MUNDIARIO",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWEl3T19PXzRXQXhVNm9TWXJSUklUci1sRk9QLWxWX05NWV80Tk9Rd1FuVjR1M2otdjYzeEV2cHdNTm0yaU1KZWhLNFBHQUIzajFmOFQtQzV1anBZUWhYWUdPOGpJYXRlS3owVXNBRHRpWnk3REN3c0tKcmdzd0pfNmR3WWVYa1FLQTJ3SUQyZkxjbGI1SjR5eE1XbS13Z2diODdKWU9CVjkyTjBHTDVlMkhsRHgxZHRNZ0ZTTHNVNDPSAcYBQVVfeXFMTUNNVGRWbGsyNV9ybWI3eWNHWWV0S1ZoS2owM3BiUEFGYkdNRnNFQ0JKVEJrNXBEVjRERklta2NmOFN0WktwaURQVlFTUFBsM1VDNTJfZG1hNFQyMHdGOVRlUy1kWjllMHowX29wd00xNmpvQkVHMHNTMDNGNFZrSDJtV1dCWmRPTV85bU5HWjZZMmVLeC1pVlA3NlRBRWVsbXZlM3Z1ckJhcFhXcU9CTHVaNENhclZjckFLVFlTUlFmZzhTbWtn?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWEl3T19PXzRXQXhVNm9TWXJSUklUci1sRk9QLWxWX05NWV80Tk9Rd1FuVjR1M2otdjYzeEV2cHdNTm0yaU1KZWhLNFBHQUIzajFmOFQtQzV1anBZUWhYWUdPOGpJYXRlS3owVXNBRHRpWnk3REN3c0tKcmdzd0pfNmR3WWVYa1FLQTJ3SUQyZkxjbGI1SjR5eE1XbS13Z2diODdKWU9CVjkyTjBHTDVlMkhsRHgxZHRNZ0ZTTHNVNDPSAcYBQVVfeXFMTUNNVGRWbGsyNV9ybWI3eWNHWWV0S1ZoS2owM3BiUEFGYkdNRnNFQ0JKVEJrNXBEVjRERklta2NmOFN0WktwaURQVlFTUFBsM1VDNTJfZG1hNFQyMHdGOVRlUy1kWjllMHowX29wd00xNmpvQkVHMHNTMDNGNFZrSDJtV1dCWmRPTV85bU5HWjZZMmVLeC1pVlA3NlRBRWVsbXZlM3Z1ckJhcFhXcU9CTHVaNENhclZjckFLVFlTUlFmZzhTbWtn?oc=5\" target=\"_blank\">Ciclón Ferran en París: elegido jugador del mes de septiembre en la Ligue 1</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MUNDIARIO</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-10T10:04:42+00:00"
-    },
-    {
-      "titulo": "México Femenil cae 3-4 ante Jamaica en Aguascalientes - 365Scores",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5IamRTZDdrMmd3NnRseW9oRk1jMjFCMDVjUF9zT2s0aG5BczNmUzhvai1OdmcwekJhT25sQVJIZXdJSWQwdHE4cERUSDZYblU5VWZVbXExNFRmbDZkNEpBZVdMSmtqbUtYbVVJVnZFU2pVY21JUjFuNC1R?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE5IamRTZDdrMmd3NnRseW9oRk1jMjFCMDVjUF9zT2s0aG5BczNmUzhvai1OdmcwekJhT25sQVJIZXdJSWQwdHE4cERUSDZYblU5VWZVbXExNFRmbDZkNEpBZVdMSmtqbUtYbVVJVnZFU2pVY21JUjFuNC1R?oc=5\" target=\"_blank\">México Femenil cae 3-4 ante Jamaica en Aguascalientes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">365Scores</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-10T09:56:46+00:00"
-    },
-    {
-      "titulo": "Jonathan Aranda brilla con Tampa Bay y destaca en su primera postemporada - El Informador",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaElENXIzc2xGM2NweXIydkdTNEE2c2RTMVFzVWJ6SGQwN2FBV2J2WHpkdEU2YnlTRGNXZkNuMHpLU3JmT2pmV1g3VFpQcUF0WjRLUDE5YnpGT0xnbjgwcWNSeTdRdWFsVUxZY25rZmY2Qm96YTBKOFVaS3pDQ0lja0JmNjFRb0w0QTV2MXFiTFhwUEdiTFdWZ1Z6SnpONmhWTHk3NjR5WXhsOHZURDJUUU5HZkxfbjU1WWU5cEVya1ZkRVVocVZ3NkxlTnBTQlprT1E1N240dGh4Q1XSAeABQVVfeXFMT0FyNDNjdXdfbEludjlCcGRBdWQ0WHA1T1JNY0RmTmhRRFlmVUJBSnAtYmNNUlhoTGpURkpyT3hXLXNvSnp1WWNEUnE5LUVVb1U0RGxCcGppckdIRW55NXpLTDlRR1BpS3NrNlVhOVZXM2ItNHlKZ1V6Q09UbG1CTXN1V3NxNXNhZU0yandjeHFEY0R3ck5HZXJqY285NGZFd3YxN0IwRjk5SElsR2pGRG8wTEdhYU9XT2ZSWDFVZ0JUWEh5RkNYcHhXMG51M09sbGRMN3I2bGhubEt0Z245b0M?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaElENXIzc2xGM2NweXIydkdTNEE2c2RTMVFzVWJ6SGQwN2FBV2J2WHpkdEU2YnlTRGNXZkNuMHpLU3JmT2pmV1g3VFpQcUF0WjRLUDE5YnpGT0xnbjgwcWNSeTdRdWFsVUxZY25rZmY2Qm96YTBKOFVaS3pDQ0lja0JmNjFRb0w0QTV2MXFiTFhwUEdiTFdWZ1Z6SnpONmhWTHk3NjR5WXhsOHZURDJUUU5HZkxfbjU1WWU5cEVya1ZkRVVocVZ3NkxlTnBTQlprT1E1N240dGh4Q1XSAeABQVVfeXFMT0FyNDNjdXdfbEludjlCcGRBdWQ0WHA1T1JNY0RmTmhRRFlmVUJBSnAtYmNNUlhoTGpURkpyT3hXLXNvSnp1WWNEUnE5LUVVb1U0RGxCcGppckdIRW55NXpLTDlRR1BpS3NrNlVhOVZXM2ItNHlKZ1V6Q09UbG1CTXN1V3NxNXNhZU0yandjeHFEY0R3ck5HZXJqY285NGZFd3YxN0IwRjk5SElsR2pGRG8wTEdhYU9XT2ZSWDFVZ0JUWEh5RkNYcHhXMG51M09sbGRMN3I2bGhubEt0Z245b0M?oc=5\" target=\"_blank\">Jonathan Aranda brilla con Tampa Bay y destaca en su primera postemporada</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Informador</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-10T09:50:42+00:00"
-    },
-    {
-      "titulo": "Canelo-Mbilli Card: Bajo costo, clima bélico, antidoping desconocido y Munguia vs. ‘un tal Zon’ - Solo Boxeo",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORjJRaU94VGJjX3RvVVRCc1BpYVlxRTdLZElieTh2YUczWWp0b0RsZS1qdFNhd0dJZi1aSnpaT2NNNk5vMFk4V0ZUd0JLT3dlbC0wWThWY0Z4dVNLNlZ1a3pORGFRMWZBbk5tYmhTS0QxY1Y3dW9lNDZFQnlYcl9WYU9kcXFpQTRTUzRmeVh3Um9GSFoxcVBscHRGVGVOZW40Z19tWFFmX3NFa1NVZ0dCSkFLM0JXZ2d4VUFab0NCVnBiejBDMWc?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxORjJRaU94VGJjX3RvVVRCc1BpYVlxRTdLZElieTh2YUczWWp0b0RsZS1qdFNhd0dJZi1aSnpaT2NNNk5vMFk4V0ZUd0JLT3dlbC0wWThWY0Z4dVNLNlZ1a3pORGFRMWZBbk5tYmhTS0QxY1Y3dW9lNDZFQnlYcl9WYU9kcXFpQTRTUzRmeVh3Um9GSFoxcVBscHRGVGVOZW40Z19tWFFmX3NFa1NVZ0dCSkFLM0JXZ2d4VUFab0NCVnBiejBDMWc?oc=5\" target=\"_blank\">Canelo-Mbilli Card: Bajo costo, clima bélico, antidoping desconocido y Munguia vs. ‘un tal Zon’</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Solo Boxeo</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-10T09:27:58+00:00"
-    },
-    {
-      "titulo": "Las posibles alineaciones titulares del partido entre el Liverpool y el Manchester City - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLVhjSjBMWl9CbDg5bXlrMlB0U0s2T1BaMUVwR2FaQlRiQ1pVdHBjbkNVUDVUUE52RExpdEVJZy1xeWhhMnJyZ0g1V1J4amtHb1NWbHRwMHp5bTg3WDRJbDNRakx3VEJLYXNOUG1ZanZPWS03R1VkTUVhNFVfdk8wVHdCaHdzS3psOTc5ZmxxcTdzWG5DYlQxY3UxbmEwTkFQcDBVNUpFUExEOC16amV2NmNtX1JiZl9VVmJJ?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLVhjSjBMWl9CbDg5bXlrMlB0U0s2T1BaMUVwR2FaQlRiQ1pVdHBjbkNVUDVUUE52RExpdEVJZy1xeWhhMnJyZ0g1V1J4amtHb1NWbHRwMHp5bTg3WDRJbDNRakx3VEJLYXNOUG1ZanZPWS03R1VkTUVhNFVfdk8wVHdCaHdzS3psOTc5ZmxxcTdzWG5DYlQxY3UxbmEwTkFQcDBVNUpFUExEOC16amV2NmNtX1JiZl9VVmJJ?oc=5\" target=\"_blank\">Las posibles alineaciones titulares del partido entre el Liverpool y el Manchester City</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-10T09:22:44+00:00"
-    },
-    {
-      "titulo": "Mexicanos por el mundo: Horarios y partidos del fin de semana - 365Scores",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5PS0p1X2ROb0wtY25fX2Y1SFdXSF9SVGkyNkxraWg2VVNxNjhwNFBUcW8yU1RiR1NxWUlYaUpiT1h2TU16QzZGSHZGT25qSnE4S1YtWHh3WUtOdG1YeW9QeU1haVEtem45dy1fem9oaHJ5aW1PYnNLRFVqRWk?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE5PS0p1X2ROb0wtY25fX2Y1SFdXSF9SVGkyNkxraWg2VVNxNjhwNFBUcW8yU1RiR1NxWUlYaUpiT1h2TU16QzZGSHZGT25qSnE4S1YtWHh3WUtOdG1YeW9QeU1haVEtem45dy1fem9oaHJ5aW1PYnNLRFVqRWk?oc=5\" target=\"_blank\">Mexicanos por el mundo: Horarios y partidos del fin de semana</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">365Scores</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-10T09:12:49+00:00"
     }
   ]
 }
