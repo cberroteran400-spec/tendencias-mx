@@ -1,11 +1,31 @@
 {
-  "actualizado": "2026-10-16T02:03:14.943540+00:00",
+  "actualizado": "2026-10-16T02:34:51.714868+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 109,
-    "sin_imagen": 1091
+    "con_imagen": 110,
+    "sin_imagen": 1090
   },
   "noticias": [
+    {
+      "titulo": "Geely lanza Monjaro EM-i, el SUV enchufable rival de BYD Song Plus y Mitsubishi Outlander",
+      "url": "https://expansion.mx/empresas/2026/10/15/geely-monjaro-em-i-precio-mexico",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/c32abe8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb7%2Fc9%2F7ff963ee45679ae76996ea938ac5%2Fimg-9627.jpeg",
+      "descripcion": "La marca china apuesta por esta SUV para captar clientes que buscan electrificación y mostrar tecnología que también respalde su oferta de modelos de mayor volumen.",
+      "fuente": "Ivet Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-16T01:56:25+00:00"
+    },
+    {
+      "titulo": "El empresario número uno del futbol mexicano no es Vergara ni Azcárraga y pocos adivinarían quién",
+      "url": "https://expansion.mx/empresas/2026/10/15/empresario-numero-uno-del-futbol-mexicano",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/7cd56ff/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff2%2F8f%2Feb31a8fb49789e12cf92ca202a4a%2Fazcarraga-morodo-vergara.png",
+      "descripcion": "Una historia familiar, décadas de negocios y una larga relación con el futbol explican cómo se construyó una de las mayores fortunas del sector.",
+      "fuente": "Josep Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-16T01:56:08+00:00"
+    },
     {
       "titulo": "Las mejores peleas del ‘Canelo’ según Eddy Reynoso y el tiro que se quedó con ganas de repetir - Periódico Zócalo",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbTMyMGU4eXdxN1BUYXl2QnhpSW5UWTFpbGdEaS1PS1RoeklsWFF1a0lTbkhiZEx2WVM5SHhEUUdieGdoUVlNU2wxWkJtSmtYZzJCOFVONkh2TjRIQUVMOUZrZV9URmpJZElPNU9kdGdwNnBPYXNjSDZnR2F5RXdoRmxKSW55TGczMVlndFgtamtSaUU3QkVrckYzVWI4NmFfRVJNekdWRFhaYVI5RlB1SjNZRExvMUJZdUxZ?oc=5",
@@ -35,6 +55,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-16T01:00:23+00:00"
+    },
+    {
+      "titulo": "⚾ Cómo mirar Dodgers — Brewers EN VIVO ONLINE por Juego 4 de MLB Playoffs 2026 - El Comercio Perú",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxObDNxajhwYlNFdXc1WXpSTmFPU19lSjVYNHk1bERhQWJZaFloczB3V3RmV0ptMU9jOVA2S3BWOWhDQkpIclBOblJxUkJ3VjJTNS13TmVqMVpmT2ZkVWlkSG5yQzdJeGZtS1FzOXZEdFZ2NllTZ01nX08wUFU1TXU3cVNUZk40dzVwRGtBWFBQNlFEQ1BpcFlMa1lHWW5ZdW5rUHdmNHoyTTlhSEN4YkJadkNGNk1KbGRfRUFiZVkyem1ud2ZsRkRoQzFrOVJfTkxoZXFZNmExeGQ0UlhDVVV0TlAwSlBQaGtEbDZRbV81RVVYRmtfSjFWLVNSU2RfQdIBkgJBVV95cUxNYTlXVFNRTk5GUGQ3S1BKRU5SRGluRDBLX3BzSHNBeGxsVmIxU2hYSHB1OFdwRXRmQlpfWWlZd29USXB4ZTd6UE1xY2QzUmo2THdwX3RfdEIxQm1Ic1dCdllUVzVwdVlOMFJ5T0hmMlVzMGg4aVNiM3RsUHB3cUI5MTdQX2doZ0JKOFRtdHBGbTdIMVlPVnNONWhmUUNKQWx3ekRxWTF2WnAyaUpLZ0FmMldnYWg0RFlmNFk0NUZSVUF5NTYydFBSLWhXZ1F2QnNwWGxibkx6OUxTa19PTWgtQVc2UjRHRkpHaGRKX2pWYS15S3k0OU9RbldOUFd5dm84ZFVIQVQ5ZzhaUTNaalU2WXlB?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi_gFBVV95cUxObDNxajhwYlNFdXc1WXpSTmFPU19lSjVYNHk1bERhQWJZaFloczB3V3RmV0ptMU9jOVA2S3BWOWhDQkpIclBOblJxUkJ3VjJTNS13TmVqMVpmT2ZkVWlkSG5yQzdJeGZtS1FzOXZEdFZ2NllTZ01nX08wUFU1TXU3cVNUZk40dzVwRGtBWFBQNlFEQ1BpcFlMa1lHWW5ZdW5rUHdmNHoyTTlhSEN4YkJadkNGNk1KbGRfRUFiZVkyem1ud2ZsRkRoQzFrOVJfTkxoZXFZNmExeGQ0UlhDVVV0TlAwSlBQaGtEbDZRbV81RVVYRmtfSjFWLVNSU2RfQdIBkgJBVV95cUxNYTlXVFNRTk5GUGQ3S1BKRU5SRGluRDBLX3BzSHNBeGxsVmIxU2hYSHB1OFdwRXRmQlpfWWlZd29USXB4ZTd6UE1xY2QzUmo2THdwX3RfdEIxQm1Ic1dCdllUVzVwdVlOMFJ5T0hmMlVzMGg4aVNiM3RsUHB3cUI5MTdQX2doZ0JKOFRtdHBGbTdIMVlPVnNONWhmUUNKQWx3ekRxWTF2WnAyaUpLZ0FmMldnYWg0RFlmNFk0NUZSVUF5NTYydFBSLWhXZ1F2QnNwWGxibkx6OUxTa19PTWgtQVc2UjRHRkpHaGRKX2pWYS15S3k0OU9RbldOUFd5dm84ZFVIQVQ5ZzhaUTNaalU2WXlB?oc=5\" target=\"_blank\">⚾ Cómo mirar Dodgers — Brewers EN VIVO ONLINE por Juego 4 de MLB Playoffs 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Comercio Perú</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-16T00:41:00+00:00"
     },
     {
       "titulo": "Slim y Televisa eran socios, estalló una guerra de 4 años y la compra de AT&T México podría reabrirla en 2027",
@@ -295,6 +325,16 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-10-15T21:30:40+00:00"
+    },
+    {
+      "titulo": "Rafael Câmara llega a Haas: ¡F1 tendrá cuatro latinoamericanos en 2027! - vanguardia.com.mx",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOS1pxbVFxaE9kU2VrMENWR1hNMV94MHc3dXFPd2RpQWp1SnRJRkdha2dzX2pNU3NpQms1VHJwN0VVanVFdXR1em5PZnJoMXU3Z1hkeVlEWmtPWUQtYmRrYWd5VTJ5YkIzM2tVQ3pNb0NDVHpDdXNLdTBaYjlsdWxLZk83Rmo4WV9NVDV4eFRnSVlxNEdvUTRpRlBrZlpmdWN6OEdiY1FzM0dEc0szMWV1dnlkTUR1MHJVamw1Tk82eUx1cHB4R2FF?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxOS1pxbVFxaE9kU2VrMENWR1hNMV94MHc3dXFPd2RpQWp1SnRJRkdha2dzX2pNU3NpQms1VHJwN0VVanVFdXR1em5PZnJoMXU3Z1hkeVlEWmtPWUQtYmRrYWd5VTJ5YkIzM2tVQ3pNb0NDVHpDdXNLdTBaYjlsdWxLZk83Rmo4WV9NVDV4eFRnSVlxNEdvUTRpRlBrZlpmdWN6OEdiY1FzM0dEc0szMWV1dnlkTUR1MHJVamw1Tk82eUx1cHB4R2FF?oc=5\" target=\"_blank\">Rafael Câmara llega a Haas: ¡F1 tendrá cuatro latinoamericanos en 2027!</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">vanguardia.com.mx</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-15T21:20:16+00:00"
     },
     {
       "titulo": "Mateo Chávez participó en victoria del Az Alkmaar en la Europa Champions League - Excélsior",
@@ -11965,46 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-10T00:30:09+00:00"
-    },
-    {
-      "titulo": "‘Canelo’ Álvarez quiere pelear en México y ya tiene lugar pensado - AS México",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQi10UDhSMXJqZEc1WDl2aUJUdmx0Vi1KSnVYeER3SXZxbXgxaTJmZV9aSTU0OFZyVjRvSlVKSGFXNUNpXzAyX1FmUnFmejJYZVlDSjZXTUxkZ1VocjVYWlUtVG9WdWgzOThYYjB4TDNnaGZVckU3Z19iR0RJUllyaXJET3l0UzRhaHpOQUVHWlQwQ0tNOXVmS0lZZ0lYMDdSdzV6OdIBuAFBVV95cUxOczQ5VzUwc0F6WS1ST1BSanFBVWdHZUxURWtRUGxIWjhzdWJkU2VEUVdScjhucGxzMzRyQ1R6YTgzZU5kQzNOWGJBZXUzSmtvQ0tQeTJHM2lla1dTM0E4eDB1aElqbTJweGE5X0pKM0dINU9KMTA1dTVHamkxN2FPZWlHdjJWbkZBUlhld1JFUVFHcHlkTlpxcWlZaFZ5MnY2bXh1elBFXzAtejFZWU9UUjRXdDJvbVdu?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPQi10UDhSMXJqZEc1WDl2aUJUdmx0Vi1KSnVYeER3SXZxbXgxaTJmZV9aSTU0OFZyVjRvSlVKSGFXNUNpXzAyX1FmUnFmejJYZVlDSjZXTUxkZ1VocjVYWlUtVG9WdWgzOThYYjB4TDNnaGZVckU3Z19iR0RJUllyaXJET3l0UzRhaHpOQUVHWlQwQ0tNOXVmS0lZZ0lYMDdSdzV6OdIBuAFBVV95cUxOczQ5VzUwc0F6WS1ST1BSanFBVWdHZUxURWtRUGxIWjhzdWJkU2VEUVdScjhucGxzMzRyQ1R6YTgzZU5kQzNOWGJBZXUzSmtvQ0tQeTJHM2lla1dTM0E4eDB1aElqbTJweGE5X0pKM0dINU9KMTA1dTVHamkxN2FPZWlHdjJWbkZBUlhld1JFUVFHcHlkTlpxcWlZaFZ5MnY2bXh1elBFXzAtejFZWU9UUjRXdDJvbVdu?oc=5\" target=\"_blank\">‘Canelo’ Álvarez quiere pelear en México y ya tiene lugar pensado</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AS México</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-09T23:44:16+00:00"
-    },
-    {
-      "titulo": "Hacienda baja el IEPS para gasolinas, mientras el diésel va por su quinta semana con cuota cero",
-      "url": "https://expansion.mx/economia/2026/10/09/hacienda-ieps-gasolinas-diesel-octubre",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/570fc25/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F08%2F3d%2F8a57c2ff49558023cc790edddb67%2F7-gasolina-389636-puebla-primer-gasolinazo-web.jpeg",
-      "descripcion": "Para la semana del 10 al 16 de octubre, la cuota por IEPS para la gasolina Magna será de 2.39 pesos por litro, mientras la Premium pagará 1.62 pesos.",
-      "fuente": "Dainzú Patiño",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-09T23:39:21+00:00"
-    },
-    {
-      "titulo": "MANCHESTER CITY VS PSG: MUCHO PODER EN LA CHAMPIONS LEAGUE | MANO A MANO - YouTube",
-      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9fZUFLeU1QYnhBX1NPR21KQy1uT1h2dzVrT3Vlb2tiSlBubEMtdmhLVURCdkhJcTgzME50SmRiVXgzUQ?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiQkFVX3lxTE9fZUFLeU1QYnhBX1NPR21KQy1uT1h2dzVrT3Vlb2tiSlBubEMtdmhLVURCdkhJcTgzME50SmRiVXgzUQ?oc=5\" target=\"_blank\">MANCHESTER CITY VS PSG: MUCHO PODER EN LA CHAMPIONS LEAGUE | MANO A MANO</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">YouTube</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T23:30:01+00:00"
-    },
-    {
-      "titulo": "Molestia en las federaciones europeas por la Fecha FIFA ampliada a cuatro partidos: hubo más lesiones y pausas prolongadas en las Ligas - LatinUS",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSlFDWmI0ZWNDemNIRkJ2OFg4bkgtaFYzY1JIX3UyTXZGZzdJanY3bC1tdXJiY1ZrT2RqWDJIcllhaW9ydExwaGxNYVR5RHo0OTBaZ0xtajBweUp3N25MLVE1YWx1b091dDNqdExTMmFjaWtBOHh3SFpzcko5WTdmcURwWXNEZE8weUdKbDBselJXSm9PTWNnLXV4YTNuVUNJczdXa1VITXNxUEljWWF2elNPT1ZtNEQ0bmVWblJmZ1NQdUFfbEU4ZlBrTGxEd1U0ck9n0gHTAUFVX3lxTE9KUUNaYjRlY0N6Y0hGQnY4WDhuSC1oVjNjUkhfdTJNdkZnN0lqdjdsLW11cmJjVmtPZGpYMkhyWWFpb3J0THBobE1hVHlEejQ5MFpnTG1qMHB5Snc3bkwtUTVhbHVvT3V0M2p0TFMyYWNpa0E4eHdIWnNySjlZN2ZxRHBZc0RkTzB5R0psMGx6UldKb09NY2ctdXhhM25VQ0lzN1drVUhNc3FQSWNZYXZ6U09PVm00RDRuZVZuUmZnU1B1QV9sRThmUGtMbER3VTRyT2c?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSlFDWmI0ZWNDemNIRkJ2OFg4bkgtaFYzY1JIX3UyTXZGZzdJanY3bC1tdXJiY1ZrT2RqWDJIcllhaW9ydExwaGxNYVR5RHo0OTBaZ0xtajBweUp3N25MLVE1YWx1b091dDNqdExTMmFjaWtBOHh3SFpzcko5WTdmcURwWXNEZE8weUdKbDBselJXSm9PTWNnLXV4YTNuVUNJczdXa1VITXNxUEljWWF2elNPT1ZtNEQ0bmVWblJmZ1NQdUFfbEU4ZlBrTGxEd1U0ck9n0gHTAUFVX3lxTE9KUUNaYjRlY0N6Y0hGQnY4WDhuSC1oVjNjUkhfdTJNdkZnN0lqdjdsLW11cmJjVmtPZGpYMkhyWWFpb3J0THBobE1hVHlEejQ5MFpnTG1qMHB5Snc3bkwtUTVhbHVvT3V0M2p0TFMyYWNpa0E4eHdIWnNySjlZN2ZxRHBZc0RkTzB5R0psMGx6UldKb09NY2ctdXhhM25VQ0lzN1drVUhNc3FQSWNZYXZ6U09PVm00RDRuZVZuUmZnU1B1QV9sRThmUGtMbER3VTRyT2c?oc=5\" target=\"_blank\">Molestia en las federaciones europeas por la Fecha FIFA ampliada a cuatro partidos: hubo más lesiones y pausas prolongadas en las Ligas</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">LatinUS</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-09T23:30:00+00:00"
     }
   ]
 }
