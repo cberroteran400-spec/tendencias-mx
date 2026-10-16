@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-16T06:02:35.462328+00:00",
+  "actualizado": "2026-10-16T06:38:37.191700+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 111,
-    "sin_imagen": 1089
+    "con_imagen": 112,
+    "sin_imagen": 1088
   },
   "noticias": [
+    {
+      "titulo": "Trabajadores de Volkswagen rechazan por segunda vez el contrato colectivo y mantienen riesgo de huelga",
+      "url": "https://expansion.mx/empresas/2026/10/15/trabajadores-volkswagen-rechazan-contrato-colectivo-huelga",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/92614db/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F90%2F72%2F93ec6f8840b1b8007594e3fec260%2Fvolkswagen-votacion-contrato-colectivo-huelga.jpeg",
+      "descripcion": "El resultado vuelve a poner en entredicho una negociación que la automotriz y el sindicato habían cerrado el 2 de octubre, después de meses de conversaciones para revisar las condiciones laborales de la planta poblana.",
+      "fuente": "Expansión",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-16T05:57:19+00:00"
+    },
     {
       "titulo": "¡Canelo no piensa descansar! Revela cuándo volverá a pelear después de su combate del 31 de octubre - TV Azteca",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSU1zdE1Ga0drSFhIaVRTbFZYUHFyV3J4ZUVrRGNFR3docmh1cnlZUGxvNzdPZTYwZFlHMmVXRmduZHBoOWVudnQyR0Y0d3AxOVFaQ0k1RGFsOVBYdUtfZEtxNFNFNlcxNUg3ZDdKR0RScHFGOUpJSG93UTE2RDVDWnpwVjBIVEozM1lNQlh3UUoxc3VocXYydnZZcWdrODR6ZDRlSXVVajAxaFJja3h1M2xrOHhjRUth0gHGAUFVX3lxTFBfV2Z0c3d3MTg2Y2J3M09ydTB2cWNvdEg4MDM1eHB1U1RtTW1tb3VldFBTZTkxWHVIMEZnTjkwV2gtQk1LRjRwZjdjWUs5WjF5R3cyTzBaMFIzM01qLXRXWlpFbWUza2tWbTNRbzBxcFZFUGMwSXpHWjZ0ZVJtRldNT2lSVHh6TVgzZnZ5VUQ2SjA1eHZndmxoalNqOXhYSnBIU3BjdWNoUVZuWjd6cnlGb3pKajBFRHJLcGxYZGpIVDJkSlhiZw?oc=5",
@@ -225,6 +235,16 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-16T00:32:19+00:00"
+    },
+    {
+      "titulo": "🔴 VER ESPN EN VIVO | Transmisión del Game 4 de Dodgers vs. Brewers AHORA por Disney Plus online - Depor",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPMUJ0OXl5Wnk0R282S3ZpeGgzdjdjSWJpa0dhTmJneExzLXRseVRVZjJudzJvcWlEQS1QUkdSQmtraEFyd0FCNDU4VlpONUxhdFc5cUVaeGsxX2k1RjZ6el9uSFNoLUN4d29VRkozSkNIUGNxZmhPRDVvM3Fkd21aVmNYQjUtdnFaT2ZMY0FocEJSUS13Q3BkWGF0bWVUY2FReFJTUW1lMjVsOFFIbHZMVlZBeGQtdXJKOGVIOFg5c0VGNjNJSXhpY1RnRkNpWFNUamVHRWcwX1VuNF9oWEpTOUVka3pQOHF1QWRoUHdoMXlTRmR4OHZIU1o3NNIBjwJBVV95cUxPMXpjbmo4cXNnNGpMN21lN1dFNGN4QTJvSVNMVDQ5Tk1FREFmSlRjcVBWUi1XWF9QVnVHa0FLNWJnTHpsLTkzUnJsOGF3ajZVQ1JVUkl3U0JYWmtZWWVueWp1RE5sUzJxUnNkb09Sam5JWUdIYU8wR2hPWGs4XzliRDB0WmUyZ3JzX3htV0c0Rk85TWpZOXlhWGZiRUd6eVJaREdOcm55bUFkbm1ncmc4N3hWd1d5dFJGTVZNbmgxaDJWdTZHeUVCZkdNWFZqOTg1elgtWW5Rc3pSeVpTdFhrbE5acm5rT3hncUpDd0hGVzY2ZExNRjNoLWdYX3VoeVNtb0xkTEhoeUZsdzVjSnhZ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi-wFBVV95cUxPMUJ0OXl5Wnk0R282S3ZpeGgzdjdjSWJpa0dhTmJneExzLXRseVRVZjJudzJvcWlEQS1QUkdSQmtraEFyd0FCNDU4VlpONUxhdFc5cUVaeGsxX2k1RjZ6el9uSFNoLUN4d29VRkozSkNIUGNxZmhPRDVvM3Fkd21aVmNYQjUtdnFaT2ZMY0FocEJSUS13Q3BkWGF0bWVUY2FReFJTUW1lMjVsOFFIbHZMVlZBeGQtdXJKOGVIOFg5c0VGNjNJSXhpY1RnRkNpWFNUamVHRWcwX1VuNF9oWEpTOUVka3pQOHF1QWRoUHdoMXlTRmR4OHZIU1o3NNIBjwJBVV95cUxPMXpjbmo4cXNnNGpMN21lN1dFNGN4QTJvSVNMVDQ5Tk1FREFmSlRjcVBWUi1XWF9QVnVHa0FLNWJnTHpsLTkzUnJsOGF3ajZVQ1JVUkl3U0JYWmtZWWVueWp1RE5sUzJxUnNkb09Sam5JWUdIYU8wR2hPWGs4XzliRDB0WmUyZ3JzX3htV0c0Rk85TWpZOXlhWGZiRUd6eVJaREdOcm55bUFkbm1ncmc4N3hWd1d5dFJGTVZNbmgxaDJWdTZHeUVCZkdNWFZqOTg1elgtWW5Rc3pSeVpTdFhrbE5acm5rT3hncUpDd0hGVzY2ZExNRjNoLWdYX3VoeVNtb0xkTEhoeUZsdzVjSnhZ?oc=5\" target=\"_blank\">🔴 VER ESPN EN VIVO | Transmisión del Game 4 de Dodgers vs. Brewers AHORA por Disney Plus online</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Depor</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-16T00:30:00+00:00"
     },
     {
       "titulo": "Se formó en Toluca, jugó en el Rangers de Escocia y hoy debutó en la UEFA Conference League - Mediotiempo",
@@ -11985,26 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-10T07:10:39+00:00"
-    },
-    {
-      "titulo": "Dónde y cómo ver en vivo y gratis Real Madrid vs. Villarreal hoy: TV y streaming online del partido de La Liga de España 2026 - Sporting News",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPVERNQjhsZlB6R1YzTU9Xb3ZsODNrWEF0ZlpCM3M2Rnpzc3BtNkVNU0xMc0lIR2c2SmQ1LXQtWFZ1elBoNVhZRS1RNF9zOXU2V1lFeTl2S1FXVzVSUzBBM3R6UzMtNDl6a01PZ1pscUxBMHV2X2ZlYWlTTHFXMTFkb2xPTW5yMmJwOGpBZ0M3d3NtSzhleV9WTmZEcm83WU14UVZjQWF6T1BEenVpZTVnWG9nMmNmaWJrVVRSN0F4Q0lQVncyZUNlNGt0QWxIMEE?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxPVERNQjhsZlB6R1YzTU9Xb3ZsODNrWEF0ZlpCM3M2Rnpzc3BtNkVNU0xMc0lIR2c2SmQ1LXQtWFZ1elBoNVhZRS1RNF9zOXU2V1lFeTl2S1FXVzVSUzBBM3R6UzMtNDl6a01PZ1pscUxBMHV2X2ZlYWlTTHFXMTFkb2xPTW5yMmJwOGpBZ0M3d3NtSzhleV9WTmZEcm83WU14UVZjQWF6T1BEenVpZTVnWG9nMmNmaWJrVVRSN0F4Q0lQVncyZUNlNGt0QWxIMEE?oc=5\" target=\"_blank\">Dónde y cómo ver en vivo y gratis Real Madrid vs. Villarreal hoy: TV y streaming online del partido de La Liga de España 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sporting News</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-10T07:00:01+00:00"
-    },
-    {
-      "titulo": "MLB Playoffs 2026: ALCS, NLCS, fechas, resultados, cómo ver y más - ESPN México",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMVc4MUZfUXpZTGl3Z0hkVkVpZlNSNlRVR2ZYTlBDZWNUUlhwa281b1A5aXpRYW5paUNrcWl1ajJJZEtRZDdVSmhuS3BpeTVULW5IeXU4VU96Y2VBSEVZT0doWkZyX2xHQ0JtZVlZbFVLcU4zYXYyUzFvYlkzNGdWZE5jUjRaUVd2SzR6VUxJRTlzV2hKejNhUnJPT1NaLUp2V3lNMFZPZHgxSElac2ptTHJGczUxUHVGbVJValJxWQ?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOMVc4MUZfUXpZTGl3Z0hkVkVpZlNSNlRVR2ZYTlBDZWNUUlhwa281b1A5aXpRYW5paUNrcWl1ajJJZEtRZDdVSmhuS3BpeTVULW5IeXU4VU96Y2VBSEVZT0doWkZyX2xHQ0JtZVlZbFVLcU4zYXYyUzFvYlkzNGdWZE5jUjRaUVd2SzR6VUxJRTlzV2hKejNhUnJPT1NaLUp2V3lNMFZPZHgxSElac2ptTHJGczUxUHVGbVJValJxWQ?oc=5\" target=\"_blank\">MLB Playoffs 2026: ALCS, NLCS, fechas, resultados, cómo ver y más</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-10T07:00:00+00:00"
     }
   ]
 }
