@@ -1,11 +1,21 @@
 {
-  "actualizado": "2026-10-19T07:29:02.680010+00:00",
+  "actualizado": "2026-10-19T08:18:29.174448+00:00",
   "total": 1200,
   "imagenes": {
     "con_imagen": 947,
     "sin_imagen": 253
   },
   "noticias": [
+    {
+      "titulo": "Juegos y resultados en MLB - PSN Noticias",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBqZ1ktMDZuakdPZUJFYXppZVdnZ0RxTF9TSHBzbUc1V0pVSFZ5WVZyUlFtUlBQZ0UtWThyRmo5SHFBSnhYN1FyczQxX3ZRLVJqS2RIVDZVSjBaSXJ6OWg0bXVsakROUQ?oc=5",
+      "imagen": "https://psn.si/wp-content/uploads/2026/10/MLB.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTFBqZ1ktMDZuakdPZUJFYXppZVdnZ0RxTF9TSHBzbUc1V0pVSFZ5WVZyUlFtUlBQZ0UtWThyRmo5SHFBSnhYN1FyczQxX3ZRLVJqS2RIVDZVSjBaSXJ6OWg0bXVsakROUQ?oc=5\" target=\"_blank\">Juegos y resultados en MLB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PSN Noticias</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-19T07:48:40+00:00"
+    },
     {
       "titulo": "El plan del Barça y el PSG para el partidazo de Champions League - Mundo Deportivo",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZ0czeXZydFBrMXpGSF9mcG1HWkdRS19LRXdxbm5pUExGelM4RDZNb0h4NHJFRFlsQ2tsdnF1UXdPYWFzSkxzZnlkUl9CSFZQc3dJNDh0eFoxcWJOZ3c5bkZ5TDZCejgzWFNiV29DNmt1TWdlbVRCQ0Rkd0NaY25nTHlLQ19xa2ZSSHFxSXFtV0RUaEZIbFNxdWFTakp6YUg0UUN1Vi1iZzJGWVFPTGhfZDRqNk1UYUtk0gHGAUFVX3lxTE0zVmtFaC1YOXN5QmY0NU95ck1pVVpZNTlibVp2Qld5VEdkZUVETXR2VnMyVXJndWx4OGJkXzZTMDdCVTh5UHcxZ3V2ZDBGSDQtY0VfNzNsMjRXTFk4OVoxSjR5OFA5WE9IcjJxRFM2SlpKYTl0bFZsM2NSWmhSekloNDRVRHpaVEpTX0o1R1NvMHBhOVRkWDdTazY4XzNrRHdsVEZlQnJCWVlEZF82T0Z5N05weE5LMFoyVHBjTTlBRS1BV2R2QQ?oc=5",
@@ -11995,16 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-11T21:40:00+00:00"
-    },
-    {
-      "titulo": "Carlos Rotondi señala al reemplazo de Erik Lira: Cruz Azul ya lo tiene en su plantilla - TV Azteca",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTnZMN1haY1d4T1I5QjhfUnE5ZzdkdjUyeUhtemdXeUJldkRTZDdYWG03R2Q5WGJQV3JoOV8wN0VfeGJSUHhvX2JwbHZDYWg2dVM5TjFaWHB2aTFEU2RjUkpUS3hfekdiVnNCaVg4d19WcUtjMHdWemw3TmhqY3JLajM0WFJzc0x3ZDB6V1NiTjFFa2hiSlVj0gGkAUFVX3lxTE9IdzExZ2g4dllkb25PT19rOXJGdnZWU1lDZGlHenhudzl0NjFTN2tSd19OQ2EwbFhQVmFYS1E3aXhSTTh0b3lqS3BxakY0b0FEOE9FeUdNa3dtZFZyNzJuRVFmajNUWXVpRlN6NWNYOXkzcGlPSnBPOHpkVGZLMDVWNDVQTXRvUXVjTnJfVlJFbU8wYU83ZU9aemdUYU9DRjNTZG82?oc=5",
-      "imagen": "https://tvazteca.brightspotcdn.com/dims4/default/1011bb4/2147483647/strip/true/crop/1920x1008+0+36/resize/1200x630!/quality/90/?url=https%3A%2F%2Ftv-azteca-production-tv-azteca.s3.us-west-2.amazonaws.com%2Fbrightspot%2F3d%2F5c%2F122bc1894a44b552bf35c230724b%2Ferik-lira-vs-america.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPTnZMN1haY1d4T1I5QjhfUnE5ZzdkdjUyeUhtemdXeUJldkRTZDdYWG03R2Q5WGJQV3JoOV8wN0VfeGJSUHhvX2JwbHZDYWg2dVM5TjFaWHB2aTFEU2RjUkpUS3hfekdiVnNCaVg4d19WcUtjMHdWemw3TmhqY3JLajM0WFJzc0x3ZDB6V1NiTjFFa2hiSlVj0gGkAUFVX3lxTE9IdzExZ2g4dllkb25PT19rOXJGdnZWU1lDZGlHenhudzl0NjFTN2tSd19OQ2EwbFhQVmFYS1E3aXhSTTh0b3lqS3BxakY0b0FEOE9FeUdNa3dtZFZyNzJuRVFmajNUWXVpRlN6NWNYOXkzcGlPSnBPOHpkVGZLMDVWNDVQTXRvUXVjTnJfVlJFbU8wYU83ZU9aemdUYU9DRjNTZG82?oc=5\" target=\"_blank\">Carlos Rotondi señala al reemplazo de Erik Lira: Cruz Azul ya lo tiene en su plantilla</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TV Azteca</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-11T21:31:53+00:00"
     }
   ]
 }
