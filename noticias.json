@@ -1,11 +1,141 @@
 {
-  "actualizado": "2026-10-19T17:09:40.416686+00:00",
+  "actualizado": "2026-10-19T18:37:06.501234+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 947,
-    "sin_imagen": 253
+    "con_imagen": 943,
+    "sin_imagen": 257
   },
   "noticias": [
+    {
+      "titulo": "WhatsApp ya permite programar mensajes: cómo hacerlo y quiénes pueden usar la función",
+      "url": "https://expansion.mx/tecnologia/2026/10/19/whatsapp-como-programar-mensajes-paso-a-paso",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/d23f893/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1b%2F75%2Fb95b034c454aa63247ec297a0ec0%2Fwhatsapp-programar-mensajes-fecha-hora.png",
+      "descripcion": "WhatsApp comenzó a probar una herramienta que permite elegir la fecha y hora de envío de mensajes, fotos y videos. Te explicamos cómo funciona y qué hacer si todavía no aparece en tu celular.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-19T18:16:09+00:00"
+    },
+    {
+      "titulo": "Checo Pérez calificó su 2026 en Cadillac como uno de sus mejores años en la Fórmula 1 - Carburando",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaUVtbFBFdzJxeFBmSkZsdXlfVjBRdUpKRnFtbXZ5b3ZUNVZILThvNkpGT3pEN2R6UUJHS0Y3VzU0OVhjRUZYYWxZdnFtcGtFY0V1ZUp5WjdmM2Itc0tzNmluZmdyUnRpQnFRazJYSFpaZ3FRM3NWeFVzRURqUFJrcFVQUjhZcHFTUFM5d191Vjg1YlJfYTdsV3VWVGdxMk9Hem5qTjQ4bF84NmxrTkZyTUQzMW1MS0lpVlE?oc=5",
+      "imagen": "https://www.carburando.com/media/cache/resolve/post_desktop_1000/images/6ad65bb296292010427056.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxOaUVtbFBFdzJxeFBmSkZsdXlfVjBRdUpKRnFtbXZ5b3ZUNVZILThvNkpGT3pEN2R6UUJHS0Y3VzU0OVhjRUZYYWxZdnFtcGtFY0V1ZUp5WjdmM2Itc0tzNmluZmdyUnRpQnFRazJYSFpaZ3FRM3NWeFVzRURqUFJrcFVQUjhZcHFTUFM5d191Vjg1YlJfYTdsV3VWVGdxMk9Hem5qTjQ4bF84NmxrTkZyTUQzMW1MS0lpVlE?oc=5\" target=\"_blank\">Checo Pérez calificó su 2026 en Cadillac como uno de sus mejores años en la Fórmula 1</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Carburando</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-19T18:08:47+00:00"
+    },
+    {
+      "titulo": "Champions League: partidos del martes 20, horarios y canales - UNANIMO Deportes",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONVFwVExUOTBOeFpfMlAxeEtyRGlFanRRQ2dpYnA4WDBhSEotRjVqR3NFcGc4dEZoMkFRU21CNHVoVXk4eGk1YmZfM3ZjTXRLQThPbVhwSjdDVnY3M01BS1JfV1FhVlAzYXptOVp6QW54MkoyYmV1cmhkM05zVklGdGptcjNUVWVaQnFpRFcxOW96NnN1LTN3UnN3N2Qza3hGWVhOLXBn?oc=5",
+      "imagen": "https://unanimodeportes.s3.amazonaws.com/wp-content/uploads/2026/09/MBAPPE-BALON-DE-ORO-_1_.webp",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxONVFwVExUOTBOeFpfMlAxeEtyRGlFanRRQ2dpYnA4WDBhSEotRjVqR3NFcGc4dEZoMkFRU21CNHVoVXk4eGk1YmZfM3ZjTXRLQThPbVhwSjdDVnY3M01BS1JfV1FhVlAzYXptOVp6QW54MkoyYmV1cmhkM05zVklGdGptcjNUVWVaQnFpRFcxOW96NnN1LTN3UnN3N2Qza3hGWVhOLXBn?oc=5\" target=\"_blank\">Champions League: partidos del martes 20, horarios y canales</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">UNANIMO Deportes</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-19T17:58:46+00:00"
+    },
+    {
+      "titulo": "Chevrolet bajó tanto el precio del Aveo nuevo que uno usado dejó de ser la opción barata",
+      "url": "https://expansion.mx/empresas/2026/10/07/chevrolet-aveo-2026-nuevo-mas-barato-que-usado",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/877a30f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fee%2Fd7%2Fc41b256a483aa71b9d45c22018a6%2Fchevrolet-aveo-2026.png",
+      "descripcion": "¿Y si comprar un Aveo usado ya no fuera la mejor forma de ahorrar? La promoción de Chevrolet que está cambiando las cuentas.",
+      "fuente": "Josep Rodríguez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-19T17:51:34+00:00"
+    },
+    {
+      "titulo": "¿Cómo la fecha límite de MLB llevó a Guardians a playoffs? - ESPN México",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVViSkVMckk0RUQzMDZpcVlOaU9IRV9XMmM4TzVsM0I3bFd4ZmNtYWhzR1F6Y2Rua2NPM2dRRVBLejRuSzNoR2lYcGtXUjI3V25zcnFyZHBIbTUwVFRleUZHYV9Oc0s5bUZuX2RtdDdmNVdiUl9UbE9pMUE0MHpSVzJXVTNYVmFGSUdrMkJ0RU4yNnFNd2Y0dVh4ZzNEZWYw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVViSkVMckk0RUQzMDZpcVlOaU9IRV9XMmM4TzVsM0I3bFd4ZmNtYWhzR1F6Y2Rua2NPM2dRRVBLejRuSzNoR2lYcGtXUjI3V25zcnFyZHBIbTUwVFRleUZHYV9Oc0s5bUZuX2RtdDdmNVdiUl9UbE9pMUE0MHpSVzJXVTNYVmFGSUdrMkJ0RU4yNnFNd2Y0dVh4ZzNEZWYw?oc=5\" target=\"_blank\">¿Cómo la fecha límite de MLB llevó a Guardians a playoffs?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-19T17:40:24+00:00"
+    },
+    {
+      "titulo": "Francia confirma partido PSG contra Barcelona de Champions League en medio de protestas y saqueos - Proceso",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQcjdkZm9Rc0RtS1VhOFRjRjZkbktuS18yQklGOXE0YklIa2RXV3ZUME52QVJ6M1hybldNUXFoYU4yRWJzNTlYZVIwSzkxMjRKRHdiZmpwN3kxUlhobWJuN0syYUlBOXFLY1BzdVBTd3FGUHV3aFlBcnRQYTZKNDctY2I4dkxDLXpwbUtVenZ0aDJSRV9xNE1KWng1ZXoyRlR1SzJ2ZzVJNlpuQk92bVRKNGdtTGhRbVBXcVFZaFdrMmdXWk5wQmNGbFJhVWk1ZUt3NkpQYmh3RXM3OHlDTDZkV0dDeGw0eUxGbmdvaQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi7AFBVV95cUxQcjdkZm9Rc0RtS1VhOFRjRjZkbktuS18yQklGOXE0YklIa2RXV3ZUME52QVJ6M1hybldNUXFoYU4yRWJzNTlYZVIwSzkxMjRKRHdiZmpwN3kxUlhobWJuN0syYUlBOXFLY1BzdVBTd3FGUHV3aFlBcnRQYTZKNDctY2I4dkxDLXpwbUtVenZ0aDJSRV9xNE1KWng1ZXoyRlR1SzJ2ZzVJNlpuQk92bVRKNGdtTGhRbVBXcVFZaFdrMmdXWk5wQmNGbFJhVWk1ZUt3NkpQYmh3RXM3OHlDTDZkV0dDeGw0eUxGbmdvaQ?oc=5\" target=\"_blank\">Francia confirma partido PSG contra Barcelona de Champions League en medio de protestas y saqueos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Proceso</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-19T17:36:00+00:00"
+    },
+    {
+      "titulo": "México afina la medición del contenido nacional para ganar más negocio en energía",
+      "url": "https://expansion.mx/economia/2026/10/19/mexico-afina-medicion-contenido-nacional-energia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/492b668/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F83%2F00%2F4015e839499a98bfc0dc4430dabd%2Fcontenido-nacional-sector-energetico-mexico.jpeg",
+      "descripcion": "La Secretaría de Economía unifica criterios para hidrocarburos, electricidad y biocombustibles. Busca que más proveedores mexicanos abastezcan los proyectos y que la tecnología deje capacidades en el país.",
+      "fuente": "Patricia Tapia",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-19T17:35:47+00:00"
+    },
+    {
+      "titulo": "¿Cuándo pelea Canelo Álvarez? Próximo rival, fecha de la pelea y todo lo que debes saber - marca usa",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdFpaWS13Sm5UampvTGw0TUppQTNjRkk2VDJESm43V3RDN3JXc3U4LW0xTEwyR1F5QUpMb2lfdzVhMmhSOC04MnpqX1FnVUx1UmlHTXZHMjdyVEdQblp1ejEybWpPLUFGR0Z5TWQ1VjNGOWhaVUZjczY0RFBBVnBsVnZlQ3pXVDV6RkNEbjk0WE5PQjlfdzhjSlR6dDB3LTAzR1lDYQ?oc=5",
+      "imagen": "https://e00-xlk-ue-marca-us.uecdn.es/files/article_main_microformat/uploads/2026/10/19/6ad653c07bd32.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPdFpaWS13Sm5UampvTGw0TUppQTNjRkk2VDJESm43V3RDN3JXc3U4LW0xTEwyR1F5QUpMb2lfdzVhMmhSOC04MnpqX1FnVUx1UmlHTXZHMjdyVEdQblp1ejEybWpPLUFGR0Z5TWQ1VjNGOWhaVUZjczY0RFBBVnBsVnZlQ3pXVDV6RkNEbjk0WE5PQjlfdzhjSlR6dDB3LTAzR1lDYQ?oc=5\" target=\"_blank\">¿Cuándo pelea Canelo Álvarez? Próximo rival, fecha de la pelea y todo lo que debes saber</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">marca usa</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-19T17:33:42+00:00"
+    },
+    {
+      "titulo": "Ser la capital de los data centers obliga a Querétaro a reforzar su seguridad",
+      "url": "https://expansion.mx/tecnologia/2026/10/19/ser-la-capital-de-los-data-centers-obliga-a-queretaro-a-reforzar-su-seguridad",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/a8ae13f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb8%2F54%2F0ffbcea64c89bf9814651a30ebfe%2Fdata-centers-queretaro-ciberseguridad-proteccion-datos.jpeg",
+      "descripcion": "Firmas como ODATA, KIO y Equinix operan infraestructura clave en la entidad, lo que demanda protocolos avanzados de privacidad y mitigación de riesgos tecnológicos.",
+      "fuente": "Fernando Guarneros Olmos",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-19T17:30:38+00:00"
+    },
+    {
+      "titulo": "Hacienda refinancia deuda pública por 238,000 millones de pesos",
+      "url": "https://expansion.mx/economia/2026/10/19/hacienda-refinancia-deuda-publica-238000-millones-de-pesos",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/0b31574/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4c%2Fe9%2Fbaab1ef04db297bee6daa735f402%2Fdeuda-publica-mexico.jpg",
+      "descripcion": "Del total recomprado, 18,823 millones correspondieron a vencimientos en 2026 y 123,910 millones a vencimientos en 2027, informó la dependencia a cargo de Édgar Amador Zamora.",
+      "fuente": "Dainzú Patiño",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-19T17:20:52+00:00"
+    },
+    {
+      "titulo": "Vitinha dice que Lamine Yamal \"es uno de los mejores jugadores del mundo\" pero no le tienen miedo para el partido de Champions - El Informador",
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOSWo3Vnk5YjhmZ1hMU1hsN0hqUGxYeFBnazJmMVdVQXJWMmdGc09URkpEM0JGblFWNFNNSmNSVkVHVjJBczgtekwxMS1Ed1kwU1JMUkpHWHhFdWRBZXRUSktiVDVOUzhOQ2RfSUdZQ0RjRURjMEQ1eXU1ZGwtZHFWVnZ0aUJsYVoyOTZ2MjZRUDc2RXlCN3JtZmRWSjdHWG54Y1BWb1RWQ0RnRWIzRVROdDlpWExic3dZcWJBR3d3bUswel9VZEEyZ2ZmWGYzRUttTjZrOGllQkZBN0tLVzYwMDFBZG9WcmxJN1hHRzQ0bmlOS2VnTUJVOTJSLXliQi0wa1lYQk54U05sUG8ySDdENTJlaXlkRE10dDJaT2dEQzhjX05aMDF3Ulln0gGvAkFVX3lxTE5tdDdRdEtUTnFncjd1dFVBWE1UcnVhcVlLajh2UlBsMGFOU0FqNHRkeUtLRUU0bUJtVS1HUjROSDFBWkJUTjcwbVpKN1daVGxmS0RMSFJsN0RKbWR3RHZ2M0xaUkxZakhjLWN2SWhLZ0Yza3VBb2l1cWxQc1YzV3pNeTdzOUlQSklJSHRUSlA4U1pnZnpkaVhuZWhKaHQ2YzV4Nk14RDFncTVBNm5GMFFxXzBkc1dFUm53RE1GQjQzTGZZMFo2U2FyMFRrUFI5eEJGYUx0RzRJYmZmdXlrRFB0Yk9Td3MzU3p6X3RudHRUaFVoMG5UbVdJVk5iRmlwdUlMcjBMR0tJNm9MNXY3Z2JzLVJBSFQ5ZDU1Q3Y0c0syT0o1QjEzZ29HQ2had3NOYw?oc=5",
+      "imagen": "https://www.informador.mx/__export/1792429434293/sites/elinformador/img/2026/10/19/uefa_champions_league_-16570768-_efe_version1792429432091.jpg_2033476100.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqgJBVV95cUxOSWo3Vnk5YjhmZ1hMU1hsN0hqUGxYeFBnazJmMVdVQXJWMmdGc09URkpEM0JGblFWNFNNSmNSVkVHVjJBczgtekwxMS1Ed1kwU1JMUkpHWHhFdWRBZXRUSktiVDVOUzhOQ2RfSUdZQ0RjRURjMEQ1eXU1ZGwtZHFWVnZ0aUJsYVoyOTZ2MjZRUDc2RXlCN3JtZmRWSjdHWG54Y1BWb1RWQ0RnRWIzRVROdDlpWExic3dZcWJBR3d3bUswel9VZEEyZ2ZmWGYzRUttTjZrOGllQkZBN0tLVzYwMDFBZG9WcmxJN1hHRzQ0bmlOS2VnTUJVOTJSLXliQi0wa1lYQk54U05sUG8ySDdENTJlaXlkRE10dDJaT2dEQzhjX05aMDF3Ulln0gGvAkFVX3lxTE5tdDdRdEtUTnFncjd1dFVBWE1UcnVhcVlLajh2UlBsMGFOU0FqNHRkeUtLRUU0bUJtVS1HUjROSDFBWkJUTjcwbVpKN1daVGxmS0RMSFJsN0RKbWR3RHZ2M0xaUkxZakhjLWN2SWhLZ0Yza3VBb2l1cWxQc1YzV3pNeTdzOUlQSklJSHRUSlA4U1pnZnpkaVhuZWhKaHQ2YzV4Nk14RDFncTVBNm5GMFFxXzBkc1dFUm53RE1GQjQzTGZZMFo2U2FyMFRrUFI5eEJGYUx0RzRJYmZmdXlrRFB0Yk9Td3MzU3p6X3RudHRUaFVoMG5UbVdJVk5iRmlwdUlMcjBMR0tJNm9MNXY3Z2JzLVJBSFQ5ZDU1Q3Y0c0syT0o1QjEzZ29HQ2had3NOYw?oc=5\" target=\"_blank\">Vitinha dice que Lamine Yamal \"es uno de los mejores jugadores del mundo\" pero no le tienen miedo para el partido de Champions</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Informador</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-19T17:10:43+00:00"
+    },
+    {
+      "titulo": "Araújo, sobre la opción de compra del Liverpool: \"Aún es pronto\" - Mundo Deportivo",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTkZGZUtUUHZ4elhaaUxKbkFQbkFZdS1oLVZPa0d0b05yUmQtWTlKMGxaLTJtNUJ5ZV9KM194aXYxWmNNejBtOTNwTWQ1WlhoNmFYdklnUU1SUzAzbGJqZE5RcnhxVHdvVnhQSWYtQ21NS0JhLXRvaEhNSFJuaTNZV2NPb2FYT0pJU1VrbE9XWWRPV1ROREs2S1BoRkc4UE1nUUFBU1BJdUJ4NDNSVExTZUxGSFltUWEwQWhLaktXMFl2dHdGc2fSAdMBQVVfeXFMTzV6aWMyYlZrX1o2OXg0R1FBQks3SlItcFR5c2dCMzJJWWMycHhzNjJEaHZnSDl5MGhUQkpxcDFnanV4WGVFU3BUZmlCemxIN252UjVuYmU2dENvVy10aGxaUGF0NGUwOVhCYmdIRzdwZWNYelowVnVla0RzTW1hNUtjdGxlek9rY29ONkRpb2pXZGwyS3VmRkFmcGp3VEtVN1JxMFlGT3ZITDQyUkx6WWFpekFhOXJzbWJ0S1p1OXZKbWlnTkQ4RUNvd3otTlBscE5tWQ?oc=5",
+      "imagen": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/19/6ad64e6209031.r_d.1736-847-4000.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOTkZGZUtUUHZ4elhaaUxKbkFQbkFZdS1oLVZPa0d0b05yUmQtWTlKMGxaLTJtNUJ5ZV9KM194aXYxWmNNejBtOTNwTWQ1WlhoNmFYdklnUU1SUzAzbGJqZE5RcnhxVHdvVnhQSWYtQ21NS0JhLXRvaEhNSFJuaTNZV2NPb2FYT0pJU1VrbE9XWWRPV1ROREs2S1BoRkc4UE1nUUFBU1BJdUJ4NDNSVExTZUxGSFltUWEwQWhLaktXMFl2dHdGc2fSAdMBQVVfeXFMTzV6aWMyYlZrX1o2OXg0R1FBQks3SlItcFR5c2dCMzJJWWMycHhzNjJEaHZnSDl5MGhUQkpxcDFnanV4WGVFU3BUZmlCemxIN252UjVuYmU2dENvVy10aGxaUGF0NGUwOVhCYmdIRzdwZWNYelowVnVla0RzTW1hNUtjdGxlek9rY29ONkRpb2pXZGwyS3VmRkFmcGp3VEtVN1JxMFlGT3ZITDQyUkx6WWFpekFhOXJzbWJ0S1p1OXZKbWlnTkQ4RUNvd3otTlBscE5tWQ?oc=5\" target=\"_blank\">Araújo, sobre la opción de compra del Liverpool: \"Aún es pronto\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mundo Deportivo</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-19T17:08:43+00:00"
+    },
+    {
+      "titulo": "“Es una buena prueba”: Hansi Flick está listo para el PSG vs Barcelona de Champions League - El Sol de México",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeFJsV2VFUVpNaU9CMF9CWXJpNkt3REZXbmlxWFJaZnVDZlJQRTMxRUhxMTZscHJrd1QzN3ZGc3Z0eTZpbXJMYUpuUHZqazFlSFpfcmFsaWV2ejZ6aGZfOFVyOEtOcm4wV3pKeWlYbFhKNnRadjMtaDBqSVVhOFE4MTY4ZEI2VTA2czlGRmJ4NS1lWi1SZkV4VzFqSUJRMkJNQ0Z1a1hkdkh2SE5DZXo4SHFULTVUeHR4U2NLeGtR?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxOeFJsV2VFUVpNaU9CMF9CWXJpNkt3REZXbmlxWFJaZnVDZlJQRTMxRUhxMTZscHJrd1QzN3ZGc3Z0eTZpbXJMYUpuUHZqazFlSFpfcmFsaWV2ejZ6aGZfOFVyOEtOcm4wV3pKeWlYbFhKNnRadjMtaDBqSVVhOFE4MTY4ZEI2VTA2czlGRmJ4NS1lWi1SZkV4VzFqSUJRMkJNQ0Z1a1hkdkh2SE5DZXo4SHFULTVUeHR4U2NLeGtR?oc=5\" target=\"_blank\">“Es una buena prueba”: Hansi Flick está listo para el PSG vs Barcelona de Champions League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Sol de México</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-19T17:08:23+00:00"
+    },
     {
       "titulo": "Alineaciones probables del PSG - Barça de la tercera jornada de la Champions League - MARCA",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOakFFZlVCdnA3bmZNeDZlZFRaLXlNUkQwLVlndVlfbUVCWmRyT3NpSjdVODZQd0ZzQmRnaXotbFJrXzkyS202T3pRRW9aMVhseFJETkxFSWthcTQ4WXdKYW94QXBuWHZtQ2dLOHgwZ1FDTEktY3h0eXZlOTA2Z29RUkJQYldXNVNwVXJ0elRGS2wwa2Z1SE5fdHBIT0JNOU90RVNDTE9ZUTlvTk5ibjFHNDZvc0ppbW8ySS1uX9IBvAFBVV95cUxPOFB0LXBNOGphczU1UmtDRzNyQkx5SWwzZjhjbGQxTFhyODd2NDZSLW0zY2R2bG5RVTVROHFnQlFSaG00UjN3c0p0TTFhdmF0aEpYNThPTjhsQkxvUDhZdFNCZFpIRndGRm5STjFjWE1vRk9JbW9QM0U0NDNLdXVBUjBoTk9RYUNldHRrV3dhbFpOM243VVBUOE4wZFdrQVhMSlh1SUQxcDFoNU56ZEotcGllUl8wMGpMbl9kTg?oc=5",
@@ -37,6 +167,16 @@
       "fecha": "2026-10-19T16:49:00+00:00"
     },
     {
+      "titulo": "El City, con la duda de Haaland y una baja importante - Mundo Deportivo",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYjFqU3lwaExZZE0zLVdOdncwcDZHSURKV3FHMlh1QjNTU1N4YkY3ZHYxVm1GSlVpUWx4c1hreE81SnRPQXhoWXpCU0ZfM1lVVUVmNzhxa3h5Y2E2dG1ucmtJcVp1QjIxd2I4aWh6SzdvV29kTTVmT1FLQU95NUVqWXl6dnBwQVBVYW9WR185ZEbSAZ4BQVVfeXFMTmFyQzNOTk5tNzZ5Y2lsYjdzbW9fT2VlXzRIZjBzT3k2S3JDYkJ6V3ZLSlRlZzFLclV3aTlwbFR4Q2NHeVktY2Q3aEZPbndFVVk4OFJBWVhuejdFOWRUekZLaEJTcW9vTHBJcktOQWgyNVJtVDVaV3plaGkwZ0VlZlBjTi1RcF9HLWtMSzRiSmVreTd4Z1dPRTVNRXE4eVE?oc=5",
+      "imagen": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/19/6ad643c13c293.r_d.1514-845-4119.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxOYjFqU3lwaExZZE0zLVdOdncwcDZHSURKV3FHMlh1QjNTU1N4YkY3ZHYxVm1GSlVpUWx4c1hreE81SnRPQXhoWXpCU0ZfM1lVVUVmNzhxa3h5Y2E2dG1ucmtJcVp1QjIxd2I4aWh6SzdvV29kTTVmT1FLQU95NUVqWXl6dnBwQVBVYW9WR185ZEbSAZ4BQVVfeXFMTmFyQzNOTk5tNzZ5Y2lsYjdzbW9fT2VlXzRIZjBzT3k2S3JDYkJ6V3ZLSlRlZzFLclV3aTlwbFR4Q2NHeVktY2Q3aEZPbndFVVk4OFJBWVhuejdFOWRUekZLaEJTcW9vTHBJcktOQWgyNVJtVDVaV3plaGkwZ0VlZlBjTi1RcF9HLWtMSzRiSmVreTd4Z1dPRTVNRXE4eVE?oc=5\" target=\"_blank\">El City, con la duda de Haaland y una baja importante</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mundo Deportivo</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-19T16:28:06+00:00"
+    },
+    {
       "titulo": "El mejor Checo Pérez para el peor Cadillac en la F1 - MARCA",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNGxFWjFNMFBfQmNYZXIyWHFuOGQ3a3VhWjFIRGFCZGdoYWFVa0VZQi1XOTU4WEFFRnAxUnh5eUJGdjFHME0tQ2tSRjNjN00zUkZKSzcySi1GeF85N2ZrZUxGMS1iTlBYaXpBN2dJdHdTZ1hQQklHRVhxUnRUbzRhWjlIdEl3dVBGcnFSZWpHak83dWtLX1HSAZYBQVVfeXFMUFI2UUhGazhxX19zOW9zV3hjV1hYVkhLcEVMVlNsdnhQLVBVeExpUzF6b1BITV8yM3NMaG5SRkFXYmdhWUpPMnRsNFlWa3JXd2I2eEJWQWMtTC1FSHZTN2pqdG1KX1pxWEdaeXNaNXZONWZ5ekdXYzBVOXV3RktVdXZKQkhpdUZGVkowcHpoNjFVaTExUW1n?oc=5",
       "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/19/6ad642bada71f.jpeg",
@@ -45,6 +185,36 @@
       "categoria": "Deportes",
       "subcategoria": "formula1",
       "fecha": "2026-10-19T16:22:49+00:00"
+    },
+    {
+      "titulo": "PSG vs Barcelona: el equipo español se juega el invicto en la Champions League - El Siglo de Torreón",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSFBlZk5HNnFXbGNZYmR0bkdpRUJPdDJyUTJyUHg5ZzMxanhXb0tjYzhsMkhKR2NwR3ZsNjc3cDdBYUJIbWJYMGo1RGFZemU3VFgxNzNfZW94WG53LVdkVnNITml1X0kzY0RvT1U5emc0RWlTUG1WZkJlaF85dUc2VGplbkxUbncwYTdHclN0WXMyQzV4cTRsLUl4Q3RDTnBubFFjUzlCeVJTeFA1ZVhTN3oxWHNsNmQyNVB4OTkxN1NUQlprZGxxWWJUTQ?oc=5",
+      "imagen": "https://tecolotito.elsiglodetorreon.com.mx/i/2026/10/2055743.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQSFBlZk5HNnFXbGNZYmR0bkdpRUJPdDJyUTJyUHg5ZzMxanhXb0tjYzhsMkhKR2NwR3ZsNjc3cDdBYUJIbWJYMGo1RGFZemU3VFgxNzNfZW94WG53LVdkVnNITml1X0kzY0RvT1U5emc0RWlTUG1WZkJlaF85dUc2VGplbkxUbncwYTdHclN0WXMyQzV4cTRsLUl4Q3RDTnBubFFjUzlCeVJTeFA1ZVhTN3oxWHNsNmQyNVB4OTkxN1NUQlprZGxxWWJUTQ?oc=5\" target=\"_blank\">PSG vs Barcelona: el equipo español se juega el invicto en la Champions League</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Siglo de Torreón</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-19T16:16:29+00:00"
+    },
+    {
+      "titulo": "La 'disputa' de Luis Enrique por el ADN Barça: \"¿Acerté o fallé? No hablo de Champions, hablo de ADN\" - El Mundo",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQT0g3V1lnM0VTZWxDWWp6eUxqVnFIQV9TZFB2ekpxRFdzSUU3LUhvRmpqc0dKM2xfYS05b1ZGQkhCVjY0S0ZQZFZ0NnNkMGxXVnF5dVdtUjhhdl83cFVoNnpfYnRWZDYyMDFNM3QxOXBfQkNSWlltdEY5c08wNDF0em9CY2tLMkhkdlAtNUlLSk9QYmpYUXNWYWhGelbSAZwBQVVfeXFMTlRwcVpPSHFvWUhJb3M5enhhM1VPeFVBT084S1NNMi1xdlpDNGNDRDNMVXZ0TmZQczdqRTFFbHBZelRfZFNFekJBNVhoRmh0b3d6OEpjTWE2WWduWUxiVEk1NWJkVk9xWFBvTkVSZTlvcG9RMzFkdjJVZm1uRERPTEJ6V1FLZVdIQVFEOUFFVEsyYnBZNlJYZkZ2WUlf?oc=5",
+      "imagen": "https://e01-phantom-elmundo.uecdn.es/d961a22a2f70fb149c39de1350ccbfdd/crop/0x0/3071x2047/resize/1200/f/webp/assets/multimedia/imagenes/2026/10/19/17924257561497.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxQT0g3V1lnM0VTZWxDWWp6eUxqVnFIQV9TZFB2ekpxRFdzSUU3LUhvRmpqc0dKM2xfYS05b1ZGQkhCVjY0S0ZQZFZ0NnNkMGxXVnF5dVdtUjhhdl83cFVoNnpfYnRWZDYyMDFNM3QxOXBfQkNSWlltdEY5c08wNDF0em9CY2tLMkhkdlAtNUlLSk9QYmpYUXNWYWhGelbSAZwBQVVfeXFMTlRwcVpPSHFvWUhJb3M5enhhM1VPeFVBT084S1NNMi1xdlpDNGNDRDNMVXZ0TmZQczdqRTFFbHBZelRfZFNFekJBNVhoRmh0b3d6OEpjTWE2WWduWUxiVEk1NWJkVk9xWFBvTkVSZTlvcG9RMzFkdjJVZm1uRERPTEJ6V1FLZVdIQVFEOUFFVEsyYnBZNlJYZkZ2WUlf?oc=5\" target=\"_blank\">La 'disputa' de Luis Enrique por el ADN Barça: \"¿Acerté o fallé? No hablo de Champions, hablo de ADN\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Mundo</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-19T16:11:06+00:00"
+    },
+    {
+      "titulo": "MLB: Rays supera a Guardianes y acaricia la Serie Mundial - teleSUR",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4tcWVDNExMMVZMS2ZCYnoxQ1lLR1IwWWZXY1YyTjZlZUZUUFRETmJWOTYtdURmVjlqRm53TlhTWXhtQjhLNjhJVF8wdkpsR1E0M0wtMHI4YWNSQ2RFN0ROekdVQmpMMm5NXzZUV014V1g1T1lfSkE?oc=5",
+      "imagen": "https://ikona.telesurtv.net/content/uploads/2026/10/849853203-1418469699815240-1019855475325657026-n.jpg.webp",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE4tcWVDNExMMVZMS2ZCYnoxQ1lLR1IwWWZXY1YyTjZlZUZUUFRETmJWOTYtdURmVjlqRm53TlhTWXhtQjhLNjhJVF8wdkpsR1E0M0wtMHI4YWNSQ2RFN0ROekdVQmpMMm5NXzZUV014V1g1T1lfSkE?oc=5\" target=\"_blank\">MLB: Rays supera a Guardianes y acaricia la Serie Mundial</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">teleSUR</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-19T16:05:16+00:00"
     },
     {
       "titulo": "PSG vs Barcelona: dónde ver EN VIVO y a qué hora juegan en Champions League - Soy Referee",
@@ -195,6 +365,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-19T14:47:29+00:00"
+    },
+    {
+      "titulo": "Cuándo juegan PSG vs. Barcelona por la UEFA Champions League: equipo, fecha, hora y TV en vivo - ESPN Deportes",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQclV4NzdCOXozaFNRaWk2RzJQTkw1WDU1U1hvMVJLWk9wenp0TV9SN1dONTVJNFhTa0F5b1dYLUVjYzdkdWp2ZnlMaDVESW0xLWRVS21GZXpCcWpLUVl0endhOTlDcks0NUFDek9UczNpZm1ReUtUOFV1anBYblRaNzB5TmVOSjFiWGpBX0o0b3dncUhsTzVLQlh0YndzU0dfNTNpYU95QmlCOFlERmlGMFJial8wZ3FBTVJjV0hXaV9HdDdUcGhEcC1ZS21KR3phSWZpT3VoTVpKOTF1NVE4TA?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxQclV4NzdCOXozaFNRaWk2RzJQTkw1WDU1U1hvMVJLWk9wenp0TV9SN1dONTVJNFhTa0F5b1dYLUVjYzdkdWp2ZnlMaDVESW0xLWRVS21GZXpCcWpLUVl0endhOTlDcks0NUFDek9UczNpZm1ReUtUOFV1anBYblRaNzB5TmVOSjFiWGpBX0o0b3dncUhsTzVLQlh0YndzU0dfNTNpYU95QmlCOFlERmlGMFJial8wZ3FBTVJjV0hXaV9HdDdUcGhEcC1ZS21KR3phSWZpT3VoTVpKOTF1NVE4TA?oc=5\" target=\"_blank\">Cuándo juegan PSG vs. Barcelona por la UEFA Champions League: equipo, fecha, hora y TV en vivo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-19T14:47:00+00:00"
     },
     {
       "titulo": "Luis Enrique asegura que frenar a Lamine es “muy fácil” - TUDN",
@@ -11825,186 +12005,6 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-12T12:04:57+00:00"
-    },
-    {
-      "titulo": "Querétaro y el siguiente capítulo de la economía digital de México",
-      "url": "https://expansion.mx/opinion/2026/10/12/queretaro-y-el-siguiente-capitulo-de-la-economia-digital-de-mexico",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/df10a4c/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ffd%2Ff9%2F9900dd704f89a1c67e31929b45fb%2Fmicrosoft-data.png",
-      "descripcion": "El auge de los centros de datos puede convertir a Querétaro en un nodo estratégico de la economía de la IA, pero el reto será acompañar la inversión con más electricidad, eficiencia hídrica e infraestructura.",
-      "fuente": "Alexis Milo",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-12T11:59:25+00:00"
-    },
-    {
-      "titulo": "La violencia en Sinaloa encarece los seguros y deja a conductores y transportistas más desprotegidos",
-      "url": "https://expansion.mx/economia/2026/10/12/la-violencia-en-sinaloa-encarece-los-seguros-y-deja-a-conductores-y-transportistas-mas-desprotegidos",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/9723045/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F42%2Feb%2Fd433e7cf454e96bd22c468efc940%2F7-cartel-sinaloa-994743-bloqueos-crimen-organizado-culiacan-impreso.jpeg",
-      "descripcion": "Las pólizas se disparan hasta 400%, reportan transportistas. La entidad registra un fuerte crecimiento en la contratación de seguros de vida, de acuerdo con datos de la CNSF.",
-      "fuente": "Santiago Nolasco",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-12T11:55:39+00:00"
-    },
-    {
-      "titulo": "¿Tu hijo tiene TDAH? Esta startup mexicana busca adaptar las clases a sus necesidades",
-      "url": "https://expansion.mx/tecnologia/2026/10/12/ia-educacion-startup-mexicana-emmi",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/8c53bc8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff6%2Ff2%2F2db5cc104222b0dc3aebab8c155f%2Ftdah-ensenanza-aula-ia.png",
-      "descripcion": "La EdTech mexicana Emmi utiliza IA para personalizar las actividades de alumnos de preescolar y primaria. La empresa llega a más de 12,000 niños y busca reducir la carga administrativa de los docentes.",
-      "fuente": "Selene Ramírez",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-12T11:55:35+00:00"
-    },
-    {
-      "titulo": "La posible alineación titular del Arsenal para enfrentar al Lille OSC - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRXhNZFVPTExyQkR3MFZJN2cyNjFzY21LUnpkR0tZR1d4OTYtM01zaGgxcWVsUWxDSFNycVhBOXF5cE1peW93YlFpNkpmQVhQR0w5UnBVaFF3OGc2U3Fvajl5VElnRkV5RWp3NDR6UjhLZ3JURGJzYWhZOVVLQlMtbzFyemtHU2p1eDNPNUpEVU5SbTdveS1laXhwdzlfVkV2Z0hlZEs1MDVtVFJadW9Sa0x3?oc=5",
-      "imagen": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_137,w_5692,h_3201/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/sports_illustrated_ftbol/01m4qp3qs628rp09323s.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxPRXhNZFVPTExyQkR3MFZJN2cyNjFzY21LUnpkR0tZR1d4OTYtM01zaGgxcWVsUWxDSFNycVhBOXF5cE1peW93YlFpNkpmQVhQR0w5UnBVaFF3OGc2U3Fvajl5VElnRkV5RWp3NDR6UjhLZ3JURGJzYWhZOVVLQlMtbzFyemtHU2p1eDNPNUpEVU5SbTdveS1laXhwdzlfVkV2Z0hlZEs1MDVtVFJadW9Sa0x3?oc=5\" target=\"_blank\">La posible alineación titular del Arsenal para enfrentar al Lille OSC</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T11:38:18+00:00"
-    },
-    {
-      "titulo": "Zaniolo, a CM: «Leao hizo bien en ir al Galatasaray. Quería jugar en la Premier, es la NBA del fútbol. Mourinho es un mago, hay una historia detrás...» - Goal.com",
-      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPVFIxeVpGUTh0NTl2RERwYmxVR1NLYllTUzFjMnJQM2FET0tGYnpRUHNPQlJrdmNfV01fV0tmZGxzcnczTW1DOG9HWk5FdmNJT1BKSXZnWGt5UXBkUVZnYU5MSmMyRVpva2R1a1ItQmdGZExmQVctMFVlYnhUb1g5dE5XS1QycGZrOFJHdU9RMFZxVjBNVUJCMGlRVk14NjFJczgyMjExRF8zMkxEcENyeGxUVVRXYWJCRmNZdkZSRnJObGpLZDlFZTNsWVRxY3NTdURwZ2J6OGhZNXJOMWltNEswUFp2SDZwQ0tpRnpFaFVFQ1o4V3Jhb3hqQTNlVnZhRXU3d2pGUHg3bFBKSG02QUJJOGlfRkw4SC1IX1ZlcFhDZw?oc=5",
-      "imagen": "https://assets.goal.com/images/v3/blt9ddb07b7555e200c/zaniolo%203.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiogJBVV95cUxPVFIxeVpGUTh0NTl2RERwYmxVR1NLYllTUzFjMnJQM2FET0tGYnpRUHNPQlJrdmNfV01fV0tmZGxzcnczTW1DOG9HWk5FdmNJT1BKSXZnWGt5UXBkUVZnYU5MSmMyRVpva2R1a1ItQmdGZExmQVctMFVlYnhUb1g5dE5XS1QycGZrOFJHdU9RMFZxVjBNVUJCMGlRVk14NjFJczgyMjExRF8zMkxEcENyeGxUVVRXYWJCRmNZdkZSRnJObGpLZDlFZTNsWVRxY3NTdURwZ2J6OGhZNXJOMWltNEswUFp2SDZwQ0tpRnpFaFVFQ1o4V3Jhb3hqQTNlVnZhRXU3d2pGUHg3bFBKSG02QUJJOGlfRkw4SC1IX1ZlcFhDZw?oc=5\" target=\"_blank\">Zaniolo, a CM: «Leao hizo bien en ir al Galatasaray. Quería jugar en la Premier, es la NBA del fútbol. Mourinho es un mago, hay una historia detrás...»</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Goal.com</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T11:28:12+00:00"
-    },
-    {
-      "titulo": "Zaniolo en CM - 3: «Leao hizo bien en ir al Galatasaray. Quería jugar en la Premier, es la NBA del fútbol. Mourinho es un mago, hay una historia detrás...» - Goal.com",
-      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOTkFGaDI2SVFPRExJcFB4N2ZPcDlFdFV5MUpBbUsyM29waW5DOFpwSnFDQnN4TUx5Z2lFWXFIcDZ3aW0tRGxFbkV1RUl0NnRkeU1qYXNZNGYtTTdPS3ZJUkhHMUhVZlFHVWU1MDFtNzgtQjhSVlFJYTM1RW1rUUQ3X2lING9ZZi0xcERHMHhXUW5QdklJTzgyREU2Y1UyZEpRMWFiRjl3ODF0NXZQQ1ZqcVFsR0dCYngyZS13S3VqVk8zWkRVRzMzU3RES3FUaHFuVmh5R3hOMkx3bXJWRG9yT0RWSXBjc3Itb2NRY0ZyUkViXzJaeUJiS09fZHc2dU5DUzExY0pkcmd1cS1iV0tHN0RlZFBRYnFneVlJVjBJMksyanZ4MEE?oc=5",
-      "imagen": "https://assets.goal.com/images/v3/blt9ddb07b7555e200c/zaniolo%203.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipgJBVV95cUxOTkFGaDI2SVFPRExJcFB4N2ZPcDlFdFV5MUpBbUsyM29waW5DOFpwSnFDQnN4TUx5Z2lFWXFIcDZ3aW0tRGxFbkV1RUl0NnRkeU1qYXNZNGYtTTdPS3ZJUkhHMUhVZlFHVWU1MDFtNzgtQjhSVlFJYTM1RW1rUUQ3X2lING9ZZi0xcERHMHhXUW5QdklJTzgyREU2Y1UyZEpRMWFiRjl3ODF0NXZQQ1ZqcVFsR0dCYngyZS13S3VqVk8zWkRVRzMzU3RES3FUaHFuVmh5R3hOMkx3bXJWRG9yT0RWSXBjc3Itb2NRY0ZyUkViXzJaeUJiS09fZHc2dU5DUzExY0pkcmd1cS1iV0tHN0RlZFBRYnFneVlJVjBJMksyanZ4MEE?oc=5\" target=\"_blank\">Zaniolo en CM - 3: «Leao hizo bien en ir al Galatasaray. Quería jugar en la Premier, es la NBA del fútbol. Mourinho es un mago, hay una historia detrás...»</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Goal.com</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T10:21:27+00:00"
-    },
-    {
-      "titulo": "El día que Maresca desactivó al PSG de Luis Enrique - Mundo Deportivo",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZklBWVQ3dHJCOGZNLXl6QzgtZklqZC14QWh5Uzd6V3pSbkR0VUl1X1JMeHdhS2J4YmlXRXlIc0dsQ1BGRm13dTA5aXhSdFFTZ0w0aXpzekNYcS1QM3lYUUZXenJfUmg0UGJ4T2lJNUF2QjVrS0F2LVEtZ2J0NTFmTmdhS0wxNjU2UzVOS21NVmZESDJxRUg5WDBid2ZuclhGQVU0SFUwZG1uNUg4NFBUSDYtSHN4UTd1ZGfSAccBQVVfeXFMTVBWTE5CYzR1Z0FWZU9uVlRScjBLNXByZG44Rml6WkRSUnNNOUg3Vk5zdjJ1Uk1IR2duODI2TWhfSGxJWmZualAxMm1ocTJFNF9nYW41QlRaeUJUUFFkY3UtcEtTaldqNmMtZ2tLcl9OaFhSMWRDbnBOaGNoa1BTYjRKZVNtSVJCZUpSOXJ4eDZwSzBPYjlNYzlPRm4wd21GWkdaTXlKVkRDRWNWUjkzZ244TGtyUFdheDROZk5NTHFwREZZdHJHdw?oc=5",
-      "imagen": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/12/6acca600a4a14.png",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxPZklBWVQ3dHJCOGZNLXl6QzgtZklqZC14QWh5Uzd6V3pSbkR0VUl1X1JMeHdhS2J4YmlXRXlIc0dsQ1BGRm13dTA5aXhSdFFTZ0w0aXpzekNYcS1QM3lYUUZXenJfUmg0UGJ4T2lJNUF2QjVrS0F2LVEtZ2J0NTFmTmdhS0wxNjU2UzVOS21NVmZESDJxRUg5WDBid2ZuclhGQVU0SFUwZG1uNUg4NFBUSDYtSHN4UTd1ZGfSAccBQVVfeXFMTVBWTE5CYzR1Z0FWZU9uVlRScjBLNXByZG44Rml6WkRSUnNNOUg3Vk5zdjJ1Uk1IR2duODI2TWhfSGxJWmZualAxMm1ocTJFNF9nYW41QlRaeUJUUFFkY3UtcEtTaldqNmMtZ2tLcl9OaFhSMWRDbnBOaGNoa1BTYjRKZVNtSVJCZUpSOXJ4eDZwSzBPYjlNYzlPRm4wd21GWkdaTXlKVkRDRWNWUjkzZ244TGtyUFdheDROZk5NTHFwREZZdHJHdw?oc=5\" target=\"_blank\">El día que Maresca desactivó al PSG de Luis Enrique</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mundo Deportivo</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T10:20:19+00:00"
-    },
-    {
-      "titulo": "Canelo Álvarez se la juega y peleará en Arabia Saudí pese a los bombardeos: \"No le teme a nada\" - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVkhMclZNbXRwUFVia25GTW92bFZKZDhrTGhMR1ZvbjBXZXgtVGI3OTFwa083V0ZEbm5ScDZVV3VTM3VfYUt6TDQ3bGNPc01fZVJSZVdPOVhGRmhvX096eERJYnptSlUtMjdSU1ZPWEYxdTVpNWVYZ2VQVWxzZG9NelE4MF93QVE3eEh1dEhEMEwtdHE4QTYzUlpzN243OWlzZF9yOHBuT05Lc245TDZLTm9B0gGyAUFVX3lxTE5fb0pKelNDU1FKZno3TkV4R0dFN1Fmc2l2UDZ6Y2Q4a1liRnNKNnFfM0R4X1RxcWw3VXZWYlBwTDFzOUZ2VzQtbUFod2FZR2FaRnNSc0JiWERFQlRkUHE4dkVBaklXVXVMVE9sb2IwLXd3dS1xUUYweW1CN1VodXVPQXluellnM0VrVjh6SEhHT0RFUUNpS01fT0xObFhtTl9GWm5aNDRFNE4tbWM0NFF0SXc?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/12/ftNy61gpHAP2tzpMb.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxOVkhMclZNbXRwUFVia25GTW92bFZKZDhrTGhMR1ZvbjBXZXgtVGI3OTFwa083V0ZEbm5ScDZVV3VTM3VfYUt6TDQ3bGNPc01fZVJSZVdPOVhGRmhvX096eERJYnptSlUtMjdSU1ZPWEYxdTVpNWVYZ2VQVWxzZG9NelE4MF93QVE3eEh1dEhEMEwtdHE4QTYzUlpzN243OWlzZF9yOHBuT05Lc245TDZLTm9B0gGyAUFVX3lxTE5fb0pKelNDU1FKZno3TkV4R0dFN1Fmc2l2UDZ6Y2Q4a1liRnNKNnFfM0R4X1RxcWw3VXZWYlBwTDFzOUZ2VzQtbUFod2FZR2FaRnNSc0JiWERFQlRkUHE4dkVBaklXVXVMVE9sb2IwLXd3dS1xUUYweW1CN1VodXVPQXluellnM0VrVjh6SEhHT0RFUUNpS01fT0xObFhtTl9GWm5aNDRFNE4tbWM0NFF0SXc?oc=5\" target=\"_blank\">Canelo Álvarez se la juega y peleará en Arabia Saudí pese a los bombardeos: \"No le teme a nada\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-12T10:18:56+00:00"
-    },
-    {
-      "titulo": "Canelo Álvarez se la juega y peleará en Arabia Saudí pese a los bombardeos: \"No le teme a nada\" - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX29KSnpTQ1NRSmZ6N05FeEdHRTdRZnNpdlA2emNkOGtZYkZzSjZxXzNEeF9UcXFsN1V2VmJQcEwxczlGdlc0LW1BaHdhWUdhWkZzUnNCYlhERUJUZFBxOHZFQWpJV1V1TFRPbG9iMC13d3UtcVFGMHltQjdVaHV1T0F5bnpZZzNFa1Y4ekhIR09ERVFDaUtNX09MTmxYbU5fRlpuWjQ0RTROLW1jNDRRdEl30gGyAUFVX3lxTE5fb0pKelNDU1FKZno3TkV4R0dFN1Fmc2l2UDZ6Y2Q4a1liRnNKNnFfM0R4X1RxcWw3VXZWYlBwTDFzOUZ2VzQtbUFod2FZR2FaRnNSc0JiWERFQlRkUHE4dkVBaklXVXVMVE9sb2IwLXd3dS1xUUYweW1CN1VodXVPQXluellnM0VrVjh6SEhHT0RFUUNpS01fT0xObFhtTl9GWm5aNDRFNE4tbWM0NFF0SXc?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/12/ftNy61gpHAP2tzpMb.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxOX29KSnpTQ1NRSmZ6N05FeEdHRTdRZnNpdlA2emNkOGtZYkZzSjZxXzNEeF9UcXFsN1V2VmJQcEwxczlGdlc0LW1BaHdhWUdhWkZzUnNCYlhERUJUZFBxOHZFQWpJV1V1TFRPbG9iMC13d3UtcVFGMHltQjdVaHV1T0F5bnpZZzNFa1Y4ekhIR09ERVFDaUtNX09MTmxYbU5fRlpuWjQ0RTROLW1jNDRRdEl30gGyAUFVX3lxTE5fb0pKelNDU1FKZno3TkV4R0dFN1Fmc2l2UDZ6Y2Q4a1liRnNKNnFfM0R4X1RxcWw3VXZWYlBwTDFzOUZ2VzQtbUFod2FZR2FaRnNSc0JiWERFQlRkUHE4dkVBaklXVXVMVE9sb2IwLXd3dS1xUUYweW1CN1VodXVPQXluellnM0VrVjh6SEhHT0RFUUNpS01fT0xObFhtTl9GWm5aNDRFNE4tbWM0NFF0SXc?oc=5\" target=\"_blank\">Canelo Álvarez se la juega y peleará en Arabia Saudí pese a los bombardeos: \"No le teme a nada\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-12T10:18:56+00:00"
-    },
-    {
-      "titulo": "Visitar al Galatasaray nunca pasa desapercibido para el Barça - Mundo Deportivo",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZmp6akl5RTc1VHVjc3hiak9aMk1Pc29nYVpwajlPZFVjYk5zWC1kbURSWkpUaDVsY05VNTJMQktrOWFJRUhub2VKWUdOc29TNG40Q3Q2WTZzRy1SbzM5UXBYMjBIbk1VR0ZOV0hQbHdxWWZGTk9ZNm5LRGlLUFEzc2hsRUM1dmZXQmhPb1J4LTlLLUY2akVjQ0s1b2ZyWHNMT3pIcjZGTWJ0Zi1qTTZMVVFjQ1IxbzJhVklnaFRYR0g1eDNt0gHSAUFVX3lxTE85OVFhQWtFT0xaeW8ybndQLVAxR05MSEhDaXBwUXJjTWV3T3N1dGZZRVFkYkpKODFsN0NaRlViQ1R5SVdpUEVRZC1FR2pMb2ZramlTSG1BazJZRHhaNlVUMGJUUDlKbU5iZVZFeVFfWlRLc1Nha1dHVm1WdHlXSGhfZHI3b3VrZENxd0JVMFN1QXZmZ1BaSHRKNVRUd3BqUWpXMm8xLUVoaGNoUUhWNHhGSTdDYmkydlljcEVma3FwRTVBZjFKZG9DR2NxZVppZVJ0Zw?oc=5",
-      "imagen": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/11/6acbe3c6742a9.r_d.1391-928-4312.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxNZmp6akl5RTc1VHVjc3hiak9aMk1Pc29nYVpwajlPZFVjYk5zWC1kbURSWkpUaDVsY05VNTJMQktrOWFJRUhub2VKWUdOc29TNG40Q3Q2WTZzRy1SbzM5UXBYMjBIbk1VR0ZOV0hQbHdxWWZGTk9ZNm5LRGlLUFEzc2hsRUM1dmZXQmhPb1J4LTlLLUY2akVjQ0s1b2ZyWHNMT3pIcjZGTWJ0Zi1qTTZMVVFjQ1IxbzJhVklnaFRYR0g1eDNt0gHSAUFVX3lxTE85OVFhQWtFT0xaeW8ybndQLVAxR05MSEhDaXBwUXJjTWV3T3N1dGZZRVFkYkpKODFsN0NaRlViQ1R5SVdpUEVRZC1FR2pMb2ZramlTSG1BazJZRHhaNlVUMGJUUDlKbU5iZVZFeVFfWlRLc1Nha1dHVm1WdHlXSGhfZHI3b3VrZENxd0JVMFN1QXZmZ1BaSHRKNVRUd3BqUWpXMm8xLUVoaGNoUUhWNHhGSTdDYmkydlljcEVma3FwRTVBZjFKZG9DR2NxZVppZVJ0Zw?oc=5\" target=\"_blank\">Visitar al Galatasaray nunca pasa desapercibido para el Barça</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mundo Deportivo</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T10:07:33+00:00"
-    },
-    {
-      "titulo": "Canelo Álvarez se la juega y peleará en Arabia Saudí pese a los bombardeos: \"No le teme a nada\" - marca usa",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZFpWYmg5aXRDbzF3UXpjR3pRa2xMZ0wxM09iakVseXZiaFRoNWNsWWhPZnM3cUFJOERseXNSVWFza3VpTk9rWUxkLUtqMm9QblFHLXRGR1RKYlN1RmlwS2dxVkNUX05jcnVFMFE2NkhhZ3hKTGlPZFpRRzlxLTVWYnd4TlBqcUQ0R2w1QmJvRHo1N3RTRnBrVk9wS1h1YWdKdmhQc21pczg3b0Np0gGyAUFVX3lxTFBTWXB6NnpCYnUzSVMzOXN2OHc3MFZYQXgycUtuVUxFYkpmOFhEQnZ1aWNta01fUHRXRWJQdHZhdGV2Qk5HeG1Mb005UWx2MkI2RjRoZ2RnR2dCMzFoZndOZy1ab29MdFF2bDRQLWZ1TUJwbDVwX25RNFRUUlFoRHcxckpiWDlHYTJ5NTJDazJaYXA0aXB2RXFReldjTnNjVVBjbGtVUUpXemo3SjFuejkyMlE?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-us.uecdn.es/files/article_main_microformat/uploads/2026/10/12/6accac917eb70.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPZFpWYmg5aXRDbzF3UXpjR3pRa2xMZ0wxM09iakVseXZiaFRoNWNsWWhPZnM3cUFJOERseXNSVWFza3VpTk9rWUxkLUtqMm9QblFHLXRGR1RKYlN1RmlwS2dxVkNUX05jcnVFMFE2NkhhZ3hKTGlPZFpRRzlxLTVWYnd4TlBqcUQ0R2w1QmJvRHo1N3RTRnBrVk9wS1h1YWdKdmhQc21pczg3b0Np0gGyAUFVX3lxTFBTWXB6NnpCYnUzSVMzOXN2OHc3MFZYQXgycUtuVUxFYkpmOFhEQnZ1aWNta01fUHRXRWJQdHZhdGV2Qk5HeG1Mb005UWx2MkI2RjRoZ2RnR2dCMzFoZndOZy1ab29MdFF2bDRQLWZ1TUJwbDVwX25RNFRUUlFoRHcxckpiWDlHYTJ5NTJDazJaYXA0aXB2RXFReldjTnNjVVBjbGtVUUpXemo3SjFuejkyMlE?oc=5\" target=\"_blank\">Canelo Álvarez se la juega y peleará en Arabia Saudí pese a los bombardeos: \"No le teme a nada\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">marca usa</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-12T09:59:23+00:00"
-    },
-    {
-      "titulo": "Zaniolo en CM - 3: «Leao hizo bien en ir al Galatasaray. Yo quería la Premier, es la NBA del fútbol. Mourinho es un mago, hay una historia detrás...» - Goal.com",
-      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNa2hfM3M0SVlGNVFFQ3F5V1NUMDA5R1VGMkYybG9lemV0a3pDUFpnWXF2LThuc2hIVXpiUFBFNWNDcUp0aVk0OWZjQ2lZdllQel9UQV9SMGxhY2txWVEwblRwbzNHaG9iWjN5UnlFRi15TVR6WkplaUJUSTF6dFlXZVpGX1lXS0NwaHFldXo1Yjg5ZkpMbzhHYWFiQ1lMMVNQWGpBYzJLemtzeVZ1cGl4WFI4RXFPWWp1UnFCaVVCVUxBcndCZTBfeWdwS0FNN29LVE1pWC1ZYm02dG9GSVpRQlVvQ1BEcWxJNHN3bUE0bWZTVlhvTHlIWTBuMjhyamlTV2R5V1hEbWJYYlpLMEx6UkxRWGhiMDdWWGdMWFZB?oc=5",
-      "imagen": "https://assets.goal.com/images/v3/blt9ddb07b7555e200c/zaniolo%203.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMingJBVV95cUxNa2hfM3M0SVlGNVFFQ3F5V1NUMDA5R1VGMkYybG9lemV0a3pDUFpnWXF2LThuc2hIVXpiUFBFNWNDcUp0aVk0OWZjQ2lZdllQel9UQV9SMGxhY2txWVEwblRwbzNHaG9iWjN5UnlFRi15TVR6WkplaUJUSTF6dFlXZVpGX1lXS0NwaHFldXo1Yjg5ZkpMbzhHYWFiQ1lMMVNQWGpBYzJLemtzeVZ1cGl4WFI4RXFPWWp1UnFCaVVCVUxBcndCZTBfeWdwS0FNN29LVE1pWC1ZYm02dG9GSVpRQlVvQ1BEcWxJNHN3bUE0bWZTVlhvTHlIWTBuMjhyamlTV2R5V1hEbWJYYlpLMEx6UkxRWGhiMDdWWGdMWFZB?oc=5\" target=\"_blank\">Zaniolo en CM - 3: «Leao hizo bien en ir al Galatasaray. Yo quería la Premier, es la NBA del fútbol. Mourinho es un mago, hay una historia detrás...»</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Goal.com</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T09:41:14+00:00"
-    },
-    {
-      "titulo": "El Galatasaray encarna el renacimiento del imperio turco - La Vanguardia",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcFBNbWcyTGt3REpxUXUyVFV4YkFmcVowbllnS2Y1eVpVVXdHQWlvRHVoem42UUxHbzcxeV9BYkwtRzRYSkk1WHJwci1lajl5Ny1aUDFwUUNlTU14Snp5d1Y3ZUpPOG1yUFFyOFR0U0tmejJhZ1NUV2FrSkw5amF2bHdMSGRQVWxOQVVNTGVQMFJSMDJaSUgyOWhySUIxaHR0Tm1GeTFPV1FOUHRwLVg1T3M1NVN4YzRLLWxfQmN6N0wxcllFMEdrMWFGSDhRcnfSAdQBQVVfeXFMTndwQUhyNGUtQVRycl84RU5CNG1BNzNxNmpFUzVHVU9aY1RZMzZpSVgxUU85b0ZWNGRvVEJHdWpZMENwZ25SRnRXTEpMTnhycXUzemdyUDBEb2Nvb0tOR3M4TkNULUtFVXVzb1hvVzdWOFVIZ18wTVBYcm1wS2NjRzNPeTNQdExJbDdld01zQnhUcURsYUhFR25FdUEwdVpZMTlHd18ydGxqZUdEUTZ6RjhyWnhyMnVpTHYxQlYtVlBzdjVZMGFHRV9VcWU0aU8wd3NfdTA?oc=5",
-      "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2026/10/11/6acc018581e7b.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxOcFBNbWcyTGt3REpxUXUyVFV4YkFmcVowbllnS2Y1eVpVVXdHQWlvRHVoem42UUxHbzcxeV9BYkwtRzRYSkk1WHJwci1lajl5Ny1aUDFwUUNlTU14Snp5d1Y3ZUpPOG1yUFFyOFR0U0tmejJhZ1NUV2FrSkw5amF2bHdMSGRQVWxOQVVNTGVQMFJSMDJaSUgyOWhySUIxaHR0Tm1GeTFPV1FOUHRwLVg1T3M1NVN4YzRLLWxfQmN6N0wxcllFMEdrMWFGSDhRcnfSAdQBQVVfeXFMTndwQUhyNGUtQVRycl84RU5CNG1BNzNxNmpFUzVHVU9aY1RZMzZpSVgxUU85b0ZWNGRvVEJHdWpZMENwZ25SRnRXTEpMTnhycXUzemdyUDBEb2Nvb0tOR3M4TkNULUtFVXVzb1hvVzdWOFVIZ18wTVBYcm1wS2NjRzNPeTNQdExJbDdld01zQnhUcURsYUhFR25FdUEwdVpZMTlHd18ydGxqZUdEUTZ6RjhyWnhyMnVpTHYxQlYtVlBzdjVZMGFHRV9VcWU0aU8wd3NfdTA?oc=5\" target=\"_blank\">El Galatasaray encarna el renacimiento del imperio turco</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Vanguardia</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T09:22:51+00:00"
-    },
-    {
-      "titulo": "Canelo vs. Mbilli a punto de colapsar pese a Canelo y Turki - Solo Boxeo",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNDVXVlh2aTNiUU52b0o0RzJwOVBaRkFTVmcyM1JLWGxqRkRhY0JQWDV2Z1Rscl91N2l1cjQwdTdmdzRyMF9PWmx1X2RSY2NLazdYZ0hmTkZIeHQycDlZWDBwUWZhRnhqNUt1dUFWa0VhRkc4LXk4c3lFVFRNQjNYUFdTY2ZhNmVCODdtRDFvU2hDY0d2bUtXVWVNTGQ?oc=5",
-      "imagen": "https://www.soloboxeo.com/wp-content/uploads/2025/09/Carnelo-y-Turki-.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNNDVXVlh2aTNiUU52b0o0RzJwOVBaRkFTVmcyM1JLWGxqRkRhY0JQWDV2Z1Rscl91N2l1cjQwdTdmdzRyMF9PWmx1X2RSY2NLazdYZ0hmTkZIeHQycDlZWDBwUWZhRnhqNUt1dUFWa0VhRkc4LXk4c3lFVFRNQjNYUFdTY2ZhNmVCODdtRDFvU2hDY0d2bUtXVWVNTGQ?oc=5\" target=\"_blank\">Canelo vs. Mbilli a punto de colapsar pese a Canelo y Turki</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Solo Boxeo</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-12T09:00:43+00:00"
-    },
-    {
-      "titulo": "La posible alineación titular del Barcelona para enfrentarse al Galatasaray - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQnQ1WXFaWGdOcFhSOHhNRUNVWHpGdWVQVk5yT3lsYk9YWWNUSS1zSDNraWdzYjE4MWh0cEpwbzFDZlRCX2ZPNl8xaTE3YXhfZjJjd3FkRksyb05uWmMzSHdPQlBtaFB3dEJNRmJtSnpwVjAxUTFRWG9KSnpOWlFPTzN4Sl9BLVJuTng4RjVqQUo0Z0o2Znp2bEtLZWNldUFEalNHWDRCbUR6Z1BEU3lTT0xQbFNPUDR4dHc?oc=5",
-      "imagen": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_32,w_3003,h_1689/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/sports_illustrated_ftbol/01m4mfsd2w7vgkbs79dm.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNQnQ1WXFaWGdOcFhSOHhNRUNVWHpGdWVQVk5yT3lsYk9YWWNUSS1zSDNraWdzYjE4MWh0cEpwbzFDZlRCX2ZPNl8xaTE3YXhfZjJjd3FkRksyb05uWmMzSHdPQlBtaFB3dEJNRmJtSnpwVjAxUTFRWG9KSnpOWlFPTzN4Sl9BLVJuTng4RjVqQUo0Z0o2Znp2bEtLZWNldUFEalNHWDRCbUR6Z1BEU3lTT0xQbFNPUDR4dHc?oc=5\" target=\"_blank\">La posible alineación titular del Barcelona para enfrentarse al Galatasaray</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T08:42:05+00:00"
-    },
-    {
-      "titulo": "Lesionados y sancionados del Barcelona para enfrentarse al Galatasaray - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYWE5YVViSTVnNDl0M2VFS3hkcUN3MG40cEE1akk5UEFoZ0lxM1RKUEdnYU52QTBOMFRTaG9Wa1BWcFNOQmFuRzZjT01aZDNiZWRPZmpzOThhekhpaHI5cTI2OHVXWVFTZXNSYXEtYUx2VTNEV1dpNTA5ekx6MWF4NVFDYnNxQjRLNkZSSjkyeXQyQ1NWQ2NYSlJoc0Fkb3ZpY3h6OE1yN1U1TV9DRHZIYnZ2QQ?oc=5",
-      "imagen": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_80,w_5018,h_2822/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/sports_illustrated_ftbol/01m4mexdpzf1hq7v1qza.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOYWE5YVViSTVnNDl0M2VFS3hkcUN3MG40cEE1akk5UEFoZ0lxM1RKUEdnYU52QTBOMFRTaG9Wa1BWcFNOQmFuRzZjT01aZDNiZWRPZmpzOThhekhpaHI5cTI2OHVXWVFTZXNSYXEtYUx2VTNEV1dpNTA5ekx6MWF4NVFDYnNxQjRLNkZSSjkyeXQyQ1NWQ2NYSlJoc0Fkb3ZpY3h6OE1yN1U1TV9DRHZIYnZ2QQ?oc=5\" target=\"_blank\">Lesionados y sancionados del Barcelona para enfrentarse al Galatasaray</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T08:28:31+00:00"
-    },
-    {
-      "titulo": "MLS 2026: Resultados del fin de semana y tabla de playoffs - UNANIMO Deportes",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE80NVpwakRYeTViZnpvTFhzcVd0R2k5RDZrWVRVXzEyc2tRMktTZ0hPRGdMbzgzSnZKTzgwNEZtV1N5R0FaM3dGWnlOaHl4LUFPbzY1S2ZQUjJ4MXdKRVNWcUNYUTFIdFFuNHlFSmdyWFNZVnk1MmVn?oc=5",
-      "imagen": "https://unanimodeportes.s3.amazonaws.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-12-at-2.22.28-AM.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE80NVpwakRYeTViZnpvTFhzcVd0R2k5RDZrWVRVXzEyc2tRMktTZ0hPRGdMbzgzSnZKTzgwNEZtV1N5R0FaM3dGWnlOaHl4LUFPbzY1S2ZQUjJ4MXdKRVNWcUNYUTFIdFFuNHlFSmdyWFNZVnk1MmVn?oc=5\" target=\"_blank\">MLS 2026: Resultados del fin de semana y tabla de playoffs</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">UNANIMO Deportes</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T08:23:15+00:00"
-    },
-    {
-      "titulo": "Roma vs Real Madrid: previa, predicciones y alineaciones - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcGtTRmVTMWpvTl9wZFhqNFhvMGFCQlhfSklISktWUmlicWJ2STNyVTB3Zmw1cEtwRVJ5eWFsODdLMjRNM0tiQW9iSTRiNk8wZmRiYmtJMGZMX29EanpCZFA3SzNHSUs5YmhzRHJkT0dFYWg1Uk9Ic21CT00wdDdCeWlqWUR3Q0tYSFp5MGFMUlFIVWdUVnhhYy1QRGVPUQ?oc=5",
-      "imagen": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_84,w_4282,h_2408/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/sports_illustrated_ftbol/01m4q1jv0b61hn484ypy.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxNcGtTRmVTMWpvTl9wZFhqNFhvMGFCQlhfSklISktWUmlicWJ2STNyVTB3Zmw1cEtwRVJ5eWFsODdLMjRNM0tiQW9iSTRiNk8wZmRiYmtJMGZMX29EanpCZFA3SzNHSUs5YmhzRHJkT0dFYWg1Uk9Ic21CT00wdDdCeWlqWUR3Q0tYSFp5MGFMUlFIVWdUVnhhYy1QRGVPUQ?oc=5\" target=\"_blank\">Roma vs Real Madrid: previa, predicciones y alineaciones</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-12T08:06:44+00:00"
     }
   ]
 }
