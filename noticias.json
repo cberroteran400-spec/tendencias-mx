@@ -1,11 +1,41 @@
 {
-  "actualizado": "2026-10-22T12:07:16.738918+00:00",
+  "actualizado": "2026-10-22T13:23:59.471056+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 946,
-    "sin_imagen": 254
+    "con_imagen": 950,
+    "sin_imagen": 250
   },
   "noticias": [
+    {
+      "titulo": "La inflación sorprende al alza en octubre y llega a 3.62% anual: Inegi",
+      "url": "https://expansion.mx/economia/2026/10/22/inegi-inflacion-sorprende-al-alza-octubre-3-62-anual",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/b7f9408/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F69%2Fbc%2Fa1fc9b0a43819be10b5f394f6b50%2Finflacion-mexico-octubre-2026-alza-precio-electricidad.jpeg",
+      "descripcion": "Los precios aumentaron 0.41% en la primera quincena, frente al 0.38% previsto por el mercado. La inflación subyacente también sorprendió al alza, con presiones en los servicios.",
+      "fuente": "Octavio Torres",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-22T12:40:01+00:00"
+    },
+    {
+      "titulo": "La red humana que sostiene la vida cuando el cáncer irrumpe",
+      "url": "https://expansion.mx/opinion/2026/10/22/la-red-humana-que-sostiene-la-vida-cuando-el-cancer-irrumpe",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/fcf86d3/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F99%2F6a%2F2b0addba445a96dd7d2303b29f65%2Fcancer-mama.jpeg",
+      "descripcion": "Asociaciones como Oncoayuda y Banco de Tapitas ofrecen apoyo emocional, orientación y recursos a pacientes con cáncer, mientras convierten la solidaridad ciudadana en una red de acompañamiento.",
+      "fuente": "Hugo Eustaquio Barreto",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-22T12:02:16+00:00"
+    },
+    {
+      "titulo": "La IA cambió al estudiante antes que a la educación",
+      "url": "https://expansion.mx/opinion/2026/10/22/la-ia-cambio-al-estudiante-antes-que-a-la-educacion",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/79c5c8f/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3f%2Fa2%2F473629814621bc8be4b75870f8c1%2Ftrabajos-desaparecen-ia.jpg",
+      "descripcion": "Más de 60% de estudiantes y docentes ya utiliza IA generativa semanalmente, pero las universidades aún tienen pendientes programas de capacitación para su personal académico.",
+      "fuente": "Carolina Rivas",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-22T11:59:14+00:00"
+    },
     {
       "titulo": "Le diste los correos de tu empresa a la IA, pero, ¿quién vigila que no filtre tus secretos?",
       "url": "https://expansion.mx/tecnologia/2026/10/22/riesgos-ia-agentes-correos-datos-empresas-ciberseguridad",
@@ -67,6 +97,16 @@
       "fecha": "2026-10-22T10:00:04+00:00"
     },
     {
+      "titulo": "La historia mal contada del fiasco Canelo vs. Yildirin y el alucinado pedido de perdón de Sulaimán - Solo Boxeo",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcEhHS0ZIOWl6YzAycEp0YS1JSEdDQW11bUQ0aWFYczJLT1ExamxDczBDLTRtcDh2c2V3M1U5VXdkOVJvSElvcmMtM3NRTTltanBGLVBfS0VjOUdBMTFjTlZMTlNQb09ZM3ZyVDlxOU5LekstM3NMak5Sa0hwUXUzRFVQelU4YWRaTFVBcFA3ZEtsR2RwcGtBbEhTSXhITVhhMUtHbWh2Y01EangwVnY5TGhYQUE1cVVDMjNfY045VU9qQlBTM3l4dHZ1aDhITFBX?oc=5",
+      "imagen": "https://www.soloboxeo.com/wp-content/uploads/2021/02/Yildirim-vs-Canelo-Matchroom-boxing.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcEhHS0ZIOWl6YzAycEp0YS1JSEdDQW11bUQ0aWFYczJLT1ExamxDczBDLTRtcDh2c2V3M1U5VXdkOVJvSElvcmMtM3NRTTltanBGLVBfS0VjOUdBMTFjTlZMTlNQb09ZM3ZyVDlxOU5LekstM3NMak5Sa0hwUXUzRFVQelU4YWRaTFVBcFA3ZEtsR2RwcGtBbEhTSXhITVhhMUtHbWh2Y01EangwVnY5TGhYQUE1cVVDMjNfY045VU9qQlBTM3l4dHZ1aDhITFBX?oc=5\" target=\"_blank\">La historia mal contada del fiasco Canelo vs. Yildirin y el alucinado pedido de perdón de Sulaimán</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Solo Boxeo</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-22T09:52:35+00:00"
+    },
+    {
       "titulo": "Otro 'milagro' de Emery: colíder en Champions con un equipo nuevo - MARCA",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQ29QZ3ZVU2pDVFZvc3kwSFN1QTJmMC1zWGxRQmhKYTNQUS1rc05TeTNmRGI1bmoyclk5ak5fcGxTOWp6cktGRVh6ZnJycXVHb0p3N3FVTXg0LU1mOVAyNlpGeXpHNzVvT3dmcjJYSmliNmtXZnkxZldhM1pIVVhYbG5FOU9qTjhhaTh5bFNaWkxCM1N6VzBYYzNvdGNoRW1GVDFYQ1VyVVZaZ9IBqgFBVV95cUxQVktpMVo3UGpvUi1wSE9BRmotcW44dC02U3R6ME1kWEtQOHdoVXFsanB6ZGRsZ0ZqMmNHM3RucmV1cnZkaFhiYXZJODZ0WnU3VHhFdUhpYmJhdVdtOVluUGlGX2Z6WE9EbDJRaTh6eXZYMmgyRUJ4ZXZvblF6a1phclRVLUp5aDZKbHpsUm83ZGFmU19JWlVIN2V6SWV2SkhtMlJVWkFoNDZpUQ?oc=5",
       "imagen": "https://objetos-xlk.estaticos-marca.com/files/article_main_microformat/uploads/2026/10/22/6ad9d598537f4.jpeg",
@@ -85,6 +125,16 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-10-22T09:17:08+00:00"
+    },
+    {
+      "titulo": "Nico Paz hizo de Messi ante Manchester United y los hinchas de Real Madrid piden su regreso: “Es como Modri... - Bolavip",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNRGlPcFBxYndScGE1d2s1azZ5SE0tRTlQLUI5VUh0cURvVWJUNUN0aGpUaWJmdHJkdHNtNE9HQlNtSXd1ZFhyc041RjV0Z1dFZ1ZTX0NROU5PUnBGT3RfRkxjcXpwS2hMNVEtcHBXbnZnZFk2Ry1BYW5UOWdtWUVXcTFuWl9jZTE3Tm9JcHZFbUtFWFRWSmRDV3BnWU4zcnlaZW9QOXBnMVNoXzRGZkNPc1A1UGMxVWRZTHZ1b24weTZvWjEwNlZJd1VOMzVlRVBma3R5LTdtZ29Cb1Y1dm4wVmVUU3FRQdIB6wFBVV95cUxOaHdYRUpUMi1hQk1oS2ZSdldLdDQ5OFdfSDZiQkVRei1UdmVKaTdhRXZXWUdVbGRhekZqOXpSaE9vNHJna2xrd3VSYWZrMkNpdk1sNWZfRV9wTEZPMHNWVkRucm1Jb0w1MENLQVRFSV9IWjc3dmVhbHhuNjE4X0NqN0tHWEh3SVV1bmg4MGo5a2ZJb0tiOURKZVJJZE0yUFJsZ0d4dHhVbWxsaWVDSEI1b0hjUmtCY0VtZkRRUzJIbWNJSndBaWtxMEdmZVltRnhya0JsSmtaTXN1cy1xaDlTcUlPZFp1N3hNUHdB?oc=5",
+      "imagen": "https://media.bolavip.com/wp-content/uploads/sites/26/2026/10/22050245/Befunky-2026-10-22T100041.750-1200x740.webp",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxNRGlPcFBxYndScGE1d2s1azZ5SE0tRTlQLUI5VUh0cURvVWJUNUN0aGpUaWJmdHJkdHNtNE9HQlNtSXd1ZFhyc041RjV0Z1dFZ1ZTX0NROU5PUnBGT3RfRkxjcXpwS2hMNVEtcHBXbnZnZFk2Ry1BYW5UOWdtWUVXcTFuWl9jZTE3Tm9JcHZFbUtFWFRWSmRDV3BnWU4zcnlaZW9QOXBnMVNoXzRGZkNPc1A1UGMxVWRZTHZ1b24weTZvWjEwNlZJd1VOMzVlRVBma3R5LTdtZ29Cb1Y1dm4wVmVUU3FRQdIB6wFBVV95cUxOaHdYRUpUMi1hQk1oS2ZSdldLdDQ5OFdfSDZiQkVRei1UdmVKaTdhRXZXWUdVbGRhekZqOXpSaE9vNHJna2xrd3VSYWZrMkNpdk1sNWZfRV9wTEZPMHNWVkRucm1Jb0w1MENLQVRFSV9IWjc3dmVhbHhuNjE4X0NqN0tHWEh3SVV1bmg4MGo5a2ZJb0tiOURKZVJJZE0yUFJsZ0d4dHhVbWxsaWVDSEI1b0hjUmtCY0VtZkRRUzJIbWNJSndBaWtxMEdmZVltRnhya0JsSmtaTXN1cy1xaDlTcUlPZFp1N3hNUHdB?oc=5\" target=\"_blank\">Nico Paz hizo de Messi ante Manchester United y los hinchas de Real Madrid piden su regreso: “Es como Modri...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bolavip</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-22T09:09:07+00:00"
     },
     {
       "titulo": "La vez que Iraola dijo 'no' el Liverpool: \"Me daba casi vergüenza que un club tan grande pensara en mí\" - MARCA",
@@ -119,7 +169,7 @@
     {
       "titulo": "UFC y boxeo resisten a la guerra en Oriente Medio: “Canelo no teme a nada” - Diario AS",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQLURyVjNNeTNQMEZ2TkpPZDdDd3JIYzFQclNzMTFXRXM3MHEtMHRBTnU4SFd2cHZnQWNlYXFZRnhSVmNwSW9qcUxwbVBFMXRoRTEwMWw1LXU0U2xuNE1BZ2xSSU1mbHFkM25POWFEZC02b2UtcjVWMUtnZDUyckhXTjNKVmpRRFFRX1BmTmhPRnJ2b0h6SS1CeEgtdEU4ekh4RTBzWm4yczBUeWZjYm5GM1pnN3FZWkZsR0JjZFZOTdIB0wFBVV95cUxOMU42czExc0R2QVZlOVNfSGplUzhTMEw4eG42YVZrWWtxZjZSSThELXJDb3lLS1Ywb0NVd092Nm1lZzBIV3VuZjMyRXg4ZVoybkpRZDMxZUo3VC1LR095cjF1b2xwZmxUbG1UNlBid2h0bXRjYTZYdUJpSFJONTlEZVRsOG81UVh2aXlJMkFlRV9WMmlBRWZVMWxoTEFJN3M2ZkRPUmdhTVR2MFQtcXl1WlpLeVBObm9Ed013SFhsclZUOGpIcFJJaUpPUzlkYmduYXFv?oc=5",
-      "imagen": "",
+      "imagen": "https://img.asmedia.epimg.net/resizer/v2/DDRSQD5EQJMPHNFN72MTNIWWJM.jpg?auth=590573976b92f39877c28df0eb7e98d5bc6d8b7c86e0a21de125413c882b836c&width=1472&height=828&focal=2549%2C2000",
       "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxQLURyVjNNeTNQMEZ2TkpPZDdDd3JIYzFQclNzMTFXRXM3MHEtMHRBTnU4SFd2cHZnQWNlYXFZRnhSVmNwSW9qcUxwbVBFMXRoRTEwMWw1LXU0U2xuNE1BZ2xSSU1mbHFkM25POWFEZC02b2UtcjVWMUtnZDUyckhXTjNKVmpRRFFRX1BmTmhPRnJ2b0h6SS1CeEgtdEU4ekh4RTBzWm4yczBUeWZjYm5GM1pnN3FZWkZsR0JjZFZOTdIB0wFBVV95cUxOMU42czExc0R2QVZlOVNfSGplUzhTMEw4eG42YVZrWWtxZjZSSThELXJDb3lLS1Ywb0NVd092Nm1lZzBIV3VuZjMyRXg4ZVoybkpRZDMxZUo3VC1LR095cjF1b2xwZmxUbG1UNlBid2h0bXRjYTZYdUJpSFJONTlEZVRsOG81UVh2aXlJMkFlRV9WMmlBRWZVMWxoTEFJN3M2ZkRPUmdhTVR2MFQtcXl1WlpLeVBObm9Ed013SFhsclZUOGpIcFJJaUpPUzlkYmduYXFv?oc=5\" target=\"_blank\">UFC y boxeo resisten a la guerra en Oriente Medio: “Canelo no teme a nada”</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Diario AS</font>",
       "fuente": "Boxeo",
       "categoria": "Deportes",
@@ -3965,6 +4015,16 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-20T17:24:49+00:00"
+    },
+    {
+      "titulo": "¿Quién transmite la Serie Mundial 2026? Fechas, horarios y dónde ver la Final de MLB en México - Mediotiempo",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQd1Y1Y2RLTnN5eTJtUHhIN2tqeEZmOE9vRVZDUW5nNXZ4clFyWmVnTjRwUVFXWXVaTmloMG5OT2FNdUpwa2pYcHlzaUhIT1FmeWRSb0hzRUcyWm5MSDVRQlJkakduYjJoMXpNNFpCZGNJaURRTzFxcHNzc0swMTN6b0dITW5ka0o1cU9udEwyYzRDNmJ0NEd3SG5rY2VzQ0ZRd1V3aDg4akFhVHJKS2VGY2U2cDVmYXFyYnA40gG7AUFVX3lxTFBaanQ1dHFaWXZxcTJyZTJINlJFS1lsbEdVVHVNZzhKNG81dEhQSjNUYnZYYTNDVFgycFNhdlBOOTNtbmtMcFplRVN5UHpvU1FtV0hDNEZUMEVvUXVKZmdnSmhMRFBDVVpvYWtDbnBaRF9Cc2NFM29IajhhT1FiU0t2ZHJmSjVCbmtfUThzM3FHRmJVRnJfd0VlUHFvSklzYU5EbUx3RmFsdVZ1TmJZeWRIcGtHVjFqWDJGM0U?oc=5",
+      "imagen": "https://cdn2.mediotiempo.com/uploads/media/2026/10/20/serie-mundial-tampa-bay-rays.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQd1Y1Y2RLTnN5eTJtUHhIN2tqeEZmOE9vRVZDUW5nNXZ4clFyWmVnTjRwUVFXWXVaTmloMG5OT2FNdUpwa2pYcHlzaUhIT1FmeWRSb0hzRUcyWm5MSDVRQlJkakduYjJoMXpNNFpCZGNJaURRTzFxcHNzc0swMTN6b0dITW5ka0o1cU9udEwyYzRDNmJ0NEd3SG5rY2VzQ0ZRd1V3aDg4akFhVHJKS2VGY2U2cDVmYXFyYnA40gG7AUFVX3lxTFBaanQ1dHFaWXZxcTJyZTJINlJFS1lsbEdVVHVNZzhKNG81dEhQSjNUYnZYYTNDVFgycFNhdlBOOTNtbmtMcFplRVN5UHpvU1FtV0hDNEZUMEVvUXVKZmdnSmhMRFBDVVpvYWtDbnBaRF9Cc2NFM29IajhhT1FiU0t2ZHJmSjVCbmtfUThzM3FHRmJVRnJfd0VlUHFvSklzYU5EbUx3RmFsdVZ1TmJZeWRIcGtHVjFqWDJGM0U?oc=5\" target=\"_blank\">¿Quién transmite la Serie Mundial 2026? Fechas, horarios y dónde ver la Final de MLB en México</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-20T17:23:00+00:00"
     },
     {
       "titulo": "¿Dónde ver la Serie Mundial 2026 de las Grandes Ligas? Quiénes juegan, calendario y jugadores mexicanos - Reporte Indigo",
@@ -11945,66 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-14T22:46:00+00:00"
-    },
-    {
-      "titulo": "Santi Giménez no es contundente y cae ante Fidalgo en Champions League: Resumen Betis vs Porto - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxORnY0cWZHT0lkUzZzQUVrSlRoa2NZOHc5YWRGdld5OVYwaFc0VW83QUsxcy1qRmlxQmNNUGpqWTMzUGlLZHVWWkM2ZFM3N19haV9ZVkNLSk4tVlloSlRFam5WNG0yQTlLVkp3bXRYY191Z1g4TWs4ak5pVGt1ZEtCYTdVbkpiVFNsM202RVpJVUtweGxOMW5heFB1TlppWHZ1N3hJZXdhZUd5MVV3VThWTExYZFZORy14THo2US1ibU5fZmhYakt0N0RkNHVfVUwxQ0o1UlhkZnJ6TVQ1el9DeFhmWdIB4wFBVV95cUxPRXRldTlVelNpbi1ydWs2Q19ZRDlTb1NGVzc5dF9UZklmcldocnRUVmFBZjB5d1dTek5ETmxlLUs5UkdCMUVNRlBMOXdxYW9UOVUyUjJ4WVBScDlQeWxGNzN6Qm5KMnowM096SXR6RzFLSFZ5UjljZlY0bk9FUzdZZUs3TzJyaEtJRWg2R3FkYUxHMmpKTlpaV1VVcXl5ZU80U3lLRzRZbmRrWXctb3RzOXRfckJfNG94NmpmM3JHWkdSZlB4dFZQRFBPYkhsTXQtajNTc29fTk1VVjJib20wSXM5SQ?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/14/6acfebcad428f.png",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxORnY0cWZHT0lkUzZzQUVrSlRoa2NZOHc5YWRGdld5OVYwaFc0VW83QUsxcy1qRmlxQmNNUGpqWTMzUGlLZHVWWkM2ZFM3N19haV9ZVkNLSk4tVlloSlRFam5WNG0yQTlLVkp3bXRYY191Z1g4TWs4ak5pVGt1ZEtCYTdVbkpiVFNsM202RVpJVUtweGxOMW5heFB1TlppWHZ1N3hJZXdhZUd5MVV3VThWTExYZFZORy14THo2US1ibU5fZmhYakt0N0RkNHVfVUwxQ0o1UlhkZnJ6TVQ1el9DeFhmWdIB4wFBVV95cUxPRXRldTlVelNpbi1ydWs2Q19ZRDlTb1NGVzc5dF9UZklmcldocnRUVmFBZjB5d1dTek5ETmxlLUs5UkdCMUVNRlBMOXdxYW9UOVUyUjJ4WVBScDlQeWxGNzN6Qm5KMnowM096SXR6RzFLSFZ5UjljZlY0bk9FUzdZZUs3TzJyaEtJRWg2R3FkYUxHMmpKTlpaV1VVcXl5ZU80U3lLRzRZbmRrWXctb3RzOXRfckJfNG94NmpmM3JHWkdSZlB4dFZQRFBPYkhsTXQtajNTc29fTk1VVjJib20wSXM5SQ?oc=5\" target=\"_blank\">Santi Giménez no es contundente y cae ante Fidalgo en Champions League: Resumen Betis vs Porto</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-14T22:35:14+00:00"
-    },
-    {
-      "titulo": "Luis Enrique: \"Ha sido muy, muy duro, pudimos encajar más goles\" - Mundo Deportivo",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcWhSVGxVbXZmMUhGNXlSaDhNU2xGUnU0V2VhSEdDT2J2ckJvNzBGMnZOdUlfcEtpT09KOUhiRUFsOHpGck1ndnVrd2EyanRtREs5dWlUMjMwSEpESjhXRU5PQXpWcHFXSVZ3clFiVUdFN2hrSGRueTlHMU5jSjFEOG1TYkpTYS1KUjIxT2xmcFZINndYLUpyOUg3c0lzXzViTzhveU1oeVl5elV5N2lVOUdwYk4xVlpRSzhHV0ZrbENBd9IBzwFBVV95cUxQdXU3MTExQzJTYlg4eGt5NVdlSS1SZXlJRVZnZDhub2E2bmJZVEE5Q24zR2YxZjNYX2o3Z0o5QUFoMlpFbUUySFczYjgtUDBoek1zSHF0dFlJZWF3OHRPWWJpQVhBYmZicmI3OFVnOWRnZ21IdmxZeUV6R1lFR3h1MktlUWpYeFp0MDBBSEYwZE14UlFLdXNuenNyaERpb20yUE41dkRJMXUxZmczRExSNDBEc0Y3dV91LVNZRFVpazA1VjM0cEVyMGROei1kWlU?oc=5",
-      "imagen": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/10/15/6ad0038933fe1.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcWhSVGxVbXZmMUhGNXlSaDhNU2xGUnU0V2VhSEdDT2J2ckJvNzBGMnZOdUlfcEtpT09KOUhiRUFsOHpGck1ndnVrd2EyanRtREs5dWlUMjMwSEpESjhXRU5PQXpWcHFXSVZ3clFiVUdFN2hrSGRueTlHMU5jSjFEOG1TYkpTYS1KUjIxT2xmcFZINndYLUpyOUg3c0lzXzViTzhveU1oeVl5elV5N2lVOUdwYk4xVlpRSzhHV0ZrbENBd9IBzwFBVV95cUxQdXU3MTExQzJTYlg4eGt5NVdlSS1SZXlJRVZnZDhub2E2bmJZVEE5Q24zR2YxZjNYX2o3Z0o5QUFoMlpFbUUySFczYjgtUDBoek1zSHF0dFlJZWF3OHRPWWJpQVhBYmZicmI3OFVnOWRnZ21IdmxZeUV6R1lFR3h1MktlUWpYeFp0MDBBSEYwZE14UlFLdXNuenNyaERpb20yUE41dkRJMXUxZmczRExSNDBEc0Y3dV91LVNZRFVpazA1VjM0cEVyMGROei1kWlU?oc=5\" target=\"_blank\">Luis Enrique: \"Ha sido muy, muy duro, pudimos encajar más goles\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mundo Deportivo</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-14T22:35:00+00:00"
-    },
-    {
-      "titulo": "AT&T compró Iusacell para desafiar a Slim, pero ahora vende su negocio en México por la mitad de lo que le costó",
-      "url": "https://expansion.mx/empresas/2026/10/14/at-t-compro-iusacell-desafiar-slim-vender-televisa-fintech",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/83d9732/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3a%2F35%2F09c9d6a746b7a4f1ccdee20ae63a%2Fimage-20261014-162821.jpg",
-      "descripcion": "Más de una década después de comprar Iusacell y Nextel para competir con Telcel, AT&amp;T acordó vender su operación en México a Grupo Televisa y Fintech Holdings por 2,000 millones de dólares.",
-      "fuente": "Elizabeth Santiago",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-14T22:30:04+00:00"
-    },
-    {
-      "titulo": "¡Regresaron las Noches Mágicas de Champions! | El resumen completo de la Jornada 2 de la UEFA Champions League 2026 - Reporte Indigo",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQMmtKUExtTDgxcUt6YWMzclZMNEpOVkp4aENxVlpnX3BVSTRMT0JFRmg3emtkbnVVT1YxTWttY29Ua0RZSzUzLXJJN3daQXpYcnRsYko5TjlMQW5SQmh1SW5FZUJrMEwwVS1HUjlhVi1uUHFMNm1DSjRfVmF3TUFoQTdiRVFTYzZ2a1NEczFrQW9DUklfazdZYUNuU2RxTjBRcWt6NXhTaTltN2xPdzlFaEowYkhQdXdIUV9qZ1FyaU93RXQ3ZDJhdmRyTkhIc0JrN25VSGFQQnFZZWMtVXF4eHE4TkZ3cUR5aGItejZoelZKUUhScFdjNjVvM0otamM?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi_wFBVV95cUxQMmtKUExtTDgxcUt6YWMzclZMNEpOVkp4aENxVlpnX3BVSTRMT0JFRmg3emtkbnVVT1YxTWttY29Ua0RZSzUzLXJJN3daQXpYcnRsYko5TjlMQW5SQmh1SW5FZUJrMEwwVS1HUjlhVi1uUHFMNm1DSjRfVmF3TUFoQTdiRVFTYzZ2a1NEczFrQW9DUklfazdZYUNuU2RxTjBRcWt6NXhTaTltN2xPdzlFaEowYkhQdXdIUV9qZ1FyaU93RXQ3ZDJhdmRyTkhIc0JrN25VSGFQQnFZZWMtVXF4eHE4TkZ3cUR5aGItejZoelZKUUhScFdjNjVvM0otamM?oc=5\" target=\"_blank\">¡Regresaron las Noches Mágicas de Champions! | El resumen completo de la Jornada 2 de la UEFA Champions League 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Reporte Indigo</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-14T22:28:07+00:00"
-    },
-    {
-      "titulo": "EN VIVO: Sigue Brewers vs. Dodgers, J3, Serie de Campeonato - ESPN México",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVk1Ym81blgyZEtHRGNyY05fdTZFWDRwX2plTzRmX081WTZNV1cxU2VneXdoQzNZVERPMVdWdndHRmdxUGYyMDFBTTB2NnZZVWxzMUNnMndKTTNZN3pUQ00xeUNzdmpOY1BRTTRmRVplS29sX3hCcGY5ZVVBSzg1M2pPYkJiWXFXaUVsNFoxejdkRUxXdUlWM0lFc3RIUTBLYUw5VnhQVnY4Vmc?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVk1Ym81blgyZEtHRGNyY05fdTZFWDRwX2plTzRmX081WTZNV1cxU2VneXdoQzNZVERPMVdWdndHRmdxUGYyMDFBTTB2NnZZVWxzMUNnMndKTTNZN3pUQ00xeUNzdmpOY1BRTTRmRVplS29sX3hCcGY5ZVVBSzg1M2pPYkJiWXFXaUVsNFoxejdkRUxXdUlWM0lFc3RIUTBLYUw5VnhQVnY4Vmc?oc=5\" target=\"_blank\">EN VIVO: Sigue Brewers vs. Dodgers, J3, Serie de Campeonato</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-14T22:27:53+00:00"
-    },
-    {
-      "titulo": "EN VIVO: Sigue el Brewers vs. Dodgers, Juego 3 de la Serie de Campeonato - ESPN México",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWTVTRjZyblpFcDY4ZjFUbTRVTUxWay10eWQ5V0VEdXEwYUZ3d3ZoMF9CWVR4bjZ0cUNKRy1zbmFFUkI5UDhsa3l5Zy1oYl9fcXlDcGJkV2pnYWdMUHJzSHZZWF9zVG8taWtmdUc1UGNrcVk3NlVzQ0dJb256ZUdzV1N0RXp5ZnAyTU1ZcHFRMmh5VEtMNFlSTDM3cUZETERBWlRYZWZB?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQWTVTRjZyblpFcDY4ZjFUbTRVTUxWay10eWQ5V0VEdXEwYUZ3d3ZoMF9CWVR4bjZ0cUNKRy1zbmFFUkI5UDhsa3l5Zy1oYl9fcXlDcGJkV2pnYWdMUHJzSHZZWF9zVG8taWtmdUc1UGNrcVk3NlVzQ0dJb256ZUdzV1N0RXp5ZnAyTU1ZcHFRMmh5VEtMNFlSTDM3cUZETERBWlRYZWZB?oc=5\" target=\"_blank\">EN VIVO: Sigue el Brewers vs. Dodgers, Juego 3 de la Serie de Campeonato</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-14T22:27:07+00:00"
     }
   ]
 }
