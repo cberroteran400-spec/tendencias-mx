@@ -1,11 +1,51 @@
 {
-  "actualizado": "2026-10-22T11:09:18.683179+00:00",
+  "actualizado": "2026-10-22T12:07:16.738918+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 942,
-    "sin_imagen": 258
+    "con_imagen": 946,
+    "sin_imagen": 254
   },
   "noticias": [
+    {
+      "titulo": "Le diste los correos de tu empresa a la IA, pero, ¿quién vigila que no filtre tus secretos?",
+      "url": "https://expansion.mx/tecnologia/2026/10/22/riesgos-ia-agentes-correos-datos-empresas-ciberseguridad",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/efee519/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F30%2F12%2F56d9ed2b4029b98a6e247ae6a251%2Finteligencia-artificial-acceso-correos-empresa-ciberseguridad.png",
+      "descripcion": "Los agentes de IA pueden acceder a bases de datos y ejecutar tareas empresariales, pero muchas compañías aún carecen de controles para limitar sus permisos y evitar filtraciones de información confidencial.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-22T11:55:40+00:00"
+    },
+    {
+      "titulo": "Alivio fiscal para las empresas es un “ganar-ganar”, pero el CCE mantiene la pelea por deducciones",
+      "url": "https://expansion.mx/economia/2026/10/22/cce-adeudos-fiscales-multas-recargos-y-deducciones-2027",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/80ab1ff/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fcd%2Fa8%2Ff4bf54084600a42a91107008fe0f%2Falivios-fiscales-ip-sheinbaum-medina-mora-sat.jpg",
+      "descripcion": "Eliminar multas y recargos permitirá reducir entre 50% y 60% algunos adeudos con el SAT. La IP busca cambios al ISR para 2027 ante el riesgo de que el impuesto absorba una mayor proporción de las utilidades.",
+      "fuente": "Patricia Tapia",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-22T11:55:14+00:00"
+    },
+    {
+      "titulo": "“No quiero que dentro de 25 años se hable de esos boxeadores que nunca regresaron de Arabia Saudí” - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQWV0OGdOWTFqOWxnYUxkS0Fudnc3SjNWN3lhWFNGWGRoWVZ1U2VYUmZvaWpxYi16M243dEFwVElvZS0tUmRHQnpCQmNxWU5XOG1rR09neWo4SWZsTmItWWZzcVJhVkhWTklNZjdCV0JBVG1YNXJ1MGhYX3ZNQ3Z2dnNIazNRN3RxRVk1UFZBVXJQaE92U1hlbkdTTlF6c2RVVFByYk1OOUnSAagBQVVfeXFMT2JQOUt3UDVPSzktblk2Z0JJcFlKUXkxRGhwdHBMdHJqWGgwZmJCWW54dDVNOWxpWUNwQjJFS3owMG8yVk5IdnZqRW5BbTk5WXVPTUFOZkZkaXlNRV9TVjBsYjJwMUNfc2xGQmdfVG9rYS1uQkR2eF9wbEZJei1Hb0VPTm1XNFdLUEZGTGVNbWM3Qk1GcU1yX29wUUY1Rk91NlVWNGJQM3lM?oc=5",
+      "imagen": "https://objetos-xlk.estaticos-marca.com/files/article_main_microformat/uploads/2026/10/22/6ad9f1b055fd6.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQWV0OGdOWTFqOWxnYUxkS0Fudnc3SjNWN3lhWFNGWGRoWVZ1U2VYUmZvaWpxYi16M243dEFwVElvZS0tUmRHQnpCQmNxWU5XOG1rR09neWo4SWZsTmItWWZzcVJhVkhWTklNZjdCV0JBVG1YNXJ1MGhYX3ZNQ3Z2dnNIazNRN3RxRVk1UFZBVXJQaE92U1hlbkdTTlF6c2RVVFByYk1OOUnSAagBQVVfeXFMT2JQOUt3UDVPSzktblk2Z0JJcFlKUXkxRGhwdHBMdHJqWGgwZmJCWW54dDVNOWxpWUNwQjJFS3owMG8yVk5IdnZqRW5BbTk5WXVPTUFOZkZkaXlNRV9TVjBsYjJwMUNfc2xGQmdfVG9rYS1uQkR2eF9wbEZJei1Hb0VPTm1XNFdLUEZGTGVNbWM3Qk1GcU1yX29wUUY1Rk91NlVWNGJQM3lM?oc=5\" target=\"_blank\">“No quiero que dentro de 25 años se hable de esos boxeadores que nunca regresaron de Arabia Saudí”</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-22T11:39:15+00:00"
+    },
+    {
+      "titulo": "Checo Pérez y la prueba mental de correr en México sin posibilidad de podio: \"Es duro...pero lo he ganado todo\" - Motorsport.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPb0NsdTRPWm9OQVB2cjNuYkJwWGEyM2Y2bGRHcDlkRXVDSkRVUk8wNldhRXhGLXpNMkVaaUpCNzVKb2wwbFZLdGltbmtRdkh1TG5YX01ocGRBYTBndktnbWdib3EyNmtBQ2NBVU9jdnhDamphd0UyQWJtb1J6WGgtdXkyM2VRSC1TOVZuNnEycjhnbTdRclpUY21QaDJVdzJMZ0dKZmM0eDQxN2M?oc=5",
+      "imagen": "https://cdn-5.motorsport.com/images/amp/YvKQnje6/s6/sergio-perez-cadillac-racing.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPb0NsdTRPWm9OQVB2cjNuYkJwWGEyM2Y2bGRHcDlkRXVDSkRVUk8wNldhRXhGLXpNMkVaaUpCNzVKb2wwbFZLdGltbmtRdkh1TG5YX01ocGRBYTBndktnbWdib3EyNmtBQ2NBVU9jdnhDamphd0UyQWJtb1J6WGgtdXkyM2VRSC1TOVZuNnEycjhnbTdRclpUY21QaDJVdzJMZ0dKZmM0eDQxN2M?oc=5\" target=\"_blank\">Checo Pérez y la prueba mental de correr en México sin posibilidad de podio: \"Es duro...pero lo he ganado todo\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Motorsport.com</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-22T11:05:14+00:00"
+    },
     {
       "titulo": "Resumen y vídeos del miércoles de la jornada 3 de la Champions League: Real Madrid, Betis y Aston Villa, pleno de puntos - UEFA.com",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNzNjR2x0X0xCRm9Ib1l1MVNwdUhtR18wMEc1RHVwR2NxU1pPSDIyVG0zWk1lRjM1NldoUmdTa0l1bFJBNXB2dmx6c25RSng2bUE1anZIOW50RmczNUhzMGgxWHJEa056ajA1SFJLVGUtM2VNczJ4b0JFRUYydC1Tbms1LU0tb0lsVkYtZG5mWXJvMGVJSW1sYjJGS24wc2JsZVJKOThreWdGNV94YUxjZHo3aWs0TUdzRWxBcXlaOXNoaTgwYnZGY21Fdjkwb1d6d0RKbUFQMA?oc=5",
@@ -47,9 +87,19 @@
       "fecha": "2026-10-22T09:17:08+00:00"
     },
     {
+      "titulo": "La vez que Iraola dijo 'no' el Liverpool: \"Me daba casi vergüenza que un club tan grande pensara en mí\" - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTTB3VUo0S21sNWhpVVpCek50TmFZc0NwOU5YaWZYVkFUSnRnUTJxTlFUNjJIeUtoVUZmQnFfekQ3U1VhaFpwRjh0OEhFVTBPRkV1eU9RcG0tTXBGX08zOE9uWEM5WTdRMHNOd09rNjJhOHI3cjM3THNwUlJkSXk5Uk5BbGgxcVo2cFlwdGM5eWhtaGZmMjE5SFkySm01cEl2NkF1RnpONVJJZ0Q2ZERuRkVWQmZOajh4LUpZRVlUTkdZQ3ZjM2k0ctIByAFBVV95cUxNQkFvQ3ZwRlNjeHlxM2wxMFZjc3gtMWJsbE92SjNYMk5YTjFrbWJmbjd2ZkJLWUs4MXQ2RzVUQ3pSX3l3aGgxUWo5RHZ2ZE5waDRJaGFxOHN6UzExNG91b044dU85eVVWcUFqOXhjWmdJZ0x2N3NvMDhEbmNLYmJvb0kyT2ZzN1NzWmwtRlpRdGpQVFNaN3lLN2ZjYS1VRGo1WUE3RWgzX1B2X292MXNod0xZWndJODc5UGMwT0FCakNCVlMzUUN0Ng?oc=5",
+      "imagen": "https://objetos-xlk.estaticos-marca.com/files/article_main_microformat/uploads/2026/10/22/6ad9d0fd77efc.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTTB3VUo0S21sNWhpVVpCek50TmFZc0NwOU5YaWZYVkFUSnRnUTJxTlFUNjJIeUtoVUZmQnFfekQ3U1VhaFpwRjh0OEhFVTBPRkV1eU9RcG0tTXBGX08zOE9uWEM5WTdRMHNOd09rNjJhOHI3cjM3THNwUlJkSXk5Uk5BbGgxcVo2cFlwdGM5eWhtaGZmMjE5SFkySm01cEl2NkF1RnpONVJJZ0Q2ZERuRkVWQmZOajh4LUpZRVlUTkdZQ3ZjM2k0ctIByAFBVV95cUxNQkFvQ3ZwRlNjeHlxM2wxMFZjc3gtMWJsbE92SjNYMk5YTjFrbWJmbjd2ZkJLWUs4MXQ2RzVUQ3pSX3l3aGgxUWo5RHZ2ZE5waDRJaGFxOHN6UzExNG91b044dU85eVVWcUFqOXhjWmdJZ0x2N3NvMDhEbmNLYmJvb0kyT2ZzN1NzWmwtRlpRdGpQVFNaN3lLN2ZjYS1VRGo1WUE3RWgzX1B2X292MXNod0xZWndJODc5UGMwT0FCakNCVlMzUUN0Ng?oc=5\" target=\"_blank\">La vez que Iraola dijo 'no' el Liverpool: \"Me daba casi vergüenza que un club tan grande pensara en mí\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-22T09:03:13+00:00"
+    },
+    {
       "titulo": "Más pelota, más Madrid - Diario AS",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Dck5fRnozZXo4QzJ0Z3NuYkUzdUp0aWZtQ2ZVdHJITEc0VmtWRHlBZG9LSFZNMHZDRkF2Q3dIWm5yNW5kc3hBbl9mR0xzMmZzNkFyazM2THZhX19ESGxzeHNwX2l5cExnS1IybXZhZTJFUdIBhgFBVV95cUxPUzM2eDdRMXk3R1dNV1lHSzkzblFOVEFkY2VLeWRNbElyOUJUZmVuTHFKV2hXemZwWEEzdTZneU5DWV9nemVudEE4X1VvNFJGVmN2RXNiVHYxU1ZkNmQ4OW1fcW9NekNYY1JlTkFzMHBsb1ZmTmNvdjdFOEQzOEdZOEFfNm0xdw?oc=5",
-      "imagen": "",
+      "imagen": "https://img.asmedia.epimg.net/resizer/v2/U7A5YYVOY5ASLOPGYLC4MOY6KU.JPG?auth=62e63ff4e46be541b8f9d1dff1007fee02d6bb504198991a70b67752882f0a70&width=1472&height=828&smart=true",
       "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE5Dck5fRnozZXo4QzJ0Z3NuYkUzdUp0aWZtQ2ZVdHJITEc0VmtWRHlBZG9LSFZNMHZDRkF2Q3dIWm5yNW5kc3hBbl9mR0xzMmZzNkFyazM2THZhX19ESGxzeHNwX2l5cExnS1IybXZhZTJFUdIBhgFBVV95cUxPUzM2eDdRMXk3R1dNV1lHSzkzblFOVEFkY2VLeWRNbElyOUJUZmVuTHFKV2hXemZwWEEzdTZneU5DWV9nemVudEE4X1VvNFJGVmN2RXNiVHYxU1ZkNmQ4OW1fcW9NekNYY1JlTkFzMHBsb1ZmTmNvdjdFOEQzOEdZOEFfNm0xdw?oc=5\" target=\"_blank\">Más pelota, más Madrid</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Diario AS</font>",
       "fuente": "Futbol",
       "categoria": "Deportes",
@@ -11955,56 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-14T22:27:07+00:00"
-    },
-    {
-      "titulo": "Champions League: Resultados de la Jornada 2 de la Fase de Liga - Récord",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbFJYRE1QWUdyOFI0YmphaThKRGxLc0hwTFZJcnBaOF9tNGRURFRWQldadEJ4SHl6azBqWGVqb2c1NnF2QVFIemczQWtjd3g1MlZrbFY3ekY2dHphN3lic0lRZ3RDZjlKdFpqeUVQclNZTG9PVzkwQkxyUFpkSjJ2Y0pTdUpwT1VEUWJIUmx6QmZVNkhmV1VzSEFSeWdIRE52OTd3Vzg3V1pGYnd6el9BMUhXZXhvUkRJ?oc=5",
-      "imagen": "https://sportal365images.com/process/smp-images-production/record.mx/14102026/790587b1-c4e4-493f-9e87-6d069bdca771.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbFJYRE1QWUdyOFI0YmphaThKRGxLc0hwTFZJcnBaOF9tNGRURFRWQldadEJ4SHl6azBqWGVqb2c1NnF2QVFIemczQWtjd3g1MlZrbFY3ekY2dHphN3lic0lRZ3RDZjlKdFpqeUVQclNZTG9PVzkwQkxyUFpkSjJ2Y0pTdUpwT1VEUWJIUmx6QmZVNkhmV1VzSEFSeWdIRE52OTd3Vzg3V1pGYnd6el9BMUhXZXhvUkRJ?oc=5\" target=\"_blank\">Champions League: Resultados de la Jornada 2 de la Fase de Liga</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Récord</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-14T22:22:00+00:00"
-    },
-    {
-      "titulo": "'Checo' Pérez busca evitar su primera temporada sin puntos en la Fórmula 1 - ABC Noticias",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQVzBMVjlWVzJvNGJob1lZc0Zqc0I5SW1nampEb00xRVYyWjdZdFkzUW4tQlpONlI3RXdhZ0dGdUpUNDB5U3lFdk56UWUwZWcyN1ZmdngyU2hYRkZ1ZnFaWjR6MXFIcFR3STUwNHhrZ1RGam5tOXBVYk5KbzM5Ynlna0J5QVZkY21VeGplV2dZdTF1ZEtQT1NPeHNPSktRSUpyUUlNNXhYOVd4aTdLSmxjNk0zUUxZZFJfcERzNHZGV1JPQzNnOHc?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQVzBMVjlWVzJvNGJob1lZc0Zqc0I5SW1nampEb00xRVYyWjdZdFkzUW4tQlpONlI3RXdhZ0dGdUpUNDB5U3lFdk56UWUwZWcyN1ZmdngyU2hYRkZ1ZnFaWjR6MXFIcFR3STUwNHhrZ1RGam5tOXBVYk5KbzM5Ynlna0J5QVZkY21VeGplV2dZdTF1ZEtQT1NPeHNPSktRSUpyUUlNNXhYOVd4aTdLSmxjNk0zUUxZZFJfcERzNHZGV1JPQzNnOHc?oc=5\" target=\"_blank\">'Checo' Pérez busca evitar su primera temporada sin puntos en la Fórmula 1</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ABC Noticias</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-14T22:21:00+00:00"
-    },
-    {
-      "titulo": "¿Puede Max Verstappen ser campeón? Esto necesita el neerlandés para levantar el título de la F1 - Récord",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORFR3eDNYNVplWG11MkVXVXlkaXJIOHNiell0Skdzd2JxV3o4bnZQTVFSYV9LMjMzMkZSSGV3MC03QXQ3MGM2WGl5NTdVdV94bTQwRDl4U3lGRWd6NFYxeHFja01MaGdjTm0tWnpPYlB3ZndacGxrbnhpd2dScmJCaC1rN3VTRnlvYVdHdzJGaWllT3NyOWswVTRPV2pKSGlMRVZKSWdZLVJEellESXFZVDNpbjFhcEVCckhiVVJrZU5HV1dWa2FaLWt3SEdXTEIwWGZxVm5oOUlTWTJPamFrTnhn?oc=5",
-      "imagen": "https://sportal365images.com/process/smp-images-production/record.mx/14102026/f20307ad-66ee-4638-846a-4f038d80bca5.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxORFR3eDNYNVplWG11MkVXVXlkaXJIOHNiell0Skdzd2JxV3o4bnZQTVFSYV9LMjMzMkZSSGV3MC03QXQ3MGM2WGl5NTdVdV94bTQwRDl4U3lGRWd6NFYxeHFja01MaGdjTm0tWnpPYlB3ZndacGxrbnhpd2dScmJCaC1rN3VTRnlvYVdHdzJGaWllT3NyOWswVTRPV2pKSGlMRVZKSWdZLVJEellESXFZVDNpbjFhcEVCckhiVVJrZU5HV1dWa2FaLWt3SEdXTEIwWGZxVm5oOUlTWTJPamFrTnhn?oc=5\" target=\"_blank\">¿Puede Max Verstappen ser campeón? Esto necesita el neerlandés para levantar el título de la F1</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Récord</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-14T22:15:00+00:00"
-    },
-    {
-      "titulo": "La Champions es garantía de espectáculo: 78 goles en 18 partidos - ESPN México",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLUhicThrTUs4alVrZnVwcnREQ21TMWkzMTRCUWg5cGRqcHowRjV4cUlLUXUyT2ctSjJXUUxZbnpkaUN1YjI2MEVLeUtLZVFHclBpeUI1NXV6ZVVVN3RIQ1I2Q2p0VE1acm11NHBPU1BtZE5iWFR1Z1JYNVBBdENiczZ5TTZjalhMeHJqMnUxbUl1UFFfeGVCNjk4NDhRNTcyYzFTYzIxUENINk0zRXlLdWZiclVSdw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQLUhicThrTUs4alVrZnVwcnREQ21TMWkzMTRCUWg5cGRqcHowRjV4cUlLUXUyT2ctSjJXUUxZbnpkaUN1YjI2MEVLeUtLZVFHclBpeUI1NXV6ZVVVN3RIQ1I2Q2p0VE1acm11NHBPU1BtZE5iWFR1Z1JYNVBBdENiczZ5TTZjalhMeHJqMnUxbUl1UFFfeGVCNjk4NDhRNTcyYzFTYzIxUENINk0zRXlLdWZiclVSdw?oc=5\" target=\"_blank\">La Champions es garantía de espectáculo: 78 goles en 18 partidos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-14T22:13:29+00:00"
-    },
-    {
-      "titulo": "Canelo quiere pelear también en febrero de 2027 - ESPN Deportes",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcm1FSV9rZnRXeHJScGo1YXlkN3BNSjdnakxiZTlXY0k3RmFpejJneFFFb0tyZFNfeUI2eVg0ZXV5Yk9TMVVoN1FVNGN5WXRFNjlmelFzSF9KSDZnU0o4eDJqOWxya185SnBCMmlmczJ1aU8zUm1VcVh3bkdkRjFwUVB0R1BEenZ3Z2Z6S0RtSm9ScDNtT0kxTmN0cTI?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPcm1FSV9rZnRXeHJScGo1YXlkN3BNSjdnakxiZTlXY0k3RmFpejJneFFFb0tyZFNfeUI2eVg0ZXV5Yk9TMVVoN1FVNGN5WXRFNjlmelFzSF9KSDZnU0o4eDJqOWxya185SnBCMmlmczJ1aU8zUm1VcVh3bkdkRjFwUVB0R1BEenZ3Z2Z6S0RtSm9ScDNtT0kxTmN0cTI?oc=5\" target=\"_blank\">Canelo quiere pelear también en febrero de 2027</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Deportes</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-14T22:12:00+00:00"
     }
   ]
 }
