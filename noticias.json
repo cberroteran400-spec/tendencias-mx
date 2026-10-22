@@ -1,11 +1,81 @@
 {
-  "actualizado": "2026-10-22T22:30:30.176516+00:00",
+  "actualizado": "2026-10-22T23:04:03.652724+00:00",
   "total": 1200,
   "imagenes": {
-    "con_imagen": 960,
-    "sin_imagen": 240
+    "con_imagen": 959,
+    "sin_imagen": 241
   },
   "noticias": [
+    {
+      "titulo": "OfficeMax deja de ser solo papelería e irrumpirá en el mercado del maquillaje y el skincare",
+      "url": "https://expansion.mx/empresas/2026/10/22/officemax-deja-de-ser-solo-papeleria-maquillaje-skincare",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/00c67f0/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4b%2Fa7%2Fdd5c278443ef8a3c7ff139f6485d%2Fmaquillaje-bissu-office-max.jpg",
+      "descripcion": "La empresa combina nuevas categorías, herramientas digitales y marcas propias para elevar la rentabilidad de sus sucursales y competir con plataformas de bajo precio.",
+      "fuente": "Mara Echeverría",
+      "categoria": "Empresas",
+      "subcategoria": "",
+      "fecha": "2026-10-22T22:58:53+00:00"
+    },
+    {
+      "titulo": "El peso mexicano se encamina a una depreciación semanal de 1.2% frente al dólar",
+      "url": "https://expansion.mx/mercados/2026/10/22/epeso-mexicano-depreciacion-semanal-1-2-dolar",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/6f87b20/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F53%2F39%2Fe42521a54c45a2ea270bb9f811fd%2Fpeso-mexicano-dolar-superpeso-tipo-cambio-septiembre.png",
+      "descripcion": "Las grandes tecnológicas arrastraron a Wall Street y la BMV por las preocupaciones en torno a la racionalidad de sus grandes inversiones en IA.",
+      "fuente": "Octavio Torres",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-22T22:50:35+00:00"
+    },
+    {
+      "titulo": "Se acabaron las jubilaciones doradas: la educación financiera se convirtió en el 'plan de retiro' de los jóvenes",
+      "url": "https://expansion.mx/carrera/2026/10/22/fin-jubilacion-dorada-finanzas-personales-ahorro-retiro",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/d546883/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc5%2Fa7%2Fee76d730459ca030eb7b2f19255a%2Ffinanzas-personales-ahorro-retiro.jpg",
+      "descripcion": "México tendrá 28 millones de personas de 60 años y más en 2040, pero en 2024 solo 42.2% de los adultos de entre 18 y 70 años declaró tener una cuenta de ahorro para el retiro o Afore.",
+      "fuente": "Nancy Malacara",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-22T22:47:12+00:00"
+    },
+    {
+      "titulo": "Christian Mbilli Récord: Victorias, KO's y qué título tiene la Pantera Asesina, rival de Canelo Álvarez - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbnFDOTlubEQza0RNVlU0ZHdpdVJsY3dpV1RkRXB4d3EwQmM5STYwTGhzd3dXMVlJcmNtbkZVOTh1TXNsZVhmaUZZUmVmbGktdDAzMFBGckM2NjJxR3hMOWxCX1Y4Q195Y3ROMkVNNFAyMGlRZkxHaWxhTXBZSDg5LV85SDd0M3pFWjB1bllkRW5oTTRkWGFkRE1KN2V0NldsT2liRzZmM2lCZUthYUJfMGJ0dWJjOGJKQWtETzBtU294STVVbVdsX9IByAFBVV95cUxPempSb2NrYWkxUll4S1RaZjBEUW1xODk1aWV0b001VktmVm9KZmNZRm1PVG9ZNXI2dnZsYlJYZHhUbnk5cXQ4aG1NN2duYjBjSXZhc2lTMGRPNTFUOTBSakMzMkVST3U1bDV2LTZ3SUtULUZKYnNqQWNnem02SHdPYldNVThLdjdfOU9sdXdpempOVkhhWVFOR3BESDhkTXpoQnJhell4b0p4UG1qNjFhaDJRNnlwakpSUlRad3dVczNVZy00dk9vZA?oc=5",
+      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/22/6ada7ef2bffba.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbnFDOTlubEQza0RNVlU0ZHdpdVJsY3dpV1RkRXB4d3EwQmM5STYwTGhzd3dXMVlJcmNtbkZVOTh1TXNsZVhmaUZZUmVmbGktdDAzMFBGckM2NjJxR3hMOWxCX1Y4Q195Y3ROMkVNNFAyMGlRZkxHaWxhTXBZSDg5LV85SDd0M3pFWjB1bllkRW5oTTRkWGFkRE1KN2V0NldsT2liRzZmM2lCZUthYUJfMGJ0dWJjOGJKQWtETzBtU294STVVbVdsX9IByAFBVV95cUxPempSb2NrYWkxUll4S1RaZjBEUW1xODk1aWV0b001VktmVm9KZmNZRm1PVG9ZNXI2dnZsYlJYZHhUbnk5cXQ4aG1NN2duYjBjSXZhc2lTMGRPNTFUOTBSakMzMkVST3U1bDV2LTZ3SUtULUZKYnNqQWNnem02SHdPYldNVThLdjdfOU9sdXdpempOVkhhWVFOR3BESDhkTXpoQnJhell4b0p4UG1qNjFhaDJRNnlwakpSUlRad3dVczNVZy00dk9vZA?oc=5\" target=\"_blank\">Christian Mbilli Récord: Victorias, KO's y qué título tiene la Pantera Asesina, rival de Canelo Álvarez</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-22T22:45:49+00:00"
+    },
+    {
+      "titulo": "Alza de precios en seguros de gastos médicos mayores, principal motivo de cancelación, dice Condusef",
+      "url": "https://expansion.mx/economia/2026/10/22/alza-de-precios-en-seguros-de-gastos-medicos-mayores-principal-motivo-de-cancelacion-dice-condusef",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/08bdcf7/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1f%2F1a%2F18482d844ac0ad405b06dde0240c%2Fseguros-gastos-medicos-mayores-cancelacion-primas-condusef.jpg",
+      "descripcion": "Los seguros de automóvil concentran 60% de las quejas contra el sector, principalmente por negativas de pago, tiempos de reparación y diferencias en los montos reconocidos para cubrir los daños.",
+      "fuente": "Antonio Hernández",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-22T22:38:41+00:00"
+    },
+    {
+      "titulo": "Tu viaje en DiDi estará bajo vigilancia de IA y la policía podrá intervenir ante emergencias",
+      "url": "https://expansion.mx/tecnologia/2026/10/22/didi-ubicacion-tiempo-real-policia-seguridad-ia",
+      "imagen": "https://cdn-3.expansion.mx/dims4/default/a368972/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1b%2F97%2Fc4de3b48404aa2b01bf565aa4be6%2Fdidi-seguridad-ia-ubicacion-policia.png",
+      "descripcion": "La plataforma utiliza IA para detectar desvíos de ruta y otros riesgos. Su integración con Axon 911 permite a las autoridades consultar información del trayecto y responder ante posibles emergencias.",
+      "fuente": "Selene Ramírez",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-22T22:30:25+00:00"
+    },
+    {
+      "titulo": "Sergio ‘Checo’ Pérez, a punto de hacer historia, habla de su regreso a la Fórmula 1 - HOLA",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQzU2b1NQTjMwa0dIQl9MQXlldk1oTWR6NlBNeWR3ZzhnQl9qNGpWS29XZFJmZUlDR0xlcnJSZlRkdEtNWWlLUWp5U3hUbFk3UmN1cWIycndOVEpDSWdUZk1oMm1HVHVLVURGLVAySkpiYnBUYm10YjF3Mnd1aUd0aWpWV191OHlrRjMzU2NCSG5aRWFORFFsNXJ1ZGtPLWVtOHNSWFhBTUFZY2FFcFVwTkJJSFlVNktyOV9fMmhuQ2dEYTVvY0E?oc=5",
+      "imagen": "https://www.hola.com/horizon/landscape/1200/d4863825a346-gettyimages-2299334293.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQQzU2b1NQTjMwa0dIQl9MQXlldk1oTWR6NlBNeWR3ZzhnQl9qNGpWS29XZFJmZUlDR0xlcnJSZlRkdEtNWWlLUWp5U3hUbFk3UmN1cWIycndOVEpDSWdUZk1oMm1HVHVLVURGLVAySkpiYnBUYm10YjF3Mnd1aUd0aWpWV191OHlrRjMzU2NCSG5aRWFORFFsNXJ1ZGtPLWVtOHNSWFhBTUFZY2FFcFVwTkJJSFlVNktyOV9fMmhuQ2dEYTVvY0E?oc=5\" target=\"_blank\">Sergio ‘Checo’ Pérez, a punto de hacer historia, habla de su regreso a la Fórmula 1</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">HOLA</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-22T22:24:00+00:00"
+    },
     {
       "titulo": "Ser trabajador de confianza no siempre es una ventaja: los derechos laborales que cambian cuando eres jefe",
       "url": "https://expansion.mx/carrera/2026/10/22/trabajador-confianza-ley-federal-trabajo-derechos",
@@ -65,6 +135,16 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-10-22T21:32:44+00:00"
+    },
+    {
+      "titulo": "Estas son las figuras de Rays vs. Brewrers para la Serie Mundial 2026 - TUDN",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV094bTU1eWlyMUJyODBsNHhPUTNRczZhbEZTY0RubHFLYUpNaVJxdk96Qm5aWlRLVXlpcEwycXlzWlRJdjJYWmdTYkR5ZFRBVTFIUjMyY3FXRXZudEt1Tkl3R2t0VTBZRHd0RzQ0T21NYXhzRnNQLW1wSFM3TUdRa1k1SG8zNWc5N3ppM01WTXJGZw?oc=5",
+      "imagen": "https://www.tudn.com/api/image/og/us/mlb/rays-vs-brewrers-los-mejores-jugadores-de-la-serie-mundial-2026",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxQV094bTU1eWlyMUJyODBsNHhPUTNRczZhbEZTY0RubHFLYUpNaVJxdk96Qm5aWlRLVXlpcEwycXlzWlRJdjJYWmdTYkR5ZFRBVTFIUjMyY3FXRXZudEt1Tkl3R2t0VTBZRHd0RzQ0T21NYXhzRnNQLW1wSFM3TUdRa1k1SG8zNWc5N3ppM01WTXJGZw?oc=5\" target=\"_blank\">Estas son las figuras de Rays vs. Brewrers para la Serie Mundial 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TUDN</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-22T21:15:37+00:00"
     },
     {
       "titulo": "Canelo vs. Mbilli: horario, dónde ver en vivo y cartelera completa de la pelea - Sports Illustrated",
@@ -1475,6 +1555,16 @@
       "categoria": "Deportes",
       "subcategoria": "beisbol",
       "fecha": "2026-10-21T21:15:40+00:00"
+    },
+    {
+      "titulo": "Calendario Liga MX: Partidos próxima Jornada 14 del Apertura 2026; ¿con quién va América, Chivas, Cruz Azul y Pumas? - MARCA",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPaHlxdERKV0ZWZW5aYi10SGRSeVRZR0lWLXhobE1vbDZLQ0Uyd0tBNXpydHZpaGFES1A2WU1vZVJLSlhBVTRYOUQyRlB5ZDVxa1dGSE9sWDJJbnFSWElfYVhqdmxYbFdXZElkMy1qUHk2UmlTaW9HVU1GUlJneWwwa29KQ2FYamtyVEExc2Y0YzBMU3phbjZQWW5pY25acnZfd0lpa0hOeW81bnVETHhDZ3I2aV9RR3k3NGpSMHhUMjFHLU14Z0FQTFVGcWpkc2s4UmIxcEkxR0RGMGppZEN5bNIB4AFBVV95cUxQVnlBZG92OW1sdVJFallDYjZmOGRTZTZteGdubzFjVWxZcnRFS0dWSTIxSlI1RHR5S3I0V1QzNWtPZmFZWnhBaVBnUFdWamJTNEY5bVRoVFdjZEVoQmx6S21qYmotNkhXMUh3aXlWWUpmeFUtNXlkdDdSMmMtbEpoRG13NWZPakdNSEFBdFR4aUY4N29GTEZNbk8zT05ZNjRXbjl4dWdvb3ZlZEZZdVM5NHVEamtQN0EzSlJpLVRlaVkxLXI3TGJNM3BtUUtsczBhaVJXN0hqUFkwMFhmOG4zZA?oc=5",
+      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/22/6ad95052dd907.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxPaHlxdERKV0ZWZW5aYi10SGRSeVRZR0lWLXhobE1vbDZLQ0Uyd0tBNXpydHZpaGFES1A2WU1vZVJLSlhBVTRYOUQyRlB5ZDVxa1dGSE9sWDJJbnFSWElfYVhqdmxYbFdXZElkMy1qUHk2UmlTaW9HVU1GUlJneWwwa29KQ2FYamtyVEExc2Y0YzBMU3phbjZQWW5pY25acnZfd0lpa0hOeW81bnVETHhDZ3I2aV9RR3k3NGpSMHhUMjFHLU14Z0FQTFVGcWpkc2s4UmIxcEkxR0RGMGppZEN5bNIB4AFBVV95cUxQVnlBZG92OW1sdVJFallDYjZmOGRTZTZteGdubzFjVWxZcnRFS0dWSTIxSlI1RHR5S3I0V1QzNWtPZmFZWnhBaVBnUFdWamJTNEY5bVRoVFdjZEVoQmx6S21qYmotNkhXMUh3aXlWWUpmeFUtNXlkdDdSMmMtbEpoRG13NWZPakdNSEFBdFR4aUY4N29GTEZNbk8zT05ZNjRXbjl4dWdvb3ZlZEZZdVM5NHVEamtQN0EzSlJpLVRlaVkxLXI3TGJNM3BtUUtsczBhaVJXN0hqUFkwMFhmOG4zZA?oc=5\" target=\"_blank\">Calendario Liga MX: Partidos próxima Jornada 14 del Apertura 2026; ¿con quién va América, Chivas, Cruz Azul y Pumas?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-21T21:15:00+00:00"
     },
     {
       "titulo": "Los deducibles más altos encarecen el seguro médico que las empresas dan a sus empleados",
@@ -5705,6 +5795,16 @@
       "categoria": "Deportes",
       "subcategoria": "formula1",
       "fecha": "2026-10-20T05:39:48+00:00"
+    },
+    {
+      "titulo": "MLB: Mariners, Brewers y los equipos que nunca han sido campeones de la Serie Mundial en la historia - Olympics",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9WdUJTSkJsTS0xUUxPQ2VrcGRGSTJOTDVOOFQyX0FmNjFBZl9US2FhUWZQaW13RUx2T0pOWUZJZHc4OFR3Y1N5S0tteW1EWE9KQ0dMdUJReXppVXRLU0xuRVpLZWFtTkVsTWR2NHE0NzBBcXNQbWFR?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE9WdUJTSkJsTS0xUUxPQ2VrcGRGSTJOTDVOOFQyX0FmNjFBZl9US2FhUWZQaW13RUx2T0pOWUZJZHc4OFR3Y1N5S0tteW1EWE9KQ0dMdUJReXppVXRLU0xuRVpLZWFtTkVsTWR2NHE0NzBBcXNQbWFR?oc=5\" target=\"_blank\">MLB: Mariners, Brewers y los equipos que nunca han sido campeones de la Serie Mundial en la historia</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Olympics</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-20T05:38:00+00:00"
     },
     {
       "titulo": "Checo Pérez: \"Soy consciente que estoy mucho más cerca del final\" - ESPN Deportes",
@@ -11905,106 +12005,6 @@
       "categoria": "Deportes",
       "subcategoria": "boxeo",
       "fecha": "2026-10-15T11:04:00+00:00"
-    },
-    {
-      "titulo": "Red Bull cierra la crisis provocada tras la polémica salida de Checo Pérez - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZVJyMXFZZzRTczV1RjRlVnMydmJIbFZSNHRJN2ZRYmZha2pLXzFtOXhYeGtpOS1sOFZXWjlPUnI1NVRLX2JBdmNSR20tbEVmMURWMHJfTkh1UXNuUnVvcjVkMklTTGRKMTN6bDNnQXAycUJmWVZqcE9SYkZ3dXJ1UUVZdGplUkZPSzVsTmZiZEUtTXFCWTF6MGZocW9HRkc5aDY5d0ctS3RLYllWNjJ4VXVfazA5X1pk0gG4AUFVX3lxTFBhWGJTN1hFSDh5ZUNMRGJLdHlWVk1tQ1YyUEVSdUlxdGVkMmpoSEQ3amg4bm1xMW9XTGQwSW5HXy0zWkVJbWVYUGMwTjFEOUhHaFl5cUo5NTU0aFc4NGdXZ2ljbjVZY3dnaXJJOHFlZllvOTI4MkFFQWRzN0RLYnU3OHN0bVJZVVZWN0tFX2V1b2FQYVNyVWptTEI0MGFjQU9Hcm1nUElRVkJQeXo2QVJuQ1JuMXJ1R1c?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/15/6ad0ae49312fc.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZVJyMXFZZzRTczV1RjRlVnMydmJIbFZSNHRJN2ZRYmZha2pLXzFtOXhYeGtpOS1sOFZXWjlPUnI1NVRLX2JBdmNSR20tbEVmMURWMHJfTkh1UXNuUnVvcjVkMklTTGRKMTN6bDNnQXAycUJmWVZqcE9SYkZ3dXJ1UUVZdGplUkZPSzVsTmZiZEUtTXFCWTF6MGZocW9HRkc5aDY5d0ctS3RLYllWNjJ4VXVfazA5X1pk0gG4AUFVX3lxTFBhWGJTN1hFSDh5ZUNMRGJLdHlWVk1tQ1YyUEVSdUlxdGVkMmpoSEQ3amg4bm1xMW9XTGQwSW5HXy0zWkVJbWVYUGMwTjFEOUhHaFl5cUo5NTU0aFc4NGdXZ2ljbjVZY3dnaXJJOHFlZllvOTI4MkFFQWRzN0RLYnU3OHN0bVJZVVZWN0tFX2V1b2FQYVNyVWptTEI0MGFjQU9Hcm1nUElRVkJQeXo2QVJuQ1JuMXJ1R1c?oc=5\" target=\"_blank\">Red Bull cierra la crisis provocada tras la polémica salida de Checo Pérez</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-15T11:02:18+00:00"
-    },
-    {
-      "titulo": "Convocatoria Mentoras Expansión 2027",
-      "url": "https://expansion.mx/carrera/2026/10/15/convocatoria-mentoras-expansion-2027",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/963a2a8/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F4a%2Ffe%2F76a823c84d08aad959961f38fcaf%2Fmentoras-convocatoria.png",
-      "descripcion": "Mentoras Expansión abre su tercera convocatoria para impulsar el desarrollo profesional de mujeres con potencial de liderazgo.",
-      "fuente": "Expansión",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-15T11:01:18+00:00"
-    },
-    {
-      "titulo": "Convocatoria Las 100 mujeres más poderosas de los negocios 2027",
-      "url": "https://expansion.mx/carrera/2026/10/15/convocatoria-100-mujeres-mas-poderosas-negocios-2027",
-      "imagen": "https://cdn-3.expansion.mx/dims4/default/27080b9/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F73%2F7a%2F59ab9409498ba88e76d6c21cb5a0%2Fmujerespoderosas2027-convocatoria.png",
-      "descripcion": "Expansión convoca a todas las mujeres empresarias o en un puesto de alta dirección para participar en el ranking ‘Las 100 mujeres más poderosas de los negocios’.",
-      "fuente": "Expansión",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-15T11:01:09+00:00"
-    },
-    {
-      "titulo": "«Estaba hablando con Dios»: la confesión de Endrick tras comandar la remontada del Real Madrid en Roma - El Debate",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPcEU1NEhaaVl6QUlaYXJQeDRrV3hERVF1eDJveks4Rk9abThTVlNreWJZQW5NcTF3dmxyYmxpR0tVejl0VUVrc0MyQjY2a3U2TTVDSEdCYWxCZUNHQ2tJb2o4Y25OQUdtalIxUE8zZWtoXzltWE53Ri1zY3RaZFpNSzc4Rk5iZDlYQTYyaFBUNWxFVjFrRjhCZnliOU8wdDRodXJtU295WnVhUzJOdHFZRkczRnBNTkFGdjJ3RkZrb2RuZTRyVnpqMnY3c09iT2cyY0NJU295REFsMlBHY01nRjdIbEdCTC1T0gHuAUFVX3lxTE9uMjRBcldBdlhxaHdnaHVHUXJaaHRWb0doOGdKTG9EU0dRLWE0Rk5ycWVzNkttNWgxWTgxOVdqb05VVXhST1FlZ2JBcVBOd0dnTWxfUC1CVnR1QkVXR0lydE5tMkZ4MjR1Ni1DRVNNbUFBTUJuNm81dk9YcUw2OU90azVySzVKOFI1OEdaeFg4Z3NsT1o4WEszeldsM01JQUplLWJ5SV91M2pfMS04dG9yWUJGTnExSE1Mdk1aTlRpTHh0V1paNHpGT05ieW1ENnRheXc4T1d2VE9OMUl1cWZaQ1dRY3FKcTdfWm5SZ3c?oc=5",
-      "imagen": "https://www.eldebate.com/files/article_social/uploads/2026/10/15/6ad0a8cc22933.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxPcEU1NEhaaVl6QUlaYXJQeDRrV3hERVF1eDJveks4Rk9abThTVlNreWJZQW5NcTF3dmxyYmxpR0tVejl0VUVrc0MyQjY2a3U2TTVDSEdCYWxCZUNHQ2tJb2o4Y25OQUdtalIxUE8zZWtoXzltWE53Ri1zY3RaZFpNSzc4Rk5iZDlYQTYyaFBUNWxFVjFrRjhCZnliOU8wdDRodXJtU295WnVhUzJOdHFZRkczRnBNTkFGdjJ3RkZrb2RuZTRyVnpqMnY3c09iT2cyY0NJU295REFsMlBHY01nRjdIbEdCTC1T0gHuAUFVX3lxTE9uMjRBcldBdlhxaHdnaHVHUXJaaHRWb0doOGdKTG9EU0dRLWE0Rk5ycWVzNkttNWgxWTgxOVdqb05VVXhST1FlZ2JBcVBOd0dnTWxfUC1CVnR1QkVXR0lydE5tMkZ4MjR1Ni1DRVNNbUFBTUJuNm81dk9YcUw2OU90azVySzVKOFI1OEdaeFg4Z3NsT1o4WEszeldsM01JQUplLWJ5SV91M2pfMS04dG9yWUJGTnExSE1Mdk1aTlRpTHh0V1paNHpGT05ieW1ENnRheXc4T1d2VE9OMUl1cWZaQ1dRY3FKcTdfWm5SZ3c?oc=5\" target=\"_blank\">«Estaba hablando con Dios»: la confesión de Endrick tras comandar la remontada del Real Madrid en Roma</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Debate</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-15T10:34:36+00:00"
-    },
-    {
-      "titulo": "Pleno histórico del fútbol español y castigo a la Serie A en las notas de la Champions - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSl9GQ0dSS0h5bF94bENWMncxUTYxUUw1aURWYVVQYzhlYXZxUlRCV2dfX25HZUxEVDVJZVFvbC1qb090VzZlWGpyUklPY0V4NjZtU2lnN2lONjRaaUp1dTRTek9tXy1hTjdTX0NoUjJ4dU1oRDVHU0ozRF82amNGa0VCVE1ibi1ZcXd1OGpzSWZhUDJNTlhtTDB6ZjVhTHA3SVNmcU40c9IBpwFBVV95cUxQRjNEcHY5emxmN3V3QTBNQXh1Yi1PbTVCUUxSU0xjSHhnYVhZNEVHbmMzVy1WLUhmV0xjb1ZPMllTdi1TZEdDQVF2ZDZPTlZMd2RqLWJTT2o5RFlVdFZzRWV1UHdFYUY1UWRsNjhyRGZrODRCcmhFaHF1N09FQV9aSUxLTndVQTRxemRrT1E2TmVrWHI1Y2tOckF4bTF3d29qRnBlOUlIMA?oc=5",
-      "imagen": "https://objetos-xlk.estaticos-marca.com/files/article_main_microformat/uploads/2026/10/14/srb.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxQSl9GQ0dSS0h5bF94bENWMncxUTYxUUw1aURWYVVQYzhlYXZxUlRCV2dfX25HZUxEVDVJZVFvbC1qb090VzZlWGpyUklPY0V4NjZtU2lnN2lONjRaaUp1dTRTek9tXy1hTjdTX0NoUjJ4dU1oRDVHU0ozRF82amNGa0VCVE1ibi1ZcXd1OGpzSWZhUDJNTlhtTDB6ZjVhTHA3SVNmcU40c9IBpwFBVV95cUxQRjNEcHY5emxmN3V3QTBNQXh1Yi1PbTVCUUxSU0xjSHhnYVhZNEVHbmMzVy1WLUhmV0xjb1ZPMllTdi1TZEdDQVF2ZDZPTlZMd2RqLWJTT2o5RFlVdFZzRWV1UHdFYUY1UWRsNjhyRGZrODRCcmhFaHF1N09FQV9aSUxLTndVQTRxemRrT1E2TmVrWHI1Y2tOckF4bTF3d29qRnBlOUlIMA?oc=5\" target=\"_blank\">Pleno histórico del fútbol español y castigo a la Serie A en las notas de la Champions</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-15T10:27:49+00:00"
-    },
-    {
-      "titulo": "Checo Pérez denuncia la 'injusticia' que condena a Cadillac - MARCA",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdUJpR2FGQ0s4bU5raVdIS2JaU0k3MGdyb3FaTVNMUFV2RE9SZGE0SDRpaWoxOG5ZeWE3SG9PUzNZLWp4aEVIYmNhSkNlOWJKUlRnR3B4UlVhNHpPdVJscmdjSUdnR282Sl9udTlsUDFWZkczYkwwRThTMmQwbDBzRXg0bzdBb0llZWJCelk3X20yTkdRUjdtejJjeS1MYXQ0R2NBY3IwMnbSAagBQVVfeXFMT0xpMlRKNnlJNnRMZy1mVGsyd2o0Zi1lLTBGanRfYnlqN2IwWHVIR1k3VmRhTFJkaDFvbVR0V05oNk9qd2xDeGw5VWdDUEV4NkNxRnFUYXZoVDJGSEg1Ulo0bHdpTUh0dkJsa2pteXc5M19EM2RLMGtsam1sOHJfVF9rZDNSMWlZNVpCRU1iTjROWmppVS1pVkJ2TFduZXJCSFBxa05jOHJX?oc=5",
-      "imagen": "https://e00-xlk-ue-marca-mx.uecdn.es/files/article_main_microformat/uploads/2026/10/15/6ad0a5d349030.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdUJpR2FGQ0s4bU5raVdIS2JaU0k3MGdyb3FaTVNMUFV2RE9SZGE0SDRpaWoxOG5ZeWE3SG9PUzNZLWp4aEVIYmNhSkNlOWJKUlRnR3B4UlVhNHpPdVJscmdjSUdnR282Sl9udTlsUDFWZkczYkwwRThTMmQwbDBzRXg0bzdBb0llZWJCelk3X20yTkdRUjdtejJjeS1MYXQ0R2NBY3IwMnbSAagBQVVfeXFMT0xpMlRKNnlJNnRMZy1mVGsyd2o0Zi1lLTBGanRfYnlqN2IwWHVIR1k3VmRhTFJkaDFvbVR0V05oNk9qd2xDeGw5VWdDUEV4NkNxRnFUYXZoVDJGSEg1Ulo0bHdpTUh0dkJsa2pteXc5M19EM2RLMGtsam1sOHJfVF9rZDNSMWlZNVpCRU1iTjROWmppVS1pVkJ2TFduZXJCSFBxa05jOHJX?oc=5\" target=\"_blank\">Checo Pérez denuncia la 'injusticia' que condena a Cadillac</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MARCA</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-15T10:22:51+00:00"
-    },
-    {
-      "titulo": "El dilema de Mourinho: los cambios obligados en el Real Madrid tras el punto de inflexión en Roma - El Debate",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPejBSamlnWVBNeUo3eVByamVWRXJsbXIzS01mVDNSVFRHS0hhcUV1NDZYTUFwVlZKS19zUTFjMm9PQTNya1JIeTFCMk9SYVNXcktPNTh0LTFjZm5XRUU2MmJLMzFKS0swT3pXOE9INU0zYks1T2N6QXRpNUJoeHgtSDUzYlNNT3lfSE51TmtRNml4YkFsVE9QVWxQWktzTTh0SjYyNHJRWVcyUDFNNFF1b2xSdWI3Z2l4U2FrN2lVSUNUejY1S1JBQ0x3X0NOM1VzbE1ubWtleE91bmNqWkHSAeMBQVVfeXFMTmVzUGFrSXBFYTZEb3NoN0VhVEtTQXE2eEt1OTBlMG9KbE0yTFNHYzlUek1kYjRCWUZpZGFGdE1VX19IM2ZCRGQwX3QxQ2VTSGYzNHpIMHlOTkRzYnEweXRBTVE5V1VwanZjN0hYUVRad1hZZzNuWmZ6bklLZjdRTlRldXY2SEQ1OFhMN2UyelNNeWpkbFpsR3I5WVFaMkV2TU1uZDNQQUdOUTE2TzhObW8wcFRfTkdyNkEyQkg1Y0NMOFBsUHppcjMzTk50cWFuY3R6c3J5elFpRGJvVTZIQTNPd3M?oc=5",
-      "imagen": "https://www.eldebate.com/files/article_social/files/fp/uploads/2026/10/15/6ad0962e69c47.r_d.583-429-6250.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxPejBSamlnWVBNeUo3eVByamVWRXJsbXIzS01mVDNSVFRHS0hhcUV1NDZYTUFwVlZKS19zUTFjMm9PQTNya1JIeTFCMk9SYVNXcktPNTh0LTFjZm5XRUU2MmJLMzFKS0swT3pXOE9INU0zYks1T2N6QXRpNUJoeHgtSDUzYlNNT3lfSE51TmtRNml4YkFsVE9QVWxQWktzTTh0SjYyNHJRWVcyUDFNNFF1b2xSdWI3Z2l4U2FrN2lVSUNUejY1S1JBQ0x3X0NOM1VzbE1ubWtleE91bmNqWkHSAeMBQVVfeXFMTmVzUGFrSXBFYTZEb3NoN0VhVEtTQXE2eEt1OTBlMG9KbE0yTFNHYzlUek1kYjRCWUZpZGFGdE1VX19IM2ZCRGQwX3QxQ2VTSGYzNHpIMHlOTkRzYnEweXRBTVE5V1VwanZjN0hYUVRad1hZZzNuWmZ6bklLZjdRTlRldXY2SEQ1OFhMN2UyelNNeWpkbFpsR3I5WVFaMkV2TU1uZDNQQUdOUTE2TzhObW8wcFRfTkdyNkEyQkg1Y0NMOFBsUHppcjMzTk50cWFuY3R6c3J5elFpRGJvVTZIQTNPd3M?oc=5\" target=\"_blank\">El dilema de Mourinho: los cambios obligados en el Real Madrid tras el punto de inflexión en Roma</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Debate</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-15T09:23:50+00:00"
-    },
-    {
-      "titulo": "Récord en la Champions League: nunca antes había sucedido lo de esta jornada - Mundo Deportivo",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYktxYXRjN1Nzc0Jabnc0Q0NpOUV2UlpfREFlSTI3aWxQV2FfZkhIRFQ2dnpXMWVQby0xc0RFTTdRblBBQW9DZ0ZVTEI1ekVoT2FuOGNSRTdrUU8xYnNOWkdZNGZoNlktZjFDU2dnNTVIazdkc2xScHFFTExRSDdMbkVoRE1kczdCZzhfS0ZZM3JrTHpnaUs0Ukw1YlVFWmVuT055RWltNmlYY1FQdkNEbUpIS0ZFWU5CbkI5aU1MT25BTW5DczdqWlpTaVPSAdoBQVVfeXFMTmF0dXJhWUp3QTJpcHdjSnYxaE1zMkM4dzdiOUpUSmRFVktpU3BFYWtYcnlPckRpWTJIandWcFpwV0wwZ0pmcGkwU0FtcV9lTWtyVlhVaVM1Sk1Yekc4VThVa04tdFREWDJPd0s5MU9EaHFpU1pvN0EtTVRWSnVNWkVnMURVSUtKdGVMUlFzWWNtdW96Y2xzQkVpeDJIeGU3VTd3TEU3RmgzTDQ2bnNQeWRtcUNoenlsRXlhVmVhbmJmN0R6TUVibUNxYWl2ME9MeU1rNzB0aHRqVnc?oc=5",
-      "imagen": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/10/14/6aceb2941273e.r_d.1466-1000-4091.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPYktxYXRjN1Nzc0Jabnc0Q0NpOUV2UlpfREFlSTI3aWxQV2FfZkhIRFQ2dnpXMWVQby0xc0RFTTdRblBBQW9DZ0ZVTEI1ekVoT2FuOGNSRTdrUU8xYnNOWkdZNGZoNlktZjFDU2dnNTVIazdkc2xScHFFTExRSDdMbkVoRE1kczdCZzhfS0ZZM3JrTHpnaUs0Ukw1YlVFWmVuT055RWltNmlYY1FQdkNEbUpIS0ZFWU5CbkI5aU1MT25BTW5DczdqWlpTaVPSAdoBQVVfeXFMTmF0dXJhWUp3QTJpcHdjSnYxaE1zMkM4dzdiOUpUSmRFVktpU3BFYWtYcnlPckRpWTJIandWcFpwV0wwZ0pmcGkwU0FtcV9lTWtyVlhVaVM1Sk1Yekc4VThVa04tdFREWDJPd0s5MU9EaHFpU1pvN0EtTVRWSnVNWkVnMURVSUtKdGVMUlFzWWNtdW96Y2xzQkVpeDJIeGU3VTd3TEU3RmgzTDQ2bnNQeWRtcUNoenlsRXlhVmVhbmJmN0R6TUVibUNxYWl2ME9MeU1rNzB0aHRqVnc?oc=5\" target=\"_blank\">Récord en la Champions League: nunca antes había sucedido lo de esta jornada</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mundo Deportivo</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-15T09:15:25+00:00"
-    },
-    {
-      "titulo": "La prensa europea se rinde al «inmortal» Real Madrid tras otra remontada histórica - El Debate",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPVWJNXzh6Y1NKNHFIRG94YWNaaUxaU19LZmxyZERDSFRJS0ZRWjNnaXdsRGV3LWNucHJteGRSSlhmemJBdkw0aDV4RFFtQkZ3U1pacEhuR3dGNnVjSnFOckhvOHJaamxfMmZpYXRhNzBpMFhwRDROR1V1Nl9oMk96b2M1UjVrOXE3Q1JzZUpLbkE5OFRQT0dCdnhXVXhCQ1R4QjBLZWxpUlByTnVkV1pXLW9CYUhSRTU5TkhBck5FZ3hfLUNvTUY4djZBVXVGNTBlSEdDYVY5NGRhMXN4WlhIdEZqONIB6AFBVV95cUxQRDhoZXpTMkp3T29rd0tKbFBySlA3cTVVdkdwb1FIV21WVHpRMTVOcGx3VGdVQnNLdWo0eEFmX0hZZFozdklsZ0JiakhZY1lYT0ExWUFpZFpJRGR2WlhEXzJtUVJsUDFoUnp2TjlnQXJRS2s0dlotU1Vod2o1VXVpbVFvRF8ydFkySEYyREZiZEVRTnZqWS1mOVFKWlg5Y19YRXNuQnNhbG5SRzM4UkFrQWs4YWJBM2RhX3pmWk1rSDQzdXRuaFQ4THdsRWRuREgxUGNwTmFhdWZfNmxyZm54NnBjS3lCTlZV?oc=5",
-      "imagen": "https://www.eldebate.com/files/article_social/files/fp/uploads/2026/10/15/6ad08a6db5b24.r_d.259-533-0.jpeg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxPVWJNXzh6Y1NKNHFIRG94YWNaaUxaU19LZmxyZERDSFRJS0ZRWjNnaXdsRGV3LWNucHJteGRSSlhmemJBdkw0aDV4RFFtQkZ3U1pacEhuR3dGNnVjSnFOckhvOHJaamxfMmZpYXRhNzBpMFhwRDROR1V1Nl9oMk96b2M1UjVrOXE3Q1JzZUpLbkE5OFRQT0dCdnhXVXhCQ1R4QjBLZWxpUlByTnVkV1pXLW9CYUhSRTU5TkhBck5FZ3hfLUNvTUY4djZBVXVGNTBlSEdDYVY5NGRhMXN4WlhIdEZqONIB6AFBVV95cUxQRDhoZXpTMkp3T29rd0tKbFBySlA3cTVVdkdwb1FIV21WVHpRMTVOcGx3VGdVQnNLdWo0eEFmX0hZZFozdklsZ0JiakhZY1lYT0ExWUFpZFpJRGR2WlhEXzJtUVJsUDFoUnp2TjlnQXJRS2s0dlotU1Vod2o1VXVpbVFvRF8ydFkySEYyREZiZEVRTnZqWS1mOVFKWlg5Y19YRXNuQnNhbG5SRzM4UkFrQWs4YWJBM2RhX3pmWk1rSDQzdXRuaFQ4THdsRWRuREgxUGNwTmFhdWZfNmxyZm54NnBjS3lCTlZV?oc=5\" target=\"_blank\">La prensa europea se rinde al «inmortal» Real Madrid tras otra remontada histórica</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Debate</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-15T08:32:56+00:00"
-    },
-    {
-      "titulo": "El fútbol ofensivo en su máxima expresión: ¿cómo entró la segunda jornada en la historia de la Champions League? - Goal.com",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxORFBZRjE3ek8xZDR4TW94Wkhsc0R5REdpcmQyZksxVm9saVJnMVpabzF1VXpjSXB2bGxSeDBaSGZ1R1RoYndKdERqN2pQVThBUm96N0dFRzV0N2Q3SEpyXzVqalgySVc0V1N5T3AyQUUzdzZ5OWdBNWxSTnpGTHN6QmVNdGxUUmJsUWRtWXY5NDJWQmVZNTNhbUw5eDZxczhFZVNIUGNtYWxSaWlNUllTV0NuaGNjRXcxb3BLX1l0Nk9iU1Q3YTRFNUZDckNUb281azUtanBfUUViZ1RrYzlrRjZmUTZZVlVxbFY0eEhCZGlqa3A5QkpJMw?oc=5",
-      "imagen": "https://assets.goal.com/images/v3/getty-2300234380/crop/MM5DGOJTGA5DEMRRGE5G433XMU5DAORSHAYQ====/GettyImages-2300234380.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxORFBZRjE3ek8xZDR4TW94Wkhsc0R5REdpcmQyZksxVm9saVJnMVpabzF1VXpjSXB2bGxSeDBaSGZ1R1RoYndKdERqN2pQVThBUm96N0dFRzV0N2Q3SEpyXzVqalgySVc0V1N5T3AyQUUzdzZ5OWdBNWxSTnpGTHN6QmVNdGxUUmJsUWRtWXY5NDJWQmVZNTNhbUw5eDZxczhFZVNIUGNtYWxSaWlNUllTV0NuaGNjRXcxb3BLX1l0Nk9iU1Q3YTRFNUZDckNUb281azUtanBfUUViZ1RrYzlrRjZmUTZZVlVxbFY0eEhCZGlqa3A5QkpJMw?oc=5\" target=\"_blank\">El fútbol ofensivo en su máxima expresión: ¿cómo entró la segunda jornada en la historia de la Champions League?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Goal.com</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-15T07:58:30+00:00"
     }
   ]
 }
