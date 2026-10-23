@@ -51,7 +51,7 @@ jobs:
 
           ARCHIVO = "noticias.json"
 
-          MAX_RASPEOS = 200
+          MAX_RASPEOS = 250
           RASPEOS = 0
 
           MAX_TOTAL = 4500
@@ -88,6 +88,9 @@ jobs:
               ("Tendencias", "https://news.google.com/rss/search?q=viral+redes+sociales+Mexico&hl=es-419&gl=MX&ceid=MX:es-419"),
               ("Tendencias", "https://news.google.com/rss/search?q=tendencias+hoy+Mexico&hl=es-419&gl=MX&ceid=MX:es-419"),
               ("Empresas", "https://expansion.mx/rss/empresas"),
+              ("Dinero", "https://www.elfinanciero.com.mx/rss/"),
+              ("Noticias", "https://lopezdoriga.com/feed/"),
+              ("Noticias", "https://www.sinembargo.mx/feed/"),
               ("Política", "https://expansion.mx/rss/politica"),
               ("Política", "https://news.google.com/rss/search?q=politica+Mexico+gobierno&hl=es-419&gl=MX&ceid=MX:es-419"),
               ("Política", "https://news.google.com/rss/search?q=Congreso+Mexico+leyes+reformas&hl=es-419&gl=MX&ceid=MX:es-419"),
@@ -1528,8 +1531,15 @@ jobs:
                       tzinfo=timezone.utc
                   )
 
+          # Dentro del mismo día, primero las noticias CON foto:
+          # así las portadas nunca abren con puros espacios vacíos.
           noticias_finales.sort(
-              key=obtener_fecha,
+              key=lambda n: (
+                  obtener_fecha(n).date(),
+                  1 if n.get(
+                      "imagen"
+                  ) else 0
+              ),
               reverse=True
           )
 
