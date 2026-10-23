@@ -19,9 +19,9 @@
 
 <style>
 :root{
-    --verde:#65ff9a;
+    --verde:#4cc9ff;
     --verde2:#35d878;
-    --fondo:#050807;
+    --fondo:#05080a;
     --fondo2:#0a100d;
     --tarjeta:#101814;
     --tarjeta2:#121d17;
@@ -47,7 +47,7 @@ html{
 body{
     background:
         radial-gradient(circle at 50% -10%,rgba(101,255,154,.09),transparent 35%),
-        linear-gradient(180deg,#050807 0%,#080d0a 45%,#050807 100%);
+        linear-gradient(180deg,#05080a 0%,#080d0a 45%,#05080a 100%);
     color:var(--texto);
     font-family:Arial,Helvetica,sans-serif;
     min-height:100vh;
@@ -509,7 +509,7 @@ nav a.active{
     color:var(--verde);
     background:
         radial-gradient(circle at 50% 40%,rgba(101,255,154,.14),transparent 40%),
-        #0b110e;
+        #0a0f14;
 }
 
 .image-fallback-icon{
@@ -594,7 +594,7 @@ nav a.active{
 }
 
 .side-card{
-    background:linear-gradient(180deg,#101813,#0b110e);
+    background:linear-gradient(180deg,#101813,#0a0f14);
     border:1px solid var(--borde);
     border-radius:18px;
     padding:19px;
@@ -756,7 +756,7 @@ nav a.active{
 
 footer{
     border-top:1px solid var(--borde);
-    background:#050807;
+    background:#05080a;
     padding:35px 0;
 }
 
@@ -927,10 +927,11 @@ footer{
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Noticias de México hoy | Últimas noticias y actualidad — TendenciasMX", "description": "Últimas noticias de México y el mundo hoy: actualidad, política, economía, tecnología y tendencias, actualizadas durante todo el día en TendenciasMX.", "url": "https://cberroteran400-spec.github.io/tendencias-mx/noticias.html", "inLanguage": "es-MX", "isPartOf": {"@type": "WebSite", "name": "TendenciasMX", "url": "https://cberroteran400-spec.github.io/tendencias-mx/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cberroteran400-spec.github.io/tendencias-mx/"}, {"@type": "ListItem", "position": 2, "name": "Noticias", "item": "https://cberroteran400-spec.github.io/tendencias-mx/noticias.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cada cuánto se actualizan las noticias de TendenciasMX?", "acceptedAnswer": {"@type": "Answer", "text": "La sección se actualiza durante todo el día conforme se generan nuevas publicaciones, para que siempre encuentres lo más reciente de México y el mundo."}}, {"@type": "Question", "name": "¿De dónde salen las noticias que aparecen aquí?", "acceptedAnswer": {"@type": "Answer", "text": "TendenciasMX reúne publicaciones de medios y fuentes originales; cada noticia enlaza a su fuente para que consultes la información completa directamente en el medio que la publicó."}}, {"@type": "Question", "name": "¿Puedo buscar una noticia en específico?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Usa el buscador de esta página y escribe una palabra clave: se filtran las noticias disponibles relacionadas con tu búsqueda."}}]}]}
 </script>
+
 <style>
 /* === TMX VISUAL v1 === */
 :root{
-  --tmx-ink:#101828; --tmx-sub:#475467; --tmx-accent:#c8102e;
+  --tmx-ink:#101828; --tmx-sub:#475467; --tmx-accent:#0b6bcb;
   --tmx-accent2:#0a2540; --tmx-line:#e4e7ec; --tmx-bg:#f6f7f9;
   --tmx-card:#ffffff; --tmx-radius:14px;
   --tmx-shadow:0 1px 2px rgba(16,24,40,.06),0 4px 16px rgba(16,24,40,.06);
@@ -940,7 +941,7 @@ html{scroll-behavior:smooth}
 body{background:var(--tmx-bg);color:var(--tmx-ink);
   font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-header,.site-header{background:linear-gradient(120deg,#0a2540 0%,#103a63 60%,#c8102e 130%);
+header,.site-header{background:linear-gradient(120deg,#0a2540 0%,#103a63 60%,#0b5fa5 130%);
   box-shadow:0 2px 14px rgba(10,37,64,.25)}
 .nav-container{max-width:1200px;margin:0 auto}
 .logo{font-weight:800;letter-spacing:.2px}
@@ -964,7 +965,14 @@ h2{font-weight:750;letter-spacing:-.015em}
 .read-more{color:var(--tmx-accent);font-weight:700;text-decoration:none}
 .read-more:hover{text-decoration:underline}
 .featured-card{border-radius:18px;overflow:hidden;box-shadow:var(--tmx-shadow-h)}
-.featured-overlay{background:linear-gradient(180deg,transparent 30%,rgba(5,15,30,.82))}
+.featured-overlay{background:linear-gradient(180deg,rgba(4,10,18,0) 10%,rgba(4,10,18,.55) 52%,rgba(4,10,18,.93) 100%)}
+.featured-overlay h2,.featured-overlay h3,.featured-overlay p,.featured-card h2,.featured-card h3{
+  color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.65),0 2px 18px rgba(0,0,0,.45)}
+.hero h1{color:#fff !important;text-shadow:0 2px 14px rgba(0,0,0,.5)}
+.hero h1 span{color:#4cc9ff}
+.hero p,.hero-content p{color:#d9e6f2}
+.search input{color:#eaf2f9}
+.search input::placeholder{color:#9fb4c6}
 .category-btn{border:1px solid var(--tmx-line);background:#fff;border-radius:999px;
   padding:7px 14px;font-weight:600;cursor:pointer;transition:all .15s ease}
 .category-btn:hover{border-color:var(--tmx-accent);color:var(--tmx-accent)}

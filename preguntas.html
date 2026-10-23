@@ -307,10 +307,11 @@ footer strong{
 .tmx-seo .tmx-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .tmx-seo .tmx-links a{border:1px solid rgba(128,128,128,.45);border-radius:999px;padding:6px 13px;font-size:.9rem;font-weight:600;text-decoration:none;color:inherit}
 </style>
+
 <style>
 /* === TMX VISUAL v1 === */
 :root{
-  --tmx-ink:#101828; --tmx-sub:#475467; --tmx-accent:#c8102e;
+  --tmx-ink:#101828; --tmx-sub:#475467; --tmx-accent:#0b6bcb;
   --tmx-accent2:#0a2540; --tmx-line:#e4e7ec; --tmx-bg:#f6f7f9;
   --tmx-card:#ffffff; --tmx-radius:14px;
   --tmx-shadow:0 1px 2px rgba(16,24,40,.06),0 4px 16px rgba(16,24,40,.06);
@@ -320,7 +321,7 @@ html{scroll-behavior:smooth}
 body{background:var(--tmx-bg);color:var(--tmx-ink);
   font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-header,.site-header{background:linear-gradient(120deg,#0a2540 0%,#103a63 60%,#c8102e 130%);
+header,.site-header{background:linear-gradient(120deg,#0a2540 0%,#103a63 60%,#0b5fa5 130%);
   box-shadow:0 2px 14px rgba(10,37,64,.25)}
 .nav-container{max-width:1200px;margin:0 auto}
 .logo{font-weight:800;letter-spacing:.2px}
@@ -344,7 +345,14 @@ h2{font-weight:750;letter-spacing:-.015em}
 .read-more{color:var(--tmx-accent);font-weight:700;text-decoration:none}
 .read-more:hover{text-decoration:underline}
 .featured-card{border-radius:18px;overflow:hidden;box-shadow:var(--tmx-shadow-h)}
-.featured-overlay{background:linear-gradient(180deg,transparent 30%,rgba(5,15,30,.82))}
+.featured-overlay{background:linear-gradient(180deg,rgba(4,10,18,0) 10%,rgba(4,10,18,.55) 52%,rgba(4,10,18,.93) 100%)}
+.featured-overlay h2,.featured-overlay h3,.featured-overlay p,.featured-card h2,.featured-card h3{
+  color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.65),0 2px 18px rgba(0,0,0,.45)}
+.hero h1{color:#fff !important;text-shadow:0 2px 14px rgba(0,0,0,.5)}
+.hero h1 span{color:#4cc9ff}
+.hero p,.hero-content p{color:#d9e6f2}
+.search input{color:#eaf2f9}
+.search input::placeholder{color:#9fb4c6}
 .category-btn{border:1px solid var(--tmx-line);background:#fff;border-radius:999px;
   padding:7px 14px;font-weight:600;cursor:pointer;transition:all .15s ease}
 .category-btn:hover{border-color:var(--tmx-accent);color:var(--tmx-accent)}
