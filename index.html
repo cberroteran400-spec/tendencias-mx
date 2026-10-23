@@ -498,6 +498,12 @@ function esFacebookImagen(url) {
   return u.includes("facebook.com") || u.includes("fbcdn.net") || u.includes("fbsbx.com");
 }
 
+function tieneFotoUtil(noticia) {
+  const cruda = valor(noticia, ["imagen","image","img","imagen_url","image_url","thumbnail","enclosure"]);
+  const url = (typeof cruda === "object" && cruda) ? valor(cruda, ["url","link"]) : cruda;
+  return typeof url === "string" && /^https?:\/\//i.test(url) && !esFacebookImagen(url);
+}
+
 function imagenRespaldo(texto = "NOTICIAS") {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700">
   <rect width="1200" height="700" fill="#0a0f14"/>
@@ -814,6 +820,8 @@ async function cargarNoticias() {
     }
 
     noticias = ordenarPorFecha(noticias.filter(n => !esDeporte(n)));
+    // Portada con fotos: primero las noticias con foto util (se conserva el orden por fecha dentro de cada grupo).
+    noticias.sort((a,b) => (tieneFotoUtil(b) ? 1 : 0) - (tieneFotoUtil(a) ? 1 : 0));
     noticiasFiltradas = [...noticias];
 
     actualizarTendencias(noticias);
