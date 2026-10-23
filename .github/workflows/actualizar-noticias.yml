@@ -51,8 +51,11 @@ jobs:
 
           ARCHIVO = "noticias.json"
 
-          MAX_TOTAL = 1200
-          MAX_POR_FEED = 30
+          MAX_RASPEOS = 200
+          RASPEOS = 0
+
+          MAX_TOTAL = 4500
+          MAX_POR_FEED = 60
           LIMITE_DIAS = 14
 
           HEADERS = {
@@ -66,12 +69,36 @@ jobs:
 
           FUENTES = [
               ("Noticias", "https://expansion.mx/rss"),
+              ("Noticias", "https://news.google.com/rss/search?q=noticias+Mexico+hoy&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Noticias", "https://news.google.com/rss/search?q=ultimas+noticias+Mexico&hl=es-419&gl=MX&ceid=MX:es-419"),
               ("Mundo", "https://expansion.mx/rss/internacional"),
+              ("Mundo", "https://news.google.com/rss/search?q=noticias+internacionales+mundo&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("México", "https://news.google.com/rss/search?q=Mexico+estados+noticias&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("México", "https://news.google.com/rss/search?q=CDMX+Ciudad+de+Mexico+noticias&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("México", "https://news.google.com/rss/search?q=Guadalajara+Monterrey+Puebla+noticias&hl=es-419&gl=MX&ceid=MX:es-419"),
               ("Dinero", "https://expansion.mx/rss/economia"),
+              ("Dinero", "https://news.google.com/rss/search?q=dolar+hoy+peso+mexicano&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Dinero", "https://news.google.com/rss/search?q=economia+Mexico+bancos+empresas&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Dinero", "https://news.google.com/rss/search?q=finanzas+personales+Mexico+empleo&hl=es-419&gl=MX&ceid=MX:es-419"),
               ("Tecnología", "https://expansion.mx/rss/tecnologia"),
+              ("Tecnología", "https://news.google.com/rss/search?q=tecnologia+inteligencia+artificial&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Tecnología", "https://news.google.com/rss/search?q=celulares+aplicaciones+gadgets&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Tecnología", "https://news.google.com/rss/search?q=redes+sociales+internet+tecnologia&hl=es-419&gl=MX&ceid=MX:es-419"),
               ("Tendencias", "https://expansion.mx/rss/tendencias"),
+              ("Tendencias", "https://news.google.com/rss/search?q=viral+redes+sociales+Mexico&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Tendencias", "https://news.google.com/rss/search?q=tendencias+hoy+Mexico&hl=es-419&gl=MX&ceid=MX:es-419"),
               ("Empresas", "https://expansion.mx/rss/empresas"),
               ("Política", "https://expansion.mx/rss/politica"),
+              ("Política", "https://news.google.com/rss/search?q=politica+Mexico+gobierno&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Política", "https://news.google.com/rss/search?q=Congreso+Mexico+leyes+reformas&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Política", "https://news.google.com/rss/search?q=elecciones+Mexico+partidos&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Entretenimiento", "https://news.google.com/rss/search?q=entretenimiento+famosos+Mexico&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Entretenimiento", "https://news.google.com/rss/search?q=cine+estrenos+peliculas&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Entretenimiento", "https://news.google.com/rss/search?q=musica+conciertos+artistas&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Entretenimiento", "https://news.google.com/rss/search?q=series+television+espectaculos&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Trámites", "https://news.google.com/rss/search?q=tramites+Mexico+CURP+pasaporte&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Trámites", "https://news.google.com/rss/search?q=SAT+tramites+documentos+Mexico&hl=es-419&gl=MX&ceid=MX:es-419"),
+              ("Trámites", "https://news.google.com/rss/search?q=licencia+pasaporte+visa+tramites&hl=es-419&gl=MX&ceid=MX:es-419"),
 
               ("Futbol", "https://www.espn.com/espn/rss/soccer/news"),
               ("Futbol", "https://news.google.com/rss/search?q=futbol+Mexico+Liga+MX+Seleccion+Mexicana&hl=es-419&gl=MX&ceid=MX:es-419"),
@@ -726,6 +753,14 @@ jobs:
               return ""
 
           def extraer_imagen(url_articulo):
+
+              global RASPEOS
+
+              RASPEOS += 1
+
+              if RASPEOS > MAX_RASPEOS:
+                  return ""
+
               if not url_articulo:
                   return ""
 
@@ -971,11 +1006,14 @@ jobs:
 
               mapa = {
                   "Noticias": "Noticias",
-                  "Mundo": "Mundo",
+                  "Mundo": "Noticias",
                   "Dinero": "Dinero",
                   "Tecnología": "Tecnología",
                   "Tendencias": "Tendencias",
-                  "Empresas": "Empresas",
+                  "México": "México",
+                  "Entretenimiento": "Entretenimiento",
+                  "Trámites": "Trámites",
+                  "Empresas": "Dinero",
                   "Política": "Política",
                   "Futbol": "Deportes",
                   "Tenis": "Deportes",
@@ -1063,6 +1101,14 @@ jobs:
           # =================================================
           # IMAGENES YA UTILIZADAS
           # =================================================
+
+          # Reclasificar noticias guardadas de categorías sin página propia
+          for _n in mapa.values():
+              _c = _n.get("categoria", "")
+              if _c == "Mundo":
+                  _n["categoria"] = "Noticias"
+              elif _c == "Empresas":
+                  _n["categoria"] = "Dinero"
 
           imagenes_usadas = set()
 
@@ -1258,9 +1304,9 @@ jobs:
                       )
                   )
 
-              
-              
-                  
+
+
+
 
                   # =================================================
               # GUARDAR SOLO SI ES REAL
@@ -1487,9 +1533,98 @@ jobs:
               reverse=True
           )
 
-          noticias_finales = (
-              noticias_finales[:MAX_TOTAL]
-          )
+          # =================================================
+          # SELECCION BALANCEADA POR CATEGORIA
+          # - Sin titulares repetidos entre medios.
+          # - Sin imágenes repetidas: la aparición más
+          #   reciente conserva la foto; las copias quedan
+          #   sin imagen.
+          # - Cuotas por categoría para que Deportes no
+          #   desplace a las demás secciones.
+          # =================================================
+
+          CUOTAS = {
+              "Deportes": 1100,
+              "Noticias": 800,
+              "México": 500,
+              "Política": 450,
+              "Dinero": 450,
+              "Tecnología": 450,
+              "Entretenimiento": 450,
+              "Tendencias": 200,
+              "Trámites": 100,
+          }
+
+          vistos_titulos = set()
+          vistos_imagenes = set()
+          conteo_categorias = {}
+          seleccion = []
+
+          for noticia in noticias_finales:
+
+              titulo_clave = normalizar_texto(
+                  noticia.get(
+                      "titulo",
+                      ""
+                  )
+              ).lower()
+
+              if titulo_clave and titulo_clave in vistos_titulos:
+                  continue
+
+              categoria = noticia.get(
+                  "categoria",
+                  "Noticias"
+              )
+
+              cuota = CUOTAS.get(
+                  categoria,
+                  300
+              )
+
+              if conteo_categorias.get(
+                  categoria,
+                  0
+              ) >= cuota:
+                  continue
+
+              imagen = noticia.get(
+                  "imagen",
+                  ""
+              )
+
+              if imagen and imagen in vistos_imagenes:
+                  noticia["imagen"] = ""
+                  imagen = ""
+
+              if imagen:
+                  vistos_imagenes.add(
+                      imagen
+                  )
+
+              if titulo_clave:
+                  vistos_titulos.add(
+                      titulo_clave
+                  )
+
+              conteo_categorias[categoria] = (
+                  conteo_categorias.get(
+                      categoria,
+                      0
+                  )
+                  + 1
+              )
+
+              seleccion.append(
+                  noticia
+              )
+
+              if len(
+                  seleccion
+              ) >= MAX_TOTAL:
+                  break
+
+          noticias_finales = seleccion
 
           # =================================================
           # ESTADISTICAS
