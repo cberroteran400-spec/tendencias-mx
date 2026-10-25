@@ -1,9 +1,9 @@
 {
-  "actualizado": "2026-10-25T14:03:06.405658+00:00",
-  "total": 2658,
+  "actualizado": "2026-10-25T14:28:57.420386+00:00",
+  "total": 2666,
   "imagenes": {
-    "con_imagen": 1533,
-    "sin_imagen": 1125
+    "con_imagen": 1531,
+    "sin_imagen": 1135
   },
   "noticias": [
     {
@@ -877,6 +877,36 @@
       "fecha": "2026-10-25T13:45:00+00:00"
     },
     {
+      "titulo": "De Chihuahua a Zacatecas: índice de 250 noticias de los estados 08 al 32 - noticiaslapaz.news",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMmdVb2JQZ0FNQm9zeTdPTE9pRmdKakpKYXd4dmV4VWduZ2xZazlrTkpZLTA0dTVTNFdPRTVmVjV1WUdVa0xJVGU3UURhWEUtQzVSS1RSMmlPWDZSdHBOMVVZZllVaEN6SWhmcktiaHAwbTA5RjFiNmZqNk1QcERoT09zUVppcVRDVHhfcVpmTHNUNWY5?oc=5",
+      "imagen": "https://i0.wp.com/noticiaslapaz.news/wp-content/uploads/2026/10/bandera-mexico-archivo-daniel-case-2015.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxQMmdVb2JQZ0FNQm9zeTdPTE9pRmdKakpKYXd4dmV4VWduZ2xZazlrTkpZLTA0dTVTNFdPRTVmVjV1WUdVa0xJVGU3UURhWEUtQzVSS1RSMmlPWDZSdHBOMVVZZllVaEN6SWhmcktiaHAwbTA5RjFiNmZqNk1QcERoT09zUVppcVRDVHhfcVpmTHNUNWY5?oc=5\" target=\"_blank\">De Chihuahua a Zacatecas: índice de 250 noticias de los estados 08 al 32</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">noticiaslapaz.news</font>",
+      "fuente": "México",
+      "categoria": "México",
+      "subcategoria": "",
+      "fecha": "2026-10-25T11:59:46+00:00"
+    },
+    {
+      "titulo": "Precio del dólar ‘tumba’ al peso mexicano y así cotiza el tipo de cambio este domingo 25 de octubre - El Imparcial",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPamptUmd2TWtyZjlFcUVOSVB5NWFIekg5dFQtZDdnR0xLSUpXVVg3ZUtDbE4xOXgxRHVTbnJUeTY0TlhSRjBNN2MyYXVFR0FJVndGYW02REtnZzRFSE5CMnN4aTFhbnZ5TjdmbVlMc0RhU0p0bndjNnB5VHBISVItZ2lxS09aczdVdHhlcjVIcnd4eW1CWUlqZTN3YkZrTkFHTmJIT3RwcTQtc01rOTVZWkxoWEdMbjQ1OWZMb1N6ZGVOTkdSY2o3YVpMUHppZ9IB6AFBVV95cUxOOG1kOHR4M0xoUjZsUmJkVVdvZW1uY0NUX3RGaDBTUVowR3F0R05KcDFFakYycENMbktHSkpnZlZCczdYdHJTbk5UZTZyQjVZVWVjNVhvUWJvUGpTVm1ETW4xSmpaczcxVjlKT3p4SThDWlJiOWNqdDg3Z3k4WXNKR182Y1FKWUNiYzUzZUpXeXlaOUFQanJ5cXhUVktEZnBQOFpBaGx6eFV0bURIc2d4RzBBNWJPdG1ZX0huM2RXanZiVGgxVEpDZmhkZFRza2pacDBCbnNfRXA5NFQ5QWVQOElKdkxQXzJs?oc=5",
+      "imagen": "https://www.elimparcial.com/resizer/v2/PMA2JMKOZVE5HPSM7BFPNYOLMI.jpg?auth=0e6d03f44055e90e7eae4683ef04bde163e93bbc302639f3b2ca77037435a5c0&smart=true&width=1200&height=630&quality=70",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPamptUmd2TWtyZjlFcUVOSVB5NWFIekg5dFQtZDdnR0xLSUpXVVg3ZUtDbE4xOXgxRHVTbnJUeTY0TlhSRjBNN2MyYXVFR0FJVndGYW02REtnZzRFSE5CMnN4aTFhbnZ5TjdmbVlMc0RhU0p0bndjNnB5VHBISVItZ2lxS09aczdVdHhlcjVIcnd4eW1CWUlqZTN3YkZrTkFHTmJIT3RwcTQtc01rOTVZWkxoWEdMbjQ1OWZMb1N6ZGVOTkdSY2o3YVpMUHppZ9IB6AFBVV95cUxOOG1kOHR4M0xoUjZsUmJkVVdvZW1uY0NUX3RGaDBTUVowR3F0R05KcDFFakYycENMbktHSkpnZlZCczdYdHJTbk5UZTZyQjVZVWVjNVhvUWJvUGpTVm1ETW4xSmpaczcxVjlKT3p4SThDWlJiOWNqdDg3Z3k4WXNKR182Y1FKWUNiYzUzZUpXeXlaOUFQanJ5cXhUVktEZnBQOFpBaGx6eFV0bURIc2d4RzBBNWJPdG1ZX0huM2RXanZiVGgxVEpDZmhkZFRza2pacDBCbnNfRXA5NFQ5QWVQOElKdkxQXzJs?oc=5\" target=\"_blank\">Precio del dólar ‘tumba’ al peso mexicano y así cotiza el tipo de cambio este domingo 25 de octubre</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Imparcial</font>",
+      "fuente": "Dinero",
+      "categoria": "Dinero",
+      "subcategoria": "",
+      "fecha": "2026-10-25T13:13:32+00:00"
+    },
+    {
+      "titulo": "Hansi Flick amenaza a Mourinho con una estadística que preocupa al Real Madrid - Claro Sports",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWWNibUpNclpjdGI5RUt5LXRwb0wwYzQzOS1QQWlTS1Bzb25pelhheVVxVTFhTFRNeW5FdWd0cnlaYVVFMWNsZm5JTF9VZmVTMnEzWkc5SUFyNTJWdzNSdXVOLVhyc3doTkpndUJNd2U0TW9wZlhhY3F5SWxvT0xZQ1JQX1AyTDV4dHlFTDB4M2N4X1NMWmUtZWpockVWNFFkYkZQTm5KVVp3aW9kTGYtVFNpajBld1VWbjRldE9n?oc=5",
+      "imagen": "https://cdn.amxinfra.com/clarosports/images/2026/10/hansi-flick-131538.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxOWWNibUpNclpjdGI5RUt5LXRwb0wwYzQzOS1QQWlTS1Bzb25pelhheVVxVTFhTFRNeW5FdWd0cnlaYVVFMWNsZm5JTF9VZmVTMnEzWkc5SUFyNTJWdzNSdXVOLVhyc3doTkpndUJNd2U0TW9wZlhhY3F5SWxvT0xZQ1JQX1AyTDV4dHlFTDB4M2N4X1NMWmUtZWpockVWNFFkYkZQTm5KVVp3aW9kTGYtVFNpajBld1VWbjRldE9n?oc=5\" target=\"_blank\">Hansi Flick amenaza a Mourinho con una estadística que preocupa al Real Madrid</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Claro Sports</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-25T13:50:06+00:00"
+    },
+    {
       "titulo": "Visa estadounidense sube de precio; esto deberás pagar en 2026",
       "url": "https://lopezdoriga.com/nacional/visa-estadounidense-sube-de-precio-esto-deberas-pagar-en-2026/",
       "imagen": "",
@@ -1167,16 +1197,6 @@
       "fecha": "2026-10-25T12:00:00+00:00"
     },
     {
-      "titulo": "De Chihuahua a Zacatecas: índice de 250 noticias de los estados 08 al 32 - noticiaslapaz.news",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMmdVb2JQZ0FNQm9zeTdPTE9pRmdKakpKYXd4dmV4VWduZ2xZazlrTkpZLTA0dTVTNFdPRTVmVjV1WUdVa0xJVGU3UURhWEUtQzVSS1RSMmlPWDZSdHBOMVVZZllVaEN6SWhmcktiaHAwbTA5RjFiNmZqNk1QcERoT09zUVppcVRDVHhfcVpmTHNUNWY5?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxQMmdVb2JQZ0FNQm9zeTdPTE9pRmdKakpKYXd4dmV4VWduZ2xZazlrTkpZLTA0dTVTNFdPRTVmVjV1WUdVa0xJVGU3UURhWEUtQzVSS1RSMmlPWDZSdHBOMVVZZllVaEN6SWhmcktiaHAwbTA5RjFiNmZqNk1QcERoT09zUVppcVRDVHhfcVpmTHNUNWY5?oc=5\" target=\"_blank\">De Chihuahua a Zacatecas: índice de 250 noticias de los estados 08 al 32</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">noticiaslapaz.news</font>",
-      "fuente": "México",
-      "categoria": "México",
-      "subcategoria": "",
-      "fecha": "2026-10-25T11:59:46+00:00"
-    },
-    {
       "titulo": "¿Está listo Guanajuato para la revolución de la IA? El estado apuesta por capacitar a sus trabajadores - El Sol de México",
       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbmZLMDBmODF3V2FTa1p0U24tT0pCUjBPUHFkWUlwbzBoNUt3SFZpYlgxcDlvZGhJSkdEbVdKNnRlcjlHV3VkRUkzSFUwMWhJc0lETDd3Z2F1UjZoa1FHazVfT0l4c1laNTlEZ205MzFPdmJnNWVmd0s5RE81cFh6Y1FfVGs3azRwTUp2c0Y0T0tOeGU4dkpBWUFVSUFtRWRSWXU5eklwd0RYQnZBWmNqdFM0MmtRLTFtTk11NDA4OFNDcGlZcExyLVQ0UUh2TEphb2FQZERwRGlCWUFKMVhqeXgzekY?oc=5",
       "imagen": "",
@@ -1227,16 +1247,6 @@
       "fecha": "2026-10-25T07:38:58+00:00"
     },
     {
-      "titulo": "Precio del dólar ‘tumba’ al peso mexicano y así cotiza el tipo de cambio este domingo 25 de octubre - El Imparcial",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPamptUmd2TWtyZjlFcUVOSVB5NWFIekg5dFQtZDdnR0xLSUpXVVg3ZUtDbE4xOXgxRHVTbnJUeTY0TlhSRjBNN2MyYXVFR0FJVndGYW02REtnZzRFSE5CMnN4aTFhbnZ5TjdmbVlMc0RhU0p0bndjNnB5VHBISVItZ2lxS09aczdVdHhlcjVIcnd4eW1CWUlqZTN3YkZrTkFHTmJIT3RwcTQtc01rOTVZWkxoWEdMbjQ1OWZMb1N6ZGVOTkdSY2o3YVpMUHppZ9IB6AFBVV95cUxOOG1kOHR4M0xoUjZsUmJkVVdvZW1uY0NUX3RGaDBTUVowR3F0R05KcDFFakYycENMbktHSkpnZlZCczdYdHJTbk5UZTZyQjVZVWVjNVhvUWJvUGpTVm1ETW4xSmpaczcxVjlKT3p4SThDWlJiOWNqdDg3Z3k4WXNKR182Y1FKWUNiYzUzZUpXeXlaOUFQanJ5cXhUVktEZnBQOFpBaGx6eFV0bURIc2d4RzBBNWJPdG1ZX0huM2RXanZiVGgxVEpDZmhkZFRza2pacDBCbnNfRXA5NFQ5QWVQOElKdkxQXzJs?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPamptUmd2TWtyZjlFcUVOSVB5NWFIekg5dFQtZDdnR0xLSUpXVVg3ZUtDbE4xOXgxRHVTbnJUeTY0TlhSRjBNN2MyYXVFR0FJVndGYW02REtnZzRFSE5CMnN4aTFhbnZ5TjdmbVlMc0RhU0p0bndjNnB5VHBISVItZ2lxS09aczdVdHhlcjVIcnd4eW1CWUlqZTN3YkZrTkFHTmJIT3RwcTQtc01rOTVZWkxoWEdMbjQ1OWZMb1N6ZGVOTkdSY2o3YVpMUHppZ9IB6AFBVV95cUxOOG1kOHR4M0xoUjZsUmJkVVdvZW1uY0NUX3RGaDBTUVowR3F0R05KcDFFakYycENMbktHSkpnZlZCczdYdHJTbk5UZTZyQjVZVWVjNVhvUWJvUGpTVm1ETW4xSmpaczcxVjlKT3p4SThDWlJiOWNqdDg3Z3k4WXNKR182Y1FKWUNiYzUzZUpXeXlaOUFQanJ5cXhUVktEZnBQOFpBaGx6eFV0bURIc2d4RzBBNWJPdG1ZX0huM2RXanZiVGgxVEpDZmhkZFRza2pacDBCbnNfRXA5NFQ5QWVQOElKdkxQXzJs?oc=5\" target=\"_blank\">Precio del dólar ‘tumba’ al peso mexicano y así cotiza el tipo de cambio este domingo 25 de octubre</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Imparcial</font>",
-      "fuente": "Dinero",
-      "categoria": "Dinero",
-      "subcategoria": "",
-      "fecha": "2026-10-25T13:13:32+00:00"
-    },
-    {
       "titulo": "Cinco películas imprescindibles de José Luis García Sánchez - EL PAÍS",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOX3lKVkE4Y2l1Wkkzcm5hZmpSZF9lMW5wZWFzbllWQ1VNNHl3X2pVMVpveWlKT21aV3U5bWdIelBob3FYamx5UmNOaXFXaGZrVjd3SHJ3eTVId25fUjh6Z2dqZ3hObk5rLXV4b0wzdlBDNllPUnlwbUpkekFwNnNOalRDREpMNk1McmF6NFprX01YWW1TVU5hNU9jazdxbkEtMFNfZtIBuAFBVV95cUxNSWE4REhjTjFuc0ZNbW1yekhVNkN5cmp2Uk1UX050VW54UWhiODBKZ1N1LUZ0cUZFbWp5VTFSYmdwMV9aNTBTNW5nVkwtYnBTSnU5czBrVEZYcGFjbG5helR2eUJpcy11X3pOcmVJNU12TV9RaEVkWFZhVDMwQ0NCclFlUHJIRFlKYzNSTl90Y0JxT2xjTGphTXEtMlZaX05xODBOR2wxR1ZEZFZWRDR6S0tKdTQtcVNN?oc=5",
       "imagen": "",
@@ -1247,16 +1257,6 @@
       "fecha": "2026-10-25T11:04:38+00:00"
     },
     {
-      "titulo": "Hansi Flick amenaza a Mourinho con una estadística que preocupa al Real Madrid - Claro Sports",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWWNibUpNclpjdGI5RUt5LXRwb0wwYzQzOS1QQWlTS1Bzb25pelhheVVxVTFhTFRNeW5FdWd0cnlaYVVFMWNsZm5JTF9VZmVTMnEzWkc5SUFyNTJWdzNSdXVOLVhyc3doTkpndUJNd2U0TW9wZlhhY3F5SWxvT0xZQ1JQX1AyTDV4dHlFTDB4M2N4X1NMWmUtZWpockVWNFFkYkZQTm5KVVp3aW9kTGYtVFNpajBld1VWbjRldE9n?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxOWWNibUpNclpjdGI5RUt5LXRwb0wwYzQzOS1QQWlTS1Bzb25pelhheVVxVTFhTFRNeW5FdWd0cnlaYVVFMWNsZm5JTF9VZmVTMnEzWkc5SUFyNTJWdzNSdXVOLVhyc3doTkpndUJNd2U0TW9wZlhhY3F5SWxvT0xZQ1JQX1AyTDV4dHlFTDB4M2N4X1NMWmUtZWpockVWNFFkYkZQTm5KVVp3aW9kTGYtVFNpajBld1VWbjRldE9n?oc=5\" target=\"_blank\">Hansi Flick amenaza a Mourinho con una estadística que preocupa al Real Madrid</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Claro Sports</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-25T13:50:06+00:00"
-    },
-    {
       "titulo": "Courtois, ausente en Real Madrid para El Clásico contra Barcelona - ESPN México",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLWZhZFl4OGcxUy03blp6ZHBnbUd4alBwY2RzREYzOEpnYXU0dW81MU43X0tFbHZTYlRsNU5yeS1QQWNPdmFrRkNEb1ZtRzlSSXV0UEhLUDZPNTY0UHprc2VaVGpfOGRZQU9FSWpudjVrbWdGZE9kV1ZfNTA5NFl4QWxzMVltMzd3Uk5sUHNSRDBIZlhTTG5idF9Rc2pVVW1lS0RsXzBudE80c2QtS2ZTWXFjbw?oc=5",
       "imagen": "",
@@ -1265,6 +1265,96 @@
       "categoria": "Deportes",
       "subcategoria": "futbol",
       "fecha": "2026-10-25T11:53:00+00:00"
+    },
+    {
+      "titulo": "¿Se debilita el peso? Así amanece el precio del dólar hoy DOMINGO en México - ABC Noticias",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNY3dUUml5aXNSVGw4NW15UktNeHZDMXk0czJVMVF0YTJITXVFXy1NcjB4QWRGclpXZ2dmNm50emhxbTN0RkE1MzdNVWlvQmJDekRBblhWdkVBM2lxV1YxWHpSVnhEck1uQUVXUS1tT1RCRGZmT2VtZWEwNWpkYjQwNkRRT3ozQm9WUHRFTDQ3dVVlT2xBRHRtYUVNUjh0VnhEZjkyMWc1cDVwS0JwSjBUNEg2cXA0UXB0WWdtZGl0bWRWMUdJVGNn?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNY3dUUml5aXNSVGw4NW15UktNeHZDMXk0czJVMVF0YTJITXVFXy1NcjB4QWRGclpXZ2dmNm50emhxbTN0RkE1MzdNVWlvQmJDekRBblhWdkVBM2lxV1YxWHpSVnhEck1uQUVXUS1tT1RCRGZmT2VtZWEwNWpkYjQwNkRRT3ozQm9WUHRFTDQ3dVVlT2xBRHRtYUVNUjh0VnhEZjkyMWc1cDVwS0JwSjBUNEg2cXA0UXB0WWdtZGl0bWRWMUdJVGNn?oc=5\" target=\"_blank\">¿Se debilita el peso? Así amanece el precio del dólar hoy DOMINGO en México</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ABC Noticias</font>",
+      "fuente": "Noticias",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-25T14:23:54+00:00"
+    },
+    {
+      "titulo": "Agentes de IA: qué son y en qué se diferencian de un chatbot - Diario Mendoza",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTGpfRzJfemFTU3RWT1Q3THFEX3BEU2FlbUJlQUhRb2o4ek9HWU5RRllWa1o3b3RieWlLRk9yeUJZYUhrZ0NzclJydTgtZ0s1SjRFTlpLM0IxUWR6aDhfWEI1anRoOUdhWlRrSDBzUm5QOGhGajVMa0lJY1BhSExQY0cyTTJ3bGFMeE5FQ2ZkekRHY2l1SWdzNEpR0gGfAUFVX3lxTFA0WHFpWEl4UExNLWJQY1U1REQxaHFPTlA3UlZvc2thZ29NLWZBMldJMkNIODRnYjhSa2M1NThQMkZ0NHlBSkt1cGJwbm5Vdnl3NjFSR3B2c1dsdUJadVlKTHR5TEI4b1pqblhBVURVOGNtaUFkS3pJWHd1SnhuQk5Cc1d6b002aWl1cGJTRnZjR3VnMHBBeXhlM2ptdGR4WQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPTGpfRzJfemFTU3RWT1Q3THFEX3BEU2FlbUJlQUhRb2o4ek9HWU5RRllWa1o3b3RieWlLRk9yeUJZYUhrZ0NzclJydTgtZ0s1SjRFTlpLM0IxUWR6aDhfWEI1anRoOUdhWlRrSDBzUm5QOGhGajVMa0lJY1BhSExQY0cyTTJ3bGFMeE5FQ2ZkekRHY2l1SWdzNEpR0gGfAUFVX3lxTFA0WHFpWEl4UExNLWJQY1U1REQxaHFPTlA3UlZvc2thZ29NLWZBMldJMkNIODRnYjhSa2M1NThQMkZ0NHlBSkt1cGJwbm5Vdnl3NjFSR3B2c1dsdUJadVlKTHR5TEI4b1pqblhBVURVOGNtaUFkS3pJWHd1SnhuQk5Cc1d6b002aWl1cGJTRnZjR3VnMHBBeXhlM2ptdGR4WQ?oc=5\" target=\"_blank\">Agentes de IA: qué son y en qué se diferencian de un chatbot</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Diario Mendoza</font>",
+      "fuente": "Tecnología",
+      "categoria": "Tecnología",
+      "subcategoria": "",
+      "fecha": "2026-10-25T13:32:00+00:00"
+    },
+    {
+      "titulo": "Tiroteo en inmediaciones de universidad en Florida deja 12 heridos",
+      "url": "https://lopezdoriga.com/internacional/tiroteo-inmediaciones-universidad-florida-deja-12-heridos/",
+      "imagen": "",
+      "descripcion": "<figure><img alt=\"policía cinta niños\" class=\"attachment-large size-large wp-post-image img-responsive \" src=\"https://lopezdoriga.com/wp-content/uploads/2022/12/policia-cinta-1024x683.jpg\" /></figure> <p>Al menos doce personas resultaron heridas, incluyendo un niño de 11 años, en un tiroteo cerca del estadio de la universidad A&#038;M de Florida</p> <p>La entrada <a href=\"https://lopezdoriga.com/internacional/tiroteo-inmediaciones-universidad-florida-deja-12-heridos/\">Tiroteo en inmediaciones de universidad en Florida deja 12 heridos</a> aparece primero en <a href=\"https://lopezdoriga.com\">López-Dóriga Digital</a>.</p>",
+      "fuente": "Lidia Vargas",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-25T13:22:08+00:00"
+    },
+    {
+      "titulo": "Giras y conciertos anunciados en México para 2026 (Actualización) - Billboard",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12QVNDbm1OMWpneWQ3c1pJVE1KRm5zZU9BbkxBWnRKMmRaN3NVVktVcHQyX3hka19jOFkwWElUM0RVU1RLQi0wN0xNd1ZWYUx4S3VSN2NPa3Z1OVpmaE1ObWtweUVtNmlsYlgzS0ZR?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE12QVNDbm1OMWpneWQ3c1pJVE1KRm5zZU9BbkxBWnRKMmRaN3NVVktVcHQyX3hka19jOFkwWElUM0RVU1RLQi0wN0xNd1ZWYUx4S3VSN2NPa3Z1OVpmaE1ObWtweUVtNmlsYlgzS0ZR?oc=5\" target=\"_blank\">Giras y conciertos anunciados en México para 2026 (Actualización)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Billboard</font>",
+      "fuente": "Entretenimiento",
+      "categoria": "Entretenimiento",
+      "subcategoria": "",
+      "fecha": "2026-10-25T06:00:51+00:00"
+    },
+    {
+      "titulo": "Última hora: Courtois se pierde el Clásico de Barcelona vs Real Madrid, ¿qué le pasa al arquero belga? - Récord",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTS1fS1BZVjA3Z0dLZ203QkJmZTY0bjVRSVRtbllnaGJWYkh1N0FIV0lVZl9tc2c5cFE5YTJndkxtV3BnaGphNmpWb3A2VExnLThvUmMweV8xcGhCaUs5OVE2cmNpemU0TTRtdEhFMTk0QnRja0g3UEZfMXhpY3Z1aDZCa1JVQ2gydjBwSm1wVGd5bmdyWkFiU0RZMXNHY0Q1UGFHNUVVNC1CNzFXYmFtTVA1UmlSZmZ3TEMxSHRaWlBUblJlalUtSmV0U05fbkVyZXF6NURLMm5TQXZNaWdPbmxVY2d1LWp3?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTS1fS1BZVjA3Z0dLZ203QkJmZTY0bjVRSVRtbllnaGJWYkh1N0FIV0lVZl9tc2c5cFE5YTJndkxtV3BnaGphNmpWb3A2VExnLThvUmMweV8xcGhCaUs5OVE2cmNpemU0TTRtdEhFMTk0QnRja0g3UEZfMXhpY3Z1aDZCa1JVQ2gydjBwSm1wVGd5bmdyWkFiU0RZMXNHY0Q1UGFHNUVVNC1CNzFXYmFtTVA1UmlSZmZ3TEMxSHRaWlBUblJlalUtSmV0U05fbkVyZXF6NURLMm5TQXZNaWdPbmxVY2d1LWp3?oc=5\" target=\"_blank\">Última hora: Courtois se pierde el Clásico de Barcelona vs Real Madrid, ¿qué le pasa al arquero belga?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Récord</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-25T14:02:00+00:00"
+    },
+    {
+      "titulo": "Liverpool vs. Brighton (25 de Oct., 2026) Estadísticas del equipo - ESPN México",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPaXRNeXRUZHJVV1gtQ0J0b2N4NkJTNXpYeEJKLVNRdkhMOFhXUk5JQTdQTkhvZ3o1NEtDYzRlTzQyMXFVZlhFc0hXMzNVaFd1cHM1SjNXeGExbldMVzlNcTNnUVQyLUhBUXk0RF9HRHZmLUg0NjFJNmVRSWdQT2ZxZU5pQVVsS1AxU3c?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxPaXRNeXRUZHJVV1gtQ0J0b2N4NkJTNXpYeEJKLVNRdkhMOFhXUk5JQTdQTkhvZ3o1NEtDYzRlTzQyMXFVZlhFc0hXMzNVaFd1cHM1SjNXeGExbldMVzlNcTNnUVQyLUhBUXk0RF9HRHZmLUg0NjFJNmVRSWdQT2ZxZU5pQVVsS1AxU3c?oc=5\" target=\"_blank\">Liverpool vs. Brighton (25 de Oct., 2026) Estadísticas del equipo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-25T13:59:36+00:00"
+    },
+    {
+      "titulo": "Man Utd vs. Bournemouth (25 de Oct., 2026) Resultados en Vivo - ESPN México",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFByMmI5QURsYzlpdWtDWGJEb0U0VEhoWmd1bmRWM1hwSHZaY3hEZlVCTTktMWNuc2wyVlRWTnRvdHpsWUIyR0U1dnM2VmZRelpQV0s2Z1NHWDV6N3hqbzRadTNGNVVzQVhsS0E?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFByMmI5QURsYzlpdWtDWGJEb0U0VEhoWmd1bmRWM1hwSHZaY3hEZlVCTTktMWNuc2wyVlRWTnRvdHpsWUIyR0U1dnM2VmZRelpQV0s2Z1NHWDV6N3hqbzRadTNGNVVzQVhsS0E?oc=5\" target=\"_blank\">Man Utd vs. Bournemouth (25 de Oct., 2026) Resultados en Vivo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN México</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-25T13:31:17+00:00"
+    },
+    {
+      "titulo": "Liverpool vs. Brighton (25 Oct., 2026) Estadísticas del equipo - ESPN Guatemala",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNV0Z0OFp4VHdNbkliSmhnU3dJZzBPRE9WZHlLcUQ5MXo3UlpYam01cDQzcXNqaVB6ZzYycHVkSVJUSnV4dVNUYWs4bFRVSlZycU9UcmdfdDFyXzZCMU1HaTVIcEV2R2ZaZlpLN2xZRDVQNnVVV2drcVJyWW5CMk9ndXlUc1c0enViaVE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNV0Z0OFp4VHdNbkliSmhnU3dJZzBPRE9WZHlLcUQ5MXo3UlpYam01cDQzcXNqaVB6ZzYycHVkSVJUSnV4dVNUYWs4bFRVSlZycU9UcmdfdDFyXzZCMU1HaTVIcEV2R2ZaZlpLN2xZRDVQNnVVV2drcVJyWW5CMk9ndXlUc1c0enViaVE?oc=5\" target=\"_blank\">Liverpool vs. Brighton (25 Oct., 2026) Estadísticas del equipo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Guatemala</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-25T14:14:45+00:00"
+    },
+    {
+      "titulo": "PSV vs. Feyenoord (25 Oct., 2026) Estadísticas del equipo - ESPN Guatemala",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORno3N3R6eFVwTVJLUms4ZDdrR082Q3JFcklRRGZRMDVWeWljdkJlbTVTSG1ES0N5Z1BORDlHd3Z3bkZScFUxZmM1MVk5djd3MjlPWmNuTVl0MnVwb3lSOF9Xdm00UUhEdTZIaElFTUdfNDd5Tm5yeG5JVHc4UUtJVVdXZ3NnS2FPU3c?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxORno3N3R6eFVwTVJLUms4ZDdrR082Q3JFcklRRGZRMDVWeWljdkJlbTVTSG1ES0N5Z1BORDlHd3Z3bkZScFUxZmM1MVk5djd3MjlPWmNuTVl0MnVwb3lSOF9Xdm00UUhEdTZIaElFTUdfNDd5Tm5yeG5JVHc4UUtJVVdXZ3NnS2FPU3c?oc=5\" target=\"_blank\">PSV vs. Feyenoord (25 Oct., 2026) Estadísticas del equipo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESPN Guatemala</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-25T14:14:45+00:00"
     },
     {
       "titulo": "Edomex alista estrategia en materia de seguridad para 13 municipios del corredor AIFA-Pirámides",
@@ -5295,6 +5385,16 @@
       "categoria": "Tendencias",
       "subcategoria": "",
       "fecha": "2026-10-24T11:20:00+00:00"
+    },
+    {
+      "titulo": "Pronóstico de tu alcaldía en CDMX entre el 24 y el 25 de octubre: cielos nublados y ambientes templados a frescos - Meteored México",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOYXR4ZHRxY0taME9PcDk2MTdGOHhtdERpamNPcGxsdnd2a3pPWFlQd1FWNE1Qcm1acHRIWlVVSEw0aEM2eGo5VnNEbDNQdjYxNmdBSmJYLTJweldpZ3VPLWFLWlhfUnlMQ2ZkUS1nTUJxYXlaQldLMFFWeGh6bVFnMmVPSXRNOE9EMXFZYjB4enRYdWdGNW1xcG9zVUJoNzIta1BoOVZXdlBGTUQ0YU9rd3doWkZ6MEhlWUtrWkFKWm5NTkpCeHd0REN1aFNzVUl6Mk1sY21DZVAtaHM0TkM4OTY3LWNJT0NVcnBpdkRIaXNDOFFkaHNQYl93?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi-gFBVV95cUxOYXR4ZHRxY0taME9PcDk2MTdGOHhtdERpamNPcGxsdnd2a3pPWFlQd1FWNE1Qcm1acHRIWlVVSEw0aEM2eGo5VnNEbDNQdjYxNmdBSmJYLTJweldpZ3VPLWFLWlhfUnlMQ2ZkUS1nTUJxYXlaQldLMFFWeGh6bVFnMmVPSXRNOE9EMXFZYjB4enRYdWdGNW1xcG9zVUJoNzIta1BoOVZXdlBGTUQ0YU9rd3doWkZ6MEhlWUtrWkFKWm5NTkpCeHd0REN1aFNzVUl6Mk1sY21DZVAtaHM0TkM4OTY3LWNJT0NVcnBpdkRIaXNDOFFkaHNQYl93?oc=5\" target=\"_blank\">Pronóstico de tu alcaldía en CDMX entre el 24 y el 25 de octubre: cielos nublados y ambientes templados a frescos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Meteored México</font>",
+      "fuente": "México",
+      "categoria": "México",
+      "subcategoria": "",
+      "fecha": "2026-10-24T11:57:00+00:00"
     },
     {
       "titulo": "Checo Pérez: 300 Grandes Premios en México GP 2026 - CineMedios",
@@ -20427,6 +20527,26 @@
       "fecha": "2026-10-21T13:02:03+00:00"
     },
     {
+      "titulo": "Los mejores conciertos de Madrid en 2026 y 2027 - Time Out Worldwide",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1UzBsQXZSR3JwalJuOEZQdUZWdzBoWDdTM182LXV6YVd3al9kYWRJTDZyaWNsRjFhNHdwSU9URFpyN0d0ajNJZENaYVJBcHlWcl8zVzdpNllwU0tfRUEzMENMcEd2Vy00?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1UzBsQXZSR3JwalJuOEZQdUZWdzBoWDdTM182LXV6YVd3al9kYWRJTDZyaWNsRjFhNHdwSU9URFpyN0d0ajNJZENaYVJBcHlWcl8zVzdpNllwU0tfRUEzMENMcEd2Vy00?oc=5\" target=\"_blank\">Los mejores conciertos de Madrid en 2026 y 2027</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Time Out Worldwide</font>",
+      "fuente": "Entretenimiento",
+      "categoria": "Entretenimiento",
+      "subcategoria": "",
+      "fecha": "2026-10-21T22:00:00+00:00"
+    },
+    {
+      "titulo": "Conciertos que no te puedes perder en Madrid en 2026: fechas, artistas y entradas disponibles - Madrid Secreto",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE90YTFsTWFUQnhZMl9RcTRZMHJrN2hlQlJlQ3A4SmxxZFpWYmhlTW1qX3hjODZvUTJoX3NtZS1WYm5BZEhuZ3JjR2lDWWJUZHkxaUVVOTROTTNscGpTR0hzc3UwaFpGMzNFZmV4NW5tSmpYVUJYd1pVc0I3SQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE90YTFsTWFUQnhZMl9RcTRZMHJrN2hlQlJlQ3A4SmxxZFpWYmhlTW1qX3hjODZvUTJoX3NtZS1WYm5BZEhuZ3JjR2lDWWJUZHkxaUVVOTROTTNscGpTR0hzc3UwaFpGMzNFZmV4NW5tSmpYVUJYd1pVc0I3SQ?oc=5\" target=\"_blank\">Conciertos que no te puedes perder en Madrid en 2026: fechas, artistas y entradas disponibles</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Madrid Secreto</font>",
+      "fuente": "Entretenimiento",
+      "categoria": "Entretenimiento",
+      "subcategoria": "",
+      "fecha": "2026-10-21T09:38:46+00:00"
+    },
+    {
       "titulo": "Yaquis de Obregón refuerza su roster con experiencia de MLB; Jorge Alfaro jugará para ‘La Tribu’ en la LMP - La Tribuna (México)",
       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPb3ZDUHpQQnNhVHZGYnVaR05LYjhKNEVIY0VuT3BRN19JQjVuZkxqemFmeEZrUTM4d2xiY3lsRE9CcnRpVFVYT1hLZm1XdTNubVptT3dQc3BrS2l6OXR4R0lhMGxDOGZvWGM3Q1FHYmVKZy1SZGxGcmg2MXdpS3pYbHZYQ3hhSFFNMUh3NUpLYVR1a0JXMURsZTZPYUxhdHQ4bk5uV0NzaTRjSnhGb0VFeFotTkItb0tCa2hNdlZlbkRCWWtCWTlybVVEYUlnd196NFRoTEo1V050U2RwOFRCMm82ZWtyLXN3OWc?oc=5",
       "imagen": "https://tribuna-media.s3.mx-central-1.amazonaws.com/uploads/2026/10/Jorge-Alfaro-receptor-colombiano-con-amplio-paso-en-MLB-fue-anunciado-como-refuerzo-por-Yaquis-de-Obregon.jpg",
@@ -23997,16 +24117,6 @@
       "fecha": "2026-10-19T22:53:46+00:00"
     },
     {
-      "titulo": "El récord Guinness de la familia de Canelo que nadie ha logrado superar: siete hermanos, una cartelera y una v - AS México",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOODhmNmNBak94dGxUT1Yzc0FIZnFPbWRXeXZlT1Q4a0tlc0RRSl9PM3laTjRJbFlTQ29zSm5VRTduMU16RUt3VEplQXJyaGZ4ZENCTWU3eUNTVXpVZGpXVWxJZFpFTEVSZ2hpUkVFZnNaU04xYmtsaFRhVzBNZHE3MmxveGlHaFItNEdQVnh4NDZYOE5MOF9CYzdSOURNd2twUXZ1SzhBMEUzUmZpekVENU1uMU1RcnJraTlmQXUzMUNhalA1dHZLdXVqcGh3Ym13UTBNYWVVOHZ5MWdVd2RYM2FYcW5mUmlTZjhybkRXYjFLLWVYZEVCRHZScFlSbFNWcmg2R3NVY9IBmwJBVV95cUxORmFnOEpoVE5SVVJFVFQ0WVc2ejAyVk5pczdOUHA0Y0dyeE9DSWZSU2dkczVOaXY4VG9fRzBzcTloVXZXU1hFcl9UQWd6SFQ3VHBQQjVMb3hyWTJOaVk0VENFZG5OR1oyQ29semFFVGQ2YnpWVElfYlhrVXFBT2dhWElTcXdSVmlGMmFxOWd2MzhqN3FObEJYRUhrMUpUczNNUVNWZElEVS1oeE9aQk4ycjhUdkhEeGVGWWFyVzdXb2hjSUtUZHdicmYxR2pBUWlsVVRSR2JsZWlQS3dhQjVHUjNYWk9mM1ZJWU90WEw2SGg1UThJUHNtSXd6bm9xb0x3bEdudXltX0dwUEQzMmdxNUQ3NVZuRGJfVzNr?oc=5",
-      "imagen": "https://img.asmedia.epimg.net/resizer/v2/SW45VDQKH5GGDCDNWR6J4GUETY.jpg?auth=5daa808a359e3f2deb7b754241eb2c016655bd5f862cefd27ddc3736f7c39895&width=1472&height=828&smart=true",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihwJBVV95cUxOODhmNmNBak94dGxUT1Yzc0FIZnFPbWRXeXZlT1Q4a0tlc0RRSl9PM3laTjRJbFlTQ29zSm5VRTduMU16RUt3VEplQXJyaGZ4ZENCTWU3eUNTVXpVZGpXVWxJZFpFTEVSZ2hpUkVFZnNaU04xYmtsaFRhVzBNZHE3MmxveGlHaFItNEdQVnh4NDZYOE5MOF9CYzdSOURNd2twUXZ1SzhBMEUzUmZpekVENU1uMU1RcnJraTlmQXUzMUNhalA1dHZLdXVqcGh3Ym13UTBNYWVVOHZ5MWdVd2RYM2FYcW5mUmlTZjhybkRXYjFLLWVYZEVCRHZScFlSbFNWcmg2R3NVY9IBmwJBVV95cUxORmFnOEpoVE5SVVJFVFQ0WVc2ejAyVk5pczdOUHA0Y0dyeE9DSWZSU2dkczVOaXY4VG9fRzBzcTloVXZXU1hFcl9UQWd6SFQ3VHBQQjVMb3hyWTJOaVk0VENFZG5OR1oyQ29semFFVGQ2YnpWVElfYlhrVXFBT2dhWElTcXdSVmlGMmFxOWd2MzhqN3FObEJYRUhrMUpUczNNUVNWZElEVS1oeE9aQk4ycjhUdkhEeGVGWWFyVzdXb2hjSUtUZHdicmYxR2pBUWlsVVRSR2JsZWlQS3dhQjVHUjNYWk9mM1ZJWU90WEw2SGg1UThJUHNtSXd6bm9xb0x3bEdudXltX0dwUEQzMmdxNUQ3NVZuRGJfVzNr?oc=5\" target=\"_blank\">El récord Guinness de la familia de Canelo que nadie ha logrado superar: siete hermanos, una cartelera y una v</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AS México</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-19T22:45:36+00:00"
-    },
-    {
       "titulo": "Estudiante de la UNITEC crea invento para que personas ciegas 'sientan' lo que el bastón blanco no detecta",
       "url": "https://expansion.mx/tecnologia/2026/10/19/estudiante-mexicano-crea-falcon-discapacidad-visual",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/996ccfd/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fde%2Fa5%2F4bdbd7f0484bb63b927b53690e0a%2Fpeaton-con-vision-asistida-urbana.png",
@@ -24015,26 +24125,6 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-19T22:39:26+00:00"
-    },
-    {
-      "titulo": "El campeón de la Champions League que va por el fichaje de Davinson Sánchez - Bolavip",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbWxhdmZfcHVpazlUa0hlRl8temh2c3RKSGNBdWYxYUFDckdoN3M5eDdaMWo5ZF9JRDdieWpjX0RoTmxVWENyRy02bGRhQ3dZSVNlQ1NudzdkbElSQkt4am5SbGFwZ0xtaVM5Z0VYNElLTXFMMmxNaEJlLXlCb2R4dDdKREhvNjVkZVkzeTlVLTloa1ZvR3FId0xpZU1LaW5pVERUYzFIRzVkREJfdEtIQ9IBtgFBVV95cUxOQVAwaTZGSTd5LUY5d3FaRFlhT3Y1eHZ0RnNETGhTemRRSExhYzBTWkQyQTZPMHhoR1hqVkcyNnBaaUlwLWNLcTVIdVZ6eDdyM0RSbXBRb3k4X2ZERDRYMS15TTQ1TFpERmljOUxjbkJlbS1USUlFMFpfc3R2MXNLNlVMZVdDTE9qWjVHNkVQbTBZMU1URjhIejVMNE5wZVBhT3VIYm04alpYQ2dGaHFHQlJRSWlQZw?oc=5",
-      "imagen": "https://media.bolavip.com/wp-content/uploads/sites/26/2026/10/19192357/BOLAVIP-GLOBAL-2026-10-19T172339.995-1200x740.webp",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxQbWxhdmZfcHVpazlUa0hlRl8temh2c3RKSGNBdWYxYUFDckdoN3M5eDdaMWo5ZF9JRDdieWpjX0RoTmxVWENyRy02bGRhQ3dZSVNlQ1NudzdkbElSQkt4am5SbGFwZ0xtaVM5Z0VYNElLTXFMMmxNaEJlLXlCb2R4dDdKREhvNjVkZVkzeTlVLTloa1ZvR3FId0xpZU1LaW5pVERUYzFIRzVkREJfdEtIQ9IBtgFBVV95cUxOQVAwaTZGSTd5LUY5d3FaRFlhT3Y1eHZ0RnNETGhTemRRSExhYzBTWkQyQTZPMHhoR1hqVkcyNnBaaUlwLWNLcTVIdVZ6eDdyM0RSbXBRb3k4X2ZERDRYMS15TTQ1TFpERmljOUxjbkJlbS1USUlFMFpfc3R2MXNLNlVMZVdDTE9qWjVHNkVQbTBZMU1URjhIejVMNE5wZVBhT3VIYm04alpYQ2dGaHFHQlJRSWlQZw?oc=5\" target=\"_blank\">El campeón de la Champions League que va por el fichaje de Davinson Sánchez</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bolavip</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-19T22:24:27+00:00"
-    },
-    {
-      "titulo": "Rays vs. Guardians EN VIVO: ¿A qué hora y dónde ver Juego 6 HOY Serie de Campeonato MLB 2026? - Mediotiempo",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYjlta20tV3RPR1U2NGJQUXJETWtKWnF5YXppXzFuV1gxQl9ZUmVUa3gyVWRhdFROcjJBUHpKMldWWmJQTGQ3dk4yeEpRT2ZsSXVyUWpvU2dRREZkZFAzVUJiQmFCZWNpN0hfdFBZQ3VsOVZNYlFJS0p4Y1A2Y3VXX1lxclZGaWcybHFKWVpqdzhKcTU0b2I2YnI0X1FyY0FCanZV0gGjAUFVX3lxTE85SEg5NnNGRVpqeDZjM3ZRUV9xUEU0cC0zQllnY29WdDY1MFdGVVRHNEIyWVZJSENyNjhJWWVFX094WDVkZlNzQ3BMVUkzUDBvWVZzME9lS0JxX255VlFPTENjdGdHdjVEdDZUakUtNktFSEtPSl8zYnlrOW1YLUtjbktlSnliei13UWY1R1h6d25ab2ZYeXZBb2lieWJ5TFFraW8?oc=5",
-      "imagen": "https://cdn2.mediotiempo.com/uploads/media/2026/10/19/rays-vs-guardians-vivo-juego-3.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxQYjlta20tV3RPR1U2NGJQUXJETWtKWnF5YXppXzFuV1gxQl9ZUmVUa3gyVWRhdFROcjJBUHpKMldWWmJQTGQ3dk4yeEpRT2ZsSXVyUWpvU2dRREZkZFAzVUJiQmFCZWNpN0hfdFBZQ3VsOVZNYlFJS0p4Y1A2Y3VXX1lxclZGaWcybHFKWVpqdzhKcTU0b2I2YnI0X1FyY0FCanZV0gGjAUFVX3lxTE85SEg5NnNGRVpqeDZjM3ZRUV9xUEU0cC0zQllnY29WdDY1MFdGVVRHNEIyWVZJSENyNjhJWWVFX094WDVkZlNzQ3BMVUkzUDBvWVZzME9lS0JxX255VlFPTENjdGdHdjVEdDZUakUtNktFSEtPSl8zYnlrOW1YLUtjbktlSnliei13UWY1R1h6d25ab2ZYeXZBb2lieWJ5TFFraW8?oc=5\" target=\"_blank\">Rays vs. Guardians EN VIVO: ¿A qué hora y dónde ver Juego 6 HOY Serie de Campeonato MLB 2026?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-19T22:23:24+00:00"
     },
     {
       "titulo": "El rival de Norteamérica no es solo China, sino una Asia que reorganiza su inversión",
@@ -24047,16 +24137,6 @@
       "fecha": "2026-10-19T22:18:57+00:00"
     },
     {
-      "titulo": "Ex CEO de Red Bull admite que le ordenaron beneficiar a Verstappen en desmedro de Checo Pérez en la F1 - BioBioChile",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPNE9xdmplQ013R1Y0ZTNGNk1WNGZaWVRNX3FyV0E1REN2MmdPM1pUOUNRLVBVZS0yVDBCb3hzUGR1VXpKSmhDamcwM0xkclkyeWRyeXFHUmNKV2pvRWsxM2xva0YzeU0wWnltdWlfb29BOXBYMWtzRTJjZUliUElUVkIwRE9Od2EtUmZ1T0lvZTZJUHZFck0tR1lzTGZ4NUwwRzd6Y2FwQ05YbllRbGprS3ZMMTBFQTRPWGM0WjhFaGc0emQ5dGVIZ0VnTGhUNzhQZW5uRDV2YnA2WExza185STE2LU9KcGM3U2I2eW5vaUZQWmRzUVhKZDBrandYQlRLUHNZQg?oc=5",
-      "imagen": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989387-formula-1-ex-director-red-bull-admite-que-le-ordenaron-beneficiar-a-verstappen-en-desmedro-checo.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxPNE9xdmplQ013R1Y0ZTNGNk1WNGZaWVRNX3FyV0E1REN2MmdPM1pUOUNRLVBVZS0yVDBCb3hzUGR1VXpKSmhDamcwM0xkclkyeWRyeXFHUmNKV2pvRWsxM2xva0YzeU0wWnltdWlfb29BOXBYMWtzRTJjZUliUElUVkIwRE9Od2EtUmZ1T0lvZTZJUHZFck0tR1lzTGZ4NUwwRzd6Y2FwQ05YbllRbGprS3ZMMTBFQTRPWGM0WjhFaGc0emQ5dGVIZ0VnTGhUNzhQZW5uRDV2YnA2WExza185STE2LU9KcGM3U2I2eW5vaUZQWmRzUVhKZDBrandYQlRLUHNZQg?oc=5\" target=\"_blank\">Ex CEO de Red Bull admite que le ordenaron beneficiar a Verstappen en desmedro de Checo Pérez en la F1</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BioBioChile</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-19T22:16:02+00:00"
-    },
-    {
       "titulo": "Asigna Consar 9.4 millones de cuentas de Afore a XXI Banorte; será la nueva prestadora de servicios del SAR",
       "url": "https://expansion.mx/economia/2026/10/19/asigna-consar-9-4-millones-de-cuentas-de-afore-a-xxi-banorte-sera-la-nueva-prestadora-de-servicios-del-sar",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/d4ffa80/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F3a%2Fde%2Fa543afca4314b7a51108e7100474%2Fafore-issste-pension-invalidez.jpeg",
@@ -24065,16 +24145,6 @@
       "categoria": "Noticias",
       "subcategoria": "",
       "fecha": "2026-10-19T22:13:49+00:00"
-    },
-    {
-      "titulo": "Guardians vs Rays en vivo la MLB 2026: resultado del Juego 6 de la Serie de Campeonato, en directo - Claro Sports",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZ09sX29SMkVhMVNjdm81ai1rQUhpeHVJQmtNMVUzWTJXa3RHQl9JLTBGcDZaY3R2bjkwUEgwRWF6VjdpcHdMV2dMOGVwblVHdXVCZzJmeER4MTk0WE12MTdsVmZZbkxRMWVXZWVPdkwybWVoYmNNNkhvUVB6M3lmaE9laVpRNDNKcjFPdFloRnIyOHZwcUxTblpnN2E0ZUxoN0J3dnhpT3VyeW02blpsWU1OdTE4dlctMWljZS1CWmplN29JMlo4ZnNiNENwdWI2dDgw?oc=5",
-      "imagen": "https://cdn.amxinfra.com/clarosports/images/2026/10/mlb-160909.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZ09sX29SMkVhMVNjdm81ai1rQUhpeHVJQmtNMVUzWTJXa3RHQl9JLTBGcDZaY3R2bjkwUEgwRWF6VjdpcHdMV2dMOGVwblVHdXVCZzJmeER4MTk0WE12MTdsVmZZbkxRMWVXZWVPdkwybWVoYmNNNkhvUVB6M3lmaE9laVpRNDNKcjFPdFloRnIyOHZwcUxTblpnN2E0ZUxoN0J3dnhpT3VyeW02blpsWU1OdTE4dlctMWljZS1CWmplN29JMlo4ZnNiNENwdWI2dDgw?oc=5\" target=\"_blank\">Guardians vs Rays en vivo la MLB 2026: resultado del Juego 6 de la Serie de Campeonato, en directo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Claro Sports</font>",
-      "fuente": "Beisbol",
-      "categoria": "Deportes",
-      "subcategoria": "beisbol",
-      "fecha": "2026-10-19T22:12:48+00:00"
     },
     {
       "titulo": "Qué hay detrás de las protestas en Francia y por qué decretaron toques de queda",
@@ -24405,6 +24475,16 @@
       "categoria": "Política",
       "subcategoria": "",
       "fecha": "2026-10-19T09:16:56+00:00"
+    },
+    {
+      "titulo": "Programación televisiva del 27 de octubre al 2 de noviembre de 2025: ¿qué ver esta semana? - Sortir à Paris",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOQk0zaXBRVDEteGcxbGQ1VzNvRlNJMzFxZlJETmIxdktlbWxzUjZpcEpSLVhrdHEzNkRjYUYtMFd6dV9jR3c4N2VpdkpGSm1FUGkzNDJXVnNoSkhLVFA1NjZzR1V3NWpwY3YwN192R09DZVNKd0JHUnNWNmNXYlV4OElqcnBBVV9yS2dDWkZ2dHVTWEt6dEwyTFBKelNPR3lFcS1VbmVUS01TMlFEY3hqbjU4UkV2aTRuQVk3a2ZWSTdOTGZ2MzRGVmFpV0VDV0NoUE9EYzhEOWp3Q3k5YmtaclN5VnpiYVFqcEE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxOQk0zaXBRVDEteGcxbGQ1VzNvRlNJMzFxZlJETmIxdktlbWxzUjZpcEpSLVhrdHEzNkRjYUYtMFd6dV9jR3c4N2VpdkpGSm1FUGkzNDJXVnNoSkhLVFA1NjZzR1V3NWpwY3YwN192R09DZVNKd0JHUnNWNmNXYlV4OElqcnBBVV9yS2dDWkZ2dHVTWEt6dEwyTFBKelNPR3lFcS1VbmVUS01TMlFEY3hqbjU4UkV2aTRuQVk3a2ZWSTdOTGZ2MzRGVmFpV0VDV0NoUE9EYzhEOWp3Q3k5YmtaclN5VnpiYVFqcEE?oc=5\" target=\"_blank\">Programación televisiva del 27 de octubre al 2 de noviembre de 2025: ¿qué ver esta semana?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sortir à Paris</font>",
+      "fuente": "Entretenimiento",
+      "categoria": "Entretenimiento",
+      "subcategoria": "",
+      "fecha": "2026-10-19T16:10:38+00:00"
     },
     {
       "titulo": "Estas son las marcas chinas de autobuses eléctricos que ya circulan en el Metrobús de CDMX",
@@ -25967,6 +26047,16 @@
       "fecha": "2026-10-13T07:00:00+00:00"
     },
     {
+      "titulo": "Próximos conciertos en Barcelona en 2026: los mejores conciertos que vienen - Ticketmaster España",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFByeDFpUkN0ZEFLOU9yWTNFcmxBckxHX09WZU9lYzI4cTZ0Qk1fYzRBQ19WZzFWZTUzS1pIT2pkbU9sVEg5WlZqaEY1Sno4aS1lZlA2R0gzTl90aW55MEZ2WUtjR2xINm02ZXI3eWJBR2VyU2pZeXJpME9B?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTFByeDFpUkN0ZEFLOU9yWTNFcmxBckxHX09WZU9lYzI4cTZ0Qk1fYzRBQ19WZzFWZTUzS1pIT2pkbU9sVEg5WlZqaEY1Sno4aS1lZlA2R0gzTl90aW55MEZ2WUtjR2xINm02ZXI3eWJBR2VyU2pZeXJpME9B?oc=5\" target=\"_blank\">Próximos conciertos en Barcelona en 2026: los mejores conciertos que vienen</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Ticketmaster España</font>",
+      "fuente": "Entretenimiento",
+      "categoria": "Entretenimiento",
+      "subcategoria": "",
+      "fecha": "2026-10-13T07:00:00+00:00"
+    },
+    {
       "titulo": "Precio del dólar HOY 12 de octubre: ¿cómo cambiar dólares en México? - Escapada H",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTUpXNnBMT2o3bm44YWhmS2w1T0tPVTIzRnl6TDNOZHBXRjVHU0pTb1Y2NkJpQy1CaTZ6QWRvcUVsQzZqdEtpRVJrQWJkZ3lqTU9YeXhrbXRFNjdETVUtbmNYcVoyUTljeDd6NWxvdllUbHZ4WWU1UUVjMHp3WjhoRHdRWEpwYW5fc0EwdlMteXZaZ190MkZVbEpjTmhYd3VlRnZ1cHdhSl95NVFMYmNSdnpjSTJFeGRybmNjbG53a2s?oc=5",
       "imagen": "",
@@ -25975,16 +26065,6 @@
       "categoria": "Tendencias",
       "subcategoria": "",
       "fecha": "2026-10-12T21:19:00+00:00"
-    },
-    {
-      "titulo": "Programación televisiva del 27 de octubre al 2 de noviembre de 2025: ¿qué ver esta semana? - Sortir à Paris",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPcEt4bUNmM3FoVjdxZEltd1h4Mm1ELVUyWGRveUg5UldqcHRmcnJKbjFuUXJHeXRjUUJhajVmbkR4UWJ6SWRFMWVzMHFfSWRGRW9oeGYxTEsta3Q2ZEpfNmZOYktka1dDaTI1UFF4SUZlOUM5MnZVZmwyTXY1Q2RDT0FDOXpyd0VyNnV1akJieUFTN0ZpTE90dlIwSFd0OWt0RHY3eGVhQzNGUXBCNHRtMVlQc1dpY2FDVGlkWThqWHhMWE9qaVIwZ0lJdG5zODB6aVlFemhEdVBfbFhMTkdXSGIxdi1RX0szOGxEZHVZUElwRVl5?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxPcEt4bUNmM3FoVjdxZEltd1h4Mm1ELVUyWGRveUg5UldqcHRmcnJKbjFuUXJHeXRjUUJhajVmbkR4UWJ6SWRFMWVzMHFfSWRGRW9oeGYxTEsta3Q2ZEpfNmZOYktka1dDaTI1UFF4SUZlOUM5MnZVZmwyTXY1Q2RDT0FDOXpyd0VyNnV1akJieUFTN0ZpTE90dlIwSFd0OWt0RHY3eGVhQzNGUXBCNHRtMVlQc1dpY2FDVGlkWThqWHhMWE9qaVIwZ0lJdG5zODB6aVlFemhEdVBfbFhMTkdXSGIxdi1RX0szOGxEZHVZUElwRVl5?oc=5\" target=\"_blank\">Programación televisiva del 27 de octubre al 2 de noviembre de 2025: ¿qué ver esta semana?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sortir à Paris</font>",
-      "fuente": "Entretenimiento",
-      "categoria": "Entretenimiento",
-      "subcategoria": "",
-      "fecha": "2026-10-12T15:58:13+00:00"
     },
     {
       "titulo": "CCE prevé acuerdo bilateral entre México y Estados Unidos en el corto plazo - Enfoque Noticias",
