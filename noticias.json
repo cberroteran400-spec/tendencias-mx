@@ -1,9 +1,9 @@
 {
-  "actualizado": "2026-10-25T03:29:44.675589+00:00",
-  "total": 2580,
+  "actualizado": "2026-10-25T04:08:06.368795+00:00",
+  "total": 2588,
   "imagenes": {
-    "con_imagen": 1502,
-    "sin_imagen": 1078
+    "con_imagen": 1506,
+    "sin_imagen": 1082
   },
   "noticias": [
     {
@@ -197,6 +197,56 @@
       "fecha": "2026-10-25T02:49:36+00:00"
     },
     {
+      "titulo": "Francia vive otro fin de semana de protestas masivas, con cerca de 1.000 detenidos - CNN en Español",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNckhjLXdGWEIxdUdMWW83MkVNbmYzMFJ3dTZnbHhuVWpHaGJKNW5IWVlmdE1EQ24zbXNVMXM2MEtST2QybmlNd1RBVWh4QUNlUVBwSmJEXzFXNWRMdWhKREh2dk1HQlM5WDhIUndzSkdNVS1oV1BqUGxhVkFUT1JGUlQtZ1NpajRLNFBnb21R?oc=5",
+      "imagen": "https://media.cnn.com/api/v1/images/stellar/prod/francia-20261025000554432-20261025000624424.jpg?c=16x9&q=w_800,c_fill",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNckhjLXdGWEIxdUdMWW83MkVNbmYzMFJ3dTZnbHhuVWpHaGJKNW5IWVlmdE1EQ24zbXNVMXM2MEtST2QybmlNd1RBVWh4QUNlUVBwSmJEXzFXNWRMdWhKREh2dk1HQlM5WDhIUndzSkdNVS1oV1BqUGxhVkFUT1JGUlQtZ1NpajRLNFBnb21R?oc=5\" target=\"_blank\">Francia vive otro fin de semana de protestas masivas, con cerca de 1.000 detenidos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNN en Español</font>",
+      "fuente": "Mundo",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-25T01:07:00+00:00"
+    },
+    {
+      "titulo": "La inteligencia artificial que busca hacer menos inteligentes a los Smart TV: para qué sirve y cuáles son los beneficios - La 100",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZWVOSGpIOEJUb3hnalREQnRNRWZVb0xYdTFxaERfdkM1MTc4QlJ5X0FpZEROTE95TlN0c3BLaXdRU3NZWXZBM196ZTBDbkg3MnJHQV9lWUNNSzZ2ZndLc2JQX3o4akxmTWF5bjRVZWxpZUloZ19udTU3blBmWGtrZVRBdmpsY1BNaGZjTnAtem5XR0hKRlJscjFad3Z1NmJ5MGZ0eFhFMHRLRkFOaWN3aFpkenNKS21yR2ExRm8wYkU4cmVRTHRDTXlKejFZc0VFZktlaWd2NlI1bWxnMVRPdE52Z084TW81OFdrWEF0UkRRdw?oc=5",
+      "imagen": "https://la100.cienradios.com/resizer/v2/Q3WWONZI5BBJ7PTTS3Y3R7OQ5A.png?smart=true&auth=60469c32066d70d321a937ca53b8b6d5762a04aba405a07451d2b854c50101cb&width=1200&height=630",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZWVOSGpIOEJUb3hnalREQnRNRWZVb0xYdTFxaERfdkM1MTc4QlJ5X0FpZEROTE95TlN0c3BLaXdRU3NZWXZBM196ZTBDbkg3MnJHQV9lWUNNSzZ2ZndLc2JQX3o4akxmTWF5bjRVZWxpZUloZ19udTU3blBmWGtrZVRBdmpsY1BNaGZjTnAtem5XR0hKRlJscjFad3Z1NmJ5MGZ0eFhFMHRLRkFOaWN3aFpkenNKS21yR2ExRm8wYkU4cmVRTHRDTXlKejFZc0VFZktlaWd2NlI1bWxnMVRPdE52Z084TW81OFdrWEF0UkRRdw?oc=5\" target=\"_blank\">La inteligencia artificial que busca hacer menos inteligentes a los Smart TV: para qué sirve y cuáles son los beneficios</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La 100</font>",
+      "fuente": "Tecnología",
+      "categoria": "Tecnología",
+      "subcategoria": "",
+      "fecha": "2026-10-25T02:39:19+00:00"
+    },
+    {
+      "titulo": "Omar Chávez reta al Canelo Álvarez: '¿Te animas? Yo no voy a correr' - Mediotiempo",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcVg4em9UR21LMU9JUndkMU9UbnVjYmFZRE9fc0QwUFhrTkRZR1RuT3BybVNnSXUzWmJEQ3pyUHNXWkxOMW1vemxUY1RBRmxiQ3hXS2JncmFJZXliaDR3Mll1QWQtdC04a1o4bUV6WEJXcTcyVmVPZDlZNVVTYkNrOEJiY3hhZlh5Q3lfbmJTQVBVMTFC0gGUAUFVX3lxTE02dDlxZ0VLNlM0bUJzZ2Q5N0xJZ19mWDBuOTZWTHRLdzVGcFUza0lBQ3haak5ZTjNETWpQS2dONE1HV0JIUFJDRGY0WHk0NC1kbUFrRXdnS0ROWG8xandpb2lJYmJzZlpFZ0l4MExweTA1bWdkRWVRTEFidUVJc2Y2R3l1TDEzLW4tcVRnSHBTbkF6V1Q?oc=5",
+      "imagen": "https://cdn2.mediotiempo.com/uploads/media/2026/10/24/omar-chavez-suena-enfrentar-canelo.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxPcVg4em9UR21LMU9JUndkMU9UbnVjYmFZRE9fc0QwUFhrTkRZR1RuT3BybVNnSXUzWmJEQ3pyUHNXWkxOMW1vemxUY1RBRmxiQ3hXS2JncmFJZXliaDR3Mll1QWQtdC04a1o4bUV6WEJXcTcyVmVPZDlZNVVTYkNrOEJiY3hhZlh5Q3lfbmJTQVBVMTFC0gGUAUFVX3lxTE02dDlxZ0VLNlM0bUJzZ2Q5N0xJZ19mWDBuOTZWTHRLdzVGcFUza0lBQ3haak5ZTjNETWpQS2dONE1HV0JIUFJDRGY0WHk0NC1kbUFrRXdnS0ROWG8xandpb2lJYmJzZlpFZ0l4MExweTA1bWdkRWVRTEFidUVJc2Y2R3l1TDEzLW4tcVRnSHBTbkF6V1Q?oc=5\" target=\"_blank\">Omar Chávez reta al Canelo Álvarez: '¿Te animas? Yo no voy a correr'</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-25T02:22:00+00:00"
+    },
+    {
+      "titulo": "Reta Omar Chávez al Canelo para pelear en el Estadio Banorte - Reforma",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObDYzM0Nod2VGSmx0cGVoM0pUR01Ec0J0SUJaSEF0QUdGc3BKbGpPMTVwaENUM3hPWHpVTy1WNXJKc3ozbTZCekEta1hYX1NhWDROcVJPYWVoamptY09PT1UwekRDZW00Tlp0WjJQLXRINkJYeGhqQ3hCSnc2cjNqajNneENxbVRKNy1EUUx0S21FNEJZZEItc3R3?oc=5",
+      "imagen": "https://iphonegr.reforma.com/libre/online07/imagetransformer2/ImageTransformer.aspx?img=https://img.gruporeforma.com/imagenes/960x640/7/306/6305377.jpg&maxwidth=960&maxheight=640&imgWatermark=https://www.reforma.com/libre/imgdiseno/mailsharing/marca_agua.png&transparencia=0.9&centerWM=0",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxObDYzM0Nod2VGSmx0cGVoM0pUR01Ec0J0SUJaSEF0QUdGc3BKbGpPMTVwaENUM3hPWHpVTy1WNXJKc3ozbTZCekEta1hYX1NhWDROcVJPYWVoamptY09PT1UwekRDZW00Tlp0WjJQLXRINkJYeGhqQ3hCSnc2cjNqajNneENxbVRKNy1EUUx0S21FNEJZZEItc3R3?oc=5\" target=\"_blank\">Reta Omar Chávez al Canelo para pelear en el Estadio Banorte</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Reforma</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-25T03:20:47+00:00"
+    },
+    {
+      "titulo": "‘Ponte trucha’ con el recibo: CFE prevé que cortes de luz por falta de pago aumenten 16.6% hacia 2030",
+      "url": "https://www.elfinanciero.com.mx/economia/2026/10/24/ponte-trucha-con-el-recibo-cfe-preve-que-cortes-de-luz-por-falta-de-pago-aumenten-166-hacia-2030/",
+      "imagen": "https://elfinanciero-elfinanciero-prod.cdn.arcpublishing.com/resizer/0bNwRKcTl2d_WPVHWEOQKulNbk8=/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/PN3AAQZXRZD5XDZU6BQ3LAF4DE.jpg",
+      "descripcion": "La CFE prevé que los cortes de electricidad a clientes residenciales por falta de pago aumenten 16.6% hacia 2030.",
+      "fuente": "Héctor Usla",
+      "categoria": "Dinero",
+      "subcategoria": "",
+      "fecha": "2026-10-25T04:01:05+00:00"
+    },
+    {
       "titulo": "Visa estadounidense sube de precio; esto deberás pagar en 2026",
       "url": "https://lopezdoriga.com/nacional/visa-estadounidense-sube-de-precio-esto-deberas-pagar-en-2026/",
       "imagen": "",
@@ -307,16 +357,6 @@
       "fecha": "2026-10-25T02:17:54+00:00"
     },
     {
-      "titulo": "Francia vive otro fin de semana de protestas masivas, con cerca de 1.000 detenidos - CNN en Español",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNckhjLXdGWEIxdUdMWW83MkVNbmYzMFJ3dTZnbHhuVWpHaGJKNW5IWVlmdE1EQ24zbXNVMXM2MEtST2QybmlNd1RBVWh4QUNlUVBwSmJEXzFXNWRMdWhKREh2dk1HQlM5WDhIUndzSkdNVS1oV1BqUGxhVkFUT1JGUlQtZ1NpajRLNFBnb21R?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNckhjLXdGWEIxdUdMWW83MkVNbmYzMFJ3dTZnbHhuVWpHaGJKNW5IWVlmdE1EQ24zbXNVMXM2MEtST2QybmlNd1RBVWh4QUNlUVBwSmJEXzFXNWRMdWhKREh2dk1HQlM5WDhIUndzSkdNVS1oV1BqUGxhVkFUT1JGUlQtZ1NpajRLNFBnb21R?oc=5\" target=\"_blank\">Francia vive otro fin de semana de protestas masivas, con cerca de 1.000 detenidos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNN en Español</font>",
-      "fuente": "Mundo",
-      "categoria": "Noticias",
-      "subcategoria": "",
-      "fecha": "2026-10-25T01:07:00+00:00"
-    },
-    {
       "titulo": "Valeria y Amanda, estudiantes veracruzanas, crean tecnología para mejorar vidas y las llevó a ganar premio internacional - La Silla Rota",
       "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNMnJfSENra2tfVG44STFMaUlmczRiUU9xSnhCVnpxR1lOMEtXRGRDN3RpWFJCb3dOaWdYNS1VQjFxaHY0TU95ZWpuV0FxY29hRVozYW44SUl5SXJ5b0JhMUhpT0xKTVRtcVpXZlR2MkJmWU84T2NnYkNGMmM5dUcwQThSbFBwcHYtaXJQdTdHSHRQRFlrNDN6dWpOWVNaQ1RxWkRVWHhuZnZ2dDE5X2ZRWFp1MDIyTjJ6OGxzdUV3SmktVi1IMm83bGFmNlZ1SjVKLVJyWEQ1dk1pM25WVWU0Z19Zd25HRUcwTEFDSFV1Nzc3aDZRT21IUngxWQ?oc=5",
       "imagen": "",
@@ -325,16 +365,6 @@
       "categoria": "Tecnología",
       "subcategoria": "",
       "fecha": "2026-10-25T03:15:14+00:00"
-    },
-    {
-      "titulo": "La inteligencia artificial que busca hacer menos inteligentes a los Smart TV: para qué sirve y cuáles son los beneficios - La 100",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZWVOSGpIOEJUb3hnalREQnRNRWZVb0xYdTFxaERfdkM1MTc4QlJ5X0FpZEROTE95TlN0c3BLaXdRU3NZWXZBM196ZTBDbkg3MnJHQV9lWUNNSzZ2ZndLc2JQX3o4akxmTWF5bjRVZWxpZUloZ19udTU3blBmWGtrZVRBdmpsY1BNaGZjTnAtem5XR0hKRlJscjFad3Z1NmJ5MGZ0eFhFMHRLRkFOaWN3aFpkenNKS21yR2ExRm8wYkU4cmVRTHRDTXlKejFZc0VFZktlaWd2NlI1bWxnMVRPdE52Z084TW81OFdrWEF0UkRRdw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZWVOSGpIOEJUb3hnalREQnRNRWZVb0xYdTFxaERfdkM1MTc4QlJ5X0FpZEROTE95TlN0c3BLaXdRU3NZWXZBM196ZTBDbkg3MnJHQV9lWUNNSzZ2ZndLc2JQX3o4akxmTWF5bjRVZWxpZUloZ19udTU3blBmWGtrZVRBdmpsY1BNaGZjTnAtem5XR0hKRlJscjFad3Z1NmJ5MGZ0eFhFMHRLRkFOaWN3aFpkenNKS21yR2ExRm8wYkU4cmVRTHRDTXlKejFZc0VFZktlaWd2NlI1bWxnMVRPdE52Z084TW81OFdrWEF0UkRRdw?oc=5\" target=\"_blank\">La inteligencia artificial que busca hacer menos inteligentes a los Smart TV: para qué sirve y cuáles son los beneficios</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La 100</font>",
-      "fuente": "Tecnología",
-      "categoria": "Tecnología",
-      "subcategoria": "",
-      "fecha": "2026-10-25T02:39:19+00:00"
     },
     {
       "titulo": "México reafirma compromiso con el Tratado de Aguas de 1944 ante sequía extrema",
@@ -367,24 +397,74 @@
       "fecha": "2026-10-25T01:50:00+00:00"
     },
     {
-      "titulo": "Omar Chávez reta al Canelo Álvarez: '¿Te animas? Yo no voy a correr' - Mediotiempo",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcVg4em9UR21LMU9JUndkMU9UbnVjYmFZRE9fc0QwUFhrTkRZR1RuT3BybVNnSXUzWmJEQ3pyUHNXWkxOMW1vemxUY1RBRmxiQ3hXS2JncmFJZXliaDR3Mll1QWQtdC04a1o4bUV6WEJXcTcyVmVPZDlZNVVTYkNrOEJiY3hhZlh5Q3lfbmJTQVBVMTFC0gGUAUFVX3lxTE02dDlxZ0VLNlM0bUJzZ2Q5N0xJZ19mWDBuOTZWTHRLdzVGcFUza0lBQ3haak5ZTjNETWpQS2dONE1HV0JIUFJDRGY0WHk0NC1kbUFrRXdnS0ROWG8xandpb2lJYmJzZlpFZ0l4MExweTA1bWdkRWVRTEFidUVJc2Y2R3l1TDEzLW4tcVRnSHBTbkF6V1Q?oc=5",
+      "titulo": "Fallos de seguridad críticos detectados por la IA afectan a webs de todo el mundo - https://www.latribuna.com.py/",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOWkRKSE9ULU4wUUhSS0VORFNia0Etdk5tTVdPNU0xNFI0R0VCdTMxSC14c05femoxWHVZbnhZcEdUNXp1WjNvM1poOXNTZmFQem8xRGtJY0VYVE5IVU16MURYNFUwcTlSaEVxcTJEeFBzR0RyMWRqb3dLVzRhSlZySUVlRWlBWjFqcUxtWExkZHc2eE5GSFJWYWNLc3BTRmtQQ3Z5cUlHQzcycm16LWdBbGl1VEUyb2phZnBhblZYOTQ4ZW9SdEgxYzg0bGltUEFsak02RHJTVUhCQUJVZ0htXzBKbTJDbmt4?oc=5",
       "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxPcVg4em9UR21LMU9JUndkMU9UbnVjYmFZRE9fc0QwUFhrTkRZR1RuT3BybVNnSXUzWmJEQ3pyUHNXWkxOMW1vemxUY1RBRmxiQ3hXS2JncmFJZXliaDR3Mll1QWQtdC04a1o4bUV6WEJXcTcyVmVPZDlZNVVTYkNrOEJiY3hhZlh5Q3lfbmJTQVBVMTFC0gGUAUFVX3lxTE02dDlxZ0VLNlM0bUJzZ2Q5N0xJZ19mWDBuOTZWTHRLdzVGcFUza0lBQ3haak5ZTjNETWpQS2dONE1HV0JIUFJDRGY0WHk0NC1kbUFrRXdnS0ROWG8xandpb2lJYmJzZlpFZ0l4MExweTA1bWdkRWVRTEFidUVJc2Y2R3l1TDEzLW4tcVRnSHBTbkF6V1Q?oc=5\" target=\"_blank\">Omar Chávez reta al Canelo Álvarez: '¿Te animas? Yo no voy a correr'</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mediotiempo</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-25T02:22:00+00:00"
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxOWkRKSE9ULU4wUUhSS0VORFNia0Etdk5tTVdPNU0xNFI0R0VCdTMxSC14c05femoxWHVZbnhZcEdUNXp1WjNvM1poOXNTZmFQem8xRGtJY0VYVE5IVU16MURYNFUwcTlSaEVxcTJEeFBzR0RyMWRqb3dLVzRhSlZySUVlRWlBWjFqcUxtWExkZHc2eE5GSFJWYWNLc3BTRmtQQ3Z5cUlHQzcycm16LWdBbGl1VEUyb2phZnBhblZYOTQ4ZW9SdEgxYzg0bGltUEFsak02RHJTVUhCQUJVZ0htXzBKbTJDbmt4?oc=5\" target=\"_blank\">Fallos de seguridad críticos detectados por la IA afectan a webs de todo el mundo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">https://www.latribuna.com.py/</font>",
+      "fuente": "Tecnología",
+      "categoria": "Tecnología",
+      "subcategoria": "",
+      "fecha": "2026-10-25T04:00:00+00:00"
     },
     {
-      "titulo": "Reta Omar Chávez al Canelo para pelear en el Estadio Banorte - Reforma",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObDYzM0Nod2VGSmx0cGVoM0pUR01Ec0J0SUJaSEF0QUdGc3BKbGpPMTVwaENUM3hPWHpVTy1WNXJKc3ozbTZCekEta1hYX1NhWDROcVJPYWVoamptY09PT1UwekRDZW00Tlp0WjJQLXRINkJYeGhqQ3hCSnc2cjNqajNneENxbVRKNy1EUUx0S21FNEJZZEItc3R3?oc=5",
+      "titulo": "“No me voy”: Taddei asegura que seguirá al frente del INE",
+      "url": "https://lopezdoriga.com/nacional/no-me-voy-taddei-asegura-que-seguira-al-frente-del-ine/",
       "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxObDYzM0Nod2VGSmx0cGVoM0pUR01Ec0J0SUJaSEF0QUdGc3BKbGpPMTVwaENUM3hPWHpVTy1WNXJKc3ozbTZCekEta1hYX1NhWDROcVJPYWVoamptY09PT1UwekRDZW00Tlp0WjJQLXRINkJYeGhqQ3hCSnc2cjNqajNneENxbVRKNy1EUUx0S21FNEJZZEItc3R3?oc=5\" target=\"_blank\">Reta Omar Chávez al Canelo para pelear en el Estadio Banorte</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Reforma</font>",
-      "fuente": "Boxeo",
+      "descripcion": "<figure><img alt=\"“No me voy”: Taddei asegura que seguirá al frente del INE\" class=\"attachment-large size-large wp-post-image img-responsive \" src=\"https://lopezdoriga.com/wp-content/uploads/2026/10/taddei-asegura-que-seguira-al-frente-del-ine-1024x682.jpeg\" /></figure> <p>El miércoles, la consejera presidenta negó tener empresas favoritas y anunció una plataforma para consultar las contrataciones</p> <p>La entrada <a href=\"https://lopezdoriga.com/nacional/no-me-voy-taddei-asegura-que-seguira-al-frente-del-ine/\">“No me voy”: Taddei asegura que seguirá al frente del INE</a> aparece primero en <a href=\"https://lopezdoriga.com\">López-Dóriga Digital</a>.</p>",
+      "fuente": "Víctor Manuel Aramis Sánchez Pimentel",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-25T04:05:16+00:00"
+    },
+    {
+      "titulo": "Gilberto Mora estaría en la mira del París Saint Germain: cuánto cuesta el jugador mexicano y figura del Club Tijuana en la Liga Mx - Infobae",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQNGxlUmxyTFBLQmFHOGhYMUU0dXNYV21JQnY2aGduZFl6LUtFQnZPdGYwSWpTQTM5ci14U3lVZGxqeEFCY0pyNkVBN0FrSy1iM2dDRmlGQXc3Vnh3VVhGTTJaZUFibTQxT0lWeVM3cy1XRlpwQUROTWU3eHFHTTZGbk11R1JGNkVOYk9ia2xFN0VNSmJvWUgyMlBGOFdDVFVqVnRTY3BoZHBwa2ZwTWhxQ2VlMHlzNGNqek5kSzhBRkk2cHZ4X01PYXpIQVFnU3NTMTJudjRsMVI5X3oydWp5ZDlWd2F0MXY4LXlMdkQwd3FFbm1OZjFYMC1KQ2N4eGZfQUhJ0gGeAkFVX3lxTE1YVXN5RFl0bXRJOF9lei1YQTZfVzR5SUlhbUxEelNzZFdhNzh4c1kyM1RRVTd0LXlTM1RxSnV0WnlSbm5SMU1vVTcyZWVsX25XdVhpVVE3NjRyN3JxS1JjeUlvMW5iaVVzdTcyLWFfRTZCTDdsQlRONlhjUzYtcWxkTzNDQl8zM0Z0TXVNUU9Pd2hQdjhmcFdpU1JYNFpKTjR6VmRVaEpmb283d1ROb2Yxc2tINHNhSDVuUFNlX19oOExNRV9nYllkVm5GYUJINEhBVDlTeVJLajhnTmwyQ19UbzNFNm11Tmw4QUxIWnFqSVlpZ0ZQY2wxZDVwdHVZMHdIbUZYdUhlS29LN3UxMzZwNWJQbTNjUXlPVmszREE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMigwJBVV95cUxQNGxlUmxyTFBLQmFHOGhYMUU0dXNYV21JQnY2aGduZFl6LUtFQnZPdGYwSWpTQTM5ci14U3lVZGxqeEFCY0pyNkVBN0FrSy1iM2dDRmlGQXc3Vnh3VVhGTTJaZUFibTQxT0lWeVM3cy1XRlpwQUROTWU3eHFHTTZGbk11R1JGNkVOYk9ia2xFN0VNSmJvWUgyMlBGOFdDVFVqVnRTY3BoZHBwa2ZwTWhxQ2VlMHlzNGNqek5kSzhBRkk2cHZ4X01PYXpIQVFnU3NTMTJudjRsMVI5X3oydWp5ZDlWd2F0MXY4LXlMdkQwd3FFbm1OZjFYMC1KQ2N4eGZfQUhJ0gGeAkFVX3lxTE1YVXN5RFl0bXRJOF9lei1YQTZfVzR5SUlhbUxEelNzZFdhNzh4c1kyM1RRVTd0LXlTM1RxSnV0WnlSbm5SMU1vVTcyZWVsX25XdVhpVVE3NjRyN3JxS1JjeUlvMW5iaVVzdTcyLWFfRTZCTDdsQlRONlhjUzYtcWxkTzNDQl8zM0Z0TXVNUU9Pd2hQdjhmcFdpU1JYNFpKTjR6VmRVaEpmb283d1ROb2Yxc2tINHNhSDVuUFNlX19oOExNRV9nYllkVm5GYUJINEhBVDlTeVJLajhnTmwyQ19UbzNFNm11Tmw4QUxIWnFqSVlpZ0ZQY2wxZDVwdHVZMHdIbUZYdUhlS29LN3UxMzZwNWJQbTNjUXlPVmszREE?oc=5\" target=\"_blank\">Gilberto Mora estaría en la mira del París Saint Germain: cuánto cuesta el jugador mexicano y figura del Club Tijuana en la Liga Mx</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Infobae</font>",
+      "fuente": "Futbol",
       "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-25T03:20:47+00:00"
+      "subcategoria": "futbol",
+      "fecha": "2026-10-25T00:52:00+00:00"
+    },
+    {
+      "titulo": "Dónde y cómo ver en vivo y gratis Liverpool vs. Brighton hoy: TV y streaming online del partido de la Premier League 2026 - Sporting News",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQakw0MTFWaWFTODNGNzg5NUNaYXc5VkJ0bmUzV1JacXZEc1RIaTZfNXAwMFBMQUItQWhlN3ZXUW45cUktcjlFUC16RW1QMFY0ZFR2SC1RdjVtMlNaNnYtZ0hVU1BOT3BINm9UUm5IdjN2SWFQbnNBRnFTMWhOYmFMTV9sQTRDMWk2bFMwdHpsSERiekpQSnBpSXFkcjdldWVXU2tEV2s1TnRwRHVmdXpQNEh4bzVBck1UR0t6aV93UjYtTXFwY1V0VXdEamZ6U1dUczlz?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxQakw0MTFWaWFTODNGNzg5NUNaYXc5VkJ0bmUzV1JacXZEc1RIaTZfNXAwMFBMQUItQWhlN3ZXUW45cUktcjlFUC16RW1QMFY0ZFR2SC1RdjVtMlNaNnYtZ0hVU1BOT3BINm9UUm5IdjN2SWFQbnNBRnFTMWhOYmFMTV9sQTRDMWk2bFMwdHpsSERiekpQSnBpSXFkcjdldWVXU2tEV2s1TnRwRHVmdXpQNEh4bzVBck1UR0t6aV93UjYtTXFwY1V0VXdEamZ6U1dUczlz?oc=5\" target=\"_blank\">Dónde y cómo ver en vivo y gratis Liverpool vs. Brighton hoy: TV y streaming online del partido de la Premier League 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sporting News</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-25T03:30:02+00:00"
+    },
+    {
+      "titulo": "Dónde y cómo ver en vivo y gratis Manchester United vs. Bournemouth hoy: TV y streaming online del partido de la Premier League 2026 - www.sportingnews.com",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOR0FxekEySzFlWldGeHlQOTl4eVMycVp0WEM2bVIyNGxpU1RsNENYWXktWTFRdkZWRkE5MmFNSHlCMWNreVVFaERKTTJTelBJWk1LRmtjS3JkVEZnaTJrRjNNZVJRRjZaLWkxVFc4OGpFY0lNZHJUZEVpVHkwdEFzcFdtYm1vNVIzMHYwRVBoNUpkektWMTBmZ2E4NER1SVdSbzU2WVR6bDVkU01IME1lTzVFTkk4eEd4UmFsWUFYVEpCVEJiMUhITkNlTTBSS012NjJYM0dfTlYxLXIyT05mMmh3?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxOR0FxekEySzFlWldGeHlQOTl4eVMycVp0WEM2bVIyNGxpU1RsNENYWXktWTFRdkZWRkE5MmFNSHlCMWNreVVFaERKTTJTelBJWk1LRmtjS3JkVEZnaTJrRjNNZVJRRjZaLWkxVFc4OGpFY0lNZHJUZEVpVHkwdEFzcFdtYm1vNVIzMHYwRVBoNUpkektWMTBmZ2E4NER1SVdSbzU2WVR6bDVkU01IME1lTzVFTkk4eEd4UmFsWUFYVEpCVEJiMUhITkNlTTBSS012NjJYM0dfTlYxLXIyT05mMmh3?oc=5\" target=\"_blank\">Dónde y cómo ver en vivo y gratis Manchester United vs. Bournemouth hoy: TV y streaming online del partido de la Premier League 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.sportingnews.com</font>",
+      "fuente": "Futbol",
+      "categoria": "Deportes",
+      "subcategoria": "futbol",
+      "fecha": "2026-10-25T04:00:01+00:00"
+    },
+    {
+      "titulo": "MLB: Brewers remontan ante Rays y se colocan a dos victorias de conquistar la Serie Mundial - www.debate.com.mx",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQjF5RXFHN3dUaHdFWmk4VF82UWx6eG9seDFIT0FyUGI3bXJmY09Hc1RXVjRBcTJyaU5zR0RQdWlnX2p1cFBpTXdUZGliTmZjeDBFUTZlcWhLcGhnMFctYkltS1BSWmR4UlFFdjdXYWZDSXlKRHBBU1A0R1pFMm5ManplWnJvMy1lSGNSRkQ1TV9ycWZKTVloeWlUQ0dQamVodmo2b2lQYTh5TXBIOWNrczkwX2FPbEFkZWpTQzhEUjJFei1YUlBIRWdJbGZ1bWFBUnNBLVVaZFFGMm9a?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQjF5RXFHN3dUaHdFWmk4VF82UWx6eG9seDFIT0FyUGI3bXJmY09Hc1RXVjRBcTJyaU5zR0RQdWlnX2p1cFBpTXdUZGliTmZjeDBFUTZlcWhLcGhnMFctYkltS1BSWmR4UlFFdjdXYWZDSXlKRHBBU1A0R1pFMm5ManplWnJvMy1lSGNSRkQ1TV9ycWZKTVloeWlUQ0dQamVodmo2b2lQYTh5TXBIOWNrczkwX2FPbEFkZWpTQzhEUjJFei1YUlBIRWdJbGZ1bWFBUnNBLVVaZFFGMm9a?oc=5\" target=\"_blank\">MLB: Brewers remontan ante Rays y se colocan a dos victorias de conquistar la Serie Mundial</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.debate.com.mx</font>",
+      "fuente": "Beisbol",
+      "categoria": "Deportes",
+      "subcategoria": "beisbol",
+      "fecha": "2026-10-25T04:00:16+00:00"
+    },
+    {
+      "titulo": "Falta una semana para el Gran Premio de México: Checo Pérez celebrará 300 carreras de la Fórmula 1 en el Autódromo Hermanos Rodríguez - Infobae",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOcVFwQVltdXhzcnJIcGhvRktDM255MmJ5cnA0dHpiY0NjX0diWWI3a3lrblAtNk5oSUZxQ2dwZlF2TWU3YlhnNEk3WVJrWGVmNWFuZ29aaW1EVjBqV0RkRnlGd3lFQnJtNE5HU2hsOEYxaGJWUDlsUjA5dmY4RkhRRXduV01JYTEyNWdOdVQ2dTBpNjlHcUZlQUNWT29LLUxObzIwcE5HRmF3THBldGFMdllMZ1U0WUFERkZSczlzNERveTlpaVZ6Y2kyemZFZExXMFFqZ1FnYWZiRF93eC1EYzc2QTBQMV9icTZCek9QanNEaVVSZzJ4ZE91bUhvM3hEMVRVMkd30gGgAkFVX3lxTE02SFBnYTVtWF9aVlMydmtCZ1FNaklEdDgzVUplRXQwejJXZFozY3lZMHVhRkhoTmZfSnhkcVpsNWJmQmNrQ2VaM0hmbTJWNU9yQU9XbGJLWmN4cGhmRENrRnNEX1BiSlBTWlFKTjNydDZIREZtOWlRZkpHbkZFZDR0WlAyb1REcXlxTlRvc1BicGdBeEdmYlJNeEN3MFp4U0FNRzFiekkyb3dRTnJHSU1WLTUwZXV4SzlrU2lDREU0amRycnozVUlEbDVMYV9CWFlDa285ZmY1Q2VKdlI0OXhCdExSTmpid3E3cEwxVXBSQ0lZSjlnc3lyOEw3LU5qcGtRU3NlbTM0aV9lWGZYTWtBQTZ6Zk5scldDVjBZbVlLNw?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMihgJBVV95cUxOcVFwQVltdXhzcnJIcGhvRktDM255MmJ5cnA0dHpiY0NjX0diWWI3a3lrblAtNk5oSUZxQ2dwZlF2TWU3YlhnNEk3WVJrWGVmNWFuZ29aaW1EVjBqV0RkRnlGd3lFQnJtNE5HU2hsOEYxaGJWUDlsUjA5dmY4RkhRRXduV01JYTEyNWdOdVQ2dTBpNjlHcUZlQUNWT29LLUxObzIwcE5HRmF3THBldGFMdllMZ1U0WUFERkZSczlzNERveTlpaVZ6Y2kyemZFZExXMFFqZ1FnYWZiRF93eC1EYzc2QTBQMV9icTZCek9QanNEaVVSZzJ4ZE91bUhvM3hEMVRVMkd30gGgAkFVX3lxTE02SFBnYTVtWF9aVlMydmtCZ1FNaklEdDgzVUplRXQwejJXZFozY3lZMHVhRkhoTmZfSnhkcVpsNWJmQmNrQ2VaM0hmbTJWNU9yQU9XbGJLWmN4cGhmRENrRnNEX1BiSlBTWlFKTjNydDZIREZtOWlRZkpHbkZFZDR0WlAyb1REcXlxTlRvc1BicGdBeEdmYlJNeEN3MFp4U0FNRzFiekkyb3dRTnJHSU1WLTUwZXV4SzlrU2lDREU0amRycnozVUlEbDVMYV9CWFlDa285ZmY1Q2VKdlI0OXhCdExSTmpid3E3cEwxVXBSQ0lZSjlnc3lyOEw3LU5qcGtRU3NlbTM0aV9lWGZYTWtBQTZ6Zk5scldDVjBZbVlLNw?oc=5\" target=\"_blank\">Falta una semana para el Gran Premio de México: Checo Pérez celebrará 300 carreras de la Fórmula 1 en el Autódromo Hermanos Rodríguez</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Infobae</font>",
+      "fuente": "Formula 1",
+      "categoria": "Deportes",
+      "subcategoria": "formula1",
+      "fecha": "2026-10-25T04:04:22+00:00"
     },
     {
       "titulo": "Edomex alista estrategia en materia de seguridad para 13 municipios del corredor AIFA-Pirámides",
@@ -3187,6 +3267,46 @@
       "fecha": "2026-10-24T22:39:11+00:00"
     },
     {
+      "titulo": "Agenda de Marchas, Concentraciones y Rodadas Programadas en la Ciudad de México - N+",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWG5hclh4ZFNxbE5WQjc4UlVWeWQ5eDdtRUtsWWRudWlHRU9hSHdZZU14aGNhQ210dlFjdWFwY1ZHQmNHcUZSRWowQ0ctU2x2XzZoOFI4QjgxNllqYTREOWY3VGp5THFhZmVpZnp3dno4d3hNZkxPS2RoTWRPSFI3RzJkN0xGenc1aWRWNWRCaE9RTDEzTTNZM1BycFlUY1ZtLTVITG45VzFXcWZJdXhSZGxaZEstSTctNjRSWkFwQjNsTEg3M3d6YzJ0YlgwZDhoVWlwRmlERS15ZkV1X2gwa0IxTDNCMG8?oc=5",
+      "imagen": "https://static.nmas.com.mx/Nmas/cms/bloqueo-cdmx%20(71)-1376x774.jpg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWG5hclh4ZFNxbE5WQjc4UlVWeWQ5eDdtRUtsWWRudWlHRU9hSHdZZU14aGNhQ210dlFjdWFwY1ZHQmNHcUZSRWowQ0ctU2x2XzZoOFI4QjgxNllqYTREOWY3VGp5THFhZmVpZnp3dno4d3hNZkxPS2RoTWRPSFI3RzJkN0xGenc1aWRWNWRCaE9RTDEzTTNZM1BycFlUY1ZtLTVITG45VzFXcWZJdXhSZGxaZEstSTctNjRSWkFwQjNsTEg3M3d6YzJ0YlgwZDhoVWlwRmlERS15ZkV1X2gwa0IxTDNCMG8?oc=5\" target=\"_blank\">Agenda de Marchas, Concentraciones y Rodadas Programadas en la Ciudad de México</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">N+</font>",
+      "fuente": "México",
+      "categoria": "México",
+      "subcategoria": "",
+      "fecha": "2026-10-24T11:57:30+00:00"
+    },
+    {
+      "titulo": "Desarrollan tecnología que envía olores de comida entre dispositivos con IA conectados a internet - Infobae",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcnk3QUNfc0J1NFNZbEozVWRDSjFSVUZ2ejREd2VwSlo5dVN3RUZLM2dIUWVoZUM1Yzg2OFlYS2tjWUZwbGYzVWk0VWNock90VnMzUnl4bUJNSGUxVjJfYU45QmxkZVN2MExsUnZfNG42eWNxdnJsOVZtdVNXNzN4V1hzRzZLd3AwMWd2VzMzVXBib2N3bkg0d1BtZUQxRDJfcUdsN2k3UE1QYVdtOFBfSHdmc292SFFNVWFiOENEbmRFa1hlT2hZWmpSdlI1SVhvR052ZkpR0gHwAUFVX3lxTE5vZ2c2eDdIQ09FY21HcjFqVkFWM1hfTl9FVUZZR05TS2U2Vy1oS2c3RWIzVkdSYVdNNUFSUmRVQi1PRmhmLUFuU0cxWGZiVWkzamp4M2ZHZ1J1bmRnSUZkajFUYzRwaFRxRjFxTTd3ZzA5OC1LdWV1SmRxbUo3V2hkRXZxcEJReEE5RFlSd3kxN3NmeGZnU25veVdHMW9yaV9PMkR1UEEwTFBxV1RGZk9NZjIyZ25ZX0dQWlowMGVPV0V5amZyNHhjUE5JZEpPVXpRNUE4NWlSM3liZkczWlhfSVNqMVBwX3FHUWF6QmJJOQ?oc=5",
+      "imagen": "https://www.infobae.com/resizer/v2/J7BAVZCGVVHQ7GZLEYHLIXCS24.png?auth=25cbb9051115276e728e7929b7bd1735293e57d16eca67dc4f6db182ff2576cf&smart=true&width=1200&height=630&quality=85",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcnk3QUNfc0J1NFNZbEozVWRDSjFSVUZ2ejREd2VwSlo5dVN3RUZLM2dIUWVoZUM1Yzg2OFlYS2tjWUZwbGYzVWk0VWNock90VnMzUnl4bUJNSGUxVjJfYU45QmxkZVN2MExsUnZfNG42eWNxdnJsOVZtdVNXNzN4V1hzRzZLd3AwMWd2VzMzVXBib2N3bkg0d1BtZUQxRDJfcUdsN2k3UE1QYVdtOFBfSHdmc292SFFNVWFiOENEbmRFa1hlT2hZWmpSdlI1SVhvR052ZkpR0gHwAUFVX3lxTE5vZ2c2eDdIQ09FY21HcjFqVkFWM1hfTl9FVUZZR05TS2U2Vy1oS2c3RWIzVkdSYVdNNUFSUmRVQi1PRmhmLUFuU0cxWGZiVWkzamp4M2ZHZ1J1bmRnSUZkajFUYzRwaFRxRjFxTTd3ZzA5OC1LdWV1SmRxbUo3V2hkRXZxcEJReEE5RFlSd3kxN3NmeGZnU25veVdHMW9yaV9PMkR1UEEwTFBxV1RGZk9NZjIyZ25ZX0dQWlowMGVPV0V5amZyNHhjUE5JZEpPVXpRNUE4NWlSM3liZkczWlhfSVNqMVBwX3FHUWF6QmJJOQ?oc=5\" target=\"_blank\">Desarrollan tecnología que envía olores de comida entre dispositivos con IA conectados a internet</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Infobae</font>",
+      "fuente": "Tecnología",
+      "categoria": "Tecnología",
+      "subcategoria": "",
+      "fecha": "2026-10-24T23:39:00+00:00"
+    },
+    {
+      "titulo": "Juvenil mexicano agradece al ‘Canelo’: ‘sin él no estuviera aquí’ - Excélsior",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeW15Z296T1JXZUhlYUxoSnlrbUpNMDBITUtLQjl4eXBsOFZ0SjZmWVZ4NzZqRWVzRmc4Wk5MRUFPUTRlbF93cVZVLUlYc3JwT0RBUnBSVjB3YnprWi1xLWU3VVRvZ0lBU1FKbHRnbGRyajh2Ri1ENzRLbnp3ZDRzX0d4ODBBa0Y1YmpUdTVUcjfSAZYBQVVfeXFMUFh3cFFJQWNHS1U1TUdLcmpnZFA5V2duMU5ndllwM3FtMW1qWGc1X21NUjMyaUp2WHNmYlNwdHc0QVdKVEZFdmYzQ1E2eTBzOEZ0TS1QSXp1UmlHNThPMEFfdjRYOG9fWkttd21lSVlTTGtYUHgtU2xKRFBaTEV2eUNhYkZUa2xMZml5cUc2X1BoWjZRSV9R?oc=5",
+      "imagen": "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/10/24/6add24d30d7f3.jpeg",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxNeW15Z296T1JXZUhlYUxoSnlrbUpNMDBITUtLQjl4eXBsOFZ0SjZmWVZ4NzZqRWVzRmc4Wk5MRUFPUTRlbF93cVZVLUlYc3JwT0RBUnBSVjB3YnprWi1xLWU3VVRvZ0lBU1FKbHRnbGRyajh2Ri1ENzRLbnp3ZDRzX0d4ODBBa0Y1YmpUdTVUcjfSAZYBQVVfeXFMUFh3cFFJQWNHS1U1TUdLcmpnZFA5V2duMU5ndllwM3FtMW1qWGc1X21NUjMyaUp2WHNmYlNwdHc0QVdKVEZFdmYzQ1E2eTBzOEZ0TS1QSXp1UmlHNThPMEFfdjRYOG9fWkttd21lSVlTTGtYUHgtU2xKRFBaTEV2eUNhYkZUa2xMZml5cUc2X1BoWjZRSV9R?oc=5\" target=\"_blank\">Juvenil mexicano agradece al ‘Canelo’: ‘sin él no estuviera aquí’</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Excélsior</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-24T21:38:04+00:00"
+    },
+    {
+      "titulo": "Quién pelea HOY sábado 24 de octubre de 2026 en box: horarios y cómo ver los combates EN VIVO - Bolavip México",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd0wtbl9zVGZHYkNsYS1KNlA1OXkxdkQ3RVNpOU9ZUkI2Q204Sk5NUEptVDlBci1ualVNZ3NtR3pPUHIxLXlLMG1NTVJzVFpNLTQ1WXlpWnVpb2k4RGFqemFJM3ExSFlla3JrTUFUN1FIZTNnWEt6M2w3MDFRYmZFTUFZUWFvMGhLbEk5b2Q4N1ZDc2Rvc29wQ1RfelpUaXpYVW10bk9BUXVyTUUxQmdteXpZU3pjb1pEMDlHT2VR0gHDAUFVX3lxTFBnN2p1N0RBX3NpaTJyTk4zTlBuZmN2eW9pb0dWdjZfeHU4RUNJOGZVaGkzUGNkSW1ROE1lTGZ3Uk5GVks3Tm1jamd1dmhDc0lRNUVpZHluM1dzdVp0QnVMWm1kM1Z4MkZGODlLRFlzbGlXZzJGNHBYQks1cUZHQ0ZJcUs5WEwzTUlwSXRoQndSanNwZ3JCMnhpZnZzYUcwaTZXRVlydGhxQUhZUDJ5M01hWFg4VjFCX1l6c0FGWHQzQm9vZw?oc=5",
+      "imagen": "https://media.bolavip.com/wp-content/uploads/sites/23/2026/10/23171701/image-2026-10-23T201434.999-1200x740.webp",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQd0wtbl9zVGZHYkNsYS1KNlA1OXkxdkQ3RVNpOU9ZUkI2Q204Sk5NUEptVDlBci1ualVNZ3NtR3pPUHIxLXlLMG1NTVJzVFpNLTQ1WXlpWnVpb2k4RGFqemFJM3ExSFlla3JrTUFUN1FIZTNnWEt6M2w3MDFRYmZFTUFZUWFvMGhLbEk5b2Q4N1ZDc2Rvc29wQ1RfelpUaXpYVW10bk9BUXVyTUUxQmdteXpZU3pjb1pEMDlHT2VR0gHDAUFVX3lxTFBnN2p1N0RBX3NpaTJyTk4zTlBuZmN2eW9pb0dWdjZfeHU4RUNJOGZVaGkzUGNkSW1ROE1lTGZ3Uk5GVks3Tm1jamd1dmhDc0lRNUVpZHluM1dzdVp0QnVMWm1kM1Z4MkZGODlLRFlzbGlXZzJGNHBYQks1cUZHQ0ZJcUs5WEwzTUlwSXRoQndSanNwZ3JCMnhpZnZzYUcwaTZXRVlydGhxQUhZUDJ5M01hWFg4VjFCX1l6c0FGWHQzQm9vZw?oc=5\" target=\"_blank\">Quién pelea HOY sábado 24 de octubre de 2026 en box: horarios y cómo ver los combates EN VIVO</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bolavip México</font>",
+      "fuente": "Boxeo",
+      "categoria": "Deportes",
+      "subcategoria": "boxeo",
+      "fecha": "2026-10-24T06:00:00+00:00"
+    },
+    {
       "titulo": "EE.UU. revela reportes de avistamientos de ovnis en el siglo XX, varios cerca de California",
       "url": "https://lopezdoriga.com/internacional/ee-uu-revela-reportes-de-avistamientos-de-ovnis-en-el-siglo-xx-varios-cerca-de-california/",
       "imagen": "",
@@ -4167,44 +4287,24 @@
       "fecha": "2026-10-24T22:17:40+00:00"
     },
     {
-      "titulo": "Agenda de Marchas, Concentraciones y Rodadas Programadas en la Ciudad de México - N+",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWG5hclh4ZFNxbE5WQjc4UlVWeWQ5eDdtRUtsWWRudWlHRU9hSHdZZU14aGNhQ210dlFjdWFwY1ZHQmNHcUZSRWowQ0ctU2x2XzZoOFI4QjgxNllqYTREOWY3VGp5THFhZmVpZnp3dno4d3hNZkxPS2RoTWRPSFI3RzJkN0xGenc1aWRWNWRCaE9RTDEzTTNZM1BycFlUY1ZtLTVITG45VzFXcWZJdXhSZGxaZEstSTctNjRSWkFwQjNsTEg3M3d6YzJ0YlgwZDhoVWlwRmlERS15ZkV1X2gwa0IxTDNCMG8?oc=5",
+      "titulo": "¿Qué pasó en la autopista Puebla-Acatzingo? Choque múltiple deja afectaciones vehiculares; reporte EN VIVO - TV Azteca",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNd2xhS3JYVkFMdFFOSXBGdkhMYUJhRkFpdV9hMUdmNzNnMnFDYmdjMEN3STBrNWdUS19pNmVIaGxQdmhRTzNuNkVLQ3RkQktTTGNLOVF2aWtzZHJ6UVF0QXplVE9sRkQ0aHBGV0lSVkRUai1IS2JBejMzdllsNEZMalZ0eVBGWENEUm5vZlNfdU1tbkpNZ184eFlTQUFGZDh0NHZXNXA4dVNzYmdyQlN4ZWxHemFOOHPSAcQBQVVfeXFMTk5Ub2FFWWFraDdwRUcxYnlrSlVUdGpSREhmak5Ub1ZmaUVDelBERFM4UXhHc2dSX21FN19tcXlJdVJSamVzWHBBQ19WZVZFZjdDcXRfOEpZX1AwdEsyWUVXRExqdUNnNDA1cWcySXJhWlR6ZFE5TUw3WHF6OXBZZHZMLV9Xd2syOEJzWFFINlBIZmhjNDBmY3d6Y3NtNGdraTFpMmFGS21qa2l3T1dPYVI4VUl6aFkyZ2pZUDN5RnJ4YzU2Yg?oc=5",
       "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWG5hclh4ZFNxbE5WQjc4UlVWeWQ5eDdtRUtsWWRudWlHRU9hSHdZZU14aGNhQ210dlFjdWFwY1ZHQmNHcUZSRWowQ0ctU2x2XzZoOFI4QjgxNllqYTREOWY3VGp5THFhZmVpZnp3dno4d3hNZkxPS2RoTWRPSFI3RzJkN0xGenc1aWRWNWRCaE9RTDEzTTNZM1BycFlUY1ZtLTVITG45VzFXcWZJdXhSZGxaZEstSTctNjRSWkFwQjNsTEg3M3d6YzJ0YlgwZDhoVWlwRmlERS15ZkV1X2gwa0IxTDNCMG8?oc=5\" target=\"_blank\">Agenda de Marchas, Concentraciones y Rodadas Programadas en la Ciudad de México</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">N+</font>",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxNd2xhS3JYVkFMdFFOSXBGdkhMYUJhRkFpdV9hMUdmNzNnMnFDYmdjMEN3STBrNWdUS19pNmVIaGxQdmhRTzNuNkVLQ3RkQktTTGNLOVF2aWtzZHJ6UVF0QXplVE9sRkQ0aHBGV0lSVkRUai1IS2JBejMzdllsNEZMalZ0eVBGWENEUm5vZlNfdU1tbkpNZ184eFlTQUFGZDh0NHZXNXA4dVNzYmdyQlN4ZWxHemFOOHPSAcQBQVVfeXFMTk5Ub2FFWWFraDdwRUcxYnlrSlVUdGpSREhmak5Ub1ZmaUVDelBERFM4UXhHc2dSX21FN19tcXlJdVJSamVzWHBBQ19WZVZFZjdDcXRfOEpZX1AwdEsyWUVXRExqdUNnNDA1cWcySXJhWlR6ZFE5TUw3WHF6OXBZZHZMLV9Xd2syOEJzWFFINlBIZmhjNDBmY3d6Y3NtNGdraTFpMmFGS21qa2l3T1dPYVI4VUl6aFkyZ2pZUDN5RnJ4YzU2Yg?oc=5\" target=\"_blank\">¿Qué pasó en la autopista Puebla-Acatzingo? Choque múltiple deja afectaciones vehiculares; reporte EN VIVO</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TV Azteca</font>",
+      "fuente": "Noticias",
+      "categoria": "Noticias",
+      "subcategoria": "",
+      "fecha": "2026-10-24T03:00:00+00:00"
+    },
+    {
+      "titulo": "Huracán ‘Vance’ se mantiene en categoría 2 y se localiza a 555 kilómetros de Acapulco - La Jornada",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOcllIa2dqUXVHVHRpU3l3c3BYMnNhU2l2NXk4MGZVYVV5b3VMbVIxMW85Vl9ubEtneW9zaWkwUmZ4M3VwVlpWY3JVYU5hOGpJbi1COHY3eUpac3UxOTFNSHhNejBlZER4QkdlRVQ1NktkUWFGTENGbk5aeExjcGZpUGZtZmpfeXpicnNDQ0tDQ1NXMnB2emRUeU5ScFhXcjNSOGVOcERPRG80cUZ1NFNGb0M0S2hxbkQ5bFVNYQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxOcllIa2dqUXVHVHRpU3l3c3BYMnNhU2l2NXk4MGZVYVV5b3VMbVIxMW85Vl9ubEtneW9zaWkwUmZ4M3VwVlpWY3JVYU5hOGpJbi1COHY3eUpac3UxOTFNSHhNejBlZER4QkdlRVQ1NktkUWFGTENGbk5aeExjcGZpUGZtZmpfeXpicnNDQ0tDQ1NXMnB2emRUeU5ScFhXcjNSOGVOcERPRG80cUZ1NFNGb0M0S2hxbkQ5bFVNYQ?oc=5\" target=\"_blank\">Huracán ‘Vance’ se mantiene en categoría 2 y se localiza a 555 kilómetros de Acapulco</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Jornada</font>",
       "fuente": "México",
       "categoria": "México",
       "subcategoria": "",
-      "fecha": "2026-10-24T11:57:30+00:00"
-    },
-    {
-      "titulo": "Desarrollan tecnología que envía olores de comida entre dispositivos con IA conectados a internet - Infobae",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcnk3QUNfc0J1NFNZbEozVWRDSjFSVUZ2ejREd2VwSlo5dVN3RUZLM2dIUWVoZUM1Yzg2OFlYS2tjWUZwbGYzVWk0VWNock90VnMzUnl4bUJNSGUxVjJfYU45QmxkZVN2MExsUnZfNG42eWNxdnJsOVZtdVNXNzN4V1hzRzZLd3AwMWd2VzMzVXBib2N3bkg0d1BtZUQxRDJfcUdsN2k3UE1QYVdtOFBfSHdmc292SFFNVWFiOENEbmRFa1hlT2hZWmpSdlI1SVhvR052ZkpR0gHwAUFVX3lxTE5vZ2c2eDdIQ09FY21HcjFqVkFWM1hfTl9FVUZZR05TS2U2Vy1oS2c3RWIzVkdSYVdNNUFSUmRVQi1PRmhmLUFuU0cxWGZiVWkzamp4M2ZHZ1J1bmRnSUZkajFUYzRwaFRxRjFxTTd3ZzA5OC1LdWV1SmRxbUo3V2hkRXZxcEJReEE5RFlSd3kxN3NmeGZnU25veVdHMW9yaV9PMkR1UEEwTFBxV1RGZk9NZjIyZ25ZX0dQWlowMGVPV0V5amZyNHhjUE5JZEpPVXpRNUE4NWlSM3liZkczWlhfSVNqMVBwX3FHUWF6QmJJOQ?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcnk3QUNfc0J1NFNZbEozVWRDSjFSVUZ2ejREd2VwSlo5dVN3RUZLM2dIUWVoZUM1Yzg2OFlYS2tjWUZwbGYzVWk0VWNock90VnMzUnl4bUJNSGUxVjJfYU45QmxkZVN2MExsUnZfNG42eWNxdnJsOVZtdVNXNzN4V1hzRzZLd3AwMWd2VzMzVXBib2N3bkg0d1BtZUQxRDJfcUdsN2k3UE1QYVdtOFBfSHdmc292SFFNVWFiOENEbmRFa1hlT2hZWmpSdlI1SVhvR052ZkpR0gHwAUFVX3lxTE5vZ2c2eDdIQ09FY21HcjFqVkFWM1hfTl9FVUZZR05TS2U2Vy1oS2c3RWIzVkdSYVdNNUFSUmRVQi1PRmhmLUFuU0cxWGZiVWkzamp4M2ZHZ1J1bmRnSUZkajFUYzRwaFRxRjFxTTd3ZzA5OC1LdWV1SmRxbUo3V2hkRXZxcEJReEE5RFlSd3kxN3NmeGZnU25veVdHMW9yaV9PMkR1UEEwTFBxV1RGZk9NZjIyZ25ZX0dQWlowMGVPV0V5amZyNHhjUE5JZEpPVXpRNUE4NWlSM3liZkczWlhfSVNqMVBwX3FHUWF6QmJJOQ?oc=5\" target=\"_blank\">Desarrollan tecnología que envía olores de comida entre dispositivos con IA conectados a internet</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Infobae</font>",
-      "fuente": "Tecnología",
-      "categoria": "Tecnología",
-      "subcategoria": "",
-      "fecha": "2026-10-24T23:39:00+00:00"
-    },
-    {
-      "titulo": "Juvenil mexicano agradece al ‘Canelo’: ‘sin él no estuviera aquí’ - Excélsior",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeW15Z296T1JXZUhlYUxoSnlrbUpNMDBITUtLQjl4eXBsOFZ0SjZmWVZ4NzZqRWVzRmc4Wk5MRUFPUTRlbF93cVZVLUlYc3JwT0RBUnBSVjB3YnprWi1xLWU3VVRvZ0lBU1FKbHRnbGRyajh2Ri1ENzRLbnp3ZDRzX0d4ODBBa0Y1YmpUdTVUcjfSAZYBQVVfeXFMUFh3cFFJQWNHS1U1TUdLcmpnZFA5V2duMU5ndllwM3FtMW1qWGc1X21NUjMyaUp2WHNmYlNwdHc0QVdKVEZFdmYzQ1E2eTBzOEZ0TS1QSXp1UmlHNThPMEFfdjRYOG9fWkttd21lSVlTTGtYUHgtU2xKRFBaTEV2eUNhYkZUa2xMZml5cUc2X1BoWjZRSV9R?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxNeW15Z296T1JXZUhlYUxoSnlrbUpNMDBITUtLQjl4eXBsOFZ0SjZmWVZ4NzZqRWVzRmc4Wk5MRUFPUTRlbF93cVZVLUlYc3JwT0RBUnBSVjB3YnprWi1xLWU3VVRvZ0lBU1FKbHRnbGRyajh2Ri1ENzRLbnp3ZDRzX0d4ODBBa0Y1YmpUdTVUcjfSAZYBQVVfeXFMUFh3cFFJQWNHS1U1TUdLcmpnZFA5V2duMU5ndllwM3FtMW1qWGc1X21NUjMyaUp2WHNmYlNwdHc0QVdKVEZFdmYzQ1E2eTBzOEZ0TS1QSXp1UmlHNThPMEFfdjRYOG9fWkttd21lSVlTTGtYUHgtU2xKRFBaTEV2eUNhYkZUa2xMZml5cUc2X1BoWjZRSV9R?oc=5\" target=\"_blank\">Juvenil mexicano agradece al ‘Canelo’: ‘sin él no estuviera aquí’</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Excélsior</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-24T21:38:04+00:00"
-    },
-    {
-      "titulo": "Quién pelea HOY sábado 24 de octubre de 2026 en box: horarios y cómo ver los combates EN VIVO - Bolavip México",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd0wtbl9zVGZHYkNsYS1KNlA1OXkxdkQ3RVNpOU9ZUkI2Q204Sk5NUEptVDlBci1ualVNZ3NtR3pPUHIxLXlLMG1NTVJzVFpNLTQ1WXlpWnVpb2k4RGFqemFJM3ExSFlla3JrTUFUN1FIZTNnWEt6M2w3MDFRYmZFTUFZUWFvMGhLbEk5b2Q4N1ZDc2Rvc29wQ1RfelpUaXpYVW10bk9BUXVyTUUxQmdteXpZU3pjb1pEMDlHT2VR0gHDAUFVX3lxTFBnN2p1N0RBX3NpaTJyTk4zTlBuZmN2eW9pb0dWdjZfeHU4RUNJOGZVaGkzUGNkSW1ROE1lTGZ3Uk5GVks3Tm1jamd1dmhDc0lRNUVpZHluM1dzdVp0QnVMWm1kM1Z4MkZGODlLRFlzbGlXZzJGNHBYQks1cUZHQ0ZJcUs5WEwzTUlwSXRoQndSanNwZ3JCMnhpZnZzYUcwaTZXRVlydGhxQUhZUDJ5M01hWFg4VjFCX1l6c0FGWHQzQm9vZw?oc=5",
-      "imagen": "",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQd0wtbl9zVGZHYkNsYS1KNlA1OXkxdkQ3RVNpOU9ZUkI2Q204Sk5NUEptVDlBci1ualVNZ3NtR3pPUHIxLXlLMG1NTVJzVFpNLTQ1WXlpWnVpb2k4RGFqemFJM3ExSFlla3JrTUFUN1FIZTNnWEt6M2w3MDFRYmZFTUFZUWFvMGhLbEk5b2Q4N1ZDc2Rvc29wQ1RfelpUaXpYVW10bk9BUXVyTUUxQmdteXpZU3pjb1pEMDlHT2VR0gHDAUFVX3lxTFBnN2p1N0RBX3NpaTJyTk4zTlBuZmN2eW9pb0dWdjZfeHU4RUNJOGZVaGkzUGNkSW1ROE1lTGZ3Uk5GVks3Tm1jamd1dmhDc0lRNUVpZHluM1dzdVp0QnVMWm1kM1Z4MkZGODlLRFlzbGlXZzJGNHBYQks1cUZHQ0ZJcUs5WEwzTUlwSXRoQndSanNwZ3JCMnhpZnZzYUcwaTZXRVlydGhxQUhZUDJ5M01hWFg4VjFCX1l6c0FGWHQzQm9vZw?oc=5\" target=\"_blank\">Quién pelea HOY sábado 24 de octubre de 2026 en box: horarios y cómo ver los combates EN VIVO</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bolavip México</font>",
-      "fuente": "Boxeo",
-      "categoria": "Deportes",
-      "subcategoria": "boxeo",
-      "fecha": "2026-10-24T06:00:00+00:00"
+      "fecha": "2026-10-24T14:43:00+00:00"
     },
     {
       "titulo": "Checo Pérez: 300 Grandes Premios en México GP 2026 - CineMedios",
@@ -11397,6 +11497,16 @@
       "fecha": "2026-10-23T15:20:01+00:00"
     },
     {
+      "titulo": "Maru Campos responde a Sheinbaum: gobierno federal ya sabía de las irregularidades de Jáuregui - Grupo Animal",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVFA4OG45X0R4UmRtWFJCVDdqNi1rTW9RbE8tYkRBUzJXaHJjcXNYMUVpWXF4U1UweElZVVZzam9BcDJhQnhRT1Zxd0ZUQjZIYkpGNWt4dklnOWFpSzN5VzF4ZThSTlZkazY0TTFVNzVxSk9qcm5NRWJMdzNyUGM3U3lIbVRwT2gyQUcyNXpYWVd0OHpNZ1o0MjBtMEJNd3cyZWhn?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxPVFA4OG45X0R4UmRtWFJCVDdqNi1rTW9RbE8tYkRBUzJXaHJjcXNYMUVpWXF4U1UweElZVVZzam9BcDJhQnhRT1Zxd0ZUQjZIYkpGNWt4dklnOWFpSzN5VzF4ZThSTlZkazY0TTFVNzVxSk9qcm5NRWJMdzNyUGM3U3lIbVRwT2gyQUcyNXpYWVd0OHpNZ1o0MjBtMEJNd3cyZWhn?oc=5\" target=\"_blank\">Maru Campos responde a Sheinbaum: gobierno federal ya sabía de las irregularidades de Jáuregui</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Grupo Animal</font>",
+      "fuente": "Política",
+      "categoria": "Política",
+      "subcategoria": "",
+      "fecha": "2026-10-23T18:12:22+00:00"
+    },
+    {
       "titulo": "Apenas están en sus 30, se codean con Slim y ya están entre los 100 empresarios más importantes de México",
       "url": "https://expansion.mx/empresas/2026/10/22/dos-jovenes-en-el-ranking-de-los-100-empresarios-mexico",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/5b1b1a0/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe7%2F80%2F94cffd694510915372528371508f%2Faltagracia-gomez-sierra-victor-gonzalez-herrera.jpg",
@@ -15385,6 +15495,16 @@
       "categoria": "Entretenimiento",
       "subcategoria": "",
       "fecha": "2026-10-22T22:01:00+00:00"
+    },
+    {
+      "titulo": "Monterrey Descripción general - Goal.com",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9qdW9ST1VUejhQZ1dUeEU3M3hRTHBiamVaX2pmakR1Q3FFMm1uXzY0VDhyUFU3bllRRDJXY2NxWGdISm5aZF9pRDFiNmxlV3dYMDJkN21VRDVpNUhET0JFbThXd09LSktPNW9JcHpGeFhUVnVSZ05GVQ?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE9qdW9ST1VUejhQZ1dUeEU3M3hRTHBiamVaX2pmakR1Q3FFMm1uXzY0VDhyUFU3bllRRDJXY2NxWGdISm5aZF9pRDFiNmxlV3dYMDJkN21VRDVpNUhET0JFbThXd09LSktPNW9JcHpGeFhUVnVSZ05GVQ?oc=5\" target=\"_blank\">Monterrey Descripción general</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Goal.com</font>",
+      "fuente": "México",
+      "categoria": "México",
+      "subcategoria": "",
+      "fecha": "2026-10-22T01:00:00+00:00"
     },
     {
       "titulo": "Sulaimán acepta que pelea entre Canelo y Yildirim causó “daño al boxeo” - Periódico AM",
@@ -23397,56 +23517,6 @@
       "fecha": "2026-10-19T14:41:00+00:00"
     },
     {
-      "titulo": "Champions League: Anuncian toques de queda en Francia tras disturbios; ¿afectarán el PSG vs Barcelona? - Sports Illustrated",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaWg0LTJ6WTVobzF4TXpnMlNEdUZYd2FuMkNuQW4xa0wwSVplWGFTWUVidXZQSjBhVThjblVkZUlFdXZvN0pnQlhXY1FNY3FSQzF6a2JpZlI5X3Zod2ZDNUxVUVlkOFpBbGpHYWNQTHJtX21XSzhsX1oyazZTWTlCN1RPSHRDS3VMSUdpWlBlODlYR1pESGk3R1UxVWVaUmhqVTMyWkcxZW12cUNDNVRIeF85Y3FYSUFjdl9R?oc=5",
-      "imagen": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_33,w_1024,h_576/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/shape/cover/sport/PSG-Barcelona-GettyImages-2238623264-c5c252319a7ce9c7f5a113fb13b7bfcd.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaWg0LTJ6WTVobzF4TXpnMlNEdUZYd2FuMkNuQW4xa0wwSVplWGFTWUVidXZQSjBhVThjblVkZUlFdXZvN0pnQlhXY1FNY3FSQzF6a2JpZlI5X3Zod2ZDNUxVUVlkOFpBbGpHYWNQTHJtX21XSzhsX1oyazZTWTlCN1RPSHRDS3VMSUdpWlBlODlYR1pESGk3R1UxVWVaUmhqVTMyWkcxZW12cUNDNVRIeF85Y3FYSUFjdl9R?oc=5\" target=\"_blank\">Champions League: Anuncian toques de queda en Francia tras disturbios; ¿afectarán el PSG vs Barcelona?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Sports Illustrated</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-19T14:34:10+00:00"
-    },
-    {
-      "titulo": "Gran Premio de Estados Unidos 2026 F1 en vivo: horario y dónde ver a Checo Pérez en las prácticas, clasificación y carrera - Claro Sports",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNRng4bi13NC1KUUgyWF9ONkNqeDR3Tjg3WVB3bzQ2VUp2WmhYUDR4eFpVc1lTN21uTE42WXBBOUxPaFJ2OWl0SWVpaEU1VUxLU1V3ejlNVklUTmlBdVdCUXBiOHMwTkJld0VOMFBadC1yYjlKWE1mbFd0NUh3QktXUXR0a2RhNTNoN3lRMUhnb2dvQ0JEQ0FRUFN1ZFNqMExqcXhmNjEtRjFPOUxoWUJYekhsQXZPblBxMGV6MlU0QUhEYXY3LXNnUEdkazlCSk5RSG1ZSEZwcEYtNW93LXk0Y2RDVWVWMHlOVVRRNF9QaGxLa1VGZDhoZQ?oc=5",
-      "imagen": "https://cdn.amxinfra.com/clarosports/images/2026/10/mclaren-154817-480x270.webp",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxNRng4bi13NC1KUUgyWF9ONkNqeDR3Tjg3WVB3bzQ2VUp2WmhYUDR4eFpVc1lTN21uTE42WXBBOUxPaFJ2OWl0SWVpaEU1VUxLU1V3ejlNVklUTmlBdVdCUXBiOHMwTkJld0VOMFBadC1yYjlKWE1mbFd0NUh3QktXUXR0a2RhNTNoN3lRMUhnb2dvQ0JEQ0FRUFN1ZFNqMExqcXhmNjEtRjFPOUxoWUJYekhsQXZPblBxMGV6MlU0QUhEYXY3LXNnUEdkazlCSk5RSG1ZSEZwcEYtNW93LXk0Y2RDVWVWMHlOVVRRNF9QaGxLa1VGZDhoZQ?oc=5\" target=\"_blank\">Gran Premio de Estados Unidos 2026 F1 en vivo: horario y dónde ver a Checo Pérez en las prácticas, clasificación y carrera</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Claro Sports</font>",
-      "fuente": "Formula 1",
-      "categoria": "Deportes",
-      "subcategoria": "formula1",
-      "fecha": "2026-10-19T14:31:00+00:00"
-    },
-    {
-      "titulo": "¡Bounjour! Barcelona llega a París para la tercera jornada de Champions League ante PSG - Récord",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPa2t2RDRUMFBwc2pndEE4YUVuVXZjVWlsVE9BNGNIeld4NU56NVgyZ3J2cWhySnZDSlNnRVN3RnBIUHFJUUw4aWRoUDRCVEhOcUh1SVN1Z0x6WW1ZdThuMGwyVU1zWjZwM0ZVVjJkZjFORkhSQmVucW50YlRBZkdPbmZKN3dOY1FfZEROSGd6bzkyeEYwa0tCcG9oejhOVnN3QlY2RXowUmM3YXc5U28wbzZR?oc=5",
-      "imagen": "https://sportal365images.com/process/smp-images-production/record.mx/19102026/5d7f5d4a-3f95-4ba3-8ea6-4b42b95e9b12.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxPa2t2RDRUMFBwc2pndEE4YUVuVXZjVWlsVE9BNGNIeld4NU56NVgyZ3J2cWhySnZDSlNnRVN3RnBIUHFJUUw4aWRoUDRCVEhOcUh1SVN1Z0x6WW1ZdThuMGwyVU1zWjZwM0ZVVjJkZjFORkhSQmVucW50YlRBZkdPbmZKN3dOY1FfZEROSGd6bzkyeEYwa0tCcG9oejhOVnN3QlY2RXowUmM3YXc5U28wbzZR?oc=5\" target=\"_blank\">¡Bounjour! Barcelona llega a París para la tercera jornada de Champions League ante PSG</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Récord</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-19T14:21:00+00:00"
-    },
-    {
-      "titulo": "Real Madrid vs RB Leipzig en vivo, Champions League 2026: horario, alineaciones y dónde ver la jornada 3 de la fase de liga - Claro Sports",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQV0dlNlNBODRKYjNrWUYtUkpiaS1wLW5QdXpUTi1md0J2cGdzdjRlbl91RGFxV0hUc3RidXViYlJ6Rmprb0YyZ01MSkhHZWY4YUJBaFdwMlhjdnc5bXIwRWVielFOOWs5MDB5eWlXRTRnQlIwMEFnT3hyY2ZRSFF4ZjE5ZzZJLWZTUzVsZGk3WWhEcUxEZy0yTWpqQ21ZVWpyOWpsQm05cnlqeEl2SGtuQlR5dGd0SEVWdXZIQzBJU19hMEQ4OURORUNnanhjNzVjYVNzZDhOTE9zUWZWWnZKaTF6ejRIaUJtTGJwcEZTSzVwTnlzZzlleFBkMjR3V3M0OG1V?oc=5",
-      "imagen": "https://cdn.amxinfra.com/clarosports/images/2026/10/real-madrid-vs-rb-leipzig-073211.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMigwJBVV95cUxQV0dlNlNBODRKYjNrWUYtUkpiaS1wLW5QdXpUTi1md0J2cGdzdjRlbl91RGFxV0hUc3RidXViYlJ6Rmprb0YyZ01MSkhHZWY4YUJBaFdwMlhjdnc5bXIwRWVielFOOWs5MDB5eWlXRTRnQlIwMEFnT3hyY2ZRSFF4ZjE5ZzZJLWZTUzVsZGk3WWhEcUxEZy0yTWpqQ21ZVWpyOWpsQm05cnlqeEl2SGtuQlR5dGd0SEVWdXZIQzBJU19hMEQ4OURORUNnanhjNzVjYVNzZDhOTE9zUWZWWnZKaTF6ejRIaUJtTGJwcEZTSzVwTnlzZzlleFBkMjR3V3M0OG1V?oc=5\" target=\"_blank\">Real Madrid vs RB Leipzig en vivo, Champions League 2026: horario, alineaciones y dónde ver la jornada 3 de la fase de liga</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Claro Sports</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-19T14:16:51+00:00"
-    },
-    {
-      "titulo": "¿Se suspende PSG vs Barcelona? Qué pasó en París y cuándo se juega - 365Scores",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Uc2FHaENCc3cwU0taNlRVVEtNRm43YTRNVmZqNGVQbDZZQm5GUnd1WHJxY0plYlpFQ0NKOV9xbGh0VXB6YUZnODBzNEI4cE5vaVdkcWNGaHpQS3kzTlR4RXRkSWxKRWNub0t6MGR4R1FLZWx6RV91SDNVTXF6TmM?oc=5",
-      "imagen": "https://www.365scores.com/es/news/wp-content/uploads/2026/10/photo_5093771388916534627_y.jpg",
-      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1Uc2FHaENCc3cwU0taNlRVVEtNRm43YTRNVmZqNGVQbDZZQm5GUnd1WHJxY0plYlpFQ0NKOV9xbGh0VXB6YUZnODBzNEI4cE5vaVdkcWNGaHpQS3kzTlR4RXRkSWxKRWNub0t6MGR4R1FLZWx6RV91SDNVTXF6TmM?oc=5\" target=\"_blank\">¿Se suspende PSG vs Barcelona? Qué pasó en París y cuándo se juega</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">365Scores</font>",
-      "fuente": "Futbol",
-      "categoria": "Deportes",
-      "subcategoria": "futbol",
-      "fecha": "2026-10-19T13:27:26+00:00"
-    },
-    {
       "titulo": "La próxima revolución científica necesita una nueva creatividad humana",
       "url": "https://expansion.mx/https:/obras.expansion.mx/opinion/2026/10/19/la-proxima-revolucion-cientifica-necesita-una-nueva-creatividad-humana",
       "imagen": "https://cdn-3.expansion.mx/dims4/default/16feaca/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F5a%2Fb1%2Fe661c6644c3ebbb62b756ced9d78%2Fcriterio-humano-frente-a-descubrimientos-cientificos.jpeg",
@@ -24365,6 +24435,16 @@
       "categoria": "Dinero",
       "subcategoria": "",
       "fecha": "2026-10-16T15:21:21+00:00"
+    },
+    {
+      "titulo": "China evalúa restringir las exportaciones de tecnologías de inteligencia artificial y biotecnología - Ambito",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOd2FZUjk0SkZhQmZNRUFWQzVxY05XelJaWFRxRGViVy1kaFN3UmhfODBiblNiOTUxQWgxUnFXVmJWeVNYbktRYVladkM5bUEtVjQwRlFsVjI4Sm01aG5TbmRrd3I2WTFza3VNNDEwckdhQmVnZUFzWGZYQjM4OG9taVg2QmZtSVVJeHFVSTI4dzIyX29YVFI2OUpheVh1N0x3UXdQSzFVSWh6bE1IOEl0OTdMcjFocDDSAbwBQVVfeXFMT1NUODBzVHEtNl9XT2JYcDNIVUVIQ2dhalAzZi1HRDZkS1UtTTlmRkdTQXcxcE9KOXdwQTA1Z2ctY2pNZDRzWFdJbjQyMVk5SThPN09wZnVQSVhYLWFCaE44UFUwQ0V0cTRaOWFKLWRSZ2p6ZENfaFpUMEluMmVIYjRPb3VMZWJvN1J0dlh2YmxfZTE1MTMtd2oyWS1jOUozUGlxTDRHOHgwUHdSQVhUWktLLWVSaTBQSHZOeUE?oc=5",
+      "imagen": "",
+      "descripcion": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxOd2FZUjk0SkZhQmZNRUFWQzVxY05XelJaWFRxRGViVy1kaFN3UmhfODBiblNiOTUxQWgxUnFXVmJWeVNYbktRYVladkM5bUEtVjQwRlFsVjI4Sm01aG5TbmRrd3I2WTFza3VNNDEwckdhQmVnZUFzWGZYQjM4OG9taVg2QmZtSVVJeHFVSTI4dzIyX29YVFI2OUpheVh1N0x3UXdQSzFVSWh6bE1IOEl0OTdMcjFocDDSAbwBQVVfeXFMT1NUODBzVHEtNl9XT2JYcDNIVUVIQ2dhalAzZi1HRDZkS1UtTTlmRkdTQXcxcE9KOXdwQTA1Z2ctY2pNZDRzWFdJbjQyMVk5SThPN09wZnVQSVhYLWFCaE44UFUwQ0V0cTRaOWFKLWRSZ2p6ZENfaFpUMEluMmVIYjRPb3VMZWJvN1J0dlh2YmxfZTE1MTMtd2oyWS1jOUozUGlxTDRHOHgwUHdSQVhUWktLLWVSaTBQSHZOeUE?oc=5\" target=\"_blank\">China evalúa restringir las exportaciones de tecnologías de inteligencia artificial y biotecnología</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Ambito</font>",
+      "fuente": "Tecnología",
+      "categoria": "Tecnología",
+      "subcategoria": "",
+      "fecha": "2026-10-16T07:00:00+00:00"
     },
     {
       "titulo": "HR Ratings baja la calificación de largo plazo de México por deterioro fiscal y menor crecimiento",
